@@ -42,6 +42,7 @@ def build_year(y: int, region: str = "france") -> list[dict]:
             "propre": loc.get("propre"),
             "fichier_divinum_officium": o.path or None,
             "introit_incipit": loc.get("introit_incipit") or enrich.office_incipit(o.office, o.path),
+            "introit": enrich.office_introit(o.office, o.path),
             "station": st.get(d),
             "notice_martyrologe": enrich.notice_for(md, o.office, o.rank, o.isfeast),
             "jeune_abstinence": {"code": f[0], "libelle": f[1]} if f else None,

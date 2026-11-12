@@ -63,6 +63,20 @@ def office_incipit(office_name: str, path: str) -> str | None:
     return inc
 
 
+def office_introit(office_name: str, path: str) -> dict | None:
+    """Introït complet (latin, et français s'il existe dans DO), lignes brutes de DO :
+    « !Ps 24:1 » = référence, « v. … » = antienne, « &Gloria » = Gloria Patri."""
+    if not path or office_name.startswith("Office de la Sainte Vierge"):
+        return None
+    out = {}
+    for cle, lang in (("la", "Latin"), ("fr", "Francais")):
+        b = introit_lines(path, lang)
+        if not b and path.startswith("Tempora/"):
+            b = introit_lines(path.rsplit("-", 1)[0] + "-0", lang)
+        out[cle] = b or None
+    return out if out["la"] else None
+
+
 def norm(s: str) -> str:
     s = unicodedata.normalize("NFD", s.lower())
     return "".join(c for c in s if unicodedata.category(c) != "Mn")
