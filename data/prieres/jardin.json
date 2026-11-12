@@ -1,0 +1,3287 @@
+{
+ "ouvrage": "Le Jardin de l’âme — Offrandes, couronnes et oraisons pour chaque jour",
+ "edition": "livret 11 × 17 cm, 84 p., version validée (docs/livret)",
+ "note": "Textes repris mot pour mot des sources LaTeX du livret ; chaque pièce garde sa ligne « source » telle qu’imprimée.",
+ "pieces": [
+  {
+   "id": "intention-d-indulgences",
+   "ordre": 1,
+   "titre": "Intention d’indulgences",
+   "titre_court": null,
+   "type": "acte",
+   "partie": {
+    "numero": "Première partie",
+    "titre": "Offrande du matin"
+   },
+   "jour_de_semaine": null,
+   "page_livret": 1,
+   "usage": "quot., au lever",
+   "indulgence": null,
+   "source": null,
+   "parent": null,
+   "blocs": [
+    {
+     "type": "texte",
+     "texte": "Mon Dieu, je Vous offre toutes les œuvres de cette journée, dans l’intention de Vous glorifier, de réparer mes péchés et de satisfaire pour les âmes du purgatoire. Je désire gagner, par Votre grâce, toutes les indulgences attachées à mes actions de ce jour, autant qu’il Vous plaira de m’en accorder. Faites que rien, en moi, ne Vous en empêche."
+    }
+   ]
+  },
+  {
+   "id": "acte-de-soumission-a-la-volonte-de-dieu",
+   "ordre": 2,
+   "titre": "Acte de soumission à la volonté de Dieu",
+   "titre_court": null,
+   "type": "acte",
+   "partie": {
+    "numero": "Première partie",
+    "titre": "Offrande du matin"
+   },
+   "jour_de_semaine": null,
+   "page_livret": 1,
+   "usage": "quot., le matin",
+   "indulgence": null,
+   "source": null,
+   "parent": null,
+   "blocs": [
+    {
+     "type": "texte",
+     "texte": "Mon Dieu, je reconnais que Vos vues sont très supérieures aux miennes. Aussi tout ce que Vous permettrez aujourd’hui, dans l’ordre du corps, de l’âme, des circonstances ou des épreuves, je l’accepte d’avance, pleinement, volontairement, sans réserve, comme ce qu’il y a de meilleur pour mon salut et pour Votre gloire."
+    },
+    {
+     "type": "texte",
+     "texte": "Je consens aussi, ô mon Dieu, à être ignoré, incompris, contredit, oublié, méprisé et calomnié si cela Vous glorifie et m’abaisse. Ne permettez pas que je me défende autrement qu’en me taisant."
+    },
+    {
+     "type": "texte",
+     "texte": "Je Vous remets, Seigneur, ma volonté propre, mes préférences, mes attentes, mes inquiétudes, et je Vous prie humblement de faire en moi ce qu’il Vous plaira."
+    },
+    {
+     "type": "texte",
+     "texte": "Et parce que je suis faible, Seigneur, et prompt à me plaindre quand la douleur ou la contradiction surviennent, je Vous demande de ne pas tenir compte de mes murmures, de mes impatiences ou de mes révoltes naturelles. Voyez-y non l’opposition de ma volonté, mais l’infirmité de ma nature."
+    },
+    {
+     "type": "texte",
+     "texte": "Je Vous fais l’offrande anticipée de tous mes combats intérieurs, de toutes mes chutes, de toutes mes larmes, et même de mes éventuelles rébellions involontaires, Vous suppliant de ne pas les regarder comme des refus de ma part, mais comme des misères que je Vous prie de guérir."
+    },
+    {
+     "type": "texte",
+     "texte": "Seigneur, mon Dieu, dès aujourd’hui, d’un cœur tranquille et soumis, j’accepte de Votre main le genre de mort qu’il Vous plaira de m’envoyer, avec toutes ses angoisses, toutes ses peines et toutes ses douleurs."
+    },
+    {
+     "type": "texte",
+     "texte": "Mon Dieu, faites que je souffre tout ce qu’il Vous plaira, sans jamais me détourner de Vous ; et si je me plains, que ce soit à genoux."
+    },
+    {
+     "type": "texte",
+     "texte": "Recevez cette offrande imparfaite, Seigneur, unissez-la aux mérites infinis de Jésus-Christ, et regardez-la par les yeux de Marie, afin qu’elle Vous soit agréable malgré mes défauts."
+    },
+    {
+     "type": "conclusion",
+     "texte": "Fiat Voluntas Tua."
+    },
+    {
+     "type": "conclusion",
+     "texte": "Ainsi soit-il."
+    }
+   ]
+  },
+  {
+   "id": "acte-d-intention-de-communion-spirituelle-perpetuelle",
+   "ordre": 3,
+   "titre": "Acte d’intention de communion spirituelle perpétuelle",
+   "titre_court": null,
+   "type": "acte",
+   "partie": {
+    "numero": "Première partie",
+    "titre": "Offrande du matin"
+   },
+   "jour_de_semaine": null,
+   "page_livret": 3,
+   "usage": "quot., le matin ; renouveler par de brèves communions spirituelles dans la journée",
+   "indulgence": "Acte de communion spirituelle, quelle qu’en soit la formule : 3 ans. — Plénière, aux conditions ordinaires, si l’acte est fait chaque jour pendant un mois. S. Pénit., 7 mars 1927 et 25 févr. 1933. — Ench. 1952, no 164.",
+   "source": null,
+   "parent": null,
+   "blocs": [
+    {
+     "type": "texte",
+     "texte": "Ô Jésus, mon Seigneur et mon Dieu, véritablement présent dans le Très Saint Sacrement de l’autel, je Vous adore avec foi, je Vous aime de tout mon cœur, et je Vous désire plus que tout."
+    },
+    {
+     "type": "texte",
+     "texte": "Ne pouvant aujourd’hui Vous recevoir sous les saintes espèces à chaque instant, je forme la résolution sincère de Vous recevoir spirituellement, aussi souvent que ma pensée se tournera vers Vous, avec la même ferveur, le même amour, la même foi qu’à la sainte Table."
+    },
+    {
+     "type": "texte",
+     "texte": "Faites, Seigneur, que chaque battement de mon cœur soit comme un acte d’amour eucharistique, une invocation silencieuse, une adoration intérieure, un baiser mystique déposé sur Votre hostie cachée."
+    },
+    {
+     "type": "texte",
+     "texte": "Que mon âme soit comme un tabernacle vivant, où Vous puissiez trouver consolation et repos. Venez à moi, ô Jésus, aussi souvent que je soupire vers Vous ; établissez en moi Votre demeure, selon la promesse que Vous ferez à Celui qui garde Votre parole."
+    },
+    {
+     "type": "texte",
+     "texte": "Je Vous offre à l’avance toutes les communions spirituelles que je ferai aujourd’hui, dans mes prières, mes silences, mes fatigues et mes élans, et je Vous supplie d’y suppléer ce qui me manque."
+    },
+    {
+     "type": "texte",
+     "texte": "Qu’aucune distraction, qu’aucune indifférence, qu’aucun refroidissement ne m’éloigne de Vous ; et si ma nature se montre froide, que mon désir reste brûlant, et que ma fidélité triomphe de ma faiblesse."
+    },
+    {
+     "type": "texte",
+     "texte": "Recevez mes actes intérieurs comme autant de communions invisibles ; transformez mes pensées en prières, mes œuvres en offrandes, et mes désirs en feu."
+    },
+    {
+     "type": "texte",
+     "texte": "Je désire, Seigneur, que chaque mouvement de mon âme soit une visite au Saint-Sacrement, et que toute ma journée s’écoule comme une longue adoration."
+    },
+    {
+     "type": "texte",
+     "texte": "Ô Marie, Vierge fidèle, offrez pour moi à Jésus toutes mes communions spirituelles de ce jour, afin qu’elles soient pures, profondes, persévérantes, et unies à celles que Vous fîtes dans Votre vie terrestre."
+    },
+    {
+     "type": "conclusion",
+     "texte": "Ainsi soit-il."
+    }
+   ]
+  },
+  {
+   "id": "acte-de-recommandation-des-ames-rencontrees",
+   "ordre": 4,
+   "titre": "Acte de recommandation des âmes rencontrées",
+   "titre_court": null,
+   "type": "acte",
+   "partie": {
+    "numero": "Première partie",
+    "titre": "Offrande du matin"
+   },
+   "jour_de_semaine": null,
+   "page_livret": 4,
+   "usage": "quot., le matin",
+   "indulgence": null,
+   "source": null,
+   "parent": null,
+   "blocs": [
+    {
+     "type": "texte",
+     "texte": "Ô Seigneur Jésus-Christ, Sauveur des âmes, je Vous offre par les mains immaculées de Votre très sainte Mère toutes les âmes que je croiserai aujourd’hui, que je verrai, saluerai, entendrai, ou même seulement apercevrai — brièvement ou longuement, de loin ou de près — pour qu’aucune d’entre elles ne m’échappe sans Vous avoir été secrètement consacrée."
+    },
+    {
+     "type": "texte",
+     "texte": "Vous les connaissez toutes, Seigneur, dans leur misère et dans leur secret. Je ne demande point de les connaître, ni d’y laisser trace, mais seulement d’être pour elles, selon Votre volonté, un canal muet de grâce, un point d’intercession vivant."
+    },
+    {
+     "type": "texte",
+     "texte": "Reprenez-les toutes, ô mon Dieu, par cette offrande matinale : les âmes fidèles, pour qu’elles persévèrent ; les âmes tièdes, pour qu’elles s’éveillent ; les âmes pécheresses, pour qu’elles se convertissent ; les âmes mourantes, pour qu’elles ne désespèrent point. Qu’aucune ne se perde par ma faute, mon oubli ou ma dureté."
+    },
+    {
+     "type": "texte",
+     "texte": "Je Vous les confie toutes, ô Marie, Mère du Souverain Prêtre, Refuge des pécheurs, Médiatrice de toutes grâces, Co-Rédemptrice. Parlez-leur à l’instant où je les croise. Agissez en elles par un regard, un silence, une pensée, même inconnue de moi. Disposez de mon attitude, de mon port, de mes paroles, de mon silence, comme d’un voile dont Vous pourriez Vous servir. Prenez-les toutes sous Votre maternelle protection ; et si l’une d’elles devait se damner, qu’au moins je Vous l’aie remise."
+    },
+    {
+     "type": "texte",
+     "texte": "Je Vous les offre pour la gloire de Dieu, pour la victoire de l’Église, pour le triomphe de Votre Cœur Immaculé, pour le retour de tous les errants à la Vérité catholique, apostolique et romaine. Que cette offrande soit scellée dans les plaies du Christ, conservée dans Votre Cœur et agréée par le Père éternel."
+    },
+    {
+     "type": "conclusion",
+     "texte": "Ainsi soit-il."
+    }
+   ]
+  },
+  {
+   "id": "acte-heroique-de-charite",
+   "ordre": 5,
+   "titre": "Acte héroïque de charité",
+   "titre_court": null,
+   "type": "acte",
+   "partie": {
+    "numero": "Première partie",
+    "titre": "Offrande du matin"
+   },
+   "jour_de_semaine": null,
+   "page_livret": 5,
+   "usage": "une fois pour toutes ; à renouveler à volonté, surtout le lundi, jour des défunts, et en novembre",
+   "indulgence": "Plénière, applicable aux seuls défunts : chaque jour où l’on communie, si l’on s’est confessé et si l’on visite une église ou un oratoire public en priant aux intentions du Souverain Pontife ; chaque lundi (ou, si l’on en est empêché, le dimanche suivant), en assistant à la messe pour les défunts, aux conditions ordinaires. Les prêtres jouissent chaque jour de l’autel privilégié personnel. S. C. des Indulgences, 30 sept. 1852 et 20 nov. 1854. — Ench. 1952, no 593.",
+   "source": "M.-J.-S. Benoît, Livre d’or des âmes du purgatoire, Montréal, 1925 (imprimatur)",
+   "parent": null,
+   "blocs": [
+    {
+     "type": "notice",
+     "texte": "Cet acte de charité parfaite en faveur des âmes du purgatoire, si agréable à Dieu, si utile aux défunts, si profitable pour nous, consiste à donner tous nos mérites satisfactoires à ces saintes âmes. Le pape Benoît XIII a accordé, à ceux qui le font, de très précieuses faveurs. — Bref du 23 août 1728, confirmé par les papes Pie VI et Pie IX. — Voici ces faveurs : 1° indulgence plénière à tout fidèle, à chaque communion et à chaque lundi, où il assiste à la messe pour les défunts ; 2° indulgence plénière aux prêtres, à chacune de leurs messes. Pour gagner ces indulgences, il faut prier quelque peu, aux intentions de notre saint père le pape, dans une visite à l’église. Si l’on entend la messe pour les défunts, le lundi, et si l’on communie, on a deux indulgences plénières à gagner, et deux visites à l’église à faire, en priant aux intentions de notre saint père le pape. On peut prier aux intentions du pape durant la messe elle-même, pour la première visite ; puis, faire une autre visite de quelques minutes, dès la messe achevée. Si l’on ne peut assister à la messe du lundi, on peut gagner cette indulgence plénière à celle du dimanche précédent. 3° En plus, le pouvoir d’appliquer aux défunts toutes les autres indulgences, même celles qui sont accordées seulement pour les vivants ; 4° enfin, tout mérite purement satisfactoire se change en mérites pour le ciel, où nous serons récompensés au centuple, dit saint Ambroise."
+    },
+    {
+     "type": "intertitre",
+     "texte": "Formule libre de cet acte héroïque"
+    },
+    {
+     "type": "texte",
+     "texte": "Pour votre gloire, ô mon Dieu, pour celle de Marie, la Mère des âmes du Purgatoire, moi, N., je remets entre les mains de cette bonne Mère tous les mérites satisfactoires et tous ceux qui pourront m’être appliqués, en cette vie et en l’autre, afin qu’elle en fasse profiter les âmes qu’elle veut soulager ou délivrer."
+    }
+   ]
+  },
+  {
+   "id": "priere-pour-les-agonisants",
+   "ordre": 6,
+   "titre": "Prière pour les agonisants",
+   "titre_court": null,
+   "type": "acte",
+   "partie": {
+    "numero": "Première partie",
+    "titre": "Offrande du matin"
+   },
+   "jour_de_semaine": null,
+   "page_livret": 6,
+   "usage": "quot., trois fois : matin, midi et soir",
+   "indulgence": "300 j. — Plénière, aux conditions ordinaires, si elle est dite trois fois le jour, à trois moments distincts, pendant un mois. S. C. des Indulgences, 2 févr. 1850 ; S. Pénit., 15 mai 1933. — Ench. 1952, no 671.",
+   "source": "Beringer, Les Indulgences, t. I, 1905, no 210",
+   "parent": null,
+   "blocs": [
+    {
+     "type": "rubrique",
+     "texte": "À dire trois fois le jour, à trois moments distincts."
+    },
+    {
+     "type": "texte",
+     "texte": "Ô très miséricordieux Jésus, vous qui brûlez d’amour pour les âmes, je vous en supplie, par l’agonie de votre Cœur très saint et par les douleurs de votre Mère immaculée, purifiez dans votre sang les pécheurs du monde entier qui sont dans ce moment à l’agonie et qui doivent mourir aujourd’hui. Ainsi soit-il."
+    },
+    {
+     "type": "verset",
+     "v": "Cœur agonisant de Jésus,",
+     "r": "ayez pitié des mourants !"
+    },
+    {
+     "type": "traduction",
+     "texte": "*O clementissime Jesu, amator animarum, obsecro te per agoniam Cordis tui sanctissimi, et per dolores Matris tuæ immaculatæ, lava in sanguine tuo peccatores totius mundi nunc positos in agonia et hodie morituros. Amen. Cor Jesu in agonia factum, miserere morientium !*"
+    }
+   ]
+  },
+  {
+   "id": "devoir-envers-l-eglise-et-ses-ministres",
+   "ordre": 7,
+   "titre": "Devoir envers l’Église et ses ministres",
+   "titre_court": null,
+   "type": "acte",
+   "partie": {
+    "numero": "Deuxième partie",
+    "titre": "Actes des devoirs de charité"
+   },
+   "jour_de_semaine": null,
+   "page_livret": 7,
+   "usage": "quot.",
+   "indulgence": null,
+   "source": null,
+   "parent": null,
+   "blocs": [
+    {
+     "type": "texte",
+     "texte": "Pour m’acquitter devant vous, ô mon Dieu, de mon devoir de chrétien,"
+    },
+    {
+     "type": "texte",
+     "texte": "je me propose aujourd’hui d’offrir toutes mes prières, supplications, sacrifices et œuvres à l’intention de la sainte Église catholique,"
+    },
+    {
+     "type": "texte",
+     "texte": "pour son triomphe sur les erreurs, son affermissement dans la vérité,"
+    },
+    {
+     "type": "texte",
+     "texte": "et surtout pour le retour d’un saint pape, digne Vicaire de Jésus-Christ, selon la promesse faite à saint Pierre."
+    },
+    {
+     "type": "texte",
+     "texte": "Je m’unis aux intentions de l’Église militante, vous priant instamment pour la sanctification, la piété, le zèle, la persévérance et la subsistance temporelle de nos saints prêtres, vos fervents ministres, desquels nous recevons la suavité de vos sacrements si désirables, et de leurs instituts qui assurent leur rigoureuse formation. Je désire aussi que mes prières soient portées au soulagement des âmes des religieux retenues en purgatoire."
+    },
+    {
+     "type": "invocation",
+     "texte": "Saint Pierre, prince des Apôtres, priez pour nous.\n\nSaint Jean, apôtre bien-aimé, priez pour nous.\n\nSaint Pie X, défenseur de la foi, priez pour la sainte Église."
+    }
+   ]
+  },
+  {
+   "id": "devoir-envers-la-famille",
+   "ordre": 8,
+   "titre": "Devoir envers la famille",
+   "titre_court": null,
+   "type": "acte",
+   "partie": {
+    "numero": "Deuxième partie",
+    "titre": "Actes des devoirs de charité"
+   },
+   "jour_de_semaine": null,
+   "page_livret": 8,
+   "usage": "quot.",
+   "indulgence": null,
+   "source": null,
+   "parent": null,
+   "blocs": [
+    {
+     "type": "texte",
+     "texte": "Pour m’acquitter de mes devoirs filiaux, honorer mes parents et me rendre digne de ma lignée, je veux prier aujourd’hui pour tous les membres de ma famille,"
+    },
+    {
+     "type": "texte",
+     "texte": "pour leur conversion, leur conservation dans le bien, leur soulagement dans les épreuves temporelles, leur persévérance dans la grâce, et leur sanctification selon les desseins et dans les voies de Dieu."
+    },
+    {
+     "type": "texte",
+     "texte": "Je souhaite grandement confier le repos des âmes de mes ancêtres et de tous mes défunts, à votre infinie miséricorde, assuré ainsi qu’aucun ne demeure oublié."
+    },
+    {
+     "type": "invocation",
+     "texte": "Jésus, Marie, Joseph, éclairez-nous, secourez-nous, sauvez-nous.\n\nSaint Joseph, chef de la sainte Famille, gardez nos foyers."
+    }
+   ]
+  },
+  {
+   "id": "devoir-envers-la-patrie",
+   "ordre": 9,
+   "titre": "Devoir envers la patrie",
+   "titre_court": null,
+   "type": "acte",
+   "partie": {
+    "numero": "Deuxième partie",
+    "titre": "Actes des devoirs de charité"
+   },
+   "jour_de_semaine": null,
+   "page_livret": 8,
+   "usage": "quot.",
+   "indulgence": null,
+   "source": null,
+   "parent": null,
+   "blocs": [
+    {
+     "type": "texte",
+     "texte": "J’ose élargir encore mes intentions, Seigneur, pour m’acquitter de mes devoirs envers ma patrie terrestre."
+    },
+    {
+     "type": "texte",
+     "texte": "Que mes œuvres soient retenues par votre souveraine libéralité, ô mon Dieu, pour le salut de la France, la conversion de ses chefs, le retour de ses lois à la loi du Christ et à son saint règne social ; la fin du joug antichristique dans ses institutions ; et le renouvellement des promesses de son baptême."
+    },
+    {
+     "type": "texte",
+     "texte": "J’offre aussi ma prière pour le repos des âmes de mes compatriotes morts dans l’amitié de Dieu, par la guerre ou par l’oppression."
+    },
+    {
+     "type": "invocation",
+     "texte": "Sacré-Cœur de Jésus, sauvez la France.\n\nNotre-Dame de l’Assomption, patronne principale de la France, priez pour nous.\n\nNotre-Dame de France, priez pour nous.\n\nSaint Michel Archange, protecteur de la France, priez pour nous.\n\nSaint Remi, apôtre des Francs, saint Denis, saint Martin, apôtres des Gaules, priez pour nous.\n\nSaint Louis, roi de France, priez pour nous.\n\nSainte Clotilde, sainte Geneviève, priez pour nous.\n\nSainte Jeanne d’Arc, libératrice de la patrie, priez pour nous.\n\nSainte Thérèse de l’Enfant-Jésus, patronne secondaire de la France, priez pour nous.\n\nSaints martyrs de la Révolution, priez pour la France."
+    },
+    {
+     "type": "invocation",
+     "texte": "Vive le Christ qui aime les Francs !"
+    }
+   ]
+  },
+  {
+   "id": "devoir-envers-les-pauvres-les-persecutes-les-affliges",
+   "ordre": 10,
+   "titre": "Devoir envers les pauvres, les persécutés, les affligés",
+   "titre_court": null,
+   "type": "acte",
+   "partie": {
+    "numero": "Deuxième partie",
+    "titre": "Actes des devoirs de charité"
+   },
+   "jour_de_semaine": null,
+   "page_livret": 9,
+   "usage": "quot.",
+   "indulgence": null,
+   "source": null,
+   "parent": null,
+   "blocs": [
+    {
+     "type": "texte",
+     "texte": "Je ne veux pas passer ce jour, Seigneur, sans me souvenir des pauvres, des persécutés, des affligés, des solitaires, de tous ceux qui souffrent dans leur corps ou leur âme, et que personne ne recommande à Dieu."
+    },
+    {
+     "type": "texte",
+     "texte": "Que mes prières montent pour eux ; surtout pour ceux qui souffrent au nom de Notre-Seigneur Jésus-Christ, afin que la justice divine soit fléchie et que la miséricorde les visite."
+    },
+    {
+     "type": "invocation",
+     "texte": "Sainte Marie, salut des infirmes, consolatrice des affligés, refuge des pécheurs, priez pour eux.\n\nSaint Vincent de Paul, père des pauvres, priez pour nous."
+    }
+   ]
+  },
+  {
+   "id": "devoir-envers-moi-meme",
+   "ordre": 11,
+   "titre": "Devoir envers moi-même",
+   "titre_court": null,
+   "type": "acte",
+   "partie": {
+    "numero": "Deuxième partie",
+    "titre": "Actes des devoirs de charité"
+   },
+   "jour_de_semaine": null,
+   "page_livret": 10,
+   "usage": "quot.",
+   "indulgence": null,
+   "source": null,
+   "parent": null,
+   "blocs": [
+    {
+     "type": "texte",
+     "texte": "Aussi, Seigneur, car charité bien ordonnée ne saurait s’oublier, je me propose, en vue de mon propre salut, de vous offrir aujourd’hui ma vigilance, mes combats, mes pensées et mes œuvres, vous priant pour le salut de mon âme."
+    },
+    {
+     "type": "texte",
+     "texte": "Que par votre grâce, tout en moi soit purifié de ses attaches, ordonné à votre volonté, et sanctifié selon vos desseins."
+    },
+    {
+     "type": "texte",
+     "texte": "Qu’aucune vile illusion ne voile à mes yeux l’exigence de la sainteté."
+    },
+    {
+     "type": "texte",
+     "texte": "Faites, Seigneur, que ce jour, en dépit de mes misères, me conduise plus près de vous."
+    },
+    {
+     "type": "invocation",
+     "texte": "Saint Gabriel, et vous, mon bon Ange gardien, priez pour moi."
+    }
+   ]
+  },
+  {
+   "id": "priere-de-la-milice-angelique",
+   "ordre": 12,
+   "titre": "Prière de la Milice angélique",
+   "titre_court": null,
+   "type": "sousacte",
+   "partie": {
+    "numero": "Deuxième partie",
+    "titre": "Actes des devoirs de charité"
+   },
+   "jour_de_semaine": null,
+   "page_livret": null,
+   "usage": "quot., matin et soir",
+   "indulgence": "Indulgences propres aux associés de la confrérie du Cordon de saint Thomas, qui portent le cordon.",
+   "source": "Ch.-A. Joyau, O.P., Saint Thomas d’Aquin, patron des écoles catholiques, 1886",
+   "parent": "devoir-envers-moi-meme",
+   "blocs": [
+    {
+     "type": "rubrique",
+     "texte": "Prière des associés de la Milice angélique, ou confrérie du Cordon de saint Thomas d’Aquin, que deux anges ceignirent d’un cordon de chasteté."
+    },
+    {
+     "type": "texte",
+     "texte": "Très chaste saint Thomas, choisi comme un lis d’innocence, vous qui avez toujours conservé sans aucune souillure la robe baptismale ; vous qui, ceint par deux anges, avez été dans la chair un ange véritable, je vous prie de me recommander à Jésus, l’Agneau sans tache, à Marie, la Reine des vierges, afin que, portant, moi aussi, autour de mes reins le saint Cordon, je reçoive le même don que vous, et qu’après vous avoir imité sur la terre, je sois un jour couronné parmi les anges avec vous, ô grand protecteur de mon innocence !"
+    },
+    {
+     "type": "conclusion",
+     "texte": "Ainsi soit-il."
+    }
+   ]
+  },
+  {
+   "id": "consecration-de-soi-meme-a-jesus-christ-la-sagesse-incarnee-",
+   "ordre": 13,
+   "titre": "Consécration de soi-même à Jésus-Christ, la Sagesse incarnée, par les mains de Marie",
+   "titre_court": "Consécration à Jésus par Marie",
+   "type": "acte",
+   "partie": {
+    "numero": "Troisième partie",
+    "titre": "Consécration à Jésus par Marie"
+   },
+   "jour_de_semaine": null,
+   "page_livret": 11,
+   "usage": "consécration : 8 déc., 25 mars, 28 avril (fête de saint Louis-Marie), ou au terme des 33 jours de préparation ; formule brève : quot.",
+   "indulgence": "Plénière, aux conditions ordinaires, en la fête de l’Immaculée Conception et le 28 avril. Pie X, rescrit autographe, 24 déc. 1907 ; S. C. du Saint-Office, 7 déc. 1927. — Ench. 1952.",
+   "source": "Traité de la vraie dévotion à la sainte Vierge",
+   "parent": null,
+   "blocs": [
+    {
+     "type": "rubrique",
+     "texte": "Selon saint Louis-Marie Grignion de Montfort."
+    },
+    {
+     "type": "texte",
+     "texte": "Ô Sagesse éternelle et incarnée ! ô très aimable et adorable Jésus, vrai Dieu et vrai homme, Fils unique du Père éternel, et de Marie, toujours vierge, je vous adore profondément dans le sein et les splendeurs de votre Père, pendant l’éternité, et dans le sein virginal de Marie, votre très digne Mère, dans le temps de votre incarnation. Je vous rends grâces de ce que vous vous êtes anéanti vous-même, en prenant la forme d’un esclave, pour me tirer du cruel esclavage du démon. Je vous loue et glorifie de ce que vous avez bien voulu vous soumettre à Marie, votre sainte Mère, en toutes choses, afin de me rendre par elle votre fidèle esclave. Mais, hélas ! ingrat et infidèle que je suis, je ne vous ai pas gardé les promesses que je vous ai si solennellement faites à mon Baptême. Je n’ai point rempli mes obligations ; je ne mérite pas d’être appelé votre enfant ni votre esclave, et comme il n’y a rien en moi qui ne mérite vos rebuts et votre colère, je n’ose plus par moi-même approcher de votre très sainte et auguste Majesté. C’est pourquoi j’ai recours à l’intercession de votre très sainte Mère, que vous m’avez donnée pour médiatrice auprès de vous ; et c’est par ce moyen que j’espère obtenir de vous la contrition et le pardon de mes péchés, l’acquisition et la conservation de la Sagesse."
+    },
+    {
+     "type": "texte",
+     "texte": "Je vous salue donc, ô Marie immaculée, tabernacle vivant de la Divinité, où la Sagesse éternelle cachée veut être adorée des Anges et des hommes. Je vous salue, ô Reine du Ciel et de la terre, à l’empire de qui est soumis tout ce qui est au-dessous de Dieu. Je vous salue, ô refuge assuré des pécheurs, dont la miséricorde ne manque à personne ; exaucez les désirs que j’ai de la divine Sagesse, et recevez pour cela les vœux et les offres que ma bassesse vous présente."
+    },
+    {
+     "type": "texte",
+     "texte": "Moi, N., pécheur infidèle, je renouvelle et ratifie aujourd’hui entre vos mains les vœux de mon Baptême. Je renonce pour jamais à Satan, à ses pompes et à ses œuvres, et je me donne tout entier à Jésus-Christ, la Sagesse incarnée, pour porter ma croix à sa suite tous les jours de ma vie. Et afin que je lui sois plus fidèle que je n’ai été jusqu’ici, je vous choisis aujourd’hui, ô Marie, en présence de toute la Cour céleste, pour ma Mère et Maîtresse. Je vous livre et consacre, en qualité d’esclave, mon corps et mon âme, mes biens intérieurs et extérieurs, et la valeur même de mes bonnes actions passées, présentes et futures, vous laissant un entier et plein droit de disposer de moi et de tout ce qui m’appartient, sans exception, selon votre bon plaisir, à la plus grande gloire de Dieu, dans le temps et l’éternité."
+    },
+    {
+     "type": "texte",
+     "texte": "Recevez, ô Vierge bénigne, cette petite offrande de mon esclavage, en l’honneur et union de la soumission que la Sagesse éternelle a bien voulu avoir à votre maternité ; en hommage de la puissance que vous avez tous deux sur ce petit vermisseau et ce misérable pécheur ; en action de grâces des privilèges dont la sainte Trinité vous a favorisée. Je proteste que je veux désormais, comme votre véritable esclave, chercher votre honneur et vous obéir en toutes choses."
+    },
+    {
+     "type": "texte",
+     "texte": "Ô Mère admirable, présentez-moi à votre cher Fils, en qualité d’esclave éternel, afin que, m’ayant racheté par vous, il me reçoive par vous. Ô Mère de miséricorde, faites-moi la grâce d’obtenir la vraie Sagesse de Dieu, et de me mettre pour cela au nombre de ceux que vous aimez, que vous enseignez, que vous conduisez, que vous nourrissez et protégez comme vos enfants et vos esclaves. Ô Vierge fidèle, rendez-moi en toutes choses un si parfait disciple, imitateur et esclave de la Sagesse incarnée, Jésus-Christ, votre Fils, que j’arrive, par votre intercession, à votre exemple, à la plénitude de son âge sur la terre, et de sa gloire dans les Cieux."
+    },
+    {
+     "type": "conclusion",
+     "texte": "Ainsi soit-il."
+    },
+    {
+     "type": "intertitre",
+     "texte": "Renouvellement de la consécration"
+    },
+    {
+     "type": "rubrique",
+     "texte": "On pourra même, tous les mois, tous les jours, renouveler tout ce qu’on a fait, par ce peu de paroles :"
+    },
+    {
+     "type": "texte",
+     "texte": "*Tuus totus ego sum, et omnia mea tua sunt.*"
+    },
+    {
+     "type": "texte",
+     "texte": "Je suis tout à vous, et tout ce que j’ai vous appartient, ô mon aimable Jésus, par Marie, votre sainte Mère."
+    },
+    {
+     "type": "rubrique",
+     "texte": "Avant la sainte communion :"
+    },
+    {
+     "type": "texte",
+     "texte": "*Tuus totus ego sum, et omnia mea tua sunt.*"
+    },
+    {
+     "type": "texte",
+     "texte": "Je suis tout à vous, ma chère Maîtresse, avec tout ce que j’ai."
+    }
+   ]
+  },
+  {
+   "id": "la-petite-couronne-de-la-tres-sainte-vierge",
+   "ordre": 14,
+   "titre": "La petite Couronne de la très sainte Vierge",
+   "titre_court": null,
+   "type": "acte",
+   "partie": {
+    "numero": "Troisième partie",
+    "titre": "Consécration à Jésus par Marie"
+   },
+   "jour_de_semaine": null,
+   "page_livret": 13,
+   "usage": "quot. ; surtout le samedi",
+   "indulgence": null,
+   "source": "Œuvres complètes de saint Louis-Marie, 1966, p. 840-843",
+   "parent": null,
+   "blocs": [
+    {
+     "type": "rubrique",
+     "texte": "Composée par saint Louis-Marie de Montfort : trois Pater et douze Ave, en l’honneur des douze privilèges et grandeurs de la très sainte Vierge. On dit d’abord le Dignare, puis le Credo ; puis, pour chaque couronne, un Pater, quatre Ave avec leur louange, et un Gloria. Après chaque Ave :"
+    },
+    {
+     "type": "verset",
+     "v": "Réjouissez-vous, Vierge Marie.",
+     "r": "Réjouissez-vous mille fois."
+    },
+    {
+     "type": "texte",
+     "texte": "*Dignare me laudare te, Virgo sacrata ; da mihi virtutem contra hostes tuos.*"
+    },
+    {
+     "type": "traduction",
+     "texte": "Agréez que je vous loue, ô Vierge sainte ; donnez-moi la force contre vos ennemis."
+    },
+    {
+     "type": "intertitre",
+     "texte": "Couronne d’excellence"
+    },
+    {
+     "type": "numero",
+     "numero": "1",
+     "texte": "Vous êtes bienheureuse, ô Vierge Marie, qui avez porté dans votre chaste sein le Seigneur et Créateur du monde ; vous avez engendré Celui qui vous a formée, et vous êtes demeurée vierge éternellement."
+    },
+    {
+     "type": "numero",
+     "numero": "2",
+     "texte": "Ô Vierge sainte et immaculée, je ne sais par quelles louanges relever assez dignement votre grandeur, car vous avez porté dans votre sein Celui que les cieux mêmes ne peuvent contenir."
+    },
+    {
+     "type": "numero",
+     "numero": "3",
+     "texte": "Vous êtes toute belle, ô Vierge Marie, et il n’y a point de tache en vous."
+    },
+    {
+     "type": "numero",
+     "numero": "4",
+     "texte": "Vous avez plus de vertus, Vierge sainte, qu’il n’y a d’étoiles dans le ciel."
+    },
+    {
+     "type": "intertitre",
+     "texte": "Couronne de puissance"
+    },
+    {
+     "type": "numero",
+     "numero": "1",
+     "texte": "Soyez glorifiée, Marie, qui êtes l’Impératrice du monde ; conduisez-nous avec vous aux joies du paradis."
+    },
+    {
+     "type": "numero",
+     "numero": "2",
+     "texte": "Soyez glorifiée, Marie, qui êtes la Trésorière des grâces du Seigneur ; faites-nous part de votre trésor."
+    },
+    {
+     "type": "numero",
+     "numero": "3",
+     "texte": "Soyez glorifiée, Marie, qui êtes la Médiatrice entre Dieu et les hommes ; rendez-nous le Tout-Puissant favorable."
+    },
+    {
+     "type": "numero",
+     "numero": "4",
+     "texte": "Soyez glorifiée, Marie, qui écrasez les hérésies et les démons ; soyez notre conductrice."
+    },
+    {
+     "type": "intertitre",
+     "texte": "Couronne de miséricorde"
+    },
+    {
+     "type": "numero",
+     "numero": "1",
+     "texte": "Soyez glorifiée, Marie, qui êtes le refuge des pécheurs ; intercédez pour nous auprès du Seigneur."
+    },
+    {
+     "type": "numero",
+     "numero": "2",
+     "texte": "Soyez glorifiée, Marie, qui êtes la Mère des orphelins ; rendez-nous propice le Père tout-puissant."
+    },
+    {
+     "type": "numero",
+     "numero": "3",
+     "texte": "Soyez glorifiée, Marie, qui êtes la joie des justes ; conduisez-nous avec vous aux joies du ciel."
+    },
+    {
+     "type": "numero",
+     "numero": "4",
+     "texte": "Soyez glorifiée, Marie, qui êtes toujours prête à nous aider et à nous assister pendant la vie et à la mort ; conduisez-nous avec vous au royaume des cieux."
+    },
+    {
+     "type": "intertitre",
+     "texte": "Pour finir"
+    },
+    {
+     "type": "texte",
+     "texte": "Nous avons recours à votre protection, sainte Mère de Dieu : ne rejetez pas les prières que nous vous adressons dans nos besoins, mais délivrez-nous toujours de tous les dangers, ô Vierge glorieuse et bénie."
+    }
+   ]
+  },
+  {
+   "id": "oraison-a-marie",
+   "ordre": 15,
+   "titre": "Oraison à Marie",
+   "titre_court": null,
+   "type": "acte",
+   "partie": {
+    "numero": "Troisième partie",
+    "titre": "Consécration à Jésus par Marie"
+   },
+   "jour_de_semaine": null,
+   "page_livret": 15,
+   "usage": "quot.",
+   "indulgence": null,
+   "source": null,
+   "parent": null,
+   "blocs": [
+    {
+     "type": "rubrique",
+     "texte": "Que saint Louis-Marie place à la fin du Secret de Marie et après la petite Couronne."
+    },
+    {
+     "type": "texte",
+     "texte": "Je vous salue, Marie, Fille bien-aimée du Père éternel ; je vous salue, Marie, Mère admirable du Fils ; je vous salue, Marie, Épouse très fidèle du Saint-Esprit ; je vous salue, Marie, Temple auguste de la très sainte Trinité."
+    },
+    {
+     "type": "texte",
+     "texte": "Je vous salue, Marie, ma chère Maîtresse, ma bonne Mère, la Reine de mon cœur, ma vie, ma douceur et mon espérance après Jésus, mon cœur et mon âme. Je suis tout à vous, et tout ce que j’ai vous appartient."
+    },
+    {
+     "type": "texte",
+     "texte": "Ô Vierge bénie par-dessus toutes les pures créatures ! je vous prie qu’aujourd’hui votre âme soit en moi pour glorifier le Seigneur ; que votre esprit soit en moi pour se réjouir en Dieu. Ô Vierge fidèle, mettez-vous comme un cachet amoureux sur mon cœur, afin que, par vous et en vous, je sois trouvé fidèle à mon Dieu. Ô Mère bénigne, faites-moi la grâce de me mettre aujourd’hui au nombre de ceux que vous aimez, enseignez, nourrissez, dirigez et protégez comme vos enfants. Ô Souveraine des cieux, ne permettez pas qu’il y ait quelque chose en moi qui ne vous appartienne, parce que j’y renonce dès à présent."
+    },
+    {
+     "type": "texte",
+     "texte": "Ô Fille du Roi des rois, dont toute la gloire est au-dedans, ne permettez pas que je me dissipe dans les choses visibles et passagères, mais faites que, par une abondance de grâces, je sois toujours occupé au-dedans de moi, pour y trouver en Dieu mon plaisir, mon trésor, mon honneur, ma gloire et mon repos ; afin que, par le Saint-Esprit, votre fidèle Époux, et par vous, sa fidèle Épouse, Jésus-Christ, votre très cher Fils, soit parfaitement formé dans nos cœurs, à la plus grande gloire de Dieu notre Père, dans tous les siècles des siècles."
+    },
+    {
+     "type": "conclusion",
+     "texte": "Ainsi soit-il."
+    }
+   ]
+  },
+  {
+   "id": "priere-pour-demander-la-sagesse",
+   "ordre": 16,
+   "titre": "Prière pour demander la Sagesse",
+   "titre_court": null,
+   "type": "acte",
+   "partie": {
+    "numero": "Troisième partie",
+    "titre": "Consécration à Jésus par Marie"
+   },
+   "jour_de_semaine": null,
+   "page_livret": 16,
+   "usage": "quot.",
+   "indulgence": null,
+   "source": "Bible Crampon, 1923",
+   "parent": null,
+   "blocs": [
+    {
+     "type": "rubrique",
+     "texte": "Prière de Salomon (Sg 9, 1-5 et 10), que saint Louis-Marie propose dans l’Amour de la Sagesse éternelle."
+    },
+    {
+     "type": "texte",
+     "texte": "Dieu des pères, Seigneur de miséricorde, qui avez fait l’univers par votre parole, et qui, par votre sagesse, avez établi l’homme pour dominer sur toutes les créatures que vous avez faites, pour régir le monde dans la sainteté et la justice, et exercer l’empire dans la droiture du cœur, donnez-moi la Sagesse qui est assise près de votre trône, et ne me rejetez pas du nombre de vos enfants. Car je suis votre serviteur et le fils de votre servante, un homme faible, à la vie courte, et peu capable de comprendre le jugement et les lois. Envoyez-la de vos cieux très saints, envoyez-la du trône de votre gloire, afin qu’elle m’assiste dans mes labeurs, et que je connaisse ce qui vous est agréable."
+    },
+    {
+     "type": "conclusion",
+     "texte": "Ainsi soit-il."
+    }
+   ]
+  },
+  {
+   "id": "a-marie-mediatrice-de-toutes-graces",
+   "ordre": 17,
+   "titre": "À Marie Médiatrice de toutes grâces",
+   "titre_court": null,
+   "type": "acte",
+   "partie": {
+    "numero": "Troisième partie",
+    "titre": "Consécration à Jésus par Marie"
+   },
+   "jour_de_semaine": null,
+   "page_livret": 17,
+   "usage": "sam. ; 31 mai",
+   "indulgence": null,
+   "source": "Missel romain, propre de certains lieux, 31 mai",
+   "parent": null,
+   "blocs": [
+    {
+     "type": "rubrique",
+     "texte": "Oraison de la messe de la bienheureuse Vierge Marie Médiatrice de toutes grâces (31 mai), concédée par Benoît XV en 1921."
+    },
+    {
+     "type": "texte",
+     "texte": "*Domine Jesu Christe, noster apud Patrem mediator, qui beatissimam Virginem, Matrem tuam, matrem quoque nostram et apud te mediatricem constituere dignatus es : concede propitius ; ut, quisquis ad te beneficia petiturus accesserit, cuncta se per eam impetrasse lætetur : Qui vivis et regnas cum eodem Deo Patre.*"
+    },
+    {
+     "type": "traduction",
+     "texte": "Seigneur Jésus-Christ, notre Médiateur auprès du Père, qui avez daigné établir la bienheureuse Vierge, votre Mère, pour être aussi notre Mère et notre Médiatrice auprès de vous : accordez dans votre bonté que quiconque s’approchera de vous pour vous demander des bienfaits se réjouisse de les avoir tous obtenus par elle. Vous qui vivez et régnez avec Dieu le Père."
+    }
+   ]
+  },
+  {
+   "id": "priere-du-cardinal-mercier",
+   "ordre": 18,
+   "titre": "Prière du cardinal Mercier",
+   "titre_court": null,
+   "type": "sousacte",
+   "partie": {
+    "numero": "Troisième partie",
+    "titre": "Consécration à Jésus par Marie"
+   },
+   "jour_de_semaine": null,
+   "page_livret": null,
+   "usage": "en neuvaine ; avant le 31 mai et le 28 avril",
+   "indulgence": "200 j.",
+   "source": null,
+   "parent": "a-marie-mediatrice-de-toutes-graces",
+   "blocs": [
+    {
+     "type": "rubrique",
+     "texte": "Pour obtenir la proclamation de la Médiation universelle de Marie et la canonisation de son apôtre, saint Louis-Marie, alors bienheureux."
+    },
+    {
+     "type": "texte",
+     "texte": "Seigneur Jésus, Sagesse éternelle et incarnée, qui avez été conçu par l’opération du Saint-Esprit dans le sein de la bienheureuse Vierge Marie, faites, nous vous en supplions, qu’éclairée par le même Esprit, votre sainte Église définisse et proclame comme un dogme, à la gloire du Père, la doctrine de la Médiation universelle de la Vierge Mère."
+    },
+    {
+     "type": "texte",
+     "texte": "À cette fin, Seigneur, nous vous offrons volontiers nos sacrifices, nos prières et nos travaux, priant de plus votre immense bonté de vouloir bien accorder au bienheureux de Montfort, l’illustre prédicateur et le remarquable docteur de cette Médiation, le suprême honneur de la canonisation."
+    },
+    {
+     "type": "texte",
+     "texte": "N’est-ce pas lui, en effet, qui a mis en lumière ce grand mystère d’amour de votre divine Sagesse : Marie, l’ineffable Médiatrice, votre Mère et la nôtre ? Pénétrant, comme un nouveau Jean, dans les profonds secrets de votre Incarnation, de votre Croix, de la sanctification de nos âmes et même de la fin des temps, il a contemplé Marie associée avec vous dans toutes vos œuvres, Médiatrice universelle de toutes les grâces, vraie Reine et Maîtresse des cœurs, Exterminatrice des démons, Introductrice au ciel de ses vrais enfants, Chemin voulu par Dieu de notre retour vers lui."
+    },
+    {
+     "type": "texte",
+     "texte": "C’est pourquoi il nous attire vers la chaude atmosphère d’amour et de vie familiale où vous avez vécu vous-même et où vous voulez que nous vivions. Il nous a enseigné la voie simple et parfaite de l’esclavage d’amour, qui nous livre en entier, corps et âme, comme de petits enfants, à toutes les influences maternelles et médiatrices de Marie, afin que, par elle, vous soyez formé en nous, ô Jésus, selon toute l’étendue de votre amour, et que nous vivions en vous et comme vous pour le Père, *propter Patrem*."
+    },
+    {
+     "type": "texte",
+     "texte": "Ô Jésus, ô Marie, écoutez nos prières. Il y va de votre commune gloire et de celle du Père. Et plus Montfort sera honoré dans l’Église, plus les âmes se tourneront vers vous et vers le Dieu d’amour, pour l’aimer, le servir et chanter l’éternelle louange de gloire à la Trinité sainte."
+    },
+    {
+     "type": "conclusion",
+     "texte": "Ainsi soit-il."
+    },
+    {
+     "type": "invocation",
+     "texte": "Marie, Mère du Christ, priez pour nous.\nMarie, Médiatrice universelle du genre humain, intercédez pour nous.\nSaint Louis-Marie de Montfort, dévot esclave de Jésus et de Marie, priez pour nous."
+    }
+   ]
+  },
+  {
+   "id": "auguste-reine-des-cieux",
+   "ordre": 19,
+   "titre": "Auguste Reine des Cieux",
+   "titre_court": null,
+   "type": "acte",
+   "partie": {
+    "numero": "Troisième partie",
+    "titre": "Consécration à Jésus par Marie"
+   },
+   "jour_de_semaine": null,
+   "page_livret": 19,
+   "usage": "quot. ; surtout le mar., jour des saints Anges",
+   "indulgence": "500 j. S. C. des Indulgences, 8 juill. 1908 ; S. Pénit., 1934. — Ench. 1952, no 345.",
+   "source": null,
+   "parent": null,
+   "blocs": [
+    {
+     "type": "rubrique",
+     "texte": "Prière reçue le 13 janvier 1864 par le vénérable Louis-Édouard Cestac, fondateur des Servantes de Marie. Texte de l’Enchiridion."
+    },
+    {
+     "type": "texte",
+     "texte": "Auguste Reine des cieux et Maîtresse des Anges, vous qui avez reçu de Dieu le pouvoir et la mission d’écraser la tête de Satan, nous vous le demandons humblement, envoyez les légions célestes pour que, sous vos ordres, elles poursuivent les démons, les combattent partout, répriment leur audace et les refoulent dans l’abîme. « Qui est comme Dieu ? »"
+    },
+    {
+     "type": "texte",
+     "texte": "Ô bonne et tendre Mère, vous serez toujours notre amour et notre espérance."
+    },
+    {
+     "type": "texte",
+     "texte": "Ô divine Mère, envoyez les saints Anges pour me défendre et repousser loin de moi le cruel ennemi."
+    },
+    {
+     "type": "texte",
+     "texte": "Saints Anges et Archanges, défendez-nous, gardez-nous."
+    }
+   ]
+  },
+  {
+   "id": "a-saint-gabriel-archange",
+   "ordre": 20,
+   "titre": "À saint Gabriel Archange",
+   "titre_court": null,
+   "type": "acte",
+   "partie": {
+    "numero": "Troisième partie",
+    "titre": "Consécration à Jésus par Marie"
+   },
+   "jour_de_semaine": null,
+   "page_livret": 19,
+   "usage": "mar., jour des saints Anges ; 24 mars ; neuvaine avant la fête",
+   "indulgence": "3 ans. — Plénière, aux conditions ordinaires, si elle est dite chaque jour pendant un mois. S. Pénit., 25 avr. 1949. — Neuvaine de prières quelconques à saint Gabriel : 5 ans chaque jour, plénière à la fin. — Ench. 1952, nos 448-449.",
+   "source": "Missel romain, 24 mars",
+   "parent": null,
+   "blocs": [
+    {
+     "type": "rubrique",
+     "texte": "Patron des Frères de Saint-Gabriel, héritiers de saint Louis-Marie. Oraison de sa fête (24 mars)."
+    },
+    {
+     "type": "texte",
+     "texte": "*Deus, qui inter ceteros Angelos, ad annuntiandum incarnationis tuæ mysterium, Gabrielem Archangelum elegisti : concede propitius ; ut, qui festum ejus celebramus in terris, ipsius patrocinium sentiamus in cælis : Qui vivis et regnas.*"
+    },
+    {
+     "type": "traduction",
+     "texte": "Ô Dieu, qui, entre tous les Anges, avez choisi l’archange Gabriel pour annoncer le mystère de votre Incarnation : accordez-nous dans votre bonté qu’honorant sa fête sur la terre, nous ressentions sa protection dans le ciel. Vous qui vivez et régnez."
+    }
+   ]
+  },
+  {
+   "id": "la-triple-couronne-d-or-du-sacre-c-ur-de-jesus",
+   "ordre": 21,
+   "titre": "La Triple Couronne d’or du Sacré-Cœur de Jésus",
+   "titre_court": "La Triple Couronne d’or",
+   "type": "acte",
+   "partie": {
+    "numero": "Quatrième partie",
+    "titre": "Couronnes et chapelets"
+   },
+   "jour_de_semaine": null,
+   "page_livret": 21,
+   "usage": "quot. : 1ʳᵉ couronne lun., mer., sam. ; 2ᵉ mar., ven. ; 3ᵉ jeu., dim.",
+   "indulgence": "*Jesu, mitis et humilis Corde* : 500 j. ; plénière, cond. ord., si l’invocation est dite chaque jour pendant un mois. Ench. 1952, no 221.",
+   "source": null,
+   "parent": null,
+   "blocs": [
+    {
+     "type": "rubrique",
+     "texte": "Première couronne, le lundi, le mercredi et le samedi. — Deuxième couronne, le mardi et le vendredi. — Troisième couronne, le jeudi et le dimanche. L’ordinaire ci-dessous est commun aux trois couronnes ; le propre de chacune suit."
+    },
+    {
+     "type": "intertitre",
+     "texte": "Invocations préparatoires"
+    },
+    {
+     "type": "texte",
+     "texte": "Ô Jésus, mon doux Sauveur ! qui aimez tant les hommes, et qui cependant en êtes si peu aimé, permettez-moi, malgré mon indignité, de venir, en réparation des outrages et des ingratitudes dont sont payés vos bienfaits de chaque jour, vous offrir cette triple Couronne d’or. Je vous l’offre par le Cœur immaculé de votre très sainte Mère, pour la plus grande gloire du Père céleste et pour le règne de votre Cœur dans tous les cœurs."
+    },
+    {
+     "type": "texte",
+     "texte": "Je vous l’offre en union à tous les bienheureux du paradis, à tous vos anges adorateurs de l’autel et à tous les associés de votre Garde d’honneur."
+    },
+    {
+     "type": "texte",
+     "texte": "Je vous l’offre pour le monde chrétien, en particulier pour le salut de la France, et par elle pour la délivrance de notre sainte Mère l’Église."
+    },
+    {
+     "type": "texte",
+     "texte": "Ô Cœur, flamme et lumière d’amour ! acceptez mon ardent désir de vous voir connu, aimé, consolé, glorifié partout ; à cette intention, bénissez mes paroles, mes actions, mes souffrances, acceptez mon cœur que je vous donne sans partage et sans retour, vous priant de le consumer du feu de votre charité. Ainsi soit-il."
+    },
+    {
+     "type": "rubrique",
+     "texte": "On ajoute l’invocation propre de la couronne du jour."
+    },
+    {
+     "type": "intertitre",
+     "texte": "Introduction de la couronne"
+    },
+    {
+     "type": "rubrique",
+     "texte": "Sur la croix :"
+    },
+    {
+     "type": "texte",
+     "texte": "*Veni, Sancte Spiritus, reple tuorum corda fidelium, et tui amoris in eis ignem accende.*"
+    },
+    {
+     "type": "verset",
+     "v": "*Emitte Spiritum tuum, et creabuntur.*",
+     "r": "*Et renovabis faciem terræ.*"
+    },
+    {
+     "type": "texte",
+     "texte": "*Oremus. Deus, qui corda fidelium Sancti Spiritus illustratione docuisti, da nobis in eodem Spiritu recta sapere, et de ejus semper consolatione gaudere. Per Christum Dominum nostrum. Amen.*"
+    },
+    {
+     "type": "rubrique",
+     "texte": "Sur les cinq premiers grains, un Pater, suivi de l’invocation suivante, puis un Gloria :"
+    },
+    {
+     "type": "texte",
+     "texte": "*Amatum sit ubique Sacratissimum Cor Jesu.*"
+    },
+    {
+     "type": "traduction",
+     "texte": "Aimé soit partout le Sacré-Cœur de Jésus."
+    },
+    {
+     "type": "intertitre",
+     "texte": "Corps de la couronne"
+    },
+    {
+     "type": "rubrique",
+     "texte": "On annonce le mystère ; puis, sur le gros grain d’introduction :"
+    },
+    {
+     "type": "verset",
+     "v": "*Jesu, mitis et humilis Corde,*",
+     "r": "*fac cor meum sicut Cor tuum !*"
+    },
+    {
+     "type": "traduction",
+     "texte": "Jésus, doux et humble de Cœur, rendez mon cœur semblable au vôtre."
+    },
+    {
+     "type": "rubrique",
+     "texte": "Sur la dizaine :"
+    },
+    {
+     "type": "verset",
+     "v": "*Dulce Cor Jesu,*",
+     "r": "*fac ut te magis ac magis diligam.*"
+    },
+    {
+     "type": "traduction",
+     "texte": "Doux Cœur de Jésus, faites que je vous aime toujours de plus en plus."
+    },
+    {
+     "type": "rubrique",
+     "texte": "Sur le gros grain de conclusion :"
+    },
+    {
+     "type": "verset",
+     "v": "*Dulce Cor Mariæ,*",
+     "r": "*sis salus mea !*"
+    },
+    {
+     "type": "traduction",
+     "texte": "Doux Cœur de Marie, soyez mon salut !"
+    },
+    {
+     "type": "intertitre",
+     "texte": "Prières finales"
+    },
+    {
+     "type": "rubrique",
+     "texte": "Consécration."
+    },
+    {
+     "type": "texte",
+     "texte": "Très doux Cœur de Jésus, je vous consacre aujourd’hui et pour toujours mon esprit pour méditer vos perfections, mon cœur pour vous aimer, mon corps pour l’immoler à votre gloire."
+    },
+    {
+     "type": "rubrique",
+     "texte": "Invocations."
+    },
+    {
+     "type": "texte",
+     "texte": "Mon Jésus, miséricorde ! (cinq fois)"
+    },
+    {
+     "type": "texte",
+     "texte": "Que partout et toujours soient connus, bénis, aimés, servis et glorifiés le très saint Cœur de Jésus et le Cœur immaculé de Marie !"
+    },
+    {
+     "type": "texte",
+     "texte": "Saint Joseph, modèle et patron des amis du Sacré-Cœur de Jésus, priez pour nous."
+    },
+    {
+     "type": "rubrique",
+     "texte": "Oblation."
+    },
+    {
+     "type": "texte",
+     "texte": "℣. Seigneur Jésus, daignez agréer l’oblation de nos cœurs, en réparation de tant et de si grandes injures qui sont faites à votre Sacré-Cœur, surtout dans le sacrement de votre amour, et faites-nous la grâce de ressentir davantage les douleurs de ce divin Cœur, d’imiter ses vertus et de mériter ses faveurs. Vous qui vivez et régnez dans les siècles des siècles."
+    },
+    {
+     "type": "rubrique",
+     "texte": "Amende honorable."
+    },
+    {
+     "type": "texte",
+     "texte": "℣. Recevez, Père éternel, cette amende honorable que je vous fais, en union de celle que ce Sacré-Cœur vous fit sur le Calvaire, et de celle que Marie vous fit elle-même au pied de la Croix de son divin Fils."
+    },
+    {
+     "type": "texte",
+     "texte": "℟. Ainsi soit-il."
+    }
+   ]
+  },
+  {
+   "id": "premiere-couronne-le-sacre-c-ur-de-jesus-dans-son-incarnatio",
+   "ordre": 22,
+   "titre": "Première couronne : le Sacré-Cœur de Jésus dans son incarnation",
+   "titre_court": "Première couronne",
+   "type": "acte",
+   "partie": {
+    "numero": "Quatrième partie",
+    "titre": "Couronnes et chapelets"
+   },
+   "jour_de_semaine": null,
+   "page_livret": 24,
+   "usage": null,
+   "indulgence": null,
+   "source": null,
+   "parent": null,
+   "blocs": [
+    {
+     "type": "rubrique",
+     "texte": "Le lundi, le mercredi et le samedi."
+    },
+    {
+     "type": "intertitre",
+     "texte": "Invocation propre"
+    },
+    {
+     "type": "texte",
+     "texte": "Ô Cœur Sacré de Jésus, victime d’amour, je vous adore et je vous aime dans les mystères de votre incarnation."
+    },
+    {
+     "type": "intertitre",
+     "texte": "Mystères"
+    },
+    {
+     "type": "mystere",
+     "numero": "I.",
+     "texte": "L’oblation du Sacré-Cœur de Jésus dans le sein virginal de Marie.",
+     "fruit_libelle": "Fruit :",
+     "fruit": "offrir son cœur à Dieu dès le réveil, par le Sacré-Cœur de Jésus."
+    },
+    {
+     "type": "mystere",
+     "numero": "II.",
+     "texte": "Le Sacré-Cœur de Jésus dans son enfance.",
+     "fruit_libelle": "Fruit :",
+     "fruit": "la simplicité de cœur et l’obéissance à la sainte Église."
+    },
+    {
+     "type": "mystere",
+     "numero": "III.",
+     "texte": "Le Sacré-Cœur de Jésus dans sa vie cachée à Nazareth.",
+     "fruit_libelle": "Fruit :",
+     "fruit": "l’amour de sa condition et la fuite du monde."
+    },
+    {
+     "type": "mystere",
+     "numero": "IV.",
+     "texte": "Le Sacré-Cœur de Jésus dans sa vie apostolique.",
+     "fruit_libelle": "Fruit :",
+     "fruit": "union au Sacré-Cœur de Jésus dans son apostolat."
+    },
+    {
+     "type": "mystere",
+     "numero": "V.",
+     "texte": "Le Sacré-Cœur de Jésus dévoué aux malades et aux pécheurs.",
+     "fruit_libelle": "Fruit :",
+     "fruit": "amour de compassion aux malades, de dévouement aux pécheurs."
+    }
+   ]
+  },
+  {
+   "id": "deuxieme-couronne-le-sacre-c-ur-de-jesus-dans-sa-passion",
+   "ordre": 23,
+   "titre": "Deuxième couronne : le Sacré-Cœur de Jésus dans sa passion",
+   "titre_court": "Deuxième couronne",
+   "type": "acte",
+   "partie": {
+    "numero": "Quatrième partie",
+    "titre": "Couronnes et chapelets"
+   },
+   "jour_de_semaine": null,
+   "page_livret": 24,
+   "usage": null,
+   "indulgence": null,
+   "source": null,
+   "parent": null,
+   "blocs": [
+    {
+     "type": "rubrique",
+     "texte": "Le mardi et le vendredi."
+    },
+    {
+     "type": "intertitre",
+     "texte": "Invocation propre"
+    },
+    {
+     "type": "texte",
+     "texte": "Ô Cœur Sacré de Jésus, brisé de douleur à cause de nos péchés, immolez mon cœur à votre amour souffrant."
+    },
+    {
+     "type": "intertitre",
+     "texte": "Mystères"
+    },
+    {
+     "type": "mystere",
+     "numero": "I.",
+     "texte": "Le Sacré-Cœur de Jésus dans son agonie.",
+     "fruit_libelle": "Fruit :",
+     "fruit": "horreur et fuite du péché."
+    },
+    {
+     "type": "mystere",
+     "numero": "II.",
+     "texte": "Le Sacré-Cœur de Jésus dans ses humiliations.",
+     "fruit_libelle": "Fruit :",
+     "fruit": "douceur et patience dans les humiliations ; pardon généreux."
+    },
+    {
+     "type": "mystere",
+     "numero": "III.",
+     "texte": "Le Sacré-Cœur de Jésus dans ses souffrances extérieures.",
+     "fruit_libelle": "Fruit :",
+     "fruit": "la sanctification des souffrances par la résignation."
+    },
+    {
+     "type": "mystere",
+     "numero": "IV.",
+     "texte": "Le Sacré-Cœur de Jésus abandonné du Ciel et de la terre.",
+     "fruit_libelle": "Fruit :",
+     "fruit": "un abandon total aux bons plaisirs de Dieu."
+    },
+    {
+     "type": "mystere",
+     "numero": "V.",
+     "texte": "Le Sacré-Cœur de Jésus percé par la lance.",
+     "fruit_libelle": "Fruit :",
+     "fruit": "retraite de l’âme dans le Sacré-Cœur de Jésus."
+    }
+   ]
+  },
+  {
+   "id": "troisieme-couronne-le-sacre-c-ur-de-jesus-dans-l-eucharistie",
+   "ordre": 24,
+   "titre": "Troisième couronne : le Sacré-Cœur de Jésus dans l’Eucharistie",
+   "titre_court": "Troisième couronne",
+   "type": "acte",
+   "partie": {
+    "numero": "Quatrième partie",
+    "titre": "Couronnes et chapelets"
+   },
+   "jour_de_semaine": null,
+   "page_livret": 25,
+   "usage": null,
+   "indulgence": null,
+   "source": null,
+   "parent": null,
+   "blocs": [
+    {
+     "type": "rubrique",
+     "texte": "Le jeudi et le dimanche."
+    },
+    {
+     "type": "intertitre",
+     "texte": "Invocation propre"
+    },
+    {
+     "type": "texte",
+     "texte": "Ô Cœur Sacré de Jésus, Cœur aimable et toujours aimant, vivant d’amour pour nous dans la sainte Eucharistie, que je ne vive plus que pour vous aimer !"
+    },
+    {
+     "type": "intertitre",
+     "texte": "Mystères"
+    },
+    {
+     "type": "mystere",
+     "numero": "I.",
+     "texte": "Vie d’amour.",
+     "fruit_libelle": "Fruit :",
+     "fruit": "fidélité à visiter le Sacré-Cœur de Jésus au saint Sacrement et à assister, autant que possible, au saint sacrifice de la messe."
+    },
+    {
+     "type": "mystere",
+     "numero": "II.",
+     "texte": "Vie de silence et de prière.",
+     "fruit_libelle": "Fruit :",
+     "fruit": "le recueillement de l’âme dans le sein du Sacré-Cœur au milieu du monde."
+    },
+    {
+     "type": "mystere",
+     "numero": "III.",
+     "texte": "Vie de sacrifice.",
+     "fruit_libelle": "Fruit :",
+     "fruit": "le sacrifice pour Dieu et pour ses frères, à l’exemple du Sacré-Cœur de Jésus."
+    },
+    {
+     "type": "mystere",
+     "numero": "IV.",
+     "texte": "Vie outragée par les méchants.",
+     "fruit_libelle": "Fruit :",
+     "fruit": "faire chaque jour, au moins le vendredi, amende honorable au Sacré-Cœur de Jésus."
+    },
+    {
+     "type": "mystere",
+     "numero": "V.",
+     "texte": "Vie d’actions de grâces.",
+     "fruit_libelle": "Fruit :",
+     "fruit": "offrir sa reconnaissance au Cœur de Jésus par les saints Cœurs de Marie et de Joseph."
+    }
+   ]
+  },
+  {
+   "id": "offrandes-de-la-garde-d-honneur",
+   "ordre": 25,
+   "titre": "Offrandes de la Garde d’honneur",
+   "titre_court": null,
+   "type": "acte",
+   "partie": {
+    "numero": "Quatrième partie",
+    "titre": "Couronnes et chapelets"
+   },
+   "jour_de_semaine": null,
+   "page_livret": 26,
+   "usage": "quot., à son heure de garde ; surtout le ven.",
+   "indulgence": "80 j. Pie IX, 13 juin 1876. — 100 j. Pie IX, 13 juin 1876.",
+   "source": "Livret de la Garde d’honneur du Sacré-Cœur",
+   "parent": null,
+   "blocs": [
+    {
+     "type": "rubrique",
+     "texte": "À l’heure de garde que l’on a choisie, au Cœur de Jésus transpercé."
+    },
+    {
+     "type": "intertitre",
+     "texte": "Offrande de l’heure de garde"
+    },
+    {
+     "type": "texte",
+     "texte": "Divin Jésus, mon très doux Sauveur, je vous offre cette heure de garde pendant laquelle, en union avec *(on nomme les saints patrons de l’heure choisie)*, je désire tout particulièrement vous aimer, vous glorifier et surtout consoler votre adorable Cœur par mon amour. Acceptez à cette intention mes pensées, mes paroles, mes actions et mes peines ; recevez surtout mon cœur que je vous donne sans réserve, vous suppliant de le consumer du feu de votre pur amour."
+    },
+    {
+     "type": "invocation",
+     "texte": "Notre-Dame du Sacré-Cœur, protégez la Garde d’honneur.\nAimé soit partout le Sacré-Cœur de Jésus."
+    },
+    {
+     "type": "intertitre",
+     "texte": "Offrande du Sang et de l’Eau"
+    },
+    {
+     "type": "texte",
+     "texte": "Père saint, recevez en sacrifice de propitiation pour les besoins de l’Église, et en réparation des péchés des hommes, le très précieux Sang et l’Eau sortis de la blessure du divin Cœur de Jésus, et faites-nous miséricorde. Ainsi soit-il."
+    },
+    {
+     "type": "texte",
+     "texte": "Jésus, mon très aimant et très doux Sauveur, permettez que je vous offre, et que j’offre par vous au Père éternel, le très précieux Sang et l’Eau sortis de la blessure faite à votre divin Cœur sur l’arbre de la Croix. Daignez appliquer efficacement ce Sang et cette Eau à toutes les âmes, en particulier à celles des pauvres pécheurs et à la mienne. Purifiez, régénérez, sauvez tous les hommes par le secours de vos mérites ; enfin accordez-nous, ô Jésus, d’entrer dans votre Cœur très aimant et d’y habiter pour jamais. Ainsi soit-il."
+    },
+    {
+     "type": "intertitre",
+     "texte": "À Marie au pied de la Croix"
+    },
+    {
+     "type": "texte",
+     "texte": "Ô Marie, la plus tendre et la plus désolée des mères, par la douleur incomparable que vous éprouvâtes au pied de la Croix, lorsque vous vîtes le soldat s’approcher du corps adorable de votre divin Fils et le transpercer d’outre en outre, daignez, nous vous en supplions, obtenir aux pauvres pécheurs, dont vous êtes l’avocate et la Mère, l’application efficace du Sang et de l’Eau qui jaillirent alors du Cœur sacré de Jésus."
+    },
+    {
+     "type": "texte",
+     "texte": "Nouvelle Ève, qui avez été pour le monde perdu dès sa naissance l’aurore du salut, daignez nous annoncer, nous mériter encore des jours de miséricorde et de pardon, en inspirant aux hommes une tendre et générale dévotion envers le Cœur de votre divin Fils, en propageant vous-même le culte de réparation de sa Garde d’honneur. Ô Vierge bénie, Vierge médiatrice et réparatrice, tout notre espoir est en vous. Daignez nous découvrir l’intérieur du Cœur de Jésus, nous rendre, à son exemple, profondément humbles, et nous donner, s’il vous plaît, votre bénédiction. Ainsi soit-il."
+    },
+    {
+     "type": "intertitre",
+     "texte": "Acte de suprême confiance"
+    },
+    {
+     "type": "texte",
+     "texte": "C’est dans votre Cœur sacré, ô mon Jésus, que je veux vivre ; c’est là que je veux mourir. C’est dans cet abîme de miséricorde que je jette toutes mes misères. Quelque grands que soient mes péchés, je sais que votre Cœur est disposé à me les pardonner, dès que je suis résolu de les quitter. Oui, Seigneur, à cause de votre saint Nom, nom de Sauveur et de Père, vous me pardonnerez mon péché, parce qu’il est grand ; et plus il est grand, plus vous ferez éclater, en me le pardonnant, la grandeur de vos miséricordes. Soyez donc favorable à un pécheur tel que je le suis, à un pécheur qui ne veut plus l’être ; et faites qu’il vous aime encore plus qu’il ne vous craint, en pensant que vous pouviez le perdre, et que vous voulez le sauver. Ainsi soit-il."
+    },
+    {
+     "type": "invocation",
+     "texte": "Miséricorde incarnée dans le Sacré-Cœur de Jésus, couvrez le monde, répandez-vous sur nous."
+    }
+   ]
+  },
+  {
+   "id": "chapelet-de-saint-michel-archange",
+   "ordre": 26,
+   "titre": "Chapelet de saint Michel Archange",
+   "titre_court": null,
+   "type": "acte",
+   "partie": {
+    "numero": "Quatrième partie",
+    "titre": "Couronnes et chapelets"
+   },
+   "jour_de_semaine": null,
+   "page_livret": 28,
+   "usage": "mar., jour des saints Anges ; 8 mai, 29 sept. ; avant la communion",
+   "indulgence": "7 ans et 7 quarantaines, chaque fois ; plénière une fois le mois et aux fêtes des saints Anges, avec un chapelet bénit. Pie IX, 8 août 1851. — Pour la prière de Léon XIII *Saint Michel Archange, défendez-nous dans le combat* : 3 ans ; plénière, aux conditions ordinaires, si elle est dite chaque jour pendant un mois (S. Pénit., 12 nov. 1932 ; Ench. 1952).",
+   "source": "Raccolta, 1910",
+   "parent": null,
+   "blocs": [
+    {
+     "type": "rubrique",
+     "texte": "Le chapelet de saint Michel Archange, ou chapelet des Anges, se prie sur un chapelet spécial de trente-neuf grains ; les neuf groupes de grains représentent les neuf chœurs des Anges."
+    },
+    {
+     "type": "rubrique",
+     "texte": "Sur la médaille et les quatre premiers grains :"
+    },
+    {
+     "type": "texte",
+     "texte": "Saint Michel Archange, grand prince des milices célestes, défendez-nous dans le combat pour que nous ne périssions pas au jour du Jugement."
+    },
+    {
+     "type": "verset",
+     "v": "Ô Dieu, venez à mon aide.",
+     "r": "Seigneur, hâtez-vous de me secourir."
+    },
+    {
+     "type": "rubrique",
+     "texte": "Puis : un Pater en l’honneur de saint Michel ; un Pater en l’honneur de saint Gabriel ; un Pater en l’honneur de saint Raphaël ; un Pater en l’honneur de notre Ange gardien."
+    },
+    {
+     "type": "rubrique",
+     "texte": "Sur chacun des neuf groupes, la salutation, puis un Pater et trois Ave."
+    },
+    {
+     "type": "numero",
+     "numero": "1",
+     "texte": "Par l’intercession de saint Michel et du chœur céleste des Séraphins, que le Seigneur nous rende dignes de brûler du feu de la charité parfaite. Amen."
+    },
+    {
+     "type": "numero",
+     "numero": "2",
+     "texte": "Par l’intercession de saint Michel et du chœur céleste des Chérubins, que le Seigneur nous fasse la grâce d’abandonner la voie du péché et de courir dans celle de la perfection chrétienne. Amen."
+    },
+    {
+     "type": "numero",
+     "numero": "3",
+     "texte": "Par l’intercession de saint Michel et du chœur céleste des Trônes, que le Seigneur insuffle dans nos cœurs un véritable et sincère esprit d’humilité. Amen."
+    },
+    {
+     "type": "numero",
+     "numero": "4",
+     "texte": "Par l’intercession de saint Michel et du chœur céleste des Dominations, que le Seigneur nous donne la grâce de dominer nos sens et de soumettre nos passions indisciplinées. Amen."
+    },
+    {
+     "type": "numero",
+     "numero": "5",
+     "texte": "Par l’intercession de saint Michel et du chœur céleste des Puissances, que le Seigneur daigne protéger nos âmes contre les embûches et les tentations du démon. Amen."
+    },
+    {
+     "type": "numero",
+     "numero": "6",
+     "texte": "Par l’intercession de saint Michel et du chœur admirable des Vertus célestes, que le Seigneur nous préserve du mal et nous préserve de la tentation. Amen."
+    },
+    {
+     "type": "numero",
+     "numero": "7",
+     "texte": "Par l’intercession de saint Michel et du chœur céleste des Principautés, que Dieu remplisse nos âmes d’un véritable esprit d’obéissance. Amen."
+    },
+    {
+     "type": "numero",
+     "numero": "8",
+     "texte": "Par l’intercession de saint Michel et du chœur céleste des Archanges, que le Seigneur nous donne la persévérance dans la foi et dans toutes les bonnes œuvres, afin que nous gagnions la gloire du paradis. Amen."
+    },
+    {
+     "type": "numero",
+     "numero": "9",
+     "texte": "Par l’intercession de saint Michel et du chœur céleste de tous les Anges, que le Seigneur nous accorde d’être protégés par eux dans cette vie mortelle et conduits ensuite à la gloire éternelle. Amen."
+    },
+    {
+     "type": "intertitre",
+     "texte": "Antienne"
+    },
+    {
+     "type": "texte",
+     "texte": "Très glorieux saint Michel, chef et prince des armées célestes, gardien fidèle des âmes, vainqueur des esprits rebelles, favori de la maison de Dieu, notre admirable guide après Jésus-Christ, vous dont l’excellence et la vertu sont suréminentes : daignez nous délivrer de tous les maux, nous tous qui recourons à vous avec confiance, et faites, par votre incomparable protection, que nous avancions chaque jour dans la fidélité à servir Dieu."
+    },
+    {
+     "type": "verset",
+     "v": "Priez pour nous, ô bienheureux saint Michel, prince de l’Église de Jésus-Christ.",
+     "r": "Afin que nous puissions être rendus dignes de ses promesses."
+    },
+    {
+     "type": "intertitre",
+     "texte": "Oraison"
+    },
+    {
+     "type": "texte",
+     "texte": "Dieu tout-puissant et éternel, qui, par un prodige de bonté et de miséricorde pour le salut commun des hommes, avez choisi pour prince de votre Église le très glorieux archange saint Michel, rendez-nous dignes, nous vous en prions, d’être délivrés, par sa bienveillante protection, de tous nos ennemis, afin qu’à notre mort aucun d’eux ne puisse nous inquiéter, mais qu’il nous soit donné d’être introduits par lui en présence de votre puissante et auguste majesté. Par les mérites de Jésus-Christ Notre-Seigneur. Ainsi soit-il."
+    },
+    {
+     "type": "intertitre",
+     "texte": "Prière à saint Michel Archange"
+    },
+    {
+     "type": "rubrique",
+     "texte": "Du pape Léon XIII."
+    },
+    {
+     "type": "texte",
+     "texte": "Saint Michel Archange, défendez-nous dans le combat ; soyez notre secours contre la malice et les embûches du démon. Que Dieu lui commande, nous vous en supplions ; et vous, Prince de la milice céleste, repoussez en enfer, par la force divine, Satan et les autres esprits mauvais qui rôdent dans le monde pour la perte des âmes. Ainsi soit-il."
+    },
+    {
+     "type": "intertitre",
+     "texte": "Promesses"
+    },
+    {
+     "type": "notice",
+     "texte": "Saint Michel, apparaissant en 1751 à la servante de Dieu Antonia d’Astonaco, carmélite portugaise, lui demanda d’être honoré par neuf salutations, un Pater et trois Ave en union avec chacun des neuf chœurs des Anges. Il promit à quiconque pratiquerait cette dévotion avant la sainte communion d’être accompagné à la sainte Table par un Ange de chacun des neuf chœurs ; et à ceux qui la réciteraient chaque jour, son assistance continuelle et celle des saints Anges durant la vie, et, après la mort, la délivrance du purgatoire pour eux et pour leurs proches."
+    }
+   ]
+  },
+  {
+   "id": "chapelet-des-saintes-plaies",
+   "ordre": 27,
+   "titre": "Chapelet des saintes Plaies",
+   "titre_court": null,
+   "type": "acte",
+   "partie": {
+    "numero": "Quatrième partie",
+    "titre": "Couronnes et chapelets"
+   },
+   "jour_de_semaine": null,
+   "page_livret": 31,
+   "usage": "ven. ; quot. pour les âmes du purgatoire",
+   "indulgence": null,
+   "source": null,
+   "parent": null,
+   "blocs": [
+    {
+     "type": "rubrique",
+     "texte": "Dévotion enseignée par Notre-Seigneur à la sœur Marie-Marthe Chambon († 1907), religieuse de la Visitation de Chambéry. Il se dit sur un chapelet ordinaire."
+    },
+    {
+     "type": "intertitre",
+     "texte": "Sur les gros grains"
+    },
+    {
+     "type": "texte",
+     "texte": "Père éternel, je vous offre les Plaies de Notre-Seigneur Jésus-Christ, pour guérir celles de nos âmes."
+    },
+    {
+     "type": "intertitre",
+     "texte": "Sur les petits grains"
+    },
+    {
+     "type": "texte",
+     "texte": "Mon Jésus, pardon et miséricorde, par les mérites de vos saintes Plaies."
+    },
+    {
+     "type": "rubrique",
+     "texte": "À la fin, on répète trois fois l’invocation des gros grains."
+    }
+   ]
+  },
+  {
+   "id": "les-sept-douleurs-de-marie",
+   "ordre": 28,
+   "titre": "Les sept Douleurs de Marie",
+   "titre_court": null,
+   "type": "acte",
+   "partie": {
+    "numero": "Quatrième partie",
+    "titre": "Couronnes et chapelets"
+   },
+   "jour_de_semaine": null,
+   "page_livret": 32,
+   "usage": "ven. et sam. ; quot. en septembre ; vendredi de la Passion et 15 sept.",
+   "indulgence": "5 ans ; 7 ans chaque jour de septembre. — Plénière, aux conditions ordinaires, pour la récitation quotidienne pendant un mois. Pie VII, 14 janv. 1815 ; S. Pénit., 1935 et 1941. — Ench. 1952, no 383. — L’invocation *Virgo dolorosissima, ora pro nobis* : 300 j. (no 377). — Sept vendredis avant l’une des deux fêtes des Douleurs, sept Pater, Ave et Gloria : 7 ans et plénière (no 382). — Le chapelet des Servites, bénit, a en outre ses indulgences propres.",
+   "source": "Texte français : Beringer, Les Indulgences, t. I, 1905, no 138 ; offrande : Confrérie Marie Corédemptrice — Confrérie Marie Corédemptrice, paroisse Saint-Eugène–Sainte-Cécile",
+   "parent": null,
+   "blocs": [
+    {
+     "type": "rubrique",
+     "texte": "Exercice indulgencié en l’honneur du Cœur affligé de Marie. Il peut se dire seul, un Ave après chaque douleur, ou servir de méditation au chapelet des sept Douleurs : sur chaque septaine, la prière de la douleur, un Pater et sept Ave ; à la fin, trois Ave en l’honneur des larmes de Notre-Dame."
+    },
+    {
+     "type": "texte",
+     "texte": "*Mon Dieu, je vous offre ce chapelet en l’honneur des sept principales douleurs de la très sainte Vierge Marie, Corédemptrice, pour votre plus grande gloire, pour ma conversion et celle de tous les hommes à votre Fils bien-aimé, Jésus-Christ, notre unique Rédempteur et notre unique voie pour venir à vous, en union avec le Saint-Esprit, pour les siècles des siècles. Ainsi soit-il.* (offrande du chapelet)"
+    },
+    {
+     "type": "verset",
+     "v": "Ô Dieu, venez à mon aide.",
+     "r": "Hâtez-vous, Seigneur, de me secourir."
+    },
+    {
+     "type": "texte",
+     "texte": "Gloire au Père, etc."
+    },
+    {
+     "type": "numero",
+     "numero": "I.",
+     "texte": "Je m’afflige avec vous, ô Marie, Mère de douleurs, pour la peine que ressentit votre tendre cœur à la prophétie du saint vieillard Siméon. Mère chérie, par votre cœur si affligé, obtenez-moi la vertu d’humilité et le don salutaire de la crainte de Dieu."
+    },
+    {
+     "type": "numero",
+     "numero": "II.",
+     "texte": "Je m’afflige avec vous, ô Marie, Mère de douleurs, pour les angoisses que votre cœur très sensible ressentit dans votre fuite et votre séjour en Égypte. Mère chérie, par votre cœur rempli de tristesse, obtenez-moi la vertu de libéralité, particulièrement envers les pauvres, et le don de piété."
+    },
+    {
+     "type": "numero",
+     "numero": "III.",
+     "texte": "Je m’afflige avec vous, ô Marie, Mère de douleurs, pour la tristesse et l’inquiétude que votre cœur a éprouvées à la perte de votre bien-aimé Jésus. Mère chérie, par votre cœur si vivement agité, obtenez-moi la vertu de chasteté et le don de la science."
+    },
+    {
+     "type": "numero",
+     "numero": "IV.",
+     "texte": "Je m’afflige avec vous, ô Marie, Mère de douleurs, pour la consternation qui frappa votre cœur maternel dans la rencontre de Jésus portant sa croix. Mère chérie, par votre cœur si cruellement éprouvé, obtenez-moi la vertu de patience et le don de force."
+    },
+    {
+     "type": "numero",
+     "numero": "V.",
+     "texte": "Je m’afflige avec vous, ô Marie, Mère de douleurs, pour le martyre que souffrit votre cœur généreux en assistant à l’agonie de Jésus. Mère chérie, par votre cœur ainsi martyrisé, obtenez-moi la vertu de tempérance et le don de conseil."
+    },
+    {
+     "type": "numero",
+     "numero": "VI.",
+     "texte": "Je m’afflige avec vous, ô Marie, Mère de douleurs, pour la blessure que fit à votre cœur compatissant la lance qui ouvrit le côté de Jésus et blessa son très aimable cœur. Mère chérie, par votre cœur ainsi transpercé, obtenez-moi la vertu de charité fraternelle et le don d’intelligence."
+    },
+    {
+     "type": "numero",
+     "numero": "VII.",
+     "texte": "Je m’afflige avec vous, ô Marie, Mère de douleurs, pour les souffrances excessives qu’endura votre cœur très aimant lors de la sépulture de Jésus. Mère chérie, par votre cœur sacré, abreuvé d’amertumes, obtenez-moi la vertu de diligence et le don de sagesse."
+    },
+    {
+     "type": "rubrique",
+     "texte": "Après chaque douleur, un Ave Maria (au chapelet : un Pater et sept Ave)."
+    },
+    {
+     "type": "verset",
+     "v": "Priez pour nous, Vierge très affligée.",
+     "r": "Afin que nous devenions dignes des promesses de Jésus-Christ."
+    },
+    {
+     "type": "rubrique",
+     "texte": "Prions."
+    },
+    {
+     "type": "texte",
+     "texte": "Nous vous en supplions, ô Seigneur Jésus-Christ, que la bienheureuse Vierge Marie, votre Mère, dont l’âme très sainte a été percée d’un glaive de douleur pendant votre passion, intercède pour nous auprès de votre clémence, maintenant et à l’heure de notre mort. Par vous, Jésus-Christ, Sauveur du monde, qui vivez et régnez avec le Père et le Saint-Esprit dans les siècles des siècles. Ainsi soit-il."
+    },
+    {
+     "type": "intertitre",
+     "texte": "Les sept grâces promises"
+    },
+    {
+     "type": "notice",
+     "texte": "Selon les révélations de sainte Brigitte de Suède, la très sainte Vierge promet sept grâces à ceux qui l’honorent chaque jour en méditant ses douleurs : i. « J’accorderai la paix à leurs familles. » ii. « Ils seront éclairés sur les mystères divins. » iii. « Je les consolerai dans leurs douleurs et les accompagnerai dans leur travail. » iv. « Je leur donnerai tout ce qu’ils demanderont tant qu’ils ne s’opposeront pas à la volonté adorable de mon divin Fils ou à la sanctification de leurs âmes. » v. « Je les défendrai dans leurs batailles spirituelles avec l’ennemi infernal, et je les protégerai à chaque instant de leur vie. » vi. « Je les aiderai visiblement au moment de leur mort ; ils verront le visage de leur Mère. » vii. « J’ai obtenu cette grâce de mon divin Fils, afin que ceux qui répandent cette dévotion à mes larmes et à mes peines soient emmenés directement de cette vie terrestre au bonheur éternel, puisque tous leurs péchés seront pardonnés et que mon Fils sera leur consolation éternelle et leur joie. »"
+    }
+   ]
+  },
+  {
+   "id": "les-sept-douleurs-et-les-sept-allegresses-de-saint-joseph",
+   "ordre": 29,
+   "titre": "Les sept Douleurs et les sept Allégresses de saint Joseph",
+   "titre_court": null,
+   "type": "acte",
+   "partie": {
+    "numero": "Quatrième partie",
+    "titre": "Couronnes et chapelets"
+   },
+   "jour_de_semaine": null,
+   "page_livret": 34,
+   "usage": "mer. ; les sept dim. avant le 19 mars ; mois de mars",
+   "indulgence": "5 ans. — Plénière, aux conditions ordinaires, si ces prières sont dites chaque jour pendant un mois. Pie VII, 9 déc. 1819 ; S. Pénit., 12 mai 1932. — Ench. 1952, no 410. — Sept dimanches consécutifs (ces prières, ou sept Pater et Ave) : 5 ans et plénière chacun (Raccolta 1943, no 427). — Premier mercredi du mois : 5 ans et plénière (*ibid.*, no 430).",
+   "source": "Beringer, Les Indulgences, t. I, 1905, no 155",
+   "parent": null,
+   "blocs": [
+    {
+     "type": "rubrique",
+     "texte": "Exercice attribué au vénérable Janvier Sarnelli († 1744), disciple de saint Alphonse. Après chaque douleur et allégresse, un Pater, un Ave et un Gloria. On le fait en particulier les sept dimanches qui précèdent la fête de saint Joseph, et chaque mercredi."
+    },
+    {
+     "type": "numero",
+     "numero": "I",
+     "texte": "Ô très chaste époux de Marie, glorieux saint Joseph, quelles ne furent pas l’affliction et l’angoisse de votre cœur, dans la perplexité où vous étiez de savoir s’il fallait abandonner votre épouse sans tache ! Mais aussi quelle ne fut pas votre allégresse, quand l’ange vous révéla le grand mystère de l’Incarnation ! Nous vous prions, par cette douleur et par cette allégresse, de consoler notre cœur à présent et dans nos dernières douleurs, par la joie d’une bonne vie et d’une sainte mort, semblable à la vôtre, entre Jésus et Marie."
+    },
+    {
+     "type": "numero",
+     "numero": "II",
+     "texte": "Ô bienheureux patriarche, glorieux saint Joseph, choisi pour être le père putatif du Verbe fait homme, la douleur que vous avez ressentie en voyant naître l’Enfant Jésus dans une grande pauvreté se changea subitement en une joie céleste, devant l’harmonie des concerts angéliques et la contemplation des merveilles de cette nuit resplendissante. Nous vous supplions, par cette douleur et par cette allégresse, de nous obtenir, après cette vie, d’aller entendre les louanges angéliques et jouir des splendeurs de la gloire céleste."
+    },
+    {
+     "type": "numero",
+     "numero": "III",
+     "texte": "Ô très obéissant observateur des lois divines, glorieux saint Joseph, le sang précieux que le Rédempteur enfant versa dans la circoncision vous transperça le cœur ; mais le nom de Jésus qu’il reçut alors vous rendit la vie, en vous comblant de joie. Obtenez-nous, par cette douleur et par cette allégresse, de vivre éloignés de tout péché, afin d’expirer joyeux avec le très saint nom de Jésus dans le cœur et sur les lèvres."
+    },
+    {
+     "type": "numero",
+     "numero": "IV",
+     "texte": "Ô saint très fidèle, le confident des mystères de notre Rédemption, glorieux saint Joseph, si la prophétie de Siméon, concernant les souffrances que devaient endurer Jésus et Marie, vous occasionna une douleur mortelle, elle vous combla aussi de joie, en annonçant en même temps le salut et la glorieuse résurrection qui devaient en résulter pour un grand nombre d’âmes. Obtenez-nous, par cette douleur et par cette allégresse, d’être du nombre de ceux qui, en considération des mérites de Jésus et de l’intercession de la bienheureuse Vierge Marie, doivent ressusciter glorieusement."
+    },
+    {
+     "type": "numero",
+     "numero": "V",
+     "texte": "Ô gardien très vigilant, ami intime du Fils de Dieu incarné, glorieux saint Joseph, combien n’avez-vous pas souffert pour nourrir et servir le Fils du Très-Haut, particulièrement dans votre fuite en Égypte ! mais aussi quelle ne fut point votre joie d’avoir toujours ce Dieu avec vous et de voir renversées les idoles d’Égypte ! Obtenez-nous, par cette douleur et par cette allégresse, d’éloigner à jamais de nous le tyran des enfers, surtout par la fuite des occasions dangereuses, et de renverser dans notre cœur toute idole des affections terrestres, afin qu’entièrement occupés à servir Jésus et Marie, nous ayons le bonheur de vivre et de mourir uniquement pour eux."
+    },
+    {
+     "type": "numero",
+     "numero": "VI",
+     "texte": "Ange de la terre, glorieux saint Joseph, qui avez pu admirer, soumis à vos moindres volontés, le Roi du ciel ; si la joie de le ramener d’Égypte fut troublée par la crainte d’Archélaüs, bientôt rassuré par l’ange vous fûtes heureux de demeurer à Nazareth, avec Jésus et Marie. Obtenez-nous, par cette douleur et par cette allégresse, d’écarter de notre cœur toute crainte nuisible, de posséder la paix de la conscience, de vivre contents avec Jésus et Marie, et de mourir aussi avec eux."
+    },
+    {
+     "type": "numero",
+     "numero": "VII",
+     "texte": "Ô modèle de toute sainteté, glorieux saint Joseph, ayant perdu sans votre faute l’Enfant Jésus, vous l’avez cherché pendant trois jours plongé dans une douleur profonde, jusqu’au moment où, plein de joie, vous avez retrouvé dans le temple, au milieu des docteurs, celui qui était votre vie. Par cette douleur et par cette allégresse, nous vous supplions, de cœur et de bouche, d’intercéder en notre faveur, afin qu’il ne nous arrive jamais de perdre Jésus par quelque faute grave. Si nous avions cet immense malheur, faites que nous le cherchions avec une douleur qui ne nous laisse pas de repos jusqu’à ce que nous le retrouvions favorable, surtout à notre mort, afin d’aller le posséder au ciel, et d’y chanter éternellement avec vous ses divines miséricordes."
+    },
+    {
+     "type": "rubrique",
+     "texte": "Antienne."
+    },
+    {
+     "type": "texte",
+     "texte": "Jésus avait environ trente ans, et passait pour être fils de Joseph."
+    },
+    {
+     "type": "verset",
+     "v": "Priez pour nous, saint Joseph.",
+     "r": "Afin que nous devenions dignes des promesses de Jésus-Christ."
+    },
+    {
+     "type": "rubrique",
+     "texte": "Prions."
+    },
+    {
+     "type": "texte",
+     "texte": "Ô Dieu, qui par une providence admirable avez daigné choisir le bienheureux Joseph pour être l’époux de votre très sainte Mère, faites, nous vous en supplions, que, le vénérant sur la terre comme notre protecteur, nous méritions de l’avoir pour intercesseur dans les cieux. Vous qui vivez et régnez dans les siècles des siècles. Ainsi soit-il."
+    }
+   ]
+  },
+  {
+   "id": "les-treize-mardis-de-saint-antoine",
+   "ordre": 30,
+   "titre": "Les treize mardis de saint Antoine",
+   "titre_court": null,
+   "type": "acte",
+   "partie": {
+    "numero": "Quatrième partie",
+    "titre": "Couronnes et chapelets"
+   },
+   "jour_de_semaine": null,
+   "page_livret": 37,
+   "usage": "mar. ; treize de suite, à toute époque, ou avant le 13 juin",
+   "indulgence": "Répons, avec ℣ et oraison : 300 j. une fois le jour ; plénière, aux conditions ordinaires, s’il est dit chaque jour pendant un mois. S. C. des Indulgences, 25 janv. 1866 ; S. Pénit., 30 janv. 1936. — Treize mardis (ou dimanches) consécutifs, avec méditation ou prières en l’honneur du saint : plénière, aux conditions ordinaires. Bref du 1er mars 1898. — Ench. 1952.",
+   "source": "Beringer, Les Indulgences, t. I, 1905, nos 163 et 288",
+   "parent": null,
+   "blocs": [
+    {
+     "type": "rubrique",
+     "texte": "Treize mardis (ou dimanches) consécutifs, avec confession, communion et quelque méditation ou prière en l’honneur de saint Antoine de Padoue, en particulier ce répons attribué à saint Bonaventure."
+    },
+    {
+     "type": "strophe",
+     "la": "Si quæris miracula, mors, error, calamitas, dæmon, lepra fugiunt, ægri surgunt sani.",
+     "fr": "Vous cherchez des miracles ? La mort, l’erreur, les calamités, la lèpre, le démon prennent la fuite, les malades recouvrent la santé."
+    },
+    {
+     "type": "strophe",
+     "la": "℟. Cedunt mare, vincula ; membra resque perditas petunt et accipiunt juvenes et cani.",
+     "fr": "La mer obéit, les chaînes se brisent ; vieillards et jeunes gens demandent et recouvrent l’usage de leurs membres et les objets dont ils regrettaient la perte."
+    },
+    {
+     "type": "strophe",
+     "la": "Pereunt pericula, cessat et necessitas ; narrent hi qui sentiunt, dicant Paduani. ℟. Cedunt mare…",
+     "fr": "Les dangers disparaissent, la nécessité n’existe plus ; racontez-le, vous qui l’avez éprouvé ; parlez, habitants de Padoue. ℟. La mer obéit…"
+    },
+    {
+     "type": "strophe",
+     "la": "Gloria Patri, et Filio, et Spiritui Sancto. ℟. Cedunt mare…",
+     "fr": "Gloire au Père et au Fils et au Saint-Esprit. ℟. La mer obéit…"
+    },
+    {
+     "type": "verset",
+     "v": "*Ora pro nobis, beate Antoni.*",
+     "r": "*Ut digni efficiamur promissionibus Christi.*"
+    },
+    {
+     "type": "texte",
+     "texte": "*Oremus. Ecclesiam tuam, Deus, beati Antonii, Confessoris tui, commemoratio votiva lætificet, ut spiritualibus semper muniatur auxiliis, et gaudiis perfrui mereatur æternis. Per Christum Dominum nostrum. Amen.*"
+    },
+    {
+     "type": "traduction",
+     "texte": "Prions. Que la pieuse commémoration du bienheureux Antoine, votre confesseur, ô mon Dieu, réjouisse votre Église, afin qu’elle soit constamment munie de secours spirituels, et qu’elle mérite de posséder un bonheur sans fin. Par Jésus-Christ Notre-Seigneur. Ainsi soit-il."
+    }
+   ]
+  },
+  {
+   "id": "les-quinze-mardis-de-saint-dominique",
+   "ordre": 31,
+   "titre": "Les quinze mardis de saint Dominique",
+   "titre_court": null,
+   "type": "acte",
+   "partie": {
+    "numero": "Quatrième partie",
+    "titre": "Couronnes et chapelets"
+   },
+   "jour_de_semaine": null,
+   "page_livret": 38,
+   "usage": "mar. ; quinze de suite, à toute époque, ou avant le 4 août",
+   "indulgence": "Quinze mardis consécutifs, avec méditation ou prières en l’honneur du saint : plénière, aux conditions ordinaires, chacun. S. C. du Saint-Office, 6 mai et 25 nov. 1915 ; S. Pénit., 20 mai 1935. — Ench. 1952, no 541.",
+   "source": "Processionnal des Frères Prêcheurs, 1913 — Oraison : Beringer, Les Indulgences, t. I, 1905, no 167",
+   "parent": null,
+   "blocs": [
+    {
+     "type": "rubrique",
+     "texte": "Quinze mardis consécutifs en l’honneur de saint Dominique et des quinze mystères du Rosaire : confession, communion, chapelet médité. On y chante le répons dominicain de la Translation du saint."
+    },
+    {
+     "type": "strophe",
+     "la": "O spem miram quam dedisti mortis hora te flentibus, dum post mortem promisisti te profuturum fratribus :",
+     "fr": "Ô merveilleuse espérance que vous avez donnée, à l’heure de votre mort, à ceux qui vous pleuraient, quand vous avez promis d’être, après votre mort, utile à vos frères :"
+    },
+    {
+     "type": "strophe",
+     "la": "℟. Imple, Pater, quod dixisti, nos tuis juvans precibus.",
+     "fr": "Accomplissez, ô Père, ce que vous avez dit, en nous aidant de vos prières."
+    },
+    {
+     "type": "strophe",
+     "la": "Qui tot signis claruisti in ægrorum corporibus, nobis opem ferens Christi ægris medere moribus. ℟. Imple…",
+     "fr": "Vous qui avez brillé par tant de miracles sur le corps des malades, apportez-nous le secours du Christ et guérissez nos âmes malades. ℟. Accomplissez…"
+    },
+    {
+     "type": "strophe",
+     "la": "Gloria Patri, et Filio, et Spiritui Sancto. ℟. Imple…",
+     "fr": "Gloire au Père, au Fils et au Saint-Esprit. ℟. Accomplissez…"
+    },
+    {
+     "type": "verset",
+     "v": "Priez pour nous, saint Dominique.",
+     "r": "Afin que nous soyons dignes des promesses de Jésus-Christ."
+    },
+    {
+     "type": "texte",
+     "texte": "*Oremus. Concede, quæsumus, omnipotens Deus, ut qui peccatorum nostrorum pondere premimur, beati Dominici confessoris tui patrocinio sublevemur. Per Christum Dominum nostrum. Amen.*"
+    },
+    {
+     "type": "traduction",
+     "texte": "Prions. Dieu tout-puissant, faites, nous vous en supplions, que la protection du bienheureux Dominique, votre confesseur, nous relève, nous qui sommes oppressés sous le poids de nos péchés. Par Jésus-Christ Notre-Seigneur. Ainsi soit-il."
+    }
+   ]
+  },
+  {
+   "id": "la-fleche-d-or",
+   "ordre": 32,
+   "titre": "La Flèche d’or",
+   "titre_court": null,
+   "type": "acte",
+   "partie": {
+    "numero": "Cinquième partie",
+    "titre": "Prières de réparation"
+   },
+   "jour_de_semaine": null,
+   "page_livret": 39,
+   "usage": "quot., trois fois ; dim., jour du Seigneur, et chaque fois qu’on entend un blasphème",
+   "indulgence": null,
+   "source": "Dévotion à la Sainte Face de Notre-Seigneur Jésus-Christ, 1887",
+   "parent": null,
+   "blocs": [
+    {
+     "type": "rubrique",
+     "texte": "Acte de louange pour la réparation des blasphèmes du saint Nom de Dieu, dictée par Notre-Seigneur à la sœur Marie de Saint-Pierre."
+    },
+    {
+     "type": "texte",
+     "texte": "Qu’à jamais soit loué, béni, aimé, adoré, glorifié le très saint, très sacré, très adorable, très inconnu, très inexprimable Nom de Dieu, au ciel, sur la terre et dans les enfers, par toutes les créatures sorties des mains de Dieu et par le Sacré-Cœur de Notre-Seigneur Jésus-Christ au très saint Sacrement de l’autel !"
+    },
+    {
+     "type": "conclusion",
+     "texte": "Ainsi soit-il."
+    },
+    {
+     "type": "rubrique",
+     "texte": "On dira trois fois cet acte de louange en l’honneur des trois personnes de la sainte Trinité."
+    },
+    {
+     "type": "notice",
+     "texte": "Dans les écrits de la sœur on lit :\n\n« Notre-Seigneur m’a ouvert son Cœur, et j’ai entendu ces paroles : Mon Nom est partout blasphémé ; même les enfants blasphèment. Alors il m’a fait entendre combien cet affreux péché blessait son divin Cœur douloureusement et plus que tous les autres ; par le blasphème, le pécheur le maudit en face, l’attaque ouvertement, anéantit la rédemption et prononce lui-même sa condamnation et son jugement. Le blasphème est comme une flèche empoisonnée qui blesse continuellement son Cœur ; et il me dit qu’il voulait me donner une flèche d’or pour le blesser délicieusement et cicatriser les blessures de malice que lui font les pécheurs.\n\n« Voici la formule de louange qu’il me dicta, malgré ma grande indignité, pour la réparation des blasphèmes de son saint Nom, et qu’il me donna comme une flèche d’or, m’assurant qu’à chaque fois que je la dirai je blesserai son Cœur d’une blessure d’amour.\n\n« Il ajouta : Faites attention à cette faveur ; car je vous en demanderai compte. À ce moment il me semblait voir sortir du Sacré-Cœur de Jésus blessé par cette flèche d’or des torrents de grâces pour la conversion des pécheurs. »"
+    }
+   ]
+  },
+  {
+   "id": "offrande-de-la-sainte-face",
+   "ordre": 33,
+   "titre": "Offrande de la sainte Face",
+   "titre_court": null,
+   "type": "acte",
+   "partie": {
+    "numero": "Cinquième partie",
+    "titre": "Prières de réparation"
+   },
+   "jour_de_semaine": null,
+   "page_livret": 40,
+   "usage": "mar., jour consacré à la sainte Face ; mardi gras",
+   "indulgence": null,
+   "source": null,
+   "parent": null,
+   "blocs": [
+    {
+     "type": "rubrique",
+     "texte": "Œuvre réparatrice de la sœur Marie de Saint-Pierre, carmélite de Tours (1845-1848)."
+    },
+    {
+     "type": "texte",
+     "texte": "Père saint, Dieu tout-puissant et éternel, je vous offre les souffrances de Jésus, son visage couvert de sueur et de sang, ses plaies sacrées, son Sang adorable, ses dernières paroles et son dernier soupir. Je vous offre ces prières en action de grâces des bienfaits dont vous m’avez comblé, en expiation de mes fautes, en réparation de tous les blasphèmes qui seront proférés aujourd’hui."
+    },
+    {
+     "type": "texte",
+     "texte": "Ne regardez pas nos péchés, Seigneur, mais regardez la Face de votre Christ. Regardez son Cœur qui nous a tant aimés, et, à cause de lui, faites-nous miséricorde. Ainsi soit-il."
+    },
+    {
+     "type": "invocation",
+     "texte": "Ô Dieu, notre protecteur, regardez-nous, et jetez les yeux sur la Face de votre Christ.\nSeigneur, montrez-nous votre Face, et nous serons sauvés."
+    },
+    {
+     "type": "intertitre",
+     "texte": "Promesses"
+    },
+    {
+     "type": "notice",
+     "texte": "« Selon le soin que vous aurez de réparer mon portrait défiguré par les blasphémateurs, j’aurai soin de réparer le vôtre, qui a été défiguré par le péché ; j’y réimprimerai mon image et je le rendrai aussi beau qu’il était en sortant des fonts du baptême. » — « Chaque fois que vous offrirez ma Face à mon Père, ma bouche demandera miséricorde. » — À ceux qui, dans la réparation des blasphèmes, défendront sa cause par prières, par paroles ou par écrit, Notre-Seigneur a promis de défendre leur cause devant son Père, et, à leur mort, d’essuyer la face de leur âme en effaçant les taches du péché."
+    }
+   ]
+  },
+  {
+   "id": "les-sept-offrandes-du-precieux-sang",
+   "ordre": 34,
+   "titre": "Les sept offrandes du Précieux Sang",
+   "titre_court": null,
+   "type": "acte",
+   "partie": {
+    "numero": "Cinquième partie",
+    "titre": "Prières de réparation"
+   },
+   "jour_de_semaine": null,
+   "page_livret": 41,
+   "usage": "quot. ; surtout le ven. et en juillet, mois du Précieux Sang",
+   "indulgence": "3 ans. — Plénière, aux conditions ordinaires, si les offrandes sont faites chaque jour pendant un mois. Pie VII, 22 sept. 1817 ; S. Pénit., 12 mai 1931. — Ench. 1952, no 220. À la fin, on peut ajouter : *Vive le Sang de Jésus, maintenant et toujours, et dans tous les siècles des siècles. Ainsi soit-il.*",
+   "source": null,
+   "parent": null,
+   "blocs": [
+    {
+     "type": "rubrique",
+     "texte": "Après chaque offrande, on dit un Gloria Patri, puis l’oraison jaculatoire :"
+    },
+    {
+     "type": "texte",
+     "texte": "*Béni soit à jamais et remercié Jésus, qui nous a sauvés par son Sang.*"
+    },
+    {
+     "type": "numero",
+     "numero": "I",
+     "texte": "Père Éternel, je vous offre les mérites du Sang très précieux de Jésus, votre Fils bien-aimé et mon divin Rédempteur, pour la propagation et l’exaltation de ma mère chérie la sainte Église, pour la conservation et la prospérité de son chef visible, le Souverain Pontife romain, pour les cardinaux, les évêques, les pasteurs des âmes, et pour tous les ministres du sanctuaire."
+    },
+    {
+     "type": "numero",
+     "numero": "II",
+     "texte": "Père Éternel, je vous offre les mérites du Sang très précieux de Jésus … pour la paix et la concorde entre les rois et les princes catholiques, pour l’humiliation des ennemis de la sainte foi, et pour la félicité du peuple chrétien."
+    },
+    {
+     "type": "numero",
+     "numero": "III",
+     "texte": "Père Éternel, je vous offre les mérites du Sang très précieux de Jésus … pour le retour des incrédules, pour l’extirpation des hérésies, et pour la conversion des pécheurs."
+    },
+    {
+     "type": "numero",
+     "numero": "IV",
+     "texte": "Père Éternel, je vous offre les mérites du Sang très précieux de Jésus … pour tous mes parents, mes amis et mes ennemis, les indigents, les infirmes, les affligés, et tous ceux pour qui vous savez que je dois prier et pour lesquels vous voulez que je prie."
+    },
+    {
+     "type": "numero",
+     "numero": "V",
+     "texte": "Père Éternel, je vous offre les mérites du Sang très précieux de Jésus … pour tous ceux qui passeront aujourd’hui à l’autre vie, afin que vous les délivriez des peines de l’enfer, et que vous les admettiez très prochainement à la possession de votre gloire."
+    },
+    {
+     "type": "numero",
+     "numero": "VI",
+     "texte": "Père Éternel, je vous offre les mérites du Sang très précieux de Jésus … pour ceux qui aiment un si grand trésor, pour ceux qui sont unis avec moi afin de l’adorer et de l’honorer, pour ceux enfin qui s’occupent à en propager la dévotion."
+    },
+    {
+     "type": "numero",
+     "numero": "VII",
+     "texte": "Père Éternel, je vous offre les mérites du Sang très précieux de Jésus … pour tous mes besoins spirituels et temporels, pour le repos des saintes âmes du purgatoire, et spécialement de celles qui ont été plus dévotes à ce prix de notre rédemption et aux douleurs et aux peines de la très sainte Vierge, notre Mère chérie."
+    }
+   ]
+  },
+  {
+   "id": "les-quinze-oraisons-de-sainte-brigitte",
+   "ordre": 35,
+   "titre": "Les quinze oraisons de sainte Brigitte",
+   "titre_court": null,
+   "type": "acte",
+   "partie": {
+    "numero": "Cinquième partie",
+    "titre": "Prières de réparation"
+   },
+   "jour_de_semaine": null,
+   "page_livret": 43,
+   "usage": "quot., pendant une année entière",
+   "indulgence": null,
+   "source": "Texte : Les trois dévotions des prédestinés, 1888",
+   "parent": null,
+   "blocs": [
+    {
+     "type": "notice",
+     "texte": "Selon la tradition, Notre-Seigneur enseigna ces quinze oraisons à sainte Brigitte, dans l’église Saint-Paul, à Rome, en mémoire des souffrances de sa Passion. Les « promesses » qui ont longtemps circulé avec elles ne sont pas reproduites ici : le Saint-Office a déclaré que leur origine surnaturelle n’est nullement établie et a demandé qu’on n’en permette plus la publication (monitum du 28 janvier 1954)."
+    },
+    {
+     "type": "rubrique",
+     "texte": "Avant chaque oraison, on dit un Pater et un Ave."
+    },
+    {
+     "type": "intertitre",
+     "texte": "Première oraison"
+    },
+    {
+     "type": "texte",
+     "texte": "Ô Jésus-Christ ! douceur éternelle à ceux qui vous aiment, joie qui surpasse toute joie et tout désir, salut, ô cœur rempli d’amour pour les pécheurs, qui avez témoigné n’avoir point de plus grand contentement que d’être parmi les hommes, jusqu’à prendre la nature humaine dans la plénitude des temps pour leur amour. Souvenez-vous de la profonde tristesse que vous avez ressentie dès l’instant de votre sainte passion, ainsi qu’il avait été ordonné et décrété de toute éternité dans la pensée divine ; souvenez-vous de l’amertume qui a inondé votre âme, ainsi que vous le témoignâtes vous-même, lorsque faisant la Cène avec vos disciples, leur donnant votre précieux corps et sang, et leur lavant les pieds, leur prédites, sans d’autres consolations, vos prochaines souffrances. Souvenez-vous, mon Dieu, de toutes les craintes, angoisses et douleurs endurées dans votre humanité sainte avant votre mort, quand, après avoir prié par trois fois et après avoir sué sang et eau, vous fûtes trahi par Judas, votre disciple, pris par la nation que vous aviez choisie avec tant d’amour, accusé par de faux témoins, injustement condamné par Caïphe, Hérode et Pilate, en la fleur de votre jeunesse, et, dans le temps de Pâques, dépouillé de vos propres vêtements, et revêtu par dérision, de ceux d’autrui ; quand, les yeux et le visage couverts, vous reçûtes des soufflets ignominieux, vous fûtes couronné d’épines, attaché à une colonne ; quand on vous mit un roseau à la main, qu’on vous en frappa sur la tête, et qu’on vous accabla et qu’on vous déchira d’un nombre incalculable de calomnies et d’outrages. En mémoire de toutes ces peines et douleurs, endurées pour nous, dans votre passion, donnez-moi, avant la mort, une pure et entière confession, une vraie et sincère contrition, une digne satisfaction et la rémission de tous mes péchés. Ainsi soit-il."
+    },
+    {
+     "type": "intertitre",
+     "texte": "Deuxième oraison"
+    },
+    {
+     "type": "texte",
+     "texte": "Ô Jésus ! vraie joie des Anges, Paradis de délices, ayez mémoire de l’horreur et de la tristesse que vous enduriez lorsque vos ennemis, tout ainsi que des lions furieux, vous entourèrent, et par injures, crachats, soufflets, égratignures, et mille autres mauvais traitements inouïs, vous tourmentèrent cruellement. Je vous prie, ô mon Seigneur, qu’en considération de tant de peines, paroles injurieuses et tourments, vous me délivriez de tous mes ennemis, tant visibles qu’invisibles, et me fassiez la grâce qu’étant sous votre protection, je puisse parvenir à la possession du salut éternel. Ainsi soit-il."
+    },
+    {
+     "type": "intertitre",
+     "texte": "Troisième oraison"
+    },
+    {
+     "type": "texte",
+     "texte": "Ô Jésus ! créateur du ciel et de la terre, que nulle chose ne peut borner ni limiter ; vous qui renfermez tout dans votre puissance, souvenez-vous de la douleur très vive que vous ressentîtes lorsque les Juifs attachant vos mains sacrées et vos pieds très délicats à la Croix, les percèrent de part en part, avec de gros clous émoussés, parce que vous condamniez leurs volontés charnelles ; et qu’ils ajoutèrent à vos plaies douleurs sur douleurs, et en cette façon vous ont si cruellement étendu sur la Croix, que toutes les jointures de vos membres en furent séparées. Je vous conjure, par la mémoire de cette très amère douleur de la Croix, de me donner votre crainte et votre amour. Ainsi soit-il."
+    },
+    {
+     "type": "intertitre",
+     "texte": "Quatrième oraison"
+    },
+    {
+     "type": "texte",
+     "texte": "Ô Jésus ! céleste médecin, souvenez-vous des langueurs et meurtrissures souffertes en tous vos membres, dont pas un ne demeura en sa place quand vous fûtes élevé en Croix, de façon qu’il n’y eut douleur semblable à la vôtre, d’autant qu’il ne s’est rencontré en vous, depuis la plante des pieds jusqu’au sommet de la tête, aucune partie de votre corps qui n’ait enduré ; et cependant oubliant toutes vos douleurs, vous n’avez pas laissé de prier votre Père pour vos ennemis, lui disant : Mon Père, pardonnez-leur, car ils ne savent ce qu’ils font. Par cette grande miséricorde, et en mémoire de cette douleur, faites, je vous en supplie, que le souvenir de votre passion très douloureuse me procure une pleine rémission de tous mes péchés. Ainsi soit-il."
+    },
+    {
+     "type": "intertitre",
+     "texte": "Cinquième oraison"
+    },
+    {
+     "type": "texte",
+     "texte": "Ô Jésus ! miroir de la lumière éternelle, souvenez-vous de la tristesse que vous avez eue, lorsque vous regardâtes et contemplâtes dans le miroir de votre divinité, la prédestination de ceux qui doivent être sauvés par les mérites de votre sainte Passion, et la grande multitude des réprouvés qui doivent être damnés pour leurs péchés : par cet abîme de compassion et de pitié, dont vous avez regretté et plaint ces malheureux pécheurs perdus et désespérés, et principalement par la bonté que vous fîtes paraître en Croix au bon larron, en lui disant : Tu seras aujourd’hui avec moi en Paradis, je vous prie, ô doux Jésus, d’user, à l’heure de ma mort, de la même miséricorde envers moi. Ainsi soit-il."
+    },
+    {
+     "type": "intertitre",
+     "texte": "Sixième oraison"
+    },
+    {
+     "type": "texte",
+     "texte": "Ô Jésus ! roi aimable, souvenez-vous de la douleur que vous avez eue quand dépouillé de vos vêtements et comme un malfaiteur, fûtes attaché à la Croix, où vos proches et amis vous abandonnèrent et demeurâtes sans consolation, sinon de quelques dévouées et de votre Mère bien-aimée que vous recommandâtes à votre disciple saint Jean, en lui disant : Femme, voilà votre Fils. Je vous supplie, ô mon Sauveur, par le glaive de douleur qui pour lors transperça l’âme de cette douce Mère, que vous ayez compassion de moi, et que vous me soulagiez en toutes mes tribulations et afflictions, tant corporelles que spirituelles, et me donniez consolation dans le temps de mes tourments et à l’heure de ma mort. Ainsi soit-il."
+    },
+    {
+     "type": "intertitre",
+     "texte": "Septième oraison"
+    },
+    {
+     "type": "texte",
+     "texte": "Ô Jésus ! fontaine de pitié inépuisable, qui par une profonde affection d’amour avez dit en Croix : j’ai soif, mais de la soif du salut du genre humain, je vous prie, ô mon Sauveur, d’échauffer le désir de nos cœurs, de telle sorte que toutes nos œuvres et actions soient parfaites, et d’éteindre entièrement en nous la concupiscence charnelle, et de refroidir l’ardeur des appétits mondains. Ainsi soit-il."
+    },
+    {
+     "type": "intertitre",
+     "texte": "Huitième oraison"
+    },
+    {
+     "type": "texte",
+     "texte": "Ô Jésus ! douceur des cœurs, suavité des esprits, par l’amertume du fiel et du vinaigre que vous avez goûtés sur la Croix pour l’amour de nous, permettez, je vous en supplie, que nous puissions recevoir dignement votre corps et votre sang précieux à l’heure de notre mort, pour qu’ils servent de remède et de consolation à nos âmes. Ainsi soit-il."
+    },
+    {
+     "type": "intertitre",
+     "texte": "Neuvième oraison"
+    },
+    {
+     "type": "texte",
+     "texte": "Ô Jésus ! vertu royale, joie de l’esprit, souvenez-vous de l’angoisse et de la douleur que vous avez endurées, lorsque, par l’ignominie de votre mort, par les moqueries et les outrages des Juifs, vous criâtes à haute voix que vous aviez été abandonné de votre Père, lui disant : Mon Dieu, mon Dieu, pourquoi m’avez-vous délaissé ? Par cette tristesse et cette amertume, je vous conjure, ô mon Sauveur, de ne me point délaisser dans toutes les angoisses et douleurs de ma mort. Ainsi soit-il."
+    },
+    {
+     "type": "intertitre",
+     "texte": "Dixième oraison"
+    },
+    {
+     "type": "texte",
+     "texte": "Ô Jésus ! qui êtes en toutes choses commencement et fin, vie et vertu, souvenez-vous que vous avez été abîmé et submergé dans l’eau de votre Passion, depuis le sommet de la tête jusqu’à la plante des pieds. En considération de la grandeur de vos plaies, enseignez-moi à garder vos commandements dans une vraie charité, afin que je ne sois point submergé et abîmé par mes péchés. Ainsi soit-il."
+    },
+    {
+     "type": "intertitre",
+     "texte": "Onzième oraison"
+    },
+    {
+     "type": "texte",
+     "texte": "Ô Jésus ! abîme très profond de miséricorde, je vous prie qu’en mémoire de vos plaies, de ces plaies dont les douleurs ont passé jusqu’à la moelle de vos os et jusqu’au fond de vos entrailles, de ne point permettre que je sois submergé, misérable que je suis, dans le gouffre de mes offenses ; mais retirez-moi, au contraire, hors du péché, et cachez-moi loin de votre face irritée dans vos saintes plaies, jusqu’à ce que votre colère et votre indignation soient passées. Ainsi soit-il."
+    },
+    {
+     "type": "intertitre",
+     "texte": "Douzième oraison"
+    },
+    {
+     "type": "texte",
+     "texte": "Ô Jésus ! miroir de vérité, marque d’unité, lien de charité, souvenez-vous de la multitude des plaies dont vous avez été blessé depuis les pieds jusqu’à la tête, quand vous avez été déchiré et baigné dans les flots de votre sang adorable et que vous avez souffert pour l’amour de nous en votre chair virginale. Ô doux Jésus, que pouviez-vous faire pour nous, que vous n’ayez fait ? Je vous conjure, ô mon Sauveur, de marquer avec votre précieux sang toutes vos plaies dans mon cœur, afin que par là je connaisse clairement vos douleurs et votre amour, et qu’en action de grâces je persévère courageusement jusqu’à la fin. Ainsi soit-il."
+    },
+    {
+     "type": "intertitre",
+     "texte": "Treizième oraison"
+    },
+    {
+     "type": "texte",
+     "texte": "Ô Jésus ! Dieu très fort, roi immortel et invincible, souvenez-vous de la douleur que vous avez endurée, lorsque toutes vos forces entièrement affaiblies, vous dites en inclinant la tête : Tout est consommé. Par cette angoisse et cette douleur, je vous prie, ô mon bon Jésus, d’avoir pitié de moi en la dernière heure de ma vie, lorsque mon âme sera dans l’angoisse et que mon esprit sera troublé. Ainsi soit-il."
+    },
+    {
+     "type": "intertitre",
+     "texte": "Quatorzième oraison"
+    },
+    {
+     "type": "texte",
+     "texte": "Ô Jésus ! fils unique du Père, la splendeur et la figure de sa substance, souvenez-vous de l’humble recommandation que vous fîtes à votre Père, quand vous dîtes : Je remets mon esprit entre vos mains ; et puis, le corps déchiré, le cœur brisé et les entrailles de votre miséricorde ouvertes pour nous racheter, vous avez expiré. Par cette précieuse mort, je vous prie, ô Roi des saints, fortifiez-moi et donnez-moi secours pour résister au démon, au monde, à la chair et sang, afin qu’étant mort au monde, je vive à vous seul. Recevez, je vous prie, à l’heure de ma mort, mon âme pèlerine et exilée, qui veut retourner à vous. Ainsi soit-il."
+    },
+    {
+     "type": "intertitre",
+     "texte": "Quinzième oraison"
+    },
+    {
+     "type": "texte",
+     "texte": "Ô Jésus ! vraie et féconde vigne, souvenez-vous de la grande effusion de sang que vous avez répandu de votre corps adorable, tout ainsi que le raisin mis sous le pressoir ; et lorsque votre côté fut percé d’un coup de lance par un soldat, vous avez donné sang et eau, en telle sorte qu’il n’en est pas demeuré une seule goutte dans votre cœur ; ainsi, comme un faisceau de myrrhe, vous avez été élevé au haut de la Croix, votre chair délicate est devenue à néant, l’humeur de vos entrailles s’est toute tarie, et la moelle de vos os s’est séchée. Par ces amers traitements et par l’effusion de votre précieux sang, ô mon bon Jésus ! je vous prie de recevoir mon âme lorsque je serai à l’agonie de la mort. Ainsi soit-il."
+    },
+    {
+     "type": "intertitre",
+     "texte": "Conclusion"
+    },
+    {
+     "type": "texte",
+     "texte": "Ô doux Jésus ! blessez mon cœur, afin que mes larmes de pénitence, de douleur et d’amour, nuit et jour me servent de pain ; convertissez-moi entièrement à vous ; que mon cœur vous soit une perpétuelle habitation ; que ma conversation vous soit agréable, et que la fin de ma vie vous soit tellement louable, qu’après ma mort je puisse mériter votre Paradis, et vous louer à jamais dans l’éternité. Ainsi soit-il."
+    }
+   ]
+  },
+  {
+   "id": "litanies-de-la-sainte-face",
+   "ordre": 36,
+   "titre": "Litanies de la sainte Face",
+   "titre_court": null,
+   "type": "acte",
+   "partie": {
+    "numero": "Sixième partie",
+    "titre": "Litanies"
+   },
+   "jour_de_semaine": null,
+   "page_livret": 49,
+   "usage": "mar.",
+   "indulgence": null,
+   "source": "Sœur Marie de Saint-Pierre, carmélite de Tours",
+   "parent": null,
+   "blocs": [
+    {
+     "type": "rubrique",
+     "texte": "En réparation des blasphèmes, et pour demander à Dieu, par la Face de son Fils, la conversion des blasphémateurs. Après chaque invocation : ayez pitié de nous."
+    },
+    {
+     "type": "invocation",
+     "texte": "Seigneur, ayez pitié de nous.\nJésus-Christ, ayez pitié de nous.\nSeigneur, ayez pitié de nous.\nJésus-Christ, écoutez-nous.\nJésus-Christ, exaucez-nous.\nSainte Vierge Marie, priez pour nous."
+    },
+    {
+     "type": "litanie",
+     "items": [
+      "Ô Face adorable, qui avez été adorée avec un profond respect par Marie et par Joseph lorsqu’ils vous virent pour la première fois,",
+      "qui avez ravi de joie, dans l’étable de Bethléem, les Anges, les pasteurs et les mages,",
+      "qui avez blessé d’un trait d’amour, dans le Temple, le saint vieillard Siméon et Anne la prophétesse,",
+      "qui avez été baignée de larmes en votre sainte enfance,",
+      "qui avez rempli d’admiration les docteurs de la loi quand vous parûtes dans le Temple à l’âge de douze ans,",
+      "blanche de pureté, vermeille de charité,",
+      "plus belle que le soleil, plus gracieuse que la lune, plus brillante que les étoiles,",
+      "plus fraîche que les roses du printemps,",
+      "plus précieuse que l’or, l’argent et les diamants,",
+      "dont les attraits étaient ravissants et les grâces charmantes,",
+      "dont la noblesse caractérisait tous les traits,",
+      "contemplée par les Anges,",
+      "la douce volupté des saints,",
+      "chef-d’œuvre du Saint-Esprit, dans laquelle le Père éternel met toutes ses complaisances,",
+      "délices de Marie et de Joseph,",
+      "miroir ineffable des perfections divines,",
+      "dont la beauté est toujours ancienne et toujours nouvelle,",
+      "qui apaisez la colère de Dieu,",
+      "qui faites trembler les démons,",
+      "trésor de grâces et de bénédictions,",
+      "exposée dans le désert aux intempéries de la saison,",
+      "brûlée des ardeurs du soleil et baignée de sueur dans les voyages,",
+      "dont l’expression était toute divine,",
+      "dont la modestie et la douceur attiraient les justes et les pécheurs,",
+      "qui donniez un saint baiser aux petits enfants après les avoir bénis,",
+      "troublée et pleurant au tombeau de Lazare,",
+      "brillante comme le soleil et rayonnante de gloire sur la montagne du Thabor,",
+      "attristée à la vue de Jérusalem et versant des larmes sur cette ville ingrate,",
+      "abaissée jusqu’à terre au jardin des Olives et portant la confusion de nos péchés,",
+      "qui avez été couverte d’une sueur de sang,",
+      "baisée par le perfide Judas,",
+      "dont la sainteté et la majesté saisirent de terreur les soldats et les renversèrent,",
+      "frappée par un infâme valet, couverte d’un voile d’ignominie et profanée par les mains sacrilèges de vos ennemis,",
+      "souillée de crachats et meurtrie par tant de soufflets et de coups,",
+      "dont les divins regards blessèrent le cœur de saint Pierre d’un trait de douleur et d’amour,",
+      "humiliée pour nous dans les tribunaux de Jérusalem,",
+      "qui conservâtes votre sérénité lorsque Pilate prononça le funeste arrêt,",
+      "couverte de sueur et de sang, tombant dans la boue sous le pesant fardeau de la croix,",
+      "qui méritez tous nos respects, nos hommages et nos adorations,",
+      "essuyée d’un voile par une femme pieuse sur la route du Calvaire,",
+      "élevée sur l’instrument du plus honteux supplice,",
+      "dont le front a été couronné d’épines,",
+      "dont les yeux ont été remplis de larmes et de sang,",
+      "dont la bouche divine fut abreuvée de fiel et de vinaigre,",
+      "dont les cheveux et la barbe ont été arrachés par les bourreaux,",
+      "qui êtes devenue semblable à celle d’un lépreux,",
+      "dont la beauté incomparable a été obscurcie sous le nuage affreux des péchés du monde,",
+      "couverte des tristes ombres de la mort,",
+      "lavée et parfumée par Marie et les saintes femmes, et couverte d’un suaire,",
+      "renfermée dans le sépulcre,",
+      "toute resplendissante de gloire et de beauté au jour de la Résurrection,",
+      "toute éblouissante de lumière au moment de l’Ascension,",
+      "cachée dans l’Eucharistie,",
+      "qui apparaîtrez à la fin des temps dans les airs, avec une grande puissance et une grande majesté,",
+      "qui ferez trembler les pécheurs,",
+      "qui remplirez les justes de joie pendant l’éternité,"
+     ]
+    },
+    {
+     "type": "invocation",
+     "texte": "Agneau de Dieu, qui effacez les péchés du monde, pardonnez-nous, Seigneur.\nAgneau de Dieu, qui effacez les péchés du monde, exaucez-nous, Seigneur.\nAgneau de Dieu, qui effacez les péchés du monde, ayez pitié de nous, Seigneur."
+    },
+    {
+     "type": "rubrique",
+     "texte": "Prions."
+    },
+    {
+     "type": "texte",
+     "texte": "Je vous salue, je vous adore et je vous aime, ô Jésus, mon Sauveur, couvert de nouveaux outrages par les blasphémateurs ; et je vous offre, dans le cœur de la divine Marie, comme un encens et un parfum d’agréable odeur, les hommages des Anges et de tous les saints, en vous priant humblement, par la vertu de votre sainte Face, de réparer et de rétablir en moi et dans tous les hommes votre image défigurée par le péché. Ainsi soit-il."
+    }
+   ]
+  },
+  {
+   "id": "litanies-de-notre-dame-des-sept-douleurs",
+   "ordre": 37,
+   "titre": "Litanies de Notre-Dame des Sept Douleurs",
+   "titre_court": null,
+   "type": "acte",
+   "partie": {
+    "numero": "Sixième partie",
+    "titre": "Litanies"
+   },
+   "jour_de_semaine": null,
+   "page_livret": 52,
+   "usage": "ven. ; septembre",
+   "indulgence": null,
+   "source": null,
+   "parent": null,
+   "blocs": [
+    {
+     "type": "rubrique",
+     "texte": "Après chaque invocation : priez pour nous."
+    },
+    {
+     "type": "invocation",
+     "texte": "Seigneur, ayez pitié de nous.\nJésus-Christ, ayez pitié de nous.\nSeigneur, ayez pitié de nous.\nJésus-Christ, écoutez-nous.\nJésus-Christ, exaucez-nous.\nPère céleste, qui êtes Dieu, ayez pitié de nous.\nFils, rédempteur du monde, qui êtes Dieu, ayez pitié de nous.\nSaint-Esprit, qui êtes Dieu, ayez pitié de nous.\nSainte Trinité, qui êtes un seul Dieu, ayez pitié de nous."
+    },
+    {
+     "type": "litanie",
+     "items": [
+      "Notre-Dame des Douleurs,",
+      "Mère de Jésus crucifié,",
+      "Mère de douleur,",
+      "Mère affligée,",
+      "Mère délaissée,",
+      "Mère désolée,",
+      "Mère abîmée de tristesse,",
+      "Mère entourée d’angoisses,",
+      "Mère consumée d’afflictions,",
+      "Mère transpercée d’un glaive,",
+      "Mère crucifiée dans votre Cœur,",
+      "Mère privée de son Fils unique,",
+      "Océan d’amertume,",
+      "Abîme de souffrance,",
+      "Miroir de patience,",
+      "Prodige de douceur,",
+      "Miracle de force,",
+      "Ancre de confiance,",
+      "Autel des désolés,",
+      "Consolation des éprouvés,",
+      "Refuge des abandonnés,",
+      "Bouclier des opprimés,",
+      "Remède des malades,",
+      "Baume de ceux qui souffrent,",
+      "Courage des faibles,",
+      "Calme dans les tempêtes,",
+      "Port des naufragés,",
+      "Étoile des égarés,",
+      "Compagne de ceux qui pleurent,",
+      "Force des patients,",
+      "Terreur des esprits méchants,",
+      "Délice des crucifiés,",
+      "Trésor des fidèles,",
+      "Soutien des vierges,",
+      "Joie de tous les saints,"
+     ]
+    },
+    {
+     "type": "invocation",
+     "texte": "Agneau de Dieu, qui effacez les péchés du monde, pardonnez-nous, Seigneur.\nAgneau de Dieu, qui effacez les péchés du monde, exaucez-nous, Seigneur.\nAgneau de Dieu, qui effacez les péchés du monde, ayez pitié de nous."
+    },
+    {
+     "type": "verset",
+     "v": "Priez pour nous, sainte Mère des Douleurs.",
+     "r": "Afin que nous soyons de vrais disciples de Jésus-Christ."
+    },
+    {
+     "type": "rubrique",
+     "texte": "Prions. — Oraison de la fête des Sept Douleurs."
+    },
+    {
+     "type": "texte",
+     "texte": "Ô Dieu, dans la Passion duquel, selon la prophétie de Siméon, un glaive de douleur transperça l’âme très douce de la glorieuse Vierge et Mère Marie : faites, dans votre bonté, que, honorant avec vénération ses douleurs, nous obtenions l’heureux fruit de votre Passion. Vous qui vivez et régnez dans les siècles des siècles. Ainsi soit-il."
+    },
+    {
+     "type": "traduction",
+     "texte": "*Deus, in cujus passione, secundum Simeonis prophetiam, dulcissimam animam gloriosæ Virginis et Matris Mariæ doloris gladius pertransivit : concede propitius ; ut, qui dolores ejus venerando recolimus, passionis tuæ effectum felicem consequamur. Qui vivis et regnas.*"
+    }
+   ]
+  },
+  {
+   "id": "veni-creator-spiritus",
+   "ordre": 38,
+   "titre": "Veni Creator Spiritus",
+   "titre_court": null,
+   "type": "acte",
+   "partie": {
+    "numero": "Septième partie",
+    "titre": "Hymnes",
+    "notice": "Les traductions du Veni Creator et de l’Ave Maris Stella sont en vers, « du même rythme » que le latin, et non mot à mot : elles se chantent sur les mêmes mélodies."
+   },
+   "jour_de_semaine": null,
+   "page_livret": 56,
+   "usage": "au commencement de toute œuvre ; Pentecôte et son octave",
+   "indulgence": "5 ans, avec le ℣ *Emitte* et l’oraison *Deus qui corda*. — Plénière, aux conditions ordinaires, pour la récitation quotidienne pendant un mois. Pie VI, bref du 26 mai 1796 ; S. Pénit. — Ench. 1952.",
+   "source": "Latin du Bréviaire romain ; traduction en vers du P. Ch. Clair, S.J. (1880), donnée par Beringer, 1905",
+   "parent": null,
+   "blocs": [
+    {
+     "type": "strophe",
+     "la": "Veni, Creator Spiritus,\nmentes tuorum visita :\nimple superna gratia\nquæ tu creasti pectora.",
+     "fr": "Ô Créateur, Esprit divin,\nVenez et visitez nos âmes :\nRemplissez de célestes flammes\nLes cœurs que forma votre main."
+    },
+    {
+     "type": "strophe",
+     "la": "Qui diceris Paraclitus,\naltissimi donum Dei,\nfons vivus, ignis, caritas,\net spiritalis unctio.",
+     "fr": "On vous nomme Consolateur,\nDu Très-Haut présent ineffable,\nFeu divin, source inépuisable\nD’amour et de sainte douceur."
+    },
+    {
+     "type": "strophe",
+     "la": "Tu septiformis munere,\ndigitus paternæ dexteræ,\ntu rite promissum Patris,\nsermone ditans guttura.",
+     "fr": "Trésor des sept dons précieux,\nDoigt de Dieu, promesse du Père,\nQui faites parler à la terre\nLa sublime langue des cieux !"
+    },
+    {
+     "type": "strophe",
+     "la": "Accende lumen sensibus,\ninfunde amorem cordibus,\ninfirma nostri corporis\nvirtute firmans perpeti.",
+     "fr": "Éclairez-nous, pure splendeur ;\nSaint amour, embrasez nos âmes ;\nQue la chair infirme en vos flammes\nPuise une constante vigueur."
+    },
+    {
+     "type": "strophe",
+     "la": "Hostem repellas longius,\npacemque dones protinus :\nductore sic te prævio\nvitemus omne noxium.",
+     "fr": "Chassez l’ennemi loin de nous,\nEt ramenez la paix féconde ;\nPour fuir tous les maux, que le monde\nSe laisse gouverner par vous."
+    },
+    {
+     "type": "strophe",
+     "la": "Per te sciamus da Patrem,\nnoscamus atque Filium,\nteque utriusque Spiritum\ncredamus omni tempore.",
+     "fr": "Ô souffle du Père et du Fils,\nFaites-nous connaître le Père,\nLe Verbe et vous ; qu’à ce mystère\nLa foi nous maintienne soumis."
+    },
+    {
+     "type": "strophe",
+     "la": "Deo Patri sit gloria,\net Filio, qui a mortuis\nsurrexit, ac Paraclito,\nin sæculorum sæcula. Amen.",
+     "fr": "Gloire à Jésus ressuscité,\nAu Père créateur du monde,\nAu Saint-Esprit qui le féconde\nPour le temps et l’éternité. Ainsi soit-il."
+    }
+   ]
+  },
+  {
+   "id": "ave-maris-stella",
+   "ordre": 39,
+   "titre": "Ave Maris Stella",
+   "titre_court": null,
+   "type": "acte",
+   "partie": {
+    "numero": "Septième partie",
+    "titre": "Hymnes",
+    "notice": "Les traductions du Veni Creator et de l’Ave Maris Stella sont en vers, « du même rythme » que le latin, et non mot à mot : elles se chantent sur les mêmes mélodies."
+   },
+   "jour_de_semaine": null,
+   "page_livret": 57,
+   "usage": "sam. ; fêtes de la sainte Vierge",
+   "indulgence": "3 ans. — Plénière, aux conditions ordinaires, pour la récitation quotidienne pendant un mois. S. C. des Indulgences, 27 janv. 1888 ; S. Pénit., 27 mars 1935. — Ench. 1952, no 321.",
+   "source": "Latin du Bréviaire romain ; traduction en vers du P. Ch. Clair, S.J. (1880), donnée par Beringer, 1905",
+   "parent": null,
+   "blocs": [
+    {
+     "type": "strophe",
+     "la": "Ave, maris stella,\nDei Mater alma,\natque semper Virgo,\nfelix cæli porta.",
+     "fr": "Pure étoile des mers,\nSalut, Vierge admirable !\nPar vous, ô Mère aimable,\nLes cieux nous sont ouverts."
+    },
+    {
+     "type": "strophe",
+     "la": "Sumens illud Ave\nGabrielis ore,\nfunda nos in pace,\nmutans Evæ nomen.",
+     "fr": "De l’ange Gabriel\nAccueillez la louange ;\nNouvelle Ève, en échange\nDonnez la paix du ciel."
+    },
+    {
+     "type": "strophe",
+     "la": "Solve vincla reis,\nprofer lumen cæcis,\nmala nostra pelle,\nbona cuncta posce.",
+     "fr": "Brisez d’impurs liens,\nRendez-nous la lumière,\nChassez toute misère,\nObtenez tous les biens."
+    },
+    {
+     "type": "strophe",
+     "la": "Monstra te esse matrem,\nsumat per te preces,\nqui pro nobis natus\ntulit esse tuus.",
+     "fr": "Soyez Mère pour nous,\nEt portez nos prières\nAu Dieu qui pour ses frères\nDaigna naître de vous."
+    },
+    {
+     "type": "strophe",
+     "la": "Virgo singularis,\ninter omnes mitis,\nnos culpis solutos\nmites fac et castos.",
+     "fr": "Vierge unique en beauté,\nSi modeste et si pure,\nEn nos cœurs sans souillure\nGardez l’humilité."
+    },
+    {
+     "type": "strophe",
+     "la": "Vitam præsta puram,\niter para tutum,\nut videntes Jesum\nsemper collætemur.",
+     "fr": "Faites saints tous nos jours,\nGuidez-nous dans la voie,\nEt donnez-nous la joie\nDe voir Jésus toujours."
+    },
+    {
+     "type": "strophe",
+     "la": "Sit laus Deo Patri,\nsummo Christo decus,\nSpiritui Sancto,\ntribus honor unus. Amen.",
+     "fr": "Louange au Créateur,\nÀ Jésus-Christ victoire,\nÀ l’Esprit même gloire,\nÀ tous trois même honneur."
+    }
+   ]
+  },
+  {
+   "id": "magnificat",
+   "ordre": 40,
+   "titre": "Magnificat",
+   "titre_court": null,
+   "type": "acte",
+   "partie": {
+    "numero": "Septième partie",
+    "titre": "Hymnes",
+    "notice": "Les traductions du Veni Creator et de l’Ave Maris Stella sont en vers, « du même rythme » que le latin, et non mot à mot : elles se chantent sur les mêmes mélodies."
+   },
+   "jour_de_semaine": null,
+   "page_livret": 58,
+   "usage": "le soir ; sam.",
+   "indulgence": "3 ans ; 5 ans en la fête de la Visitation et chaque samedi. — Plénière, aux conditions ordinaires, pour la récitation quotidienne pendant un mois. S. C. des Indulgences, 20 sept. 1879 et 22 févr. 1888 ; S. Pénit., 1936 et 1940. — Ench. 1952, no 320.",
+   "source": "Lc 1, 46-55 ; traduction donnée par Beringer, 1905, no 132",
+   "parent": null,
+   "blocs": [
+    {
+     "type": "strophe",
+     "la": "Magnificat * anima mea Dominum.",
+     "fr": "Mon âme glorifie le Seigneur,"
+    },
+    {
+     "type": "strophe",
+     "la": "Et exsultavit spiritus meus * in Deo salutari meo.",
+     "fr": "et mon esprit tressaille de joie en Dieu mon Sauveur."
+    },
+    {
+     "type": "strophe",
+     "la": "Quia respexit humilitatem ancillæ suæ : * ecce enim ex hoc beatam me dicent omnes generationes.",
+     "fr": "Il a regardé la bassesse de sa servante : désormais toutes les nations m’appelleront bienheureuse."
+    },
+    {
+     "type": "strophe",
+     "la": "Quia fecit mihi magna qui potens est : * et sanctum nomen ejus.",
+     "fr": "Car le Tout-Puissant a fait en moi de grandes choses, et son nom est saint."
+    },
+    {
+     "type": "strophe",
+     "la": "Et misericordia ejus a progenie in progenies * timentibus eum.",
+     "fr": "Sa miséricorde se répand de génération en génération sur ceux qui le craignent."
+    },
+    {
+     "type": "strophe",
+     "la": "Fecit potentiam in brachio suo : * dispersit superbos mente cordis sui.",
+     "fr": "Il a déployé la force de son bras, et il a dispersé les superbes qui s’élevaient dans les pensées de leur cœur."
+    },
+    {
+     "type": "strophe",
+     "la": "Deposuit potentes de sede, * et exaltavit humiles.",
+     "fr": "Il a déposé les puissants de leur trône, et il a exalté les humbles."
+    },
+    {
+     "type": "strophe",
+     "la": "Esurientes implevit bonis : * et divites dimisit inanes.",
+     "fr": "Il a comblé de biens les affamés, et renvoyé vides ceux qui vivaient dans l’opulence."
+    },
+    {
+     "type": "strophe",
+     "la": "Suscepit Israël puerum suum, * recordatus misericordiæ suæ.",
+     "fr": "Se souvenant de sa miséricorde, il a accueilli Israël son serviteur,"
+    },
+    {
+     "type": "strophe",
+     "la": "Sicut locutus est ad patres nostros, * Abraham et semini ejus in sæcula.",
+     "fr": "comme il l’avait promis à nos pères, à Abraham et à sa postérité pour tous les siècles."
+    },
+    {
+     "type": "strophe",
+     "la": "Gloria Patri, et Filio, * et Spiritui Sancto. Sicut erat in principio, et nunc, et semper, * et in sæcula sæculorum. Amen.",
+     "fr": "Gloire au Père, au Fils et au Saint-Esprit, comme il était au commencement, maintenant et toujours, et dans les siècles des siècles. Ainsi soit-il."
+    }
+   ]
+  },
+  {
+   "id": "te-joseph-celebrent",
+   "ordre": 41,
+   "titre": "Te, Joseph, celebrent",
+   "titre_court": null,
+   "type": "acte",
+   "partie": {
+    "numero": "Septième partie",
+    "titre": "Hymnes",
+    "notice": "Les traductions du Veni Creator et de l’Ave Maris Stella sont en vers, « du même rythme » que le latin, et non mot à mot : elles se chantent sur les mêmes mélodies."
+   },
+   "jour_de_semaine": null,
+   "page_livret": 60,
+   "usage": "mer. ; 19 mars ; mois de mars",
+   "indulgence": "3 ans. — Plénière, aux conditions ordinaires, pour la récitation quotidienne pendant un mois. S. Pénit., 9 févr. 1922 et 13 juill. 1932. — Ench. 1952, no 463.",
+   "source": "Latin du Bréviaire romain ; traduction de Dom Guéranger, L’Année liturgique, Le Carême",
+   "parent": null,
+   "blocs": [
+    {
+     "type": "rubrique",
+     "texte": "Hymne des premières Vêpres de saint Joseph (19 mars), attribuée au pape Clément XI."
+    },
+    {
+     "type": "strophe",
+     "la": "Te, Joseph, celebrent agmina Cælitum,\nte cuncti resonent Christiadum chori,\nqui clarus meritis junctus es inclytæ\ncasto fœdere Virgini.",
+     "fr": "Que les chœurs célestes chantent ta gloire, ô Joseph ! Que l’assemblée des chrétiens fasse résonner tes louanges ; tout rayonnant de mérites, une chaste alliance t’unit à l’auguste Vierge."
+    },
+    {
+     "type": "strophe",
+     "la": "Almo cum tumidam germine conjugem\nadmirans, dubio tangeris anxius,\nafflatu superi Flaminis Angelus\nconceptum puerum docet.",
+     "fr": "Ton Épouse porte les traces d’une prochaine maternité ; l’étonnement et l’inquiétude ont saisi ton âme incertaine ; un Ange vient t’apprendre que le fruit qu’elle porte est l’œuvre de l’Esprit divin."
+    },
+    {
+     "type": "strophe",
+     "la": "Tu natum Dominum stringis, ad exteras\nÆgypti profugum tu sequeris plagas ;\namissum Solymis quæris et invenis,\nmiscens gaudia fletibus.",
+     "fr": "Le Seigneur est né ; tu l’enlèves, et tu l’accompagnes dans sa fuite jusqu’aux lointaines plages de l’Égypte ; dans Jérusalem, tu le perds et le retrouves : ainsi tes joies sont mêlées d’alarmes."
+    },
+    {
+     "type": "strophe",
+     "la": "Post mortem reliquos sors pia consecrat,\npalmamque emeritos gloria suscipit :\ntu vivens, Superis par, frueris Deo,\nmira sorte beatior.",
+     "fr": "Une mort sainte fixe le sort des autres hommes, et la palme glorieuse vient couronner leurs mérites ; plus heureux, tu vis encore, et tu jouis d’un Dieu, égal dans ton bonheur aux bienheureux."
+    },
+    {
+     "type": "strophe",
+     "la": "Nobis, summa Trias, parce precantibus,\nda Joseph meritis sidera scandere :\nut tandem liceat nos tibi perpetim\ngratum promere canticum. Amen.",
+     "fr": "Trinité souveraine, exaucez nos prières, donnez-nous le pardon ; que les mérites de Joseph nous aident à monter dans les cieux, et qu’il nous soit donné de chanter à jamais le cantique de la félicité. Ainsi soit-il."
+    },
+    {
+     "type": "verset",
+     "v": "*Constituit eum dominum domus suæ,*",
+     "r": "*Et principem omnis possessionis suæ.*"
+    },
+    {
+     "type": "traduction",
+     "texte": "℣. Il l’a établi maître de sa maison, ℟. Et prince sur tous ses biens."
+    }
+   ]
+  },
+  {
+   "id": "cinq-dimanches-des-stigmates-de-saint-francois",
+   "ordre": 42,
+   "titre": "Cinq dimanches des Stigmates de saint François",
+   "titre_court": null,
+   "type": "acte",
+   "partie": {
+    "numero": "Huitième partie",
+    "titre": "Dévotions à jours comptés",
+    "notice": "Ces pratiques se font un nombre déterminé de jours de suite ; si l’on en omet un, on recommence. Pour les indulgences plénières, il faut chaque jour se confesser (dans la huitaine), communier, et prier aux intentions du Souverain Pontife ; les « prières en l’honneur du saint » sont au choix : celles qui sont données ici sont les prières traditionnelles et indulgenciées de chaque dévotion."
+   },
+   "jour_de_semaine": "Le dimanche",
+   "page_livret": 62,
+   "usage": "les cinq dim. avant le 17 sept., ou cinq dim. consécutifs à toute époque",
+   "indulgence": "Plénière chacun des cinq dimanches, une fois l’an, cond. ord. Léon XIII, 21 nov. 1885. — Ench. 1952, no 515. — L’aspiration : 50 j. (Léon XIII, 4 mai 1888).",
+   "source": null,
+   "parent": null,
+   "blocs": [
+    {
+     "type": "notice",
+     "texte": "*Pratique.* Chaque dimanche, confession, communion, visite d’une église ; méditer quelque temps sur les sacrés Stigmates, ou réciter le chapelet des saintes Plaies (p. [plaies]), en répétant souvent l’aspiration du saint :"
+    },
+    {
+     "type": "texte",
+     "texte": "*Mon Dieu et mon tout !* *(Deus meus et omnia !)*"
+    }
+   ]
+  },
+  {
+   "id": "cinq-dimanches-de-saint-jean-berchmans",
+   "ordre": 43,
+   "titre": "Cinq dimanches de saint Jean Berchmans",
+   "titre_court": null,
+   "type": "acte",
+   "partie": {
+    "numero": "Huitième partie",
+    "titre": "Dévotions à jours comptés",
+    "notice": "Ces pratiques se font un nombre déterminé de jours de suite ; si l’on en omet un, on recommence. Pour les indulgences plénières, il faut chaque jour se confesser (dans la huitaine), communier, et prier aux intentions du Souverain Pontife ; les « prières en l’honneur du saint » sont au choix : celles qui sont données ici sont les prières traditionnelles et indulgenciées de chaque dévotion."
+   },
+   "jour_de_semaine": "Le dimanche",
+   "page_livret": 63,
+   "usage": "les cinq dim. avant sa fête (13 août)",
+   "indulgence": "Le dernier dimanche : plénière ; les quatre autres : 7 ans et plénière, cond. ord. (S. C. des Indulgences, 17 mai 1890). L’invocation avec Pater, Ave et Gloria devant une image : 300 j. ; plénière si chaque jour pendant un mois. — Ench. 1952, no 526.",
+   "source": "Beringer, Les Indulgences, 1905, no 294",
+   "parent": null,
+   "blocs": [
+    {
+     "type": "notice",
+     "texte": "*Pratique.* En mémoire des cinq années que le saint passa en religion. Chaque dimanche, confession et communion ; devant une image du saint, un Pater, un Ave, un Gloria et l’invocation :"
+    },
+    {
+     "type": "texte",
+     "texte": "*Saint Jean Berchmans, priez pour moi.*"
+    }
+   ]
+  },
+  {
+   "id": "six-dimanches-de-saint-louis-de-gonzague",
+   "ordre": 44,
+   "titre": "Six dimanches de saint Louis de Gonzague",
+   "titre_court": null,
+   "type": "acte",
+   "partie": {
+    "numero": "Huitième partie",
+    "titre": "Dévotions à jours comptés",
+    "notice": "Ces pratiques se font un nombre déterminé de jours de suite ; si l’on en omet un, on recommence. Pour les indulgences plénières, il faut chaque jour se confesser (dans la huitaine), communier, et prier aux intentions du Souverain Pontife ; les « prières en l’honneur du saint » sont au choix : celles qui sont données ici sont les prières traditionnelles et indulgenciées de chaque dévotion."
+   },
+   "jour_de_semaine": "Le dimanche",
+   "page_livret": 63,
+   "usage": "les six dim. avant le 21 juin, ou six dim. consécutifs",
+   "indulgence": "Six dimanches : plénière chacun, cond. ord. (S. C. des Indulgences, 11 déc. 1739 et 7 janv. 1740 ; Ench. 1952). La prière, avec Pater, Ave et Gloria : 300 j. une fois le jour ; plénière si elle est dite chaque jour pendant un mois (Ench. 1952, no 496). Devant une image du saint, Pater, Ave, Gloria et l’invocation *Saint Louis, priez pour moi* : 300 j. (no 495).",
+   "source": "Beringer, Les Indulgences, 1905, no 181",
+   "parent": null,
+   "blocs": [
+    {
+     "type": "notice",
+     "texte": "*Pratique.* Chaque dimanche, confession et communion, et quelques considérations pieuses ou prières en l’honneur du saint, par exemple :"
+    },
+    {
+     "type": "texte",
+     "texte": "Ô saint Louis, orné de mœurs angéliques, moi, votre serviteur indigne, je vous recommande d’une manière particulière la chasteté de mon âme et de mon corps. Je vous conjure, par votre angélique pureté, de me recommander à Jésus-Christ, l’Agneau immaculé, et à sa très sainte Mère, la Vierge des vierges, et de me préserver de tout péché grave. Ne permettez point que je me souille jamais d’aucune impureté ; mais, quand vous me verrez dans la tentation ou dans le danger de pécher, éloignez de mon cœur toutes les pensées et les affections impures, réveillez en moi le souvenir de l’éternité et de Jésus crucifié, et imprimez profondément dans mon âme le sentiment de la sainte crainte de Dieu. Enflammez-moi du divin amour, et faites qu’en vous imitant sur la terre, je mérite de jouir de Dieu avec vous dans le ciel. Ainsi soit-il."
+    },
+    {
+     "type": "rubrique",
+     "texte": "Pater et Ave."
+    }
+   ]
+  },
+  {
+   "id": "six-dimanches-de-saint-thomas-d-aquin",
+   "ordre": 45,
+   "titre": "Six dimanches de saint Thomas d’Aquin",
+   "titre_court": null,
+   "type": "acte",
+   "partie": {
+    "numero": "Huitième partie",
+    "titre": "Dévotions à jours comptés",
+    "notice": "Ces pratiques se font un nombre déterminé de jours de suite ; si l’on en omet un, on recommence. Pour les indulgences plénières, il faut chaque jour se confesser (dans la huitaine), communier, et prier aux intentions du Souverain Pontife ; les « prières en l’honneur du saint » sont au choix : celles qui sont données ici sont les prières traditionnelles et indulgenciées de chaque dévotion."
+   },
+   "jour_de_semaine": "Le dimanche",
+   "page_livret": 64,
+   "usage": "les six dim. avant le 7 mars, ou à toute époque, une fois l’an",
+   "indulgence": "Six dimanches : plénière chacun, cond. ord. (Léon XIII, 21 août 1886 ; Ench. 1952). La prière : 300 j. une fois le jour ; plénière si elle est dite chaque jour pendant un mois (Léon XIII, 3 juill. 1885 ; Ench. 1952, no 520).",
+   "source": "Beringer, Les Indulgences, 1905, no 171",
+   "parent": null,
+   "blocs": [
+    {
+     "type": "notice",
+     "texte": "*Pratique.* Destinée surtout à ceux qui étudient. Chaque dimanche, confession et communion, méditation ou prières en l’honneur du saint, comme celle-ci ; on peut y joindre la prière de la Milice angélique."
+    },
+    {
+     "type": "texte",
+     "texte": "Ô docteur angélique, saint Thomas, prince des théologiens et règle des philosophes, gloire insigne du monde chrétien et lumière de l’Église, céleste patron de toutes les écoles catholiques, vous avez appris la sagesse sans déguisement et vous la communiquez sans envie : priez pour nous le Fils de Dieu, la Sagesse éternelle, afin que l’Esprit de sagesse vienne en nous, et nous fasse comprendre ce que vous avez enseigné et imiter ce que vous avez fait. Obtenez-nous ainsi de participer à la doctrine et à la vertu par lesquelles vous avez brillé dans ce monde comme un soleil, et d’en goûter éternellement avec vous les fruits très suaves au ciel, en louant la divine Sagesse dans tous les siècles des siècles. Ainsi soit-il."
+    }
+   ]
+  },
+  {
+   "id": "sept-dimanches-de-saint-joseph",
+   "ordre": 46,
+   "titre": "Sept dimanches de saint Joseph",
+   "titre_court": null,
+   "type": "acte",
+   "partie": {
+    "numero": "Huitième partie",
+    "titre": "Dévotions à jours comptés",
+    "notice": "Ces pratiques se font un nombre déterminé de jours de suite ; si l’on en omet un, on recommence. Pour les indulgences plénières, il faut chaque jour se confesser (dans la huitaine), communier, et prier aux intentions du Souverain Pontife ; les « prières en l’honneur du saint » sont au choix : celles qui sont données ici sont les prières traditionnelles et indulgenciées de chaque dévotion."
+   },
+   "jour_de_semaine": "Le dimanche",
+   "page_livret": 64,
+   "usage": "les sept dim. avant le 19 mars, ou sept dim. consécutifs",
+   "indulgence": "5 ans et plénière chacun des sept dimanches, cond. ord. (S. C. des Indulgences, 1er févr. et 22 mars 1847 ; Raccolta 1943, no 427).",
+   "source": null,
+   "parent": null,
+   "blocs": [
+    {
+     "type": "notice",
+     "texte": "*Pratique.* Chaque dimanche, confession et communion ; réciter les sept Douleurs et Allégresses de saint Joseph (p. [joseph]), ou, si l’on en est empêché, sept Pater et sept Ave."
+    }
+   ]
+  },
+  {
+   "id": "sept-dimanches-de-l-immaculee-conception",
+   "ordre": 47,
+   "titre": "Sept dimanches de l’Immaculée Conception",
+   "titre_court": null,
+   "type": "acte",
+   "partie": {
+    "numero": "Huitième partie",
+    "titre": "Dévotions à jours comptés",
+    "notice": "Ces pratiques se font un nombre déterminé de jours de suite ; si l’on en omet un, on recommence. Pour les indulgences plénières, il faut chaque jour se confesser (dans la huitaine), communier, et prier aux intentions du Souverain Pontife ; les « prières en l’honneur du saint » sont au choix : celles qui sont données ici sont les prières traditionnelles et indulgenciées de chaque dévotion."
+   },
+   "jour_de_semaine": "Le dimanche",
+   "page_livret": 65,
+   "usage": "sept dim. consécutifs, au choix ; de préférence avant le 8 déc.",
+   "indulgence": "Sept dimanches : plénière chacun, cond. ord. (S. C. de la Propagande, 21 sept. 1865 ; Ench. 1952, no 363). Le petit chapelet : 300 j. chaque fois ; plénière une fois le mois pour la récitation quotidienne (Pie IX, 22 juin 1855).",
+   "source": "Beringer, Les Indulgences, 1905, no 135",
+   "parent": null,
+   "blocs": [
+    {
+     "type": "notice",
+     "texte": "*Pratique.* Chaque dimanche, confession et communion, et quelques prières en l’honneur de l’Immaculée, par exemple le petit chapelet de l’Immaculée Conception, dû au P. Bonaventure de Ferrare, capucin (1845) :"
+    },
+    {
+     "type": "texte",
+     "texte": "*Au nom du Père, et du Fils, et du Saint-Esprit. Ainsi soit-il.*"
+    },
+    {
+     "type": "rubrique",
+     "texte": "Trois fois de suite :"
+    },
+    {
+     "type": "texte",
+     "texte": "Bénie soit la sainte et immaculée Conception de la bienheureuse Vierge Marie."
+    },
+    {
+     "type": "rubrique",
+     "texte": "Un Pater, quatre Ave et un Gloria."
+    }
+   ]
+  },
+  {
+   "id": "sept-dimanches-de-saint-camille-de-lellis",
+   "ordre": 48,
+   "titre": "Sept dimanches de saint Camille de Lellis",
+   "titre_court": null,
+   "type": "acte",
+   "partie": {
+    "numero": "Huitième partie",
+    "titre": "Dévotions à jours comptés",
+    "notice": "Ces pratiques se font un nombre déterminé de jours de suite ; si l’on en omet un, on recommence. Pour les indulgences plénières, il faut chaque jour se confesser (dans la huitaine), communier, et prier aux intentions du Souverain Pontife ; les « prières en l’honneur du saint » sont au choix : celles qui sont données ici sont les prières traditionnelles et indulgenciées de chaque dévotion."
+   },
+   "jour_de_semaine": "Le dimanche",
+   "page_livret": 65,
+   "usage": "sept dim. consécutifs ; surtout pour les malades",
+   "indulgence": "Sept dimanches : plénière chacun, cond. ord. (Ench. 1952, no 506). La prière : 300 j. ; plénière si elle est dite chaque jour pendant un mois (Léon XIII, 27 févr. 1894 ; Ench. 1952, no 668).",
+   "source": "Beringer, Les Indulgences, 1905, no 184",
+   "parent": null,
+   "blocs": [
+    {
+     "type": "notice",
+     "texte": "*Pratique.* Chaque dimanche, confession et communion, et des prières en l’honneur du saint :"
+    },
+    {
+     "type": "texte",
+     "texte": "Glorieux saint Camille, patron spécial des pauvres malades, vous qui, pendant quarante ans, vous êtes consacré avec une charité vraiment héroïque au soulagement de leurs maux spirituels et corporels, venez plus libéralement encore à leur secours, maintenant que vous êtes bienheureux au ciel et que l’Église les a confiés à votre puissante protection. Obtenez-leur de Dieu la guérison des maux dont ils souffrent, ou la patience et la résignation chrétienne afin qu’ils se sanctifient et soient fortifiés à l’heure du trépas. En même temps, obtenez-nous la grâce de vivre et de mourir, à votre exemple, dans la pratique de la charité divine. Ainsi soit-il."
+    },
+    {
+     "type": "rubrique",
+     "texte": "Pater, Ave."
+    }
+   ]
+  },
+  {
+   "id": "dix-dimanches-de-saint-ignace",
+   "ordre": 49,
+   "titre": "Dix dimanches de saint Ignace",
+   "titre_court": null,
+   "type": "acte",
+   "partie": {
+    "numero": "Huitième partie",
+    "titre": "Dévotions à jours comptés",
+    "notice": "Ces pratiques se font un nombre déterminé de jours de suite ; si l’on en omet un, on recommence. Pour les indulgences plénières, il faut chaque jour se confesser (dans la huitaine), communier, et prier aux intentions du Souverain Pontife ; les « prières en l’honneur du saint » sont au choix : celles qui sont données ici sont les prières traditionnelles et indulgenciées de chaque dévotion."
+   },
+   "jour_de_semaine": "Le dimanche",
+   "page_livret": 66,
+   "usage": "les dix dim. avant le 31 juillet, ou dix dim. consécutifs",
+   "indulgence": "Dix dimanches : plénière chacun, cond. ord. (Clément XIII, 27 janv. 1767 ; Ench. 1952, no 407). Le *Suscipe* : 3 ans ; plénière si on le récite chaque jour pendant un mois (Léon XIII, 26 mai 1883 ; Ench. 1952, no 52).",
+   "source": "Beringer, Les Indulgences, 1905, no 66",
+   "parent": null,
+   "blocs": [
+    {
+     "type": "notice",
+     "texte": "*Pratique.* Chaque dimanche, confession et communion, visite d’une église ; méditation ou prières en l’honneur du saint, en particulier l’offrande qui termine ses Exercices :"
+    },
+    {
+     "type": "texte",
+     "texte": "Prenez, Seigneur, et recevez toute ma liberté, ma mémoire, mon entendement et toute ma volonté. Tout ce que j’ai et tout ce que je possède, vous me l’avez donné ; je vous le rends : tout est à vous, disposez-en selon votre bon plaisir. Donnez-moi seulement votre amour avec votre grâce, et je suis assez riche et ne vous demande rien de plus."
+    },
+    {
+     "type": "traduction",
+     "texte": "*Suscipe, Domine, universam meam libertatem. Accipe memoriam, intellectum atque voluntatem omnem. Quidquid habeo vel possideo, mihi largitus es : id tibi totum restituo, ac tuæ prorsus voluntati trado gubernandum. Amorem tui solum cum gratia tua mihi dones, et dives sum satis, nec aliud quidquam ultra posco.*"
+    }
+   ]
+  },
+  {
+   "id": "dix-dimanches-de-saint-stanislas-kostka",
+   "ordre": 50,
+   "titre": "Dix dimanches de saint Stanislas Kostka",
+   "titre_court": null,
+   "type": "acte",
+   "partie": {
+    "numero": "Huitième partie",
+    "titre": "Dévotions à jours comptés",
+    "notice": "Ces pratiques se font un nombre déterminé de jours de suite ; si l’on en omet un, on recommence. Pour les indulgences plénières, il faut chaque jour se confesser (dans la huitaine), communier, et prier aux intentions du Souverain Pontife ; les « prières en l’honneur du saint » sont au choix : celles qui sont données ici sont les prières traditionnelles et indulgenciées de chaque dévotion."
+   },
+   "jour_de_semaine": "Le dimanche",
+   "page_livret": 66,
+   "usage": "les dix dim. avant sa fête (13 nov.)",
+   "indulgence": "Dix dimanches : plénière chacun, cond. ord. (Ench. 1952). Ces prières : 300 j. une fois le jour ; plénière si elles sont dites chaque jour pendant un mois (Pie IX, 21 mars 1847 ; Ench. 1952, no 502).",
+   "source": "Beringer, Les Indulgences, 1905, no 179",
+   "parent": null,
+   "blocs": [
+    {
+     "type": "notice",
+     "texte": "*Pratique.* Chaque dimanche, confession et communion, et des prières en l’honneur du saint :"
+    },
+    {
+     "type": "numero",
+     "numero": "I",
+     "texte": "Ô saint Stanislas, mon très chaste protecteur, ange de pureté, je me réjouis avec vous du don insigne d’innocence virginale qui orna votre cœur sans tache ; je vous supplie humblement de m’obtenir la force contre les tentations impures et de m’inspirer une vigilance continuelle pour conserver la vertu de la sainte pureté. *Pater, Ave, Gloria.*"
+    },
+    {
+     "type": "numero",
+     "numero": "II",
+     "texte": "Ô saint Stanislas, mon très aimable protecteur, séraphin de charité, je me réjouis avec vous de cette flamme ardente d’amour qui conserva toujours élevé et uni à son Dieu votre cœur pur et innocent ; je vous supplie humblement de m’obtenir une telle flamme de l’amour divin, qu’elle consume toute autre affection terrestre et m’enflamme du seul amour céleste. *Pater, Ave, Gloria.*"
+    },
+    {
+     "type": "numero",
+     "numero": "III",
+     "texte": "Ô saint Stanislas, mon très compatissant et très puissant protecteur, ange de pureté et séraphin de charité, je me réjouis avec vous de votre bienheureuse mort, qui eut pour principe le désir de contempler Marie au jour de son assomption au ciel, et qui fut causée par un élan d’amour envers elle. Je remercie Marie qui voulut exaucer vos vœux, et je vous prie, par cette heureuse prérogative de votre mort, d’être mon avocat et mon protecteur à ma mort. Oh ! employez-vous près de Marie pour m’obtenir une mort sinon heureuse comme la vôtre, du moins tranquille, sous la protection de Marie, mon avocate, et sous la vôtre, ô mon bien-aimé protecteur. *Pater, Ave, Gloria.*"
+    }
+   ]
+  },
+  {
+   "id": "treize-mardis-de-saint-antoine",
+   "ordre": 51,
+   "titre": "Treize mardis de saint Antoine",
+   "titre_court": null,
+   "type": "acte",
+   "partie": {
+    "numero": "Huitième partie",
+    "titre": "Dévotions à jours comptés",
+    "notice": "Ces pratiques se font un nombre déterminé de jours de suite ; si l’on en omet un, on recommence. Pour les indulgences plénières, il faut chaque jour se confesser (dans la huitaine), communier, et prier aux intentions du Souverain Pontife ; les « prières en l’honneur du saint » sont au choix : celles qui sont données ici sont les prières traditionnelles et indulgenciées de chaque dévotion."
+   },
+   "jour_de_semaine": "Le mardi",
+   "page_livret": 68,
+   "usage": "treize mar. (ou dim.) consécutifs, à toute époque",
+   "indulgence": "Plénière chacun des treize mardis, cond. ord. (bref du 1er mars 1898 ; Ench. 1952).",
+   "source": null,
+   "parent": null,
+   "blocs": [
+    {
+     "type": "notice",
+     "texte": "*Pratique.* Chaque mardi, confession et communion, méditation ou prières en l’honneur du saint : le répons *Si quæris* avec son oraison (p. [antoine]). L’usage y joint une aumône pour les pauvres, le « pain de saint Antoine »."
+    }
+   ]
+  },
+  {
+   "id": "quinze-mardis-de-saint-dominique",
+   "ordre": 52,
+   "titre": "Quinze mardis de saint Dominique",
+   "titre_court": null,
+   "type": "acte",
+   "partie": {
+    "numero": "Huitième partie",
+    "titre": "Dévotions à jours comptés",
+    "notice": "Ces pratiques se font un nombre déterminé de jours de suite ; si l’on en omet un, on recommence. Pour les indulgences plénières, il faut chaque jour se confesser (dans la huitaine), communier, et prier aux intentions du Souverain Pontife ; les « prières en l’honneur du saint » sont au choix : celles qui sont données ici sont les prières traditionnelles et indulgenciées de chaque dévotion."
+   },
+   "jour_de_semaine": "Le mardi",
+   "page_livret": 68,
+   "usage": "quinze mar. consécutifs ; souvent avant le 4 août",
+   "indulgence": "Plénière chacun des quinze mardis, cond. ord. (S. C. du Saint-Office, 1915 ; Ench. 1952, no 541).",
+   "source": null,
+   "parent": null,
+   "blocs": [
+    {
+     "type": "notice",
+     "texte": "*Pratique.* Un mardi pour chacun des quinze mystères du Rosaire : chaque mardi, confession et communion, le chapelet en méditant le mystère du jour (voir les quinze samedis, ci-après), puis le répons *O spem miram* et l’oraison du saint (p. [dominique])."
+    }
+   ]
+  },
+  {
+   "id": "premier-mercredi-du-mois",
+   "ordre": 53,
+   "titre": "Premier mercredi du mois",
+   "titre_court": null,
+   "type": "acte",
+   "partie": {
+    "numero": "Huitième partie",
+    "titre": "Dévotions à jours comptés",
+    "notice": "Ces pratiques se font un nombre déterminé de jours de suite ; si l’on en omet un, on recommence. Pour les indulgences plénières, il faut chaque jour se confesser (dans la huitaine), communier, et prier aux intentions du Souverain Pontife ; les « prières en l’honneur du saint » sont au choix : celles qui sont données ici sont les prières traditionnelles et indulgenciées de chaque dévotion."
+   },
+   "jour_de_semaine": "Le mercredi",
+   "page_livret": 68,
+   "usage": "premier mer. de chaque mois",
+   "indulgence": "5 ans ; plénière, cond. ord. (S. Pénit., 1921, 1928 et 1933 ; Raccolta 1943, no 430).",
+   "source": null,
+   "parent": null,
+   "blocs": [
+    {
+     "type": "notice",
+     "texte": "*Pratique.* Un exercice de piété en l’honneur de saint Joseph : les sept Douleurs et Allégresses (p. [joseph]), ou les litanies et prières de son culte."
+    }
+   ]
+  },
+  {
+   "id": "heure-sainte",
+   "ordre": 54,
+   "titre": "Heure sainte",
+   "titre_court": null,
+   "type": "acte",
+   "partie": {
+    "numero": "Huitième partie",
+    "titre": "Dévotions à jours comptés",
+    "notice": "Ces pratiques se font un nombre déterminé de jours de suite ; si l’on en omet un, on recommence. Pour les indulgences plénières, il faut chaque jour se confesser (dans la huitaine), communier, et prier aux intentions du Souverain Pontife ; les « prières en l’honneur du saint » sont au choix : celles qui sont données ici sont les prières traditionnelles et indulgenciées de chaque dévotion."
+   },
+   "jour_de_semaine": "Le jeudi",
+   "page_livret": 69,
+   "usage": "dans la nuit du jeu. au ven., ou dès le jeu. après-midi",
+   "indulgence": "Dans une église ou un oratoire : plénière, avec confession, communion et prière aux intentions du Souverain Pontife (Ench. 1952, no 168).",
+   "source": "Sainte Marguerite-Marie, Autobiographie ; Recueil de ses écrits, 1865 — Beringer, Les Indulgences, 1905, no 261",
+   "parent": null,
+   "blocs": [
+    {
+     "type": "notice",
+     "texte": "*Pratique.* Selon la demande de Notre-Seigneur à sainte Marguerite-Marie, passer une heure en prière pour prendre part à l’agonie de Jésus au jardin des Oliviers (Mt 26, 36-46), apaiser la colère de Dieu et obtenir des grâces pour les pécheurs. On peut la faire devant le très saint Sacrement, en méditant l’agonie, et la terminer par l’acte de réparation au Sacré-Cœur (ci-après)."
+    },
+    {
+     "type": "intertitre",
+     "texte": "La demande de Notre-Seigneur"
+    },
+    {
+     "type": "notice",
+     "texte": "« Toutes les nuits du jeudi au vendredi je te ferai participer à cette mortelle tristesse que j’ai bien voulu ressentir au jardin des Olives […] ; et pour cela tu te lèveras entre onze heures et minuit, et tu demeureras prosternée avec moi pendant une heure, la face contre terre, tant pour apaiser la divine colère, en demandant miséricorde pour les pécheurs, que pour honorer et adoucir en quelque façon l’amertume que je sentis alors de l’abandon de mes apôtres, ce qui m’obligea de leur reprocher qu’ils n’avaient pu veiller une heure avec moi. »"
+    }
+   ]
+  },
+  {
+   "id": "premiers-vendredis-du-mois",
+   "ordre": 55,
+   "titre": "Premiers vendredis du mois",
+   "titre_court": null,
+   "type": "acte",
+   "partie": {
+    "numero": "Huitième partie",
+    "titre": "Dévotions à jours comptés",
+    "notice": "Ces pratiques se font un nombre déterminé de jours de suite ; si l’on en omet un, on recommence. Pour les indulgences plénières, il faut chaque jour se confesser (dans la huitaine), communier, et prier aux intentions du Souverain Pontife ; les « prières en l’honneur du saint » sont au choix : celles qui sont données ici sont les prières traditionnelles et indulgenciées de chaque dévotion."
+   },
+   "jour_de_semaine": "Le vendredi",
+   "page_livret": 69,
+   "usage": "premier ven. de chaque mois ; neuf de suite",
+   "indulgence": "Premier vendredi : plénière pour l’exercice public de réparation au Sacré-Cœur, ou pour des prières de réparation faites en privé par ceux qui en sont empêchés, cond. ord. ; les autres vendredis, 7 ans (Ench. 1952, no 202). — L’acte de réparation : 5 ans ; plénière si on le récite chaque jour pendant un mois, avec confession, communion et visite d’une église ; en la fête du Sacré-Cœur, devant le très saint Sacrement exposé avec les litanies : 7 ans et plénière (S. Pénit., 1er juin 1928 ; Ench. 1952, no 256).",
+   "source": "Pie XI, Acta Apostolicæ Sedis, 1928, p. 181 — Sainte Marguerite-Marie, lettre ; Vie et Œuvres, t. II, 1915, p. 397-398",
+   "parent": null,
+   "blocs": [
+    {
+     "type": "notice",
+     "texte": "*Pratique.* Communion réparatrice au Sacré-Cœur le premier vendredi de neuf mois consécutifs, selon la demande faite à sainte Marguerite-Marie (voir la promesse ci-après). Ce jour-là, on récite l’acte de réparation, de préférence devant le très saint Sacrement."
+    },
+    {
+     "type": "texte",
+     "texte": "Très doux Jésus, Vous avez répandu sur les hommes les bienfaits de votre charité, et leur ingratitude n’y répond que par l’oubli, le délaissement, le mépris. Nous voici donc prosternés devant votre autel, animés du désir de réparer, par un hommage spécial, leur coupable indifférence et les outrages dont, de toutes parts, ils accablent votre Cœur très aimant."
+    },
+    {
+     "type": "texte",
+     "texte": "Cependant, nous souvenant que nous-mêmes, nous nous sommes dans le passé rendus coupables d’une si indigne conduite, et pénétrés d’une profonde douleur, nous implorons d’abord pour nous-mêmes votre miséricorde. Nous sommes prêts à réparer, par une expiation volontaire, les fautes que nous avons commises, tout prêts aussi à expier pour ceux qui, égarés hors de la voie du salut, s’obstinent dans leur infidélité, refusant de Vous suivre, Vous, leur Pasteur et leur Chef, ou, secouant le joug si doux de votre loi, foulent aux pieds les promesses de leur baptême."
+    },
+    {
+     "type": "texte",
+     "texte": "Nous voudrions expier pour tant de fautes lamentables, réparer pour chacune d’elles : désordres de la conduite, indécence des modes, scandales corrupteurs des âmes innocentes, profanation des dimanches et des fêtes, blasphèmes exécrables contre Vous et contre vos Saints, insultes à votre Vicaire et à vos prêtres, abandon et violations odieusement sacrilèges du divin sacrement de votre amour, péchés publics enfin des nations qui se révoltent contre les droits et l’autorité de votre Église."
+    },
+    {
+     "type": "texte",
+     "texte": "Que ne pouvons-nous effacer de notre propre sang tant d’offenses ! Du moins, pour réparer votre honneur outragé, nous Vous présentons cette même satisfaction que Vous avez offerte à votre Père sur la Croix et dont Vous renouvelez l’offrande, chaque jour, sur l’autel ; nous Vous la présentons, accompagnée de toutes les satisfactions de la très sainte Vierge votre Mère, des Saints, des chrétiens fidèles. Nous Vous promettons, de tout notre cœur, autant qu’il dépend de nous et avec le secours de votre grâce, de réparer nos fautes passées, celles de notre prochain, l’indifférence à l’égard d’un si grand amour, par la fermeté de notre foi, la pureté de notre vie, la docilité parfaite aux préceptes de l’Évangile, à celui surtout de la charité. Nous Vous promettons aussi de faire tous nos efforts pour Vous épargner de nouvelles offenses et pour entraîner à votre suite le plus d’âmes possible."
+    },
+    {
+     "type": "texte",
+     "texte": "Agréez, nous Vous en supplions, ô très bon Jésus, par l’intercession de la bienheureuse Vierge Marie Réparatrice, cet hommage spontané d’expiation ; gardez-nous, jusqu’à la mort, inébranlablement fidèles à notre devoir et à votre service, accordez-nous ce don précieux de la persévérance qui nous conduise tous enfin à la patrie où, avec le Père et le Saint-Esprit, Vous régnez, Dieu, dans les siècles des siècles."
+    },
+    {
+     "type": "conclusion",
+     "texte": "Ainsi soit-il."
+    },
+    {
+     "type": "intertitre",
+     "texte": "La grande promesse"
+    },
+    {
+     "type": "notice",
+     "texte": "« Un jour de vendredi, pendant la sainte communion, il dit ces paroles à son indigne esclave : “Je te promets, dans l’excessive miséricorde de mon Cœur, que son amour tout-puissant accordera à tous ceux qui communieront neuf premiers vendredis des mois, de suite, la grâce de la pénitence finale, ne mourant point dans ma disgrâce et sans recevoir leurs sacrements, mon divin Cœur se rendant leur asile assuré au dernier moment.” »"
+    }
+   ]
+  },
+  {
+   "id": "chaque-vendredi-devant-le-crucifix",
+   "ordre": 56,
+   "titre": "Chaque vendredi, devant le Crucifix",
+   "titre_court": null,
+   "type": "acte",
+   "partie": {
+    "numero": "Huitième partie",
+    "titre": "Dévotions à jours comptés",
+    "notice": "Ces pratiques se font un nombre déterminé de jours de suite ; si l’on en omet un, on recommence. Pour les indulgences plénières, il faut chaque jour se confesser (dans la huitaine), communier, et prier aux intentions du Souverain Pontife ; les « prières en l’honneur du saint » sont au choix : celles qui sont données ici sont les prières traditionnelles et indulgenciées de chaque dévotion."
+   },
+   "jour_de_semaine": "Le vendredi",
+   "page_livret": 71,
+   "usage": "ven. ; à 15 h, heure de la mort du Sauveur",
+   "indulgence": "Sept Pater, Ave et Gloria : 7 ans ; plénière, cond. ord., si on le fait tous les vendredis du mois (S. C. des Indulgences, 4 août 1837 ; Ench. 1952). — La prière *En ego*, devant une image de Jésus crucifié : 10 ans ; plénière, avec confession, communion et prière aux intentions du Souverain Pontife (S. C. des Indulgences, 31 juill. 1858 ; Ench. 1952, no 201).",
+   "source": "Beringer, Les Indulgences, 1905, no 106",
+   "parent": null,
+   "blocs": [
+    {
+     "type": "notice",
+     "texte": "*Pratique.* Réciter sept fois Pater, Ave et Gloria devant une image de Jésus crucifié. Après la communion, devant le Crucifix :"
+    },
+    {
+     "type": "texte",
+     "texte": "Ô bon et très doux Jésus, je me prosterne à genoux en votre présence. Je vous prie et vous conjure avec toute la ferveur de mon âme de daigner graver dans mon cœur de vifs sentiments de foi, d’espérance et de charité, un vrai repentir de mes fautes et un ferme propos de ne plus vous offenser ; tandis qu’avec un grand amour et une grande douleur je considère et contemple en esprit vos cinq plaies, ayant devant les yeux ces paroles que le prophète David vous appliquait déjà en les mettant dans votre bouche, ô bon Jésus : *Ils ont percé mes mains et mes pieds, ils ont compté tous mes os.*"
+    },
+    {
+     "type": "traduction",
+     "texte": "*En ego, o bone et dulcissime Jesu, ante conspectum tuum genibus me provolvo…*"
+    }
+   ]
+  },
+  {
+   "id": "treize-vendredis-de-saint-francois-de-paule",
+   "ordre": 57,
+   "titre": "Treize vendredis de saint François de Paule",
+   "titre_court": null,
+   "type": "acte",
+   "partie": {
+    "numero": "Huitième partie",
+    "titre": "Dévotions à jours comptés",
+    "notice": "Ces pratiques se font un nombre déterminé de jours de suite ; si l’on en omet un, on recommence. Pour les indulgences plénières, il faut chaque jour se confesser (dans la huitaine), communier, et prier aux intentions du Souverain Pontife ; les « prières en l’honneur du saint » sont au choix : celles qui sont données ici sont les prières traditionnelles et indulgenciées de chaque dévotion."
+   },
+   "jour_de_semaine": "Le vendredi",
+   "page_livret": 72,
+   "usage": "treize ven. consécutifs",
+   "indulgence": "Plénière chacun des treize vendredis, cond. ord. (bref du 8 déc. 1928 ; Ench. 1952, no 552).",
+   "source": null,
+   "parent": null,
+   "blocs": [
+    {
+     "type": "notice",
+     "texte": "*Pratique.* Chaque vendredi, réciter treize Pater et treize Ave en l’honneur du saint, qui vécut treize ans dans la solitude."
+    }
+   ]
+  },
+  {
+   "id": "sept-vendredis-des-douleurs",
+   "ordre": 58,
+   "titre": "Sept vendredis des Douleurs",
+   "titre_court": null,
+   "type": "acte",
+   "partie": {
+    "numero": "Huitième partie",
+    "titre": "Dévotions à jours comptés",
+    "notice": "Ces pratiques se font un nombre déterminé de jours de suite ; si l’on en omet un, on recommence. Pour les indulgences plénières, il faut chaque jour se confesser (dans la huitaine), communier, et prier aux intentions du Souverain Pontife ; les « prières en l’honneur du saint » sont au choix : celles qui sont données ici sont les prières traditionnelles et indulgenciées de chaque dévotion."
+   },
+   "jour_de_semaine": "Le vendredi",
+   "page_livret": 72,
+   "usage": "les sept ven. avant le vendredi de la Passion ou avant le 15 sept.",
+   "indulgence": "7 ans ; plénière, cond. ord. (bref du 22 mars 1918 ; Ench. 1952, no 382).",
+   "source": null,
+   "parent": null,
+   "blocs": [
+    {
+     "type": "notice",
+     "texte": "*Pratique.* Chaque vendredi, sept Pater, Ave et Gloria en l’honneur de Notre-Dame des Douleurs ; on peut y joindre l’exercice des sept Douleurs (p. [douleurs])."
+    }
+   ]
+  },
+  {
+   "id": "premiers-samedis-du-mois",
+   "ordre": 59,
+   "titre": "Premiers samedis du mois",
+   "titre_court": null,
+   "type": "acte",
+   "partie": {
+    "numero": "Huitième partie",
+    "titre": "Dévotions à jours comptés",
+    "notice": "Ces pratiques se font un nombre déterminé de jours de suite ; si l’on en omet un, on recommence. Pour les indulgences plénières, il faut chaque jour se confesser (dans la huitaine), communier, et prier aux intentions du Souverain Pontife ; les « prières en l’honneur du saint » sont au choix : celles qui sont données ici sont les prières traditionnelles et indulgenciées de chaque dévotion."
+   },
+   "jour_de_semaine": "Le samedi",
+   "page_livret": 73,
+   "usage": "premier sam. de chaque mois",
+   "indulgence": "Exercices de réparation le premier samedi : plénière, cond. ord. ; pour qui fait cette pratique huit premiers samedis de suite, une fois dans sa vie : plénière à l’article de la mort (S. C. du Saint-Office, 13 juin 1912 ; Ench. 1952, no 367). — Premiers samedis de douze mois, prières ou méditations en l’honneur de l’Immaculée : plénière chacun (Ench. 1952, no 365).",
+   "source": "Sœur Lucie, lettre de Tuy, 17 déc. 1927 (apparition de Pontevedra, 10 déc. 1925)",
+   "parent": null,
+   "blocs": [
+    {
+     "type": "notice",
+     "texte": "*Pratique.* Pratique de réparation envers le Cœur immaculé de Marie, offensée par les blasphèmes contre son nom et ses privilèges. Demande de Notre-Dame à Pontevedra (1925) pour cinq premiers samedis : confession, communion, chapelet de cinq dizaines, et un quart d’heure de méditation sur les mystères du Rosaire, le tout en esprit de réparation. On peut y joindre le petit chapelet de l’Immaculée Conception."
+    },
+    {
+     "type": "intertitre",
+     "texte": "La promesse de Notre-Dame"
+    },
+    {
+     "type": "notice",
+     "texte": "« Toi, du moins, tâche de me consoler et dis que tous ceux qui, pendant cinq mois, le premier samedi, se confesseront, recevront la sainte Communion, réciteront un chapelet et me tiendront compagnie pendant quinze minutes, en méditant sur les quinze mystères du Rosaire avec l’intention de m’enlever ces épines, je promets de les assister à l’heure de la mort, avec toutes les grâces nécessaires pour le salut de leur âme. »"
+    }
+   ]
+  },
+  {
+   "id": "douze-samedis-avant-l-immaculee-conception",
+   "ordre": 60,
+   "titre": "Douze samedis avant l’Immaculée Conception",
+   "titre_court": null,
+   "type": "acte",
+   "partie": {
+    "numero": "Huitième partie",
+    "titre": "Dévotions à jours comptés",
+    "notice": "Ces pratiques se font un nombre déterminé de jours de suite ; si l’on en omet un, on recommence. Pour les indulgences plénières, il faut chaque jour se confesser (dans la huitaine), communier, et prier aux intentions du Souverain Pontife ; les « prières en l’honneur du saint » sont au choix : celles qui sont données ici sont les prières traditionnelles et indulgenciées de chaque dévotion."
+   },
+   "jour_de_semaine": "Le samedi",
+   "page_livret": 73,
+   "usage": "les douze sam. avant le 8 déc.",
+   "indulgence": "Plénière chacun, cond. ord. (S. C. du Saint-Office, 26 nov. 1908 ; Ench. 1952, no 366).",
+   "source": null,
+   "parent": null,
+   "blocs": [
+    {
+     "type": "notice",
+     "texte": "*Pratique.* Chaque samedi, confession et communion, prières ou méditations en l’honneur de l’Immaculée, par exemple le petit chapelet de l’Immaculée Conception."
+    }
+   ]
+  },
+  {
+   "id": "quinze-samedis-du-rosaire",
+   "ordre": 61,
+   "titre": "Quinze samedis du Rosaire",
+   "titre_court": null,
+   "type": "acte",
+   "partie": {
+    "numero": "Huitième partie",
+    "titre": "Dévotions à jours comptés",
+    "notice": "Ces pratiques se font un nombre déterminé de jours de suite ; si l’on en omet un, on recommence. Pour les indulgences plénières, il faut chaque jour se confesser (dans la huitaine), communier, et prier aux intentions du Souverain Pontife ; les « prières en l’honneur du saint » sont au choix : celles qui sont données ici sont les prières traditionnelles et indulgenciées de chaque dévotion."
+   },
+   "jour_de_semaine": "Le samedi",
+   "page_livret": 74,
+   "usage": "quinze sam. (ou dim.) consécutifs, avant le 7 oct. ou à toute époque",
+   "indulgence": "Plénière chacun des quinze samedis (ou dimanches), cond. ord. (S. C. des Indulgences, 21 sept. 1889 et 17 sept. 1892 ; S. Pénit., 3 août 1936 ; Ench. 1952, no 397).",
+   "source": "M.-J.-S. Benoît, Livre d’or des âmes du purgatoire, Montréal, 1925",
+   "parent": null,
+   "blocs": [
+    {
+     "type": "notice",
+     "texte": "*Pratique.* Un samedi pour chacun des quinze mystères : chaque samedi, confession et communion, au moins cinq dizaines du chapelet, en méditant le mystère du jour et en demandant la grâce qui lui est attachée."
+    },
+    {
+     "type": "intertitre",
+     "texte": "Mystères joyeux"
+    },
+    {
+     "type": "mystere",
+     "numero": "I.",
+     "texte": "L’Annonciation.",
+     "fruit_libelle": "Fruit :",
+     "fruit": "une grande pureté et une grande humilité."
+    },
+    {
+     "type": "mystere",
+     "numero": "II.",
+     "texte": "La Visitation.",
+     "fruit_libelle": "Fruit :",
+     "fruit": "la grâce de travailler sans cesse à notre salut et à celui du prochain, surtout par nos prières et nos bons exemples."
+    },
+    {
+     "type": "mystere",
+     "numero": "III.",
+     "texte": "La Nativité.",
+     "fruit_libelle": "Fruit :",
+     "fruit": "le détachement des biens de la terre et l’amour de ceux du ciel."
+    },
+    {
+     "type": "mystere",
+     "numero": "IV.",
+     "texte": "La Présentation au Temple.",
+     "fruit_libelle": "Fruit :",
+     "fruit": "une grande pureté et la grâce de nous consacrer tout entiers au service de Dieu pour toujours."
+    },
+    {
+     "type": "mystere",
+     "numero": "V.",
+     "texte": "Jésus retrouvé au Temple.",
+     "fruit_libelle": "Fruit :",
+     "fruit": "la grâce de ne le jamais perdre par le péché mortel."
+    },
+    {
+     "type": "intertitre",
+     "texte": "Mystères douloureux"
+    },
+    {
+     "type": "mystere",
+     "numero": "VI.",
+     "texte": "L’Agonie au jardin des Oliviers.",
+     "fruit_libelle": "Fruit :",
+     "fruit": "la contrition de nos péchés et la grâce de n’y pas retomber."
+    },
+    {
+     "type": "mystere",
+     "numero": "VII.",
+     "texte": "La Flagellation.",
+     "fruit_libelle": "Fruit :",
+     "fruit": "la grâce de mortifier tous nos sens et de ne pas pécher par eux."
+    },
+    {
+     "type": "mystere",
+     "numero": "VIII.",
+     "texte": "Le Couronnement d’épines.",
+     "fruit_libelle": "Fruit :",
+     "fruit": "la grâce de mortifier notre esprit, surtout en rejetant toute mauvaise pensée et tout mauvais désir."
+    },
+    {
+     "type": "mystere",
+     "numero": "IX.",
+     "texte": "Le Portement de la croix.",
+     "fruit_libelle": "Fruit :",
+     "fruit": "la résignation dans les peines de la vie, et la grâce de les supporter d’une manière méritoire pour le ciel."
+    },
+    {
+     "type": "mystere",
+     "numero": "X.",
+     "texte": "Le Crucifiement et la mort de Notre-Seigneur.",
+     "fruit_libelle": "Fruit :",
+     "fruit": "la destruction de nos mauvais penchants et de tout ce qu’il y a de mal en nous."
+    },
+    {
+     "type": "intertitre",
+     "texte": "Mystères glorieux"
+    },
+    {
+     "type": "mystere",
+     "numero": "XI.",
+     "texte": "La Résurrection.",
+     "fruit_libelle": "Fruit :",
+     "fruit": "la vertu de foi et la grâce de vivre en tout pour Dieu et pour notre salut."
+    },
+    {
+     "type": "mystere",
+     "numero": "XII.",
+     "texte": "L’Ascension.",
+     "fruit_libelle": "Fruit :",
+     "fruit": "la vertu d’espérance et une grande confiance en Dieu."
+    },
+    {
+     "type": "mystere",
+     "numero": "XIII.",
+     "texte": "La Descente du Saint-Esprit.",
+     "fruit_libelle": "Fruit :",
+     "fruit": "un grand amour de Dieu et du prochain, et la grâce que le Saint-Esprit vienne en nous et y reste toujours."
+    },
+    {
+     "type": "mystere",
+     "numero": "XIV.",
+     "texte": "L’Assomption de la très sainte Vierge.",
+     "fruit_libelle": "Fruit :",
+     "fruit": "la grâce de faire une sainte mort."
+    },
+    {
+     "type": "mystere",
+     "numero": "XV.",
+     "texte": "Le Couronnement de la très sainte Vierge.",
+     "fruit_libelle": "Fruit :",
+     "fruit": "de vivre saintement jusqu’à la mort, afin de mériter sans cesse pour le ciel."
+    },
+    {
+     "type": "intertitre",
+     "texte": "Promesses du Rosaire"
+    },
+    {
+     "type": "notice",
+     "texte": "Faites par la très sainte Vierge à saint Dominique et au bienheureux Alain de la Roche en faveur des personnes dévotes au Rosaire : elles verront toutes leurs prières exaucées ; elles auront sa spéciale protection et des grâces de choix ; elles seront puissantes contre le vice, l’hérésie et le démon ; elles seront vertueuses, obtiendront miséricorde et aimeront Dieu ; elles ne seront jamais abandonnées d’elle ; elles n’iront point en enfer ; elles trouveront durant la vie et à la mort réconfort et lumières célestes ; elles ne mourront point sans les sacrements ; elles seront délivrées du purgatoire le jour de leur mort ; elles jouiront au ciel d’une gloire particulière ; elles obtiendront tout ce qu’elles demanderont en récitant le chapelet ; elles auront pour frères, en la vie et en la mort, les élus du ciel ; elles seront assistées par elle dans toutes leurs nécessités ; elles seront ses enfants bien-aimés ; elles auront, dans la dévotion au Rosaire, un signe certain de salut."
+    }
+   ]
+  },
+  {
+   "id": "sept-samedis-de-notre-dame-de-la-merci",
+   "ordre": 62,
+   "titre": "Sept samedis de Notre-Dame de la Merci",
+   "titre_court": null,
+   "type": "acte",
+   "partie": {
+    "numero": "Huitième partie",
+    "titre": "Dévotions à jours comptés",
+    "notice": "Ces pratiques se font un nombre déterminé de jours de suite ; si l’on en omet un, on recommence. Pour les indulgences plénières, il faut chaque jour se confesser (dans la huitaine), communier, et prier aux intentions du Souverain Pontife ; les « prières en l’honneur du saint » sont au choix : celles qui sont données ici sont les prières traditionnelles et indulgenciées de chaque dévotion."
+   },
+   "jour_de_semaine": "Le samedi",
+   "page_livret": 76,
+   "usage": "les sept sam. avant le 24 sept.",
+   "indulgence": "7 ans chaque samedi ; plénière, cond. ord. (Ench. 1952, no 421).",
+   "source": null,
+   "parent": null,
+   "blocs": [
+    {
+     "type": "notice",
+     "texte": "*Pratique.* Pieux exercices publics des sept samedis, là où ils se font, en l’honneur de Notre-Dame de la Merci, rédemptrice des captifs."
+    }
+   ]
+  }
+ ]
+}

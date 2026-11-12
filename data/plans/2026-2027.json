@@ -1,0 +1,20 @@
+{
+  "annee": "2026-2027",
+  "statut": "plan accepté par l'utilisateur (calendrier papier 2026-2027, « Les dévotions de l'année »)",
+  "series": [
+    {"cle": "thomas", "debut": "2026-12-20", "nombre": 6},
+    {"cle": "joseph7", "debut": "2027-01-31", "nombre": 7},
+    {"cle": "gonzague", "debut": "2027-04-11", "nombre": 6},
+    {"cle": "ignace", "debut": "2027-05-23", "nombre": 10},
+    {"cle": "stigmates", "debut": "2027-08-15", "nombre": 5},
+    {"cle": "immaculee7", "debut": "2027-10-10", "nombre": 7},
+    {"cle": "antoine", "debut": "2027-03-16", "nombre": 13},
+    {"cle": "dominique", "debut": "2027-06-15", "nombre": 15},
+    {"cle": "paule", "debut": "2027-01-08", "nombre": 13},
+    {"cle": "douleurs7", "debut": "2027-07-30", "nombre": 7},
+    {"cle": "rosaire", "debut": "2027-04-17", "nombre": 15},
+    {"cle": "merci", "debut": "2027-07-31", "nombre": 7},
+    {"cle": "douze", "debut": "2027-09-18", "nombre": 12}
+  ],
+  "non_places": ["berchmans", "camille", "stanislas"]
+}

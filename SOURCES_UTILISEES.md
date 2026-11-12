@@ -1,0 +1,25 @@
+# Sources réellement utilisées
+
+## Étape 1 — Données
+
+| Source | Édition | Usage | Accès |
+|---|---|---|---|
+| **Divinum Officium** (données) | dépôt GitHub, version « Divino Afflatu - 1954 » ; tables `Kalendaria` 1570 → 1954, `Transfer`, rangs `[Rank]`, `horas/*/Martyrologium`, `missa/*` | calendrier, rangs, commémoraisons, Introït, Martyrologe (latin et français) | https://github.com/DivinumOfficium/divinum-officium (clone partiel dans `vendor/do`, non versionné) |
+| ***Missale Romanum*** | édition typique, 1920 | stations romaines (relevé repris de `moteur/stations.py`) | archive.org `000missaleromanum-1920` |
+| **Code de droit canonique** | 1917, can. 1247, 1250-1254 | jeûne et abstinence | — |
+| ***Le Jardin de l'âme*** | livret validé, 84 p. | 62 pièces extraites mot pour mot vers `data/prieres/jardin.json` | `docs/livret/source/*.tex` |
+| ***Calendrier liturgique 2026-2027*** | calendrier papier validé | référence de contrôle du moteur (364 jours) ; plan des dévotions | `data/source/calendrier_2026-2027.json` |
+
+## Sources consultées pour l'inventaire (textes pas encore recopiés)
+
+| Source | Édition | Ce qu'on y a repéré | Accès |
+|---|---|---|---|
+| Beringer, *Les Indulgences, leur nature et leur usage* | trad. Ph. Mazoyer, 4e éd. française, Paris, P. Lethielleux, 1925 ; approuvée par la S. Pénitencerie ; t. I et II | n° 428 Angélus et Regina Cæli ; n° 429 Salve Regina le matin et Sub tuum le soir avec versets (Pie VI, 5 avril 1786) ; litanies n° 305, 377, 439, 487 ; n° 274-276 b (Saint-Esprit) ; t. II : chapelet des Morts (Nîmes, Pie IX 1873) | archive.org `lesindulgences0001beri`, `lesindulgences0002beri` |
+| Beringer, *Les Indulgences* | éd. française 1905, t. I et II | contrôle | archive.org `lesindulgencesle01beri`, `lesindulgencesle02beri` |
+| ***Enchiridion indulgentiarum*** | S. Pénitencerie, Typis polyglottis Vaticanis, 1952 | n° 175 *Mensis eucharisticus* | archive.org `enchiridion_indulgentiarum_1952` |
+| ***The Raccolta*** | trad. anglaise officielle (exemplaire numérisé de 1949) | contrôle (dons du Saint-Esprit) | archive.org `raccoltaofficial0000spen_1` |
+| *Livre d'or des âmes du purgatoire* | J.-S. Benoit, Montréal, E. Michaud ; imprimatur du 3 juillet 1925 | à exploiter (lundi, novembre) | archive.org `livre-d-or-des-ames-du-purgatoire-000001152` |
+
+## Sites récents consultés (cités par lien seulement)
+- La Porte Latine, « Prières du matin et du soir » : https://laportelatine.org/spiritualite/prieres-et-devotions/prieres-matin-et-soir
+- Catholique de France, « Prière du matin », « Prière du soir », « L'Angélus » : https://catholiquedefrance.fr/priere-du-matin/

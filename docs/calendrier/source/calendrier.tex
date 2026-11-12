@@ -1,0 +1,192 @@
+\documentclass{bibliotheca-missel}
+\title{Calendrier liturgique}
+\soustitre{De l’Avent 2026 à l’Avent 2027\\selon le calendrier romain de 1954,\\avec les dévotions du \textit{Jardin de l’âme}}
+\usepackage{array}
+\definecolor{lviolet}{RGB}{96,48,120}
+\definecolor{lrouge}{RGB}{176,30,36}
+\definecolor{lvert}{RGB}{46,110,58}
+\definecolor{lrose}{RGB}{222,140,160}
+\definecolor{lnoir}{RGB}{20,20,20}
+\definecolor{lblanc}{RGB}{255,255,255}
+\newcommand{\pastille}[1]{\tikz[baseline=-.6ex]\draw[line width=.35pt,draw=encre!70,fill=l#1](0,0)circle(1.15mm);}
+\newcommand{\offgrand}[1]{{\fontsize{8.6}{10}\selectfont\scshape\color{rubrique}#1}}
+\newcommand{\offpetit}[1]{{\fontsize{8.4}{10}\selectfont #1}}
+\newcommand{\comm}[1]{\par{\fontsize{6.8}{8}\selectfont\color{encre!80}\textit{Comm.}~#1\par}}
+\newcommand{\jeune}[1]{\par{\fontsize{7}{8.2}\selectfont\color{rubrique}\itshape #1\par}}
+\newcommand{\pg}[1]{\enspace{\color{rubrique}\fontsize{6.3}{7}\selectfont p.\,{\chiffresalignes#1}}}
+\newcommand{\dev}[2]{\par{\fontsize{7.2}{8.4}\selectfont\hangindent=1.15em\noindent\makebox[1.15em][l]{\color{rubrique}❧}#1#2\par}}
+\newcommand{\nov}[2]{\par{\fontsize{7.2}{8.4}\selectfont\itshape\hangindent=1.15em\noindent\makebox[1.15em][l]{\color{rubrique}\upshape◦}#1#2\par}}
+\usepackage[most]{tcolorbox}
+\newcommand{\liturgie}[1]{\par{\fontsize{6.4}{7.6}\selectfont\color{encre!72}#1\par}}
+\newcommand{\noticesaint}[1]{\par\vspace{.3mm}{\fontsize{6.6}{7.9}\selectfont\itshape\color{encre!90}#1\par}\vspace{.3mm}}
+\newcommand{\jourcontenu}[7]{%
+  \begin{minipage}[t]{10.5mm}\centering
+    {\fontsize{6.4}{7}\selectfont\petitescaps\MakeLowercase{#1}}\par\vspace{.3mm}
+    {\fontsize{16}{17}\selectfont\chiffresalignes\ifnum#3=1 \color{rubrique}\fi #2}\par\vspace{.9mm}
+    \pastille{#4}%
+  \end{minipage}\hspace{2mm}%
+  \begin{minipage}[t]{\dimexpr\linewidth-12.5mm}\raggedright
+    {\fontsize{6.4}{7}\selectfont\petitescaps\phantom{l}}\par\vspace{.3mm}
+    #5\enspace{\fontsize{6.4}{7.6}\selectfont\itshape\color{encre!75}#6}\par
+    #7%
+  \end{minipage}}
+\newcommand{\jourcal}[7]{%
+  \par\noindent\jourcontenu{#1}{#2}{#3}{#4}{#5}{#6}{#7}\par
+  \vspace{1.6mm}\vfill\noindent{\color{rubrique!45}\rule{\linewidth}{.25pt}}\par\vspace{1.6mm}}
+\newtcolorbox{cadrefete}{enhanced,colback=white,colframe=rubrique,boxrule=.35pt,arc=0mm,
+  left=1.2mm,right=1.2mm,top=2.2mm,bottom=1.4mm,boxsep=0mm,
+  borderline={.25pt}{-.7mm}{rubrique},
+  overlay={\node[fill=white,inner sep=.6mm] at ([yshift=.2mm]frame.north) {\includegraphics[width=13mm]{cherubin.pdf}};},
+  before skip=2.4mm,after skip=0mm}
+\newcommand{\jourfete}[7]{%
+  \par\begin{cadrefete}\noindent\jourcontenu{#1}{#2}{#3}{#4}{#5}{#6}{#7}\end{cadrefete}\par
+  \vspace{1.6mm}\vfill\noindent{\color{rubrique!45}\rule{\linewidth}{.25pt}}\par\vspace{1.6mm}}
+%% pages des mois
+\newcommand{\devmois}[3]{{\fontsize{9.4}{11.4}\selectfont\scshape\color{rubrique}#1\par}\vspace{1mm}
+  {\fontsize{6.8}{8.2}\selectfont\itshape Pieux exercice indulgencié, \textup{\textit{Enchiridion indulgentiarum}}, 1952, n\textsuperscript{o}~#2.\ifnum#3=1 { }Indulgence plénière aux conditions ordinaires si on le pratique chaque jour du mois.\fi\par}}
+\newcommand{\moisgauche}[6]{\clearpage
+  {\centering\null\vspace{6mm}\includegraphics[width=42mm]{cherubin.pdf}\par\vspace{5mm}
+  {\fontsize{26}{30}\selectfont\titrefont\scshape\color{rubrique}#1\par}\vspace{1mm}
+  {\fontsize{9}{11}\selectfont\petitescaps\addfontfeature{LetterSpace=14}\chiffresalignes #2\par}\vspace{3mm}
+  \fleuron[26mm]\vspace{4mm}
+  {\parbox{.86\linewidth}{\centering #3}\par}
+  \vfill
+  {\parbox{.84\linewidth}{\centering\fontsize{8.4}{10.6}\selectfont\itshape «~#4~»\par\vspace{1.5mm}
+   {\fontsize{6.8}{8.2}\selectfont\upshape #5 — Introït de la fête~: #6\par}}\par}
+  \vspace{8mm}\par}}
+\newcommand{\rubmois}[1]{\par\vspace{2.4mm}{\noindent\fontsize{7.6}{9}\selectfont\petitescaps\addfontfeature{LetterSpace=6}\color{rubrique}#1\par}\vspace{.8mm}}
+\newcommand{\lignemois}[2]{\par{\fontsize{7.6}{9.2}\selectfont\noindent\hangindent=6mm\makebox[6mm][l]{\chiffresalignes\color{rubrique}#1}#2\par}}
+\newcommand{\lignemoislong}[2]{\par{\fontsize{7.6}{9.2}\selectfont\noindent\hangindent=3mm\textit{#1}~: {\chiffresalignes#2}\par}}
+\newcommand{\moisdroite}[2]{\clearpage\entete{#1}{\raggedright #2\par}\vfill{\centering\fleuronpetit\par}}
+\newcommand{\entete}[1]{{\centering\fontsize{7}{9}\selectfont\petitescaps\addfontfeature{LetterSpace=8}\color{rubrique}#1\par}\vspace{.6mm}{\centering\color{rubrique}\rule{18mm}{.3pt}\par}\vspace{2.2mm}}
+\newcommand{\semainegauche}[2]{\clearpage\entete{Semaine #1}{\centering\fontsize{9}{11}\selectfont\itshape #2\par}\vspace{2.5mm}}
+\newcommand{\semainedroite}[1]{\clearpage\entete{Semaine #1}\vspace{1.5mm}}
+\newcommand{\notes}{\par\ifdim\dimexpr\pagegoal-\pagetotal\relax>26mm\notesbloc\fi}
+\newcommand{\notesbloc}{\vfill{\fontsize{6.6}{8}\selectfont\petitescaps\color{rubrique}notes}\par\vspace{1mm}%
+  \foreach \i in {1,...,4}{\noindent{\color{encre!35}\rule{\linewidth}{.2pt}}\par\vspace{4.2mm}}}
+\newcommand{\titreliminaire}[1]{{\raggedright\fleuronpetit\vspace{2mm}{\fontsize{11.2}{13.4}\selectfont\scshape\color{rubrique}#1\par}\vspace{1mm}{\color{rubrique}\rule{12mm}{0.4pt}}\par}\vspace{2.5mm}}
+\newcommand{\petit}{\fontsize{8}{9.8}\selectfont}
+\newcommand{\ligne}[2]{\par\noindent\hangindent=1em{\color{rubrique}\petitescaps #1}\enspace #2\par\vspace{.6mm}}
+\pagestyle{empty}
+\begin{document}\special{pdf:docinfo<< /Title (Calendrier liturgique 2026-2027) /Author () /Subject () /Creator () /Producer () >>}
+\faussetitre
+\frontispice
+\pagedetitre
+%% ------------------------------------------------------------ 4
+\thispagestyle{empty}
+\titreliminaire{Usage de ce calendrier}
+{\petit
+Le calendrier suit le calendrier romain universel en vigueur en 1954, selon les rubriques de saint Pie X (\textit{Divino afflatu}, 1911) et leurs additions jusqu’à Pie XII, avant la simplification de 1955. Chaque double page contient une semaine, du dimanche au samedi.
+
+\ligne{Office.}{En rouge et petites capitales : dimanches, fêtes de I\textsuperscript{re} et de II\textsuperscript{e} classe et doubles majeurs ; en romain : les autres jours. Suit le rang : \textit{1\textsuperscript{re} cl., 2\textsuperscript{e} cl., dbl maj.} (double majeur), \textit{dbl} (double), \textit{semi-dbl}, \textit{simple}, \textit{vigile}, \textit{fér. maj.} (férie majeure), \textit{fér. priv.} (férie privilégiée), \textit{férie}.}
+\ligne{Comm.}{Commémoraisons faites à la messe et à l’office du jour.}
+\ligne{Intr.}{Premiers mots de l’Introït de la messe du jour (Missel romain) ; suit, aux jours qui en ont une, l’église de la station romaine, telle que l’indique le \textit{Missale Romanum} (éd. typique de 1920).}
+\ligne{Notice.}{Aux fêtes principales, en italique, l’éloge du saint ou de la fête tiré du \textit{Martyrologe romain}, parfois abrégé […]. Les fêtes de I\textsuperscript{re} et de II\textsuperscript{e} classe sont encadrées.}
+\ligne{Couleur.}{La pastille sous la date indique la couleur des ornements :}
+\noindent\hspace*{1em}\pastille{blanc}~blanc\quad\pastille{rouge}~rouge\quad\pastille{vert}~vert\quad\pastille{violet}~violet\quad\pastille{rose}~rose\quad\pastille{noir}~noir\par\vspace{1mm}
+\ligne{\color{rubrique}❧}{Dévotion à jours comptés, avec la page du \textit{Jardin de l’âme} où se trouvent les prières.}
+\ligne{\color{rubrique}◦}{Neuvaine préparatoire à une grande fête.}
+\ligne{\color{rubrique}\textit{Jeûne}}{Jours de jeûne et d’abstinence, en italique rouge.}
+
+Les dévotions à jours comptés ont été réparties sur l’année de façon à se suivre sans se chevaucher : un seul cycle de dimanches, de mardis, de vendredis et de samedis à la fois. Seuls les premiers vendredis et premiers samedis du mois, qui reviennent chaque mois, peuvent coïncider avec un autre cycle. Ce jour-là, une même confession et une même communion suffisent pour les deux pratiques, car elles peuvent servir à plusieurs indulgences (Code de 1917, can.~933) ; mais l’indulgence plénière ne se gagne qu’une fois le jour, sauf mention contraire (can.~928, §\,1).
+\par}
+\clearpage
+%% ------------------------------------------------------------ 5
+\thispagestyle{empty}
+\titreliminaire{Le jeûne et l’abstinence}
+{\petit
+D’après le Code de droit canonique de 1917 (can.~1250-1254) :
+
+\ligne{Abstinence}{(pas de viande ni de jus de viande) : tous les vendredis de l’année.}
+\ligne{Jeûne et abstinence :}{le mercredi des Cendres ; les vendredis et samedis de Carême ; les Quatre-Temps ; les vigiles de la Pentecôte, de l’Assomption, de la Toussaint et de Noël.}
+\ligne{Jeûne seul :}{les autres jours de Carême.}
+
+Le jeûne ne permet qu’un seul repas complet par jour, avec une légère réfection le matin et le soir selon la coutume approuvée ; on peut mêler viande et poisson au même repas (can.~1251). L’abstinence oblige dès sept ans accomplis ; le jeûne, de vingt et un ans accomplis jusqu’au début de la soixantième année (can.~1254).
+
+Le dimanche et les fêtes de précepte, hors du Carême, l’abstinence et le jeûne cessent, et les vigiles ne sont pas anticipées ; le samedi saint, ils cessent à midi (can.~1252, §\,4). C’est pourquoi, en 2027, la vigile de la Toussaint, qui tombe un dimanche, ne comporte ni jeûne ni abstinence, et le vendredi 25 décembre 2026, jour de Noël, est libre.
+
+Le 1\textsuperscript{er} janvier 2027 est un vendredi : la Circoncision est de précepte dans le droit commun (can.~1247), mais ne l’est pas là où un indult l’a supprimée, comme en France ; l’abstinence y demeure.
+\par\vspace{3mm}
+\titreliminaire{La consécration de Montfort}
+Saint Louis-Marie Grignion de Montfort conseille de renouveler chaque année la consécration à Jésus par Marie, de préférence au 25 mars, après trente-trois jours de préparation : douze jours pour se vider de l’esprit du monde, puis trois semaines consacrées à la connaissance de soi-même, de la sainte Vierge et de Jésus-Christ. En 2027, le 25 mars tombe le jeudi saint : l’Annonciation est transférée au lundi 5 avril, après l’octave de Pâques. La préparation commence donc le mercredi 3 mars, et la consécration se fait le 5 avril.
+\par}
+\clearpage
+%% ------------------------------------------------------------ 6
+\thispagestyle{empty}
+\titreliminaire{Les dévotions de l’année}
+{\fontsize{7.4}{9}\selectfont
+\renewcommand{\arraystretch}{1.08}
+\noindent\begin{tabular}{@{}>{\raggedright\arraybackslash}p{47mm}@{\hspace{1.5mm}}>{\raggedright\arraybackslash}p{24mm}@{\hspace{1mm}}r@{}}
+\multicolumn{3}{@{}l}{\color{rubrique}\petitescaps dimanches}\\
+Six dim. de S. Thomas d’Aquin & 20 déc. – 24 janv. & 64\\
+Sept dim. de S. Joseph & 31 janv. – 14 mars & 64\\
+Six dim. de S. Louis de Gonzague & 11 avr. – 16 mai & 63\\
+Dix dim. de S. Ignace & 23 mai – 25 juil. & 66\\
+Cinq dim. des Stigmates de S. François & 15 août – 12 sept. & 62\\
+Sept dim. de l’Immaculée Conception & 10 oct. – 21 nov. & 65\\[.6mm]
+\multicolumn{3}{@{}l}{\color{rubrique}\petitescaps mardis}\\
+Treize mardis de S. Antoine & 16 mars – 8 juin & 68\\
+Quinze mardis de S. Dominique & 15 juin – 21 sept. & 68\\[.6mm]
+\multicolumn{3}{@{}l}{\color{rubrique}\petitescaps chaque mois}\\
+Premier mercredi : S. Joseph & & 68\\
+Heure sainte, veille du 1\textsuperscript{er} vendredi & & 69\\
+Neuf premiers vendredis & 4 déc. – 6 août & 69\\
+Cinq premiers samedis & 5 déc. – 3 avr. & 73\\[.6mm]
+\multicolumn{3}{@{}l}{\color{rubrique}\petitescaps vendredis}\\
+Treize vendredis de S. François de Paule & 8 janv. – 2 avr. & 72\\
+Sept vendredis des Douleurs & 30 juil. – 10 sept. & 72\\[.6mm]
+\multicolumn{3}{@{}l}{\color{rubrique}\petitescaps samedis}\\
+Quinze samedis du Rosaire & 17 avr. – 24 juil. & 74\\
+Sept samedis de N.-D. de la Merci & 31 juil. – 11 sept. & 76\\
+Douze samedis avant l’Immaculée & 18 sept. – 4 déc. & 73\\[.6mm]
+\multicolumn{3}{@{}l}{\color{rubrique}\petitescaps consécration}\\
+Préparation de Montfort & 3 mars – 4 avr. & 11\\
+Consécration à Jésus par Marie & 5 avril & 11\\
+\end{tabular}
+
+\vspace{2mm}\noindent\textit{Non placés, faute de dimanches libres : les cinq dimanches de S. Jean Berchmans, les sept de S. Camille de Lellis et les dix de S. Stanislas Kostka (p.~63, 65, 66). On peut les reprendre aux dimanches restés libres.}\par}
+\clearpage
+%% ------------------------------------------------------------ 7
+\thispagestyle{empty}
+\titreliminaire{Fêtes mobiles et neuvaines}
+{\fontsize{7.4}{9}\selectfont
+\noindent\begin{tabular}{@{}>{\raggedright\arraybackslash}p{40mm}@{\hspace{2mm}}l@{}}
+1\textsuperscript{er} dimanche de l’Avent & 29 novembre 2026\\
+Septuagésime & 24 janvier 2027\\
+Mercredi des Cendres & 10 février\\
+Pâques & 28 mars\\
+Patronage de S. Joseph & 14 avril\\
+Ascension & 6 mai\\
+Pentecôte & 16 mai\\
+Très Sainte Trinité & 23 mai\\
+Fête-Dieu & 27 mai\\
+Sacré-Cœur & 4 juin\\
+Christ-Roi & 31 octobre\\
+1\textsuperscript{er} dimanche de l’Avent & 28 novembre 2027\\[1mm]
+\multicolumn{2}{@{}l}{\color{rubrique}\petitescaps quatre-temps}\\
+Avent & 16, 18 et 19 décembre 2026\\
+Carême & 17, 19 et 20 février\\
+Pentecôte & 19, 21 et 22 mai\\
+Septembre & 15, 17 et 18 septembre\\[1mm]
+\multicolumn{2}{@{}l}{\color{rubrique}\petitescaps neuvaines}\\
+Immaculée Conception & 29 nov. – 7 déc.\\
+Noël & 16 – 24 déc.\\
+S. Joseph & 10 – 18 mars\\
+S. Gabriel & 15 – 23 mars\\
+S. Louis-Marie de Montfort & 19 – 27 avr.\\
+Saint-Esprit & 7 – 15 mai\\
+Sacré-Cœur & 26 mai – 3 juin\\
+Assomption & 6 – 14 août\\
+Nativité de Notre-Dame & 30 août – 7 sept.\\
+S. Michel & 20 – 28 sept.\\
+Rosaire & 28 sept. – 6 oct.\\
+Toussaint & 23 – 31 oct.\\
+\end{tabular}\par}
+%% ------------------------------------------------------------ semaines
+\input{weeks}
+%% ------------------------------------------------------------ fin
+\clearpage\thispagestyle{empty}
+\null\vfill
+{\centering\fleuron[24mm]\par\vspace{4mm}{\fontsize{8.6}{11}\selectfont\itshape Ad maiorem Dei gloriam.\par}}
+\vspace*{20mm}
+\end{document}

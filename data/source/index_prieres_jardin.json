@@ -1,0 +1,410 @@
+[
+ {
+  "partie": "Offrande du matin",
+  "titre": "(contenu dans chunk_offrande.tex)",
+  "type": "chunk",
+  "page_livret": null,
+  "usage": null,
+  "indulgence": null
+ },
+ {
+  "partie": "Offrande du matin",
+  "titre": "Prière pour les agonisants",
+  "type": "acte",
+  "page_livret": 6,
+  "usage": "quot., trois fois : matin, midi et soir",
+  "indulgence": "300 j. — Plénière, aux conditions ordinaires, si elle est dite trois fois le jour, à trois moments distincts, pendant un mois. S. C. des Indulgences, 2 févr. 1850 ; S. Pénit., 15 mai 1933. — Ench. 1952, no 671."
+ },
+ {
+  "partie": "Actes des devoirs de charité",
+  "titre": "(contenu dans chunk_devoirs.tex)",
+  "type": "chunk",
+  "page_livret": null,
+  "usage": null,
+  "indulgence": null
+ },
+ {
+  "partie": "Actes des devoirs de charité",
+  "titre": "Prière de la Milice angélique",
+  "type": "sousacte",
+  "page_livret": null,
+  "usage": "quot., matin et soir",
+  "indulgence": "Indulgences propres aux associés de la confrérie du Cordon de saint Thomas, qui portent le cordon."
+ },
+ {
+  "partie": "Consécration à Jésus par Marie",
+  "titre": "(contenu dans chunk_montfort.tex)",
+  "type": "chunk",
+  "page_livret": null,
+  "usage": null,
+  "indulgence": "Plénière, aux conditions ordinaires, en la fête de l’Immaculée Conception et le 28 avril. Pie X, rescrit autographe, 24 déc. 1907 ; S. C. du Saint-Office, 7 déc. 1927. — Ench. 1952."
+ },
+ {
+  "partie": "Consécration à Jésus par Marie",
+  "titre": "La petite Couronne de la très sainte Vierge",
+  "type": "acte",
+  "page_livret": 13,
+  "usage": "quot. ; surtout le samedi",
+  "indulgence": null
+ },
+ {
+  "partie": "Consécration à Jésus par Marie",
+  "titre": "Oraison à Marie",
+  "type": "acte",
+  "page_livret": 15,
+  "usage": "quot.",
+  "indulgence": null
+ },
+ {
+  "partie": "Consécration à Jésus par Marie",
+  "titre": "Prière pour demander la Sagesse",
+  "type": "acte",
+  "page_livret": 16,
+  "usage": "quot.",
+  "indulgence": null
+ },
+ {
+  "partie": "Consécration à Jésus par Marie",
+  "titre": "À Marie Médiatrice de toutes grâces",
+  "type": "acte",
+  "page_livret": 17,
+  "usage": "sam. ; 31 mai",
+  "indulgence": null
+ },
+ {
+  "partie": "Consécration à Jésus par Marie",
+  "titre": "Prière du cardinal Mercier",
+  "type": "sousacte",
+  "page_livret": null,
+  "usage": "en neuvaine ; avant le 31 mai et le 28 avril",
+  "indulgence": "200 j."
+ },
+ {
+  "partie": "Consécration à Jésus par Marie",
+  "titre": "Auguste Reine des Cieux",
+  "type": "acte",
+  "page_livret": 19,
+  "usage": "quot. ; surtout le mar., jour des saints Anges",
+  "indulgence": "500 j. S. C. des Indulgences, 8 juill. 1908 ; S. Pénit., 1934. — Ench. 1952, no 345."
+ },
+ {
+  "partie": "Consécration à Jésus par Marie",
+  "titre": "À saint Gabriel Archange",
+  "type": "acte",
+  "page_livret": 19,
+  "usage": "mar., jour des saints Anges ; 24 mars ; neuvaine avant la fête",
+  "indulgence": "3 ans. — Plénière, aux conditions ordinaires, si elle est dite chaque jour pendant un mois. S. Pénit., 25 avr. 1949. — Neuvaine de prières quelconques à saint Gabriel : 5 ans chaque jour, plénière à la fin. — Ench. 1952, nos 448-449."
+ },
+ {
+  "partie": "Couronnes et chapelets",
+  "titre": "(contenu dans chunk_couronne.tex)",
+  "type": "chunk",
+  "page_livret": null,
+  "usage": null,
+  "indulgence": null
+ },
+ {
+  "partie": "Couronnes et chapelets",
+  "titre": "Offrandes de la Garde d’honneur",
+  "type": "acte",
+  "page_livret": 26,
+  "usage": "quot., à son heure de garde ; surtout le ven.",
+  "indulgence": "80 j. Pie IX, 13 juin 1876."
+ },
+ {
+  "partie": "Couronnes et chapelets",
+  "titre": "(contenu dans chunk_michel.tex)",
+  "type": "chunk",
+  "page_livret": null,
+  "usage": null,
+  "indulgence": "7 ans et 7 quarantaines, chaque fois ; plénière une fois le mois et aux fêtes des saints Anges, avec un chapelet bénit. Pie IX, 8 août 1851. — Pour la prière de Léon XIII \\textit{Saint Michel Archange, défendez-nous dans le combat} : 3 ans ; plénière, aux conditions ordinaires, si elle est dite chaque jour pendant un mois (S. Pénit., 12 nov. 1932 ; Ench. 1952)."
+ },
+ {
+  "partie": "Couronnes et chapelets",
+  "titre": "Chapelet des saintes Plaies",
+  "type": "acte",
+  "page_livret": 31,
+  "usage": "ven. ; quot. pour les âmes du purgatoire",
+  "indulgence": null
+ },
+ {
+  "partie": "Couronnes et chapelets",
+  "titre": "Les sept Douleurs de Marie",
+  "type": "acte",
+  "page_livret": 32,
+  "usage": "ven. et sam. ; quot. en septembre ; vendredi de la Passion et 15 sept.",
+  "indulgence": "5 ans ; 7 ans chaque jour de septembre. — Plénière, aux conditions ordinaires, pour la récitation quotidienne pendant un mois. Pie VII, 14 janv. 1815 ; S. Pénit., 1935 et 1941. — Ench. 1952, no 383. — L’invocation \\textit{Virgo dolorosissima, ora pro nobis} : 300 j. (no 377). — Sept vendredis avant l’une des deux fêtes des Douleurs, sept Pater, Ave et Gloria : 7 ans et plénière (no 382). — Le chapelet des Servites, bénit, a en outre ses indulgences propres."
+ },
+ {
+  "partie": "Couronnes et chapelets",
+  "titre": "Les sept Douleurs et les sept Allégresses de saint Joseph",
+  "type": "acte",
+  "page_livret": 34,
+  "usage": "mer. ; les sept dim. avant le 19 mars ; mois de mars",
+  "indulgence": "5 ans. — Plénière, aux conditions ordinaires, si ces prières sont dites chaque jour pendant un mois. Pie VII, 9 déc. 1819 ; S. Pénit., 12 mai 1932. — Ench. 1952, no 410. — Sept dimanches consécutifs (ces prières, ou sept Pater et Ave) : 5 ans et plénière chacun (Raccolta 1943, no 427). — Premier mercredi du mois : 5 ans et plénière (\\textit{ibid.}, no 430)."
+ },
+ {
+  "partie": "Couronnes et chapelets",
+  "titre": "Les treize mardis de saint Antoine",
+  "type": "acte",
+  "page_livret": 37,
+  "usage": "mar. ; treize de suite, à toute époque, ou avant le 13 juin",
+  "indulgence": "Répons, avec ℣ et oraison : 300 j. une fois le jour ; plénière, aux conditions ordinaires, s’il est dit chaque jour pendant un mois. S. C. des Indulgences, 25 janv. 1866 ; S. Pénit., 30 janv. 1936. — Treize mardis (ou dimanches) consécutifs, avec méditation ou prières en l’honneur du saint : plénière, aux conditions ordinaires. Bref du 1\\ier{} mars 1898. — Ench. 1952."
+ },
+ {
+  "partie": "Couronnes et chapelets",
+  "titre": "Les quinze mardis de saint Dominique",
+  "type": "acte",
+  "page_livret": 38,
+  "usage": "mar. ; quinze de suite, à toute époque, ou avant le 4 août",
+  "indulgence": "Quinze mardis consécutifs, avec méditation ou prières en l’honneur du saint : plénière, aux conditions ordinaires, chacun. S. C. du Saint-Office, 6 mai et 25 nov. 1915 ; S. Pénit., 20 mai 1935. — Ench. 1952, no 541."
+ },
+ {
+  "partie": "Prières de réparation",
+  "titre": "(contenu dans chunk_fleche.tex)",
+  "type": "chunk",
+  "page_livret": null,
+  "usage": null,
+  "indulgence": null
+ },
+ {
+  "partie": "Prières de réparation",
+  "titre": "Offrande de la sainte Face",
+  "type": "acte",
+  "page_livret": 40,
+  "usage": "mar., jour consacré à la sainte Face ; mardi gras",
+  "indulgence": null
+ },
+ {
+  "partie": "Prières de réparation",
+  "titre": "(contenu dans chunk_sang.tex)",
+  "type": "chunk",
+  "page_livret": null,
+  "usage": null,
+  "indulgence": null
+ },
+ {
+  "partie": "Prières de réparation",
+  "titre": "(contenu dans chunk_brigitte.tex)",
+  "type": "chunk",
+  "page_livret": null,
+  "usage": null,
+  "indulgence": null
+ },
+ {
+  "partie": "Litanies",
+  "titre": "Litanies de la sainte Face",
+  "type": "acte",
+  "page_livret": 49,
+  "usage": "mar.",
+  "indulgence": null
+ },
+ {
+  "partie": "Litanies",
+  "titre": "Litanies de Notre-Dame des Sept Douleurs",
+  "type": "acte",
+  "page_livret": 52,
+  "usage": "ven. ; septembre",
+  "indulgence": null
+ },
+ {
+  "partie": "Hymnes",
+  "titre": "Veni Creator Spiritus",
+  "type": "acte",
+  "page_livret": 56,
+  "usage": "au commencement de toute œuvre ; Pentecôte et son octave",
+  "indulgence": "5 ans, avec le ℣ \\textit{Emitte} et l’oraison \\textit{Deus qui corda}. — Plénière, aux conditions ordinaires, pour la récitation quotidienne pendant un mois. Pie VI, bref du 26 mai 1796 ; S. Pénit. — Ench. 1952."
+ },
+ {
+  "partie": "Hymnes",
+  "titre": "Ave Maris Stella",
+  "type": "acte",
+  "page_livret": 57,
+  "usage": "sam. ; fêtes de la sainte Vierge",
+  "indulgence": "3 ans. — Plénière, aux conditions ordinaires, pour la récitation quotidienne pendant un mois. S. C. des Indulgences, 27 janv. 1888 ; S. Pénit., 27 mars 1935. — Ench. 1952, no 321."
+ },
+ {
+  "partie": "Hymnes",
+  "titre": "Magnificat",
+  "type": "acte",
+  "page_livret": 58,
+  "usage": "le soir ; sam.",
+  "indulgence": "3 ans ; 5 ans en la fête de la Visitation et chaque samedi. — Plénière, aux conditions ordinaires, pour la récitation quotidienne pendant un mois. S. C. des Indulgences, 20 sept. 1879 et 22 févr. 1888 ; S. Pénit., 1936 et 1940. — Ench. 1952, no 320."
+ },
+ {
+  "partie": "Hymnes",
+  "titre": "Te, Joseph, celebrent",
+  "type": "acte",
+  "page_livret": 60,
+  "usage": "mer. ; 19 mars ; mois de mars",
+  "indulgence": "3 ans. — Plénière, aux conditions ordinaires, pour la récitation quotidienne pendant un mois. S. Pénit., 9 févr. 1922 et 13 juill. 1932. — Ench. 1952, no 463."
+ },
+ {
+  "partie": "Dévotions à jours comptés",
+  "titre": "Cinq dimanches des Stigmates de saint François",
+  "type": "acte",
+  "page_livret": 62,
+  "usage": "les cinq dim. avant le 17 sept., ou cinq dim. consécutifs à toute époque",
+  "indulgence": "Plénière chacun des cinq dimanches, une fois l’an, cond. ord. Léon XIII, 21 nov. 1885. — Ench. 1952, no 515. — L’aspiration : 50 j. (Léon XIII, 4 mai 1888)."
+ },
+ {
+  "partie": "Dévotions à jours comptés",
+  "titre": "Cinq dimanches de saint Jean Berchmans",
+  "type": "acte",
+  "page_livret": 63,
+  "usage": "les cinq dim. avant sa fête (13 août)",
+  "indulgence": "Le dernier dimanche : plénière ; les quatre autres : 7 ans et plénière, cond. ord. (S. C. des Indulgences, 17 mai 1890). L’invocation avec Pater, Ave et Gloria devant une image : 300 j. ; plénière si chaque jour pendant un mois. — Ench. 1952, no 526."
+ },
+ {
+  "partie": "Dévotions à jours comptés",
+  "titre": "Six dimanches de saint Louis de Gonzague",
+  "type": "acte",
+  "page_livret": 63,
+  "usage": "les six dim. avant le 21 juin, ou six dim. consécutifs",
+  "indulgence": "Six dimanches : plénière chacun, cond. ord. (S. C. des Indulgences, 11 déc. 1739 et 7 janv. 1740 ; Ench. 1952). La prière, avec Pater, Ave et Gloria : 300 j. une fois le jour ; plénière si elle est dite chaque jour pendant un mois (Ench. 1952, no 496). Devant une image du saint, Pater, Ave, Gloria et l’invocation \\textit{Saint Louis, priez pour moi} : 300 j. (no 495)."
+ },
+ {
+  "partie": "Dévotions à jours comptés",
+  "titre": "Six dimanches de saint Thomas d’Aquin",
+  "type": "acte",
+  "page_livret": 64,
+  "usage": "les six dim. avant le 7 mars, ou à toute époque, une fois l’an",
+  "indulgence": "Six dimanches : plénière chacun, cond. ord. (Léon XIII, 21 août 1886 ; Ench. 1952). La prière : 300 j. une fois le jour ; plénière si elle est dite chaque jour pendant un mois (Léon XIII, 3 juill. 1885 ; Ench. 1952, no 520)."
+ },
+ {
+  "partie": "Dévotions à jours comptés",
+  "titre": "Sept dimanches de saint Joseph",
+  "type": "acte",
+  "page_livret": 64,
+  "usage": "les sept dim. avant le 19 mars, ou sept dim. consécutifs",
+  "indulgence": "5 ans et plénière chacun des sept dimanches, cond. ord. (S. C. des Indulgences, 1\\ier{} févr. et 22 mars 1847 ; Raccolta 1943, no 427)."
+ },
+ {
+  "partie": "Dévotions à jours comptés",
+  "titre": "Sept dimanches de l’Immaculée Conception",
+  "type": "acte",
+  "page_livret": 65,
+  "usage": "sept dim. consécutifs, au choix ; de préférence avant le 8 déc.",
+  "indulgence": "Sept dimanches : plénière chacun, cond. ord. (S. C. de la Propagande, 21 sept. 1865 ; Ench. 1952, no 363). Le petit chapelet : 300 j. chaque fois ; plénière une fois le mois pour la récitation quotidienne (Pie IX, 22 juin 1855)."
+ },
+ {
+  "partie": "Dévotions à jours comptés",
+  "titre": "Sept dimanches de saint Camille de Lellis",
+  "type": "acte",
+  "page_livret": 65,
+  "usage": "sept dim. consécutifs ; surtout pour les malades",
+  "indulgence": "Sept dimanches : plénière chacun, cond. ord. (Ench. 1952, no 506). La prière : 300 j. ; plénière si elle est dite chaque jour pendant un mois (Léon XIII, 27 févr. 1894 ; Ench. 1952, no 668)."
+ },
+ {
+  "partie": "Dévotions à jours comptés",
+  "titre": "Dix dimanches de saint Ignace",
+  "type": "acte",
+  "page_livret": 66,
+  "usage": "les dix dim. avant le 31 juillet, ou dix dim. consécutifs",
+  "indulgence": "Dix dimanches : plénière chacun, cond. ord. (Clément XIII, 27 janv. 1767 ; Ench. 1952, no 407). Le \\textit{Suscipe} : 3 ans ; plénière si on le récite chaque jour pendant un mois (Léon XIII, 26 mai 1883 ; Ench. 1952, no 52)."
+ },
+ {
+  "partie": "Dévotions à jours comptés",
+  "titre": "Dix dimanches de saint Stanislas Kostka",
+  "type": "acte",
+  "page_livret": 66,
+  "usage": "les dix dim. avant sa fête (13 nov.)",
+  "indulgence": "Dix dimanches : plénière chacun, cond. ord. (Ench. 1952). Ces prières : 300 j. une fois le jour ; plénière si elles sont dites chaque jour pendant un mois (Pie IX, 21 mars 1847 ; Ench. 1952, no 502)."
+ },
+ {
+  "partie": "Dévotions à jours comptés",
+  "titre": "Treize mardis de saint Antoine",
+  "type": "acte",
+  "page_livret": 68,
+  "usage": "treize mar. (ou dim.) consécutifs, à toute époque",
+  "indulgence": "Plénière chacun des treize mardis, cond. ord. (bref du 1\\ier{} mars 1898 ; Ench. 1952)."
+ },
+ {
+  "partie": "Dévotions à jours comptés",
+  "titre": "Quinze mardis de saint Dominique",
+  "type": "acte",
+  "page_livret": 68,
+  "usage": "quinze mar. consécutifs ; souvent avant le 4 août",
+  "indulgence": "Plénière chacun des quinze mardis, cond. ord. (S. C. du Saint-Office, 1915 ; Ench. 1952, no 541)."
+ },
+ {
+  "partie": "Dévotions à jours comptés",
+  "titre": "Premier mercredi du mois",
+  "type": "acte",
+  "page_livret": 68,
+  "usage": "premier mer. de chaque mois",
+  "indulgence": "5 ans ; plénière, cond. ord. (S. Pénit., 1921, 1928 et 1933 ; Raccolta 1943, no 430)."
+ },
+ {
+  "partie": "Dévotions à jours comptés",
+  "titre": "Heure sainte",
+  "type": "acte",
+  "page_livret": 69,
+  "usage": "dans la nuit du jeu. au ven., ou dès le jeu. après-midi",
+  "indulgence": "Dans une église ou un oratoire : plénière, avec confession, communion et prière aux intentions du Souverain Pontife (Ench. 1952, no 168)."
+ },
+ {
+  "partie": "Dévotions à jours comptés",
+  "titre": "Premiers vendredis du mois",
+  "type": "acte",
+  "page_livret": 69,
+  "usage": "premier ven. de chaque mois ; neuf de suite",
+  "indulgence": "Premier vendredi : plénière pour l’exercice public de réparation au Sacré-Cœur, ou pour des prières de réparation faites en privé par ceux qui en sont empêchés, cond. ord. ; les autres vendredis, 7 ans (Ench. 1952, no 202). — L’acte de réparation : 5 ans ; plénière si on le récite chaque jour pendant un mois, avec confession, communion et visite d’une église ; en la fête du Sacré-Cœur, devant le très saint Sacrement exposé avec les litanies : 7 ans et plénière (S. Pénit., 1\\ier{} juin 1928 ; Ench. 1952, no 256)."
+ },
+ {
+  "partie": "Dévotions à jours comptés",
+  "titre": "Chaque vendredi, devant le Crucifix",
+  "type": "acte",
+  "page_livret": 71,
+  "usage": "ven. ; à 15 h, heure de la mort du Sauveur",
+  "indulgence": "Sept Pater, Ave et Gloria : 7 ans ; plénière, cond. ord., si on le fait tous les vendredis du mois (S. C. des Indulgences, 4 août 1837 ; Ench. 1952). — La prière \\textit{En ego}, devant une image de Jésus crucifié : 10 ans ; plénière, avec confession, communion et prière aux intentions du Souverain Pontife (S. C. des Indulgences, 31 juill. 1858 ; Ench. 1952, no 201)."
+ },
+ {
+  "partie": "Dévotions à jours comptés",
+  "titre": "Treize vendredis de saint François de Paule",
+  "type": "acte",
+  "page_livret": 72,
+  "usage": "treize ven. consécutifs",
+  "indulgence": "Plénière chacun des treize vendredis, cond. ord. (bref du 8 déc. 1928 ; Ench. 1952, no 552)."
+ },
+ {
+  "partie": "Dévotions à jours comptés",
+  "titre": "Sept vendredis des Douleurs",
+  "type": "acte",
+  "page_livret": 72,
+  "usage": "les sept ven. avant le vendredi de la Passion ou avant le 15 sept.",
+  "indulgence": "7 ans ; plénière, cond. ord. (bref du 22 mars 1918 ; Ench. 1952, no 382)."
+ },
+ {
+  "partie": "Dévotions à jours comptés",
+  "titre": "Premiers samedis du mois",
+  "type": "acte",
+  "page_livret": 73,
+  "usage": "premier sam. de chaque mois",
+  "indulgence": "Exercices de réparation le premier samedi : plénière, cond. ord. ; pour qui fait cette pratique huit premiers samedis de suite, une fois dans sa vie : plénière à l’article de la mort (S. C. du Saint-Office, 13 juin 1912 ; Ench. 1952, no 367). — Premiers samedis de douze mois, prières ou méditations en l’honneur de l’Immaculée : plénière chacun (Ench. 1952, no 365)."
+ },
+ {
+  "partie": "Dévotions à jours comptés",
+  "titre": "Douze samedis avant l’Immaculée Conception",
+  "type": "acte",
+  "page_livret": 73,
+  "usage": "les douze sam. avant le 8 déc.",
+  "indulgence": "Plénière chacun, cond. ord. (S. C. du Saint-Office, 26 nov. 1908 ; Ench. 1952, no 366)."
+ },
+ {
+  "partie": "Dévotions à jours comptés",
+  "titre": "Quinze samedis du Rosaire",
+  "type": "acte",
+  "page_livret": 74,
+  "usage": "quinze sam. (ou dim.) consécutifs, avant le 7 oct. ou à toute époque",
+  "indulgence": "Plénière chacun des quinze samedis (ou dimanches), cond. ord. (S. C. des Indulgences, 21 sept. 1889 et 17 sept. 1892 ; S. Pénit., 3 août 1936 ; Ench. 1952, no 397)."
+ },
+ {
+  "partie": "Dévotions à jours comptés",
+  "titre": "Sept samedis de Notre-Dame de la Merci",
+  "type": "acte",
+  "page_livret": 76,
+  "usage": "les sept sam. avant le 24 sept.",
+  "indulgence": "7 ans chaque samedi ; plénière, cond. ord. (Ench. 1952, no 421)."
+ }
+]

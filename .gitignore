@@ -1,0 +1,5 @@
+vendor/do/
+vendor/sources/
+__pycache__/
+*.pyc
+.claude/
