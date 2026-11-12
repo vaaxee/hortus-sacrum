@@ -68,7 +68,7 @@
 	<div class="rangee modes" role="group" aria-label="Façon de saisir">
 		<button aria-pressed={mode === 'clavier'} onclick={() => (mode = 'clavier')}>Au clavier</button>
 		<button aria-pressed={mode === 'coller'} onclick={() => (mode = 'coller')}>Copier-coller</button>
-		<button disabled title="Prévu à l’étape 3">PDF ou photo</button>
+		<a class="bouton" href="/prieres/importer">PDF ou photo</a>
 	</div>
 
 	{#if mode === 'coller' && !nettoye}

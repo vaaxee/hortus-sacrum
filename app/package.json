@@ -24,7 +24,9 @@
     "vitest": "^5.1.0"
   },
   "dependencies": {
-    "dexie": "^4.4.7"
+    "dexie": "^4.4.7",
+    "pdfjs-dist": "^6.5.438",
+    "tesseract.js": "^7.0.0"
   },
   "imports": {
     "#lib/*": "./src/lib/*"
