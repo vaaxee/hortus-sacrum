@@ -1,0 +1,10 @@
+{
+	"name": "Hebdomada in Dei servitio",
+	"short_name": "Hebdomada",
+	"lang": "fr",
+	"start_url": "/",
+	"display": "standalone",
+	"background_color": "#141312",
+	"theme_color": "#7C1A1D",
+	"icons": [{ "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
+}

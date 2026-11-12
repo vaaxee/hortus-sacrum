@@ -1,0 +1,83 @@
+/* Charte du livret : EB Garamond, rouge rubrique, beaucoup de blanc. */
+:root {
+	--rubrique: #7c1a1d;
+	--rubrique-vif: #9c2a2e;
+	--encre: #1a1a1a;
+	--encre-douce: #5a5550;
+	--papier: #f7f3ea;
+	--carte: #fffdf8;
+	--filet: #d9d0c0;
+	--violet: #603078;
+	--rouge: #b01e24;
+	--vert: #2e6e3a;
+	--rose: #de8ca0;
+	color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark) {
+	:root {
+		--rubrique: #d98a86;
+		--rubrique-vif: #e7a39f;
+		--encre: #ece6da;
+		--encre-douce: #a59d90;
+		--papier: #141312;
+		--carte: #1c1a18;
+		--filet: #37322c;
+	}
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+	margin: 0;
+	background: var(--papier);
+	color: var(--encre);
+	font-family: 'EB Garamond', Garamond, 'Times New Roman', serif;
+	font-size: 19px;
+	line-height: 1.45;
+	font-variant-numeric: oldstyle-nums;
+}
+a { color: inherit; }
+h1, h2, h3 { font-weight: 500; line-height: 1.2; margin: 0; }
+h1 { font-size: 1.7rem; font-variant: small-caps; letter-spacing: 0.03em; color: var(--rubrique); }
+h2 { font-size: 1.15rem; font-variant: small-caps; letter-spacing: 0.05em; color: var(--rubrique); }
+.page { max-width: 44rem; margin: 0 auto; padding: 1.2rem 1rem 6rem; }
+.filet { border: 0; border-top: 1px solid var(--filet); margin: 1.2rem 0; }
+.petit { font-size: 0.82rem; color: var(--encre-douce); }
+.rub { color: var(--rubrique); font-style: italic; }
+.vr { color: var(--rubrique); }
+
+button, .bouton, input, textarea, select { font: inherit; color: inherit; }
+button, .bouton {
+	display: inline-flex; align-items: center; gap: 0.35rem;
+	min-height: 2.6rem; padding: 0.3rem 0.9rem;
+	background: transparent; border: 1px solid var(--filet); border-radius: 0.5rem;
+	cursor: pointer; text-decoration: none;
+}
+button:hover, .bouton:hover { border-color: var(--rubrique); }
+button.principal, .bouton.principal { background: var(--rubrique); border-color: var(--rubrique); color: var(--papier); }
+button.discret { border-color: transparent; color: var(--encre-douce); padding-inline: 0.5rem; }
+button:disabled { opacity: 0.45; cursor: default; }
+input[type='text'], input[type='search'], input[type='url'], textarea, select {
+	width: 100%; padding: 0.5rem 0.65rem;
+	background: var(--carte); border: 1px solid var(--filet); border-radius: 0.5rem;
+}
+textarea { resize: vertical; line-height: 1.4; }
+:focus-visible { outline: 2px solid var(--rubrique); outline-offset: 2px; }
+label { display: block; }
+label > span { display: block; font-size: 0.8rem; font-variant: small-caps; letter-spacing: 0.05em; color: var(--encre-douce); margin-bottom: 0.15rem; }
+
+.badge {
+	display: inline-block; font-size: 0.68rem; letter-spacing: 0.04em; text-transform: uppercase;
+	font-family: system-ui, sans-serif; padding: 0.1rem 0.45rem; border-radius: 1rem;
+	border: 1px solid var(--filet); color: var(--encre-douce); white-space: nowrap; vertical-align: middle;
+}
+.badge.livret { border-color: var(--rubrique); color: var(--rubrique); }
+.badge.officielle { border-color: var(--vert); color: var(--vert); }
+.badge.modifie { border-style: dashed; }
+
+/* texte d'une prière */
+.priere p { margin: 0 0 0.75rem; text-wrap: pretty; }
+.priere p.verset { margin-left: 0; }
+.priere h3 { font-size: 0.95rem; font-variant: small-caps; letter-spacing: 0.06em; color: var(--rubrique); margin: 1.2rem 0 0.4rem; }
+.priere em { font-style: italic; }
+.rangee { display: flex; gap: 0.5rem; flex-wrap: wrap; align-items: center; }
+.espace { flex: 1; }

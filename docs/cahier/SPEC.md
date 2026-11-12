@@ -163,3 +163,28 @@ Chaque élément peut être activé ou désactivé, déplacé, et réglé par jo
 - `serie` (dévotion suivie) : type, règle, dates, priere_id, compteur, état.
 - `liste_modele` : éléments, ordre, jours actifs ; `coche` : date, élément, horodatage, utilisateur.
 - `profil` : anniversaires, saints favoris, heures des rappels, abonnements push.
+
+## 9. Tout est modifiable par l'utilisateur (ajout du 12 novembre 2026, prioritaire)
+
+L'utilisateur peut ajouter, retirer ou modifier à la main à peu près tout, dans l'app.
+
+**Objets modifiables**
+- **Prières et textes** : créer, modifier, supprimer, dupliquer. Champs : texte français, latin en option, usage, indulgence, source (ouvrage, édition, page), partie, catégorie.
+- **Pratiques et dévotions** (jours comptés, neuvaines, trentains, consécrations, dévotions du mois et du jour de la semaine) : règle de dates (« les N jours avant telle fête », « N mardis consécutifs à partir de… », jour fixe), prières liées, promesses, indulgence, source.
+- **Liste quotidienne** : ajouter, retirer, réordonner par glisser-déposer, jours de la semaine, heure de rappel de chaque élément.
+- **Méditations et recueils** : ajouter un recueil, le découper par jours, l'affecter à un mois, un temps liturgique, une fête ou une neuvaine.
+- **Calendrier** : fêtes et saints personnels, anniversaires spirituels, notes sur un jour.
+
+**Trois façons de saisir, pour tout**
+1. **Clavier** : éditeur simple, boutons ℣, ℟, rouge (rubrique), italique ; colonne latine en option.
+2. **Copier-coller** : nettoyage automatique (sauts de ligne parasites, mots coupés en fin de ligne, espaces doubles, ℣ et ℟ reconnus), aperçu à corriger avant d'enregistrer.
+3. **PDF ou photo** : choix du fichier et d'une plage de pages ; extraction (pdf.js) ; OCR dans le navigateur si le PDF est scanné ou s'il s'agit d'une photo (Tesseract.js, français et latin) ; découpage et correction dans l'aperçu ; enregistrement en une ou plusieurs pièces, source pré-remplie (titre du PDF et page).
+
+**Garde-fous**
+- Origine de chaque élément, affichée par un badge : « Livret », « Source officielle vérifiée », « Ajout personnel ».
+- Les éléments d'origine restent modifiables, avec « Restaurer l'original ».
+- Historique des versions de chaque texte ; suppression en deux temps (corbeille, restauration possible).
+- Export et import complets en JSON ; export PDF d'une sélection de prières.
+- Les règles sur les sources s'appliquent à ce que l'assistant ajoute. Les ajouts de l'utilisateur ne sont pas bloqués : ils sont marqués « Ajout personnel ».
+
+**Décisions liées** : pas de propre de France (calendrier romain universel ; fêtes personnelles ajoutées dans l'app) ; « Ave Maria de la mort » retiré ; chapelet des Morts (Pie IX, 1873) à la place des 50 Requiem ; prières du matin et du soir du *Paroissien romain* (Tours, Mame, 1890).
