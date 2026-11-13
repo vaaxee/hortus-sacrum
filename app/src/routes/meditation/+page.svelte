@@ -4,6 +4,7 @@
 	import Icone from '#lib/design/Icone.svelte';
 	import Ornement from '#lib/design/Ornement.svelte';
 	import { rendre } from '#lib/markup.ts';
+	import LectureGueranger from '#lib/LectureGueranger.svelte';
 	import { chargerRecueil, choisir, type Choix, type Recueil } from '#lib/meditations.ts';
 
 	/** Méditation du jour : Hamon les dimanches et aux temps forts, le parcours de Chaignon les jours ordinaires. */
@@ -98,6 +99,7 @@
 		</div>
 		<div class="cul"><Ornement nom="cherubin" taille={30} /></div>
 	{/if}
+	<LectureGueranger {date} {jour} />
 </main>
 
 <style>

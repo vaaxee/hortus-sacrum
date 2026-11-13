@@ -91,6 +91,37 @@ export function choisir(
 	return [...h, ...cPropres];
 }
 
+/** Guéranger, L'Année liturgique : un index (clé → volume, rang) et un fichier par volume, chargé à la demande. */
+interface IndexGueranger extends Omit<Recueil, 'entrees'> {
+	index: Record<string, [number, number][]>;
+}
+let indexG: Promise<IndexGueranger | null> | null = null;
+const volumesG = new Map<number, Promise<EntreeRecueil[]>>();
+
+export async function lecturesDuJour(
+	date: string, jour?: Pick<Jour, 'tempora'> | null, fetchFn: typeof fetch = fetch
+): Promise<{ recueil: Omit<Recueil, 'entrees'>; entrees: EntreeRecueil[] }> {
+	indexG ??= fetchFn('/data/recueils/gueranger/index.json').then((r) => (r.ok ? r.json() : null)).catch(() => null);
+	const ix = await indexG;
+	if (!ix) return { recueil: { id: 'gueranger', titre: '', auteur: '', editions: {}, provenance: '' }, entrees: [] };
+	const { index, ...recueil } = ix;
+	for (const c of clesDuJour(date, jour)) {
+		const refs = index[c];
+		if (!refs?.length) continue;
+		const entrees: EntreeRecueil[] = [];
+		for (const [v, r] of refs) {
+			if (!volumesG.has(v)) {
+				volumesG.set(v, fetchFn(`/data/recueils/gueranger/v${String(v).padStart(2, '0')}.json`)
+					.then((x) => (x.ok ? x.json() : { entrees: [] })).then((d) => d.entrees as EntreeRecueil[]).catch(() => []));
+			}
+			const e = (await volumesG.get(v)!)[r];
+			if (e) entrees.push(e);
+		}
+		return { recueil, entrees };
+	}
+	return { recueil, entrees: [] };
+}
+
 /** Les méditations du recueil pour ce jour (plusieurs quand une fête en a plusieurs), dans l'ordre du livre. */
 export function entreesDuJour(r: Recueil, date: string, jour?: Pick<Jour, 'tempora'> | null): EntreeRecueil[] {
 	for (const c of clesDuJour(date, jour)) {

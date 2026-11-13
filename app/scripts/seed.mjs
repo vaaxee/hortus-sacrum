@@ -18,4 +18,9 @@ mkdirSync(join(cible, 'recueils'), { recursive: true });
 for (const f of readdirSync(join(racine, 'data', 'recueils'))) {
 	if (f.endsWith('.json')) compact(join(racine, 'data', 'recueils', f), join(cible, 'recueils', f));
 }
+// Guéranger : un index et un fichier par volume
+mkdirSync(join(cible, 'recueils', 'gueranger'), { recursive: true });
+for (const f of readdirSync(join(racine, 'data', 'recueils', 'gueranger'))) {
+	compact(join(racine, 'data', 'recueils', 'gueranger', f), join(cible, 'recueils', 'gueranger', f));
+}
 console.log('données copiées dans static/data');

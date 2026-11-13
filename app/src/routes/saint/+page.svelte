@@ -4,6 +4,7 @@
 	import Icone from '#lib/design/Icone.svelte';
 	import Ornement from '#lib/design/Ornement.svelte';
 	import { rendre } from '#lib/markup.ts';
+	import LectureGueranger from '#lib/LectureGueranger.svelte';
 	import { chargerRecueil, type EntreeRecueil, type Recueil } from '#lib/meditations.ts';
 
 	/** Office du jour et vie du saint : leçons du IIe nocturne du Bréviaire (Divino Afflatu), français et latin. */
@@ -58,6 +59,7 @@
 	{:else if charge}
 		<p class="centre">Pas de leçons propres pour l’office de ce jour (férie ou dimanche : voir la méditation du jour).</p>
 	{/if}
+	<LectureGueranger {date} {jour} titre="Dom Guéranger, L’Année liturgique" />
 </main>
 
 <style>
