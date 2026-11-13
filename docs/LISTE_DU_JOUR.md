@@ -52,7 +52,7 @@ Règle d'arbitrage donnée par l'utilisateur : **piété, cohérence, praticité
 | Prière du soir | ordinaire | *Paroissien romain*, Tours, Mame, 1890 | à recopier (A_FOURNIR n° 2) |
 | Sub tuum **avec les mêmes versets**, « le soir » | ordinaire | Beringer 1925, t. I, n° 429 | source trouvée ✔ |
 | Litanies du jour, **en rotation par semaine du mois** (1re semaine → litanie 1, 2e → 2…, 5e → 1) | propre | voir le plan ci-dessous | à sourcer en partie (A_FOURNIR n° 5) |
-| Demande des dons du Saint-Esprit : **un don par jour** (dim. sagesse, lun. intelligence, mar. conseil, mer. force, jeu. science, ven. piété, sam. crainte de Dieu) | ordinaire | S. Alphonse, *Neuvaine au Saint-Esprit* (à localiser) | A_FOURNIR n° 5 |
+| Demande des dons du Saint-Esprit : **un don par jour** (dim. sagesse, lun. intelligence, mar. conseil, mer. force, jeu. science, ven. piété, sam. crainte de Dieu) | ordinaire | Beringer 1925, n° 450, « En l'honneur du Cœur affligé de Marie » (une invocation par don) | ✔ |
 
 ## Martyrologe
 Invocations (SPEC §5), lecture de Prime (veille).

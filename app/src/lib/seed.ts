@@ -162,6 +162,36 @@ export async function amorcer(fetchFn: typeof fetch = fetch): Promise<void> {
 	// à chaque lancement : n'ajoute que les textes sourcés jamais encore livrés (liste tenue dans meta « sources »)
 	await amorcerSources(fetchFn);
 	await amorcerLitanies();
+	await amorcerDons();
+}
+
+/** Un don par jour (dim. sagesse … sam. crainte de Dieu), d'après le Cœur affligé de Marie (Beringer 1925, n° 450). */
+const DONS_PAR_JOUR: [string, string][] = [
+	['sagesse', 'sagesse'], ['intelligence', 'intelligence'], ['conseil', 'conseil'], ['force', 'force'],
+	['science', 'science'], ['piete', 'piété'], ['crainte', 'crainte de Dieu']
+];
+
+/** Une seule fois : remplace « Demande d'un don du Saint-Esprit » par une ligne par jour, si l'utilisateur ne l'a pas modifiée. */
+export async function amorcerDons(): Promise<void> {
+	if (await db.meta.get('dons')) return;
+	for (const [cle] of DONS_PAR_JOUR) if (!(await db.textes.get(`beringer:don-${cle}`))) return;
+	const base = await db.liste.get('liste:25');
+	if (base && base.titre === 'Demande d’un don du Saint-Esprit' && !base.supprimeLe && !base.textes.length && base.original === contenu(base)) {
+		for (let k = 0; k < 7; k++) {
+			const [cle, nom] = DONS_PAR_JOUR[k];
+			const x = {
+				...base,
+				id: k === 0 ? base.id : `liste:25-${k}`,
+				titre: `Demande du don de ${nom}`,
+				jours: jour(k),
+				textes: [`beringer:don-${cle}`],
+				...(k === 0 ? {} : { creeLe: DEPART, modifieLe: DEPART })
+			} as ElementListe;
+			x.original = contenu(x);
+			await db.liste.put(x);
+		}
+	}
+	await db.meta.put({ cle: 'dons', valeur: true });
 }
 
 /**

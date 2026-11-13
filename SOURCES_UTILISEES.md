@@ -29,6 +29,7 @@
 | Litanies de saint Joseph (latin et français), indulgence (Pie X, 18 mars 1909) | Beringer 1925, t. I, n° 487 (répons en accolade répété) | 258-259 | idem |
 | A saint Joseph pour obtenir la vertu de pureté (français, latin en note), indulgence (Pie IX, 1877) | Beringer 1925, t. I, n° 480 | 252 | idem |
 | Regina Cæli (latin et français, oraison, indulgences) ; remplace l'Angélus au temps pascal | Beringer 1925, t. I, n° 428 | 222-223 | archive.org `lesindulgences0001beri` |
+| En l'honneur du Cœur affligé de Marie : prière entière et ses sept invocations, une par don du Saint-Esprit (un don par jour) | Beringer 1925, t. I, n° 450 | 237-238 | archive.org `lesindulgences0001beri` |
 
 ## Sources consultées pour l'inventaire (textes pas encore recopiés)
 
