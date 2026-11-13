@@ -72,6 +72,25 @@ export interface Choix {
  * Dimanches et temps forts : Hamon. Jours ordinaires : le parcours de Chaignon (« le fidèle sanctifié »).
  * Les autres méditations propres au jour (fête dans l'un ou l'autre recueil) suivent, au choix.
  */
+/** Recueil propre à chaque mois de dévotion (mois → identifiant). */
+export const RECUEIL_DU_MOIS: Record<number, string> = { 3: 'mois-joseph', 5: 'mois-marie', 6: 'mois-sacre-coeur', 11: 'mois-purgatoire' };
+
+/** Nom court d'un recueil, pour les boutons de choix. */
+export const NOM_COURT: Record<string, string> = {
+	hamon: 'Hamon', chaignon: 'Chaignon', 'mois-joseph': 'Mois de saint Joseph', 'mois-marie': 'Mois de Marie',
+	'mois-sacre-coeur': 'Mois du Sacré-Cœur', 'mois-purgatoire': 'Mois des âmes'
+};
+
+/** Pendant un mois de dévotion, la méditation du recueil du mois passe en tête ; les autres restent au choix. */
+export function choisirAvecMois(
+	date: string, jour: Pick<Jour, 'tempora'> | undefined | null, annee: Pick<Jour, 'date' | 'tempora'>[],
+	hamon: Recueil | null, chaignon: Recueil | null, mois: Recueil | null
+): Choix[] {
+	const base = choisir(date, jour, annee, hamon, chaignon);
+	const e = mois?.entrees.find((x) => x.cle === `J:${Number(date.slice(8, 10))}`);
+	return mois && e ? [{ recueil: mois, entree: e }, ...base] : base;
+}
+
 export function choisir(
 	date: string, jour: Pick<Jour, 'tempora'> | undefined | null, annee: Pick<Jour, 'date' | 'tempora'>[],
 	hamon: Recueil | null, chaignon: Recueil | null

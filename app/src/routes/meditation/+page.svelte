@@ -5,7 +5,7 @@
 	import Ornement from '#lib/design/Ornement.svelte';
 	import { rendre } from '#lib/markup.ts';
 	import LectureGueranger from '#lib/LectureGueranger.svelte';
-	import { chargerRecueil, choisir, type Choix, type Recueil } from '#lib/meditations.ts';
+	import { chargerRecueil, choisirAvecMois, NOM_COURT, RECUEIL_DU_MOIS, type Choix, type Recueil } from '#lib/meditations.ts';
 
 	/** Méditation du jour : Hamon les dimanches et aux temps forts, le parcours de Chaignon les jours ordinaires. */
 	const date = $derived(page.url.searchParams.get('date') ?? iso(new Date()));
@@ -17,20 +17,26 @@
 	let hamon: Recueil | null = $state(null);
 	let chaignon: Recueil | null = $state(null);
 	let annee: Jour[] = $state([]);
+	let mois = $state<Recueil | null>(null);
+	let moisDemain = $state<Recueil | null>(null);
 	let charge = $state(false);
+	const recueilDuMois = (d: string) => {
+		const id = RECUEIL_DU_MOIS[Number(d.slice(5, 7))];
+		return id ? chargerRecueil(id) : Promise.resolve(null);
+	};
 	$effect(() => {
 		const d = date, l = lendemain, y = Number(d.slice(0, 4));
 		charge = false;
-		Promise.all([jourDu(d), jourDu(l), chargerRecueil('hamon'), chargerRecueil('chaignon'), anneeLiturgique(y - 1), anneeLiturgique(y)])
-			.then(([j, jd, h, c, a1, a2]) => {
-				jour = j; jourDemain = jd; hamon = h; chaignon = c;
+		Promise.all([jourDu(d), jourDu(l), chargerRecueil('hamon'), chargerRecueil('chaignon'), anneeLiturgique(y - 1), anneeLiturgique(y), recueilDuMois(d), recueilDuMois(l)])
+			.then(([j, jd, h, c, a1, a2, m, md]) => {
+				jour = j; jourDemain = jd; hamon = h; chaignon = c; mois = m; moisDemain = md;
 				annee = [a1, a2].find((a) => a?.some((x) => x.date === d)) ?? [];
 				charge = true;
 			});
 	});
 
-	const entrees = $derived<Choix[]>(choisir(date, jour, annee, hamon, chaignon));
-	const demain = $derived<Choix[]>(choisir(lendemain, jourDemain, annee, hamon, chaignon));
+	const entrees = $derived<Choix[]>(choisirAvecMois(date, jour, annee, hamon, chaignon, mois));
+	const demain = $derived<Choix[]>(choisirAvecMois(lendemain, jourDemain, annee, hamon, chaignon, moisDemain));
 	let choix = $state(0);
 	$effect(() => { void date; choix = 0; });
 	const c = $derived(entrees[choix]);
@@ -63,7 +69,7 @@
 	{#if entrees.length > 1}
 		<div class="choix interface" role="group" aria-label="Méditations de ce jour">
 			{#each entrees as e, i}
-				<button class="bouton" aria-pressed={choix === i} onclick={() => (choix = i)}>{e.recueil.id === 'chaignon' ? 'Chaignon' : 'Hamon'} · {e.entree.titre}</button>
+				<button class="bouton" aria-pressed={choix === i} onclick={() => (choix = i)}>{NOM_COURT[e.recueil.id] ?? e.recueil.id} · {e.entree.titre}</button>
 			{/each}
 		</div>
 	{/if}

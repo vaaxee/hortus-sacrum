@@ -39,6 +39,11 @@
 | Chaignon, S. J., *La méditation, ou le fidèle sanctifié par la pratique de l'oraison mentale*, 3 t. | Paris, 1872 | 213 méditations : parcours de 95 méditations suivi dans l'ordre les jours ordinaires ; 118 pour l'année liturgique, dont 88 rattachées à un jour, proposées en second choix ; OCR, coquilles possibles | archive.org `lamditationoulef01chai`, `…02chai`, `…03chai` |
 | *Breviarium Romanum*, leçons du IIe nocturne (IV-VI) du sanctoral, latin et traduction française | rubriques de 1911 (Divino Afflatu), données Divinum Officium ; la leçon abrégée de 1960 est écartée | 322 offices, dont 277 avec le français, dans `data/recueils/breviaire.json` ; page « Office du jour et vie du saint » | dépôt Divinum Officium (`vendor/do`) |
 | Dom Guéranger, *L'Année liturgique*, 15 vol. (continuée par Dom Fromage) | Tours, Mame, 1911 | 423 lectures (93 jours du temporal, 270 dates de saints) dans `data/recueils/gueranger/` ; lecture du jour sous la méditation et notice sur la page du saint ; OCR, coquilles possibles ; des féries d'Avent et la semaine de Pâques manquent (intitulés illisibles) | archive.org `lanneliturgiqu01gu` … `lanneliturgiqu15gu` |
+| Lefebvre, S. J., *Mois de saint Joseph* (mars) | 1890 | 31 jours, en tête de la méditation en mars | archive.org `moisdesaintjosep00lefe` |
+| Lefebvre, S. J., *Mois de Marie : contemplations sur trente mystères* (mai) | 1888 | 31 jours (le 28 très court : coupure de l'OCR) | archive.org `moisdemarieconte00lefe` |
+| Lefebvre, S. J., *Mois du Sacré-Cœur* (juin) | 1869 | 29 jours (le 23 manque, le 21 est tronqué) | archive.org `moisdusacrecoeur00lefe` |
+| Berlioux, *Mois des âmes du purgatoire, méditations pratiques pour chaque jour* (novembre) | 1888 | 30 jours | archive.org `moisdesamesdupur00berl` |
+| Boylesve, S. J., *Le mois du Précieux Sang* (juillet) | 1882 | **non retenu** : seul scan disponible (microfiche Canadiana `cihm_46390`) à l'OCR inutilisable | — |
 
 ## Sources consultées pour l'inventaire (textes pas encore recopiés)
 
