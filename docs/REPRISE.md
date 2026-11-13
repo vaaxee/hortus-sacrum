@@ -27,7 +27,7 @@ Chaque push sur `main` reconstruit automatiquement https://hortus-sacrum.vercel.
 
 ## Reste à faire
 
-1. **Guéranger** depuis la transcription de Port-Valais : remplacer `data/recueils/gueranger/*.json` (clés `T:<tempora>`, `D:MM-DD`, `F:…`) par le texte propre. **Bloqué** (13 nov.) : l'ancien domaine `abbaye-saint-benoit.ch/gueranger/` ne répond plus (le site est passé sur Wix, `abbaye-st-benoit.ch`, sans la transcription) et web.archive.org est inaccessible depuis les sessions cloud. Il faut l'adresse actuelle de la transcription, ou une copie des fichiers.
+1. **Guéranger** : **fait en partie** (13 nov.) : 202 lectures sur 423 reprises du texte propre de domgueranger.net (Avent → temps pascal) et d'abbe-pivert.com (jours et saints choisis jusqu'au temps après la Pentecôte), appariées à l'OCR par recoupement de suites de mots (`engine/recueils/relecture/gueranger/`). Ces transcriptions omettent les pièces latines. Restent en OCR surtout les t. 8, 9, 12-15 (temps après la Pentecôte, sanctoral de juin à novembre) : à corriger sur scans comme Berlioux, ou à reprendre d'une autre transcription.
 2. **OCR à corriger sur scans** : novembre (Berlioux) **fait** (méthode et scripts dans `engine/recueils/relecture/`) ; restent Hamon, Chaignon, les autres livres de mois.
 3. **Étape 10** : PDF (livret de prières 110×170, fiche du jour, calendrier mensuel) ; historique (régularité par dévotion, grille de constance) ; profil spirituel (sacrements, consécrations, fête patronale, saints préférés avec rappel la veille).
 4. Optionnel : formule de renouvellement de la consécration au cordon (non trouvée), litanies du lundi/mardi/jeudi, prières de la dévotion du dimanche, livre du mois de juillet, `{{ .Token }}` dans le modèle d'e-mail Supabase.
