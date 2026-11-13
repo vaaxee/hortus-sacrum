@@ -1,1 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" fill="#304E85"/><rect x="4.500" y="4.500" width="55" height="55" fill="none" stroke="#D9B66D" stroke-width="1.500"/><g fill="none" stroke="#F8F3E8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M32 52V13h6a7.500 7.500 0 0 1 0 15h-6"/><path d="M19 21l26 26M45 21L19 47"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+	<!-- Hortus Sacrum : chrisme d'or sous une arche romane, sur fond de lapis (charte : lapis #304E85, or #D9B66D, ivoire #F8F3E8) -->
+	<rect width="1024" height="1024" fill="#304E85"/>
+	<!-- lumière douce au centre de l'arche -->
+	<radialGradient id="halo" cx="512" cy="520" r="330" gradientUnits="userSpaceOnUse">
+		<stop offset="0" stop-color="#3E609E"/>
+		<stop offset="1" stop-color="#304E85"/>
+	</radialGradient>
+	<path d="M262 828V478a250 250 0 0 1 500 0v350Z" fill="url(#halo)"/>
+	<!-- arche : double filet d'or -->
+	<path d="M242 848V478a270 270 0 0 1 540 0v370Z" fill="none" stroke="#D9B66D" stroke-width="22" stroke-linejoin="miter"/>
+	<path d="M276 828V478a236 236 0 0 1 472 0v350" fill="none" stroke="#D9B66D" stroke-width="7"/>
+	<!-- seuil -->
+	<path d="M206 848h612" stroke="#D9B66D" stroke-width="22"/>
+	<!-- chrisme (Chi-Rho) -->
+	<g fill="none" stroke="#F8F3E8" stroke-width="40" stroke-linecap="square" stroke-linejoin="miter">
+		<path d="M512 780V300h70a78 78 0 0 1 0 156h-70"/>
+		<path d="M402 512l220 220M622 512L402 732"/>
+	</g>
+</svg>

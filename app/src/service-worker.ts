@@ -35,7 +35,7 @@ sw.addEventListener('push', (e) => {
 	let m: { titre?: string; corps?: string; url?: string; tag?: string } = {};
 	try { m = e.data?.json() ?? {}; } catch { m = { titre: 'Hortus Sacrum', corps: e.data?.text() }; }
 	e.waitUntil(sw.registration.showNotification(m.titre ?? 'Hortus Sacrum', {
-		body: m.corps ?? '', tag: m.tag, icon: '/icon.svg', data: { url: m.url ?? '/' }
+		body: m.corps ?? '', tag: m.tag, icon: '/icon-192.png', badge: '/icon-192.png', data: { url: m.url ?? '/' }
 	}));
 });
 
