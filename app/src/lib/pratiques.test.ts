@@ -57,6 +57,10 @@ describe('etat', () => {
 		expect(e.manquees.map((o) => o.date)).toEqual(['2026-11-11']);
 		expect(e.prochaine?.rang).toBe(4);
 	});
+	it('pas de jour manqué avant le premier jour coché', () => {
+		expect(etat(pratique(r), '2026-11-13', new Set()).manquees).toEqual([]);
+		expect(etat(pratique(r), '2026-11-13', new Set(['2026-11-11'])).manquees.map((o) => o.date)).toEqual(['2026-11-12']);
+	});
 	it('série à venir, puis terminée', () => {
 		expect(etat(pratique(r), '2026-11-01', new Set()).phase).toBe('a_venir');
 		expect(etat(pratique(r), '2026-12-01', new Set()).phase).toBe('terminee');

@@ -56,6 +56,14 @@
 <main class="page entree">
 	<div class="tete-page"><h1>Profil</h1><Ornement nom="fleuron" /></div>
 
+	<nav class="raccourcis" aria-label="Réglages">
+		<a href="/fetes">Fêtes, saints et anniversaires</a>
+		<a href="/liste">Liste du jour</a>
+		<a href="/devotions">Pratiques et dévotions</a>
+	</nav>
+
+	<hr class="filet" />
+
 	<section>
 		<h2>Apparence</h2>
 		<p class="aide">Thème</p>
@@ -123,6 +131,8 @@
 <style>
 	section { margin-top: 1.4rem; }
 	h2 { margin-bottom: var(--hs-e3); font-size: var(--hs-t2); }
+	.raccourcis { display: grid; }
+	.raccourcis a { padding: 12px 0; border-bottom: var(--hs-cheveu) solid var(--hs-filet); text-decoration: none; color: var(--hs-encre); }
 	.aide { margin: var(--hs-e4) 0 var(--hs-e2); }
 	.tete-page :global(.filet) { max-width: 16rem; }
 	.fichier { position: relative; overflow: hidden; }

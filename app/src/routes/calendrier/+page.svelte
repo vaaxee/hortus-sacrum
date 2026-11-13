@@ -3,6 +3,9 @@
 	import { MOIS_DEVOTION, moisDu, NOMS_MOIS, RANG, teinte, type Jour } from '#lib/calendrier.ts';
 	import Arche from '#lib/design/Arche.svelte';
 	import Icone from '#lib/design/Icone.svelte';
+	import { db } from '#lib/db.ts';
+	import { vivant } from '#lib/live.ts';
+	import type { FetePerso } from '#lib/types.ts';
 	import Ornement from '#lib/design/Ornement.svelte';
 
 	const maintenant = new Date();
@@ -23,6 +26,8 @@
 		});
 	});
 
+	const fetes = vivant(() => db.fetes.toArray(), [] as FetePerso[]);
+	const mesFetes = $derived($fetes.filter((f) => !f.supprimeLe && f.mois === mois).sort((a, b) => a.jour - b.jour));
 	const GRANDS = ['1re cl.', '2e cl.', 'dim. 1re cl.', 'dim. 2e cl.', 'dim.', 'vigile 1re cl.'];
 	const principaux = $derived(jours.filter((j) => GRANDS.includes(j.rang)));
 	/** En exergue : l'Introït de la première fête de 1re classe du mois. */
@@ -45,6 +50,10 @@
 {#if jours.length}
 	<div class="bande-mois"><Ornement nom="mosaique" /></div>
 	<main class="ecran entree">
+		<div class="vues" role="group" aria-label="Vue">
+			<span class="bouton actif" aria-current="page">Mois</span>
+			<a class="bouton" href="/calendrier/semaine?d={cle}-{maintenant.getMonth() + 1 === mois && maintenant.getFullYear() === an ? String(maintenant.getDate()).padStart(2, '0') : '01'}">Semaine</a>
+		</div>
 		<header>
 			<div class="titre-mois">
 				<a class="pas" href="/calendrier?m={voisin(-1)}" aria-label="Mois précédent"><Icone nom="retour" taille={20} /></a>
@@ -93,6 +102,19 @@
 			</table>
 		</section>
 
+		{#if mesFetes.length}
+			<section aria-label="Mes fêtes du mois">
+				<div class="tete"><Ornement nom="grecque" /><h2>Mes fêtes et anniversaires</h2></div>
+				<table class="ordo">
+					<tbody>
+						{#each mesFetes as f (f.id)}
+							<tr><td class="p"></td><td class="d pc chiffres-alignes">{f.jour}</td><td class="o perso">✠ {f.titre}</td></tr>
+						{/each}
+					</tbody>
+				</table>
+			</section>
+		{/if}
+
 		{#if jeunes.length}
 			<p class="jeunes">
 				<span class="pc rub">Jeûne</span>
@@ -124,6 +146,10 @@
 		font-family: var(--hs-accent); font-weight: 400; text-transform: none; letter-spacing: 0.01em;
 		font-size: clamp(var(--hs-t5), 15vw, 4.75rem); line-height: 1.05; color: var(--hs-rubrique);
 	}
+	.vues { display: flex; justify-content: center; margin-bottom: var(--hs-e5); }
+	.vues .bouton { min-height: 36px; border-radius: 0; }
+	.vues .actif { background: color-mix(in srgb, var(--hs-lapis) 14%, transparent); border-color: var(--hs-or); }
+	.perso { font-style: italic; }
 	.titre-mois { display: flex; align-items: center; justify-content: center; gap: var(--hs-e2); }
 	.pas { display: inline-grid; place-items: center; width: 44px; height: 44px; color: var(--hs-encre-douce); flex: none; }
 	.o a { color: inherit; text-decoration: none; }

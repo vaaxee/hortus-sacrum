@@ -132,7 +132,10 @@ export function etat(p: Pratique, aujourdhui: string, faits: Set<string>): Etat 
 	const aVenir = series.find((s) => complete(s) && s[0].date > aujourdhui);
 	const serie = enCours ?? aVenir ?? [];
 	const faites = serie.filter((o) => faits.has(o.date)).length;
-	const manquees = enCours ? enCours.filter((o) => o.date < aujourdhui && !faits.has(o.date)) : [];
+	// on ne compte un jour comme manqué qu'après le premier jour coché de la série :
+	// une série commencée avant l'installation, ou jamais suivie, n'est pas « interrompue »
+	const premierFait = enCours?.find((o) => faits.has(o.date))?.date;
+	const manquees = enCours && premierFait ? enCours.filter((o) => o.date > premierFait && o.date < aujourdhui && !faits.has(o.date)) : [];
 	return { serie, prochaine, faites, manquees, phase: enCours ? 'en_cours' : aVenir ? 'a_venir' : 'terminee' };
 }
 
