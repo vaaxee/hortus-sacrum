@@ -78,9 +78,14 @@ export interface Pratique extends Base {
 	source: Source;
 	notes: string;
 	active: boolean;
+	/** Absent : principale (pratique suivie). */
+	rang?: Rang;
 }
 
 export type Moment = 'matin' | 'propre' | 'journee' | 'soir';
+
+/** Rang d'une dévotion : Præcipua (principale), Pia (pieuse), Supererogatoria (par surcroît). */
+export type Rang = 'praecipua' | 'pia' | 'supererogatoria';
 
 export interface ElementListe extends Base {
 	titre: string;
@@ -94,6 +99,8 @@ export interface ElementListe extends Base {
 	textes: string[];
 	/** Une seule des prières liées par jour, à tour de rôle selon la semaine du mois. */
 	alterner?: boolean;
+	/** Absent : rang de départ selon le titre (rangs.ts). */
+	rang?: Rang;
 	actif: boolean;
 }
 

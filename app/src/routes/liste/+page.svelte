@@ -8,7 +8,8 @@
 	import Ornement from '#lib/design/Ornement.svelte';
 	import { vivant } from '#lib/live.ts';
 	import { sansAccents } from '#lib/markup.ts';
-	import type { ElementListe, Moment, Texte } from '#lib/types.ts';
+	import type { ElementListe, Moment, Rang, Texte } from '#lib/types.ts';
+	import { rangElement, RANGS } from '#lib/rangs.ts';
 
 	const liste = vivant(() => db.liste.orderBy('ordre').toArray(), [] as ElementListe[]);
 	const textes = vivant(() => db.textes.orderBy('ordre').toArray(), [] as Texte[]);
@@ -193,6 +194,12 @@
 										<select bind:value={brouillon.etiquette}>
 											<option value="ordinaire">Ordinaire</option>
 											<option value="propre">Propre</option>
+										</select>
+									</label>
+									<label>
+										<span>Rang</span>
+										<select bind:value={() => rangElement(brouillon!), (v: Rang) => (brouillon!.rang = v)}>
+											{#each RANGS as r}<option value={r.cle} title={r.aide}>{r.latin} ({r.fr})</option>{/each}
 										</select>
 									</label>
 								</div>

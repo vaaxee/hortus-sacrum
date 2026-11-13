@@ -3,7 +3,8 @@
 	import { vivant } from './live.ts';
 	import { sansAccents } from './markup.ts';
 	import { regleEnClair } from './pratiques.ts';
-	import type { Pratique, Regle, Texte, TypePratique } from './types.ts';
+	import type { Pratique, Rang, Regle, Texte, TypePratique } from './types.ts';
+	import { rangPratique, RANGS } from './rangs.ts';
 
 	/** Formulaire d'une pratique : type, règle de dates, prières liées, promesses, indulgence, source. */
 	let { pratique = $bindable() }: { pratique: Pratique } = $props();
@@ -58,6 +59,12 @@
 	<span>Genre de pratique</span>
 	<select bind:value={pratique.type}>
 		{#each TYPES as [v, n]}<option value={v}>{n}</option>{/each}
+	</select>
+</label>
+<label>
+	<span>Rang</span>
+	<select bind:value={() => rangPratique(pratique), (v: Rang) => (pratique.rang = v)}>
+		{#each RANGS as r}<option value={r.cle} title={r.aide}>{r.latin} ({r.fr})</option>{/each}
 	</select>
 </label>
 

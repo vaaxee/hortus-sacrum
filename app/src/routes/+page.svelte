@@ -7,12 +7,13 @@
 	import Ornement from '#lib/design/Ornement.svelte';
 	import { invocation, nomLatin, TOUS_LES_SAINTS } from '#lib/invocations.ts';
 	import { textesDuJour } from '#lib/liste.ts';
+	import { garde, rangElement, rangPratique, RANGS } from '#lib/rangs.ts';
 	import { vivant } from '#lib/live.ts';
 	import { rendre } from '#lib/markup.ts';
 	import { creer, enregistrer } from '#lib/db.ts';
 	import { occurrenceDu, type Occurrence } from '#lib/pratiques.ts';
 	import { basculerFait } from '#lib/suivi.ts';
-	import type { Coche, ElementListe, Fait, FetePerso, Moment, NoteJour, Pratique } from '#lib/types.ts';
+	import type { Coche, ElementListe, Fait, FetePerso, Moment, NoteJour, Pratique, Rang } from '#lib/types.ts';
 	import Icone from '#lib/design/Icone.svelte';
 
 	const date = $derived(page.url.searchParams.get('date') ?? iso(new Date()));
@@ -40,12 +41,35 @@
 	const faite = (id: string) => $faitsDuJour.some((f) => f.pratiqueId === id);
 	/** Pratiques rattachées à un élément générique de la liste, ou null si l'élément est ordinaire. */
 	function pratiquesPour(e: ElementListe) {
-		if (e.titre.startsWith('Dévotion à jours comptés')) return pratiquesDuJour.filter((x) => !['neuvaine', 'trentain'].includes(x.p.type));
-		if (e.titre.startsWith('Neuvaine ou trentain')) return pratiquesDuJour.filter((x) => ['neuvaine', 'trentain'].includes(x.p.type));
+		const gardees = pratiquesDuJour.filter((x) => garde(rangPratique(x.p), seuil));
+		if (e.titre.startsWith('Dévotion à jours comptés')) return gardees.filter((x) => !['neuvaine', 'trentain'].includes(x.p.type));
+		if (e.titre.startsWith('Neuvaine ou trentain')) return gardees.filter((x) => ['neuvaine', 'trentain'].includes(x.p.type));
 		return null;
 	}
+
+	// jour chargé : on n'affiche que les dévotions du rang choisi et au-dessus (réglage gardé pour ce jour, sur cet appareil)
+	let seuil = $state<Rang>('supererogatoria');
+	$effect(() => {
+		let v: string | null = null;
+		try { v = localStorage.getItem(`seuil:${date}`); } catch { /* stockage indisponible */ }
+		seuil = (v as Rang) || 'supererogatoria';
+	});
+	function regler(r: Rang) {
+		seuil = r;
+		try { localStorage.setItem(`seuil:${date}`, r); } catch { /* stockage indisponible */ }
+	}
+	const SEUILS: [Rang, string, string][] = [
+		['supererogatoria', 'Omnia', 'tout afficher'],
+		['pia', 'Sine supererogatoriis', 'laisser les dévotions surérogatoires'],
+		['praecipua', 'Præcipua tantum', 'seulement les dévotions principales']
+	];
+	const ABREGE = Object.fromEntries(RANGS.map((r) => [r.cle, r]));
 	const duJour = $derived(
-		$liste.filter((e) => e.actif && !e.supprimeLe && e.jours[d.getDay()] && (pratiquesPour(e)?.length ?? 1) > 0)
+		$liste.filter((e) => {
+			if (!e.actif || e.supprimeLe || !e.jours[d.getDay()]) return false;
+			const pp = pratiquesPour(e);
+			return pp ? pp.length > 0 : garde(rangElement(e), seuil);
+		})
 	);
 	const fini = (e: ElementListe) => {
 		const pp = pratiquesPour(e);
@@ -147,6 +171,11 @@
 				<span class="chiffres-alignes">{faits} / {duJour.length}</span>
 			</div>
 			<p class="regler"><a href="/liste">Régler la liste</a></p>
+			<div class="seuils interface" role="group" aria-label="Jour chargé : quelles dévotions afficher">
+				{#each SEUILS as [r, latin, fr]}
+					<button class="brut" aria-pressed={seuil === r} title={fr} onclick={() => regler(r)}>{latin}</button>
+				{/each}
+			</div>
 
 			{#each MOMENTS as [moment, nom]}
 				{@const elements = duJour.filter((e) => e.moment === moment)}
@@ -209,7 +238,7 @@
 										<span class="pc">{ROMAINS[fait] || '·'}<i>/</i>{ROMAINS[total]}</span>
 									</button>
 								{/if}
-								<span class="genre pc" class:propre={e.etiquette === 'propre'}>{e.etiquette === 'propre' ? 'propre' : 'ord.'}</span>
+								<span class="genre pc" class:propre={e.etiquette === 'propre'}>{e.etiquette === 'propre' ? 'propre' : 'ord.'}<br /><span class="rang rang-{rangElement(e)}" title={ABREGE[rangElement(e)].latin + ' : ' + ABREGE[rangElement(e)].fr}>{ABREGE[rangElement(e)].abrege}</span></span>
 							</li>
 							{/if}
 						{/each}
@@ -297,6 +326,12 @@
 	.heures { color: var(--hs-encre-douce); font-size: 0.75rem; margin-top: 2px; }
 	.genre { font-size: 0.9375rem; color: var(--hs-encre-douce); width: 3.2rem; text-align: right; flex: none; }
 	.genre.propre { color: var(--hs-rubrique); }
+	.genre .rang { font-size: 0.75rem; letter-spacing: 0.04em; color: var(--hs-encre-douce); }
+	.genre .rang-praecipua { color: var(--hs-or-texte); }
+	.genre .rang-supererogatoria { font-style: italic; }
+	.seuils { display: flex; justify-content: flex-end; flex-wrap: wrap; gap: var(--hs-e1, 6px) var(--hs-e2); margin: var(--hs-e1, 6px) 0 0; font-size: var(--hs-t0); letter-spacing: var(--hs-chasse-interface); }
+	.seuils button { color: var(--hs-encre-douce); padding: 2px 0; min-height: 0; background: none; border: 0; border-bottom: 1px solid transparent; font: inherit; letter-spacing: inherit; cursor: pointer; }
+	.seuils button[aria-pressed='true'] { color: var(--hs-encre); border-bottom-color: currentColor; }
 	.medaillon { position: relative; flex: none; width: 34px; height: 34px; padding: 0; border: 0; background: none; color: var(--hs-or); cursor: pointer; line-height: 0; }
 	.medaillon span { position: absolute; inset: 0; display: grid; place-items: center; grid-auto-flow: column; justify-content: center; color: var(--hs-encre); font-size: 0.8125rem; line-height: 1; }
 	.medaillon i { font-style: normal; color: var(--hs-encre-douce); margin: 0 1px; }
