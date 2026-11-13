@@ -6,6 +6,7 @@
 	import { db, exporter, importer, sortirDeLaCorbeille, supprimerDefinitivement, type Sauvegarde } from '#lib/db.ts';
 	import { vivant } from '#lib/live.ts';
 	import type { Texte } from '#lib/types.ts';
+	import { abonner, desabonner, ecrireReglages, essai, lireReglages, planifier, type ReglagesRappels } from '#lib/rappels.ts';
 
 	const corbeille = vivant(async () => (await db.textes.toArray()).filter((t) => t.supprimeLe), [] as Texte[]);
 	const compte = vivant(async () => ({ textes: await db.textes.count(), versions: await db.versions.count() }), {
@@ -20,11 +21,44 @@
 	let erreurCompte = $state('');
 	async function demanderLien() {
 		erreurCompte = '';
-		if (!/^[^@s]+@[^@s]+.[^@s]+$/.test(courriel.trim())) return (erreurCompte = 'Cette adresse de courriel n’est pas valide.');
+		if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(courriel.trim())) return (erreurCompte = 'Cette adresse de courriel n’est pas valide.');
 		const e = await envoyerLien(courriel);
 		if (e) erreurCompte = `Le lien n’a pas pu être envoyé : ${e}`;
 		else lienEnvoye = courriel.trim();
 	}
+	// rappels
+	let reglages = $state<ReglagesRappels | undefined>();
+	let messageRappels = $state('');
+	lireReglages().then((r) => (reglages = r));
+	const iphoneSansInstall = typeof navigator !== 'undefined' && /iPhone|iPad/.test(navigator.userAgent) &&
+		!window.matchMedia('(display-mode: standalone)').matches;
+	async function sauverRappels() {
+		if (!reglages) return;
+		await ecrireReglages($state.snapshot(reglages));
+		try {
+			const n = await planifier();
+			messageRappels = reglages.actif ? `${n} rappels préparés pour les 14 jours qui viennent.` : '';
+		} catch (e) {
+			messageRappels = `Les rappels n’ont pas pu être préparés : ${(e as Error).message}`;
+		}
+	}
+	async function basculerRappels(oui: boolean) {
+		if (!reglages) return;
+		messageRappels = '';
+		if (oui) {
+			const err = await abonner();
+			if (err) return (messageRappels = err);
+		} else {
+			await desabonner();
+		}
+		reglages.actif = oui;
+		await sauverRappels();
+	}
+	async function essayer() {
+		const err = await essai();
+		messageRappels = err ? `L’essai a échoué : ${err}` : 'Rappel d’essai envoyé : il arrive dans la minute.';
+	}
+
 	const heure = (iso: string) => new Date(iso).toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit' });
 	let message = $state('');
 	let attente: Sauvegarde | undefined = $state();
@@ -91,6 +125,44 @@
 				<button onclick={() => synchroniser()}>Synchroniser maintenant</button>
 				<button class="discret" onclick={deconnecter}>Se déconnecter</button>
 			</div>
+		{/if}
+	</section>
+
+	<hr class="filet" />
+
+	<section>
+		<h2>Rappels</h2>
+		{#if reglages}
+			<p class="petit">Le matin, le soir, la veille des fêtes, des jeûnes et des neuvaines, et aux heures fixes des dévotions (réglées dans « Liste du jour »). Les rappels arrivent même app fermée ; ils sont préparés pour les 14 jours qui viennent, à chaque ouverture de l’app.</p>
+			{#if iphoneSansInstall}
+				<p class="epreuve">Sur iPhone, les notifications ne marchent que depuis l’app installée : dans Safari, touchez le bouton Partager, puis « Sur l’écran d’accueil ». Ouvrez ensuite Hortus Sacrum depuis l’écran d’accueil et revenez ici.</p>
+			{/if}
+			<label class="case"><input type="checkbox" checked={reglages.actif} onchange={(e) => basculerRappels(e.currentTarget.checked)} /> Recevoir les rappels sur cet appareil</label>
+			{#if reglages.actif}
+				<div class="rangee heures">
+					<label><span>Matin</span><input type="time" bind:value={reglages.matin} onchange={sauverRappels} /></label>
+					<label><span>Soir</span><input type="time" bind:value={reglages.soir} onchange={sauverRappels} /></label>
+					<label><span>Veille</span><input type="time" bind:value={reglages.veille} onchange={sauverRappels} /></label>
+				</div>
+				<p class="aide">Effacer une heure supprime ce rappel.</p>
+				<label class="case"><input type="checkbox" bind:checked={reglages.heuresFixes} onchange={sauverRappels} /> Heures fixes des dévotions (Angélus, agonisants, 15 h le vendredi…)</label>
+				{#if reglages.heuresFixes}
+					<label><span>Pour les dévotions</span>
+						<select bind:value={reglages.rangMini} onchange={sauverRappels}>
+							<option value="supererogatoria">de tous les rangs</option>
+							<option value="pia">Præcipua et Pia</option>
+							<option value="praecipua">Præcipua seulement</option>
+						</select>
+					</label>
+				{/if}
+				<label class="case"><input type="checkbox" bind:checked={reglages.veilleFetes} onchange={sauverRappels} /> La veille des fêtes de 1re et 2e classe</label>
+				<label class="case"><input type="checkbox" bind:checked={reglages.veilleJeune} onchange={sauverRappels} /> La veille des jours de jeûne et d’abstinence</label>
+				<label class="case"><input type="checkbox" bind:checked={reglages.premiersVendrediSamedi} onchange={sauverRappels} /> La veille des premiers vendredis et samedis</label>
+				<label class="case"><input type="checkbox" bind:checked={reglages.veillePratiques} onchange={sauverRappels} /> La veille du début d’une neuvaine ou d’une série</label>
+				<label class="case"><input type="checkbox" bind:checked={reglages.fetesPerso} onchange={sauverRappels} /> Mes fêtes et anniversaires (la veille et le jour)</label>
+				<div class="rangee"><button onclick={essayer}>Envoyer un rappel d’essai</button></div>
+			{/if}
+			{#if messageRappels}<p class="petit" role="status">{messageRappels}</p>{/if}
 		{/if}
 	</section>
 

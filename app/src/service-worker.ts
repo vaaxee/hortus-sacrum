@@ -30,6 +30,25 @@ sw.addEventListener('activate', (e) => {
 	);
 });
 
+// rappels : notification envoyée par le serveur (fonction envoyer-rappels)
+sw.addEventListener('push', (e) => {
+	let m: { titre?: string; corps?: string; url?: string; tag?: string } = {};
+	try { m = e.data?.json() ?? {}; } catch { m = { titre: 'Hortus Sacrum', corps: e.data?.text() }; }
+	e.waitUntil(sw.registration.showNotification(m.titre ?? 'Hortus Sacrum', {
+		body: m.corps ?? '', tag: m.tag, icon: '/icon.svg', data: { url: m.url ?? '/' }
+	}));
+});
+
+sw.addEventListener('notificationclick', (e) => {
+	e.notification.close();
+	const url = (e.notification.data?.url as string) ?? '/';
+	e.waitUntil((async () => {
+		const fenetres = await sw.clients.matchAll({ type: 'window', includeUncontrolled: true });
+		const f = fenetres[0] as WindowClient | undefined;
+		if (f) { await f.focus(); await f.navigate(url); } else await sw.clients.openWindow(url);
+	})());
+});
+
 sw.addEventListener('fetch', (e) => {
 	const req = e.request;
 	if (req.method !== 'GET') return;

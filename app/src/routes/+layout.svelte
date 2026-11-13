@@ -8,6 +8,7 @@
 	import Ornement from '#lib/design/Ornement.svelte';
 	import { amorcer } from '#lib/seed.ts';
 	import { initialiserCompte } from '#lib/sync.ts';
+	import { lireReglages, planifier } from '#lib/rappels.ts';
 
 	let { children } = $props();
 	let pret = $state(false);
@@ -18,6 +19,8 @@
 		try {
 			await amorcer();
 			await initialiserCompte();
+			// rappels : replanifier les 14 prochains jours à chaque ouverture (en arrière-plan)
+			lireReglages().then((r) => (r.actif ? planifier() : 0)).catch((e) => console.error('rappels', e));
 		} catch (e) {
 			erreur = 'Les prières du livret n’ont pas pu être chargées. Rechargez la page.';
 			console.error(e);
