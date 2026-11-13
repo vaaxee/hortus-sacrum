@@ -32,7 +32,7 @@
 <svelte:head><title>{NOMS_MOIS[mois]} {an} — Hortus Sacrum</title></svelte:head>
 
 {#if jours.length}
-	<Ornement nom="mosaique" />
+	<div class="bande-mois"><Ornement nom="mosaique" /></div>
 	<main class="ecran entree">
 		<header>
 			<h1 class="mois">{NOMS_MOIS[mois]}</h1>
@@ -94,6 +94,8 @@
 {/if}
 
 <style>
+	/* en DA grecque, la bande de mosaïque est déjà en tête de tous les écrans */
+	:global(:root[data-da='grecque']) .bande-mois { display: none; }
 	.ecran { max-width: var(--hs-colonne); margin: 0 auto; padding: var(--hs-e7) var(--hs-marge-mobile) 0; }
 	header { text-align: center; display: grid; gap: var(--hs-e2); margin-bottom: var(--hs-e6); }
 	header p { margin: 0; }

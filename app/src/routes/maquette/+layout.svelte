@@ -7,20 +7,30 @@
 
 	let { children } = $props();
 	let theme: 'auto' | 'jour' | 'nuit' = $state('auto');
+	let da: 'latine' | 'grecque' = $state('latine');
 
 	onMount(() => {
 		theme = (localStorage.getItem('hs-theme') as typeof theme) ?? 'auto';
+		da = (localStorage.getItem('hs-da') as typeof da) ?? 'latine';
 		appliquer();
 		// le fond du document suit l'univers, pour les bords d'écran
 		document.body.style.background = 'var(--hs-fond)';
 		return () => {
 			document.body.style.background = '';
 			delete document.documentElement.dataset.theme;
+			delete document.documentElement.dataset.da;
 		};
 	});
 	function appliquer() {
 		if (theme === 'auto') delete document.documentElement.dataset.theme;
 		else document.documentElement.dataset.theme = theme;
+		if (da === 'grecque') document.documentElement.dataset.da = 'grecque';
+		else delete document.documentElement.dataset.da;
+	}
+	function choisirDa(d: typeof da) {
+		da = d;
+		localStorage.setItem('hs-da', d);
+		appliquer();
 	}
 	function choisir(t: typeof theme) {
 		theme = t;
@@ -53,6 +63,10 @@
 				<a href={e.href} aria-current={chemin === e.href ? 'page' : undefined}>{e.nom}</a>
 			{/each}
 		</span>
+		<span class="themes" role="group" aria-label="Direction artistique">
+			<button class:actif={da === 'latine'} onclick={() => choisirDa('latine')}>Latine</button>
+			<button class:actif={da === 'grecque'} onclick={() => choisirDa('grecque')}>Grecque</button>
+		</span>
 		<span class="themes" role="group" aria-label="Thème">
 			<button class:actif={theme === 'jour'} onclick={() => choisir('jour')}><Icone nom="jour" taille={16} /> Jour</button>
 			<button class:actif={theme === 'nuit'} onclick={() => choisir('nuit')}><Icone nom="nuit" taille={16} /> Nuit</button>
@@ -60,6 +74,7 @@
 		</span>
 	</div>
 
+	{#if da === 'grecque'}<Ornement nom="mosaique" />{/if}
 	<div class="cadre">
 		<nav class="sommaire" aria-label="Navigation principale">
 			<a class="marque" href="/maquette"><Ornement nom="chrisme" taille={22} /><span>Hortus Sacrum</span></a>

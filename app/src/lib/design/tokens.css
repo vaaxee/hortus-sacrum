@@ -290,3 +290,70 @@
 .hs button { min-height: 0; }
 .hs .univers-seul { display: none; }
 .hs { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: optimizeLegibility; }
+
+/* =====================================================================
+   Deux directions artistiques : latine (défaut) et grecque (bleu et or byzantins).
+   data-da="grecque" sur <html>. L'or reste un trait et un accent, jamais un aplat.
+   ===================================================================== */
+:root {
+	/* l'arche de la fête : en DA latine, un panneau de parchemin */
+	--hs-arche-fond: var(--hs-surface);
+	--hs-arche-encre: var(--hs-encre);
+	--hs-arche-encre-douce: var(--hs-encre-douce);
+	--hs-arche-accent: var(--hs-rubrique);
+	--hs-arche-filet: var(--hs-or-trait);
+}
+
+/* ---- DA grecque, jour : ivoire froid, panneaux de bleu byzantin, lignes d'or ---- */
+:root[data-da='grecque'] {
+	--hs-fond: #f6f2e7;
+	--hs-surface: #e6e2d6;
+	--hs-surface-douce: #eeeadf;
+	--hs-encre: #1c2440;
+	--hs-encre-douce: #555c73;
+	--hs-lapis: #1f3a7d; /* bleu byzantin */
+	--hs-sur-lapis: #f6f2e7;
+	--hs-vert: #3f6a52;
+	--hs-or: #c9a24a;
+	--hs-or-trait: rgb(201 162 74 / 0.75);
+	--hs-or-texte: #7d6117;
+	--hs-rubrique: #9c2f3c; /* cinabre */
+	--hs-filet: #c9c3b1;
+	--hs-arche-fond: #1f3a7d;
+	--hs-arche-encre: #f3ecd9;
+	--hs-arche-encre-douce: #c5cde6;
+	--hs-arche-accent: #ecd08a; /* le nom de la fête, en or sur le bleu */
+	--hs-arche-filet: rgb(236 208 138 / 0.85);
+}
+
+/* ---- DA grecque, nuit : bleu de coupole, or des tesselles ---- */
+:root[data-da='grecque'][data-theme='nuit'] {
+	--hs-fond: #0b1533;
+	--hs-surface: #13224a;
+	--hs-surface-douce: #0f1b3e;
+	--hs-encre: #f0e9d6;
+	--hs-encre-douce: #a9b1cc;
+	--hs-lapis: #e6c877; /* à la nuit, l'or marque les liens et l'état actif */
+	--hs-sur-lapis: #0b1533;
+	--hs-vert: #9cc7a4;
+	--hs-or: #e0bf6c;
+	--hs-or-trait: rgb(224 191 108 / 0.6);
+	--hs-or-texte: #e0bf6c;
+	--hs-rubrique: #ee8f8a;
+	--hs-filet: #2c3d70;
+	--hs-arche-fond: #182c63;
+	--hs-arche-encre: #f0e9d6;
+	--hs-arche-encre-douce: #b4bddb;
+	--hs-arche-accent: #ecd08a;
+	--hs-arche-filet: rgb(236 208 138 / 0.8);
+}
+@media (prefers-color-scheme: dark) {
+	:root[data-da='grecque']:not([data-theme='jour']) {
+		--hs-fond: #0b1533; --hs-surface: #13224a; --hs-surface-douce: #0f1b3e;
+		--hs-encre: #f0e9d6; --hs-encre-douce: #a9b1cc; --hs-lapis: #e6c877; --hs-sur-lapis: #0b1533;
+		--hs-vert: #9cc7a4; --hs-or: #e0bf6c; --hs-or-trait: rgb(224 191 108 / 0.6); --hs-or-texte: #e0bf6c;
+		--hs-rubrique: #ee8f8a; --hs-filet: #2c3d70;
+		--hs-arche-fond: #182c63; --hs-arche-encre: #f0e9d6; --hs-arche-encre-douce: #b4bddb;
+		--hs-arche-accent: #ecd08a; --hs-arche-filet: rgb(236 208 138 / 0.8);
+	}
+}
