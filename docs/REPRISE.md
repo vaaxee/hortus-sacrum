@@ -27,7 +27,7 @@ Chaque push sur `main` reconstruit automatiquement https://hortus-sacrum.vercel.
 
 ## Reste à faire
 
-1. **Guéranger** depuis la transcription de Port-Valais : remplacer `data/recueils/gueranger/*.json` (clés `T:<tempora>`, `D:MM-DD`, `F:…`) par le texte propre.
-2. **OCR à corriger sur scans** : d'abord novembre (Berlioux, `data/recueils/mois-purgatoire.json`, ex. « ^^^REMiER POINT »), puis Hamon, Chaignon, autres livres de mois.
+1. **Guéranger** depuis la transcription de Port-Valais : remplacer `data/recueils/gueranger/*.json` (clés `T:<tempora>`, `D:MM-DD`, `F:…`) par le texte propre. **Bloqué** (13 nov.) : l'ancien domaine `abbaye-saint-benoit.ch/gueranger/` ne répond plus (le site est passé sur Wix, `abbaye-st-benoit.ch`, sans la transcription) et web.archive.org est inaccessible depuis les sessions cloud. Il faut l'adresse actuelle de la transcription, ou une copie des fichiers.
+2. **OCR à corriger sur scans** : novembre (Berlioux) **fait** (méthode et scripts dans `engine/recueils/relecture/`) ; restent Hamon, Chaignon, les autres livres de mois.
 3. **Étape 10** : PDF (livret de prières 110×170, fiche du jour, calendrier mensuel) ; historique (régularité par dévotion, grille de constance) ; profil spirituel (sacrements, consécrations, fête patronale, saints préférés avec rappel la veille).
 4. Optionnel : formule de renouvellement de la consécration au cordon (non trouvée), litanies du lundi/mardi/jeudi, prières de la dévotion du dimanche, livre du mois de juillet, `{{ .Token }}` dans le modèle d'e-mail Supabase.

@@ -42,7 +42,7 @@
 | Lefebvre, S. J., *Mois de saint Joseph* (mars) | 1890 | 31 jours, en tête de la méditation en mars | archive.org `moisdesaintjosep00lefe` |
 | Lefebvre, S. J., *Mois de Marie : contemplations sur trente mystères* (mai) | 1888 | 31 jours (le 28 très court : coupure de l'OCR) | archive.org `moisdemarieconte00lefe` |
 | Lefebvre, S. J., *Mois du Sacré-Cœur* (juin) | 1869 | 29 jours (le 23 manque, le 21 est tronqué) | archive.org `moisdusacrecoeur00lefe` |
-| Berlioux, *Mois des âmes du purgatoire, méditations pratiques pour chaque jour* (novembre) | 1888 | 30 jours | archive.org `moisdesamesdupur00berl` |
+| Berlioux, *Mois des âmes du purgatoire, méditations pratiques pour chaque jour* (novembre) | 1888 | 30 jours, **relus sur les scans** (14 nov. 2026) : double OCR comparée mot à mot, 454 désaccords tranchés sur l'image, p. 164 recopiée ; méthode dans `engine/recueils/relecture/` | archive.org `moisdesamesdupur00berl` |
 | Boylesve, S. J., *Le mois du Précieux Sang* (juillet) | 1882 | **non retenu** : seul scan disponible (microfiche Canadiana `cihm_46390`) à l'OCR inutilisable | — |
 
 ## Sources consultées pour l'inventaire (textes pas encore recopiés)
