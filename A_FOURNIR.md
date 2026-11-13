@@ -1,7 +1,9 @@
 # Textes à fournir, à confirmer ou à recopier
 
 Règle : aucun texte de mémoire. Pour chaque point : la décision prise et ce qui reste à faire.
-Les points réglés sont gardés pour l'historique. Dernière mise à jour : 12 novembre 2026.
+Les points réglés sont gardés pour l'historique. Dernière mise à jour : 13 novembre 2026.
+
+**Fait le 13 novembre** : Salve Regina (matin) et Sub tuum (soir) avec leurs versets, Beringer 1925, t. I, n° 429, p. 224-225 (et non 294-295 : l'OCR avait mal lu le numéro de page).
 
 ## Décisions de l'utilisateur (12 novembre 2026)
 

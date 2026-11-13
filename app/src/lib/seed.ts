@@ -159,10 +159,8 @@ export async function amorcer(fetchFn: typeof fetch = fetch): Promise<void> {
 	if (niveau < 1) await amorcerLivret(fetchFn);
 	if (niveau < 2) await importerPlan(fetchFn);
 	if (niveau < 2) await db.meta.put({ cle: 'amorce', valeur: 2 });
-	if (niveau < 3) {
-		await amorcerSources(fetchFn);
-		await db.meta.put({ cle: 'amorce', valeur: 3 });
-	}
+	// à chaque lancement : n'ajoute que les textes sourcés jamais encore livrés (liste tenue dans meta « sources »)
+	await amorcerSources(fetchFn);
 }
 
 /** Liens par défaut entre éléments de la liste du jour et textes sourcés (titre de l'élément → identifiants). */
@@ -170,33 +168,41 @@ const LIENS_SOURCES: Record<string, string[]> = {
 	'Prière du matin': ['paroissien:priere-du-matin'],
 	'Prière du soir': ['paroissien:priere-du-soir'],
 	'Examen de conscience': ['paroissien:priere-du-soir'],
-	'Angélus': ['paroissien:angelus']
+	'Angélus': ['paroissien:angelus'],
+	'Salve Regina, avec ses versets': ['beringer:salve-regina'],
+	'Sub tuum, avec ses versets': ['beringer:sub-tuum']
 };
 
 /**
  * Textes recopiés d'éditions anciennes (data/prieres/sources.json), marqués « Source vérifiée ».
- * Un texte déjà présent n'est jamais remplacé ; un élément de liste n'est relié que s'il n'a encore aucune prière.
+ * Chaque texte n'est livré qu'une fois : supprimé ou modifié par l'utilisateur, il n'est jamais remis ni remplacé.
+ * Un élément de liste n'est relié qu'au moment de la livraison, et seulement s'il n'a encore aucune prière.
  */
 export async function amorcerSources(fetchFn: typeof fetch = fetch): Promise<void> {
 	const rep = await fetchFn('/data/prieres/sources.json');
 	if (!rep.ok) return;
 	const doc = (await rep.json()) as { pieces: Omit<Texte, 'origine' | 'ordre' | 'creeLe' | 'modifieLe'>[] };
+	const livres = new Set(((await db.meta.get('sources'))?.valeur as string[] | undefined) ?? []);
+	const nouveaux = doc.pieces.filter((p) => !livres.has(p.id));
+	if (!nouveaux.length) return;
 	const dernier = await db.textes.orderBy('ordre').last();
 	let ordre = (dernier?.ordre ?? 0) + 1;
-	for (const brut of doc.pieces) {
+	for (const brut of nouveaux) {
+		livres.add(brut.id);
 		if (await db.textes.get(brut.id)) continue;
 		const x = { ...brut, origine: 'officielle', ordre: ordre++, creeLe: DEPART, modifieLe: DEPART } as Texte;
 		x.original = contenu(x);
 		await db.textes.put(x);
 	}
 	for (const e of await db.liste.toArray()) {
-		const ids = LIENS_SOURCES[e.titre];
-		if (!ids || e.textes.length) continue;
+		const ids = LIENS_SOURCES[e.titre]?.filter((id) => nouveaux.some((p) => p.id === id));
+		if (!ids?.length || e.textes.length) continue;
 		// mise à jour de la liste de départ : l'original suit, pour que l'élément ne paraisse pas « modifié »
 		const neuf = { ...e, textes: ids };
 		const intact = e.original && e.original === contenu(e);
 		await db.liste.put(intact ? { ...neuf, original: contenu(neuf) } : neuf);
 	}
+	await db.meta.put({ cle: 'sources', valeur: [...livres] });
 }
 
 /**

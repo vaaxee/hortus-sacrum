@@ -17,12 +17,13 @@
 | Prière du matin (avec Pater, Ave, Credo, Confiteor en latin ; actes de foi, d'espérance et de charité) | *Paroissien romain*, Tours, A. Mame et fils, 1890 | 7-12 | archive.org `paroissienromain00tour` |
 | Angélus (français et latin, oraison) | idem | 16-17 | idem |
 | Prière du soir (avec examen de conscience) | idem | 18-23 | idem |
+| Salve Regina et Sub tuum, avec leurs versets et leurs indulgences (Pie VI, 5 avril 1786) | Beringer, *Les Indulgences*, t. I, n° 429, Paris, Lethielleux, 1925 | 224-225 | archive.org `lesindulgences0001beri` |
 
 ## Sources consultées pour l'inventaire (textes pas encore recopiés)
 
 | Source | Édition | Ce qu'on y a repéré | Accès |
 |---|---|---|---|
-| Beringer, *Les Indulgences, leur nature et leur usage* | trad. Ph. Mazoyer, 4e éd. française, Paris, P. Lethielleux, 1925 ; approuvée par la S. Pénitencerie ; t. I et II | n° 428 Angélus et Regina Cæli ; n° 429 Salve Regina le matin et Sub tuum le soir avec versets (Pie VI, 5 avril 1786) ; litanies n° 305, 377, 439, 487 ; n° 274-276 b (Saint-Esprit) ; t. II : chapelet des Morts (Nîmes, Pie IX 1873) | archive.org `lesindulgences0001beri`, `lesindulgences0002beri` |
+| Beringer, *Les Indulgences, leur nature et leur usage* | trad. Ph. Mazoyer, 4e éd. française, Paris, P. Lethielleux, 1925 ; approuvée par la S. Pénitencerie ; t. I et II | n° 428 Angélus et Regina Cæli ; litanies n° 305, 377, 439, 487 ; n° 274-276 b (Saint-Esprit) ; t. II : chapelet des Morts (Nîmes, Pie IX 1873) | archive.org `lesindulgences0001beri`, `lesindulgences0002beri` |
 | Beringer, *Les Indulgences* | éd. française 1905, t. I et II | contrôle | archive.org `lesindulgencesle01beri`, `lesindulgencesle02beri` |
 | ***Enchiridion indulgentiarum*** | S. Pénitencerie, Typis polyglottis Vaticanis, 1952 | n° 175 *Mensis eucharisticus* | archive.org `enchiridion_indulgentiarum_1952` |
 | ***The Raccolta*** | trad. anglaise officielle (exemplaire numérisé de 1949) | contrôle (dons du Saint-Esprit) | archive.org `raccoltaofficial0000spen_1` |
