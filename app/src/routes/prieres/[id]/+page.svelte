@@ -10,6 +10,7 @@
 	import Ornement from '#lib/design/Ornement.svelte';
 	import { vivant } from '#lib/live.ts';
 	import { rendre } from '#lib/markup.ts';
+	import { etiquetteSource } from '#lib/sources.ts';
 	import type { Texte, Version } from '#lib/types.ts';
 
 	const id = $derived(decodeURIComponent(page.params.id ?? ''));
@@ -106,7 +107,7 @@
 		<header>
 			<h1>{t.titre}</h1>
 			<p class="marques">
-				<span class="cartouche {ORIGINE[t.origine][0]}">{ORIGINE[t.origine][1]}</span>
+				<span class="cartouche {ORIGINE[t.origine][0]}">{etiquetteSource(t)}</span>
 				{#if estModifie(t)}<span class="cartouche personnel">modifié</span>{/if}
 			</p>
 			{#if t.supprimeLe}

@@ -81,7 +81,7 @@ export async function rappelsDu(date: string, r: ReglagesRappels, ctx: Contexte)
 			}
 		}
 	}
-	if (r.soir) out.push({ quand: a(date, r.soir), titre: 'Prière du soir', corps: 'Examen de conscience, prière du soir et ce qui reste de la liste du jour.', url: `/?date=${date}` });
+	if (r.soir) out.push({ quand: a(date, r.soir), titre: 'Prière du soir', corps: 'Prière du soir et examen de conscience, et ce qui reste de la liste du jour.', url: `/?date=${date}` });
 
 	// la veille, pour demain
 	if (r.veille && jd) {

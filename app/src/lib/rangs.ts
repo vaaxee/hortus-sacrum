@@ -21,6 +21,7 @@ const RANG_DE_DEPART: Record<string, Rang> = {
 	'Quinze oraisons de sainte Brigitte': 'praecipua',
 	'Examen de conscience': 'praecipua',
 	'Prière du soir': 'praecipua',
+	'Prière du soir et examen de conscience': 'praecipua',
 	'Cordon de saint Joseph : sept Gloria Patri': 'supererogatoria',
 	'Cordon de saint Joseph : prière pour la pureté': 'supererogatoria'
 };

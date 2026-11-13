@@ -163,6 +163,25 @@ export async function amorcer(fetchFn: typeof fetch = fetch): Promise<void> {
 	await amorcerSources(fetchFn);
 	await amorcerLitanies();
 	await amorcerDons();
+	await fusionnerExamen();
+}
+
+/**
+ * Une seule fois : « Examen de conscience » et « Prière du soir » ouvraient le même texte (l'examen est dans la prière
+ * du soir du Paroissien) ; ils deviennent une seule ligne. Rien n'est touché si l'utilisateur a modifié ces lignes.
+ */
+export async function fusionnerExamen(): Promise<void> {
+	if (await db.meta.get('examen-fusion')) return;
+	const examen = await db.liste.get('liste:21');
+	const soir = await db.liste.get('liste:22');
+	const intact = (e?: ElementListe) => !!e && !e.supprimeLe && e.original === contenu(e);
+	if (intact(examen) && intact(soir) && examen!.titre === 'Examen de conscience' && soir!.titre === 'Prière du soir') {
+		await db.liste.delete('liste:21');
+		const x = { ...soir!, titre: 'Prière du soir et examen de conscience' } as ElementListe;
+		x.original = contenu(x);
+		await db.liste.put(x);
+	}
+	await db.meta.put({ cle: 'examen-fusion', valeur: true });
 }
 
 /** Un don par jour (dim. sagesse … sam. crainte de Dieu), d'après le Cœur affligé de Marie (Beringer 1925, n° 450). */
