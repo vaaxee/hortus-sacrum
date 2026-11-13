@@ -15,11 +15,17 @@
 ## Pas vérifié
 - La connexion et la synchronisation réelles entre deux appareils : il faut votre adresse et votre boîte de courriel.
 
+## Mise en ligne
+- Adresse : **https://hortus-sacrum.vercel.app** (Vercel, équipe « Gabriel », gratuit).
+- Le site est public, mais il ne contient que l'app et les textes du livret ; vos données personnelles ne sont visibles qu'après connexion, et seulement par vous.
+- Pour remettre en ligne après une modification : `& .\deployer.ps1` dans PowerShell, depuis le dossier `hebdomada`.
+- Vérifié en ligne : écran du jour, prières, accès direct aux pages, service worker actif.
+
 ## Reste à faire
 - Réglage Supabase de l'adresse de retour du lien (à faire par vous, voir ci-dessous).
-- Mise en ligne (Vercel), avec votre accord.
 - Modèles de reconnaissance de texte (OCR) à embarquer pour l'usage hors ligne.
 
 ## À faire par vous dans Supabase
 Tableau de bord → projet « hortus-sacrum » → Authentication → URL Configuration :
-- Redirect URLs : ajouter `http://localhost:5173/**` (et, après la mise en ligne, l'adresse du site).
+- Site URL : `https://hortus-sacrum.vercel.app`
+- Redirect URLs : ajouter `https://hortus-sacrum.vercel.app/**` et `http://localhost:5173/**`.

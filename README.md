@@ -1,4 +1,6 @@
-# Hebdomada in Dei servitio
+# Hortus Sacrum (Hebdomada in Dei servitio)
+
+En ligne : https://hortus-sacrum.vercel.app — remise en ligne : `& .\deployer.ps1`.
 
 Compagnon quotidien de prière (PWA), selon le calendrier romain de 1954 et le livret
 *Le Jardin de l'âme*. Cahier des charges : `docs/cahier/`.
