@@ -7,6 +7,7 @@
 	import Icone from '#lib/design/Icone.svelte';
 	import Ornement from '#lib/design/Ornement.svelte';
 	import { amorcer } from '#lib/seed.ts';
+	import { initialiserCompte } from '#lib/sync.ts';
 
 	let { children } = $props();
 	let pret = $state(false);
@@ -16,6 +17,7 @@
 		initialiserApparence();
 		try {
 			await amorcer();
+			await initialiserCompte();
 		} catch (e) {
 			erreur = 'Les prières du livret n’ont pas pu être chargées. Rechargez la page.';
 			console.error(e);

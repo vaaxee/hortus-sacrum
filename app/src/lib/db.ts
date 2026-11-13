@@ -17,6 +17,8 @@ export class HebdoDB extends Dexie {
 	coches!: Table<Coche, number>;
 	faits!: Table<Fait, number>;
 	meta!: Table<{ cle: string; valeur: unknown }, string>;
+	/** File d'envoi vers le serveur (voir sync.ts). */
+	sortie!: Table<{ cle: string; collection: string; id: string; efface: boolean; contenu: unknown }, string>;
 
 	constructor(nom = 'hebdomada') {
 		super(nom);
@@ -33,6 +35,7 @@ export class HebdoDB extends Dexie {
 			meta: 'cle'
 		});
 		this.version(2).stores({ faits: '++id, [pratiqueId+date], pratiqueId, date' });
+		this.version(3).stores({ sortie: 'cle' });
 	}
 }
 

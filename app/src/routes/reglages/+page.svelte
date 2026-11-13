@@ -2,6 +2,7 @@
 	import { direction, theme, type Direction, type Theme } from '#lib/apparence.ts';
 	import Badge from '#lib/Badge.svelte';
 	import Ornement from '#lib/design/Ornement.svelte';
+	import { deconnecter, envoyerLien, etatSync, synchroniser } from '#lib/sync.ts';
 	import { db, exporter, importer, sortirDeLaCorbeille, supprimerDefinitivement, type Sauvegarde } from '#lib/db.ts';
 	import { vivant } from '#lib/live.ts';
 	import type { Texte } from '#lib/types.ts';
@@ -14,6 +15,17 @@
 
 	const themes: [Theme, string][] = [['auto', 'Selon l’appareil'], ['jour', 'Jour'], ['nuit', 'Nuit']];
 	const directions: [Direction, string][] = [['latine', 'Latine'], ['grecque', 'Grecque, outremer et cobalt']];
+	let courriel = $state('');
+	let lienEnvoye = $state('');
+	let erreurCompte = $state('');
+	async function demanderLien() {
+		erreurCompte = '';
+		if (!/^[^@s]+@[^@s]+.[^@s]+$/.test(courriel.trim())) return (erreurCompte = 'Cette adresse de courriel n’est pas valide.');
+		const e = await envoyerLien(courriel);
+		if (e) erreurCompte = `Le lien n’a pas pu être envoyé : ${e}`;
+		else lienEnvoye = courriel.trim();
+	}
+	const heure = (iso: string) => new Date(iso).toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit' });
 	let message = $state('');
 	let attente: Sauvegarde | undefined = $state();
 	let aSupprimer: string | undefined = $state();
@@ -55,6 +67,34 @@
 
 <main class="page entree">
 	<div class="tete-page"><h1>Profil</h1><Ornement nom="fleuron" /></div>
+
+	<section>
+		<h2>Compte</h2>
+		{#if $etatSync.genre === 'deconnecte'}
+			<p class="petit">Connectez-vous pour retrouver vos prières, votre liste et vos dévotions sur le téléphone et sur l’ordinateur. Sans compte, tout reste sur cet appareil.</p>
+			{#if lienEnvoye}
+				<p class="epreuve envoye">Un lien de connexion a été envoyé à <strong>{lienEnvoye}</strong>. Ouvrez-le sur cet appareil, depuis la boîte de réception.</p>
+				<button class="discret" onclick={() => (lienEnvoye = '')}>Changer d’adresse</button>
+			{:else}
+				<label><span>Adresse de courriel</span><input type="text" inputmode="email" autocomplete="email" bind:value={courriel} /></label>
+				<div class="rangee"><button class="principal" onclick={demanderLien}>Recevoir un lien de connexion</button></div>
+			{/if}
+			{#if erreurCompte}<p class="erreur" role="alert">{erreurCompte}</p>{/if}
+		{:else}
+			<p>Connecté : <strong>{$etatSync.courriel}</strong></p>
+			<p class="petit" role="status">
+				{#if $etatSync.genre === 'en_cours'}Synchronisation en cours…
+				{:else if $etatSync.genre === 'a_jour'}À jour, synchronisé à {heure($etatSync.quand)}.
+				{:else if $etatSync.genre === 'erreur'}La synchronisation a échoué : {$etatSync.message}. Vos données restent sur cet appareil ; réessayez quand la connexion revient.{/if}
+			</p>
+			<div class="rangee">
+				<button onclick={() => synchroniser()}>Synchroniser maintenant</button>
+				<button class="discret" onclick={deconnecter}>Se déconnecter</button>
+			</div>
+		{/if}
+	</section>
+
+	<hr class="filet" />
 
 	<nav class="raccourcis" aria-label="Réglages">
 		<a href="/fetes">Fêtes, saints et anniversaires</a>
@@ -131,6 +171,7 @@
 <style>
 	section { margin-top: 1.4rem; }
 	h2 { margin-bottom: var(--hs-e3); font-size: var(--hs-t2); }
+	.envoye { font-size: 1rem; margin: 0 0 var(--hs-e2); }
 	.raccourcis { display: grid; }
 	.raccourcis a { padding: 12px 0; border-bottom: var(--hs-cheveu) solid var(--hs-filet); text-decoration: none; color: var(--hs-encre); }
 	.aide { margin: var(--hs-e4) 0 var(--hs-e2); }

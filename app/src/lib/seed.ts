@@ -4,6 +4,9 @@ import { pratiquesDuPlan } from './plan.ts';
 import type { ElementListe, Moment, Pratique, Texte } from './types.ts';
 import { SOURCE_VIDE } from './types.ts';
 
+/** Date des données de départ (livret, liste, plan) : plus ancienne que toute modification de l'utilisateur. */
+const DEPART = '2000-01-01T00:00:00.000Z';
+
 /** Conversion des pièces du livret (data/prieres/jardin.json) vers le balisage de l'app. */
 
 interface Bloc {
@@ -165,7 +168,7 @@ export async function amorcer(fetchFn: typeof fetch = fetch): Promise<void> {
 export async function importerPlan(fetchFn: typeof fetch = fetch): Promise<number> {
 	const y = new Date().getFullYear();
 	const textes = await db.textes.toArray();
-	const t = new Date().toISOString();
+	const t = DEPART;
 	let n = 0;
 	for (const a of [y - 1, y]) {
 		const annee = await anneeLiturgique(a, fetchFn);
@@ -184,7 +187,7 @@ export async function importerPlan(fetchFn: typeof fetch = fetch): Promise<numbe
 async function amorcerLivret(fetchFn: typeof fetch): Promise<void> {
 	const rep = await fetchFn('/data/prieres/jardin.json');
 	const doc = (await rep.json()) as { pieces: Piece[] };
-	const t = new Date().toISOString();
+	const t = DEPART;
 	const textes = doc.pieces.map((p) => {
 		const x = pieceVersTexte(p);
 		x.creeLe = x.modifieLe = t;
