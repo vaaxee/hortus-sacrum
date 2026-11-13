@@ -30,11 +30,13 @@
 {#if erreur}<p class="page petit" role="alert">{erreur}</p>{/if}
 {#if pret}{@render children()}{/if}
 
+{#if !page.url.pathname.startsWith('/maquette')}
 <nav aria-label="Navigation principale">
 	{#each onglets as o}
 		<a href={o.href} aria-current={actif(o.href) ? 'page' : undefined}>{o.nom}</a>
 	{/each}
 </nav>
+{/if}
 
 <style>
 	nav {

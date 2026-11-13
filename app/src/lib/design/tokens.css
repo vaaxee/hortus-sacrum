@@ -1,0 +1,292 @@
+/*
+ * HORTUS SACRUM — jetons de design.
+ * Jour : ivoire et parchemin. Nuit : encre de lapis et ivoire, dessinée pour elle-même.
+ * Le thème suit l'appareil, sauf si data-theme="jour" ou "nuit" est posé sur <html>.
+ */
+
+:root {
+	/* ---- couleurs de la palette (fixes) ---- */
+	--hs-lapis-brut: #304e85;
+	--hs-vert-brut: #527b56;
+	--hs-or-brut: #d9b66d;
+	--hs-rubis-brut: #a83d49;
+	--hs-rose-brut: #b77d9b;
+	--hs-amethyste-brut: #766294;
+
+	/* ---- rôles, thème du jour ---- */
+	--hs-fond: #f8f3e8; /* ivoire */
+	--hs-surface: #e9dcc0; /* parchemin */
+	--hs-surface-douce: #f1e8d4;
+	--hs-encre: #2a2620; /* jamais de noir pur */
+	--hs-encre-douce: #5d5647;
+	--hs-lapis: #304e85;
+	--hs-sur-lapis: #f8f3e8;
+	--hs-vert: #456b49;
+	--hs-or: #d9b66d; /* trait et ornement seulement */
+	--hs-or-trait: rgb(217 182 109 / 0.6);
+	--hs-or-texte: #8a6a1f; /* or assombri, là où un petit texte doit rester lisible */
+	--hs-rubrique: #a83d49;
+	--hs-rose: #9c5f80;
+	--hs-amethyste: #766294;
+	--hs-filet: #cdbf9f; /* pierre chaude */
+	--hs-grain: 0.03;
+
+	/* couleurs liturgiques (bandeau et pastille) */
+	--hs-lit-blanc: #f8f3e8;
+	--hs-lit-rouge: #a83d49;
+	--hs-lit-vert: #527b56;
+	--hs-lit-violet: #766294;
+	--hs-lit-rose: #b77d9b;
+	--hs-lit-noir: #1a1a1a;
+	--hs-lit-or: #d9b66d;
+
+	/* ---- typographie ---- */
+	--hs-lecture: 'EB Garamond', Garamond, 'Times New Roman', serif;
+	--hs-interface: 'Manrope', 'Helvetica Neue', sans-serif;
+	--hs-titre: 'Cormorant Garamond', 'EB Garamond', serif;
+	--hs-accent: 'Almendra', 'Cormorant Garamond', serif;
+	--hs-imprime: 'IM Fell English', 'EB Garamond', serif;
+
+	/* échelle 1,25 ancrée sur 18 px */
+	--hs-t0: 0.8125rem; /* 13 : interface */
+	--hs-t1: 1.125rem; /* 18 */
+	--hs-t2: 1.40625rem; /* 22,5 */
+	--hs-t3: 1.75rem; /* 28 */
+	--hs-t4: 2.1875rem; /* 35 */
+	--hs-t5: 2.75rem; /* 44 */
+	--hs-t6: 3.4375rem; /* 55 */
+	--hs-corps: 1.1875rem; /* 19 px en lecture */
+	--hs-ligne: 1.75rem; /* 28 px : rythme vertical */
+	--hs-interligne: 1.55;
+	--hs-mesure: 34rem; /* 60 à 68 caractères */
+
+	--hs-chasse-interface: 0.02em;
+	--hs-chasse-capitales: 0.08em;
+	--hs-chasse-petites-cap: 0.06em;
+
+	/* ---- espace : base 8 ---- */
+	--hs-e1: 4px;
+	--hs-e2: 8px;
+	--hs-e3: 12px;
+	--hs-e4: 16px;
+	--hs-e5: 24px;
+	--hs-e6: 32px;
+	--hs-e7: 48px;
+	--hs-e8: 72px;
+	--hs-e9: 112px;
+	--hs-colonne: 680px;
+	--hs-page: 1200px;
+	--hs-marge-mobile: 20px;
+
+	/* ---- traits, angles ---- */
+	--hs-rayon: 0;
+	--hs-rayon-tactile: 2px;
+	--hs-cheveu: 0.75px;
+	--hs-trait: 1px;
+	--hs-trait-icone: 1.5px;
+
+	/* ---- mouvement : lent, calme ---- */
+	--hs-duree: 300ms;
+	--hs-duree-lente: 400ms;
+	--hs-duree-vive: 240ms;
+	--hs-courbe: cubic-bezier(0.22, 0.61, 0.36, 1);
+
+	color-scheme: light;
+}
+
+/* ---- thème de nuit ---- */
+:root[data-theme='nuit'] {
+	--hs-fond: #141b2b; /* encre de lapis */
+	--hs-surface: #1c2538;
+	--hs-surface-douce: #182033;
+	--hs-encre: #ede6d6;
+	--hs-encre-douce: #a9a798;
+	--hs-lapis: #9db4e3; /* lapis éclairci : liens et états actifs lisibles sur l'encre */
+	--hs-sur-lapis: #141b2b;
+	--hs-vert: #93bb97;
+	--hs-or: #d9b66d;
+	--hs-or-trait: rgb(217 182 109 / 0.5);
+	--hs-or-texte: #d9b66d;
+	--hs-rubrique: #e08a93; /* vermillon éclairci */
+	--hs-rose: #d3a2bd;
+	--hs-amethyste: #a998c4;
+	--hs-filet: #3a4560;
+	--hs-grain: 0.025;
+	--hs-lit-blanc: #ede6d6;
+	--hs-lit-rouge: #c9525f;
+	--hs-lit-vert: #6f9a73;
+	--hs-lit-violet: #8f7bb0;
+	--hs-lit-rose: #c592ae;
+	--hs-lit-noir: #05070c;
+	color-scheme: dark;
+}
+@media (prefers-color-scheme: dark) {
+	:root:not([data-theme='jour']) {
+		--hs-fond: #141b2b;
+		--hs-surface: #1c2538;
+		--hs-surface-douce: #182033;
+		--hs-encre: #ede6d6;
+		--hs-encre-douce: #a9a798;
+		--hs-lapis: #9db4e3;
+		--hs-sur-lapis: #141b2b;
+		--hs-vert: #93bb97;
+		--hs-or: #d9b66d;
+		--hs-or-trait: rgb(217 182 109 / 0.5);
+		--hs-or-texte: #d9b66d;
+		--hs-rubrique: #e08a93;
+		--hs-rose: #d3a2bd;
+		--hs-amethyste: #a998c4;
+		--hs-filet: #3a4560;
+		--hs-grain: 0.025;
+		--hs-lit-blanc: #ede6d6;
+		--hs-lit-rouge: #c9525f;
+		--hs-lit-vert: #6f9a73;
+		--hs-lit-violet: #8f7bb0;
+		--hs-lit-rose: #c592ae;
+		--hs-lit-noir: #05070c;
+		color-scheme: dark;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	:root {
+		--hs-duree: 1ms;
+		--hs-duree-lente: 1ms;
+		--hs-duree-vive: 1ms;
+	}
+}
+
+/* =====================================================================
+   Styles de base de l'univers (classe .hs sur le conteneur de page)
+   ===================================================================== */
+.hs {
+	background: var(--hs-fond);
+	color: var(--hs-encre);
+	font-family: var(--hs-lecture);
+	font-size: var(--hs-corps);
+	line-height: var(--hs-interligne);
+	font-variant-numeric: oldstyle-nums;
+	min-height: 100dvh;
+	position: relative;
+}
+/* grain de papier, très léger */
+.hs::before {
+	content: '';
+	position: fixed;
+	inset: 0;
+	pointer-events: none;
+	opacity: var(--hs-grain);
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .5 0 0 0 0 .45 0 0 0 0 .35 0 0 0 1 0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23g)'/%3E%3C/svg%3E");
+	z-index: 0;
+}
+.hs > * { position: relative; z-index: 1; }
+.hs *, .hs *::before, .hs *::after { box-sizing: border-box; }
+.hs a { color: var(--hs-lapis); text-underline-offset: 0.18em; text-decoration-thickness: var(--hs-cheveu); }
+.hs :focus-visible { outline: var(--hs-trait) solid var(--hs-or); outline-offset: 3px; }
+
+/* titres : Cormorant capitales, Cormorant italique, petites capitales */
+.hs h1, .hs .h1 {
+	font-family: var(--hs-titre); font-weight: 500; font-size: var(--hs-t4); line-height: 1.12;
+	text-transform: uppercase; letter-spacing: var(--hs-chasse-capitales); margin: 0; text-wrap: balance;
+	font-variant-numeric: lining-nums;
+}
+.hs h2, .hs .h2 {
+	font-family: var(--hs-titre); font-style: italic; font-weight: 500; font-size: var(--hs-t3);
+	line-height: 1.2; margin: 0; text-wrap: balance;
+}
+.hs h3, .hs .h3, .hs .pc {
+	font-family: var(--hs-lecture); font-weight: 400; font-size: var(--hs-t1);
+	font-variant-caps: all-small-caps; letter-spacing: var(--hs-chasse-petites-cap); margin: 0;
+}
+.hs .pc { font-size: inherit; }
+.hs .rub { color: var(--hs-rubrique); }
+.hs .interface {
+	font-family: var(--hs-interface); font-size: var(--hs-t0); letter-spacing: var(--hs-chasse-interface);
+	font-variant-numeric: lining-nums; line-height: 1.4;
+}
+.hs .etiquette {
+	font-family: var(--hs-lecture); font-size: 1.0625rem; font-variant-caps: all-small-caps;
+	letter-spacing: var(--hs-chasse-petites-cap); color: var(--hs-encre-douce); line-height: 1.3;
+}
+.hs .imprime { font-family: var(--hs-imprime); }
+.hs .chiffres-alignes { font-variant-numeric: lining-nums; }
+
+/* texte de lecture : justifié, césuré */
+.hs .lecture { max-width: var(--hs-mesure); margin-inline: auto; }
+.hs .lecture p {
+	margin: 0 0 calc(var(--hs-ligne) / 2); text-align: justify; hyphens: auto; text-wrap: pretty;
+	hanging-punctuation: first;
+}
+.hs .lecture p.verset { text-align: left; hyphens: manual; }
+.hs .lecture .vr { color: var(--hs-rubrique); font-variant-caps: normal; }
+.hs .lecture h3 { color: var(--hs-rubrique); text-align: center; margin: var(--hs-ligne) 0 calc(var(--hs-ligne) / 2); }
+.hs [lang='la'] { font-style: italic; }
+.hs .lecture.vers p { text-align: center; hyphens: manual; }
+
+/* panneau : carré, parchemin, filet de pierre, filet d'or optionnel en tête */
+.hs .panneau {
+	background: var(--hs-surface); border: var(--hs-cheveu) solid var(--hs-filet); border-radius: 0;
+	padding: var(--hs-e5);
+}
+.hs .panneau.or { border-top: var(--hs-trait) solid var(--hs-or); }
+/* double filet des grandes fêtes : 1 px + 0,5 px à 3 px */
+.hs .double-filet { border: var(--hs-trait) solid var(--hs-or-trait); outline: 0.5px solid var(--hs-or-trait); outline-offset: 3px; }
+
+/* boutons */
+.hs .bouton {
+	display: inline-flex; align-items: center; justify-content: center; gap: var(--hs-e2);
+	min-height: 44px; padding: 0 var(--hs-e5);
+	font-family: var(--hs-interface); font-size: 0.75rem; font-weight: 600; text-transform: uppercase;
+	letter-spacing: 0.1em; text-decoration: none; cursor: pointer;
+	border-radius: var(--hs-rayon-tactile); border: var(--hs-trait) solid var(--hs-lapis);
+	background: transparent; color: var(--hs-lapis);
+	transition: background var(--hs-duree-vive) var(--hs-courbe), color var(--hs-duree-vive) var(--hs-courbe);
+}
+.hs .bouton.principal { background: var(--hs-lapis); color: var(--hs-sur-lapis); }
+.hs .bouton.danger { border-color: var(--hs-rubrique); color: var(--hs-rubrique); }
+.hs .bouton:hover { background: color-mix(in srgb, var(--hs-lapis) 12%, transparent); }
+.hs .bouton.principal:hover { background: color-mix(in srgb, var(--hs-lapis) 86%, var(--hs-encre)); }
+.hs .glyphe {
+	background: none; border: 0; padding: var(--hs-e2); color: var(--hs-encre-douce); cursor: pointer;
+	border-bottom: var(--hs-trait) solid transparent; border-radius: 0; display: inline-flex;
+}
+.hs .glyphe:focus-visible { outline: none; border-bottom-color: var(--hs-or); }
+
+/* cartouches (badges) */
+.hs .cartouche {
+	display: inline-block; padding: 1px 7px 2px; border: var(--hs-cheveu) solid currentColor; border-radius: 0;
+	font-family: var(--hs-lecture); font-size: 0.8125rem; font-variant-caps: all-small-caps;
+	letter-spacing: var(--hs-chasse-petites-cap); line-height: 1.35; white-space: nowrap;
+}
+.hs .cartouche.livret { color: var(--hs-or-texte); }
+.hs .cartouche.verifiee { color: var(--hs-vert); }
+.hs .cartouche.personnel { color: var(--hs-lapis); }
+.hs .cartouche.ind { color: var(--hs-rubrique); }
+
+/* pastille liturgique */
+.hs .pastille {
+	display: inline-block; width: 11px; height: 11px; border-radius: 50%;
+	background: var(--pastille, var(--hs-lit-blanc)); border: var(--hs-cheveu) solid var(--hs-or);
+	vertical-align: 0.02em;
+}
+
+/* dépliants : ouverture douce, comme un livre */
+.hs details > summary { cursor: pointer; list-style: none; }
+.hs details > summary::-webkit-details-marker { display: none; }
+.hs details::details-content {
+	block-size: 0; overflow: clip; opacity: 0;
+	transition: block-size var(--hs-duree-lente) var(--hs-courbe), opacity var(--hs-duree-lente) var(--hs-courbe),
+		content-visibility var(--hs-duree-lente) allow-discrete;
+}
+.hs details[open]::details-content { block-size: auto; opacity: 1; }
+:root { interpolate-size: allow-keywords; }
+
+/* entrée de page : fondu, légère montée */
+@keyframes hs-entree { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+.hs .entree { animation: hs-entree var(--hs-duree-lente) var(--hs-courbe) both; }
+
+/* Neutralise l'ancienne feuille de style (app.css) à l'intérieur de l'univers, le temps de la maquette. */
+.hs h1, .hs h2, .hs h3 { color: inherit; font-variant: normal; }
+.hs button { min-height: 0; }
+.hs .univers-seul { display: none; }
+.hs { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: optimizeLegibility; }
