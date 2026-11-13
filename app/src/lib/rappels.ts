@@ -3,11 +3,10 @@
  * qui les envoie à l'heure dite à chaque appareil abonné (notifications push), même app fermée.
  */
 import { iso, jourDu, type Jour } from './calendrier.ts';
-import { VAPID_PUBLIC } from './config.ts';
+import { SUPABASE_URL, VAPID_PUBLIC } from './config.ts';
 import { db } from './db.ts';
 import { occurrenceDu } from './pratiques.ts';
 import { garde, rangElement } from './rangs.ts';
-import { supabase } from './sync.ts';
 import type { ElementListe, FetePerso, Pratique } from './types.ts';
 
 export interface ReglagesRappels {
@@ -128,9 +127,31 @@ export async function prochains(r: ReglagesRappels, jours = 14): Promise<Rappel[
 }
 
 // ------------------------------------------------------------------ abonnement et envoi au serveur
+// Sans compte : l'appareil est désigné par un identifiant aléatoire gardé sur lui ; la fonction
+// « rappels-appareil » enregistre son abonnement et ses rappels, « envoyer-rappels » les envoie à l'heure dite.
+
+const FONCTION = `${SUPABASE_URL}/functions/v1/rappels-appareil`;
 
 export const pushPossible = () =>
 	typeof window !== 'undefined' && 'serviceWorker' in navigator && 'PushManager' in window && 'Notification' in window;
+
+async function appareil(): Promise<string> {
+	const deja = (await db.meta.get('appareil'))?.valeur as string | undefined;
+	if (deja) return deja;
+	const octets = crypto.getRandomValues(new Uint8Array(24));
+	const id = btoa(String.fromCharCode(...octets)).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+	await db.meta.put({ cle: 'appareil', valeur: id });
+	return id;
+}
+
+async function appeler(action: string, donnees: Record<string, unknown> = {}): Promise<{ ok?: boolean; erreur?: string; rappels?: number }> {
+	const rep = await fetch(FONCTION, {
+		method: 'POST',
+		headers: { 'content-type': 'application/json' },
+		body: JSON.stringify({ action, appareil: await appareil(), ...donnees })
+	});
+	return rep.json().catch(() => ({ erreur: `réponse ${rep.status}` }));
+}
 
 function cleBinaire(b64: string): Uint8Array {
 	const p = '='.repeat((4 - (b64.length % 4)) % 4);
@@ -140,56 +161,40 @@ function cleBinaire(b64: string): Uint8Array {
 
 /** Demande l'autorisation, abonne cet appareil et l'enregistre sur le serveur. Renvoie un message d'erreur, ou null. */
 export async function abonner(): Promise<string | null> {
-	if (!pushPossible()) return 'Ce navigateur ne permet pas les notifications. Sur iPhone, ajoutez d’abord l’app à l’écran d’accueil.';
-	const { data } = await supabase().auth.getSession();
-	if (!data.session) return 'Connectez-vous d’abord (rubrique Compte) : les rappels passent par votre compte.';
+	if (!pushPossible()) return 'Ce navigateur ne permet pas les notifications. Sur iPhone, ajoutez d’abord l’app à l’écran d’accueil et ouvrez-la depuis l’icône.';
 	const permission = await Notification.requestPermission();
-	if (permission !== 'granted') return 'Les notifications ont été refusées. Autorisez-les dans les réglages du navigateur.';
+	if (permission !== 'granted') return 'Les notifications ont été refusées. Autorisez-les dans les réglages du téléphone (Notifications → Hortus Sacrum).';
 	const reg = await navigator.serviceWorker.ready;
 	const abo = (await reg.pushManager.getSubscription()) ??
 		(await reg.pushManager.subscribe({ userVisibleOnly: true, applicationServerKey: cleBinaire(VAPID_PUBLIC) as BufferSource }));
-	const j = abo.toJSON();
-	const { error } = await supabase().from('abonnements_push')
-		.upsert({ endpoint: j.endpoint!, p256dh: j.keys!.p256dh, auth: j.keys!.auth }, { onConflict: 'endpoint' });
-	return error ? `L’abonnement n’a pas pu être enregistré : ${error.message}` : null;
+	const r = await appeler('abonner', { abonnement: abo.toJSON() });
+	return r.ok ? null : `L’abonnement n’a pas pu être enregistré : ${r.erreur}`;
 }
 
-/** Désabonne cet appareil. */
+/** Désabonne cet appareil et efface ses rappels à venir. */
 export async function desabonner(): Promise<void> {
-	if (!pushPossible()) return;
-	const reg = await navigator.serviceWorker.ready;
-	const abo = await reg.pushManager.getSubscription();
-	if (abo) {
-		await supabase().from('abonnements_push').delete().eq('endpoint', abo.endpoint);
-		await abo.unsubscribe();
+	await appeler('desabonner');
+	if (pushPossible()) {
+		const abo = await (await navigator.serviceWorker.ready).pushManager.getSubscription();
+		await abo?.unsubscribe();
 	}
 }
 
 /**
- * Remplace sur le serveur les rappels à venir par ceux calculés maintenant (14 jours).
- * Appelé à l'ouverture de l'app et après un changement de réglage : tant que l'app est ouverte de temps en temps,
- * les rappels continuent.
+ * Remplace sur le serveur les rappels à venir de cet appareil par ceux calculés maintenant (14 jours).
+ * Appelé à l'ouverture de l'app et après un changement de réglage.
  */
 export async function planifier(): Promise<number> {
 	const r = await lireReglages();
-	const { data } = await supabase().auth.getSession();
-	if (!data.session) return 0;
-	await supabase().from('rappels_prevus').delete().is('envoye_le', null).gte('quand', new Date().toISOString());
-	if (!r.actif) return 0;
-	const liste = await prochains(r);
-	const lignes = liste.map((x) => ({ quand: x.quand.toISOString(), titre: x.titre, corps: x.corps, url: x.url }));
-	for (let i = 0; i < lignes.length; i += 300) {
-		const { error } = await supabase().from('rappels_prevus').insert(lignes.slice(i, i + 300));
-		if (error) throw error;
-	}
+	const liste = r.actif ? await prochains(r) : [];
+	const rep = await appeler('planifier', { rappels: liste.map((x) => ({ quand: x.quand.toISOString(), titre: x.titre, corps: x.corps, url: x.url })) });
+	if (!rep.ok) throw new Error(rep.erreur ?? 'erreur du serveur');
 	await db.meta.put({ cle: 'rappels-planifies', valeur: new Date().toISOString() });
-	return lignes.length;
+	return rep.rappels ?? 0;
 }
 
-/** Envoie tout de suite une notification d'essai à cet appareil (via le serveur, dans la minute). */
+/** Envoie une notification d'essai à cet appareil (via le serveur, dans la minute). */
 export async function essai(): Promise<string | null> {
-	const { error } = await supabase().from('rappels_prevus').insert({
-		quand: new Date().toISOString(), titre: 'Hortus Sacrum', corps: 'Les rappels fonctionnent sur cet appareil.', url: '/'
-	});
-	return error ? error.message : null;
+	const r = await appeler('essai');
+	return r.ok ? null : (r.erreur ?? 'erreur du serveur');
 }

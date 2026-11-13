@@ -16,6 +16,8 @@ async function lireSecrets() {
   return secrets;
 }
 
+const proprio = (x: { user_id: string | null; appareil: string | null }) => x.user_id ? `u:${x.user_id}` : `a:${x.appareil}`;
+
 Deno.serve(async (req: Request) => {
   const s = await lireSecrets();
   if (req.headers.get("x-cle") !== s.cle_cron) return new Response("interdit", { status: 401 });
@@ -24,7 +26,7 @@ Deno.serve(async (req: Request) => {
   const maintenant = new Date();
   const { data: dus, error } = await db
     .from("rappels_prevus")
-    .select("id, user_id, titre, corps, url, quand")
+    .select("id, user_id, appareil, titre, corps, url, quand")
     .is("envoye_le", null)
     .lte("quand", maintenant.toISOString())
     .gte("quand", new Date(maintenant.getTime() - 2 * 3600e3).toISOString())
@@ -32,12 +34,15 @@ Deno.serve(async (req: Request) => {
   if (error) return new Response(error.message, { status: 500 });
   if (!dus?.length) return new Response("rien", { status: 200 });
 
-  const users = [...new Set(dus.map((r) => r.user_id))];
-  const { data: abos } = await db.from("abonnements_push").select("id, user_id, endpoint, p256dh, auth").in("user_id", users);
+  const users = [...new Set(dus.map((r) => r.user_id).filter(Boolean))];
+  const apps = [...new Set(dus.map((r) => r.appareil).filter(Boolean))];
+  const abos: any[] = [];
+  if (users.length) abos.push(...((await db.from("abonnements_push").select("id, user_id, appareil, endpoint, p256dh, auth").in("user_id", users)).data ?? []));
+  if (apps.length) abos.push(...((await db.from("abonnements_push").select("id, user_id, appareil, endpoint, p256dh, auth").in("appareil", apps)).data ?? []));
   let envoyes = 0;
   const morts: string[] = [];
   for (const r of dus) {
-    for (const a of (abos ?? []).filter((x) => x.user_id === r.user_id)) {
+    for (const a of abos.filter((x) => proprio(x) === proprio(r))) {
       try {
         await webpush.sendNotification(
           { endpoint: a.endpoint, keys: { p256dh: a.p256dh, auth: a.auth } },
