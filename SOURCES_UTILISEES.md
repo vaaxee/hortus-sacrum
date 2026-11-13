@@ -37,6 +37,7 @@
 |---|---|---|---|
 | Hamon, *Méditations à l'usage du clergé et des fidèles pour tous les jours de l'année*, 3 t. | Paris, Victor Lecoffre ; Lyon ; t. I 1879 (10e éd.), t. II 1894 | 437 méditations découpées par jour (temporal, dates fixes, Sacré-Cœur, dimanches d'octobre, Dédicace) dans `data/recueils/hamon.json` ; texte OCR, coquilles possibles | PDF Google Livres fournis par l'utilisateur (`vendor/sources/hamon/`) |
 | Chaignon, S. J., *La méditation, ou le fidèle sanctifié par la pratique de l'oraison mentale*, 3 t. | Paris, 1872 | 213 méditations : parcours de 95 méditations suivi dans l'ordre les jours ordinaires ; 118 pour l'année liturgique, dont 88 rattachées à un jour, proposées en second choix ; OCR, coquilles possibles | archive.org `lamditationoulef01chai`, `…02chai`, `…03chai` |
+| *Breviarium Romanum*, leçons du IIe nocturne (IV-VI) du sanctoral, latin et traduction française | rubriques de 1911 (Divino Afflatu), données Divinum Officium ; la leçon abrégée de 1960 est écartée | 322 offices, dont 277 avec le français, dans `data/recueils/breviaire.json` ; page « Office du jour et vie du saint » | dépôt Divinum Officium (`vendor/do`) |
 
 ## Sources consultées pour l'inventaire (textes pas encore recopiés)
 

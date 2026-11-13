@@ -227,6 +227,8 @@
 										</details>
 									{:else if e.titre === 'Méditation du jour'}
 										<a class="titre" href="/meditation?date={date}">{e.titre}</a>
+									{:else if e.titre === 'Office du jour et vie du saint'}
+										<a class="titre" href="/saint?date={date}">{e.titre}</a>
 									{:else}
 										<span class="titre">{e.titre}</span>
 									{/if}
