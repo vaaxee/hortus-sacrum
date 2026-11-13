@@ -1,12 +1,13 @@
 <script lang="ts">
 	import { page } from '$app/state';
-	import { introitVersCorps, iso, jourDu, MOIS_DEVOTION, RANG, teinte, type Jour } from '#lib/calendrier.ts';
+	import { anneeLiturgique, introitVersCorps, iso, jourDu, MOIS_DEVOTION, RANG, teinte, type Jour } from '#lib/calendrier.ts';
 	import { db } from '#lib/db.ts';
 	import Arche from '#lib/design/Arche.svelte';
 	import Case from '#lib/design/Case.svelte';
 	import Ornement from '#lib/design/Ornement.svelte';
 	import { invocation, nomLatin, TOUS_LES_SAINTS } from '#lib/invocations.ts';
 	import { textesDuJour } from '#lib/liste.ts';
+	import { chargerRecueil, choisirAvecMois, NOM_COURT, RECUEIL_DU_MOIS } from '#lib/meditations.ts';
 	import { garde, rangElement, rangPratique, RANGS } from '#lib/rangs.ts';
 	import { vivant } from '#lib/live.ts';
 	import { rendre } from '#lib/markup.ts';
@@ -109,8 +110,25 @@
 	const faits = $derived(duJour.filter(fini).length);
 
 	/** Sous-titre des éléments du propre, tiré du calendrier. */
+	// titre de la méditation du jour (index légers des recueils, sans les textes)
+	let meditationDuJour = $state('');
+	$effect(() => {
+		const dt = date, j = jour, y = Number(dt.slice(0, 4));
+		if (!j) return;
+		const idMois = RECUEIL_DU_MOIS[Number(dt.slice(5, 7))];
+		Promise.all([chargerRecueil('index/hamon'), chargerRecueil('index/chaignon'), idMois ? chargerRecueil(`index/${idMois}`) : Promise.resolve(null),
+			anneeLiturgique(y - 1), anneeLiturgique(y)])
+			.then(([h, c, m, a1, a2]) => {
+				const annee = [a1, a2].find((a) => a?.some((x) => x.date === dt)) ?? [];
+				const premier = choisirAvecMois(dt, j, annee, h, c, m)[0];
+				meditationDuJour = premier ? `${NOM_COURT[premier.recueil.id] ?? ''} · ${premier.entree.titre}` : '';
+			})
+			.catch(() => (meditationDuJour = ''));
+	});
+
 	function precision(e: ElementListe): string {
 		if (!jour) return '';
+		if (e.titre === 'Méditation du jour') return meditationDuJour;
 		if (e.titre.startsWith('Office du jour')) return jour.office;
 		if (e.titre.startsWith('Dévotion du mois')) return MOIS_DEVOTION[d.getMonth() + 1].nom;
 		return '';

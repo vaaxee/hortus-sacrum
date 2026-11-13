@@ -56,6 +56,7 @@
 				<button type="button" aria-pressed={filtre === v} onclick={() => (filtre = v)}>{nom}</button>
 			{/each}
 			<span class="espace"></span>
+			<a class="bouton" href="/recueils">Méditations</a>
 			<a class="bouton principal" href="/prieres/nouveau">Ajouter une prière</a>
 		</div>
 	</div>

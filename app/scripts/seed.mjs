@@ -18,6 +18,14 @@ mkdirSync(join(cible, 'recueils'), { recursive: true });
 for (const f of readdirSync(join(racine, 'data', 'recueils'))) {
 	if (f.endsWith('.json')) compact(join(racine, 'data', 'recueils', f), join(cible, 'recueils', f));
 }
+// index légers des recueils (sans les textes) : pour afficher le titre de la méditation du jour sans tout charger
+mkdirSync(join(cible, 'recueils', 'index'), { recursive: true });
+for (const f of readdirSync(join(racine, 'data', 'recueils'))) {
+	if (!f.endsWith('.json')) continue;
+	const r = JSON.parse(readFileSync(join(racine, 'data', 'recueils', f), 'utf-8'));
+	r.entrees = r.entrees.map(({ cle, titre, tome, page }) => ({ cle, titre, tome, page, corps: '' }));
+	writeFileSync(join(cible, 'recueils', 'index', f), JSON.stringify(r));
+}
 // Guéranger : un index et un fichier par volume
 mkdirSync(join(cible, 'recueils', 'gueranger'), { recursive: true });
 for (const f of readdirSync(join(racine, 'data', 'recueils', 'gueranger'))) {
