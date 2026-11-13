@@ -18,6 +18,10 @@
 | Angélus (français et latin, oraison) | idem | 16-17 | idem |
 | Prière du soir (avec examen de conscience) | idem | 18-23 | idem |
 | Salve Regina et Sub tuum, avec leurs versets et leurs indulgences (Pie VI, 5 avril 1786) | Beringer, *Les Indulgences*, t. I, n° 429, Paris, Lethielleux, 1925 | 224-225 | archive.org `lesindulgences0001beri` |
+| Prière pour les défunts : psaume *De profundis* (latin et français), versets, oraison | *Paroissien romain*, Mame, 1890 (coquille « ea omnibus » corrigée en « ex omnibus », signalée dans la fiche) | 26-27 | archive.org `paroissienromain00tour` |
+| Chapelet des Morts : manière de le réciter, origine, indulgences (réservées aux associés de N.-D. du Suffrage) | Beringer 1925, t. II, n° 306 a | 322-323 | archive.org `lesindulgences0002beri` |
+| Cordon de saint Joseph : pratique des sept *Gloria Patri*, indulgences de l'archiconfrérie de Rome | Beringer 1925, t. II, n° 266 | 256-257 | idem |
+| *Gloria Patri* (français et latin) | Beringer 1925, t. I, n° 238 et note 1 | 130 | archive.org `lesindulgences0001beri` |
 
 ## Sources consultées pour l'inventaire (textes pas encore recopiés)
 

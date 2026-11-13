@@ -170,7 +170,9 @@ const LIENS_SOURCES: Record<string, string[]> = {
 	'Examen de conscience': ['paroissien:priere-du-soir'],
 	'Angélus': ['paroissien:angelus'],
 	'Salve Regina, avec ses versets': ['beringer:salve-regina'],
-	'Sub tuum, avec ses versets': ['beringer:sub-tuum']
+	'Sub tuum, avec ses versets': ['beringer:sub-tuum'],
+	'Chapelet des Morts': ['beringer:chapelet-des-morts', 'paroissien:de-profundis'],
+	'Cordon de saint Joseph : sept Gloria Patri': ['beringer:cordon-saint-joseph']
 };
 
 /**
