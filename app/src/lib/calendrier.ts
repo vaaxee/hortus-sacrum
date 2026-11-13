@@ -4,6 +4,8 @@ export interface Jour {
 	date: string;
 	jour: string;
 	temps: string;
+	/** Clé du temporal (Adv1-0, Epi3-2, Quad5-0, Pasc7-6, Pent05-3…), null pendant le temps de Noël. */
+	tempora?: string | null;
 	office: string;
 	rang: string;
 	couleur: string;

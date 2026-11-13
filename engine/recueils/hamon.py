@@ -146,9 +146,15 @@ def nettoyer_page(pg: str) -> str:
 NOTE_REF = re.compile(r"\(\s*[A-ZÉ][\w.]*\s*[.,]?[^()]*(?:\d|[IVXLC]{2,})[^()]*\)?\s*\.?\s*\d?\s*$")
 
 
+def traits(t: str) -> str:
+    """« Jésus - Christ », « ici -bas », « Notre - Seigneur » → mots composés recollés."""
+    return re.sub(r"(?<=[A-Za-zÀ-ÿ])[ \t]*-[ \t]*(?=(?:Christ|Seigneur|Dame|Esprit|bas|haut|même|mêmes|là|ci|il|elle|ils|elles|on|nous|vous|je|tu|moi|toi|lui|leur|y|en|le|la|les|t-il|t-elle)\b)", "-", t)
+
+
 def recoller(t: str) -> str:
     """Recolle les mots coupés en fin de ligne et les lignes d'un même paragraphe ; garde les intertitres."""
     t = re.sub(r"(\w)[-¬]\s*\n\s*([a-zàâçéèêëîïôûùüœ])", r"\1\2", t)
+    t = traits(t)
     paras = [p.strip() for p in re.split(r"\n\s*\n", t)]
     out = []
     for p in paras:
@@ -394,7 +400,7 @@ def tome(n: int) -> list[dict]:
                 c = "F:dedicace"
             elif not c and re.search(r"(DEUXIEME|SECONDE|TROISIEME)\s+MEDITATION", tete_n) and out:
                 c = out[-1]["cle"]
-        sujet = sujet_de(lib)
+        sujet = traits(sujet_de(lib))
         out.append({"cle": c, "table": lib, "titre": sujet or lib, "tome": n, "page": p, "page_pdf": k + 1,
                     "sommaire": sommaire.strip(), "corps": ("## Méditation pour le matin" + reste).strip() if reste else corps})
     return out

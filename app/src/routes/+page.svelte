@@ -225,6 +225,8 @@
 												<a href="/prieres/{encodeURIComponent(id)}">{$titres[id] ?? id}</a>
 											{/each}
 										</details>
+									{:else if e.titre === 'Méditation du jour'}
+										<a class="titre" href="/meditation?date={date}">{e.titre}</a>
 									{:else}
 										<span class="titre">{e.titre}</span>
 									{/if}

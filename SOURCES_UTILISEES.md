@@ -31,6 +31,12 @@
 | Regina Cæli (latin et français, oraison, indulgences) ; remplace l'Angélus au temps pascal | Beringer 1925, t. I, n° 428 | 222-223 | archive.org `lesindulgences0001beri` |
 | En l'honneur du Cœur affligé de Marie : prière entière et ses sept invocations, une par don du Saint-Esprit (un don par jour) | Beringer 1925, t. I, n° 450 | 237-238 | archive.org `lesindulgences0001beri` |
 
+## Étape 9 — Méditations et lectures
+
+| Recueil | Édition | Usage | Accès |
+|---|---|---|---|
+| Hamon, *Méditations à l'usage du clergé et des fidèles pour tous les jours de l'année*, 3 t. | Paris, Victor Lecoffre ; Lyon ; t. I 1879 (10e éd.), t. II 1894 | 437 méditations découpées par jour (temporal, dates fixes, Sacré-Cœur, dimanches d'octobre, Dédicace) dans `data/recueils/hamon.json` ; texte OCR, coquilles possibles | PDF Google Livres fournis par l'utilisateur (`vendor/sources/hamon/`) |
+
 ## Sources consultées pour l'inventaire (textes pas encore recopiés)
 
 | Source | Édition | Ce qu'on y a repéré | Accès |

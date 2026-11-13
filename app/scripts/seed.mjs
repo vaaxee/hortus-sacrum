@@ -13,4 +13,9 @@ compact(join(racine, 'data', 'prieres', 'sources.json'), join(cible, 'prieres', 
 for (const f of readdirSync(join(racine, 'data', 'calendar'))) {
 	compact(join(racine, 'data', 'calendar', f), join(cible, 'calendar', f));
 }
+// recueils de méditations et de lectures, découpés par jour (data/recueils/*.json)
+mkdirSync(join(cible, 'recueils'), { recursive: true });
+for (const f of readdirSync(join(racine, 'data', 'recueils'))) {
+	if (f.endsWith('.json')) compact(join(racine, 'data', 'recueils', f), join(cible, 'recueils', f));
+}
 console.log('données copiées dans static/data');
