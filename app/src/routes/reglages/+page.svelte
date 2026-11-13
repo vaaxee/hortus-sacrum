@@ -2,7 +2,7 @@
 	import { direction, theme, type Direction, type Theme } from '#lib/apparence.ts';
 	import Badge from '#lib/Badge.svelte';
 	import Ornement from '#lib/design/Ornement.svelte';
-	import { deconnecter, envoyerLien, etatSync, synchroniser } from '#lib/sync.ts';
+	import { deconnecter, envoyerLien, etatSync, synchroniser, verifierCode } from '#lib/sync.ts';
 	import { db, exporter, importer, sortirDeLaCorbeille, supprimerDefinitivement, type Sauvegarde } from '#lib/db.ts';
 	import { vivant } from '#lib/live.ts';
 	import type { Texte } from '#lib/types.ts';
@@ -59,6 +59,14 @@
 		messageRappels = err ? `L’essai a échoué : ${err}` : 'Rappel d’essai envoyé : il arrive dans la minute.';
 	}
 
+	let code = $state('');
+	async function validerCode() {
+		erreurCompte = '';
+		const e = await verifierCode(lienEnvoye, code);
+		if (e) erreurCompte = `Ce code n’a pas été accepté : ${e}`;
+		else { lienEnvoye = ''; code = ''; }
+	}
+
 	const heure = (iso: string) => new Date(iso).toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit' });
 	let message = $state('');
 	let attente: Sauvegarde | undefined = $state();
@@ -107,8 +115,12 @@
 		{#if $etatSync.genre === 'deconnecte'}
 			<p class="petit">Connectez-vous pour retrouver vos prières, votre liste et vos dévotions sur le téléphone et sur l’ordinateur. Sans compte, tout reste sur cet appareil.</p>
 			{#if lienEnvoye}
-				<p class="epreuve envoye">Un lien de connexion a été envoyé à <strong>{lienEnvoye}</strong>. Ouvrez-le sur cet appareil, depuis la boîte de réception.</p>
-				<button class="discret" onclick={() => (lienEnvoye = '')}>Changer d’adresse</button>
+				<p class="epreuve envoye">Un courriel a été envoyé à <strong>{lienEnvoye}</strong>. Dans l’app installée sur l’écran d’accueil, saisissez ici le <strong>code</strong> qu’il contient (le lien, lui, s’ouvre dans le navigateur).</p>
+				<label><span>Code reçu</span><input type="text" inputmode="numeric" autocomplete="one-time-code" maxlength="10" bind:value={code} /></label>
+				<div class="rangee">
+					<button class="principal" disabled={code.replace(/\s/g, '').length < 6} onclick={validerCode}>Se connecter</button>
+					<button class="discret" onclick={() => { lienEnvoye = ''; code = ''; }}>Changer d’adresse</button>
+				</div>
 			{:else}
 				<label><span>Adresse de courriel</span><input type="text" inputmode="email" autocomplete="email" bind:value={courriel} /></label>
 				<div class="rangee"><button class="principal" onclick={demanderLien}>Recevoir un lien de connexion</button></div>

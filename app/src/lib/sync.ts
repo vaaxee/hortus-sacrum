@@ -90,7 +90,9 @@ export async function initialiserCompte() {
 		const nouvelle = !session && s;
 		session = s;
 		if (!s) etatSync.set({ genre: 'deconnecte' });
-		else if (nouvelle) synchroniser(true);
+		// jamais d'appel à Supabase dans ce rappel : il garde le verrou de session, et la synchronisation
+		// l'attendrait sans fin. On la lance juste après.
+		else if (nouvelle) setTimeout(() => synchroniser(true), 0);
 	});
 	if (session) synchroniser();
 	window.addEventListener('online', () => synchroniser());
@@ -105,6 +107,15 @@ export async function envoyerLien(courriel: string): Promise<string | null> {
 		email: courriel.trim(),
 		options: { emailRedirectTo: `${location.origin}/reglages` }
 	});
+	return error ? error.message : null;
+}
+
+/**
+ * Connexion par le code reçu dans le même courriel. Indispensable pour l'app installée sur l'écran d'accueil :
+ * le lien s'ouvre dans le navigateur, qui ne partage pas sa session avec l'app installée.
+ */
+export async function verifierCode(courriel: string, code: string): Promise<string | null> {
+	const { error } = await supabase().auth.verifyOtp({ email: courriel.trim(), token: code.replace(/\s/g, ''), type: 'email' });
 	return error ? error.message : null;
 }
 
@@ -186,21 +197,25 @@ async function envoyer() {
 
 async function recevoir() {
 	const curseur = ((await db.meta.get('sync-curseur'))?.valeur as string) ?? '1970-01-01T00:00:00Z';
+	// pages successives d'une même requête (beaucoup de documents peuvent porter le même instant serveur) ;
+	// le curseur n'avance qu'une fois tout reçu
 	let dernier = curseur;
-	for (;;) {
+	for (let debut = 0; ; debut += 500) {
 		const { data, error } = await supabase()
 			.from('documents')
 			.select('collection,id,contenu,modifie_le,efface,maj_serveur')
-			.gt('maj_serveur', dernier)
+			.gt('maj_serveur', curseur)
 			.order('maj_serveur', { ascending: true })
-			.limit(500);
+			.order('collection', { ascending: true })
+			.order('id', { ascending: true })
+			.range(debut, debut + 499);
 		if (error) throw new Error(error.message);
 		if (!data?.length) break;
 		await appliquer(data as Distant[]);
 		dernier = data[data.length - 1].maj_serveur as string;
-		await db.meta.put({ cle: 'sync-curseur', valeur: dernier });
 		if (data.length < 500) break;
 	}
+	if (dernier !== curseur) await db.meta.put({ cle: 'sync-curseur', valeur: dernier });
 }
 
 interface Distant {
