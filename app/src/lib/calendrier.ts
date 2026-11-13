@@ -32,6 +32,11 @@ function annee(a: number, fetchFn: typeof fetch): Promise<Jour[] | null> {
 	return cache.get(a)!;
 }
 
+/** Tous les jours de l'année liturgique qui commence à l'Avent de l'année a (ou null si elle n'est pas générée). */
+export function anneeLiturgique(a: number, fetchFn: typeof fetch = fetch): Promise<Jour[] | null> {
+	return annee(a, fetchFn);
+}
+
 export function iso(d: Date): string {
 	return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
 }

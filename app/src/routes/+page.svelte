@@ -8,7 +8,10 @@
 	import { invocation, TOUS_LES_SAINTS } from '#lib/invocations.ts';
 	import { vivant } from '#lib/live.ts';
 	import { rendre } from '#lib/markup.ts';
-	import type { Coche, ElementListe, Moment } from '#lib/types.ts';
+	import { creer, enregistrer } from '#lib/db.ts';
+	import { occurrenceDu, type Occurrence } from '#lib/pratiques.ts';
+	import { basculerFait } from '#lib/suivi.ts';
+	import type { Coche, ElementListe, Fait, FetePerso, Moment, NoteJour, Pratique } from '#lib/types.ts';
 	import Icone from '#lib/design/Icone.svelte';
 
 	const date = $derived(page.url.searchParams.get('date') ?? iso(new Date()));
@@ -24,7 +27,42 @@
 	const liste = vivant(() => db.liste.orderBy('ordre').toArray(), [] as ElementListe[]);
 	const titres = vivant(async () => Object.fromEntries((await db.textes.toArray()).map((t) => [t.id, t.titre])), {} as Record<string, string>);
 	const MOMENTS: [Moment, string][] = [['matin', 'Matin'], ['propre', 'Propre du jour'], ['journee', 'Au fil du jour'], ['soir', 'Soir']];
-	const duJour = $derived($liste.filter((e) => e.actif && !e.supprimeLe && e.jours[d.getDay()]));
+	// pratiques du jour : elles remplacent les deux lignes génériques « dévotion en cours » et « neuvaine ou trentain »
+	const pratiques = vivant(() => db.pratiques.toArray(), [] as Pratique[]);
+	const faitsDuJour = $derived(vivant(() => db.faits.where('date').equals(date).toArray(), [] as Fait[]));
+	const pratiquesDuJour = $derived(
+		$pratiques
+			.filter((p) => p.active && !p.supprimeLe)
+			.map((p) => ({ p, o: occurrenceDu(p, date) }))
+			.filter((x): x is { p: Pratique; o: Occurrence } => !!x.o)
+	);
+	const faite = (id: string) => $faitsDuJour.some((f) => f.pratiqueId === id);
+	/** Pratiques rattachées à un élément générique de la liste, ou null si l'élément est ordinaire. */
+	function pratiquesPour(e: ElementListe) {
+		if (e.titre.startsWith('Dévotion à jours comptés')) return pratiquesDuJour.filter((x) => !['neuvaine', 'trentain'].includes(x.p.type));
+		if (e.titre.startsWith('Neuvaine ou trentain')) return pratiquesDuJour.filter((x) => ['neuvaine', 'trentain'].includes(x.p.type));
+		return null;
+	}
+	const duJour = $derived(
+		$liste.filter((e) => e.actif && !e.supprimeLe && e.jours[d.getDay()] && (pratiquesPour(e)?.length ?? 1) > 0)
+	);
+	const fini = (e: ElementListe) => {
+		const pp = pratiquesPour(e);
+		return pp ? pp.every((x) => faite(x.p.id)) : (coches[e.id] ?? 0) >= Math.max(1, e.rappels.length);
+	};
+
+	// fêtes et anniversaires personnels du jour
+	const fetes = $derived(vivant(() => db.fetes.where('[mois+jour]').equals([d.getMonth() + 1, d.getDate()]).toArray(), [] as FetePerso[]));
+	const fetesDuJour = $derived($fetes.filter((f) => !f.supprimeLe));
+	const anniversaire = (f: FetePerso) => (f.annee && d.getFullYear() > f.annee ? `, ${d.getFullYear() - f.annee}${d.getFullYear() - f.annee === 1 ? 'er' : 'e'} anniversaire` : '');
+
+	// note du jour
+	const note = $derived(vivant(() => db.notes.get(`note:${date}`), undefined as NoteJour | undefined));
+	async function noter(corps: string) {
+		const existante = await db.notes.get(`note:${date}`);
+		if (existante) await enregistrer('notes', { ...existante, corps });
+		else if (corps.trim()) await creer<NoteJour>('notes', { id: `note:${date}`, origine: 'personnel', date, corps });
+	}
 	// coches du jour, enregistrées et horodatées
 	const cochesDuJour = $derived(vivant(() => db.coches.where('date').equals(date).toArray(), [] as Coche[]));
 	const coches = $derived.by(() => {
@@ -43,15 +81,13 @@
 		return iso(x);
 	};
 	const estAujourdhui = $derived(date === iso(new Date()));
-	const faits = $derived(duJour.filter((e) => (coches[e.id] ?? 0) >= Math.max(1, e.rappels.length)).length);
+	const faits = $derived(duJour.filter(fini).length);
 
 	/** Sous-titre des éléments du propre, tiré du calendrier. */
 	function precision(e: ElementListe): string {
 		if (!jour) return '';
 		if (e.titre.startsWith('Office du jour')) return jour.office;
 		if (e.titre.startsWith('Dévotion du mois')) return MOIS_DEVOTION[d.getMonth() + 1].nom;
-		if (e.titre.startsWith('Dévotion à jours comptés')) return jour.devotions.filter((x) => x.type !== 'neuvaine').map((x) => x.libelle).join(' ; ');
-		if (e.titre.startsWith('Neuvaine')) return jour.devotions.filter((x) => x.type === 'neuvaine').map((x) => x.libelle).join(' ; ');
 		return '';
 	}
 	const ROMAINS = ['', 'i', 'ii', 'iii', 'iv', 'v', 'vi', 'vii', 'viii', 'ix'];
@@ -80,6 +116,10 @@
 				{/if}
 				{#if jour.jeune_abstinence}<p class="jeune rub pc">{jour.jeune_abstinence.libelle}</p>{/if}
 			</Arche>
+
+			{#each fetesDuJour as f (f.id)}
+				<p class="perso"><span class="rub">✠</span> {f.titre}{anniversaire(f)}</p>
+			{/each}
 
 			{#if jour.introit_incipit}
 				<details class="introit">
@@ -119,6 +159,25 @@
 							{@const total = Math.max(1, e.rappels.length)}
 							{@const fait = coches[e.id] ?? 0}
 							{@const sous = precision(e)}
+							{@const pp = pratiquesPour(e)}
+							{#if pp}
+								{#each pp as { p, o } (p.id)}
+									<li class:fini={faite(p.id)}>
+										<Case libelle={p.titre} bind:cochee={() => faite(p.id), () => basculerFait(p.id, date)} />
+										<div class="corps">
+											<a class="titre" href="/devotions/{encodeURIComponent(p.id)}">{p.titre}</a>
+											{#if p.notes}<span class="sous">{p.notes}</span>{/if}
+										</div>
+										{#if o.total}
+											<span class="medaillon fixe" title="{o.rang} sur {o.total}">
+												<Ornement nom="medaillon" taille={34} />
+												<span class="chiffres-alignes petit-chiffre">{o.rang}<i>/</i>{o.total}</span>
+											</span>
+										{/if}
+										<span class="genre pc propre">propre</span>
+									</li>
+								{/each}
+							{:else}
 							<li class:fini={fait >= total}>
 								<Case
 									libelle={e.titre}
@@ -149,11 +208,17 @@
 								{/if}
 								<span class="genre pc" class:propre={e.etiquette === 'propre'}>{e.etiquette === 'propre' ? 'propre' : 'ord.'}</span>
 							</li>
+							{/if}
 						{/each}
 					</ul>
 				{/if}
 			{/each}
 		</section>
+
+		<details class="note-jour" open={!!$note?.corps}>
+			<summary class="pc">Note du jour</summary>
+			<textarea rows="3" aria-label="Note du jour" value={$note?.corps ?? ''} onblur={(ev) => noter(ev.currentTarget.value)} placeholder="Une intention, une résolution, une grâce reçue"></textarea>
+		</details>
 
 		<section class="martyrologe" aria-label="Martyrologe">
 			<div class="tete">
@@ -208,6 +273,12 @@
 	.trait { flex: 1; height: 1px; background: var(--hs-filet); position: relative; }
 	.trait span { position: absolute; inset: -1px auto -1px 0; background: var(--hs-vert); transition: width var(--hs-duree-lente) var(--hs-courbe); }
 
+	.perso { margin: var(--hs-e3) 0 0; font-style: italic; }
+	.note-jour { margin-top: var(--hs-e6); border-block: var(--hs-cheveu) solid var(--hs-filet); }
+	.note-jour summary { padding: 12px 0; color: var(--hs-encre-douce); }
+	.note-jour textarea { margin-bottom: var(--hs-e4); }
+	.medaillon.fixe { cursor: default; }
+	.petit-chiffre { font-family: var(--hs-interface); font-size: 0.625rem !important; }
 	.regler { margin: var(--hs-e2) 0 0; text-align: right; font-family: var(--hs-interface); font-size: var(--hs-t0); letter-spacing: var(--hs-chasse-interface); }
 	.tete { margin-top: var(--hs-e7); text-align: center; display: grid; gap: var(--hs-e3); }
 	.tete h2 { font-size: var(--hs-t2); }

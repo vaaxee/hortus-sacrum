@@ -63,7 +63,8 @@ export type Regle =
 	| { genre: 'avant_fete'; nombre: number; jourSemaine: number | null; mois: number; jour: number }
 	| { genre: 'consecutifs'; nombre: number; jourSemaine: number | null; debut: string }
 	| { genre: 'fixe'; mois: number; jour: number }
-	| { genre: 'mensuel'; rang: number; jourSemaine: number }
+	/** Le rang-ième jour de semaine de chaque mois (ex. premier vendredi). nombre et debut : série comptée (9 premiers vendredis). decalage : en jours (−1 = la veille). */
+	| { genre: 'mensuel'; rang: number; jourSemaine: number; nombre?: number; debut?: string; decalage?: number }
 	| { genre: 'mois_entier'; mois: number }
 	| { genre: 'hebdomadaire'; jourSemaine: number };
 
@@ -92,6 +93,14 @@ export interface ElementListe extends Base {
 	rappels: string[];
 	textes: string[];
 	actif: boolean;
+}
+
+/** Une occurrence de pratique accomplie. */
+export interface Fait {
+	id?: number;
+	pratiqueId: string;
+	date: string;
+	horodatage: string;
 }
 
 export interface Coche {

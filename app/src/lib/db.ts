@@ -1,6 +1,6 @@
 import Dexie, { type Table } from 'dexie';
 import type {
-	Base, Coche, ElementListe, FetePerso, Meditation, NomTable, NoteJour, Pratique, Recueil, Texte, Version
+	Base, Coche, ElementListe, Fait, FetePerso, Meditation, NomTable, NoteJour, Pratique, Recueil, Texte, Version
 } from './types';
 import { TABLES } from './types';
 
@@ -15,6 +15,7 @@ export class HebdoDB extends Dexie {
 	notes!: Table<NoteJour, string>;
 	versions!: Table<Version, number>;
 	coches!: Table<Coche, number>;
+	faits!: Table<Fait, number>;
 	meta!: Table<{ cle: string; valeur: unknown }, string>;
 
 	constructor(nom = 'hebdomada') {
@@ -31,6 +32,7 @@ export class HebdoDB extends Dexie {
 			coches: '++id, date, [date+elementId]',
 			meta: 'cle'
 		});
+		this.version(2).stores({ faits: '++id, [pratiqueId+date], pratiqueId, date' });
 	}
 }
 
@@ -141,7 +143,7 @@ export interface Sauvegarde {
 
 export async function exporter(): Promise<Sauvegarde> {
 	const tables: Record<string, unknown[]> = {};
-	for (const nom of [...TABLES, 'versions', 'coches', 'meta'] as const) {
+	for (const nom of [...TABLES, 'versions', 'coches', 'faits', 'meta'] as const) {
 		tables[nom] = await (db[nom] as Table).toArray();
 	}
 	return { format: 'hebdomada', version: 1, date: maintenant(), tables };
@@ -151,7 +153,7 @@ export async function exporter(): Promise<Sauvegarde> {
 export async function importer(s: Sauvegarde, mode: 'remplacer' | 'fusionner'): Promise<number> {
 	if (s?.format !== 'hebdomada' || !s.tables) throw new Error('Ce fichier n’est pas une sauvegarde Hebdomada.');
 	let n = 0;
-	const noms = [...TABLES, 'versions', 'coches', 'meta'] as const;
+	const noms = [...TABLES, 'versions', 'coches', 'faits', 'meta'] as const;
 	await db.transaction('rw', noms.map((x) => db[x] as Table), async () => {
 		for (const nom of noms) {
 			const lignes = (s.tables[nom] ?? []) as Record<string, unknown>[];
@@ -162,7 +164,7 @@ export async function importer(s: Sauvegarde, mode: 'remplacer' | 'fusionner'): 
 				n += lignes.length;
 				continue;
 			}
-			if (nom === 'versions' || nom === 'coches') continue; // la fusion ne duplique pas les journaux
+			if (nom === 'versions' || nom === 'coches' || nom === 'faits') continue; // la fusion ne duplique pas les journaux
 			for (const l of lignes) {
 				const cle = (l.id ?? l.cle) as string;
 				const existant = (await t.get(cle)) as Record<string, unknown> | undefined;

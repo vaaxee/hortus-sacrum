@@ -1,26 +1,45 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
-	import { iso, jourDu, type Jour } from '#lib/calendrier.ts';
+	import { db } from '#lib/db.ts';
 	import Ornement from '#lib/design/Ornement.svelte';
+	import { vivant } from '#lib/live.ts';
+	import { etat, regleEnClair, versIso, type Etat } from '#lib/pratiques.ts';
+	import { importerPlan } from '#lib/seed.ts';
+	import type { Fait, Pratique } from '#lib/types.ts';
 
-	/** Dévotions des trente prochains jours, d'après le plan de l'année (calendrier). */
-	let jours: Jour[] = $state([]);
-	let charge = $state(false);
+	const pratiques = vivant(() => db.pratiques.toArray(), [] as Pratique[]);
+	const faits = vivant(() => db.faits.toArray(), [] as Fait[]);
+	const aujourdhui = versIso(new Date());
 
-	onMount(async () => {
-		const d = new Date();
-		const out: Jour[] = [];
-		for (let i = 0; i < 30; i++) {
-			const j = await jourDu(iso(d));
-			if (j?.devotions.length) out.push(j);
-			d.setDate(d.getDate() + 1);
-		}
-		jours = out;
-		charge = true;
+	const parPratique = $derived.by(() => {
+		const m = new Map<string, Set<string>>();
+		for (const f of $faits) m.set(f.pratiqueId, (m.get(f.pratiqueId) ?? new Set()).add(f.date));
+		return m;
 	});
+	const lignes = $derived(
+		$pratiques
+			.filter((p) => !p.supprimeLe && p.active)
+			.map((p) => ({ p, e: etat(p, aujourdhui, parPratique.get(p.id) ?? new Set()) }))
+			.sort((a, b) => (a.e.prochaine?.date ?? '9').localeCompare(b.e.prochaine?.date ?? '9'))
+	);
+	const GROUPES: [Etat['phase'], string, string][] = [
+		['en_cours', 'En cours', 'Aucune série en cours. Ajoutez une neuvaine, un trentain ou une série.'],
+		['a_venir', 'À venir', ''],
+		['permanente', 'Chaque mois, chaque année', '']
+	];
+	const terminees = $derived(lignes.filter((l) => l.e.phase === 'terminee'));
+	const masquees = $derived($pratiques.filter((p) => !p.supprimeLe && !p.active));
+	const corbeille = $derived($pratiques.filter((p) => p.supprimeLe));
 
 	const dateCourte = (s: string) =>
 		new Date(s + 'T12:00:00').toLocaleDateString('fr-FR', { weekday: 'short', day: 'numeric', month: 'short' });
+	const quand = (e: Etat) =>
+		!e.prochaine ? '' : e.prochaine.date === aujourdhui ? 'aujourd’hui' : `prochain jour : ${dateCourte(e.prochaine.date)}`;
+
+	let message = $state('');
+	async function reprendrePlan() {
+		const n = await importerPlan();
+		message = n ? `${n} pratique${n > 1 ? 's ajoutées' : ' ajoutée'} depuis le plan de l’année.` : 'Toutes les pratiques du plan sont déjà là.';
+	}
 </script>
 
 <svelte:head><title>Dévotions — Hortus Sacrum</title></svelte:head>
@@ -29,46 +48,71 @@
 	<div class="tete-page">
 		<h1>Dévotions</h1>
 		<Ornement nom="fleuron" />
-		<p class="petit">Les trente prochains jours, d’après le plan de l’année.</p>
 	</div>
+	<div class="rangee">
+		<a class="bouton principal" href="/devotions/nouvelle">Ajouter une pratique</a>
+		<button onclick={reprendrePlan}>Reprendre le plan de l’année</button>
+	</div>
+	{#if message}<p class="petit" role="status">{message}</p>{/if}
 
-	{#if jours.length}
-		<table class="ordo">
-			<tbody>
-				{#each jours as j}
-					<tr>
-						<td class="d pc chiffres-alignes"><a href="/?date={j.date}">{dateCourte(j.date)}</a></td>
-						<td>
-							{#each j.devotions as dv}
-								<p class:neuvaine={dv.type === 'neuvaine'}>
-									{dv.libelle}{#if dv.page_jardin}<span class="ref imprime">Jardin, p. {dv.page_jardin}</span>{/if}
-								</p>
-							{/each}
-						</td>
-					</tr>
+	{#each GROUPES as [phase, nom, vide]}
+		{@const groupe = lignes.filter((l) => l.e.phase === phase)}
+		{#if groupe.length || vide}
+			<section>
+				<div class="tete-section"><Ornement nom="grecque" /><h2>{nom}</h2></div>
+				<ul class="reglee">
+					{#each groupe as { p, e } (p.id)}
+						<li>
+							<a href="/devotions/{encodeURIComponent(p.id)}">
+								<span class="titre">{p.titre}</span>
+								<span class="detail">{regleEnClair(p.regle)}{quand(e) ? ` ; ${quand(e)}` : ''}</span>
+								{#if e.manquees.length}
+									<span class="alerte">Série interrompue : {e.manquees.length} jour{e.manquees.length > 1 ? 's' : ''} sans coche</span>
+								{/if}
+							</a>
+							{#if e.serie.length}
+								<span class="medaillon" class:plein={e.faites === e.serie.length} title="{e.faites} sur {e.serie.length}">
+									<Ornement nom="medaillon" taille={40} />
+									<span class="chiffres-alignes">{e.faites}<i>/</i>{e.serie.length}</span>
+								</span>
+							{/if}
+						</li>
+					{:else}
+						<li class="vide petit">{vide}</li>
+					{/each}
+				</ul>
+			</section>
+		{/if}
+	{/each}
+
+	{#if terminees.length || masquees.length || corbeille.length}
+		<details class="reste">
+			<summary>Terminées, masquées et corbeille ({terminees.length + masquees.length + corbeille.length})</summary>
+			<ul class="reglee">
+				{#each [...terminees.map((l) => l.p), ...masquees, ...corbeille] as p (p.id)}
+					<li>
+						<a href="/devotions/{encodeURIComponent(p.id)}">
+							<span class="titre">{p.titre}</span>
+							<span class="detail">{p.supprimeLe ? 'dans la corbeille' : !p.active ? 'masquée' : 'terminée'}</span>
+						</a>
+					</li>
 				{/each}
-			</tbody>
-		</table>
-	{:else if charge}
-		<p class="petit vide">Aucune dévotion à jours comptés ni neuvaine dans les trente prochains jours.</p>
+			</ul>
+		</details>
 	{/if}
-
-	<p class="aide suite">
-		Les compteurs, les séries interrompues et l’édition de vos propres pratiques arrivent à l’étape suivante.
-	</p>
 </main>
 
 <style>
 	.tete-page :global(.filet) { max-width: 16rem; }
-	.ordo { width: 100%; border-collapse: collapse; }
-	.ordo td { padding: 9px 0; border-bottom: var(--hs-cheveu) solid var(--hs-filet); vertical-align: baseline; }
-	.ordo tr:first-child td { border-top: var(--hs-cheveu) solid var(--hs-filet); }
-	.d { width: 6.2rem; white-space: nowrap; font-size: 1.0625rem; }
-	.d a { color: var(--hs-encre-douce); text-decoration: none; }
-	.ordo p { margin: 0; line-height: 1.35; }
-	.ordo p + p { margin-top: 4px; }
-	.neuvaine { font-style: italic; color: var(--hs-encre-douce); }
-	.ref { margin-left: 0.5em; font-size: 0.9375rem; color: var(--hs-encre-douce); font-style: italic; }
-	.vide { text-align: center; }
-	.suite { margin-top: var(--hs-e6); text-align: center; }
+	li a { flex: 1; min-width: 0; display: grid; padding: 10px 0; text-decoration: none; color: var(--hs-encre); }
+	.titre { line-height: 1.3; overflow-wrap: anywhere; }
+	.detail { font-size: 1rem; font-style: italic; color: var(--hs-encre-douce); line-height: 1.35; }
+	.alerte { font-size: 1rem; color: var(--hs-rubrique); font-variant-caps: all-small-caps; letter-spacing: var(--hs-chasse-petites-cap); }
+	.medaillon { position: relative; flex: none; width: 40px; height: 40px; color: var(--hs-or); line-height: 0; }
+	.medaillon span { position: absolute; inset: 0; display: grid; grid-auto-flow: column; place-items: center; justify-content: center; color: var(--hs-encre); font-family: var(--hs-interface); font-size: 0.6875rem; line-height: 1; }
+	.medaillon i { font-style: normal; color: var(--hs-encre-douce); margin: 0 1px; }
+	.medaillon.plein { color: var(--hs-vert); }
+	li.vide { padding: 12px 0; }
+	.reste { margin-top: var(--hs-e7); border-top: var(--hs-cheveu) solid var(--hs-filet); }
+	.reste summary { padding: 12px 0; color: var(--hs-encre-douce); font-variant-caps: all-small-caps; letter-spacing: var(--hs-chasse-petites-cap); }
 </style>

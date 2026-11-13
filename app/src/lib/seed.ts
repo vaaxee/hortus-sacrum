@@ -1,6 +1,8 @@
-import { contenu, db } from './db';
-import type { ElementListe, Moment, Texte } from './types';
-import { SOURCE_VIDE } from './types';
+import { anneeLiturgique } from './calendrier.ts';
+import { contenu, db } from './db.ts';
+import { pratiquesDuPlan } from './plan.ts';
+import type { ElementListe, Moment, Pratique, Texte } from './types.ts';
+import { SOURCE_VIDE } from './types.ts';
 
 /** Conversion des pièces du livret (data/prieres/jardin.json) vers le balisage de l'app. */
 
@@ -150,7 +152,36 @@ function listeParDefaut(): Omit<ElementListe, 'creeLe' | 'modifieLe'>[] {
 /** Premier lancement : charge le livret et la liste de départ. Ne touche jamais à ce qui existe déjà. */
 export async function amorcer(fetchFn: typeof fetch = fetch): Promise<void> {
 	const fait = await db.meta.get('amorce');
-	if ((fait?.valeur as number) >= 1) return;
+	const niveau = (fait?.valeur as number) ?? 0;
+	if (niveau < 1) await amorcerLivret(fetchFn);
+	if (niveau < 2) await importerPlan(fetchFn);
+	if (niveau < 2) await db.meta.put({ cle: 'amorce', valeur: 2 });
+}
+
+/**
+ * Importe le plan des dévotions (année liturgique en cours et suivante) comme pratiques modifiables.
+ * N'écrase jamais une pratique existante. Renvoie le nombre de pratiques ajoutées.
+ */
+export async function importerPlan(fetchFn: typeof fetch = fetch): Promise<number> {
+	const y = new Date().getFullYear();
+	const textes = await db.textes.toArray();
+	const t = new Date().toISOString();
+	let n = 0;
+	for (const a of [y - 1, y]) {
+		const annee = await anneeLiturgique(a, fetchFn);
+		if (!annee) continue;
+		for (const b of pratiquesDuPlan(annee, textes)) {
+			if (await db.pratiques.get(b.id)) continue;
+			const p = { ...b, creeLe: t, modifieLe: t } as Pratique;
+			p.original = contenu(p);
+			await db.pratiques.put(p);
+			n++;
+		}
+	}
+	return n;
+}
+
+async function amorcerLivret(fetchFn: typeof fetch): Promise<void> {
 	const rep = await fetchFn('/data/prieres/jardin.json');
 	const doc = (await rep.json()) as { pieces: Piece[] };
 	const t = new Date().toISOString();
@@ -168,6 +199,5 @@ export async function amorcer(fetchFn: typeof fetch = fetch): Promise<void> {
 	await db.transaction('rw', db.textes, db.liste, db.meta, async () => {
 		for (const x of textes) if (!(await db.textes.get(x.id))) await db.textes.put(x);
 		for (const x of liste) if (!(await db.liste.get(x.id))) await db.liste.put(x);
-		await db.meta.put({ cle: 'amorce', valeur: 1 });
 	});
 }
