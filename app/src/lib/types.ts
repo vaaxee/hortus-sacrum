@@ -162,6 +162,8 @@ export interface FetePerso extends Base {
 	annee?: number;
 	rappelVeille: boolean;
 	notes: string;
+	/** Rubrique du profil spirituel (bapteme, confirmation, communion, mariage, ordre, consecration, patron, saint). */
+	profil?: string;
 }
 
 export interface NoteJour extends Base {

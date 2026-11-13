@@ -110,6 +110,14 @@
 <main class="page entree">
 	<div class="tete-page"><h1>Profil</h1><Ornement nom="fleuron" /></div>
 
+	<nav class="portes" aria-label="Vie spirituelle">
+		<a href="/profil"><span class="pc">Profil spirituel</span><em>sacrements, consécrations, saints</em></a>
+		<a href="/historique"><span class="pc">Historique</span><em>régularité et constance</em></a>
+		<a href="/roue"><span class="pc">La roue</span><em>les nombres sacrés, jour après jour</em></a>
+		<a href="/imprimer"><span class="pc">Imprimer</span><em>livret, fiche du jour, calendrier</em></a>
+		<a href="/fetes"><span class="pc">Fêtes personnelles</span><em>anniversaires et saints aimés</em></a>
+	</nav>
+
 	<section>
 		<h2>Compte</h2>
 		{#if $etatSync.genre === 'deconnecte'}
@@ -253,6 +261,10 @@
 </main>
 
 <style>
+	.portes { display: grid; gap: 0; border-top: var(--hs-cheveu) solid var(--hs-filet); }
+	.portes a { display: grid; padding: 12px 0; border-bottom: var(--hs-cheveu) solid var(--hs-filet); text-decoration: none; color: var(--hs-encre); }
+	.portes em { font-size: 1rem; color: var(--hs-encre-douce); }
+	@media (min-width: 640px) { .portes { grid-template-columns: 1fr 1fr; column-gap: var(--hs-e5); } }
 	section { margin-top: 1.4rem; }
 	h2 { margin-bottom: var(--hs-e3); font-size: var(--hs-t2); }
 	.envoye { font-size: 1rem; margin: 0 0 var(--hs-e2); }
