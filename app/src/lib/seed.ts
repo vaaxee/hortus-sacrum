@@ -1,6 +1,7 @@
 import { anneeLiturgique } from './calendrier.ts';
 import { contenu, db } from './db.ts';
 import { pratiquesDuPlan } from './plan.ts';
+import { amorcerRoues } from './roues.ts';
 import type { ElementListe, Moment, Pratique, Texte } from './types.ts';
 import { SOURCE_VIDE } from './types.ts';
 
@@ -165,6 +166,8 @@ export async function amorcer(fetchFn: typeof fetch = fetch): Promise<void> {
 	await amorcerDons();
 	await fusionnerExamen();
 	await amorcerDevotionsSemaine();
+	await amorcerRoues(fetchFn);
+	await livrerElements();
 }
 
 /** Dédicace de chaque jour de la semaine et prières sourcées de l'app qui s'y rapportent. */
@@ -310,6 +313,10 @@ const NOUVEAUX_ELEMENTS: Omit<ElementListe, 'creeLe' | 'modifieLe'>[] = [
 	{
 		id: 'liste:cordon-mercredi', origine: 'officielle', titre: 'Cordon de saint Joseph : prière pour la pureté',
 		moment: 'matin', etiquette: 'ordinaire', jours: jour(3), rappels: [], textes: ['beringer:saint-joseph-purete'], ordre: 51, actif: true
+	},
+	{
+		id: 'liste:roue', origine: 'officielle', titre: 'La roue du jour',
+		moment: 'propre', etiquette: 'propre', jours: TOUS, rappels: [], textes: [], ordre: 75, actif: true
 	}
 ];
 

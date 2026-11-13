@@ -6,7 +6,8 @@
 	import { importerPlan } from '#lib/seed.ts';
 	import type { Fait, Pratique } from '#lib/types.ts';
 
-	const pratiques = vivant(() => db.pratiques.toArray(), [] as Pratique[]);
+	// les roues symboliques ont leur page (/roue)
+	const pratiques = vivant(async () => (await db.pratiques.toArray()).filter((p) => p.type !== 'roue'), [] as Pratique[]);
 	const faits = vivant(() => db.faits.toArray(), [] as Fait[]);
 	const aujourdhui = versIso(new Date());
 
@@ -52,6 +53,7 @@
 	<div class="rangee">
 		<a class="bouton principal" href="/devotions/nouvelle">Ajouter une pratique</a>
 		<button onclick={reprendrePlan}>Reprendre le plan de l’année</button>
+		<a class="bouton" href="/roue">La roue symbolique</a>
 	</div>
 	{#if message}<p class="petit" role="status">{message}</p>{/if}
 

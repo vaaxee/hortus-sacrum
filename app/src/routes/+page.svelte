@@ -16,6 +16,7 @@
 	import { basculerFait } from '#lib/suivi.ts';
 	import type { Coche, ElementListe, Fait, FetePerso, Moment, NoteJour, Pratique, Rang } from '#lib/types.ts';
 	import Icone from '#lib/design/Icone.svelte';
+	import { elementDu } from '#lib/roues.ts';
 
 	const date = $derived(page.url.searchParams.get('date') ?? iso(new Date()));
 	let jour: Jour | undefined = $state();
@@ -131,8 +132,18 @@
 		if (e.titre === 'Méditation du jour') return meditationDuJour;
 		if (e.titre.startsWith('Office du jour')) return jour.office;
 		if (e.titre.startsWith('Dévotion du mois')) return MOIS_DEVOTION[d.getMonth() + 1].nom;
+		if (e.titre === 'La roue du jour') return roueDuJour;
 		return '';
 	}
+	// roue symbolique : l'élément du jour de chaque roue active, du plus petit nombre au plus grand
+	const roueDuJour = $derived(
+		$pratiques
+			.filter((p) => p.type === 'roue' && p.active && !p.supprimeLe && (p.elements?.length ?? 0) > 1)
+			.sort((a, b) => (a.elements?.length ?? 0) - (b.elements?.length ?? 0))
+			.map((p) => elementDu(p, date)?.fr)
+			.filter(Boolean)
+			.join(' · ')
+	);
 	const ROMAINS = ['', 'i', 'ii', 'iii', 'iv', 'v', 'vi', 'vii', 'viii', 'ix'];
 </script>
 
@@ -245,6 +256,8 @@
 										</details>
 									{:else if e.titre === 'Méditation du jour'}
 										<a class="titre" href="/meditation?date={date}">{e.titre}</a>
+									{:else if e.titre === 'La roue du jour'}
+										<a class="titre" href="/roue?date={date}">{e.titre}</a>
 									{:else if e.titre === 'Dévotion du mois'}
 										<a class="titre" href="/mois?date={date}">{e.titre}</a>
 									{:else if e.titre === 'Office du jour et vie du saint'}

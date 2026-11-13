@@ -48,6 +48,7 @@
 			: g === 'mensuel' ? { genre: g, rang: 1, jourSemaine: jourSemaine ?? 5 }
 			: g === 'fixe' ? { genre: g, mois, jour }
 			: g === 'mois_entier' ? { genre: g, mois }
+			: g === 'roue' ? { genre: g, unite: 'jour' }
 			: { genre: g, jourSemaine: jourSemaine ?? 0 };
 	}
 	/** « chaque jour » (null) ou un jour de la semaine. */

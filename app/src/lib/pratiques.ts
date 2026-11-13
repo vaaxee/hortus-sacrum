@@ -85,6 +85,9 @@ export function occurrences(regle: Regle, de: string, a: string): Occurrence[] {
 			}
 			break;
 		}
+		case 'roue':
+			// une roue n'a pas de jours propres : son élément change chaque jour (voir roues.ts)
+			break;
 		case 'hebdomadaire': {
 			for (let d = plus(d0, (regle.jourSemaine - d0.getDay() + 7) % 7); d <= d1; d = plus(d, 7)) ajouter(d, 0, 0);
 			break;
@@ -166,6 +169,8 @@ export function regleEnClair(r: Regle): string {
 			return `chaque jour du mois de ${MOIS[r.mois]}`;
 		case 'hebdomadaire':
 			return `chaque ${JOURS[r.jourSemaine]}`;
+		case 'roue':
+			return `un élément par ${r.unite}, depuis le premier dimanche de l’Avent`;
 	}
 }
 
