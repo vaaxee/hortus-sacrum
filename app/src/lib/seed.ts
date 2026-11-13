@@ -164,6 +164,35 @@ export async function amorcer(fetchFn: typeof fetch = fetch): Promise<void> {
 	await amorcerLitanies();
 	await amorcerDons();
 	await fusionnerExamen();
+	await amorcerDevotionsSemaine();
+}
+
+/** Dédicace de chaque jour de la semaine et prières sourcées de l'app qui s'y rapportent. */
+const DEVOTIONS_SEMAINE: [string, string[]][] = [
+	['Dévotion du dimanche : la très sainte Trinité', []],
+	['Dévotion du lundi : les âmes du purgatoire', ['paroissien:de-profundis', 'beringer:chapelet-des-morts']],
+	['Dévotion du mardi : les saints Anges', ['jardin:chapelet-de-saint-michel-archange', 'jardin:a-saint-gabriel-archange']],
+	['Dévotion du mercredi : saint Joseph', ['beringer:litanies-saint-joseph', 'beringer:saint-joseph-purete']],
+	['Dévotion du jeudi : le Saint-Sacrement', ['jardin:heure-sainte', 'jardin:acte-d-intention-de-communion-spirituelle-perpetuelle']],
+	['Dévotion du vendredi : la Passion et le Sacré-Cœur', ['jardin:chaque-vendredi-devant-le-crucifix', 'beringer:litanies-sacre-coeur']],
+	['Dévotion du samedi : la sainte Vierge', ['paroissien:litanies-sainte-vierge', 'beringer:coeur-afflige-de-marie']]
+];
+
+/** Une seule fois : « Dévotion du jour de la semaine » devient une ligne par jour, avec ses prières. */
+export async function amorcerDevotionsSemaine(): Promise<void> {
+	if (await db.meta.get('devotions-semaine')) return;
+	for (const id of new Set(DEVOTIONS_SEMAINE.flatMap(([, t]) => t))) if (!(await db.textes.get(id))) return;
+	const base = await db.liste.get('liste:8');
+	if (base && base.titre === 'Dévotion du jour de la semaine' && !base.supprimeLe && !base.textes.length && base.original === contenu(base)) {
+		for (let k = 0; k < 7; k++) {
+			const [titre, textes] = DEVOTIONS_SEMAINE[k];
+			const x = { ...base, id: k === 0 ? base.id : `liste:8-${k}`, titre, jours: jour(k), textes,
+				...(k === 0 ? {} : { creeLe: DEPART, modifieLe: DEPART }) } as ElementListe;
+			x.original = contenu(x);
+			await db.liste.put(x);
+		}
+	}
+	await db.meta.put({ cle: 'devotions-semaine', valeur: true });
 }
 
 /**
@@ -171,17 +200,18 @@ export async function amorcer(fetchFn: typeof fetch = fetch): Promise<void> {
  * du soir du Paroissien) ; ils deviennent une seule ligne. Rien n'est touché si l'utilisateur a modifié ces lignes.
  */
 export async function fusionnerExamen(): Promise<void> {
-	if (await db.meta.get('examen-fusion')) return;
+	if (await db.meta.get('examen-fusion-2')) return;
 	const examen = await db.liste.get('liste:21');
 	const soir = await db.liste.get('liste:22');
-	const intact = (e?: ElementListe) => !!e && !e.supprimeLe && e.original === contenu(e);
+	// jamais modifiée par l'utilisateur : elle garde la date des données de départ
+	const intact = (e?: ElementListe) => !!e && !e.supprimeLe && (e.modifieLe === DEPART || e.original === contenu(e));
 	if (intact(examen) && intact(soir) && examen!.titre === 'Examen de conscience' && soir!.titre === 'Prière du soir') {
 		await db.liste.delete('liste:21');
-		const x = { ...soir!, titre: 'Prière du soir et examen de conscience' } as ElementListe;
+		const x = { ...soir!, titre: 'Prière du soir et examen de conscience', textes: ['paroissien:priere-du-soir'] } as ElementListe;
 		x.original = contenu(x);
 		await db.liste.put(x);
 	}
-	await db.meta.put({ cle: 'examen-fusion', valeur: true });
+	await db.meta.put({ cle: 'examen-fusion-2', valeur: true });
 }
 
 /** Un don par jour (dim. sagesse … sam. crainte de Dieu), d'après le Cœur affligé de Marie (Beringer 1925, n° 450). */
@@ -192,6 +222,13 @@ const DONS_PAR_JOUR: [string, string][] = [
 
 /** Une seule fois : remplace « Demande d'un don du Saint-Esprit » par une ligne par jour, si l'utilisateur ne l'a pas modifiée. */
 export async function amorcerDons(): Promise<void> {
+	// correction : « don de intelligence » → « don d’intelligence » (lignes jamais modifiées)
+	const lundi = await db.liste.get('liste:25-1');
+	if (lundi && lundi.titre === 'Demande du don de intelligence' && lundi.modifieLe === DEPART) {
+		const x = { ...lundi, titre: 'Demande du don d’intelligence' } as ElementListe;
+		x.original = contenu(x);
+		await db.liste.put(x);
+	}
 	if (await db.meta.get('dons')) return;
 	for (const [cle] of DONS_PAR_JOUR) if (!(await db.textes.get(`beringer:don-${cle}`))) return;
 	const base = await db.liste.get('liste:25');
@@ -201,7 +238,7 @@ export async function amorcerDons(): Promise<void> {
 			const x = {
 				...base,
 				id: k === 0 ? base.id : `liste:25-${k}`,
-				titre: `Demande du don de ${nom}`,
+				titre: `Demande du don ${/^[aeiouéè]/i.test(nom) ? `d’${nom}` : `de ${nom}`}`,
 				jours: jour(k),
 				textes: [`beringer:don-${cle}`],
 				...(k === 0 ? {} : { creeLe: DEPART, modifieLe: DEPART })

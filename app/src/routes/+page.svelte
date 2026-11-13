@@ -245,6 +245,8 @@
 										</details>
 									{:else if e.titre === 'Méditation du jour'}
 										<a class="titre" href="/meditation?date={date}">{e.titre}</a>
+									{:else if e.titre === 'Dévotion du mois'}
+										<a class="titre" href="/mois?date={date}">{e.titre}</a>
 									{:else if e.titre === 'Office du jour et vie du saint'}
 										<a class="titre" href="/saint?date={date}">{e.titre}</a>
 									{:else}
