@@ -5,7 +5,7 @@
 	let { cochee = $bindable(false), libelle }: { cochee: boolean; libelle: string } = $props();
 </script>
 
-<button class="case" class:cochee role="checkbox" aria-checked={cochee} aria-label={libelle} onclick={() => (cochee = !cochee)}>
+<button class="case brut" class:cochee role="checkbox" aria-checked={cochee} aria-label={libelle} onclick={() => (cochee = !cochee)}>
 	{#if cochee}<Ornement nom="brin" taille={22} />{/if}
 </button>
 

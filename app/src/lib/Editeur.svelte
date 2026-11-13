@@ -37,6 +37,13 @@
 		const { selectionStart: a, selectionEnd: b, value: v } = z;
 		ecrire(v.slice(0, a) + avant + v.slice(a, b) + apres + v.slice(b), a + avant.length, b + avant.length);
 	}
+	/** Insère un signe à l'endroit du curseur. */
+	function inserer(signe: string) {
+		const z = zone();
+		if (!z) return;
+		const { selectionStart: a, selectionEnd: b, value: v } = z;
+		ecrire(v.slice(0, a) + signe + v.slice(b), a + signe.length, a + signe.length);
+	}
 	/** Place un signe au début de la ligne courante (℣, ℟, intertitre). */
 	function debutDeLigne(signe: string) {
 		const z = zone();
@@ -54,11 +61,12 @@
 	<div class="outils" role="toolbar" aria-label="Mise en forme">
 		<button type="button" onclick={() => debutDeLigne('℣. ')} title="Verset">℣</button>
 		<button type="button" onclick={() => debutDeLigne('℟. ')} title="Répons">℟</button>
+		<button type="button" class="rouge" onclick={() => inserer('✠ ')} title="Signe de croix">✠</button>
 		<button type="button" class="rouge" onclick={() => entourer('[r]', '[/r]')} title="Rubrique, en rouge">Rouge</button>
 		<button type="button" onclick={() => entourer('*', '*')} title="Italique"><em>Italique</em></button>
 		<button type="button" onclick={() => debutDeLigne('## ')} title="Intertitre">Titre</button>
 		<span class="espace"></span>
-		<button type="button" aria-pressed={avecLatin} onclick={() => (avecLatin = !avecLatin)}>Latin</button>
+		<button type="button" aria-pressed={avecLatin} onclick={() => (avecLatin = !avecLatin)}>Colonne latine</button>
 		<button type="button" aria-pressed={apercu} onclick={() => (apercu = !apercu)}>Aperçu</button>
 	</div>
 
@@ -76,7 +84,7 @@
 	</div>
 
 	{#if apercu}
-		<div class="apercu" aria-label="Aperçu">
+		<div class="apercu epreuve" aria-label="Aperçu">
 			<div class="priere">{@html rendre(corps)}</div>
 			{#if avecLatin && latin.trim()}
 				<hr class="filet" />
@@ -88,11 +96,11 @@
 </div>
 
 <style>
-	.outils { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-bottom: 0.5rem; position: sticky; top: 0; background: var(--papier); padding: 0.3rem 0; z-index: 1; }
-	.outils button { min-width: 2.6rem; justify-content: center; }
-	.outils .rouge { color: var(--rubrique); }
-	.outils button[aria-pressed='true'] { border-color: var(--rubrique); color: var(--rubrique); }
+	.outils { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-bottom: 0.5rem; position: sticky; top: 0; background: var(--hs-fond); padding: 0.3rem 0; z-index: 1; }
+	.outils button { min-width: 44px; min-height: 40px; padding: 0 10px; text-transform: none; font-family: var(--hs-lecture); font-size: 1.0625rem; letter-spacing: 0; font-weight: 400; }
+	.outils .rouge { color: var(--hs-rubrique); }
+	.outils button[aria-pressed='true'] { border-color: var(--hs-rubrique); color: var(--hs-rubrique); }
 	.colonnes { display: grid; gap: 0.75rem; }
 	@media (min-width: 46rem) { .colonnes.deux { grid-template-columns: 1fr 1fr; } }
-	.apercu { margin-top: 0.75rem; padding: 1rem; background: var(--carte); border: 1px solid var(--filet); border-radius: 0.5rem; }
+	.apercu { margin-top: var(--hs-e4); }
 </style>

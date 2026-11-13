@@ -59,11 +59,11 @@
 	}
 </script>
 
-<svelte:head><title>Ajouter une prière — Hebdomada</title></svelte:head>
+<svelte:head><title>Ajouter une prière — Hortus Sacrum</title></svelte:head>
 
-<main class="page">
-	<a class="petit" href="/prieres">← Prières</a>
-	<h1>Ajouter une prière</h1>
+<main class="page entree">
+	<a class="retour" href="/prieres">‹ Prières</a>
+	<div class="tete-page"><h1>Ajouter une prière</h1></div>
 
 	<div class="rangee modes" role="group" aria-label="Façon de saisir">
 		<button aria-pressed={mode === 'clavier'} onclick={() => (mode = 'clavier')}>Au clavier</button>
@@ -83,7 +83,7 @@
 		<button class="principal" disabled={!brut.trim()} onclick={passerAuNettoyage}>Nettoyer et prévisualiser</button>
 	{:else}
 		{#if mode === 'coller'}
-			<div class="rapport">
+			<div class="rapport epreuve">
 				<strong>Nettoyage :</strong>
 				{#if rapport.length}
 					<ul>{#each rapport as r}<li>{r}</li>{/each}</ul>
@@ -105,9 +105,9 @@
 
 <style>
 	.modes { margin: 1rem 0; }
-	.modes button[aria-pressed='true'] { border-color: var(--rubrique); color: var(--rubrique); }
-	.rapport { padding: 0.6rem 0.9rem; background: var(--carte); border: 1px solid var(--filet); border-radius: 0.5rem; font-size: 0.9rem; }
+	.modes button[aria-pressed='true'] { border-color: var(--hs-rubrique); color: var(--hs-rubrique); }
+	.rapport { font-size: 1rem; margin-bottom: var(--hs-e4); padding: var(--hs-e4); }
 	.rapport ul { margin: 0.3rem 0; padding-left: 1.2rem; }
 	.actions { margin-top: 1.2rem; }
-	.erreur { color: var(--rubrique); }
+	.erreur { color: var(--hs-rubrique); }
 </style>

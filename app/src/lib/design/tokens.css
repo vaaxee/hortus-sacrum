@@ -285,10 +285,6 @@
 @keyframes hs-entree { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
 .hs .entree { animation: hs-entree var(--hs-duree-lente) var(--hs-courbe) both; }
 
-/* Neutralise l'ancienne feuille de style (app.css) à l'intérieur de l'univers, le temps de la maquette. */
-.hs h1, .hs h2, .hs h3 { color: inherit; font-variant: normal; }
-.hs button { min-height: 0; }
-.hs .univers-seul { display: none; }
 .hs { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: optimizeLegibility; }
 
 /* =====================================================================
@@ -398,5 +394,5 @@
 }
 /* artefacts en cobalt : cases à cocher et icônes de la barre d'onglets */
 :root[data-da='grecque'] .hs .case { border-color: var(--hs-cobalt); }
-:root[data-da='grecque'] .hs .onglets a, :root[data-da='grecque'] .hs .sommaire a { color: color-mix(in srgb, var(--hs-cobalt) 70%, var(--hs-encre-douce)); }
-:root[data-da='grecque'] .hs .onglets a.actif, :root[data-da='grecque'] .hs .sommaire a.actif { color: var(--hs-cobalt); }
+:root[data-da='grecque'] .hs nav.onglets a, :root[data-da='grecque'] .hs nav.sommaire a { color: color-mix(in srgb, var(--hs-cobalt) 70%, var(--hs-encre-douce)); }
+:root[data-da='grecque'] .hs nav.onglets a.actif, :root[data-da='grecque'] .hs nav.sommaire a.actif { color: var(--hs-cobalt); }

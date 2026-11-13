@@ -1,29 +1,28 @@
 <script lang="ts">
-	import { goto } from '$app/navigation';
 	import { page } from '$app/state';
-	import Badge from '#lib/Badge.svelte';
+	import { goto } from '$app/navigation';
 	import FicheTexte from '#lib/FicheTexte.svelte';
 	import {
 		db, dupliquer, enregistrer, estModifie, mettreALaCorbeille, restaurerOriginal, restaurerVersion,
 		sortirDeLaCorbeille, versions
 	} from '#lib/db.ts';
+	import Icone from '#lib/design/Icone.svelte';
+	import Ornement from '#lib/design/Ornement.svelte';
 	import { vivant } from '#lib/live.ts';
 	import { rendre } from '#lib/markup.ts';
 	import type { Texte, Version } from '#lib/types.ts';
 
 	const id = $derived(decodeURIComponent(page.params.id ?? ''));
 	const texte = $derived(vivant(() => db.textes.get(id), undefined as Texte | undefined));
+	let latin = $state(false);
 	const parties = vivant(
 		async () => [...new Set((await db.textes.toArray()).map((t) => t.partie).filter(Boolean))],
 		[] as string[]
 	);
-
 	let edition = $state(false);
 	let brouillon: Texte | undefined = $state();
 	let historique: Version[] = $state([]);
 	let voirHistorique = $state(false);
-	let voirLatin = $state(false);
-	let voirSource = $state(false);
 
 	function modifier() {
 		if (!$texte) return;
@@ -56,104 +55,181 @@
 	}
 	const dateFr = (iso: string) => new Date(iso).toLocaleString('fr-FR', { dateStyle: 'medium', timeStyle: 'short' });
 	const titreVersion = (v: Version) => (JSON.parse(v.contenu) as Texte).titre;
-	const ligneSource = (t: Texte) =>
-		[t.source.ouvrage, t.source.edition, t.source.page && `p. ${t.source.page}`].filter(Boolean).join(' — ');
+
+	type Bloc = { genre: 'rubrique' | 'verset' | 'titre' | 'traduction' | 'texte'; fr: string; la?: string };
+
+	/** Paragraphes du texte ; les strophes latines s'apparient à la suite de paragraphes simples de même longueur. */
+	const blocs = $derived.by((): Bloc[] => {
+		const t = $texte;
+		if (!t) return [];
+		const genre = (p: string): Bloc['genre'] =>
+			p.startsWith('[r]') && p.endsWith('[/r]') ? 'rubrique'
+			: /^(℣\.|℟\.)/.test(p) ? 'verset'
+			: p.startsWith('## ') ? 'titre'
+			: p.startsWith('[') ? 'traduction' : 'texte';
+		const out: Bloc[] = t.corps.split(/\n{2,}/).filter(Boolean).map((p) => ({ genre: genre(p), fr: p }));
+		const la = t.latin.split(/\n{2,}/).filter(Boolean);
+		if (la.length) {
+			for (let i = 0; i + la.length <= out.length; i++) {
+				if (out.slice(i, i + la.length).every((b) => b.genre === 'texte')) {
+					la.forEach((l, k) => (out[i + k].la = l));
+					break;
+				}
+			}
+		}
+		return out;
+	});
+	const aDuLatin = $derived(blocs.some((b) => b.la));
+	const vers = $derived(blocs.some((b) => b.la && b.fr.includes('\n')));
+	const ORIGINE = { livret: ['livret', 'Livret'], officielle: ['verifiee', 'Source vérifiée'], personnel: ['personnel', 'Ajout personnel'] } as const;
 </script>
 
-<svelte:head><title>{$texte?.titre ?? 'Prière'} — Hebdomada</title></svelte:head>
+<svelte:head><title>{$texte?.titre ?? 'Prière'} — Hortus Sacrum</title></svelte:head>
 
-<main class="page">
-	<a class="petit" href="/prieres">← Prières</a>
-
-	{#if !$texte}
-		<p>Cette prière est introuvable.</p>
-	{:else if edition && brouillon}
-		<h1>Modifier</h1>
+{#if !$texte}
+	<main class="page"><a class="retour" href="/prieres"><Icone nom="retour" taille={16} /> Prières</a><p>Cette prière est introuvable.</p></main>
+{:else if edition && brouillon}
+	<main class="page">
+		<a class="retour" href="/prieres"><Icone nom="retour" taille={16} /> Prières</a>
+		<div class="tete-page"><h1>Modifier</h1></div>
 		<FicheTexte bind:texte={brouillon} parties={$parties} />
-		<div class="rangee actions">
+		<div class="rangee actions-edition">
 			<button class="principal" onclick={sauver}>Enregistrer</button>
 			<button onclick={() => (edition = false)}>Annuler</button>
 		</div>
-	{:else}
+	</main>
+{:else}
+	{@const t = $texte}
+	<main class="ecran entree">
+		<a class="retour interface" href="/prieres"><Icone nom="retour" taille={16} /> {$texte.partie || 'Prières'}</a>
+
 		<header>
-			<h1>{$texte.titre}</h1>
-			<p class="rangee">
-				<Badge objet={$texte} />
-				{#if $texte.partie}<span class="petit">{$texte.partie}</span>{/if}
+			<h1>{t.titre}</h1>
+			<p class="marques">
+				<span class="cartouche {ORIGINE[t.origine][0]}">{ORIGINE[t.origine][1]}</span>
+				{#if estModifie(t)}<span class="cartouche personnel">modifié</span>{/if}
 			</p>
-			{#if $texte.usage}<p class="petit"><span class="rub">usage :</span> <em>{$texte.usage}</em></p>{/if}
+			{#if t.supprimeLe}
+				<p class="corbeille">Cette prière est dans la corbeille. <button onclick={() => sortirDeLaCorbeille('textes', id)}>La rétablir</button></p>
+			{/if}
+			{#if t.usage}<p class="usage"><span class="pc rub">usage :</span> <em>{t.usage}</em></p>{/if}
+			<Ornement nom="fleuron" />
 		</header>
 
-		{#if $texte.supprimeLe}
-			<p class="corbeille">
-				Cette prière est dans la corbeille.
-				<button onclick={() => sortirDeLaCorbeille('textes', id)}>La rétablir</button>
-			</p>
-		{/if}
+		<div class="page">
+			<article class="texte" class:vers class:bilingue={latin && aDuLatin}>
+				{#if aDuLatin}
+					<div class="bascule">
+						<button class="bouton" aria-pressed={latin} onclick={() => (latin = !latin)}>{latin ? 'Masquer le latin' : 'Latin'}</button>
+					</div>
+				{/if}
+				{#each blocs as b}
+					{#if b.genre === 'rubrique'}
+						<p class="rubrique rub">{@html rendre(b.fr.slice(3, -4)).replace(/^<p>|<\/p>$/g, '')}</p>
+					{:else if b.la}
+						<div class="strophe">
+							{#if latin}<div class="la lecture" lang="la">{@html rendre(b.la)}</div>{/if}
+							<div class="fr lecture">{@html rendre(b.fr)}</div>
+						</div>
+					{:else}
+						<div class="lecture {b.genre}">{@html rendre(b.fr)}</div>
+					{/if}
+				{/each}
+			</article>
 
-		<article class="priere">{@html rendre($texte.corps)}</article>
-
-		{#if $texte.latin.trim()}
-			<button class="discret" aria-expanded={voirLatin} onclick={() => (voirLatin = !voirLatin)}>
-				{voirLatin ? '▾' : '▸'} Latin
-			</button>
-			{#if voirLatin}<article class="priere latin" lang="la">{@html rendre($texte.latin)}</article>{/if}
-		{/if}
-
-		{#if $texte.indulgence}
-			<p class="indulgence"><span class="ind">Ind.</span> <em>{$texte.indulgence}</em></p>
-		{/if}
-
-		<button class="discret" aria-expanded={voirSource} onclick={() => (voirSource = !voirSource)}>
-			{voirSource ? '▾' : '▸'} Source
-		</button>
-		{#if voirSource}
-			<p class="petit source">
-				{ligneSource($texte) || 'Aucune source indiquée.'}
-				{#if $texte.source.url}<br /><a href={$texte.source.url} rel="noopener" target="_blank">{$texte.source.url}</a>{/if}
-			</p>
-		{/if}
-
-		<hr class="filet" />
-		<div class="rangee actions">
-			<button class="principal" onclick={modifier}>Modifier</button>
-			<button onclick={favori}>{$texte.favori ? '★ Favori' : '☆ Favori'}</button>
-			<button onclick={copier}>Dupliquer</button>
-			<button onclick={ouvrirHistorique}>Historique</button>
-			{#if estModifie($texte)}
-				<button onclick={() => restaurerOriginal('textes', id)}>Restaurer l’original</button>
-			{/if}
-			{#if !$texte.supprimeLe}
-				<button onclick={jeter}>Mettre à la corbeille</button>
-			{/if}
+			<aside class="marge" aria-label="Indulgence et source">
+				{#if t.indulgence}
+					<details open>
+						<summary><span class="cartouche ind">Ind.</span></summary>
+						<p>{t.indulgence}</p>
+					</details>
+				{/if}
+				<details open>
+					<summary><span class="pc">Source</span></summary>
+					<p class="imprime">
+						{t.source.ouvrage}{#if t.source.edition}<br /><em>{t.source.edition}</em>{/if}{#if t.source.page}, p. {t.source.page}{/if}
+					</p>
+				</details>
+			</aside>
 		</div>
 
+		<div class="cul"><Ornement nom="cherubin" taille={30} /></div>
+		<div class="actions">
+			<button class="principal" onclick={modifier}>Modifier</button>
+			<button onclick={favori} aria-pressed={!!t.favori}>{t.favori ? 'Retirer des favoris' : 'Ajouter aux favoris'}</button>
+			<button onclick={copier}>Dupliquer</button>
+			<button onclick={ouvrirHistorique} aria-expanded={voirHistorique}>Historique</button>
+			{#if estModifie(t)}<button onclick={() => restaurerOriginal('textes', id)}>Restaurer l’original</button>{/if}
+			{#if !t.supprimeLe}<button class="danger" onclick={jeter}>Mettre à la corbeille</button>{/if}
+		</div>
 		{#if voirHistorique}
 			<section class="historique">
-				<h2>Versions précédentes</h2>
+				<h3>Versions précédentes</h3>
 				{#each historique as v (v.id)}
 					<div class="rangee version">
-						<span>{dateFr(v.date)} <span class="petit">— {titreVersion(v)}</span></span>
+						<span>{dateFr(v.date)} <span class="petit">{titreVersion(v)}</span></span>
 						<span class="espace"></span>
 						<button onclick={() => revenir(v)}>Revenir à cette version</button>
 					</div>
 				{:else}
-					<p class="petit">Aucune version précédente : ce texte n’a pas encore été modifié.</p>
+					<p class="petit">Ce texte n’a pas encore été modifié.</p>
 				{/each}
 			</section>
 		{/if}
-	{/if}
-</main>
+		<div hidden>
+		</div>
+	</main>
+{/if}
 
 <style>
-	header { margin: 0.6rem 0 1.2rem; }
-	header p { margin: 0.35rem 0 0; }
-	.latin { font-style: italic; padding-left: 0.8rem; border-left: 2px solid var(--filet); }
-	.indulgence { font-size: 0.8rem; color: var(--encre-douce); margin: 1rem 0 0.4rem; }
-	.ind { font-variant: small-caps; letter-spacing: 0.05em; }
-	.source { margin: 0.2rem 0 0 0.6rem; overflow-wrap: anywhere; }
-	.actions { margin-top: 1rem; }
-	.corbeille { padding: 0.6rem 0.8rem; border: 1px dashed var(--rubrique); border-radius: 0.5rem; }
-	.historique { margin-top: 1.4rem; }
-	.version { padding: 0.5rem 0; border-bottom: 1px solid var(--filet); }
+	.ecran { max-width: 980px; margin: 0 auto; padding: var(--hs-e5) var(--hs-marge-mobile) 0; }
+	.retour { display: inline-flex; align-items: center; gap: 4px; text-decoration: none; color: var(--hs-encre-douce); min-height: 44px; }
+	header { text-align: center; display: grid; justify-items: center; gap: var(--hs-e3); margin: var(--hs-e6) auto var(--hs-e6); max-width: var(--hs-mesure); }
+	header p { margin: 0; }
+	h1 { font-size: var(--hs-t3); }
+	.usage { font-size: 1.0625rem; }
+	.marques { display: flex; gap: 8px; }
+	header :global(.filet) { margin-top: var(--hs-e3); max-width: 18rem; }
+
+	.texte { max-width: var(--hs-mesure); margin-inline: auto; }
+	.rubrique { font-style: italic; text-align: center; font-size: 1.0625rem; margin: 0 auto var(--hs-ligne); max-width: 28rem; text-wrap: balance; }
+	.bascule { display: flex; justify-content: center; margin-bottom: var(--hs-e5); }
+	.bascule .bouton { min-height: 36px; }
+	.strophe { margin-bottom: var(--hs-ligne); display: grid; gap: var(--hs-e2); }
+	.texte .strophe :global(p) { margin: 0; text-align: left; hyphens: manual; }
+	.vers .strophe { justify-content: center; }
+	.strophe .la { color: var(--hs-encre-douce); font-size: 1.0625rem; padding-left: var(--hs-e4); border-left: var(--hs-cheveu) solid var(--hs-or-trait); order: 2; }
+	.lecture.verset, .lecture.traduction { margin-top: var(--hs-ligne); }
+	.lecture.verset :global(p), .lecture.traduction :global(p) { text-align: center; }
+	.lecture.traduction { font-size: 1.0625rem; color: var(--hs-encre-douce); margin-top: 0; }
+
+	/* marginalia : sous le texte au téléphone, dans la marge à l'ordinateur */
+	.marge { max-width: var(--hs-mesure); margin: var(--hs-e6) auto 0; border-top: var(--hs-cheveu) solid var(--hs-filet); }
+	.marge details { border-bottom: var(--hs-cheveu) solid var(--hs-filet); }
+	.marge summary { padding: 10px 0; color: var(--hs-encre-douce); }
+	.marge p { margin: 0 0 12px; font-size: 0.9375rem; line-height: 1.45; color: var(--hs-encre-douce); }
+	.marge .imprime { font-size: 1rem; }
+
+	.cul { text-align: center; color: var(--hs-or); margin-top: var(--hs-e7); }
+	.actions-edition { margin-top: var(--hs-e5); }
+	.corbeille { font-size: 1rem; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; justify-content: center; color: var(--hs-rubrique); }
+	.historique { max-width: var(--hs-mesure); margin: var(--hs-e6) auto 0; }
+	.historique h3 { color: var(--hs-rubrique); text-align: center; margin-bottom: var(--hs-e3); }
+	.version { padding: 8px 0; border-bottom: var(--hs-cheveu) solid var(--hs-filet); font-size: 1.0625rem; }
+	.actions { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-top: var(--hs-e6); }
+
+	@media (min-width: 640px) {
+		h1 { font-size: var(--hs-t4); }
+		.texte.bilingue { max-width: 46rem; }
+		.bilingue .strophe { grid-template-columns: 1fr 1fr; gap: var(--hs-e6); justify-content: stretch; }
+		.bilingue .strophe .la { order: 0; border-left: 0; padding-left: 0; text-align: right; font-size: inherit; }
+		.bilingue .strophe .la :global(p) { text-align: right; }
+		.bilingue .strophe .fr { border-left: var(--hs-cheveu) solid var(--hs-or-trait); padding-left: var(--hs-e6); }
+	}
+	@media (min-width: 1280px) {
+		.page { display: grid; grid-template-columns: minmax(0, 1fr) 210px; gap: var(--hs-e6); align-items: start; }
+		.marge { margin: 0; border-top: 0; position: sticky; top: var(--hs-e5); padding-top: 4.5rem; }
+		.marge details { border-bottom: 0; border-left: var(--hs-cheveu) solid var(--hs-or-trait); padding-left: var(--hs-e4); margin-bottom: var(--hs-e5); }
+		.marge summary { padding: 0 0 6px; pointer-events: none; }
+	}
 </style>

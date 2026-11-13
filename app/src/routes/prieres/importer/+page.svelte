@@ -124,11 +124,11 @@
 	}
 </script>
 
-<svelte:head><title>Importer un PDF ou une photo — Hebdomada</title></svelte:head>
+<svelte:head><title>Importer un PDF ou une photo — Hortus Sacrum</title></svelte:head>
 
-<main class="page">
-	<a class="petit" href="/prieres/nouveau">← Ajouter une prière</a>
-	<h1>Importer un PDF ou une photo</h1>
+<main class="page entree">
+	<a class="retour" href="/prieres/nouveau">‹ Ajouter une prière</a>
+	<div class="tete-page"><h1>Importer un PDF ou une photo</h1></div>
 
 	{#if etape === 'choix'}
 		<p class="petit">
@@ -213,19 +213,19 @@
 	.fichier input { position: absolute; inset: 0; opacity: 0; cursor: pointer; }
 	.nom { margin: 0.8rem 0 0.4rem; overflow-wrap: anywhere; }
 	.grille { display: grid; gap: 0.75rem; grid-template-columns: 1fr 1fr; }
-	input[type='number'] { width: 100%; padding: 0.5rem 0.65rem; background: var(--carte); border: 1px solid var(--filet); border-radius: 0.5rem; font: inherit; color: inherit; }
+	input[type='number'] { width: 100%; padding: 0.5rem 0.65rem; background: var(--hs-surface); border: 1px solid var(--hs-filet); border-radius: 0; font: inherit; color: inherit; }
 	.case { display: flex; gap: 0.5rem; align-items: baseline; margin-top: 0.6rem; font-size: 0.9rem; }
 	.actions { margin-top: 1.2rem; }
-	progress { width: 100%; accent-color: var(--rubrique); }
-	.alerte { padding: 0.6rem 0.9rem; border: 1px dashed var(--rubrique); border-radius: 0.5rem; font-size: 0.9rem; }
-	fieldset { border: 1px solid var(--filet); border-radius: 0.5rem; padding: 0.2rem 0.8rem 0.8rem; margin-top: 0.8rem; }
+	progress { width: 100%; accent-color: var(--hs-rubrique); }
+	.alerte { padding: 0.6rem 0.9rem; border: 1px dashed var(--hs-rubrique); border-radius: 0; font-size: 0.9rem; }
+	fieldset { border: 1px solid var(--hs-filet); border-radius: 0; padding: 0.2rem 0.8rem 0.8rem; margin-top: 0.8rem; }
 	fieldset label { margin-top: 0.6rem; }
-	legend { font-variant: small-caps; letter-spacing: 0.05em; color: var(--rubrique); padding: 0 0.3rem; }
+	legend { font-variant: small-caps; letter-spacing: 0.05em; color: var(--hs-rubrique); padding: 0 0.3rem; }
 	.outils { margin: 1rem 0 0.4rem; }
 	h2 { margin-top: 1.4rem; }
 	.pieces { list-style: none; margin: 0.4rem 0 0; padding: 0; }
-	.pieces li { border-bottom: 1px solid var(--filet); }
-	.ligne { width: 100%; justify-content: space-between; text-align: left; color: var(--encre); flex-wrap: wrap; }
+	.pieces li { border-bottom: 1px solid var(--hs-filet); }
+	.ligne { width: 100%; justify-content: space-between; text-align: left; color: var(--hs-encre); flex-wrap: wrap; }
 	.apercu { padding: 0.4rem 0.8rem 0.8rem; }
-	.erreur { color: var(--rubrique); }
+	.erreur { color: var(--hs-rubrique); }
 </style>

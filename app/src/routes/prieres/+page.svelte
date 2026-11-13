@@ -1,6 +1,8 @@
 <script lang="ts">
 	import Badge from '#lib/Badge.svelte';
 	import { db } from '#lib/db.ts';
+	import Icone from '#lib/design/Icone.svelte';
+	import Ornement from '#lib/design/Ornement.svelte';
 	import { vivant } from '#lib/live.ts';
 	import { nu, sansAccents } from '#lib/markup.ts';
 	import type { Texte } from '#lib/types.ts';
@@ -32,36 +34,46 @@
 		}
 		return [...g.entries()];
 	});
+	const vide = $derived(
+		(filtre as string) === 'favoris' ? 'Aucun favori pour l’instant. Ouvrez une prière et ajoutez-la aux favoris.'
+		: (filtre as string) === 'personnel' ? 'Vous n’avez encore rien ajouté. « Ajouter une prière » ouvre la saisie.'
+		: 'Aucune prière ne contient ces mots.'
+	);
 </script>
 
-<svelte:head><title>Prières — Hebdomada</title></svelte:head>
+<svelte:head><title>Prières — Hortus Sacrum</title></svelte:head>
 
-<main class="page">
-	<div class="rangee">
+<main class="page entree">
+	<div class="tete-page">
 		<h1>Prières</h1>
-		<span class="espace"></span>
-		<a class="bouton principal" href="/prieres/nouveau">Ajouter</a>
+		<Ornement nom="fleuron" />
 	</div>
 
 	<div class="barre">
-		<input type="search" placeholder="Chercher un titre, un mot…" bind:value={recherche} aria-label="Chercher une prière" />
+		<input type="search" placeholder="Chercher un titre, un mot" bind:value={recherche} aria-label="Chercher une prière" />
 		<div class="rangee" role="group" aria-label="Filtre">
 			{#each filtres as [v, nom]}
 				<button type="button" aria-pressed={filtre === v} onclick={() => (filtre = v)}>{nom}</button>
 			{/each}
-			<span class="petit">{visibles.length} pièce{visibles.length > 1 ? 's' : ''}</span>
+			<span class="espace"></span>
+			<a class="bouton principal" href="/prieres/nouveau">Ajouter une prière</a>
 		</div>
 	</div>
 
 	{#each groupes as [partie, liste]}
 		<section>
-			<h2>{partie}</h2>
-			<ul>
+			<div class="tete-section">
+				<Ornement nom="grecque" />
+				<h2>{partie}</h2>
+			</div>
+			<ul class="reglee">
 				{#each liste as t (t.id)}
 					<li>
 						<a href="/prieres/{encodeURIComponent(t.id)}">
-							<span class="titre">{t.favori ? '★ ' : ''}{t.titre}</span>
-							{#if t.usage}<span class="petit">usage : {t.usage}</span>{/if}
+							<span class="titre">
+								{#if t.favori}<span class="etoile" title="Favori"><Icone nom="etoile" taille={14} /></span>{/if}{t.titre}
+							</span>
+							{#if t.usage}<span class="usage"><span class="pc">usage :</span> <em>{t.usage}</em></span>{/if}
 						</a>
 						<Badge objet={t} />
 					</li>
@@ -69,17 +81,18 @@
 			</ul>
 		</section>
 	{:else}
-		<p class="petit vide">Aucune prière ne correspond.</p>
+		<p class="petit vide">{vide}</p>
 	{/each}
 </main>
 
 <style>
-	.barre { display: grid; gap: 0.6rem; margin: 1rem 0 0.5rem; }
-	.barre button[aria-pressed='true'] { border-color: var(--rubrique); color: var(--rubrique); }
-	section { margin-top: 1.6rem; }
-	ul { list-style: none; margin: 0.4rem 0 0; padding: 0; }
-	li { display: flex; align-items: center; gap: 0.6rem; border-bottom: 1px solid var(--filet); }
-	li a { flex: 1; min-width: 0; display: grid; padding: 0.6rem 0; text-decoration: none; }
-	.titre { overflow-wrap: anywhere; }
-	.vide { margin-top: 2rem; }
+	.tete-page :global(.filet) { max-width: 16rem; }
+	.barre { display: grid; gap: var(--hs-e4); }
+	.barre button { min-height: 36px; }
+	li a { flex: 1; min-width: 0; display: grid; padding: 10px 0; text-decoration: none; color: var(--hs-encre); }
+	.titre { overflow-wrap: anywhere; line-height: 1.3; }
+	.etoile { color: var(--hs-or); margin-right: 6px; vertical-align: -1px; }
+	.usage { font-size: 1rem; color: var(--hs-encre-douce); line-height: 1.35; }
+	.usage .pc { color: var(--hs-rubrique); }
+	.vide { margin-top: var(--hs-e6); text-align: center; }
 </style>

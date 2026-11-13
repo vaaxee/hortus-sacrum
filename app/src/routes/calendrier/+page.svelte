@@ -2,14 +2,25 @@
 	import { page } from '$app/state';
 	import { MOIS_DEVOTION, moisDu, NOMS_MOIS, RANG, teinte, type Jour } from '#lib/calendrier.ts';
 	import Arche from '#lib/design/Arche.svelte';
+	import Icone from '#lib/design/Icone.svelte';
 	import Ornement from '#lib/design/Ornement.svelte';
 
-	const cle = $derived(page.url.searchParams.get('m') ?? '2026-12');
+	const maintenant = new Date();
+	const cle = $derived(page.url.searchParams.get('m') ?? `${maintenant.getFullYear()}-${String(maintenant.getMonth() + 1).padStart(2, '0')}`);
+	const voisin = (n: number) => {
+		const x = new Date(an, mois - 1 + n, 1);
+		return `${x.getFullYear()}-${String(x.getMonth() + 1).padStart(2, '0')}`;
+	};
+	let charge = $state(false);
 	const an = $derived(Number(cle.slice(0, 4)));
 	const mois = $derived(Number(cle.slice(5, 7)));
 	let jours: Jour[] = $state([]);
 	$effect(() => {
-		moisDu(an, mois).then((j) => (jours = j));
+		charge = false;
+		moisDu(an, mois).then((j) => {
+			jours = j;
+			charge = true;
+		});
 	});
 
 	const GRANDS = ['1re cl.', '2e cl.', 'dim. 1re cl.', 'dim. 2e cl.', 'dim.', 'vigile 1re cl.'];
@@ -35,7 +46,11 @@
 	<div class="bande-mois"><Ornement nom="mosaique" /></div>
 	<main class="ecran entree">
 		<header>
-			<h1 class="mois">{NOMS_MOIS[mois]}</h1>
+			<div class="titre-mois">
+				<a class="pas" href="/calendrier?m={voisin(-1)}" aria-label="Mois précédent"><Icone nom="retour" taille={20} /></a>
+				<h1 class="mois">{NOMS_MOIS[mois]}</h1>
+				<a class="pas" href="/calendrier?m={voisin(1)}" aria-label="Mois suivant"><Icone nom="chevron" taille={20} /></a>
+			</div>
 			<p class="an pc chiffres-alignes">Anno Domini {ROMAIN(an)}</p>
 			<Ornement nom="laurier" />
 		</header>
@@ -69,7 +84,7 @@
 							<td class="p"><span class="pastille" style="--pastille: {teinte(j)}" title={j.couleur}></span></td>
 							<td class="d pc chiffres-alignes">{Number(j.date.slice(8))} <span>{jourSem(j)}</span></td>
 							<td class="o">
-								{j.office}
+								<a href="/?date={j.date}">{j.office}</a>
 								<span class="r pc">{RANG[j.rang] ?? j.rang}</span>
 							</td>
 						</tr>
@@ -91,6 +106,11 @@
 			<span class="cherubin"><Ornement nom="cherubin" taille={34} /></span>
 		</div>
 	</main>
+{:else if charge}
+	<main class="page">
+		<div class="tete-page"><h1>{NOMS_MOIS[mois]} {an}</h1></div>
+		<p class="petit" style="text-align:center">Le calendrier de ce mois n’est pas encore généré. <a href="/calendrier">Revenir au mois en cours</a></p>
+	</main>
 {/if}
 
 <style>
@@ -104,6 +124,9 @@
 		font-family: var(--hs-accent); font-weight: 400; text-transform: none; letter-spacing: 0.01em;
 		font-size: clamp(var(--hs-t5), 15vw, 4.75rem); line-height: 1.05; color: var(--hs-rubrique);
 	}
+	.titre-mois { display: flex; align-items: center; justify-content: center; gap: var(--hs-e2); }
+	.pas { display: inline-grid; place-items: center; width: 44px; height: 44px; color: var(--hs-encre-douce); flex: none; }
+	.o a { color: inherit; text-decoration: none; }
 	.an { color: var(--hs-encre-douce); font-size: 1.0625rem; margin-bottom: var(--hs-e4) !important; }
 	.lis { color: var(--hs-or); line-height: 0; }
 	.devotion { font-style: normal; text-transform: uppercase; letter-spacing: var(--hs-chasse-capitales); font-size: var(--hs-t2); line-height: 1.25; max-width: 16rem; }

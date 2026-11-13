@@ -1,84 +1,241 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
+	import { page } from '$app/state';
+	import { introitVersCorps, iso, jourDu, MOIS_DEVOTION, RANG, teinte, type Jour } from '#lib/calendrier.ts';
+	import { db } from '#lib/db.ts';
+	import Arche from '#lib/design/Arche.svelte';
+	import Case from '#lib/design/Case.svelte';
+	import Ornement from '#lib/design/Ornement.svelte';
+	import { invocation, TOUS_LES_SAINTS } from '#lib/invocations.ts';
+	import { vivant } from '#lib/live.ts';
+	import { rendre } from '#lib/markup.ts';
+	import type { Coche, ElementListe, Moment } from '#lib/types.ts';
+	import Icone from '#lib/design/Icone.svelte';
 
-	interface Jour {
-		date: string;
-		jour: string;
-		temps: string;
-		office: string;
-		rang: string;
-		couleur: string;
-		commemoraisons: string[];
-		introit_incipit: string | null;
-		station: string | null;
-		jeune_abstinence: { code: string; libelle: string } | null;
-		devotions: { type: string; libelle: string; page_jardin: number | null }[];
-	}
-
+	const date = $derived(page.url.searchParams.get('date') ?? iso(new Date()));
 	let jour: Jour | undefined = $state();
-	let charge = $state(false);
-	const aujourdhui = new Date();
-	const iso = `${aujourdhui.getFullYear()}-${String(aujourdhui.getMonth() + 1).padStart(2, '0')}-${String(aujourdhui.getDate()).padStart(2, '0')}`;
-
-	onMount(async () => {
-		const y = aujourdhui.getFullYear();
-		for (const a of [y - 1, y]) {
-			try {
-				const r = await fetch(`/data/calendar/${a}-${a + 1}.json`);
-				if (!r.ok) continue;
-				const trouve = ((await r.json()) as Jour[]).find((j) => j.date === iso);
-				if (trouve) {
-					jour = trouve;
-					break;
-				}
-			} catch {
-				/* année non générée */
-			}
-		}
-		charge = true;
+	$effect(() => {
+		jourDu(date).then((j) => (jour = j));
 	});
 
-	const dateLongue = aujourdhui.toLocaleDateString('fr-FR', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
+	const d = $derived(new Date(date + 'T12:00:00'));
+	const dateLongue = $derived(d.toLocaleDateString('fr-FR', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' }));
+	const solennel = $derived(jour?.rang === '1re cl.' || jour?.rang === 'dim. 1re cl.');
+
+	const liste = vivant(() => db.liste.orderBy('ordre').toArray(), [] as ElementListe[]);
+	const titres = vivant(async () => Object.fromEntries((await db.textes.toArray()).map((t) => [t.id, t.titre])), {} as Record<string, string>);
+	const MOMENTS: [Moment, string][] = [['matin', 'Matin'], ['propre', 'Propre du jour'], ['journee', 'Au fil du jour'], ['soir', 'Soir']];
+	const duJour = $derived($liste.filter((e) => e.actif && !e.supprimeLe && e.jours[d.getDay()]));
+	// coches du jour, enregistrées et horodatées
+	const cochesDuJour = $derived(vivant(() => db.coches.where('date').equals(date).toArray(), [] as Coche[]));
+	const coches = $derived.by(() => {
+		const n: Record<string, number> = {};
+		for (const c of $cochesDuJour) n[c.elementId] = (n[c.elementId] ?? 0) + 1;
+		return n;
+	});
+	async function compter(e: ElementListe, total: number) {
+		const fait = coches[e.id] ?? 0;
+		if (fait >= total) await db.coches.where('[date+elementId]').equals([date, e.id]).delete();
+		else await db.coches.add({ date, elementId: e.id, rang: fait, horodatage: new Date().toISOString() });
+	}
+	const decaler = (n: number) => {
+		const x = new Date(d);
+		x.setDate(x.getDate() + n);
+		return iso(x);
+	};
+	const estAujourdhui = $derived(date === iso(new Date()));
+	const faits = $derived(duJour.filter((e) => (coches[e.id] ?? 0) >= Math.max(1, e.rappels.length)).length);
+
+	/** Sous-titre des éléments du propre, tiré du calendrier. */
+	function precision(e: ElementListe): string {
+		if (!jour) return '';
+		if (e.titre.startsWith('Office du jour')) return jour.office;
+		if (e.titre.startsWith('Dévotion du mois')) return MOIS_DEVOTION[d.getMonth() + 1].nom;
+		if (e.titre.startsWith('Dévotion à jours comptés')) return jour.devotions.filter((x) => x.type !== 'neuvaine').map((x) => x.libelle).join(' ; ');
+		if (e.titre.startsWith('Neuvaine')) return jour.devotions.filter((x) => x.type === 'neuvaine').map((x) => x.libelle).join(' ; ');
+		return '';
+	}
+	const ROMAINS = ['', 'i', 'ii', 'iii', 'iv', 'v', 'vi', 'vii', 'viii', 'ix'];
 </script>
 
-<svelte:head><title>Aujourd’hui — Hebdomada</title></svelte:head>
+<svelte:head><title>Aujourd’hui — Hortus Sacrum</title></svelte:head>
 
-<main class="page">
-	<p class="petit date">{dateLongue}</p>
-	{#if jour}
-		<p class="petit temps">{jour.temps}</p>
-		<h1><span class="pastille {jour.couleur}" title="Couleur : {jour.couleur}"></span>{jour.office}</h1>
-		<p class="rang">{jour.rang}</p>
-		{#if jour.commemoraisons.length}<p class="petit">Comm. {jour.commemoraisons.join(' ; ')}</p>{/if}
-		{#if jour.introit_incipit}
-			<p class="petit">Intr. <em>{jour.introit_incipit}</em>{#if jour.station} · <em>{jour.station}</em>{/if}</p>
-		{/if}
-		{#if jour.jeune_abstinence}<p class="jeune">{jour.jeune_abstinence.libelle}</p>{/if}
-		{#each jour.devotions as d}
-			<p class="petit">{d.type === 'neuvaine' ? '◦' : '❧'} {d.libelle}{#if d.page_jardin} — <em>Jardin</em>, p. {d.page_jardin}{/if}</p>
-		{/each}
-	{:else if charge}
-		<h1>Hebdomada in Dei servitio</h1>
-		<p class="petit">Le calendrier de cette année n’est pas encore généré.</p>
-	{/if}
+{#if jour}
+	<div class="bandeau" style="background: {teinte(jour)}"></div>
+	<main class="ecran entree">
+		<header class="jour">
+			<p class="date pc chiffres-alignes">
+				<a class="pas" href="/?date={decaler(-1)}" aria-label="Jour précédent"><Icone nom="retour" taille={16} /></a>
+				{dateLongue}
+				<a class="pas" href="/?date={decaler(1)}" aria-label="Jour suivant"><Icone nom="chevron" taille={16} /></a>
+			</p>
+			{#if !estAujourdhui}<p class="revenir"><a href="/">Revenir à aujourd’hui</a></p>{/if}
+			<p class="temps etiquette">{jour.temps}</p>
 
-	<hr class="filet" />
-	<p class="petit">
-		La liste du jour, le martyrologe et les suivis arrivent aux étapes suivantes. La bibliothèque de prières est déjà
-		entièrement modifiable : <a href="/prieres">ouvrir les prières</a>.
-	</p>
-</main>
+			<Arche {solennel}>
+				<span class="pastille" style="--pastille: {teinte(jour)}" title="Couleur liturgique : {jour.couleur}"></span>
+				<h1 class:fete={solennel}>{jour.office}</h1>
+				<p class="rang pc">{RANG[jour.rang] ?? jour.rang}</p>
+				{#if jour.commemoraisons.length}
+					<p class="comm"><span class="pc">Comm.</span> {jour.commemoraisons.join(' ; ')}</p>
+				{/if}
+				{#if jour.jeune_abstinence}<p class="jeune rub pc">{jour.jeune_abstinence.libelle}</p>{/if}
+			</Arche>
+
+			{#if jour.introit_incipit}
+				<details class="introit">
+					<summary>
+						<span class="pc rub">Introït</span>
+						<em lang="la">{jour.introit_incipit}</em>
+						{#if jour.station}<span class="station imprime">{jour.station}</span>{/if}
+					</summary>
+					{#if jour.introit}
+						<div class="colonnes">
+							<div class="lecture" lang="la">{@html rendre(introitVersCorps(jour.introit.la))}</div>
+							{#if jour.introit.fr}<div class="lecture">{@html rendre(introitVersCorps(jour.introit.fr))}</div>{/if}
+						</div>
+						<p class="source imprime">Missel romain, d’après Divinum Officium.</p>
+					{/if}
+				</details>
+			{/if}
+		</header>
+
+		<section class="liste" aria-label="Liste du jour">
+			<div class="avancement interface">
+				<span class="etiquette">Le jardin du jour</span>
+				<span class="trait"><span style="width: {duJour.length ? (100 * faits) / duJour.length : 0}%"></span></span>
+				<span class="chiffres-alignes">{faits} / {duJour.length}</span>
+			</div>
+
+			{#each MOMENTS as [moment, nom]}
+				{@const elements = duJour.filter((e) => e.moment === moment)}
+				{#if elements.length}
+					<div class="tete">
+						<Ornement nom="grecque" />
+						<h2>{nom}</h2>
+					</div>
+					<ul>
+						{#each elements as e (e.id)}
+							{@const total = Math.max(1, e.rappels.length)}
+							{@const fait = coches[e.id] ?? 0}
+							{@const sous = precision(e)}
+							<li class:fini={fait >= total}>
+								<Case
+									libelle={e.titre}
+									bind:cochee={() => fait >= total, () => compter(e, total)}
+								/>
+								<div class="corps">
+									{#if e.textes.length === 1}
+										<a class="titre" href="/prieres/{encodeURIComponent(e.textes[0])}">{e.titre}</a>
+									{:else if e.textes.length > 1}
+										<details class="plusieurs">
+											<summary class="titre">{e.titre}</summary>
+											{#each e.textes as id}
+												<a href="/prieres/{encodeURIComponent(id)}">{$titres[id] ?? id}</a>
+											{/each}
+										</details>
+									{:else}
+										<span class="titre">{e.titre}</span>
+									{/if}
+									{#if sous}<span class="sous">{sous}</span>{/if}
+									{#if e.rappels.length}<span class="heures interface">{e.rappels.join(', ')}</span>{/if}
+								</div>
+								{#if total > 1}
+									<button class="medaillon brut" onclick={() => compter(e, total)}
+										aria-label="{fait} sur {total} : compter une récitation de plus">
+										<Ornement nom="medaillon" taille={34} />
+										<span class="pc">{ROMAINS[fait] || '·'}<i>/</i>{ROMAINS[total]}</span>
+									</button>
+								{/if}
+								<span class="genre pc" class:propre={e.etiquette === 'propre'}>{e.etiquette === 'propre' ? 'propre' : 'ord.'}</span>
+							</li>
+						{/each}
+					</ul>
+				{/if}
+			{/each}
+		</section>
+
+		<section class="martyrologe" aria-label="Martyrologe">
+			<div class="tete">
+				<Ornement nom="grecque" />
+				<h2>Martyrologe</h2>
+				<p class="etiquette">Les saints de ce jour</p>
+			</div>
+			{#each jour.martyrologe as m}
+				{@const inv = invocation(m.texte)}
+				<details class="eloge">
+					<summary>
+						{#if inv}<span class="invocation">{inv.texte}</span>{:else}<span class="invocation sans">{m.texte.split(/[.,]/)[0]}…</span>{/if}
+					</summary>
+					<p class="texte">{m.texte}</p>
+					{#if m.texte_la}<p class="texte" lang="la">{m.texte_la}</p>{/if}
+				</details>
+			{/each}
+			<p class="tous"><span class="rub">✠</span> {TOUS_LES_SAINTS}</p>
+			<p class="source imprime">Martyrologe romain, traduction française donnée par Divinum Officium.</p>
+		</section>
+
+		<div class="cul"><Ornement nom="fleuron" /></div>
+	</main>
+{/if}
 
 <style>
-	.date { text-transform: capitalize; margin: 0; }
-	.temps { margin: 0.2rem 0 0.6rem; font-variant: small-caps; letter-spacing: 0.05em; }
-	.rang { margin: 0.2rem 0 0.5rem; font-style: italic; }
-	.jeune { color: var(--rubrique); font-style: italic; margin: 0.4rem 0; }
-	.pastille { display: inline-block; width: 0.7rem; height: 0.7rem; border-radius: 50%; margin-right: 0.5rem; vertical-align: 0.1rem; border: 1px solid var(--encre-douce); }
-	.pastille.violet { background: var(--violet); }
-	.pastille.rouge { background: var(--rouge); }
-	.pastille.vert { background: var(--vert); }
-	.pastille.rose { background: var(--rose); }
-	.pastille.noir { background: #000; }
-	.pastille.blanc { background: #fff; }
+	.bandeau { height: 5px; border-bottom: var(--hs-cheveu) solid var(--hs-or-trait); }
+	.ecran { max-width: var(--hs-colonne); margin: 0 auto; padding: var(--hs-e6) var(--hs-marge-mobile) 0; }
+	.jour { text-align: center; }
+	.date { margin: 0; font-size: 1.0625rem; color: var(--hs-encre-douce); display: flex; align-items: center; justify-content: center; gap: 4px; }
+	.pas { display: inline-grid; place-items: center; width: 40px; height: 40px; color: var(--hs-encre-douce); }
+	.revenir { margin: 0; font-size: 1rem; }
+	a.titre, .plusieurs summary { color: var(--hs-encre); text-decoration: none; }
+	.plusieurs a { display: block; padding: 6px 0 6px 12px; font-size: 1.0625rem; text-decoration: none; border-left: var(--hs-cheveu) solid var(--hs-or-trait); margin: 2px 0; }
+	.temps { margin: 2px 0 var(--hs-e5); }
+	h1 { font-size: var(--hs-t3); }
+	h1.fete { color: var(--hs-rubrique); }
+	.rang { margin: 0; color: var(--hs-encre-douce); font-size: 1.0625rem; }
+	.comm { margin: 0; font-size: 1rem; font-style: italic; line-height: 1.4; text-wrap: balance; }
+	.comm .pc { font-style: normal; color: var(--hs-encre-douce); }
+	.jeune { margin: var(--hs-e2) 0 0; font-size: 1.0625rem; }
+
+	.introit { margin-top: var(--hs-e5); border-block: var(--hs-cheveu) solid var(--hs-filet); text-align: left; }
+	.introit summary { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: center; gap: 4px 12px; padding: var(--hs-e3) 0; }
+	.station { font-size: 0.9375rem; color: var(--hs-encre-douce); font-style: italic; flex-basis: 100%; text-align: center; }
+	.colonnes { display: grid; gap: var(--hs-e5); padding: var(--hs-e2) 0 var(--hs-e4); }
+	.colonnes :global(.lecture p) { text-align: left; font-size: 1.0625rem; }
+	.source { font-size: 0.875rem; color: var(--hs-encre-douce); font-style: italic; text-align: center; margin: 0 0 var(--hs-e4); }
+
+	.liste { margin-top: var(--hs-e7); }
+	.avancement { display: flex; align-items: center; gap: 12px; color: var(--hs-encre-douce); }
+	.trait { flex: 1; height: 1px; background: var(--hs-filet); position: relative; }
+	.trait span { position: absolute; inset: -1px auto -1px 0; background: var(--hs-vert); transition: width var(--hs-duree-lente) var(--hs-courbe); }
+
+	.tete { margin-top: var(--hs-e7); text-align: center; display: grid; gap: var(--hs-e3); }
+	.tete h2 { font-size: var(--hs-t2); }
+	.tete .etiquette { margin: -6px 0 0; }
+	ul { list-style: none; margin: var(--hs-e3) 0 0; padding: 0; }
+	li { display: flex; align-items: center; gap: 14px; padding: 11px 0; border-bottom: var(--hs-cheveu) solid var(--hs-filet); min-height: 56px; }
+	.corps { flex: 1; min-width: 0; display: grid; }
+	.titre { line-height: 1.3; transition: color var(--hs-duree) var(--hs-courbe); }
+	li.fini .titre { color: var(--hs-encre-douce); }
+	.sous { font-style: italic; font-size: 1rem; line-height: 1.35; color: var(--hs-encre-douce); }
+	.heures { color: var(--hs-encre-douce); font-size: 0.75rem; margin-top: 2px; }
+	.genre { font-size: 0.9375rem; color: var(--hs-encre-douce); width: 3.2rem; text-align: right; flex: none; }
+	.genre.propre { color: var(--hs-rubrique); }
+	.medaillon { position: relative; flex: none; width: 34px; height: 34px; padding: 0; border: 0; background: none; color: var(--hs-or); cursor: pointer; line-height: 0; }
+	.medaillon span { position: absolute; inset: 0; display: grid; place-items: center; grid-auto-flow: column; justify-content: center; color: var(--hs-encre); font-size: 0.8125rem; line-height: 1; }
+	.medaillon i { font-style: normal; color: var(--hs-encre-douce); margin: 0 1px; }
+	li.fini .medaillon { color: var(--hs-vert); }
+
+	.eloge { border-bottom: var(--hs-cheveu) solid var(--hs-filet); }
+	.eloge summary { padding: 10px 0; }
+	.invocation::before { content: '✠'; color: var(--hs-rubrique); margin-right: 10px; font-size: 0.8em; }
+	.invocation.sans { color: var(--hs-encre-douce); font-style: italic; }
+	.invocation.sans::before { content: '·'; }
+	.texte { margin: 0 0 12px 1.5rem; font-size: 1.0625rem; text-align: justify; hyphens: auto; }
+	.tous { text-align: center; margin: var(--hs-e5) 0 var(--hs-e2); font-style: italic; }
+	.martyrologe .tete { margin-bottom: var(--hs-e3); }
+	.cul { margin: var(--hs-e7) auto 0; max-width: 16rem; }
+
+	@media (min-width: 700px) {
+		h1 { font-size: var(--hs-t4); }
+		.colonnes { grid-template-columns: 1fr 1fr; }
+	}
 </style>
