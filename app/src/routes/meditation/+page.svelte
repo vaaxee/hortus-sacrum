@@ -1,35 +1,42 @@
 <script lang="ts">
 	import { page } from '$app/state';
-	import { iso, jourDu, type Jour } from '#lib/calendrier.ts';
+	import { anneeLiturgique, iso, jourDu, type Jour } from '#lib/calendrier.ts';
 	import Icone from '#lib/design/Icone.svelte';
 	import Ornement from '#lib/design/Ornement.svelte';
 	import { rendre } from '#lib/markup.ts';
-	import { chargerRecueil, entreesDuJour, type EntreeRecueil, type Recueil } from '#lib/meditations.ts';
+	import { chargerRecueil, choisir, type Choix, type Recueil } from '#lib/meditations.ts';
 
-	/** Méditation du jour : Hamon (dimanches et temps forts ; tous les jours en attendant Chaignon). */
+	/** Méditation du jour : Hamon les dimanches et aux temps forts, le parcours de Chaignon les jours ordinaires. */
 	const date = $derived(page.url.searchParams.get('date') ?? iso(new Date()));
 	const lendemain = $derived(iso(new Date(new Date(date + 'T12:00:00').getTime() + 864e5)));
 	const veille = $derived(iso(new Date(new Date(date + 'T12:00:00').getTime() - 864e5)));
 
 	let jour: Jour | undefined = $state();
 	let jourDemain: Jour | undefined = $state();
-	let recueil: Recueil | null = $state(null);
+	let hamon: Recueil | null = $state(null);
+	let chaignon: Recueil | null = $state(null);
+	let annee: Jour[] = $state([]);
 	let charge = $state(false);
 	$effect(() => {
-		const d = date, l = lendemain;
+		const d = date, l = lendemain, y = Number(d.slice(0, 4));
 		charge = false;
-		Promise.all([jourDu(d), jourDu(l), chargerRecueil('hamon')]).then(([j, jd, r]) => {
-			jour = j; jourDemain = jd; recueil = r; charge = true;
-		});
+		Promise.all([jourDu(d), jourDu(l), chargerRecueil('hamon'), chargerRecueil('chaignon'), anneeLiturgique(y - 1), anneeLiturgique(y)])
+			.then(([j, jd, h, c, a1, a2]) => {
+				jour = j; jourDemain = jd; hamon = h; chaignon = c;
+				annee = [a1, a2].find((a) => a?.some((x) => x.date === d)) ?? [];
+				charge = true;
+			});
 	});
 
-	const entrees = $derived<EntreeRecueil[]>(recueil ? entreesDuJour(recueil, date, jour) : []);
-	const demain = $derived<EntreeRecueil[]>(recueil ? entreesDuJour(recueil, lendemain, jourDemain) : []);
+	const entrees = $derived<Choix[]>(choisir(date, jour, annee, hamon, chaignon));
+	const demain = $derived<Choix[]>(choisir(lendemain, jourDemain, annee, hamon, chaignon));
 	let choix = $state(0);
 	$effect(() => { void date; choix = 0; });
-	const m = $derived(entrees[choix]);
+	const c = $derived(entrees[choix]);
+	const m = $derived(c?.entree);
+	const recueil = $derived(c?.recueil);
 	const dateLongue = $derived(new Date(date + 'T12:00:00').toLocaleDateString('fr-FR', { weekday: 'long', day: 'numeric', month: 'long' }));
-	const edition = (e: EntreeRecueil) => recueil?.editions[String(e.tome)] ?? '';
+	const edition = (x: Choix) => x.recueil.editions[String(x.entree.tome)] ?? '';
 </script>
 
 <svelte:head><title>Méditation — Hortus Sacrum</title></svelte:head>
@@ -55,7 +62,7 @@
 	{#if entrees.length > 1}
 		<div class="choix interface" role="group" aria-label="Méditations de ce jour">
 			{#each entrees as e, i}
-				<button class="bouton" aria-pressed={choix === i} onclick={() => (choix = i)}>{i + 1}. {e.titre}</button>
+				<button class="bouton" aria-pressed={choix === i} onclick={() => (choix = i)}>{e.recueil.id === 'chaignon' ? 'Chaignon' : 'Hamon'} · {e.entree.titre}</button>
 			{/each}
 		</div>
 	{/if}
@@ -76,15 +83,15 @@
 				<details open>
 					<summary><span class="pc">Source</span></summary>
 					<p class="imprime">
-						{recueil?.auteur}, <em>{recueil?.titre}</em><br />{edition(m)}, t. {m.tome}, p. {m.page}
+						{recueil?.auteur}, <em>{recueil?.titre}</em><br />{edition(c)}, t. {m.tome}{#if m.page}, p. {m.page}{/if}
 					</p>
 					<p>{recueil?.provenance}</p>
 				</details>
 				{#if demain.length}
 					<details open>
 						<summary><span class="pc">Pour demain</span></summary>
-						<p><a href="/meditation?date={lendemain}">{demain[0].titre}</a></p>
-						{#if demain[0].sommaire}<p class="petit">{demain[0].sommaire}</p>{/if}
+						<p><a href="/meditation?date={lendemain}">{demain[0].entree.titre}</a></p>
+						{#if demain[0].entree.sommaire}<p class="petit">{demain[0].entree.sommaire}</p>{/if}
 					</details>
 				{/if}
 			</aside>

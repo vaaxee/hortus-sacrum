@@ -47,6 +47,50 @@ export function clesDuJour(date: string, jour?: Pick<Jour, 'tempora'> | null): s
 	return cles;
 }
 
+/** Jour « ordinaire » : férie hors dimanche, au temps après l'Épiphanie ou après la Pentecôte. */
+export function estOrdinaire(date: string, jour?: Pick<Jour, 'tempora'> | null): boolean {
+	const t = jour?.tempora;
+	return !!t && /^(Epi|Pent)\d+-[1-6]$/.test(t) && new Date(date + 'T12:00:00').getDay() !== 0;
+}
+
+/**
+ * Rang du jour dans le parcours de Chaignon : on suit ses méditations dans l'ordre, un jour ordinaire après l'autre,
+ * depuis le début de l'année liturgique (et l'on recommence au début quand le parcours est fini).
+ */
+export function rangParcours(date: string, annee: Pick<Jour, 'date' | 'tempora'>[], taille: number): number {
+	const n = annee.filter((j) => j.date <= date && estOrdinaire(j.date, j)).length;
+	return taille ? ((Math.max(1, n) - 1) % taille) + 1 : 0;
+}
+
+export interface Choix {
+	recueil: Recueil;
+	entree: EntreeRecueil;
+}
+
+/**
+ * Méditations du jour, la principale d'abord.
+ * Dimanches et temps forts : Hamon. Jours ordinaires : le parcours de Chaignon (« le fidèle sanctifié »).
+ * Les autres méditations propres au jour (fête dans l'un ou l'autre recueil) suivent, au choix.
+ */
+export function choisir(
+	date: string, jour: Pick<Jour, 'tempora'> | undefined | null, annee: Pick<Jour, 'date' | 'tempora'>[],
+	hamon: Recueil | null, chaignon: Recueil | null
+): Choix[] {
+	const h = hamon ? entreesDuJour(hamon, date, jour).map((entree) => ({ recueil: hamon, entree })) : [];
+	const cPropres = chaignon
+		? entreesDuJour({ ...chaignon, entrees: chaignon.entrees.filter((e) => !e.cle?.startsWith('S:')) }, date, jour)
+			.map((entree) => ({ recueil: chaignon, entree }))
+		: [];
+	const fete = h.some((x) => x.entree.cle?.startsWith('D:') || x.entree.cle?.startsWith('F:'));
+	if (chaignon && estOrdinaire(date, jour) && !fete) {
+		const parcours = chaignon.entrees.filter((e) => e.cle?.startsWith('S:'));
+		const n = rangParcours(date, annee, parcours.length);
+		const p = parcours.find((e) => e.cle === `S:${n}`);
+		if (p) return [{ recueil: chaignon, entree: p }, ...cPropres, ...h];
+	}
+	return [...h, ...cPropres];
+}
+
 /** Les méditations du recueil pour ce jour (plusieurs quand une fête en a plusieurs), dans l'ordre du livre. */
 export function entreesDuJour(r: Recueil, date: string, jour?: Pick<Jour, 'tempora'> | null): EntreeRecueil[] {
 	for (const c of clesDuJour(date, jour)) {
