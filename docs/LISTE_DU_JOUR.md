@@ -65,7 +65,7 @@ Thème = dédicace du jour (CONTEXTE §4). Rotation : semaine *n* du mois → li
 | Dimanche | Sainte Trinité | 1. Saint Nom de Jésus (Paroissien 1890, p. 13) ; 2. Litanies des Saints (Paroissien 1890, p. 61) | ✔ |
 | Lundi | âmes du purgatoire | litanies pour les défunts : **à trouver** dans un recueil ancien | à chercher |
 | Mardi | saints Anges | 1. Litanies de la sainte Face (*Jardin*, p. 49) ; 2. litanies des saints Anges : **à trouver** | 1 ✔ |
-| Mercredi | saint Joseph | Litanies de saint Joseph (S. Pie X, 1909 ; Beringer 1925, n° 487) | en attente (décision « aucune autre prière à saint Joseph ») |
+| Mercredi | saint Joseph | Litanies de saint Joseph (S. Pie X, 1909 ; Beringer 1925, n° 487) | ✔, avec la prière n° 480 pour la pureté (cordon) |
 | Jeudi | Saint-Sacrement | litanies du Saint-Sacrement : **à trouver** ; à défaut, Saint Nom de Jésus | Saint Nom ✔, Saint-Sacrement à chercher |
 | Vendredi | Passion, Sacré-Cœur | 1. Sacré-Cœur (Léon XIII, 1899 ; Beringer 1925, n° 377) ; 2. N.-D. des Sept Douleurs (*Jardin*, p. 52) | ✔ |
 | Samedi | sainte Vierge | 1. Lorette (Paroissien 1890, p. 23) ; 2. N.-D. des Sept Douleurs (*Jardin*) | ✔ |

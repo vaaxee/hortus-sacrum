@@ -172,7 +172,7 @@ const LITANIES_PAR_JOUR: string[][] = [
 	['paroissien:litanies-saint-nom', 'paroissien:litanies-des-saints'], // dimanche : sainte Trinité
 	[], // lundi : âmes du purgatoire — litanies des défunts à trouver
 	['jardin:litanies-de-la-sainte-face'], // mardi : saints Anges — litanies des saints Anges à trouver
-	[], // mercredi : saint Joseph — en attente de la décision de l'utilisateur
+	['beringer:litanies-saint-joseph'], // mercredi : saint Joseph
 	['paroissien:litanies-saint-nom'], // jeudi : Saint-Sacrement — à défaut, saint Nom de Jésus
 	['beringer:litanies-sacre-coeur', 'jardin:litanies-de-notre-dame-des-sept-douleurs'], // vendredi : Passion, Sacré-Cœur
 	['paroissien:litanies-sainte-vierge', 'jardin:litanies-de-notre-dame-des-sept-douleurs'] // samedi : sainte Vierge
@@ -183,8 +183,9 @@ const LITANIES_PAR_JOUR: string[][] = [
  * Ne touche à rien si l'utilisateur a modifié cette ligne. Attend que tous les textes soient livrés.
  */
 export async function amorcerLitanies(): Promise<void> {
-	if (await db.meta.get('litanies')) return;
 	for (const id of new Set(LITANIES_PAR_JOUR.flat())) if (!(await db.textes.get(id))) return;
+	await completerLitanies();
+	if (await db.meta.get('litanies')) return;
 	const base = await db.liste.get('liste:24');
 	if (base && base.titre === 'Litanies du jour' && !base.supprimeLe && !base.textes.length && base.original === contenu(base)) {
 		for (let k = 0; k < 7; k++) {
@@ -203,6 +204,41 @@ export async function amorcerLitanies(): Promise<void> {
 		}
 	}
 	await db.meta.put({ cle: 'litanies', valeur: true });
+}
+
+/** Litanies trouvées après coup : remplit les lignes du jour restées vides et jamais modifiées par l'utilisateur. */
+async function completerLitanies(): Promise<void> {
+	for (let k = 0; k < 7; k++) {
+		const e = await db.liste.get(k === 0 ? 'liste:24' : `liste:24-${k}`);
+		const textes = LITANIES_PAR_JOUR[k];
+		if (!e || e.supprimeLe || e.textes.length || !textes.length || e.original !== contenu(e) || !e.jours[k]) continue;
+		const x = { ...e, textes, alterner: textes.length > 1 } as ElementListe;
+		x.original = contenu(x);
+		await db.liste.put(x);
+	}
+	await livrerElements();
+}
+
+/** Éléments ajoutés à la liste de départ après sa création ; chacun n'est livré qu'une fois (meta « elements »). */
+const NOUVEAUX_ELEMENTS: Omit<ElementListe, 'creeLe' | 'modifieLe'>[] = [
+	{
+		id: 'liste:cordon-mercredi', origine: 'officielle', titre: 'Cordon de saint Joseph : prière pour la pureté',
+		moment: 'matin', etiquette: 'ordinaire', jours: jour(3), rappels: [], textes: ['beringer:saint-joseph-purete'], ordre: 51, actif: true
+	}
+];
+
+async function livrerElements(): Promise<void> {
+	const livres = new Set(((await db.meta.get('elements'))?.valeur as string[] | undefined) ?? []);
+	const nouveaux = NOUVEAUX_ELEMENTS.filter((e) => !livres.has(e.id));
+	if (!nouveaux.length) return;
+	for (const e of nouveaux) {
+		livres.add(e.id);
+		if (await db.liste.get(e.id)) continue;
+		const x = { ...e, creeLe: DEPART, modifieLe: DEPART } as ElementListe;
+		x.original = contenu(x);
+		await db.liste.put(x);
+	}
+	await db.meta.put({ cle: 'elements', valeur: [...livres] });
 }
 
 /** Liens par défaut entre éléments de la liste du jour et textes sourcés (titre de l'élément → identifiants). */
