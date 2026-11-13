@@ -357,3 +357,46 @@
 		--hs-arche-accent: #ecd08a; --hs-arche-filet: rgb(236 208 138 / 0.8);
 	}
 }
+
+/* ---- DA grecque, bichromie : outremer majoritaire, cobalt pour les artefacts ----
+   Outremer : fonds, arche, encre, structure. Cobalt : liens, boutons, icônes actives,
+   cases, tesselles. L'or reste le trait d'ornement. (Remplace les bleus ci-dessus.) */
+:root[data-da='grecque'] {
+	--hs-outremer: #1a1a8f;
+	--hs-cobalt: #0047ab;
+	--hs-lapis-brut: #0047ab; /* tesselles de la mosaïque */
+	--hs-encre: #15154a; /* encre d'outremer */
+	--hs-encre-douce: #50527c;
+	--hs-lapis: var(--hs-cobalt);
+	--hs-sur-lapis: #f6f2e7;
+	--hs-filet: #c4c2c9;
+	--hs-arche-fond: var(--hs-outremer);
+	--hs-arche-encre: #f3ecd9;
+	--hs-arche-encre-douce: #c9c9ef;
+}
+:root[data-da='grecque'][data-theme='nuit'] {
+	--hs-fond: #0e0c52; /* outremer profond */
+	--hs-surface: #16137a;
+	--hs-surface-douce: #121066;
+	--hs-encre: #f0e9d6;
+	--hs-encre-douce: #b3b3dc;
+	--hs-cobalt: #6f9df2; /* cobalt éclairci, lisible sur l'outremer */
+	--hs-lapis: var(--hs-cobalt);
+	--hs-lapis-brut: #2f6fd6;
+	--hs-sur-lapis: #0e0c52;
+	--hs-filet: #2d2a94;
+	--hs-arche-fond: #1f1ca6; /* outremer vif */
+	--hs-arche-encre-douce: #c9c9ef;
+}
+@media (prefers-color-scheme: dark) {
+	:root[data-da='grecque']:not([data-theme='jour']) {
+		--hs-fond: #0e0c52; --hs-surface: #16137a; --hs-surface-douce: #121066;
+		--hs-encre: #f0e9d6; --hs-encre-douce: #b3b3dc; --hs-cobalt: #6f9df2; --hs-lapis: var(--hs-cobalt);
+		--hs-lapis-brut: #2f6fd6; --hs-sur-lapis: #0e0c52; --hs-filet: #2d2a94;
+		--hs-arche-fond: #1f1ca6; --hs-arche-encre-douce: #c9c9ef;
+	}
+}
+/* artefacts en cobalt : cases à cocher et icônes de la barre d'onglets */
+:root[data-da='grecque'] .hs .case { border-color: var(--hs-cobalt); }
+:root[data-da='grecque'] .hs .onglets a, :root[data-da='grecque'] .hs .sommaire a { color: color-mix(in srgb, var(--hs-cobalt) 70%, var(--hs-encre-douce)); }
+:root[data-da='grecque'] .hs .onglets a.actif, :root[data-da='grecque'] .hs .sommaire a.actif { color: var(--hs-cobalt); }
