@@ -38,6 +38,8 @@ def build_year(y: int, region: str = "france") -> list[dict]:
             "couleur": o.color,
             "commemoraisons": o.comms,
             "temporal": o.temporal,
+            # clé du temporal (Adv1-0, Epi3-2, Quad5-0, Pasc7-6, Pent05-3…), None pendant l'octave et le temps de Noël
+            "tempora": liturgy.temporal_key(d),
             "est_fete_sanctorale": o.isfeast,
             "propre": loc.get("propre"),
             "fichier_divinum_officium": o.path or None,
