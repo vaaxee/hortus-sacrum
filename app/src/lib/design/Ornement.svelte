@@ -5,7 +5,7 @@
 	 */
 	type Nom =
 		| 'fleuron' | 'grecque' | 'laurier' | 'perles' | 'mosaique' | 'palmette' | 'coin'
-		| 'medaillon' | 'cherubin' | 'chrisme' | 'lis' | 'brin' | 'croix';
+		| 'medaillon' | 'cherubin' | 'chrisme' | 'lis' | 'brin' | 'croix' | 'croix-pattee';
 
 	let { nom, taille = 24, titre = '' }: { nom: Nom; taille?: number; titre?: string } = $props();
 	const uid = $props.id();
@@ -15,7 +15,17 @@
 	<!-- filet d'or avec fleuron centré -->
 	<div class="filet" role="presentation">
 		<span></span>
-		<svg viewBox="0 0 40 16" width="40" height="16" aria-hidden="true">
+		<!-- latine : fleur de lys entre deux croisettes -->
+		<svg class="da-latine" viewBox="0 0 40 16" width="40" height="16" aria-hidden="true">
+			<g fill="none" stroke="currentColor" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round">
+				<path d="M20 1.5c1.7 1.8 1.7 4.4 0 6.6c-1.7-2.2-1.7-4.8 0-6.6z" />
+				<path d="M20 9.2c-1.1-2.5-3.4-3.3-5.2-1.9c1 .2 1.9.9 2.1 2" />
+				<path d="M20 9.2c1.1-2.5 3.4-3.3 5.2-1.9c-1 .2-1.9.9-2.1 2" />
+				<path d="M16.8 9.6h6.4M20 9.6v3.4M18.4 14.2c.6-.7 1-1 1.6-1s1 .3 1.6 1" />
+				<path d="M6 8.5h3M7.5 7v3M31 8.5h3M32.5 7v3" />
+			</g>
+		</svg>
+		<svg class="da-grecque" viewBox="0 0 40 16" width="40" height="16" aria-hidden="true">
 			<g fill="none" stroke="currentColor" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round">
 				<path d="M20 2.5c2.2 2 2.2 4.2 0 5.5c-2.2-1.3-2.2-3.5 0-5.5z" />
 				<path d="M20 8v5.5" />
@@ -28,7 +38,24 @@
 		<span></span>
 	</div>
 {:else if nom === 'grecque'}
-	<svg class="bande" height="8" width="100%" aria-hidden="true">
+	<!-- latine : rinceau de vigne (tige ondulée, feuilles, grains de raisin en rubis) -->
+	<svg class="bande da-latine" height="12" width="100%" aria-hidden="true">
+		<defs>
+			<pattern id="{uid}-r" width="32" height="12" patternUnits="userSpaceOnUse">
+				<g fill="none" stroke="currentColor" stroke-width="0.8" stroke-linecap="round">
+					<path d="M0 6c4-5 12-5 16 0s12 5 16 0" />
+					<path d="M8 2.3c1.8-1.6 4-1.4 5 .2c-1.8 1.2-3.6 1.2-5-.2z" />
+					<path d="M24 9.7c-1.8 1.6-4 1.4-5-.2c1.8-1.2 3.6-1.2 5 .2z" />
+				</g>
+				<g fill="var(--hs-rubrique)">
+					<circle cx="4.2" cy="9" r=".9" /><circle cx="2.6" cy="10.3" r=".9" /><circle cx="4.6" cy="11" r=".8" />
+					<circle cx="27.8" cy="3" r=".9" /><circle cx="29.4" cy="1.7" r=".9" /><circle cx="27.4" cy="1" r=".8" />
+				</g>
+			</pattern>
+		</defs>
+		<rect width="100%" height="12" fill="url(#{uid}-r)" />
+	</svg>
+	<svg class="bande da-grecque" height="8" width="100%" aria-hidden="true">
 		<defs>
 			<pattern id="{uid}-g" width="16" height="8" patternUnits="userSpaceOnUse">
 				<path d="M0 7.5h12.5v-7h-9v4.5h5.5v-2" fill="none" stroke="currentColor" stroke-width="0.75" />
@@ -131,6 +158,10 @@
 				<path class="trace" pathLength="1" d="M12 14c-3.4-.4-5.400-2.400-6-5.600c3.400.2 5.400 2.200 6 5.600z" />
 				<path class="trace" pathLength="1" d="M12 10.500c3-.4 4.800-2.200 5.400-5c-3 .2-4.800 2-5.400 5z" />
 			</g>
+		{:else if nom === 'croix-pattee'}
+			<!-- croix pattée : bras évasés, au trait -->
+			<path fill="none" stroke="currentColor" stroke-width="1" stroke-linejoin="miter"
+				d="M10 2.5h4l-.9 7.6l7.6-.9v4l-7.6-.9l.9 7.6h-4l.9-7.6l-7.6.9v-4l7.6.9z" />
 		{:else if nom === 'croix'}
 			<g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
 				<path d="M12 3v18M6.500 8.500h11" />

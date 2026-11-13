@@ -11,6 +11,10 @@
 
 <div class="arche" class:solennel>
 	<div class="interieur">{@render children()}</div>
+	<!-- latine : fleur de lys à la clé de l'arche, croix pattées aux angles -->
+	<span class="cle da-latine"><Ornement nom="lis" taille={22} /></span>
+	<span class="pattee g da-latine"><Ornement nom="croix-pattee" taille={14} /></span>
+	<span class="pattee d da-latine"><Ornement nom="croix-pattee" taille={14} /></span>
 	{#if solennel}
 		<span class="coin bg"><Ornement nom="coin" taille={18} /></span>
 		<span class="coin bd"><Ornement nom="coin" taille={18} /></span>
@@ -33,6 +37,11 @@
 	}
 	.arche:not(.solennel)::before { display: none; }
 	.interieur { padding-top: clamp(4.5rem, 24%, 6.5rem); text-align: center; display: grid; justify-items: center; gap: var(--hs-e3); }
+	.cle { position: absolute; top: 10px; left: 50%; transform: translateX(-50%); color: var(--hs-arche-filet); line-height: 0; }
+	.pattee { position: absolute; bottom: 12px; color: var(--hs-arche-filet); line-height: 0; }
+	.pattee.g { left: 12px; }
+	.pattee.d { right: 12px; }
+	.solennel .pattee { bottom: 34px; }
 	.coin { position: absolute; bottom: 9px; color: var(--hs-arche-filet); line-height: 0; }
 	.coin.bg { left: 9px; transform: rotate(-90deg); }
 	.coin.bd { right: 9px; transform: rotate(180deg); }

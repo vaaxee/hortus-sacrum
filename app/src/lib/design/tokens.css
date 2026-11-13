@@ -396,3 +396,62 @@
 :root[data-da='grecque'] .hs .case { border-color: var(--hs-cobalt); }
 :root[data-da='grecque'] .hs nav.onglets a, :root[data-da='grecque'] .hs nav.sommaire a { color: color-mix(in srgb, var(--hs-cobalt) 70%, var(--hs-encre-douce)); }
 :root[data-da='grecque'] .hs nav.onglets a.actif, :root[data-da='grecque'] .hs nav.sommaire a.actif { color: var(--hs-cobalt); }
+
+/* =====================================================================
+   DA latine : nacre, rubis et or.
+   Jour : fond nacre, le rubis en accent (arche du jour en rubis profond, liens et artefacts en rubis).
+   Nuit : bichromie rubis — bordeaux profond majoritaire, rubis vif pour les artefacts, or en filet.
+   ===================================================================== */
+:root:not([data-da='grecque']) {
+	--hs-rubis-profond: #7a1f2b;
+	--hs-fond: #faf5ef; /* nacre */
+	--hs-surface: #f0e2d8; /* nacre rosée */
+	--hs-surface-douce: #f6ece4;
+	--hs-lapis: #a83d49; /* liens et états actifs : rubis */
+	--hs-sur-lapis: #faf5ef;
+	--hs-rubrique: #8f2a37;
+	--hs-filet: #dcc5b8;
+	--hs-arche-fond: var(--hs-rubis-profond);
+	--hs-arche-encre: #f8efe6;
+	--hs-arche-encre-douce: #e3c9c4;
+	--hs-arche-accent: #ecd08a;
+	--hs-arche-filet: rgb(236 208 138 / 0.85);
+}
+:root:not([data-da='grecque'])[data-theme='nuit'] {
+	--hs-rubis-profond: #5e1624;
+	--hs-fond: #22080f; /* bordeaux profond */
+	--hs-surface: #34101b;
+	--hs-surface-douce: #2b0c16;
+	--hs-encre: #f3e9dc;
+	--hs-encre-douce: #c9adaf;
+	--hs-lapis: #f08593; /* rubis vif, lisible sur le bordeaux */
+	--hs-sur-lapis: #22080f;
+	--hs-rubrique: #f4a1ab;
+	--hs-filet: #5a2230;
+	--hs-or: #dcb86a;
+	--hs-or-trait: rgb(220 184 106 / 0.6);
+	--hs-or-texte: #dcb86a;
+	--hs-arche-fond: #6b1a2b; /* rubis profond vif */
+	--hs-arche-encre: #f3e9dc;
+	--hs-arche-encre-douce: #e0c3c3;
+	--hs-arche-accent: #ecd08a;
+	--hs-arche-filet: rgb(236 208 138 / 0.8);
+}
+@media (prefers-color-scheme: dark) {
+	:root:not([data-da='grecque']):not([data-theme='jour']) {
+		--hs-rubis-profond: #5e1624;
+		--hs-fond: #22080f; --hs-surface: #34101b; --hs-surface-douce: #2b0c16;
+		--hs-encre: #f3e9dc; --hs-encre-douce: #c9adaf;
+		--hs-lapis: #f08593; --hs-sur-lapis: #22080f; --hs-rubrique: #f4a1ab; --hs-filet: #5a2230;
+		--hs-or: #dcb86a; --hs-or-trait: rgb(220 184 106 / 0.6); --hs-or-texte: #dcb86a;
+		--hs-arche-fond: #6b1a2b; --hs-arche-encre: #f3e9dc; --hs-arche-encre-douce: #e0c3c3;
+		--hs-arche-accent: #ecd08a; --hs-arche-filet: rgb(236 208 138 / 0.8);
+	}
+}
+/* artefacts latins en rubis : cases et onglets */
+:root:not([data-da='grecque']) .hs .case { border-color: var(--hs-lapis); }
+:root:not([data-da='grecque']) .hs nav.onglets a.actif, :root:not([data-da='grecque']) .hs nav.sommaire a.actif { color: var(--hs-lapis); }
+
+/* motifs propres à chaque direction (les deux sont dessinés, un seul est montré) */
+:root[data-da='grecque'] .da-latine { display: none !important; }
+:root:not([data-da='grecque']) .da-grecque { display: none !important; }
