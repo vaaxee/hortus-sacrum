@@ -7,7 +7,7 @@ Remplace CONSIGNE §4. Validation de l'utilisateur à la fin de chaque étape.
 | 1 | Données | Moteur du calendrier pour toute année ; 62 pièces du livret en base | faite |
 | 2 | **Socle modifiable** | App installable (PWA) ; modèle de données où tout est éditable (origine, versions, corbeille, restauration de l'original) ; bibliothèque de prières ; éditeur au clavier ; saisie par copier-coller avec nettoyage et aperçu ; export et import JSON | faite |
 | 3 | Import PDF et photo | pdf.js, plage de pages ; OCR Tesseract.js (français, latin) ; découpage en pièces ; source pré-remplie | faite |
-| 4 | Aujourd'hui et liste du jour | Bandeau liturgique, martyrologe et invocations ; liste à cocher éditable (glisser-déposer, jours, heure de rappel, pièces répétées dans la journée) ; chaque ligne ouvre sa prière | en cours : reste l'éditeur de la liste |
+| 4 | Aujourd'hui et liste du jour | Bandeau liturgique, martyrologe et invocations ; liste à cocher éditable (glisser-déposer, jours, heure de rappel, pièces répétées dans la journée) ; chaque ligne ouvre sa prière | faite, à valider (restent : lecture de Prime, vie du saint) |
 | 5 | Pratiques et calendrier personnels | Éditeur de pratiques (règles de dates, prières liées, promesses, indulgence, source) ; compteurs et séries interrompues ; fêtes et saints personnels, anniversaires, notes ; vues mois et semaine | à faire |
 | 6 | Compte et synchronisation | Supabase (lien magique, règles par utilisateur) ; synchronisation téléphone et PC ; mise en ligne | à faire |
 | 7 | Rappels | Notifications push ; écran d'aide iPhone | à faire |

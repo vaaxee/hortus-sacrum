@@ -34,3 +34,14 @@
 - Ornements : croix en gloire et ange héraut du dossier, bande cosmatesque, motifs floraux des pages mariales, lettrines des méditations.
 - Compteurs de séries et édition des pratiques (étape 5).
 - Pas encore vu sur iPhone.
+
+## Complément : éditeur de la liste du jour (13 novembre 2026)
+- **Aujourd'hui → Régler la liste** ouvre l'éditeur (`/liste`).
+- Pour chaque moment de la journée : changer l'ordre en glissant la poignée (doigt ou souris) ou avec les flèches ; ajouter un élément.
+- Pour chaque élément : titre, moment, genre (ordinaire ou propre), jours de la semaine, heures de rappel (plusieurs heures = prière comptée plusieurs fois), prières liées (recherche dans la bibliothèque), masquer ou afficher, restaurer l'original, corbeille.
+- Corbeille en bas de l'écran : rétablir, ou supprimer pour de bon en deux temps.
+- Changer l'ordre ne marque plus un élément comme « modifié », et « Restaurer l'original » ne le déplace pas.
+
+Essayé dans le navigateur, en largeur de téléphone : flèches, glisser-déposer à la souris, jours, heure, prière liée, ajout, corbeille, suppression. Revérifié après le restylage : modifier une prière, historique, restaurer l'original. Tests : 29 sur 29.
+
+Les heures de rappel sont enregistrées mais n'envoient encore aucune notification (étape 7). Le glisser-déposer n'a pas été essayé au doigt sur un vrai téléphone.

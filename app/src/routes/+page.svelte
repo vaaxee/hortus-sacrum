@@ -105,6 +105,7 @@
 				<span class="trait"><span style="width: {duJour.length ? (100 * faits) / duJour.length : 0}%"></span></span>
 				<span class="chiffres-alignes">{faits} / {duJour.length}</span>
 			</div>
+			<p class="regler"><a href="/liste">Régler la liste</a></p>
 
 			{#each MOMENTS as [moment, nom]}
 				{@const elements = duJour.filter((e) => e.moment === moment)}
@@ -207,6 +208,7 @@
 	.trait { flex: 1; height: 1px; background: var(--hs-filet); position: relative; }
 	.trait span { position: absolute; inset: -1px auto -1px 0; background: var(--hs-vert); transition: width var(--hs-duree-lente) var(--hs-courbe); }
 
+	.regler { margin: var(--hs-e2) 0 0; text-align: right; font-family: var(--hs-interface); font-size: var(--hs-t0); letter-spacing: var(--hs-chasse-interface); }
 	.tete { margin-top: var(--hs-e7); text-align: center; display: grid; gap: var(--hs-e3); }
 	.tete h2 { font-size: var(--hs-t2); }
 	.tete .etiquette { margin: -6px 0 0; }

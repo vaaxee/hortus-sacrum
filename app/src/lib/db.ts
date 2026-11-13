@@ -100,16 +100,24 @@ export async function supprimerDefinitivement(nom: NomTable, id: string): Promis
 	});
 }
 
+/** Le rang dans une liste n'est pas du contenu : le changer ne fait pas d'un objet un objet « modifié ». */
+function sansOrdre(json: string): string {
+	const { ordre, ...reste } = JSON.parse(json) as Record<string, unknown>;
+	return JSON.stringify(reste);
+}
+
 export function estModifie(o: Base): boolean {
-	return !!o.original && o.original !== contenu(o);
+	return !!o.original && sansOrdre(o.original) !== sansOrdre(contenu(o));
 }
 
 /** Revient à l'état d'origine (livret ou source vérifiée) ; l'état actuel passe dans l'historique. */
 export async function restaurerOriginal<T extends Base>(nom: NomTable, id: string): Promise<T | undefined> {
 	const o = await table<T>(nom).get(id);
 	if (!o?.original) return o;
-	const orig = JSON.parse(o.original) as T;
-	return enregistrer<T>(nom, { ...o, ...orig, original: o.original });
+	const orig = JSON.parse(o.original) as T & { ordre?: number };
+	// on garde le rang actuel : restaurer un texte ne le déplace pas
+	const ordre = (o as { ordre?: number }).ordre;
+	return enregistrer<T>(nom, { ...o, ...orig, ...(ordre === undefined ? {} : { ordre }), original: o.original });
 }
 
 export async function versions(nom: NomTable, id: string): Promise<Version[]> {
