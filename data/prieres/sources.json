@@ -224,6 +224,22 @@
    },
    "corps": "Saint Joseph, père et protecteur des vierges, gardien fidèle à qui Dieu confia Jésus, l’Innocence même, et Marie la Vierge des vierges, je vous en supplie et je vous en conjure par Jésus et Marie, ce double dépôt qui vous fut si cher, faites que, préservé de toute souillure, pur d’esprit et de cœur, et chaste de corps, je serve constamment Jésus et Marie dans une chasteté parfaite. Ainsi soit-il.",
    "latin": "Virginum custos et pater, sancte Joseph, cujus fideli custodiæ ipsa innocentia Christus Jesus et Virgo virginum Maria commissa fuit, te per hoc utrumque carissimum pignus, Jesum et Mariam, obsecro et obtestor, ut me ab omni immunditia præservatum, mente incontaminata, puro corde et casto corpore Jesu et Mariæ semper facias castissime famulari. Amen."
+  },
+  {
+   "id": "beringer:regina-caeli",
+   "titre": "Regina Cæli",
+   "partie": "Prières du matin et du soir",
+   "categorie": "",
+   "usage": "Au temps pascal, au lieu de l’Angelus, on récite debout le Regina cæli. (Du samedi saint à midi jusqu’au samedi avant la Trinité.) Pour gagner les indulgences, il n’est pas permis de réciter d’autres ℣ et ℟ que ceux de la liturgie, c’est-à-dire Gaude, etc. (Beringer, p. 223, note 2.)",
+   "indulgence": "Les mêmes que l’Angelus : Indulgence plénière, une fois le mois, au jour de leur choix, pour tous les fidèles qui, chaque jour, au son de la cloche, le matin ou à midi ou le soir, après le coucher du soleil, réciteront à genoux l’Angelus avec trois Je vous salue, Marie. — Conditions : confession, communion et prières aux intentions du Souverain Pontife. — 100 jours, tous les autres jours de l’année, chaque fois qu’ils réciteront l’Angelus avec trois Je vous salue, Marie. — Benoît XIII, 14 septembre 1724. — Racc. 210. Benoît XIV (20 avril 1742) déclara que, pendant le temps pascal, l’Angelus serait remplacé par le Regina cæli que l’on réciterait debout, avec le verset et l’oraison correspondants, et il accorda les mêmes Indulgences. Ceux qui ne savent pas par cœur le Regina cæli gagnent les mêmes Indulgences en récitant l’Angelus.",
+   "source": {
+    "ouvrage": "Beringer, Les Indulgences, leur nature et leur usage, t. I, n° 428",
+    "edition": "trad. Ph. Mazoyer, 4e éd. française, Paris, P. Lethielleux, 1925",
+    "page": "222-223",
+    "url": "https://archive.org/details/lesindulgences0001beri"
+   },
+   "corps": "Reine du ciel, réjouissez-vous, alleluia :\n\nParce que celui que vous avez mérité de porter dans votre sein, alleluia :\n\nEst ressuscité comme il l’avait dit, alleluia.\n\nPriez Dieu pour nous, alleluia.\n\n℣. Soyez dans la joie et l’allégresse, ô Vierge Marie, alleluia ;\n℟. Parce que le Seigneur est vraiment ressuscité, alleluia.\n\nPrions. O Dieu qui avez daigné réjouir le monde par la résurrection de Notre-Seigneur Jésus-Christ, votre Fils ; faites, nous vous en prions, que, par le secours de sa Mère la Vierge Marie, nous obtenions les joies de la vie éternelle. Par ce même Jésus-Christ Notre-Seigneur. Ainsi soit-il.",
+   "latin": "Regina cœli lætare, alleluia.\n\nQuia quem meruisti portare, alleluia :\n\nResurrexit sicut dixit, alleluia.\n\nOra pro nobis Deum, alleluia.\n\n℣. Gaude et lætare, Virgo Maria, alleluia.\n℟. Quia surrexit Dominus vere, alleluia.\n\nOremus. Deus, qui per resurrectionem Filii tui Domini nostri Jesu Christi mundum lætificare dignatus es ; præsta quæsumus, ut per ejus Genitricem Virginem Mariam perpetuæ capiamus gaudia vitæ. Per eumdem Christum Dominum nostrum. Amen."
   }
  ]
 }

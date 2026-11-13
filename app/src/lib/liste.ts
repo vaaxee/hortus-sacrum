@@ -10,7 +10,20 @@ export function semaineDuMois(date: string): number {
  * Élément « en alternance » : une seule prière, à tour de rôle selon la semaine du mois
  * (1re semaine → 1re prière, 2e → 2e…, et l'on recommence quand la liste est épuisée).
  */
-export function textesDuJour(e: Pick<ElementListe, 'textes' | 'alterner'>, date: string): string[] {
-	if (!e.alterner || e.textes.length < 2) return e.textes;
-	return [e.textes[(semaineDuMois(date) - 1) % e.textes.length]];
+export function textesDuJour(e: Pick<ElementListe, 'textes' | 'alterner'>, date: string, jour?: { temps: string; office: string }): string[] {
+	const choisis = !e.alterner || e.textes.length < 2 ? e.textes : [e.textes[(semaineDuMois(date) - 1) % e.textes.length]];
+	return remplacementsDuTemps(choisis, jour);
+}
+
+/**
+ * Au temps pascal, le Regina cæli remplace l'Angélus (Beringer 1925, n° 428).
+ * Samedi saint : l'Angélus le matin, le Regina cæli à partir de midi — on montre les deux.
+ */
+const PASCAL: Record<string, string> = { 'paroissien:angelus': 'beringer:regina-caeli' };
+
+export function remplacementsDuTemps(ids: string[], jour?: { temps: string; office: string }): string[] {
+	if (!jour) return ids;
+	if (jour.office === 'Samedi saint') return ids.flatMap((id) => (PASCAL[id] ? [id, PASCAL[id]] : [id]));
+	if (jour.temps === 'Temps pascal') return ids.map((id) => PASCAL[id] ?? id);
+	return ids;
 }

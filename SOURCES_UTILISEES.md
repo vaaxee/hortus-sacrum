@@ -28,6 +28,7 @@
 | Litanies du Sacré-Cœur (latin et français), indulgence (Léon XIII, 2 avril 1899) | Beringer 1925, t. I, n° 377 (répons en accolade répété à chaque invocation ; « savientiæ » corrigé) | 186-188 | archive.org `lesindulgences0001beri` |
 | Litanies de saint Joseph (latin et français), indulgence (Pie X, 18 mars 1909) | Beringer 1925, t. I, n° 487 (répons en accolade répété) | 258-259 | idem |
 | A saint Joseph pour obtenir la vertu de pureté (français, latin en note), indulgence (Pie IX, 1877) | Beringer 1925, t. I, n° 480 | 252 | idem |
+| Regina Cæli (latin et français, oraison, indulgences) ; remplace l'Angélus au temps pascal | Beringer 1925, t. I, n° 428 | 222-223 | archive.org `lesindulgences0001beri` |
 
 ## Sources consultées pour l'inventaire (textes pas encore recopiés)
 

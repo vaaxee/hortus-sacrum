@@ -161,7 +161,7 @@
 							{@const fait = coches[e.id] ?? 0}
 							{@const sous = precision(e)}
 							{@const pp = pratiquesPour(e)}
-							{@const tx = textesDuJour(e, date)}
+							{@const tx = textesDuJour(e, date, jour)}
 							{#if pp}
 								{#each pp as { p, o } (p.id)}
 									<li class:fini={faite(p.id)}>
@@ -188,7 +188,7 @@
 								<div class="corps">
 									{#if tx.length === 1}
 										<a class="titre" href="/prieres/{encodeURIComponent(tx[0])}">{e.titre}</a>
-										{#if e.alterner && e.textes.length > 1}<span class="sous">{$titres[tx[0]] ?? ''}</span>{/if}
+										{#if (e.alterner && e.textes.length > 1) || !e.textes.includes(tx[0])}<span class="sous">{$titres[tx[0]] ?? ''}</span>{/if}
 									{:else if tx.length > 1}
 										<details class="plusieurs">
 											<summary class="titre">{e.titre}</summary>
