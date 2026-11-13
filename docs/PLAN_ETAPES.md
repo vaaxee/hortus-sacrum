@@ -11,8 +11,8 @@ Remplace CONSIGNE §4. Validation de l'utilisateur à la fin de chaque étape.
 | 5 | Pratiques et calendrier personnels | Éditeur de pratiques (règles de dates, prières liées, promesses, indulgence, source) ; compteurs et séries interrompues ; fêtes et saints personnels, anniversaires, notes ; vues mois et semaine | faite, à valider |
 | 6 | Compte et synchronisation | Supabase (lien magique, règles par utilisateur) ; synchronisation téléphone et PC ; mise en ligne | à faire |
 | 7 | Rappels | Notifications push ; écran d’aide iPhone | fait (13 nov.) |
-| 8 | Contenu sourcé | Paroissien 1890 (matin, soir, litanies, Angélus) ; chapelet des Morts ; cordon de S. Joseph ; Sacré-Cœur ; dons du Saint-Esprit | à faire, au fil de l'eau |
-| 9 | Méditations et vies de saints | Éditeur de recueils (découpage par jours, affectation) ; Guéranger, « mois » ; leçons du Bréviaire | à faire |
+| 8 | Contenu sourcé | Paroissien 1890 (matin, soir, litanies, Angélus) ; chapelet des Morts ; cordon de S. Joseph ; Sacré-Cœur ; dons du Saint-Esprit | fait (13 nov.) ; restent des litanies (défunts, saints Anges, Saint-Sacrement) et la formule du cordon |
+| 9 | Méditations et vies de saints | Éditeur de recueils (découpage par jours, affectation) ; Guéranger, « mois » ; leçons du Bréviaire | fait (13 nov.) : Hamon, Chaignon, Guéranger, Bréviaire, mois ; l'éditeur de recueils reste à faire |
 | 10 | Finitions | Export PDF d'une sélection ; historique et régularité ; profil spirituel | à faire |
 
 Ordre voulu : l'éditeur passe avant le contenu, pour que tout texte ajouté ensuite soit d'emblée modifiable.
