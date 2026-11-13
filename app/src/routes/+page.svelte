@@ -6,6 +6,7 @@
 	import Case from '#lib/design/Case.svelte';
 	import Ornement from '#lib/design/Ornement.svelte';
 	import { invocation, nomLatin, TOUS_LES_SAINTS } from '#lib/invocations.ts';
+	import { textesDuJour } from '#lib/liste.ts';
 	import { vivant } from '#lib/live.ts';
 	import { rendre } from '#lib/markup.ts';
 	import { creer, enregistrer } from '#lib/db.ts';
@@ -160,6 +161,7 @@
 							{@const fait = coches[e.id] ?? 0}
 							{@const sous = precision(e)}
 							{@const pp = pratiquesPour(e)}
+							{@const tx = textesDuJour(e, date)}
 							{#if pp}
 								{#each pp as { p, o } (p.id)}
 									<li class:fini={faite(p.id)}>
@@ -184,12 +186,13 @@
 									bind:cochee={() => fait >= total, () => compter(e, total)}
 								/>
 								<div class="corps">
-									{#if e.textes.length === 1}
-										<a class="titre" href="/prieres/{encodeURIComponent(e.textes[0])}">{e.titre}</a>
-									{:else if e.textes.length > 1}
+									{#if tx.length === 1}
+										<a class="titre" href="/prieres/{encodeURIComponent(tx[0])}">{e.titre}</a>
+										{#if e.alterner && e.textes.length > 1}<span class="sous">{$titres[tx[0]] ?? ''}</span>{/if}
+									{:else if tx.length > 1}
 										<details class="plusieurs">
 											<summary class="titre">{e.titre}</summary>
-											{#each e.textes as id}
+											{#each tx as id}
 												<a href="/prieres/{encodeURIComponent(id)}">{$titres[id] ?? id}</a>
 											{/each}
 										</details>

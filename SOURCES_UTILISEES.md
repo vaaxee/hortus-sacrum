@@ -22,6 +22,10 @@
 | Chapelet des Morts : manière de le réciter, origine, indulgences (réservées aux associés de N.-D. du Suffrage) | Beringer 1925, t. II, n° 306 a | 322-323 | archive.org `lesindulgences0002beri` |
 | Cordon de saint Joseph : pratique des sept *Gloria Patri*, indulgences de l'archiconfrérie de Rome | Beringer 1925, t. II, n° 266 | 256-257 | idem |
 | *Gloria Patri* (français et latin) | Beringer 1925, t. I, n° 238 et note 1 | 130 | archive.org `lesindulgences0001beri` |
+| Litanies du saint Nom de Jésus, avec l'oraison | *Paroissien romain*, Mame, 1890 | 13-16 | archive.org `paroissienromain00tour` |
+| Litanies de la sainte Vierge | idem | 23-25 | idem |
+| Litanies des Saints, avec l'oraison | idem | 61-66 | idem |
+| Litanies du Sacré-Cœur (latin et français), indulgence (Léon XIII, 2 avril 1899) | Beringer 1925, t. I, n° 377 (répons en accolade répété à chaque invocation ; « savientiæ » corrigé) | 186-188 | archive.org `lesindulgences0001beri` |
 
 ## Sources consultées pour l'inventaire (textes pas encore recopiés)
 

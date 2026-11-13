@@ -92,6 +92,8 @@ export interface ElementListe extends Base {
 	/** Heures de rappel (« HH:MM ») ; plusieurs heures = pièce répétée dans la journée. */
 	rappels: string[];
 	textes: string[];
+	/** Une seule des prières liées par jour, à tour de rôle selon la semaine du mois. */
+	alterner?: boolean;
 	actif: boolean;
 }
 

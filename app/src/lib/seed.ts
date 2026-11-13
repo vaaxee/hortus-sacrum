@@ -161,6 +161,48 @@ export async function amorcer(fetchFn: typeof fetch = fetch): Promise<void> {
 	if (niveau < 2) await db.meta.put({ cle: 'amorce', valeur: 2 });
 	// à chaque lancement : n'ajoute que les textes sourcés jamais encore livrés (liste tenue dans meta « sources »)
 	await amorcerSources(fetchFn);
+	await amorcerLitanies();
+}
+
+/**
+ * Litanies du jour (docs/LISTE_DU_JOUR.md) : une ligne par jour de la semaine, selon la dédicace du jour,
+ * les litanies alternant d'une semaine du mois à l'autre. Jours sans litanie sourcée : ligne sans prière.
+ */
+const LITANIES_PAR_JOUR: string[][] = [
+	['paroissien:litanies-saint-nom', 'paroissien:litanies-des-saints'], // dimanche : sainte Trinité
+	[], // lundi : âmes du purgatoire — litanies des défunts à trouver
+	['jardin:litanies-de-la-sainte-face'], // mardi : saints Anges — litanies des saints Anges à trouver
+	[], // mercredi : saint Joseph — en attente de la décision de l'utilisateur
+	['paroissien:litanies-saint-nom'], // jeudi : Saint-Sacrement — à défaut, saint Nom de Jésus
+	['beringer:litanies-sacre-coeur', 'jardin:litanies-de-notre-dame-des-sept-douleurs'], // vendredi : Passion, Sacré-Cœur
+	['paroissien:litanies-sainte-vierge', 'jardin:litanies-de-notre-dame-des-sept-douleurs'] // samedi : sainte Vierge
+];
+
+/**
+ * Une seule fois : remplace la ligne générique « Litanies du jour » par sept lignes (une par jour).
+ * Ne touche à rien si l'utilisateur a modifié cette ligne. Attend que tous les textes soient livrés.
+ */
+export async function amorcerLitanies(): Promise<void> {
+	if (await db.meta.get('litanies')) return;
+	for (const id of new Set(LITANIES_PAR_JOUR.flat())) if (!(await db.textes.get(id))) return;
+	const base = await db.liste.get('liste:24');
+	if (base && base.titre === 'Litanies du jour' && !base.supprimeLe && !base.textes.length && base.original === contenu(base)) {
+		for (let k = 0; k < 7; k++) {
+			const textes = LITANIES_PAR_JOUR[k];
+			const x = {
+				...base,
+				id: k === 0 ? base.id : `liste:24-${k}`,
+				jours: jour(k),
+				textes,
+				alterner: textes.length > 1,
+				...(k === 0 ? {} : { creeLe: DEPART, modifieLe: DEPART })
+			} as ElementListe;
+			delete x.original;
+			x.original = contenu(x);
+			await db.liste.put(x);
+		}
+	}
+	await db.meta.put({ cle: 'litanies', valeur: true });
 }
 
 /** Liens par défaut entre éléments de la liste du jour et textes sourcés (titre de l'élément → identifiants). */

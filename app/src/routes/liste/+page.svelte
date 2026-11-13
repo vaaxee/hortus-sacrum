@@ -170,7 +170,7 @@
 							</button>
 							<button class="resume brut" aria-expanded={ouvert === e.id} onclick={() => ouvrir(e)}>
 								<span class="titre">{e.titre}</span>
-								<span class="detail">{resume(e)}{e.textes.length ? `, ${e.textes.length} prière${e.textes.length > 1 ? 's' : ''}` : ''}{e.actif ? '' : ', masqué'}</span>
+								<span class="detail">{resume(e)}{e.textes.length ? `, ${e.textes.length} prière${e.textes.length > 1 ? 's' : ''}${e.alterner && e.textes.length > 1 ? ' en alternance' : ''}` : ''}{e.actif ? '' : ', masqué'}</span>
 							</button>
 							<span class="fleches">
 								<button class="brut" aria-label="Monter" disabled={i === 0} onclick={() => deplacer(e, -1)}><Icone nom="retour" taille={16} /></button>
@@ -226,6 +226,9 @@
 										{t.titre} <span class="petit">{t.partie}</span>
 									</button>
 								{/each}
+								{#if brouillon.textes.length > 1}
+									<label class="case"><input type="checkbox" bind:checked={brouillon.alterner} /> Une seule prière par jour, à tour de rôle selon la semaine du mois (1re semaine : la première, 2e : la deuxième…)</label>
+								{/if}
 
 								<div class="rangee actions">
 									<button class="principal" disabled={!brouillon.titre.trim()} onclick={sauver}>Enregistrer</button>
