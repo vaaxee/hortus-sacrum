@@ -95,3 +95,33 @@ export function invocation(eloge: string): Invocation | null {
 
 /** Formule finale des Litanies des saints (SPEC §5). */
 export const TOUS_LES_SAINTS = 'Tous les saints et saintes de Dieu, intercédez pour nous.';
+
+/**
+ * Le nom latin tel qu'il est imprimé dans l'éloge du Martyrologe (cas et accents compris),
+ * ex. « sanctæ Barbaræ Vírginis et Mártyris », « sanctórum Mártyrum Robustiáni et Marci ».
+ * Rien n'est décliné ni transformé : on découpe seulement le passage qui nomme le saint.
+ */
+export function nomLatin(eloge: string | null | undefined): string | null {
+	if (!eloge) return null;
+	const m = /(?:^|[\s,])((?:[Ss]anct|[Bb]e[aá]t)\p{L}*)\s/u.exec(eloge);
+	if (!m) return null;
+	const debut = m.index + m[0].indexOf(m[1]);
+	const suite = eloge.slice(debut).split(/[;:.(]|,\s*(?:qui|quæ|quod|cujus|quorum|quarum|ubi|sub|cum)\b/u)[0];
+	const mots = suite.split(/\s+/);
+	const garde: string[] = [mots[0]];
+	let nomVu = false;
+	const LIENS = /^(et|ac|atque|ejúsque|ejusque|item|de|a|ab)$/u;
+	for (const brut of mots.slice(1)) {
+		const mot = brut.replace(/,$/, '');
+		if (!mot) continue;
+		if (/^\p{Lu}/u.test(mot)) {
+			nomVu = true;
+			garde.push(brut);
+		} else if (!nomVu || LIENS.test(mot)) {
+			garde.push(brut); // nombres avant le nom (« trigínta septem ») et liaisons
+		} else break;
+	}
+	while (garde.length > 1 && (LIENS.test(garde[garde.length - 1].replace(/,$/, '')) || /^\p{Ll}/u.test(garde[garde.length - 1]) && !nomVu)) garde.pop();
+	const nom = garde.join(' ').replace(/,$/, '').trim();
+	return nomVu ? nom : null;
+}

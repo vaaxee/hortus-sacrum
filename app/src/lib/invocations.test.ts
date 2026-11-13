@@ -38,3 +38,14 @@ describe('invocation', () => {
 		for (const e of avec) expect(invocation(e)!.texte).toMatch(/^(Saints?|Saintes?|Bienheureux|Bienheureuses?) \p{Lu}[^.;:()]*, priez pour nous\.$/u);
 	});
 });
+
+import { nomLatin } from './invocations.ts';
+describe('nomLatin', () => {
+	it.each([
+		['Nicomedíæ pássio sanctæ Bárbaræ Vírginis et Mártyris. Hæc, in persecutióne…', 'sanctæ Bárbaræ Vírginis et Mártyris'],
+		['Item Romæ sanctórum Mártyrum Eusébii, Pontiáni, Vincéntii et Peregríni; qui, sub Cómmodo…', 'sanctórum Mártyrum Eusébii, Pontiáni, Vincéntii et Peregríni'],
+		['Cæsaréæ, in Cappadócia, pássio sancti Longíni mílitis, qui Dómini latus…', 'sancti Longíni'],
+		['In monte Senário, Florentínæ diœcésis, beáti Manétii Confessóris, ex septem…', 'beáti Manétii Confessóris']
+	])('%s', (eloge, attendu) => expect(nomLatin(eloge)).toBe(attendu));
+	it('rien sans nom', () => expect(nomLatin('Octáva Nativitátis Dómini.')).toBeNull());
+});

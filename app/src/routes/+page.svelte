@@ -5,7 +5,7 @@
 	import Arche from '#lib/design/Arche.svelte';
 	import Case from '#lib/design/Case.svelte';
 	import Ornement from '#lib/design/Ornement.svelte';
-	import { invocation, TOUS_LES_SAINTS } from '#lib/invocations.ts';
+	import { invocation, nomLatin, TOUS_LES_SAINTS } from '#lib/invocations.ts';
 	import { vivant } from '#lib/live.ts';
 	import { rendre } from '#lib/markup.ts';
 	import { creer, enregistrer } from '#lib/db.ts';
@@ -228,9 +228,11 @@
 			</div>
 			{#each jour.martyrologe as m}
 				{@const inv = invocation(m.texte)}
+				{@const la = nomLatin(m.texte_la)}
 				<details class="eloge">
 					<summary>
 						{#if inv}<span class="invocation">{inv.texte}</span>{:else}<span class="invocation sans">{m.texte.split(/[.,]/)[0]}…</span>{/if}
+						{#if la}<span class="nom-latin" lang="la">{la}</span>{/if}
 					</summary>
 					<p class="texte">{m.texte}</p>
 					{#if m.texte_la}<p class="texte" lang="la">{m.texte_la}</p>{/if}
@@ -302,6 +304,7 @@
 	.invocation::before { content: '✠'; color: var(--hs-rubrique); margin-right: 10px; font-size: 0.8em; }
 	.invocation.sans { color: var(--hs-encre-douce); font-style: italic; }
 	.invocation.sans::before { content: '·'; }
+	.nom-latin { display: block; margin-left: 1.55rem; font-size: 1rem; font-style: italic; color: var(--hs-encre-douce); line-height: 1.35; }
 	.texte { margin: 0 0 12px 1.5rem; font-size: 1.0625rem; text-align: justify; hyphens: auto; }
 	.tous { text-align: center; margin: var(--hs-e5) 0 var(--hs-e2); font-style: italic; }
 	.martyrologe .tete { margin-bottom: var(--hs-e3); }
