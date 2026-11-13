@@ -71,7 +71,7 @@
 		const la = t.latin.split(/\n{2,}/).filter(Boolean);
 		if (la.length) {
 			for (let i = 0; i + la.length <= out.length; i++) {
-				if (out.slice(i, i + la.length).every((b) => b.genre === 'texte')) {
+				if (out.slice(i, i + la.length).every((b) => b.genre === 'texte' || b.genre === 'verset')) {
 					la.forEach((l, k) => (out[i + k].la = l));
 					break;
 				}

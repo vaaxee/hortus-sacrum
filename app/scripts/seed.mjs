@@ -9,6 +9,7 @@ const compact = (de, vers) => writeFileSync(vers, JSON.stringify(JSON.parse(read
 mkdirSync(join(cible, 'prieres'), { recursive: true });
 mkdirSync(join(cible, 'calendar'), { recursive: true });
 compact(join(racine, 'data', 'prieres', 'jardin.json'), join(cible, 'prieres', 'jardin.json'));
+compact(join(racine, 'data', 'prieres', 'sources.json'), join(cible, 'prieres', 'sources.json'));
 for (const f of readdirSync(join(racine, 'data', 'calendar'))) {
 	compact(join(racine, 'data', 'calendar', f), join(cible, 'calendar', f));
 }

@@ -10,6 +10,14 @@
 | ***Le Jardin de l'âme*** | livret validé, 84 p. | 62 pièces extraites mot pour mot vers `data/prieres/jardin.json` | `docs/livret/source/*.tex` |
 | ***Calendrier liturgique 2026-2027*** | calendrier papier validé | référence de contrôle du moteur (364 jours) ; plan des dévotions | `data/source/calendrier_2026-2027.json` |
 
+## Étape 8 — Textes recopiés (relus sur le scan de chaque page)
+
+| Texte | Source | Pages | Accès |
+|---|---|---|---|
+| Prière du matin (avec Pater, Ave, Credo, Confiteor en latin ; actes de foi, d'espérance et de charité) | *Paroissien romain*, Tours, A. Mame et fils, 1890 | 7-12 | archive.org `paroissienromain00tour` |
+| Angélus (français et latin, oraison) | idem | 16-17 | idem |
+| Prière du soir (avec examen de conscience) | idem | 18-23 | idem |
+
 ## Sources consultées pour l'inventaire (textes pas encore recopiés)
 
 | Source | Édition | Ce qu'on y a repéré | Accès |
