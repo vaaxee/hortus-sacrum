@@ -25,6 +25,11 @@ Chaque push sur `main` reconstruit automatiquement https://hortus-sacrum.vercel.
 - Rappels push : Supabase `jlbcpkmysmdehjocqzmb`, `supabase/functions/*`, sans compte (identifiant d'appareil).
 - Charte : grecque (outremer `#0E0C52`, cobalt) et latine (nacre `#faf5ef` / rubis `#7a1f2b` le jour ; bordeaux `#22080f` / rubis vif `#f08593` la nuit) ; motifs fleur de lys, croix pattée, rinceaux.
 
+## Bibliothèque (14 nov.)
+
+- **Sainte Face** (abbé Janvier, *Manuel de l'Archiconfrérie de la Sainte-Face*, 3e éd., Tours 1895, revue d'après les décrets du Saint-Office ; `vendor/sources/face/janvier.pdf`) : Flèche d'or, amende honorable, consécration, promesses, petite couronne (`janvier:*` dans `data/prieres/sources.json`) ; prière de sainte Thérèse à la sainte Face (Thésaurisons n° 235, 500 jours). Restent dans ce manuel : neuvaine de méditations, petit chemin de croix, rosaire de la sainte Face, petit office du saint Nom de Dieu.
+- **S. Alphonse, Visites au Saint-Sacrement et à la sainte Vierge** (Lyon, Perisse, 1862, trad. revue par le P. Baudrant) : recueil `data/recueils/liguori-visites.json` (I:0 introduction et prières de chaque visite, J:1…J:31), construit par `engine/recueils/liguori/visites.py` (couche texte Google, traits d'union perdus retrouvés grâce à la seconde lecture Tesseract, mots collés ou coupés d'après le dictionnaire, corrections relues `visites_corrections.json`, décisions `liguori/relecture/`). Lisible dans Méditations → bibliothèque.
+
 ## Reste à faire
 
 1. **Guéranger** : **fait en partie** (13 nov.) : 202 lectures sur 423 reprises du texte propre de domgueranger.net (Avent → temps pascal) et d'abbe-pivert.com (jours et saints choisis jusqu'au temps après la Pentecôte), appariées à l'OCR par recoupement de suites de mots (`engine/recueils/relecture/gueranger/`). Ces transcriptions omettent les pièces latines. Restent en OCR surtout les t. 8, 9, 12-15 (temps après la Pentecôte, sanctoral de juin à novembre) : à corriger sur scans comme Berlioux, ou à reprendre d'une autre transcription.
