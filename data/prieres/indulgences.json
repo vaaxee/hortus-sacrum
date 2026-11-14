@@ -416,6 +416,182 @@
     }
    ],
    "note": "10 ans, une fois le jour, si on le récite avec d'autres, en public ou en privé (n° 395 b) : non compté ici."
+  },
+  "montfort:petite-couronne": {
+   "ref": "Ench. 1952, n° 293 (℣. Dignare me), 43 (Credo) et 333 (Sub tuum), comptés seuls",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "jours": 300,
+     "texte": "300 jours (℣. Dignare me)"
+    },
+    {
+     "ans": 5,
+     "texte": "5 ans (Credo)"
+    },
+    {
+     "ans": 5,
+     "texte": "5 ans (Sub tuum)"
+    }
+   ],
+   "note": "La petite couronne elle-même n'a pas de concession propre retrouvée dans l'Enchiridion de 1952 ; seules ses parties indulgenciées sont comptées."
+  },
+  "weber:alma-redemptoris": {
+   "ref": "Ench. 1952, n° 323",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "ans": 5,
+     "texte": "5 ans"
+    }
+   ]
+  },
+  "weber:ave-regina-caelorum": {
+   "ref": "Ench. 1952, n° 324 et n° 293 (℣. Dignare me)",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "ans": 5,
+     "texte": "5 ans"
+    },
+    {
+     "jours": 300,
+     "texte": "300 jours (℣. Dignare me)"
+    }
+   ]
+  },
+  "weber:souvenez-vous": {
+   "ref": "Ench. 1952, n° 339",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "ans": 3,
+     "texte": "3 ans"
+    }
+   ]
+  },
+  "weber:stabat-mater": {
+   "ref": "Ench. 1952, n° 378",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "ans": 7,
+     "texte": "7 ans"
+    }
+   ]
+  },
+  "weber:priere-notre-dame-sept-douleurs": {
+   "ref": "Ench. 1952, n° 380 et 381",
+   "frequence": "une fois le jour",
+   "partielles": [
+    {
+     "ans": 5,
+     "texte": "5 ans en septembre, une fois le jour (n° 381)",
+     "quand": {
+      "mois": [
+       9
+      ]
+     }
+    }
+   ],
+   "note": "Hors de septembre, 5 ans une fois le jour si l'on a le propos de prier ainsi neuf jours de suite en l'honneur de Notre-Dame des Douleurs (n° 380). Ces indulgences valent pour l'ensemble des prières à Notre-Dame des Douleurs du jour, non pour chacune."
+  },
+  "weber:priere-saint-bonaventure-mere-des-douleurs": {
+   "ref": "Ench. 1952, n° 380 et 381",
+   "frequence": "une fois le jour",
+   "partielles": [
+    {
+     "ans": 5,
+     "texte": "5 ans en septembre, une fois le jour (n° 381)",
+     "quand": {
+      "mois": [
+       9
+      ]
+     }
+    }
+   ],
+   "note": "Hors de septembre, 5 ans une fois le jour si l'on a le propos de prier ainsi neuf jours de suite en l'honneur de Notre-Dame des Douleurs (n° 380). Ces indulgences valent pour l'ensemble des prières à Notre-Dame des Douleurs du jour, non pour chacune."
+  },
+  "weber:o-quot-undis": {
+   "ref": "Ench. 1952, n° 380 et 381",
+   "frequence": "une fois le jour",
+   "partielles": [
+    {
+     "ans": 5,
+     "texte": "5 ans en septembre, une fois le jour (n° 381)",
+     "quand": {
+      "mois": [
+       9
+      ]
+     }
+    }
+   ],
+   "note": "Hors de septembre, 5 ans une fois le jour si l'on a le propos de prier ainsi neuf jours de suite en l'honneur de Notre-Dame des Douleurs (n° 380). Ces indulgences valent pour l'ensemble des prières à Notre-Dame des Douleurs du jour, non pour chacune."
+  },
+  "weber:priere-saint-louis-de-gonzague": {
+   "ref": "Ench. 1952, n° 343",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "ans": 3,
+     "texte": "3 ans"
+    }
+   ],
+   "note": "L'Enchiridion donne le texte latin (O Domina mea, sancta Maria) ; Weber en donne une traduction libre."
+  },
+  "weber:priere-du-p-zucchi": {
+   "ref": "Ench. 1952, n° 340",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "jours": 500,
+     "texte": "500 jours"
+    }
+   ],
+   "note": "L'Enchiridion fait précéder l'offrande d'un Ave Maria."
+  },
+  "weber:demande-d-une-bonne-mort": {
+   "ref": "Ench. 1952, n° 642",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "jours": 500,
+     "texte": "500 jours"
+    }
+   ]
+  },
+  "weber:priere-tres-saint-coeur-de-marie": {
+   "ref": "Ench. 1952, n° 393",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "jours": 500,
+     "texte": "500 jours"
+    }
+   ],
+   "note": "Weber donne une traduction abrégée de la prière ; il cite l'ancienne concession de Pie VII (60 jours)."
+  },
+  "weber:priere-notre-dame-du-bon-conseil": {
+   "ref": "Ench. 1952, n° 429",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "jours": 500,
+     "texte": "500 jours"
+    }
+   ],
+   "note": "Weber indique l'ancienne concession (100 jours)."
+  },
+  "weber:trois-prieres-perpetuel-secours": {
+   "ref": "Ench. 1952, n° 427",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "jours": 500,
+     "texte": "500 jours"
+    }
+   ],
+   "note": "Pour les trois prières, chacune suivie de l'Ave Maria (trois dans l'Enchiridion, cinq dans Weber). Weber indique l'ancienne concession de Pie IX (100 jours par prière, une fois le jour)."
   }
  },
  "sans_compte": {

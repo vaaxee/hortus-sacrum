@@ -227,19 +227,23 @@
    "elements": [
     {
      "fr": "Saint Matthieu, l’homme",
-     "la": "Facies hominis"
+     "la": "Facies hominis",
+     "lecture": "Mt"
     },
     {
      "fr": "Saint Marc, le lion",
-     "la": "Facies leonis"
+     "la": "Facies leonis",
+     "lecture": "Mc"
     },
     {
      "fr": "Saint Luc, le bœuf",
-     "la": "Facies bovis"
+     "la": "Facies bovis",
+     "lecture": "Lc"
     },
     {
      "fr": "Saint Jean, l’aigle",
-     "la": "Facies aquilæ"
+     "la": "Facies aquilæ",
+     "lecture": "Jn"
     }
    ],
    "source": {
@@ -1247,359 +1251,448 @@
    "elements": [
     {
      "fr": "Saint Matthieu, chapitre 1",
-     "ref": "Mt 1"
+     "ref": "Mt 1",
+     "lecture": "Mt 1"
     },
     {
      "fr": "Saint Matthieu, chapitre 2",
-     "ref": "Mt 2"
+     "ref": "Mt 2",
+     "lecture": "Mt 2"
     },
     {
      "fr": "Saint Matthieu, chapitre 3",
-     "ref": "Mt 3"
+     "ref": "Mt 3",
+     "lecture": "Mt 3"
     },
     {
      "fr": "Saint Matthieu, chapitre 4",
-     "ref": "Mt 4"
+     "ref": "Mt 4",
+     "lecture": "Mt 4"
     },
     {
      "fr": "Saint Matthieu, chapitre 5",
-     "ref": "Mt 5"
+     "ref": "Mt 5",
+     "lecture": "Mt 5"
     },
     {
      "fr": "Saint Matthieu, chapitre 6",
-     "ref": "Mt 6"
+     "ref": "Mt 6",
+     "lecture": "Mt 6"
     },
     {
      "fr": "Saint Matthieu, chapitre 7",
-     "ref": "Mt 7"
+     "ref": "Mt 7",
+     "lecture": "Mt 7"
     },
     {
      "fr": "Saint Matthieu, chapitre 8",
-     "ref": "Mt 8"
+     "ref": "Mt 8",
+     "lecture": "Mt 8"
     },
     {
      "fr": "Saint Matthieu, chapitre 9",
-     "ref": "Mt 9"
+     "ref": "Mt 9",
+     "lecture": "Mt 9"
     },
     {
      "fr": "Saint Matthieu, chapitre 10",
-     "ref": "Mt 10"
+     "ref": "Mt 10",
+     "lecture": "Mt 10"
     },
     {
      "fr": "Saint Matthieu, chapitre 11",
-     "ref": "Mt 11"
+     "ref": "Mt 11",
+     "lecture": "Mt 11"
     },
     {
      "fr": "Saint Matthieu, chapitre 12",
-     "ref": "Mt 12"
+     "ref": "Mt 12",
+     "lecture": "Mt 12"
     },
     {
      "fr": "Saint Matthieu, chapitre 13",
-     "ref": "Mt 13"
+     "ref": "Mt 13",
+     "lecture": "Mt 13"
     },
     {
      "fr": "Saint Matthieu, chapitre 14",
-     "ref": "Mt 14"
+     "ref": "Mt 14",
+     "lecture": "Mt 14"
     },
     {
      "fr": "Saint Matthieu, chapitre 15",
-     "ref": "Mt 15"
+     "ref": "Mt 15",
+     "lecture": "Mt 15"
     },
     {
      "fr": "Saint Matthieu, chapitre 16",
-     "ref": "Mt 16"
+     "ref": "Mt 16",
+     "lecture": "Mt 16"
     },
     {
      "fr": "Saint Matthieu, chapitre 17",
-     "ref": "Mt 17"
+     "ref": "Mt 17",
+     "lecture": "Mt 17"
     },
     {
      "fr": "Saint Matthieu, chapitre 18",
-     "ref": "Mt 18"
+     "ref": "Mt 18",
+     "lecture": "Mt 18"
     },
     {
      "fr": "Saint Matthieu, chapitre 19",
-     "ref": "Mt 19"
+     "ref": "Mt 19",
+     "lecture": "Mt 19"
     },
     {
      "fr": "Saint Matthieu, chapitre 20",
-     "ref": "Mt 20"
+     "ref": "Mt 20",
+     "lecture": "Mt 20"
     },
     {
      "fr": "Saint Matthieu, chapitre 21",
-     "ref": "Mt 21"
+     "ref": "Mt 21",
+     "lecture": "Mt 21"
     },
     {
      "fr": "Saint Matthieu, chapitre 22",
-     "ref": "Mt 22"
+     "ref": "Mt 22",
+     "lecture": "Mt 22"
     },
     {
      "fr": "Saint Matthieu, chapitre 23",
-     "ref": "Mt 23"
+     "ref": "Mt 23",
+     "lecture": "Mt 23"
     },
     {
      "fr": "Saint Matthieu, chapitre 24",
-     "ref": "Mt 24"
+     "ref": "Mt 24",
+     "lecture": "Mt 24"
     },
     {
      "fr": "Saint Matthieu, chapitre 25",
-     "ref": "Mt 25"
+     "ref": "Mt 25",
+     "lecture": "Mt 25"
     },
     {
      "fr": "Saint Matthieu, chapitre 26",
-     "ref": "Mt 26"
+     "ref": "Mt 26",
+     "lecture": "Mt 26"
     },
     {
      "fr": "Saint Matthieu, chapitre 27",
-     "ref": "Mt 27"
+     "ref": "Mt 27",
+     "lecture": "Mt 27"
     },
     {
      "fr": "Saint Matthieu, chapitre 28",
-     "ref": "Mt 28"
+     "ref": "Mt 28",
+     "lecture": "Mt 28"
     },
     {
      "fr": "Saint Marc, chapitre 1",
-     "ref": "Mc 1"
+     "ref": "Mc 1",
+     "lecture": "Mc 1"
     },
     {
      "fr": "Saint Marc, chapitre 2",
-     "ref": "Mc 2"
+     "ref": "Mc 2",
+     "lecture": "Mc 2"
     },
     {
      "fr": "Saint Marc, chapitre 3",
-     "ref": "Mc 3"
+     "ref": "Mc 3",
+     "lecture": "Mc 3"
     },
     {
      "fr": "Saint Marc, chapitre 4",
-     "ref": "Mc 4"
+     "ref": "Mc 4",
+     "lecture": "Mc 4"
     },
     {
      "fr": "Saint Marc, chapitre 5",
-     "ref": "Mc 5"
+     "ref": "Mc 5",
+     "lecture": "Mc 5"
     },
     {
      "fr": "Saint Marc, chapitre 6",
-     "ref": "Mc 6"
+     "ref": "Mc 6",
+     "lecture": "Mc 6"
     },
     {
      "fr": "Saint Marc, chapitre 7",
-     "ref": "Mc 7"
+     "ref": "Mc 7",
+     "lecture": "Mc 7"
     },
     {
      "fr": "Saint Marc, chapitre 8",
-     "ref": "Mc 8"
+     "ref": "Mc 8",
+     "lecture": "Mc 8"
     },
     {
      "fr": "Saint Marc, chapitre 9",
-     "ref": "Mc 9"
+     "ref": "Mc 9",
+     "lecture": "Mc 9"
     },
     {
      "fr": "Saint Marc, chapitre 10",
-     "ref": "Mc 10"
+     "ref": "Mc 10",
+     "lecture": "Mc 10"
     },
     {
      "fr": "Saint Marc, chapitre 11",
-     "ref": "Mc 11"
+     "ref": "Mc 11",
+     "lecture": "Mc 11"
     },
     {
      "fr": "Saint Marc, chapitre 12",
-     "ref": "Mc 12"
+     "ref": "Mc 12",
+     "lecture": "Mc 12"
     },
     {
      "fr": "Saint Marc, chapitre 13",
-     "ref": "Mc 13"
+     "ref": "Mc 13",
+     "lecture": "Mc 13"
     },
     {
      "fr": "Saint Marc, chapitre 14",
-     "ref": "Mc 14"
+     "ref": "Mc 14",
+     "lecture": "Mc 14"
     },
     {
      "fr": "Saint Marc, chapitre 15",
-     "ref": "Mc 15"
+     "ref": "Mc 15",
+     "lecture": "Mc 15"
     },
     {
      "fr": "Saint Marc, chapitre 16",
-     "ref": "Mc 16"
+     "ref": "Mc 16",
+     "lecture": "Mc 16"
     },
     {
      "fr": "Saint Luc, chapitre 1",
-     "ref": "Lc 1"
+     "ref": "Lc 1",
+     "lecture": "Lc 1"
     },
     {
      "fr": "Saint Luc, chapitre 2",
-     "ref": "Lc 2"
+     "ref": "Lc 2",
+     "lecture": "Lc 2"
     },
     {
      "fr": "Saint Luc, chapitre 3",
-     "ref": "Lc 3"
+     "ref": "Lc 3",
+     "lecture": "Lc 3"
     },
     {
      "fr": "Saint Luc, chapitre 4",
-     "ref": "Lc 4"
+     "ref": "Lc 4",
+     "lecture": "Lc 4"
     },
     {
      "fr": "Saint Luc, chapitre 5",
-     "ref": "Lc 5"
+     "ref": "Lc 5",
+     "lecture": "Lc 5"
     },
     {
      "fr": "Saint Luc, chapitre 6",
-     "ref": "Lc 6"
+     "ref": "Lc 6",
+     "lecture": "Lc 6"
     },
     {
      "fr": "Saint Luc, chapitre 7",
-     "ref": "Lc 7"
+     "ref": "Lc 7",
+     "lecture": "Lc 7"
     },
     {
      "fr": "Saint Luc, chapitre 8",
-     "ref": "Lc 8"
+     "ref": "Lc 8",
+     "lecture": "Lc 8"
     },
     {
      "fr": "Saint Luc, chapitre 9",
-     "ref": "Lc 9"
+     "ref": "Lc 9",
+     "lecture": "Lc 9"
     },
     {
      "fr": "Saint Luc, chapitre 10",
-     "ref": "Lc 10"
+     "ref": "Lc 10",
+     "lecture": "Lc 10"
     },
     {
      "fr": "Saint Luc, chapitre 11",
-     "ref": "Lc 11"
+     "ref": "Lc 11",
+     "lecture": "Lc 11"
     },
     {
      "fr": "Saint Luc, chapitre 12",
-     "ref": "Lc 12"
+     "ref": "Lc 12",
+     "lecture": "Lc 12"
     },
     {
      "fr": "Saint Luc, chapitre 13",
-     "ref": "Lc 13"
+     "ref": "Lc 13",
+     "lecture": "Lc 13"
     },
     {
      "fr": "Saint Luc, chapitre 14",
-     "ref": "Lc 14"
+     "ref": "Lc 14",
+     "lecture": "Lc 14"
     },
     {
      "fr": "Saint Luc, chapitre 15",
-     "ref": "Lc 15"
+     "ref": "Lc 15",
+     "lecture": "Lc 15"
     },
     {
      "fr": "Saint Luc, chapitre 16",
-     "ref": "Lc 16"
+     "ref": "Lc 16",
+     "lecture": "Lc 16"
     },
     {
      "fr": "Saint Luc, chapitre 17",
-     "ref": "Lc 17"
+     "ref": "Lc 17",
+     "lecture": "Lc 17"
     },
     {
      "fr": "Saint Luc, chapitre 18",
-     "ref": "Lc 18"
+     "ref": "Lc 18",
+     "lecture": "Lc 18"
     },
     {
      "fr": "Saint Luc, chapitre 19",
-     "ref": "Lc 19"
+     "ref": "Lc 19",
+     "lecture": "Lc 19"
     },
     {
      "fr": "Saint Luc, chapitre 20",
-     "ref": "Lc 20"
+     "ref": "Lc 20",
+     "lecture": "Lc 20"
     },
     {
      "fr": "Saint Luc, chapitre 21",
-     "ref": "Lc 21"
+     "ref": "Lc 21",
+     "lecture": "Lc 21"
     },
     {
      "fr": "Saint Luc, chapitre 22",
-     "ref": "Lc 22"
+     "ref": "Lc 22",
+     "lecture": "Lc 22"
     },
     {
      "fr": "Saint Luc, chapitre 23",
-     "ref": "Lc 23"
+     "ref": "Lc 23",
+     "lecture": "Lc 23"
     },
     {
      "fr": "Saint Luc, chapitre 24",
-     "ref": "Lc 24"
+     "ref": "Lc 24",
+     "lecture": "Lc 24"
     },
     {
      "fr": "Saint Jean, chapitre 1",
-     "ref": "Jn 1"
+     "ref": "Jn 1",
+     "lecture": "Jn 1"
     },
     {
      "fr": "Saint Jean, chapitre 2",
-     "ref": "Jn 2"
+     "ref": "Jn 2",
+     "lecture": "Jn 2"
     },
     {
      "fr": "Saint Jean, chapitre 3",
-     "ref": "Jn 3"
+     "ref": "Jn 3",
+     "lecture": "Jn 3"
     },
     {
      "fr": "Saint Jean, chapitre 4",
-     "ref": "Jn 4"
+     "ref": "Jn 4",
+     "lecture": "Jn 4"
     },
     {
      "fr": "Saint Jean, chapitre 5",
-     "ref": "Jn 5"
+     "ref": "Jn 5",
+     "lecture": "Jn 5"
     },
     {
      "fr": "Saint Jean, chapitre 6",
-     "ref": "Jn 6"
+     "ref": "Jn 6",
+     "lecture": "Jn 6"
     },
     {
      "fr": "Saint Jean, chapitre 7",
-     "ref": "Jn 7"
+     "ref": "Jn 7",
+     "lecture": "Jn 7"
     },
     {
      "fr": "Saint Jean, chapitre 8",
-     "ref": "Jn 8"
+     "ref": "Jn 8",
+     "lecture": "Jn 8"
     },
     {
      "fr": "Saint Jean, chapitre 9",
-     "ref": "Jn 9"
+     "ref": "Jn 9",
+     "lecture": "Jn 9"
     },
     {
      "fr": "Saint Jean, chapitre 10",
-     "ref": "Jn 10"
+     "ref": "Jn 10",
+     "lecture": "Jn 10"
     },
     {
      "fr": "Saint Jean, chapitre 11",
-     "ref": "Jn 11"
+     "ref": "Jn 11",
+     "lecture": "Jn 11"
     },
     {
      "fr": "Saint Jean, chapitre 12",
-     "ref": "Jn 12"
+     "ref": "Jn 12",
+     "lecture": "Jn 12"
     },
     {
      "fr": "Saint Jean, chapitre 13",
-     "ref": "Jn 13"
+     "ref": "Jn 13",
+     "lecture": "Jn 13"
     },
     {
      "fr": "Saint Jean, chapitre 14",
-     "ref": "Jn 14"
+     "ref": "Jn 14",
+     "lecture": "Jn 14"
     },
     {
      "fr": "Saint Jean, chapitre 15",
-     "ref": "Jn 15"
+     "ref": "Jn 15",
+     "lecture": "Jn 15"
     },
     {
      "fr": "Saint Jean, chapitre 16",
-     "ref": "Jn 16"
+     "ref": "Jn 16",
+     "lecture": "Jn 16"
     },
     {
      "fr": "Saint Jean, chapitre 17",
-     "ref": "Jn 17"
+     "ref": "Jn 17",
+     "lecture": "Jn 17"
     },
     {
      "fr": "Saint Jean, chapitre 18",
-     "ref": "Jn 18"
+     "ref": "Jn 18",
+     "lecture": "Jn 18"
     },
     {
      "fr": "Saint Jean, chapitre 19",
-     "ref": "Jn 19"
+     "ref": "Jn 19",
+     "lecture": "Jn 19"
     },
     {
      "fr": "Saint Jean, chapitre 20",
-     "ref": "Jn 20"
+     "ref": "Jn 20",
+     "lecture": "Jn 20"
     },
     {
      "fr": "Saint Jean, chapitre 21",
-     "ref": "Jn 21"
+     "ref": "Jn 21",
+     "lecture": "Jn 21"
     }
    ],
    "source": {
