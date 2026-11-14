@@ -77,7 +77,7 @@
 		const genre = (p: string): Bloc['genre'] =>
 			p.startsWith('[r]') && p.endsWith('[/r]') ? 'rubrique'
 			: /^(℣\.|℟\.)/.test(p) ? 'verset'
-			: p.startsWith('## ') ? 'titre'
+			: p.startsWith('## ') || p.startsWith('### ') ? 'titre'
 			: p.startsWith('[') ? 'traduction' : 'texte';
 		const out: Bloc[] = t.corps.split(/\n{2,}/).filter(Boolean).map((p) => ({ genre: genre(p), fr: p }));
 		const la = t.latin.split(/\n{2,}/).filter(Boolean);

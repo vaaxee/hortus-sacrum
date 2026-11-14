@@ -624,6 +624,18 @@
     }
    ],
    "note": "Pour les douze invocations « O Marie, conçue sans péché » (300 jours chacune). Le « Souvenez-vous » et « Jésus, Marie, Joseph » ont leurs propres indulgences."
+  },
+  "weber:neuvaine-immaculee-conception": {
+   "ref": "Ench. 1952, n° 361",
+   "frequence": "une fois le jour",
+   "partielles": [
+    {
+     "ans": 5,
+     "texte": "5 ans, une fois le jour"
+    }
+   ],
+   "intention": "En l’honneur de la Vierge Immaculée, avec le propos de prier ainsi neuf jours de suite avant sa fête.",
+   "note": "Faite publiquement à l'église : 7 ans chaque jour. En décembre, toute pratique en l'honneur de l'Immaculée vaut aussi 5 ans une fois le jour (n° 364)."
   }
  },
  "sans_compte": {
