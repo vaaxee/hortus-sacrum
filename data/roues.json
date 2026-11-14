@@ -8,7 +8,8 @@
    "elements": [
     {
      "fr": "Un seul Dieu",
-     "la": "Dominus unus est"
+     "la": "Dominus unus est",
+     "lecture": "Dt 6, 4-5"
     }
    ],
    "source": {
@@ -67,15 +68,18 @@
    "elements": [
     {
      "fr": "Le Père",
-     "la": "Pater"
+     "la": "Pater",
+     "lecture": "Mt 6, 9"
     },
     {
      "fr": "Le Fils",
-     "la": "Verbum"
+     "la": "Verbum",
+     "lecture": "Jn 1, 14"
     },
     {
      "fr": "Le Saint-Esprit",
-     "la": "Spiritus Sanctus"
+     "la": "Spiritus Sanctus",
+     "lecture": "Jn 14, 26"
     }
    ],
    "source": {
@@ -98,15 +102,18 @@
    "elements": [
     {
      "fr": "L’or",
-     "la": "Aurum"
+     "la": "Aurum",
+     "lecture": "Mt 2, 11"
     },
     {
      "fr": "L’encens",
-     "la": "Thus"
+     "la": "Thus",
+     "lecture": "Mt 2, 11"
     },
     {
      "fr": "La myrrhe",
-     "la": "Myrrha"
+     "la": "Myrrha",
+     "lecture": "Mt 2, 11"
     }
    ],
    "source": {
@@ -129,15 +136,18 @@
    "elements": [
     {
      "fr": "La prière",
-     "la": "Oratio"
+     "la": "Oratio",
+     "lecture": "Mt 6, 5-6"
     },
     {
      "fr": "Le jeûne",
-     "la": "Jejunium"
+     "la": "Jejunium",
+     "lecture": "Mt 6, 16-18"
     },
     {
      "fr": "L’aumône",
-     "la": "Eleemosyna"
+     "la": "Eleemosyna",
+     "lecture": "Mt 6, 2-4"
     }
    ],
    "source": {
@@ -160,15 +170,18 @@
    "elements": [
     {
      "fr": "La concupiscence de la chair",
-     "la": "Concupiscentia carnis"
+     "la": "Concupiscentia carnis",
+     "lecture": "1 Jn 2, 15-17"
     },
     {
      "fr": "La concupiscence des yeux",
-     "la": "Concupiscentia oculorum"
+     "la": "Concupiscentia oculorum",
+     "lecture": "1 Jn 2, 15-17"
     },
     {
      "fr": "L’orgueil de la vie",
-     "la": "Superbia vitæ"
+     "la": "Superbia vitæ",
+     "lecture": "1 Jn 2, 15-17"
     }
    ],
    "source": {
@@ -191,19 +204,23 @@
    "elements": [
     {
      "fr": "La mort",
-     "la": "Mors"
+     "la": "Mors",
+     "lecture": "Si 41, 1-2 | 41, 1-4"
     },
     {
      "fr": "Le jugement",
-     "la": "Judicium"
+     "la": "Judicium",
+     "lecture": "He 9, 27"
     },
     {
      "fr": "L’enfer",
-     "la": "Infernus"
+     "la": "Infernus",
+     "lecture": "Mt 25, 41-46"
     },
     {
      "fr": "Le paradis",
-     "la": "Paradisus"
+     "la": "Paradisus",
+     "lecture": "1 Co 2, 9"
     }
    ],
    "source": {
@@ -266,19 +283,23 @@
    "elements": [
     {
      "fr": "La prudence",
-     "la": "Prudentia"
+     "la": "Prudentia",
+     "lecture": "Sg 8, 7"
     },
     {
      "fr": "La justice",
-     "la": "Justitia"
+     "la": "Justitia",
+     "lecture": "Sg 8, 7"
     },
     {
      "fr": "La force",
-     "la": "Virtus"
+     "la": "Virtus",
+     "lecture": "Sg 8, 7"
     },
     {
      "fr": "La tempérance",
-     "la": "Sobrietas"
+     "la": "Sobrietas",
+     "lecture": "Sg 8, 7"
     }
    ],
    "source": {
@@ -438,25 +459,32 @@
    "titre": "Les sept sacrements",
    "elements": [
     {
-     "fr": "Le baptême"
+     "fr": "Le baptême",
+     "lecture": "Mt 28, 18-20"
     },
     {
-     "fr": "La confirmation"
+     "fr": "La confirmation",
+     "lecture": "Ac 8, 14-17"
     },
     {
-     "fr": "L’eucharistie"
+     "fr": "L’eucharistie",
+     "lecture": "Mt 26, 26-28"
     },
     {
-     "fr": "La pénitence"
+     "fr": "La pénitence",
+     "lecture": "Jn 20, 21-23"
     },
     {
-     "fr": "L’extrême-onction"
+     "fr": "L’extrême-onction",
+     "lecture": "Jc 5, 14-15"
     },
     {
-     "fr": "L’ordre"
+     "fr": "L’ordre",
+     "lecture": "Lc 22, 19"
     },
     {
-     "fr": "Le mariage"
+     "fr": "Le mariage",
+     "lecture": "Ep 5, 31-32"
     }
    ],
    "source": {
@@ -478,25 +506,32 @@
    "titre": "Les sept péchés capitaux et leurs vertus contraires",
    "elements": [
     {
-     "fr": "L’orgueil, vaincu par l’humilité"
+     "fr": "L’orgueil, vaincu par l’humilité",
+     "lecture": "Jc 4, 6"
     },
     {
-     "fr": "L’avarice, vaincue par la libéralité"
+     "fr": "L’avarice, vaincue par la libéralité",
+     "lecture": "1 Tm 6, 9-10"
     },
     {
-     "fr": "La luxure, vaincue par la chasteté"
+     "fr": "La luxure, vaincue par la chasteté",
+     "lecture": "1 Co 6, 18-20"
     },
     {
-     "fr": "La colère, vaincue par la patience"
+     "fr": "La colère, vaincue par la patience",
+     "lecture": "Jc 1, 19-20"
     },
     {
-     "fr": "La gourmandise, vaincue par l’abstinence"
+     "fr": "La gourmandise, vaincue par l’abstinence",
+     "lecture": "Lc 21, 34"
     },
     {
-     "fr": "L’envie, vaincue par la charité fraternelle"
+     "fr": "L’envie, vaincue par la charité fraternelle",
+     "lecture": "Sg 2, 24"
     },
     {
-     "fr": "La paresse, vaincue par la diligence et la ferveur au service de Dieu"
+     "fr": "La paresse, vaincue par la diligence et la ferveur au service de Dieu",
+     "lecture": "Pr 6, 6-11"
     }
    ],
    "source": {
@@ -514,25 +549,32 @@
    "titre": "Les sept œuvres de miséricorde corporelle",
    "elements": [
     {
-     "fr": "Donner à manger à ceux qui ont faim"
+     "fr": "Donner à manger à ceux qui ont faim",
+     "lecture": "Mt 25, 34-35"
     },
     {
-     "fr": "Donner à boire à ceux qui ont soif"
+     "fr": "Donner à boire à ceux qui ont soif",
+     "lecture": "Mt 25, 35"
     },
     {
-     "fr": "Vêtir ceux qui sont nus"
+     "fr": "Vêtir ceux qui sont nus",
+     "lecture": "Mt 25, 36"
     },
     {
-     "fr": "Loger les pèlerins"
+     "fr": "Loger les pèlerins",
+     "lecture": "Mt 25, 35"
     },
     {
-     "fr": "Visiter les malades"
+     "fr": "Visiter les malades",
+     "lecture": "Mt 25, 36"
     },
     {
-     "fr": "Visiter les prisonniers"
+     "fr": "Visiter les prisonniers",
+     "lecture": "Mt 25, 36"
     },
     {
-     "fr": "Ensevelir les morts"
+     "fr": "Ensevelir les morts",
+     "lecture": "Tb 12, 12"
     }
    ],
    "source": {
@@ -550,25 +592,32 @@
    "titre": "Les sept œuvres de miséricorde spirituelle",
    "elements": [
     {
-     "fr": "Conseiller ceux qui doutent"
+     "fr": "Conseiller ceux qui doutent",
+     "lecture": "Jc 5, 19-20"
     },
     {
-     "fr": "Enseigner les ignorants"
+     "fr": "Enseigner les ignorants",
+     "lecture": "Dn 12, 3"
     },
     {
-     "fr": "Reprendre les pécheurs"
+     "fr": "Reprendre les pécheurs",
+     "lecture": "Mt 18, 15"
     },
     {
-     "fr": "Consoler les affligés"
+     "fr": "Consoler les affligés",
+     "lecture": "2 Co 1, 3-4"
     },
     {
-     "fr": "Pardonner les offenses"
+     "fr": "Pardonner les offenses",
+     "lecture": "Mt 6, 14-15"
     },
     {
-     "fr": "Supporter patiemment les personnes importunes"
+     "fr": "Supporter patiemment les personnes importunes",
+     "lecture": "Col 3, 12-13"
     },
     {
-     "fr": "Prier Dieu pour les vivants et pour les morts"
+     "fr": "Prier Dieu pour les vivants et pour les morts",
+     "lecture": "2 M 12, 46"
     }
    ],
    "source": {
@@ -587,31 +636,38 @@
    "elements": [
     {
      "fr": "Que votre nom soit sanctifié",
-     "la": "Sanctificetur nomen tuum"
+     "la": "Sanctificetur nomen tuum",
+     "lecture": "Mt 6, 9"
     },
     {
      "fr": "Que votre règne arrive",
-     "la": "Adveniat regnum tuum"
+     "la": "Adveniat regnum tuum",
+     "lecture": "Mt 6, 10"
     },
     {
      "fr": "Que votre volonté soit faite",
-     "la": "Fiat voluntas tua"
+     "la": "Fiat voluntas tua",
+     "lecture": "Mt 6, 10"
     },
     {
      "fr": "Donnez-nous notre pain",
-     "la": "Panem nostrum da nobis hodie"
+     "la": "Panem nostrum da nobis hodie",
+     "lecture": "Mt 6, 11"
     },
     {
      "fr": "Pardonnez-nous nos offenses",
-     "la": "Dimitte nobis debita nostra"
+     "la": "Dimitte nobis debita nostra",
+     "lecture": "Mt 6, 12"
     },
     {
      "fr": "Ne nous laissez pas succomber à la tentation",
-     "la": "Ne nos inducas in tentationem"
+     "la": "Ne nos inducas in tentationem",
+     "lecture": "Mt 6, 13"
     },
     {
      "fr": "Délivrez-nous du mal",
-     "la": "Libera nos a malo"
+     "la": "Libera nos a malo",
+     "lecture": "Mt 6, 13"
     }
    ],
    "source": {
@@ -635,37 +691,44 @@
     {
      "fr": "Père, pardonnez-leur",
      "la": "Jesus autem dicebat: Pater, dimitte illis: non enim sciunt quid faciunt. Dividentes vero vestimenta ejus, miserunt sortes.",
-     "ref": "Lc 23, 34"
+     "ref": "Lc 23, 34",
+     "lecture": "Lc 23, 34"
     },
     {
      "fr": "Aujourd’hui vous serez avec moi en paradis",
      "la": "Et dixit illi Jesus: Amen dico tibi: hodie mecum eris in paradiso.",
-     "ref": "Lc 23, 43"
+     "ref": "Lc 23, 43",
+     "lecture": "Lc 23, 43"
     },
     {
      "fr": "Femme, voilà votre fils",
      "la": "Cum vidisset ergo Jesus matrem, et discipulum stantem, quem diligebat, dicit matri suæ: Mulier, ecce filius tuus. Deinde dicit discipulo: Ecce mater tua. Et ex illa hora accepit eam discipulus in sua.",
-     "ref": "Jn 19, 26-27"
+     "ref": "Jn 19, 26-27",
+     "lecture": "Jn 19, 26-27"
     },
     {
      "fr": "Mon Dieu, pourquoi m’avez-vous abandonné ?",
      "la": "Et circa horam nonam clamavit Jesus voce magna, dicens: Eli, Eli, lamma sabacthani? hoc est: Deus meus, Deus meus, ut quid dereliquisti me?",
-     "ref": "Mt 27, 46"
+     "ref": "Mt 27, 46",
+     "lecture": "Mt 27, 46"
     },
     {
      "fr": "J’ai soif",
      "la": "Postea sciens Jesus quia omnia consummata sunt, ut consummaretur Scriptura, dixit: Sitio.",
-     "ref": "Jn 19, 28"
+     "ref": "Jn 19, 28",
+     "lecture": "Jn 19, 28"
     },
     {
      "fr": "Tout est consommé",
      "la": "Cum ergo accepisset Jesus acetum, dixit: Consummatum est. Et inclinato capite tradidit spiritum.",
-     "ref": "Jn 19, 30"
+     "ref": "Jn 19, 30",
+     "lecture": "Jn 19, 30"
     },
     {
      "fr": "Mon Père, je remets mon esprit entre vos mains",
      "la": "Et clamans voce magna Jesus ait: Pater, in manus tuas commendo spiritum meum. Et hæc dicens, expiravit.",
-     "ref": "Lc 23, 46"
+     "ref": "Lc 23, 46",
+     "lecture": "Lc 23, 46"
     }
    ],
    "source": {
@@ -685,38 +748,45 @@
     {
      "fr": "Psaume 6",
      "la": "Domine, ne in furore tuo arguas me, neque in ira tua corripias me.",
-     "ref": "Ps 6"
+     "ref": "Ps 6",
+     "lecture": "Ps 6"
     },
     {
      "fr": "Psaume 31",
      "la": "Beati quorum remissæ sunt iniquitates, et quorum tecta sunt peccata.",
-     "ref": "Ps 31"
+     "ref": "Ps 31",
+     "lecture": "Ps 32 | 31"
     },
     {
      "fr": "Psaume 37",
      "la": "Domine, ne in furore tuo arguas me, neque in ira tua corripias me",
-     "ref": "Ps 37"
+     "ref": "Ps 37",
+     "lecture": "Ps 38 | 37"
     },
     {
      "fr": "Psaume 50",
      "la": "Miserere mei, Deus, secundum magnam misericordiam tuam; et secundum multitudinem miserationum tuarum, dele iniquitatem meam.",
-     "ref": "Ps 50"
+     "ref": "Ps 50",
+     "lecture": "Ps 51 | 50"
     },
     {
      "fr": "Psaume 101",
      "la": "Domine, exaudi orationem meam, et clamor meus ad te veniat.",
-     "ref": "Ps 101"
+     "ref": "Ps 101",
+     "lecture": "Ps 102 | 101"
     },
     {
      "fr": "Psaume 129",
      "la": "De profundis clamavi ad te, Domine;",
      "ref": "Ps 129",
-     "texte": "paroissien:de-profundis"
+     "texte": "paroissien:de-profundis",
+     "lecture": "Ps 130 | 129"
     },
     {
      "fr": "Psaume 142",
      "la": "Domine, exaudi orationem meam; auribus percipe obsecrationem meam in veritate tua; exaudi me in tua justitia.",
-     "ref": "Ps 142"
+     "ref": "Ps 142",
+     "lecture": "Ps 143 | 142"
     }
    ],
    "source": {
@@ -778,35 +848,43 @@
    "elements": [
     {
      "fr": "Les pauvres d’esprit",
-     "la": "Beati pauperes spiritu"
+     "la": "Beati pauperes spiritu",
+     "lecture": "Mt 5, 3"
     },
     {
      "fr": "Les doux",
-     "la": "Beati mites"
+     "la": "Beati mites",
+     "lecture": "Mt 5, 4"
     },
     {
      "fr": "Ceux qui pleurent",
-     "la": "Beati qui lugent"
+     "la": "Beati qui lugent",
+     "lecture": "Mt 5, 5"
     },
     {
      "fr": "Ceux qui ont faim et soif de la justice",
-     "la": "Beati qui esuriunt et sitiunt justitiam"
+     "la": "Beati qui esuriunt et sitiunt justitiam",
+     "lecture": "Mt 5, 6"
     },
     {
      "fr": "Les miséricordieux",
-     "la": "Beati misericordes"
+     "la": "Beati misericordes",
+     "lecture": "Mt 5, 7"
     },
     {
      "fr": "Les cœurs purs",
-     "la": "Beati mundo corde"
+     "la": "Beati mundo corde",
+     "lecture": "Mt 5, 8"
     },
     {
      "fr": "Les pacifiques",
-     "la": "Beati pacifici"
+     "la": "Beati pacifici",
+     "lecture": "Mt 5, 9"
     },
     {
      "fr": "Ceux qui souffrent persécution pour la justice",
-     "la": "Beati qui persecutionem patiuntur propter justitiam"
+     "la": "Beati qui persecutionem patiuntur propter justitiam",
+     "lecture": "Mt 5, 10"
     }
    ],
    "source": {
@@ -829,39 +907,48 @@
    "elements": [
     {
      "fr": "Les Anges",
-     "la": "Angeli"
+     "la": "Angeli",
+     "lecture": "Ps 91, 11-12 | 90, 11-12"
     },
     {
      "fr": "Les Archanges",
-     "la": "Archangeli"
+     "la": "Archangeli",
+     "lecture": "1 Th 4, 16"
     },
     {
      "fr": "Les Vertus",
-     "la": "Virtutes"
+     "la": "Virtutes",
+     "lecture": "Ep 1, 20-21"
     },
     {
      "fr": "Les Puissances",
-     "la": "Potestates"
+     "la": "Potestates",
+     "lecture": "Ep 1, 20-21"
     },
     {
      "fr": "Les Principautés",
-     "la": "Principatus"
+     "la": "Principatus",
+     "lecture": "Col 1, 16"
     },
     {
      "fr": "Les Dominations",
-     "la": "Dominationes"
+     "la": "Dominationes",
+     "lecture": "Col 1, 16"
     },
     {
      "fr": "Les Trônes",
-     "la": "Throni"
+     "la": "Throni",
+     "lecture": "Col 1, 16"
     },
     {
      "fr": "Les Chérubins",
-     "la": "Cherubim"
+     "la": "Cherubim",
+     "lecture": "Gn 3, 24"
     },
     {
      "fr": "Les Séraphins",
-     "la": "Seraphim"
+     "la": "Seraphim",
+     "lecture": "Is 6, 1-3"
     }
    ],
    "source": {
@@ -880,43 +967,53 @@
    "elements": [
     {
      "fr": "Un seul Dieu tu adoreras",
-     "la": "Non habebis deos alienos coram me"
+     "la": "Non habebis deos alienos coram me",
+     "lecture": "Ex 20, 2-3"
     },
     {
      "fr": "Le nom de Dieu tu ne prendras pas en vain",
-     "la": "Non assumes nomen Domini Dei tui in vanum"
+     "la": "Non assumes nomen Domini Dei tui in vanum",
+     "lecture": "Ex 20, 7"
     },
     {
      "fr": "Le jour du Seigneur tu sanctifieras",
-     "la": "Memento ut diem sabbati sanctifices"
+     "la": "Memento ut diem sabbati sanctifices",
+     "lecture": "Ex 20, 8"
     },
     {
      "fr": "Tes père et mère tu honoreras",
-     "la": "Honora patrem tuum et matrem tuam"
+     "la": "Honora patrem tuum et matrem tuam",
+     "lecture": "Ex 20, 12"
     },
     {
      "fr": "Tu ne tueras point",
-     "la": "Non occides"
+     "la": "Non occides",
+     "lecture": "Ex 20, 13"
     },
     {
      "fr": "Tu ne commettras point d’impureté",
-     "la": "Non mœchaberis"
+     "la": "Non mœchaberis",
+     "lecture": "Ex 20, 14"
     },
     {
      "fr": "Tu ne voleras point",
-     "la": "Non furtum facies"
+     "la": "Non furtum facies",
+     "lecture": "Ex 20, 15"
     },
     {
      "fr": "Tu ne porteras point de faux témoignage",
-     "la": "Non loqueris contra proximum tuum falsum testimonium"
+     "la": "Non loqueris contra proximum tuum falsum testimonium",
+     "lecture": "Ex 20, 16"
     },
     {
      "fr": "Tu ne désireras point la femme de ton prochain",
-     "la": "Non desiderabis uxorem ejus"
+     "la": "Non desiderabis uxorem ejus",
+     "lecture": "Ex 20, 17"
     },
     {
      "fr": "Tu ne désireras point le bien d’autrui",
-     "la": "Non concupisces domum proximi tui"
+     "la": "Non concupisces domum proximi tui",
+     "lecture": "Ex 20, 17"
     }
    ],
    "source": {
@@ -1011,51 +1108,63 @@
    "elements": [
     {
      "fr": "La charité",
-     "la": "Caritas"
+     "la": "Caritas",
+     "lecture": "Ga 5, 22-23"
     },
     {
      "fr": "La joie",
-     "la": "Gaudium"
+     "la": "Gaudium",
+     "lecture": "Ga 5, 22-23"
     },
     {
      "fr": "La paix",
-     "la": "Pax"
+     "la": "Pax",
+     "lecture": "Ga 5, 22-23"
     },
     {
      "fr": "La patience",
-     "la": "Patientia"
+     "la": "Patientia",
+     "lecture": "Ga 5, 22-23"
     },
     {
      "fr": "La bénignité",
-     "la": "Benignitas"
+     "la": "Benignitas",
+     "lecture": "Ga 5, 22-23"
     },
     {
      "fr": "La bonté",
-     "la": "Bonitas"
+     "la": "Bonitas",
+     "lecture": "Ga 5, 22-23"
     },
     {
      "fr": "La longanimité",
-     "la": "Longanimitas"
+     "la": "Longanimitas",
+     "lecture": "Ga 5, 22-23"
     },
     {
      "fr": "La mansuétude",
-     "la": "Mansuetudo"
+     "la": "Mansuetudo",
+     "lecture": "Ga 5, 22-23"
     },
     {
      "fr": "La foi",
-     "la": "Fides"
+     "la": "Fides",
+     "lecture": "Ga 5, 22-23"
     },
     {
      "fr": "La modestie",
-     "la": "Modestia"
+     "la": "Modestia",
+     "lecture": "Ga 5, 22-23"
     },
     {
      "fr": "La continence",
-     "la": "Continentia"
+     "la": "Continentia",
+     "lecture": "Ga 5, 22-23"
     },
     {
      "fr": "La chasteté",
-     "la": "Castitas"
+     "la": "Castitas",
+     "lecture": "Ga 5, 22-23"
     }
    ],
    "source": {
@@ -1078,51 +1187,63 @@
    "elements": [
     {
      "fr": "Saint Pierre",
-     "la": "Simon, qui dicitur Petrus"
+     "la": "Simon, qui dicitur Petrus",
+     "lecture": "Mt 16, 16-19"
     },
     {
      "fr": "Saint André",
-     "la": "Andreas"
+     "la": "Andreas",
+     "lecture": "Jn 1, 40-42"
     },
     {
      "fr": "Saint Jacques le Majeur",
-     "la": "Jacobus Zebedæi"
+     "la": "Jacobus Zebedæi",
+     "lecture": "Ac 12, 1-2"
     },
     {
      "fr": "Saint Jean",
-     "la": "Joannes"
+     "la": "Joannes",
+     "lecture": "Jn 13, 23"
     },
     {
      "fr": "Saint Philippe",
-     "la": "Philippus"
+     "la": "Philippus",
+     "lecture": "Jn 14, 8-9"
     },
     {
      "fr": "Saint Barthélemy",
-     "la": "Bartholomæus"
+     "la": "Bartholomæus",
+     "lecture": "Jn 1, 45-49"
     },
     {
      "fr": "Saint Thomas",
-     "la": "Thomas"
+     "la": "Thomas",
+     "lecture": "Jn 20, 26-29"
     },
     {
      "fr": "Saint Matthieu",
-     "la": "Matthæus"
+     "la": "Matthæus",
+     "lecture": "Mt 9, 9"
     },
     {
      "fr": "Saint Jacques le Mineur",
-     "la": "Jacobus Alphæi"
+     "la": "Jacobus Alphæi",
+     "lecture": "Jc 1, 1"
     },
     {
      "fr": "Saint Jude Thaddée",
-     "la": "Thaddæus"
+     "la": "Thaddæus",
+     "lecture": "Jude 1, 1"
     },
     {
      "fr": "Saint Simon",
-     "la": "Simon Chananæus"
+     "la": "Simon Chananæus",
+     "lecture": "Lc 6, 13-16"
     },
     {
      "fr": "Saint Matthias",
-     "la": "Matthias"
+     "la": "Matthias",
+     "lecture": "Ac 1, 24-26"
     }
    ],
    "source": {

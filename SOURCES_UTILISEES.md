@@ -66,10 +66,10 @@ Inventaire des manuels de piété de bibliotheque-catholique.com : `docs/notes_s
 
 | Texte | Source | Accès |
 |---|---|---|
-| Les quatre Évangiles, français | *La Sainte Bible*, trad. A. Crampon, Desclée, 1923 ; transcription Wikisource relue sur le fac-similé (pages « Bible Crampon 1923/Matthieu », « /Marc », « /Luc », « /Jean »). Seul le texte des versets est gardé (notes, sommaires et intertitres de Crampon écartés). | https://fr.wikisource.org/wiki/Bible_Crampon_1923 ; extraction : `engine/ecriture/evangiles.py` → `data/ecriture/evangiles.json` |
-| Les quatre Évangiles, latin | Vulgate clémentine (scrollmapper/bible_databases, VulgClementine) | https://github.com/scrollmapper/bible_databases |
+| La Bible (73 livres), français | *La Sainte Bible*, trad. A. Crampon, Desclée, 1923 ; transcription Wikisource relue sur le fac-similé (pages « Bible Crampon 1923/<livre> »). Seul le texte des versets est gardé (notes, sommaires et intertitres de Crampon écartés). | https://fr.wikisource.org/wiki/Bible_Crampon_1923 ; extraction : `engine/ecriture/bible.py` → `data/ecriture/<livre>.json` |
+| La Bible, latin | Vulgate clémentine (scrollmapper/bible_databases, VulgClementine) | https://github.com/scrollmapper/bible_databases |
 
-Numérotation : chaque texte garde la sienne (Crampon suit le grec en Jn 6, 52-71 et Mt 17, 14-27).
+Numérotation : chaque texte garde la sienne (Crampon suit l'hébreu et le grec : psaumes, Siracide, Jn 6, 52-71, Mt 17, 14-27).
 
 ## Sources consultées pour l'inventaire (textes pas encore recopiés)
 
