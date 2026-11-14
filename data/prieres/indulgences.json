@@ -469,6 +469,16 @@
      "texte": "3 ans"
     }
    ]
+  },
+  "weber:stabat-mater": {
+   "ref": "Ench. 1952, n° 378",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "ans": 7,
+     "texte": "7 ans"
+    }
+   ]
   }
  },
  "sans_compte": {
