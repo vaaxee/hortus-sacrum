@@ -8,7 +8,7 @@
 	import Ornement from '#lib/design/Ornement.svelte';
 	import { vivant } from '#lib/live.ts';
 	import { sansAccents } from '#lib/markup.ts';
-	import type { ElementListe, Moment, Rang, Texte } from '#lib/types.ts';
+	import type { ElementListe, Moment, Pratique, Rang, Texte } from '#lib/types.ts';
 	import { rangElement, RANGS } from '#lib/rangs.ts';
 
 	const liste = vivant(() => db.liste.orderBy('ordre').toArray(), [] as ElementListe[]);
@@ -19,6 +19,7 @@
 
 	const actifs = $derived($liste.filter((e) => !e.supprimeLe));
 	const corbeille = $derived($liste.filter((e) => e.supprimeLe));
+	const roues = vivant(async () => (await db.pratiques.toArray()).filter((p) => p.type === 'roue' && !p.supprimeLe).sort((a, b) => a.titre.localeCompare(b.titre)), [] as Pratique[]);
 	const titres = $derived(Object.fromEntries($textes.map((t) => [t.id, t.titre])));
 
 	// ---- édition d'un élément ----
@@ -171,7 +172,7 @@
 							</button>
 							<button class="resume brut" aria-expanded={ouvert === e.id} onclick={() => ouvrir(e)}>
 								<span class="titre">{e.titre}</span>
-								<span class="detail">{resume(e)}{e.textes.length ? `, ${e.textes.length} prière${e.textes.length > 1 ? 's' : ''}${e.alterner && e.textes.length > 1 ? ' en alternance' : ''}` : ''}{e.actif ? '' : ', masqué'}</span>
+								<span class="detail">{resume(e)}{e.textes.length ? `, ${e.textes.length} prière${e.textes.length > 1 ? 's' : ''}${e.alterner && e.textes.length > 1 ? ' en alternance' : ''}{e.roue ? ', par la roue' : ''}` : ''}{e.actif ? '' : ', masqué'}</span>
 							</button>
 							<span class="fleches">
 								<button class="brut" aria-label="Monter" disabled={i === 0} onclick={() => deplacer(e, -1)}><Icone nom="retour" taille={16} /></button>
@@ -220,7 +221,14 @@
 									<button disabled={!nouvelleHeure} onclick={ajouterHeure}>Ajouter l’heure</button>
 								</div>
 
-								<p class="aide">Prières ouvertes par cet élément</p>
+								<label><span>Choix de la prière</span>
+									<select value={brouillon.roue ?? ''} onchange={(ev) => (brouillon!.roue = ev.currentTarget.value || undefined)}>
+										<option value="">Fixe : les prières ci-dessous</option>
+										{#each $roues as r (r.id)}<option value={r.id}>Par la roue : {r.titre} ({r.elements?.length ?? 0})</option>{/each}
+									</select>
+								</label>
+								{#if brouillon.roue}<p class="aide">Chaque jour, la prière liée à l’élément du jour de cette roue ; un élément sans prière s’affiche comme thème. Les roues se règlent sur la page <a href="/roue">La roue</a>.</p>{/if}
+								<p class="aide">Prières ouvertes par cet élément{brouillon.roue ? ' (quand la roue n’en donne pas)' : ''}</p>
 								{#each brouillon.textes as id}
 									<div class="liee">
 										<span>{titres[id] ?? 'Prière introuvable'}</span>

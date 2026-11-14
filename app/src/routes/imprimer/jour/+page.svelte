@@ -23,7 +23,7 @@
 		const dt = date, dd = d;
 		jourDu(dt).then((j) => (jour = j));
 		db.liste.orderBy('ordre').toArray().then((l) => (liste = l.filter((e) => e.actif && !e.supprimeLe && e.jours[dd.getDay()])));
-		db.pratiques.toArray().then((p) => (pratiques = p.filter((x) => x.active && !x.supprimeLe)));
+		db.pratiques.toArray().then((p) => (pratiques = p.filter((x) => !x.supprimeLe && (x.active || x.type === 'roue'))));
 		db.fetes.where('[mois+jour]').equals([dd.getMonth() + 1, dd.getDate()]).toArray().then((f) => (fetes = f.filter((x) => !x.supprimeLe)));
 		db.textes.toArray().then((t) => (titres = Object.fromEntries(t.map((x) => [x.id, x.titre]))));
 	});
@@ -32,8 +32,8 @@
 	/** Le titre de la prière répète-t-il celui de la ligne ? (« Triple Couronne… » / « La Triple Couronne… ») */
 	const proche = (a: string, b: string) => { const x = sansAccent(a), y = sansAccent(b).slice(0, 14); return x.includes(y) || sansAccent(b).includes(x.slice(0, 14)); };
 	const generiques = ['Dévotion à jours comptés', 'Neuvaine ou trentain', 'La roue du jour'];
-	const enCours = $derived(pratiques.filter((p) => p.type !== 'roue').map((p) => ({ p, o: occurrenceDu(p, date) })).filter((x) => x.o));
-	const roue = $derived(pratiques.filter((p) => p.type === 'roue' && (p.elements?.length ?? 0) > 1)
+	const enCours = $derived(pratiques.filter((p) => p.type !== 'roue' && p.active).map((p) => ({ p, o: occurrenceDu(p, date) })).filter((x) => x.o));
+	const roue = $derived(pratiques.filter((p) => p.type === 'roue' && p.active && !p.liste && (p.elements?.length ?? 0) > 1)
 		.sort((a, b) => (a.elements?.length ?? 0) - (b.elements?.length ?? 0))
 		.map((p) => ({ titre: p.titre, e: elementDu(p, date) })));
 </script>
@@ -66,7 +66,7 @@
 				<h2>{nom}</h2>
 				<ul>
 					{#each el as e (e.id)}
-						{@const tx = textesDuJour(e, date, jour)}
+						{@const tx = textesDuJour(e, date, jour, pratiques.filter((x) => x.type === 'roue'))}
 						<li><span class="case"></span>{e.titre}{#if tx.length === 1 && titres[tx[0]] && !proche(titres[tx[0]], e.titre)} <em>— {titres[tx[0]]}</em>{/if}{#if e.rappels.length > 1} <span class="fois">({e.rappels.join(', ')})</span>{/if}</li>
 					{/each}
 					{#if m === 'propre'}

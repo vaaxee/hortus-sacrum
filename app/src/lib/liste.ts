@@ -1,4 +1,5 @@
-import type { ElementListe } from './types.ts';
+import { elementDu } from './roues-calcul.ts';
+import type { ElementListe, Pratique } from './types.ts';
 
 /** Rang de la semaine dans le mois (1 à 5) : jours 1-7 → 1, 8-14 → 2, etc. `date` au format AAAA-MM-JJ. */
 export function semaineDuMois(date: string): number {
@@ -10,7 +11,13 @@ export function semaineDuMois(date: string): number {
  * Élément « en alternance » : une seule prière, à tour de rôle selon la semaine du mois
  * (1re semaine → 1re prière, 2e → 2e…, et l'on recommence quand la liste est épuisée).
  */
-export function textesDuJour(e: Pick<ElementListe, 'textes' | 'alterner'>, date: string, jour?: { temps: string; office: string }): string[] {
+export function textesDuJour(e: Pick<ElementListe, 'textes' | 'alterner' | 'roue'>, date: string, jour?: { temps: string; office: string }, roues: Pratique[] = []): string[] {
+	// ligne « choisie par la roue » : la prière liée à l'élément du jour de la roue (rien si l'élément n'est qu'un thème)
+	const r = e.roue ? roues.find((x) => x.id === e.roue && !x.supprimeLe) : undefined;
+	if (r) {
+		const el = elementDu(r, date);
+		return remplacementsDuTemps(el?.texte ? [el.texte] : e.textes, jour);
+	}
 	const choisis = !e.alterner || e.textes.length < 2 ? e.textes : [e.textes[(semaineDuMois(date) - 1) % e.textes.length]];
 	return remplacementsDuTemps(choisis, jour);
 }

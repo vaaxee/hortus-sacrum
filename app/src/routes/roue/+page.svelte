@@ -20,8 +20,14 @@
 
 	const roues = vivant(async () => (await db.pratiques.toArray()).filter((p) => p.type === 'roue' && !p.supprimeLe), [] as Pratique[]);
 	const titres = vivant(async () => Object.fromEntries((await db.textes.toArray()).map((t: Texte) => [t.id, t.titre])), {} as Record<string, string>);
+	const tous = vivant(async () => (await db.textes.orderBy('ordre').toArray()).filter((t) => !t.supprimeLe), [] as Texte[]);
+	async function lier(r: Pratique, k: number, texte: string) {
+		if (!r.elements) return;
+		const elements = r.elements.map((e, i) => (i === k ? { ...e, texte: texte || undefined } : e));
+		await enregistrer('pratiques', { ...r, elements, textes: [...new Set(elements.map((e) => e.texte).filter(Boolean))] as string[] });
+	}
 	const n = (r: Pratique) => r.elements?.length ?? 0;
-	const actives = $derived($roues.filter((r) => r.active && n(r) > 0).sort((a, b) => n(a) - n(b) || a.titre.localeCompare(b.titre)));
+	const actives = $derived($roues.filter((r) => r.active && !r.liste && n(r) > 0).sort((a, b) => n(a) - n(b) || a.titre.localeCompare(b.titre)));
 	/** La rosace : roues actives de 2 à 15 éléments ; les longues (lecture suivie) sont données à part. */
 	const dansLaRosace = $derived(actives.filter((r) => n(r) > 1 && n(r) <= 15));
 	const suivies = $derived(actives.filter((r) => n(r) > 15));
@@ -147,6 +153,10 @@
 						<ol class="elements">
 							{#each r.elements ?? [] as e, k}
 								<li><input type="text" value={e.fr} aria-label="Élément {k + 1}" onblur={(ev) => renommer(r, k, ev.currentTarget.value)} />
+									<select aria-label="Prière liée à l’élément {k + 1}" value={e.texte ?? ''} onchange={(ev) => lier(r, k, ev.currentTarget.value)}>
+										<option value="">— aucune prière (thème seulement) —</option>
+										{#each $tous as t (t.id)}<option value={t.id}>{t.titre}</option>{/each}
+									</select>
 									{#if e.la}<span class="latin" lang="la">{e.la.length > 90 ? e.la.slice(0, 90) + '…' : e.la}</span>{/if}</li>
 							{/each}
 						</ol>
@@ -196,5 +206,6 @@
 	.elements { margin: 0 0 var(--hs-e3); padding-left: 1.6rem; }
 	.elements li { margin: 4px 0; }
 	.elements .latin { display: block; font-size: 0.875rem; }
+	.elements select { margin-top: 4px; font-size: 0.9375rem; }
 	.cul { margin: var(--hs-e7) auto 0; max-width: 16rem; }
 </style>

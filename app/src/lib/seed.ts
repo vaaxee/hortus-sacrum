@@ -168,6 +168,7 @@ export async function amorcer(fetchFn: typeof fetch = fetch): Promise<void> {
 	await amorcerDevotionsSemaine();
 	await completerLitanies2();
 	await amorcerRoues(fetchFn);
+	await rouesDesLitanies();
 	await livrerElements();
 }
 
@@ -332,6 +333,41 @@ async function completerLitanies2(): Promise<void> {
 		await db.liste.put(x);
 	}
 	await db.meta.put({ cle: 'litanies-2', valeur: true });
+}
+
+const JOURS_NOMS = ['dimanche', 'lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi'];
+/**
+ * Une seule fois (meta « roues-litanies ») : les litanies du jour ne tournent plus selon la semaine du mois mais sur une
+ * roue par jour, qui avance d'un cran chaque semaine depuis le premier dimanche de l'Avent. Les roues sont hors de la
+ * rosace (champ « liste ») et restent modifiables ; seules les lignes jamais modifiées sont reliées.
+ */
+async function rouesDesLitanies(): Promise<void> {
+	if (await db.meta.get('roues-litanies')) return;
+	for (const id of new Set(LITANIES_PAR_JOUR.flat())) if (!(await db.textes.get(id))) return;
+	const intact = (e?: ElementListe) => !!e && !e.supprimeLe && (e.modifieLe === DEPART || e.original === contenu(e));
+	for (let k = 0; k < 7; k++) {
+		const ids = LITANIES_PAR_JOUR[k];
+		if (ids.length < 2) continue;
+		const id = `roue:litanies-${k}`;
+		if (!(await db.pratiques.get(id))) {
+			const elements = [];
+			for (const t of ids) elements.push({ fr: (await db.textes.get(t))?.titre ?? t, texte: t });
+			const r = {
+				id, origine: 'officielle', titre: `Litanies du ${JOURS_NOMS[k]}`, type: 'roue', regle: { genre: 'roue', unite: 'semaine' },
+				textes: ids, promesses: '', indulgence: '', source: { ...SOURCE_VIDE }, notes: '', active: true, liste: true, elements,
+				creeLe: DEPART, modifieLe: DEPART
+			} as Pratique;
+			r.original = contenu(r);
+			await db.pratiques.put(r);
+		}
+		const e = await db.liste.get(k === 0 ? 'liste:24' : `liste:24-${k}`);
+		if (intact(e) && e!.jours[k]) {
+			const x = { ...e!, roue: id, alterner: false } as ElementListe;
+			x.original = contenu(x);
+			await db.liste.put(x);
+		}
+	}
+	await db.meta.put({ cle: 'roues-litanies', valeur: true });
 }
 
 /** Éléments ajoutés à la liste de départ après sa création ; chacun n'est livré qu'une fois (meta « elements »). */

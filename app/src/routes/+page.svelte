@@ -17,6 +17,7 @@
 	import type { Coche, ElementListe, Fait, FetePerso, Moment, NoteJour, Pratique, Rang } from '#lib/types.ts';
 	import Icone from '#lib/design/Icone.svelte';
 	import { elementDu } from '#lib/roues.ts';
+	import { chargerIndulgences, enClair, enJours, fois, somme, valeurDuJour, type Indulgences, type Valeur } from '#lib/indulgences.ts';
 
 	const date = $derived(page.url.searchParams.get('date') ?? iso(new Date()));
 	let jour: Jour | undefined = $state();
@@ -133,17 +134,51 @@
 		if (e.titre.startsWith('Office du jour')) return jour.office;
 		if (e.titre.startsWith('Dévotion du mois')) return MOIS_DEVOTION[d.getMonth() + 1].nom;
 		if (e.titre === 'La roue du jour') return roueDuJour;
+		if (e.roue) { const r = roues.find((x) => x.id === e.roue); const el = r && elementDu(r, date); if (el && !el.texte) return el.fr; }
 		return '';
 	}
+	const roues = $derived($pratiques.filter((p) => p.type === 'roue'));
 	// roue symbolique : l'élément du jour de chaque roue active, du plus petit nombre au plus grand
 	const roueDuJour = $derived(
 		$pratiques
-			.filter((p) => p.type === 'roue' && p.active && !p.supprimeLe && (p.elements?.length ?? 0) > 1)
+			.filter((p) => p.type === 'roue' && p.active && !p.liste && !p.supprimeLe && (p.elements?.length ?? 0) > 1)
 			.sort((a, b) => (a.elements?.length ?? 0) - (b.elements?.length ?? 0))
 			.map((p) => elementDu(p, date)?.fr)
 			.filter(Boolean)
 			.join(' · ')
 	);
+	// indulgences partielles : ce que valent aujourd'hui les prières cochées, et ce que vaudrait la liste entière
+	let ind = $state<Indulgences | null>(null);
+	chargerIndulgences().then((x) => (ind = x));
+	function valeurDe(ids: string[], n: number): Valeur {
+		const vs: Valeur[] = [];
+		for (const id of ids) {
+			const f = ind?.fiches[id];
+			if (f) vs.push(fois(valeurDuJour(f, date, jour?.tempora), f.frequence === 'chaque fois' ? n : Math.min(n, 1)));
+		}
+		return somme(vs);
+	}
+	const bilan = $derived.by(() => {
+		const gagnees: Valeur[] = [], possibles: Valeur[] = [];
+		if (!ind || !jour) return { gagnees: somme([]), possibles: somme([]) };
+		for (const e of duJour) {
+			const pp = pratiquesPour(e);
+			if (pp) {
+				for (const { p } of pp) {
+					possibles.push(valeurDe(p.textes, 1));
+					if (faite(p.id)) gagnees.push(valeurDe(p.textes, 1));
+				}
+				continue;
+			}
+			const tx = textesDuJour(e, date, jour, roues);
+			const total = Math.max(1, e.rappels.length);
+			possibles.push(valeurDe(tx, total));
+			gagnees.push(valeurDe(tx, Math.min(coches[e.id] ?? 0, total)));
+		}
+		return { gagnees: somme(gagnees), possibles: somme(possibles) };
+	});
+	// promesses attachées aux pratiques du jour (seulement celles que les pratiques portent : Brigitte n'en a pas)
+	const promesses = $derived(pratiquesDuJour.filter((x) => x.p.promesses?.trim()));
 	const ROMAINS = ['', 'i', 'ii', 'iii', 'iv', 'v', 'vi', 'vii', 'viii', 'ix'];
 </script>
 
@@ -199,6 +234,19 @@
 				<span class="trait"><span style="width: {duJour.length ? (100 * faits) / duJour.length : 0}%"></span></span>
 				<span class="chiffres-alignes">{faits} / {duJour.length}</span>
 			</div>
+			{#if enJours(bilan.possibles) > 0}
+				<div class="avancement interface indulg" title="Indulgences partielles des prières cochées (Enchiridion 1952, à défaut Beringer 1925)">
+					<span class="etiquette">Indulgences</span>
+					<span class="trait"><span style="width: {(100 * enJours(bilan.gagnees)) / enJours(bilan.possibles)}%"></span></span>
+					<span class="chiffres-alignes">{enClair(bilan.gagnees)}</span>
+				</div>
+				<p class="aide total">sur {enClair(bilan.possibles)} pour la liste entière ; indulgences partielles seulement</p>
+			{/if}
+			{#if promesses.length}
+				<details class="promesses"><summary class="aide">Promesses en cours ({promesses.length})</summary>
+					{#each promesses as { p, o } (p.id)}<p class="aide"><strong>{p.titre}</strong>{#if o.total} ({o.rang}/{o.total}){/if} : {p.promesses}</p>{/each}
+				</details>
+			{/if}
 			<p class="regler"><a href="/liste">Régler la liste</a></p>
 			<div class="seuils interface" role="group" aria-label="Jour chargé : quelles dévotions afficher">
 				{#each SEUILS as [r, latin, fr]}
@@ -219,7 +267,7 @@
 							{@const fait = coches[e.id] ?? 0}
 							{@const sous = precision(e)}
 							{@const pp = pratiquesPour(e)}
-							{@const tx = textesDuJour(e, date, jour)}
+							{@const tx = textesDuJour(e, date, jour, roues)}
 							{#if pp}
 								{#each pp as { p, o } (p.id)}
 									<li class:fini={faite(p.id)}>
@@ -344,6 +392,10 @@
 	.trait { flex: 1; height: 1px; background: var(--hs-filet); position: relative; }
 	.trait span { position: absolute; inset: -1px auto -1px 0; background: var(--hs-vert); transition: width var(--hs-duree-lente) var(--hs-courbe); }
 
+	.indulg { margin-top: var(--hs-e2); }
+	.indulg .trait span { background: var(--hs-or); }
+	.total { margin: 2px 0 0; text-align: right; }
+	.promesses summary { cursor: pointer; text-align: right; }
 	.perso { margin: var(--hs-e3) 0 0; font-style: italic; }
 	.note-jour { margin-top: var(--hs-e6); border-block: var(--hs-cheveu) solid var(--hs-filet); }
 	.note-jour summary { padding: 12px 0; color: var(--hs-encre-douce); }
