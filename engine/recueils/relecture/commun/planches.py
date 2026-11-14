@@ -4,6 +4,12 @@ import json, os, sys
 from PIL import Image, ImageDraw, ImageFont
 D, S = sys.argv[1], sys.argv[2]; per = int(sys.argv[3]) if len(sys.argv) > 3 else 16
 F = json.load(open(f'{D}/flags{S}.json'))
+# pages recopiées à la main (manuel<s>/<n>.txt) et table des matières : pas de relecture mot à mot
+_man = {int(x[:-4]) for x in os.listdir(f'{D}/manuel{S}')} if os.path.isdir(f'{D}/manuel{S}') else set()
+_P = json.load(open(f'{D}/pages{S}.json'))
+_b = lambda p: ' '.join(w for l in p for w, _ in l)
+_dt = next((i for i in range(len(_P) - 1, len(_P) // 2, -1) if 'TABLE' in _b(_P[i]) and 'MATI' in _b(_P[i]).upper()), len(_P))
+F = [f for f in F if f['page'] not in _man and f['page'] < _dt]
 font = ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf', 17)
 os.makedirs(f'{D}/planches{S}', exist_ok=True)
 W = 1100

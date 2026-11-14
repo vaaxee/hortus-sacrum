@@ -14,11 +14,24 @@ if os.path.exists(f'{D}/dec{S}.txt'):
 def choix(f):
     v = dec.get(f['id'])
     return f['b'] if v == 'B' else f['a'] if v in (None, 'A') else v
+# pages de table des matières (fin du tome) : lecture d'archive.org telle quelle, le découpage s'y appuie
+brut = lambda p: ' '.join(w for l in p for w, _ in l)
+debut_table = next((i for i in range(len(pages) - 1, len(pages) // 2, -1) if 'TABLE' in brut(pages[i]) and 'MATI' in brut(pages[i]).upper()), len(pages))
 txt = []
 for i, p in enumerate(pages):
+    man = f'{D}/manuel{S}/{i}.txt'
+    if os.path.exists(man):
+        txt.append(open(man, encoding='utf-8').read().rstrip('\n')); continue
+    if i >= debut_table:
+        page = []
+        for li, l in enumerate(p):
+            page.append('  '.join(w.strip() for w, _ in l if w.strip()))
+            if li in ends[i]: page.append('')
+        txt.append('\n'.join(page)); continue
     lignes = {}
     for w, li, fid in merged.get(str(i), []):
         if fid is not None: w = choix(flags[fid])
+        w = w.strip()
         if w: lignes.setdefault(li, []).append(w)
     n = max([len(p)] + [k + 1 for k in lignes])
     page = []
@@ -26,5 +39,10 @@ for i, p in enumerate(pages):
         page.append('  '.join(lignes.get(li, [])))
         if li in ends[i]: page.append('')
     txt.append('\n'.join(page))
-open(OUT, 'w', encoding='utf-8').write('\n\n'.join(txt))
+t = '\n\n'.join(txt)
+# corrections ponctuelles de la table (lecture d'archive.org), dans <dossier>/table<s>.txt : « avant<TAB>après »
+if os.path.exists(f'{D}/table{S}.txt'):
+    for l in open(f'{D}/table{S}.txt', encoding='utf-8'):
+        if '\t' in l: a, b = l.rstrip('\n').split('\t', 1); t = t.replace(a, b)
+open(OUT, 'w', encoding='utf-8').write(t)
 print(OUT, sum(len(t) for t in txt))
