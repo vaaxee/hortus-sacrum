@@ -592,6 +592,27 @@
     }
    ],
    "note": "Pour les trois prières, chacune suivie de l'Ave Maria (trois dans l'Enchiridion, cinq dans Weber). Weber indique l'ancienne concession de Pie IX (100 jours par prière, une fois le jour)."
+  },
+  "paroissien:te-deum": {
+   "ref": "Ench. 1952, n° 684 a)",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "ans": 5,
+     "texte": "5 ans"
+    }
+   ],
+   "intention": "En action de grâces pour les bienfaits reçus."
+  },
+  "thesaurisons:action-de-graces": {
+   "ref": "Ench. 1952, n° 683 (Thésaurisons, n° 500)",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "jours": 300,
+     "texte": "300 jours"
+    }
+   ]
   }
  },
  "sans_compte": {
@@ -604,6 +625,7 @@
   "beringer:don-force": "L'indulgence est attachée à la prière entière, non à l'invocation seule.",
   "beringer:don-science": "L'indulgence est attachée à la prière entière, non à l'invocation seule.",
   "beringer:don-piete": "L'indulgence est attachée à la prière entière, non à l'invocation seule.",
-  "beringer:don-crainte": "L'indulgence est attachée à la prière entière, non à l'invocation seule."
+  "beringer:don-crainte": "L'indulgence est attachée à la prière entière, non à l'invocation seule.",
+  "thesaurisons:au-christ-roi": "Indulgence plénière une fois le jour (S. P. A., 21 févr. 1923) : les plénières ne sont pas comptées."
  }
 }
