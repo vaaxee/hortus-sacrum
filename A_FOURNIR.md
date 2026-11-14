@@ -18,7 +18,8 @@ Les points réglés sont gardés pour l'historique. Dernière mise à jour : 13 
 | 7 | Propre de France | **Abandonné.** On reste sur le calendrier romain universel. L'utilisateur ajoutera lui-même ses fêtes dans l'app. | — |
 
 ## Restent ouverts
-- **Mois du Précieux Sang (juillet)** : Boylesve 1882 choisi, mais le seul scan trouvé (Canadiana `cihm_46390`) est illisible ; chercher une autre édition ancienne lisible (Gallica, Google Livres).
+- ~~Mois du Précieux Sang (juillet)~~ : **fait** (14 nov.), Boylesve 1882, autre scan lisible (archive.org `cihm_41458`).
+- **Litanies des défunts (lundi)** : toujours introuvables (Fervent chrétien 1868, Livre d'or 1925, Berlioux 1888, plusieurs mois des âmes canadiens consultés). Les litanies du Saint-Sacrement (jeudi), de l'Ange gardien (mardi) et de la sainte Trinité (dimanche) sont **faites** (Fervent chrétien, 1868).
 - **Formule de renouvellement de la consécration au cordon de saint Joseph** (demandée le 13 nov., chaque mercredi) : **introuvable** dans Beringer 1925, l'*Enchiridion* 1952, la *Raccolta* 1949 et le *Livre d'or*. Seule existe la bénédiction du cordon, en latin, réservée au prêtre (Beringer, t. II, n° 475). En attendant, le mercredi porte la prière n° 480 « A saint Joseph pour obtenir la vertu de pureté » (Pie IX, 1877), qui répond à la fin du cordon. Piste : un manuel ancien de l'archiconfrérie de Saint-Joseph (Rome, Saint-Roch) ou de Vérone.
 - **Dévotion du lundi et du jeudi** : compléments à prendre dans le *Livre d'or des âmes du purgatoire* (1925) et dans Beringer 1925. Chaque pièce sera soumise une par une avant ajout.
 - **Indult français des fêtes de précepte** : le moteur l'applique (abstinence maintenue le vendredi 1er janvier 2027 en France). La référence exacte de l'indult reste à citer.

@@ -43,7 +43,16 @@
 | Lefebvre, S. J., *Mois de Marie : contemplations sur trente mystères* (mai) | 1888 | 31 jours (le 28 très court : coupure de l'OCR) | archive.org `moisdemarieconte00lefe` |
 | Lefebvre, S. J., *Mois du Sacré-Cœur* (juin) | 1869 | 29 jours (le 23 manque, le 21 est tronqué) | archive.org `moisdusacrecoeur00lefe` |
 | Berlioux, *Mois des âmes du purgatoire, méditations pratiques pour chaque jour* (novembre) | 1888 | 30 jours, **relus sur les scans** (14 nov. 2026) : double OCR comparée mot à mot, 454 désaccords tranchés sur l'image, p. 164 recopiée ; méthode dans `engine/recueils/relecture/` | archive.org `moisdesamesdupur00berl` |
-| Boylesve, S. J., *Le mois du Précieux Sang* (juillet) | 1882 | **non retenu** : seul scan disponible (microfiche Canadiana `cihm_46390`) à l'OCR inutilisable | — |
+| Boylesve, S. J., *Le mois du Précieux Sang de N.-S. Jésus-Christ* (juillet) | Saint-Hyacinthe, 1882 (imprimatur du 30 mai 1882) | 31 jours, **recopiés page par page sur le scan** (contrôle par une seconde lecture OCR) ; `data/recueils/transcriptions/boylesve-precieux-sang.txt` | archive.org `cihm_41458` |
+
+## Textes ajoutés le 14 novembre 2026 (relus sur le scan)
+
+| Texte | Source | Pages | Accès |
+|---|---|---|---|
+| Litanies du très-saint Sacrement, avec l'oraison | Spitz, *Le Fervent chrétien*, 4e éd., Einsiedeln, Benziger, 1868 (approbations des évêques de Bâle et de Strasbourg) | 169-172 | archive.org `leferventchretie00spit` |
+| Litanies de la très-sainte Trinité, avec la prière | idem | 430-432 | idem |
+| Litanies de l'Ange gardien, avec la prière | idem | 579-580 | idem |
+| Roues symboliques : listes et versets | Vulgate clémentine ; *Catéchisme de saint Pie X* ; Bréviaire romain (S. Grégoire, 29 sept., neuf chœurs) ; Paroissien 1890 ; *Jardin de l'âme* | — | `engine/roues/construire.py` |
 
 ## Sources consultées pour l'inventaire (textes pas encore recopiés)
 
