@@ -182,7 +182,8 @@ export async function amorcer(fetchFn: typeof fetch = fetch): Promise<void> {
 const TEXTES_DES_DEVOTIONS: Record<string, string> = {
 	'Neuvaine à l’Immaculée Conception': 'weber:neuvaine-immaculee-conception',
 	'Neuvaine au Sacré-Cœur': 'liguori:neuvaine-sacre-coeur',
-	'Neuvaine de la Nativité de Notre-Dame': 'neuvaines-1886:nativite'
+	'Neuvaine de la Nativité de Notre-Dame': 'neuvaines-1886:nativite',
+	'Neuvaine de l’Assomption': 'neuvaines-1886:assomption'
 };
 
 /** Relie chaque texte une seule fois (meta « devotions-textes ») aux dévotions de ce titre, vides et jamais modifiées. */
