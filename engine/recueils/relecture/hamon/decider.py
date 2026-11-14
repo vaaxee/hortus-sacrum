@@ -34,13 +34,30 @@ def cle(w):
 
 
 ROMAIN = re.compile(r"^\(?[IVXLCivxlc]+[,.;)]*$")
+GU = bool(os.environ.get('GUERANGER'))  # OCR d'archive.org : fautes répétées, ligatures fi/fl lues ti/tl/H
+SEUIL = 12 if GU else 4
+def dico(w):
+    return all(x in sp or x in LATIN for x in re.split(r"['\-]", cle(w)) if x)
+LIG = [('ti', 'fi'), ('tî', 'fi'), ('tl', 'fl'), ('H', 'fl'), ('fî', 'fi'), ('tf', 'ff'), ('ff', 'ff')]
+def ligature(a):
+    """Mot connu obtenu en rétablissant une ligature mal lue (signitie → signifie), s'il est unique."""
+    out = set()
+    for x, y in LIG:
+        i = a.find(x)
+        while i >= 0:
+            c = a[:i] + y + a[i + len(x):]
+            if dico(c): out.add(c)
+            i = a.find(x, i + 1)
+    return out.pop() if len(out) == 1 else None
+
+
 def connu(w):
     if ROMAIN.match(w.strip()) or re.fullmatch(r"\d+[ºo°]?[,.;:]?", w.strip()): return True
     w = re.sub(r"[\d*†‘’\u00b9\u00b2\u00b3]+([.,;:!?»]*)$", r"\1", w)  # appel de note collé au mot
     k = cle(w)
     if not k or k.isdigit(): return True
     parts = [x for x in re.split(r"['\-]", k) if x]
-    return all(x in sp or x in LATIN or voc[x] >= 4 for x in parts)
+    return all(x in sp or x in LATIN or voc[x] >= SEUIL for x in parts)
 
 
 def lettres(w): return re.sub(r"[^A-Za-zÀ-ÿœŒæÆ'’\-]", '', w)
@@ -96,9 +113,13 @@ for i, p in enumerate(pages):
             # différence d'accents seulement : graphie du livre (Etienne, MEDITATION, piéges, prît) gardée,
             # sauf signe étranger au français (ė, ð, ā…)
             accents = nu(cle(a)) == nu(cle(b)) and not re.search(r'[^a-zàâäçéèêëîïôöùûüÿœæ\'\-]', cle(a))
-            courant = voc[cle(b)] >= 3 and voc[cle(a)] <= 1
+            courant = (voc[cle(b)] >= 3 and voc[cle(a)] <= 1) if not GU else (dico(b) and not dico(a))
+            lig = ligature(a) if GU else None
+            if lig:
+                corr.append({'page': i, 'avant': A[ia - 1][0] if ia else '', 'a': a, 'b': lig, 'apres': A[ia + 1][0] if ia + 1 < len(A) else '', 'auto': True, 'box': B[ib][1]})
+                continue
             auto = (connu(b) and ba == bb and re.fullmatch(r"[A-Za-zÀ-ÿœŒæÆ'’\-]+", coeur) is not None
-                    and len(cle(b)) >= 3 and len(cle(a)) == len(cle(b)) and dist(cle(a), cle(b)) <= 2
+                    and len(cle(b)) >= 3 and (GU or len(cle(a)) == len(cle(b))) and dist(cle(a), cle(b)) <= 2
                     and not ROMAIN.match(b.strip()) and not accents and courant)
             if accents and not auto: continue
             corr.append({'page': i, 'avant': avant, 'a': a, 'b': b, 'apres': apres, 'auto': bool(auto), 'box': B[ib][1]})
