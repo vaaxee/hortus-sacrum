@@ -34,7 +34,6 @@ export async function amorcerRoues(fetchFn: typeof fetch = fetch): Promise<void>
 	const doc = (await rep.json()) as { roues: RoueSource[] };
 	const livrees = new Set(((await db.meta.get('roues'))?.valeur as string[] | undefined) ?? []);
 	const nouvelles = doc.roues.filter((r) => !livrees.has(r.id));
-	if (!nouvelles.length) return;
 	for (const r of nouvelles) {
 		livrees.add(r.id);
 		const id = `roue:${r.id}`;
@@ -49,5 +48,45 @@ export async function amorcerRoues(fetchFn: typeof fetch = fetch): Promise<void>
 		p.original = contenu(p);
 		await db.pratiques.put(p);
 	}
-	await db.meta.put({ cle: 'roues', valeur: [...livrees] });
+	if (nouvelles.length) await db.meta.put({ cle: 'roues', valeur: [...livrees] });
+	await completerElements(doc.roues);
+}
+
+const CHAMPS = ['lecture', 'texte'] as const;
+
+/**
+ * Champs ajoutés aux éléments après la livraison d'une roue (passage à lire, prière liée) : chacun n'est livré qu'une
+ * fois (meta « roues-champs »), et seulement à un élément qui porte toujours le même nom et n'a rien à cette place.
+ * Au premier passage, les prières déjà livrées avec les roues sont seulement notées (un lien retiré ne revient pas).
+ */
+async function completerElements(roues: RoueSource[]): Promise<void> {
+	const meta = await db.meta.get('roues-champs');
+	const livres = new Set((meta?.valeur as string[] | undefined) ?? []);
+	const avant = livres.size;
+	for (const r of roues) {
+		const p = await db.pratiques.get(`roue:${r.id}`);
+		let change = false;
+		const elements = p?.elements?.map((e, k) => {
+			const s = r.elements[k];
+			if (!s) return e;
+			let x = e;
+			for (const c of CHAMPS) {
+				const v = s[c];
+				if (!v) continue;
+				const cle = `${r.id}:${k}:${c}:${v}`;
+				if (livres.has(cle)) continue;
+				livres.add(cle);
+				if (!meta && c === 'texte') continue;
+				if (x.fr === s.fr && !x[c]) { x = { ...x, [c]: v }; change = true; }
+			}
+			return x;
+		});
+		if (p && elements && change) {
+			const q = { ...p, elements, textes: [...new Set(elements.map((e) => e.texte).filter(Boolean))] as string[] };
+			// une roue jamais modifiée le reste : son original suit
+			if (p.modifieLe === DEPART || p.original === contenu(p)) q.original = contenu(q);
+			await db.pratiques.put(q);
+		}
+	}
+	if (livres.size !== avant || !meta) await db.meta.put({ cle: 'roues-champs', valeur: [...livres] });
 }

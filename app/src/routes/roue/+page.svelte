@@ -6,6 +6,7 @@
 	import Rosace, { type Anneau } from '#lib/design/Rosace.svelte';
 	import Icone from '#lib/design/Icone.svelte';
 	import { vivant } from '#lib/live.ts';
+	import { ecrireRef, enClair, lectureDu } from '#lib/ecriture.ts';
 	import { debutAnnee, elementDu, grandCycle, pas, position, uniteDe } from '#lib/roues.ts';
 	import type { Pratique, Texte, UniteRoue } from '#lib/types.ts';
 
@@ -106,6 +107,7 @@
 		{#each dansLaRosace as r (r.id)}
 			{@const k = position(r, date)}
 			{@const e = elementDu(r, date)}
+			{@const lu = lectureDu(r, date, e)}
 			<li class:choisi={choisi === r.id} style="--verre: {couleur(r)}">
 				<button class="brut nombre" onclick={() => (choisi = r.id)} aria-label="Montrer l’anneau {r.titre}">{chiffre(n(r))}</button>
 				<div class="corps">
@@ -113,6 +115,7 @@
 					<p class="element">{e?.fr}</p>
 					{#if e?.la}<p class="latin" lang="la">{e.la}{#if e.ref} <span class="ref">({e.ref})</span>{/if}</p>{/if}
 					{#if e?.texte}<p class="lien"><a href="/prieres/{encodeURIComponent(e.texte)}">{$titres[e.texte] ?? 'La prière'}</a></p>{/if}
+					{#if lu}<p class="lien"><a href="/ecriture?ref={encodeURIComponent(ecrireRef(lu))}">Lire : {enClair(lu)}</a></p>{/if}
 					{#if r.verset}<p class="verset" lang="la">{r.verset.la} <span class="ref">({r.verset.ref})</span></p>{/if}
 				</div>
 				<span class="rang chiffres-alignes">{k + 1}<i>/</i>{n(r)}</span>
@@ -122,12 +125,14 @@
 
 	{#each suivies as r (r.id)}
 		{@const e = elementDu(r, date)}
+		{@const lu = lectureDu(r, date, e)}
 		<section class="suivie">
 			<div class="tete-section">
 				<Ornement nom="grecque" />
 				<h2>{r.titre}</h2>
 			</div>
 			<p class="element">{e?.fr}</p>
+			{#if lu}<p class="lien"><a href="/ecriture?ref={encodeURIComponent(ecrireRef(lu))}">Lire le chapitre</a></p>{/if}
 			<p class="petit">Jour {position(r, date) + 1} sur {n(r)} ; le cycle recommence ensuite, et chaque premier dimanche de l’Avent.</p>
 		</section>
 	{/each}

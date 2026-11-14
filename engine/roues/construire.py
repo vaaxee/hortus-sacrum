@@ -30,11 +30,13 @@ PAROISSIEN = {'ouvrage': 'Paroissien romain', 'edition': 'Tours, A. Mame et fils
 BREVIAIRE = {'ouvrage': 'Breviarium Romanum', 'edition': 'S. Grégoire, Hom. 34 in Evang., 29 septembre, IIe nocturne', 'page': '', 'url': 'https://github.com/DivinumOfficium/divinum-officium'}
 TRENTE = {'ouvrage': 'Concile de Trente', 'edition': 'Session VII, canon 1 sur les sacrements', 'page': '', 'url': ''}
 
-def el(fr, la='', ref='', texte=''):
+def el(fr, la='', ref='', texte='', lecture=''):
+    """lecture : passage de l'Écriture à lire (« Mt 5 », « Mt 5, 3-10 ») ; un livre seul (« Mt ») = chapitre suivant de ce livre."""
     e = {'fr': fr}
     if la: e['la'] = la
     if ref: e['ref'] = ref
     if texte: e['texte'] = texte
+    if lecture: e['lecture'] = lecture
     return e
 
 def verset(ref):
@@ -66,8 +68,8 @@ roue('concupiscences', 3, 'Les trois concupiscences à combattre', [
 roue('fins-dernieres', 4, 'Les quatre fins dernières', [el('La mort', 'Mors'), el('Le jugement', 'Judicium'), el('L’enfer', 'Infernus'), el('Le paradis', 'Paradisus')],
      VULGATE, 'Si 7, 40', actif=True, anneau=4)
 roue('evangelistes', 4, 'Les quatre évangélistes', [
-    el('Saint Matthieu, l’homme', 'Facies hominis'), el('Saint Marc, le lion', 'Facies leonis'),
-    el('Saint Luc, le bœuf', 'Facies bovis'), el('Saint Jean, l’aigle', 'Facies aquilæ')], VULGATE, 'Ez 1, 10')
+    el('Saint Matthieu, l’homme', 'Facies hominis', lecture='Mt'), el('Saint Marc, le lion', 'Facies leonis', lecture='Mc'),
+    el('Saint Luc, le bœuf', 'Facies bovis', lecture='Lc'), el('Saint Jean, l’aigle', 'Facies aquilæ', lecture='Jn')], VULGATE, 'Ez 1, 10')
 roue('vertus-cardinales', 4, 'Les quatre vertus cardinales', [
     el('La prudence', 'Prudentia'), el('La justice', 'Justitia'), el('La force', 'Virtus'), el('La tempérance', 'Sobrietas')], VULGATE, 'Sg 8, 7')
 
@@ -163,7 +165,7 @@ roue('chapelets-rosaire', 3, 'Les trois chapelets du Rosaire', [el(n, ' · '.joi
 CH = []
 for nom, livre in [('Saint Matthieu', 'Matthew'), ('Saint Marc', 'Mark'), ('Saint Luc', 'Luke'), ('Saint Jean', 'John')]:
     for c in range(1, len(V[livre]['chapters']) + 1):
-        CH.append(el(f'{nom}, chapitre {c}', ref=f'{ {"Matthew":"Mt","Mark":"Mc","Luke":"Lc","John":"Jn"}[livre]} {c}'))
+        CH.append(el(f'{nom}, chapitre {c}', ref=f'{ {"Matthew":"Mt","Mark":"Mc","Luke":"Lc","John":"Jn"}[livre]} {c}', lecture=f'{ {"Matthew":"Mt","Mark":"Mc","Luke":"Lc","John":"Jn"}[livre]} {c}'))
 roue('lecture-evangiles', len(CH), 'Lecture des quatre Évangiles, un chapitre par jour', CH, VULGATE, actif=True)
 
 dest = Path(__file__).resolve().parents[2] / 'data' / 'roues.json'

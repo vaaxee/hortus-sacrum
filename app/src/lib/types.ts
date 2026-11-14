@@ -79,6 +79,8 @@ export interface ElementRoue {
 	la?: string;
 	ref?: string;
 	texte?: string;
+	/** Passage de l'Écriture à lire : « Mt 5 », « Mt 5, 3-10 » ; un livre seul (« Mt ») = chapitre suivant de ce livre. */
+	lecture?: string;
 }
 
 export interface Pratique extends Base {
