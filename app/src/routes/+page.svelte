@@ -17,6 +17,7 @@
 	import type { Coche, ElementListe, Fait, FetePerso, Moment, NoteJour, Pratique, Rang } from '#lib/types.ts';
 	import Icone from '#lib/design/Icone.svelte';
 	import { elementDu } from '#lib/roues.ts';
+	import { actionsDeGraces } from '#lib/anniversaires.ts';
 	import Accueil from '#lib/design/Accueil.svelte';
 	import { chargerIndulgences, enClair, enJours, fois, somme, valeurDuJour, type Indulgences, type Valeur } from '#lib/indulgences.ts';
 
@@ -223,6 +224,11 @@
 
 			{#each fetesDuJour as f (f.id)}
 				<p class="perso"><span class="rub">✠</span> {f.titre}{anniversaire(f)}</p>
+				{#if actionsDeGraces(f.profil).length}
+					<p class="graces petit"><span class="pc rub">En action de grâces :</span>
+						{#each actionsDeGraces(f.profil) as [id, nom], i (id)}{#if i} · {/if}<a href="/prieres/{encodeURIComponent(id)}">{nom}</a>{/each}
+					</p>
+				{/if}
 			{/each}
 
 			{#if jour.introit_incipit}
@@ -412,6 +418,7 @@
 	.total { margin: 2px 0 0; text-align: right; }
 	.promesses summary { cursor: pointer; text-align: right; }
 	.perso { margin: var(--hs-e3) 0 0; font-style: italic; }
+	.graces { margin: 2px 0 0; padding-left: 1.2em; }
 	.note-jour { margin-top: var(--hs-e6); border-block: var(--hs-cheveu) solid var(--hs-filet); }
 	.note-jour summary { padding: 12px 0; color: var(--hs-encre-douce); }
 	.note-jour textarea { margin-bottom: var(--hs-e4); }

@@ -1,5 +1,5 @@
 import { anneeLiturgique } from './calendrier.ts';
-import { contenu, db } from './db.ts';
+import { contenu, db, enregistrer } from './db.ts';
 import { pratiquesDuPlan } from './plan.ts';
 import { amorcerRoues } from './roues.ts';
 import type { ElementListe, Moment, Pratique, Texte } from './types.ts';
@@ -171,9 +171,19 @@ export async function amorcer(fetchFn: typeof fetch = fetch): Promise<void> {
 	await rouesDesLitanies();
 	await litaniesDuLundi();
 	await reparerLitanies();
+	await rappelsDuProfil();
 	await chapeletParLaRoue();
 	await livrerElements();
 	await renouvellementDuCordon();
+}
+
+/** Une seule fois (meta « profil-rappels ») : les anniversaires du profil spirituel déjà saisis reçoivent le rappel la veille. */
+async function rappelsDuProfil(): Promise<void> {
+	if (await db.meta.get('profil-rappels')) return;
+	for (const f of await db.fetes.toArray()) {
+		if (f.profil && !f.supprimeLe && !f.rappelVeille) await enregistrer('fetes', { ...f, rappelVeille: true });
+	}
+	await db.meta.put({ cle: 'profil-rappels', valeur: true });
 }
 
 /** Dédicace de chaque jour de la semaine et prières sourcées de l'app qui s'y rapportent. */
