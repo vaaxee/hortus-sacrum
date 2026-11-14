@@ -479,6 +479,38 @@
      "texte": "7 ans"
     }
    ]
+  },
+  "weber:priere-notre-dame-sept-douleurs": {
+   "ref": "Ench. 1952, n° 380 et 381",
+   "frequence": "une fois le jour",
+   "partielles": [
+    {
+     "ans": 5,
+     "texte": "5 ans en septembre, une fois le jour (n° 381)",
+     "quand": {
+      "mois": [
+       9
+      ]
+     }
+    }
+   ],
+   "note": "Hors de septembre, 5 ans une fois le jour si l'on a le propos de prier ainsi neuf jours de suite en l'honneur de Notre-Dame des Douleurs (n° 380). Ces indulgences valent pour l'ensemble des prières à Notre-Dame des Douleurs du jour, non pour chacune."
+  },
+  "weber:priere-saint-bonaventure-mere-des-douleurs": {
+   "ref": "Ench. 1952, n° 380 et 381",
+   "frequence": "une fois le jour",
+   "partielles": [
+    {
+     "ans": 5,
+     "texte": "5 ans en septembre, une fois le jour (n° 381)",
+     "quand": {
+      "mois": [
+       9
+      ]
+     }
+    }
+   ],
+   "note": "Hors de septembre, 5 ans une fois le jour si l'on a le propos de prier ainsi neuf jours de suite en l'honneur de Notre-Dame des Douleurs (n° 380). Ces indulgences valent pour l'ensemble des prières à Notre-Dame des Douleurs du jour, non pour chacune."
   }
  },
  "sans_compte": {
