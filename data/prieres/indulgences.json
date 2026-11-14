@@ -416,6 +416,49 @@
     }
    ],
    "note": "10 ans, une fois le jour, si on le récite avec d'autres, en public ou en privé (n° 395 b) : non compté ici."
+  },
+  "montfort:petite-couronne": {
+   "ref": "Ench. 1952, n° 293 (℣. Dignare me), 43 (Credo) et 333 (Sub tuum), comptés seuls",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "jours": 300,
+     "texte": "300 jours (℣. Dignare me)"
+    },
+    {
+     "ans": 5,
+     "texte": "5 ans (Credo)"
+    },
+    {
+     "ans": 5,
+     "texte": "5 ans (Sub tuum)"
+    }
+   ],
+   "note": "La petite couronne elle-même n'a pas de concession propre retrouvée dans l'Enchiridion de 1952 ; seules ses parties indulgenciées sont comptées."
+  },
+  "weber:alma-redemptoris": {
+   "ref": "Ench. 1952, n° 323",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "ans": 5,
+     "texte": "5 ans"
+    }
+   ]
+  },
+  "weber:ave-regina-caelorum": {
+   "ref": "Ench. 1952, n° 324 et n° 293 (℣. Dignare me)",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "ans": 5,
+     "texte": "5 ans"
+    },
+    {
+     "jours": 300,
+     "texte": "300 jours (℣. Dignare me)"
+    }
+   ]
   }
  },
  "sans_compte": {

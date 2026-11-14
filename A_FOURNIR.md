@@ -24,4 +24,4 @@ Les points réglés sont gardés pour l'historique. Dernière mise à jour : 13 
 - **Dévotion du lundi et du jeudi** : compléments à prendre dans le *Livre d'or des âmes du purgatoire* (1925) et dans Beringer 1925. Chaque pièce sera soumise une par une avant ajout.
 - **Indult français des fêtes de précepte** : le moteur l'applique (abstinence maintenue le vendredi 1er janvier 2027 en France). La référence exacte de l'indult reste à citer.
 - **29 pièces du livret sans ligne « source »** : rattacher leur provenance à partir de `docs/notes_sources/`. Quatre actes du matin et les cinq Devoirs de charité n'ont aucune piste dans le dossier.
-- ***Traité de la vraie dévotion*, n° 227-233** (préparation de Montfort) : trouver une édition ancienne.
+- ~~*Traité de la vraie dévotion*, n° 227-233~~ : **fait** (14 nov.), édition Gaume 1843, p. 200-204 (préparation) et p. 204 (petite couronne).
