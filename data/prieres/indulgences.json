@@ -559,6 +559,39 @@
      "texte": "500 jours"
     }
    ]
+  },
+  "weber:priere-tres-saint-coeur-de-marie": {
+   "ref": "Ench. 1952, n° 393",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "jours": 500,
+     "texte": "500 jours"
+    }
+   ],
+   "note": "Weber donne une traduction abrégée de la prière ; il cite l'ancienne concession de Pie VII (60 jours)."
+  },
+  "weber:priere-notre-dame-du-bon-conseil": {
+   "ref": "Ench. 1952, n° 429",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "jours": 500,
+     "texte": "500 jours"
+    }
+   ],
+   "note": "Weber indique l'ancienne concession (100 jours)."
+  },
+  "weber:trois-prieres-perpetuel-secours": {
+   "ref": "Ench. 1952, n° 427",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "jours": 500,
+     "texte": "500 jours"
+    }
+   ],
+   "note": "Pour les trois prières, chacune suivie de l'Ave Maria (trois dans l'Enchiridion, cinq dans Weber). Weber indique l'ancienne concession de Pie IX (100 jours par prière, une fois le jour)."
   }
  },
  "sans_compte": {
