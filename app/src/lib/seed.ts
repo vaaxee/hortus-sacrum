@@ -1,5 +1,5 @@
 import { anneeLiturgique } from './calendrier.ts';
-import { contenu, db } from './db.ts';
+import { contenu, db, enregistrer } from './db.ts';
 import { pratiquesDuPlan } from './plan.ts';
 import { amorcerRoues } from './roues.ts';
 import type { ElementListe, Moment, Pratique, Texte } from './types.ts';
@@ -169,8 +169,21 @@ export async function amorcer(fetchFn: typeof fetch = fetch): Promise<void> {
 	await completerLitanies2();
 	await amorcerRoues(fetchFn);
 	await rouesDesLitanies();
+	await litaniesDuLundi();
+	await reparerLitanies();
+	await rappelsDuProfil();
 	await chapeletParLaRoue();
 	await livrerElements();
+	await renouvellementDuCordon();
+}
+
+/** Une seule fois (meta « profil-rappels ») : les anniversaires du profil spirituel déjà saisis reçoivent le rappel la veille. */
+async function rappelsDuProfil(): Promise<void> {
+	if (await db.meta.get('profil-rappels')) return;
+	for (const f of await db.fetes.toArray()) {
+		if (f.profil && !f.supprimeLe && !f.rappelVeille) await enregistrer('fetes', { ...f, rappelVeille: true });
+	}
+	await db.meta.put({ cle: 'profil-rappels', valeur: true });
 }
 
 /** Dédicace de chaque jour de la semaine et prières sourcées de l'app qui s'y rapportent. */
@@ -262,7 +275,7 @@ export async function amorcerDons(): Promise<void> {
  */
 const LITANIES_PAR_JOUR: string[][] = [
 	['fervent:litanies-sainte-trinite', 'paroissien:litanies-saint-nom', 'paroissien:litanies-des-saints'], // dimanche : sainte Trinité
-	[], // lundi : âmes du purgatoire — litanies des défunts à trouver
+	['fsspx:litanies-delivrance-ames-purgatoire', 'salve-regina:litanies-fideles-defunts'], // lundi : âmes du purgatoire
 	['fervent:litanies-ange-gardien', 'jardin:litanies-de-la-sainte-face'], // mardi : saints Anges
 	['beringer:litanies-saint-joseph'], // mercredi : saint Joseph
 	['fervent:litanies-saint-sacrement', 'paroissien:litanies-saint-nom'], // jeudi : Saint-Sacrement
@@ -276,8 +289,12 @@ const LITANIES_PAR_JOUR: string[][] = [
  */
 export async function amorcerLitanies(): Promise<void> {
 	for (const id of new Set(LITANIES_PAR_JOUR.flat())) if (!(await db.textes.get(id))) return;
+	// la division en sept lignes passe d'abord : remplie avant, la ligne de départ n'était plus divisée
+	if (!(await db.meta.get('litanies'))) await diviserLitanies();
 	await completerLitanies();
-	if (await db.meta.get('litanies')) return;
+}
+
+async function diviserLitanies(): Promise<void> {
 	const base = await db.liste.get('liste:24');
 	if (base && base.titre === 'Litanies du jour' && !base.supprimeLe && !base.textes.length && base.original === contenu(base)) {
 		for (let k = 0; k < 7; k++) {
@@ -296,6 +313,29 @@ export async function amorcerLitanies(): Promise<void> {
 		}
 	}
 	await db.meta.put({ cle: 'litanies', valeur: true });
+}
+
+/**
+ * Réparation (meta « litanies-reparees ») : sur les installations où la ligne « Litanies du jour » a reçu les litanies
+ * du dimanche avant d'être divisée, elle restait seule, tous les jours. Si elle n'a pas été modifiée, on la divise
+ * en sept lignes, puis chaque jour reçoit ses litanies et sa roue.
+ */
+async function reparerLitanies(): Promise<void> {
+	if (await db.meta.get('litanies-reparees')) return;
+	for (const id of new Set(LITANIES_PAR_JOUR.flat())) if (!(await db.textes.get(id))) return;
+	const base = await db.liste.get('liste:24');
+	const intact = (e: ElementListe) => e.modifieLe === DEPART || e.original === contenu(e);
+	if (base && base.titre === 'Litanies du jour' && !base.supprimeLe && intact(base) && base.jours.every(Boolean) && !(await db.liste.get('liste:24-1'))) {
+		for (let k = 0; k < 7; k++) {
+			const x = { ...base, id: k === 0 ? base.id : `liste:24-${k}`, jours: jour(k), textes: LITANIES_PAR_JOUR[k], alterner: false, creeLe: DEPART, modifieLe: DEPART } as ElementListe;
+			delete x.roue;
+			delete x.original;
+			x.original = contenu(x);
+			await db.liste.put(x);
+		}
+		for (let k = 0; k < 7; k++) await roueDesLitanies(k);
+	}
+	await db.meta.put({ cle: 'litanies-reparees', valeur: true });
 }
 
 /** Litanies trouvées après coup : remplit les lignes du jour restées vides et jamais modifiées par l'utilisateur. */
@@ -345,10 +385,23 @@ const JOURS_NOMS = ['dimanche', 'lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi
 async function rouesDesLitanies(): Promise<void> {
 	if (await db.meta.get('roues-litanies')) return;
 	for (const id of new Set(LITANIES_PAR_JOUR.flat())) if (!(await db.textes.get(id))) return;
+	for (let k = 0; k < 7; k++) if (k !== 1) await roueDesLitanies(k);
+	await db.meta.put({ cle: 'roues-litanies', valeur: true });
+}
+
+/** Une seule fois (meta « roues-litanies-lundi ») : les litanies des défunts trouvées pour le lundi tournent elles aussi. */
+async function litaniesDuLundi(): Promise<void> {
+	if (await db.meta.get('roues-litanies-lundi')) return;
+	for (const id of LITANIES_PAR_JOUR[1]) if (!(await db.textes.get(id))) return;
+	await roueDesLitanies(1);
+	await db.meta.put({ cle: 'roues-litanies-lundi', valeur: true });
+}
+
+async function roueDesLitanies(k: number): Promise<void> {
 	const intact = (e?: ElementListe) => !!e && !e.supprimeLe && (e.modifieLe === DEPART || e.original === contenu(e));
-	for (let k = 0; k < 7; k++) {
+	{
 		const ids = LITANIES_PAR_JOUR[k];
-		if (ids.length < 2) continue;
+		if (ids.length < 2) return;
 		const id = `roue:litanies-${k}`;
 		if (!(await db.pratiques.get(id))) {
 			const elements = [];
@@ -362,13 +415,12 @@ async function rouesDesLitanies(): Promise<void> {
 			await db.pratiques.put(r);
 		}
 		const e = await db.liste.get(k === 0 ? 'liste:24' : `liste:24-${k}`);
-		if (intact(e) && e!.jours[k]) {
-			const x = { ...e!, roue: id, alterner: false } as ElementListe;
+		if (intact(e) && e!.jours[k] && (!e!.textes.length || e!.textes.every((t) => ids.includes(t)))) {
+			const x = { ...e!, textes: ids, roue: id, alterner: false } as ElementListe;
 			x.original = contenu(x);
 			await db.liste.put(x);
 		}
 	}
-	await db.meta.put({ cle: 'roues-litanies', valeur: true });
 }
 
 /** Une seule fois : la ligne « Chapelet » ouvre le chapelet de saint Dominique et suit la roue des trois chapelets. */
@@ -384,11 +436,27 @@ async function chapeletParLaRoue(): Promise<void> {
 	await db.meta.put({ cle: 'chapelet-roue', valeur: true });
 }
 
+const CORDON_TITRE = 'Cordon de saint Joseph : renouvellement et prière pour la pureté';
+const CORDON_TEXTES = ['hortus:renouvellement-cordon-saint-joseph', 'beringer:saint-joseph-purete'];
+
+/** Une seule fois (meta « cordon-renouvellement ») : la ligne du mercredi reçoit la formule de renouvellement, si jamais modifiée. */
+async function renouvellementDuCordon(): Promise<void> {
+	if (await db.meta.get('cordon-renouvellement')) return;
+	if (!(await db.textes.get(CORDON_TEXTES[0]))) return;
+	const e = await db.liste.get('liste:cordon-mercredi');
+	if (e && !e.supprimeLe && (e.modifieLe === DEPART || e.original === contenu(e)) && e.textes.join() === 'beringer:saint-joseph-purete') {
+		const x = { ...e, titre: CORDON_TITRE, textes: CORDON_TEXTES } as ElementListe;
+		x.original = contenu(x);
+		await db.liste.put(x);
+	}
+	await db.meta.put({ cle: 'cordon-renouvellement', valeur: true });
+}
+
 /** Éléments ajoutés à la liste de départ après sa création ; chacun n'est livré qu'une fois (meta « elements »). */
 const NOUVEAUX_ELEMENTS: Omit<ElementListe, 'creeLe' | 'modifieLe'>[] = [
 	{
-		id: 'liste:cordon-mercredi', origine: 'officielle', titre: 'Cordon de saint Joseph : prière pour la pureté',
-		moment: 'matin', etiquette: 'ordinaire', jours: jour(3), rappels: [], textes: ['beringer:saint-joseph-purete'], ordre: 51, actif: true
+		id: 'liste:cordon-mercredi', origine: 'officielle', titre: CORDON_TITRE,
+		moment: 'matin', etiquette: 'ordinaire', jours: jour(3), rappels: [], textes: CORDON_TEXTES, ordre: 51, actif: true
 	},
 	{
 		id: 'liste:roue', origine: 'officielle', titre: 'La roue du jour',

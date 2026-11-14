@@ -53,6 +53,7 @@
 		<div class="vues" role="group" aria-label="Vue">
 			<span class="bouton actif" aria-current="page">Mois</span>
 			<a class="bouton" href="/calendrier/semaine?d={cle}-{maintenant.getMonth() + 1 === mois && maintenant.getFullYear() === an ? String(maintenant.getDate()).padStart(2, '0') : '01'}">Semaine</a>
+			<a class="bouton" href="/calendrier/annee">Année</a>
 		</div>
 		<header>
 			<div class="titre-mois">

@@ -34,7 +34,7 @@
 		const [a, m, j] = valeur.split('-').map(Number);
 		const titre = TITRES[cle] ?? `Anniversaire : ${nom}`;
 		if (existant) await enregistrer('fetes', { ...existant, annee: a, mois: m, jour: j });
-		else await creer<FetePerso>('fetes', { id: nouvelId(), origine: 'personnel', titre, genre: 'anniversaire', mois: m, jour: j, annee: a, rappelVeille: false, notes: '', profil: cle });
+		else await creer<FetePerso>('fetes', { id: nouvelId(), origine: 'personnel', titre, genre: 'anniversaire', mois: m, jour: j, annee: a, rappelVeille: true, notes: '', profil: cle });
 	}
 
 	let nouveau = $state<{ cle: string; titre: string; date: string } | null>(null);
@@ -47,7 +47,7 @@
 		const saint = nouveau.cle !== 'consecration';
 		await creer<FetePerso>('fetes', {
 			id: nouvelId(), origine: 'personnel', titre: nouveau.titre.trim(), genre: saint ? 'saint' : 'anniversaire',
-			mois: m, jour: j, ...(saint ? {} : { annee: a }), rappelVeille: saint, notes: '', profil: nouveau.cle
+			mois: m, jour: j, ...(saint ? {} : { annee: a }), rappelVeille: true, notes: '', profil: nouveau.cle
 		});
 		nouveau = null;
 	}

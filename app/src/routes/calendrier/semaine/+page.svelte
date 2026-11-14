@@ -45,6 +45,7 @@
 	<div class="vues rangee" role="group" aria-label="Vue">
 		<a class="bouton" href="/calendrier?m={dates[3].slice(0, 7)}">Mois</a>
 		<span class="bouton actif" aria-current="page">Semaine</span>
+		<a class="bouton" href="/calendrier/annee">Année</a>
 	</div>
 
 	<div class="tete-page">

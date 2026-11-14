@@ -81,6 +81,15 @@ Numérotation : chaque texte garde la sienne (Crampon suit l'hébreu et le grec 
 | ***The Raccolta*** | trad. anglaise officielle (exemplaire numérisé de 1949) | contrôle (dons du Saint-Esprit) | archive.org `raccoltaofficial0000spen_1` |
 | *Livre d'or des âmes du purgatoire* | J.-S. Benoit, Montréal, E. Michaud ; imprimatur du 3 juillet 1925 | à exploiter (lundi, novembre) | archive.org `livre-d-or-des-ames-du-purgatoire-000001152` |
 
+## Textes donnés par l'utilisateur (14 novembre 2026)
+
+| Texte | Source |
+|---|---|
+| Litanies pour la délivrance des âmes du purgatoire (lundi) | FSSPX, district du Canada : https://sspx.ca/fr/litanies-pour-la-delivrance-des-ames-du-purgatoire-33432 |
+| Litanies pour les fidèles défunts (lundi, en alternance) | salve-regina.com, « auteur inconnu, tradition catholique », postérieur à 1925 : http://salve-regina.com/index.php?title=Litanies_pour_les_fid%C3%A8les_d%C3%A9funts |
+| Litanies de la bonne mort, avec deux prières | Le Petit Sacristain (blog), oct. 2016 : http://le-petit-sacristain.blogspot.com/2016/10/litanies-de-la-bonne-mort.html |
+| Renouvellement de la consécration au cordon de saint Joseph | **Formule composée pour l'app** à la demande de l'utilisateur (aucune formule ancienne trouvée), à partir de Beringer 1925, t. II, n° 266 et 480 |
+
 ## Sites récents consultés (cités par lien seulement)
 - La Porte Latine, « Prières du matin et du soir » : https://laportelatine.org/spiritualite/prieres-et-devotions/prieres-matin-et-soir
 - Catholique de France, « Prière du matin », « Prière du soir », « L'Angélus » : https://catholiquedefrance.fr/priere-du-matin/
