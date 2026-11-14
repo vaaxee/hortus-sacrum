@@ -19,6 +19,8 @@
 	import { elementDu } from '#lib/roues.ts';
 	import { actionsDeGraces } from '#lib/anniversaires.ts';
 	import Accueil from '#lib/design/Accueil.svelte';
+	import CarteCouronne from '#lib/design/CarteCouronne.svelte';
+	import { couronnesDeLaBase, marquerVue, vues, type Couronne } from '#lib/couronnes.ts';
 	import { chargerIndulgences, enClair, enJours, fois, somme, valeurDuJour, type Indulgences, type Valeur } from '#lib/indulgences.ts';
 
 	const date = $derived(page.url.searchParams.get('date') ?? iso(new Date()));
@@ -190,6 +192,26 @@
 		accueil = false;
 		try { sessionStorage.setItem('accueil-vu', '1'); } catch { /* stockage indisponible */ }
 	}
+	// couronnes : une quête achevée s'annonce une fois, par une carte (recalculée quand on coche)
+	let nouvelle = $state<Couronne | null>(null);
+	$effect(() => {
+		void $cochesDuJour.length; void $faitsDuJour.length;
+		if (!estAujourdhui) return;
+		Promise.all([couronnesDeLaBase(date), vues()]).then(([cs, v]) => {
+			nouvelle = [...cs].reverse().find((c) => !v.has(c.id)) ?? null;
+		});
+	});
+	// la barre d'onglets se retire derrière la carte, comme pour l'écran d'accueil
+	$effect(() => {
+		const ouvert = !!nouvelle && estAujourdhui && !accueil;
+		document.documentElement.classList.toggle('accueil-ouvert', ouvert);
+		return () => document.documentElement.classList.remove('accueil-ouvert');
+	});
+	async function rendreGrace() {
+		if (nouvelle) await marquerVue(nouvelle.id);
+		const [cs, v] = await Promise.all([couronnesDeLaBase(date), vues()]);
+		nouvelle = [...cs].reverse().find((c) => !v.has(c.id)) ?? null;
+	}
 	const ROMAINS = ['', 'i', 'ii', 'iii', 'iv', 'v', 'vi', 'vii', 'viii', 'ix'];
 </script>
 
@@ -199,6 +221,10 @@
 	<Accueil introit={jour.introit_incipit ?? ''} introitFr={jour.introit?.fr?.[0] ?? ''}
 		invocation={jour.martyrologe.map((m) => invocation(m.texte)?.texte).find(Boolean) ?? ''}
 		avancement={duJour.length ? faits / duJour.length : 0} {entrer} />
+{:else if nouvelle && estAujourdhui}
+	<div class="voile-couronne" role="dialog" aria-modal="true" aria-label="Couronne achevée : {nouvelle.titre}">
+		<CarteCouronne c={nouvelle} fermer={rendreGrace} />
+	</div>
 {/if}
 {#if jour}
 	<div class="bandeau" style="background: {teinte(jour)}"></div>
@@ -418,6 +444,8 @@
 	.total { margin: 2px 0 0; text-align: right; }
 	.promesses summary { cursor: pointer; text-align: right; }
 	.perso { margin: var(--hs-e3) 0 0; font-style: italic; }
+	.voile-couronne { position: fixed; inset: 0; z-index: 30; overflow-y: auto; padding: calc(24px + env(safe-area-inset-top)) var(--hs-marge-mobile) calc(24px + env(safe-area-inset-bottom)); background: color-mix(in srgb, var(--hs-fond) 94%, transparent); display: grid; place-items: center; animation: venir-carte 700ms var(--hs-courbe); }
+	@keyframes venir-carte { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
 	.graces { margin: 2px 0 0; padding-left: 1.2em; }
 	.note-jour { margin-top: var(--hs-e6); border-block: var(--hs-cheveu) solid var(--hs-filet); }
 	.note-jour summary { padding: 12px 0; color: var(--hs-encre-douce); }
