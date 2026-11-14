@@ -56,7 +56,11 @@
 
 ## Indulgences (compteur), 14 novembre 2026
 
-Règle : la concession la plus récente fait foi : *Enchiridion indulgentiarum*, 1952 (archive.org `enchiridion_indulgentiarum_1952`) ; à défaut *Thésaurisons pour le ciel*, Carmel de Montréal, 1941, imprimatur du 28 avril 1941, d'après les *Preces et Pia Opera* de 1938 (http://www.liberius.net/livre.php?id_livre=1335) ; à défaut Beringer 1925. Données : `data/prieres/indulgences.json` (indulgences partielles seulement ; plénières et indulgences réservées aux confréries non comptées). Vérifiés dans l'Enchiridion : n° 114, 221, 293, 319, 331, 332, 333, 462, 478, 585, 671, 687, litanies du Sacré-Cœur.
+Règle : la concession la plus récente fait foi : *Enchiridion indulgentiarum*, 1952 (archive.org `enchiridion_indulgentiarum_1952`) ; à défaut *Thésaurisons pour le ciel*, Carmel de Montréal, 1941, imprimatur du 28 avril 1941, d'après les *Preces et Pia Opera* de 1938 (http://www.liberius.net/livre.php?id_livre=1335) ; à défaut Beringer 1925. Données : `data/prieres/indulgences.json` (indulgences partielles seulement ; plénières et indulgences réservées aux confréries non comptées). Vérifiés dans l'Enchiridion : n° 36 (actes de foi, d'espérance, de charité), 43 (Symbole des Apôtres), 114, 221, 293, 319, 331, 332, 333, 462, 478, 585, 671, 687, 691 (Confiteor), 395 (chapelet), litanies du Sacré-Cœur.
+
+| Le chapelet de saint Dominique (manière de le réciter, méditation des mystères) | Abbé L. de Sambucy, *Manuel du chapelet et du rosaire de la Sainte Vierge*, approbation de Mgr de Quélen, 29 mars 1837 | 28-31 | bibliotheque-catholique.com (rubrique Mariologie) |
+
+Inventaire des manuels de piété de bibliotheque-catholique.com : `docs/notes_sources/inventaire_bibliotheque_catholique.md` (138 titres retenus sur 4 884 PDF).
 
 ## Sources consultées pour l'inventaire (textes pas encore recopiés)
 

@@ -1,39 +1,422 @@
 {
  "regle": "Indulgences partielles seulement. Source la plus récente : Enchiridion indulgentiarum 1952 ; à défaut, Thésaurisons pour le ciel (1941, d'après les Preces et Pia Opera de 1938) ; à défaut, Beringer 1925. « remplace » : valeur qui remplace la valeur ordinaire aux jours indiqués.",
  "fiches": {
-  "beringer:salve-regina": {"ref": "Ench. 1952, n° 332 (Salve Regina) et n° 293 (℣. Dignare me)", "frequence": "chaque fois",
-   "partielles": [{"ans": 5, "texte": "5 ans (Salve Regina)"}, {"ans": 7, "texte": "7 ans chaque jour de mai", "quand": {"mois": [5]}, "remplace": 0}, {"jours": 300, "texte": "300 jours (℣. Dignare me… ℟. Da mihi…)"}],
-   "note": "Depuis l'Enchiridion de 1952, le Salve Regina seul est indulgencié (5 ans) et les versets Dignare me le sont à part (300 jours) ; l'intention de réparation demandée par Pie VI (Beringer 1925) n'est plus une condition."},
-  "beringer:sub-tuum": {"ref": "Ench. 1952, n° 333 (Sub tuum) et n° 293 (℣. Dignare me)", "frequence": "chaque fois",
-   "partielles": [{"ans": 5, "texte": "5 ans (Sub tuum)"}, {"jours": 300, "texte": "300 jours (℣. Dignare me… ℟. Da mihi…)"}]},
-  "paroissien:angelus": {"ref": "Ench. 1952, n° 331", "frequence": "chaque fois", "partielles": [{"ans": 10, "texte": "10 ans chaque fois (matin, midi, soir)"}]},
-  "beringer:regina-caeli": {"ref": "Ench. 1952, n° 331", "frequence": "chaque fois", "partielles": [{"ans": 10, "texte": "10 ans chaque fois (matin, midi, soir)"}]},
-  "paroissien:de-profundis": {"ref": "Ench. 1952, n° 585", "frequence": "chaque fois", "intention": "en suffrage pour les fidèles défunts",
-   "partielles": [{"ans": 3, "texte": "3 ans"}, {"ans": 5, "texte": "5 ans chaque jour de novembre", "quand": {"mois": [11]}, "remplace": 0}]},
-  "beringer:litanies-sacre-coeur": {"ref": "Ench. 1952, Litanies du Sacré-Cœur (S. Rit. C., 2 avr. 1899 ; S. Pénit., 10 mars 1933)", "frequence": "chaque fois", "partielles": [{"ans": 7, "texte": "7 ans"}]},
-  "beringer:litanies-saint-joseph": {"ref": "Ench. 1952, n° 462", "frequence": "chaque fois", "partielles": [{"ans": 5, "texte": "5 ans"}]},
-  "paroissien:litanies-sainte-vierge": {"ref": "Ench. 1952, n° 319", "frequence": "chaque fois", "partielles": [{"ans": 7, "texte": "7 ans"}]},
-  "paroissien:litanies-saint-nom": {"ref": "Ench. 1952, n° 114", "frequence": "chaque fois", "partielles": [{"ans": 7, "texte": "7 ans"}]},
-  "paroissien:litanies-des-saints": {"ref": "Ench. 1952, n° 687", "frequence": "chaque fois",
-   "partielles": [{"ans": 5, "texte": "5 ans"}, {"ans": 7, "texte": "7 ans le 25 avril (S. Marc) et aux Rogations, à défaut de la procession", "quand": {"dates": ["04-25"], "tempora": ["Pasc5-1", "Pasc5-2", "Pasc5-3"]}, "remplace": 0}]},
-  "beringer:saint-joseph-purete": {"ref": "Ench. 1952, n° 478", "frequence": "chaque fois",
-   "partielles": [{"ans": 3, "texte": "3 ans"}, {"ans": 7, "texte": "7 ans chaque jour de mars et chaque mercredi", "quand": {"mois": [3], "jours_semaine": [3]}, "remplace": 0}]},
-  "beringer:coeur-afflige-de-marie": {"ref": "Beringer 1925, t. I, n° 450 (non retrouvée dans l'Enchiridion 1952)", "frequence": "chaque fois", "partielles": [{"jours": 300, "texte": "300 jours, la prière entière"}]},
-  "jardin:priere-pour-les-agonisants": {"ref": "Ench. 1952, n° 671", "frequence": "chaque fois", "partielles": [{"jours": 300, "texte": "300 jours"}]},
-  "jardin:la-triple-couronne-d-or-du-sacre-c-ur-de-jesus": {"ref": "Ench. 1952, n° 221 (Jesu, mitis et humilis Corde)", "frequence": "chaque fois", "partielles": [{"jours": 500, "texte": "500 jours (l'invocation)"}]},
-  "jardin:acte-d-intention-de-communion-spirituelle-perpetuelle": {"ref": "Ench. 1952, n° 164 (d'après le livret)", "frequence": "chaque fois", "partielles": [{"ans": 3, "texte": "3 ans (acte de communion spirituelle)"}]},
-  "jardin:chaque-vendredi-devant-le-crucifix": {"ref": "Ench. 1952 (d'après le livret)", "frequence": "chaque fois", "partielles": [{"ans": 7, "texte": "7 ans (sept Pater, Ave et Gloria)"}]},
-  "jardin:chapelet-de-saint-michel-archange": {"ref": "Pie IX, 8 août 1851 (d'après le livret)", "frequence": "chaque fois", "partielles": [{"ans": 7, "jours": 280, "texte": "7 ans et 7 quarantaines"}]},
-  "jardin:a-saint-gabriel-archange": {"ref": "Ench. 1952, nos 448-449 (d'après le livret)", "frequence": "chaque fois", "partielles": [{"ans": 3, "texte": "3 ans"}]},
-  "jardin:les-sept-douleurs-de-marie": {"ref": "Ench. 1952, n° 383", "frequence": "chaque fois",
-   "partielles": [{"ans": 5, "texte": "5 ans"}, {"ans": 7, "texte": "7 ans chaque jour de septembre", "quand": {"mois": [9]}, "remplace": 0}]},
-  "jardin:les-sept-douleurs-et-les-sept-allegresses-de-saint-joseph": {"ref": "Ench. 1952, n° 410 (d'après le livret)", "frequence": "chaque fois", "partielles": [{"ans": 5, "texte": "5 ans"}]},
-  "jardin:veni-creator-spiritus": {"ref": "Ench. 1952 (d'après le livret)", "frequence": "chaque fois", "partielles": [{"ans": 5, "texte": "5 ans, avec ℣. Emitte et l'oraison"}]},
-  "jardin:ave-maris-stella": {"ref": "Ench. 1952, n° 321 (d'après le livret)", "frequence": "chaque fois", "partielles": [{"ans": 3, "texte": "3 ans"}]},
-  "jardin:magnificat": {"ref": "Ench. 1952, n° 320 (d'après le livret)", "frequence": "chaque fois",
-   "partielles": [{"ans": 3, "texte": "3 ans"}, {"ans": 5, "texte": "5 ans le samedi et en la fête de la Visitation (2 juillet)", "quand": {"jours_semaine": [6], "dates": ["07-02"]}, "remplace": 0}]},
-  "jardin:te-joseph-celebrent": {"ref": "Ench. 1952, n° 463 (d'après le livret)", "frequence": "chaque fois", "partielles": [{"ans": 3, "texte": "3 ans"}]},
-  "jardin:auguste-reine-des-cieux": {"ref": "Ench. 1952, n° 345 (d'après le livret)", "frequence": "chaque fois", "partielles": [{"jours": 500, "texte": "500 jours"}]}
+  "beringer:salve-regina": {
+   "ref": "Ench. 1952, n° 332 (Salve Regina) et n° 293 (℣. Dignare me)",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "ans": 5,
+     "texte": "5 ans (Salve Regina)"
+    },
+    {
+     "ans": 7,
+     "texte": "7 ans chaque jour de mai",
+     "quand": {
+      "mois": [
+       5
+      ]
+     },
+     "remplace": 0
+    },
+    {
+     "jours": 300,
+     "texte": "300 jours (℣. Dignare me… ℟. Da mihi…)"
+    }
+   ],
+   "note": "Depuis l'Enchiridion de 1952, le Salve Regina seul est indulgencié (5 ans) et les versets Dignare me le sont à part (300 jours) ; l'intention de réparation demandée par Pie VI (Beringer 1925) n'est plus une condition."
+  },
+  "beringer:sub-tuum": {
+   "ref": "Ench. 1952, n° 333 (Sub tuum) et n° 293 (℣. Dignare me)",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "ans": 5,
+     "texte": "5 ans (Sub tuum)"
+    },
+    {
+     "jours": 300,
+     "texte": "300 jours (℣. Dignare me… ℟. Da mihi…)"
+    }
+   ]
+  },
+  "paroissien:angelus": {
+   "ref": "Ench. 1952, n° 331",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "ans": 10,
+     "texte": "10 ans chaque fois (matin, midi, soir)"
+    }
+   ]
+  },
+  "beringer:regina-caeli": {
+   "ref": "Ench. 1952, n° 331",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "ans": 10,
+     "texte": "10 ans chaque fois (matin, midi, soir)"
+    }
+   ]
+  },
+  "paroissien:de-profundis": {
+   "ref": "Ench. 1952, n° 585",
+   "frequence": "chaque fois",
+   "intention": "en suffrage pour les fidèles défunts",
+   "partielles": [
+    {
+     "ans": 3,
+     "texte": "3 ans"
+    },
+    {
+     "ans": 5,
+     "texte": "5 ans chaque jour de novembre",
+     "quand": {
+      "mois": [
+       11
+      ]
+     },
+     "remplace": 0
+    }
+   ]
+  },
+  "beringer:litanies-sacre-coeur": {
+   "ref": "Ench. 1952, Litanies du Sacré-Cœur (S. Rit. C., 2 avr. 1899 ; S. Pénit., 10 mars 1933)",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "ans": 7,
+     "texte": "7 ans"
+    }
+   ]
+  },
+  "beringer:litanies-saint-joseph": {
+   "ref": "Ench. 1952, n° 462",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "ans": 5,
+     "texte": "5 ans"
+    }
+   ]
+  },
+  "paroissien:litanies-sainte-vierge": {
+   "ref": "Ench. 1952, n° 319",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "ans": 7,
+     "texte": "7 ans"
+    }
+   ]
+  },
+  "paroissien:litanies-saint-nom": {
+   "ref": "Ench. 1952, n° 114",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "ans": 7,
+     "texte": "7 ans"
+    }
+   ]
+  },
+  "paroissien:litanies-des-saints": {
+   "ref": "Ench. 1952, n° 687",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "ans": 5,
+     "texte": "5 ans"
+    },
+    {
+     "ans": 7,
+     "texte": "7 ans le 25 avril (S. Marc) et aux Rogations, à défaut de la procession",
+     "quand": {
+      "dates": [
+       "04-25"
+      ],
+      "tempora": [
+       "Pasc5-1",
+       "Pasc5-2",
+       "Pasc5-3"
+      ]
+     },
+     "remplace": 0
+    }
+   ]
+  },
+  "beringer:saint-joseph-purete": {
+   "ref": "Ench. 1952, n° 478",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "ans": 3,
+     "texte": "3 ans"
+    },
+    {
+     "ans": 7,
+     "texte": "7 ans chaque jour de mars et chaque mercredi",
+     "quand": {
+      "mois": [
+       3
+      ],
+      "jours_semaine": [
+       3
+      ]
+     },
+     "remplace": 0
+    }
+   ]
+  },
+  "beringer:coeur-afflige-de-marie": {
+   "ref": "Beringer 1925, t. I, n° 450 (non retrouvée dans l'Enchiridion 1952)",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "jours": 300,
+     "texte": "300 jours, la prière entière"
+    }
+   ]
+  },
+  "jardin:priere-pour-les-agonisants": {
+   "ref": "Ench. 1952, n° 671",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "jours": 300,
+     "texte": "300 jours"
+    }
+   ]
+  },
+  "jardin:la-triple-couronne-d-or-du-sacre-c-ur-de-jesus": {
+   "ref": "Ench. 1952, n° 221 (Jesu, mitis et humilis Corde)",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "jours": 500,
+     "texte": "500 jours (l'invocation)"
+    }
+   ]
+  },
+  "jardin:acte-d-intention-de-communion-spirituelle-perpetuelle": {
+   "ref": "Ench. 1952, n° 164 (d'après le livret)",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "ans": 3,
+     "texte": "3 ans (acte de communion spirituelle)"
+    }
+   ]
+  },
+  "jardin:chaque-vendredi-devant-le-crucifix": {
+   "ref": "Ench. 1952 (d'après le livret)",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "ans": 7,
+     "texte": "7 ans (sept Pater, Ave et Gloria)"
+    }
+   ]
+  },
+  "jardin:chapelet-de-saint-michel-archange": {
+   "ref": "Pie IX, 8 août 1851 (d'après le livret)",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "ans": 7,
+     "jours": 280,
+     "texte": "7 ans et 7 quarantaines"
+    }
+   ]
+  },
+  "jardin:a-saint-gabriel-archange": {
+   "ref": "Ench. 1952, nos 448-449 (d'après le livret)",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "ans": 3,
+     "texte": "3 ans"
+    }
+   ]
+  },
+  "jardin:les-sept-douleurs-de-marie": {
+   "ref": "Ench. 1952, n° 383",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "ans": 5,
+     "texte": "5 ans"
+    },
+    {
+     "ans": 7,
+     "texte": "7 ans chaque jour de septembre",
+     "quand": {
+      "mois": [
+       9
+      ]
+     },
+     "remplace": 0
+    }
+   ]
+  },
+  "jardin:les-sept-douleurs-et-les-sept-allegresses-de-saint-joseph": {
+   "ref": "Ench. 1952, n° 410 (d'après le livret)",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "ans": 5,
+     "texte": "5 ans"
+    }
+   ]
+  },
+  "jardin:veni-creator-spiritus": {
+   "ref": "Ench. 1952 (d'après le livret)",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "ans": 5,
+     "texte": "5 ans, avec ℣. Emitte et l'oraison"
+    }
+   ]
+  },
+  "jardin:ave-maris-stella": {
+   "ref": "Ench. 1952, n° 321 (d'après le livret)",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "ans": 3,
+     "texte": "3 ans"
+    }
+   ]
+  },
+  "jardin:magnificat": {
+   "ref": "Ench. 1952, n° 320 (d'après le livret)",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "ans": 3,
+     "texte": "3 ans"
+    },
+    {
+     "ans": 5,
+     "texte": "5 ans le samedi et en la fête de la Visitation (2 juillet)",
+     "quand": {
+      "jours_semaine": [
+       6
+      ],
+      "dates": [
+       "07-02"
+      ]
+     },
+     "remplace": 0
+    }
+   ]
+  },
+  "jardin:te-joseph-celebrent": {
+   "ref": "Ench. 1952, n° 463 (d'après le livret)",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "ans": 3,
+     "texte": "3 ans"
+    }
+   ]
+  },
+  "jardin:auguste-reine-des-cieux": {
+   "ref": "Ench. 1952, n° 345 (d'après le livret)",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "jours": 500,
+     "texte": "500 jours"
+    }
+   ]
+  },
+  "paroissien:acte-de-foi": {
+   "ref": "Ench. 1952, n° 36 (actes des vertus théologales, quelle que soit la formule d'un catéchisme approuvé)",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "ans": 3,
+     "texte": "3 ans (acte de foi)"
+    }
+   ]
+  },
+  "paroissien:acte-d-esperance": {
+   "ref": "Ench. 1952, n° 36 (actes des vertus théologales, quelle que soit la formule d'un catéchisme approuvé)",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "ans": 3,
+     "texte": "3 ans (acte d'espérance)"
+    }
+   ]
+  },
+  "paroissien:acte-de-charite": {
+   "ref": "Ench. 1952, n° 36 (actes des vertus théologales, quelle que soit la formule d'un catéchisme approuvé)",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "ans": 3,
+     "texte": "3 ans (acte de charité)"
+    }
+   ]
+  },
+  "paroissien:priere-du-matin": {
+   "ref": "Ench. 1952, n° 36, 43 et 691",
+   "frequence": "une fois le jour",
+   "intention": "pour le Confiteor : se reconnaître pécheur devant Dieu avec un cœur contrit",
+   "partielles": [
+    {
+     "ans": 5,
+     "texte": "5 ans (Symbole des Apôtres, n° 43)"
+    },
+    {
+     "jours": 300,
+     "texte": "300 jours (Confiteor, n° 691, avec contrition)"
+    },
+    {
+     "ans": 3,
+     "texte": "3 ans (acte de foi)"
+    },
+    {
+     "ans": 3,
+     "texte": "3 ans (acte d'espérance)"
+    },
+    {
+     "ans": 3,
+     "texte": "3 ans (acte de charité)"
+    }
+   ]
+  },
+  "paroissien:priere-du-soir": {
+   "ref": "Ench. 1952, n° 43 et 691",
+   "frequence": "une fois le jour",
+   "intention": "pour le Confiteor : se reconnaître pécheur devant Dieu avec un cœur contrit",
+   "partielles": [
+    {
+     "ans": 5,
+     "texte": "5 ans (Symbole des Apôtres, n° 43)"
+    },
+    {
+     "jours": 300,
+     "texte": "300 jours (Confiteor, n° 691, avec contrition)"
+    }
+   ]
+  },
+  "sambucy:chapelet-saint-dominique": {
+   "ref": "Ench. 1952, n° 395",
+   "frequence": "chaque fois",
+   "intention": "en méditant les mystères du Rosaire",
+   "partielles": [
+    {
+     "ans": 5,
+     "texte": "5 ans (un tiers du Rosaire)"
+    }
+   ],
+   "note": "10 ans, une fois le jour, si on le récite avec d'autres, en public ou en privé (n° 395 b) : non compté ici."
+  }
  },
  "sans_compte": {
   "beringer:chapelet-des-morts": "Indulgences réservées aux associés de Notre-Dame du Suffrage, avec le chapelet bénit (Beringer 1925, t. II, n° 306 a).",

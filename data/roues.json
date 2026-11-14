@@ -1210,6 +1210,37 @@
    "unite": "jour"
   },
   {
+   "id": "chapelets-rosaire",
+   "nombre": 3,
+   "titre": "Les trois chapelets du Rosaire",
+   "elements": [
+    {
+     "fr": "Mystères joyeux",
+     "la": "L’Annonciation · La Visitation · La Nativité · La Présentation au Temple · Jésus retrouvé au Temple",
+     "texte": "sambucy:chapelet-saint-dominique"
+    },
+    {
+     "fr": "Mystères douloureux",
+     "la": "L’Agonie au jardin des Oliviers · La Flagellation · Le Couronnement d’épines · Le Portement de la croix · Le Crucifiement et la mort de Notre-Seigneur",
+     "texte": "sambucy:chapelet-saint-dominique"
+    },
+    {
+     "fr": "Mystères glorieux",
+     "la": "La Résurrection · L’Ascension · La Descente du Saint-Esprit · L’Assomption de la très sainte Vierge · Le Couronnement de la très sainte Vierge",
+     "texte": "sambucy:chapelet-saint-dominique"
+    }
+   ],
+   "source": {
+    "ouvrage": "Le Jardin de l’âme",
+    "edition": "livret",
+    "page": "",
+    "url": ""
+   },
+   "actif": true,
+   "unite": "jour",
+   "liste": true
+  },
+  {
    "id": "lecture-evangiles",
    "nombre": 89,
    "titre": "Lecture des quatre Évangiles, un chapitre par jour",

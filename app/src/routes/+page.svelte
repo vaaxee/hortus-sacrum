@@ -135,7 +135,7 @@
 		if (e.titre.startsWith('Office du jour')) return jour.office;
 		if (e.titre.startsWith('Dévotion du mois')) return MOIS_DEVOTION[d.getMonth() + 1].nom;
 		if (e.titre === 'La roue du jour') return roueDuJour;
-		if (e.roue) { const r = roues.find((x) => x.id === e.roue); const el = r && elementDu(r, date); if (el && !el.texte) return el.fr; }
+		if (e.roue) { const r = roues.find((x) => x.id === e.roue); const el = r && elementDu(r, date); if (el) return el.fr; }
 		return '';
 	}
 	const roues = $derived($pratiques.filter((p) => p.type === 'roue'));
