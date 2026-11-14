@@ -23,9 +23,21 @@
 </script>
 
 <div class="accueil" role="dialog" aria-label="Accueil">
+	<!-- cadre : frises en haut et en bas, quarts de rosace aux angles -->
+	<div class="frise haut" aria-hidden="true"><Ornement nom="grecque" /></div>
+	<div class="frise bas" aria-hidden="true"><Ornement nom="grecque" /></div>
+	{#each ['hg', 'hd', 'bg', 'bd'] as c}<span class="coin {c}" aria-hidden="true"><Ornement nom="coin" taille={30} /></span>{/each}
+
 	<p class="nom">Hortus Sacrum</p>
+	<div class="filet-titre" aria-hidden="true"><Ornement nom="fleuron" /></div>
+	<div class="niche" aria-hidden="true">
+		<span class="cle"><Ornement nom="croix-pattee" taille={22} /></span>
+		<span class="cherub g"><Ornement nom="cherubin" taille={18} /></span>
+		<span class="cherub d"><Ornement nom="cherubin" taille={18} /></span>
 	<div class="arche" aria-hidden="true">
 		{#if image === 'gravure'}<div class="gravure"></div>{:else}<img class="tableau" src="/accueil/velazquez.jpg" alt="" />{/if}
+	</div>
+		<div class="socle"><Ornement nom="perles" /></div>
 	</div>
 	{#if introit}
 		<button class="brut introit" onclick={() => (traduction = !traduction)} aria-label="Introït du jour : afficher la traduction">
@@ -33,6 +45,7 @@
 			<em lang={traduction ? 'fr' : 'la'}>{traduction && introitFr ? introitFr : introit}</em>
 		</button>
 	{/if}
+	<div class="filet-milieu" aria-hidden="true"><Ornement nom="laurier" /></div>
 	{#if invocation}<p class="invocation">{invocation}</p>{/if}
 	<div class="fleurons" role="img" aria-label="Jardin du jour : {allumes} sur 3">
 		{#each [0, 1, 2] as i}<span class:allume={i < allumes}><Ornement nom="lis" taille={18} /></span>{/each}
@@ -48,6 +61,23 @@
 		padding: calc(var(--hs-e6) + env(safe-area-inset-top)) var(--hs-marge-mobile) calc(var(--hs-e6) + env(safe-area-inset-bottom));
 		text-align: center; animation: venir 900ms var(--hs-courbe);
 	}
+	.frise { position: fixed; left: 0; right: 0; color: var(--hs-or); opacity: 0.85; line-height: 0; }
+	.frise.haut { top: env(safe-area-inset-top); }
+	.frise.bas { bottom: env(safe-area-inset-bottom); }
+	.coin { position: fixed; color: var(--hs-or); opacity: 0.8; line-height: 0; }
+	.coin.hg { top: calc(18px + env(safe-area-inset-top)); left: 10px; }
+	.coin.hd { top: calc(18px + env(safe-area-inset-top)); right: 10px; transform: scaleX(-1); }
+	.coin.bg { bottom: calc(18px + env(safe-area-inset-bottom)); left: 10px; transform: scaleY(-1); }
+	.coin.bd { bottom: calc(18px + env(safe-area-inset-bottom)); right: 10px; transform: scale(-1, -1); }
+	.filet-titre { width: min(60vw, 16rem); color: var(--hs-or); margin-top: -10px; }
+	.filet-milieu { width: min(50vw, 12rem); color: var(--hs-or-trait); }
+	.niche { position: relative; display: grid; justify-items: center; }
+	.cle { position: absolute; top: -13px; left: 50%; transform: translateX(-50%); z-index: 1; color: var(--hs-rubrique); background: var(--hs-fond); padding: 0 4px; line-height: 0; }
+	.cherub { position: absolute; top: 34%; color: var(--hs-or); line-height: 0; }
+	.cherub.g { left: -34px; }
+	.cherub.d { right: -34px; transform: scaleX(-1); }
+	.socle { width: calc(100% + 24px); color: var(--hs-or); margin-top: 6px; line-height: 0; }
+	@media (max-width: 380px) { .cherub { display: none; } }
 	.nom { margin: 0; font-family: var(--hs-titre); font-size: var(--hs-t3); letter-spacing: 0.18em; text-transform: uppercase; color: var(--hs-or-texte); }
 	.arche {
 		width: min(72vw, 21rem); aspect-ratio: 3 / 4; padding: 10px; border: var(--hs-trait) solid var(--hs-or-trait);
