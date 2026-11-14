@@ -20,8 +20,8 @@
 		latin = !latin;
 		try { localStorage.setItem('ecriture-latin', latin ? '1' : '0'); } catch { /* rien */ }
 	}
-	/** Versets français, avec le latin de même numéro (les numérotations diffèrent seulement en Jn 6 et Mt 17). */
-	const versets = $derived(texte ? texte.fr.map(([n, fr]) => ({ n, fr, la: texte!.la.find((v) => v[0] === n)?.[1] ?? '' })) : []);
+	/** Versets français, avec le latin de même numéro ; quand les numérotations diffèrent, le latin vient à part. */
+	const versets = $derived(texte ? texte.fr.map(([n, fr]) => ({ n, fr, la: texte!.decale ? '' : (texte!.la.find((v) => v[0] === n)?.[1] ?? '') })) : []);
 	const livre = $derived(LIVRES[ref.livre]);
 	const voisin = (d: number) => {
 		const c = ref.chapitre + d;
@@ -52,6 +52,12 @@
 					{#if latin && v.la}<span class="la" lang="la">{v.la}</span>{/if}
 				</p>
 			{/each}
+			{#if latin && texte.decale && texte.la.length}
+				<div class="latin-a-part" lang="la">
+					<p class="pc rub">Vulgate</p>
+					{#each texte.la as [n, la] (n)}<p class="verset"><span class="la"><sup class="num rub">{n}</sup>{la}</span></p>{/each}
+				</div>
+			{/if}
 			<div class="cul"><Ornement nom="cherubin" taille={30} /></div>
 			<p class="source petit">
 				Traduction : <a href={texte.source.fr.url} rel="noopener" target="_blank">{texte.source.fr.ouvrage}</a>, {texte.source.fr.edition}.
@@ -76,6 +82,9 @@
 	.premier .fr::first-letter { font-family: var(--hs-titre); font-size: 3.1em; float: left; line-height: 0.85; margin: 0.06em 0.08em 0 0; color: var(--hs-rubrique); }
 	.premier .num { display: none; }
 	.la { color: var(--hs-encre-douce); font-size: 0.95em; font-style: italic; padding-left: var(--hs-e4); border-left: var(--hs-cheveu) solid var(--hs-or-trait); }
+	.latin-a-part { margin-top: var(--hs-e5); border-top: var(--hs-cheveu) solid var(--hs-or-trait); padding-top: var(--hs-e4); }
+	.latin-a-part > .pc { text-align: center; margin: 0 0 var(--hs-e3); }
+	.latin-a-part .la { border-left: 0; padding-left: 0; }
 	.cul { max-width: 90px; margin: var(--hs-e5) auto var(--hs-e3); }
 	.source { text-align: center; color: var(--hs-encre-douce); }
 	.centre { text-align: center; }

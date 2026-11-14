@@ -168,6 +168,37 @@ for nom, livre in [('Saint Matthieu', 'Matthew'), ('Saint Marc', 'Mark'), ('Sain
         CH.append(el(f'{nom}, chapitre {c}', ref=f'{ {"Matthew":"Mt","Mark":"Mc","Luke":"Lc","John":"Jn"}[livre]} {c}', lecture=f'{ {"Matthew":"Mt","Mark":"Mc","Luke":"Lc","John":"Jn"}[livre]} {c}'))
 roue('lecture-evangiles', len(CH), 'Lecture des quatre Évangiles, un chapitre par jour', CH, VULGATE, actif=True)
 
+# ---------------------------------------------------------------- passages à lire, élément par élément
+# Référence dans Crampon 1923 ; après « | », celle de la Vulgate quand la numérotation diffère (psaumes, Siracide…).
+# Chaque passage a été relu dans les deux textes (engine/ecriture/verifier_lectures.py).
+LECTURES = {
+    'un-dieu': ['Dt 6, 4-5'],
+    'trinite': ['Mt 6, 9', 'Jn 1, 14', 'Jn 14, 26'],
+    'presents-mages': ['Mt 2, 11'] * 3,
+    'oeuvres-satisfaction': ['Mt 6, 5-6', 'Mt 6, 16-18', 'Mt 6, 2-4'],
+    'concupiscences': ['1 Jn 2, 15-17'] * 3,
+    'fins-dernieres': ['Si 41, 1-2', 'He 9, 27', 'Mt 25, 41-46', '1 Co 2, 9'],
+    'vertus-cardinales': ['Sg 8, 7'] * 4,
+    'sacrements': ['Mt 28, 18-20', 'Ac 8, 14-17', 'Mt 26, 26-28', 'Jn 20, 21-23', 'Jc 5, 14-15', 'Lc 22, 19', 'Ep 5, 31-32'],
+    'vices-capitaux': ['Si 10, 15', '1 Tm 6, 9-10', '1 Co 6, 18-20', 'Jc 1, 19-20', 'Lc 21, 34', 'Sg 2, 24', 'Pr 6, 6-11'],
+    'misericorde-corporelle': ['Mt 25, 34-35', 'Mt 25, 35', 'Mt 25, 36', 'Mt 25, 35', 'Mt 25, 36', 'Mt 25, 36', 'Tb 12, 12'],
+    'misericorde-spirituelle': ['Jude 1, 22-23', 'Dn 12, 3', 'Mt 18, 15', '2 Co 1, 3-4', 'Mt 6, 14-15', 'Col 3, 12-13', '2 M 12, 46'],
+    'demandes-pater': ['Mt 6, 9', 'Mt 6, 10', 'Mt 6, 10', 'Mt 6, 11', 'Mt 6, 12', 'Mt 6, 13', 'Mt 6, 13'],
+    'sept-paroles': None,  # la référence de chaque élément
+    'psaumes-penitence': ['Ps 6', 'Ps 32 | 31', 'Ps 38 | 37', 'Ps 51 | 50', 'Ps 102 | 101', 'Ps 130 | 129', 'Ps 143 | 142'],
+    'beatitudes': [f'Mt 5, {v}' for v in range(3, 11)],
+    'choeurs-anges': ['Ps 91, 11-12 | 90, 11-12', '1 Th 4, 16', 'Ep 1, 20-21', 'Ep 1, 20-21', 'Col 1, 16', 'Col 1, 16', 'Col 1, 16', 'Gn 3, 24', 'Is 6, 1-3'],
+    'commandements': ['Ex 20, 2-3', 'Ex 20, 7', 'Ex 20, 8', 'Ex 20, 12', 'Ex 20, 13', 'Ex 20, 14', 'Ex 20, 15', 'Ex 20, 16', 'Ex 20, 17', 'Ex 20, 17'],
+    'fruits-saint-esprit': ['Ga 5, 22-23'] * 12,
+    'apotres': ['Mt 16, 16-19', 'Jn 1, 40-42', 'Ac 12, 1-2', 'Jn 13, 23', 'Jn 14, 8-9', 'Jn 1, 45-49', 'Jn 20, 26-29', 'Mt 9, 9', 'Jc 1, 1', 'Jude 1, 1', 'Lc 6, 13-16', 'Ac 1, 24-26'],
+}
+for r in R:
+    if r['id'] not in LECTURES: continue
+    ls = LECTURES[r['id']] or [e['ref'] for e in r['elements']]
+    assert len(ls) == len(r['elements']), r['id']
+    for e, l in zip(r['elements'], ls):
+        e.setdefault('lecture', l)
+
 dest = Path(__file__).resolve().parents[2] / 'data' / 'roues.json'
 dest.write_text(json.dumps({'depart': 'Premier dimanche de l’Avent', 'roues': R}, ensure_ascii=False, indent=1), encoding='utf-8')
 print(len(R), 'roues', sorted({r['nombre'] for r in R}))

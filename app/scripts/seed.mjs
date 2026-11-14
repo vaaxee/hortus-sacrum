@@ -13,12 +13,10 @@ compact(join(racine, 'data', 'prieres', 'sources.json'), join(cible, 'prieres', 
 compact(join(racine, 'data', 'prieres', 'indulgences.json'), join(cible, 'prieres', 'indulgences.json'));
 // roues symboliques (engine/roues/construire.py)
 compact(join(racine, 'data', 'roues.json'), join(cible, 'roues.json'));
-// Écriture sainte (engine/ecriture/evangiles.py) : un fichier par livre, la source à part
+// Écriture sainte (engine/ecriture/bible.py) : un fichier par livre, la source à part
 mkdirSync(join(cible, 'ecriture'), { recursive: true });
-{
-	const ev = JSON.parse(readFileSync(join(racine, 'data', 'ecriture', 'evangiles.json'), 'utf-8'));
-	writeFileSync(join(cible, 'ecriture', 'source.json'), JSON.stringify(ev.source));
-	for (const l of ev.livres) writeFileSync(join(cible, 'ecriture', `${l.id}.json`), JSON.stringify(l));
+for (const f of readdirSync(join(racine, 'data', 'ecriture'))) {
+	if (f.endsWith('.json')) compact(join(racine, 'data', 'ecriture', f), join(cible, 'ecriture', f));
 }
 for (const f of readdirSync(join(racine, 'data', 'calendar'))) {
 	compact(join(racine, 'data', 'calendar', f), join(cible, 'calendar', f));
