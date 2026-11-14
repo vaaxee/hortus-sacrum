@@ -14,7 +14,8 @@
 		['mois-sacre-coeur', 'Lefebvre — Mois du Sacré-Cœur (juin)'],
 		['mois-precieux-sang', 'Boylesve — Mois du Précieux Sang (juillet)'],
 		['mois-purgatoire', 'Berlioux — Mois des âmes du purgatoire (novembre)'],
-		['breviaire', 'Bréviaire romain — leçons du IIe nocturne']
+		['breviaire', 'Bréviaire romain — leçons du IIe nocturne'],
+		['liguori-visites', 'S. Alphonse de Liguori — Visites au Saint-Sacrement et à la sainte Vierge (chaque jour du mois)']
 	];
 	const id = $derived(page.url.searchParams.get('r'));
 	const n = $derived(page.url.searchParams.get('n'));
