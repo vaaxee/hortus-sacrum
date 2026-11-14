@@ -8,6 +8,11 @@
 		introit = '', introitFr = '', invocation = '', avancement = 0, entrer
 	}: { introit?: string; introitFr?: string; invocation?: string; avancement?: number; entrer: () => void } = $props();
 	let traduction = $state(false);
+	// image d'accueil : le tableau (par défaut) ou sa gravure à l'or ; réglage gardé sur l'appareil
+	let image = $state<'tableau' | 'gravure'>('tableau');
+	$effect(() => {
+		try { image = (localStorage.getItem('accueil-image') as 'tableau' | 'gravure') || 'tableau'; } catch { /* stockage indisponible */ }
+	});
 	// pendant l'accueil, la barre d'onglets est masquée
 	$effect(() => {
 		document.documentElement.classList.add('accueil-ouvert');
@@ -19,7 +24,9 @@
 
 <div class="accueil" role="dialog" aria-label="Accueil">
 	<p class="nom">Hortus Sacrum</p>
-	<div class="arche" aria-hidden="true"><div class="gravure"></div></div>
+	<div class="arche" aria-hidden="true">
+		{#if image === 'gravure'}<div class="gravure"></div>{:else}<img class="tableau" src="/accueil/velazquez.jpg" alt="" />{/if}
+	</div>
 	{#if introit}
 		<button class="brut introit" onclick={() => (traduction = !traduction)} aria-label="Introït du jour : afficher la traduction">
 			<span class="pc">Introït</span>
@@ -31,7 +38,7 @@
 		{#each [0, 1, 2] as i}<span class:allume={i < allumes}><Ornement nom="lis" taille={18} /></span>{/each}
 	</div>
 	<button class="entrer" onclick={entrer}>Entrer au jardin</button>
-	<p class="credit">D'après Velázquez, <em>Le Couronnement de la Vierge</em></p>
+	<p class="credit">{image === 'gravure' ? 'D’après ' : ''}Velázquez, <em>Le Couronnement de la Vierge</em>, v. 1635</p>
 </div>
 
 <style>
@@ -51,6 +58,10 @@
 		background: var(--hs-or-texte); /* or sombre le jour, or clair la nuit */
 		-webkit-mask: url('/accueil/vierge.png') center 12% / cover no-repeat;
 		mask: url('/accueil/vierge.png') center 12% / cover no-repeat;
+	}
+	.tableau {
+		width: 100%; height: 100%; object-fit: cover; object-position: center 12%; display: block;
+		border-radius: 50% 50% 0 0 / 34% 34% 0 0; box-shadow: inset 0 0 0 1px var(--hs-or-trait);
 	}
 	.introit { background: none; border: 0; padding: 4px 8px; display: grid; gap: 2px; max-width: 26rem; cursor: pointer; color: var(--hs-encre); }
 	.introit .pc { color: var(--hs-rubrique); font-size: 0.9375rem; }

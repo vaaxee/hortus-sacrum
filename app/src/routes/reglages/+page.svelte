@@ -14,6 +14,8 @@
 		versions: 0
 	});
 
+	let imageAccueil = $state('tableau');
+	try { imageAccueil = localStorage.getItem('accueil-image') || 'tableau'; } catch { /* stockage indisponible */ }
 	const themes: [Theme, string][] = [['auto', 'Selon l’appareil'], ['jour', 'Jour'], ['nuit', 'Nuit']];
 	const directions: [Direction, string][] = [['latine', 'Latine'], ['grecque', 'Grecque, outremer et cobalt']];
 	let courriel = $state('');
@@ -198,6 +200,12 @@
 
 	<section>
 		<h2>Apparence</h2>
+		<label><span>Image de l’écran d’accueil</span>
+			<select value={imageAccueil} onchange={(ev) => { imageAccueil = ev.currentTarget.value; try { localStorage.setItem('accueil-image', imageAccueil); } catch { /* */ } }}>
+				<option value="tableau">Le tableau de Velázquez</option>
+				<option value="gravure">Sa gravure à l’or</option>
+			</select>
+		</label>
 		<p class="aide">Thème</p>
 		<div class="rangee" role="group" aria-label="Thème">
 			{#each themes as [v, nom]}
