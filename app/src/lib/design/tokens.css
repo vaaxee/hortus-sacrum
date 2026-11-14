@@ -220,6 +220,7 @@
 .hs .lecture p.verset { text-align: left; hyphens: manual; }
 .hs .lecture .vr { color: var(--hs-rubrique); font-variant-caps: normal; }
 .hs .lecture h3 { color: var(--hs-rubrique); text-align: center; margin: var(--hs-ligne) 0 calc(var(--hs-ligne) / 2); }
+.hs .lecture h4 { font-family: var(--hs-titre); font-style: italic; font-weight: 400; font-size: 1.15rem; color: var(--hs-rubrique); text-align: center; margin: var(--hs-ligne) 0 calc(var(--hs-ligne) / 3); }
 .hs [lang='la'] { font-style: italic; }
 .hs .lecture.vers p { text-align: center; hyphens: manual; }
 

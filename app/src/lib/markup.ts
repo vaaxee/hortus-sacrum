@@ -4,6 +4,7 @@
  *   [r]texte[/r]        → rouge (rubrique)
  *   ℣. … / ℟. …         → verset et répons (le signe est en rouge)
  *   ## Titre            → intertitre
+ *   ### Titre           → sous-titre (le jour d'une neuvaine…)
  *   ligne vide          → nouveau paragraphe ; retour simple → retour à la ligne
  */
 
@@ -27,6 +28,7 @@ export function rendre(corps: string): string {
 		.map((p) => p.trim())
 		.filter(Boolean)
 		.map((p) => {
+			if (p.startsWith('### ')) return `<h4>${enLigne(p.slice(4))}</h4>`;
 			if (p.startsWith('## ')) return `<h3>${enLigne(p.slice(3))}</h3>`;
 			const cls = /^(℣\.|℟\.)/.test(p) ? ' class="verset"' : '';
 			return `<p${cls}>${enLigne(p)}</p>`;
@@ -36,7 +38,7 @@ export function rendre(corps: string): string {
 
 /** Texte nu, pour la recherche. */
 export function nu(corps: string): string {
-	return corps.replace(/\[\/?r\]|\*|^## /gm, '');
+	return corps.replace(/\[\/?r\]|\*|^#{2,3} /gm, '');
 }
 
 export function sansAccents(s: string): string {

@@ -613,6 +613,52 @@
      "texte": "300 jours"
     }
    ]
+  },
+  "weber:petit-chapelet-immaculee-conception": {
+   "ref": "Ench. 1952, n° 357",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "jours": 3600,
+     "texte": "12 × 300 jours"
+    }
+   ],
+   "note": "Pour les douze invocations « O Marie, conçue sans péché » (300 jours chacune). Le « Souvenez-vous » et « Jésus, Marie, Joseph » ont leurs propres indulgences."
+  },
+  "weber:neuvaine-immaculee-conception": {
+   "ref": "Ench. 1952, n° 361",
+   "frequence": "une fois le jour",
+   "partielles": [
+    {
+     "ans": 5,
+     "texte": "5 ans, une fois le jour"
+    }
+   ],
+   "intention": "En l’honneur de la Vierge Immaculée, avec le propos de prier ainsi neuf jours de suite avant sa fête.",
+   "note": "Faite publiquement à l'église : 7 ans chaque jour. En décembre, toute pratique en l'honneur de l'Immaculée vaut aussi 5 ans une fois le jour (n° 364)."
+  },
+  "liguori:neuvaine-sacre-coeur": {
+   "ref": "Ench. 1952, n° 250",
+   "frequence": "une fois le jour",
+   "partielles": [
+    {
+     "ans": 7,
+     "texte": "7 ans, une fois le jour"
+    }
+   ],
+   "intention": "En l’honneur du Sacré-Cœur, avec le propos de prier ainsi neuf jours de suite.",
+   "note": "Faite publiquement à l'église : 10 ans chaque jour."
+  },
+  "neuvaines-1886:nativite": {
+   "ref": "Ench. 1952, n° 326",
+   "frequence": "une fois le jour",
+   "partielles": [
+    {
+     "ans": 5,
+     "texte": "5 ans, une fois le jour"
+    }
+   ],
+   "intention": "En l’honneur de la Nativité de la sainte Vierge, avec le propos de prier ainsi neuf jours de suite."
   }
  },
  "sans_compte": {

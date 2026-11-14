@@ -172,9 +172,35 @@ export async function amorcer(fetchFn: typeof fetch = fetch): Promise<void> {
 	await litaniesDuLundi();
 	await reparerLitanies();
 	await rappelsDuProfil();
+	await textesDesDevotions();
 	await chapeletParLaRoue();
 	await livrerElements();
 	await renouvellementDuCordon();
+}
+
+/** Textes sourcés trouvés pour des dévotions du plan restées sans texte (titre de la dévotion → texte). */
+const TEXTES_DES_DEVOTIONS: Record<string, string> = {
+	'Neuvaine à l’Immaculée Conception': 'weber:neuvaine-immaculee-conception',
+	'Neuvaine au Sacré-Cœur': 'liguori:neuvaine-sacre-coeur',
+	'Neuvaine de la Nativité de Notre-Dame': 'neuvaines-1886:nativite'
+};
+
+/** Relie chaque texte une seule fois (meta « devotions-textes ») aux dévotions de ce titre, vides et jamais modifiées. */
+async function textesDesDevotions(): Promise<void> {
+	const livres = new Set(((await db.meta.get('devotions-textes'))?.valeur as string[] | undefined) ?? []);
+	let change = false;
+	for (const [titre, id] of Object.entries(TEXTES_DES_DEVOTIONS)) {
+		if (livres.has(id) || !(await db.textes.get(id))) continue;
+		for (const p of await db.pratiques.toArray()) {
+			if (p.titre !== titre || p.supprimeLe || p.textes.length || !(p.modifieLe === DEPART || p.original === contenu(p))) continue;
+			const q = { ...p, textes: [id] } as Pratique;
+			q.original = contenu(q);
+			await db.pratiques.put(q);
+		}
+		livres.add(id);
+		change = true;
+	}
+	if (change) await db.meta.put({ cle: 'devotions-textes', valeur: [...livres] });
 }
 
 /** Une seule fois (meta « profil-rappels ») : les anniversaires du profil spirituel déjà saisis reçoivent le rappel la veille. */
