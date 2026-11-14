@@ -682,6 +682,16 @@
    ],
    "intention": "En l’honneur du divin Enfant Jésus, avec le propos de prier ainsi neuf jours de suite avant Noël.",
    "note": "Faite publiquement à l'église : 10 ans chaque jour."
+  },
+  "thesaurisons:sainte-face-therese": {
+   "ref": "Thésaurisons, n° 235 (Preces et Pia Opera 1938, n° 178 ; S. P. A., 5 avr. 1931)",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "jours": 500,
+     "texte": "500 jours"
+    }
+   ]
   }
  },
  "sans_compte": {
