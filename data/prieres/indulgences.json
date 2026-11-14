@@ -459,6 +459,16 @@
      "texte": "300 jours (℣. Dignare me)"
     }
    ]
+  },
+  "weber:souvenez-vous": {
+   "ref": "Ench. 1952, n° 339",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "ans": 3,
+     "texte": "3 ans"
+    }
+   ]
   }
  },
  "sans_compte": {
