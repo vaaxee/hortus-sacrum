@@ -10,6 +10,8 @@ mkdirSync(join(cible, 'prieres'), { recursive: true });
 mkdirSync(join(cible, 'calendar'), { recursive: true });
 compact(join(racine, 'data', 'prieres', 'jardin.json'), join(cible, 'prieres', 'jardin.json'));
 compact(join(racine, 'data', 'prieres', 'sources.json'), join(cible, 'prieres', 'sources.json'));
+// roues symboliques (engine/roues/construire.py)
+compact(join(racine, 'data', 'roues.json'), join(cible, 'roues.json'));
 for (const f of readdirSync(join(racine, 'data', 'calendar'))) {
 	compact(join(racine, 'data', 'calendar', f), join(cible, 'calendar', f));
 }

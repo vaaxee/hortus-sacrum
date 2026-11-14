@@ -1,0 +1,121 @@
+<script lang="ts">
+	import { creer, db, enregistrer, mettreALaCorbeille, nouvelId } from '#lib/db.ts';
+	import Ornement from '#lib/design/Ornement.svelte';
+	import { vivant } from '#lib/live.ts';
+	import type { FetePerso } from '#lib/types.ts';
+
+	/**
+	 * Profil spirituel : sacrements reçus, consécrations, saint patron et saints aimés.
+	 * Chaque ligne est une fête personnelle (même table que /fetes) : anniversaire rappelé, saint rappelé la veille.
+	 */
+	const fetes = vivant(async () => (await db.fetes.toArray()).filter((f) => !f.supprimeLe), [] as FetePerso[]);
+	const SACREMENTS: [string, string][] = [
+		['bapteme', 'Baptême'], ['confirmation', 'Confirmation'], ['communion', 'Première communion'],
+		['mariage', 'Mariage'], ['ordre', 'Ordination ou profession religieuse']
+	];
+	const TITRES: Record<string, string> = {
+		bapteme: 'Anniversaire de mon baptême', confirmation: 'Anniversaire de ma confirmation', communion: 'Anniversaire de ma première communion',
+		mariage: 'Anniversaire de mon mariage', ordre: 'Anniversaire de mon ordination ou de ma profession'
+	};
+	const du = (cle: string) => $fetes.filter((f) => f.profil === cle).sort((a, b) => a.mois - b.mois || a.jour - b.jour);
+	const versDate = (f: FetePerso) => (f.annee ? `${f.annee}-${String(f.mois).padStart(2, '0')}-${String(f.jour).padStart(2, '0')}` : '');
+	const auj = new Date();
+	function depuis(f: FetePerso): string {
+		if (!f.annee) return '';
+		const n = auj.getFullYear() - f.annee - (auj.getMonth() + 1 < f.mois || (auj.getMonth() + 1 === f.mois && auj.getDate() < f.jour) ? 1 : 0);
+		return n > 0 ? `il y a ${n} an${n > 1 ? 's' : ''}` : 'cette année';
+	}
+	const dateFr = (f: FetePerso) => new Date(f.annee ?? 2000, f.mois - 1, f.jour).toLocaleDateString('fr-FR', f.annee ? { day: 'numeric', month: 'long', year: 'numeric' } : { day: 'numeric', month: 'long' });
+
+	/** Enregistre la date d'un sacrement (une seule ligne par sacrement). */
+	async function sacrement(cle: string, nom: string, valeur: string) {
+		const existant = du(cle)[0];
+		if (!valeur) return existant && mettreALaCorbeille('fetes', existant.id);
+		const [a, m, j] = valeur.split('-').map(Number);
+		const titre = TITRES[cle] ?? `Anniversaire : ${nom}`;
+		if (existant) await enregistrer('fetes', { ...existant, annee: a, mois: m, jour: j });
+		else await creer<FetePerso>('fetes', { id: nouvelId(), origine: 'personnel', titre, genre: 'anniversaire', mois: m, jour: j, annee: a, rappelVeille: false, notes: '', profil: cle });
+	}
+
+	let nouveau = $state<{ cle: string; titre: string; date: string } | null>(null);
+	function ajouter(cle: string) {
+		nouveau = { cle, titre: '', date: '' };
+	}
+	async function valider() {
+		if (!nouveau || !nouveau.titre.trim() || !nouveau.date) return;
+		const [a, m, j] = nouveau.date.split('-').map(Number);
+		const saint = nouveau.cle !== 'consecration';
+		await creer<FetePerso>('fetes', {
+			id: nouvelId(), origine: 'personnel', titre: nouveau.titre.trim(), genre: saint ? 'saint' : 'anniversaire',
+			mois: m, jour: j, ...(saint ? {} : { annee: a }), rappelVeille: saint, notes: '', profil: nouveau.cle
+		});
+		nouveau = null;
+	}
+	const RUBRIQUES: [string, string, string, string][] = [
+		['consecration', 'Consécrations', 'Ex. : consécration à Jésus par Marie, cordon de saint Joseph, scapulaire…', 'Date de la consécration'],
+		['patron', 'Saint patron et fête patronale', 'Le saint dont vous portez le nom : un rappel la veille de sa fête.', 'Jour de sa fête (l’année ne compte pas)'],
+		['saint', 'Saints aimés', 'Un rappel la veille de leur fête.', 'Jour de sa fête (l’année ne compte pas)']
+	];
+</script>
+
+<svelte:head><title>Profil spirituel — Hortus Sacrum</title></svelte:head>
+
+<main class="page entree">
+	<div class="tete-page">
+		<h1>Profil spirituel</h1>
+		<Ornement nom="fleuron" />
+		<p class="petit">Les grâces reçues et les protecteurs choisis ; leurs anniversaires et leurs fêtes reviennent dans la journée et dans les rappels.</p>
+	</div>
+
+	<section>
+		<h2>Sacrements reçus</h2>
+		{#each SACREMENTS as [cle, nom]}
+			{@const f = du(cle)[0]}
+			<div class="ligne">
+				<label><span>{nom}</span><input type="date" value={f ? versDate(f) : ''} onchange={(ev) => sacrement(cle, nom, ev.currentTarget.value)} /></label>
+				{#if f}<p class="depuis">{depuis(f)}</p>{/if}
+			</div>
+		{/each}
+	</section>
+
+	{#each RUBRIQUES as [cle, nom, aide, libelleDate]}
+		<section>
+			<h2>{nom}</h2>
+			<p class="aide">{aide}</p>
+			<ul>
+				{#each du(cle) as f (f.id)}
+					<li>
+						<span class="nom">{f.titre}</span>
+						<span class="quand">{dateFr(f)}{#if f.annee} · {depuis(f)}{/if}{#if f.rappelVeille} · rappel la veille{/if}</span>
+						<button class="discret" onclick={() => mettreALaCorbeille('fetes', f.id)} aria-label="Retirer {f.titre}">retirer</button>
+					</li>
+				{/each}
+			</ul>
+			{#if nouveau?.cle === cle}
+				<div class="ajout">
+					<label><span>{cle === 'consecration' ? 'Consécration' : 'Saint'}</span><input type="text" bind:value={nouveau.titre} /></label>
+					<label><span>{libelleDate}</span><input type="date" bind:value={nouveau.date} /></label>
+					<div class="rangee"><button class="principal" onclick={valider}>Ajouter</button><button class="discret" onclick={() => (nouveau = null)}>Annuler</button></div>
+				</div>
+			{:else}
+				<button onclick={() => ajouter(cle)}>Ajouter</button>
+			{/if}
+		</section>
+	{/each}
+
+	<p class="petit fin">Toutes ces dates se retrouvent, modifiables, dans <a href="/fetes">les fêtes personnelles</a>.</p>
+</main>
+
+<style>
+	section { margin-top: var(--hs-e6); }
+	section h2 { font-size: var(--hs-t2); margin-bottom: var(--hs-e2); }
+	.ligne { display: flex; align-items: flex-end; gap: var(--hs-e3); flex-wrap: wrap; margin: var(--hs-e2) 0; }
+	.ligne label { flex: 1 1 14rem; }
+	.depuis { margin: 0 0 8px; font-style: italic; color: var(--hs-encre-douce); }
+	ul { list-style: none; padding: 0; margin: 0 0 var(--hs-e3); }
+	li { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; padding: 8px 0; border-bottom: var(--hs-cheveu) solid var(--hs-filet); }
+	.nom { flex: 1 1 12rem; }
+	.quand { color: var(--hs-encre-douce); font-style: italic; font-size: 1rem; }
+	.ajout { display: grid; gap: var(--hs-e3); margin: var(--hs-e3) 0; }
+	.fin { margin-top: var(--hs-e6); text-align: center; }
+</style>

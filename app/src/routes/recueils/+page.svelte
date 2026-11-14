@@ -12,6 +12,7 @@
 		['mois-joseph', 'Lefebvre — Mois de saint Joseph (mars)'],
 		['mois-marie', 'Lefebvre — Mois de Marie (mai)'],
 		['mois-sacre-coeur', 'Lefebvre — Mois du Sacré-Cœur (juin)'],
+		['mois-precieux-sang', 'Boylesve — Mois du Précieux Sang (juillet)'],
 		['mois-purgatoire', 'Berlioux — Mois des âmes du purgatoire (novembre)'],
 		['breviaire', 'Bréviaire romain — leçons du IIe nocturne']
 	];

@@ -1,0 +1,9 @@
+<!-- Modèle « Magic Link » de Supabase (Authentication → Emails → Magic Link). Sujet : « Hortus Sacrum : votre code de connexion » -->
+<div style="font-family: Georgia, 'EB Garamond', serif; max-width: 480px; margin: 0 auto; padding: 24px; color: #2a2620; background: #f8f3e8;">
+  <p style="text-align: center; letter-spacing: 0.08em; text-transform: uppercase; color: #a83d49; margin: 0 0 16px;">Hortus Sacrum</p>
+  <p>Voici votre code de connexion, à saisir dans l’app (utile si elle est installée sur l’écran d’accueil) :</p>
+  <p style="text-align: center; font-size: 30px; letter-spacing: 0.3em; margin: 20px 0; color: #304e85;"><strong>{{ .Token }}</strong></p>
+  <p>Ou, depuis le navigateur, ouvrez ce lien :</p>
+  <p style="text-align: center;"><a href="{{ .ConfirmationURL }}" style="color: #304e85;">Se connecter à Hortus Sacrum</a></p>
+  <p style="font-size: 13px; color: #5d5647;">Ce code et ce lien ne valent qu’une heure. Si vous n’avez rien demandé, ignorez ce message.</p>
+</div>

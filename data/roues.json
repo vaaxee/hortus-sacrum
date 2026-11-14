@@ -1,0 +1,1584 @@
+{
+ "depart": "Premier dimanche de l’Avent",
+ "roues": [
+  {
+   "id": "un-dieu",
+   "nombre": 1,
+   "titre": "Un seul Dieu",
+   "elements": [
+    {
+     "fr": "Un seul Dieu",
+     "la": "Dominus unus est"
+    }
+   ],
+   "source": {
+    "ouvrage": "Biblia Sacra Vulgatæ editionis (Clémentine)",
+    "edition": "texte de la Vulgate clémentine",
+    "page": "",
+    "url": "https://github.com/scrollmapper/bible_databases"
+   },
+   "verset": {
+    "ref": "Dt 6, 4",
+    "la": "Audi, Israël: Dominus Deus noster, Dominus unus est."
+   },
+   "actif": true,
+   "unite": "jour",
+   "anneau": 1
+  },
+  {
+   "id": "vertus-theologales",
+   "nombre": 3,
+   "titre": "Les trois vertus théologales",
+   "elements": [
+    {
+     "fr": "La foi",
+     "la": "Fides",
+     "texte": "paroissien:acte-de-foi"
+    },
+    {
+     "fr": "L’espérance",
+     "la": "Spes",
+     "texte": "paroissien:acte-d-esperance"
+    },
+    {
+     "fr": "La charité",
+     "la": "Caritas",
+     "texte": "paroissien:acte-de-charite"
+    }
+   ],
+   "source": {
+    "ouvrage": "Biblia Sacra Vulgatæ editionis (Clémentine)",
+    "edition": "texte de la Vulgate clémentine",
+    "page": "",
+    "url": "https://github.com/scrollmapper/bible_databases"
+   },
+   "verset": {
+    "ref": "1 Co 13, 13",
+    "la": "Nunc autem manent fides, spes, caritas, tria hæc: major autem horum est caritas."
+   },
+   "actif": true,
+   "unite": "jour",
+   "anneau": 3
+  },
+  {
+   "id": "trinite",
+   "nombre": 3,
+   "titre": "Les trois Personnes divines",
+   "elements": [
+    {
+     "fr": "Le Père",
+     "la": "Pater"
+    },
+    {
+     "fr": "Le Fils",
+     "la": "Verbum"
+    },
+    {
+     "fr": "Le Saint-Esprit",
+     "la": "Spiritus Sanctus"
+    }
+   ],
+   "source": {
+    "ouvrage": "Biblia Sacra Vulgatæ editionis (Clémentine)",
+    "edition": "texte de la Vulgate clémentine",
+    "page": "",
+    "url": "https://github.com/scrollmapper/bible_databases"
+   },
+   "verset": {
+    "ref": "1 Jn 5, 7",
+    "la": "Quoniam tres sunt, qui testimonium dant in cælo: Pater, Verbum, et Spiritus Sanctus: et hi tres unum sunt."
+   },
+   "actif": false,
+   "unite": "jour"
+  },
+  {
+   "id": "presents-mages",
+   "nombre": 3,
+   "titre": "Les trois présents des Mages",
+   "elements": [
+    {
+     "fr": "L’or",
+     "la": "Aurum"
+    },
+    {
+     "fr": "L’encens",
+     "la": "Thus"
+    },
+    {
+     "fr": "La myrrhe",
+     "la": "Myrrha"
+    }
+   ],
+   "source": {
+    "ouvrage": "Biblia Sacra Vulgatæ editionis (Clémentine)",
+    "edition": "texte de la Vulgate clémentine",
+    "page": "",
+    "url": "https://github.com/scrollmapper/bible_databases"
+   },
+   "verset": {
+    "ref": "Mt 2, 11",
+    "la": "Et intrantes domum, invenerunt puerum cum Maria matre ejus, et procidentes adoraverunt eum: et apertis thesauris suis obtulerunt ei munera, aurum, thus, et myrrham."
+   },
+   "actif": false,
+   "unite": "jour"
+  },
+  {
+   "id": "oeuvres-satisfaction",
+   "nombre": 3,
+   "titre": "La prière, le jeûne et l’aumône",
+   "elements": [
+    {
+     "fr": "La prière",
+     "la": "Oratio"
+    },
+    {
+     "fr": "Le jeûne",
+     "la": "Jejunium"
+    },
+    {
+     "fr": "L’aumône",
+     "la": "Eleemosyna"
+    }
+   ],
+   "source": {
+    "ouvrage": "Biblia Sacra Vulgatæ editionis (Clémentine)",
+    "edition": "texte de la Vulgate clémentine",
+    "page": "",
+    "url": "https://github.com/scrollmapper/bible_databases"
+   },
+   "verset": {
+    "ref": "Tb 12, 8",
+    "la": "Bona est oratio cum jejunio, et eleemosyna magis quam thesauros auri recondere:"
+   },
+   "actif": false,
+   "unite": "jour"
+  },
+  {
+   "id": "concupiscences",
+   "nombre": 3,
+   "titre": "Les trois concupiscences à combattre",
+   "elements": [
+    {
+     "fr": "La concupiscence de la chair",
+     "la": "Concupiscentia carnis"
+    },
+    {
+     "fr": "La concupiscence des yeux",
+     "la": "Concupiscentia oculorum"
+    },
+    {
+     "fr": "L’orgueil de la vie",
+     "la": "Superbia vitæ"
+    }
+   ],
+   "source": {
+    "ouvrage": "Biblia Sacra Vulgatæ editionis (Clémentine)",
+    "edition": "texte de la Vulgate clémentine",
+    "page": "",
+    "url": "https://github.com/scrollmapper/bible_databases"
+   },
+   "verset": {
+    "ref": "1 Jn 2, 16",
+    "la": "quoniam omne quod est in mundo, concupiscentia carnis est, et concupiscentia oculorum, et superbia vitæ: quæ non est ex Patre, sed ex mundo est."
+   },
+   "actif": false,
+   "unite": "jour"
+  },
+  {
+   "id": "fins-dernieres",
+   "nombre": 4,
+   "titre": "Les quatre fins dernières",
+   "elements": [
+    {
+     "fr": "La mort",
+     "la": "Mors"
+    },
+    {
+     "fr": "Le jugement",
+     "la": "Judicium"
+    },
+    {
+     "fr": "L’enfer",
+     "la": "Infernus"
+    },
+    {
+     "fr": "Le paradis",
+     "la": "Paradisus"
+    }
+   ],
+   "source": {
+    "ouvrage": "Biblia Sacra Vulgatæ editionis (Clémentine)",
+    "edition": "texte de la Vulgate clémentine",
+    "page": "",
+    "url": "https://github.com/scrollmapper/bible_databases"
+   },
+   "verset": {
+    "ref": "Si 7, 40",
+    "la": "In omnibus operibus tuis memorare novissima tua, et in æternum non peccabis."
+   },
+   "actif": true,
+   "unite": "jour",
+   "anneau": 4
+  },
+  {
+   "id": "evangelistes",
+   "nombre": 4,
+   "titre": "Les quatre évangélistes",
+   "elements": [
+    {
+     "fr": "Saint Matthieu, l’homme",
+     "la": "Facies hominis"
+    },
+    {
+     "fr": "Saint Marc, le lion",
+     "la": "Facies leonis"
+    },
+    {
+     "fr": "Saint Luc, le bœuf",
+     "la": "Facies bovis"
+    },
+    {
+     "fr": "Saint Jean, l’aigle",
+     "la": "Facies aquilæ"
+    }
+   ],
+   "source": {
+    "ouvrage": "Biblia Sacra Vulgatæ editionis (Clémentine)",
+    "edition": "texte de la Vulgate clémentine",
+    "page": "",
+    "url": "https://github.com/scrollmapper/bible_databases"
+   },
+   "verset": {
+    "ref": "Ez 1, 10",
+    "la": "Similitudo autem vultus eorum, facies hominis et facies leonis a dextris ipsorum quatuor, facies autem bovis a sinistris ipsorum quatuor, et facies aquilæ desuper ipsorum quatuor."
+   },
+   "actif": false,
+   "unite": "jour"
+  },
+  {
+   "id": "vertus-cardinales",
+   "nombre": 4,
+   "titre": "Les quatre vertus cardinales",
+   "elements": [
+    {
+     "fr": "La prudence",
+     "la": "Prudentia"
+    },
+    {
+     "fr": "La justice",
+     "la": "Justitia"
+    },
+    {
+     "fr": "La force",
+     "la": "Virtus"
+    },
+    {
+     "fr": "La tempérance",
+     "la": "Sobrietas"
+    }
+   ],
+   "source": {
+    "ouvrage": "Biblia Sacra Vulgatæ editionis (Clémentine)",
+    "edition": "texte de la Vulgate clémentine",
+    "page": "",
+    "url": "https://github.com/scrollmapper/bible_databases"
+   },
+   "verset": {
+    "ref": "Sg 8, 7",
+    "la": "Et si justitiam quis diligit, labores hujus magnas habent virtutes: sobrietatem enim et prudentiam docet, et justitiam, et virtutem, quibus utilius nihil est in vita hominibus."
+   },
+   "actif": false,
+   "unite": "jour"
+  },
+  {
+   "id": "saintes-plaies",
+   "nombre": 5,
+   "titre": "Les cinq plaies de Notre-Seigneur",
+   "elements": [
+    {
+     "fr": "La main droite",
+     "texte": "jardin:chapelet-des-saintes-plaies"
+    },
+    {
+     "fr": "La main gauche",
+     "texte": "jardin:chapelet-des-saintes-plaies"
+    },
+    {
+     "fr": "Le pied droit",
+     "texte": "jardin:chapelet-des-saintes-plaies"
+    },
+    {
+     "fr": "Le pied gauche",
+     "texte": "jardin:chapelet-des-saintes-plaies"
+    },
+    {
+     "fr": "Le côté",
+     "la": "Latus ejus aperuit",
+     "texte": "jardin:chapelet-des-saintes-plaies"
+    }
+   ],
+   "source": {
+    "ouvrage": "Le Jardin de l’âme",
+    "edition": "livret",
+    "page": "",
+    "url": ""
+   },
+   "verset": {
+    "ref": "Jn 19, 34",
+    "la": "sed unus militum lancea latus ejus aperuit, et continuo exivit sanguis et aqua."
+   },
+   "actif": false,
+   "unite": "jour"
+  },
+  {
+   "id": "douleurs-marie",
+   "nombre": 7,
+   "titre": "Les sept douleurs de Notre-Dame",
+   "elements": [
+    {
+     "fr": "La prophétie de Siméon",
+     "texte": "jardin:les-sept-douleurs-de-marie"
+    },
+    {
+     "fr": "La fuite en Égypte",
+     "texte": "jardin:les-sept-douleurs-de-marie"
+    },
+    {
+     "fr": "Jésus perdu au Temple",
+     "texte": "jardin:les-sept-douleurs-de-marie"
+    },
+    {
+     "fr": "La rencontre sur le chemin du Calvaire",
+     "texte": "jardin:les-sept-douleurs-de-marie"
+    },
+    {
+     "fr": "Le crucifiement",
+     "texte": "jardin:les-sept-douleurs-de-marie"
+    },
+    {
+     "fr": "Le coup de lance",
+     "texte": "jardin:les-sept-douleurs-de-marie"
+    },
+    {
+     "fr": "La sépulture",
+     "texte": "jardin:les-sept-douleurs-de-marie"
+    }
+   ],
+   "source": {
+    "ouvrage": "Le Jardin de l’âme",
+    "edition": "livret",
+    "page": "",
+    "url": ""
+   },
+   "actif": true,
+   "unite": "jour",
+   "anneau": 7
+  },
+  {
+   "id": "dons-saint-esprit",
+   "nombre": 7,
+   "titre": "Les sept dons du Saint-Esprit",
+   "elements": [
+    {
+     "fr": "La sagesse",
+     "la": "Sapientia",
+     "texte": "beringer:don-sagesse"
+    },
+    {
+     "fr": "L’intelligence",
+     "la": "Intellectus",
+     "texte": "beringer:don-intelligence"
+    },
+    {
+     "fr": "Le conseil",
+     "la": "Consilium",
+     "texte": "beringer:don-conseil"
+    },
+    {
+     "fr": "La force",
+     "la": "Fortitudo",
+     "texte": "beringer:don-force"
+    },
+    {
+     "fr": "La science",
+     "la": "Scientia",
+     "texte": "beringer:don-science"
+    },
+    {
+     "fr": "La piété",
+     "la": "Pietas",
+     "texte": "beringer:don-piete"
+    },
+    {
+     "fr": "La crainte de Dieu",
+     "la": "Timor Domini",
+     "texte": "beringer:don-crainte"
+    }
+   ],
+   "source": {
+    "ouvrage": "Biblia Sacra Vulgatæ editionis (Clémentine)",
+    "edition": "texte de la Vulgate clémentine",
+    "page": "",
+    "url": "https://github.com/scrollmapper/bible_databases"
+   },
+   "verset": {
+    "ref": "Is 11, 2-3",
+    "la": "Et requiescet super eum spiritus Domini: spiritus sapientiæ et intellectus, spiritus consilii et fortitudinis, spiritus scientiæ et pietatis; et replebit eum spiritus timoris Domini. Non secundum visionem oculorum judicabit, neque secundum auditum aurium arguet;"
+   },
+   "actif": false,
+   "unite": "jour"
+  },
+  {
+   "id": "sacrements",
+   "nombre": 7,
+   "titre": "Les sept sacrements",
+   "elements": [
+    {
+     "fr": "Le baptême"
+    },
+    {
+     "fr": "La confirmation"
+    },
+    {
+     "fr": "L’eucharistie"
+    },
+    {
+     "fr": "La pénitence"
+    },
+    {
+     "fr": "L’extrême-onction"
+    },
+    {
+     "fr": "L’ordre"
+    },
+    {
+     "fr": "Le mariage"
+    }
+   ],
+   "source": {
+    "ouvrage": "Concile de Trente",
+    "edition": "Session VII, canon 1 sur les sacrements",
+    "page": "",
+    "url": ""
+   },
+   "verset": {
+    "ref": "Pr 9, 1",
+    "la": "Sapientia ædificavit sibi domum: excidit columnas septem."
+   },
+   "actif": false,
+   "unite": "jour"
+  },
+  {
+   "id": "vices-capitaux",
+   "nombre": 7,
+   "titre": "Les sept péchés capitaux et leurs vertus contraires",
+   "elements": [
+    {
+     "fr": "L’orgueil, vaincu par l’humilité"
+    },
+    {
+     "fr": "L’avarice, vaincue par la libéralité"
+    },
+    {
+     "fr": "La luxure, vaincue par la chasteté"
+    },
+    {
+     "fr": "La colère, vaincue par la patience"
+    },
+    {
+     "fr": "La gourmandise, vaincue par l’abstinence"
+    },
+    {
+     "fr": "L’envie, vaincue par la charité fraternelle"
+    },
+    {
+     "fr": "La paresse, vaincue par la diligence et la ferveur au service de Dieu"
+    }
+   ],
+   "source": {
+    "ouvrage": "Catéchisme de saint Pie X",
+    "edition": "Compendio della dottrina cristiana, 1905 (trad.)",
+    "page": "",
+    "url": "https://www.ewtn.com/catholicism/library/catechism-of-st-pius-x-1286"
+   },
+   "actif": false,
+   "unite": "jour"
+  },
+  {
+   "id": "misericorde-corporelle",
+   "nombre": 7,
+   "titre": "Les sept œuvres de miséricorde corporelle",
+   "elements": [
+    {
+     "fr": "Donner à manger à ceux qui ont faim"
+    },
+    {
+     "fr": "Donner à boire à ceux qui ont soif"
+    },
+    {
+     "fr": "Vêtir ceux qui sont nus"
+    },
+    {
+     "fr": "Loger les pèlerins"
+    },
+    {
+     "fr": "Visiter les malades"
+    },
+    {
+     "fr": "Visiter les prisonniers"
+    },
+    {
+     "fr": "Ensevelir les morts"
+    }
+   ],
+   "source": {
+    "ouvrage": "Catéchisme de saint Pie X",
+    "edition": "Compendio della dottrina cristiana, 1905 (trad.)",
+    "page": "",
+    "url": "https://www.ewtn.com/catholicism/library/catechism-of-st-pius-x-1286"
+   },
+   "actif": false,
+   "unite": "jour"
+  },
+  {
+   "id": "misericorde-spirituelle",
+   "nombre": 7,
+   "titre": "Les sept œuvres de miséricorde spirituelle",
+   "elements": [
+    {
+     "fr": "Conseiller ceux qui doutent"
+    },
+    {
+     "fr": "Enseigner les ignorants"
+    },
+    {
+     "fr": "Reprendre les pécheurs"
+    },
+    {
+     "fr": "Consoler les affligés"
+    },
+    {
+     "fr": "Pardonner les offenses"
+    },
+    {
+     "fr": "Supporter patiemment les personnes importunes"
+    },
+    {
+     "fr": "Prier Dieu pour les vivants et pour les morts"
+    }
+   ],
+   "source": {
+    "ouvrage": "Catéchisme de saint Pie X",
+    "edition": "Compendio della dottrina cristiana, 1905 (trad.)",
+    "page": "",
+    "url": "https://www.ewtn.com/catholicism/library/catechism-of-st-pius-x-1286"
+   },
+   "actif": false,
+   "unite": "jour"
+  },
+  {
+   "id": "demandes-pater",
+   "nombre": 7,
+   "titre": "Les sept demandes du Pater",
+   "elements": [
+    {
+     "fr": "Que votre nom soit sanctifié",
+     "la": "Sanctificetur nomen tuum"
+    },
+    {
+     "fr": "Que votre règne arrive",
+     "la": "Adveniat regnum tuum"
+    },
+    {
+     "fr": "Que votre volonté soit faite",
+     "la": "Fiat voluntas tua"
+    },
+    {
+     "fr": "Donnez-nous notre pain",
+     "la": "Panem nostrum da nobis hodie"
+    },
+    {
+     "fr": "Pardonnez-nous nos offenses",
+     "la": "Dimitte nobis debita nostra"
+    },
+    {
+     "fr": "Ne nous laissez pas succomber à la tentation",
+     "la": "Ne nos inducas in tentationem"
+    },
+    {
+     "fr": "Délivrez-nous du mal",
+     "la": "Libera nos a malo"
+    }
+   ],
+   "source": {
+    "ouvrage": "Biblia Sacra Vulgatæ editionis (Clémentine)",
+    "edition": "texte de la Vulgate clémentine",
+    "page": "",
+    "url": "https://github.com/scrollmapper/bible_databases"
+   },
+   "verset": {
+    "ref": "Mt 6, 9-13",
+    "la": "Sic ergo vos orabitis: Pater noster, qui es in cælis, sanctificetur nomen tuum. Adveniat regnum tuum; fiat voluntas tua, sicut in cælo et in terra. Panem nostrum supersubstantialem da nobis hodie, et dimitte nobis debita nostra, sicut et nos dimittimus debitoribus nostris. Et ne nos inducas in tentationem, sed libera nos a malo. Amen."
+   },
+   "actif": false,
+   "unite": "jour"
+  },
+  {
+   "id": "sept-paroles",
+   "nombre": 7,
+   "titre": "Les sept paroles du Christ en croix",
+   "elements": [
+    {
+     "fr": "Père, pardonnez-leur",
+     "la": "Jesus autem dicebat: Pater, dimitte illis: non enim sciunt quid faciunt. Dividentes vero vestimenta ejus, miserunt sortes.",
+     "ref": "Lc 23, 34"
+    },
+    {
+     "fr": "Aujourd’hui vous serez avec moi en paradis",
+     "la": "Et dixit illi Jesus: Amen dico tibi: hodie mecum eris in paradiso.",
+     "ref": "Lc 23, 43"
+    },
+    {
+     "fr": "Femme, voilà votre fils",
+     "la": "Cum vidisset ergo Jesus matrem, et discipulum stantem, quem diligebat, dicit matri suæ: Mulier, ecce filius tuus. Deinde dicit discipulo: Ecce mater tua. Et ex illa hora accepit eam discipulus in sua.",
+     "ref": "Jn 19, 26-27"
+    },
+    {
+     "fr": "Mon Dieu, pourquoi m’avez-vous abandonné ?",
+     "la": "Et circa horam nonam clamavit Jesus voce magna, dicens: Eli, Eli, lamma sabacthani? hoc est: Deus meus, Deus meus, ut quid dereliquisti me?",
+     "ref": "Mt 27, 46"
+    },
+    {
+     "fr": "J’ai soif",
+     "la": "Postea sciens Jesus quia omnia consummata sunt, ut consummaretur Scriptura, dixit: Sitio.",
+     "ref": "Jn 19, 28"
+    },
+    {
+     "fr": "Tout est consommé",
+     "la": "Cum ergo accepisset Jesus acetum, dixit: Consummatum est. Et inclinato capite tradidit spiritum.",
+     "ref": "Jn 19, 30"
+    },
+    {
+     "fr": "Mon Père, je remets mon esprit entre vos mains",
+     "la": "Et clamans voce magna Jesus ait: Pater, in manus tuas commendo spiritum meum. Et hæc dicens, expiravit.",
+     "ref": "Lc 23, 46"
+    }
+   ],
+   "source": {
+    "ouvrage": "Biblia Sacra Vulgatæ editionis (Clémentine)",
+    "edition": "texte de la Vulgate clémentine",
+    "page": "",
+    "url": "https://github.com/scrollmapper/bible_databases"
+   },
+   "actif": false,
+   "unite": "jour"
+  },
+  {
+   "id": "psaumes-penitence",
+   "nombre": 7,
+   "titre": "Les sept psaumes de la pénitence",
+   "elements": [
+    {
+     "fr": "Psaume 6",
+     "la": "Domine, ne in furore tuo arguas me, neque in ira tua corripias me.",
+     "ref": "Ps 6"
+    },
+    {
+     "fr": "Psaume 31",
+     "la": "Beati quorum remissæ sunt iniquitates, et quorum tecta sunt peccata.",
+     "ref": "Ps 31"
+    },
+    {
+     "fr": "Psaume 37",
+     "la": "Domine, ne in furore tuo arguas me, neque in ira tua corripias me",
+     "ref": "Ps 37"
+    },
+    {
+     "fr": "Psaume 50",
+     "la": "Miserere mei, Deus, secundum magnam misericordiam tuam; et secundum multitudinem miserationum tuarum, dele iniquitatem meam.",
+     "ref": "Ps 50"
+    },
+    {
+     "fr": "Psaume 101",
+     "la": "Domine, exaudi orationem meam, et clamor meus ad te veniat.",
+     "ref": "Ps 101"
+    },
+    {
+     "fr": "Psaume 129",
+     "la": "De profundis clamavi ad te, Domine;",
+     "ref": "Ps 129",
+     "texte": "paroissien:de-profundis"
+    },
+    {
+     "fr": "Psaume 142",
+     "la": "Domine, exaudi orationem meam; auribus percipe obsecrationem meam in veritate tua; exaudi me in tua justitia.",
+     "ref": "Ps 142"
+    }
+   ],
+   "source": {
+    "ouvrage": "Biblia Sacra Vulgatæ editionis (Clémentine)",
+    "edition": "texte de la Vulgate clémentine",
+    "page": "",
+    "url": "https://github.com/scrollmapper/bible_databases"
+   },
+   "actif": false,
+   "unite": "jour"
+  },
+  {
+   "id": "douleurs-joseph",
+   "nombre": 7,
+   "titre": "Les sept douleurs et allégresses de saint Joseph",
+   "elements": [
+    {
+     "fr": "1re douleur et allégresse",
+     "texte": "jardin:les-sept-douleurs-et-les-sept-allegresses-de-saint-joseph"
+    },
+    {
+     "fr": "2e douleur et allégresse",
+     "texte": "jardin:les-sept-douleurs-et-les-sept-allegresses-de-saint-joseph"
+    },
+    {
+     "fr": "3e douleur et allégresse",
+     "texte": "jardin:les-sept-douleurs-et-les-sept-allegresses-de-saint-joseph"
+    },
+    {
+     "fr": "4e douleur et allégresse",
+     "texte": "jardin:les-sept-douleurs-et-les-sept-allegresses-de-saint-joseph"
+    },
+    {
+     "fr": "5e douleur et allégresse",
+     "texte": "jardin:les-sept-douleurs-et-les-sept-allegresses-de-saint-joseph"
+    },
+    {
+     "fr": "6e douleur et allégresse",
+     "texte": "jardin:les-sept-douleurs-et-les-sept-allegresses-de-saint-joseph"
+    },
+    {
+     "fr": "7e douleur et allégresse",
+     "texte": "jardin:les-sept-douleurs-et-les-sept-allegresses-de-saint-joseph"
+    }
+   ],
+   "source": {
+    "ouvrage": "Le Jardin de l’âme",
+    "edition": "livret",
+    "page": "",
+    "url": ""
+   },
+   "actif": false,
+   "unite": "jour"
+  },
+  {
+   "id": "beatitudes",
+   "nombre": 8,
+   "titre": "Les huit béatitudes",
+   "elements": [
+    {
+     "fr": "Les pauvres d’esprit",
+     "la": "Beati pauperes spiritu"
+    },
+    {
+     "fr": "Les doux",
+     "la": "Beati mites"
+    },
+    {
+     "fr": "Ceux qui pleurent",
+     "la": "Beati qui lugent"
+    },
+    {
+     "fr": "Ceux qui ont faim et soif de la justice",
+     "la": "Beati qui esuriunt et sitiunt justitiam"
+    },
+    {
+     "fr": "Les miséricordieux",
+     "la": "Beati misericordes"
+    },
+    {
+     "fr": "Les cœurs purs",
+     "la": "Beati mundo corde"
+    },
+    {
+     "fr": "Les pacifiques",
+     "la": "Beati pacifici"
+    },
+    {
+     "fr": "Ceux qui souffrent persécution pour la justice",
+     "la": "Beati qui persecutionem patiuntur propter justitiam"
+    }
+   ],
+   "source": {
+    "ouvrage": "Biblia Sacra Vulgatæ editionis (Clémentine)",
+    "edition": "texte de la Vulgate clémentine",
+    "page": "",
+    "url": "https://github.com/scrollmapper/bible_databases"
+   },
+   "verset": {
+    "ref": "Mt 5, 3-10",
+    "la": "Beati pauperes spiritu: quoniam ipsorum est regnum cælorum. Beati mites: quoniam ipsi possidebunt terram. Beati qui lugent: quoniam ipsi consolabuntur. Beati qui esuriunt et sitiunt justitiam: quoniam ipsi saturabuntur. Beati misericordes: quoniam ipsi misericordiam consequentur. Beati mundo corde: quoniam ipsi Deum videbunt. Beati pacifici: quoniam filii Dei vocabuntur. Beati qui persecutionem patiuntur propter justitiam: quoniam ipsorum est regnum cælorum."
+   },
+   "actif": false,
+   "unite": "jour"
+  },
+  {
+   "id": "choeurs-anges",
+   "nombre": 9,
+   "titre": "Les neuf chœurs des Anges",
+   "elements": [
+    {
+     "fr": "Les Anges",
+     "la": "Angeli"
+    },
+    {
+     "fr": "Les Archanges",
+     "la": "Archangeli"
+    },
+    {
+     "fr": "Les Vertus",
+     "la": "Virtutes"
+    },
+    {
+     "fr": "Les Puissances",
+     "la": "Potestates"
+    },
+    {
+     "fr": "Les Principautés",
+     "la": "Principatus"
+    },
+    {
+     "fr": "Les Dominations",
+     "la": "Dominationes"
+    },
+    {
+     "fr": "Les Trônes",
+     "la": "Throni"
+    },
+    {
+     "fr": "Les Chérubins",
+     "la": "Cherubim"
+    },
+    {
+     "fr": "Les Séraphins",
+     "la": "Seraphim"
+    }
+   ],
+   "source": {
+    "ouvrage": "Breviarium Romanum",
+    "edition": "S. Grégoire, Hom. 34 in Evang., 29 septembre, IIe nocturne",
+    "page": "",
+    "url": "https://github.com/DivinumOfficium/divinum-officium"
+   },
+   "actif": false,
+   "unite": "jour"
+  },
+  {
+   "id": "commandements",
+   "nombre": 10,
+   "titre": "Les dix commandements de Dieu",
+   "elements": [
+    {
+     "fr": "Un seul Dieu tu adoreras",
+     "la": "Non habebis deos alienos coram me"
+    },
+    {
+     "fr": "Le nom de Dieu tu ne prendras pas en vain",
+     "la": "Non assumes nomen Domini Dei tui in vanum"
+    },
+    {
+     "fr": "Le jour du Seigneur tu sanctifieras",
+     "la": "Memento ut diem sabbati sanctifices"
+    },
+    {
+     "fr": "Tes père et mère tu honoreras",
+     "la": "Honora patrem tuum et matrem tuam"
+    },
+    {
+     "fr": "Tu ne tueras point",
+     "la": "Non occides"
+    },
+    {
+     "fr": "Tu ne commettras point d’impureté",
+     "la": "Non mœchaberis"
+    },
+    {
+     "fr": "Tu ne voleras point",
+     "la": "Non furtum facies"
+    },
+    {
+     "fr": "Tu ne porteras point de faux témoignage",
+     "la": "Non loqueris contra proximum tuum falsum testimonium"
+    },
+    {
+     "fr": "Tu ne désireras point la femme de ton prochain",
+     "la": "Non desiderabis uxorem ejus"
+    },
+    {
+     "fr": "Tu ne désireras point le bien d’autrui",
+     "la": "Non concupisces domum proximi tui"
+    }
+   ],
+   "source": {
+    "ouvrage": "Biblia Sacra Vulgatæ editionis (Clémentine)",
+    "edition": "texte de la Vulgate clémentine",
+    "page": "",
+    "url": "https://github.com/scrollmapper/bible_databases"
+   },
+   "actif": false,
+   "unite": "jour"
+  },
+  {
+   "id": "articles-credo",
+   "nombre": 12,
+   "titre": "Les douze articles du Symbole",
+   "elements": [
+    {
+     "fr": "Dieu le Père tout-puissant, créateur",
+     "la": "Credo in Deum, Patrem omnipotentem, Creatorem cœli et terræ",
+     "texte": "paroissien:priere-du-matin"
+    },
+    {
+     "fr": "Jésus-Christ, son Fils unique",
+     "la": "Et in Jesum Christum, Filium ejus unicum, Dominum nostrum",
+     "texte": "paroissien:priere-du-matin"
+    },
+    {
+     "fr": "Conçu du Saint-Esprit, né de la Vierge Marie",
+     "la": "Qui conceptus est de Spiritu sancto, natus ex Maria Virgine",
+     "texte": "paroissien:priere-du-matin"
+    },
+    {
+     "fr": "Sa passion, sa mort et sa sépulture",
+     "la": "Passus sub Pontio Pilato, crucifixus, mortuus, et sepultus",
+     "texte": "paroissien:priere-du-matin"
+    },
+    {
+     "fr": "Sa descente aux enfers et sa résurrection",
+     "la": "Descendit ad inferos, tertia die resurrexit a mortuis",
+     "texte": "paroissien:priere-du-matin"
+    },
+    {
+     "fr": "Son ascension",
+     "la": "Ascendit ad cœlos, sedet ad dexteram Dei Patris omnipotentis",
+     "texte": "paroissien:priere-du-matin"
+    },
+    {
+     "fr": "Son retour pour juger les vivants et les morts",
+     "la": "Inde venturus est judicare vivos et mortuos",
+     "texte": "paroissien:priere-du-matin"
+    },
+    {
+     "fr": "Le Saint-Esprit",
+     "la": "Credo in Spiritum sanctum",
+     "texte": "paroissien:priere-du-matin"
+    },
+    {
+     "fr": "La sainte Église catholique, la communion des saints",
+     "la": "Sanctam Ecclesiam catholicam, sanctorum communionem",
+     "texte": "paroissien:priere-du-matin"
+    },
+    {
+     "fr": "La rémission des péchés",
+     "la": "Remissionem peccatorum",
+     "texte": "paroissien:priere-du-matin"
+    },
+    {
+     "fr": "La résurrection de la chair",
+     "la": "Carnis resurrectionem",
+     "texte": "paroissien:priere-du-matin"
+    },
+    {
+     "fr": "La vie éternelle",
+     "la": "Vitam æternam",
+     "texte": "paroissien:priere-du-matin"
+    }
+   ],
+   "source": {
+    "ouvrage": "Paroissien romain",
+    "edition": "Tours, A. Mame et fils, 1890",
+    "page": "7-12",
+    "url": "https://archive.org/details/paroissienromain00tour"
+   },
+   "actif": true,
+   "unite": "jour",
+   "anneau": 12
+  },
+  {
+   "id": "fruits-saint-esprit",
+   "nombre": 12,
+   "titre": "Les douze fruits du Saint-Esprit",
+   "elements": [
+    {
+     "fr": "La charité",
+     "la": "Caritas"
+    },
+    {
+     "fr": "La joie",
+     "la": "Gaudium"
+    },
+    {
+     "fr": "La paix",
+     "la": "Pax"
+    },
+    {
+     "fr": "La patience",
+     "la": "Patientia"
+    },
+    {
+     "fr": "La bénignité",
+     "la": "Benignitas"
+    },
+    {
+     "fr": "La bonté",
+     "la": "Bonitas"
+    },
+    {
+     "fr": "La longanimité",
+     "la": "Longanimitas"
+    },
+    {
+     "fr": "La mansuétude",
+     "la": "Mansuetudo"
+    },
+    {
+     "fr": "La foi",
+     "la": "Fides"
+    },
+    {
+     "fr": "La modestie",
+     "la": "Modestia"
+    },
+    {
+     "fr": "La continence",
+     "la": "Continentia"
+    },
+    {
+     "fr": "La chasteté",
+     "la": "Castitas"
+    }
+   ],
+   "source": {
+    "ouvrage": "Biblia Sacra Vulgatæ editionis (Clémentine)",
+    "edition": "texte de la Vulgate clémentine",
+    "page": "",
+    "url": "https://github.com/scrollmapper/bible_databases"
+   },
+   "verset": {
+    "ref": "Ga 5, 22-23",
+    "la": "Fructus autem Spiritus est caritas, gaudium, pax, patientia, benignitas, bonitas, longanimitas, mansuetudo, fides, modestia, continentia, castitas. Adversus hujusmodi non est lex."
+   },
+   "actif": false,
+   "unite": "jour"
+  },
+  {
+   "id": "apotres",
+   "nombre": 12,
+   "titre": "Les douze apôtres",
+   "elements": [
+    {
+     "fr": "Saint Pierre",
+     "la": "Simon, qui dicitur Petrus"
+    },
+    {
+     "fr": "Saint André",
+     "la": "Andreas"
+    },
+    {
+     "fr": "Saint Jacques le Majeur",
+     "la": "Jacobus Zebedæi"
+    },
+    {
+     "fr": "Saint Jean",
+     "la": "Joannes"
+    },
+    {
+     "fr": "Saint Philippe",
+     "la": "Philippus"
+    },
+    {
+     "fr": "Saint Barthélemy",
+     "la": "Bartholomæus"
+    },
+    {
+     "fr": "Saint Thomas",
+     "la": "Thomas"
+    },
+    {
+     "fr": "Saint Matthieu",
+     "la": "Matthæus"
+    },
+    {
+     "fr": "Saint Jacques le Mineur",
+     "la": "Jacobus Alphæi"
+    },
+    {
+     "fr": "Saint Jude Thaddée",
+     "la": "Thaddæus"
+    },
+    {
+     "fr": "Saint Simon",
+     "la": "Simon Chananæus"
+    },
+    {
+     "fr": "Saint Matthias",
+     "la": "Matthias"
+    }
+   ],
+   "source": {
+    "ouvrage": "Biblia Sacra Vulgatæ editionis (Clémentine)",
+    "edition": "texte de la Vulgate clémentine",
+    "page": "",
+    "url": "https://github.com/scrollmapper/bible_databases"
+   },
+   "verset": {
+    "ref": "Ap 12, 1",
+    "la": "Et signum magnum apparuit in cælo: mulier amicta sole, et luna sub pedibus ejus, et in capite ejus corona stellarum duodecim:"
+   },
+   "actif": false,
+   "unite": "jour"
+  },
+  {
+   "id": "mysteres-rosaire",
+   "nombre": 15,
+   "titre": "Les quinze mystères du Rosaire",
+   "elements": [
+    {
+     "fr": "L’Annonciation",
+     "texte": "jardin:quinze-samedis-du-rosaire"
+    },
+    {
+     "fr": "La Visitation",
+     "texte": "jardin:quinze-samedis-du-rosaire"
+    },
+    {
+     "fr": "La Nativité",
+     "texte": "jardin:quinze-samedis-du-rosaire"
+    },
+    {
+     "fr": "La Présentation au Temple",
+     "texte": "jardin:quinze-samedis-du-rosaire"
+    },
+    {
+     "fr": "Jésus retrouvé au Temple",
+     "texte": "jardin:quinze-samedis-du-rosaire"
+    },
+    {
+     "fr": "L’Agonie au jardin des Oliviers",
+     "texte": "jardin:quinze-samedis-du-rosaire"
+    },
+    {
+     "fr": "La Flagellation",
+     "texte": "jardin:quinze-samedis-du-rosaire"
+    },
+    {
+     "fr": "Le Couronnement d’épines",
+     "texte": "jardin:quinze-samedis-du-rosaire"
+    },
+    {
+     "fr": "Le Portement de la croix",
+     "texte": "jardin:quinze-samedis-du-rosaire"
+    },
+    {
+     "fr": "Le Crucifiement et la mort de Notre-Seigneur",
+     "texte": "jardin:quinze-samedis-du-rosaire"
+    },
+    {
+     "fr": "La Résurrection",
+     "texte": "jardin:quinze-samedis-du-rosaire"
+    },
+    {
+     "fr": "L’Ascension",
+     "texte": "jardin:quinze-samedis-du-rosaire"
+    },
+    {
+     "fr": "La Descente du Saint-Esprit",
+     "texte": "jardin:quinze-samedis-du-rosaire"
+    },
+    {
+     "fr": "L’Assomption de la très sainte Vierge",
+     "texte": "jardin:quinze-samedis-du-rosaire"
+    },
+    {
+     "fr": "Le Couronnement de la très sainte Vierge",
+     "texte": "jardin:quinze-samedis-du-rosaire"
+    }
+   ],
+   "source": {
+    "ouvrage": "Le Jardin de l’âme",
+    "edition": "livret",
+    "page": "",
+    "url": ""
+   },
+   "actif": false,
+   "unite": "jour"
+  },
+  {
+   "id": "lecture-evangiles",
+   "nombre": 89,
+   "titre": "Lecture des quatre Évangiles, un chapitre par jour",
+   "elements": [
+    {
+     "fr": "Saint Matthieu, chapitre 1",
+     "ref": "Mt 1"
+    },
+    {
+     "fr": "Saint Matthieu, chapitre 2",
+     "ref": "Mt 2"
+    },
+    {
+     "fr": "Saint Matthieu, chapitre 3",
+     "ref": "Mt 3"
+    },
+    {
+     "fr": "Saint Matthieu, chapitre 4",
+     "ref": "Mt 4"
+    },
+    {
+     "fr": "Saint Matthieu, chapitre 5",
+     "ref": "Mt 5"
+    },
+    {
+     "fr": "Saint Matthieu, chapitre 6",
+     "ref": "Mt 6"
+    },
+    {
+     "fr": "Saint Matthieu, chapitre 7",
+     "ref": "Mt 7"
+    },
+    {
+     "fr": "Saint Matthieu, chapitre 8",
+     "ref": "Mt 8"
+    },
+    {
+     "fr": "Saint Matthieu, chapitre 9",
+     "ref": "Mt 9"
+    },
+    {
+     "fr": "Saint Matthieu, chapitre 10",
+     "ref": "Mt 10"
+    },
+    {
+     "fr": "Saint Matthieu, chapitre 11",
+     "ref": "Mt 11"
+    },
+    {
+     "fr": "Saint Matthieu, chapitre 12",
+     "ref": "Mt 12"
+    },
+    {
+     "fr": "Saint Matthieu, chapitre 13",
+     "ref": "Mt 13"
+    },
+    {
+     "fr": "Saint Matthieu, chapitre 14",
+     "ref": "Mt 14"
+    },
+    {
+     "fr": "Saint Matthieu, chapitre 15",
+     "ref": "Mt 15"
+    },
+    {
+     "fr": "Saint Matthieu, chapitre 16",
+     "ref": "Mt 16"
+    },
+    {
+     "fr": "Saint Matthieu, chapitre 17",
+     "ref": "Mt 17"
+    },
+    {
+     "fr": "Saint Matthieu, chapitre 18",
+     "ref": "Mt 18"
+    },
+    {
+     "fr": "Saint Matthieu, chapitre 19",
+     "ref": "Mt 19"
+    },
+    {
+     "fr": "Saint Matthieu, chapitre 20",
+     "ref": "Mt 20"
+    },
+    {
+     "fr": "Saint Matthieu, chapitre 21",
+     "ref": "Mt 21"
+    },
+    {
+     "fr": "Saint Matthieu, chapitre 22",
+     "ref": "Mt 22"
+    },
+    {
+     "fr": "Saint Matthieu, chapitre 23",
+     "ref": "Mt 23"
+    },
+    {
+     "fr": "Saint Matthieu, chapitre 24",
+     "ref": "Mt 24"
+    },
+    {
+     "fr": "Saint Matthieu, chapitre 25",
+     "ref": "Mt 25"
+    },
+    {
+     "fr": "Saint Matthieu, chapitre 26",
+     "ref": "Mt 26"
+    },
+    {
+     "fr": "Saint Matthieu, chapitre 27",
+     "ref": "Mt 27"
+    },
+    {
+     "fr": "Saint Matthieu, chapitre 28",
+     "ref": "Mt 28"
+    },
+    {
+     "fr": "Saint Marc, chapitre 1",
+     "ref": "Mc 1"
+    },
+    {
+     "fr": "Saint Marc, chapitre 2",
+     "ref": "Mc 2"
+    },
+    {
+     "fr": "Saint Marc, chapitre 3",
+     "ref": "Mc 3"
+    },
+    {
+     "fr": "Saint Marc, chapitre 4",
+     "ref": "Mc 4"
+    },
+    {
+     "fr": "Saint Marc, chapitre 5",
+     "ref": "Mc 5"
+    },
+    {
+     "fr": "Saint Marc, chapitre 6",
+     "ref": "Mc 6"
+    },
+    {
+     "fr": "Saint Marc, chapitre 7",
+     "ref": "Mc 7"
+    },
+    {
+     "fr": "Saint Marc, chapitre 8",
+     "ref": "Mc 8"
+    },
+    {
+     "fr": "Saint Marc, chapitre 9",
+     "ref": "Mc 9"
+    },
+    {
+     "fr": "Saint Marc, chapitre 10",
+     "ref": "Mc 10"
+    },
+    {
+     "fr": "Saint Marc, chapitre 11",
+     "ref": "Mc 11"
+    },
+    {
+     "fr": "Saint Marc, chapitre 12",
+     "ref": "Mc 12"
+    },
+    {
+     "fr": "Saint Marc, chapitre 13",
+     "ref": "Mc 13"
+    },
+    {
+     "fr": "Saint Marc, chapitre 14",
+     "ref": "Mc 14"
+    },
+    {
+     "fr": "Saint Marc, chapitre 15",
+     "ref": "Mc 15"
+    },
+    {
+     "fr": "Saint Marc, chapitre 16",
+     "ref": "Mc 16"
+    },
+    {
+     "fr": "Saint Luc, chapitre 1",
+     "ref": "Lc 1"
+    },
+    {
+     "fr": "Saint Luc, chapitre 2",
+     "ref": "Lc 2"
+    },
+    {
+     "fr": "Saint Luc, chapitre 3",
+     "ref": "Lc 3"
+    },
+    {
+     "fr": "Saint Luc, chapitre 4",
+     "ref": "Lc 4"
+    },
+    {
+     "fr": "Saint Luc, chapitre 5",
+     "ref": "Lc 5"
+    },
+    {
+     "fr": "Saint Luc, chapitre 6",
+     "ref": "Lc 6"
+    },
+    {
+     "fr": "Saint Luc, chapitre 7",
+     "ref": "Lc 7"
+    },
+    {
+     "fr": "Saint Luc, chapitre 8",
+     "ref": "Lc 8"
+    },
+    {
+     "fr": "Saint Luc, chapitre 9",
+     "ref": "Lc 9"
+    },
+    {
+     "fr": "Saint Luc, chapitre 10",
+     "ref": "Lc 10"
+    },
+    {
+     "fr": "Saint Luc, chapitre 11",
+     "ref": "Lc 11"
+    },
+    {
+     "fr": "Saint Luc, chapitre 12",
+     "ref": "Lc 12"
+    },
+    {
+     "fr": "Saint Luc, chapitre 13",
+     "ref": "Lc 13"
+    },
+    {
+     "fr": "Saint Luc, chapitre 14",
+     "ref": "Lc 14"
+    },
+    {
+     "fr": "Saint Luc, chapitre 15",
+     "ref": "Lc 15"
+    },
+    {
+     "fr": "Saint Luc, chapitre 16",
+     "ref": "Lc 16"
+    },
+    {
+     "fr": "Saint Luc, chapitre 17",
+     "ref": "Lc 17"
+    },
+    {
+     "fr": "Saint Luc, chapitre 18",
+     "ref": "Lc 18"
+    },
+    {
+     "fr": "Saint Luc, chapitre 19",
+     "ref": "Lc 19"
+    },
+    {
+     "fr": "Saint Luc, chapitre 20",
+     "ref": "Lc 20"
+    },
+    {
+     "fr": "Saint Luc, chapitre 21",
+     "ref": "Lc 21"
+    },
+    {
+     "fr": "Saint Luc, chapitre 22",
+     "ref": "Lc 22"
+    },
+    {
+     "fr": "Saint Luc, chapitre 23",
+     "ref": "Lc 23"
+    },
+    {
+     "fr": "Saint Luc, chapitre 24",
+     "ref": "Lc 24"
+    },
+    {
+     "fr": "Saint Jean, chapitre 1",
+     "ref": "Jn 1"
+    },
+    {
+     "fr": "Saint Jean, chapitre 2",
+     "ref": "Jn 2"
+    },
+    {
+     "fr": "Saint Jean, chapitre 3",
+     "ref": "Jn 3"
+    },
+    {
+     "fr": "Saint Jean, chapitre 4",
+     "ref": "Jn 4"
+    },
+    {
+     "fr": "Saint Jean, chapitre 5",
+     "ref": "Jn 5"
+    },
+    {
+     "fr": "Saint Jean, chapitre 6",
+     "ref": "Jn 6"
+    },
+    {
+     "fr": "Saint Jean, chapitre 7",
+     "ref": "Jn 7"
+    },
+    {
+     "fr": "Saint Jean, chapitre 8",
+     "ref": "Jn 8"
+    },
+    {
+     "fr": "Saint Jean, chapitre 9",
+     "ref": "Jn 9"
+    },
+    {
+     "fr": "Saint Jean, chapitre 10",
+     "ref": "Jn 10"
+    },
+    {
+     "fr": "Saint Jean, chapitre 11",
+     "ref": "Jn 11"
+    },
+    {
+     "fr": "Saint Jean, chapitre 12",
+     "ref": "Jn 12"
+    },
+    {
+     "fr": "Saint Jean, chapitre 13",
+     "ref": "Jn 13"
+    },
+    {
+     "fr": "Saint Jean, chapitre 14",
+     "ref": "Jn 14"
+    },
+    {
+     "fr": "Saint Jean, chapitre 15",
+     "ref": "Jn 15"
+    },
+    {
+     "fr": "Saint Jean, chapitre 16",
+     "ref": "Jn 16"
+    },
+    {
+     "fr": "Saint Jean, chapitre 17",
+     "ref": "Jn 17"
+    },
+    {
+     "fr": "Saint Jean, chapitre 18",
+     "ref": "Jn 18"
+    },
+    {
+     "fr": "Saint Jean, chapitre 19",
+     "ref": "Jn 19"
+    },
+    {
+     "fr": "Saint Jean, chapitre 20",
+     "ref": "Jn 20"
+    },
+    {
+     "fr": "Saint Jean, chapitre 21",
+     "ref": "Jn 21"
+    }
+   ],
+   "source": {
+    "ouvrage": "Biblia Sacra Vulgatæ editionis (Clémentine)",
+    "edition": "texte de la Vulgate clémentine",
+    "page": "",
+    "url": "https://github.com/scrollmapper/bible_databases"
+   },
+   "actif": true,
+   "unite": "jour"
+  }
+ ]
+}

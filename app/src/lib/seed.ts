@@ -1,6 +1,7 @@
 import { anneeLiturgique } from './calendrier.ts';
 import { contenu, db } from './db.ts';
 import { pratiquesDuPlan } from './plan.ts';
+import { amorcerRoues } from './roues.ts';
 import type { ElementListe, Moment, Pratique, Texte } from './types.ts';
 import { SOURCE_VIDE } from './types.ts';
 
@@ -165,11 +166,14 @@ export async function amorcer(fetchFn: typeof fetch = fetch): Promise<void> {
 	await amorcerDons();
 	await fusionnerExamen();
 	await amorcerDevotionsSemaine();
+	await completerLitanies2();
+	await amorcerRoues(fetchFn);
+	await livrerElements();
 }
 
 /** Dédicace de chaque jour de la semaine et prières sourcées de l'app qui s'y rapportent. */
 const DEVOTIONS_SEMAINE: [string, string[]][] = [
-	['Dévotion du dimanche : la très sainte Trinité', []],
+	['Dévotion du dimanche : la très sainte Trinité', ['fervent:litanies-sainte-trinite']],
 	['Dévotion du lundi : les âmes du purgatoire', ['paroissien:de-profundis', 'beringer:chapelet-des-morts']],
 	['Dévotion du mardi : les saints Anges', ['jardin:chapelet-de-saint-michel-archange', 'jardin:a-saint-gabriel-archange']],
 	['Dévotion du mercredi : saint Joseph', ['beringer:litanies-saint-joseph', 'beringer:saint-joseph-purete']],
@@ -255,11 +259,11 @@ export async function amorcerDons(): Promise<void> {
  * les litanies alternant d'une semaine du mois à l'autre. Jours sans litanie sourcée : ligne sans prière.
  */
 const LITANIES_PAR_JOUR: string[][] = [
-	['paroissien:litanies-saint-nom', 'paroissien:litanies-des-saints'], // dimanche : sainte Trinité
+	['fervent:litanies-sainte-trinite', 'paroissien:litanies-saint-nom', 'paroissien:litanies-des-saints'], // dimanche : sainte Trinité
 	[], // lundi : âmes du purgatoire — litanies des défunts à trouver
-	['jardin:litanies-de-la-sainte-face'], // mardi : saints Anges — litanies des saints Anges à trouver
+	['fervent:litanies-ange-gardien', 'jardin:litanies-de-la-sainte-face'], // mardi : saints Anges
 	['beringer:litanies-saint-joseph'], // mercredi : saint Joseph
-	['paroissien:litanies-saint-nom'], // jeudi : Saint-Sacrement — à défaut, saint Nom de Jésus
+	['fervent:litanies-saint-sacrement', 'paroissien:litanies-saint-nom'], // jeudi : Saint-Sacrement
 	['beringer:litanies-sacre-coeur', 'jardin:litanies-de-notre-dame-des-sept-douleurs'], // vendredi : Passion, Sacré-Cœur
 	['paroissien:litanies-sainte-vierge', 'jardin:litanies-de-notre-dame-des-sept-douleurs'] // samedi : sainte Vierge
 ];
@@ -305,11 +309,40 @@ async function completerLitanies(): Promise<void> {
 	await livrerElements();
 }
 
+/**
+ * Une seule fois (meta « litanies-2 ») : les litanies trouvées dans le Fervent chrétien (1868) rejoignent les lignes
+ * du dimanche, du mardi et du jeudi, et la dévotion du dimanche. Seulement les lignes jamais modifiées par l'utilisateur.
+ */
+async function completerLitanies2(): Promise<void> {
+	if (await db.meta.get('litanies-2')) return;
+	for (const id of ['fervent:litanies-sainte-trinite', 'fervent:litanies-ange-gardien', 'fervent:litanies-saint-sacrement']) if (!(await db.textes.get(id))) return;
+	const intact = (e?: ElementListe) => !!e && !e.supprimeLe && (e.modifieLe === DEPART || e.original === contenu(e));
+	for (const k of [0, 2, 4]) {
+		const e = await db.liste.get(k === 0 ? 'liste:24' : `liste:24-${k}`);
+		if (!intact(e) || !e!.jours[k]) continue;
+		const textes = LITANIES_PAR_JOUR[k];
+		const x = { ...e!, textes, alterner: textes.length > 1 } as ElementListe;
+		x.original = contenu(x);
+		await db.liste.put(x);
+	}
+	const dim = await db.liste.get('liste:8');
+	if (intact(dim) && dim!.titre.startsWith('Dévotion du dimanche') && !dim!.textes.length) {
+		const x = { ...dim!, textes: DEVOTIONS_SEMAINE[0][1] } as ElementListe;
+		x.original = contenu(x);
+		await db.liste.put(x);
+	}
+	await db.meta.put({ cle: 'litanies-2', valeur: true });
+}
+
 /** Éléments ajoutés à la liste de départ après sa création ; chacun n'est livré qu'une fois (meta « elements »). */
 const NOUVEAUX_ELEMENTS: Omit<ElementListe, 'creeLe' | 'modifieLe'>[] = [
 	{
 		id: 'liste:cordon-mercredi', origine: 'officielle', titre: 'Cordon de saint Joseph : prière pour la pureté',
 		moment: 'matin', etiquette: 'ordinaire', jours: jour(3), rappels: [], textes: ['beringer:saint-joseph-purete'], ordre: 51, actif: true
+	},
+	{
+		id: 'liste:roue', origine: 'officielle', titre: 'La roue du jour',
+		moment: 'propre', etiquette: 'propre', jours: TOUS, rappels: [], textes: [], ordre: 75, actif: true
 	}
 ];
 

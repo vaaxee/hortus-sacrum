@@ -56,7 +56,8 @@ export type TypePratique =
 	| 'trentain'
 	| 'consecration'
 	| 'mois'
-	| 'jour_semaine';
+	| 'jour_semaine'
+	| 'roue';
 
 /** Règle de dates d'une pratique. */
 export type Regle =
@@ -66,7 +67,19 @@ export type Regle =
 	/** Le rang-ième jour de semaine de chaque mois (ex. premier vendredi). nombre et debut : série comptée (9 premiers vendredis). decalage : en jours (−1 = la veille). */
 	| { genre: 'mensuel'; rang: number; jourSemaine: number; nombre?: number; debut?: string; decalage?: number }
 	| { genre: 'mois_entier'; mois: number }
-	| { genre: 'hebdomadaire'; jourSemaine: number };
+	| { genre: 'hebdomadaire'; jourSemaine: number }
+	/** Roue symbolique : un élément par jour (ou semaine, ou mois) à partir du premier dimanche de l'Avent. */
+	| { genre: 'roue'; unite: UniteRoue };
+
+export type UniteRoue = 'jour' | 'semaine' | 'mois';
+
+/** Élément d'une roue : nom, latin, référence (Écriture) et prière liée. */
+export interface ElementRoue {
+	fr: string;
+	la?: string;
+	ref?: string;
+	texte?: string;
+}
 
 export interface Pratique extends Base {
 	titre: string;
@@ -80,6 +93,10 @@ export interface Pratique extends Base {
 	active: boolean;
 	/** Absent : principale (pratique suivie). */
 	rang?: Rang;
+	/** Roues symboliques (type « roue ») : éléments, verset qui en donne le sens, anneau de la rosace. */
+	elements?: ElementRoue[];
+	verset?: { ref: string; la: string };
+	anneau?: number;
 }
 
 export type Moment = 'matin' | 'propre' | 'journee' | 'soir';
@@ -145,6 +162,8 @@ export interface FetePerso extends Base {
 	annee?: number;
 	rappelVeille: boolean;
 	notes: string;
+	/** Rubrique du profil spirituel (bapteme, confirmation, communion, mariage, ordre, consecration, patron, saint). */
+	profil?: string;
 }
 
 export interface NoteJour extends Base {
