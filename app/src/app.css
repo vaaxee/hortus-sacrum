@@ -83,3 +83,6 @@ body { margin: 0; background: var(--hs-fond); }
 	.hs .contenu { padding: 0 !important; }
 	.hs a { color: inherit; text-decoration: none; }
 }
+
+/* écran d'accueil : sans barre d'onglets */
+.accueil-ouvert .hs .onglets, .accueil-ouvert .hs .sommaire { display: none; }
