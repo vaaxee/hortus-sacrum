@@ -23,6 +23,7 @@
 </script>
 
 <div class="accueil" role="dialog" aria-label="Accueil">
+<div class="feuille">
 	<!-- cadre : frises en haut et en bas, quarts de rosace aux angles -->
 	<div class="frise haut" aria-hidden="true"><Ornement nom="grecque" /></div>
 	<div class="frise bas" aria-hidden="true"><Ornement nom="grecque" /></div>
@@ -53,22 +54,25 @@
 	<button class="entrer" onclick={entrer}>Entrer au jardin</button>
 	<p class="credit">{image === 'gravure' ? 'D’après ' : ''}Velázquez, <em>Le Couronnement de la Vierge</em>, v. 1635</p>
 </div>
+</div>
 
 <style>
-	.accueil {
-		position: fixed; inset: 0; z-index: 20; overflow-y: auto; background: var(--hs-fond);
+	/* le voile défile ; la feuille (cadre compris) défile avec lui, et le contenu ne passe jamais sous la barre d'état */
+	.accueil { position: fixed; inset: 0; z-index: 20; overflow-y: auto; background: var(--hs-fond); animation: venir 900ms var(--hs-courbe); }
+	.feuille {
+		position: relative; min-height: 100%; box-sizing: border-box;
 		display: flex; flex-direction: column; align-items: center; justify-content: center; gap: var(--hs-e4);
-		padding: calc(var(--hs-e6) + env(safe-area-inset-top)) var(--hs-marge-mobile) calc(var(--hs-e6) + env(safe-area-inset-bottom));
-		text-align: center; animation: venir 900ms var(--hs-courbe);
+		padding: calc(56px + env(safe-area-inset-top)) var(--hs-marge-mobile) calc(56px + env(safe-area-inset-bottom));
+		text-align: center;
 	}
-	.frise { position: fixed; left: 0; right: 0; color: var(--hs-or); opacity: 0.85; line-height: 0; }
-	.frise.haut { top: env(safe-area-inset-top); }
-	.frise.bas { bottom: env(safe-area-inset-bottom); }
-	.coin { position: fixed; color: var(--hs-or); opacity: 0.8; line-height: 0; }
-	.coin.hg { top: calc(18px + env(safe-area-inset-top)); left: 10px; }
-	.coin.hd { top: calc(18px + env(safe-area-inset-top)); right: 10px; transform: scaleX(-1); }
-	.coin.bg { bottom: calc(18px + env(safe-area-inset-bottom)); left: 10px; transform: scaleY(-1); }
-	.coin.bd { bottom: calc(18px + env(safe-area-inset-bottom)); right: 10px; transform: scale(-1, -1); }
+	.frise { position: absolute; left: 0; right: 0; color: var(--hs-or); opacity: 0.85; line-height: 0; }
+	.frise.haut { top: calc(8px + env(safe-area-inset-top)); }
+	.frise.bas { bottom: calc(8px + env(safe-area-inset-bottom)); }
+	.coin { position: absolute; color: var(--hs-or); opacity: 0.8; line-height: 0; }
+	.coin.hg { top: calc(26px + env(safe-area-inset-top)); left: 10px; }
+	.coin.hd { top: calc(26px + env(safe-area-inset-top)); right: 10px; transform: scaleX(-1); }
+	.coin.bg { bottom: calc(26px + env(safe-area-inset-bottom)); left: 10px; transform: scaleY(-1); }
+	.coin.bd { bottom: calc(26px + env(safe-area-inset-bottom)); right: 10px; transform: scale(-1, -1); }
 	.filet-titre { width: min(60vw, 16rem); color: var(--hs-or); margin-top: -10px; }
 	.filet-milieu { width: min(50vw, 12rem); color: var(--hs-or-trait); }
 	.niche { position: relative; display: grid; justify-items: center; }
