@@ -41,11 +41,11 @@ def verset(ref):
     return {'ref': ref, 'la': vg(ref)}
 
 R = []
-def roue(id, nombre, titre, elements, source, verset_=None, actif=False, anneau=None, unite='jour'):
+def roue(id, nombre, titre, elements, source, verset_=None, actif=False, anneau=None, unite='jour', liste=False):
     assert len(elements) == nombre, (id, len(elements))
     R.append({'id': id, 'nombre': nombre, 'titre': titre, 'elements': elements, 'source': source,
               **({'verset': verset(verset_)} if verset_ else {}), 'actif': actif, 'unite': unite,
-              **({'anneau': anneau} if anneau else {})})
+              **({'anneau': anneau} if anneau else {}), **({'liste': True} if liste else {})})
 
 # ---------------------------------------------------------------- 1
 roue('un-dieu', 1, 'Un seul Dieu', [el('Un seul Dieu', 'Dominus unus est')], VULGATE, 'Dt 6, 4', actif=True, anneau=1)
@@ -153,6 +153,11 @@ MYST = ['L’Annonciation', 'La Visitation', 'La Nativité', 'La Présentation a
         'La Flagellation', 'Le Couronnement d’épines', 'Le Portement de la croix', 'Le Crucifiement et la mort de Notre-Seigneur', 'La Résurrection',
         'L’Ascension', 'La Descente du Saint-Esprit', 'L’Assomption de la très sainte Vierge', 'Le Couronnement de la très sainte Vierge']
 roue('mysteres-rosaire', 15, 'Les quinze mystères du Rosaire', [el(m, texte='jardin:quinze-samedis-du-rosaire') for m in MYST], JARDIN)
+
+# trois chapelets du Rosaire (pour la ligne « Chapelet » ; mystères d'après le Jardin, méthode d'après Sambucy 1837)
+GROUPES = [('Mystères joyeux', MYST[0:5]), ('Mystères douloureux', MYST[5:10]), ('Mystères glorieux', MYST[10:15])]
+roue('chapelets-rosaire', 3, 'Les trois chapelets du Rosaire', [el(n, ' · '.join(m), texte='sambucy:chapelet-saint-dominique') for n, m in GROUPES],
+     JARDIN, actif=True, liste=True)
 
 # ---------------------------------------------------------------- lecture des Évangiles : un chapitre par jour
 CH = []

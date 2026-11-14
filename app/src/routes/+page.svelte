@@ -17,6 +17,7 @@
 	import type { Coche, ElementListe, Fait, FetePerso, Moment, NoteJour, Pratique, Rang } from '#lib/types.ts';
 	import Icone from '#lib/design/Icone.svelte';
 	import { elementDu } from '#lib/roues.ts';
+	import Accueil from '#lib/design/Accueil.svelte';
 	import { chargerIndulgences, enClair, enJours, fois, somme, valeurDuJour, type Indulgences, type Valeur } from '#lib/indulgences.ts';
 
 	const date = $derived(page.url.searchParams.get('date') ?? iso(new Date()));
@@ -134,7 +135,7 @@
 		if (e.titre.startsWith('Office du jour')) return jour.office;
 		if (e.titre.startsWith('Dévotion du mois')) return MOIS_DEVOTION[d.getMonth() + 1].nom;
 		if (e.titre === 'La roue du jour') return roueDuJour;
-		if (e.roue) { const r = roues.find((x) => x.id === e.roue); const el = r && elementDu(r, date); if (el && !el.texte) return el.fr; }
+		if (e.roue) { const r = roues.find((x) => x.id === e.roue); const el = r && elementDu(r, date); if (el) return el.fr; }
 		return '';
 	}
 	const roues = $derived($pratiques.filter((p) => p.type === 'roue'));
@@ -179,11 +180,25 @@
 	});
 	// promesses attachées aux pratiques du jour (seulement celles que les pratiques portent : Brigitte n'en a pas)
 	const promesses = $derived(pratiquesDuJour.filter((x) => x.p.promesses?.trim()));
+	// écran d'accueil : une fois par ouverture de l'app (mémorisé pour la session de l'onglet)
+	let accueil = $state(false);
+	$effect(() => {
+		try { accueil = !sessionStorage.getItem('accueil-vu'); } catch { accueil = false; }
+	});
+	function entrer() {
+		accueil = false;
+		try { sessionStorage.setItem('accueil-vu', '1'); } catch { /* stockage indisponible */ }
+	}
 	const ROMAINS = ['', 'i', 'ii', 'iii', 'iv', 'v', 'vi', 'vii', 'viii', 'ix'];
 </script>
 
 <svelte:head><title>Aujourd’hui — Hortus Sacrum</title></svelte:head>
 
+{#if jour && accueil && estAujourdhui}
+	<Accueil introit={jour.introit_incipit ?? ''} introitFr={jour.introit?.fr?.[0] ?? ''}
+		invocation={jour.martyrologe.map((m) => invocation(m.texte)?.texte).find(Boolean) ?? ''}
+		avancement={duJour.length ? faits / duJour.length : 0} {entrer} />
+{/if}
 {#if jour}
 	<div class="bandeau" style="background: {teinte(jour)}"></div>
 	<main class="ecran entree">

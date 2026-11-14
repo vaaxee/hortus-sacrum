@@ -22,6 +22,7 @@ interface RoueSource {
 	actif: boolean;
 	unite: UniteRoue;
 	anneau?: number;
+	liste?: boolean;
 }
 
 const DEPART = '2000-01-01T00:00:00.000Z';
@@ -42,7 +43,7 @@ export async function amorcerRoues(fetchFn: typeof fetch = fetch): Promise<void>
 			id, origine: 'officielle', titre: r.titre, type: 'roue', regle: { genre: 'roue', unite: r.unite },
 			textes: [...new Set(r.elements.map((e) => e.texte).filter(Boolean))] as string[],
 			promesses: '', indulgence: '', source: { ...SOURCE_VIDE, ...r.source }, notes: '', active: r.actif,
-			elements: r.elements, ...(r.verset ? { verset: r.verset } : {}), ...(r.anneau ? { anneau: r.anneau } : {}),
+			elements: r.elements, ...(r.verset ? { verset: r.verset } : {}), ...(r.anneau ? { anneau: r.anneau } : {}), ...(r.liste ? { liste: true } : {}),
 			creeLe: DEPART, modifieLe: DEPART
 		} as Pratique;
 		p.original = contenu(p);

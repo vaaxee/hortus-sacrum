@@ -169,6 +169,7 @@ export async function amorcer(fetchFn: typeof fetch = fetch): Promise<void> {
 	await completerLitanies2();
 	await amorcerRoues(fetchFn);
 	await rouesDesLitanies();
+	await chapeletParLaRoue();
 	await livrerElements();
 }
 
@@ -368,6 +369,19 @@ async function rouesDesLitanies(): Promise<void> {
 		}
 	}
 	await db.meta.put({ cle: 'roues-litanies', valeur: true });
+}
+
+/** Une seule fois : la ligne « Chapelet » ouvre le chapelet de saint Dominique et suit la roue des trois chapelets. */
+async function chapeletParLaRoue(): Promise<void> {
+	if (await db.meta.get('chapelet-roue')) return;
+	if (!(await db.textes.get('sambucy:chapelet-saint-dominique')) || !(await db.pratiques.get('roue:chapelets-rosaire'))) return;
+	const e = (await db.liste.toArray()).find((x) => x.titre === 'Chapelet' && !x.supprimeLe);
+	if (e && (e.modifieLe === DEPART || e.original === contenu(e)) && !e.textes.length) {
+		const x = { ...e, roue: 'roue:chapelets-rosaire', textes: ['sambucy:chapelet-saint-dominique'] } as ElementListe;
+		x.original = contenu(x);
+		await db.liste.put(x);
+	}
+	await db.meta.put({ cle: 'chapelet-roue', valeur: true });
 }
 
 /** Éléments ajoutés à la liste de départ après sa création ; chacun n'est livré qu'une fois (meta « elements »). */
