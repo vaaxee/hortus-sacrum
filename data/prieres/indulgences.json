@@ -613,6 +613,17 @@
      "texte": "300 jours"
     }
    ]
+  },
+  "weber:petit-chapelet-immaculee-conception": {
+   "ref": "Ench. 1952, n° 357",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "jours": 3600,
+     "texte": "12 × 300 jours"
+    }
+   ],
+   "note": "Pour les douze invocations « O Marie, conçue sans péché » (300 jours chacune). Le « Souvenez-vous » et « Jésus, Marie, Joseph » ont leurs propres indulgences."
   }
  },
  "sans_compte": {
