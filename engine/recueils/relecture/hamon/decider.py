@@ -92,9 +92,15 @@ for i, p in enumerate(pages):
             apres = A[ia + 1][0] if ia + 1 < len(A) else ''
             ba, bb = bords(a), bords(b)
             coeur = re.sub(r'^\W+|\W+$', '', b)
+            nu = lambda x: ''.join(ch for ch in unicodedata.normalize('NFD', x) if not unicodedata.combining(ch))
+            # différence d'accents seulement : graphie du livre (Etienne, MEDITATION, piéges, prît) gardée,
+            # sauf signe étranger au français (ė, ð, ā…)
+            accents = nu(cle(a)) == nu(cle(b)) and not re.search(r'[^a-zàâäçéèêëîïôöùûüÿœæ\'\-]', cle(a))
+            courant = voc[cle(b)] >= 3 and voc[cle(a)] <= 1
             auto = (connu(b) and ba == bb and re.fullmatch(r"[A-Za-zÀ-ÿœŒæÆ'’\-]+", coeur) is not None
                     and len(cle(b)) >= 3 and len(cle(a)) == len(cle(b)) and dist(cle(a), cle(b)) <= 2
-                    and not ROMAIN.match(b.strip()))
+                    and not ROMAIN.match(b.strip()) and not accents and courant)
+            if accents and not auto: continue
             corr.append({'page': i, 'avant': avant, 'a': a, 'b': b, 'apres': apres, 'auto': bool(auto), 'box': B[ib][1]})
 json.dump(corr, open(f'{D}/corrections{S}.json', 'w'), ensure_ascii=False)
 n = collections.Counter(c['auto'] for c in corr)

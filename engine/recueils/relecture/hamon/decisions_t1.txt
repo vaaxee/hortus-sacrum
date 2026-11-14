@@ -1,0 +1,292 @@
+t1:0	nuce,
+t1:5	pour
+t1:6	demeurent
+t1:10	l'Avent
+t1:23	populorum,
+t1:24	Antiennes
+t1:28	Confige
+t1:40	inquietum
+t1:41	saturatur
+t1:49	exaltabitur
+t1:51	dilexit
+t1:55	porte
+t1:56	l'avez
+t1:58	toison
+t1:59	mysterio
+t1:63	autant
+t1:65	Pœnitet
+t1:67	Épanchons
+t1:68	égal.
+t1:72	solerai
+t1:75	nous
+t1:77	chœurs
+t1:81	Cœpit
+t1:84	Avons-nous jusqu'à
+t1:85	fautes;
+t1:89	méditerons
+t1:92	dépend
+t1:94	si
+t1:95	si
+t1:97	hommes
+t1:103	A
+t1b:2	adorent,
+t1b:6	2° pour
+t1b:7	des
+t1b:9	préoccupation
+t1b:12	toute
+t1b:14	entier
+t1b:15	qu'alimentent
+t1b:20	y
+t1b:25	bouquet spirituel
+t1b:27	notre
+t1b:29	statuas
+t1b:32	Stephanum
+t1b:33	épreuves.
+t1b:35	mœurs
+t1b:39	Heureux
+t1b:41	humilié
+t1b:42	Dieu
+t1b:43	immolées
+t1b:45	nostræ...
+t1b:46	moriendo
+t1b:52	admirent
+t1b:56	cœpi.
+t1b:72	Si je
+t1b:73	recogitet
+t1b:76	tendu,
+t1b:77	dans Bethléem
+t1b:78	été
+t1b:84	adorent.
+t1b:86	l'exemple
+t1b:87	symbole
+t1b:89	comme
+t1b:95	s'estimant
+t1b:98	hommes
+t1b:100	semblable,
+t1b:102	dignatio
+t1b:103	donnâtes
+t1b:104	si vous ne
+t1b:105	1°
+t1b:110	pieux
+t1b:112	JÉSUS-CHRIST
+t1b:115	de ses
+t1b:116	protégeons-nous
+t1b:120	partout
+t1b:128	fouets,
+t1b:132	estime,
+t1b:133	vultu
+t1b:135	implore
+t1b:136	d'hôtel
+t1b:141	semel
+t1b:145	semblable
+t1c:2	modèle
+t1c:9	regnasti.
+t1c:12	inal
+t1c:17	l'œil
+t1c:18	cupe
+t1c:19	virtutis,
+t1c:23	medicus,
+t1c:24	sanabitur
+t1c:28	nous-mêmes
+t1c:29	Très-Haut.
+t1c:32	l'ambition
+t1c:33	1°
+t1c:35	MATIN
+t1c:36	raisonnement
+t1c:44	de nous
+t1c:46	David, envers
+t1c:50	enfant
+t1c:53	remporterons
+t1c:54	exsuperat
+t1c:59	Siméon
+t1c:68	toutes
+t1c:73	nous allons
+t1c:76	L'ÉPIPHANIE
+t1c:78	accomplie
+t1c:82	réglés, auxquels
+t1c:85	Joseph
+t1c:86	trouvé
+t1c:90	connaissance
+t1c:93	ma jeunesse,
+t1c:99	entrailles de
+t1c:100	encore travaille
+t1c:101	Heureux
+t1c:102	le royaume
+t1c:103	le cœur
+t1c:104	commander
+t1c:111	et obscure.
+t1c:112	sepulcris,
+t1c:113	recevoir
+t1c:114	s'humiliera
+t1c:116	châtiment;
+t1c:118	avez
+t1d:0	à ce
+t1d:2	Universa
+t1d:3	lui par
+t1d:5	délicieuse;
+t1d:8	fortement de
+t1d:10	font
+t1d:24	s'embrasait
+t1d:25	vertu
+t1d:30	mortifier
+t1d:40	ces paroles,
+t1d:42	les âmes,
+t1d:43	Domini
+t1d:59	Jésus
+t1d:61	confixus
+t1d:70	homme,
+t1d:71	parole
+t1d:73	statim
+t1d:80	accompagnée
+t1d:82	de commencer
+t1d:87	commanda
+t1d:89	pratiquer
+t1d:90	attristerez
+t1d:91	POUR
+t1d:97	bibatis
+t1d:98	jours
+t1d:102	sœurs,
+t1d:103	adoremus,
+t1d:105	ni avec
+t1d:108	s'enfler
+t1d:112	pharisiens
+t1d:114	s'estimait
+t1d:123	d'Israël
+t1d:125	temps,
+t1d:126	tentatum
+t1d:127	les pécheurs.
+t1d:128	TROISIÈME
+t1d:129	affranchissement
+t1d:131	et de ses
+t1d:132	l'examen
+t1d:146	détacher
+t1d:155	excelsum
+t1d:158	BONNE
+t1d:160	Celui-ci
+t1d:165	loquentem
+t1d:167	partage de
+t1d:168	de nous
+t1d:170	occurram
+t1d:171	multas
+t1e:1	y recommander,
+t1e:10	Béelzébuth
+t1e:13	mieux
+t1e:15	thesaurizas
+t1e:16	Bernard,
+t1e:19	Nativ.
+t1e:21	Scindite
+t1e:24	exécration.
+t1e:25	soutenir.
+t1e:28	Cœpit
+t1e:29	mœstus
+t1e:30	tædere.
+t1e:41	l'égorge.
+t1e:43	haine
+t1e:45	au fond
+t1e:47	damnés
+t1e:49	crucifix
+t1e:50	Oh!
+t1e:54	voudrai,
+t1e:56	hic
+t1e:59	fidenter
+t1e:60	exprimere
+t1e:63	il dit
+t1e:67	Christ
+t1e:68	delicias.
+t1e:70	moindres
+t1e:76	Dixi
+t1e:79	sûrement
+t1e:83	accuser
+t1e:86	periclitor
+t1e:88	donnât
+t1e:90	l'enfer
+t1e:94	sage.
+t1e:96	tuam
+t1e:97	præcipitem
+t1e:99	un
+t1e:109	d'innocence
+t1e:110	s'incarner
+t1e:119	œcuménique
+t1e:120	nous
+t1e:132	pour
+t1e:134	combattu,
+t1e:136	vertu
+t1e:137	benedictione
+t1e:138	lui-même
+t1e:140	Caractère,
+t1e:141	exaltée
+t1e:142	Si
+t1e:147	hoc mundo,
+t1e:150	miserentis
+t1e:153	ici-bas
+t1e:160	supplex.
+t1e:161	d'obligeance,
+t1e:162	accueil
+t1e:164	donnâtes
+t1e:165	essuyâtes
+t1e:167	computari
+t1e:174	permettons-nous
+t1e:176	nonçât
+t1e:182	misericordiæ
+t1:1	figuier
+t1:17	potes
+t1:27	nous
+t1:62	tout
+t1:86	ramène.
+t1:100	intra
+t1b:3	carne,
+t1b:5	l'agite.
+t1b:11	sein
+t1b:31	vi,
+t1b:34	aimons
+t1b:60	sa
+t1b:66	fatigaris,
+t1b:74	grâce
+t1b:101	nil
+t1b:117	sang
+t1b:121	tout.
+t1b:122	ciel.
+t1b:123	æternæ
+t1b:125	soupir
+t1b:126	flebitis.
+t1b:134	tuo
+t1b:138	tue.
+t1b:140	aime
+t1c:15	aimant
+t1c:60	homme
+t1c:72	cachées.
+t1c:74	bonis.
+t1c:98	autem
+t1d:28	Domino
+t1d:31	mei,
+t1d:37	leur
+t1d:38	âme,
+t1d:44	vie
+t1d:52	suffocaverunt
+t1d:53	divine
+t1d:78	periissem
+t1d:79	CXVIII,
+t1d:106	qui se
+t1d:137	O heureuse
+t1d:144	là tous
+t1d:145	né.
+t1d:148	choix
+t1d:161	cœlo
+t1e:8	hic
+t1e:9	lui
+t1e:22	demeurent
+t1e:26	habui,
+t1e:27	abominatus
+t1e:39	véniel,
+t1e:71	plus
+t1e:74	haine
+t1e:78	cœpi
+t1e:91	moi
+t1e:93	facere
+t1e:103	ses f
+t1e:107	même
+t1e:118	butte
+t1e:149	et
+t1e:154	Ite
+t1e:158	Ite
+t1e:163	ciel
