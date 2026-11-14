@@ -3,6 +3,10 @@
 	import Icone from '#lib/design/Icone.svelte';
 	import Ornement from '#lib/design/Ornement.svelte';
 	import { ecrireRef, enClair, LIVRES, lireRef, passage } from '#lib/ecriture.ts';
+	import { iso } from '#lib/calendrier.ts';
+	import { db } from '#lib/db.ts';
+	import { vivant } from '#lib/live.ts';
+	import type { Coche } from '#lib/types.ts';
 
 	/** Lecture d'un passage des Évangiles : français de Crampon (1923), latin de la Vulgate en regard sur demande. */
 	const ref = $derived(lireRef(page.url.searchParams.get('ref') ?? 'Mt 1') ?? { livre: 'Mt', chapitre: 1 });
@@ -23,6 +27,14 @@
 	/** Versets français, avec le latin de même numéro ; quand les numérotations diffèrent, le latin vient à part. */
 	const versets = $derived(texte ? texte.fr.map(([n, fr]) => ({ n, fr, la: texte!.decale ? '' : (texte!.la.find((v) => v[0] === n)?.[1] ?? '') })) : []);
 	const livre = $derived(LIVRES[ref.livre]);
+	/** « J'ai lu ce chapitre » : une coche « lecture:Mt 5 », qui compte pour les couronnes de lecture. */
+	const cleLecture = $derived(`lecture:${ref.livre} ${ref.chapitre}`);
+	const lectures = $derived(vivant(() => db.coches.where('date').above('').filter((c) => c.elementId === cleLecture).toArray(), [] as Coche[]));
+	const luLe = $derived($lectures.map((c) => c.date).sort()[0]);
+	async function marquerLu() {
+		if (luLe) return;
+		await db.coches.add({ date: iso(new Date()), elementId: cleLecture, rang: 0, horodatage: new Date().toISOString() });
+	}
 	const voisin = (d: number) => {
 		const c = ref.chapitre + d;
 		return c >= 1 && c <= livre.chapitres ? `/ecriture?ref=${encodeURIComponent(`${ref.livre} ${c}`)}` : '';
@@ -58,6 +70,12 @@
 					{#each texte.la as [n, la] (n)}<p class="verset"><span class="la"><sup class="num rub">{n}</sup>{la}</span></p>{/each}
 				</div>
 			{/if}
+			{#if !ref.de && ['Mt', 'Mc', 'Lc', 'Jn'].includes(ref.livre)}
+				<p class="lu">
+					{#if luLe}<span class="petit">✠ Chapitre lu le {new Date(luLe + 'T12:00:00').toLocaleDateString('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' })}</span>
+					{:else}<button onclick={marquerLu}>J’ai lu ce chapitre</button>{/if}
+				</p>
+			{/if}
 			<div class="cul"><Ornement nom="cherubin" taille={30} /></div>
 			<p class="source petit">
 				Traduction : <a href={texte.source.fr.url} rel="noopener" target="_blank">{texte.source.fr.ouvrage}</a>, {texte.source.fr.edition}.
@@ -85,6 +103,7 @@
 	.latin-a-part { margin-top: var(--hs-e5); border-top: var(--hs-cheveu) solid var(--hs-or-trait); padding-top: var(--hs-e4); }
 	.latin-a-part > .pc { text-align: center; margin: 0 0 var(--hs-e3); }
 	.latin-a-part .la { border-left: 0; padding-left: 0; }
+	.lu { text-align: center; margin: var(--hs-e5) 0 0; color: var(--hs-or-texte); }
 	.cul { max-width: 90px; margin: var(--hs-e5) auto var(--hs-e3); }
 	.source { text-align: center; color: var(--hs-encre-douce); }
 	.centre { text-align: center; }

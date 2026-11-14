@@ -1,4 +1,7 @@
 <script lang="ts">
+	import CarteCouronne from '#lib/design/CarteCouronne.svelte';
+	import { couronnesDeLaBase, type Couronne } from '#lib/couronnes.ts';
+	import { iso } from '#lib/calendrier.ts';
 	import { creer, db, enregistrer, mettreALaCorbeille, nouvelId } from '#lib/db.ts';
 	import Ornement from '#lib/design/Ornement.svelte';
 	import { vivant } from '#lib/live.ts';
@@ -51,6 +54,10 @@
 		});
 		nouveau = null;
 	}
+	let tresor = $state<Couronne[]>([]);
+	$effect(() => { couronnesDeLaBase(iso(new Date())).then((c) => (tresor = c)); });
+	let ouverte = $state('');
+	const GENRES: [Couronne['genre'], string][] = [['serie', 'Séries accomplies'], ['mois', 'Mois entiers'], ['constance', 'Constance'], ['lecture', 'Lectures']];
 	const RUBRIQUES: [string, string, string, string][] = [
 		['consecration', 'Consécrations', 'Ex. : consécration à Jésus par Marie, cordon de saint Joseph, scapulaire…', 'Date de la consécration'],
 		['patron', 'Saint patron et fête patronale', 'Le saint dont vous portez le nom : un rappel la veille de sa fête.', 'Jour de sa fête (l’année ne compte pas)'],
@@ -66,6 +73,32 @@
 		<Ornement nom="fleuron" />
 		<p class="petit">Les grâces reçues et les protecteurs choisis ; leurs anniversaires et leurs fêtes reviennent dans la journée et dans les rappels.</p>
 	</div>
+
+	<section class="tresor">
+		<h2>Couronnes</h2>
+		<p class="aide">Les quêtes achevées sans manquer de jour : séries à jours comptés, mois entiers, constance, lectures. Un jour manqué fait recommencer la série.</p>
+		{#if tresor.length}
+			{#each GENRES as [g, nom] (g)}
+				{@const cs = tresor.filter((c) => c.genre === g)}
+				{#if cs.length}
+					<h3 class="pc">{nom}</h3>
+					<ul>
+						{#each cs as c (c.id)}
+							<li class="couronne">
+								<button class="brut ligne-couronne" onclick={() => (ouverte = ouverte === c.id ? '' : c.id)} aria-expanded={ouverte === c.id}>
+									<span class="nom">✠ {c.titre}{#if c.fois > 1} <span class="fois">({c.fois}e fois)</span>{/if}</span>
+									<span class="quand">{new Date(c.date + 'T12:00:00').toLocaleDateString('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' })}</span>
+								</button>
+								{#if ouverte === c.id}<CarteCouronne {c} />{/if}
+							</li>
+						{/each}
+					</ul>
+				{/if}
+			{/each}
+		{:else}
+			<p class="vide">Aucune couronne encore. La première viendra avec la première série menée jusqu’au bout.</p>
+		{/if}
+	</section>
 
 	<section>
 		<h2>Sacrements reçus</h2>
@@ -117,5 +150,10 @@
 	.nom { flex: 1 1 12rem; }
 	.quand { color: var(--hs-encre-douce); font-style: italic; font-size: 1rem; }
 	.ajout { display: grid; gap: var(--hs-e3); margin: var(--hs-e3) 0; }
+	.tresor h3 { font-size: 0.8rem; margin: var(--hs-e4) 0 var(--hs-e2); color: var(--hs-or-texte); }
+	.couronne { display: block; }
+	.ligne-couronne { background: none; border: 0; color: inherit; font: inherit; display: flex; flex-wrap: wrap; gap: 4px 12px; align-items: baseline; width: 100%; text-align: left; cursor: pointer; padding: 0; }
+	.fois { color: var(--hs-encre-douce); font-size: 0.9em; }
+	.vide { font-style: italic; color: var(--hs-encre-douce); }
 	.fin { margin-top: var(--hs-e6); text-align: center; }
 </style>
