@@ -12,10 +12,21 @@
 	import { rendre } from '#lib/markup.ts';
 	import { etiquetteSource } from '#lib/sources.ts';
 	import type { Texte, Version } from '#lib/types.ts';
+	import { iso, jourDu } from '#lib/calendrier.ts';
+	import { chargerIndulgences, enClair, valeurDuJour, valeursDuJour, type Indulgences } from '#lib/indulgences.ts';
+
 
 	const id = $derived(decodeURIComponent(page.params.id ?? ''));
 	const texte = $derived(vivant(() => db.textes.get(id), undefined as Texte | undefined));
 	let latin = $state(false);
+	// indulgence (partielle) d'aujourd'hui, annoncée avant la prière, avec son intention éventuelle
+	let ind = $state<Indulgences | null>(null);
+	let tempora = $state<string | null>(null);
+	const aujourdhui = iso(new Date());
+	chargerIndulgences().then((x) => (ind = x));
+	jourDu(aujourdhui).then((j) => (tempora = j?.tempora ?? null));
+	const fiche = $derived(ind?.fiches[id]);
+	const sansCompte = $derived(ind?.sans_compte[id]);
 	const parties = vivant(
 		async () => [...new Set((await db.textes.toArray()).map((t) => t.partie).filter(Boolean))],
 		[] as string[]
@@ -114,6 +125,20 @@
 				<p class="corbeille">Cette prière est dans la corbeille. <button onclick={() => sortirDeLaCorbeille('textes', id)}>La rétablir</button></p>
 			{/if}
 			{#if t.usage}<p class="usage"><span class="pc rub">usage :</span> <em>{t.usage}</em></p>{/if}
+			{#if fiche}
+				<aside class="indulgence-jour">
+					{#if fiche.intention}<p><span class="pc rub">intention :</span> <em>{fiche.intention}</em></p>{/if}
+					<p><span class="pc rub">aujourd’hui :</span> {enClair(valeurDuJour(fiche, aujourdhui, tempora))}
+						<span class="detail">({valeursDuJour(fiche, aujourdhui, tempora).map((p) => p.texte).join(' + ')})</span></p>
+					{#if fiche.partielles.some((p) => p.quand)}
+						<p class="detail">Selon le jour : {fiche.partielles.filter((p) => p.quand).map((p) => p.texte).join(' ; ')}.</p>
+					{/if}
+					{#if fiche.note}<p class="detail">{fiche.note}</p>{/if}
+					<p class="detail source">{fiche.ref}</p>
+				</aside>
+			{:else if sansCompte}
+				<aside class="indulgence-jour"><p class="detail">{sansCompte}</p></aside>
+			{/if}
 			<Ornement nom="fleuron" />
 		</header>
 
@@ -183,6 +208,9 @@
 {/if}
 
 <style>
+	.indulgence-jour { max-width: 34rem; margin: var(--hs-e3) auto 0; padding: var(--hs-e2) var(--hs-e4); border: var(--hs-cheveu) solid var(--hs-or-trait); text-align: center; }
+	.indulgence-jour p { margin: 2px 0; }
+	.indulgence-jour .detail { font-size: 0.9375rem; color: var(--hs-encre-douce); font-style: italic; }
 	.ecran { max-width: 980px; margin: 0 auto; padding: var(--hs-e5) var(--hs-marge-mobile) 0; }
 	.retour { display: inline-flex; align-items: center; gap: 4px; text-decoration: none; color: var(--hs-encre-douce); min-height: 44px; }
 	header { text-align: center; display: grid; justify-items: center; gap: var(--hs-e3); margin: var(--hs-e6) auto var(--hs-e6); max-width: var(--hs-mesure); }

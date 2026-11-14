@@ -54,6 +54,10 @@
 | Litanies de l'Ange gardien, avec la prière | idem | 579-580 | idem |
 | Roues symboliques : listes et versets | Vulgate clémentine ; *Catéchisme de saint Pie X* ; Bréviaire romain (S. Grégoire, 29 sept., neuf chœurs) ; Paroissien 1890 ; *Jardin de l'âme* | — | `engine/roues/construire.py` |
 
+## Indulgences (compteur), 14 novembre 2026
+
+Règle : la concession la plus récente fait foi : *Enchiridion indulgentiarum*, 1952 (archive.org `enchiridion_indulgentiarum_1952`) ; à défaut *Thésaurisons pour le ciel*, Carmel de Montréal, 1941, imprimatur du 28 avril 1941, d'après les *Preces et Pia Opera* de 1938 (http://www.liberius.net/livre.php?id_livre=1335) ; à défaut Beringer 1925. Données : `data/prieres/indulgences.json` (indulgences partielles seulement ; plénières et indulgences réservées aux confréries non comptées). Vérifiés dans l'Enchiridion : n° 114, 221, 293, 319, 331, 332, 333, 462, 478, 585, 671, 687, litanies du Sacré-Cœur.
+
 ## Sources consultées pour l'inventaire (textes pas encore recopiés)
 
 | Source | Édition | Ce qu'on y a repéré | Accès |

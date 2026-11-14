@@ -97,6 +97,8 @@ export interface Pratique extends Base {
 	elements?: ElementRoue[];
 	verset?: { ref: string; la: string };
 	anneau?: number;
+	/** Roue qui sert seulement à des lignes de la liste (litanies…) : hors de la rosace. */
+	liste?: boolean;
 }
 
 export type Moment = 'matin' | 'propre' | 'journee' | 'soir';
@@ -118,6 +120,8 @@ export interface ElementListe extends Base {
 	alterner?: boolean;
 	/** Absent : rang de départ selon le titre (rangs.ts). */
 	rang?: Rang;
+	/** Ligne « choisie par la roue » : identifiant de la roue (pratique de type roue) dont l'élément du jour donne la prière. */
+	roue?: string;
 	actif: boolean;
 }
 
