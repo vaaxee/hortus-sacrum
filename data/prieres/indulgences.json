@@ -527,6 +527,38 @@
     }
    ],
    "note": "Hors de septembre, 5 ans une fois le jour si l'on a le propos de prier ainsi neuf jours de suite en l'honneur de Notre-Dame des Douleurs (n° 380). Ces indulgences valent pour l'ensemble des prières à Notre-Dame des Douleurs du jour, non pour chacune."
+  },
+  "weber:priere-saint-louis-de-gonzague": {
+   "ref": "Ench. 1952, n° 343",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "ans": 3,
+     "texte": "3 ans"
+    }
+   ],
+   "note": "L'Enchiridion donne le texte latin (O Domina mea, sancta Maria) ; Weber en donne une traduction libre."
+  },
+  "weber:priere-du-p-zucchi": {
+   "ref": "Ench. 1952, n° 340",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "jours": 500,
+     "texte": "500 jours"
+    }
+   ],
+   "note": "L'Enchiridion fait précéder l'offrande d'un Ave Maria."
+  },
+  "weber:demande-d-une-bonne-mort": {
+   "ref": "Ench. 1952, n° 642",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "jours": 500,
+     "texte": "500 jours"
+    }
+   ]
   }
  },
  "sans_compte": {
