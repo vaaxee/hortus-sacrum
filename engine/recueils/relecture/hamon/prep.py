@@ -10,7 +10,8 @@ from pathlib import Path
 from bs4 import BeautifulSoup
 
 tome, p0, p1, D, S = int(sys.argv[1]), int(sys.argv[2]), int(sys.argv[3]), Path(sys.argv[4]), sys.argv[5]
-PDF = Path(__file__).resolve().parents[4] / 'vendor' / 'sources' / 'hamon' / f'bc{tome}.pdf'
+import os
+PDF = Path(os.environ['PDF']) if os.environ.get('PDF') else Path(__file__).resolve().parents[4] / 'vendor' / 'sources' / 'hamon' / f'bc{tome}.pdf'  # PDF= : autre livre (Guéranger)
 D.mkdir(parents=True, exist_ok=True)
 (D / f'tess{S}').mkdir(exist_ok=True); (D / f'img{S}').mkdir(exist_ok=True)
 pages = []
