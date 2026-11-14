@@ -179,23 +179,33 @@ export async function amorcer(fetchFn: typeof fetch = fetch): Promise<void> {
 }
 
 /** Textes sourcés trouvés pour des dévotions du plan restées sans texte (titre de la dévotion → texte). */
-const TEXTES_DES_DEVOTIONS: Record<string, string> = {
+const TEXTES_DES_DEVOTIONS: Record<string, string | [string[], string]> = {
 	'Neuvaine à l’Immaculée Conception': 'weber:neuvaine-immaculee-conception',
 	'Neuvaine au Sacré-Cœur': 'liguori:neuvaine-sacre-coeur',
 	'Neuvaine de la Nativité de Notre-Dame': 'neuvaines-1886:nativite',
 	'Neuvaine de l’Assomption': 'neuvaines-1886:assomption',
-	'Neuvaine de Noël': 'liguori:neuvaine-de-noel'
+	'Neuvaine de Noël': 'liguori:neuvaine-de-noel',
+	// pas de neuvaine propre trouvée : l'Enchiridion indulgencie toute prière faite neuf jours de suite en l'honneur du mystère
+	'Neuvaine du Rosaire': [['sambucy:chapelet-saint-dominique', 'paroissien:litanies-sainte-vierge'],
+		'Chaque jour : le chapelet et les litanies de la sainte Vierge, avec le propos de prier ainsi neuf jours de suite. Toute prière en l’honneur de Notre-Dame du Rosaire faite ainsi : 5 ans une fois le jour ; plénière à la fin, aux conditions ordinaires (Ench. 1952, n° 396).'],
+	'Neuvaine de la Toussaint': [['paroissien:litanies-des-saints'],
+		'Chaque jour : les litanies des saints (5 ans ; Ench. 1952, n° 687).']
 };
 
 /** Relie chaque texte une seule fois (meta « devotions-textes ») aux dévotions de ce titre, vides et jamais modifiées. */
 async function textesDesDevotions(): Promise<void> {
 	const livres = new Set(((await db.meta.get('devotions-textes'))?.valeur as string[] | undefined) ?? []);
 	let change = false;
-	for (const [titre, id] of Object.entries(TEXTES_DES_DEVOTIONS)) {
-		if (livres.has(id) || !(await db.textes.get(id))) continue;
+	for (const [titre, v] of Object.entries(TEXTES_DES_DEVOTIONS)) {
+		const [ids, note] = typeof v === 'string' ? [[v], ''] : v;
+		const id = ids.join('+');
+		if (livres.has(id)) continue;
+		let manque = false;
+		for (const t of ids) if (!(await db.textes.get(t))) manque = true;
+		if (manque) continue;
 		for (const p of await db.pratiques.toArray()) {
 			if (p.titre !== titre || p.supprimeLe || p.textes.length || !(p.modifieLe === DEPART || p.original === contenu(p))) continue;
-			const q = { ...p, textes: [id] } as Pratique;
+			const q = { ...p, textes: ids, ...(note && !p.notes ? { notes: note } : {}) } as Pratique;
 			q.original = contenu(q);
 			await db.pratiques.put(q);
 		}
