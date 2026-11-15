@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { vivantSelon } from '#lib/vivant.svelte.ts';
 	import { page } from '$app/state';
 	import Icone from '#lib/design/Icone.svelte';
 	import Ornement from '#lib/design/Ornement.svelte';
@@ -29,8 +30,8 @@
 	const livre = $derived(LIVRES[ref.livre]);
 	/** « J'ai lu ce chapitre » : une coche « lecture:Mt 5 », qui compte pour les couronnes de lecture. */
 	const cleLecture = $derived(`lecture:${ref.livre} ${ref.chapitre}`);
-	const lectures = $derived(vivant(() => db.coches.where('date').above('').filter((c) => c.elementId === cleLecture).toArray(), [] as Coche[]));
-	const luLe = $derived($lectures.map((c) => c.date).sort()[0]);
+	const lectures = vivantSelon(() => { const k = cleLecture; return () => db.coches.where('date').above('').filter((c) => c.elementId === k).toArray(); }, [] as Coche[]);
+	const luLe = $derived(lectures.v.map((c) => c.date).sort()[0]);
 	async function marquerLu() {
 		if (luLe) return;
 		await db.coches.add({ date: iso(new Date()), elementId: cleLecture, rang: 0, horodatage: new Date().toISOString() });

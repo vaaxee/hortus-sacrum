@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { vivantSelon } from '#lib/vivant.svelte.ts';
 	import { page } from '$app/state';
 	import { anneeLiturgique, introitVersCorps, iso, jourDu, MOIS_DEVOTION, RANG, teinte, type Jour } from '#lib/calendrier.ts';
 	import { db } from '#lib/db.ts';
@@ -38,14 +39,14 @@
 	const MOMENTS: [Moment, string][] = [['matin', 'Matin'], ['propre', 'Propre du jour'], ['journee', 'Au fil du jour'], ['soir', 'Soir']];
 	// pratiques du jour : elles remplacent les deux lignes génériques « dévotion en cours » et « neuvaine ou trentain »
 	const pratiques = vivant(() => db.pratiques.toArray(), [] as Pratique[]);
-	const faitsDuJour = $derived(vivant(() => db.faits.where('date').equals(date).toArray(), [] as Fait[]));
+	const faitsDuJour = vivantSelon(() => { const d = date; return () => db.faits.where('date').equals(d).toArray(); }, [] as Fait[]);
 	const pratiquesDuJour = $derived(
 		$pratiques
 			.filter((p) => p.active && !p.supprimeLe)
 			.map((p) => ({ p, o: occurrenceDu(p, date) }))
 			.filter((x): x is { p: Pratique; o: Occurrence } => !!x.o)
 	);
-	const faite = (id: string) => $faitsDuJour.some((f) => f.pratiqueId === id);
+	const faite = (id: string) => faitsDuJour.v.some((f) => f.pratiqueId === id);
 	/** Pratiques rattachées à un élément générique de la liste, ou null si l'élément est ordinaire. */
 	function pratiquesPour(e: ElementListe) {
 		const gardees = pratiquesDuJour.filter((x) => garde(rangPratique(x.p), seuil));
@@ -84,22 +85,22 @@
 	};
 
 	// fêtes et anniversaires personnels du jour
-	const fetes = $derived(vivant(() => db.fetes.where('[mois+jour]').equals([d.getMonth() + 1, d.getDate()]).toArray(), [] as FetePerso[]));
-	const fetesDuJour = $derived($fetes.filter((f) => !f.supprimeLe));
+	const fetes = vivantSelon(() => { const md = [d.getMonth() + 1, d.getDate()]; return () => db.fetes.where('[mois+jour]').equals(md).toArray(); }, [] as FetePerso[]);
+	const fetesDuJour = $derived(fetes.v.filter((f) => !f.supprimeLe));
 	const anniversaire = (f: FetePerso) => (f.annee && d.getFullYear() > f.annee ? `, ${d.getFullYear() - f.annee}${d.getFullYear() - f.annee === 1 ? 'er' : 'e'} anniversaire` : '');
 
 	// note du jour
-	const note = $derived(vivant(() => db.notes.get(`note:${date}`), undefined as NoteJour | undefined));
+	const note = vivantSelon(() => { const k = `note:${date}`; return () => db.notes.get(k); }, undefined as NoteJour | undefined);
 	async function noter(corps: string) {
 		const existante = await db.notes.get(`note:${date}`);
 		if (existante) await enregistrer('notes', { ...existante, corps });
 		else if (corps.trim()) await creer<NoteJour>('notes', { id: `note:${date}`, origine: 'personnel', date, corps });
 	}
 	// coches du jour, enregistrées et horodatées
-	const cochesDuJour = $derived(vivant(() => db.coches.where('date').equals(date).toArray(), [] as Coche[]));
+	const cochesDuJour = vivantSelon(() => { const d = date; return () => db.coches.where('date').equals(d).toArray(); }, [] as Coche[]);
 	const coches = $derived.by(() => {
 		const n: Record<string, number> = {};
-		for (const c of $cochesDuJour) n[c.elementId] = (n[c.elementId] ?? 0) + 1;
+		for (const c of cochesDuJour.v) n[c.elementId] = (n[c.elementId] ?? 0) + 1;
 		return n;
 	});
 	async function compter(e: ElementListe, total: number) {
@@ -195,7 +196,7 @@
 	// couronnes : une quête achevée s'annonce une fois, par une carte (recalculée quand on coche)
 	let nouvelle = $state<Couronne | null>(null);
 	$effect(() => {
-		void $cochesDuJour.length; void $faitsDuJour.length;
+		void cochesDuJour.v.length; void faitsDuJour.v.length;
 		if (!estAujourdhui) return;
 		Promise.all([couronnesDeLaBase(date), vues()]).then(([cs, v]) => {
 			nouvelle = [...cs].reverse().find((c) => !v.has(c.id)) ?? null;
@@ -379,9 +380,9 @@
 			{/each}
 		</section>
 
-		<details class="note-jour" open={!!$note?.corps}>
+		<details class="note-jour" open={!!note.v?.corps}>
 			<summary class="pc">Note du jour</summary>
-			<textarea rows="3" aria-label="Note du jour" value={$note?.corps ?? ''} onblur={(ev) => noter(ev.currentTarget.value)} placeholder="Une intention, une résolution, une grâce reçue"></textarea>
+			<textarea rows="3" aria-label="Note du jour" value={note.v?.corps ?? ''} onblur={(ev) => noter(ev.currentTarget.value)} placeholder="Une intention, une résolution, une grâce reçue"></textarea>
 		</details>
 
 		<section class="martyrologe" aria-label="Martyrologe">
