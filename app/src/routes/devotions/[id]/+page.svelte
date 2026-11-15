@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { vivantSelon } from '#lib/vivant.svelte.ts';
 	import { goto } from '$app/navigation';
 	import { page } from '$app/state';
 	import Badge from '#lib/Badge.svelte';
@@ -17,14 +18,14 @@
 
 	const id = $derived(decodeURIComponent(page.params.id ?? ''));
 	const nouvelle = $derived(id === 'nouvelle');
-	const pratique = $derived(vivant(() => db.pratiques.get(id), undefined as Pratique | undefined));
-	const faits = $derived(vivant(() => db.faits.where('pratiqueId').equals(id).toArray(), [] as Fait[]));
+	const pratique = vivantSelon(() => { const k = id; return () => db.pratiques.get(k); }, undefined as Pratique | undefined);
+	const faits = vivantSelon(() => { const k = id; return () => db.faits.where('pratiqueId').equals(k).toArray(); }, [] as Fait[]);
 	const textes = vivant(() => db.textes.toArray(), [] as Texte[]);
 	const aujourdhui = versIso(new Date());
 
-	const dates = $derived(new Set($faits.map((f) => f.date)));
-	const e = $derived($pratique ? etat($pratique, aujourdhui, dates) : undefined);
-	const liees = $derived($pratique ? $pratique.textes.map((t) => $textes.find((x) => x.id === t)).filter((x): x is Texte => !!x) : []);
+	const dates = $derived(new Set(faits.v.map((f) => f.date)));
+	const e = $derived(pratique.v ? etat(pratique.v, aujourdhui, dates) : undefined);
+	const liees = $derived(pratique.v ? pratique.v.textes.map((t) => $textes.find((x) => x.id === t)).filter((x): x is Texte => !!x) : []);
 
 	let edition = $state(false);
 	let brouillon: Pratique | undefined = $state();
@@ -48,8 +49,8 @@
 	}
 
 	function modifier() {
-		if (!$pratique) return;
-		brouillon = structuredClone($pratique);
+		if (!pratique.v) return;
+		brouillon = structuredClone(pratique.v);
 		edition = true;
 	}
 	async function sauver() {
@@ -68,8 +69,8 @@
 		brouillon = undefined;
 	}
 	async function reprendre() {
-		if (!$pratique) return;
-		await enregistrer('pratiques', { ...$pratique, regle: recommencer($pratique.regle, aujourdhui) });
+		if (!pratique.v) return;
+		await enregistrer('pratiques', { ...pratique.v, regle: recommencer(pratique.v.regle, aujourdhui) });
 	}
 	async function copier() {
 		const c = await dupliquer<Pratique>('pratiques', id);
@@ -91,7 +92,7 @@
 	};
 </script>
 
-<svelte:head><title>{nouvelle ? 'Ajouter une pratique' : ($pratique?.titre ?? 'Pratique')} — Hortus Sacrum</title></svelte:head>
+<svelte:head><title>{nouvelle ? 'Ajouter une pratique' : (pratique.v?.titre ?? 'Pratique')} — Hortus Sacrum</title></svelte:head>
 
 <main class="page entree">
 	<a class="retour" href="/devotions"><Icone nom="retour" taille={16} /> Dévotions</a>
@@ -112,10 +113,10 @@
 			</div>
 			{#if nouvelle}<p class="petit">Cette pratique sera marquée « Ajout personnel ».</p>{/if}
 		{/if}
-	{:else if !$pratique}
+	{:else if !pratique.v}
 		<p>Cette pratique est introuvable.</p>
 	{:else}
-		{@const p = $pratique}
+		{@const p = pratique.v}
 		<div class="tete-page">
 			<h1>{p.titre}</h1>
 			<p class="rangee"><Badge objet={p} /></p>

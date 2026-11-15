@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { vivantSelon } from '#lib/vivant.svelte.ts';
 	import { page } from '$app/state';
 	import { goto } from '$app/navigation';
 	import FicheTexte from '#lib/FicheTexte.svelte';
@@ -17,7 +18,7 @@
 
 
 	const id = $derived(decodeURIComponent(page.params.id ?? ''));
-	const texte = $derived(vivant(() => db.textes.get(id), undefined as Texte | undefined));
+	const texte = vivantSelon(() => { const k = id; return () => db.textes.get(k); }, undefined as Texte | undefined);
 	let latin = $state(false);
 	// indulgence (partielle) d'aujourd'hui, annoncée avant la prière, avec son intention éventuelle
 	let ind = $state<Indulgences | null>(null);
@@ -37,8 +38,8 @@
 	let voirHistorique = $state(false);
 
 	function modifier() {
-		if (!$texte) return;
-		brouillon = structuredClone($texte);
+		if (!texte.v) return;
+		brouillon = structuredClone(texte.v);
 		edition = true;
 	}
 	async function sauver() {
@@ -59,7 +60,7 @@
 		if (c) goto(`/prieres/${encodeURIComponent(c.id)}`);
 	}
 	async function favori() {
-		if ($texte) await db.textes.update(id, { favori: !$texte.favori });
+		if (texte.v) await db.textes.update(id, { favori: !texte.v.favori });
 	}
 	async function jeter() {
 		await mettreALaCorbeille('textes', id);
@@ -72,7 +73,7 @@
 
 	/** Paragraphes du texte ; les strophes latines s'apparient à la suite de paragraphes simples de même longueur. */
 	const blocs = $derived.by((): Bloc[] => {
-		const t = $texte;
+		const t = texte.v;
 		if (!t) return [];
 		const genre = (p: string): Bloc['genre'] =>
 			p.startsWith('[r]') && p.endsWith('[/r]') ? 'rubrique'
@@ -96,9 +97,9 @@
 	const ORIGINE = { livret: ['livret', 'Livret'], officielle: ['verifiee', 'Source vérifiée'], personnel: ['personnel', 'Ajout personnel'] } as const;
 </script>
 
-<svelte:head><title>{$texte?.titre ?? 'Prière'} — Hortus Sacrum</title></svelte:head>
+<svelte:head><title>{texte.v?.titre ?? 'Prière'} — Hortus Sacrum</title></svelte:head>
 
-{#if !$texte}
+{#if !texte.v}
 	<main class="page"><a class="retour" href="/prieres"><Icone nom="retour" taille={16} /> Prières</a><p>Cette prière est introuvable.</p></main>
 {:else if edition && brouillon}
 	<main class="page">
@@ -111,9 +112,9 @@
 		</div>
 	</main>
 {:else}
-	{@const t = $texte}
+	{@const t = texte.v}
 	<main class="ecran entree">
-		<a class="retour interface" href="/prieres"><Icone nom="retour" taille={16} /> {$texte.partie || 'Prières'}</a>
+		<a class="retour interface" href="/prieres"><Icone nom="retour" taille={16} /> {texte.v.partie || 'Prières'}</a>
 
 		<header>
 			<h1>{t.titre}</h1>

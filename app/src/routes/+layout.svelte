@@ -56,6 +56,9 @@
 		</div>
 	</div>
 
+	<!-- la barre d'état du téléphone est transparente : le texte qui défile ne passe pas sous l'heure -->
+	<div class="barre-etat" aria-hidden="true"></div>
+
 	<nav class="onglets" aria-label="Navigation principale">
 		{#each onglets as o}
 			<a href={o.href} class:actif={actif(o.href)} aria-current={actif(o.href) ? 'page' : undefined}>
@@ -68,6 +71,7 @@
 </div>
 
 <style>
+	.barre-etat { position: fixed; top: 0; left: 0; right: 0; height: env(safe-area-inset-top); background: var(--hs-fond); z-index: 15; pointer-events: none; }
 	.cadre { max-width: var(--hs-page); margin: 0 auto; }
 	.contenu { padding-bottom: 104px; min-width: 0; }
 	.sommaire { display: none; }
