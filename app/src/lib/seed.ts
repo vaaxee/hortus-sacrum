@@ -116,9 +116,12 @@ const TOUS = [true, true, true, true, true, true, true];
 const jour = (...j: number[]) => TOUS.map((_, i) => j.includes(i));
 
 /** Liste du jour de départ (docs/LISTE_DU_JOUR.md). Les éléments sans texte en base attendent leur source. */
+/** IIe partie du Jardin : actes des devoirs de charité, dits avec l'offrande du matin (demande du 15 nov.). */
+const DEVOIRS = ['jardin:devoir-envers-l-eglise-et-ses-ministres', 'jardin:devoir-envers-la-famille', 'jardin:devoir-envers-la-patrie', 'jardin:devoir-envers-les-pauvres-les-persecutes-les-affliges', 'jardin:devoir-envers-moi-meme'];
+
 function listeParDefaut(): Omit<ElementListe, 'creeLe' | 'modifieLe'>[] {
 	const L: [string, Moment, 'ordinaire' | 'propre', boolean[], string[], string[]][] = [
-		['Offrande du matin', 'matin', 'ordinaire', TOUS, [], ['jardin:intention-d-indulgences', 'jardin:acte-de-soumission-a-la-volonte-de-dieu', 'jardin:acte-d-intention-de-communion-spirituelle-perpetuelle', 'jardin:acte-de-recommandation-des-ames-rencontrees']],
+		['Offrande du matin', 'matin', 'ordinaire', TOUS, [], ['jardin:intention-d-indulgences', 'jardin:acte-de-soumission-a-la-volonte-de-dieu', 'jardin:acte-d-intention-de-communion-spirituelle-perpetuelle', 'jardin:acte-de-recommandation-des-ames-rencontrees', ...DEVOIRS]],
 		['Prière du matin', 'matin', 'ordinaire', TOUS, [], []],
 		['Salve Regina, avec ses versets', 'matin', 'ordinaire', TOUS, [], []],
 		['Intentions particulières du jour', 'matin', 'ordinaire', TOUS, [], []],
@@ -176,6 +179,7 @@ export async function amorcer(fetchFn: typeof fetch = fetch): Promise<void> {
 	await chapeletParLaRoue();
 	await livrerElements();
 	await renouvellementDuCordon();
+	await devoirsDuMatin();
 }
 
 /** Textes sourcés trouvés pour des dévotions du plan restées sans texte (titre de la dévotion → texte). */
@@ -478,6 +482,20 @@ const CORDON_TITRE = 'Cordon de saint Joseph : renouvellement et prière pour la
 const CORDON_TEXTES = ['hortus:renouvellement-cordon-saint-joseph', 'beringer:saint-joseph-purete'];
 
 /** Une seule fois (meta « cordon-renouvellement ») : la ligne du mercredi reçoit la formule de renouvellement, si jamais modifiée. */
+/** Une fois : la ligne « Offrande du matin » reçoit aussi les actes des devoirs de charité (ajout seulement). */
+async function devoirsDuMatin(): Promise<void> {
+	if (await db.meta.get('devoirs-matin')) return;
+	if (!(await db.textes.get(DEVOIRS[0]))) return;
+	const e = (await db.liste.toArray()).find((x) => x.origine === 'officielle' && x.titre === 'Offrande du matin' && !x.supprimeLe);
+	if (e) {
+		const neuf = e.modifieLe === DEPART || e.original === contenu(e);
+		const x = { ...e, textes: [...e.textes, ...DEVOIRS.filter((d) => !e.textes.includes(d))] } as ElementListe;
+		if (neuf) x.original = contenu(x);
+		await db.liste.put(x);
+	}
+	await db.meta.put({ cle: 'devoirs-matin', valeur: true });
+}
+
 async function renouvellementDuCordon(): Promise<void> {
 	if (await db.meta.get('cordon-renouvellement')) return;
 	if (!(await db.textes.get(CORDON_TEXTES[0]))) return;
