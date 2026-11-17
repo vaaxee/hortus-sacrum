@@ -9,6 +9,7 @@
 	import { invocation, nomLatin, TOUS_LES_SAINTS } from '#lib/invocations.ts';
 	import { invocationLatine } from '#lib/invocations-latines.ts';
 	import { textesDuJour } from '#lib/liste.ts';
+	import { bilanDuJour } from '#lib/etiquettes.ts';
 	import { chargerRecueil, choisirAvecMois, NOM_COURT, RECUEIL_DU_MOIS } from '#lib/meditations.ts';
 	import { garde, rangElement, rangPratique, RANGS } from '#lib/rangs.ts';
 	import { vivant } from '#lib/live.ts';
@@ -16,7 +17,7 @@
 	import { creer, enregistrer } from '#lib/db.ts';
 	import { occurrenceDu, type Occurrence } from '#lib/pratiques.ts';
 	import { basculerFait } from '#lib/suivi.ts';
-	import type { Coche, ElementListe, Fait, FetePerso, Moment, NoteJour, Pratique, Rang } from '#lib/types.ts';
+	import type { Coche, ElementListe, Fait, FetePerso, Moment, NoteJour, Pratique, Rang, Texte } from '#lib/types.ts';
 	import Icone from '#lib/design/Icone.svelte';
 	import { elementDu } from '#lib/roues.ts';
 	import { actionsDeGraces } from '#lib/anniversaires.ts';
@@ -184,6 +185,12 @@
 		}
 		return { gagnees: somme(gagnees), possibles: somme(possibles) };
 	});
+	// cadre pratique : fins, objets, grâces, personnes et pratiques couverts par les prières du jour ; ce qui manque
+	const bibliotheque = vivant(() => db.textes.toArray(), [] as Texte[]);
+	const cadre = $derived.by(() => {
+		const ids = duJour.flatMap((e) => pratiquesPour(e)?.flatMap(({ p }) => p.textes) ?? textesDuJour(e, date, jour, roues));
+		return $bibliotheque.length ? bilanDuJour(ids, $bibliotheque) : [];
+	});
 	// durée de prière : estimée d'après les textes (ou réglée à la main), pour chaque ligne et pour le jour entier
 	const minutesTextes = vivant(async () => Object.fromEntries((await db.textes.toArray()).map((t) => [t.id, minutesDuTexte(t.corps ?? '')])), {} as Record<string, number>);
 	const minutesDe = (ids: string[]) => ids.reduce((a, id) => a + ($minutesTextes[id] ?? 0), 0);
@@ -323,6 +330,20 @@
 			{#if promesses.length}
 				<details class="promesses"><summary class="aide">Promesses en cours ({promesses.length})</summary>
 					{#each promesses as { p, o } (p.id)}<p class="aide"><strong>{p.titre}</strong>{#if o.total} ({o.rang}/{o.total}){/if} : {p.promesses}</p>{/each}
+				</details>
+			{/if}
+			{#if cadre.length}
+				<details class="cadre"><summary class="aide">Bilan du jour (fins, objets, grâces, personnes, pratiques) : {cadre.reduce((a, c) => a + c.manques.length, 0) || 'rien ne'} manque{cadre.reduce((a, c) => a + c.manques.length, 0) > 1 ? 'nt' : ''}</summary>
+					{#each cadre as c (c.categorie)}
+						<p class="aide"><strong>{c.libelle}</strong> — couvert : {c.couvertes.join(', ') || 'rien'}.</p>
+						{#if c.manques.length}
+							<ul class="aide manques">
+								{#each c.manques as m (m.etiquette)}
+									<li>{m.etiquette}{#if m.proposition} : <a href={`/prieres/${encodeURIComponent(m.proposition.id)}`}>{m.proposition.titre}</a>{/if}</li>
+								{/each}
+							</ul>
+						{/if}
+					{/each}
 				</details>
 			{/if}
 			<p class="regler"><a href="/liste">Régler la liste</a></p>
