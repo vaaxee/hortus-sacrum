@@ -708,6 +708,18 @@
      "texte": "500 jours"
     }
    ]
+  },
+  "jahenny:scapulaire-benediction-protection": {
+   "ref": "Ench. 1952, n° 187 (O Crux, ave, spes unica) ; Thésaurisons, n° 70",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "jours": 500,
+     "repetitions": 5,
+     "texte": "5 × 500 jours (O Crux, ave, spes unica)"
+    }
+   ],
+   "note": "Dit 7 fois : 7 × 500 jours."
   }
  },
  "sans_compte": {

@@ -17,7 +17,8 @@ export const DUREES_FIXES: Record<string, number> = {
 	'Dévotion du jour de la semaine': 5,
 	'Triple Couronne d’or du Sacré-Cœur': 15,
 	'Chapelet de saint Michel (couronne angélique)': 15,
-	'Chapelet des Morts': 10
+	'Chapelet des Morts': 10,
+	'Scapulaire de bénédiction et de protection': 3
 };
 
 /** Minutes de récitation d'un texte (au moins une demi-minute ; les rubriques en italique ne se disent pas). */
