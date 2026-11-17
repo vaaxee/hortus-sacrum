@@ -75,11 +75,12 @@
    "source": {
     "ouvrage": "Beringer, Les Indulgences, leur nature et leur usage, t. I, n° 429",
     "edition": "trad. Ph. Mazoyer, 4e éd. française, Paris, P. Lethielleux, 1925",
-    "page": "224-225 (l’original abrège les versets en « Dignare me, etc. » ; ils sont donnés ici en entier, d’après le Salve Regina de la même page)",
+    "page": "224-225 (l’original abrège les versets en « Dignare me, etc. » ; ils sont donnés ici en entier, d’après le Salve Regina de la même page) ; invocations « Domina nostra… » : christusregnat.com (Sub tuum præsidium), fourni par l'utilisateur le 17 nov. 2026",
     "url": "https://archive.org/details/lesindulgences0001beri"
    },
-   "latin": "Sub tuum præsidium confugimus, sancta Dei genitrix : nostras deprecationes ne despicias in necessitatibus nostris, sed a periculis cunctis libera nos semper, Virgo gloriosa et benedicta.\n\n℣. Dignare me laudare te, Virgo sacrata.\n℟. Da mihi virtutem contra hostes tuos.\n℣. Benedictus Deus in sanctis suis.\n℟. Amen.",
-   "corps": "[r]Le soir.[/r]\n\nNous nous réfugions sous votre protection, sainte Mère de Dieu ; ne méprisez pas les prières que nous vous adressons dans nos besoins ; mais délivrez-nous toujours de tous les périls, Vierge comblée de gloire et de bénédiction.\n\n℣. Daignez agréer mes louanges, ô Vierge sainte.\n℟. Donnez-moi force et courage contre vos ennemis.\n℣. Béni soit Dieu dans ses saints.\n℟. Ainsi soit-il."
+   "latin": "Sub tuum præsidium confugimus, sancta Dei genitrix : nostras deprecationes ne despicias in necessitatibus nostris, sed a periculis cunctis libera nos semper, Virgo gloriosa et benedicta.\n\nDomina nostra, Mediatrix nostra, Advocata nostra, Consolatrix nostra. Tuo Filio nos reconcilia, tuo Filio nos commenda, tuo Filio nos repræsenta. Amen.\n\n℣. Dignare me laudare te, Virgo sacrata.\n℟. Da mihi virtutem contra hostes tuos.\n℣. Benedictus Deus in sanctis suis.\n℟. Amen.",
+   "corps": "[r]Le soir.[/r]\n\nNous nous réfugions sous votre protection, sainte Mère de Dieu ; ne méprisez pas les prières que nous vous adressons dans nos besoins ; mais délivrez-nous toujours de tous les périls, Vierge comblée de gloire et de bénédiction.\n\nDomina nostra, Mediatrix nostra, Advocata nostra, Consolatrix nostra. Tuo Filio nos reconcilia, tuo Filio nos commenda, tuo Filio nos repræsenta. Amen.\n\n℣. Daignez agréer mes louanges, ô Vierge sainte.\n℟. Donnez-moi force et courage contre vos ennemis.\n℣. Béni soit Dieu dans ses saints.\n℟. Ainsi soit-il.",
+   "revision": 1
   },
   {
    "id": "paroissien:de-profundis",
