@@ -181,6 +181,8 @@ export async function amorcer(fetchFn: typeof fetch = fetch): Promise<void> {
 	await renouvellementDuCordon();
 	await devoirsDuMatin();
 	await remplacerTextes('chapelet-montfort', 'Chapelet', ['sambucy:chapelet-saint-dominique'], ['sambucy:chapelet-saint-dominique', 'montfort:methode-rosaire']);
+	// les trois Ave du début du chapelet, sous la forme révélée à sainte Mechtilde (dévotions combinées, SPEC § 10)
+	await remplacerTextes('chapelet-trois-ave', 'Chapelet', ['sambucy:chapelet-saint-dominique', 'montfort:methode-rosaire'], ['sambucy:chapelet-saint-dominique', 'gertrude:trois-ave-bonne-mort', 'montfort:methode-rosaire']);
 	await remplacerTextes('cordon-gloria', 'Cordon de saint Joseph : sept Gloria Patri', ['beringer:cordon-saint-joseph'], ['hortus:cordon-sept-gloria', 'beringer:cordon-saint-joseph']);
 }
 
