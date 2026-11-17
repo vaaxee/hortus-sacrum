@@ -16,7 +16,8 @@ export function textesDuJour(e: Pick<ElementListe, 'textes' | 'alterner' | 'roue
 	const r = e.roue ? roues.find((x) => x.id === e.roue && !x.supprimeLe) : undefined;
 	if (r) {
 		const el = elementDu(r, date);
-		return remplacementsDuTemps(el?.texte ? [el.texte] : e.textes, jour);
+		// la prière de l'élément du jour, puis les autres textes de la ligne (ex. la méthode de Montfort jointe au chapelet)
+		return remplacementsDuTemps(el?.texte ? [el.texte, ...e.textes.slice(1)] : e.textes, jour);
 	}
 	const choisis = !e.alterner || e.textes.length < 2 ? e.textes : [e.textes[(semaineDuMois(date) - 1) % e.textes.length]];
 	return remplacementsDuTemps(jaculatoiresDuJour(avecLePropre(choisis, date), date), jour);
