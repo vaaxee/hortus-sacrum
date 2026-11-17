@@ -226,7 +226,9 @@ Règle commune : « faire le plus de dévotion avec le moins d'actes séparés, 
    relus) ; ligne « Petit bréviaire du Sacré-Cœur » qui donne l'office du jour de la semaine
    (`hortus:petit-breviaire-du-jour`). La Recommandation du dimanche, à laquelle les autres jours renvoient, est recopiée
    dans chacun. Reste : l'exercice pendant la messe, les litanies, la neuvaine.
-2. **Prières et promesses de sainte Gertrude** : l'utilisateur envoie le PDF de l'édition à suivre.
+2. **Prières et promesses de sainte Gertrude** : PDF reçu (Denis, *Prières de sainte Gertrude*, 11e éd., Lethielleux).
+   *Fait :* les trois Ave de sainte Mechtilde pour une bonne mort (p. 206-208), joints à la ligne du chapelet, où ils
+   tiennent lieu des trois Ave du début (`gertrude:trois-ave-bonne-mort`).
 3. **Jaculatoires indulgenciées** : un recueil classé par rapport indulgence / longueur (Ench. 1952) **et** une
    ligne du jour avec les 10 meilleures, qui tournent ; chacune compte dans le total.
 4. **Apostolat de la prière** : offrande quotidienne et pratiques (P. Ramière / Gautrelet, XIXe s.), sans les
