@@ -22,6 +22,7 @@
 	import Accueil from '#lib/design/Accueil.svelte';
 	import CarteCouronne from '#lib/design/CarteCouronne.svelte';
 	import { couronnesDeLaBase, marquerVue, vues, type Couronne } from '#lib/couronnes.ts';
+	import { DUREES_FIXES, enMinutes, minutesDuTexte } from '#lib/durees.ts';
 	import { chargerIndulgences, enClair, enJours, fois, somme, valeurDuJour, type Indulgences, type Valeur } from '#lib/indulgences.ts';
 
 	const date = $derived(page.url.searchParams.get('date') ?? iso(new Date()));
@@ -182,6 +183,27 @@
 		}
 		return { gagnees: somme(gagnees), possibles: somme(possibles) };
 	});
+	// durée de prière : estimée d'après les textes (ou réglée à la main), pour chaque ligne et pour le jour entier
+	const minutesTextes = vivant(async () => Object.fromEntries((await db.textes.toArray()).map((t) => [t.id, minutesDuTexte(t.corps ?? '')])), {} as Record<string, number>);
+	const minutesDe = (ids: string[]) => ids.reduce((a, id) => a + ($minutesTextes[id] ?? 0), 0);
+	function dureeDe(e: ElementListe): number {
+		const pp = pratiquesPour(e);
+		if (pp) return pp.reduce((a, { p }) => a + minutesDe(p.textes), 0);
+		return e.duree ?? DUREES_FIXES[e.titre] ?? minutesDe(textesDuJour(e, date, jour, roues));
+	}
+	const temps = $derived.by(() => {
+		let tout = 0, fait = 0;
+		for (const e of duJour) {
+			const pp = pratiquesPour(e);
+			if (pp) {
+				for (const { p } of pp) { const m = minutesDe(p.textes); tout += m; if (faite(p.id)) fait += m; }
+				continue;
+			}
+			const total = Math.max(1, e.rappels.length), m = dureeDe(e);
+			tout += m * total; fait += m * Math.min(coches[e.id] ?? 0, total);
+		}
+		return { tout, fait };
+	});
 	// promesses attachées aux pratiques du jour (seulement celles que les pratiques portent : Brigitte n'en a pas)
 	const promesses = $derived(pratiquesDuJour.filter((x) => x.p.promesses?.trim()));
 	// écran d'accueil : une fois par ouverture de l'app (mémorisé pour la session de l'onglet)
@@ -282,6 +304,13 @@
 				<span class="trait"><span style="width: {duJour.length ? (100 * faits) / duJour.length : 0}%"></span></span>
 				<span class="chiffres-alignes">{faits} / {duJour.length}</span>
 			</div>
+			{#if temps.tout > 0}
+				<div class="avancement interface temps" title="Durée estimée d'après la longueur des prières ; chaque durée se règle dans « Régler la liste »">
+					<span class="etiquette">Temps de prière</span>
+					<span class="trait"><span style="width: {(100 * temps.fait) / temps.tout}%"></span></span>
+					<span class="chiffres-alignes">{enMinutes(temps.fait)} / {enMinutes(temps.tout)}</span>
+				</div>
+			{/if}
 			{#if enJours(bilan.possibles) > 0}
 				<div class="avancement interface indulg" title="Indulgences partielles des prières cochées (Enchiridion 1952, à défaut Beringer 1925)">
 					<span class="etiquette">Indulgences</span>
@@ -363,6 +392,7 @@
 									{/if}
 									{#if sous}<span class="sous">{sous}</span>{/if}
 									{#if e.rappels.length}<span class="heures interface">{e.rappels.join(', ')}</span>{/if}
+									{#if dureeDe(e) > 0}<span class="duree interface">≈ {enMinutes(dureeDe(e))}</span>{/if}
 								</div>
 								{#if total > 1}
 									<button class="medaillon brut" onclick={() => compter(e, total)}
@@ -464,6 +494,7 @@
 	li.fini .titre { color: var(--hs-encre-douce); }
 	.sous { font-style: italic; font-size: 1rem; line-height: 1.35; color: var(--hs-encre-douce); }
 	.heures { color: var(--hs-encre-douce); font-size: 0.75rem; margin-top: 2px; }
+	.duree { color: var(--hs-encre-douce); font-size: 0.75rem; margin-top: 2px; opacity: 0.85; }
 	.genre { font-size: 0.9375rem; color: var(--hs-encre-douce); width: 3.2rem; text-align: right; flex: none; }
 	.genre.propre { color: var(--hs-rubrique); }
 	.genre .rang { font-size: 0.75rem; letter-spacing: 0.04em; color: var(--hs-encre-douce); }

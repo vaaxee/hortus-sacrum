@@ -221,6 +221,12 @@
 									<button disabled={!nouvelleHeure} onclick={ajouterHeure}>Ajouter l’heure</button>
 								</div>
 
+								<label><span>Durée d’une récitation (minutes)</span>
+									<input type="number" min="0" step="1" inputmode="numeric" placeholder="estimée d’après le texte"
+										value={brouillon.duree ?? ''}
+										oninput={(ev) => (brouillon!.duree = ev.currentTarget.value === '' ? undefined : Number(ev.currentTarget.value))} />
+								</label>
+
 								<label><span>Choix de la prière</span>
 									<select value={brouillon.roue ?? ''} onchange={(ev) => (brouillon!.roue = ev.currentTarget.value || undefined)}>
 										<option value="">Fixe : les prières ci-dessous</option>
