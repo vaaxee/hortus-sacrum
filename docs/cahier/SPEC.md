@@ -252,3 +252,23 @@ propose une prière pour combler un manque. Le calendrier quotidien ne fait qu'i
   purgatoire.
 - **Pratiques** : messe, office, oraison, méditation, chapelet, examen, lecture spirituelle, dévotions, pénitence,
   actes jaculatoires.
+
+### Corrections du 17 novembre au soir (prioritaire)
+
+1. **Une page par prière composée.** Quand une ligne réunit plusieurs textes, on les présente en **une seule page**, celle
+   du jour. Ces pages sont composées par `engine/composer/composer.py`, à partir des textes sourcés, sans rien réécrire :
+   - **Triple Couronne d’or** : trois pages (`hortus:triple-couronne-1/2/3`). Chacune contient l’ordinaire, l’invocation
+     propre à sa place et les mystères avant les prières finales. Seule la couronne du jour s’affiche : 1re le lundi, le
+     mercredi et le samedi ; 2e le mardi et le vendredi ; 3e le jeudi et le dimanche.
+   - **Offrande du matin** : les actes du livret en une page (`hortus:offrande-du-matin`). Rien n’y répète la prière du
+     matin.
+   - **Chapelet** : une page par série de mystères (`hortus:chapelet-joyeux/douloureux/glorieux`). Chaque page contient
+     la manière de saint Dominique, la méthode de saint Louis-Marie de Montfort et les trois Ave de sainte Mechtilde, avec
+     des boutons vers les autres mystères pour dire le rosaire entier. Le chapelet du jour : joyeux le lundi et le jeudi ;
+     douloureux le mardi et le vendredi ; glorieux le mercredi, le samedi et le dimanche. Plus de roue des chapelets.
+   - Mécanisme : identifiants « du jour » (`SELON_LE_JOUR`, `app/src/lib/liste.ts`).
+2. **Invocations latines chantées : sans le lieu**, qui casse le rythme. Seule exception, l’invocation connue par un chant :
+   « Sancta Barbara, virgo Nicomediæ, ora pro nobis peccatoribus, amen ».
+3. **Après chaque lot : lint et nettoyage** (code mort, migrations devenues inutiles), **puis audit des consignes**
+   (sources bannies, secrets, textes sans source, textes de mémoire). Ce qui sort des consignes est corrigé sans attendre.
+4. **Reprendre ce qui a été laissé en pause.** Avant de conclure, relire l’historique et la liste des tâches.

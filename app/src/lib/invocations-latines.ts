@@ -1,7 +1,8 @@
 /**
  * Invocations latines chantables, tirées de l'éloge latin du Martyrologe romain (SPEC § 10) :
  *   « Nicomedíæ pássio sanctæ Bárbaræ, Vírginis et Mártyris; quæ… »
- *   → « Sancta Bárbara, virgo et martyr Nicomedíæ, ora pro nobis peccatoribus. Amen. »
+ *   → « Sancta Bárbara, virgo et martyr, ora pro nobis peccatoribus. Amen. »
+ * Sans le lieu : il casserait le rythme du chant (demande du 17 nov.).
  * Les noms sont au génitif dans l'éloge : on les met au vocatif par des règles de déclinaison, les titres par une table.
  * Sans nom sûr, pas d'invocation (l'éloge reste affiché).
  */
@@ -19,6 +20,10 @@ const TITRES: Record<string, string> = {
 	martyrum: 'martyres', virginum: 'virgines', episcoporum: 'episcopi', confessorum: 'confessores', monachorum: 'monachi',
 	presbyterorum: 'presbyteri', diaconorum: 'diaconi', militum: 'milites', fratrum: 'fratres', sororum: 'sorores', abbatum: 'abbates',
 	pontificum: 'pontifices', tribuni: 'tribune', solitarii: 'solitarie', reclusi: 'recluse', apostolorum: 'apostoli', puerorum: 'pueri', virorum: 'viri', mulierum: 'mulieres', sociorum: 'socii'
+};
+/** Invocations connues par un chant (le lieu y est, et fait partie de l'air) : nom au vocatif → invocation. */
+const CHANTS: Record<string, string> = {
+	'Bárbara': 'Sancta Bárbara, virgo Nicomedíæ, ora pro nobis peccatoribus. Amen.'
 };
 /** Mots de liaison dans la liste des titres. */
 const ET = new Set(['et', 'ac', 'atque']);
@@ -59,17 +64,6 @@ export function invocationLatine(eloge: string | null | undefined): InvocationLa
 	const pluriel = /orum|arum/.test(sujet);
 	const fem = /ae$|arum$/.test(sujet);
 	const beat = sujet.startsWith('beat');
-	// lieu : ce qui précède le sujet, sans les mots d'office (pássio, natális…)
-	const avant = eloge.slice(0, m.index + m[1].length).trim();
-	const lieu = avant
-		.split(/\s+/)
-		.filter((w) => !/^(passio|natalis|depositio|inventio|ordinatio|item|elevatio|apud|eodem|die|pridie|eadem|ipso)$/.test(sansAccent(w).replace(/[.,;]/g, '')))
-		.join(' ')
-		.replace(/[,;]\s*$/, '')
-		.trim();
-	// lieu sûr seulement : court, sans relative, sans mot de fête (octave, dédicace, translation, vigile…)
-	const fete = /octava|dedicatio|translatio|vigilia|commemoratio|ibidem|basilic|nativitas|visitatio|annuntiatio|assumptio|conceptio|purificatio|praesentatio|exaltatio|inventio|transfiguratio|circumcisio|solemnitas|festum/.test(sansAccent(lieu));
-	const lieuSur = !fete && lieu.split(/\s+/).length <= 4 && !/\b(qu[aiæe]|est|sunt)\b/u.test(lieu) ? lieu : '';
 	// segment du sujet : jusqu'à la première relative ou au premier point-virgule
 	const debut = m.index + m[0].length;
 	const segment = eloge.slice(debut).split(/[;:.(]|,\s*(?:qui|quæ|quod|cujus|quorum|quarum|ubi|sub|cum|in|a|ab|ex|apud|cognomento|cognoménto)\b|\s(?:quos|quas|quibus|quorum|quarum|qui|quæ)\b/iu)[0];
@@ -132,7 +126,8 @@ export function invocationLatine(eloge: string | null | undefined): InvocationLa
 		.map((x, i) => (x === 'Ecclesiæ' && titres[i + 1] ? `Ecclesiæ ${titres[i + 1]}` : titres[i - 1] === 'Ecclesiæ' ? '' : x))
 		.filter(Boolean);
 	const qualite = t.length ? `, ${t.join(' et ')}` : '';
-	const ou = lieuSur ? ` ${lieuSur.replace(/^In\s/u, 'in ')}` : '';
 	const fin = plusieurs ? 'orate pro nobis peccatoribus. Amen.' : 'ora pro nobis peccatoribus. Amen.';
-	return { texte: `${tete} ${liste}${socii ? ' et socii' : ''}${qualite}${ou}, ${fin}`, pluriel: plusieurs };
+	const chant = CHANTS[liste];
+	if (chant && !plusieurs) return { texte: chant, pluriel: false };
+	return { texte: `${tete} ${liste}${socii ? ' et socii' : ''}${qualite}, ${fin}`, pluriel: plusieurs };
 }

@@ -10,8 +10,6 @@ import { SOURCE_VIDE } from './types.ts';
 export * from './roues-calcul.ts';
 import { elementDu } from './roues-calcul.ts';
 
-export const estRoue = (p: Pratique) => p.type === 'roue';
-
 interface RoueSource {
 	id: string;
 	nombre: number;

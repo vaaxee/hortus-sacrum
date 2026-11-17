@@ -10,6 +10,7 @@
 	import { sansAccents } from '#lib/markup.ts';
 	import type { ElementListe, Moment, Pratique, Rang, Texte } from '#lib/types.ts';
 	import { rangElement, RANGS } from '#lib/rangs.ts';
+	import { LIBELLES_DU_JOUR } from '#lib/liste.ts';
 
 	const liste = vivant(() => db.liste.orderBy('ordre').toArray(), [] as ElementListe[]);
 	const textes = vivant(() => db.textes.orderBy('ordre').toArray(), [] as Texte[]);
@@ -237,7 +238,7 @@
 								<p class="aide">Prières ouvertes par cet élément{brouillon.roue ? ' (quand la roue n’en donne pas)' : ''}</p>
 								{#each brouillon.textes as id}
 									<div class="liee">
-										<span>{titres[id] ?? 'Prière introuvable'}</span>
+										<span>{titres[id] ?? LIBELLES_DU_JOUR[id] ?? 'Prière introuvable'}</span>
 										<button class="brut" aria-label="Retirer cette prière" onclick={() => (brouillon!.textes = brouillon!.textes.filter((x) => x !== id))}>×</button>
 									</div>
 								{/each}

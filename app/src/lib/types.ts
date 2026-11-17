@@ -2,12 +2,6 @@
 
 export type Origine = 'livret' | 'officielle' | 'personnel';
 
-export const ORIGINE_LIBELLE: Record<Origine, string> = {
-	livret: 'Livret',
-	officielle: 'Source officielle vérifiée',
-	personnel: 'Ajout personnel'
-};
-
 export interface Source {
 	ouvrage: string;
 	edition: string;

@@ -115,7 +115,7 @@ Les textes écrits de mémoire ont été remplacés par le texte de leur source.
 - **Hymnes** : latin du Bréviaire romain ; traduction en vers du P. Ch. Clair, S.J. (1880, imprimatur), reprise par Beringer. Magnificat : traduction de Beringer, n° 132. Les indulgences ont été rectifiées (Veni Creator : 100 j., 300 j. à la Pentecôte, plénière mensuelle).
 - **Litanies des Sept Douleurs** : rétablissement du ℣/℟ de la source (« sainte Mère des Douleurs / vrais disciples »).
 - **Fiche** : conditions et dates vérifiées sur Beringer, n° 270 à 295. Ajout des dix vendredis de saint François-Xavier. Les quinze mardis de saint Dominique sont notés sans indulgence propre connue.
-- **Point restant** : les promesses de saint Michel ne sont qu'en accord avec la tradition rapportée par Aleteia (2020). Aucun texte ancien de ces promesses n'a été trouvé.
+- **Point restant** : les promesses de saint Michel (apparition de 1751 à Antonia d'Astonaco) sont à vérifier mot pour mot sur la Raccolta (1910) ; voir A_FOURNIR.
 
 ## Version 5 — indulgences selon l'Enchiridion indulgentiarum de 1952
 - **Référence unique pour les indulgences** : *Enchiridion indulgentiarum. Preces et pia opera*, Sacrée Pénitencerie, Typographie polyglotte vaticane, 2ᵉ éd., 1952 (archive.org enchiridion_indulgentiarum_1952). C'est le dernier recueil officiel d'avant le Concile ; il remplace la Raccolta de 1910 et Beringer. Les items absents de l'Enchiridion sont confrontés à la Raccolta de 1943 (Christopher et Spence, traduction autorisée de *Preces et pia opera* de 1938).

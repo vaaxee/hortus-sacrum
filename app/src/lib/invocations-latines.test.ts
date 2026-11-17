@@ -12,7 +12,7 @@ describe('invocations latines du martyrologe', () => {
 	});
 	it('une vierge martyre, avec le lieu', () => {
 		expect(invocationLatine('Nicomedíæ pássio sanctæ Bárbaræ, Vírginis et Mártyris; quæ, in persecutióne Maximíni…')?.texte)
-			.toBe('Sancta Bárbara, virgo et martyr Nicomedíæ, ora pro nobis peccatoribus. Amen.');
+			.toBe('Sancta Bárbara, virgo Nicomedíæ, ora pro nobis peccatoribus. Amen.');
 	});
 	it('un évêque au nom en deux mots, sans l’adjectif de lieu', () => {
 		expect(invocationLatine('Sancti Petri Chrysólogi, Epíscopi Ravennátis, Confessóris et Ecclésiæ Doctóris, cujus memória…')?.texte)
@@ -20,7 +20,7 @@ describe('invocations latines du martyrologe', () => {
 	});
 	it('un groupe de martyrs', () => {
 		expect(invocationLatine('In Túscia sanctórum Mártyrum Joánnis et Festi.')?.texte)
-			.toBe('Sancti Joánnes et Feste, martyres in Túscia, orate pro nobis peccatoribus. Amen.');
+			.toBe('Sancti Joánnes et Feste, martyres, orate pro nobis peccatoribus. Amen.');
 	});
 	it('pas d’invocation sans saint nommé', () => {
 		expect(invocationLatine('Epiphánia Dómini.')).toBeNull();
