@@ -180,6 +180,7 @@ export async function amorcer(fetchFn: typeof fetch = fetch): Promise<void> {
 	await livrerElements();
 	await renouvellementDuCordon();
 	await devoirsDuMatin();
+	await remplacerTextes('chapelet-montfort', 'Chapelet', ['sambucy:chapelet-saint-dominique'], ['sambucy:chapelet-saint-dominique', 'montfort:methode-rosaire']);
 	await remplacerTextes('cordon-gloria', 'Cordon de saint Joseph : sept Gloria Patri', ['beringer:cordon-saint-joseph'], ['hortus:cordon-sept-gloria', 'beringer:cordon-saint-joseph']);
 }
 
@@ -472,7 +473,7 @@ async function chapeletParLaRoue(): Promise<void> {
 	if (!(await db.textes.get('sambucy:chapelet-saint-dominique')) || !(await db.pratiques.get('roue:chapelets-rosaire'))) return;
 	const e = (await db.liste.toArray()).find((x) => x.titre === 'Chapelet' && !x.supprimeLe);
 	if (e && (e.modifieLe === DEPART || e.original === contenu(e)) && !e.textes.length) {
-		const x = { ...e, roue: 'roue:chapelets-rosaire', textes: ['sambucy:chapelet-saint-dominique'] } as ElementListe;
+		const x = { ...e, roue: 'roue:chapelets-rosaire', textes: ['sambucy:chapelet-saint-dominique', 'montfort:methode-rosaire'] } as ElementListe;
 		x.original = contenu(x);
 		await db.liste.put(x);
 	}
@@ -489,7 +490,7 @@ const CORDON_TEXTES = ['hortus:renouvellement-cordon-saint-joseph', 'beringer:sa
  */
 async function remplacerTextes(cle: string, titre: string, avant: string[], apres: string[]): Promise<void> {
 	if (await db.meta.get(cle)) return;
-	if (!(await db.textes.get(apres[0]))) return;
+	for (const id of apres) if (!(await db.textes.get(id))) return;
 	for (const e of await db.liste.toArray()) {
 		if (e.origine !== 'officielle' || e.titre !== titre || e.supprimeLe || e.textes.join() !== avant.join()) continue;
 		const neuf = e.modifieLe === DEPART || e.original === contenu(e);
@@ -539,6 +540,10 @@ const NOUVEAUX_ELEMENTS: Omit<ElementListe, 'creeLe' | 'modifieLe'>[] = [
 	{
 		id: 'liste:jaculatoires', origine: 'officielle', titre: 'Jaculatoires du jour',
 		moment: 'journee', etiquette: 'ordinaire', jours: TOUS, rappels: [], textes: ['hortus:jaculatoires-du-jour'], ordre: 176, actif: true
+	},
+	{
+		id: 'liste:petit-breviaire', origine: 'officielle', titre: 'Petit bréviaire du Sacré-Cœur',
+		moment: 'journee', etiquette: 'ordinaire', jours: TOUS, rappels: [], textes: ['hortus:petit-breviaire-du-jour'], ordre: 177, actif: true
 	},
 	{
 		id: 'liste:roue', origine: 'officielle', titre: 'La roue du jour',

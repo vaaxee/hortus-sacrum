@@ -26,3 +26,12 @@ describe('alternance par semaine du mois', () => {
 		expect(textesDuJour({ textes: ['a'], alterner: true }, '2026-11-08')).toEqual(['a']);
 	});
 });
+
+describe('petit bréviaire du Sacré-Cœur', () => {
+	it("donne l'office du jour de la semaine", async () => {
+		const { petitBreviaireDuJour, PETIT_BREVIAIRE_DU_JOUR } = await import('./liste');
+		expect(petitBreviaireDuJour(['a', PETIT_BREVIAIRE_DU_JOUR, 'b'], '2026-11-20')).toEqual(['a', 'breviaire-sc:office-vendredi', 'b']);
+		expect(petitBreviaireDuJour([PETIT_BREVIAIRE_DU_JOUR], '2026-11-22')).toEqual(['breviaire-sc:office-dimanche']);
+		expect(petitBreviaireDuJour(['a'], '2026-11-22')).toEqual(['a']);
+	});
+});
