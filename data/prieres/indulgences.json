@@ -190,14 +190,30 @@
    ]
   },
   "jardin:la-triple-couronne-d-or-du-sacre-c-ur-de-jesus": {
-   "ref": "Ench. 1952, n° 221 (Jesu, mitis et humilis Corde)",
+   "ref": "Ench. 1952, n° 221 (Jesu, mitis), n° 386 (Dulce Cor Mariæ), n° 70 (Mon Jésus, miséricorde), n° 287 (Veni, Sancte Spiritus)",
    "frequence": "chaque fois",
    "partielles": [
     {
      "jours": 500,
-     "texte": "500 jours (l'invocation)"
+     "repetitions": 5,
+     "texte": "5 × 500 jours (Jesu, mitis et humilis Corde, à chaque mystère)"
+    },
+    {
+     "jours": 300,
+     "repetitions": 5,
+     "texte": "5 × 300 jours (Dulce Cor Mariæ, sis salus mea)"
+    },
+    {
+     "jours": 300,
+     "repetitions": 5,
+     "texte": "5 × 300 jours (Mon Jésus, miséricorde !, cinq fois)"
+    },
+    {
+     "ans": 5,
+     "texte": "5 ans (Veni, Sancte Spiritus, avec ℣. Emitte et l'oraison)"
     }
-   ]
+   ],
+   "note": "« Dulce Cor Jesu, fac ut te magis ac magis diligam » n'est indulgencié qu'avec Pater, Ave et Gloria devant une image du Sacré-Cœur (n° 248) : non compté."
   },
   "jardin:acte-d-intention-de-communion-spirituelle-perpetuelle": {
    "ref": "Ench. 1952, n° 164 (d'après le livret)",

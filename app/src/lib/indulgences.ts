@@ -12,6 +12,8 @@ export interface Partielle extends Partial<Valeur> {
 	quand?: { mois?: number[]; jours_semaine?: number[]; dates?: string[]; tempora?: string[] };
 	/** Indice de la valeur ordinaire que celle-ci remplace aux jours indiqués. */
 	remplace?: number;
+	/** Nombre de fois que l'invocation indulgenciée est dite dans la prière (5 mystères → 5) ; 1 par défaut. */
+	repetitions?: number;
 }
 export interface Fiche {
 	ref: string;
@@ -52,7 +54,7 @@ export function valeursDuJour(f: Fiche, date: string, tempora?: string | null): 
 }
 
 export function valeurDuJour(f: Fiche, date: string, tempora?: string | null): Valeur {
-	return somme(valeursDuJour(f, date, tempora).map((p) => ({ ans: p.ans ?? 0, jours: p.jours ?? 0 })));
+	return somme(valeursDuJour(f, date, tempora).map((p) => fois({ ans: p.ans ?? 0, jours: p.jours ?? 0 }, p.repetitions ?? 1)));
 }
 
 export function somme(vs: Valeur[]): Valeur {

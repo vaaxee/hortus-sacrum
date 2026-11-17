@@ -180,6 +180,7 @@ export async function amorcer(fetchFn: typeof fetch = fetch): Promise<void> {
 	await livrerElements();
 	await renouvellementDuCordon();
 	await devoirsDuMatin();
+	await remplacerTextes('cordon-gloria', 'Cordon de saint Joseph : sept Gloria Patri', ['beringer:cordon-saint-joseph'], ['hortus:cordon-sept-gloria', 'beringer:cordon-saint-joseph']);
 }
 
 /** Textes sourcés trouvés pour des dévotions du plan restées sans texte (titre de la dévotion → texte). */
@@ -482,6 +483,23 @@ const CORDON_TITRE = 'Cordon de saint Joseph : renouvellement et prière pour la
 const CORDON_TEXTES = ['hortus:renouvellement-cordon-saint-joseph', 'beringer:saint-joseph-purete'];
 
 /** Une seule fois (meta « cordon-renouvellement ») : la ligne du mercredi reçoit la formule de renouvellement, si jamais modifiée. */
+/**
+ * Une fois par clé : remplace les textes d'une ligne de la liste de départ quand ils sont encore ceux d'origine
+ * (l'utilisateur ne les a pas changés). `avant` : la liste exacte attendue ; `apres` : la nouvelle.
+ */
+async function remplacerTextes(cle: string, titre: string, avant: string[], apres: string[]): Promise<void> {
+	if (await db.meta.get(cle)) return;
+	if (!(await db.textes.get(apres[0]))) return;
+	for (const e of await db.liste.toArray()) {
+		if (e.origine !== 'officielle' || e.titre !== titre || e.supprimeLe || e.textes.join() !== avant.join()) continue;
+		const neuf = e.modifieLe === DEPART || e.original === contenu(e);
+		const x = { ...e, textes: apres } as ElementListe;
+		if (neuf) x.original = contenu(x);
+		await db.liste.put(x);
+	}
+	await db.meta.put({ cle, valeur: true });
+}
+
 /** Une fois : la ligne « Offrande du matin » reçoit aussi les actes des devoirs de charité (ajout seulement). */
 async function devoirsDuMatin(): Promise<void> {
 	if (await db.meta.get('devoirs-matin')) return;
@@ -543,7 +561,7 @@ const LIENS_SOURCES: Record<string, string[]> = {
 	'Salve Regina, avec ses versets': ['beringer:salve-regina'],
 	'Sub tuum, avec ses versets': ['beringer:sub-tuum'],
 	'Chapelet des Morts': ['beringer:chapelet-des-morts', 'paroissien:de-profundis'],
-	'Cordon de saint Joseph : sept Gloria Patri': ['beringer:cordon-saint-joseph']
+	'Cordon de saint Joseph : sept Gloria Patri': ['hortus:cordon-sept-gloria', 'beringer:cordon-saint-joseph']
 };
 
 /**

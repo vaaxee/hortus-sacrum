@@ -89,13 +89,13 @@
 
 	{#if terminees.length || masquees.length || corbeille.length}
 		<details class="reste">
-			<summary>Terminées, masquées et corbeille ({terminees.length + masquees.length + corbeille.length})</summary>
+			<summary>Passées, masquées et corbeille ({terminees.length + masquees.length + corbeille.length})</summary>
 			<ul class="reglee">
 				{#each [...terminees.map((l) => l.p), ...masquees, ...corbeille] as p (p.id)}
 					<li>
 						<a href="/devotions/{encodeURIComponent(p.id)}">
 							<span class="titre">{p.titre}</span>
-							<span class="detail">{p.supprimeLe ? 'dans la corbeille' : !p.active ? 'masquée' : 'terminée'}</span>
+							<span class="detail">{p.supprimeLe ? 'dans la corbeille' : !p.active ? 'masquée' : parPratique.get(p.id)?.size ? 'terminée' : 'passée, non commencée'}</span>
 						</a>
 					</li>
 				{/each}
