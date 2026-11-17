@@ -542,6 +542,10 @@ const NOUVEAUX_ELEMENTS: Omit<ElementListe, 'creeLe' | 'modifieLe'>[] = [
 		moment: 'journee', etiquette: 'ordinaire', jours: TOUS, rappels: [], textes: ['hortus:jaculatoires-du-jour'], ordre: 176, actif: true
 	},
 	{
+		id: 'liste:petit-breviaire', origine: 'officielle', titre: 'Petit bréviaire du Sacré-Cœur',
+		moment: 'journee', etiquette: 'ordinaire', jours: TOUS, rappels: [], textes: ['hortus:petit-breviaire-du-jour'], ordre: 177, actif: true
+	},
+	{
 		id: 'liste:roue', origine: 'officielle', titre: 'La roue du jour',
 		moment: 'propre', etiquette: 'propre', jours: TOUS, rappels: [], textes: [], ordre: 75, actif: true
 	}

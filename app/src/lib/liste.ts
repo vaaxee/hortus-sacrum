@@ -20,7 +20,7 @@ export function textesDuJour(e: Pick<ElementListe, 'textes' | 'alterner' | 'roue
 		return remplacementsDuTemps(el?.texte ? [el.texte, ...e.textes.slice(1)] : e.textes, jour);
 	}
 	const choisis = !e.alterner || e.textes.length < 2 ? e.textes : [e.textes[(semaineDuMois(date) - 1) % e.textes.length]];
-	return remplacementsDuTemps(jaculatoiresDuJour(avecLePropre(choisis, date), date), jour);
+	return remplacementsDuTemps(petitBreviaireDuJour(jaculatoiresDuJour(avecLePropre(choisis, date), date), date), jour);
 }
 
 /**
@@ -98,6 +98,18 @@ export function jaculatoiresDuJour(ids: string[], date: string): string[] {
 	const jourN = Math.floor(Date.parse(date + 'T12:00:00Z') / 86400000);
 	const debut = ((jourN % 4) + 4) % 4 * 10;
 	return [...ids.slice(0, i), ...JACULATOIRES.slice(debut, debut + 10), ...ids.slice(i + 1)];
+}
+
+/**
+ * Ligne « Petit bréviaire du Sacré-Cœur » : l'office du jour de la semaine (Nancy, 1883 ; un office par jour).
+ */
+export const PETIT_BREVIAIRE_DU_JOUR = 'hortus:petit-breviaire-du-jour';
+const JOURS_BREVIAIRE = ['dimanche', 'lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi'];
+export function petitBreviaireDuJour(ids: string[], date: string): string[] {
+	const i = ids.indexOf(PETIT_BREVIAIRE_DU_JOUR);
+	if (i < 0) return ids;
+	const office = `breviaire-sc:office-${JOURS_BREVIAIRE[new Date(date + 'T12:00:00').getDay()]}`;
+	return [...ids.slice(0, i), office, ...ids.slice(i + 1)];
 }
 
 /**

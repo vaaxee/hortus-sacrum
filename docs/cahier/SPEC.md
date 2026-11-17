@@ -222,6 +222,10 @@ Règle commune : « faire le plus de dévotion avec le moins d'actes séparés, 
 ### Ajouts
 1. **Petit bréviaire du Sacré-Cœur de Jésus** (petits offices pour chaque jour de la semaine et exercice pendant la
    messe, tirés de sainte Marguerite-Marie ; Nancy, Le Chevallier, 13e éd., imprimatur 21 mars 1883 ; PDF fourni).
+   *Fait :* les sept offices (`breviaire-sc:office-<jour>`, extraits par `engine/recueils/breviaire_sc/extraire.py`,
+   relus) ; ligne « Petit bréviaire du Sacré-Cœur » qui donne l'office du jour de la semaine
+   (`hortus:petit-breviaire-du-jour`). La Recommandation du dimanche, à laquelle les autres jours renvoient, est recopiée
+   dans chacun. Reste : l'exercice pendant la messe, les litanies, la neuvaine.
 2. **Prières et promesses de sainte Gertrude** : l'utilisateur envoie le PDF de l'édition à suivre.
 3. **Jaculatoires indulgenciées** : un recueil classé par rapport indulgence / longueur (Ench. 1952) **et** une
    ligne du jour avec les 10 meilleures, qui tournent ; chacune compte dans le total.
