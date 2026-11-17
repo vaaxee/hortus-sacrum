@@ -14,12 +14,23 @@ export const plusJours = (s: string, n: number) => versIso(new Date(midi(s).getT
 
 /** Couleur de chaque temps liturgique (le temps de la Passion garde le violet). */
 const COULEUR_TEMPS: [RegExp, string][] = [
-	[/Avent/, 'violet'], [/Noël/, 'blanc'], [/après l’Épiphanie/, 'vert'], [/Épiphanie/, 'blanc'], [/Septuagésime/, 'violet'],
-	[/Carême|Passion/, 'violet'], [/pascal/, 'blanc'], [/Pentecôte/, 'vert']
+	[/Avent/, 'violet'],
+	[/Noël/, 'blanc'],
+	[/après l’Épiphanie/, 'vert'],
+	[/Épiphanie/, 'blanc'],
+	[/Septuagésime/, 'violet'],
+	[/Carême|Passion/, 'violet'],
+	[/pascal/, 'blanc'],
+	[/Pentecôte/, 'vert']
 ];
 export const couleurDuTemps = (temps: string) => COULEUR_TEMPS.find(([r]) => r.test(temps))?.[1] ?? 'vert';
 
-export interface Segment { debut: string; fin: string; titre: string; couleur?: string }
+export interface Segment {
+	debut: string;
+	fin: string;
+	titre: string;
+	couleur?: string;
+}
 
 /** Les temps liturgiques, en segments continus (le temps de l'Épiphanie qui revient pendant l'octave est fondu). */
 export function temps(jours: Jour[]): Segment[] {
@@ -27,16 +38,20 @@ export function temps(jours: Jour[]): Segment[] {
 	for (const j of jours) {
 		const t = j.temps.replace(/^Temps de l’Épiphanie$/, 'Temps de l’Épiphanie');
 		const der = out[out.length - 1];
-		if (der && (der.titre === t || (/Épiphanie/.test(der.titre) && /Épiphanie/.test(t) && couleurDuTemps(der.titre) === couleurDuTemps(t)))) der.fin = j.date;
+		if (der && (der.titre === t || (/Épiphanie/.test(der.titre) && /Épiphanie/.test(t) && couleurDuTemps(der.titre) === couleurDuTemps(t))))
+			der.fin = j.date;
 		else out.push({ debut: j.date, fin: j.date, titre: t, couleur: couleurDuTemps(t) });
 	}
 	// un jour isolé du « temps après l'Épiphanie » au milieu de l'octave rejoint ses voisins
-	return out.filter((s, i) => !(s.debut === s.fin && out[i - 1] && out[i + 1] && out[i - 1].titre === out[i + 1].titre)).reduce<Segment[]>((acc, s) => {
-		const der = acc[acc.length - 1];
-		if (der && der.titre === s.titre) der.fin = s.fin;
-		else acc.push({ ...s });
-		return acc;
-	}, []).map((s, i, a) => (a[i + 1] ? { ...s, fin: plusJours(a[i + 1].debut, -1) } : s));
+	return out
+		.filter((s, i) => !(s.debut === s.fin && out[i - 1] && out[i + 1] && out[i - 1].titre === out[i + 1].titre))
+		.reduce<Segment[]>((acc, s) => {
+			const der = acc[acc.length - 1];
+			if (der && der.titre === s.titre) der.fin = s.fin;
+			else acc.push({ ...s });
+			return acc;
+		}, [])
+		.map((s, i, a) => (a[i + 1] ? { ...s, fin: plusJours(a[i + 1].debut, -1) } : s));
 }
 
 /** Les mois civils de l'année liturgique, rognés à ses bornes. */
@@ -44,7 +59,8 @@ export function moisCivils(debut: string, fin: string): { an: number; mois: numb
 	const out = [];
 	let d = midi(debut);
 	while (versIso(d) <= fin) {
-		const an = d.getFullYear(), mois = d.getMonth() + 1;
+		const an = d.getFullYear(),
+			mois = d.getMonth() + 1;
 		const dernier = versIso(new Date(an, mois, 0, 12));
 		out.push({ an, mois, debut: versIso(d), fin: dernier < fin ? dernier : fin });
 		d = new Date(an, mois, 1, 12);
@@ -72,10 +88,18 @@ export function series(pratiques: Pratique[], debut: string, fin: string): Serie
 		const occ = occurrences(p.regle, debut, fin);
 		const genre = p.regle.genre;
 		if (genre === 'mois_entier' || genre === 'fixe') {
-			if (occ.length) out.push({ pratique: p.id, titre: p.titre, debut: occ[0].date, fin: occ[occ.length - 1].date, dates: occ.map((o) => o.date), total: occ.length });
+			if (occ.length)
+				out.push({
+					pratique: p.id,
+					titre: p.titre,
+					debut: occ[0].date,
+					fin: occ[occ.length - 1].date,
+					dates: occ.map((o) => o.date),
+					total: occ.length
+				});
 			continue;
 		}
-		let s: typeof out[number] | null = null;
+		let s: (typeof out)[number] | null = null;
 		for (const o of occ) {
 			if (!o.total) continue;
 			if (o.rang === 1 || !s) {
@@ -104,7 +128,12 @@ export function superpositions(s: Serie[]): Set<string> {
 	return new Set([...n].filter(([, k]) => k > 1).map(([d]) => d));
 }
 
-export interface DatePerso { date: string; titre: string; profil?: string; id: string }
+export interface DatePerso {
+	date: string;
+	titre: string;
+	profil?: string;
+	id: string;
+}
 
 /** Les fêtes et anniversaires personnels, placés dans l'année liturgique. */
 export function datesPerso(fetes: FetePerso[], debut: string, fin: string): DatePerso[] {
@@ -113,7 +142,8 @@ export function datesPerso(fetes: FetePerso[], debut: string, fin: string): Date
 		if (f.supprimeLe) continue;
 		for (const an of [Number(debut.slice(0, 4)), Number(fin.slice(0, 4))]) {
 			const d = `${an}-${String(f.mois).padStart(2, '0')}-${String(f.jour).padStart(2, '0')}`;
-			if (d >= debut && d <= fin && !out.some((x) => x.id === f.id && x.date === d)) out.push({ date: d, titre: f.titre, profil: f.profil, id: f.id });
+			if (d >= debut && d <= fin && !out.some((x) => x.id === f.id && x.date === d))
+				out.push({ date: d, titre: f.titre, profil: f.profil, id: f.id });
 		}
 	}
 	return out.sort((a, b) => a.date.localeCompare(b.date));

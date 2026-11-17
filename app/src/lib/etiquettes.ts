@@ -68,7 +68,9 @@ for (const [e, [c]] of Object.entries(CADRE)) ETIQUETTES[c].push(e);
 export function etiquettesDe(t: Pick<Texte, 'titre' | 'corps'> & { etiquettes?: string[] }): string[] {
 	if (t.etiquettes) return t.etiquettes;
 	const s = `${t.titre}\n${t.corps}`.toLowerCase();
-	return Object.entries(CADRE).filter(([, [, re]]) => re.test(s)).map(([e]) => e);
+	return Object.entries(CADRE)
+		.filter(([, [, re]]) => re.test(s))
+		.map(([e]) => e);
 }
 
 export interface Bilan {
@@ -91,10 +93,12 @@ export function bilanDuJour(duJour: string[], bibliotheque: (Texte & { etiquette
 		.sort((a, b) => a.n - b.n);
 	return CATEGORIES.map(([categorie, libelle]) => {
 		const toutes = ETIQUETTES[categorie];
-		const manques = toutes.filter((e) => !couvert.has(e)).map((etiquette) => {
-			const c = candidats.find((x) => x.e.has(etiquette));
-			return { etiquette, proposition: c ? { id: c.t.id, titre: c.t.titre } : undefined };
-		});
+		const manques = toutes
+			.filter((e) => !couvert.has(e))
+			.map((etiquette) => {
+				const c = candidats.find((x) => x.e.has(etiquette));
+				return { etiquette, proposition: c ? { id: c.t.id, titre: c.t.titre } : undefined };
+			});
 		return { categorie, libelle, couvertes: toutes.filter((e) => couvert.has(e)), manques };
 	});
 }

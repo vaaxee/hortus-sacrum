@@ -36,7 +36,9 @@
 
 	<section class="table">
 		<h2>Table</h2>
-		<ol>{#each textes as t (t.id)}<li>{t.titre}</li>{/each}</ol>
+		<ol>
+			{#each textes as t (t.id)}<li>{t.titre}</li>{/each}
+		</ol>
 	</section>
 
 	{#each textes as t (t.id)}
@@ -52,23 +54,101 @@
 </article>
 
 <style>
-	.barre { display: flex; justify-content: space-between; align-items: center; gap: 12px; max-width: 110mm; margin: 24px auto 12px; padding: 0 12px; }
-	.livret { max-width: 110mm; margin: 0 auto; padding: 0 12px 120px; font-size: 10.5pt; line-height: 1.42; hyphens: auto; }
-	.couverture { min-height: 140mm; display: grid; place-content: center; justify-items: center; gap: 14px; text-align: center; color: var(--hs-or-texte); break-after: page; }
-	.couverture h1 { color: var(--hs-encre); font-size: 20pt; }
-	.sous { font-family: var(--hs-titre); font-style: italic; color: var(--hs-encre-douce); margin: 0; }
-	.table { break-after: page; }
-	.table h2, .piece h2 { font-size: 14pt; text-align: center; color: var(--hs-rubrique); margin: 0 0 8pt; }
-	.table ol { padding-left: 1.2em; font-size: 10pt; }
-	.piece { break-before: page; }
-	.piece :global(p) { margin: 0 0 5pt; text-align: justify; }
-	.piece :global(h3) { font-size: 10.5pt; color: var(--hs-rubrique); text-align: center; margin: 8pt 0 4pt; }
-	.usage { font-style: italic; font-size: 9pt; color: var(--hs-encre-douce); text-align: center; }
-	.latin { margin-top: 8pt; font-style: italic; color: var(--hs-encre-douce); }
-	.note { font-size: 8.5pt; color: var(--hs-encre-douce); margin: 8pt 0 0; border-top: 0.5pt solid var(--hs-filet); padding-top: 4pt; }
-	.source { font-style: italic; border: 0; padding: 0; margin-top: 3pt; }
+	.barre {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 12px;
+		max-width: 110mm;
+		margin: 24px auto 12px;
+		padding: 0 12px;
+	}
+	.livret {
+		max-width: 110mm;
+		margin: 0 auto;
+		padding: 0 12px 120px;
+		font-size: 10.5pt;
+		line-height: 1.42;
+		hyphens: auto;
+	}
+	.couverture {
+		min-height: 140mm;
+		display: grid;
+		place-content: center;
+		justify-items: center;
+		gap: 14px;
+		text-align: center;
+		color: var(--hs-or-texte);
+		break-after: page;
+	}
+	.couverture h1 {
+		color: var(--hs-encre);
+		font-size: 20pt;
+	}
+	.sous {
+		font-family: var(--hs-titre);
+		font-style: italic;
+		color: var(--hs-encre-douce);
+		margin: 0;
+	}
+	.table {
+		break-after: page;
+	}
+	.table h2,
+	.piece h2 {
+		font-size: 14pt;
+		text-align: center;
+		color: var(--hs-rubrique);
+		margin: 0 0 8pt;
+	}
+	.table ol {
+		padding-left: 1.2em;
+		font-size: 10pt;
+	}
+	.piece {
+		break-before: page;
+	}
+	.piece :global(p) {
+		margin: 0 0 5pt;
+		text-align: justify;
+	}
+	.piece :global(h3) {
+		font-size: 10.5pt;
+		color: var(--hs-rubrique);
+		text-align: center;
+		margin: 8pt 0 4pt;
+	}
+	.usage {
+		font-style: italic;
+		font-size: 9pt;
+		color: var(--hs-encre-douce);
+		text-align: center;
+	}
+	.latin {
+		margin-top: 8pt;
+		font-style: italic;
+		color: var(--hs-encre-douce);
+	}
+	.note {
+		font-size: 8.5pt;
+		color: var(--hs-encre-douce);
+		margin: 8pt 0 0;
+		border-top: 0.5pt solid var(--hs-filet);
+		padding-top: 4pt;
+	}
+	.source {
+		font-style: italic;
+		border: 0;
+		padding: 0;
+		margin-top: 3pt;
+	}
 	@media print {
-		.livret { max-width: none; padding: 0; }
-		.couverture { min-height: 130mm; }
+		.livret {
+			max-width: none;
+			padding: 0;
+		}
+		.couverture {
+			min-height: 130mm;
+		}
 	}
 </style>

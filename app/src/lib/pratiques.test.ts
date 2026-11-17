@@ -4,8 +4,19 @@ import type { Pratique, Regle } from './types.ts';
 
 const dates = (r: Regle, de: string, a: string) => occurrences(r, de, a).map((o) => o.date);
 const pratique = (regle: Regle): Pratique => ({
-	id: 'p', origine: 'personnel', titre: 'Essai', type: 'jours_comptes', regle, textes: [], promesses: '',
-	indulgence: '', source: { ouvrage: '', edition: '', page: '', url: '' }, notes: '', active: true, creeLe: '', modifieLe: ''
+	id: 'p',
+	origine: 'personnel',
+	titre: 'Essai',
+	type: 'jours_comptes',
+	regle,
+	textes: [],
+	promesses: '',
+	indulgence: '',
+	source: { ouvrage: '', edition: '', page: '', url: '' },
+	notes: '',
+	active: true,
+	creeLe: '',
+	modifieLe: ''
 });
 
 describe('occurrences', () => {
@@ -19,7 +30,15 @@ describe('occurrences', () => {
 	it('neuvaine : les neuf jours avant le 8 décembre', () => {
 		const r: Regle = { genre: 'avant_fete', nombre: 9, jourSemaine: null, mois: 12, jour: 8 };
 		expect(dates(r, '2026-11-01', '2026-12-31')).toEqual([
-			'2026-11-29', '2026-11-30', '2026-12-01', '2026-12-02', '2026-12-03', '2026-12-04', '2026-12-05', '2026-12-06', '2026-12-07'
+			'2026-11-29',
+			'2026-11-30',
+			'2026-12-01',
+			'2026-12-02',
+			'2026-12-03',
+			'2026-12-04',
+			'2026-12-05',
+			'2026-12-06',
+			'2026-12-07'
 		]);
 	});
 	it('treize mardis de suite à partir du 16 mars 2027 (finit le 8 juin)', () => {

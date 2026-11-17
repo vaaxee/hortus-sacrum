@@ -106,7 +106,21 @@ export const MOIS_DEVOTION: Record<number, { nom: string; reference: string }> =
 	12: { nom: 'Mois de l’Immaculée Conception', reference: 'Ench. 1952, n° 364' }
 };
 
-export const NOMS_MOIS = ['', 'Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre'];
+export const NOMS_MOIS = [
+	'',
+	'Janvier',
+	'Février',
+	'Mars',
+	'Avril',
+	'Mai',
+	'Juin',
+	'Juillet',
+	'Août',
+	'Septembre',
+	'Octobre',
+	'Novembre',
+	'Décembre'
+];
 
 /** Lignes d'Introït de DO → balisage de l'app (« !Ps 24:1 » = référence, « v. » = antienne, « &Gloria »). */
 export function introitVersCorps(lignes: string[]): string {

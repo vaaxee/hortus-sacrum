@@ -46,7 +46,13 @@
 			.map((e) => {
 				const p = jours.filter((d) => compte(d) && prevu(e, d));
 				const f = p.filter((d) => fait(e, d)).length;
-				return { titre: e.titre, prevus: p.length, faits: f, taux: p.length ? f / p.length : 0, cases: jours.slice(-28).map((d) => (!compte(d) || !prevu(e, d) ? 'hors' : fait(e, d) ? 'fait' : 'manque')) };
+				return {
+					titre: e.titre,
+					prevus: p.length,
+					faits: f,
+					taux: p.length ? f / p.length : 0,
+					cases: jours.slice(-28).map((d) => (!compte(d) || !prevu(e, d) ? 'hors' : fait(e, d) ? 'fait' : 'manque'))
+				};
 			})
 			.filter((x) => x.prevus > 0)
 	);
@@ -82,7 +88,10 @@
 	<div class="tete-page">
 		<h1>Historique</h1>
 		<Ornement nom="fleuron" />
-		<p class="petit">La constance se compte depuis le premier jour coché{#if premier} ({new Date(premier + 'T12:00:00').toLocaleDateString('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' })}){/if}.</p>
+		<p class="petit">
+			La constance se compte depuis le premier jour coché{#if premier}
+				({new Date(premier + 'T12:00:00').toLocaleDateString('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' })}){/if}.
+		</p>
 	</div>
 
 	{#if !premier}
@@ -98,12 +107,23 @@
 			<div class="grille" style="--n: {semaines}">
 				{#each NOMS_JOURS as j, k}<span class="nj" style="grid-row: {k + 1}">{j}</span>{/each}
 				{#each parJour as { d, taux }, i (d)}
-					<span class="cel {niveau(taux)}" style="grid-row: {(i % 7) + 1}; grid-column: {Math.floor(i / 7) + 2}"
-						title="{new Date(d + 'T12:00:00').toLocaleDateString('fr-FR', { weekday: 'long', day: 'numeric', month: 'long' })}{taux >= 0 ? ` : ${pct(taux)}` : ''}"></span>
+					<span
+						class="cel {niveau(taux)}"
+						style="grid-row: {(i % 7) + 1}; grid-column: {Math.floor(i / 7) + 2}"
+						title="{new Date(d + 'T12:00:00').toLocaleDateString('fr-FR', { weekday: 'long', day: 'numeric', month: 'long' })}{taux >= 0
+							? ` : ${pct(taux)}`
+							: ''}"
+					></span>
 				{/each}
 			</div>
-			<p class="aide legende">Moins <span class="cel n0"></span><span class="cel n1"></span><span class="cel n2"></span><span class="cel n3"></span><span class="cel n4"></span> plus
-				{#if serie} · liste entière tenue {serie} jour{serie > 1 ? 's' : ''} de suite{/if}</p>
+			<p class="aide legende">
+				Moins <span class="cel n0"></span><span class="cel n1"></span><span class="cel n2"></span><span class="cel n3"></span><span
+					class="cel n4"
+				></span>
+				plus
+				{#if serie}
+					· liste entière tenue {serie} jour{serie > 1 ? 's' : ''} de suite{/if}
+			</p>
 		</section>
 
 		<section>
@@ -113,7 +133,9 @@
 				{#each regularite.sort((a, b) => b.taux - a.taux) as r (r.titre)}
 					<li>
 						<span class="nom">{r.titre}</span>
-						<span class="mini">{#each r.cases as c}<i class={c}></i>{/each}</span>
+						<span class="mini"
+							>{#each r.cases as c}<i class={c}></i>{/each}</span
+						>
 						<span class="taux chiffres-alignes" title="{r.faits} sur {r.prevus}">{pct(r.taux)}</span>
 					</li>
 				{/each}
@@ -134,27 +156,108 @@
 </main>
 
 <style>
-	section { margin-top: var(--hs-e6); }
-	section h2 { font-size: var(--hs-t2); margin-bottom: var(--hs-e3); }
-	.choix { justify-content: center; }
-	.grille { display: grid; grid-template-columns: 1.2rem repeat(var(--n), 1fr); grid-template-rows: repeat(7, auto); gap: 3px; }
-	.nj { font-family: var(--hs-interface); font-size: 0.625rem; color: var(--hs-encre-douce); grid-column: 1; align-self: center; }
-	.cel { display: inline-block; aspect-ratio: 1; min-width: 6px; border-radius: 2px; background: var(--hs-surface-douce); border: 0.5px solid var(--hs-filet); }
-	.legende .cel { width: 11px; vertical-align: middle; margin: 0 1px; }
-	.cel.hors { background: transparent; border-color: transparent; }
-	.cel.n0 { background: var(--hs-surface-douce); }
-	.cel.n1 { background: color-mix(in srgb, var(--hs-vert-brut) 25%, var(--hs-fond)); }
-	.cel.n2 { background: color-mix(in srgb, var(--hs-vert-brut) 50%, var(--hs-fond)); }
-	.cel.n3 { background: color-mix(in srgb, var(--hs-vert-brut) 75%, var(--hs-fond)); }
-	.cel.n4 { background: var(--hs-vert-brut); border-color: var(--hs-or); }
-	.reg { list-style: none; padding: 0; margin: 0; }
-	.reg li { display: flex; align-items: center; gap: var(--hs-e3); padding: 8px 0; border-bottom: var(--hs-cheveu) solid var(--hs-filet); }
-	.nom { flex: 1; min-width: 0; font-size: 1.0625rem; line-height: 1.3; }
-	.mini { display: none; gap: 2px; }
-	.mini i { width: 6px; height: 10px; background: var(--hs-surface-douce); }
-	.mini i.fait { background: var(--hs-vert-brut); }
-	.mini i.manque { background: color-mix(in srgb, var(--hs-rubis-brut) 35%, var(--hs-fond)); }
-	.mini i.hors { background: transparent; }
-	.taux { flex: none; width: 4.2rem; text-align: right; color: var(--hs-encre-douce); font-size: 0.9375rem; }
-	@media (min-width: 560px) { .mini { display: flex; } }
+	section {
+		margin-top: var(--hs-e6);
+	}
+	section h2 {
+		font-size: var(--hs-t2);
+		margin-bottom: var(--hs-e3);
+	}
+	.choix {
+		justify-content: center;
+	}
+	.grille {
+		display: grid;
+		grid-template-columns: 1.2rem repeat(var(--n), 1fr);
+		grid-template-rows: repeat(7, auto);
+		gap: 3px;
+	}
+	.nj {
+		font-family: var(--hs-interface);
+		font-size: 0.625rem;
+		color: var(--hs-encre-douce);
+		grid-column: 1;
+		align-self: center;
+	}
+	.cel {
+		display: inline-block;
+		aspect-ratio: 1;
+		min-width: 6px;
+		border-radius: 2px;
+		background: var(--hs-surface-douce);
+		border: 0.5px solid var(--hs-filet);
+	}
+	.legende .cel {
+		width: 11px;
+		vertical-align: middle;
+		margin: 0 1px;
+	}
+	.cel.hors {
+		background: transparent;
+		border-color: transparent;
+	}
+	.cel.n0 {
+		background: var(--hs-surface-douce);
+	}
+	.cel.n1 {
+		background: color-mix(in srgb, var(--hs-vert-brut) 25%, var(--hs-fond));
+	}
+	.cel.n2 {
+		background: color-mix(in srgb, var(--hs-vert-brut) 50%, var(--hs-fond));
+	}
+	.cel.n3 {
+		background: color-mix(in srgb, var(--hs-vert-brut) 75%, var(--hs-fond));
+	}
+	.cel.n4 {
+		background: var(--hs-vert-brut);
+		border-color: var(--hs-or);
+	}
+	.reg {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+	.reg li {
+		display: flex;
+		align-items: center;
+		gap: var(--hs-e3);
+		padding: 8px 0;
+		border-bottom: var(--hs-cheveu) solid var(--hs-filet);
+	}
+	.nom {
+		flex: 1;
+		min-width: 0;
+		font-size: 1.0625rem;
+		line-height: 1.3;
+	}
+	.mini {
+		display: none;
+		gap: 2px;
+	}
+	.mini i {
+		width: 6px;
+		height: 10px;
+		background: var(--hs-surface-douce);
+	}
+	.mini i.fait {
+		background: var(--hs-vert-brut);
+	}
+	.mini i.manque {
+		background: color-mix(in srgb, var(--hs-rubis-brut) 35%, var(--hs-fond));
+	}
+	.mini i.hors {
+		background: transparent;
+	}
+	.taux {
+		flex: none;
+		width: 4.2rem;
+		text-align: right;
+		color: var(--hs-encre-douce);
+		font-size: 0.9375rem;
+	}
+	@media (min-width: 560px) {
+		.mini {
+			display: flex;
+		}
+	}
 </style>

@@ -46,4 +46,3 @@ export function grandCycle(nombres: number[]): number {
 	const pgcd = (a: number, b: number): number => (b ? pgcd(b, a % b) : a);
 	return nombres.filter((n) => n > 0).reduce((m, n) => (m * n) / pgcd(m, n), 1);
 }
-

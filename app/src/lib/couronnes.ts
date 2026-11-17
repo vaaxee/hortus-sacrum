@@ -31,19 +31,43 @@ export interface Couronne {
 	pratiqueId?: string;
 }
 
-interface Modele { re: RegExp; titre: string; verset: string; grace?: string; /** la grâce ne vaut que pour une série de cette longueur */ pour?: number }
+interface Modele {
+	re: RegExp;
+	titre: string;
+	verset: string;
+	grace?: string;
+	/** la grâce ne vaut que pour une série de cette longueur */ pour?: number;
+}
 
 /**
  * Titres des séries à jours comptés (la première règle qui convient l'emporte). Les grâces citées sont celles que
  * l'Église a attachées à la pratique, avec leur référence ; une promesse inscrite dans la pratique passe avant.
  */
 const SERIES: Modele[] = [
-	{ re: /premiers samedis/i, titre: 'Enfant du Cœur Immaculé', verset: 'Jn 19, 27', pour: 5,
-		grace: '« Vois mon Cœur entouré des épines qu’y enfoncent les hommes ingrats, par leurs blasphèmes et leurs ingratitudes. Toi, du moins, tâche de me consoler et dis que tous ceux qui, pendant cinq mois, le premier samedi, se confesseront, recevront la sainte communion, réciteront un chapelet, me tiendront compagnie pendant quinze minutes en méditant sur les quinze mystères du Rosaire, en esprit de réparation, je promets de les assister à l’heure de la mort, avec toutes les grâces nécessaires pour le salut de leur âme. » (Pontevedra, 10 décembre 1925 ; La Porte Latine, FSSPX, « La grande promesse des premiers samedis ».)' },
-	{ re: /premiers samedis/i, titre: 'Enfant du Cœur Immaculé', verset: 'Jn 19, 27', pour: 8,
-		grace: 'Pour qui fait les exercices de réparation huit premiers samedis de suite, une fois dans sa vie : indulgence plénière à l’article de la mort (S. C. du Saint-Office, 13 juin 1912 ; Ench. 1952, n° 367).' },
-	{ re: /premiers vendredis/i, titre: 'Consolateur du Sacré-Cœur', verset: 'Ps 69, 21 | 68, 21', pour: 9,
-		grace: 'Une pratique qui était familière à la V. M.-M., et que Notre Seigneur lui avait suggérée, en lui faisant espérer, pour ceux qui l’observeraient, la grâce de la pénitence finale et celle de recevoir les sacrements de l’Église avant de mourir, c’est de faire une neuvaine de communions à cette intention et pour honorer le cœur de Jésus-Christ, en plaçant chacune de ces communions à chaque premier vendredi du mois, pendant neuf mois de suite. (P. F.-X. Gautrelet, S. J., Le premier vendredi de chaque mois sanctifié par la dévotion au Sacré-Cœur de Jésus, Lyon-Paris, Périsse, 1855, p. 12.)' },
+	{
+		re: /premiers samedis/i,
+		titre: 'Enfant du Cœur Immaculé',
+		verset: 'Jn 19, 27',
+		pour: 5,
+		grace:
+			'« Vois mon Cœur entouré des épines qu’y enfoncent les hommes ingrats, par leurs blasphèmes et leurs ingratitudes. Toi, du moins, tâche de me consoler et dis que tous ceux qui, pendant cinq mois, le premier samedi, se confesseront, recevront la sainte communion, réciteront un chapelet, me tiendront compagnie pendant quinze minutes en méditant sur les quinze mystères du Rosaire, en esprit de réparation, je promets de les assister à l’heure de la mort, avec toutes les grâces nécessaires pour le salut de leur âme. » (Pontevedra, 10 décembre 1925 ; La Porte Latine, FSSPX, « La grande promesse des premiers samedis ».)'
+	},
+	{
+		re: /premiers samedis/i,
+		titre: 'Enfant du Cœur Immaculé',
+		verset: 'Jn 19, 27',
+		pour: 8,
+		grace:
+			'Pour qui fait les exercices de réparation huit premiers samedis de suite, une fois dans sa vie : indulgence plénière à l’article de la mort (S. C. du Saint-Office, 13 juin 1912 ; Ench. 1952, n° 367).'
+	},
+	{
+		re: /premiers vendredis/i,
+		titre: 'Consolateur du Sacré-Cœur',
+		verset: 'Ps 69, 21 | 68, 21',
+		pour: 9,
+		grace:
+			'Une pratique qui était familière à la V. M.-M., et que Notre Seigneur lui avait suggérée, en lui faisant espérer, pour ceux qui l’observeraient, la grâce de la pénitence finale et celle de recevoir les sacrements de l’Église avant de mourir, c’est de faire une neuvaine de communions à cette intention et pour honorer le cœur de Jésus-Christ, en plaçant chacune de ces communions à chaque premier vendredi du mois, pendant neuf mois de suite. (P. F.-X. Gautrelet, S. J., Le premier vendredi de chaque mois sanctifié par la dévotion au Sacré-Cœur de Jésus, Lyon-Paris, Périsse, 1855, p. 12.)'
+	},
 	{ re: /montfort|consécration/i, titre: 'Esclave d’amour de Jésus en Marie', verset: 'Jn 19, 27' },
 	{ re: /douze samedis/i, titre: 'Couronne de douze étoiles', verset: 'Ap 12, 1' },
 	{ re: /sept dimanches.*immacul/i, titre: 'Lis de l’Immaculée', verset: 'Ct 2, 2' },
@@ -116,9 +140,16 @@ function deSeries(pratiques: Pratique[], faits: Fait[], aujourdhui: string): Cou
 			n++;
 			const date = s[s.length - 1].date;
 			out.push({
-				id: `serie:${p.id}:${s[0].date}`, genre: 'serie', titre: modele.titre, verset: modele.verset,
-				quete: `${p.titre}, ${s.length} sur ${s.length}`, date, debut: s[0].date,
-				promesse: p.promesses?.trim() || modele.grace, fois: n, pratiqueId: p.id
+				id: `serie:${p.id}:${s[0].date}`,
+				genre: 'serie',
+				titre: modele.titre,
+				verset: modele.verset,
+				quete: `${p.titre}, ${s.length} sur ${s.length}`,
+				date,
+				debut: s[0].date,
+				promesse: p.promesses?.trim() || modele.grace,
+				fois: n,
+				pratiqueId: p.id
 			});
 		}
 	}
@@ -156,7 +187,13 @@ function deMois(liste: ElementListe[], parLigne: Map<string, Set<string>>, aujou
 			parMois.set(String(mo), fois);
 			const [titre, verset] = MOIS[mo];
 			out.push({
-				id: `mois:${m}`, genre: 'mois', titre, verset, date: fin, fois, debut: `${m}-01`,
+				id: `mois:${m}`,
+				genre: 'mois',
+				titre,
+				verset,
+				date: fin,
+				fois,
+				debut: `${m}-01`,
 				quete: `${MOIS_DEVOTION[mo]?.nom ?? 'Dévotion du mois'} : chaque jour de ${NOMS_MOIS[mo].toLowerCase()} ${an}`
 			});
 		}
@@ -172,20 +209,32 @@ function deConstance(liste: ElementListe[], parLigne: Map<string, Set<string>>, 
 		const jours = [...(parLigne.get(e.id) ?? [])].filter((d) => d <= aujourdhui).sort();
 		if (jours.length < PALIERS[0][0]) continue;
 		const fois = new Map<number, number>();
-		let debut = jours[0], long = 1;
+		let debut = jours[0],
+			long = 1;
 		const verifier = (d: string) => {
 			for (const [palier, titre, verset] of PALIERS) {
 				if (long !== palier) continue;
 				const n = (fois.get(palier) ?? 0) + 1;
 				fois.set(palier, n);
-				out.push({ id: `constance:${e.id}:${palier}:${debut}`, genre: 'constance', titre, verset, date: d, fois: n,
-					quete: `${e.titre}, ${palier} jours de suite`, debut });
+				out.push({
+					id: `constance:${e.id}:${palier}:${debut}`,
+					genre: 'constance',
+					titre,
+					verset,
+					date: d,
+					fois: n,
+					quete: `${e.titre}, ${palier} jours de suite`,
+					debut
+				});
 			}
 		};
 		verifier(jours[0]);
 		for (let i = 1; i < jours.length; i++) {
 			if (jours[i] === lendemain(jours[i - 1])) long++;
-			else { debut = jours[i]; long = 1; }
+			else {
+				debut = jours[i];
+				long = 1;
+			}
 			verifier(jours[i]);
 		}
 	}
@@ -194,15 +243,18 @@ function deConstance(liste: ElementListe[], parLigne: Map<string, Set<string>>, 
 
 /** Lectures : chaque Évangile lu en entier (coches « lecture:Mt 5 »), puis les quatre. */
 const EVANGILES: [string, string, string][] = [
-	['Mt', 'Disciple de saint Matthieu', 'Mt 28, 19-20'], ['Mc', 'Disciple de saint Marc', 'Mc 16, 15'],
-	['Lc', 'Disciple de saint Luc', 'Lc 1, 3-4'], ['Jn', 'Disciple de saint Jean', 'Jn 20, 31']
+	['Mt', 'Disciple de saint Matthieu', 'Mt 28, 19-20'],
+	['Mc', 'Disciple de saint Marc', 'Mc 16, 15'],
+	['Lc', 'Disciple de saint Luc', 'Lc 1, 3-4'],
+	['Jn', 'Disciple de saint Jean', 'Jn 20, 31']
 ];
 function deLectures(coches: Coche[]): Couronne[] {
 	const lu = new Map<string, string>();
-	for (const c of coches) if (c.elementId.startsWith('lecture:')) {
-		const k = c.elementId.slice(8);
-		if (!lu.has(k) || c.date < lu.get(k)!) lu.set(k, c.date);
-	}
+	for (const c of coches)
+		if (c.elementId.startsWith('lecture:')) {
+			const k = c.elementId.slice(8);
+			if (!lu.has(k) || c.date < lu.get(k)!) lu.set(k, c.date);
+		}
 	const out: Couronne[] = [];
 	const fins: string[] = [];
 	for (const [abr, titre, verset] of EVANGILES) {
@@ -211,19 +263,44 @@ function deLectures(coches: Coche[]): Couronne[] {
 		if (!n || dates.some((d) => !d)) continue;
 		const date = (dates as string[]).sort().at(-1)!;
 		fins.push(date);
-		out.push({ id: `lecture:${abr}`, genre: 'lecture', titre, verset, date, fois: 1, quete: `${LIVRES[abr].nom} : les ${n} chapitres lus` });
+		out.push({
+			id: `lecture:${abr}`,
+			genre: 'lecture',
+			titre,
+			verset,
+			date,
+			fois: 1,
+			quete: `${LIVRES[abr].nom} : les ${n} chapitres lus`
+		});
 	}
 	if (fins.length === 4) {
-		out.push({ id: 'lecture:evangiles', genre: 'lecture', titre: 'Héraut de l’Évangile', verset: 'Is 52, 7', date: fins.sort().at(-1)!, fois: 1,
-			quete: 'Les quatre Évangiles lus en entier' });
+		out.push({
+			id: 'lecture:evangiles',
+			genre: 'lecture',
+			titre: 'Héraut de l’Évangile',
+			verset: 'Is 52, 7',
+			date: fins.sort().at(-1)!,
+			fois: 1,
+			quete: 'Les quatre Évangiles lus en entier'
+		});
 	}
 	return out;
 }
 
-export function couronnes(p: { pratiques: Pratique[]; faits: Fait[]; liste: ElementListe[]; coches: Coche[]; aujourdhui: string }): Couronne[] {
+export function couronnes(p: {
+	pratiques: Pratique[];
+	faits: Fait[];
+	liste: ElementListe[];
+	coches: Coche[];
+	aujourdhui: string;
+}): Couronne[] {
 	const parLigne = joursCoches(p.coches.filter((c) => !c.elementId.startsWith('lecture:')));
 	return [
-		...deSeries(p.pratiques.filter((x) => !x.supprimeLe), p.faits, p.aujourdhui),
+		...deSeries(
+			p.pratiques.filter((x) => !x.supprimeLe),
+			p.faits,
+			p.aujourdhui
+		),
 		...deMois(p.liste, parLigne, p.aujourdhui),
 		...deConstance(p.liste, parLigne, p.aujourdhui),
 		...deLectures(p.coches)
@@ -233,7 +310,12 @@ export function couronnes(p: { pratiques: Pratique[]; faits: Fait[]; liste: Elem
 /** Toutes les couronnes, d'après la base locale. */
 export async function couronnesDeLaBase(aujourdhui: string): Promise<Couronne[]> {
 	const { db } = await import('./db.ts');
-	const [pratiques, faits, liste, coches] = await Promise.all([db.pratiques.toArray(), db.faits.toArray(), db.liste.toArray(), db.coches.toArray()]);
+	const [pratiques, faits, liste, coches] = await Promise.all([
+		db.pratiques.toArray(),
+		db.faits.toArray(),
+		db.liste.toArray(),
+		db.coches.toArray()
+	]);
 	return couronnes({ pratiques, faits, liste, coches, aujourdhui });
 }
 

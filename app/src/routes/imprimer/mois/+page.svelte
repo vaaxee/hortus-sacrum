@@ -14,7 +14,8 @@
 	let fetes = $state<FetePerso[]>([]);
 	let pratiques = $state<Pratique[]>([]);
 	$effect(() => {
-		const a = an, mo = mois;
+		const a = an,
+			mo = mois;
 		moisDu(a, mo).then((j) => (jours = j));
 		db.fetes.toArray().then((f) => (fetes = f.filter((x) => !x.supprimeLe && x.mois === mo)));
 		db.pratiques.toArray().then((p) => (pratiques = p.filter((x) => x.active && !x.supprimeLe && x.type !== 'roue')));
@@ -27,7 +28,8 @@
 	const pratiquesDu = $derived.by(() => {
 		const out: Record<string, string[]> = {};
 		for (const p of pratiques) {
-			for (const o of occurrences(p.regle, `${m}-01`, cle(fin))) (out[o.date] ??= []).push(o.total ? `${p.titre} ${o.rang}/${o.total}` : p.titre);
+			for (const o of occurrences(p.regle, `${m}-01`, cle(fin)))
+				(out[o.date] ??= []).push(o.total ? `${p.titre} ${o.rang}/${o.total}` : p.titre);
 		}
 		return out;
 	});
@@ -56,7 +58,9 @@
 			{:else}
 				{@const jr = parDate[cle(n)]}
 				<div class="case" class:dimanche={i % 7 === 6}>
-					<p class="num chiffres-alignes">{#if jr}<span class="pastille" style="--p: {teinte(jr)}"></span>{/if}{n}</p>
+					<p class="num chiffres-alignes">
+						{#if jr}<span class="pastille" style="--p: {teinte(jr)}"></span>{/if}{n}
+					</p>
 					{#if jr}<p class="office">{jr.office}</p>{/if}
 					{#if jr?.jeune_abstinence}<p class="jeune">{jr.jeune_abstinence.libelle}</p>{/if}
 					{#each fetes.filter((f) => f.jour === n) as f}<p class="perso">✠ {f.titre}</p>{/each}
@@ -69,21 +73,104 @@
 </article>
 
 <style>
-	.barre { display: flex; justify-content: space-between; align-items: center; gap: 12px; max-width: 277mm; margin: 24px auto 12px; padding: 0 12px; }
-	.cal { max-width: 277mm; margin: 0 auto; padding: 0 12px 120px; font-size: 7.5pt; line-height: 1.25; }
-	header { display: flex; align-items: baseline; justify-content: space-between; border-bottom: 0.6pt solid var(--hs-or); margin-bottom: 4pt; }
-	h1 { font-size: 18pt; }
-	.devotion { margin: 0; font-family: var(--hs-titre); font-style: italic; font-size: 12pt; color: var(--hs-rubrique); }
-	.grille { display: grid; grid-template-columns: repeat(7, 1fr); border-left: 0.5pt solid var(--hs-filet); border-top: 0.5pt solid var(--hs-filet); }
-	.entete { text-align: center; padding: 2pt; font-size: 8pt; border-right: 0.5pt solid var(--hs-filet); border-bottom: 0.5pt solid var(--hs-filet); color: var(--hs-encre-douce); }
-	.case, .vide { min-height: 27mm; padding: 2pt 3pt; border-right: 0.5pt solid var(--hs-filet); border-bottom: 0.5pt solid var(--hs-filet); overflow: hidden; }
-	.case p { margin: 0 0 1pt; }
-	.num { font-size: 10pt; display: flex; align-items: center; gap: 4px; }
-	.dimanche .num { color: var(--hs-rubrique); }
-	.pastille { width: 6pt; height: 6pt; border-radius: 50%; background: var(--p); border: 0.4pt solid var(--hs-or); }
-	.office { font-family: var(--hs-lecture); }
-	.jeune, .perso { color: var(--hs-rubrique); }
-	.prat { color: var(--hs-encre-douce); font-style: italic; }
-	.cul { max-width: 40mm; margin: 6pt auto 0; }
-	@media print { .cal { max-width: none; padding: 0; } .case, .vide { min-height: 0; height: 30mm; } }
+	.barre {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 12px;
+		max-width: 277mm;
+		margin: 24px auto 12px;
+		padding: 0 12px;
+	}
+	.cal {
+		max-width: 277mm;
+		margin: 0 auto;
+		padding: 0 12px 120px;
+		font-size: 7.5pt;
+		line-height: 1.25;
+	}
+	header {
+		display: flex;
+		align-items: baseline;
+		justify-content: space-between;
+		border-bottom: 0.6pt solid var(--hs-or);
+		margin-bottom: 4pt;
+	}
+	h1 {
+		font-size: 18pt;
+	}
+	.devotion {
+		margin: 0;
+		font-family: var(--hs-titre);
+		font-style: italic;
+		font-size: 12pt;
+		color: var(--hs-rubrique);
+	}
+	.grille {
+		display: grid;
+		grid-template-columns: repeat(7, 1fr);
+		border-left: 0.5pt solid var(--hs-filet);
+		border-top: 0.5pt solid var(--hs-filet);
+	}
+	.entete {
+		text-align: center;
+		padding: 2pt;
+		font-size: 8pt;
+		border-right: 0.5pt solid var(--hs-filet);
+		border-bottom: 0.5pt solid var(--hs-filet);
+		color: var(--hs-encre-douce);
+	}
+	.case,
+	.vide {
+		min-height: 27mm;
+		padding: 2pt 3pt;
+		border-right: 0.5pt solid var(--hs-filet);
+		border-bottom: 0.5pt solid var(--hs-filet);
+		overflow: hidden;
+	}
+	.case p {
+		margin: 0 0 1pt;
+	}
+	.num {
+		font-size: 10pt;
+		display: flex;
+		align-items: center;
+		gap: 4px;
+	}
+	.dimanche .num {
+		color: var(--hs-rubrique);
+	}
+	.pastille {
+		width: 6pt;
+		height: 6pt;
+		border-radius: 50%;
+		background: var(--p);
+		border: 0.4pt solid var(--hs-or);
+	}
+	.office {
+		font-family: var(--hs-lecture);
+	}
+	.jeune,
+	.perso {
+		color: var(--hs-rubrique);
+	}
+	.prat {
+		color: var(--hs-encre-douce);
+		font-style: italic;
+	}
+	.cul {
+		max-width: 40mm;
+		margin: 6pt auto 0;
+	}
+	@media print {
+		.cal {
+			max-width: none;
+			padding: 0;
+		}
+		.case,
+		.vide {
+			min-height: 0;
+			height: 30mm;
+		}
+	}
 </style>

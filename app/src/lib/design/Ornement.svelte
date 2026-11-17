@@ -4,8 +4,20 @@
 	 * Bandes (grecque, laurier, perles, mosaique) : se répètent sur toute la largeur.
 	 */
 	type Nom =
-		| 'fleuron' | 'grecque' | 'laurier' | 'perles' | 'mosaique' | 'palmette' | 'coin'
-		| 'medaillon' | 'cherubin' | 'chrisme' | 'lis' | 'brin' | 'croix' | 'croix-pattee';
+		| 'fleuron'
+		| 'grecque'
+		| 'laurier'
+		| 'perles'
+		| 'mosaique'
+		| 'palmette'
+		| 'coin'
+		| 'medaillon'
+		| 'cherubin'
+		| 'chrisme'
+		| 'lis'
+		| 'brin'
+		| 'croix'
+		| 'croix-pattee';
 
 	let { nom, taille = 24, titre = '' }: { nom: Nom; taille?: number; titre?: string } = $props();
 	const uid = $props.id();
@@ -160,8 +172,13 @@
 			</g>
 		{:else if nom === 'croix-pattee'}
 			<!-- croix pattée : bras évasés, au trait -->
-			<path fill="none" stroke="currentColor" stroke-width="1" stroke-linejoin="miter"
-				d="M10 2.5h4l-.9 7.6l7.6-.9v4l-7.6-.9l.9 7.6h-4l.9-7.6l-7.6.9v-4l7.6.9z" />
+			<path
+				fill="none"
+				stroke="currentColor"
+				stroke-width="1"
+				stroke-linejoin="miter"
+				d="M10 2.5h4l-.9 7.6l7.6-.9v4l-7.6-.9l.9 7.6h-4l.9-7.6l-7.6.9v-4l7.6.9z"
+			/>
 		{:else if nom === 'croix'}
 			<g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
 				<path d="M12 3v18M6.500 8.500h11" />
@@ -171,7 +188,9 @@
 			<g transform="scale(1,-1)" fill="none" stroke="currentColor" stroke-width="0.19" stroke-linecap="round" stroke-linejoin="round">
 				{#each [1, -1] as s}
 					<g transform="scale({s},1)">
-						<path d="M2.9 1.4C4.5 4.8 8.5 7.2 12.6 7.4C12.2 6.4 11.8 5.9 11.1 5.4C12 4.9 12 4.1 11.3 3.6C10 3.6 9.4 3.3 9.4 2.4C8.6 2.6 7.3 2.1 7.2 1C6.2 1.1 5.1.5 5-.6C4.3-.6 3.6-.9 3.2-1.4" />
+						<path
+							d="M2.9 1.4C4.5 4.8 8.5 7.2 12.6 7.4C12.2 6.4 11.8 5.9 11.1 5.4C12 4.9 12 4.1 11.3 3.6C10 3.6 9.4 3.3 9.4 2.4C8.6 2.6 7.3 2.1 7.2 1C6.2 1.1 5.1.5 5-.6C4.3-.6 3.6-.9 3.2-1.4"
+						/>
 						<path d="M4.4 2.6C6.6 4.6 8.6 5.6 11.1 5.4" />
 						<path d="M5 1.6C6.6 2.8 8.6 3.4 11.3 3.6" />
 						<path d="M4.6.4C5.6 1.2 6.6 1.5 7.2 1" />
@@ -190,9 +209,26 @@
 {/if}
 
 <style>
-	.filet { display: flex; align-items: center; gap: 12px; color: var(--hs-or); width: 100%; }
-	.filet span { flex: 1; border-top: var(--hs-cheveu) solid var(--hs-or-trait); }
-	.filet svg { flex: none; }
-	.bande { display: block; color: var(--hs-or); }
-	.motif { display: inline-block; flex: none; }
+	.filet {
+		display: flex;
+		align-items: center;
+		gap: 12px;
+		color: var(--hs-or);
+		width: 100%;
+	}
+	.filet span {
+		flex: 1;
+		border-top: var(--hs-cheveu) solid var(--hs-or-trait);
+	}
+	.filet svg {
+		flex: none;
+	}
+	.bande {
+		display: block;
+		color: var(--hs-or);
+	}
+	.motif {
+		display: inline-block;
+		flex: none;
+	}
 </style>

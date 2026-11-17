@@ -58,7 +58,10 @@ async function textePage(doc: PdfDoc, n: number): Promise<string> {
 		morceaux.push({ x: it.transform[4], y: it.transform[5], h: it.height || 10, s: it.str, w: it.width });
 	}
 	if (!morceaux.length) return '';
-	const hauteurs = morceaux.filter((m) => m.s.trim()).map((m) => m.h).sort((x, y) => x - y);
+	const hauteurs = morceaux
+		.filter((m) => m.s.trim())
+		.map((m) => m.h)
+		.sort((x, y) => x - y);
 	const mediane = hauteurs[Math.floor(hauteurs.length / 2)] ?? 10;
 	// lettrines : une ou deux lettres bien plus hautes que le texte courant
 	const estLettrine = (m: Morceau) => m.h > mediane * 1.7 && m.s.trim().length <= 2 && /\p{L}/u.test(m.s);
@@ -146,9 +149,17 @@ export async function arreterOcr(): Promise<void> {
 	await o.terminate();
 }
 
-interface MotOcr { text: string; confidence: number; bbox?: { x0: number; x1: number } }
-interface LigneOcr { words: MotOcr[] }
-interface BlocOcr { paragraphs: { lines: LigneOcr[] }[] }
+interface MotOcr {
+	text: string;
+	confidence: number;
+	bbox?: { x0: number; x1: number };
+}
+interface LigneOcr {
+	words: MotOcr[];
+}
+interface BlocOcr {
+	paragraphs: { lines: LigneOcr[] }[];
+}
 
 /** Un mot est tenu pour un parasite (ornement, bord de page) s'il est peu sûr et ne ressemble pas à un mot. */
 function parasite(m: MotOcr): boolean {
@@ -179,7 +190,11 @@ export function filtrerOcr(blocs: BlocOcr[]): string {
 				while (f > d && parasite(mots[f - 1])) f--;
 				// en bord de ligne : un signe isolé, séparé du texte par un grand blanc, est un ornement
 				const ecart = (i: number) => (mots[i].bbox && mots[i - 1].bbox ? mots[i].bbox!.x0 - mots[i - 1].bbox!.x1 : 0);
-				const ecarts = mots.slice(1).map((_, i) => ecart(i + 1)).filter((e) => e > 0).sort((a, b) => a - b);
+				const ecarts = mots
+					.slice(1)
+					.map((_, i) => ecart(i + 1))
+					.filter((e) => e > 0)
+					.sort((a, b) => a - b);
 				const normal = ecarts[Math.floor(ecarts.length / 2)] ?? 0;
 				const signe = (m: MotOcr) => !/\p{Ll}{2,}/u.test(m.text);
 				if (normal > 0) {
@@ -200,7 +215,10 @@ export function filtrerOcr(blocs: BlocOcr[]): string {
 					}
 					if (debut > 0) d = debut;
 				}
-				const texte = mots.slice(d, f).map((m) => m.text).join(' ');
+				const texte = mots
+					.slice(d, f)
+					.map((m) => m.text)
+					.join(' ');
 				if (texte.trim()) lignes.push(texte);
 			}
 			if (lignes.length) paragraphes.push(lignes.join('\n'));
@@ -230,7 +248,7 @@ export async function extrairePdf(
 	for (let n = de; n <= a; n++) {
 		const fait = (n - de) / total;
 		progres(`Lecture de la page ${n}…`, fait);
-		let texte = forcerOcr ? '' : await textePage(doc, n);
+		const texte = forcerOcr ? '' : await textePage(doc, n);
 		if (texte.replace(/\s/g, '').length >= SEUIL_TEXTE) {
 			out.push({ page: n, texte: nettoyer(texte).texte, ocr: false });
 			continue;
@@ -300,7 +318,10 @@ export function decouper(texte: string, titreParDefaut = ''): PieceDecoupee[] {
 	}
 	return pieces
 		.map((p, i) => {
-			let corps = p.lignes.join('\n').replace(/\n{3,}/g, '\n\n').trim();
+			let corps = p.lignes
+				.join('\n')
+				.replace(/\n{3,}/g, '\n\n')
+				.trim();
 			let titre = p.titre;
 			if (!titre) {
 				// sans titre donné : une première ligne courte suivie d'une ligne vide sert de titre

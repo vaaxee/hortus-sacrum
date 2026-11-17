@@ -10,7 +10,13 @@ describe('références', () => {
 		expect(ecrireRef(lireRef('Lc 2, 14')!)).toBe('Lc 2, 14');
 		expect(enClair(lireRef('Mt 5, 3-10')!)).toBe('Saint Matthieu, chapitre 5, versets 3 à 10');
 		expect(lireRef('1 Co 13, 13')).toEqual({ livre: '1 Co', chapitre: 13, de: 13, a: 13 });
-		expect(lireRef('Ps 51 | 50')).toEqual({ livre: 'Ps', chapitre: 51, de: undefined, a: undefined, la: { chapitre: 50, de: undefined, a: undefined } });
+		expect(lireRef('Ps 51 | 50')).toEqual({
+			livre: 'Ps',
+			chapitre: 51,
+			de: undefined,
+			a: undefined,
+			la: { chapitre: 50, de: undefined, a: undefined }
+		});
 		expect(ecrireRef(lireRef('Si 7, 36 | 7, 40')!)).toBe('Si 7, 36 | 7, 40');
 		expect(enClair(lireRef('Ps 51 | 50')!)).toBe('Les Psaumes, psaume 51 (50)');
 	});
@@ -18,8 +24,14 @@ describe('références', () => {
 
 describe('roue des évangélistes', () => {
 	const r = {
-		type: 'roue', regle: { genre: 'roue', unite: 'jour' },
-		elements: [{ fr: 'Mt', lecture: 'Mt' }, { fr: 'Mc', lecture: 'Mc' }, { fr: 'Lc', lecture: 'Lc' }, { fr: 'Jn', lecture: 'Jn' }]
+		type: 'roue',
+		regle: { genre: 'roue', unite: 'jour' },
+		elements: [
+			{ fr: 'Mt', lecture: 'Mt' },
+			{ fr: 'Mc', lecture: 'Mc' },
+			{ fr: 'Lc', lecture: 'Lc' },
+			{ fr: 'Jn', lecture: 'Jn' }
+		]
 	} as unknown as Pratique;
 	it('chaque évangéliste avance d’un chapitre à chacun de ses tours', () => {
 		// premier dimanche de l'Avent 2026 : 29 novembre

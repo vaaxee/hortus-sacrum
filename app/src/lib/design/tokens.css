@@ -179,114 +179,279 @@
 	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .5 0 0 0 0 .45 0 0 0 0 .35 0 0 0 1 0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23g)'/%3E%3C/svg%3E");
 	z-index: 0;
 }
-.hs > * { position: relative; z-index: 1; }
-.hs *, .hs *::before, .hs *::after { box-sizing: border-box; }
-.hs a { color: var(--hs-lapis); text-underline-offset: 0.18em; text-decoration-thickness: var(--hs-cheveu); }
-.hs :focus-visible { outline: var(--hs-trait) solid var(--hs-or); outline-offset: 3px; }
+.hs > * {
+	position: relative;
+	z-index: 1;
+}
+.hs *,
+.hs *::before,
+.hs *::after {
+	box-sizing: border-box;
+}
+.hs a {
+	color: var(--hs-lapis);
+	text-underline-offset: 0.18em;
+	text-decoration-thickness: var(--hs-cheveu);
+}
+.hs :focus-visible {
+	outline: var(--hs-trait) solid var(--hs-or);
+	outline-offset: 3px;
+}
 
 /* titres : Cormorant capitales, Cormorant italique, petites capitales */
-.hs h1, .hs .h1 {
-	font-family: var(--hs-titre); font-weight: 500; font-size: var(--hs-t4); line-height: 1.12;
-	text-transform: uppercase; letter-spacing: var(--hs-chasse-capitales); margin: 0; text-wrap: balance;
+.hs h1,
+.hs .h1 {
+	font-family: var(--hs-titre);
+	font-weight: 500;
+	font-size: var(--hs-t4);
+	line-height: 1.12;
+	text-transform: uppercase;
+	letter-spacing: var(--hs-chasse-capitales);
+	margin: 0;
+	text-wrap: balance;
 	font-variant-numeric: lining-nums;
 }
-.hs h2, .hs .h2 {
-	font-family: var(--hs-titre); font-style: italic; font-weight: 500; font-size: var(--hs-t3);
-	line-height: 1.2; margin: 0; text-wrap: balance;
+.hs h2,
+.hs .h2 {
+	font-family: var(--hs-titre);
+	font-style: italic;
+	font-weight: 500;
+	font-size: var(--hs-t3);
+	line-height: 1.2;
+	margin: 0;
+	text-wrap: balance;
 }
-.hs h3, .hs .h3, .hs .pc {
-	font-family: var(--hs-lecture); font-weight: 400; font-size: var(--hs-t1);
-	font-variant-caps: all-small-caps; letter-spacing: var(--hs-chasse-petites-cap); margin: 0;
+.hs h3,
+.hs .h3,
+.hs .pc {
+	font-family: var(--hs-lecture);
+	font-weight: 400;
+	font-size: var(--hs-t1);
+	font-variant-caps: all-small-caps;
+	letter-spacing: var(--hs-chasse-petites-cap);
+	margin: 0;
 }
-.hs .pc { font-size: inherit; }
-.hs .rub { color: var(--hs-rubrique); }
+.hs .pc {
+	font-size: inherit;
+}
+.hs .rub {
+	color: var(--hs-rubrique);
+}
 .hs .interface {
-	font-family: var(--hs-interface); font-size: var(--hs-t0); letter-spacing: var(--hs-chasse-interface);
-	font-variant-numeric: lining-nums; line-height: 1.4;
+	font-family: var(--hs-interface);
+	font-size: var(--hs-t0);
+	letter-spacing: var(--hs-chasse-interface);
+	font-variant-numeric: lining-nums;
+	line-height: 1.4;
 }
 .hs .etiquette {
-	font-family: var(--hs-lecture); font-size: 1.0625rem; font-variant-caps: all-small-caps;
-	letter-spacing: var(--hs-chasse-petites-cap); color: var(--hs-encre-douce); line-height: 1.3;
+	font-family: var(--hs-lecture);
+	font-size: 1.0625rem;
+	font-variant-caps: all-small-caps;
+	letter-spacing: var(--hs-chasse-petites-cap);
+	color: var(--hs-encre-douce);
+	line-height: 1.3;
 }
-.hs .imprime { font-family: var(--hs-imprime); }
-.hs .chiffres-alignes { font-variant-numeric: lining-nums; }
+.hs .imprime {
+	font-family: var(--hs-imprime);
+}
+.hs .chiffres-alignes {
+	font-variant-numeric: lining-nums;
+}
 
 /* texte de lecture : justifié, césuré */
-.hs .lecture { max-width: var(--hs-mesure); margin-inline: auto; }
+.hs .lecture {
+	max-width: var(--hs-mesure);
+	margin-inline: auto;
+}
 .hs .lecture p {
-	margin: 0 0 calc(var(--hs-ligne) / 2); text-align: justify; hyphens: auto; text-wrap: pretty;
+	margin: 0 0 calc(var(--hs-ligne) / 2);
+	text-align: justify;
+	hyphens: auto;
+	text-wrap: pretty;
 	hanging-punctuation: first;
 }
-.hs .lecture p.verset { text-align: left; hyphens: manual; }
-.hs .lecture .vr { color: var(--hs-rubrique); font-variant-caps: normal; }
-.hs .lecture h3 { color: var(--hs-rubrique); text-align: center; margin: var(--hs-ligne) 0 calc(var(--hs-ligne) / 2); }
-.hs .lecture h4 { font-family: var(--hs-titre); font-style: italic; font-weight: 400; font-size: 1.15rem; color: var(--hs-rubrique); text-align: center; margin: var(--hs-ligne) 0 calc(var(--hs-ligne) / 3); }
-.hs [lang='la'] { font-style: italic; }
-.hs .lecture.vers p { text-align: center; hyphens: manual; }
+.hs .lecture p.verset {
+	text-align: left;
+	hyphens: manual;
+}
+.hs .lecture .vr {
+	color: var(--hs-rubrique);
+	font-variant-caps: normal;
+}
+.hs .lecture h3 {
+	color: var(--hs-rubrique);
+	text-align: center;
+	margin: var(--hs-ligne) 0 calc(var(--hs-ligne) / 2);
+}
+.hs .lecture h4 {
+	font-family: var(--hs-titre);
+	font-style: italic;
+	font-weight: 400;
+	font-size: 1.15rem;
+	color: var(--hs-rubrique);
+	text-align: center;
+	margin: var(--hs-ligne) 0 calc(var(--hs-ligne) / 3);
+}
+.hs [lang='la'] {
+	font-style: italic;
+}
+.hs .lecture.vers p {
+	text-align: center;
+	hyphens: manual;
+}
 
 /* panneau : carré, parchemin, filet de pierre, filet d'or optionnel en tête */
 .hs .panneau {
-	background: var(--hs-surface); border: var(--hs-cheveu) solid var(--hs-filet); border-radius: 0;
+	background: var(--hs-surface);
+	border: var(--hs-cheveu) solid var(--hs-filet);
+	border-radius: 0;
 	padding: var(--hs-e5);
 }
-.hs .panneau.or { border-top: var(--hs-trait) solid var(--hs-or); }
+.hs .panneau.or {
+	border-top: var(--hs-trait) solid var(--hs-or);
+}
 /* double filet des grandes fêtes : 1 px + 0,5 px à 3 px */
-.hs .double-filet { border: var(--hs-trait) solid var(--hs-or-trait); outline: 0.5px solid var(--hs-or-trait); outline-offset: 3px; }
+.hs .double-filet {
+	border: var(--hs-trait) solid var(--hs-or-trait);
+	outline: 0.5px solid var(--hs-or-trait);
+	outline-offset: 3px;
+}
 
 /* boutons */
 .hs .bouton {
-	display: inline-flex; align-items: center; justify-content: center; gap: var(--hs-e2);
-	min-height: 44px; padding: 0 var(--hs-e5);
-	font-family: var(--hs-interface); font-size: 0.75rem; font-weight: 600; text-transform: uppercase;
-	letter-spacing: 0.1em; text-decoration: none; cursor: pointer;
-	border-radius: var(--hs-rayon-tactile); border: var(--hs-trait) solid var(--hs-lapis);
-	background: transparent; color: var(--hs-lapis);
-	transition: background var(--hs-duree-vive) var(--hs-courbe), color var(--hs-duree-vive) var(--hs-courbe);
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: var(--hs-e2);
+	min-height: 44px;
+	padding: 0 var(--hs-e5);
+	font-family: var(--hs-interface);
+	font-size: 0.75rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	text-decoration: none;
+	cursor: pointer;
+	border-radius: var(--hs-rayon-tactile);
+	border: var(--hs-trait) solid var(--hs-lapis);
+	background: transparent;
+	color: var(--hs-lapis);
+	transition:
+		background var(--hs-duree-vive) var(--hs-courbe),
+		color var(--hs-duree-vive) var(--hs-courbe);
 }
-.hs .bouton.principal { background: var(--hs-lapis); color: var(--hs-sur-lapis); }
-.hs .bouton.danger { border-color: var(--hs-rubrique); color: var(--hs-rubrique); }
-.hs .bouton:hover { background: color-mix(in srgb, var(--hs-lapis) 12%, transparent); }
-.hs .bouton.principal:hover { background: color-mix(in srgb, var(--hs-lapis) 86%, var(--hs-encre)); }
+.hs .bouton.principal {
+	background: var(--hs-lapis);
+	color: var(--hs-sur-lapis);
+}
+.hs .bouton.danger {
+	border-color: var(--hs-rubrique);
+	color: var(--hs-rubrique);
+}
+.hs .bouton:hover {
+	background: color-mix(in srgb, var(--hs-lapis) 12%, transparent);
+}
+.hs .bouton.principal:hover {
+	background: color-mix(in srgb, var(--hs-lapis) 86%, var(--hs-encre));
+}
 .hs .glyphe {
-	background: none; border: 0; padding: var(--hs-e2); color: var(--hs-encre-douce); cursor: pointer;
-	border-bottom: var(--hs-trait) solid transparent; border-radius: 0; display: inline-flex;
+	background: none;
+	border: 0;
+	padding: var(--hs-e2);
+	color: var(--hs-encre-douce);
+	cursor: pointer;
+	border-bottom: var(--hs-trait) solid transparent;
+	border-radius: 0;
+	display: inline-flex;
 }
-.hs .glyphe:focus-visible { outline: none; border-bottom-color: var(--hs-or); }
+.hs .glyphe:focus-visible {
+	outline: none;
+	border-bottom-color: var(--hs-or);
+}
 
 /* cartouches (badges) */
 .hs .cartouche {
-	display: inline-block; padding: 1px 7px 2px; border: var(--hs-cheveu) solid currentColor; border-radius: 0;
-	font-family: var(--hs-lecture); font-size: 0.8125rem; font-variant-caps: all-small-caps;
-	letter-spacing: var(--hs-chasse-petites-cap); line-height: 1.35; white-space: nowrap;
+	display: inline-block;
+	padding: 1px 7px 2px;
+	border: var(--hs-cheveu) solid currentColor;
+	border-radius: 0;
+	font-family: var(--hs-lecture);
+	font-size: 0.8125rem;
+	font-variant-caps: all-small-caps;
+	letter-spacing: var(--hs-chasse-petites-cap);
+	line-height: 1.35;
+	white-space: nowrap;
 }
-.hs .cartouche.livret { color: var(--hs-or-texte); }
-.hs .cartouche.verifiee { color: var(--hs-vert); }
-.hs .cartouche.personnel { color: var(--hs-lapis); }
-.hs .cartouche.ind { color: var(--hs-rubrique); }
+.hs .cartouche.livret {
+	color: var(--hs-or-texte);
+}
+.hs .cartouche.verifiee {
+	color: var(--hs-vert);
+}
+.hs .cartouche.personnel {
+	color: var(--hs-lapis);
+}
+.hs .cartouche.ind {
+	color: var(--hs-rubrique);
+}
 
 /* pastille liturgique */
 .hs .pastille {
-	display: inline-block; width: 11px; height: 11px; border-radius: 50%;
-	background: var(--pastille, var(--hs-lit-blanc)); border: var(--hs-cheveu) solid var(--hs-or);
+	display: inline-block;
+	width: 11px;
+	height: 11px;
+	border-radius: 50%;
+	background: var(--pastille, var(--hs-lit-blanc));
+	border: var(--hs-cheveu) solid var(--hs-or);
 	vertical-align: 0.02em;
 }
 
 /* dépliants : ouverture douce, comme un livre */
-.hs details > summary { cursor: pointer; list-style: none; }
-.hs details > summary::-webkit-details-marker { display: none; }
+.hs details > summary {
+	cursor: pointer;
+	list-style: none;
+}
+.hs details > summary::-webkit-details-marker {
+	display: none;
+}
 .hs details::details-content {
-	block-size: 0; overflow: clip; opacity: 0;
-	transition: block-size var(--hs-duree-lente) var(--hs-courbe), opacity var(--hs-duree-lente) var(--hs-courbe),
+	block-size: 0;
+	overflow: clip;
+	opacity: 0;
+	transition:
+		block-size var(--hs-duree-lente) var(--hs-courbe),
+		opacity var(--hs-duree-lente) var(--hs-courbe),
 		content-visibility var(--hs-duree-lente) allow-discrete;
 }
-.hs details[open]::details-content { block-size: auto; opacity: 1; }
-:root { interpolate-size: allow-keywords; }
+.hs details[open]::details-content {
+	block-size: auto;
+	opacity: 1;
+}
+:root {
+	interpolate-size: allow-keywords;
+}
 
 /* entrée de page : fondu, légère montée */
-@keyframes hs-entree { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
-.hs .entree { animation: hs-entree var(--hs-duree-lente) var(--hs-courbe) both; }
+@keyframes hs-entree {
+	from {
+		opacity: 0;
+		transform: translateY(8px);
+	}
+	to {
+		opacity: 1;
+		transform: none;
+	}
+}
+.hs .entree {
+	animation: hs-entree var(--hs-duree-lente) var(--hs-courbe) both;
+}
 
-.hs { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: optimizeLegibility; }
+.hs {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+}
 
 /* =====================================================================
    Deux directions artistiques : latine (défaut) et grecque (bleu et or byzantins).
@@ -346,12 +511,24 @@
 }
 @media (prefers-color-scheme: dark) {
 	:root[data-da='grecque']:not([data-theme='jour']) {
-		--hs-fond: #0b1533; --hs-surface: #13224a; --hs-surface-douce: #0f1b3e;
-		--hs-encre: #f0e9d6; --hs-encre-douce: #a9b1cc; --hs-lapis: #e6c877; --hs-sur-lapis: #0b1533;
-		--hs-vert: #9cc7a4; --hs-or: #e0bf6c; --hs-or-trait: rgb(224 191 108 / 0.6); --hs-or-texte: #e0bf6c;
-		--hs-rubrique: #ee8f8a; --hs-filet: #2c3d70;
-		--hs-arche-fond: #182c63; --hs-arche-encre: #f0e9d6; --hs-arche-encre-douce: #b4bddb;
-		--hs-arche-accent: #ecd08a; --hs-arche-filet: rgb(236 208 138 / 0.8);
+		--hs-fond: #0b1533;
+		--hs-surface: #13224a;
+		--hs-surface-douce: #0f1b3e;
+		--hs-encre: #f0e9d6;
+		--hs-encre-douce: #a9b1cc;
+		--hs-lapis: #e6c877;
+		--hs-sur-lapis: #0b1533;
+		--hs-vert: #9cc7a4;
+		--hs-or: #e0bf6c;
+		--hs-or-trait: rgb(224 191 108 / 0.6);
+		--hs-or-texte: #e0bf6c;
+		--hs-rubrique: #ee8f8a;
+		--hs-filet: #2c3d70;
+		--hs-arche-fond: #182c63;
+		--hs-arche-encre: #f0e9d6;
+		--hs-arche-encre-douce: #b4bddb;
+		--hs-arche-accent: #ecd08a;
+		--hs-arche-filet: rgb(236 208 138 / 0.8);
 	}
 }
 
@@ -387,16 +564,32 @@
 }
 @media (prefers-color-scheme: dark) {
 	:root[data-da='grecque']:not([data-theme='jour']) {
-		--hs-fond: #0e0c52; --hs-surface: #16137a; --hs-surface-douce: #121066;
-		--hs-encre: #f0e9d6; --hs-encre-douce: #b3b3dc; --hs-cobalt: #6f9df2; --hs-lapis: var(--hs-cobalt);
-		--hs-lapis-brut: #2f6fd6; --hs-sur-lapis: #0e0c52; --hs-filet: #2d2a94;
-		--hs-arche-fond: #1f1ca6; --hs-arche-encre-douce: #c9c9ef;
+		--hs-fond: #0e0c52;
+		--hs-surface: #16137a;
+		--hs-surface-douce: #121066;
+		--hs-encre: #f0e9d6;
+		--hs-encre-douce: #b3b3dc;
+		--hs-cobalt: #6f9df2;
+		--hs-lapis: var(--hs-cobalt);
+		--hs-lapis-brut: #2f6fd6;
+		--hs-sur-lapis: #0e0c52;
+		--hs-filet: #2d2a94;
+		--hs-arche-fond: #1f1ca6;
+		--hs-arche-encre-douce: #c9c9ef;
 	}
 }
 /* artefacts en cobalt : cases à cocher et icônes de la barre d'onglets */
-:root[data-da='grecque'] .hs .case { border-color: var(--hs-cobalt); }
-:root[data-da='grecque'] .hs nav.onglets a, :root[data-da='grecque'] .hs nav.sommaire a { color: color-mix(in srgb, var(--hs-cobalt) 70%, var(--hs-encre-douce)); }
-:root[data-da='grecque'] .hs nav.onglets a.actif, :root[data-da='grecque'] .hs nav.sommaire a.actif { color: var(--hs-cobalt); }
+:root[data-da='grecque'] .hs .case {
+	border-color: var(--hs-cobalt);
+}
+:root[data-da='grecque'] .hs nav.onglets a,
+:root[data-da='grecque'] .hs nav.sommaire a {
+	color: color-mix(in srgb, var(--hs-cobalt) 70%, var(--hs-encre-douce));
+}
+:root[data-da='grecque'] .hs nav.onglets a.actif,
+:root[data-da='grecque'] .hs nav.sommaire a.actif {
+	color: var(--hs-cobalt);
+}
 
 /* =====================================================================
    DA latine : nacre, rubis et or.
@@ -441,18 +634,38 @@
 @media (prefers-color-scheme: dark) {
 	:root:not([data-da='grecque']):not([data-theme='jour']) {
 		--hs-rubis-profond: #5e1624;
-		--hs-fond: #22080f; --hs-surface: #34101b; --hs-surface-douce: #2b0c16;
-		--hs-encre: #f3e9dc; --hs-encre-douce: #c9adaf;
-		--hs-lapis: #f08593; --hs-sur-lapis: #22080f; --hs-rubrique: #f4a1ab; --hs-filet: #5a2230;
-		--hs-or: #dcb86a; --hs-or-trait: rgb(220 184 106 / 0.6); --hs-or-texte: #dcb86a;
-		--hs-arche-fond: #6b1a2b; --hs-arche-encre: #f3e9dc; --hs-arche-encre-douce: #e0c3c3;
-		--hs-arche-accent: #ecd08a; --hs-arche-filet: rgb(236 208 138 / 0.8);
+		--hs-fond: #22080f;
+		--hs-surface: #34101b;
+		--hs-surface-douce: #2b0c16;
+		--hs-encre: #f3e9dc;
+		--hs-encre-douce: #c9adaf;
+		--hs-lapis: #f08593;
+		--hs-sur-lapis: #22080f;
+		--hs-rubrique: #f4a1ab;
+		--hs-filet: #5a2230;
+		--hs-or: #dcb86a;
+		--hs-or-trait: rgb(220 184 106 / 0.6);
+		--hs-or-texte: #dcb86a;
+		--hs-arche-fond: #6b1a2b;
+		--hs-arche-encre: #f3e9dc;
+		--hs-arche-encre-douce: #e0c3c3;
+		--hs-arche-accent: #ecd08a;
+		--hs-arche-filet: rgb(236 208 138 / 0.8);
 	}
 }
 /* artefacts latins en rubis : cases et onglets */
-:root:not([data-da='grecque']) .hs .case { border-color: var(--hs-lapis); }
-:root:not([data-da='grecque']) .hs nav.onglets a.actif, :root:not([data-da='grecque']) .hs nav.sommaire a.actif { color: var(--hs-lapis); }
+:root:not([data-da='grecque']) .hs .case {
+	border-color: var(--hs-lapis);
+}
+:root:not([data-da='grecque']) .hs nav.onglets a.actif,
+:root:not([data-da='grecque']) .hs nav.sommaire a.actif {
+	color: var(--hs-lapis);
+}
 
 /* motifs propres à chaque direction (les deux sont dessinés, un seul est montré) */
-:root[data-da='grecque'] .da-latine { display: none !important; }
-:root:not([data-da='grecque']) .da-grecque { display: none !important; }
+:root[data-da='grecque'] .da-latine {
+	display: none !important;
+}
+:root:not([data-da='grecque']) .da-grecque {
+	display: none !important;
+}

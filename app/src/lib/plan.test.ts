@@ -17,13 +17,24 @@ const dates = (titre: string) => occurrences(de(titre).regle, debut, fin).map((o
 
 describe('pratiquesDuPlan (plan accepté 2026-2027)', () => {
 	it('retrouve chaque série hebdomadaire aux mêmes dates que le calendrier papier', () => {
-		for (const t of ['Sept dimanches de S. Joseph', 'Treize mardis de S. Antoine', 'Quinze samedis du Rosaire',
-			'Treize vendredis de S. François de Paule', 'Dix dimanches de S. Ignace', 'Sept vendredis des Douleurs']) {
+		for (const t of [
+			'Sept dimanches de S. Joseph',
+			'Treize mardis de S. Antoine',
+			'Quinze samedis du Rosaire',
+			'Treize vendredis de S. François de Paule',
+			'Dix dimanches de S. Ignace',
+			'Sept vendredis des Douleurs'
+		]) {
 			expect(dates(t), t).toEqual(datesDuCalendrier(t));
 		}
 	});
 	it('retrouve les neuvaines, fixes et mobiles', () => {
-		for (const t of ['Neuvaine à l’Immaculée Conception', 'Neuvaine de Noël', 'Neuvaine au Saint-Esprit, avant la Pentecôte', 'Neuvaine au Sacré-Cœur']) {
+		for (const t of [
+			'Neuvaine à l’Immaculée Conception',
+			'Neuvaine de Noël',
+			'Neuvaine au Saint-Esprit, avant la Pentecôte',
+			'Neuvaine au Sacré-Cœur'
+		]) {
 			expect(dates(t), t).toEqual(datesDuCalendrier(t));
 		}
 	});

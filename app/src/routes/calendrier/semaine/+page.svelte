@@ -11,7 +11,9 @@
 	/** Semaine liturgique, du dimanche au samedi, comme le calendrier papier. */
 	const ref = $derived(new Date((page.url.searchParams.get('d') ?? iso(new Date())) + 'T12:00:00'));
 	const dimanche = $derived(new Date(ref.getFullYear(), ref.getMonth(), ref.getDate() - ref.getDay(), 12));
-	const dates = $derived(Array.from({ length: 7 }, (_, i) => iso(new Date(dimanche.getFullYear(), dimanche.getMonth(), dimanche.getDate() + i, 12))));
+	const dates = $derived(
+		Array.from({ length: 7 }, (_, i) => iso(new Date(dimanche.getFullYear(), dimanche.getMonth(), dimanche.getDate() + i, 12)))
+	);
 	const decaler = (n: number) => iso(new Date(dimanche.getFullYear(), dimanche.getMonth(), dimanche.getDate() + 7 * n, 12));
 
 	let jours: (Jour | undefined)[] = $state([]);
@@ -23,17 +25,26 @@
 
 	// filtres (SPEC §1) : ce que l'on veut voir sous chaque jour
 	let voir = $state({ fetes: true, jeunes: true, devotions: true, perso: true });
-	const FILTRES: [keyof typeof voir, string][] = [['fetes', 'Fêtes'], ['jeunes', 'Jeûnes'], ['devotions', 'Dévotions'], ['perso', 'Mes fêtes']];
+	const FILTRES: [keyof typeof voir, string][] = [
+		['fetes', 'Fêtes'],
+		['jeunes', 'Jeûnes'],
+		['devotions', 'Dévotions'],
+		['perso', 'Mes fêtes']
+	];
 
 	const duJour = (d: string) =>
-		$pratiques.filter((p) => p.active && !p.supprimeLe).map((p) => ({ p, o: occurrenceDu(p, d) })).filter((x) => x.o);
+		$pratiques
+			.filter((p) => p.active && !p.supprimeLe)
+			.map((p) => ({ p, o: occurrenceDu(p, d) }))
+			.filter((x) => x.o);
 	const persoDu = (d: string) => {
 		const x = new Date(d + 'T12:00:00');
 		return $fetes.filter((f) => !f.supprimeLe && f.mois === x.getMonth() + 1 && f.jour === x.getDate());
 	};
 	const GRANDS = ['1re cl.', '2e cl.', 'dim. 1re cl.', 'dim. 2e cl.', 'dim.'];
 	const titreSemaine = $derived.by(() => {
-		const f = (s: string, mois = true) => new Date(s + 'T12:00:00').toLocaleDateString('fr-FR', mois ? { day: 'numeric', month: 'long' } : { day: 'numeric' });
+		const f = (s: string, mois = true) =>
+			new Date(s + 'T12:00:00').toLocaleDateString('fr-FR', mois ? { day: 'numeric', month: 'long' } : { day: 'numeric' });
 		return `Du ${f(dates[0])} au ${f(dates[6])}`;
 	});
 	const aujourdhui = iso(new Date());
@@ -69,19 +80,28 @@
 				{@const j = jours[i]}
 				{@const x = new Date(d + 'T12:00:00')}
 				<tr class:auj={d === aujourdhui} class:dimanche={x.getDay() === 0}>
-					<td class="p">{#if j}<span class="pastille" style="--pastille: {teinte(j)}" title={j.couleur}></span>{/if}</td>
+					<td class="p"
+						>{#if j}<span class="pastille" style="--pastille: {teinte(j)}" title={j.couleur}></span>{/if}</td
+					>
 					<td class="d pc chiffres-alignes">
 						<a href="/?date={d}">{x.toLocaleDateString('fr-FR', { weekday: 'short' })}<br /><span class="n">{x.getDate()}</span></a>
 					</td>
 					<td class="o">
 						{#if j}
-							<a href="/?date={d}" class="office" class:fete={voir.fetes && (j.est_fete_sanctorale || GRANDS.includes(j.rang)) && GRANDS.slice(0, 2).includes(j.rang)}>{j.office}</a>
+							<a
+								href="/?date={d}"
+								class="office"
+								class:fete={voir.fetes && (j.est_fete_sanctorale || GRANDS.includes(j.rang)) && GRANDS.slice(0, 2).includes(j.rang)}
+								>{j.office}</a
+							>
 							<span class="r pc">{RANG[j.rang] ?? j.rang}</span>
 							{#if voir.fetes && j.commemoraisons.length}<span class="ligne">Comm. {j.commemoraisons.join(' ; ')}</span>{/if}
 							{#if voir.jeunes && j.jeune_abstinence}<span class="ligne jeune">{j.jeune_abstinence.libelle}</span>{/if}
 							{#if voir.devotions}
 								{#each duJour(d) as { p, o } (p.id)}
-									<a class="ligne devotion" href="/devotions/{encodeURIComponent(p.id)}">❧ {p.titre}{o?.total ? `, ${o.rang}/${o.total}` : ''}</a>
+									<a class="ligne devotion" href="/devotions/{encodeURIComponent(p.id)}"
+										>❧ {p.titre}{o?.total ? `, ${o.rang}/${o.total}` : ''}</a
+									>
 								{/each}
 							{/if}
 							{#if voir.perso}
@@ -100,32 +120,121 @@
 </main>
 
 <style>
-	.vues { justify-content: center; margin-bottom: var(--hs-e5); gap: 0; }
-	.vues .bouton { min-height: 36px; border-radius: 0; }
-	.vues .actif { background: color-mix(in srgb, var(--hs-lapis) 14%, transparent); border-color: var(--hs-or); }
-	.titre-semaine { display: flex; align-items: center; justify-content: center; gap: var(--hs-e2); }
-	.titre-semaine h1 { font-size: var(--hs-t2); }
-	.pas { display: inline-grid; place-items: center; width: 44px; height: 44px; color: var(--hs-encre-douce); flex: none; }
-	.filtres { justify-content: center; gap: 6px; margin-bottom: var(--hs-e4); }
-	.filtres button { min-height: 34px; padding: 0 12px; }
-	.filtres button[aria-pressed='false'] { border-color: var(--hs-filet); color: var(--hs-encre-douce); }
+	.vues {
+		justify-content: center;
+		margin-bottom: var(--hs-e5);
+		gap: 0;
+	}
+	.vues .bouton {
+		min-height: 36px;
+		border-radius: 0;
+	}
+	.vues .actif {
+		background: color-mix(in srgb, var(--hs-lapis) 14%, transparent);
+		border-color: var(--hs-or);
+	}
+	.titre-semaine {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: var(--hs-e2);
+	}
+	.titre-semaine h1 {
+		font-size: var(--hs-t2);
+	}
+	.pas {
+		display: inline-grid;
+		place-items: center;
+		width: 44px;
+		height: 44px;
+		color: var(--hs-encre-douce);
+		flex: none;
+	}
+	.filtres {
+		justify-content: center;
+		gap: 6px;
+		margin-bottom: var(--hs-e4);
+	}
+	.filtres button {
+		min-height: 34px;
+		padding: 0 12px;
+	}
+	.filtres button[aria-pressed='false'] {
+		border-color: var(--hs-filet);
+		color: var(--hs-encre-douce);
+	}
 
-	.ordo { width: 100%; border-collapse: collapse; }
-	.ordo td { padding: 10px 0; border-bottom: var(--hs-cheveu) solid var(--hs-filet); vertical-align: top; }
-	.ordo tr:first-child td { border-top: var(--hs-cheveu) solid var(--hs-filet); }
-	tr.auj td { background: color-mix(in srgb, var(--hs-or) 10%, transparent); }
-	.p { width: 22px; padding-top: 16px !important; }
-	.d { width: 3.6rem; font-size: 1rem; line-height: 1.1; }
-	.d a { color: var(--hs-encre-douce); text-decoration: none; }
-	.d .n { font-size: 1.375rem; color: var(--hs-encre); }
-	tr.dimanche .d .n, tr.dimanche .office { color: var(--hs-rubrique); }
-	.o { line-height: 1.3; }
-	.office { color: var(--hs-encre); text-decoration: none; }
-	.office.fete { color: var(--hs-rubrique); }
-	.r { display: block; font-size: 0.9375rem; color: var(--hs-encre-douce); }
-	.ligne { display: block; font-size: 1rem; margin-top: 3px; color: var(--hs-encre-douce); text-decoration: none; }
-	.jeune { color: var(--hs-rubrique); font-style: italic; }
-	.devotion { color: var(--hs-lapis); }
-	.perso { color: var(--hs-encre); font-style: italic; }
-	.cul { margin: var(--hs-e7) auto 0; max-width: 16rem; }
+	.ordo {
+		width: 100%;
+		border-collapse: collapse;
+	}
+	.ordo td {
+		padding: 10px 0;
+		border-bottom: var(--hs-cheveu) solid var(--hs-filet);
+		vertical-align: top;
+	}
+	.ordo tr:first-child td {
+		border-top: var(--hs-cheveu) solid var(--hs-filet);
+	}
+	tr.auj td {
+		background: color-mix(in srgb, var(--hs-or) 10%, transparent);
+	}
+	.p {
+		width: 22px;
+		padding-top: 16px !important;
+	}
+	.d {
+		width: 3.6rem;
+		font-size: 1rem;
+		line-height: 1.1;
+	}
+	.d a {
+		color: var(--hs-encre-douce);
+		text-decoration: none;
+	}
+	.d .n {
+		font-size: 1.375rem;
+		color: var(--hs-encre);
+	}
+	tr.dimanche .d .n,
+	tr.dimanche .office {
+		color: var(--hs-rubrique);
+	}
+	.o {
+		line-height: 1.3;
+	}
+	.office {
+		color: var(--hs-encre);
+		text-decoration: none;
+	}
+	.office.fete {
+		color: var(--hs-rubrique);
+	}
+	.r {
+		display: block;
+		font-size: 0.9375rem;
+		color: var(--hs-encre-douce);
+	}
+	.ligne {
+		display: block;
+		font-size: 1rem;
+		margin-top: 3px;
+		color: var(--hs-encre-douce);
+		text-decoration: none;
+	}
+	.jeune {
+		color: var(--hs-rubrique);
+		font-style: italic;
+	}
+	.devotion {
+		color: var(--hs-lapis);
+	}
+	.perso {
+		color: var(--hs-encre);
+		font-style: italic;
+	}
+	.cul {
+		margin: var(--hs-e7) auto 0;
+		max-width: 16rem;
+	}
 </style>

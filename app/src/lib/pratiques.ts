@@ -72,7 +72,11 @@ export function occurrences(regle: Regle, de: string, a: string): Occurrence[] {
 					ajouter(plus(niemeDuMois(m.getFullYear(), m.getMonth() + 1, regle.rang, regle.jourSemaine), decalage), i + 1, total);
 				}
 			} else {
-				for (let m = new Date(d0.getFullYear(), d0.getMonth() - 1, 1, 12); m <= plus(d1, 31); m = new Date(m.getFullYear(), m.getMonth() + 1, 1, 12)) {
+				for (
+					let m = new Date(d0.getFullYear(), d0.getMonth() - 1, 1, 12);
+					m <= plus(d1, 31);
+					m = new Date(m.getFullYear(), m.getMonth() + 1, 1, 12)
+				) {
 					ajouter(plus(niemeDuMois(m.getFullYear(), m.getMonth() + 1, regle.rang, regle.jourSemaine), decalage), 0, 0);
 				}
 			}
@@ -162,8 +166,13 @@ export function regleEnClair(r: Regle): string {
 		case 'fixe':
 			return `chaque année, le ${quantieme(r.jour)} ${MOIS[r.mois]}`;
 		case 'mensuel': {
-			const base = r.decalage === -1 ? `la veille du ${RANGS[r.rang]} ${JOURS[r.jourSemaine]} du mois` : `le ${RANGS[r.rang]} ${JOURS[r.jourSemaine]} de chaque mois`;
-			return r.nombre && r.debut ? `${base}, ${r.nombre} mois de suite à partir de ${MOIS[versDate(r.debut).getMonth() + 1]} ${versDate(r.debut).getFullYear()}` : base;
+			const base =
+				r.decalage === -1
+					? `la veille du ${RANGS[r.rang]} ${JOURS[r.jourSemaine]} du mois`
+					: `le ${RANGS[r.rang]} ${JOURS[r.jourSemaine]} de chaque mois`;
+			return r.nombre && r.debut
+				? `${base}, ${r.nombre} mois de suite à partir de ${MOIS[versDate(r.debut).getMonth() + 1]} ${versDate(r.debut).getFullYear()}`
+				: base;
 		}
 		case 'mois_entier':
 			return `chaque jour du mois de ${MOIS[r.mois]}`;

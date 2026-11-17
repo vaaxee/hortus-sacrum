@@ -29,7 +29,9 @@ export interface Indulgences {
 
 let cache: Promise<Indulgences | null> | null = null;
 export function chargerIndulgences(fetchFn: typeof fetch = fetch): Promise<Indulgences | null> {
-	cache ??= fetchFn('/data/prieres/indulgences.json').then((r) => (r.ok ? (r.json() as Promise<Indulgences>) : null)).catch(() => null);
+	cache ??= fetchFn('/data/prieres/indulgences.json')
+		.then((r) => (r.ok ? (r.json() as Promise<Indulgences>) : null))
+		.catch(() => null);
 	return cache;
 }
 

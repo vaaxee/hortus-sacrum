@@ -4,8 +4,15 @@
 	import { goto } from '$app/navigation';
 	import FicheTexte from '#lib/FicheTexte.svelte';
 	import {
-		db, dupliquer, enregistrer, estModifie, mettreALaCorbeille, restaurerOriginal, restaurerVersion,
-		sortirDeLaCorbeille, versions
+		db,
+		dupliquer,
+		enregistrer,
+		estModifie,
+		mettreALaCorbeille,
+		restaurerOriginal,
+		restaurerVersion,
+		sortirDeLaCorbeille,
+		versions
 	} from '#lib/db.ts';
 	import Icone from '#lib/design/Icone.svelte';
 	import Ornement from '#lib/design/Ornement.svelte';
@@ -17,9 +24,14 @@
 	import { CHAPELETS } from '#lib/liste.ts';
 	import { chargerIndulgences, enClair, valeurDuJour, valeursDuJour, type Indulgences } from '#lib/indulgences.ts';
 
-
 	const id = $derived(decodeURIComponent(page.params.id ?? ''));
-	const texte = vivantSelon(() => { const k = id; return () => db.textes.get(k); }, undefined as Texte | undefined);
+	const texte = vivantSelon(
+		() => {
+			const k = id;
+			return () => db.textes.get(k);
+		},
+		undefined as Texte | undefined
+	);
 	let latin = $state(false);
 	// indulgence (partielle) d'aujourd'hui, annoncée avant la prière, avec son intention éventuelle
 	let ind = $state<Indulgences | null>(null);
@@ -32,10 +44,7 @@
 	const autresChapelets = $derived(CHAPELETS.includes(id) ? CHAPELETS.filter((c) => c !== id) : []);
 	const NOM_CHAPELET = (c: string) => `Mystères ${c.slice('hortus:chapelet-'.length)}`;
 	const sansCompte = $derived(ind?.sans_compte[id]);
-	const parties = vivant(
-		async () => [...new Set((await db.textes.toArray()).map((t) => t.partie).filter(Boolean))],
-		[] as string[]
-	);
+	const parties = vivant(async () => [...new Set((await db.textes.toArray()).map((t) => t.partie).filter(Boolean))], [] as string[]);
 	let edition = $state(false);
 	let brouillon: Texte | undefined = $state();
 	let historique: Version[] = $state([]);
@@ -80,11 +89,19 @@
 		const t = texte.v;
 		if (!t) return [];
 		const genre = (p: string): Bloc['genre'] =>
-			p.startsWith('[r]') && p.endsWith('[/r]') ? 'rubrique'
-			: /^(℣\.|℟\.)/.test(p) ? 'verset'
-			: p.startsWith('## ') || p.startsWith('### ') ? 'titre'
-			: p.startsWith('[') ? 'traduction' : 'texte';
-		const out: Bloc[] = t.corps.split(/\n{2,}/).filter(Boolean).map((p) => ({ genre: genre(p), fr: p }));
+			p.startsWith('[r]') && p.endsWith('[/r]')
+				? 'rubrique'
+				: /^(℣\.|℟\.)/.test(p)
+					? 'verset'
+					: p.startsWith('## ') || p.startsWith('### ')
+						? 'titre'
+						: p.startsWith('[')
+							? 'traduction'
+							: 'texte';
+		const out: Bloc[] = t.corps
+			.split(/\n{2,}/)
+			.filter(Boolean)
+			.map((p) => ({ genre: genre(p), fr: p }));
 		const la = t.latin.split(/\n{2,}/).filter(Boolean);
 		if (la.length) {
 			for (let i = 0; i + la.length <= out.length; i++) {
@@ -98,13 +115,20 @@
 	});
 	const aDuLatin = $derived(blocs.some((b) => b.la));
 	const vers = $derived(blocs.some((b) => b.la && b.fr.includes('\n')));
-	const ORIGINE = { livret: ['livret', 'Livret'], officielle: ['verifiee', 'Source vérifiée'], personnel: ['personnel', 'Ajout personnel'] } as const;
+	const ORIGINE = {
+		livret: ['livret', 'Livret'],
+		officielle: ['verifiee', 'Source vérifiée'],
+		personnel: ['personnel', 'Ajout personnel']
+	} as const;
 </script>
 
 <svelte:head><title>{texte.v?.titre ?? 'Prière'} — Hortus Sacrum</title></svelte:head>
 
 {#if !texte.v}
-	<main class="page"><a class="retour" href="/prieres"><Icone nom="retour" taille={16} /> Prières</a><p>Cette prière est introuvable.</p></main>
+	<main class="page">
+		<a class="retour" href="/prieres"><Icone nom="retour" taille={16} /> Prières</a>
+		<p>Cette prière est introuvable.</p>
+	</main>
 {:else if edition && brouillon}
 	<main class="page">
 		<a class="retour" href="/prieres"><Icone nom="retour" taille={16} /> Prières</a>
@@ -127,16 +151,30 @@
 				{#if estModifie(t)}<span class="cartouche personnel">modifié</span>{/if}
 			</p>
 			{#if t.supprimeLe}
-				<p class="corbeille">Cette prière est dans la corbeille. <button onclick={() => sortirDeLaCorbeille('textes', id)}>La rétablir</button></p>
+				<p class="corbeille">
+					Cette prière est dans la corbeille. <button onclick={() => sortirDeLaCorbeille('textes', id)}>La rétablir</button>
+				</p>
 			{/if}
 			{#if t.usage}<p class="usage"><span class="pc rub">usage :</span> <em>{t.usage}</em></p>{/if}
 			{#if fiche}
 				<aside class="indulgence-jour">
 					{#if fiche.intention}<p><span class="pc rub">intention :</span> <em>{fiche.intention}</em></p>{/if}
-					<p><span class="pc rub">aujourd’hui :</span> {enClair(valeurDuJour(fiche, aujourdhui, tempora))}
-						<span class="detail">({valeursDuJour(fiche, aujourdhui, tempora).map((p) => p.texte).join(' + ')})</span></p>
+					<p>
+						<span class="pc rub">aujourd’hui :</span>
+						{enClair(valeurDuJour(fiche, aujourdhui, tempora))}
+						<span class="detail"
+							>({valeursDuJour(fiche, aujourdhui, tempora)
+								.map((p) => p.texte)
+								.join(' + ')})</span
+						>
+					</p>
 					{#if fiche.partielles.some((p) => p.quand)}
-						<p class="detail">Selon le jour : {fiche.partielles.filter((p) => p.quand).map((p) => p.texte).join(' ; ')}.</p>
+						<p class="detail">
+							Selon le jour : {fiche.partielles
+								.filter((p) => p.quand)
+								.map((p) => p.texte)
+								.join(' ; ')}.
+						</p>
 					{/if}
 					{#if fiche.note}<p class="detail">{fiche.note}</p>{/if}
 					<p class="detail source">{fiche.ref}</p>
@@ -217,64 +255,237 @@
 				{/each}
 			</section>
 		{/if}
-		<div hidden>
-		</div>
+		<div hidden></div>
 	</main>
 {/if}
 
 <style>
-	.autres-chapelets { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1rem 0; }
-	.indulgence-jour { max-width: 34rem; margin: var(--hs-e3) auto 0; padding: var(--hs-e2) var(--hs-e4); border: var(--hs-cheveu) solid var(--hs-or-trait); text-align: center; }
-	.indulgence-jour p { margin: 2px 0; }
-	.indulgence-jour .detail { font-size: 0.9375rem; color: var(--hs-encre-douce); font-style: italic; }
-	.ecran { max-width: 980px; margin: 0 auto; padding: var(--hs-e5) var(--hs-marge-mobile) 0; }
-	.retour { display: inline-flex; align-items: center; gap: 4px; text-decoration: none; color: var(--hs-encre-douce); min-height: 44px; }
-	header { text-align: center; display: grid; justify-items: center; gap: var(--hs-e3); margin: var(--hs-e6) auto var(--hs-e6); max-width: var(--hs-mesure); }
-	header p { margin: 0; }
-	h1 { font-size: var(--hs-t3); }
-	.usage { font-size: 1.0625rem; }
-	.marques { display: flex; gap: 8px; }
-	header :global(.filet) { margin-top: var(--hs-e3); max-width: 18rem; }
+	.autres-chapelets {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.5rem;
+		margin: 1rem 0;
+	}
+	.indulgence-jour {
+		max-width: 34rem;
+		margin: var(--hs-e3) auto 0;
+		padding: var(--hs-e2) var(--hs-e4);
+		border: var(--hs-cheveu) solid var(--hs-or-trait);
+		text-align: center;
+	}
+	.indulgence-jour p {
+		margin: 2px 0;
+	}
+	.indulgence-jour .detail {
+		font-size: 0.9375rem;
+		color: var(--hs-encre-douce);
+		font-style: italic;
+	}
+	.ecran {
+		max-width: 980px;
+		margin: 0 auto;
+		padding: var(--hs-e5) var(--hs-marge-mobile) 0;
+	}
+	.retour {
+		display: inline-flex;
+		align-items: center;
+		gap: 4px;
+		text-decoration: none;
+		color: var(--hs-encre-douce);
+		min-height: 44px;
+	}
+	header {
+		text-align: center;
+		display: grid;
+		justify-items: center;
+		gap: var(--hs-e3);
+		margin: var(--hs-e6) auto var(--hs-e6);
+		max-width: var(--hs-mesure);
+	}
+	header p {
+		margin: 0;
+	}
+	h1 {
+		font-size: var(--hs-t3);
+	}
+	.usage {
+		font-size: 1.0625rem;
+	}
+	.marques {
+		display: flex;
+		gap: 8px;
+	}
+	header :global(.filet) {
+		margin-top: var(--hs-e3);
+		max-width: 18rem;
+	}
 
-	.texte { max-width: var(--hs-mesure); margin-inline: auto; }
-	.rubrique { font-style: italic; text-align: center; font-size: 1.0625rem; margin: 0 auto var(--hs-ligne); max-width: 28rem; text-wrap: balance; }
-	.bascule { display: flex; justify-content: center; margin-bottom: var(--hs-e5); }
-	.bascule .bouton { min-height: 36px; }
-	.strophe { margin-bottom: var(--hs-ligne); display: grid; gap: var(--hs-e2); }
-	.texte .strophe :global(p) { margin: 0; text-align: left; hyphens: manual; }
-	.vers .strophe { justify-content: center; }
-	.strophe .la { color: var(--hs-encre-douce); font-size: 1.0625rem; padding-left: var(--hs-e4); border-left: var(--hs-cheveu) solid var(--hs-or-trait); order: 2; }
-	.lecture.verset, .lecture.traduction { margin-top: var(--hs-ligne); }
-	.lecture.verset :global(p), .lecture.traduction :global(p) { text-align: center; }
-	.lecture.traduction { font-size: 1.0625rem; color: var(--hs-encre-douce); margin-top: 0; }
+	.texte {
+		max-width: var(--hs-mesure);
+		margin-inline: auto;
+	}
+	.rubrique {
+		font-style: italic;
+		text-align: center;
+		font-size: 1.0625rem;
+		margin: 0 auto var(--hs-ligne);
+		max-width: 28rem;
+		text-wrap: balance;
+	}
+	.bascule {
+		display: flex;
+		justify-content: center;
+		margin-bottom: var(--hs-e5);
+	}
+	.bascule .bouton {
+		min-height: 36px;
+	}
+	.strophe {
+		margin-bottom: var(--hs-ligne);
+		display: grid;
+		gap: var(--hs-e2);
+	}
+	.texte .strophe :global(p) {
+		margin: 0;
+		text-align: left;
+		hyphens: manual;
+	}
+	.vers .strophe {
+		justify-content: center;
+	}
+	.strophe .la {
+		color: var(--hs-encre-douce);
+		font-size: 1.0625rem;
+		padding-left: var(--hs-e4);
+		border-left: var(--hs-cheveu) solid var(--hs-or-trait);
+		order: 2;
+	}
+	.lecture.verset,
+	.lecture.traduction {
+		margin-top: var(--hs-ligne);
+	}
+	.lecture.verset :global(p),
+	.lecture.traduction :global(p) {
+		text-align: center;
+	}
+	.lecture.traduction {
+		font-size: 1.0625rem;
+		color: var(--hs-encre-douce);
+		margin-top: 0;
+	}
 
 	/* marginalia : sous le texte au téléphone, dans la marge à l'ordinateur */
-	.marge { max-width: var(--hs-mesure); margin: var(--hs-e6) auto 0; border-top: var(--hs-cheveu) solid var(--hs-filet); }
-	.marge details { border-bottom: var(--hs-cheveu) solid var(--hs-filet); }
-	.marge summary { padding: 10px 0; color: var(--hs-encre-douce); }
-	.marge p { margin: 0 0 12px; font-size: 0.9375rem; line-height: 1.45; color: var(--hs-encre-douce); }
-	.marge .imprime { font-size: 1rem; }
+	.marge {
+		max-width: var(--hs-mesure);
+		margin: var(--hs-e6) auto 0;
+		border-top: var(--hs-cheveu) solid var(--hs-filet);
+	}
+	.marge details {
+		border-bottom: var(--hs-cheveu) solid var(--hs-filet);
+	}
+	.marge summary {
+		padding: 10px 0;
+		color: var(--hs-encre-douce);
+	}
+	.marge p {
+		margin: 0 0 12px;
+		font-size: 0.9375rem;
+		line-height: 1.45;
+		color: var(--hs-encre-douce);
+	}
+	.marge .imprime {
+		font-size: 1rem;
+	}
 
-	.cul { text-align: center; color: var(--hs-or); margin-top: var(--hs-e7); }
-	.actions-edition { margin-top: var(--hs-e5); }
-	.corbeille { font-size: 1rem; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; justify-content: center; color: var(--hs-rubrique); }
-	.historique { max-width: var(--hs-mesure); margin: var(--hs-e6) auto 0; }
-	.historique h3 { color: var(--hs-rubrique); text-align: center; margin-bottom: var(--hs-e3); }
-	.version { padding: 8px 0; border-bottom: var(--hs-cheveu) solid var(--hs-filet); font-size: 1.0625rem; }
-	.actions { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-top: var(--hs-e6); }
+	.cul {
+		text-align: center;
+		color: var(--hs-or);
+		margin-top: var(--hs-e7);
+	}
+	.actions-edition {
+		margin-top: var(--hs-e5);
+	}
+	.corbeille {
+		font-size: 1rem;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 8px;
+		align-items: center;
+		justify-content: center;
+		color: var(--hs-rubrique);
+	}
+	.historique {
+		max-width: var(--hs-mesure);
+		margin: var(--hs-e6) auto 0;
+	}
+	.historique h3 {
+		color: var(--hs-rubrique);
+		text-align: center;
+		margin-bottom: var(--hs-e3);
+	}
+	.version {
+		padding: 8px 0;
+		border-bottom: var(--hs-cheveu) solid var(--hs-filet);
+		font-size: 1.0625rem;
+	}
+	.actions {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 12px;
+		justify-content: center;
+		margin-top: var(--hs-e6);
+	}
 
 	@media (min-width: 640px) {
-		h1 { font-size: var(--hs-t4); }
-		.texte.bilingue { max-width: 46rem; }
-		.bilingue .strophe { grid-template-columns: 1fr 1fr; gap: var(--hs-e6); justify-content: stretch; }
-		.bilingue .strophe .la { order: 0; border-left: 0; padding-left: 0; text-align: right; font-size: inherit; }
-		.bilingue .strophe .la :global(p) { text-align: right; }
-		.bilingue .strophe .fr { border-left: var(--hs-cheveu) solid var(--hs-or-trait); padding-left: var(--hs-e6); }
+		h1 {
+			font-size: var(--hs-t4);
+		}
+		.texte.bilingue {
+			max-width: 46rem;
+		}
+		.bilingue .strophe {
+			grid-template-columns: 1fr 1fr;
+			gap: var(--hs-e6);
+			justify-content: stretch;
+		}
+		.bilingue .strophe .la {
+			order: 0;
+			border-left: 0;
+			padding-left: 0;
+			text-align: right;
+			font-size: inherit;
+		}
+		.bilingue .strophe .la :global(p) {
+			text-align: right;
+		}
+		.bilingue .strophe .fr {
+			border-left: var(--hs-cheveu) solid var(--hs-or-trait);
+			padding-left: var(--hs-e6);
+		}
 	}
 	@media (min-width: 1280px) {
-		.page { display: grid; grid-template-columns: minmax(0, 1fr) 210px; gap: var(--hs-e6); align-items: start; }
-		.marge { margin: 0; border-top: 0; position: sticky; top: var(--hs-e5); padding-top: 4.5rem; }
-		.marge details { border-bottom: 0; border-left: var(--hs-cheveu) solid var(--hs-or-trait); padding-left: var(--hs-e4); margin-bottom: var(--hs-e5); }
-		.marge summary { padding: 0 0 6px; pointer-events: none; }
+		.page {
+			display: grid;
+			grid-template-columns: minmax(0, 1fr) 210px;
+			gap: var(--hs-e6);
+			align-items: start;
+		}
+		.marge {
+			margin: 0;
+			border-top: 0;
+			position: sticky;
+			top: var(--hs-e5);
+			padding-top: 4.5rem;
+		}
+		.marge details {
+			border-bottom: 0;
+			border-left: var(--hs-cheveu) solid var(--hs-or-trait);
+			padding-left: var(--hs-e4);
+			margin-bottom: var(--hs-e5);
+		}
+		.marge summary {
+			padding: 0 0 6px;
+			pointer-events: none;
+		}
 	}
 </style>

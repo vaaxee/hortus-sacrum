@@ -31,7 +31,10 @@
 
 <main class="page entree">
 	<a class="retour interface" href="/?date={date}"><Icone nom="retour" taille={16} /> Aujourd’hui</a>
-	<div class="tete-page"><h1>{dev?.nom}</h1><Ornement nom="fleuron" /></div>
+	<div class="tete-page">
+		<h1>{dev?.nom}</h1>
+		<Ornement nom="fleuron" />
+	</div>
 	<p class="petit">Indulgence : {dev?.reference}.</p>
 	{#if entree}
 		<p>Aujourd’hui, {NOM_COURT[recueil?.id ?? ''] ?? ''} : <a href="/meditation?date={date}">{entree.titre}</a></p>
@@ -46,7 +49,19 @@
 </main>
 
 <style>
-	.retour { display: inline-flex; align-items: center; gap: 4px; text-decoration: none; color: var(--hs-encre-douce); min-height: 44px; }
-	.lecture :global(p) { text-align: justify; hyphens: auto; }
-	.source { color: var(--hs-encre-douce); }
+	.retour {
+		display: inline-flex;
+		align-items: center;
+		gap: 4px;
+		text-decoration: none;
+		color: var(--hs-encre-douce);
+		min-height: 44px;
+	}
+	.lecture :global(p) {
+		text-align: justify;
+		hyphens: auto;
+	}
+	.source {
+		color: var(--hs-encre-douce);
+	}
 </style>

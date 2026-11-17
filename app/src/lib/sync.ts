@@ -13,7 +13,18 @@ import { writable } from 'svelte/store';
 import { SUPABASE_CLE, SUPABASE_URL } from './config.ts';
 import { db } from './db.ts';
 
-export const COLLECTIONS = ['textes', 'pratiques', 'liste', 'recueils', 'meditations', 'fetes', 'notes', 'coches', 'faits', 'versions'] as const;
+export const COLLECTIONS = [
+	'textes',
+	'pratiques',
+	'liste',
+	'recueils',
+	'meditations',
+	'fetes',
+	'notes',
+	'coches',
+	'faits',
+	'versions'
+] as const;
 export type Collection = (typeof COLLECTIONS)[number];
 
 type Ligne = Record<string, unknown>;
@@ -168,7 +179,7 @@ async function toutMettreEnFile() {
 /** Contenu envoyé au serveur : sans la clé numérique locale des journaux. */
 function nettoyer(c: Collection, o: Ligne): Ligne {
 	if (!NATURELLES[c]) return o;
-	const { id, ...reste } = o;
+	const { id: _id, ...reste } = o;
 	return reste;
 }
 

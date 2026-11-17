@@ -4,7 +4,15 @@
 	import { page } from '$app/state';
 	import Badge from '#lib/Badge.svelte';
 	import {
-		creer, db, dupliquer, enregistrer, estModifie, mettreALaCorbeille, nouvelId, restaurerOriginal, sortirDeLaCorbeille,
+		creer,
+		db,
+		dupliquer,
+		enregistrer,
+		estModifie,
+		mettreALaCorbeille,
+		nouvelId,
+		restaurerOriginal,
+		sortirDeLaCorbeille,
 		supprimerDefinitivement
 	} from '#lib/db.ts';
 	import Case from '#lib/design/Case.svelte';
@@ -18,8 +26,17 @@
 
 	const id = $derived(decodeURIComponent(page.params.id ?? ''));
 	const nouvelle = $derived(id === 'nouvelle');
-	const pratique = vivantSelon(() => { const k = id; return () => db.pratiques.get(k); }, undefined as Pratique | undefined);
-	const faits = vivantSelon(() => { const k = id; return () => db.faits.where('pratiqueId').equals(k).toArray(); }, [] as Fait[]);
+	const pratique = vivantSelon(
+		() => {
+			const k = id;
+			return () => db.pratiques.get(k);
+		},
+		undefined as Pratique | undefined
+	);
+	const faits = vivantSelon(() => {
+		const k = id;
+		return () => db.faits.where('pratiqueId').equals(k).toArray();
+	}, [] as Fait[]);
 	const textes = vivant(() => db.textes.toArray(), [] as Texte[]);
 	const aujourdhui = versIso(new Date());
 
@@ -35,16 +52,39 @@
 	// création : quatre points de départ courants
 	const MODELES: [string, Partial<Pratique>][] = [
 		['Neuvaine', { titre: 'Neuvaine', type: 'neuvaine', regle: { genre: 'consecutifs', nombre: 9, jourSemaine: null, debut: aujourdhui } }],
-		['Trentain', { titre: 'Trentain de prières', type: 'trentain', regle: { genre: 'consecutifs', nombre: 30, jourSemaine: null, debut: aujourdhui } }],
-		['Série de jours comptés', { titre: 'Série', type: 'jours_comptes', regle: { genre: 'consecutifs', nombre: 7, jourSemaine: new Date().getDay(), debut: aujourdhui } }],
-		['Consécration', { titre: 'Consécration', type: 'consecration', regle: { genre: 'fixe', mois: new Date().getMonth() + 1, jour: new Date().getDate() } }]
+		[
+			'Trentain',
+			{ titre: 'Trentain de prières', type: 'trentain', regle: { genre: 'consecutifs', nombre: 30, jourSemaine: null, debut: aujourdhui } }
+		],
+		[
+			'Série de jours comptés',
+			{
+				titre: 'Série',
+				type: 'jours_comptes',
+				regle: { genre: 'consecutifs', nombre: 7, jourSemaine: new Date().getDay(), debut: aujourdhui }
+			}
+		],
+		[
+			'Consécration',
+			{ titre: 'Consécration', type: 'consecration', regle: { genre: 'fixe', mois: new Date().getMonth() + 1, jour: new Date().getDate() } }
+		]
 	];
 	function partirDe(m: Partial<Pratique>) {
 		brouillon = {
-			id: nouvelId(), origine: 'personnel', titre: '', type: 'jours_comptes',
+			id: nouvelId(),
+			origine: 'personnel',
+			titre: '',
+			type: 'jours_comptes',
 			regle: { genre: 'consecutifs', nombre: 9, jourSemaine: null, debut: aujourdhui },
-			textes: [], promesses: '', indulgence: '', source: { ...SOURCE_VIDE }, notes: '', active: true,
-			creeLe: '', modifieLe: '', ...structuredClone(m)
+			textes: [],
+			promesses: '',
+			indulgence: '',
+			source: { ...SOURCE_VIDE },
+			notes: '',
+			active: true,
+			creeLe: '',
+			modifieLe: '',
+			...structuredClone(m)
 		};
 	}
 
@@ -85,10 +125,15 @@
 		await supprimerDefinitivement('pratiques', id);
 		goto('/devotions');
 	}
-	const jourCourt = (s: string) => new Date(s + 'T12:00:00').toLocaleDateString('fr-FR', { weekday: 'short', day: 'numeric', month: 'short' });
+	const jourCourt = (s: string) =>
+		new Date(s + 'T12:00:00').toLocaleDateString('fr-FR', { weekday: 'short', day: 'numeric', month: 'short' });
 	const TYPES: Record<string, string> = {
-		jours_comptes: 'Dévotion à jours comptés', neuvaine: 'Neuvaine', trentain: 'Trentain', consecration: 'Consécration',
-		mois: 'Dévotion du mois', jour_semaine: 'Dévotion du jour de la semaine'
+		jours_comptes: 'Dévotion à jours comptés',
+		neuvaine: 'Neuvaine',
+		trentain: 'Trentain',
+		consecration: 'Consécration',
+		mois: 'Dévotion du mois',
+		jour_semaine: 'Dévotion du jour de la semaine'
 	};
 </script>
 
@@ -126,15 +171,26 @@
 		</div>
 
 		{#if p.supprimeLe}
-			<p class="alerte">Cette pratique est dans la corbeille. <button onclick={() => sortirDeLaCorbeille('pratiques', id)}>La rétablir</button></p>
+			<p class="alerte">
+				Cette pratique est dans la corbeille. <button onclick={() => sortirDeLaCorbeille('pratiques', id)}>La rétablir</button>
+			</p>
 		{/if}
 
 		{#if e?.manquees.length}
 			<div class="alerte epreuve" role="status">
-				<p><strong>Série interrompue.</strong> {e.manquees.length} jour{e.manquees.length > 1 ? 's' : ''} sans coche : {e.manquees.map((o) => jourCourt(o.date)).join(', ')}.</p>
+				<p>
+					<strong>Série interrompue.</strong>
+					{e.manquees.length} jour{e.manquees.length > 1 ? 's' : ''} sans coche : {e.manquees.map((o) => jourCourt(o.date)).join(', ')}.
+				</p>
 				<div class="rangee">
 					<button class="principal" onclick={reprendre}>Recommencer aujourd’hui</button>
-					<button onclick={() => marquerFaits(id, e.manquees.map((o) => o.date))}>Je les avais faits</button>
+					<button
+						onclick={() =>
+							marquerFaits(
+								id,
+								e.manquees.map((o) => o.date)
+							)}>Je les avais faits</button
+					>
 				</div>
 			</div>
 		{/if}
@@ -149,7 +205,10 @@
 				<ul class="reglee jours">
 					{#each e.serie as o (o.date)}
 						<li class:futur={o.date > aujourdhui} class:auj={o.date === aujourdhui}>
-							<Case libelle="{jourCourt(o.date)}, {o.rang} sur {o.total}" bind:cochee={() => dates.has(o.date), () => basculerFait(id, o.date)} />
+							<Case
+								libelle="{jourCourt(o.date)}, {o.rang} sur {o.total}"
+								bind:cochee={() => dates.has(o.date), () => basculerFait(id, o.date)}
+							/>
 							<span class="rang pc chiffres-alignes">{o.rang}</span>
 							<span class="date">{jourCourt(o.date)}{o.date === aujourdhui ? ', aujourd’hui' : ''}</span>
 						</li>
@@ -162,7 +221,10 @@
 
 		{#if liees.length}
 			<section>
-				<div class="tete-section"><Ornement nom="grecque" /><h2>Prières</h2></div>
+				<div class="tete-section">
+					<Ornement nom="grecque" />
+					<h2>Prières</h2>
+				</div>
 				<ul class="reglee">
 					{#each liees as t (t.id)}
 						<li><a class="priere-liee" href="/prieres/{encodeURIComponent(t.id)}">{t.titre}</a></li>
@@ -199,22 +261,79 @@
 </main>
 
 <style>
-	.tete-page :global(.filet) { max-width: 16rem; }
-	.regle { font-size: 1.0625rem; line-height: 1.4; }
-	.notes { font-style: italic; max-width: 30rem; }
-	.alerte { color: var(--hs-rubrique); padding: var(--hs-e4); margin: 0 0 var(--hs-e4); }
-	.alerte p { margin: 0 0 var(--hs-e3); color: var(--hs-encre); }
-	.alerte strong { color: var(--hs-rubrique); font-weight: 500; font-variant-caps: all-small-caps; letter-spacing: var(--hs-chasse-petites-cap); }
-	.tete-section .petit { margin: -6px 0 0; }
-	.jours li { gap: 14px; min-height: 48px; }
-	.jours li.futur { opacity: 0.55; }
-	.jours li.auj .date { color: var(--hs-lapis); }
-	.rang { width: 1.6rem; text-align: right; color: var(--hs-encre-douce); }
-	.priere-liee { flex: 1; padding: 12px 0; text-decoration: none; color: var(--hs-encre); }
-	.prochain { text-align: center; }
-	.texte { margin-top: var(--hs-e6); }
-	.texte h3 { color: var(--hs-rubrique); text-align: center; margin-bottom: var(--hs-e3); }
-	.texte p { text-align: justify; hyphens: auto; white-space: pre-line; }
-	.marge { margin: var(--hs-e5) 0 0; font-size: 1rem; color: var(--hs-encre-douce); line-height: 1.45; }
-	.actions { margin-top: var(--hs-e6); }
+	.tete-page :global(.filet) {
+		max-width: 16rem;
+	}
+	.regle {
+		font-size: 1.0625rem;
+		line-height: 1.4;
+	}
+	.notes {
+		font-style: italic;
+		max-width: 30rem;
+	}
+	.alerte {
+		color: var(--hs-rubrique);
+		padding: var(--hs-e4);
+		margin: 0 0 var(--hs-e4);
+	}
+	.alerte p {
+		margin: 0 0 var(--hs-e3);
+		color: var(--hs-encre);
+	}
+	.alerte strong {
+		color: var(--hs-rubrique);
+		font-weight: 500;
+		font-variant-caps: all-small-caps;
+		letter-spacing: var(--hs-chasse-petites-cap);
+	}
+	.tete-section .petit {
+		margin: -6px 0 0;
+	}
+	.jours li {
+		gap: 14px;
+		min-height: 48px;
+	}
+	.jours li.futur {
+		opacity: 0.55;
+	}
+	.jours li.auj .date {
+		color: var(--hs-lapis);
+	}
+	.rang {
+		width: 1.6rem;
+		text-align: right;
+		color: var(--hs-encre-douce);
+	}
+	.priere-liee {
+		flex: 1;
+		padding: 12px 0;
+		text-decoration: none;
+		color: var(--hs-encre);
+	}
+	.prochain {
+		text-align: center;
+	}
+	.texte {
+		margin-top: var(--hs-e6);
+	}
+	.texte h3 {
+		color: var(--hs-rubrique);
+		text-align: center;
+		margin-bottom: var(--hs-e3);
+	}
+	.texte p {
+		text-align: justify;
+		hyphens: auto;
+		white-space: pre-line;
+	}
+	.marge {
+		margin: var(--hs-e5) 0 0;
+		font-size: 1rem;
+		color: var(--hs-encre-douce);
+		line-height: 1.45;
+	}
+	.actions {
+		margin-top: var(--hs-e6);
+	}
 </style>
