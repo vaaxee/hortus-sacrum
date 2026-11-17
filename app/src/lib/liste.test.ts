@@ -27,11 +27,13 @@ describe('alternance par semaine du mois', () => {
 	});
 });
 
-describe('petit bréviaire du Sacré-Cœur', () => {
-	it("donne l'office du jour de la semaine", async () => {
-		const { petitBreviaireDuJour, PETIT_BREVIAIRE_DU_JOUR } = await import('./liste');
-		expect(petitBreviaireDuJour(['a', PETIT_BREVIAIRE_DU_JOUR, 'b'], '2026-11-20')).toEqual(['a', 'breviaire-sc:office-vendredi', 'b']);
-		expect(petitBreviaireDuJour([PETIT_BREVIAIRE_DU_JOUR], '2026-11-22')).toEqual(['breviaire-sc:office-dimanche']);
-		expect(petitBreviaireDuJour(['a'], '2026-11-22')).toEqual(['a']);
+describe('prières selon le jour de la semaine', () => {
+	it('donne la page du jour', async () => {
+		const { selonLeJour } = await import('./liste');
+		// 20 novembre 2026 : vendredi
+		expect(selonLeJour(['a', 'hortus:petit-breviaire-du-jour', 'b'], '2026-11-20')).toEqual(['a', 'breviaire-sc:office-vendredi', 'b']);
+		expect(selonLeJour(['hortus:triple-couronne-du-jour'], '2026-11-17')).toEqual(['hortus:triple-couronne-2']); // mardi
+		expect(selonLeJour(['hortus:chapelet-du-jour'], '2026-11-22')).toEqual(['hortus:chapelet-glorieux']); // dimanche
+		expect(selonLeJour(['a'], '2026-11-22')).toEqual(['a']);
 	});
 });

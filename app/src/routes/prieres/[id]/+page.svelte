@@ -14,6 +14,7 @@
 	import { etiquetteSource } from '#lib/sources.ts';
 	import type { Texte, Version } from '#lib/types.ts';
 	import { iso, jourDu } from '#lib/calendrier.ts';
+	import { CHAPELETS } from '#lib/liste.ts';
 	import { chargerIndulgences, enClair, valeurDuJour, valeursDuJour, type Indulgences } from '#lib/indulgences.ts';
 
 
@@ -27,6 +28,9 @@
 	chargerIndulgences().then((x) => (ind = x));
 	jourDu(aujourdhui).then((j) => (tempora = j?.tempora ?? null));
 	const fiche = $derived(ind?.fiches[id]);
+	// chapelet : passer aux autres mystères (rosaire entier)
+	const autresChapelets = $derived(CHAPELETS.includes(id) ? CHAPELETS.filter((c) => c !== id) : []);
+	const NOM_CHAPELET = (c: string) => `Mystères ${c.slice('hortus:chapelet-'.length)}`;
 	const sansCompte = $derived(ind?.sans_compte[id]);
 	const parties = vivant(
 		async () => [...new Set((await db.textes.toArray()).map((t) => t.partie).filter(Boolean))],
@@ -140,6 +144,11 @@
 			{:else if sansCompte}
 				<aside class="indulgence-jour"><p class="detail">{sansCompte}</p></aside>
 			{/if}
+			{#if autresChapelets.length}
+				<nav class="autres-chapelets" aria-label="Autres mystères du Rosaire">
+					{#each autresChapelets as c}<a class="bouton" href={`/prieres/${encodeURIComponent(c)}`}>{NOM_CHAPELET(c)}</a>{/each}
+				</nav>
+			{/if}
 			<Ornement nom="fleuron" />
 		</header>
 
@@ -162,6 +171,11 @@
 						<div class="lecture {b.genre}">{@html rendre(b.fr)}</div>
 					{/if}
 				{/each}
+				{#if autresChapelets.length}
+					<nav class="autres-chapelets" aria-label="Autres mystères du Rosaire">
+						{#each autresChapelets as c}<a class="bouton" href={`/prieres/${encodeURIComponent(c)}`}>{NOM_CHAPELET(c)}</a>{/each}
+					</nav>
+				{/if}
 			</article>
 
 			<aside class="marge" aria-label="Indulgence et source">
@@ -209,6 +223,7 @@
 {/if}
 
 <style>
+	.autres-chapelets { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1rem 0; }
 	.indulgence-jour { max-width: 34rem; margin: var(--hs-e3) auto 0; padding: var(--hs-e2) var(--hs-e4); border: var(--hs-cheveu) solid var(--hs-or-trait); text-align: center; }
 	.indulgence-jour p { margin: 2px 0; }
 	.indulgence-jour .detail { font-size: 0.9375rem; color: var(--hs-encre-douce); font-style: italic; }

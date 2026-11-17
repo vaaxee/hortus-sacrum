@@ -1,5 +1,6 @@
 import { anneeLiturgique } from './calendrier.ts';
 import { contenu, db, enregistrer } from './db.ts';
+import { SELON_LE_JOUR } from './liste.ts';
 import { pratiquesDuPlan } from './plan.ts';
 import { amorcerRoues } from './roues.ts';
 import type { ElementListe, Moment, Pratique, Texte } from './types.ts';
@@ -116,12 +117,10 @@ const TOUS = [true, true, true, true, true, true, true];
 const jour = (...j: number[]) => TOUS.map((_, i) => j.includes(i));
 
 /** Liste du jour de départ (docs/LISTE_DU_JOUR.md). Les éléments sans texte en base attendent leur source. */
-/** IIe partie du Jardin : actes des devoirs de charité, dits avec l'offrande du matin (demande du 15 nov.). */
-const DEVOIRS = ['jardin:devoir-envers-l-eglise-et-ses-ministres', 'jardin:devoir-envers-la-famille', 'jardin:devoir-envers-la-patrie', 'jardin:devoir-envers-les-pauvres-les-persecutes-les-affliges', 'jardin:devoir-envers-moi-meme'];
 
 function listeParDefaut(): Omit<ElementListe, 'creeLe' | 'modifieLe'>[] {
 	const L: [string, Moment, 'ordinaire' | 'propre', boolean[], string[], string[]][] = [
-		['Offrande du matin', 'matin', 'ordinaire', TOUS, [], ['jardin:intention-d-indulgences', 'jardin:acte-de-soumission-a-la-volonte-de-dieu', 'jardin:acte-d-intention-de-communion-spirituelle-perpetuelle', 'jardin:acte-de-recommandation-des-ames-rencontrees', ...DEVOIRS]],
+		['Offrande du matin', 'matin', 'ordinaire', TOUS, [], ['hortus:offrande-du-matin']],
 		['Prière du matin', 'matin', 'ordinaire', TOUS, [], []],
 		['Salve Regina, avec ses versets', 'matin', 'ordinaire', TOUS, [], []],
 		['Intentions particulières du jour', 'matin', 'ordinaire', TOUS, [], []],
@@ -135,8 +134,8 @@ function listeParDefaut(): Omit<ElementListe, 'creeLe' | 'modifieLe'>[] {
 		['Angélus', 'journee', 'ordinaire', TOUS, ['06:00', '12:00', '18:00'], []],
 		['Prière pour les agonisants', 'journee', 'ordinaire', TOUS, ['07:00', '12:00', '21:00'], ['jardin:priere-pour-les-agonisants']],
 		['La Flèche d’or', 'journee', 'ordinaire', TOUS, ['07:00', '12:00', '21:00'], ['jardin:la-fleche-d-or']],
-		['Chapelet', 'journee', 'ordinaire', TOUS, [], []],
-		['Triple Couronne d’or du Sacré-Cœur', 'journee', 'ordinaire', TOUS, [], ['jardin:la-triple-couronne-d-or-du-sacre-c-ur-de-jesus']],
+		['Chapelet', 'journee', 'ordinaire', TOUS, [], ['hortus:chapelet-du-jour']],
+		['Triple Couronne d’or du Sacré-Cœur', 'journee', 'ordinaire', TOUS, [], ['hortus:triple-couronne-du-jour']],
 		['Chapelet de saint Michel (couronne angélique)', 'journee', 'ordinaire', jour(2), [], ['jardin:chapelet-de-saint-michel-archange']],
 		['Chapelet des Morts', 'journee', 'ordinaire', jour(1), [], []],
 		['Quinze oraisons de sainte Brigitte', 'journee', 'ordinaire', TOUS, [], ['jardin:les-quinze-oraisons-de-sainte-brigitte']],
@@ -176,13 +175,9 @@ export async function amorcer(fetchFn: typeof fetch = fetch): Promise<void> {
 	await reparerLitanies();
 	await rappelsDuProfil();
 	await textesDesDevotions();
-	await chapeletParLaRoue();
 	await livrerElements();
 	await renouvellementDuCordon();
-	await devoirsDuMatin();
-	await remplacerTextes('chapelet-montfort', 'Chapelet', ['sambucy:chapelet-saint-dominique'], ['sambucy:chapelet-saint-dominique', 'montfort:methode-rosaire']);
-	// les trois Ave du début du chapelet, sous la forme révélée à sainte Mechtilde (dévotions combinées, SPEC § 10)
-	await remplacerTextes('chapelet-trois-ave', 'Chapelet', ['sambucy:chapelet-saint-dominique', 'montfort:methode-rosaire'], ['sambucy:chapelet-saint-dominique', 'gertrude:trois-ave-bonne-mort', 'montfort:methode-rosaire']);
+	await pagesComposees();
 	await remplacerTextes('cordon-gloria', 'Cordon de saint Joseph : sept Gloria Patri', ['beringer:cordon-saint-joseph'], ['hortus:cordon-sept-gloria', 'beringer:cordon-saint-joseph']);
 }
 
@@ -470,17 +465,6 @@ async function roueDesLitanies(k: number): Promise<void> {
 }
 
 /** Une seule fois : la ligne « Chapelet » ouvre le chapelet de saint Dominique et suit la roue des trois chapelets. */
-async function chapeletParLaRoue(): Promise<void> {
-	if (await db.meta.get('chapelet-roue')) return;
-	if (!(await db.textes.get('sambucy:chapelet-saint-dominique')) || !(await db.pratiques.get('roue:chapelets-rosaire'))) return;
-	const e = (await db.liste.toArray()).find((x) => x.titre === 'Chapelet' && !x.supprimeLe);
-	if (e && (e.modifieLe === DEPART || e.original === contenu(e)) && !e.textes.length) {
-		const x = { ...e, roue: 'roue:chapelets-rosaire', textes: ['sambucy:chapelet-saint-dominique', 'montfort:methode-rosaire'] } as ElementListe;
-		x.original = contenu(x);
-		await db.liste.put(x);
-	}
-	await db.meta.put({ cle: 'chapelet-roue', valeur: true });
-}
 
 const CORDON_TITRE = 'Cordon de saint Joseph : renouvellement et prière pour la pureté';
 const CORDON_TEXTES = ['hortus:renouvellement-cordon-saint-joseph', 'beringer:saint-joseph-purete'];
@@ -490,32 +474,41 @@ const CORDON_TEXTES = ['hortus:renouvellement-cordon-saint-joseph', 'beringer:sa
  * Une fois par clé : remplace les textes d'une ligne de la liste de départ quand ils sont encore ceux d'origine
  * (l'utilisateur ne les a pas changés). `avant` : la liste exacte attendue ; `apres` : la nouvelle.
  */
-async function remplacerTextes(cle: string, titre: string, avant: string[], apres: string[]): Promise<void> {
+async function remplacerTextes(cle: string, titre: string, avant: string[] | string[][], apres: string[]): Promise<void> {
 	if (await db.meta.get(cle)) return;
-	for (const id of apres) if (!(await db.textes.get(id))) return;
+	// un identifiant « du jour » n'est pas un texte : ce sont ses pages qui doivent être livrées
+	for (const id of apres.flatMap((i) => SELON_LE_JOUR[i] ?? [i])) if (!(await db.textes.get(id))) return;
+	const anciens = (Array.isArray(avant[0]) ? avant : [avant]) as string[][];
 	for (const e of await db.liste.toArray()) {
-		if (e.origine !== 'officielle' || e.titre !== titre || e.supprimeLe || e.textes.join() !== avant.join()) continue;
+		if (e.origine !== 'officielle' || e.titre !== titre || e.supprimeLe || !anciens.some((a) => e.textes.join() === a.join())) continue;
 		const neuf = e.modifieLe === DEPART || e.original === contenu(e);
 		const x = { ...e, textes: apres } as ElementListe;
+		delete x.roue; // la page du jour remplace la roue (chapelet)
 		if (neuf) x.original = contenu(x);
 		await db.liste.put(x);
 	}
 	await db.meta.put({ cle, valeur: true });
 }
 
-/** Une fois : la ligne « Offrande du matin » reçoit aussi les actes des devoirs de charité (ajout seulement). */
-async function devoirsDuMatin(): Promise<void> {
-	if (await db.meta.get('devoirs-matin')) return;
-	if (!(await db.textes.get(DEVOIRS[0]))) return;
-	const e = (await db.liste.toArray()).find((x) => x.origine === 'officielle' && x.titre === 'Offrande du matin' && !x.supprimeLe);
-	if (e) {
-		const neuf = e.modifieLe === DEPART || e.original === contenu(e);
-		const x = { ...e, textes: [...e.textes, ...DEVOIRS.filter((d) => !e.textes.includes(d))] } as ElementListe;
-		if (neuf) x.original = contenu(x);
-		await db.liste.put(x);
+/**
+ * Une fois : pages composées (SPEC § 10) — chapelet, Triple Couronne et offrande du matin en une page chacun, celle du jour.
+ * Seules les lignes qui portent encore une composition livrée par l'app sont touchées.
+ */
+const SAMBUCY = 'sambucy:chapelet-saint-dominique';
+const ACTES_MATIN = ['jardin:intention-d-indulgences', 'jardin:acte-de-soumission-a-la-volonte-de-dieu', 'jardin:acte-d-intention-de-communion-spirituelle-perpetuelle', 'jardin:acte-de-recommandation-des-ames-rencontrees'];
+const DEVOIRS = ['jardin:devoir-envers-l-eglise-et-ses-ministres', 'jardin:devoir-envers-la-famille', 'jardin:devoir-envers-la-patrie', 'jardin:devoir-envers-les-pauvres-les-persecutes-les-affliges', 'jardin:devoir-envers-moi-meme'];
+async function pagesComposees(): Promise<void> {
+	await remplacerTextes('pages-chapelet', 'Chapelet', [[], [SAMBUCY], [SAMBUCY, 'montfort:methode-rosaire'], [SAMBUCY, 'gertrude:trois-ave-bonne-mort', 'montfort:methode-rosaire']], ['hortus:chapelet-du-jour']);
+	await remplacerTextes('pages-triple-couronne', 'Triple Couronne d’or du Sacré-Cœur', [['jardin:la-triple-couronne-d-or-du-sacre-c-ur-de-jesus']], ['hortus:triple-couronne-du-jour']);
+	await remplacerTextes('pages-offrande', 'Offrande du matin', [ACTES_MATIN, [...ACTES_MATIN, ...DEVOIRS]], ['hortus:offrande-du-matin']);
+	// la roue des trois chapelets n'a plus d'usage : écartée si l'utilisateur ne l'a pas modifiée
+	if (!(await db.meta.get('roue-chapelets-retiree'))) {
+		const r = await db.pratiques.get('roue:chapelets-rosaire');
+		if (r && !r.supprimeLe && r.original === contenu(r)) await db.pratiques.put({ ...r, supprimeLe: new Date().toISOString() });
+		await db.meta.put({ cle: 'roue-chapelets-retiree', valeur: true });
 	}
-	await db.meta.put({ cle: 'devoirs-matin', valeur: true });
 }
+
 
 async function renouvellementDuCordon(): Promise<void> {
 	if (await db.meta.get('cordon-renouvellement')) return;

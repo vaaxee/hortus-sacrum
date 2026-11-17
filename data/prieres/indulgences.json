@@ -1120,6 +1120,120 @@
      "texte": "300 jours"
     }
    ]
+  },
+  "hortus:triple-couronne-1": {
+   "ref": "Ench. 1952, n° 221 (Jesu, mitis), n° 386 (Dulce Cor Mariæ), n° 70 (Mon Jésus, miséricorde), n° 287 (Veni, Sancte Spiritus)",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "jours": 500,
+     "repetitions": 5,
+     "texte": "5 × 500 jours (Jesu, mitis et humilis Corde, à chaque mystère)"
+    },
+    {
+     "jours": 300,
+     "repetitions": 5,
+     "texte": "5 × 300 jours (Dulce Cor Mariæ, sis salus mea)"
+    },
+    {
+     "jours": 300,
+     "repetitions": 5,
+     "texte": "5 × 300 jours (Mon Jésus, miséricorde !, cinq fois)"
+    },
+    {
+     "ans": 5,
+     "texte": "5 ans (Veni, Sancte Spiritus, avec ℣. Emitte et l'oraison)"
+    }
+   ],
+   "note": "« Dulce Cor Jesu, fac ut te magis ac magis diligam » n'est indulgencié qu'avec Pater, Ave et Gloria devant une image du Sacré-Cœur (n° 248) : non compté."
+  },
+  "hortus:triple-couronne-2": {
+   "ref": "Ench. 1952, n° 221 (Jesu, mitis), n° 386 (Dulce Cor Mariæ), n° 70 (Mon Jésus, miséricorde), n° 287 (Veni, Sancte Spiritus)",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "jours": 500,
+     "repetitions": 5,
+     "texte": "5 × 500 jours (Jesu, mitis et humilis Corde, à chaque mystère)"
+    },
+    {
+     "jours": 300,
+     "repetitions": 5,
+     "texte": "5 × 300 jours (Dulce Cor Mariæ, sis salus mea)"
+    },
+    {
+     "jours": 300,
+     "repetitions": 5,
+     "texte": "5 × 300 jours (Mon Jésus, miséricorde !, cinq fois)"
+    },
+    {
+     "ans": 5,
+     "texte": "5 ans (Veni, Sancte Spiritus, avec ℣. Emitte et l'oraison)"
+    }
+   ],
+   "note": "« Dulce Cor Jesu, fac ut te magis ac magis diligam » n'est indulgencié qu'avec Pater, Ave et Gloria devant une image du Sacré-Cœur (n° 248) : non compté."
+  },
+  "hortus:triple-couronne-3": {
+   "ref": "Ench. 1952, n° 221 (Jesu, mitis), n° 386 (Dulce Cor Mariæ), n° 70 (Mon Jésus, miséricorde), n° 287 (Veni, Sancte Spiritus)",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "jours": 500,
+     "repetitions": 5,
+     "texte": "5 × 500 jours (Jesu, mitis et humilis Corde, à chaque mystère)"
+    },
+    {
+     "jours": 300,
+     "repetitions": 5,
+     "texte": "5 × 300 jours (Dulce Cor Mariæ, sis salus mea)"
+    },
+    {
+     "jours": 300,
+     "repetitions": 5,
+     "texte": "5 × 300 jours (Mon Jésus, miséricorde !, cinq fois)"
+    },
+    {
+     "ans": 5,
+     "texte": "5 ans (Veni, Sancte Spiritus, avec ℣. Emitte et l'oraison)"
+    }
+   ],
+   "note": "« Dulce Cor Jesu, fac ut te magis ac magis diligam » n'est indulgencié qu'avec Pater, Ave et Gloria devant une image du Sacré-Cœur (n° 248) : non compté."
+  },
+  "hortus:chapelet-joyeux": {
+   "ref": "Ench. 1952, n° 395",
+   "frequence": "chaque fois",
+   "intention": "en méditant les mystères du Rosaire",
+   "partielles": [
+    {
+     "ans": 5,
+     "texte": "5 ans (un tiers du Rosaire)"
+    }
+   ],
+   "note": "10 ans, une fois le jour, si on le récite avec d'autres, en public ou en privé (n° 395 b) : non compté ici."
+  },
+  "hortus:chapelet-douloureux": {
+   "ref": "Ench. 1952, n° 395",
+   "frequence": "chaque fois",
+   "intention": "en méditant les mystères du Rosaire",
+   "partielles": [
+    {
+     "ans": 5,
+     "texte": "5 ans (un tiers du Rosaire)"
+    }
+   ],
+   "note": "10 ans, une fois le jour, si on le récite avec d'autres, en public ou en privé (n° 395 b) : non compté ici."
+  },
+  "hortus:chapelet-glorieux": {
+   "ref": "Ench. 1952, n° 395",
+   "frequence": "chaque fois",
+   "intention": "en méditant les mystères du Rosaire",
+   "partielles": [
+    {
+     "ans": 5,
+     "texte": "5 ans (un tiers du Rosaire)"
+    }
+   ],
+   "note": "10 ans, une fois le jour, si on le récite avec d'autres, en public ou en privé (n° 395 b) : non compté ici."
   }
  },
  "sans_compte": {

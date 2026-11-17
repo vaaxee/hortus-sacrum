@@ -20,29 +20,34 @@ export function textesDuJour(e: Pick<ElementListe, 'textes' | 'alterner' | 'roue
 		return remplacementsDuTemps(el?.texte ? [el.texte, ...e.textes.slice(1)] : e.textes, jour);
 	}
 	const choisis = !e.alterner || e.textes.length < 2 ? e.textes : [e.textes[(semaineDuMois(date) - 1) % e.textes.length]];
-	return remplacementsDuTemps(petitBreviaireDuJour(jaculatoiresDuJour(avecLePropre(choisis, date), date), date), jour);
+	return remplacementsDuTemps(jaculatoiresDuJour(selonLeJour(choisis, date), date), jour);
 }
 
 /**
- * Triple Couronne d'or : l'ordinaire est suivi du propre de la couronne du jour (invocation et mystères) :
- * 1re lundi, mercredi, samedi ; 2e mardi, vendredi ; 3e jeudi, dimanche (Jardin, p. 21-25).
+ * Lignes dont la prière change selon le jour de la semaine (dimanche → samedi) : un identifiant « du jour » remplacé par la page du jour.
+ *  - Triple Couronne d'or : 1re lundi, mercredi, samedi ; 2e mardi, vendredi ; 3e jeudi, dimanche (Jardin, p. 21-25) ;
+ *  - Chapelet : joyeux lundi et jeudi ; douloureux mardi et vendredi ; glorieux mercredi, samedi et dimanche ;
+ *  - Petit bréviaire du Sacré-Cœur : un office par jour (Nancy, 1883).
  */
-const TRIPLE = 'jardin:la-triple-couronne-d-or-du-sacre-c-ur-de-jesus';
-const COURONNES = [
-	'jardin:troisieme-couronne-le-sacre-c-ur-de-jesus-dans-l-eucharistie', // dimanche
-	'jardin:premiere-couronne-le-sacre-c-ur-de-jesus-dans-son-incarnatio', // lundi
-	'jardin:deuxieme-couronne-le-sacre-c-ur-de-jesus-dans-sa-passion', // mardi
-	'jardin:premiere-couronne-le-sacre-c-ur-de-jesus-dans-son-incarnatio', // mercredi
-	'jardin:troisieme-couronne-le-sacre-c-ur-de-jesus-dans-l-eucharistie', // jeudi
-	'jardin:deuxieme-couronne-le-sacre-c-ur-de-jesus-dans-sa-passion', // vendredi
-	'jardin:premiere-couronne-le-sacre-c-ur-de-jesus-dans-son-incarnatio' // samedi
-];
-export function avecLePropre(ids: string[], date: string): string[] {
-	const i = ids.indexOf(TRIPLE);
-	if (i < 0) return ids;
-	const propre = COURONNES[new Date(date + 'T12:00:00').getDay()];
-	if (ids.includes(propre)) return ids;
-	return [...ids.slice(0, i + 1), propre, ...ids.slice(i + 1)];
+const TC = (n: number) => `hortus:triple-couronne-${n}`;
+const CH = (n: string) => `hortus:chapelet-${n}`;
+export const SELON_LE_JOUR: Record<string, string[]> = {
+	'hortus:triple-couronne-du-jour': [TC(3), TC(1), TC(2), TC(1), TC(3), TC(2), TC(1)],
+	'hortus:chapelet-du-jour': [CH('glorieux'), CH('joyeux'), CH('douloureux'), CH('glorieux'), CH('joyeux'), CH('douloureux'), CH('glorieux')],
+	'hortus:petit-breviaire-du-jour': ['dimanche', 'lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi'].map((j) => `breviaire-sc:office-${j}`)
+};
+/** Libellés des identifiants « du jour » (éditeur de la liste). */
+export const LIBELLES_DU_JOUR: Record<string, string> = {
+	'hortus:triple-couronne-du-jour': 'Couronne du jour (selon le jour de la semaine)',
+	'hortus:chapelet-du-jour': 'Chapelet du jour (selon le jour de la semaine)',
+	'hortus:petit-breviaire-du-jour': 'Office du jour (selon le jour de la semaine)',
+	'hortus:jaculatoires-du-jour': 'Dix jaculatoires, à tour de rôle'
+};
+/** Les trois chapelets, pour passer de l'un à l'autre (rosaire entier). */
+export const CHAPELETS = [CH('joyeux'), CH('douloureux'), CH('glorieux')];
+export function selonLeJour(ids: string[], date: string): string[] {
+	const j = new Date(date + 'T12:00:00').getDay();
+	return ids.map((id) => SELON_LE_JOUR[id]?.[j] ?? id);
 }
 
 /**
@@ -98,18 +103,6 @@ export function jaculatoiresDuJour(ids: string[], date: string): string[] {
 	const jourN = Math.floor(Date.parse(date + 'T12:00:00Z') / 86400000);
 	const debut = ((jourN % 4) + 4) % 4 * 10;
 	return [...ids.slice(0, i), ...JACULATOIRES.slice(debut, debut + 10), ...ids.slice(i + 1)];
-}
-
-/**
- * Ligne « Petit bréviaire du Sacré-Cœur » : l'office du jour de la semaine (Nancy, 1883 ; un office par jour).
- */
-export const PETIT_BREVIAIRE_DU_JOUR = 'hortus:petit-breviaire-du-jour';
-const JOURS_BREVIAIRE = ['dimanche', 'lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi'];
-export function petitBreviaireDuJour(ids: string[], date: string): string[] {
-	const i = ids.indexOf(PETIT_BREVIAIRE_DU_JOUR);
-	if (i < 0) return ids;
-	const office = `breviaire-sc:office-${JOURS_BREVIAIRE[new Date(date + 'T12:00:00').getDay()]}`;
-	return [...ids.slice(0, i), office, ...ids.slice(i + 1)];
 }
 
 /**
