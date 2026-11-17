@@ -124,6 +124,8 @@ export interface ElementListe extends Base {
 	rang?: Rang;
 	/** Ligne « choisie par la roue » : identifiant de la roue (pratique de type roue) dont l'élément du jour donne la prière. */
 	roue?: string;
+	/** Durée réglée à la main (minutes, pour une récitation) ; absente : estimée d'après le texte. */
+	duree?: number;
 	actif: boolean;
 }
 

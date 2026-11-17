@@ -19,7 +19,29 @@ export function textesDuJour(e: Pick<ElementListe, 'textes' | 'alterner' | 'roue
 		return remplacementsDuTemps(el?.texte ? [el.texte] : e.textes, jour);
 	}
 	const choisis = !e.alterner || e.textes.length < 2 ? e.textes : [e.textes[(semaineDuMois(date) - 1) % e.textes.length]];
-	return remplacementsDuTemps(choisis, jour);
+	return remplacementsDuTemps(avecLePropre(choisis, date), jour);
+}
+
+/**
+ * Triple Couronne d'or : l'ordinaire est suivi du propre de la couronne du jour (invocation et mystères) :
+ * 1re lundi, mercredi, samedi ; 2e mardi, vendredi ; 3e jeudi, dimanche (Jardin, p. 21-25).
+ */
+const TRIPLE = 'jardin:la-triple-couronne-d-or-du-sacre-c-ur-de-jesus';
+const COURONNES = [
+	'jardin:troisieme-couronne-le-sacre-c-ur-de-jesus-dans-l-eucharistie', // dimanche
+	'jardin:premiere-couronne-le-sacre-c-ur-de-jesus-dans-son-incarnatio', // lundi
+	'jardin:deuxieme-couronne-le-sacre-c-ur-de-jesus-dans-sa-passion', // mardi
+	'jardin:premiere-couronne-le-sacre-c-ur-de-jesus-dans-son-incarnatio', // mercredi
+	'jardin:troisieme-couronne-le-sacre-c-ur-de-jesus-dans-l-eucharistie', // jeudi
+	'jardin:deuxieme-couronne-le-sacre-c-ur-de-jesus-dans-sa-passion', // vendredi
+	'jardin:premiere-couronne-le-sacre-c-ur-de-jesus-dans-son-incarnatio' // samedi
+];
+export function avecLePropre(ids: string[], date: string): string[] {
+	const i = ids.indexOf(TRIPLE);
+	if (i < 0) return ids;
+	const propre = COURONNES[new Date(date + 'T12:00:00').getDay()];
+	if (ids.includes(propre)) return ids;
+	return [...ids.slice(0, i + 1), propre, ...ids.slice(i + 1)];
 }
 
 /**

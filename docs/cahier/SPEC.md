@@ -188,3 +188,61 @@ L'utilisateur peut ajouter, retirer ou modifier à la main à peu près tout, da
 - Les règles sur les sources s'appliquent à ce que l'assistant ajoute. Les ajouts de l'utilisateur ne sont pas bloqués : ils sont marqués « Ajout personnel ».
 
 **Décisions liées** : pas de propre de France (calendrier romain universel ; fêtes personnelles ajoutées dans l'app) ; « Ave Maria de la mort » retiré ; chapelet des Morts (Pie IX, 1873) à la place des 50 Requiem ; prières du matin et du soir du *Paroissien romain* (Tours, Mame, 1890).
+
+## 10. Critique du 17 novembre 2026 et réponses (prioritaire)
+
+Règle commune : « faire le plus de dévotion avec le moins d'actes séparés, pour garder du temps pour le devoir d'état ».
+
+### Améliorations
+1. **Martyrologe chanté** : pour **chaque** saint ou groupe nommé au Martyrologe du jour, une invocation latine
+   chantable tirée du Martyrologe romain latin (nom, qualité, lieu), terminée par « ora pro nobis » :
+   ex. « Sancta Barbara, virgo Nicomediae, ora pro nobis peccatoribus. Amen. »
+2. **Dévotions combinées** : **fusion dans la ligne**. Quand deux dévotions peuvent se dire en un seul acte, la
+   ligne contient directement la forme combinée et les deux sont cochées ensemble (réglable dans « Régler la liste »).
+   Ex. : les 3 Ave de l'introduction du chapelet remplacés par les 3 Ave révélés à sainte Gertrude (un pour chaque
+   Personne de la Trinité, pour une bonne mort). Chercher d'autres combinaisons du même genre.
+3. **Rosaire, méthode de saint Louis-Marie de Montfort** sur la page du chapelet ; clausules **toutes de Montfort**
+   (*Le Secret admirable du très saint Rosaire*, méthodes de réciter), 2 par mystère (30), latin et français.
+4. **Angélus → Regina cæli au temps pascal** : déjà en place (`remplacementsDuTemps`, Beringer 1925 n° 428).
+5. **Cordon de saint Joseph** : avant chacun des 7 Gloria, une invocation des **Litanies de saint Joseph**
+   (Joseph très chaste, très prudent, très obéissant, très fidèle, miroir de patience, amant de la pauvreté,
+   modèle des travailleurs), latin et français.
+6. **Sub tuum** : avant les versets, les invocations « Domina nostra, mediatrix nostra, advocata nostra, tuo Filio
+   nos reconcilia, tuo Filio nos commenda, tuo Filio nos repræsenta », latin et français (source ancienne à citer).
+
+### Corrections
+1. **Méditations** : relire sur le scan **tous** les recueils, dans l'ordre où ils s'affichent (Mois des âmes,
+   Hamon, Chaignon, Guéranger, Visites).
+2. **Indulgences** : une invocation indulgenciée répétée dans une prière compte autant de fois qu'elle est dite.
+3. **Dévotions « terminées » sans avoir été commencées** : les dévotions du plan dont la date est passée ne doivent
+   pas s'afficher « terminées » (dire « passée » ou « manquée » selon qu'elle a été commencée ou non).
+4. **Triple Couronne d'or** : la ligne du jour doit montrer l'invocation propre et les mystères de la couronne du
+   jour (1re lun. mer. sam. ; 2e mar. ven. ; 3e jeu. dim.).
+
+### Ajouts
+1. **Petit bréviaire du Sacré-Cœur de Jésus** (petits offices pour chaque jour de la semaine et exercice pendant la
+   messe, tirés de sainte Marguerite-Marie ; Nancy, Le Chevallier, 13e éd., imprimatur 21 mars 1883 ; PDF fourni).
+2. **Prières et promesses de sainte Gertrude** : l'utilisateur envoie le PDF de l'édition à suivre.
+3. **Jaculatoires indulgenciées** : un recueil classé par rapport indulgence / longueur (Ench. 1952) **et** une
+   ligne du jour avec les 10 meilleures, qui tournent ; chacune compte dans le total.
+4. **Apostolat de la prière** : offrande quotidienne et pratiques (P. Ramière / Gautrelet, XIXe s.), sans les
+   intentions mensuelles récentes.
+5. **Sainte Face** : compléter d'après le Manuel de l'Archiconfrérie (Janvier, Tours 1895, PDF fourni).
+6. **Scapulaire de bénédiction et de protection** (Marie-Julie Jahenny, extase du 23 août 1878, d'après *La Bonne
+   Nouvelle*) : port du scapulaire ; 5 ou 7 *Crux ave* ; 1 à 3 minutes de méditation de la Passion ; les trois
+   salutations à Jésus crucifié ; intentions (texte fourni par l'utilisateur le 17 nov.).
+7. **Durée** : chaque prière a une durée **estimée d'après la longueur du texte** (récitation vocale), méditation et
+   chapelet à durée fixe, toutes **modifiables à la main** ; total du jour en tête de liste.
+
+### Cadre pratique : étiquettes et bilan du jour
+Chaque prière reçoit des étiquettes ; l'écran du jour montre un **bilan** (ce qui est couvert, ce qui manque) et
+propose une prière pour combler un manque. Le calendrier quotidien ne fait qu'instancier ces catégories.
+- **Fins** : adoration, action de grâces, réparation, demande, intercession.
+- **Objets** : Dieu / Trinité, Jésus-Christ, Eucharistie, Sacré-Cœur, sainte Vierge, Cœur immaculé, saint Joseph,
+  anges, saints, âmes du purgatoire, sainte Face, etc.
+- **Grâces à demander** : salut, persévérance finale, sanctification, charité, vertus, préservation du péché,
+  protection physique et santé, vocation / devoir d'état, grâces temporelles.
+- **Personnes** : soi-même, famille, amis, ennemis, pécheurs, Église et prêtres, dirigeants, mourants, âmes du
+  purgatoire.
+- **Pratiques** : messe, office, oraison, méditation, chapelet, examen, lecture spirituelle, dévotions, pénitence,
+  actes jaculatoires.
