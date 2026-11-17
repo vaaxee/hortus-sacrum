@@ -582,6 +582,7 @@ export async function amorcerSources(fetchFn: typeof fetch = fetch): Promise<voi
 	if (!rep.ok) return;
 	const doc = (await rep.json()) as { pieces: Omit<Texte, 'origine' | 'ordre' | 'creeLe' | 'modifieLe'>[] };
 	const livres = new Set(((await db.meta.get('sources'))?.valeur as string[] | undefined) ?? []);
+	await reviser(doc.pieces as (Texte & { revision?: number })[]);
 	const nouveaux = doc.pieces.filter((p) => !livres.has(p.id));
 	if (!nouveaux.length) return;
 	const dernier = await db.textes.orderBy('ordre').last();
@@ -602,6 +603,27 @@ export async function amorcerSources(fetchFn: typeof fetch = fetch): Promise<voi
 		await db.liste.put(intact ? { ...neuf, original: contenu(neuf) } : neuf);
 	}
 	await db.meta.put({ cle: 'sources', valeur: [...livres] });
+}
+
+/**
+ * Corrections des textes déjà livrés : une pièce dont la `revision` (data) dépasse celle déjà appliquée remplace le texte
+ * en base, seulement si l'utilisateur ne l'a pas modifié (meta « revisions » : id → révision appliquée).
+ */
+async function reviser(pieces: (Texte & { revision?: number })[]): Promise<void> {
+	const faites = ((await db.meta.get('revisions'))?.valeur as Record<string, number> | undefined) ?? {};
+	let change = false;
+	for (const p of pieces) {
+		if (!p.revision || (faites[p.id] ?? 0) >= p.revision) continue;
+		faites[p.id] = p.revision;
+		change = true;
+		const t = await db.textes.get(p.id);
+		if (!t || !(t.modifieLe === DEPART || t.original === contenu(t))) continue;
+		const { revision: _r, ...brut } = p;
+		const x = { ...t, ...brut } as Texte;
+		x.original = contenu(x);
+		await db.textes.put(x);
+	}
+	if (change) await db.meta.put({ cle: 'revisions', valeur: faites });
 }
 
 /**

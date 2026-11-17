@@ -26,5 +26,5 @@ Les points réglés sont gardés pour l'historique. Dernière mise à jour : 13 
 - **29 pièces du livret sans ligne « source »** : rattacher leur provenance à partir de `docs/notes_sources/`. Quatre actes du matin et les cinq Devoirs de charité n'ont aucune piste dans le dossier.
 - ~~*Traité de la vraie dévotion*, n° 227-233~~ : **fait** (14 nov.), édition Gaume 1843, p. 200-204 (préparation) et p. 204 (petite couronne).
 - **Promesses de saint Michel** (notice du chapelet de saint Michel, apparition de 1751 à Antonia d'Astonaco) : à vérifier mot pour mot sur la *Raccolta* (1910) ou une autre édition ancienne. (Audit du 17 nov. : la seule mention trouvée dans les notes venait d'un site banni ; la mention a été retirée.)
-- **Invocations du Sub tuum** (« Domina nostra, mediatrix nostra, advocata nostra… ») : aucune source imprimée ancienne trouvée. À fournir.
+- ~~Invocations du Sub tuum~~ : **fait** (17 nov.), texte latin de christusregnat.com fourni par l’utilisateur ; traduction française à fournir.
 - **Prières de sainte Gertrude** (Denis, 11e éd., Lethielleux) : choisir les prières à transcrire ; trois Ave de sainte Mechtilde faits.
