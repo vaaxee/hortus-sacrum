@@ -253,6 +253,11 @@ propose une prière pour combler un manque. Le calendrier quotidien ne fait qu'i
 - **Pratiques** : messe, office, oraison, méditation, chapelet, examen, lecture spirituelle, dévotions, pénitence,
   actes jaculatoires.
 
+*Fait :* `app/src/lib/etiquettes.ts`. Les étiquettes sont déduites du titre et du texte par mots-clés ; elles se corrigent
+par des cases à cocher dans la fiche de la prière, et celles de l’utilisateur remplacent alors les étiquettes déduites. Le
+bilan du jour, sur l’écran du jour, montre pour chaque catégorie ce qui est couvert et ce qui manque, avec la prière la plus
+courte de la bibliothèque qui comble chaque manque.
+
 ### Corrections du 17 novembre au soir (prioritaire)
 
 1. **Une page par prière composée.** Quand une ligne réunit plusieurs textes, on les présente en **une seule page**, celle

@@ -32,6 +32,8 @@ export interface Texte extends Base {
 	indulgence: string;
 	source: Source;
 	favori?: boolean;
+	/** Étiquettes du cadre pratique, réglées par l’utilisateur (sinon déduites du texte : etiquettes.ts). */
+	etiquettes?: string[];
 	ordre: number;
 }
 
