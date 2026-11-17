@@ -24,7 +24,12 @@ const cache = new Map<string, Promise<Recueil | null>>();
 
 export function chargerRecueil(id: string, fetchFn: typeof fetch = fetch): Promise<Recueil | null> {
 	if (!cache.has(id)) {
-		cache.set(id, fetchFn(`/data/recueils/${id}.json`).then((r) => (r.ok ? (r.json() as Promise<Recueil>) : null)).catch(() => null));
+		cache.set(
+			id,
+			fetchFn(`/data/recueils/${id}.json`)
+				.then((r) => (r.ok ? (r.json() as Promise<Recueil>) : null))
+				.catch(() => null)
+		);
 	}
 	return cache.get(id)!;
 }
@@ -73,20 +78,40 @@ export interface Choix {
  * Les autres méditations propres au jour (fête dans l'un ou l'autre recueil) suivent, au choix.
  */
 /** Recueil propre à chaque mois de dévotion (mois → identifiant). */
-export const RECUEIL_DU_MOIS: Record<number, string> = { 3: 'mois-joseph', 5: 'mois-marie', 6: 'mois-sacre-coeur', 7: 'mois-precieux-sang', 11: 'mois-purgatoire' };
+export const RECUEIL_DU_MOIS: Record<number, string> = {
+	3: 'mois-joseph',
+	5: 'mois-marie',
+	6: 'mois-sacre-coeur',
+	7: 'mois-precieux-sang',
+	11: 'mois-purgatoire'
+};
 
 /** Nom court d'un recueil, pour les boutons de choix. */
 export const NOM_COURT: Record<string, string> = {
-	'index/hamon': 'Hamon', 'index/chaignon': 'Chaignon', 'index/mois-joseph': 'Mois de saint Joseph', 'index/mois-marie': 'Mois de Marie',
-	'index/mois-sacre-coeur': 'Mois du Sacré-Cœur', 'index/mois-precieux-sang': 'Mois du Précieux Sang', 'index/mois-purgatoire': 'Mois des âmes',
-	hamon: 'Hamon', chaignon: 'Chaignon', 'mois-joseph': 'Mois de saint Joseph', 'mois-marie': 'Mois de Marie',
-	'mois-sacre-coeur': 'Mois du Sacré-Cœur', 'mois-precieux-sang': 'Mois du Précieux Sang', 'mois-purgatoire': 'Mois des âmes'
+	'index/hamon': 'Hamon',
+	'index/chaignon': 'Chaignon',
+	'index/mois-joseph': 'Mois de saint Joseph',
+	'index/mois-marie': 'Mois de Marie',
+	'index/mois-sacre-coeur': 'Mois du Sacré-Cœur',
+	'index/mois-precieux-sang': 'Mois du Précieux Sang',
+	'index/mois-purgatoire': 'Mois des âmes',
+	hamon: 'Hamon',
+	chaignon: 'Chaignon',
+	'mois-joseph': 'Mois de saint Joseph',
+	'mois-marie': 'Mois de Marie',
+	'mois-sacre-coeur': 'Mois du Sacré-Cœur',
+	'mois-precieux-sang': 'Mois du Précieux Sang',
+	'mois-purgatoire': 'Mois des âmes'
 };
 
 /** Pendant un mois de dévotion, la méditation du recueil du mois passe en tête ; les autres restent au choix. */
 export function choisirAvecMois(
-	date: string, jour: Pick<Jour, 'tempora'> | undefined | null, annee: Pick<Jour, 'date' | 'tempora'>[],
-	hamon: Recueil | null, chaignon: Recueil | null, mois: Recueil | null
+	date: string,
+	jour: Pick<Jour, 'tempora'> | undefined | null,
+	annee: Pick<Jour, 'date' | 'tempora'>[],
+	hamon: Recueil | null,
+	chaignon: Recueil | null,
+	mois: Recueil | null
 ): Choix[] {
 	const base = choisir(date, jour, annee, hamon, chaignon);
 	const e = mois?.entrees.find((x) => x.cle === `J:${Number(date.slice(8, 10))}`);
@@ -94,13 +119,18 @@ export function choisirAvecMois(
 }
 
 export function choisir(
-	date: string, jour: Pick<Jour, 'tempora'> | undefined | null, annee: Pick<Jour, 'date' | 'tempora'>[],
-	hamon: Recueil | null, chaignon: Recueil | null
+	date: string,
+	jour: Pick<Jour, 'tempora'> | undefined | null,
+	annee: Pick<Jour, 'date' | 'tempora'>[],
+	hamon: Recueil | null,
+	chaignon: Recueil | null
 ): Choix[] {
 	const h = hamon ? entreesDuJour(hamon, date, jour).map((entree) => ({ recueil: hamon, entree })) : [];
 	const cPropres = chaignon
-		? entreesDuJour({ ...chaignon, entrees: chaignon.entrees.filter((e) => !e.cle?.startsWith('S:')) }, date, jour)
-			.map((entree) => ({ recueil: chaignon, entree }))
+		? entreesDuJour({ ...chaignon, entrees: chaignon.entrees.filter((e) => !e.cle?.startsWith('S:')) }, date, jour).map((entree) => ({
+				recueil: chaignon,
+				entree
+			}))
 		: [];
 	const fete = h.some((x) => x.entree.cle?.startsWith('D:') || x.entree.cle?.startsWith('F:'));
 	if (chaignon && estOrdinaire(date, jour) && !fete) {
@@ -120,9 +150,13 @@ let indexG: Promise<IndexGueranger | null> | null = null;
 const volumesG = new Map<number, Promise<EntreeRecueil[]>>();
 
 export async function lecturesDuJour(
-	date: string, jour?: Pick<Jour, 'tempora'> | null, fetchFn: typeof fetch = fetch
+	date: string,
+	jour?: Pick<Jour, 'tempora'> | null,
+	fetchFn: typeof fetch = fetch
 ): Promise<{ recueil: Omit<Recueil, 'entrees'>; entrees: EntreeRecueil[] }> {
-	indexG ??= fetchFn('/data/recueils/gueranger/index.json').then((r) => (r.ok ? r.json() : null)).catch(() => null);
+	indexG ??= fetchFn('/data/recueils/gueranger/index.json')
+		.then((r) => (r.ok ? r.json() : null))
+		.catch(() => null);
 	const ix = await indexG;
 	if (!ix) return { recueil: { id: 'gueranger', titre: '', auteur: '', editions: {}, provenance: '' }, entrees: [] };
 	const { index, ...recueil } = ix;
@@ -132,8 +166,13 @@ export async function lecturesDuJour(
 		const entrees: EntreeRecueil[] = [];
 		for (const [v, r] of refs) {
 			if (!volumesG.has(v)) {
-				volumesG.set(v, fetchFn(`/data/recueils/gueranger/v${String(v).padStart(2, '0')}.json`)
-					.then((x) => (x.ok ? x.json() : { entrees: [] })).then((d) => d.entrees as EntreeRecueil[]).catch(() => []));
+				volumesG.set(
+					v,
+					fetchFn(`/data/recueils/gueranger/v${String(v).padStart(2, '0')}.json`)
+						.then((x) => (x.ok ? x.json() : { entrees: [] }))
+						.then((d) => d.entrees as EntreeRecueil[])
+						.catch(() => [])
+				);
 			}
 			const e = (await volumesG.get(v)!)[r];
 			if (e) entrees.push(e);

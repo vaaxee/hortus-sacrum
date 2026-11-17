@@ -6,10 +6,7 @@
 	import { nettoyer } from '#lib/markup.ts';
 	import { SOURCE_VIDE, type Texte } from '#lib/types.ts';
 
-	const parties = vivant(
-		async () => [...new Set((await db.textes.toArray()).map((t) => t.partie).filter(Boolean))],
-		[] as string[]
-	);
+	const parties = vivant(async () => [...new Set((await db.textes.toArray()).map((t) => t.partie).filter(Boolean))], [] as string[]);
 
 	let mode: 'clavier' | 'coller' = $state('clavier');
 	let brut = $state('');
@@ -77,8 +74,8 @@
 			<textarea rows="12" bind:value={brut} placeholder="Texte copié d’une page, d’un PDF…"></textarea>
 		</label>
 		<p class="petit">
-			Le nettoyage recolle les mots coupés en fin de ligne, retire les sauts de ligne parasites et les espaces doubles,
-			et reconnaît les ℣ et ℟. Il ne change aucun mot. Vous corrigez ensuite dans l’aperçu.
+			Le nettoyage recolle les mots coupés en fin de ligne, retire les sauts de ligne parasites et les espaces doubles, et reconnaît les ℣
+			et ℟. Il ne change aucun mot. Vous corrigez ensuite dans l’aperçu.
 		</p>
 		<button class="principal" disabled={!brut.trim()} onclick={passerAuNettoyage}>Nettoyer et prévisualiser</button>
 	{:else}
@@ -86,7 +83,9 @@
 			<div class="rapport epreuve">
 				<strong>Nettoyage :</strong>
 				{#if rapport.length}
-					<ul>{#each rapport as r}<li>{r}</li>{/each}</ul>
+					<ul>
+						{#each rapport as r}<li>{r}</li>{/each}
+					</ul>
 				{:else}
 					rien à corriger.
 				{/if}
@@ -104,10 +103,26 @@
 </main>
 
 <style>
-	.modes { margin: 1rem 0; }
-	.modes button[aria-pressed='true'] { border-color: var(--hs-rubrique); color: var(--hs-rubrique); }
-	.rapport { font-size: 1rem; margin-bottom: var(--hs-e4); padding: var(--hs-e4); }
-	.rapport ul { margin: 0.3rem 0; padding-left: 1.2rem; }
-	.actions { margin-top: 1.2rem; }
-	.erreur { color: var(--hs-rubrique); }
+	.modes {
+		margin: 1rem 0;
+	}
+	.modes button[aria-pressed='true'] {
+		border-color: var(--hs-rubrique);
+		color: var(--hs-rubrique);
+	}
+	.rapport {
+		font-size: 1rem;
+		margin-bottom: var(--hs-e4);
+		padding: var(--hs-e4);
+	}
+	.rapport ul {
+		margin: 0.3rem 0;
+		padding-left: 1.2rem;
+	}
+	.actions {
+		margin-top: 1.2rem;
+	}
+	.erreur {
+		color: var(--hs-rubrique);
+	}
 </style>

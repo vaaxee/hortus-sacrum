@@ -11,19 +11,65 @@ const sansAccent = (s: string) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toL
 
 /** Titres au génitif (singulier, puis pluriel) → forme d'invocation (vocatif singulier ; nominatif pluriel). */
 const TITRES: Record<string, string> = {
-	episcopi: 'episcope', martyris: 'martyr', confessoris: 'confessor', virginis: 'virgo', abbatis: 'abbas', diaconi: 'diacone',
-	presbyteri: 'presbyter', papae: 'papa', pontificis: 'pontifex', doctoris: 'doctor', cardinalis: 'cardinalis', regis: 'rex',
-	reginae: 'regina', viduae: 'vidua', monachi: 'monache', eremitae: 'eremita', apostoli: 'apostole', evangelistae: 'evangelista',
-	levitae: 'levita', militis: 'miles', abbatissae: 'abbatissa', prophetae: 'propheta', sacerdotis: 'sacerdos', subdiaconi: 'subdiacone',
-	lectoris: 'lector', exorcistae: 'exorcista', patriarchae: 'patriarcha', archiepiscopi: 'archiepiscope', anachoretae: 'anachoreta',
-	matris: 'mater', pueri: 'puer', infantis: 'infans', poenitentis: 'pœnitens', imperatoris: 'imperator', imperatricis: 'imperatrix',
-	martyrum: 'martyres', virginum: 'virgines', episcoporum: 'episcopi', confessorum: 'confessores', monachorum: 'monachi',
-	presbyterorum: 'presbyteri', diaconorum: 'diaconi', militum: 'milites', fratrum: 'fratres', sororum: 'sorores', abbatum: 'abbates',
-	pontificum: 'pontifices', tribuni: 'tribune', solitarii: 'solitarie', reclusi: 'recluse', apostolorum: 'apostoli', puerorum: 'pueri', virorum: 'viri', mulierum: 'mulieres', sociorum: 'socii'
+	episcopi: 'episcope',
+	martyris: 'martyr',
+	confessoris: 'confessor',
+	virginis: 'virgo',
+	abbatis: 'abbas',
+	diaconi: 'diacone',
+	presbyteri: 'presbyter',
+	papae: 'papa',
+	pontificis: 'pontifex',
+	doctoris: 'doctor',
+	cardinalis: 'cardinalis',
+	regis: 'rex',
+	reginae: 'regina',
+	viduae: 'vidua',
+	monachi: 'monache',
+	eremitae: 'eremita',
+	apostoli: 'apostole',
+	evangelistae: 'evangelista',
+	levitae: 'levita',
+	militis: 'miles',
+	abbatissae: 'abbatissa',
+	prophetae: 'propheta',
+	sacerdotis: 'sacerdos',
+	subdiaconi: 'subdiacone',
+	lectoris: 'lector',
+	exorcistae: 'exorcista',
+	patriarchae: 'patriarcha',
+	archiepiscopi: 'archiepiscope',
+	anachoretae: 'anachoreta',
+	matris: 'mater',
+	pueri: 'puer',
+	infantis: 'infans',
+	poenitentis: 'pœnitens',
+	imperatoris: 'imperator',
+	imperatricis: 'imperatrix',
+	martyrum: 'martyres',
+	virginum: 'virgines',
+	episcoporum: 'episcopi',
+	confessorum: 'confessores',
+	monachorum: 'monachi',
+	presbyterorum: 'presbyteri',
+	diaconorum: 'diaconi',
+	militum: 'milites',
+	fratrum: 'fratres',
+	sororum: 'sorores',
+	abbatum: 'abbates',
+	pontificum: 'pontifices',
+	tribuni: 'tribune',
+	solitarii: 'solitarie',
+	reclusi: 'recluse',
+	apostolorum: 'apostoli',
+	puerorum: 'pueri',
+	virorum: 'viri',
+	mulierum: 'mulieres',
+	sociorum: 'socii'
 };
 /** Invocations connues par un chant (le lieu y est, et fait partie de l'air) : nom au vocatif → invocation. */
 const CHANTS: Record<string, string> = {
-	'Bárbara': 'Sancta Bárbara, virgo Nicomedíæ, ora pro nobis peccatoribus. Amen.'
+	Bárbara: 'Sancta Bárbara, virgo Nicomedíæ, ora pro nobis peccatoribus. Amen.'
 };
 /** Mots de liaison dans la liste des titres. */
 const ET = new Set(['et', 'ac', 'atque']);
@@ -49,7 +95,6 @@ export function vocatif(nom: string): string {
 	);
 }
 
-
 export interface InvocationLatine {
 	texte: string;
 	pluriel: boolean;
@@ -66,8 +111,15 @@ export function invocationLatine(eloge: string | null | undefined): InvocationLa
 	const beat = sujet.startsWith('beat');
 	// segment du sujet : jusqu'à la première relative ou au premier point-virgule
 	const debut = m.index + m[0].length;
-	const segment = eloge.slice(debut).split(/[;:.(]|,\s*(?:qui|quæ|quod|cujus|quorum|quarum|ubi|sub|cum|in|a|ab|ex|apud|cognomento|cognoménto)\b|\s(?:quos|quas|quibus|quorum|quarum|qui|quæ)\b/iu)[0];
-	const groupes = segment.split(/\s*,\s*|\s+(?:et|ac|atque)\s+/u).map((g) => g.trim()).filter(Boolean);
+	const segment = eloge
+		.slice(debut)
+		.split(
+			/[;:.(]|,\s*(?:qui|quæ|quod|cujus|quorum|quarum|ubi|sub|cum|in|a|ab|ex|apud|cognomento|cognoménto)\b|\s(?:quos|quas|quibus|quorum|quarum|qui|quæ)\b/iu
+		)[0];
+	const groupes = segment
+		.split(/\s*,\s*|\s+(?:et|ac|atque)\s+/u)
+		.map((g) => g.trim())
+		.filter(Boolean);
 	const noms: string[] = [];
 	const titres: string[] = [];
 	let socii = false;
@@ -80,10 +132,15 @@ export function invocationLatine(eloge: string | null | undefined): InvocationLa
 		if (noms.length && !pluriel && /^\p{Ll}/u.test(mots[0]) && !TITRES[sansAccent(mots[0])]) break;
 		// au singulier, un groupe de titres ne peut contenir, en plus, que des adjectifs de lieu (« Ravennátis ») ;
 		// sinon il parle d'un autre (« Regis Hungarórum Andréæ fíliæ ») : on s'arrête
-		if (noms.length && !pluriel && mots.some((w) => {
-			const k = sansAccent(w);
-			return !TITRES[k] && !ORNEMENTS.has(k) && !ET.has(k) && !/(atis|ensis|ensium|anus|ani|ini)$/.test(k);
-		})) break;
+		if (
+			noms.length &&
+			!pluriel &&
+			mots.some((w) => {
+				const k = sansAccent(w);
+				return !TITRES[k] && !ORNEMENTS.has(k) && !ET.has(k) && !/(atis|ensis|ensium|anus|ani|ini)$/.test(k);
+			})
+		)
+			break;
 		const personne: string[] = [];
 		let particule = false;
 		let apresTitre = false;
@@ -91,26 +148,46 @@ export function invocationLatine(eloge: string | null | undefined): InvocationLa
 			const k = sansAccent(mot);
 			const etaitTitre = apresTitre;
 			apresTitre = !!TITRES[k];
-			if (k === 'sociorum' || k === 'aliorum' || k === 'sociarum' || k === 'aliarum') { socii = true; finNoms = true; break; }
-			if (k === 'regis' && personne.length) { personne.push(mot); continue; } // « Joánnis-Francísci Regis » : nom, non titre
+			if (k === 'sociorum' || k === 'aliorum' || k === 'sociarum' || k === 'aliarum') {
+				socii = true;
+				finNoms = true;
+				break;
+			}
+			if (k === 'regis' && personne.length) {
+				personne.push(mot);
+				continue;
+			} // « Joánnis-Francísci Regis » : nom, non titre
 			if (TITRES[k]) {
 				// au pluriel, les titres de chacun (« Diodóri Presbýteri ») ne qualifient pas le groupe
-				if (!pluriel || /um$/.test(k)) { if (!titres.includes(TITRES[k])) titres.push(TITRES[k]); }
+				if (!pluriel || /um$/.test(k)) {
+					if (!titres.includes(TITRES[k])) titres.push(TITRES[k]);
+				}
 				if (noms.length && !pluriel) finNoms = true;
 				continue;
 			}
-			if (ORNEMENTS.has(k)) { titres.push('Ecclesiæ'); continue; }
-			if (personne.length && /^(de|a|ab)$/.test(k)) { particule = true; personne.push(mot); continue; }
+			if (ORNEMENTS.has(k)) {
+				titres.push('Ecclesiæ');
+				continue;
+			}
+			if (personne.length && /^(de|a|ab)$/.test(k)) {
+				particule = true;
+				personne.push(mot);
+				continue;
+			}
 			if (/^\p{Lu}/u.test(mot) && !/(orum|arum)$/.test(k)) {
 				if (finNoms) {
 					// adjectif de lieu juste après un titre (« Epíscopi Ravennátis ») : sauté ; autre personne (« Andréæ Regis ») : fin
 					if (etaitTitre) continue;
-					arret = true; break;
+					arret = true;
+					break;
 				}
 				personne.push(particule ? mot : mot.split('-').map(vocatif).join('-')); // après « a », « de » : le mot reste tel quel (« a Cruce »)
 				continue;
 			}
-			if (personne.length) { if (!pluriel) finNoms = true; break; } // mot en minuscule : fin du nom
+			if (personne.length) {
+				if (!pluriel) finNoms = true;
+				break;
+			} // mot en minuscule : fin du nom
 		}
 		while (personne.length && /^(de|a|ab)$/i.test(personne[personne.length - 1])) personne.pop();
 		if (personne.length && (!finNoms || !noms.length)) noms.push(personne.join(' '));
@@ -119,7 +196,21 @@ export function invocationLatine(eloge: string | null | undefined): InvocationLa
 	if (!noms.length) return null;
 	const voc = noms;
 	const plusieurs = pluriel || voc.length > 1 || socii;
-	const tete = plusieurs ? (fem && voc.every((v) => /a$/.test(v)) ? (beat ? 'Beatæ' : 'Sanctæ') : beat ? 'Beati' : 'Sancti') : fem ? (beat ? 'Beata' : 'Sancta') : beat ? 'Beate' : 'Sancte';
+	const tete = plusieurs
+		? fem && voc.every((v) => /a$/.test(v))
+			? beat
+				? 'Beatæ'
+				: 'Sanctæ'
+			: beat
+				? 'Beati'
+				: 'Sancti'
+		: fem
+			? beat
+				? 'Beata'
+				: 'Sancta'
+			: beat
+				? 'Beate'
+				: 'Sancte';
 	const liste = voc.length > 1 ? `${voc.slice(0, -1).join(', ')} et ${voc[voc.length - 1]}` : voc[0];
 	// titres : « virgo et martyr », « episcope et confessor et Ecclesiæ doctor » ; au pluriel, nominatif pluriel
 	const t = titres

@@ -18,7 +18,10 @@ describe('alternance par semaine du mois', () => {
 	it('remplace l’Angélus par le Regina cæli au temps pascal, et montre les deux le samedi saint', () => {
 		const e = { textes: ['paroissien:angelus'] };
 		expect(textesDuJour(e, '2027-04-10', { temps: 'Temps pascal', office: 'x' })).toEqual(['beringer:regina-caeli']);
-		expect(textesDuJour(e, '2027-03-27', { temps: 'Temps de la Passion', office: 'Samedi saint' })).toEqual(['paroissien:angelus', 'beringer:regina-caeli']);
+		expect(textesDuJour(e, '2027-03-27', { temps: 'Temps de la Passion', office: 'Samedi saint' })).toEqual([
+			'paroissien:angelus',
+			'beringer:regina-caeli'
+		]);
 		expect(textesDuJour(e, '2027-06-10', { temps: 'Temps après la Pentecôte', office: 'x' })).toEqual(['paroissien:angelus']);
 	});
 	it('laisse toutes les prières sans alternance, ou avec une seule prière', () => {

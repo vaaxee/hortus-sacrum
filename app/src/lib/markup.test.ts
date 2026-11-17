@@ -23,7 +23,9 @@ describe('nettoyer', () => {
 	});
 
 	it('reconnaît ℣ et ℟ et garde une ligne par verset', () => {
-		const { texte } = nettoyer('V. Priez pour nous, sainte Mère de Dieu.\nR. Afin que nous devenions dignes\ndes promesses de Jésus-Christ.');
+		const { texte } = nettoyer(
+			'V. Priez pour nous, sainte Mère de Dieu.\nR. Afin que nous devenions dignes\ndes promesses de Jésus-Christ.'
+		);
 		expect(texte).toBe('℣. Priez pour nous, sainte Mère de Dieu.\n℟. Afin que nous devenions dignes des promesses de Jésus-Christ.');
 	});
 
@@ -46,6 +48,6 @@ describe('nettoyer', () => {
 
 	it('ne change aucun mot', () => {
 		const brut = 'Ô Jésus ! vraie joie des Anges, Paradis de délices.';
-		expect(nettoyer(brut).texte.replace(/ /g, ' ')).toBe(brut);
+		expect(nettoyer(brut).texte.replace(/\u00a0/g, ' ')).toBe(brut);
 	});
 });

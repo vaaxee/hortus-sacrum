@@ -1,11 +1,7 @@
 <script lang="ts">
 	import { rendre } from './markup';
 
-	let {
-		corps = $bindable(''),
-		latin = $bindable(''),
-		lignes = 14
-	}: { corps: string; latin: string; lignes?: number } = $props();
+	let { corps = $bindable(''), latin = $bindable(''), lignes = 14 }: { corps: string; latin: string; lignes?: number } = $props();
 
 	let zoneFr: HTMLTextAreaElement | undefined = $state();
 	let zoneLa: HTMLTextAreaElement | undefined = $state();
@@ -96,11 +92,44 @@
 </div>
 
 <style>
-	.outils { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-bottom: 0.5rem; position: sticky; top: 0; background: var(--hs-fond); padding: 0.3rem 0; z-index: 1; }
-	.outils button { min-width: 44px; min-height: 40px; padding: 0 10px; text-transform: none; font-family: var(--hs-lecture); font-size: 1.0625rem; letter-spacing: 0; font-weight: 400; }
-	.outils .rouge { color: var(--hs-rubrique); }
-	.outils button[aria-pressed='true'] { border-color: var(--hs-rubrique); color: var(--hs-rubrique); }
-	.colonnes { display: grid; gap: 0.75rem; }
-	@media (min-width: 46rem) { .colonnes.deux { grid-template-columns: 1fr 1fr; } }
-	.apercu { margin-top: var(--hs-e4); }
+	.outils {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.35rem;
+		margin-bottom: 0.5rem;
+		position: sticky;
+		top: 0;
+		background: var(--hs-fond);
+		padding: 0.3rem 0;
+		z-index: 1;
+	}
+	.outils button {
+		min-width: 44px;
+		min-height: 40px;
+		padding: 0 10px;
+		text-transform: none;
+		font-family: var(--hs-lecture);
+		font-size: 1.0625rem;
+		letter-spacing: 0;
+		font-weight: 400;
+	}
+	.outils .rouge {
+		color: var(--hs-rubrique);
+	}
+	.outils button[aria-pressed='true'] {
+		border-color: var(--hs-rubrique);
+		color: var(--hs-rubrique);
+	}
+	.colonnes {
+		display: grid;
+		gap: 0.75rem;
+	}
+	@media (min-width: 46rem) {
+		.colonnes.deux {
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+	.apercu {
+		margin-top: var(--hs-e4);
+	}
 </style>

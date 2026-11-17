@@ -2,7 +2,11 @@ import { describe, expect, it } from 'vitest';
 import { choisir, clesDuJour, entreesDuJour, rangParcours, type Recueil } from './meditations.ts';
 
 const r: Recueil = {
-	id: 'x', titre: '', auteur: '', editions: {}, provenance: '',
+	id: 'x',
+	titre: '',
+	auteur: '',
+	editions: {},
+	provenance: '',
 	entrees: [
 		{ cle: 'T:Adv1-5', titre: 'Règne de Jésus-Christ en nous', tome: 1, page: 18, corps: '' },
 		{ cle: 'D:12-08', titre: 'Immaculée Conception', tome: 1, page: 409, corps: '' },
@@ -23,14 +27,26 @@ describe('méditation du jour', () => {
 		expect(entreesDuJour(r, '2027-06-04', { tempora: 'Pent02-5' }).length).toBe(2);
 	});
 	it('jours ordinaires : parcours de Chaignon dans l’ordre ; dimanches et temps forts : Hamon', () => {
-		const ch: Recueil = { ...r, id: 'chaignon', entrees: [
-			{ cle: 'S:1', titre: 'La fin de l’homme', tome: 1, page: 0, corps: '' },
-			{ cle: 'S:2', titre: 'Les créatures', tome: 1, page: 0, corps: '' }
-		] };
-		const ham: Recueil = { ...r, entrees: [{ cle: 'T:Pent03-2', titre: 'H', tome: 2, page: 1, corps: '' }, { cle: 'T:Pent03-0', titre: 'Dim', tome: 2, page: 1, corps: '' }] };
+		const ch: Recueil = {
+			...r,
+			id: 'chaignon',
+			entrees: [
+				{ cle: 'S:1', titre: 'La fin de l’homme', tome: 1, page: 0, corps: '' },
+				{ cle: 'S:2', titre: 'Les créatures', tome: 1, page: 0, corps: '' }
+			]
+		};
+		const ham: Recueil = {
+			...r,
+			entrees: [
+				{ cle: 'T:Pent03-2', titre: 'H', tome: 2, page: 1, corps: '' },
+				{ cle: 'T:Pent03-0', titre: 'Dim', tome: 2, page: 1, corps: '' }
+			]
+		};
 		const annee = [
-			{ date: '2027-06-13', tempora: 'Pent03-0' }, { date: '2027-06-14', tempora: 'Pent03-1' },
-			{ date: '2027-06-15', tempora: 'Pent03-2' }, { date: '2027-06-16', tempora: 'Pent03-3' }
+			{ date: '2027-06-13', tempora: 'Pent03-0' },
+			{ date: '2027-06-14', tempora: 'Pent03-1' },
+			{ date: '2027-06-15', tempora: 'Pent03-2' },
+			{ date: '2027-06-16', tempora: 'Pent03-3' }
 		];
 		const mardi = choisir('2027-06-15', { tempora: 'Pent03-2' }, annee, ham, ch);
 		expect(mardi[0].entree.titre).toBe('Les créatures');

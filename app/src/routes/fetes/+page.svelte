@@ -9,7 +9,11 @@
 	/** Fêtes et saints personnels, anniversaires spirituels (baptême, confirmation, consécrations…). */
 	const fetes = vivant(() => db.fetes.toArray(), [] as FetePerso[]);
 	const MOIS = ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre'];
-	const GENRES: [FetePerso['genre'], string][] = [['anniversaire', 'Anniversaires spirituels'], ['saint', 'Saints favoris et fête patronale'], ['fete', 'Fêtes locales et personnelles']];
+	const GENRES: [FetePerso['genre'], string][] = [
+		['anniversaire', 'Anniversaires spirituels'],
+		['saint', 'Saints favoris et fête patronale'],
+		['fete', 'Fêtes locales et personnelles']
+	];
 	const EXEMPLES: Record<FetePerso['genre'], string> = {
 		anniversaire: 'Baptême, confirmation, première communion, consécration…',
 		saint: 'Saint patron, saints aimés : un rappel la veille de leur fête.',
@@ -28,8 +32,16 @@
 	function nouvelle(genre: FetePerso['genre']) {
 		const d = new Date();
 		brouillon = {
-			id: nouvelId(), origine: 'personnel', titre: '', genre, mois: d.getMonth() + 1, jour: d.getDate(),
-			rappelVeille: genre === 'saint', notes: '', creeLe: '', modifieLe: ''
+			id: nouvelId(),
+			origine: 'personnel',
+			titre: '',
+			genre,
+			mois: d.getMonth() + 1,
+			jour: d.getDate(),
+			rappelVeille: genre === 'saint',
+			notes: '',
+			creeLe: '',
+			modifieLe: ''
 		};
 		estNouvelle = true;
 		erreur = '';
@@ -71,11 +83,17 @@
 			<label><span>Nom</span><input type="text" bind:value={brouillon.titre} placeholder="Mon baptême, saint Louis…" /></label>
 			<label>
 				<span>Genre</span>
-				<select bind:value={brouillon.genre}>{#each GENRES as [v, n]}<option value={v}>{n}</option>{/each}</select>
+				<select bind:value={brouillon.genre}
+					>{#each GENRES as [v, n]}<option value={v}>{n}</option>{/each}</select
+				>
 			</label>
 			<div class="trois">
 				<label><span>Jour</span><input type="number" min="1" max="31" bind:value={brouillon.jour} /></label>
-				<label><span>Mois</span><select bind:value={brouillon.mois}>{#each MOIS as m, i}<option value={i + 1}>{m}</option>{/each}</select></label>
+				<label
+					><span>Mois</span><select bind:value={brouillon.mois}
+						>{#each MOIS as m, i}<option value={i + 1}>{m}</option>{/each}</select
+					></label
+				>
 				<label><span>Année (facultatif)</span><input type="number" min="1900" max="2100" bind:value={brouillon.annee} /></label>
 			</div>
 			<label class="case"><input type="checkbox" bind:checked={brouillon.rappelVeille} /> Me le rappeler la veille</label>
@@ -85,7 +103,13 @@
 				<button class="principal" onclick={sauver}>Enregistrer</button>
 				<button onclick={() => (brouillon = undefined)}>Annuler</button>
 				{#if !estNouvelle}
-					<button class="danger" onclick={async () => { await mettreALaCorbeille('fetes', brouillon!.id); brouillon = undefined; }}>Mettre à la corbeille</button>
+					<button
+						class="danger"
+						onclick={async () => {
+							await mettreALaCorbeille('fetes', brouillon!.id);
+							brouillon = undefined;
+						}}>Mettre à la corbeille</button
+					>
 				{/if}
 			</div>
 		</section>
@@ -94,13 +118,18 @@
 	{#each GENRES as [genre, nom]}
 		{@const groupe = visibles.filter((f) => f.genre === genre)}
 		<section>
-			<div class="tete-section"><Ornement nom="grecque" /><h2>{nom}</h2></div>
+			<div class="tete-section">
+				<Ornement nom="grecque" />
+				<h2>{nom}</h2>
+			</div>
 			<ul class="reglee">
 				{#each groupe as f (f.id)}
 					<li>
 						<button class="ligne brut" onclick={() => ouvrir(f)}>
 							<span class="date pc chiffres-alignes">{date(f)}</span>
-							<span class="titre">{f.titre}{#if f.rappelVeille}<span class="rappel" title="Rappel la veille"> ✠</span>{/if}</span>
+							<span class="titre"
+								>{f.titre}{#if f.rappelVeille}<span class="rappel" title="Rappel la veille"> ✠</span>{/if}</span
+							>
 						</button>
 					</li>
 				{:else}
@@ -113,7 +142,10 @@
 
 	{#if corbeille.length}
 		<section>
-			<div class="tete-section"><Ornement nom="grecque" /><h2>Corbeille</h2></div>
+			<div class="tete-section">
+				<Ornement nom="grecque" />
+				<h2>Corbeille</h2>
+			</div>
 			<ul class="reglee">
 				{#each corbeille as f (f.id)}
 					<li class="jete">
@@ -133,16 +165,61 @@
 </main>
 
 <style>
-	.tete-page :global(.filet) { max-width: 16rem; }
-	.formulaire { display: grid; gap: var(--hs-e4); margin-bottom: var(--hs-e5); }
-	.formulaire h2 { font-size: var(--hs-t2); }
-	.trois { display: grid; grid-template-columns: 1fr 1.6fr 1.4fr; gap: var(--hs-e3); }
-	.case { display: flex; gap: 8px; align-items: baseline; }
-	.ligne { flex: 1; display: grid; grid-template-columns: 7.5rem 1fr; gap: var(--hs-e3); align-items: baseline; text-align: left; background: none; border: 0; padding: 12px 0; cursor: pointer; color: var(--hs-encre); }
-	.date { color: var(--hs-encre-douce); font-size: 1.0625rem; }
-	.titre { line-height: 1.3; }
-	.rappel { color: var(--hs-rubrique); font-size: 0.8em; }
-	li.vide { padding: 12px 0; font-style: italic; }
-	li.jete { flex-wrap: wrap; padding: 8px 0; }
-	.ajout { margin-top: var(--hs-e4); min-height: 40px; }
+	.tete-page :global(.filet) {
+		max-width: 16rem;
+	}
+	.formulaire {
+		display: grid;
+		gap: var(--hs-e4);
+		margin-bottom: var(--hs-e5);
+	}
+	.formulaire h2 {
+		font-size: var(--hs-t2);
+	}
+	.trois {
+		display: grid;
+		grid-template-columns: 1fr 1.6fr 1.4fr;
+		gap: var(--hs-e3);
+	}
+	.case {
+		display: flex;
+		gap: 8px;
+		align-items: baseline;
+	}
+	.ligne {
+		flex: 1;
+		display: grid;
+		grid-template-columns: 7.5rem 1fr;
+		gap: var(--hs-e3);
+		align-items: baseline;
+		text-align: left;
+		background: none;
+		border: 0;
+		padding: 12px 0;
+		cursor: pointer;
+		color: var(--hs-encre);
+	}
+	.date {
+		color: var(--hs-encre-douce);
+		font-size: 1.0625rem;
+	}
+	.titre {
+		line-height: 1.3;
+	}
+	.rappel {
+		color: var(--hs-rubrique);
+		font-size: 0.8em;
+	}
+	li.vide {
+		padding: 12px 0;
+		font-style: italic;
+	}
+	li.jete {
+		flex-wrap: wrap;
+		padding: 8px 0;
+	}
+	.ajout {
+		margin-top: var(--hs-e4);
+		min-height: 40px;
+	}
 </style>

@@ -8,15 +8,31 @@ import { pas, uniteDe } from './roues-calcul.ts';
 import type { ElementRoue, Pratique } from './types.ts';
 
 export type Verset = [number, string];
-export interface Chapitre { n: number; la: Verset[]; fr: Verset[] }
-export interface Livre { id: string; abr: string; titre: string; chapitres: Chapitre[] }
+export interface Chapitre {
+	n: number;
+	la: Verset[];
+	fr: Verset[];
+}
+export interface Livre {
+	id: string;
+	abr: string;
+	titre: string;
+	chapitres: Chapitre[];
+}
 type Source = Record<'fr' | 'la', { ouvrage: string; edition?: string; url: string }>;
 
 export { LIVRES };
 
-interface Lieu { chapitre: number; de?: number; a?: number }
+interface Lieu {
+	chapitre: number;
+	de?: number;
+	a?: number;
+}
 /** Lieu dans Crampon ; « la » : lieu dans la Vulgate quand la numérotation diffère. */
-export interface Ref extends Lieu { livre: string; la?: Lieu }
+export interface Ref extends Lieu {
+	livre: string;
+	la?: Lieu;
+}
 
 const LIEU = /^(\d+)(?:\s*,\s*(\d+)(?:\s*-\s*(\d+))?)?$/;
 function lireLieu(s: string): Lieu | undefined {
@@ -60,7 +76,13 @@ export function lectureDu(r: Pratique, date: string, e?: ElementRoue): Ref | und
 
 const cache = new Map<string, Promise<unknown>>();
 function charger<T>(chemin: string, fetchFn: typeof fetch): Promise<T | null> {
-	if (!cache.has(chemin)) cache.set(chemin, fetchFn(`/data/ecriture/${chemin}`).then((r) => (r.ok ? r.json() : null)).catch(() => null));
+	if (!cache.has(chemin))
+		cache.set(
+			chemin,
+			fetchFn(`/data/ecriture/${chemin}`)
+				.then((r) => (r.ok ? r.json() : null))
+				.catch(() => null)
+		);
 	return cache.get(chemin) as Promise<T | null>;
 }
 

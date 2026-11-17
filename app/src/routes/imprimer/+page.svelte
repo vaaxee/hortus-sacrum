@@ -83,10 +83,34 @@
 </main>
 
 <style>
-	section { margin-top: var(--hs-e6); }
-	section h2 { font-size: var(--hs-t2); }
-	.case { display: flex; align-items: baseline; gap: 10px; padding: 4px 0; }
-	.case .nom { flex: 1; font-variant-caps: normal; letter-spacing: 0; font-size: 1.0625rem; color: var(--hs-encre); font-family: var(--hs-lecture); }
-	.ordre { color: var(--hs-or-texte); font-size: 0.9375rem; }
-	.bas { position: sticky; bottom: 96px; padding: var(--hs-e3) 0; background: var(--hs-fond); }
+	section {
+		margin-top: var(--hs-e6);
+	}
+	section h2 {
+		font-size: var(--hs-t2);
+	}
+	.case {
+		display: flex;
+		align-items: baseline;
+		gap: 10px;
+		padding: 4px 0;
+	}
+	.case .nom {
+		flex: 1;
+		font-variant-caps: normal;
+		letter-spacing: 0;
+		font-size: 1.0625rem;
+		color: var(--hs-encre);
+		font-family: var(--hs-lecture);
+	}
+	.ordre {
+		color: var(--hs-or-texte);
+		font-size: 0.9375rem;
+	}
+	.bas {
+		position: sticky;
+		bottom: 96px;
+		padding: var(--hs-e3) 0;
+		background: var(--hs-fond);
+	}
 </style>

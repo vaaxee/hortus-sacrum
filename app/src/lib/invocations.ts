@@ -8,7 +8,8 @@
 const TITRES =
 	'Martyrs?|Martyres?|Vierges?|Évêques?|Evêques?|Archevêques?|Confesseurs?|Papes?|Pontifes?|Prêtres?|Diacres?|Sous-Diacres?|Sous-diacres?|Abbés?|Abbesses?|Apôtres?|Évangélistes?|Docteurs?|Veuves?|Moines?|Ermites?|Anachorètes?|Lecteurs?|Exorcistes?|Acolytes?|Soldats?|Rois?|Reines?|Empereurs?|Impératrices?|Patriarches?|Prophètes?|Cardinal|Cardinaux|Pénitentes?|Solitaires?|Frères|Sœurs|Lévites?|Disciples?';
 const RE_TITRE = new RegExp(`^(?:${TITRES})(?![\\p{L}])`, 'u');
-const RANGS = 'reine|roi|pape|évêque|abbé|abbesse|prêtre|diacre|vieillard|martyrs?|frères|sœurs|vierges?|apôtres?|confesseurs?|prophètes?|patriarches?|pontifes?|soldats?|moines?|enfants?|ermites?|femmes?|hommes?|vieillards?|docteurs?|lévites?';
+const RANGS =
+	'reine|roi|pape|évêque|abbé|abbesse|prêtre|diacre|vieillard|martyrs?|frères|sœurs|vierges?|apôtres?|confesseurs?|prophètes?|patriarches?|pontifes?|soldats?|moines?|enfants?|ermites?|femmes?|hommes?|vieillards?|docteurs?|lévites?';
 
 // un nom : un ou plusieurs mots à majuscule, avec particules (« Jean de la Croix », « Pie V », « Louis-Marie »)
 const MOT = `\\p{Lu}[\\p{L}’'-]*`;
@@ -55,7 +56,7 @@ export function invocation(eloge: string): Invocation | null {
 	let reste: string[] = [];
 	for (let i = 0; i < jetons.length; i++) {
 		// « François Xavier de la Compagnie de Jésus » → « François Xavier »
-		const j = jetons[i].trim().replace(/\s+(?:de la|de l’|du|des|de)\s+(?:Compagnie|Ordre|Société|Congrégation|Tiers|Frères).*$/u, '');
+		const j = jetons[i].trim().replace(/\s+(?:de la|de l’|du|des|de)\s+(?:Compagnie|Ordre|Société|Congrégation|Tiers|Frères)\b.*$/u, '');
 		if (!j) continue;
 		if (RE_TITRE.test(j)) continue;
 		if (/^\p{Ll}+$/u.test(j)) continue; // apposition d'un mot : « soldat », « chantre »
@@ -121,7 +122,11 @@ export function nomLatin(eloge: string | null | undefined): string | null {
 			garde.push(brut); // nombres avant le nom (« trigínta septem ») et liaisons
 		} else break;
 	}
-	while (garde.length > 1 && (LIENS.test(garde[garde.length - 1].replace(/,$/, '')) || /^\p{Ll}/u.test(garde[garde.length - 1]) && !nomVu)) garde.pop();
+	while (
+		garde.length > 1 &&
+		(LIENS.test(garde[garde.length - 1].replace(/,$/, '')) || (/^\p{Ll}/u.test(garde[garde.length - 1]) && !nomVu))
+	)
+		garde.pop();
 	const nom = garde.join(' ').replace(/,$/, '').trim();
 	return nomVu ? nom : null;
 }

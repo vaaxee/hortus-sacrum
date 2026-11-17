@@ -27,15 +27,25 @@ export function pratiquesDuPlan(annee: Jour[], textes: Texte[]): Brut[] {
 	const groupes = new Map<string, { type: string; cle?: string; page: number | null; jours: { date: string; suite: string }[] }>();
 	for (const j of annee) {
 		for (const d of j.devotions) {
-			let [titre, suite = ''] = d.libelle.split(' — ');
-			if (d.cle === 'montfort') titre = d.libelle.startsWith('Consécration') ? 'Consécration à Jésus par Marie (renouvellement)' : 'Préparation à la consécration de Montfort';
+			const [libelle, suite = ''] = d.libelle.split(' — ');
+			const titre =
+				d.cle !== 'montfort'
+					? libelle
+					: d.libelle.startsWith('Consécration')
+						? 'Consécration à Jésus par Marie (renouvellement)'
+						: 'Préparation à la consécration de Montfort';
 			const g = groupes.get(titre) ?? { type: d.type, cle: d.cle, page: d.page_jardin, jours: [] };
 			g.jours.push({ date: j.date, suite });
 			groupes.set(titre, g);
 		}
 	}
 	const parPage = (page: number | null) =>
-		page === null ? [] : textes.filter((t) => t.origine === 'livret' && t.source.page === String(page) && !t.supprimeLe).map((t) => t.id).slice(0, 3);
+		page === null
+			? []
+			: textes
+					.filter((t) => t.origine === 'livret' && t.source.page === String(page) && !t.supprimeLe)
+					.map((t) => t.id)
+					.slice(0, 3);
 
 	const out: Brut[] = [];
 	for (const [titre, g] of groupes) {
@@ -70,9 +80,17 @@ export function pratiquesDuPlan(annee: Jour[], textes: Texte[]): Brut[] {
 			regle = { genre: 'fixe', mois: d0.getMonth() + 1, jour: d0.getDate() };
 		}
 		out.push({
-			id: `plan:${regle.genre === 'consecutifs' || (regle.genre === 'mensuel' && regle.nombre) ? an + ':' : ''}${titre.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 60)}`,
+			id: `plan:${regle.genre === 'consecutifs' || (regle.genre === 'mensuel' && regle.nombre) ? an + ':' : ''}${titre
+				.toLowerCase()
+				.normalize('NFD')
+				.replace(/[̀-ͯ]/g, '')
+				.replace(/[^a-z0-9]+/g, '-')
+				.replace(/^-|-$/g, '')
+				.slice(0, 60)}`,
 			origine: 'livret',
-			titre: titre.replace(/^Premier (vendredi|samedi) du mois$/, (m, j) => (j === 'vendredi' ? 'Neuf premiers vendredis du mois' : 'Cinq premiers samedis du mois')),
+			titre: titre.replace(/^Premier (vendredi|samedi) du mois$/, (m, j) =>
+				j === 'vendredi' ? 'Neuf premiers vendredis du mois' : 'Cinq premiers samedis du mois'
+			),
 			type,
 			regle,
 			textes: parPage(g.page),

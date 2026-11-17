@@ -8,7 +8,6 @@ import type { ElementRoue, Pratique, UniteRoue } from './types.ts';
 import { SOURCE_VIDE } from './types.ts';
 
 export * from './roues-calcul.ts';
-import { elementDu } from './roues-calcul.ts';
 
 interface RoueSource {
 	id: string;
@@ -37,11 +36,23 @@ export async function amorcerRoues(fetchFn: typeof fetch = fetch): Promise<void>
 		const id = `roue:${r.id}`;
 		if (await db.pratiques.get(id)) continue;
 		const p = {
-			id, origine: 'officielle', titre: r.titre, type: 'roue', regle: { genre: 'roue', unite: r.unite },
+			id,
+			origine: 'officielle',
+			titre: r.titre,
+			type: 'roue',
+			regle: { genre: 'roue', unite: r.unite },
 			textes: [...new Set(r.elements.map((e) => e.texte).filter(Boolean))] as string[],
-			promesses: '', indulgence: '', source: { ...SOURCE_VIDE, ...r.source }, notes: '', active: r.actif,
-			elements: r.elements, ...(r.verset ? { verset: r.verset } : {}), ...(r.anneau ? { anneau: r.anneau } : {}), ...(r.liste ? { liste: true } : {}),
-			creeLe: DEPART, modifieLe: DEPART
+			promesses: '',
+			indulgence: '',
+			source: { ...SOURCE_VIDE, ...r.source },
+			notes: '',
+			active: r.actif,
+			elements: r.elements,
+			...(r.verset ? { verset: r.verset } : {}),
+			...(r.anneau ? { anneau: r.anneau } : {}),
+			...(r.liste ? { liste: true } : {}),
+			creeLe: DEPART,
+			modifieLe: DEPART
 		} as Pratique;
 		p.original = contenu(p);
 		await db.pratiques.put(p);
@@ -75,7 +86,10 @@ async function completerElements(roues: RoueSource[]): Promise<void> {
 				if (livres.has(cle)) continue;
 				livres.add(cle);
 				if (!meta && c === 'texte') continue;
-				if (x.fr === s.fr && !x[c]) { x = { ...x, [c]: v }; change = true; }
+				if (x.fr === s.fr && !x[c]) {
+					x = { ...x, [c]: v };
+					change = true;
+				}
 			}
 			return x;
 		});

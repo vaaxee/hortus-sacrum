@@ -24,7 +24,9 @@
 	<label>
 		<span>Partie</span>
 		<input type="text" bind:value={texte.partie} list="parties" />
-		<datalist id="parties">{#each parties as p}<option value={p}></option>{/each}</datalist>
+		<datalist id="parties"
+			>{#each parties as p}<option value={p}></option>{/each}</datalist
+		>
 	</label>
 	<label>
 		<span>Catégorie</span>
@@ -57,10 +59,34 @@
 </fieldset>
 
 <style>
-	.etiquettes { display: flex; flex-wrap: wrap; gap: 0.25rem 0.75rem; }
-	.etiquettes .case { display: inline-flex; align-items: center; gap: 0.25rem; }
-	label, fieldset { margin-top: 0.8rem; }
-	.grille { display: grid; gap: 0.75rem; grid-template-columns: 1fr 1fr; }
-	fieldset { border: 1px solid var(--hs-filet); border-radius: 0; padding: 0.2rem 0.8rem 0.8rem; }
-	legend { font-variant: small-caps; letter-spacing: 0.05em; color: var(--hs-rubrique); padding: 0 0.3rem; }
+	.etiquettes {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.25rem 0.75rem;
+	}
+	.etiquettes .case {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.25rem;
+	}
+	label,
+	fieldset {
+		margin-top: 0.8rem;
+	}
+	.grille {
+		display: grid;
+		gap: 0.75rem;
+		grid-template-columns: 1fr 1fr;
+	}
+	fieldset {
+		border: 1px solid var(--hs-filet);
+		border-radius: 0;
+		padding: 0.2rem 0.8rem 0.8rem;
+	}
+	legend {
+		font-variant: small-caps;
+		letter-spacing: 0.05em;
+		color: var(--hs-rubrique);
+		padding: 0 0.3rem;
+	}
 </style>

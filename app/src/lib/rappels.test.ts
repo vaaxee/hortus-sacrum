@@ -10,9 +10,37 @@ const jours: Record<string, { office: string; rang: string; jeune_abstinence: { 
 	'2026-12-08': { office: 'Immaculée Conception', rang: '1re cl.', jeune_abstinence: null }
 };
 const ctx = {
-	liste: [{ id: 'l1', titre: 'Angélus', moment: 'journee', etiquette: 'ordinaire', ordre: 1, jours: [true, true, true, true, true, true, true], rappels: ['06:00', '12:00', '18:00'], textes: ['paroissien:angelus'], actif: true, origine: 'officielle', creeLe: '', modifieLe: '' }],
+	liste: [
+		{
+			id: 'l1',
+			titre: 'Angélus',
+			moment: 'journee',
+			etiquette: 'ordinaire',
+			ordre: 1,
+			jours: [true, true, true, true, true, true, true],
+			rappels: ['06:00', '12:00', '18:00'],
+			textes: ['paroissien:angelus'],
+			actif: true,
+			origine: 'officielle',
+			creeLe: '',
+			modifieLe: ''
+		}
+	],
 	pratiques: [],
-	fetes: [{ id: 'f1', titre: 'Mon baptême', genre: 'anniversaire', mois: 12, jour: 8, rappelVeille: true, notes: '', origine: 'personnel', creeLe: '', modifieLe: '' }],
+	fetes: [
+		{
+			id: 'f1',
+			titre: 'Mon baptême',
+			genre: 'anniversaire',
+			mois: 12,
+			jour: 8,
+			rappelVeille: true,
+			notes: '',
+			origine: 'personnel',
+			creeLe: '',
+			modifieLe: ''
+		}
+	],
 	titres: { 'paroissien:angelus': 'Angélus' },
 	jour: async (d: string) => jours[d] as never
 };
@@ -21,7 +49,14 @@ describe('rappels du jour', () => {
 	it('matin, heures fixes, soir et veille de fête', async () => {
 		const r = await rappelsDu('2026-12-07', { ...REGLAGES_DEFAUT, actif: true }, ctx as never);
 		const titres = r.map((x) => `${x.quand.getHours()}h ${x.titre}`);
-		expect(titres).toEqual(['6h Angélus', '7h Aujourd’hui, lundi 7 décembre', '12h Angélus', '18h Angélus', '20h Demain, mardi 8 décembre', '21h Prière du soir']);
+		expect(titres).toEqual([
+			'6h Angélus',
+			'7h Aujourd’hui, lundi 7 décembre',
+			'12h Angélus',
+			'18h Angélus',
+			'20h Demain, mardi 8 décembre',
+			'21h Prière du soir'
+		]);
 		expect(r.find((x) => x.titre.startsWith('Demain'))!.corps).toContain('Immaculée Conception');
 		expect(r.find((x) => x.titre.startsWith('Demain'))!.corps).toContain('Mon baptême');
 	});

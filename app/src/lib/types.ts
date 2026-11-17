@@ -46,14 +46,7 @@ export interface Version {
 	contenu: string;
 }
 
-export type TypePratique =
-	| 'jours_comptes'
-	| 'neuvaine'
-	| 'trentain'
-	| 'consecration'
-	| 'mois'
-	| 'jour_semaine'
-	| 'roue';
+export type TypePratique = 'jours_comptes' | 'neuvaine' | 'trentain' | 'consecration' | 'mois' | 'jour_semaine' | 'roue';
 
 /** Règle de dates d'une pratique. */
 export type Regle =

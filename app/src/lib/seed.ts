@@ -47,7 +47,7 @@ export function blocsVersCorps(blocs: Bloc[]): { corps: string; latin: string } 
 		switch (b.type) {
 			case 'texte':
 			case 'conclusion':
-				fr.push(b.type === 'conclusion' ? `*${b.texte}*` : b.texte ?? '');
+				fr.push(b.type === 'conclusion' ? `*${b.texte}*` : (b.texte ?? ''));
 				break;
 			case 'rubrique':
 			case 'notice':
@@ -149,7 +149,12 @@ function listeParDefaut(): Omit<ElementListe, 'creeLe' | 'modifieLe'>[] {
 	return L.map(([titre, moment, etiquette, jours, rappels, textes], i) => ({
 		id: `liste:${i + 1}`,
 		origine: 'officielle' as const,
-		titre, moment, etiquette, jours, rappels, textes,
+		titre,
+		moment,
+		etiquette,
+		jours,
+		rappels,
+		textes,
 		ordre: (i + 1) * 10,
 		actif: true
 	}));
@@ -178,7 +183,12 @@ export async function amorcer(fetchFn: typeof fetch = fetch): Promise<void> {
 	await livrerElements();
 	await renouvellementDuCordon();
 	await pagesComposees();
-	await remplacerTextes('cordon-gloria', 'Cordon de saint Joseph : sept Gloria Patri', ['beringer:cordon-saint-joseph'], ['hortus:cordon-sept-gloria', 'beringer:cordon-saint-joseph']);
+	await remplacerTextes(
+		'cordon-gloria',
+		'Cordon de saint Joseph : sept Gloria Patri',
+		['beringer:cordon-saint-joseph'],
+		['hortus:cordon-sept-gloria', 'beringer:cordon-saint-joseph']
+	);
 }
 
 /** Textes sourcés trouvés pour des dévotions du plan restées sans texte (titre de la dévotion → texte). */
@@ -189,10 +199,11 @@ const TEXTES_DES_DEVOTIONS: Record<string, string | [string[], string]> = {
 	'Neuvaine de l’Assomption': 'neuvaines-1886:assomption',
 	'Neuvaine de Noël': 'liguori:neuvaine-de-noel',
 	// pas de neuvaine propre trouvée : l'Enchiridion indulgencie toute prière faite neuf jours de suite en l'honneur du mystère
-	'Neuvaine du Rosaire': [['sambucy:chapelet-saint-dominique', 'paroissien:litanies-sainte-vierge'],
-		'Chaque jour : le chapelet et les litanies de la sainte Vierge, avec le propos de prier ainsi neuf jours de suite. Toute prière en l’honneur de Notre-Dame du Rosaire faite ainsi : 5 ans une fois le jour ; plénière à la fin, aux conditions ordinaires (Ench. 1952, n° 396).'],
-	'Neuvaine de la Toussaint': [['paroissien:litanies-des-saints'],
-		'Chaque jour : les litanies des saints (5 ans ; Ench. 1952, n° 687).']
+	'Neuvaine du Rosaire': [
+		['sambucy:chapelet-saint-dominique', 'paroissien:litanies-sainte-vierge'],
+		'Chaque jour : le chapelet et les litanies de la sainte Vierge, avec le propos de prier ainsi neuf jours de suite. Toute prière en l’honneur de Notre-Dame du Rosaire faite ainsi : 5 ans une fois le jour ; plénière à la fin, aux conditions ordinaires (Ench. 1952, n° 396).'
+	],
+	'Neuvaine de la Toussaint': [['paroissien:litanies-des-saints'], 'Chaque jour : les litanies des saints (5 ans ; Ench. 1952, n° 687).']
 };
 
 /** Relie chaque texte une seule fois (meta « devotions-textes ») aux dévotions de ce titre, vides et jamais modifiées. */
@@ -243,11 +254,23 @@ export async function amorcerDevotionsSemaine(): Promise<void> {
 	if (await db.meta.get('devotions-semaine')) return;
 	for (const id of new Set(DEVOTIONS_SEMAINE.flatMap(([, t]) => t))) if (!(await db.textes.get(id))) return;
 	const base = await db.liste.get('liste:8');
-	if (base && base.titre === 'Dévotion du jour de la semaine' && !base.supprimeLe && !base.textes.length && base.original === contenu(base)) {
+	if (
+		base &&
+		base.titre === 'Dévotion du jour de la semaine' &&
+		!base.supprimeLe &&
+		!base.textes.length &&
+		base.original === contenu(base)
+	) {
 		for (let k = 0; k < 7; k++) {
 			const [titre, textes] = DEVOTIONS_SEMAINE[k];
-			const x = { ...base, id: k === 0 ? base.id : `liste:8-${k}`, titre, jours: jour(k), textes,
-				...(k === 0 ? {} : { creeLe: DEPART, modifieLe: DEPART }) } as ElementListe;
+			const x = {
+				...base,
+				id: k === 0 ? base.id : `liste:8-${k}`,
+				titre,
+				jours: jour(k),
+				textes,
+				...(k === 0 ? {} : { creeLe: DEPART, modifieLe: DEPART })
+			} as ElementListe;
 			x.original = contenu(x);
 			await db.liste.put(x);
 		}
@@ -276,8 +299,13 @@ export async function fusionnerExamen(): Promise<void> {
 
 /** Un don par jour (dim. sagesse … sam. crainte de Dieu), d'après le Cœur affligé de Marie (Beringer 1925, n° 450). */
 const DONS_PAR_JOUR: [string, string][] = [
-	['sagesse', 'sagesse'], ['intelligence', 'intelligence'], ['conseil', 'conseil'], ['force', 'force'],
-	['science', 'science'], ['piete', 'piété'], ['crainte', 'crainte de Dieu']
+	['sagesse', 'sagesse'],
+	['intelligence', 'intelligence'],
+	['conseil', 'conseil'],
+	['force', 'force'],
+	['science', 'science'],
+	['piete', 'piété'],
+	['crainte', 'crainte de Dieu']
 ];
 
 /** Une seule fois : remplace « Demande d'un don du Saint-Esprit » par une ligne par jour, si l'utilisateur ne l'a pas modifiée. */
@@ -292,7 +320,13 @@ export async function amorcerDons(): Promise<void> {
 	if (await db.meta.get('dons')) return;
 	for (const [cle] of DONS_PAR_JOUR) if (!(await db.textes.get(`beringer:don-${cle}`))) return;
 	const base = await db.liste.get('liste:25');
-	if (base && base.titre === 'Demande d’un don du Saint-Esprit' && !base.supprimeLe && !base.textes.length && base.original === contenu(base)) {
+	if (
+		base &&
+		base.titre === 'Demande d’un don du Saint-Esprit' &&
+		!base.supprimeLe &&
+		!base.textes.length &&
+		base.original === contenu(base)
+	) {
 		for (let k = 0; k < 7; k++) {
 			const [cle, nom] = DONS_PAR_JOUR[k];
 			const x = {
@@ -366,9 +400,24 @@ async function reparerLitanies(): Promise<void> {
 	for (const id of new Set(LITANIES_PAR_JOUR.flat())) if (!(await db.textes.get(id))) return;
 	const base = await db.liste.get('liste:24');
 	const intact = (e: ElementListe) => e.modifieLe === DEPART || e.original === contenu(e);
-	if (base && base.titre === 'Litanies du jour' && !base.supprimeLe && intact(base) && base.jours.every(Boolean) && !(await db.liste.get('liste:24-1'))) {
+	if (
+		base &&
+		base.titre === 'Litanies du jour' &&
+		!base.supprimeLe &&
+		intact(base) &&
+		base.jours.every(Boolean) &&
+		!(await db.liste.get('liste:24-1'))
+	) {
 		for (let k = 0; k < 7; k++) {
-			const x = { ...base, id: k === 0 ? base.id : `liste:24-${k}`, jours: jour(k), textes: LITANIES_PAR_JOUR[k], alterner: false, creeLe: DEPART, modifieLe: DEPART } as ElementListe;
+			const x = {
+				...base,
+				id: k === 0 ? base.id : `liste:24-${k}`,
+				jours: jour(k),
+				textes: LITANIES_PAR_JOUR[k],
+				alterner: false,
+				creeLe: DEPART,
+				modifieLe: DEPART
+			} as ElementListe;
 			delete x.roue;
 			delete x.original;
 			x.original = contenu(x);
@@ -398,7 +447,8 @@ async function completerLitanies(): Promise<void> {
  */
 async function completerLitanies2(): Promise<void> {
 	if (await db.meta.get('litanies-2')) return;
-	for (const id of ['fervent:litanies-sainte-trinite', 'fervent:litanies-ange-gardien', 'fervent:litanies-saint-sacrement']) if (!(await db.textes.get(id))) return;
+	for (const id of ['fervent:litanies-sainte-trinite', 'fervent:litanies-ange-gardien', 'fervent:litanies-saint-sacrement'])
+		if (!(await db.textes.get(id))) return;
 	const intact = (e?: ElementListe) => !!e && !e.supprimeLe && (e.modifieLe === DEPART || e.original === contenu(e));
 	for (const k of [0, 2, 4]) {
 		const e = await db.liste.get(k === 0 ? 'liste:24' : `liste:24-${k}`);
@@ -448,9 +498,21 @@ async function roueDesLitanies(k: number): Promise<void> {
 			const elements = [];
 			for (const t of ids) elements.push({ fr: (await db.textes.get(t))?.titre ?? t, texte: t });
 			const r = {
-				id, origine: 'officielle', titre: `Litanies du ${JOURS_NOMS[k]}`, type: 'roue', regle: { genre: 'roue', unite: 'semaine' },
-				textes: ids, promesses: '', indulgence: '', source: { ...SOURCE_VIDE }, notes: '', active: true, liste: true, elements,
-				creeLe: DEPART, modifieLe: DEPART
+				id,
+				origine: 'officielle',
+				titre: `Litanies du ${JOURS_NOMS[k]}`,
+				type: 'roue',
+				regle: { genre: 'roue', unite: 'semaine' },
+				textes: ids,
+				promesses: '',
+				indulgence: '',
+				source: { ...SOURCE_VIDE },
+				notes: '',
+				active: true,
+				liste: true,
+				elements,
+				creeLe: DEPART,
+				modifieLe: DEPART
 			} as Pratique;
 			r.original = contenu(r);
 			await db.pratiques.put(r);
@@ -495,11 +557,32 @@ async function remplacerTextes(cle: string, titre: string, avant: string[] | str
  * Seules les lignes qui portent encore une composition livrée par l'app sont touchées.
  */
 const SAMBUCY = 'sambucy:chapelet-saint-dominique';
-const ACTES_MATIN = ['jardin:intention-d-indulgences', 'jardin:acte-de-soumission-a-la-volonte-de-dieu', 'jardin:acte-d-intention-de-communion-spirituelle-perpetuelle', 'jardin:acte-de-recommandation-des-ames-rencontrees'];
-const DEVOIRS = ['jardin:devoir-envers-l-eglise-et-ses-ministres', 'jardin:devoir-envers-la-famille', 'jardin:devoir-envers-la-patrie', 'jardin:devoir-envers-les-pauvres-les-persecutes-les-affliges', 'jardin:devoir-envers-moi-meme'];
+const ACTES_MATIN = [
+	'jardin:intention-d-indulgences',
+	'jardin:acte-de-soumission-a-la-volonte-de-dieu',
+	'jardin:acte-d-intention-de-communion-spirituelle-perpetuelle',
+	'jardin:acte-de-recommandation-des-ames-rencontrees'
+];
+const DEVOIRS = [
+	'jardin:devoir-envers-l-eglise-et-ses-ministres',
+	'jardin:devoir-envers-la-famille',
+	'jardin:devoir-envers-la-patrie',
+	'jardin:devoir-envers-les-pauvres-les-persecutes-les-affliges',
+	'jardin:devoir-envers-moi-meme'
+];
 async function pagesComposees(): Promise<void> {
-	await remplacerTextes('pages-chapelet', 'Chapelet', [[], [SAMBUCY], [SAMBUCY, 'montfort:methode-rosaire'], [SAMBUCY, 'gertrude:trois-ave-bonne-mort', 'montfort:methode-rosaire']], ['hortus:chapelet-du-jour']);
-	await remplacerTextes('pages-triple-couronne', 'Triple Couronne d’or du Sacré-Cœur', [['jardin:la-triple-couronne-d-or-du-sacre-c-ur-de-jesus']], ['hortus:triple-couronne-du-jour']);
+	await remplacerTextes(
+		'pages-chapelet',
+		'Chapelet',
+		[[], [SAMBUCY], [SAMBUCY, 'montfort:methode-rosaire'], [SAMBUCY, 'gertrude:trois-ave-bonne-mort', 'montfort:methode-rosaire']],
+		['hortus:chapelet-du-jour']
+	);
+	await remplacerTextes(
+		'pages-triple-couronne',
+		'Triple Couronne d’or du Sacré-Cœur',
+		[['jardin:la-triple-couronne-d-or-du-sacre-c-ur-de-jesus']],
+		['hortus:triple-couronne-du-jour']
+	);
 	await remplacerTextes('pages-offrande', 'Offrande du matin', [ACTES_MATIN, [...ACTES_MATIN, ...DEVOIRS]], ['hortus:offrande-du-matin']);
 	// la roue des trois chapelets n'a plus d'usage : écartée si l'utilisateur ne l'a pas modifiée
 	if (!(await db.meta.get('roue-chapelets-retiree'))) {
@@ -508,7 +591,6 @@ async function pagesComposees(): Promise<void> {
 		await db.meta.put({ cle: 'roue-chapelets-retiree', valeur: true });
 	}
 }
-
 
 async function renouvellementDuCordon(): Promise<void> {
 	if (await db.meta.get('cordon-renouvellement')) return;
@@ -525,24 +607,64 @@ async function renouvellementDuCordon(): Promise<void> {
 /** Éléments ajoutés à la liste de départ après sa création ; chacun n'est livré qu'une fois (meta « elements »). */
 const NOUVEAUX_ELEMENTS: Omit<ElementListe, 'creeLe' | 'modifieLe'>[] = [
 	{
-		id: 'liste:cordon-mercredi', origine: 'officielle', titre: CORDON_TITRE,
-		moment: 'matin', etiquette: 'ordinaire', jours: jour(3), rappels: [], textes: CORDON_TEXTES, ordre: 51, actif: true
+		id: 'liste:cordon-mercredi',
+		origine: 'officielle',
+		titre: CORDON_TITRE,
+		moment: 'matin',
+		etiquette: 'ordinaire',
+		jours: jour(3),
+		rappels: [],
+		textes: CORDON_TEXTES,
+		ordre: 51,
+		actif: true
 	},
 	{
-		id: 'liste:scapulaire-jahenny', origine: 'officielle', titre: 'Scapulaire de bénédiction et de protection',
-		moment: 'journee', etiquette: 'ordinaire', jours: TOUS, rappels: [], textes: ['jahenny:scapulaire-benediction-protection'], ordre: 175, actif: true
+		id: 'liste:scapulaire-jahenny',
+		origine: 'officielle',
+		titre: 'Scapulaire de bénédiction et de protection',
+		moment: 'journee',
+		etiquette: 'ordinaire',
+		jours: TOUS,
+		rappels: [],
+		textes: ['jahenny:scapulaire-benediction-protection'],
+		ordre: 175,
+		actif: true
 	},
 	{
-		id: 'liste:jaculatoires', origine: 'officielle', titre: 'Jaculatoires du jour',
-		moment: 'journee', etiquette: 'ordinaire', jours: TOUS, rappels: [], textes: ['hortus:jaculatoires-du-jour'], ordre: 176, actif: true
+		id: 'liste:jaculatoires',
+		origine: 'officielle',
+		titre: 'Jaculatoires du jour',
+		moment: 'journee',
+		etiquette: 'ordinaire',
+		jours: TOUS,
+		rappels: [],
+		textes: ['hortus:jaculatoires-du-jour'],
+		ordre: 176,
+		actif: true
 	},
 	{
-		id: 'liste:petit-breviaire', origine: 'officielle', titre: 'Petit bréviaire du Sacré-Cœur',
-		moment: 'journee', etiquette: 'ordinaire', jours: TOUS, rappels: [], textes: ['hortus:petit-breviaire-du-jour'], ordre: 177, actif: true
+		id: 'liste:petit-breviaire',
+		origine: 'officielle',
+		titre: 'Petit bréviaire du Sacré-Cœur',
+		moment: 'journee',
+		etiquette: 'ordinaire',
+		jours: TOUS,
+		rappels: [],
+		textes: ['hortus:petit-breviaire-du-jour'],
+		ordre: 177,
+		actif: true
 	},
 	{
-		id: 'liste:roue', origine: 'officielle', titre: 'La roue du jour',
-		moment: 'propre', etiquette: 'propre', jours: TOUS, rappels: [], textes: [], ordre: 75, actif: true
+		id: 'liste:roue',
+		origine: 'officielle',
+		titre: 'La roue du jour',
+		moment: 'propre',
+		etiquette: 'propre',
+		jours: TOUS,
+		rappels: [],
+		textes: [],
+		ordre: 75,
+		actif: true
 	}
 ];
 
@@ -565,7 +687,7 @@ const LIENS_SOURCES: Record<string, string[]> = {
 	'Prière du matin': ['paroissien:priere-du-matin'],
 	'Prière du soir': ['paroissien:priere-du-soir'],
 	'Examen de conscience': ['paroissien:priere-du-soir'],
-	'Angélus': ['paroissien:angelus'],
+	Angélus: ['paroissien:angelus'],
 	'Salve Regina, avec ses versets': ['beringer:salve-regina'],
 	'Sub tuum, avec ses versets': ['beringer:sub-tuum'],
 	'Chapelet des Morts': ['beringer:chapelet-des-morts', 'paroissien:de-profundis'],

@@ -3,9 +3,18 @@ import { contenu, estModifie } from './db.ts';
 import type { ElementListe } from './types.ts';
 
 const base: ElementListe = {
-	id: 'liste:1', origine: 'officielle', titre: 'Offrande du matin', moment: 'matin', etiquette: 'ordinaire',
-	ordre: 10, jours: [true, true, true, true, true, true, true], rappels: [], textes: [], actif: true,
-	creeLe: '2026-11-12', modifieLe: '2026-11-12'
+	id: 'liste:1',
+	origine: 'officielle',
+	titre: 'Offrande du matin',
+	moment: 'matin',
+	etiquette: 'ordinaire',
+	ordre: 10,
+	jours: [true, true, true, true, true, true, true],
+	rappels: [],
+	textes: [],
+	actif: true,
+	creeLe: '2026-11-12',
+	modifieLe: '2026-11-12'
 };
 
 describe('estModifie', () => {

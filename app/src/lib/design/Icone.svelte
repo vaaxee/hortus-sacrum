@@ -1,14 +1,33 @@
 <script lang="ts">
 	/** HORTUS SACRUM — icônes au trait fin (1,5 px), géométriques, d'après des symboles chrétiens. */
 	type Nom =
-		| 'aujourdhui' | 'calendrier' | 'prieres' | 'devotions' | 'profil'
-		| 'chevron' | 'retour' | 'jour' | 'nuit' | 'etoile' | 'plume' | 'source';
+		| 'aujourdhui'
+		| 'calendrier'
+		| 'prieres'
+		| 'devotions'
+		| 'profil'
+		| 'chevron'
+		| 'retour'
+		| 'jour'
+		| 'nuit'
+		| 'etoile'
+		| 'plume'
+		| 'source';
 
 	let { nom, taille = 24 }: { nom: Nom; taille?: number } = $props();
 </script>
 
-<svg width={taille} height={taille} viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-	stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<svg
+	width={taille}
+	height={taille}
+	viewBox="0 0 24 24"
+	fill="none"
+	stroke="currentColor"
+	stroke-width="1.5"
+	stroke-linecap="round"
+	stroke-linejoin="round"
+	aria-hidden="true"
+>
 	{#if nom === 'aujourdhui'}
 		<!-- soleil levant sur l'horizon : le jour présent -->
 		<path d="M3 18.500h18" /><path d="M6.500 18.500a5.500 5.500 0 0 1 11 0" />
@@ -35,7 +54,9 @@
 	{:else if nom === 'retour'}
 		<path d="M15 6l-6 6l6 6" />
 	{:else if nom === 'jour'}
-		<circle cx="12" cy="12" r="4" /><path d="M12 3v2.500M12 18.500V21M3 12h2.500M18.500 12H21M5.600 5.600l1.800 1.800M16.600 16.600l1.800 1.800M5.600 18.400l1.800-1.800M16.600 7.400l1.800-1.800" />
+		<circle cx="12" cy="12" r="4" /><path
+			d="M12 3v2.500M12 18.500V21M3 12h2.500M18.500 12H21M5.600 5.600l1.800 1.800M16.600 16.600l1.800 1.800M5.600 18.400l1.800-1.800M16.600 7.400l1.800-1.800"
+		/>
 	{:else if nom === 'nuit'}
 		<path d="M19.500 14.500A8 8 0 0 1 9.500 4.500a8 8 0 1 0 10 10z" />
 	{:else if nom === 'etoile'}

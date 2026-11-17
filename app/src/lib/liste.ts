@@ -11,7 +11,12 @@ export function semaineDuMois(date: string): number {
  * Élément « en alternance » : une seule prière, à tour de rôle selon la semaine du mois
  * (1re semaine → 1re prière, 2e → 2e…, et l'on recommence quand la liste est épuisée).
  */
-export function textesDuJour(e: Pick<ElementListe, 'textes' | 'alterner' | 'roue'>, date: string, jour?: { temps: string; office: string }, roues: Pratique[] = []): string[] {
+export function textesDuJour(
+	e: Pick<ElementListe, 'textes' | 'alterner' | 'roue'>,
+	date: string,
+	jour?: { temps: string; office: string },
+	roues: Pratique[] = []
+): string[] {
 	// ligne « choisie par la roue » : la prière liée à l'élément du jour de la roue (rien si l'élément n'est qu'un thème)
 	const r = e.roue ? roues.find((x) => x.id === e.roue && !x.supprimeLe) : undefined;
 	if (r) {
@@ -33,8 +38,18 @@ const TC = (n: number) => `hortus:triple-couronne-${n}`;
 const CH = (n: string) => `hortus:chapelet-${n}`;
 export const SELON_LE_JOUR: Record<string, string[]> = {
 	'hortus:triple-couronne-du-jour': [TC(3), TC(1), TC(2), TC(1), TC(3), TC(2), TC(1)],
-	'hortus:chapelet-du-jour': [CH('glorieux'), CH('joyeux'), CH('douloureux'), CH('glorieux'), CH('joyeux'), CH('douloureux'), CH('glorieux')],
-	'hortus:petit-breviaire-du-jour': ['dimanche', 'lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi'].map((j) => `breviaire-sc:office-${j}`)
+	'hortus:chapelet-du-jour': [
+		CH('glorieux'),
+		CH('joyeux'),
+		CH('douloureux'),
+		CH('glorieux'),
+		CH('joyeux'),
+		CH('douloureux'),
+		CH('glorieux')
+	],
+	'hortus:petit-breviaire-du-jour': ['dimanche', 'lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi'].map(
+		(j) => `breviaire-sc:office-${j}`
+	)
 };
 /** Libellés des identifiants « du jour » (éditeur de la liste). */
 export const LIBELLES_DU_JOUR: Record<string, string> = {
@@ -101,7 +116,7 @@ export function jaculatoiresDuJour(ids: string[], date: string): string[] {
 	const i = ids.indexOf(JACULATOIRES_DU_JOUR);
 	if (i < 0) return ids;
 	const jourN = Math.floor(Date.parse(date + 'T12:00:00Z') / 86400000);
-	const debut = ((jourN % 4) + 4) % 4 * 10;
+	const debut = (((jourN % 4) + 4) % 4) * 10;
 	return [...ids.slice(0, i), ...JACULATOIRES.slice(debut, debut + 10), ...ids.slice(i + 1)];
 }
 

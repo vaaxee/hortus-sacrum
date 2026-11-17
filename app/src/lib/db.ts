@@ -1,6 +1,17 @@
 import Dexie, { type Table } from 'dexie';
 import type {
-	Base, Coche, ElementListe, Fait, FetePerso, Meditation, NomTable, NoteJour, Pratique, Recueil, Texte, Version
+	Base,
+	Coche,
+	ElementListe,
+	Fait,
+	FetePerso,
+	Meditation,
+	NomTable,
+	NoteJour,
+	Pratique,
+	Recueil,
+	Texte,
+	Version
 } from './types';
 import { TABLES } from './types';
 
@@ -157,26 +168,30 @@ export async function importer(s: Sauvegarde, mode: 'remplacer' | 'fusionner'): 
 	if (s?.format !== 'hebdomada' || !s.tables) throw new Error('Ce fichier n’est pas une sauvegarde Hebdomada.');
 	let n = 0;
 	const noms = [...TABLES, 'versions', 'coches', 'faits', 'meta'] as const;
-	await db.transaction('rw', noms.map((x) => db[x] as Table), async () => {
-		for (const nom of noms) {
-			const lignes = (s.tables[nom] ?? []) as Record<string, unknown>[];
-			const t = db[nom] as Table;
-			if (mode === 'remplacer') {
-				await t.clear();
-				await t.bulkPut(lignes);
-				n += lignes.length;
-				continue;
-			}
-			if (nom === 'versions' || nom === 'coches' || nom === 'faits') continue; // la fusion ne duplique pas les journaux
-			for (const l of lignes) {
-				const cle = (l.id ?? l.cle) as string;
-				const existant = (await t.get(cle)) as Record<string, unknown> | undefined;
-				if (!existant || String(l.modifieLe ?? '') > String(existant.modifieLe ?? '')) {
-					await t.put(l);
-					n++;
+	await db.transaction(
+		'rw',
+		noms.map((x) => db[x] as Table),
+		async () => {
+			for (const nom of noms) {
+				const lignes = (s.tables[nom] ?? []) as Record<string, unknown>[];
+				const t = db[nom] as Table;
+				if (mode === 'remplacer') {
+					await t.clear();
+					await t.bulkPut(lignes);
+					n += lignes.length;
+					continue;
+				}
+				if (nom === 'versions' || nom === 'coches' || nom === 'faits') continue; // la fusion ne duplique pas les journaux
+				for (const l of lignes) {
+					const cle = (l.id ?? l.cle) as string;
+					const existant = (await t.get(cle)) as Record<string, unknown> | undefined;
+					if (!existant || String(l.modifieLe ?? '') > String(existant.modifieLe ?? '')) {
+						await t.put(l);
+						n++;
+					}
 				}
 			}
 		}
-	});
+	);
 	return n;
 }

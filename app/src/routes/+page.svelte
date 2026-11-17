@@ -38,11 +38,22 @@
 	const solennel = $derived(jour?.rang === '1re cl.' || jour?.rang === 'dim. 1re cl.');
 
 	const liste = vivant(() => db.liste.orderBy('ordre').toArray(), [] as ElementListe[]);
-	const titres = vivant(async () => Object.fromEntries((await db.textes.toArray()).map((t) => [t.id, t.titre])), {} as Record<string, string>);
-	const MOMENTS: [Moment, string][] = [['matin', 'Matin'], ['propre', 'Propre du jour'], ['journee', 'Au fil du jour'], ['soir', 'Soir']];
+	const titres = vivant(
+		async () => Object.fromEntries((await db.textes.toArray()).map((t) => [t.id, t.titre])),
+		{} as Record<string, string>
+	);
+	const MOMENTS: [Moment, string][] = [
+		['matin', 'Matin'],
+		['propre', 'Propre du jour'],
+		['journee', 'Au fil du jour'],
+		['soir', 'Soir']
+	];
 	// pratiques du jour : elles remplacent les deux lignes génériques « dévotion en cours » et « neuvaine ou trentain »
 	const pratiques = vivant(() => db.pratiques.toArray(), [] as Pratique[]);
-	const faitsDuJour = vivantSelon(() => { const d = date; return () => db.faits.where('date').equals(d).toArray(); }, [] as Fait[]);
+	const faitsDuJour = vivantSelon(() => {
+		const d = date;
+		return () => db.faits.where('date').equals(d).toArray();
+	}, [] as Fait[]);
 	const pratiquesDuJour = $derived(
 		$pratiques
 			.filter((p) => p.active && !p.supprimeLe)
@@ -62,12 +73,20 @@
 	let seuil = $state<Rang>('supererogatoria');
 	$effect(() => {
 		let v: string | null = null;
-		try { v = localStorage.getItem(`seuil:${date}`); } catch { /* stockage indisponible */ }
+		try {
+			v = localStorage.getItem(`seuil:${date}`);
+		} catch {
+			/* stockage indisponible */
+		}
 		seuil = (v as Rang) || 'supererogatoria';
 	});
 	function regler(r: Rang) {
 		seuil = r;
-		try { localStorage.setItem(`seuil:${date}`, r); } catch { /* stockage indisponible */ }
+		try {
+			localStorage.setItem(`seuil:${date}`, r);
+		} catch {
+			/* stockage indisponible */
+		}
 	}
 	const SEUILS: [Rang, string, string][] = [
 		['supererogatoria', 'Omnia', 'tout afficher'],
@@ -88,19 +107,34 @@
 	};
 
 	// fêtes et anniversaires personnels du jour
-	const fetes = vivantSelon(() => { const md = [d.getMonth() + 1, d.getDate()]; return () => db.fetes.where('[mois+jour]').equals(md).toArray(); }, [] as FetePerso[]);
+	const fetes = vivantSelon(() => {
+		const md = [d.getMonth() + 1, d.getDate()];
+		return () => db.fetes.where('[mois+jour]').equals(md).toArray();
+	}, [] as FetePerso[]);
 	const fetesDuJour = $derived(fetes.v.filter((f) => !f.supprimeLe));
-	const anniversaire = (f: FetePerso) => (f.annee && d.getFullYear() > f.annee ? `, ${d.getFullYear() - f.annee}${d.getFullYear() - f.annee === 1 ? 'er' : 'e'} anniversaire` : '');
+	const anniversaire = (f: FetePerso) =>
+		f.annee && d.getFullYear() > f.annee
+			? `, ${d.getFullYear() - f.annee}${d.getFullYear() - f.annee === 1 ? 'er' : 'e'} anniversaire`
+			: '';
 
 	// note du jour
-	const note = vivantSelon(() => { const k = `note:${date}`; return () => db.notes.get(k); }, undefined as NoteJour | undefined);
+	const note = vivantSelon(
+		() => {
+			const k = `note:${date}`;
+			return () => db.notes.get(k);
+		},
+		undefined as NoteJour | undefined
+	);
 	async function noter(corps: string) {
 		const existante = await db.notes.get(`note:${date}`);
 		if (existante) await enregistrer('notes', { ...existante, corps });
 		else if (corps.trim()) await creer<NoteJour>('notes', { id: `note:${date}`, origine: 'personnel', date, corps });
 	}
 	// coches du jour, enregistrées et horodatées
-	const cochesDuJour = vivantSelon(() => { const d = date; return () => db.coches.where('date').equals(d).toArray(); }, [] as Coche[]);
+	const cochesDuJour = vivantSelon(() => {
+		const d = date;
+		return () => db.coches.where('date').equals(d).toArray();
+	}, [] as Coche[]);
 	const coches = $derived.by(() => {
 		const n: Record<string, number> = {};
 		for (const c of cochesDuJour.v) n[c.elementId] = (n[c.elementId] ?? 0) + 1;
@@ -123,11 +157,18 @@
 	// titre de la méditation du jour (index légers des recueils, sans les textes)
 	let meditationDuJour = $state('');
 	$effect(() => {
-		const dt = date, j = jour, y = Number(dt.slice(0, 4));
+		const dt = date,
+			j = jour,
+			y = Number(dt.slice(0, 4));
 		if (!j) return;
 		const idMois = RECUEIL_DU_MOIS[Number(dt.slice(5, 7))];
-		Promise.all([chargerRecueil('index/hamon'), chargerRecueil('index/chaignon'), idMois ? chargerRecueil(`index/${idMois}`) : Promise.resolve(null),
-			anneeLiturgique(y - 1), anneeLiturgique(y)])
+		Promise.all([
+			chargerRecueil('index/hamon'),
+			chargerRecueil('index/chaignon'),
+			idMois ? chargerRecueil(`index/${idMois}`) : Promise.resolve(null),
+			anneeLiturgique(y - 1),
+			anneeLiturgique(y)
+		])
 			.then(([h, c, m, a1, a2]) => {
 				const annee = [a1, a2].find((a) => a?.some((x) => x.date === dt)) ?? [];
 				const premier = choisirAvecMois(dt, j, annee, h, c, m)[0];
@@ -142,7 +183,11 @@
 		if (e.titre.startsWith('Office du jour')) return jour.office;
 		if (e.titre.startsWith('Dévotion du mois')) return MOIS_DEVOTION[d.getMonth() + 1].nom;
 		if (e.titre === 'La roue du jour') return roueDuJour;
-		if (e.roue) { const r = roues.find((x) => x.id === e.roue); const el = r && elementDu(r, date); if (el) return el.fr; }
+		if (e.roue) {
+			const r = roues.find((x) => x.id === e.roue);
+			const el = r && elementDu(r, date);
+			if (el) return el.fr;
+		}
 		return '';
 	}
 	const roues = $derived($pratiques.filter((p) => p.type === 'roue'));
@@ -167,7 +212,8 @@
 		return somme(vs);
 	}
 	const bilan = $derived.by(() => {
-		const gagnees: Valeur[] = [], possibles: Valeur[] = [];
+		const gagnees: Valeur[] = [],
+			possibles: Valeur[] = [];
 		if (!ind || !jour) return { gagnees: somme([]), possibles: somme([]) };
 		for (const e of duJour) {
 			const pp = pratiquesPour(e);
@@ -192,7 +238,10 @@
 		return $bibliotheque.length ? bilanDuJour(ids, $bibliotheque) : [];
 	});
 	// durée de prière : estimée d'après les textes (ou réglée à la main), pour chaque ligne et pour le jour entier
-	const minutesTextes = vivant(async () => Object.fromEntries((await db.textes.toArray()).map((t) => [t.id, minutesDuTexte(t.corps ?? '')])), {} as Record<string, number>);
+	const minutesTextes = vivant(
+		async () => Object.fromEntries((await db.textes.toArray()).map((t) => [t.id, minutesDuTexte(t.corps ?? '')])),
+		{} as Record<string, number>
+	);
 	const minutesDe = (ids: string[]) => ids.reduce((a, id) => a + ($minutesTextes[id] ?? 0), 0);
 	function dureeDe(e: ElementListe): number {
 		const pp = pratiquesPour(e);
@@ -200,15 +249,22 @@
 		return e.duree ?? DUREES_FIXES[e.titre] ?? minutesDe(textesDuJour(e, date, jour, roues));
 	}
 	const temps = $derived.by(() => {
-		let tout = 0, fait = 0;
+		let tout = 0,
+			fait = 0;
 		for (const e of duJour) {
 			const pp = pratiquesPour(e);
 			if (pp) {
-				for (const { p } of pp) { const m = minutesDe(p.textes); tout += m; if (faite(p.id)) fait += m; }
+				for (const { p } of pp) {
+					const m = minutesDe(p.textes);
+					tout += m;
+					if (faite(p.id)) fait += m;
+				}
 				continue;
 			}
-			const total = Math.max(1, e.rappels.length), m = dureeDe(e);
-			tout += m * total; fait += m * Math.min(coches[e.id] ?? 0, total);
+			const total = Math.max(1, e.rappels.length),
+				m = dureeDe(e);
+			tout += m * total;
+			fait += m * Math.min(coches[e.id] ?? 0, total);
 		}
 		return { tout, fait };
 	});
@@ -217,16 +273,25 @@
 	// écran d'accueil : une fois par ouverture de l'app (mémorisé pour la session de l'onglet)
 	let accueil = $state(false);
 	$effect(() => {
-		try { accueil = !sessionStorage.getItem('accueil-vu'); } catch { accueil = false; }
+		try {
+			accueil = !sessionStorage.getItem('accueil-vu');
+		} catch {
+			accueil = false;
+		}
 	});
 	function entrer() {
 		accueil = false;
-		try { sessionStorage.setItem('accueil-vu', '1'); } catch { /* stockage indisponible */ }
+		try {
+			sessionStorage.setItem('accueil-vu', '1');
+		} catch {
+			/* stockage indisponible */
+		}
 	}
 	// couronnes : une quête achevée s'annonce une fois, par une carte (recalculée quand on coche)
 	let nouvelle = $state<Couronne | null>(null);
 	$effect(() => {
-		void cochesDuJour.v.length; void faitsDuJour.v.length;
+		void cochesDuJour.v.length;
+		void faitsDuJour.v.length;
 		if (!estAujourdhui) return;
 		Promise.all([couronnesDeLaBase(date), vues()]).then(([cs, v]) => {
 			nouvelle = [...cs].reverse().find((c) => !v.has(c.id)) ?? null;
@@ -249,9 +314,13 @@
 <svelte:head><title>Aujourd’hui — Hortus Sacrum</title></svelte:head>
 
 {#if jour && accueil && estAujourdhui}
-	<Accueil introit={jour.introit_incipit ?? ''} introitFr={jour.introit?.fr?.[0] ?? ''}
+	<Accueil
+		introit={jour.introit_incipit ?? ''}
+		introitFr={jour.introit?.fr?.[0] ?? ''}
 		invocation={jour.martyrologe.map((m) => invocation(m.texte)?.texte).find(Boolean) ?? ''}
-		avancement={duJour.length ? faits / duJour.length : 0} {entrer} />
+		avancement={duJour.length ? faits / duJour.length : 0}
+		{entrer}
+	/>
 {:else if nouvelle && estAujourdhui}
 	<div class="voile-couronne" role="dialog" aria-modal="true" aria-label="Couronne achevée : {nouvelle.titre}">
 		<CarteCouronne c={nouvelle} fermer={rendreGrace} />
@@ -282,8 +351,11 @@
 			{#each fetesDuJour as f (f.id)}
 				<p class="perso"><span class="rub">✠</span> {f.titre}{anniversaire(f)}</p>
 				{#if actionsDeGraces(f.profil).length}
-					<p class="graces petit"><span class="pc rub">En action de grâces :</span>
-						{#each actionsDeGraces(f.profil) as [id, nom], i (id)}{#if i} · {/if}<a href="/prieres/{encodeURIComponent(id)}">{nom}</a>{/each}
+					<p class="graces petit">
+						<span class="pc rub">En action de grâces :</span>
+						{#each actionsDeGraces(f.profil) as [id, nom], i (id)}{#if i}
+								·
+							{/if}<a href="/prieres/{encodeURIComponent(id)}">{nom}</a>{/each}
 					</p>
 				{/if}
 			{/each}
@@ -313,14 +385,20 @@
 				<span class="chiffres-alignes">{faits} / {duJour.length}</span>
 			</div>
 			{#if temps.tout > 0}
-				<div class="avancement interface temps" title="Durée estimée d'après la longueur des prières ; chaque durée se règle dans « Régler la liste »">
+				<div
+					class="avancement interface temps"
+					title="Durée estimée d'après la longueur des prières ; chaque durée se règle dans « Régler la liste »"
+				>
 					<span class="etiquette">Temps de prière</span>
 					<span class="trait"><span style="width: {(100 * temps.fait) / temps.tout}%"></span></span>
 					<span class="chiffres-alignes">{enMinutes(temps.fait)} / {enMinutes(temps.tout)}</span>
 				</div>
 			{/if}
 			{#if enJours(bilan.possibles) > 0}
-				<div class="avancement interface indulg" title="Indulgences partielles des prières cochées (Enchiridion 1952, à défaut Beringer 1925)">
+				<div
+					class="avancement interface indulg"
+					title="Indulgences partielles des prières cochées (Enchiridion 1952, à défaut Beringer 1925)"
+				>
 					<span class="etiquette">Indulgences</span>
 					<span class="trait"><span style="width: {(100 * enJours(bilan.gagnees)) / enJours(bilan.possibles)}%"></span></span>
 					<span class="chiffres-alignes">{enClair(bilan.gagnees)}</span>
@@ -328,18 +406,33 @@
 				<p class="aide total">sur {enClair(bilan.possibles)} pour la liste entière ; indulgences partielles seulement</p>
 			{/if}
 			{#if promesses.length}
-				<details class="promesses"><summary class="aide">Promesses en cours ({promesses.length})</summary>
-					{#each promesses as { p, o } (p.id)}<p class="aide"><strong>{p.titre}</strong>{#if o.total} ({o.rang}/{o.total}){/if} : {p.promesses}</p>{/each}
+				<details class="promesses">
+					<summary class="aide">Promesses en cours ({promesses.length})</summary>
+					{#each promesses as { p, o } (p.id)}<p class="aide">
+							<strong>{p.titre}</strong>{#if o.total}
+								({o.rang}/{o.total}){/if} : {p.promesses}
+						</p>{/each}
 				</details>
 			{/if}
 			{#if cadre.length}
-				<details class="cadre"><summary class="aide">Bilan du jour (fins, objets, grâces, personnes, pratiques) : {cadre.reduce((a, c) => a + c.manques.length, 0) || 'rien ne'} manque{cadre.reduce((a, c) => a + c.manques.length, 0) > 1 ? 'nt' : ''}</summary>
+				<details class="cadre">
+					<summary class="aide"
+						>Bilan du jour (fins, objets, grâces, personnes, pratiques) : {cadre.reduce((a, c) => a + c.manques.length, 0) || 'rien ne'} manque{cadre.reduce(
+							(a, c) => a + c.manques.length,
+							0
+						) > 1
+							? 'nt'
+							: ''}</summary
+					>
 					{#each cadre as c (c.categorie)}
 						<p class="aide"><strong>{c.libelle}</strong> — couvert : {c.couvertes.join(', ') || 'rien'}.</p>
 						{#if c.manques.length}
 							<ul class="aide manques">
 								{#each c.manques as m (m.etiquette)}
-									<li>{m.etiquette}{#if m.proposition} : <a href={`/prieres/${encodeURIComponent(m.proposition.id)}`}>{m.proposition.titre}</a>{/if}</li>
+									<li>
+										{m.etiquette}{#if m.proposition}
+											: <a href={`/prieres/${encodeURIComponent(m.proposition.id)}`}>{m.proposition.titre}</a>{/if}
+									</li>
 								{/each}
 							</ul>
 						{/if}
@@ -385,46 +478,52 @@
 									</li>
 								{/each}
 							{:else}
-							<li class:fini={fait >= total}>
-								<Case
-									libelle={e.titre}
-									bind:cochee={() => fait >= total, () => compter(e, total)}
-								/>
-								<div class="corps">
-									{#if tx.length === 1}
-										<a class="titre" href="/prieres/{encodeURIComponent(tx[0])}">{e.titre}</a>
-										{#if (e.alterner && e.textes.length > 1) || !e.textes.includes(tx[0])}<span class="sous">{$titres[tx[0]] ?? ''}</span>{/if}
-									{:else if tx.length > 1}
-										<details class="plusieurs">
-											<summary class="titre">{e.titre}</summary>
-											{#each tx as id}
-												<a href="/prieres/{encodeURIComponent(id)}">{$titres[id] ?? id}</a>
-											{/each}
-										</details>
-									{:else if e.titre === 'Méditation du jour'}
-										<a class="titre" href="/meditation?date={date}">{e.titre}</a>
-									{:else if e.titre === 'La roue du jour'}
-										<a class="titre" href="/roue?date={date}">{e.titre}</a>
-									{:else if e.titre === 'Dévotion du mois'}
-										<a class="titre" href="/mois?date={date}">{e.titre}</a>
-									{:else if e.titre === 'Office du jour et vie du saint'}
-										<a class="titre" href="/saint?date={date}">{e.titre}</a>
-									{:else}
-										<span class="titre">{e.titre}</span>
+								<li class:fini={fait >= total}>
+									<Case libelle={e.titre} bind:cochee={() => fait >= total, () => compter(e, total)} />
+									<div class="corps">
+										{#if tx.length === 1}
+											<a class="titre" href="/prieres/{encodeURIComponent(tx[0])}">{e.titre}</a>
+											{#if (e.alterner && e.textes.length > 1) || !e.textes.includes(tx[0])}<span class="sous">{$titres[tx[0]] ?? ''}</span
+												>{/if}
+										{:else if tx.length > 1}
+											<details class="plusieurs">
+												<summary class="titre">{e.titre}</summary>
+												{#each tx as id}
+													<a href="/prieres/{encodeURIComponent(id)}">{$titres[id] ?? id}</a>
+												{/each}
+											</details>
+										{:else if e.titre === 'Méditation du jour'}
+											<a class="titre" href="/meditation?date={date}">{e.titre}</a>
+										{:else if e.titre === 'La roue du jour'}
+											<a class="titre" href="/roue?date={date}">{e.titre}</a>
+										{:else if e.titre === 'Dévotion du mois'}
+											<a class="titre" href="/mois?date={date}">{e.titre}</a>
+										{:else if e.titre === 'Office du jour et vie du saint'}
+											<a class="titre" href="/saint?date={date}">{e.titre}</a>
+										{:else}
+											<span class="titre">{e.titre}</span>
+										{/if}
+										{#if sous}<span class="sous">{sous}</span>{/if}
+										{#if e.rappels.length}<span class="heures interface">{e.rappels.join(', ')}</span>{/if}
+										{#if dureeDe(e) > 0}<span class="duree interface">≈ {enMinutes(dureeDe(e))}</span>{/if}
+									</div>
+									{#if total > 1}
+										<button
+											class="medaillon brut"
+											onclick={() => compter(e, total)}
+											aria-label="{fait} sur {total} : compter une récitation de plus"
+										>
+											<Ornement nom="medaillon" taille={34} />
+											<span class="pc">{ROMAINS[fait] || '·'}<i>/</i>{ROMAINS[total]}</span>
+										</button>
 									{/if}
-									{#if sous}<span class="sous">{sous}</span>{/if}
-									{#if e.rappels.length}<span class="heures interface">{e.rappels.join(', ')}</span>{/if}
-									{#if dureeDe(e) > 0}<span class="duree interface">≈ {enMinutes(dureeDe(e))}</span>{/if}
-								</div>
-								{#if total > 1}
-									<button class="medaillon brut" onclick={() => compter(e, total)}
-										aria-label="{fait} sur {total} : compter une récitation de plus">
-										<Ornement nom="medaillon" taille={34} />
-										<span class="pc">{ROMAINS[fait] || '·'}<i>/</i>{ROMAINS[total]}</span>
-									</button>
-								{/if}
-								<span class="genre pc" class:propre={e.etiquette === 'propre'}>{e.etiquette === 'propre' ? 'propre' : 'ord.'}<br /><span class="rang rang-{rangElement(e)}" title={ABREGE[rangElement(e)].latin + ' : ' + ABREGE[rangElement(e)].fr}>{ABREGE[rangElement(e)].abrege}</span></span>
-							</li>
+									<span class="genre pc" class:propre={e.etiquette === 'propre'}
+										>{e.etiquette === 'propre' ? 'propre' : 'ord.'}<br /><span
+											class="rang rang-{rangElement(e)}"
+											title={ABREGE[rangElement(e)].latin + ' : ' + ABREGE[rangElement(e)].fr}>{ABREGE[rangElement(e)].abrege}</span
+										></span
+									>
+								</li>
 							{/if}
 						{/each}
 					</ul>
@@ -434,7 +533,13 @@
 
 		<details class="note-jour" open={!!note.v?.corps}>
 			<summary class="pc">Note du jour</summary>
-			<textarea rows="3" aria-label="Note du jour" value={note.v?.corps ?? ''} onblur={(ev) => noter(ev.currentTarget.value)} placeholder="Une intention, une résolution, une grâce reçue"></textarea>
+			<textarea
+				rows="3"
+				aria-label="Note du jour"
+				value={note.v?.corps ?? ''}
+				onblur={(ev) => noter(ev.currentTarget.value)}
+				placeholder="Une intention, une résolution, une grâce reçue"
+			></textarea>
 		</details>
 
 		<section class="martyrologe" aria-label="Martyrologe">
@@ -464,85 +569,391 @@
 {/if}
 
 <style>
-	.bandeau { height: 5px; border-bottom: var(--hs-cheveu) solid var(--hs-or-trait); }
-	.ecran { max-width: var(--hs-colonne); margin: 0 auto; padding: var(--hs-e6) var(--hs-marge-mobile) 0; }
-	.jour { text-align: center; }
-	.date { margin: 0; font-size: 1.0625rem; color: var(--hs-encre-douce); display: flex; align-items: center; justify-content: center; gap: 4px; }
-	.pas { display: inline-grid; place-items: center; width: 40px; height: 40px; color: var(--hs-encre-douce); }
-	.revenir { margin: 0; font-size: 1rem; }
-	a.titre, .plusieurs summary { color: var(--hs-encre); text-decoration: none; }
-	.plusieurs a { display: block; padding: 6px 0 6px 12px; font-size: 1.0625rem; text-decoration: none; border-left: var(--hs-cheveu) solid var(--hs-or-trait); margin: 2px 0; }
-	.temps { margin: 2px 0 var(--hs-e5); }
-	h1 { font-size: var(--hs-t3); }
-	h1.fete { color: var(--hs-rubrique); }
-	.rang { margin: 0; color: var(--hs-encre-douce); font-size: 1.0625rem; }
-	.comm { margin: 0; font-size: 1rem; font-style: italic; line-height: 1.4; text-wrap: balance; }
-	.comm .pc { font-style: normal; color: var(--hs-encre-douce); }
-	.jeune { margin: var(--hs-e2) 0 0; font-size: 1.0625rem; }
+	.bandeau {
+		height: 5px;
+		border-bottom: var(--hs-cheveu) solid var(--hs-or-trait);
+	}
+	.ecran {
+		max-width: var(--hs-colonne);
+		margin: 0 auto;
+		padding: var(--hs-e6) var(--hs-marge-mobile) 0;
+	}
+	.jour {
+		text-align: center;
+	}
+	.date {
+		margin: 0;
+		font-size: 1.0625rem;
+		color: var(--hs-encre-douce);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 4px;
+	}
+	.pas {
+		display: inline-grid;
+		place-items: center;
+		width: 40px;
+		height: 40px;
+		color: var(--hs-encre-douce);
+	}
+	.revenir {
+		margin: 0;
+		font-size: 1rem;
+	}
+	a.titre,
+	.plusieurs summary {
+		color: var(--hs-encre);
+		text-decoration: none;
+	}
+	.plusieurs a {
+		display: block;
+		padding: 6px 0 6px 12px;
+		font-size: 1.0625rem;
+		text-decoration: none;
+		border-left: var(--hs-cheveu) solid var(--hs-or-trait);
+		margin: 2px 0;
+	}
+	.temps {
+		margin: 2px 0 var(--hs-e5);
+	}
+	h1 {
+		font-size: var(--hs-t3);
+	}
+	h1.fete {
+		color: var(--hs-rubrique);
+	}
+	.rang {
+		margin: 0;
+		color: var(--hs-encre-douce);
+		font-size: 1.0625rem;
+	}
+	.comm {
+		margin: 0;
+		font-size: 1rem;
+		font-style: italic;
+		line-height: 1.4;
+		text-wrap: balance;
+	}
+	.comm .pc {
+		font-style: normal;
+		color: var(--hs-encre-douce);
+	}
+	.jeune {
+		margin: var(--hs-e2) 0 0;
+		font-size: 1.0625rem;
+	}
 
-	.introit { margin-top: var(--hs-e5); border-block: var(--hs-cheveu) solid var(--hs-filet); text-align: left; }
-	.introit summary { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: center; gap: 4px 12px; padding: var(--hs-e3) 0; }
-	.station { font-size: 0.9375rem; color: var(--hs-encre-douce); font-style: italic; flex-basis: 100%; text-align: center; }
-	.colonnes { display: grid; gap: var(--hs-e5); padding: var(--hs-e2) 0 var(--hs-e4); }
-	.colonnes :global(.lecture p) { text-align: left; font-size: 1.0625rem; }
-	.source { font-size: 0.875rem; color: var(--hs-encre-douce); font-style: italic; text-align: center; margin: 0 0 var(--hs-e4); }
+	.introit {
+		margin-top: var(--hs-e5);
+		border-block: var(--hs-cheveu) solid var(--hs-filet);
+		text-align: left;
+	}
+	.introit summary {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: baseline;
+		justify-content: center;
+		gap: 4px 12px;
+		padding: var(--hs-e3) 0;
+	}
+	.station {
+		font-size: 0.9375rem;
+		color: var(--hs-encre-douce);
+		font-style: italic;
+		flex-basis: 100%;
+		text-align: center;
+	}
+	.colonnes {
+		display: grid;
+		gap: var(--hs-e5);
+		padding: var(--hs-e2) 0 var(--hs-e4);
+	}
+	.colonnes :global(.lecture p) {
+		text-align: left;
+		font-size: 1.0625rem;
+	}
+	.source {
+		font-size: 0.875rem;
+		color: var(--hs-encre-douce);
+		font-style: italic;
+		text-align: center;
+		margin: 0 0 var(--hs-e4);
+	}
 
-	.liste { margin-top: var(--hs-e7); }
-	.avancement { display: flex; align-items: center; gap: 12px; color: var(--hs-encre-douce); }
-	.trait { flex: 1; height: 1px; background: var(--hs-filet); position: relative; }
-	.trait span { position: absolute; inset: -1px auto -1px 0; background: var(--hs-vert); transition: width var(--hs-duree-lente) var(--hs-courbe); }
+	.liste {
+		margin-top: var(--hs-e7);
+	}
+	.avancement {
+		display: flex;
+		align-items: center;
+		gap: 12px;
+		color: var(--hs-encre-douce);
+	}
+	.trait {
+		flex: 1;
+		height: 1px;
+		background: var(--hs-filet);
+		position: relative;
+	}
+	.trait span {
+		position: absolute;
+		inset: -1px auto -1px 0;
+		background: var(--hs-vert);
+		transition: width var(--hs-duree-lente) var(--hs-courbe);
+	}
 
-	.indulg { margin-top: var(--hs-e2); }
-	.indulg .trait span { background: var(--hs-or); }
-	.total { margin: 2px 0 0; text-align: right; }
-	.promesses summary { cursor: pointer; text-align: right; }
-	.perso { margin: var(--hs-e3) 0 0; font-style: italic; }
-	.voile-couronne { position: fixed; inset: 0; z-index: 30; overflow-y: auto; padding: calc(24px + env(safe-area-inset-top)) var(--hs-marge-mobile) calc(24px + env(safe-area-inset-bottom)); background: color-mix(in srgb, var(--hs-fond) 94%, transparent); display: grid; place-items: center; animation: venir-carte 700ms var(--hs-courbe); }
-	@keyframes venir-carte { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
-	.graces { margin: 2px 0 0; padding-left: 1.2em; }
-	.note-jour { margin-top: var(--hs-e6); border-block: var(--hs-cheveu) solid var(--hs-filet); }
-	.note-jour summary { padding: 12px 0; color: var(--hs-encre-douce); }
-	.note-jour textarea { margin-bottom: var(--hs-e4); }
-	.medaillon.fixe { cursor: default; }
-	.petit-chiffre { font-family: var(--hs-interface); font-size: 0.625rem !important; }
-	.regler { margin: var(--hs-e2) 0 0; text-align: right; font-family: var(--hs-interface); font-size: var(--hs-t0); letter-spacing: var(--hs-chasse-interface); }
-	.tete { margin-top: var(--hs-e7); text-align: center; display: grid; gap: var(--hs-e3); }
-	.tete h2 { font-size: var(--hs-t2); }
-	.tete .etiquette { margin: -6px 0 0; }
-	ul { list-style: none; margin: var(--hs-e3) 0 0; padding: 0; }
-	li { display: flex; align-items: center; gap: 14px; padding: 11px 0; border-bottom: var(--hs-cheveu) solid var(--hs-filet); min-height: 56px; }
-	.corps { flex: 1; min-width: 0; display: grid; }
-	.titre { line-height: 1.3; transition: color var(--hs-duree) var(--hs-courbe); }
-	li.fini .titre { color: var(--hs-encre-douce); }
-	.sous { font-style: italic; font-size: 1rem; line-height: 1.35; color: var(--hs-encre-douce); }
-	.heures { color: var(--hs-encre-douce); font-size: 0.75rem; margin-top: 2px; }
-	.duree { color: var(--hs-encre-douce); font-size: 0.75rem; margin-top: 2px; opacity: 0.85; }
-	.genre { font-size: 0.9375rem; color: var(--hs-encre-douce); width: 3.2rem; text-align: right; flex: none; }
-	.genre.propre { color: var(--hs-rubrique); }
-	.genre .rang { font-size: 0.75rem; letter-spacing: 0.04em; color: var(--hs-encre-douce); }
-	.genre .rang-praecipua { color: var(--hs-or-texte); }
-	.genre .rang-supererogatoria { font-style: italic; }
-	.seuils { display: flex; justify-content: flex-end; flex-wrap: wrap; gap: var(--hs-e1, 6px) var(--hs-e2); margin: var(--hs-e1, 6px) 0 0; font-size: var(--hs-t0); letter-spacing: var(--hs-chasse-interface); }
-	.seuils button { color: var(--hs-encre-douce); padding: 2px 0; min-height: 0; background: none; border: 0; border-bottom: 1px solid transparent; font: inherit; letter-spacing: inherit; cursor: pointer; }
-	.seuils button[aria-pressed='true'] { color: var(--hs-encre); border-bottom-color: currentColor; }
-	.medaillon { position: relative; flex: none; width: 34px; height: 34px; padding: 0; border: 0; background: none; color: var(--hs-or); cursor: pointer; line-height: 0; }
-	.medaillon span { position: absolute; inset: 0; display: grid; place-items: center; grid-auto-flow: column; justify-content: center; color: var(--hs-encre); font-size: 0.8125rem; line-height: 1; }
-	.medaillon i { font-style: normal; color: var(--hs-encre-douce); margin: 0 1px; }
-	li.fini .medaillon { color: var(--hs-vert); }
+	.indulg {
+		margin-top: var(--hs-e2);
+	}
+	.indulg .trait span {
+		background: var(--hs-or);
+	}
+	.total {
+		margin: 2px 0 0;
+		text-align: right;
+	}
+	.promesses summary {
+		cursor: pointer;
+		text-align: right;
+	}
+	.perso {
+		margin: var(--hs-e3) 0 0;
+		font-style: italic;
+	}
+	.voile-couronne {
+		position: fixed;
+		inset: 0;
+		z-index: 30;
+		overflow-y: auto;
+		padding: calc(24px + env(safe-area-inset-top)) var(--hs-marge-mobile) calc(24px + env(safe-area-inset-bottom));
+		background: color-mix(in srgb, var(--hs-fond) 94%, transparent);
+		display: grid;
+		place-items: center;
+		animation: venir-carte 700ms var(--hs-courbe);
+	}
+	@keyframes venir-carte {
+		from {
+			opacity: 0;
+			transform: translateY(8px);
+		}
+		to {
+			opacity: 1;
+			transform: none;
+		}
+	}
+	.graces {
+		margin: 2px 0 0;
+		padding-left: 1.2em;
+	}
+	.note-jour {
+		margin-top: var(--hs-e6);
+		border-block: var(--hs-cheveu) solid var(--hs-filet);
+	}
+	.note-jour summary {
+		padding: 12px 0;
+		color: var(--hs-encre-douce);
+	}
+	.note-jour textarea {
+		margin-bottom: var(--hs-e4);
+	}
+	.medaillon.fixe {
+		cursor: default;
+	}
+	.petit-chiffre {
+		font-family: var(--hs-interface);
+		font-size: 0.625rem !important;
+	}
+	.regler {
+		margin: var(--hs-e2) 0 0;
+		text-align: right;
+		font-family: var(--hs-interface);
+		font-size: var(--hs-t0);
+		letter-spacing: var(--hs-chasse-interface);
+	}
+	.tete {
+		margin-top: var(--hs-e7);
+		text-align: center;
+		display: grid;
+		gap: var(--hs-e3);
+	}
+	.tete h2 {
+		font-size: var(--hs-t2);
+	}
+	.tete .etiquette {
+		margin: -6px 0 0;
+	}
+	ul {
+		list-style: none;
+		margin: var(--hs-e3) 0 0;
+		padding: 0;
+	}
+	li {
+		display: flex;
+		align-items: center;
+		gap: 14px;
+		padding: 11px 0;
+		border-bottom: var(--hs-cheveu) solid var(--hs-filet);
+		min-height: 56px;
+	}
+	.corps {
+		flex: 1;
+		min-width: 0;
+		display: grid;
+	}
+	.titre {
+		line-height: 1.3;
+		transition: color var(--hs-duree) var(--hs-courbe);
+	}
+	li.fini .titre {
+		color: var(--hs-encre-douce);
+	}
+	.sous {
+		font-style: italic;
+		font-size: 1rem;
+		line-height: 1.35;
+		color: var(--hs-encre-douce);
+	}
+	.heures {
+		color: var(--hs-encre-douce);
+		font-size: 0.75rem;
+		margin-top: 2px;
+	}
+	.duree {
+		color: var(--hs-encre-douce);
+		font-size: 0.75rem;
+		margin-top: 2px;
+		opacity: 0.85;
+	}
+	.genre {
+		font-size: 0.9375rem;
+		color: var(--hs-encre-douce);
+		width: 3.2rem;
+		text-align: right;
+		flex: none;
+	}
+	.genre.propre {
+		color: var(--hs-rubrique);
+	}
+	.genre .rang {
+		font-size: 0.75rem;
+		letter-spacing: 0.04em;
+		color: var(--hs-encre-douce);
+	}
+	.genre .rang-praecipua {
+		color: var(--hs-or-texte);
+	}
+	.genre .rang-supererogatoria {
+		font-style: italic;
+	}
+	.seuils {
+		display: flex;
+		justify-content: flex-end;
+		flex-wrap: wrap;
+		gap: var(--hs-e1, 6px) var(--hs-e2);
+		margin: var(--hs-e1, 6px) 0 0;
+		font-size: var(--hs-t0);
+		letter-spacing: var(--hs-chasse-interface);
+	}
+	.seuils button {
+		color: var(--hs-encre-douce);
+		padding: 2px 0;
+		min-height: 0;
+		background: none;
+		border: 0;
+		border-bottom: 1px solid transparent;
+		font: inherit;
+		letter-spacing: inherit;
+		cursor: pointer;
+	}
+	.seuils button[aria-pressed='true'] {
+		color: var(--hs-encre);
+		border-bottom-color: currentColor;
+	}
+	.medaillon {
+		position: relative;
+		flex: none;
+		width: 34px;
+		height: 34px;
+		padding: 0;
+		border: 0;
+		background: none;
+		color: var(--hs-or);
+		cursor: pointer;
+		line-height: 0;
+	}
+	.medaillon span {
+		position: absolute;
+		inset: 0;
+		display: grid;
+		place-items: center;
+		grid-auto-flow: column;
+		justify-content: center;
+		color: var(--hs-encre);
+		font-size: 0.8125rem;
+		line-height: 1;
+	}
+	.medaillon i {
+		font-style: normal;
+		color: var(--hs-encre-douce);
+		margin: 0 1px;
+	}
+	li.fini .medaillon {
+		color: var(--hs-vert);
+	}
 
-	.eloge { border-bottom: var(--hs-cheveu) solid var(--hs-filet); }
-	.eloge summary { padding: 10px 0; }
-	.invocation::before { content: '✠'; color: var(--hs-rubrique); margin-right: 10px; font-size: 0.8em; }
-	.invocation.sans { color: var(--hs-encre-douce); font-style: italic; }
-	.invocation.sans::before { content: '·'; }
-	.nom-latin { display: block; margin-left: 1.55rem; font-size: 1rem; font-style: italic; color: var(--hs-encre-douce); line-height: 1.35; }
-	.texte { margin: 0 0 12px 1.5rem; font-size: 1.0625rem; text-align: justify; hyphens: auto; }
-	.tous { text-align: center; margin: var(--hs-e5) 0 var(--hs-e2); font-style: italic; }
-	.martyrologe .tete { margin-bottom: var(--hs-e3); }
-	.cul { margin: var(--hs-e7) auto 0; max-width: 16rem; }
+	.eloge {
+		border-bottom: var(--hs-cheveu) solid var(--hs-filet);
+	}
+	.eloge summary {
+		padding: 10px 0;
+	}
+	.invocation::before {
+		content: '✠';
+		color: var(--hs-rubrique);
+		margin-right: 10px;
+		font-size: 0.8em;
+	}
+	.invocation.sans {
+		color: var(--hs-encre-douce);
+		font-style: italic;
+	}
+	.invocation.sans::before {
+		content: '·';
+	}
+	.nom-latin {
+		display: block;
+		margin-left: 1.55rem;
+		font-size: 1rem;
+		font-style: italic;
+		color: var(--hs-encre-douce);
+		line-height: 1.35;
+	}
+	.texte {
+		margin: 0 0 12px 1.5rem;
+		font-size: 1.0625rem;
+		text-align: justify;
+		hyphens: auto;
+	}
+	.tous {
+		text-align: center;
+		margin: var(--hs-e5) 0 var(--hs-e2);
+		font-style: italic;
+	}
+	.martyrologe .tete {
+		margin-bottom: var(--hs-e3);
+	}
+	.cul {
+		margin: var(--hs-e7) auto 0;
+		max-width: 16rem;
+	}
 
 	@media (min-width: 700px) {
-		h1 { font-size: var(--hs-t4); }
-		.colonnes { grid-template-columns: 1fr 1fr; }
+		h1 {
+			font-size: var(--hs-t4);
+		}
+		.colonnes {
+			grid-template-columns: 1fr 1fr;
+		}
 	}
 </style>

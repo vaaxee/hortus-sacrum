@@ -25,9 +25,12 @@
 	const pt = (r: number, a: number) => [r * Math.sin(a), -r * Math.cos(a)];
 	/** Un vitrail : secteur d'anneau entre a0 et a1 (radians, 0 au sommet), avec un léger jour entre les pièces. */
 	function vitrail(r0: number, r1: number, a0: number, a1: number): string {
-		const g0 = 2.2 / r0, g1 = 2.2 / r1;
-		const [x1, y1] = pt(r1, a0 + g1), [x2, y2] = pt(r1, a1 - g1);
-		const [x3, y3] = pt(r0, a1 - g0), [x4, y4] = pt(r0, a0 + g0);
+		const g0 = 2.2 / r0,
+			g1 = 2.2 / r1;
+		const [x1, y1] = pt(r1, a0 + g1),
+			[x2, y2] = pt(r1, a1 - g1);
+		const [x3, y3] = pt(r0, a1 - g0),
+			[x4, y4] = pt(r0, a0 + g0);
 		const grand = a1 - a0 > Math.PI ? 1 : 0;
 		const f = (v: number) => v.toFixed(2);
 		return `M${f(x1)} ${f(y1)}A${r1} ${r1} 0 ${grand} 1 ${f(x2)} ${f(y2)}L${f(x3)} ${f(y3)}A${r0} ${r0} 0 ${grand} 0 ${f(x4)} ${f(y4)}Z`;
@@ -37,7 +40,12 @@
 	const perles = Array.from({ length: 48 }, (_, i) => pt(R1 + 8, (i * Math.PI * 2) / 48));
 </script>
 
-<svg class="rosace" viewBox="-212 -212 424 424" role="img" aria-label="La roue symbolique : l’élément du jour de chaque roue est au sommet, sous la croix">
+<svg
+	class="rosace"
+	viewBox="-212 -212 424 424"
+	role="img"
+	aria-label="La roue symbolique : l’élément du jour de chaque roue est au sommet, sous la croix"
+>
 	<defs>
 		<radialGradient id="rosace-lumiere" cx="0" cy="0" r="200" gradientUnits="userSpaceOnUse">
 			<stop offset="0" stop-color="var(--hs-or)" stop-opacity="0.22" />
@@ -54,9 +62,16 @@
 
 	{#each anneaux as a, i (a.id)}
 		{@const [r0, r1] = bornes[i]}
-		<g class="anneau" class:choisi={choisi === a.id} style="--verre: {a.couleur}; transform: rotate({tour(a)}deg)"
-			role="button" tabindex="0" aria-label="{a.titre}, {a.position + 1} sur {a.nombre}"
-			onclick={() => (choisi = a.id)} onkeydown={(e) => (e.key === 'Enter' || e.key === ' ') && (choisi = a.id)}>
+		<g
+			class="anneau"
+			class:choisi={choisi === a.id}
+			style="--verre: {a.couleur}; transform: rotate({tour(a)}deg)"
+			role="button"
+			tabindex="0"
+			aria-label="{a.titre}, {a.position + 1} sur {a.nombre}"
+			onclick={() => (choisi = a.id)}
+			onkeydown={(e) => (e.key === 'Enter' || e.key === ' ') && (choisi = a.id)}
+		>
 			{#each Array(a.nombre) as _, k}
 				{@const a0 = (k * Math.PI * 2) / a.nombre}
 				{@const a1 = ((k + 1) * Math.PI * 2) / a.nombre}
@@ -64,9 +79,14 @@
 				{@const [lx, ly] = pt((r0 + r1) / 2, m)}
 				<path d={vitrail(r0, r1, a0, a1)} class="verre" class:jour={k === a.position} />
 				{#if a.nombre <= 15 && r1 - r0 > 14}
-					{@const vu = (((m * 180) / Math.PI + tour(a)) % 360 + 360) % 360}
-					<text x={lx} y={ly} class="chiffre" class:jour={k === a.position}
-						transform="rotate({(m * 180) / Math.PI + (vu > 90 && vu < 270 ? 180 : 0)} {lx} {ly})">{ROMAINS[k + 1] ?? k + 1}</text>
+					{@const vu = ((((m * 180) / Math.PI + tour(a)) % 360) + 360) % 360}
+					<text
+						x={lx}
+						y={ly}
+						class="chiffre"
+						class:jour={k === a.position}
+						transform="rotate({(m * 180) / Math.PI + (vu > 90 && vu < 270 ? 180 : 0)} {lx} {ly})">{ROMAINS[k + 1] ?? k + 1}</text
+					>
 				{/if}
 			{/each}
 		</g>
@@ -89,28 +109,92 @@
 </svg>
 
 <style>
-	.rosace { width: 100%; max-width: 30rem; display: block; margin: 0 auto; overflow: visible; }
-	.pierre { fill: none; stroke: var(--hs-or); stroke-width: 1.2; opacity: 0.85; }
-	.pierre.fin { stroke-width: 0.6; opacity: 0.6; }
-	.perle { fill: var(--hs-or); opacity: 0.7; }
-	.anneau { transition: transform 900ms var(--hs-courbe); cursor: pointer; outline: none; }
+	.rosace {
+		width: 100%;
+		max-width: 30rem;
+		display: block;
+		margin: 0 auto;
+		overflow: visible;
+	}
+	.pierre {
+		fill: none;
+		stroke: var(--hs-or);
+		stroke-width: 1.2;
+		opacity: 0.85;
+	}
+	.pierre.fin {
+		stroke-width: 0.6;
+		opacity: 0.6;
+	}
+	.perle {
+		fill: var(--hs-or);
+		opacity: 0.7;
+	}
+	.anneau {
+		transition: transform 900ms var(--hs-courbe);
+		cursor: pointer;
+		outline: none;
+	}
 	.verre {
 		fill: color-mix(in srgb, var(--verre) 16%, var(--hs-fond));
-		stroke: var(--hs-or); stroke-width: 0.6; stroke-opacity: 0.55;
+		stroke: var(--hs-or);
+		stroke-width: 0.6;
+		stroke-opacity: 0.55;
 		transition: fill var(--hs-duree-lente) var(--hs-courbe);
 	}
-	.verre.jour { fill: color-mix(in srgb, var(--verre) 78%, var(--hs-fond)); stroke-width: 1.4; stroke-opacity: 1; }
-	.anneau:hover .verre:not(.jour), .anneau.choisi .verre:not(.jour) { fill: color-mix(in srgb, var(--verre) 30%, var(--hs-fond)); }
-	.anneau:focus-visible .verre { stroke-width: 1.6; stroke-opacity: 1; }
-	.chiffre {
-		font-family: var(--hs-titre); font-size: 9px; letter-spacing: 0.06em; text-anchor: middle; dominant-baseline: central;
-		fill: color-mix(in srgb, var(--verre) 70%, var(--hs-encre)); pointer-events: none;
+	.verre.jour {
+		fill: color-mix(in srgb, var(--verre) 78%, var(--hs-fond));
+		stroke-width: 1.4;
+		stroke-opacity: 1;
 	}
-	.chiffre.jour { fill: var(--hs-fond); font-weight: 600; }
-	.medaillon { fill: color-mix(in srgb, var(--hs-or) 18%, var(--hs-fond)); stroke: var(--hs-or); stroke-width: 1.2; }
-	.chrisme path { fill: none; stroke: var(--hs-or-texte); stroke-width: 1.6; }
-	.centre { font-family: var(--hs-titre); font-style: italic; font-size: 9px; text-anchor: middle; fill: var(--hs-or-texte); letter-spacing: 0.08em; }
-	.croix path { fill: var(--hs-rubrique); }
-	.croix circle { fill: var(--hs-or); }
-	@media (prefers-reduced-motion: reduce) { .anneau { transition: none; } }
+	.anneau:hover .verre:not(.jour),
+	.anneau.choisi .verre:not(.jour) {
+		fill: color-mix(in srgb, var(--verre) 30%, var(--hs-fond));
+	}
+	.anneau:focus-visible .verre {
+		stroke-width: 1.6;
+		stroke-opacity: 1;
+	}
+	.chiffre {
+		font-family: var(--hs-titre);
+		font-size: 9px;
+		letter-spacing: 0.06em;
+		text-anchor: middle;
+		dominant-baseline: central;
+		fill: color-mix(in srgb, var(--verre) 70%, var(--hs-encre));
+		pointer-events: none;
+	}
+	.chiffre.jour {
+		fill: var(--hs-fond);
+		font-weight: 600;
+	}
+	.medaillon {
+		fill: color-mix(in srgb, var(--hs-or) 18%, var(--hs-fond));
+		stroke: var(--hs-or);
+		stroke-width: 1.2;
+	}
+	.chrisme path {
+		fill: none;
+		stroke: var(--hs-or-texte);
+		stroke-width: 1.6;
+	}
+	.centre {
+		font-family: var(--hs-titre);
+		font-style: italic;
+		font-size: 9px;
+		text-anchor: middle;
+		fill: var(--hs-or-texte);
+		letter-spacing: 0.08em;
+	}
+	.croix path {
+		fill: var(--hs-rubrique);
+	}
+	.croix circle {
+		fill: var(--hs-or);
+	}
+	@media (prefers-reduced-motion: reduce) {
+		.anneau {
+			transition: none;
+		}
+	}
 </style>

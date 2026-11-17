@@ -20,22 +20,51 @@
 	let fetes = $state<FetePerso[]>([]);
 	let titres = $state<Record<string, string>>({});
 	$effect(() => {
-		const dt = date, dd = d;
+		const dt = date,
+			dd = d;
 		jourDu(dt).then((j) => (jour = j));
-		db.liste.orderBy('ordre').toArray().then((l) => (liste = l.filter((e) => e.actif && !e.supprimeLe && e.jours[dd.getDay()])));
+		db.liste
+			.orderBy('ordre')
+			.toArray()
+			.then((l) => (liste = l.filter((e) => e.actif && !e.supprimeLe && e.jours[dd.getDay()])));
 		db.pratiques.toArray().then((p) => (pratiques = p.filter((x) => !x.supprimeLe && (x.active || x.type === 'roue'))));
-		db.fetes.where('[mois+jour]').equals([dd.getMonth() + 1, dd.getDate()]).toArray().then((f) => (fetes = f.filter((x) => !x.supprimeLe)));
+		db.fetes
+			.where('[mois+jour]')
+			.equals([dd.getMonth() + 1, dd.getDate()])
+			.toArray()
+			.then((f) => (fetes = f.filter((x) => !x.supprimeLe)));
 		db.textes.toArray().then((t) => (titres = Object.fromEntries(t.map((x) => [x.id, x.titre]))));
 	});
-	const MOMENTS: [Moment, string][] = [['matin', 'Matin'], ['propre', 'Propre du jour'], ['journee', 'Au fil du jour'], ['soir', 'Soir']];
-	const sansAccent = (x: string) => x.normalize('NFD').replace(/[\u0300-\u036f’']/g, '').toLowerCase();
+	const MOMENTS: [Moment, string][] = [
+		['matin', 'Matin'],
+		['propre', 'Propre du jour'],
+		['journee', 'Au fil du jour'],
+		['soir', 'Soir']
+	];
+	const sansAccent = (x: string) =>
+		x
+			.normalize('NFD')
+			.replace(/[\u0300-\u036f’']/g, '')
+			.toLowerCase();
 	/** Le titre de la prière répète-t-il celui de la ligne ? (« Triple Couronne… » / « La Triple Couronne… ») */
-	const proche = (a: string, b: string) => { const x = sansAccent(a), y = sansAccent(b).slice(0, 14); return x.includes(y) || sansAccent(b).includes(x.slice(0, 14)); };
+	const proche = (a: string, b: string) => {
+		const x = sansAccent(a),
+			y = sansAccent(b).slice(0, 14);
+		return x.includes(y) || sansAccent(b).includes(x.slice(0, 14));
+	};
 	const generiques = ['Dévotion à jours comptés', 'Neuvaine ou trentain', 'La roue du jour'];
-	const enCours = $derived(pratiques.filter((p) => p.type !== 'roue' && p.active).map((p) => ({ p, o: occurrenceDu(p, date) })).filter((x) => x.o));
-	const roue = $derived(pratiques.filter((p) => p.type === 'roue' && p.active && !p.liste && (p.elements?.length ?? 0) > 1)
-		.sort((a, b) => (a.elements?.length ?? 0) - (b.elements?.length ?? 0))
-		.map((p) => ({ titre: p.titre, e: elementDu(p, date) })));
+	const enCours = $derived(
+		pratiques
+			.filter((p) => p.type !== 'roue' && p.active)
+			.map((p) => ({ p, o: occurrenceDu(p, date) }))
+			.filter((x) => x.o)
+	);
+	const roue = $derived(
+		pratiques
+			.filter((p) => p.type === 'roue' && p.active && !p.liste && (p.elements?.length ?? 0) > 1)
+			.sort((a, b) => (a.elements?.length ?? 0) - (b.elements?.length ?? 0))
+			.map((p) => ({ titre: p.titre, e: elementDu(p, date) }))
+	);
 </script>
 
 <svelte:head>
@@ -54,10 +83,16 @@
 			<p class="date pc">{dateLongue}</p>
 			<p class="temps">{jour.temps}</p>
 			<h1><span class="pastille" style="--p: {teinte(jour)}"></span>{jour.office}</h1>
-			<p class="rang">{RANG[jour.rang] ?? jour.rang}{#if jour.commemoraisons.length} — comm. {jour.commemoraisons.join(' ; ')}{/if}</p>
+			<p class="rang">
+				{RANG[jour.rang] ?? jour.rang}{#if jour.commemoraisons.length}
+					— comm. {jour.commemoraisons.join(' ; ')}{/if}
+			</p>
 			{#if jour.jeune_abstinence}<p class="rub">{jour.jeune_abstinence.libelle}</p>{/if}
 			{#each fetes as f}<p class="rub">✠ {f.titre}</p>{/each}
-			{#if jour.introit_incipit}<p class="introit"><span class="pc">Introït</span> <em lang="la">{jour.introit_incipit}</em>{#if jour.station} · {jour.station}{/if}</p>{/if}
+			{#if jour.introit_incipit}<p class="introit">
+					<span class="pc">Introït</span> <em lang="la">{jour.introit_incipit}</em>{#if jour.station}
+						· {jour.station}{/if}
+				</p>{/if}
 		</header>
 
 		{#each MOMENTS as [m, nom]}
@@ -66,15 +101,32 @@
 				<h2>{nom}</h2>
 				<ul>
 					{#each el as e (e.id)}
-						{@const tx = textesDuJour(e, date, jour, pratiques.filter((x) => x.type === 'roue'))}
-						<li><span class="case"></span>{e.titre}{#if tx.length === 1 && titres[tx[0]] && !proche(titres[tx[0]], e.titre)} <em>— {titres[tx[0]]}</em>{/if}{#if e.rappels.length > 1} <span class="fois">({e.rappels.join(', ')})</span>{/if}</li>
+						{@const tx = textesDuJour(
+							e,
+							date,
+							jour,
+							pratiques.filter((x) => x.type === 'roue')
+						)}
+						<li>
+							<span class="case"></span>{e.titre}{#if tx.length === 1 && titres[tx[0]] && !proche(titres[tx[0]], e.titre)}
+								<em>— {titres[tx[0]]}</em>{/if}{#if e.rappels.length > 1}
+								<span class="fois">({e.rappels.join(', ')})</span>{/if}
+						</li>
 					{/each}
 					{#if m === 'propre'}
 						{#each enCours as { p, o } (p.id)}
-							<li><span class="case"></span>{p.titre}{#if o?.total} <span class="fois">{o.rang}/{o.total}</span>{/if}</li>
+							<li>
+								<span class="case"></span>{p.titre}{#if o?.total}
+									<span class="fois">{o.rang}/{o.total}</span>{/if}
+							</li>
 						{/each}
 						{#if roue.length}
-							<li class="roue"><span class="case"></span>La roue du jour : {roue.map((r) => r.e?.fr).filter(Boolean).join(' · ')}</li>
+							<li class="roue">
+								<span class="case"></span>La roue du jour : {roue
+									.map((r) => r.e?.fr)
+									.filter(Boolean)
+									.join(' · ')}
+							</li>
 						{/if}
 					{/if}
 				</ul>
@@ -82,7 +134,12 @@
 		{/each}
 
 		<h2>Martyrologe</h2>
-		<p class="saints">{jour.martyrologe.map((x) => invocation(x.texte)?.texte).filter(Boolean).join(' — ')}</p>
+		<p class="saints">
+			{jour.martyrologe
+				.map((x) => invocation(x.texte)?.texte)
+				.filter(Boolean)
+				.join(' — ')}
+		</p>
 
 		<h2>Note</h2>
 		<div class="lignes"></div>
@@ -91,24 +148,118 @@
 {/if}
 
 <style>
-	.barre { display: flex; justify-content: space-between; align-items: center; gap: 12px; max-width: 148mm; margin: 24px auto 12px; padding: 0 12px; }
-	.fiche { max-width: 148mm; margin: 0 auto; padding: 0 12px 120px; font-size: 10pt; line-height: 1.4; }
-	header { text-align: center; border-bottom: 0.6pt solid var(--hs-or); padding-bottom: 6pt; }
-	.date { margin: 0; color: var(--hs-encre-douce); font-size: 10pt; }
-	.temps { margin: 0; font-style: italic; color: var(--hs-encre-douce); font-size: 9pt; }
-	h1 { font-size: 15pt; margin: 4pt 0 2pt; display: flex; gap: 8px; align-items: center; justify-content: center; }
-	.pastille { width: 9pt; height: 9pt; border-radius: 50%; background: var(--p); border: 0.5pt solid var(--hs-or); flex: none; }
-	.rang, .introit, .rub { margin: 1pt 0; font-size: 9pt; }
-	.rub { color: var(--hs-rubrique); }
-	h2 { font-family: var(--hs-titre); font-style: italic; font-size: 12pt; color: var(--hs-rubrique); margin: 8pt 0 2pt; }
-	ul { list-style: none; margin: 0; padding: 0; columns: 2; column-gap: 8mm; }
-	li { break-inside: avoid; padding: 1.5pt 0; display: flex; gap: 6px; align-items: baseline; }
-	li em { color: var(--hs-encre-douce); }
-	li.roue { column-span: all; }
-	.case { flex: none; width: 7pt; height: 7pt; border: 0.6pt solid var(--hs-encre); transform: translateY(1pt); }
-	.fois { color: var(--hs-encre-douce); font-size: 8pt; }
-	.saints { margin: 0; font-size: 9pt; font-style: italic; }
-	.lignes { height: 22mm; background: repeating-linear-gradient(transparent 0 6.5mm, var(--hs-filet) 6.5mm calc(6.5mm + 0.5pt)); }
-	.cul { max-width: 40mm; margin: 6pt auto 0; }
-	@media print { .fiche { max-width: none; padding: 0; } }
+	.barre {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 12px;
+		max-width: 148mm;
+		margin: 24px auto 12px;
+		padding: 0 12px;
+	}
+	.fiche {
+		max-width: 148mm;
+		margin: 0 auto;
+		padding: 0 12px 120px;
+		font-size: 10pt;
+		line-height: 1.4;
+	}
+	header {
+		text-align: center;
+		border-bottom: 0.6pt solid var(--hs-or);
+		padding-bottom: 6pt;
+	}
+	.date {
+		margin: 0;
+		color: var(--hs-encre-douce);
+		font-size: 10pt;
+	}
+	.temps {
+		margin: 0;
+		font-style: italic;
+		color: var(--hs-encre-douce);
+		font-size: 9pt;
+	}
+	h1 {
+		font-size: 15pt;
+		margin: 4pt 0 2pt;
+		display: flex;
+		gap: 8px;
+		align-items: center;
+		justify-content: center;
+	}
+	.pastille {
+		width: 9pt;
+		height: 9pt;
+		border-radius: 50%;
+		background: var(--p);
+		border: 0.5pt solid var(--hs-or);
+		flex: none;
+	}
+	.rang,
+	.introit,
+	.rub {
+		margin: 1pt 0;
+		font-size: 9pt;
+	}
+	.rub {
+		color: var(--hs-rubrique);
+	}
+	h2 {
+		font-family: var(--hs-titre);
+		font-style: italic;
+		font-size: 12pt;
+		color: var(--hs-rubrique);
+		margin: 8pt 0 2pt;
+	}
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		columns: 2;
+		column-gap: 8mm;
+	}
+	li {
+		break-inside: avoid;
+		padding: 1.5pt 0;
+		display: flex;
+		gap: 6px;
+		align-items: baseline;
+	}
+	li em {
+		color: var(--hs-encre-douce);
+	}
+	li.roue {
+		column-span: all;
+	}
+	.case {
+		flex: none;
+		width: 7pt;
+		height: 7pt;
+		border: 0.6pt solid var(--hs-encre);
+		transform: translateY(1pt);
+	}
+	.fois {
+		color: var(--hs-encre-douce);
+		font-size: 8pt;
+	}
+	.saints {
+		margin: 0;
+		font-size: 9pt;
+		font-style: italic;
+	}
+	.lignes {
+		height: 22mm;
+		background: repeating-linear-gradient(transparent 0 6.5mm, var(--hs-filet) 6.5mm calc(6.5mm + 0.5pt));
+	}
+	.cul {
+		max-width: 40mm;
+		margin: 6pt auto 0;
+	}
+	@media print {
+		.fiche {
+			max-width: none;
+			padding: 0;
+		}
+	}
 </style>

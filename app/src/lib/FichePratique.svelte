@@ -19,8 +19,12 @@
 	});
 
 	const TYPES: [TypePratique, string][] = [
-		['jours_comptes', 'Dévotion à jours comptés'], ['neuvaine', 'Neuvaine'], ['trentain', 'Trentain'],
-		['consecration', 'Consécration'], ['mois', 'Dévotion du mois'], ['jour_semaine', 'Dévotion du jour de la semaine']
+		['jours_comptes', 'Dévotion à jours comptés'],
+		['neuvaine', 'Neuvaine'],
+		['trentain', 'Trentain'],
+		['consecration', 'Consécration'],
+		['mois', 'Dévotion du mois'],
+		['jour_semaine', 'Dévotion du jour de la semaine']
 	];
 	const GENRES: [Regle['genre'], string][] = [
 		['consecutifs', 'Des jours de suite, à partir d’une date'],
@@ -43,13 +47,19 @@
 		const jour = (r.jour as number) || 1;
 		const debut = (r.debut as string) || aujourdhui;
 		pratique.regle =
-			g === 'consecutifs' ? { genre: g, nombre, jourSemaine, debut }
-			: g === 'avant_fete' ? { genre: g, nombre, jourSemaine, mois, jour }
-			: g === 'mensuel' ? { genre: g, rang: 1, jourSemaine: jourSemaine ?? 5 }
-			: g === 'fixe' ? { genre: g, mois, jour }
-			: g === 'mois_entier' ? { genre: g, mois }
-			: g === 'roue' ? { genre: g, unite: 'jour' }
-			: { genre: g, jourSemaine: jourSemaine ?? 0 };
+			g === 'consecutifs'
+				? { genre: g, nombre, jourSemaine, debut }
+				: g === 'avant_fete'
+					? { genre: g, nombre, jourSemaine, mois, jour }
+					: g === 'mensuel'
+						? { genre: g, rang: 1, jourSemaine: jourSemaine ?? 5 }
+						: g === 'fixe'
+							? { genre: g, mois, jour }
+							: g === 'mois_entier'
+								? { genre: g, mois }
+								: g === 'roue'
+									? { genre: g, unite: 'jour' }
+									: { genre: g, jourSemaine: jourSemaine ?? 0 };
 	}
 	/** « chaque jour » (null) ou un jour de la semaine. */
 	const lireJour = (v: string) => (v === '' ? null : Number(v));
@@ -84,7 +94,10 @@
 			<label><span>Combien</span><input type="number" min="1" max="366" bind:value={r.nombre} /></label>
 			<label>
 				<span>Lesquels</span>
-				<select value={r.jourSemaine === null ? '' : String(r.jourSemaine)} onchange={(e) => (r.jourSemaine = lireJour(e.currentTarget.value))}>
+				<select
+					value={r.jourSemaine === null ? '' : String(r.jourSemaine)}
+					onchange={(e) => (r.jourSemaine = lireJour(e.currentTarget.value))}
+				>
 					<option value="">tous les jours</option>
 					{#each JOURS as j, i}<option value={String(i)}>les {j}s</option>{/each}
 				</select>
@@ -100,7 +113,9 @@
 			<label><span>{r.genre === 'fixe' ? 'Le' : 'Avant le'}</span><input type="number" min="1" max="31" bind:value={r.jour} /></label>
 			<label>
 				<span>Mois</span>
-				<select bind:value={r.mois}>{#each MOIS as m, i}<option value={i + 1}>{m}</option>{/each}</select>
+				<select bind:value={r.mois}
+					>{#each MOIS as m, i}<option value={i + 1}>{m}</option>{/each}</select
+				>
 			</label>
 		</div>
 	{/if}
@@ -115,25 +130,34 @@
 			</label>
 			<label>
 				<span>Jour</span>
-				<select bind:value={r.jourSemaine}>{#each JOURS as j, i}<option value={i}>{j}</option>{/each}</select>
+				<select bind:value={r.jourSemaine}
+					>{#each JOURS as j, i}<option value={i}>{j}</option>{/each}</select
+				>
 			</label>
 		</div>
 		<div class="deux">
 			<label><span>Mois de suite (vide : sans fin)</span><input type="number" min="1" max="60" bind:value={r.nombre} /></label>
 			<label><span>À partir du</span><input type="date" bind:value={r.debut} /></label>
 		</div>
-		<label class="case"><input type="checkbox" checked={r.decalage === -1} onchange={(e) => (r.decalage = e.currentTarget.checked ? -1 : 0)} /> La veille de ce jour</label>
+		<label class="case"
+			><input type="checkbox" checked={r.decalage === -1} onchange={(e) => (r.decalage = e.currentTarget.checked ? -1 : 0)} /> La veille de ce
+			jour</label
+		>
 	{/if}
 	{#if pratique.regle.genre === 'mois_entier'}
 		<label>
 			<span>Mois</span>
-			<select bind:value={pratique.regle.mois}>{#each MOIS as m, i}<option value={i + 1}>{m}</option>{/each}</select>
+			<select bind:value={pratique.regle.mois}
+				>{#each MOIS as m, i}<option value={i + 1}>{m}</option>{/each}</select
+			>
 		</label>
 	{/if}
 	{#if pratique.regle.genre === 'hebdomadaire'}
 		<label>
 			<span>Jour</span>
-			<select bind:value={pratique.regle.jourSemaine}>{#each JOURS as j, i}<option value={i}>{j}</option>{/each}</select>
+			<select bind:value={pratique.regle.jourSemaine}
+				>{#each JOURS as j, i}<option value={i}>{j}</option>{/each}</select
+			>
 		</label>
 	{/if}
 	<p class="clair">{regleEnClair(pratique.regle)}</p>
@@ -144,12 +168,24 @@
 	{#each pratique.textes as id}
 		<div class="liee">
 			<span>{titres[id] ?? 'Prière introuvable'}</span>
-			<button class="brut" type="button" aria-label="Retirer cette prière" onclick={() => (pratique.textes = pratique.textes.filter((x) => x !== id))}>×</button>
+			<button
+				class="brut"
+				type="button"
+				aria-label="Retirer cette prière"
+				onclick={() => (pratique.textes = pratique.textes.filter((x) => x !== id))}>×</button
+			>
 		</div>
 	{/each}
 	<input type="search" placeholder="Chercher une prière à lier" bind:value={recherche} aria-label="Chercher une prière à lier" />
 	{#each trouves as t}
-		<button class="trouve brut" type="button" onclick={() => { pratique.textes = [...pratique.textes, t.id]; recherche = ''; }}>
+		<button
+			class="trouve brut"
+			type="button"
+			onclick={() => {
+				pratique.textes = [...pratique.textes, t.id];
+				recherche = '';
+			}}
+		>
 			{t.titre} <span class="petit">{t.partie}</span>
 		</button>
 	{/each}
@@ -169,12 +205,61 @@
 </fieldset>
 
 <style>
-	label, fieldset { margin-top: var(--hs-e4); }
-	.deux { display: grid; grid-template-columns: 1fr 1fr; gap: var(--hs-e4); }
-	input[type='date'] { width: 100%; padding: 9px 2px; font: inherit; color: var(--hs-encre); background: transparent; border: 0; border-bottom: var(--hs-trait) solid var(--hs-filet); }
-	.case { display: flex; gap: 8px; align-items: baseline; font-size: 1rem; }
-	.clair { margin: var(--hs-e4) 0 0; font-style: italic; color: var(--hs-rubrique); }
-	.liee { display: flex; align-items: center; justify-content: space-between; gap: 8px; border-bottom: var(--hs-cheveu) solid var(--hs-filet); padding: 2px 0; }
-	.liee button { width: 32px; height: 32px; background: none; border: 0; cursor: pointer; color: var(--hs-rubrique); font-size: 1.125rem; }
-	.trouve { display: block; width: 100%; text-align: left; background: none; border: 0; border-bottom: var(--hs-cheveu) solid var(--hs-filet); padding: 8px 0; cursor: pointer; color: var(--hs-lapis); }
+	label,
+	fieldset {
+		margin-top: var(--hs-e4);
+	}
+	.deux {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: var(--hs-e4);
+	}
+	input[type='date'] {
+		width: 100%;
+		padding: 9px 2px;
+		font: inherit;
+		color: var(--hs-encre);
+		background: transparent;
+		border: 0;
+		border-bottom: var(--hs-trait) solid var(--hs-filet);
+	}
+	.case {
+		display: flex;
+		gap: 8px;
+		align-items: baseline;
+		font-size: 1rem;
+	}
+	.clair {
+		margin: var(--hs-e4) 0 0;
+		font-style: italic;
+		color: var(--hs-rubrique);
+	}
+	.liee {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 8px;
+		border-bottom: var(--hs-cheveu) solid var(--hs-filet);
+		padding: 2px 0;
+	}
+	.liee button {
+		width: 32px;
+		height: 32px;
+		background: none;
+		border: 0;
+		cursor: pointer;
+		color: var(--hs-rubrique);
+		font-size: 1.125rem;
+	}
+	.trouve {
+		display: block;
+		width: 100%;
+		text-align: left;
+		background: none;
+		border: 0;
+		border-bottom: var(--hs-cheveu) solid var(--hs-filet);
+		padding: 8px 0;
+		cursor: pointer;
+		color: var(--hs-lapis);
+	}
 </style>

@@ -89,7 +89,10 @@ export function nettoyer(brut: string): Nettoyage {
 	const blocs = t.split(/\n[ \t]*\n+/);
 	let joints = 0;
 	const propres = blocs.map((b) => {
-		const lignes = b.split('\n').map((l) => l.trim()).filter(Boolean);
+		const lignes = b
+			.split('\n')
+			.map((l) => l.trim())
+			.filter(Boolean);
 		if (!lignes.length) return '';
 		// vers, litanies, versets : lignes courtes ou commençant par ℣/℟ → on garde les retours
 		const moy = lignes.reduce((n, l) => n + l.length, 0) / lignes.length;
@@ -109,12 +112,7 @@ export function nettoyer(brut: string): Nettoyage {
 		if (moy < 45) return lignes.join('\n');
 		// une première ligne courte, sans ponctuation de suite, devant un paragraphe : c'est un titre
 		const max = Math.max(...lignes.map((l) => l.length));
-		if (
-			lignes.length > 2 &&
-			lignes[0].length < 0.6 * max &&
-			!/[,;:]$/.test(lignes[0]) &&
-			/^\p{Lu}/u.test(lignes[1])
-		) {
+		if (lignes.length > 2 && lignes[0].length < 0.6 * max && !/[,;:]$/.test(lignes[0]) && /^\p{Lu}/u.test(lignes[1])) {
 			joints += lignes.length - 2;
 			return lignes[0] + '\n\n' + lignes.slice(1).join(' ');
 		}
@@ -129,7 +127,10 @@ export function nettoyer(brut: string): Nettoyage {
 	if (doubles) rapport.push(`${doubles} espace(s) double(s) réduit(s)`);
 
 	// typographie française minimale, sans toucher aux mots
-	t = t.replace(/ ([;:!?»])/g, ' $1').replace(/« /g, '« ').replace(/'/g, '’');
+	t = t
+		.replace(/ ([;:!?»])/g, ' $1')
+		.replace(/« /g, '« ')
+		.replace(/'/g, '’');
 
 	return { texte: t.trim(), rapport };
 }
