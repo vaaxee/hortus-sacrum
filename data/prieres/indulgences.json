@@ -708,6 +708,418 @@
      "texte": "500 jours"
     }
    ]
+  },
+  "jahenny:scapulaire-benediction-protection": {
+   "ref": "Ench. 1952, n° 187 (O Crux, ave, spes unica) ; Thésaurisons, n° 70",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "jours": 500,
+     "repetitions": 5,
+     "texte": "5 × 500 jours (O Crux, ave, spes unica)"
+    }
+   ],
+   "note": "Dit 7 fois : 7 × 500 jours."
+  },
+  "thesaurisons:jac-100": {
+   "ref": "Thésaurisons, n° 100 (Preces et Pia Opera 1938, n° 256)",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "ans": 7,
+     "texte": "7 ans"
+    }
+   ]
+  },
+  "thesaurisons:jac-44": {
+   "ref": "Thésaurisons, n° 44 (Preces et Pia Opera 1938, n° 88)",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "jours": 300,
+     "texte": "300 jours"
+    }
+   ]
+  },
+  "thesaurisons:jac-105": {
+   "ref": "Thésaurisons, n° 105 (Preces et Pia Opera 1938, n° 268)",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "jours": 300,
+     "texte": "300 jours"
+    }
+   ]
+  },
+  "thesaurisons:jac-19": {
+   "ref": "Thésaurisons, n° 19 (Preces et Pia Opera 1938, n° 28)",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "jours": 500,
+     "texte": "500 jours"
+    }
+   ]
+  },
+  "thesaurisons:jac-33": {
+   "ref": "Thésaurisons, n° 33 (Preces et Pia Opera 1938, n° 55)",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "jours": 300,
+     "texte": "300 jours"
+    }
+   ]
+  },
+  "thesaurisons:jac-57": {
+   "ref": "Thésaurisons, n° 57 (Preces et Pia Opera 1938, n° 127)",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "jours": 500,
+     "texte": "500 jours"
+    }
+   ]
+  },
+  "thesaurisons:jac-206": {
+   "ref": "Thésaurisons, n° 206 (Preces et Pia Opera 1938, n° 22)",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "jours": 500,
+     "texte": "500 jours"
+    }
+   ]
+  },
+  "thesaurisons:jac-71": {
+   "ref": "Thésaurisons, n° 71 (Preces et Pia Opera 1938, n° 158)",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "ans": 3,
+     "texte": "3 ans"
+    }
+   ]
+  },
+  "thesaurisons:jac-273": {
+   "ref": "Thésaurisons, n° 273 (Preces et Pia Opera 1938, n° 278)",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "jours": 300,
+     "texte": "300 jours"
+    }
+   ]
+  },
+  "thesaurisons:jac-199": {
+   "ref": "Thésaurisons, n° 199 (Preces et Pia Opera 1938, n° 8)",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "jours": 500,
+     "texte": "500 jours"
+    }
+   ]
+  },
+  "thesaurisons:jac-35": {
+   "ref": "Thésaurisons, n° 35 (Preces et Pia Opera 1938, n° 58)",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "jours": 500,
+     "texte": "500 jours"
+    }
+   ]
+  },
+  "thesaurisons:jac-37": {
+   "ref": "Thésaurisons, n° 37 (Preces et Pia Opera 1938, n° 64)",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "jours": 500,
+     "texte": "500 jours"
+    }
+   ]
+  },
+  "thesaurisons:jac-70": {
+   "ref": "Thésaurisons, n° 70 (Preces et Pia Opera 1938, n° 157)",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "jours": 500,
+     "texte": "500 jours"
+    }
+   ]
+  },
+  "thesaurisons:jac-90": {
+   "ref": "Thésaurisons, n° 90 (Preces et Pia Opera 1938, n° 211)",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "jours": 500,
+     "texte": "500 jours"
+    }
+   ]
+  },
+  "thesaurisons:jac-198": {
+   "ref": "Thésaurisons, n° 198 (Preces et Pia Opera 1938, n° 5)",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "jours": 300,
+     "texte": "300 jours"
+    }
+   ]
+  },
+  "thesaurisons:jac-207": {
+   "ref": "Thésaurisons, n° 207 (Preces et Pia Opera 1938, n° 29)",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "jours": 300,
+     "texte": "300 jours"
+    }
+   ]
+  },
+  "thesaurisons:jac-205": {
+   "ref": "Thésaurisons, n° 205 (Preces et Pia Opera 1938, n° 15)",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "jours": 500,
+     "texte": "500 jours"
+    }
+   ]
+  },
+  "thesaurisons:jac-72": {
+   "ref": "Thésaurisons, n° 72 (Preces et Pia Opera 1938, n° 161)",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "ans": 3,
+     "texte": "3 ans"
+    }
+   ]
+  },
+  "thesaurisons:jac-12": {
+   "ref": "Thésaurisons, n° 12 (Preces et Pia Opera 1938, n° 19)",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "jours": 500,
+     "texte": "500 jours"
+    }
+   ]
+  },
+  "thesaurisons:jac-204": {
+   "ref": "Thésaurisons, n° 204 (Preces et Pia Opera 1938, n° 14)",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "jours": 500,
+     "texte": "500 jours"
+    }
+   ]
+  },
+  "thesaurisons:jac-38": {
+   "ref": "Thésaurisons, n° 38 (Preces et Pia Opera 1938, n° 70)",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "jours": 300,
+     "texte": "300 jours"
+    }
+   ]
+  },
+  "thesaurisons:jac-87": {
+   "ref": "Thésaurisons, n° 87 (Preces et Pia Opera 1938, n° 205)",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "jours": 300,
+     "texte": "300 jours"
+    }
+   ]
+  },
+  "thesaurisons:jac-134": {
+   "ref": "Thésaurisons, n° 134 (Preces et Pia Opera 1938, n° 352)",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "jours": 300,
+     "texte": "300 jours"
+    }
+   ]
+  },
+  "thesaurisons:jac-244": {
+   "ref": "Thésaurisons, n° 244 (Preces et Pia Opera 1938, n° 203)",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "jours": 300,
+     "texte": "300 jours"
+    }
+   ]
+  },
+  "thesaurisons:jac-246": {
+   "ref": "Thésaurisons, n° 246 (Preces et Pia Opera 1938, n° 206)",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "jours": 300,
+     "texte": "300 jours"
+    }
+   ]
+  },
+  "thesaurisons:jac-275": {
+   "ref": "Thésaurisons, n° 275 (Preces et Pia Opera 1938, n° 280)",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "jours": 300,
+     "texte": "300 jours"
+    }
+   ]
+  },
+  "thesaurisons:jac-85": {
+   "ref": "Thésaurisons, n° 85 (Preces et Pia Opera 1938, n° 196)",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "jours": 500,
+     "texte": "500 jours"
+    }
+   ]
+  },
+  "thesaurisons:jac-7": {
+   "ref": "Thésaurisons, n° 7 (Preces et Pia Opera 1938, n° 11)",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "jours": 500,
+     "texte": "500 jours"
+    }
+   ]
+  },
+  "thesaurisons:jac-14": {
+   "ref": "Thésaurisons, n° 14 (Preces et Pia Opera 1938, n° 21)",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "jours": 500,
+     "texte": "500 jours"
+    }
+   ]
+  },
+  "thesaurisons:jac-39": {
+   "ref": "Thésaurisons, n° 39 (Preces et Pia Opera 1938, n° 69)",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "jours": 300,
+     "texte": "300 jours"
+    }
+   ]
+  },
+  "thesaurisons:jac-84": {
+   "ref": "Thésaurisons, n° 84 (Preces et Pia Opera 1938, n° 195)",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "jours": 300,
+     "texte": "300 jours"
+    }
+   ]
+  },
+  "thesaurisons:jac-232": {
+   "ref": "Thésaurisons, n° 232 (Preces et Pia Opera 1938, n° 169)",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "jours": 300,
+     "texte": "300 jours"
+    }
+   ]
+  },
+  "thesaurisons:jac-239": {
+   "ref": "Thésaurisons, n° 239 (Preces et Pia Opera 1938, n° 197)",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "jours": 300,
+     "texte": "300 jours"
+    }
+   ]
+  },
+  "thesaurisons:jac-242": {
+   "ref": "Thésaurisons, n° 242 (Preces et Pia Opera 1938, n° 200)",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "jours": 300,
+     "texte": "300 jours"
+    }
+   ]
+  },
+  "thesaurisons:jac-274": {
+   "ref": "Thésaurisons, n° 274 (Preces et Pia Opera 1938, n° 279)",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "jours": 300,
+     "texte": "300 jours"
+    }
+   ]
+  },
+  "thesaurisons:jac-132": {
+   "ref": "Thésaurisons, n° 132 (Preces et Pia Opera 1938, n° 341)",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "jours": 500,
+     "texte": "500 jours"
+    }
+   ]
+  },
+  "thesaurisons:jac-13": {
+   "ref": "Thésaurisons, n° 13 (Preces et Pia Opera 1938, n° 20)",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "jours": 500,
+     "texte": "500 jours"
+    }
+   ]
+  },
+  "thesaurisons:jac-108": {
+   "ref": "Thésaurisons, n° 108 (Preces et Pia Opera 1938, n° 281)",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "jours": 300,
+     "texte": "300 jours"
+    }
+   ]
+  },
+  "thesaurisons:jac-215": {
+   "ref": "Thésaurisons, n° 215 (Preces et Pia Opera 1938, n° 57)",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "jours": 300,
+     "texte": "300 jours"
+    }
+   ]
+  },
+  "thesaurisons:jac-491": {
+   "ref": "Thésaurisons, n° 491 (Preces et Pia Opera 1938, n° 590)",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "jours": 300,
+     "texte": "300 jours"
+    }
+   ]
   }
  },
  "sans_compte": {

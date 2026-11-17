@@ -7,6 +7,7 @@
 	import Case from '#lib/design/Case.svelte';
 	import Ornement from '#lib/design/Ornement.svelte';
 	import { invocation, nomLatin, TOUS_LES_SAINTS } from '#lib/invocations.ts';
+	import { invocationLatine } from '#lib/invocations-latines.ts';
 	import { textesDuJour } from '#lib/liste.ts';
 	import { chargerRecueil, choisirAvecMois, NOM_COURT, RECUEIL_DU_MOIS } from '#lib/meditations.ts';
 	import { garde, rangElement, rangPratique, RANGS } from '#lib/rangs.ts';
@@ -423,7 +424,7 @@
 			</div>
 			{#each jour.martyrologe as m}
 				{@const inv = invocation(m.texte)}
-				{@const la = nomLatin(m.texte_la)}
+				{@const la = invocationLatine(m.texte_la)?.texte ?? nomLatin(m.texte_la)}
 				<details class="eloge">
 					<summary>
 						{#if inv}<span class="invocation">{inv.texte}</span>{:else}<span class="invocation sans">{m.texte.split(/[.,]/)[0]}…</span>{/if}
