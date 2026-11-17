@@ -537,6 +537,10 @@ const NOUVEAUX_ELEMENTS: Omit<ElementListe, 'creeLe' | 'modifieLe'>[] = [
 		moment: 'journee', etiquette: 'ordinaire', jours: TOUS, rappels: [], textes: ['jahenny:scapulaire-benediction-protection'], ordre: 175, actif: true
 	},
 	{
+		id: 'liste:jaculatoires', origine: 'officielle', titre: 'Jaculatoires du jour',
+		moment: 'journee', etiquette: 'ordinaire', jours: TOUS, rappels: [], textes: ['hortus:jaculatoires-du-jour'], ordre: 176, actif: true
+	},
+	{
 		id: 'liste:roue', origine: 'officielle', titre: 'La roue du jour',
 		moment: 'propre', etiquette: 'propre', jours: TOUS, rappels: [], textes: [], ordre: 75, actif: true
 	}

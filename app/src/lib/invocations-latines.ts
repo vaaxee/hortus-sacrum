@@ -68,7 +68,7 @@ export function invocationLatine(eloge: string | null | undefined): InvocationLa
 		.replace(/[,;]\s*$/, '')
 		.trim();
 	// lieu sûr seulement : court, sans relative, sans mot de fête (octave, dédicace, translation, vigile…)
-	const fete = /octava|dedicatio|translatio|vigilia|commemoratio|ibidem|basilic/.test(sansAccent(lieu));
+	const fete = /octava|dedicatio|translatio|vigilia|commemoratio|ibidem|basilic|nativitas|visitatio|annuntiatio|assumptio|conceptio|purificatio|praesentatio|exaltatio|inventio|transfiguratio|circumcisio|solemnitas|festum/.test(sansAccent(lieu));
 	const lieuSur = !fete && lieu.split(/\s+/).length <= 4 && !/\b(qu[aiæe]|est|sunt)\b/u.test(lieu) ? lieu : '';
 	// segment du sujet : jusqu'à la première relative ou au premier point-virgule
 	const debut = m.index + m[0].length;
@@ -78,12 +78,25 @@ export function invocationLatine(eloge: string | null | undefined): InvocationLa
 	const titres: string[] = [];
 	let socii = false;
 	let finNoms = false;
+	let arret = false;
 	for (const g of groupes) {
+		if (arret) break;
 		const mots = g.split(/\s+/);
+		// au singulier, un groupe qui commence en minuscule (« fíliæ Regis… ») ne parle plus du saint
+		if (noms.length && !pluriel && /^\p{Ll}/u.test(mots[0]) && !TITRES[sansAccent(mots[0])]) break;
+		// au singulier, un groupe de titres ne peut contenir, en plus, que des adjectifs de lieu (« Ravennátis ») ;
+		// sinon il parle d'un autre (« Regis Hungarórum Andréæ fíliæ ») : on s'arrête
+		if (noms.length && !pluriel && mots.some((w) => {
+			const k = sansAccent(w);
+			return !TITRES[k] && !ORNEMENTS.has(k) && !ET.has(k) && !/(atis|ensis|ensium|anus|ani|ini)$/.test(k);
+		})) break;
 		const personne: string[] = [];
 		let particule = false;
+		let apresTitre = false;
 		for (const mot of mots) {
 			const k = sansAccent(mot);
+			const etaitTitre = apresTitre;
+			apresTitre = !!TITRES[k];
 			if (k === 'sociorum' || k === 'aliorum' || k === 'sociarum' || k === 'aliarum') { socii = true; finNoms = true; break; }
 			if (k === 'regis' && personne.length) { personne.push(mot); continue; } // « Joánnis-Francísci Regis » : nom, non titre
 			if (TITRES[k]) {
@@ -95,8 +108,12 @@ export function invocationLatine(eloge: string | null | undefined): InvocationLa
 			if (ORNEMENTS.has(k)) { titres.push('Ecclesiæ'); continue; }
 			if (personne.length && /^(de|a|ab)$/.test(k)) { particule = true; personne.push(mot); continue; }
 			if (/^\p{Lu}/u.test(mot) && !/(orum|arum)$/.test(k)) {
-				if (finNoms) break; // adjectif de lieu après un titre (« Epíscopi Ravennátis ») : laissé de côté
-				personne.push(particule ? mot : vocatif(mot)); // après « a », « de » : le mot reste tel quel (« a Cruce »)
+				if (finNoms) {
+					// adjectif de lieu juste après un titre (« Epíscopi Ravennátis ») : sauté ; autre personne (« Andréæ Regis ») : fin
+					if (etaitTitre) continue;
+					arret = true; break;
+				}
+				personne.push(particule ? mot : mot.split('-').map(vocatif).join('-')); // après « a », « de » : le mot reste tel quel (« a Cruce »)
 				continue;
 			}
 			if (personne.length) { if (!pluriel) finNoms = true; break; } // mot en minuscule : fin du nom
