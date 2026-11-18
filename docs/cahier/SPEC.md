@@ -277,3 +277,85 @@ courte de la bibliothèque qui comble chaque manque.
 3. **Après chaque lot : lint et nettoyage** (code mort, migrations devenues inutiles), **puis audit des consignes**
    (sources bannies, secrets, textes sans source, textes de mémoire). Ce qui sort des consignes est corrigé sans attendre.
 4. **Reprendre ce qui a été laissé en pause.** Avant de conclure, relire l’historique et la liste des tâches.
+
+## 11. Refonte du 18 novembre 2026 (prioritaire, décisions de l'utilisateur)
+
+L'utilisateur est le bêta-testeur de son app. **Chaque exemple qu'il signale illustre un principe** : on corrige
+l'exemple, puis toutes les autres occurrences du même problème, et l'on cherche la cause de fond. On ne préserve pas
+l'architecture si elle est mauvaise.
+
+### Principes
+1. **Une prière n'apparaît qu'une fois par jour.** La liste du jour est calculée à partir d'un **programme unique**. Chaque
+   pratique y est déclarée une seule fois, rattachée à son jour, sa semaine, son mois ou son temps. Un test échoue dès
+   qu'un texte paraît deux fois dans une journée, y compris à l'intérieur d'une page composée.
+2. **Intégrer plutôt qu'ajouter.** Une prière, une invocation ou une petite pratique qui peut se glisser naturellement dans
+   une autre séquence y est insérée, au lieu de devenir une tâche. Les séquences hôtes ont des **points d'insertion** :
+   - fin de dizaine du chapelet ;
+   - Angélus ;
+   - prière du matin et prière du soir ;
+   - fin de l'office du saint.
+
+   Les pages explicatives des dévotions restent consultables (onglet Dévotions), sans encombrer la liste.
+   - Exemple : à chaque fin de dizaine, « Ô mon Jésus, pardonnez-nous… », « Ô Marie conçue sans péché… » (médaille
+     miraculeuse) et « Cœur immaculé de Marie… » (scapulaire vert), d'après des sources admises.
+   - Exemple : les invocations du scapulaire de Marie-Julie Jahenny sont réparties entre la prière du matin et la prière
+     du soir ; la ligne propre disparaît.
+   - Exemple : les oraisons de sainte Brigitte tiennent lieu de méditation de la Passion ; pas de tâche de méditation en
+     plus.
+3. **Ce qui se lit sort de la liste du jour.** Un onglet **Lecture** comprend quatre sections :
+   - **Office** : les bréviaires ;
+   - **Écriture** : l'Évangile ;
+   - **Doctrine** : la Somme théologique ;
+   - **Spirituel** : méditations, vie et office du saint, lectures.
+
+   Dans Aujourd'hui, une seule **ligne récapitulative** (« Lectures du jour (2/4) ») ouvre Lecture et compte dans
+   l'avancement.
+4. **Une page par pratique, en sections dépliables.** Les heures canoniales d'un office s'ouvrent chacune par un bouton ;
+   elles ne sont pas affichées toutes à la suite.
+5. **Écran du jour sobre.** Les jauges (jardin du jour, temps de prière, indulgences) et le bilan se dévoilent par un
+   bouton. Une **jaculatoire indulgenciée** différente s'affiche à chaque ouverture ; la toucher la compte comme dite,
+   indulgences comprises. Les jaculatoires ne sont plus une tâche.
+
+### Décisions
+- **Navigation.** Cinq onglets en bas : Aujourd'hui, Lecture, Prières, Dévotions, Calendrier. Le Profil devient une icône
+  en haut à droite.
+- **Bréviaires** dans Lecture › Office :
+  - le Petit bréviaire du Sacré-Cœur ;
+  - le **Bréviaire romain, heures complètes, rubriques d'avant 1955** (saint Pie X, *Divino afflatu*), d'après Divinum
+    Officium, qui compile les éditions typiques ;
+  - l'**Officium parvum** de la sainte Vierge, à chercher d'abord dans Divinum Officium, sinon dans une édition
+    latin-français ancienne, avec les variantes des temps.
+- **Somme théologique** : un article par jour, **traduction Lachat (1856), latin en regard**, à la suite depuis la Iª
+  pars, q. 1, a. 1.
+- **Mercredi** : une seule page réunit le renouvellement de la consécration au cordon de saint Joseph et les sept Gloria.
+  **Les autres jours** : une seule page pour les Gloria.
+- **Sainte Gertrude** :
+  - on transcrit toutes ses prières avec promesse de Notre-Seigneur ou de la sainte Vierge qui sont pertinentes : pour
+    les morts, culte des saints, Passion, sainte Vierge, Trinité, Notre-Seigneur ; de même pour celles de sainte
+    Mechtilde ;
+  - à la fin de l'office du saint du jour, on ajoute la prière de sainte Gertrude propre à sa catégorie (vierge, vierge et
+    martyre, confesseur…), avec le nom du saint à la place du « N. ».
+- **Refonte de la liste** : la liste actuelle est **remplacée** par le programme. On garde les ajouts personnels, les
+  durées et les rappels ; l'ancienne liste reste dans l'historique des versions.
+- **Filtres** par thème et par type sur les prières, et sur les autres contenus quand c'est utile.
+- **Décor** :
+  - les bandeaux respectent la zone sûre de l'iPhone (encoche) dans les deux directions artistiques ;
+  - la direction **latine** reçoit son propre bandeau ;
+  - l'arche du saint du jour reçoit des ornements.
+- **Bug** : « Internal Error » à chaque passage du Profil à l'Historique sur le téléphone de l'utilisateur. Il n'est pas
+  reproduit sur une base neuve, donc il dépend sans doute des données. À corriger : rendre l'Historique tolérant aux
+  données incomplètes, et ajouter une page d'erreur qui affiche le message réel.
+- **Sub tuum** : la traduction française des invocations n'a pas de source. On garde le latin seul.
+
+### Méthode de travail
+Les agents spécialisés sont mobilisés :
+- audit des dévotions et de leur organisation ;
+- audit du corpus de prières (pertinence selon le jour, la semaine, le mois et l'année ; tradition ; agencement ;
+  exactitude ; sélection) ;
+- ingénieur-concepteur (ergonomie, intuitivité, tests).
+
+Après chaque implémentation :
+- lint et formatage ;
+- tests ;
+- relecture des fichiers modifiés et revue critique du code ;
+- corrections, puis nouvelle vérification.
