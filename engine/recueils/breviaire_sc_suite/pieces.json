@@ -1,0 +1,67 @@
+[
+ {
+  "id": "breviaire-sc:exercice-messe",
+  "titre": "Petit bréviaire du Sacré-Cœur — exercice pour la sainte messe",
+  "partie": "Petit bréviaire du Sacré-Cœur",
+  "categorie": "Sacré-Cœur",
+  "usage": "Prières de la bienheureuse Marguerite-Marie pendant la sainte messe, d'après le Directoire de saint François de Sales ; les parties marquées d'un astérisque ont été ajoutées par l'éditeur, tirées aussi de la Bienheureuse.",
+  "fichier": "exercice-messe.md",
+  "source": {
+   "ouvrage": "Petit bréviaire du Sacré-Cœur de Jésus, extrait de la vie et des œuvres authentiques de la Bienheureuse Marguerite-Marie",
+   "edition": "13e édition, Nancy, Librairie Notre-Dame (Le Chevallier frères), imprimatur du 21 mars 1883 (PDF fourni par l'utilisateur)",
+   "page": "p. 119-140 (PDF p. 131-152)"
+  }
+ },
+ {
+  "id": "breviaire-sc:donation-voeu",
+  "titre": "Acte de très parfaite donation de soi-même aux Sacrés-Cœurs de Jésus et Marie et vœu d'en propager la dévotion",
+  "partie": "Petit bréviaire du Sacré-Cœur",
+  "categorie": "Sacré-Cœur",
+  "usage": "Acte rédigé par le T. R. P. Jean Roothaan, général de la Compagnie de Jésus, d'après une formule du vénérable P. de la Colombière (appendice du Petit bréviaire). À renouveler deux fois l'année, par exemple à la fête du Sacré-Cœur et à l'Immaculée-Conception.",
+  "fichier": "donation.md",
+  "source": {
+   "ouvrage": "Petit bréviaire du Sacré-Cœur de Jésus, extrait de la vie et des œuvres authentiques de la Bienheureuse Marguerite-Marie",
+   "edition": "13e édition, Nancy, Librairie Notre-Dame (Le Chevallier frères), imprimatur du 21 mars 1883 (PDF fourni par l'utilisateur)",
+   "page": "p. 144-145 (PDF p. 156-157)"
+  }
+ },
+ {
+  "id": "breviaire-sc:litanies",
+  "titre": "Litanies du Sacré-Cœur de Jésus (Petit bréviaire, 1883)",
+  "partie": "Petit bréviaire du Sacré-Cœur",
+  "categorie": "Sacré-Cœur",
+  "usage": "Texte de l'appendice du Petit bréviaire (1883), antérieur à l'approbation pour l'Église entière (1899) : pour le texte approuvé et ses indulgences, voir les Litanies du Sacré-Cœur de Beringer.",
+  "fichier": "litanies.md",
+  "source": {
+   "ouvrage": "Petit bréviaire du Sacré-Cœur de Jésus, extrait de la vie et des œuvres authentiques de la Bienheureuse Marguerite-Marie",
+   "edition": "13e édition, Nancy, Librairie Notre-Dame (Le Chevallier frères), imprimatur du 21 mars 1883 (PDF fourni par l'utilisateur)",
+   "page": "p. 145-150 (PDF p. 157-162)"
+  }
+ },
+ {
+  "id": "breviaire-sc:neuvaine",
+  "titre": "Neuvaine au Sacré-Cœur de Jésus pour se préparer à chaque premier vendredi du mois",
+  "partie": "Petit bréviaire du Sacré-Cœur",
+  "categorie": "Sacré-Cœur",
+  "usage": "Les neuf jours qui précèdent le premier vendredi du mois, pour finir le jeudi ; les mêmes prières chaque jour.",
+  "fichier": "neuvaine.md",
+  "source": {
+   "ouvrage": "Petit bréviaire du Sacré-Cœur de Jésus, extrait de la vie et des œuvres authentiques de la Bienheureuse Marguerite-Marie",
+   "edition": "13e édition, Nancy, Librairie Notre-Dame (Le Chevallier frères), imprimatur du 21 mars 1883 (PDF fourni par l'utilisateur)",
+   "page": "p. 151-155 (PDF p. 163-167)"
+  }
+ },
+ {
+  "id": "breviaire-sc:souvenez-vous",
+  "titre": "Souvenez-vous du Sacré-Cœur",
+  "partie": "Petit bréviaire du Sacré-Cœur",
+  "categorie": "Sacré-Cœur",
+  "usage": "",
+  "fichier": "souvenez-vous.md",
+  "source": {
+   "ouvrage": "Petit bréviaire du Sacré-Cœur de Jésus, extrait de la vie et des œuvres authentiques de la Bienheureuse Marguerite-Marie",
+   "edition": "13e édition, Nancy, Librairie Notre-Dame (Le Chevallier frères), imprimatur du 21 mars 1883 (PDF fourni par l'utilisateur)",
+   "page": "p. 155-156 (PDF p. 167-168)"
+  }
+ }
+]

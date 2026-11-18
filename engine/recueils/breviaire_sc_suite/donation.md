@@ -1,0 +1,7 @@
+*Afin de recueillir de cette pratique des fruits plus abondants, il sera bon de renouveler cette Consécration et ce Vœu, deux fois l'année, par exemple, au jour de la fête du Sacré-Cœur et à celui de l'Immaculée-Conception de la Bienheureuse Vierge Marie.*
+
+« O très doux Jésus, source d'amour, Père des miséricordes, et Dieu de toute consolation, qui avez daigné nous découvrir, à nous, pauvres et indignes pécheurs, les ineffables richesses de votre amour ; en action de grâces pour vos innombrables bienfaits, spécialement pour l'institution de la sainte Eucharistie, et en réparation de tous les outrages que votre Cœur a reçus de moi et des autres hommes dans ce mystère de votre infinie charité, je N... voue à ce Cœur sacré tout ce que je suis et tout ce que j'ai, avec tous les biens et mérites que j'ai acquis par votre grâce et que je pourrai acquérir dans la suite, et je promets de propager, autant qu'il sera en mon pouvoir, le culte de votre divin Cœur.
+
+« En outre, je choisis la Bienheureuse Vierge Marie pour ma mère de prédilection ; je voue et consacre également à son Cœur immaculé ce que je suis et ce que j'ai, et je promets de propager, autant que je le pourrai, et suivant l'esprit de l'Eglise, le culte de cette très pieuse Mère, et en particulier celui de son Immaculée-Conception.
+
+« Je supplie donc très humblement votre infinie bonté, qu'il vous plaise de recevoir cet holocauste en odeur de suavité, et que comme vous m'avez donné le désir de vous l'offrir, vous me donniez encore une grâce abondante pour l'accomplir. — Ainsi soit-il. »
