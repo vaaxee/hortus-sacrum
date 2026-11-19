@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { mentionDuTexte } from '#lib/indulgences.ts';
 	import { page } from '$app/state';
 	import { db } from '#lib/db.ts';
 	import Ornement from '#lib/design/Ornement.svelte';
@@ -47,7 +48,7 @@
 			{#if t.usage}<p class="usage">{t.usage}</p>{/if}
 			<div class="lecture">{@html rendre(t.corps)}</div>
 			{#if t.latin}<div class="lecture latin" lang="la">{@html rendre(t.latin)}</div>{/if}
-			{#if t.indulgence}<p class="note"><span class="pc">Indulgence.</span> {t.indulgence}</p>{/if}
+			{#if mentionDuTexte(t)}<p class="note"><span class="pc">Indulgence.</span> {mentionDuTexte(t)}</p>{/if}
 			{#if ref(t)}<p class="note source">{ref(t)}</p>{/if}
 		</section>
 	{/each}

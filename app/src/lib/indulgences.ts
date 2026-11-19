@@ -21,6 +21,40 @@ export interface Fiche {
 	partielles: Partielle[];
 	intention?: string;
 	note?: string;
+	/** Langue de la concession (Ench. 1952, Praenotanda 3). */
+	langue?: 'latin' | 'italien' | 'français';
+	/** Traduction française approuvée selon le can. 934 § 2, quand la concession n'est pas en français. */
+	traduction?: string;
+}
+
+/**
+ * Seules comptent les œuvres de l'Enchiridion indulgentiarum de 1952 (décret du 3 mars 1952) : la mention d'indulgence
+ * d'un texte (souvent recopiée d'un manuel antérieur, Beringer, Raccolta…) n'est montrée que si elle cite l'Enchiridion,
+ * ou si l'utilisateur l'a écrite lui-même. La fiche d'indulgence, elle, fait foi.
+ */
+export function mentionEnMarge(indulgence: string | undefined, modifieParUtilisateur: boolean): string | null {
+	if (!indulgence?.trim()) return null;
+	return modifieParUtilisateur || /Ench/.test(indulgence) ? indulgence : null;
+}
+
+/** Mention d'indulgence à montrer pour un texte (null si elle vient d'un manuel antérieur abrogé). */
+export function mentionDuTexte(t: { indulgence?: string; original?: string }): string | null {
+	let deLUtilisateur = !t.original;
+	if (t.original) {
+		try {
+			deLUtilisateur = (JSON.parse(t.original) as { indulgence?: string }).indulgence !== t.indulgence;
+		} catch {
+			deLUtilisateur = false;
+		}
+	}
+	return mentionEnMarge(t.indulgence, deLUtilisateur);
+}
+
+/** Note sur la langue (can. 934 § 2) : l'indulgence d'une prière concédée en latin ou en italien suit sa traduction approuvée. */
+export function noteDeTraduction(f: Fiche): string | null {
+	if (f.langue === 'français') return null;
+	if (f.traduction) return `Traduction approuvée : ${f.traduction}.`;
+	return "En français, l'indulgence n'est gagnée qu'avec une traduction approuvée (can. 934 § 2) ; sinon, dire la formule de la concession.";
 }
 export interface Indulgences {
 	fiches: Record<string, Fiche>;
