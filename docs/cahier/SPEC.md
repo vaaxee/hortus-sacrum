@@ -359,3 +359,47 @@ Après chaque implémentation :
 - tests ;
 - relecture des fichiers modifiés et revue critique du code ;
 - corrections, puis nouvelle vérification.
+
+### Indulgences (décision du 19 novembre 2026, prioritaire)
+- **Seules comptent les œuvres de l'Enchiridion indulgentiarum de 1952.** Le décret de la S. Pénitencerie du 3 mars 1952
+  abroge toutes les concessions générales qu'il ne reprend pas (« obrogatis ceteris omnibus generalibus indulgentiarum
+  concessionibus, quae in hoc enchiridion non sint relatae »). Les œuvres qu'il reprend avec changement suivent la forme
+  de 1952 (Praenotanda 2). Les indulgences des confréries, des objets bénits et des lieux ne sont pas « générales »
+  (Praenotanda 1) : elles sont signalées, sans être comptées.
+- **Traductions** (Praenotanda 3 ; can. 934 § 2) : une prière concédée en latin ou en italien ne porte l'indulgence en
+  français que si sa traduction est déclarée fidèle par la S. Pénitencerie ou par un Ordinaire du lieu.
+  - *Thésaurisons pour le ciel* (Montréal, 1941) est certifié (G. Chartier, vicaire général, 28 avril 1941).
+  - Aucune traduction française officielle de l'Enchiridion de 1952 n'a été trouvée ; celle de 1969 (Lethielleux)
+    concerne le nouvel Enchiridion.
+  - Chaque fiche porte `langue` et `traduction` ; sans traduction approuvée, l'app affiche la note du can. 934.
+- Données : `data/prieres/indulgences.json` ; script `engine/indulgences/ench1952.py`. Un test vérifie que chaque fiche
+  comptée cite l'Enchiridion de 1952. Les mentions d'indulgence recopiées des anciens manuels ne sont pas affichées.
+
+### Arbitrages des audits du 19 novembre (tranchés par les principes du § 11 ; l'utilisateur peut les reprendre)
+Audits : `docs/audits/AUDIT_DEVOTIONS_2026-11-18.md` et `docs/audits/AUDIT_CORPUS_2026-11-18.md`.
+- **Matin** : la prière du matin d'abord, l'offrande ensuite (l'usage de l'offrande dit « à la suite »). Les cinq actes
+  de l'offrande restent chaque jour, en une seule page.
+- **Antiennes mariales** : la structure voulue par l'utilisateur est gardée (Salve Regina le matin, Sub tuum le soir).
+  Au temps pascal, le Regina cæli remplace déjà l'Angélus : pas de doublon.
+- **Flèche d'or** : une fois à chaque Angélus, insérée dans sa page, dans la forme de Janvier 1895 (source ancienne
+  identifiée). L'ajout du livret « et dans les enfers », sans source, est retiré.
+- **Prière pour les agonisants** : insérée à l'Angélus de midi et dans les prières du matin et du soir (trois fois par
+  jour), sans ligne propre.
+- **Don du Saint-Esprit et douleur de Marie du jour** : une même rotation, puisqu'ils sont tirés de la même prière de
+  Pie VII ; ils vont dans la prière du soir. Leur indulgence est abrogée (prière absente de l'Enchiridion de 1952).
+- **Triple Couronne d'or** : quotidienne, comme dans la liste de l'utilisateur.
+- **Chapelet des Morts** : gardé le lundi. Ses indulgences sont réservées aux associés de l'archiconfrérie et ne sont pas
+  comptées.
+- **Heure sainte** : page explicative, proposée le jeudi dans la page de dévotion du jour, et non une tâche.
+- **Actes du livret sans source ancienne** (offrande, devoirs de charité, Triple Couronne) : gardés, puisque le livret est
+  celui de l'utilisateur, et marqués « composé pour le livret ». Les intentions sont gardées.
+- **Promesses sans source** (saint Michel, sept grâces des Douleurs, promesses du Rosaire, offrande « Marie
+  Corédemptrice ») : retirées de l'affichage tant qu'une source ancienne n'est pas trouvée (`A_FOURNIR.md`).
+- **Sites hors de la liste admise**, mais fournis par l'utilisateur (christusregnat.com, La Bonne Nouvelle,
+  salve-regina.com, Le Petit Sacristain) : gardés avec leur source ; source ancienne à trouver.
+- **Prière du cardinal Mercier**, dont l'intention est périmée (définition du dogme de Marie Médiatrice) : gardée dans la
+  bibliothèque, retirée de la liste du jour.
+- **Litanies** : une seule litanie par jour, celle de la roue. Les litanies disparaissent des pages de dévotion du jour.
+- **Temps liturgique** : chemin de croix de saint Alphonse et Miserere en Carême ; Adoro te et Lauda Sion à la Fête-Dieu ;
+  Te Deum le 31 décembre ; Veni Creator le 1ᵉʳ janvier ; Christ-Roi. On les ajoute à mesure que des textes sourcés
+  sont transcrits.
