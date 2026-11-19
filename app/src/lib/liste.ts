@@ -66,8 +66,8 @@ export function selonLeJour(ids: string[], date: string): string[] {
 }
 
 /**
- * Ligne « Jaculatoires du jour » : 10 jaculatoires indulgenciées prises dans les 40 meilleures (rapport indulgence /
- * longueur, Thésaurisons 1941), à tour de rôle : on parcourt les 40 en 4 jours.
+ * Ligne « Jaculatoires du jour » : 10 jaculatoires indulgenciées prises dans les meilleures (rapport indulgence /
+ * longueur ; toutes reprises dans l'Enchiridion de 1952), à tour de rôle : on les parcourt toutes en quelques jours.
  */
 export const JACULATOIRES_DU_JOUR = 'hortus:jaculatoires-du-jour';
 export const JACULATOIRES = [
@@ -94,7 +94,6 @@ export const JACULATOIRES = [
 	'thesaurisons:jac-38',
 	'thesaurisons:jac-87',
 	'thesaurisons:jac-134',
-	'thesaurisons:jac-244',
 	'thesaurisons:jac-246',
 	'thesaurisons:jac-275',
 	'thesaurisons:jac-85',
@@ -102,7 +101,6 @@ export const JACULATOIRES = [
 	'thesaurisons:jac-14',
 	'thesaurisons:jac-39',
 	'thesaurisons:jac-84',
-	'thesaurisons:jac-232',
 	'thesaurisons:jac-239',
 	'thesaurisons:jac-242',
 	'thesaurisons:jac-274',
@@ -116,7 +114,8 @@ export function jaculatoiresDuJour(ids: string[], date: string): string[] {
 	const i = ids.indexOf(JACULATOIRES_DU_JOUR);
 	if (i < 0) return ids;
 	const jourN = Math.floor(Date.parse(date + 'T12:00:00Z') / 86400000);
-	const debut = (((jourN % 4) + 4) % 4) * 10;
+	const tours = Math.ceil(JACULATOIRES.length / 10);
+	const debut = (((jourN % tours) + tours) % tours) * 10;
 	return [...ids.slice(0, i), ...JACULATOIRES.slice(debut, debut + 10), ...ids.slice(i + 1)];
 }
 

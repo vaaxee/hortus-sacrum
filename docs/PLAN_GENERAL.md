@@ -68,3 +68,8 @@ Chaque agent ne touche que ses fichiers, pour éviter les conflits.
   (accessibilité, critique, textes de l'interface, système de design), `pdf`, `edition-deluxe`.
 - **Plugin** : A11y Enforcer (WCAG, Svelte).
 - **Connecteurs** : GitHub, Supabase.
+- **graphify** (installé le 18 nov.) : graphe du code (`app/`, `engine/`, docs), sans les données ni les PDF
+  (`.graphifyignore`).
+  - Reconstruction sans coût : `graphify update .` (sortie dans `graphify-out/`, non versionné).
+  - Requêtes : `graphify query "…"`, `graphify explain "X"`, `graphify affected "X"`, `graphify god-nodes`.
+  - À utiliser avant chaque refonte, pour mesurer l'impact d'un changement.

@@ -1,0 +1,9 @@
+data/
+vendor/
+app/static/
+app/build/
+app/node_modules/
+.claude/
+engine/legacy/
+**/*.pdf
+**/*.json

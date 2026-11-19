@@ -1,5 +1,5 @@
 {
- "regle": "Indulgences partielles seulement. Source la plus récente : Enchiridion indulgentiarum 1952 ; à défaut, Thésaurisons pour le ciel (1941, d'après les Preces et Pia Opera de 1938) ; à défaut, Beringer 1925. « remplace » : valeur qui remplace la valeur ordinaire aux jours indiqués.",
+ "regle": "Seules comptent les œuvres de l’Enchiridion indulgentiarum de 1952 : le décret de la S. Pénitencerie du 3 mars 1952 abroge toutes les concessions générales qui n’y sont pas reprises, et celles qui y sont reprises avec changement suivent la forme nouvelle (Praenotanda 2). Indulgences partielles seulement. Une prière indulgenciée en latin ou en italien ne garde son indulgence en français que si la traduction est approuvée (can. 934 § 2 ; Praenotanda 3) : traductions certifiées de Thésaurisons pour le ciel (Montréal, 1941). « remplace » : valeur qui remplace la valeur ordinaire aux jours indiqués.",
  "fiches": {
   "beringer:salve-regina": {
    "ref": "Ench. 1952, n° 332 (Salve Regina) et n° 293 (℣. Dignare me)",
@@ -169,16 +169,6 @@
     }
    ]
   },
-  "beringer:coeur-afflige-de-marie": {
-   "ref": "Beringer 1925, t. I, n° 450 (non retrouvée dans l'Enchiridion 1952)",
-   "frequence": "chaque fois",
-   "partielles": [
-    {
-     "jours": 300,
-     "texte": "300 jours, la prière entière"
-    }
-   ]
-  },
   "jardin:priere-pour-les-agonisants": {
    "ref": "Ench. 1952, n° 671",
    "frequence": "chaque fois",
@@ -235,17 +225,6 @@
     }
    ]
   },
-  "jardin:chapelet-de-saint-michel-archange": {
-   "ref": "Pie IX, 8 août 1851 (d'après le livret)",
-   "frequence": "chaque fois",
-   "partielles": [
-    {
-     "ans": 7,
-     "jours": 280,
-     "texte": "7 ans et 7 quarantaines"
-    }
-   ]
-  },
   "jardin:a-saint-gabriel-archange": {
    "ref": "Ench. 1952, nos 448-449 (d'après le livret)",
    "frequence": "chaque fois",
@@ -277,7 +256,7 @@
    ]
   },
   "jardin:les-sept-douleurs-et-les-sept-allegresses-de-saint-joseph": {
-   "ref": "Ench. 1952, n° 410 (d'après le livret)",
+   "ref": "Ench. 1952, n° 470 (vérifié sur le texte de l’Enchiridion ; le livret indiquait n° 410)",
    "frequence": "chaque fois",
    "partielles": [
     {
@@ -700,14 +679,16 @@
    "note": "Faite publiquement à l'église : 10 ans chaque jour."
   },
   "thesaurisons:sainte-face-therese": {
-   "ref": "Thésaurisons, n° 235 (Preces et Pia Opera 1938, n° 178 ; S. P. A., 5 avr. 1931)",
+   "ref": "Ench. 1952, n° 208 (auparavant : Thésaurisons, n° 235 (Preces et Pia Opera 1938, n° 178 ; S. P. A., 5 avr. 1931))",
    "frequence": "chaque fois",
    "partielles": [
     {
      "jours": 500,
      "texte": "500 jours"
     }
-   ]
+   ],
+   "langue": "italien",
+   "traduction": "Thésaurisons pour le ciel (1941), traduction certifiée fidèle selon le can. 934 § 2"
   },
   "jahenny:scapulaire-benediction-protection": {
    "ref": "Ench. 1952, n° 187 (O Crux, ave, spes unica) ; Thésaurisons, n° 70",
@@ -722,404 +703,458 @@
    "note": "Dit 7 fois : 7 × 500 jours."
   },
   "thesaurisons:jac-100": {
-   "ref": "Thésaurisons, n° 100 (Preces et Pia Opera 1938, n° 256)",
+   "ref": "Ench. 1952, n° 274 (auparavant : Thésaurisons, n° 100 (Preces et Pia Opera 1938, n° 256))",
    "frequence": "chaque fois",
    "partielles": [
     {
      "ans": 7,
      "texte": "7 ans"
     }
-   ]
+   ],
+   "langue": "latin",
+   "traduction": "Thésaurisons pour le ciel (1941), traduction certifiée fidèle selon le can. 934 § 2"
   },
   "thesaurisons:jac-44": {
-   "ref": "Thésaurisons, n° 44 (Preces et Pia Opera 1938, n° 88)",
+   "ref": "Ench. 1952, n° 113 (auparavant : Thésaurisons, n° 44 (Preces et Pia Opera 1938, n° 88))",
    "frequence": "chaque fois",
    "partielles": [
     {
      "jours": 300,
      "texte": "300 jours"
     }
-   ]
+   ],
+   "langue": "latin",
+   "traduction": "Thésaurisons pour le ciel (1941), traduction certifiée fidèle selon le can. 934 § 2"
   },
   "thesaurisons:jac-105": {
-   "ref": "Thésaurisons, n° 105 (Preces et Pia Opera 1938, n° 268)",
+   "ref": "Ench. 1952, n° 292 (auparavant : Thésaurisons, n° 105 (Preces et Pia Opera 1938, n° 268))",
    "frequence": "chaque fois",
    "partielles": [
     {
      "jours": 300,
      "texte": "300 jours"
     }
-   ]
+   ],
+   "langue": "latin",
+   "traduction": "Thésaurisons pour le ciel (1941), traduction certifiée fidèle selon le can. 934 § 2"
   },
   "thesaurisons:jac-19": {
-   "ref": "Thésaurisons, n° 19 (Preces et Pia Opera 1938, n° 28)",
+   "ref": "Ench. 1952, n° 38 (auparavant : Thésaurisons, n° 19 (Preces et Pia Opera 1938, n° 28))",
    "frequence": "chaque fois",
    "partielles": [
     {
      "jours": 500,
      "texte": "500 jours"
     }
-   ]
+   ],
+   "langue": "latin",
+   "traduction": "Thésaurisons pour le ciel (1941), traduction certifiée fidèle selon le can. 934 § 2"
   },
   "thesaurisons:jac-33": {
-   "ref": "Thésaurisons, n° 33 (Preces et Pia Opera 1938, n° 55)",
+   "ref": "Ench. 1952, n° 70 (auparavant : Thésaurisons, n° 33 (Preces et Pia Opera 1938, n° 55))",
    "frequence": "chaque fois",
    "partielles": [
     {
      "jours": 300,
      "texte": "300 jours"
     }
-   ]
+   ],
+   "langue": "italien",
+   "traduction": "Thésaurisons pour le ciel (1941), traduction certifiée fidèle selon le can. 934 § 2"
   },
   "thesaurisons:jac-57": {
-   "ref": "Thésaurisons, n° 57 (Preces et Pia Opera 1938, n° 127)",
+   "ref": "Ench. 1952, n° 154 (auparavant : Thésaurisons, n° 57 (Preces et Pia Opera 1938, n° 127))",
    "frequence": "chaque fois",
    "partielles": [
     {
      "jours": 500,
      "texte": "500 jours"
     }
-   ]
+   ],
+   "langue": "latin",
+   "traduction": "Thésaurisons pour le ciel (1941), traduction certifiée fidèle selon le can. 934 § 2"
   },
   "thesaurisons:jac-206": {
-   "ref": "Thésaurisons, n° 206 (Preces et Pia Opera 1938, n° 22)",
+   "ref": "Ench. 1952, n° 22 (auparavant : Thésaurisons, n° 206 (Preces et Pia Opera 1938, n° 22))",
    "frequence": "chaque fois",
    "partielles": [
     {
      "jours": 500,
      "texte": "500 jours"
     }
-   ]
+   ],
+   "langue": "latin",
+   "traduction": "Thésaurisons pour le ciel (1941), traduction certifiée fidèle selon le can. 934 § 2"
   },
   "thesaurisons:jac-71": {
-   "ref": "Thésaurisons, n° 71 (Preces et Pia Opera 1938, n° 158)",
+   "ref": "Ench. 1952, n° 188 (auparavant : Thésaurisons, n° 71 (Preces et Pia Opera 1938, n° 158))",
    "frequence": "chaque fois",
    "partielles": [
     {
      "ans": 3,
      "texte": "3 ans"
     }
-   ]
+   ],
+   "langue": "latin",
+   "traduction": "Thésaurisons pour le ciel (1941), traduction certifiée fidèle selon le can. 934 § 2"
   },
   "thesaurisons:jac-273": {
-   "ref": "Thésaurisons, n° 273 (Preces et Pia Opera 1938, n° 278)",
+   "ref": "Ench. 1952, n° 302 (auparavant : Thésaurisons, n° 273 (Preces et Pia Opera 1938, n° 278))",
    "frequence": "chaque fois",
    "partielles": [
     {
      "jours": 300,
      "texte": "300 jours"
     }
-   ]
+   ],
+   "langue": "latin",
+   "traduction": "Thésaurisons pour le ciel (1941), traduction certifiée fidèle selon le can. 934 § 2"
   },
   "thesaurisons:jac-199": {
-   "ref": "Thésaurisons, n° 199 (Preces et Pia Opera 1938, n° 8)",
+   "ref": "Ench. 1952, n° 8 (auparavant : Thésaurisons, n° 199 (Preces et Pia Opera 1938, n° 8))",
    "frequence": "chaque fois",
    "partielles": [
     {
      "jours": 500,
      "texte": "500 jours"
     }
-   ]
+   ],
+   "langue": "latin",
+   "intention": "chaque fois que l’on entend blasphémer contre Dieu",
+   "traduction": "Thésaurisons pour le ciel (1941), traduction certifiée fidèle selon le can. 934 § 2"
   },
   "thesaurisons:jac-35": {
-   "ref": "Thésaurisons, n° 35 (Preces et Pia Opera 1938, n° 58)",
+   "ref": "Ench. 1952, n° 73 (auparavant : Thésaurisons, n° 35 (Preces et Pia Opera 1938, n° 58))",
    "frequence": "chaque fois",
    "partielles": [
     {
      "jours": 500,
      "texte": "500 jours"
     }
-   ]
+   ],
+   "langue": "latin",
+   "traduction": "Thésaurisons pour le ciel (1941), traduction certifiée fidèle selon le can. 934 § 2"
   },
   "thesaurisons:jac-37": {
-   "ref": "Thésaurisons, n° 37 (Preces et Pia Opera 1938, n° 64)",
+   "ref": "Ench. 1952, n° 79 (auparavant : Thésaurisons, n° 37 (Preces et Pia Opera 1938, n° 64))",
    "frequence": "chaque fois",
    "partielles": [
     {
      "jours": 500,
      "texte": "500 jours"
     }
-   ]
+   ],
+   "langue": "latin",
+   "intention": "devant le très saint Sacrement, même renfermé dans le tabernacle",
+   "traduction": "Thésaurisons pour le ciel (1941), traduction certifiée fidèle selon le can. 934 § 2"
   },
   "thesaurisons:jac-70": {
-   "ref": "Thésaurisons, n° 70 (Preces et Pia Opera 1938, n° 157)",
+   "ref": "Ench. 1952, n° 187 (auparavant : Thésaurisons, n° 70 (Preces et Pia Opera 1938, n° 157))",
    "frequence": "chaque fois",
    "partielles": [
     {
      "jours": 500,
      "texte": "500 jours"
     }
-   ]
+   ],
+   "langue": "latin",
+   "traduction": "Thésaurisons pour le ciel (1941), traduction certifiée fidèle selon le can. 934 § 2"
   },
   "thesaurisons:jac-90": {
-   "ref": "Thésaurisons, n° 90 (Preces et Pia Opera 1938, n° 211)",
+   "ref": "Ench. 1952, n° 242 (auparavant : Thésaurisons, n° 90 (Preces et Pia Opera 1938, n° 211))",
    "frequence": "chaque fois",
    "partielles": [
     {
      "jours": 500,
      "texte": "500 jours"
     }
-   ]
+   ],
+   "langue": "latin",
+   "traduction": "Thésaurisons pour le ciel (1941), traduction certifiée fidèle selon le can. 934 § 2"
   },
   "thesaurisons:jac-198": {
-   "ref": "Thésaurisons, n° 198 (Preces et Pia Opera 1938, n° 5)",
+   "ref": "Ench. 1952, n° 5 (auparavant : Thésaurisons, n° 198 (Preces et Pia Opera 1938, n° 5))",
    "frequence": "chaque fois",
    "partielles": [
     {
      "jours": 300,
      "texte": "300 jours"
     }
-   ]
+   ],
+   "langue": "latin",
+   "traduction": "Thésaurisons pour le ciel (1941), traduction certifiée fidèle selon le can. 934 § 2"
   },
   "thesaurisons:jac-207": {
-   "ref": "Thésaurisons, n° 207 (Preces et Pia Opera 1938, n° 29)",
+   "ref": "Ench. 1952, n° 39 (auparavant : Thésaurisons, n° 207 (Preces et Pia Opera 1938, n° 29))",
    "frequence": "chaque fois",
    "partielles": [
     {
      "jours": 300,
      "texte": "300 jours"
     }
-   ]
+   ],
+   "langue": "français"
   },
   "thesaurisons:jac-205": {
-   "ref": "Thésaurisons, n° 205 (Preces et Pia Opera 1938, n° 15)",
+   "ref": "Ench. 1952, n° 15 (auparavant : Thésaurisons, n° 205 (Preces et Pia Opera 1938, n° 15))",
    "frequence": "chaque fois",
    "partielles": [
     {
      "jours": 500,
      "texte": "500 jours"
     }
-   ]
+   ],
+   "langue": "italien",
+   "traduction": "Thésaurisons pour le ciel (1941), traduction certifiée fidèle selon le can. 934 § 2"
   },
   "thesaurisons:jac-72": {
-   "ref": "Thésaurisons, n° 72 (Preces et Pia Opera 1938, n° 161)",
+   "ref": "Ench. 1952, n° 191 (auparavant : Thésaurisons, n° 72 (Preces et Pia Opera 1938, n° 161))",
    "frequence": "chaque fois",
    "partielles": [
     {
      "ans": 3,
      "texte": "3 ans"
     }
-   ]
+   ],
+   "langue": "latin",
+   "traduction": "Thésaurisons pour le ciel (1941), traduction certifiée fidèle selon le can. 934 § 2"
   },
   "thesaurisons:jac-12": {
-   "ref": "Thésaurisons, n° 12 (Preces et Pia Opera 1938, n° 19)",
+   "ref": "Ench. 1952, n° 19 (auparavant : Thésaurisons, n° 12 (Preces et Pia Opera 1938, n° 19))",
    "frequence": "chaque fois",
    "partielles": [
     {
      "jours": 500,
      "texte": "500 jours"
     }
-   ]
+   ],
+   "langue": "latin",
+   "traduction": "Thésaurisons pour le ciel (1941), traduction certifiée fidèle selon le can. 934 § 2"
   },
   "thesaurisons:jac-204": {
-   "ref": "Thésaurisons, n° 204 (Preces et Pia Opera 1938, n° 14)",
+   "ref": "Ench. 1952, n° 14 (auparavant : Thésaurisons, n° 204 (Preces et Pia Opera 1938, n° 14))",
    "frequence": "chaque fois",
    "partielles": [
     {
      "jours": 500,
      "texte": "500 jours"
     }
-   ]
+   ],
+   "langue": "latin",
+   "traduction": "Thésaurisons pour le ciel (1941), traduction certifiée fidèle selon le can. 934 § 2"
   },
   "thesaurisons:jac-38": {
-   "ref": "Thésaurisons, n° 38 (Preces et Pia Opera 1938, n° 70)",
+   "ref": "Ench. 1952, n° 85 (auparavant : Thésaurisons, n° 38 (Preces et Pia Opera 1938, n° 70))",
    "frequence": "chaque fois",
    "partielles": [
     {
      "jours": 300,
      "texte": "300 jours"
     }
-   ]
+   ],
+   "langue": "latin",
+   "traduction": "Thésaurisons pour le ciel (1941), traduction certifiée fidèle selon le can. 934 § 2"
   },
   "thesaurisons:jac-87": {
-   "ref": "Thésaurisons, n° 87 (Preces et Pia Opera 1938, n° 205)",
+   "ref": "Ench. 1952, n° 236 (auparavant : Thésaurisons, n° 87 (Preces et Pia Opera 1938, n° 205))",
    "frequence": "chaque fois",
    "partielles": [
     {
      "jours": 300,
      "texte": "300 jours"
     }
-   ]
+   ],
+   "langue": "français"
   },
   "thesaurisons:jac-134": {
-   "ref": "Thésaurisons, n° 134 (Preces et Pia Opera 1938, n° 352)",
+   "ref": "Ench. 1952, n° 386 (auparavant : Thésaurisons, n° 134 (Preces et Pia Opera 1938, n° 352))",
    "frequence": "chaque fois",
    "partielles": [
     {
      "jours": 300,
      "texte": "300 jours"
     }
-   ]
-  },
-  "thesaurisons:jac-244": {
-   "ref": "Thésaurisons, n° 244 (Preces et Pia Opera 1938, n° 203)",
-   "frequence": "chaque fois",
-   "partielles": [
-    {
-     "jours": 300,
-     "texte": "300 jours"
-    }
-   ]
+   ],
+   "langue": "italien",
+   "traduction": "Thésaurisons pour le ciel (1941), traduction certifiée fidèle selon le can. 934 § 2"
   },
   "thesaurisons:jac-246": {
-   "ref": "Thésaurisons, n° 246 (Preces et Pia Opera 1938, n° 206)",
+   "ref": "Ench. 1952, n° 237 (auparavant : Thésaurisons, n° 246 (Preces et Pia Opera 1938, n° 206))",
    "frequence": "chaque fois",
    "partielles": [
     {
      "jours": 300,
      "texte": "300 jours"
     }
-   ]
+   ],
+   "langue": "latin",
+   "traduction": "Thésaurisons pour le ciel (1941), traduction certifiée fidèle selon le can. 934 § 2"
   },
   "thesaurisons:jac-275": {
-   "ref": "Thésaurisons, n° 275 (Preces et Pia Opera 1938, n° 280)",
+   "ref": "Ench. 1952, n° 304 (auparavant : Thésaurisons, n° 275 (Preces et Pia Opera 1938, n° 280))",
    "frequence": "chaque fois",
    "partielles": [
     {
      "jours": 300,
      "texte": "300 jours"
     }
-   ]
+   ],
+   "langue": "italien",
+   "traduction": "Thésaurisons pour le ciel (1941), traduction certifiée fidèle selon le can. 934 § 2"
   },
   "thesaurisons:jac-85": {
-   "ref": "Thésaurisons, n° 85 (Preces et Pia Opera 1938, n° 196)",
+   "ref": "Ench. 1952, n° 227 (auparavant : Thésaurisons, n° 85 (Preces et Pia Opera 1938, n° 196))",
    "frequence": "chaque fois",
    "partielles": [
     {
      "jours": 500,
      "texte": "500 jours"
     }
-   ]
+   ],
+   "langue": "latin",
+   "traduction": "Thésaurisons pour le ciel (1941), traduction certifiée fidèle selon le can. 934 § 2"
   },
   "thesaurisons:jac-7": {
-   "ref": "Thésaurisons, n° 7 (Preces et Pia Opera 1938, n° 11)",
+   "ref": "Ench. 1952, n° 11 (auparavant : Thésaurisons, n° 7 (Preces et Pia Opera 1938, n° 11))",
    "frequence": "chaque fois",
    "partielles": [
     {
      "jours": 500,
      "texte": "500 jours"
     }
-   ]
+   ],
+   "langue": "latin",
+   "traduction": "Thésaurisons pour le ciel (1941), traduction certifiée fidèle selon le can. 934 § 2"
   },
   "thesaurisons:jac-14": {
-   "ref": "Thésaurisons, n° 14 (Preces et Pia Opera 1938, n° 21)",
+   "ref": "Ench. 1952, n° 21 (auparavant : Thésaurisons, n° 14 (Preces et Pia Opera 1938, n° 21))",
    "frequence": "chaque fois",
    "partielles": [
     {
      "jours": 500,
      "texte": "500 jours"
     }
-   ]
+   ],
+   "langue": "latin",
+   "intention": "le matin ou le soir",
+   "traduction": "Thésaurisons pour le ciel (1941), traduction certifiée fidèle selon le can. 934 § 2"
   },
   "thesaurisons:jac-39": {
-   "ref": "Thésaurisons, n° 39 (Preces et Pia Opera 1938, n° 69)",
+   "ref": "Ench. 1952, n° 84 (auparavant : Thésaurisons, n° 39 (Preces et Pia Opera 1938, n° 69))",
    "frequence": "chaque fois",
    "partielles": [
     {
      "jours": 300,
      "texte": "300 jours"
     }
-   ]
+   ],
+   "langue": "latin",
+   "traduction": "Thésaurisons pour le ciel (1941), traduction certifiée fidèle selon le can. 934 § 2"
   },
   "thesaurisons:jac-84": {
-   "ref": "Thésaurisons, n° 84 (Preces et Pia Opera 1938, n° 195)",
+   "ref": "Ench. 1952, n° 226 (auparavant : Thésaurisons, n° 84 (Preces et Pia Opera 1938, n° 195))",
    "frequence": "chaque fois",
    "partielles": [
     {
      "jours": 300,
      "texte": "300 jours"
     }
-   ]
-  },
-  "thesaurisons:jac-232": {
-   "ref": "Thésaurisons, n° 232 (Preces et Pia Opera 1938, n° 169)",
-   "frequence": "chaque fois",
-   "partielles": [
-    {
-     "jours": 300,
-     "texte": "300 jours"
-    }
-   ]
+   ],
+   "langue": "français"
   },
   "thesaurisons:jac-239": {
-   "ref": "Thésaurisons, n° 239 (Preces et Pia Opera 1938, n° 197)",
+   "ref": "Ench. 1952, n° 228 (auparavant : Thésaurisons, n° 239 (Preces et Pia Opera 1938, n° 197))",
    "frequence": "chaque fois",
    "partielles": [
     {
      "jours": 300,
      "texte": "300 jours"
     }
-   ]
+   ],
+   "langue": "français"
   },
   "thesaurisons:jac-242": {
-   "ref": "Thésaurisons, n° 242 (Preces et Pia Opera 1938, n° 200)",
+   "ref": "Ench. 1952, n° 231 (auparavant : Thésaurisons, n° 242 (Preces et Pia Opera 1938, n° 200))",
    "frequence": "chaque fois",
    "partielles": [
     {
      "jours": 300,
      "texte": "300 jours"
     }
-   ]
+   ],
+   "langue": "français"
   },
   "thesaurisons:jac-274": {
-   "ref": "Thésaurisons, n° 274 (Preces et Pia Opera 1938, n° 279)",
+   "ref": "Ench. 1952, n° 303 (auparavant : Thésaurisons, n° 274 (Preces et Pia Opera 1938, n° 279))",
    "frequence": "chaque fois",
    "partielles": [
     {
      "jours": 300,
      "texte": "300 jours"
     }
-   ]
+   ],
+   "langue": "italien",
+   "traduction": "Thésaurisons pour le ciel (1941), traduction certifiée fidèle selon le can. 934 § 2"
   },
   "thesaurisons:jac-132": {
-   "ref": "Thésaurisons, n° 132 (Preces et Pia Opera 1938, n° 341)",
+   "ref": "Ench. 1952, n° 375 (auparavant : Thésaurisons, n° 132 (Preces et Pia Opera 1938, n° 341))",
    "frequence": "chaque fois",
    "partielles": [
     {
      "jours": 500,
      "texte": "500 jours"
     }
-   ]
+   ],
+   "langue": "latin",
+   "traduction": "Thésaurisons pour le ciel (1941), traduction certifiée fidèle selon le can. 934 § 2"
   },
   "thesaurisons:jac-13": {
-   "ref": "Thésaurisons, n° 13 (Preces et Pia Opera 1938, n° 20)",
+   "ref": "Ench. 1952, n° 20 (auparavant : Thésaurisons, n° 13 (Preces et Pia Opera 1938, n° 20))",
    "frequence": "chaque fois",
    "partielles": [
     {
      "jours": 500,
      "texte": "500 jours"
     }
-   ]
+   ],
+   "langue": "latin",
+   "traduction": "Thésaurisons pour le ciel (1941), traduction certifiée fidèle selon le can. 934 § 2"
   },
   "thesaurisons:jac-108": {
-   "ref": "Thésaurisons, n° 108 (Preces et Pia Opera 1938, n° 281)",
+   "ref": "Ench. 1952, n° 305 (auparavant : Thésaurisons, n° 108 (Preces et Pia Opera 1938, n° 281))",
    "frequence": "chaque fois",
    "partielles": [
     {
      "jours": 300,
      "texte": "300 jours"
     }
-   ]
+   ],
+   "langue": "latin",
+   "traduction": "Thésaurisons pour le ciel (1941), traduction certifiée fidèle selon le can. 934 § 2"
   },
   "thesaurisons:jac-215": {
-   "ref": "Thésaurisons, n° 215 (Preces et Pia Opera 1938, n° 57)",
+   "ref": "Ench. 1952, n° 72 (auparavant : Thésaurisons, n° 215 (Preces et Pia Opera 1938, n° 57))",
    "frequence": "chaque fois",
    "partielles": [
     {
      "jours": 300,
      "texte": "300 jours"
     }
-   ]
+   ],
+   "langue": "latin",
+   "traduction": "Thésaurisons pour le ciel (1941), traduction certifiée fidèle selon le can. 934 § 2"
   },
   "thesaurisons:jac-491": {
-   "ref": "Thésaurisons, n° 491 (Preces et Pia Opera 1938, n° 590)",
+   "ref": "Ench. 1952, n° 637 (auparavant : Thésaurisons, n° 491 (Preces et Pia Opera 1938, n° 590))",
    "frequence": "chaque fois",
    "partielles": [
     {
      "jours": 300,
      "texte": "300 jours"
     }
-   ]
+   ],
+   "langue": "latin",
+   "traduction": "Thésaurisons pour le ciel (1941), traduction certifiée fidèle selon le can. 934 § 2"
   },
   "hortus:triple-couronne-1": {
    "ref": "Ench. 1952, n° 221 (Jesu, mitis), n° 386 (Dulce Cor Mariæ), n° 70 (Mon Jésus, miséricorde), n° 287 (Veni, Sancte Spiritus)",
@@ -1240,13 +1275,17 @@
   "beringer:chapelet-des-morts": "Indulgences réservées aux associés de Notre-Dame du Suffrage, avec le chapelet bénit (Beringer 1925, t. II, n° 306 a).",
   "beringer:cordon-saint-joseph": "Indulgences réservées aux associés de l'archiconfrérie qui portent le cordon (Beringer 1925, t. II, n° 266).",
   "jardin:priere-de-la-milice-angelique": "Indulgences réservées aux associés du cordon de saint Thomas.",
-  "beringer:don-sagesse": "L'indulgence (300 jours) est attachée à la prière entière « En l'honneur du Cœur affligé de Marie », non à l'invocation seule.",
-  "beringer:don-intelligence": "L'indulgence est attachée à la prière entière, non à l'invocation seule.",
-  "beringer:don-conseil": "L'indulgence est attachée à la prière entière, non à l'invocation seule.",
-  "beringer:don-force": "L'indulgence est attachée à la prière entière, non à l'invocation seule.",
-  "beringer:don-science": "L'indulgence est attachée à la prière entière, non à l'invocation seule.",
-  "beringer:don-piete": "L'indulgence est attachée à la prière entière, non à l'invocation seule.",
-  "beringer:don-crainte": "L'indulgence est attachée à la prière entière, non à l'invocation seule.",
-  "thesaurisons:au-christ-roi": "Indulgence plénière une fois le jour (S. P. A., 21 févr. 1923) : les plénières ne sont pas comptées."
+  "beringer:don-sagesse": "Indulgence abrogée : « En l’honneur du Cœur affligé de Marie » (Pie VII, 14 janv. 1815 ; Beringer 1925, n° 450) ne figure pas dans l’Enchiridion indulgentiarum de 1952 (décret du 3 mars 1952 : « obrogatis ceteris omnibus generalibus indulgentiarum concessionibus, quae in hoc enchiridion non sint relatae »).",
+  "beringer:don-intelligence": "Indulgence abrogée : « En l’honneur du Cœur affligé de Marie » (Pie VII, 14 janv. 1815 ; Beringer 1925, n° 450) ne figure pas dans l’Enchiridion indulgentiarum de 1952 (décret du 3 mars 1952 : « obrogatis ceteris omnibus generalibus indulgentiarum concessionibus, quae in hoc enchiridion non sint relatae »).",
+  "beringer:don-conseil": "Indulgence abrogée : « En l’honneur du Cœur affligé de Marie » (Pie VII, 14 janv. 1815 ; Beringer 1925, n° 450) ne figure pas dans l’Enchiridion indulgentiarum de 1952 (décret du 3 mars 1952 : « obrogatis ceteris omnibus generalibus indulgentiarum concessionibus, quae in hoc enchiridion non sint relatae »).",
+  "beringer:don-force": "Indulgence abrogée : « En l’honneur du Cœur affligé de Marie » (Pie VII, 14 janv. 1815 ; Beringer 1925, n° 450) ne figure pas dans l’Enchiridion indulgentiarum de 1952 (décret du 3 mars 1952 : « obrogatis ceteris omnibus generalibus indulgentiarum concessionibus, quae in hoc enchiridion non sint relatae »).",
+  "beringer:don-science": "Indulgence abrogée : « En l’honneur du Cœur affligé de Marie » (Pie VII, 14 janv. 1815 ; Beringer 1925, n° 450) ne figure pas dans l’Enchiridion indulgentiarum de 1952 (décret du 3 mars 1952 : « obrogatis ceteris omnibus generalibus indulgentiarum concessionibus, quae in hoc enchiridion non sint relatae »).",
+  "beringer:don-piete": "Indulgence abrogée : « En l’honneur du Cœur affligé de Marie » (Pie VII, 14 janv. 1815 ; Beringer 1925, n° 450) ne figure pas dans l’Enchiridion indulgentiarum de 1952 (décret du 3 mars 1952 : « obrogatis ceteris omnibus generalibus indulgentiarum concessionibus, quae in hoc enchiridion non sint relatae »).",
+  "beringer:don-crainte": "Indulgence abrogée : « En l’honneur du Cœur affligé de Marie » (Pie VII, 14 janv. 1815 ; Beringer 1925, n° 450) ne figure pas dans l’Enchiridion indulgentiarum de 1952 (décret du 3 mars 1952 : « obrogatis ceteris omnibus generalibus indulgentiarum concessionibus, quae in hoc enchiridion non sint relatae »).",
+  "thesaurisons:au-christ-roi": "Indulgence plénière une fois le jour (S. P. A., 21 févr. 1923) : les plénières ne sont pas comptées.",
+  "thesaurisons:jac-244": "Indulgence abrogée : « Tout pour vous, Cœur sacré de Jésus » (Preces 1938, n° 203) ne figure pas dans l’Enchiridion indulgentiarum de 1952 (décret du 3 mars 1952 : « obrogatis ceteris omnibus generalibus indulgentiarum concessionibus, quae in hoc enchiridion non sint relatae »).",
+  "thesaurisons:jac-232": "Indulgence abrogée : « Ô bon Jésus, cachez-moi dans vos plaies » (Preces 1938, n° 169 ; ne subsiste que dans l’Anima Christi, n° 131) ne figure pas dans l’Enchiridion indulgentiarum de 1952 (décret du 3 mars 1952 : « obrogatis ceteris omnibus generalibus indulgentiarum concessionibus, quae in hoc enchiridion non sint relatae »).",
+  "jardin:chapelet-de-saint-michel-archange": "Indulgence abrogée : chapelet de saint Michel (Pie IX, 8 août 1851) ne figure pas dans l’Enchiridion indulgentiarum de 1952 (décret du 3 mars 1952 : « obrogatis ceteris omnibus generalibus indulgentiarum concessionibus, quae in hoc enchiridion non sint relatae »).",
+  "beringer:coeur-afflige-de-marie": "Indulgence abrogée : « En l’honneur du Cœur affligé de Marie » (Pie VII, 14 janv. 1815 ; Beringer 1925, n° 450) ne figure pas dans l’Enchiridion indulgentiarum de 1952 (décret du 3 mars 1952 : « obrogatis ceteris omnibus generalibus indulgentiarum concessionibus, quae in hoc enchiridion non sint relatae »)."
  }
 }

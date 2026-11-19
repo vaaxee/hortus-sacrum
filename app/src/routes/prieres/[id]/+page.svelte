@@ -22,7 +22,15 @@
 	import type { Texte, Version } from '#lib/types.ts';
 	import { iso, jourDu } from '#lib/calendrier.ts';
 	import { CHAPELETS } from '#lib/liste.ts';
-	import { chargerIndulgences, enClair, valeurDuJour, valeursDuJour, type Indulgences } from '#lib/indulgences.ts';
+	import {
+		chargerIndulgences,
+		enClair,
+		mentionDuTexte,
+		noteDeTraduction,
+		valeurDuJour,
+		valeursDuJour,
+		type Indulgences
+	} from '#lib/indulgences.ts';
 
 	const id = $derived(decodeURIComponent(page.params.id ?? ''));
 	const texte = vivantSelon(
@@ -44,6 +52,7 @@
 	const autresChapelets = $derived(CHAPELETS.includes(id) ? CHAPELETS.filter((c) => c !== id) : []);
 	const NOM_CHAPELET = (c: string) => `Mystères ${c.slice('hortus:chapelet-'.length)}`;
 	const sansCompte = $derived(ind?.sans_compte[id]);
+	const marge = $derived(texte.v ? mentionDuTexte(texte.v) : null);
 	const parties = vivant(async () => [...new Set((await db.textes.toArray()).map((t) => t.partie).filter(Boolean))], [] as string[]);
 	let edition = $state(false);
 	let brouillon: Texte | undefined = $state();
@@ -177,6 +186,7 @@
 						</p>
 					{/if}
 					{#if fiche.note}<p class="detail">{fiche.note}</p>{/if}
+					{#if noteDeTraduction(fiche)}<p class="detail">{noteDeTraduction(fiche)}</p>{/if}
 					<p class="detail source">{fiche.ref}</p>
 				</aside>
 			{:else if sansCompte}
@@ -217,10 +227,10 @@
 			</article>
 
 			<aside class="marge" aria-label="Indulgence et source">
-				{#if t.indulgence}
+				{#if marge}
 					<details open>
 						<summary><span class="cartouche ind">Ind.</span></summary>
-						<p>{t.indulgence}</p>
+						<p>{marge}</p>
 					</details>
 				{/if}
 				<details open>
