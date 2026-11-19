@@ -1,0 +1,59 @@
+[
+ {
+  "id": "janvier:neuvaine-meditations-sainte-face",
+  "titre": "Neuvaine en l'honneur de la sainte Face : suite de méditations",
+  "partie": "Sainte Face",
+  "categorie": "",
+  "usage": "Neuf jours, une méditation par jour. Chaque jour, on commence par « Seigneur, je veux rechercher votre Face… » et l'on finit par les prières et l'oraison, données en entier au premier jour : le livre y renvoie par des numéros de page (« Voir p. 9 », « p. 12 »), remplacés ici par « Voir le Ier jour ».",
+  "fichier": "neuvaine.md",
+  "source": {
+   "ouvrage": "Abbé P.-D. Janvier, Manuel de l'Archiconfrérie de la Sainte-Face",
+   "edition": "3e éd., revue et corrigée d'après les décrets du Saint-Office, Tours, Bureau de l'Oratoire, 1895 ; approuvé par le cardinal Meignan",
+   "url": "https://pdfs.bibliotheque-catholique.com/pdfs/piete/Abb%C3%A9%20Pierre-D%C3%A9sir%C3%A9%20Janvier%20-%20Manuel%20de%20l%27Archiconfr%C3%A9rie%20de%20la%20Sainte-Face%20revue%20et%20corrig%C3%A9%20d%27apr%C3%A8s%20les%20d%C3%A9crets%20du%20Saint-Office.pdf",
+   "page": "112-142 (PDF p. 119-149)"
+  }
+ },
+ {
+  "id": "janvier:petit-chemin-de-croix-sainte-face",
+  "titre": "Petit chemin de croix en l'honneur de la sainte Face, en esprit de réparation et pour les besoins de l'Église",
+  "partie": "Sainte Face",
+  "categorie": "",
+  "usage": "Station IV : le mot avant « larmes » est caché sur le scan par une surcharge à la main ; « ces » est la lecture la plus probable (voir A_FOURNIR.md).",
+  "fichier": "chemin-de-croix.md",
+  "source": {
+   "ouvrage": "Abbé P.-D. Janvier, Manuel de l'Archiconfrérie de la Sainte-Face",
+   "edition": "3e éd., revue et corrigée d'après les décrets du Saint-Office, Tours, Bureau de l'Oratoire, 1895 ; approuvé par le cardinal Meignan",
+   "url": "https://pdfs.bibliotheque-catholique.com/pdfs/piete/Abb%C3%A9%20Pierre-D%C3%A9sir%C3%A9%20Janvier%20-%20Manuel%20de%20l%27Archiconfr%C3%A9rie%20de%20la%20Sainte-Face%20revue%20et%20corrig%C3%A9%20d%27apr%C3%A8s%20les%20d%C3%A9crets%20du%20Saint-Office.pdf",
+   "page": "183-192 (PDF p. 190-199)"
+  }
+ },
+ {
+  "id": "janvier:rosaire-sainte-face",
+  "titre": "Rosaire en l'honneur de la sainte Face",
+  "partie": "Sainte Face",
+  "categorie": "Chapelets",
+  "usage": "Pour chaque dizaine du Rosaire, rapporter le mystère à la sainte Face : on lit avant la dizaine le texte du mystère.",
+  "fichier": "rosaire.md",
+  "source": {
+   "ouvrage": "Abbé P.-D. Janvier, Manuel de l'Archiconfrérie de la Sainte-Face",
+   "edition": "3e éd., revue et corrigée d'après les décrets du Saint-Office, Tours, Bureau de l'Oratoire, 1895 ; approuvé par le cardinal Meignan",
+   "url": "https://pdfs.bibliotheque-catholique.com/pdfs/piete/Abb%C3%A9%20Pierre-D%C3%A9sir%C3%A9%20Janvier%20-%20Manuel%20de%20l%27Archiconfr%C3%A9rie%20de%20la%20Sainte-Face%20revue%20et%20corrig%C3%A9%20d%27apr%C3%A8s%20les%20d%C3%A9crets%20du%20Saint-Office.pdf",
+   "page": "239-243 (PDF p. 246-250)"
+  }
+ },
+ {
+  "id": "janvier:petit-office-saint-nom-de-dieu",
+  "titre": "Petit office du très saint Nom de Dieu",
+  "partie": "Sainte Face",
+  "categorie": "",
+  "usage": "Office de réparation des blasphèmes, en grande partie l'œuvre de M. Dupont (d'après l'opuscule « Association de prières contre le blasphème », dernière éd. 1867). Huit heures, de Matines à Complies, chacune avec ses versets latins en regard ; des âmes ferventes le récitent chaque jour.",
+  "fichier": "office-fr.md",
+  "fichier_latin": "office-la.md",
+  "source": {
+   "ouvrage": "Abbé P.-D. Janvier, Manuel de l'Archiconfrérie de la Sainte-Face",
+   "edition": "3e éd., revue et corrigée d'après les décrets du Saint-Office, Tours, Bureau de l'Oratoire, 1895 ; approuvé par le cardinal Meignan",
+   "url": "https://pdfs.bibliotheque-catholique.com/pdfs/piete/Abb%C3%A9%20Pierre-D%C3%A9sir%C3%A9%20Janvier%20-%20Manuel%20de%20l%27Archiconfr%C3%A9rie%20de%20la%20Sainte-Face%20revue%20et%20corrig%C3%A9%20d%27apr%C3%A8s%20les%20d%C3%A9crets%20du%20Saint-Office.pdf",
+   "page": "253-272 (PDF p. 260-279)"
+  }
+ }
+]
