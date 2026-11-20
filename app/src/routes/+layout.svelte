@@ -32,11 +32,13 @@
 
 	const onglets = [
 		{ icone: 'aujourdhui', nom: 'Aujourd’hui', href: '/' },
-		{ icone: 'calendrier', nom: 'Calendrier', href: '/calendrier' },
+		{ icone: 'lecture', nom: 'Lecture', href: '/lecture' },
 		{ icone: 'prieres', nom: 'Prières', href: '/prieres' },
 		{ icone: 'devotions', nom: 'Dévotions', href: '/devotions' },
-		{ icone: 'profil', nom: 'Profil', href: '/reglages' }
+		{ icone: 'calendrier', nom: 'Calendrier', href: '/calendrier' }
 	] as const;
+	// le Profil n'est plus un onglet : une icône en haut à droite (SPEC § 11, navigation)
+	const profilActif = $derived(['/reglages', '/profil', '/historique', '/fetes', '/imprimer'].some((h) => page.url.pathname.startsWith(h)));
 	const actif = (href: string) => (href === '/' ? page.url.pathname === '/' : page.url.pathname.startsWith(href));
 </script>
 
@@ -54,7 +56,11 @@
 					<Icone nom={o.icone} taille={20} /><span>{o.nom}</span>
 				</a>
 			{/each}
+			<a href="/reglages" class:actif={profilActif} aria-current={profilActif ? 'page' : undefined}>
+				<Icone nom="profil" taille={20} /><span>Profil</span>
+			</a>
 		</nav>
+		<a class="profil-haut" href="/reglages" aria-label="Profil et réglages" class:actif={profilActif}><Icone nom="profil" taille={22} /></a>
 		<div class="contenu">
 			{#if erreur}<p class="page erreur" role="alert">{erreur}</p>{/if}
 			{#if pret}{@render children()}{/if}
@@ -93,7 +99,23 @@
 		color: var(--hs-or);
 		line-height: 0;
 	}
+	.profil-haut {
+		position: absolute;
+		top: 4px;
+		right: max(12px, env(safe-area-inset-right));
+		z-index: 16;
+		display: grid;
+		place-items: center;
+		width: 44px;
+		height: 44px;
+		border-radius: 50%;
+		color: var(--hs-encre-douce);
+	}
+	.profil-haut.actif {
+		color: var(--hs-or);
+	}
 	.cadre {
+		position: relative;
 		max-width: var(--hs-page);
 		margin: 0 auto;
 	}
@@ -146,7 +168,8 @@
 
 	/* ordinateur : colonne de gauche, comme la table d'un beau livre */
 	@media (min-width: 900px) {
-		.onglets {
+		.onglets,
+		.profil-haut {
 			display: none;
 		}
 		.cadre {

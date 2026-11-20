@@ -9,7 +9,7 @@ ou par un Ordinaire du lieu où la langue est en usage).
 Les fiches tirées de « Thésaurisons pour le ciel » (1941, numérotation des Preces et Pia Opera de 1938) sont rapportées
 ici à leur numéro de 1952, vérifié dans le texte de l'Enchiridion (édition vaticane 1952). Les traductions de
 Thésaurisons sont certifiées fidèles selon le can. 934 § 2 (G. Chartier, vic. gén. de Montréal, 28 avril 1941).
-Usage : python3 -I engine/indulgences/ench1952.py
+Usage : python3 -I engine/indulgences/ench1952.py, puis verif1952.py (vérification fiche par fiche, 20 nov.).
 """
 import json, pathlib
 
@@ -45,27 +45,26 @@ NUMEROS = {
     'thesaurisons:sainte-face-therese': (208, 'italien', None),
 }
 # absentes de l'Enchiridion 1952 : indulgence abrogée
+# Seul le chapelet de saint Michel est absent de l'Enchiridion. (« Tout pour vous, Cœur sacré », « Ô bon Jésus, cachez-moi
+# dans vos plaies » et « le Cœur affligé de Marie » avaient été déclarés abrogés à tort : ce sont les n° 234, 199 et 383 ;
+# voir verif1952.py.)
 ABROGEES = {
-    'thesaurisons:jac-244': '« Tout pour vous, Cœur sacré de Jésus » (Preces 1938, n° 203)',
-    'thesaurisons:jac-232': '« Ô bon Jésus, cachez-moi dans vos plaies » (Preces 1938, n° 169 ; ne subsiste que dans l’Anima Christi, n° 131)',
     'jardin:chapelet-de-saint-michel-archange': 'chapelet de saint Michel (Pie IX, 8 août 1851)',
-    'beringer:coeur-afflige-de-marie': '« En l’honneur du Cœur affligé de Marie » (Pie VII, 14 janv. 1815 ; Beringer 1925, n° 450)',
 }
 THES = 'Thésaurisons pour le ciel (1941), traduction certifiée fidèle selon le can. 934 § 2'
 
 for k, (n, langue, cond) in NUMEROS.items():
     f = F[k]
     ancien = f['ref']
-    f['ref'] = f'Ench. 1952, n° {n} (auparavant : {ancien})'
+    if not ancien.startswith('Ench. 1952'):  # déjà appliqué : rejouable sans doubler la référence
+        f['ref'] = f'Ench. 1952, n° {n} (auparavant : {ancien})'
     f['langue'] = langue
     if cond: f['intention'] = cond
     if langue != 'français': f['traduction'] = THES
 for k, quoi in ABROGEES.items():
     F.pop(k, None)
     d['sans_compte'][k] = f'Indulgence abrogée : {quoi} ne figure pas dans l’Enchiridion indulgentiarum de 1952 (décret du 3 mars 1952 : « obrogatis ceteris omnibus generalibus indulgentiarum concessionibus, quae in hoc enchiridion non sint relatae »).'
-# les dons du Saint-Esprit pris dans la même prière de Pie VII : même sort
-for k in [x for x in d['sans_compte'] if x.startswith('beringer:don-')]:
-    d['sans_compte'][k] = d['sans_compte']['beringer:coeur-afflige-de-marie']
+# les dons du Saint-Esprit (une douleur seule du n° 383) : voir verif1952.py
 
 # numéros corrigés après vérification sur le texte de l'Enchiridion (audit du corpus, 19 nov.)
 F['jardin:les-sept-douleurs-et-les-sept-allegresses-de-saint-joseph']['ref'] = 'Ench. 1952, n° 470 (vérifié sur le texte de l’Enchiridion ; le livret indiquait n° 410)'
