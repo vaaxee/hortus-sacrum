@@ -26,8 +26,10 @@ function niemeDuMois(an: number, mois: number, rang: number, jourSemaine: number
 }
 
 /** Toutes les occurrences d'une règle entre deux dates incluses (AAAA-MM-JJ). */
-export function occurrences(regle: Regle, de: string, a: string): Occurrence[] {
+export function occurrences(regle: Regle | undefined, de: string, a: string): Occurrence[] {
 	const out: Occurrence[] = [];
+	// données anciennes ou incomplètes : pas de règle, pas de jours (jamais d'erreur ni de boucle sans fin)
+	if (!regle || typeof regle !== 'object') return out;
 	const d0 = versDate(de);
 	const d1 = versDate(a);
 	const dans = (d: Date) => d >= d0 && d <= d1;
@@ -51,6 +53,7 @@ export function occurrences(regle: Regle, de: string, a: string): Occurrence[] {
 				} else {
 					// les N jours de semaine qui précèdent la fête
 					let dernier = plus(fete, -1);
+					if (!(regle.jourSemaine >= 0 && regle.jourSemaine <= 6) || isNaN(dernier.getTime())) continue;
 					while (dernier.getDay() !== regle.jourSemaine) dernier = plus(dernier, -1);
 					for (let i = 0; i < regle.nombre; i++) ajouter(plus(dernier, -7 * (regle.nombre - 1 - i)), i + 1, regle.nombre);
 				}
