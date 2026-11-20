@@ -1,0 +1,200 @@
+import { describe, expect, it } from 'vitest';
+import { appliquerReglages, journee } from './journee.ts';
+import { vaut } from './quand.ts';
+import { couper, extraire, fragments, partIncluse } from './texte.ts';
+import type { Journee, Programme } from './types.ts';
+import { CALENDRIER, corps, PLAN, PROGRAMME } from './donnees-de-test.ts';
+
+const jourDe = (date: string) => {
+	const j = CALENDRIER.find((x) => x.date === date);
+	if (!j) throw new Error(date);
+	return j;
+};
+const calculer = (date: string, programme: Programme = PROGRAMME, extra = {}) =>
+	journee(programme, { jour: jourDe(date), pratiques: PLAN, corps, ...extra });
+const ligne = (jr: Journee, id: string) => jr.lignes.find((l) => l.id === id);
+const textesDe = (jr: Journee, id: string) => (ligne(jr, id)?.sections ?? []).map((s) => s.texte);
+
+describe('texte.ts', () => {
+	const t = '## A\n\nun\n\n### 1° x\n\ndeux\n\n### 2° y\n\ntrois\n\n## B\n\nquatre';
+	it('extrait une section jusqu’au titre de même niveau', () => {
+		expect(extraire(t, { section: '### 1° x' })).toBe('### 1° x\n\ndeux');
+		expect(extraire(t, { section: '## A' })).toBe('## A\n\nun\n\n### 1° x\n\ndeux\n\n### 2° y\n\ntrois');
+		expect(extraire(t, { section: '## Z' })).toBeNull();
+	});
+	it('extrait le n-ième titre (jour de neuvaine) et retire des paragraphes', () => {
+		expect(extraire(t, { rang_du_jour: { niveau: 3 } }, 2)).toBe('### 2° y\n\ntrois');
+		expect(extraire(t, { rang_du_jour: { niveau: 3 } }, 3)).toBeNull();
+		expect(extraire(t, { retirer: ['deux'] })).not.toContain('deux');
+	});
+	it('coupe après chaque partie et se recompose', () => {
+		const m = couper(t, [{ point: 'p', apres_chaque: { niveau: 3, motif: '^\\d+° ' } }])!;
+		expect(m.map((x) => x.points.length)).toEqual([1, 1, 0]);
+		expect(m.map((x) => extraire(t, x.extrait)).join('\n\n')).toBe(t);
+	});
+	it('inclusion : le don de crainte est contenu dans le Cœur affligé de Marie', () => {
+		const don = fragments(corps('beringer:don-crainte')!);
+		expect(partIncluse(don, fragments(corps('beringer:coeur-afflige-de-marie')!))).toBeGreaterThan(0.5);
+		expect(partIncluse(don, fragments(corps('paroissien:priere-du-soir')!))).toBe(0);
+	});
+});
+
+describe('quand', () => {
+	it('jours, mois, temps, office, ou, sauf', () => {
+		const j = { date: '2027-03-27', temps: 'Temps de la Passion', office: 'Samedi saint' };
+		expect(vaut({ jours_semaine: [6], mois: [3] }, j)).toBe(true);
+		expect(vaut({ ou: [{ tempora: ['Temps pascal'] }, { office: '^Samedi saint$' }] }, j)).toBe(true);
+		expect(vaut({ sauf: { jours_semaine: [6] } }, j)).toBe(false);
+		expect(vaut({ dates: ['03-27'] }, j)).toBe(true);
+		expect(vaut({ semaines_du_mois: [4] }, j)).toBe(true);
+	});
+});
+
+describe('journee()', () => {
+	it('mercredi : une seule page pour le cordon, les Gloria sans les invocations', () => {
+		const jr = calculer('2026-12-02');
+		expect(ligne(jr, 'prog:cordon-gloria')).toBeUndefined();
+		const gloria = ligne(jr, 'prog:devotion-mercredi')!.sections.find((s) => s.texte === 'hortus:cordon-sept-gloria')!;
+		const texte = extraire(corps('hortus:cordon-sept-gloria')!, gloria.extrait)!;
+		expect(texte).toContain('Gloire au Père');
+		expect(texte).not.toContain('Joseph très chaste');
+	});
+
+	it('les autres jours : les Gloria avec leurs invocations', () => {
+		expect(textesDe(calculer('2026-12-01'), 'prog:cordon-gloria')).toContain('hortus:cordon-sept-gloria');
+	});
+
+	it('chapelet du jour, avec l’invocation à la fin de chaque dizaine', () => {
+		const jr = calculer('2026-12-03'); // jeudi : mystères joyeux
+		const l = ligne(jr, 'prog:chapelet')!;
+		expect(l.sections[0].texte).toBe('hortus:chapelet-joyeux');
+		expect(l.sections.filter((s) => s.origine === 'prog:fin-dizaine-o-marie')).toHaveLength(5);
+		expect(l.invites).toContain('prog:fin-dizaine-o-marie');
+	});
+
+	it('Angélus : Flèche d’or à chaque fois, prière pour les agonisants à midi seulement', () => {
+		const l = ligne(calculer('2026-12-01'), 'prog:angelus')!;
+		expect(l.heures).toEqual(['06:00', '12:00', '18:00']);
+		expect(l.sections.map((s) => s.texte)).toEqual(['paroissien:angelus', 'janvier:fleche-d-or', 'jardin:priere-pour-les-agonisants']);
+		expect(l.sections[2].heure).toBe('12:00');
+	});
+
+	it('temps pascal : Regina cæli ; samedi saint : les deux', () => {
+		expect(textesDe(calculer('2027-04-03'), 'prog:angelus').slice(0, 1)).toEqual(['beringer:regina-caeli']);
+		expect(textesDe(calculer('2027-03-27'), 'prog:angelus').slice(0, 2)).toEqual(['paroissien:angelus', 'beringer:regina-caeli']);
+	});
+
+	it('prière du matin : Salve après l’invocation à la Vierge, Crux ave et agonisants à la fin', () => {
+		const s = textesDe(calculer('2026-12-01'), 'prog:priere-du-matin');
+		expect(s).toEqual([
+			'paroissien:priere-du-matin',
+			'beringer:salve-regina',
+			'paroissien:priere-du-matin',
+			'hortus:offrande-du-matin',
+			undefined, // champ des intentions
+			'jahenny:scapulaire-benediction-protection',
+			'jardin:priere-pour-les-agonisants'
+		]);
+	});
+
+	it('samedi : pas de don séparé (il est dans le Cœur affligé) ; une seule litanie', () => {
+		const jr = calculer('2026-12-12');
+		expect(jr.textes.has('beringer:don-crainte')).toBe(false);
+		expect(textesDe(jr, 'prog:devotion-samedi')).toContain('beringer:coeur-afflige-de-marie');
+		expect(textesDe(jr, 'prog:devotion-samedi').filter((t) => t?.includes('litanies'))).toHaveLength(1);
+	});
+
+	it('septembre : les sept Douleurs chaque jour, sans don ni Cœur affligé', () => {
+		const jr = calculer('2027-09-04');
+		expect(ligne(jr, 'prog:sept-douleurs-septembre')).toBeDefined();
+		expect(jr.textes.has('beringer:coeur-afflige-de-marie')).toBe(false);
+		expect([...jr.textes.keys()].some((t) => t.startsWith('beringer:don-'))).toBe(false);
+	});
+
+	it('premier samedi : le chapelet est annoté, sans ligne de plus', () => {
+		const jr = calculer('2026-12-05');
+		expect(
+			ligne(jr, 'prog:chapelet')!
+				.annotations.map((a) => a.texte)
+				.join(' ')
+		).toMatch(/premiers samedis/i);
+		expect(jr.lignes.some((l) => l.id.startsWith('plan:') && /samedi/i.test(l.titre))).toBe(false);
+	});
+
+	it('neuvaine de Noël : la partie du jour seulement, avec le compteur', () => {
+		const l = calculer('2026-12-18').lignes.find((x) => x.id.endsWith('neuvaine-de-noel'))!;
+		expect(l.titre).toMatch(/3\/9/);
+		const s = l.sections[0];
+		expect(extraire(corps(s.texte!)!, s.extrait, s.rang)).toMatch(/^### Troisième jour/);
+	});
+
+	it('une pratique du plan déjà dite dans la journée annote la ligne qui la porte', () => {
+		// neuvaine à saint Michel (20-28 sept.) un mardi : le chapelet de saint Michel est déjà dans la dévotion du mardi
+		const jr = calculer('2027-09-21');
+		expect(jr.fusions.some((f) => f.texte === 'jardin:chapelet-de-saint-michel-archange' && f.vers === 'prog:devotion-mardi')).toBe(true);
+		expect(
+			ligne(jr, 'prog:devotion-mardi')!
+				.annotations.map((a) => a.texte)
+				.join()
+		).toMatch(/Michel/);
+	});
+
+	it('prière de sainte Gertrude à la fin de l’office du saint, avec son nom', () => {
+		const jr = calculer('2026-12-03'); // S. François Xavier, Confesseur
+		const s = jr.lectures.find((l) => l.id === 'lec:saint')!.sections[0];
+		expect(s.texte).toBe('gertrude:a-un-confesseur');
+		expect(s.nom).toBe('François-Xavier');
+	});
+
+	it('un invité dont l’hôte est désactivé devient une ligne à part', () => {
+		const jr = calculer('2026-12-01', PROGRAMME, { reglages: [{ id: 'prog:angelus', actif: false }] });
+		expect(ligne(jr, 'prog:angelus')).toBeUndefined();
+		expect(textesDe(jr, 'prog:fleche-d-or')).toEqual(['janvier:fleche-d-or']);
+	});
+
+	it('un ajout personnel passe par la garde : un texte déjà dit est retiré et signalé', () => {
+		const perso = {
+			id: 'perso:1',
+			titre: 'Mes litanies',
+			revision: 1,
+			source: 'ajout personnel',
+			page: { moment: 'soir' as const, ordre: 95, sections: [{ texte: 'beringer:sub-tuum' }] }
+		};
+		const jr = calculer('2026-12-01', PROGRAMME, { reglages: [{ id: 'perso:1', entree: perso }] });
+		expect(jr.conflits).toEqual([{ texte: 'beringer:sub-tuum', garde: 'prog:priere-du-soir', retire: 'perso:1' }]);
+	});
+
+	it('la liste d’avant la refonte aurait été refusée (doublons du mercredi et du samedi)', () => {
+		const ancien: Programme = {
+			...PROGRAMME,
+			entrees: [
+				...PROGRAMME.entrees,
+				{
+					id: 'x:devotion-mercredi',
+					titre: 'ancienne',
+					revision: 1,
+					source: 'test',
+					page: { moment: 'journee', ordre: 1, sections: [{ texte: 'beringer:saint-joseph-purete' }] }
+				}
+			]
+		};
+		expect(calculer('2026-12-02', ancien).conflits.map((c) => c.texte)).toEqual(['beringer:saint-joseph-purete']);
+	});
+
+	it('les réglages : ordre et durée changés, entrée livrée désactivée', () => {
+		const e = appliquerReglages(PROGRAMME.entrees, [
+			{ id: 'prog:chapelet', ordre: 5, duree: 25 },
+			{ id: 'prog:brigitte', actif: false }
+		]);
+		expect(e.find((x) => x.id === 'prog:chapelet')).toMatchObject({ duree: 25, page: { ordre: 5 } });
+		expect(e.some((x) => x.id === 'prog:brigitte')).toBe(false);
+	});
+
+	it('textes à fournir du jour', () => {
+		expect(
+			calculer('2027-03-03')
+				.a_fournir.map((a) => a.quoi)
+				.join()
+		).toMatch(/Chemin de croix/);
+	});
+});

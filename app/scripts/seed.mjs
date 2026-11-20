@@ -13,6 +13,9 @@ compact(join(racine, 'data', 'prieres', 'sources.json'), join(cible, 'prieres', 
 compact(join(racine, 'data', 'prieres', 'indulgences.json'), join(cible, 'prieres', 'indulgences.json'));
 // roues symboliques (engine/roues/construire.py)
 compact(join(racine, 'data', 'roues.json'), join(cible, 'roues.json'));
+// programme unique de la journée (SPEC § 11 ; app/src/lib/programme)
+mkdirSync(join(cible, 'programme'), { recursive: true });
+compact(join(racine, 'data', 'programme', 'programme.json'), join(cible, 'programme', 'programme.json'));
 // Écriture sainte (engine/ecriture/bible.py) : un fichier par livre, la source à part
 mkdirSync(join(cible, 'ecriture'), { recursive: true });
 for (const f of readdirSync(join(racine, 'data', 'ecriture'))) {
