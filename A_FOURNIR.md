@@ -57,3 +57,18 @@ note du can. 934 ; le latin, quand la pièce le donne, porte l'indulgence. **Dé
 | Alma Redemptoris ; Ave Regina cælorum (l'antienne) ; Stabat Mater | n° 323, 324, 378 | latin | oui |
 | Te Deum | n° 684 | latin | oui |
 | Trois prières à Notre-Dame du Perpétuel Secours | n° 427 | italien | non |
+
+### Recherche du 20 novembre (agent Traductions) : résultat
+- **Aucun recueil 1938-1960 en ligne** ne porte de déclaration de fidélité (can. 934 § 2). *L'Ami du clergé* (31 mai 1951,
+  p. 351, archive.org `per_esprit-et-vie_lami-du-clerge_1951-05-31_61_22`) ne connaissait lui-même aucune traduction française
+  conforme des *Preces*.
+- **Beringer 1925** (4e éd. fr., Lethielleux ; archive.org `lesindulgences0001beri`) porte un décret de la S. Pénitencerie
+  du 11 juillet 1925 qui reconnaît la fidélité de la traduction (t. I, p. v-vi). Il couvre 10 lignes du tableau : Angélus,
+  De profundis, litanies de Lorette, Doux Cœur (n° 333), En ego (n° 384), Douleurs et allégresses de saint Joseph (n° 485),
+  Veni Creator, Ave maris stella et Stabat (en vers), Magnificat, Perpétuel Secours (n° 459). **Soumis à l'utilisateur.**
+- **Pater, Ave, Gloria** : *L'Ami du clergé*, 9 avril 1931, p. 252-253 (archive.org `per_esprit-et-vie_lami-du-clerge_1931-04-09_48_15`) :
+  les traductions usuelles « dont […] la fidélité est notoire » gardent l'indulgence, malgré l'absence d'attestation officielle.
+- **Sans source française déclarée fidèle** (le latin seul porte l'indulgence) : litanies des Saints, Credo et Confiteor,
+  prière pour les agonisants, oraison à saint Gabriel, Alma Redemptoris, Ave Regina cælorum, Te Deum, Te Joseph celebrent.
+- **À chercher en bibliothèque** : *Recueil de prières et œuvres pies* (Raccolta), Tournai, Desclée, 1901-1902, « seule édition
+  reconnue authentique par la S. Congrégation des indulgences ».
