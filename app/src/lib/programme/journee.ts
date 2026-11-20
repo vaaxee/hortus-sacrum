@@ -175,6 +175,7 @@ export function journee(programme: Programme, ctx: Contexte): Journee {
 	}
 
 	// 3. insertions : chaque invité va au point de son hôte ; sans hôte ce jour-là, il devient une ligne à part
+	const dejaPlaces = new WeakMap<{ point: string }, number>();
 	for (const e of actives) {
 		for (const ins of e.insertions ?? []) {
 			if (!vaut(ins.quand, j)) continue;
@@ -186,7 +187,13 @@ export function journee(programme: Programme, ctx: Contexte): Journee {
 				const places: number[] = [];
 				hote.blocs.forEach((b, k) => estPoint(b) && b.point === ins.point && places.push(k));
 				if (!places.length) hote.blocs.push(...avecHeure);
-				for (const k of places.reverse()) hote.blocs.splice(k + 1, 0, ...avecHeure);
+				// à un même point, les invités se suivent dans l'ordre du programme
+				for (const k of places.reverse()) {
+					const marque = hote.blocs[k] as { point: string };
+					const deja = dejaPlaces.get(marque) ?? 0;
+					hote.blocs.splice(k + 1 + deja, 0, ...avecHeure);
+					dejaPlaces.set(marque, deja + avecHeure.length);
+				}
 				if (!hote.invites.includes(e.id)) hote.invites.push(e.id);
 				continue;
 			}
