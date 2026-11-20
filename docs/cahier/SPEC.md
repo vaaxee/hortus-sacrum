@@ -372,7 +372,11 @@ Après chaque implémentation :
   - Aucune traduction française officielle de l'Enchiridion de 1952 n'a été trouvée ; celle de 1969 (Lethielleux)
     concerne le nouvel Enchiridion.
   - Chaque fiche porte `langue` et `traduction` ; sans traduction approuvée, l'app affiche la note du can. 934.
-- Données : `data/prieres/indulgences.json` ; script `engine/indulgences/ench1952.py`. Un test vérifie que chaque fiche
+- Vérification des 100 fiches sur le texte de 1952 (agent Indulgences, 20 nov.) : seul le chapelet de saint Michel est
+  abrogé. Trois concessions d'abord déclarées abrogées à tort ont été rétablies (n° 234, 199 et 383). Les textes
+  français ont été remplacés, quand c'était possible, par ceux de Thésaurisons (`revision`). Les traductions qui restent
+  à trouver sont dans `A_FOURNIR.md`.
+- Données : `data/prieres/indulgences.json` ; scripts `engine/indulgences/ench1952.py` puis `verif1952.py`. Un test vérifie que chaque fiche
   comptée cite l'Enchiridion de 1952. Les mentions d'indulgence recopiées des anciens manuels ne sont pas affichées.
 
 ### Arbitrages des audits du 19 novembre (tranchés par les principes du § 11 ; l'utilisateur peut les reprendre)
@@ -386,7 +390,8 @@ Audits : `docs/audits/AUDIT_DEVOTIONS_2026-11-18.md` et `docs/audits/AUDIT_CORPU
 - **Prière pour les agonisants** : insérée à l'Angélus de midi et dans les prières du matin et du soir (trois fois par
   jour), sans ligne propre.
 - **Don du Saint-Esprit et douleur de Marie du jour** : une même rotation, puisqu'ils sont tirés de la même prière de
-  Pie VII ; ils vont dans la prière du soir. Leur indulgence est abrogée (prière absente de l'Enchiridion de 1952).
+  Pie VII ; ils vont dans la prière du soir. La prière entière est indulgenciée (Ench. 1952, n° 383, « Vi compatisco ») ;
+  une seule douleur dite à part ne l'est pas.
 - **Triple Couronne d'or** : quotidienne, comme dans la liste de l'utilisateur.
 - **Chapelet des Morts** : gardé le lundi. Ses indulgences sont réservées aux associés de l'archiconfrérie et ne sont pas
   comptées.
