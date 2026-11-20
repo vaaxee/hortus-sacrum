@@ -1,6 +1,6 @@
 """Applique une liste de décisions de relecture à un recueil JSON (data/recueils/*.json).
 
-Usage : python3 -I remplacer.py <recueil.json> <decisions.txt> [--ecrire]
+Usage : python3 -I remplacer.py <recueil.json> <decisions.txt> [--ecrire] [--ocr]
 
 Format des décisions, une par ligne (lignes vides et « # … » ignorées) :
     texte fautif<TAB>texte corrigé            → remplacé s'il se trouve une seule fois dans le recueil
@@ -20,7 +20,9 @@ def motif(a):
 
 F, DEC = sys.argv[1], sys.argv[2]
 d = json.load(open(F, encoding='utf-8'))
-champs = [(e, k) for e in d['entrees'] for k in ('titre', 'sommaire', 'corps') if isinstance(e.get(k), str)]
+# --ocr : on ne touche pas aux entrées reprises d'un texte propre (champ « source », ex. Guéranger)
+champs = [(e, k) for e in d['entrees'] for k in ('titre', 'sommaire', 'corps')
+          if isinstance(e.get(k), str) and not ('--ocr' in sys.argv and e.get('source'))]
 ok = deja = absent = multiple = 0
 for n, l in enumerate(open(DEC, encoding='utf-8'), 1):
     l = l.rstrip('\n')
@@ -43,5 +45,6 @@ for n, l in enumerate(open(DEC, encoding='utf-8'), 1):
         e[k] = rx.sub(lambda _: b, e[k])
     ok += tot
 print(f'{F} : {ok} remplacements ; déjà faits {deja} ; introuvables {absent} ; ambiguës {multiple}')
-if '--ecrire' in sys.argv:
-    json.dump(d, open(F, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+if '--ecrire' in sys.argv:  # on garde la mise en forme du fichier (indentée, ou compacte comme Guéranger)
+    indente = open(F, encoding='utf-8').read(2) == '{\n'
+    json.dump(d, open(F, 'w', encoding='utf-8'), ensure_ascii=False, **({'indent': 1} if indente else {}))
