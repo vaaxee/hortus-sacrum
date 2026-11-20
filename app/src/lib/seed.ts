@@ -3,6 +3,8 @@ import { contenu, db, enregistrer } from './db.ts';
 import { pratiquesDuPlan } from './plan.ts';
 import { basculer } from './programme/bascule.ts';
 import { chargerProgramme } from './programme/charger.ts';
+import { DIMENSIONS } from './programme/types.ts';
+import { depuisEtiquettes } from './etiquettes.ts';
 import { pieceVersTexte, type Piece } from './livret.ts';
 import { amorcerRoues } from './roues.ts';
 import type { Pratique, Texte } from './types.ts';
@@ -31,6 +33,7 @@ export async function amorcer(fetchFn: typeof fetch = fetch): Promise<void> {
 	await retirerRoueDesChapelets();
 	await rappelsDuProfil();
 	await textesDesDevotions();
+	await etiquettesEnDimensions();
 	const programme = await chargerProgramme(fetchFn);
 	if (programme) await basculer(programme);
 }
@@ -71,6 +74,20 @@ async function textesDesDevotions(): Promise<void> {
 		change = true;
 	}
 	if (change) await db.meta.put({ cle: 'devotions-textes', valeur: [...livres] });
+}
+
+/**
+ * Une seule fois (meta « dimensions-etiquettes ») : les étiquettes réglées à la main (ancien champ `etiquettes`, qui
+ * remplaçait tout le classement) deviennent des dimensions de l'utilisateur. L'ancien champ reste lisible.
+ */
+async function etiquettesEnDimensions(): Promise<void> {
+	if (await db.meta.get('dimensions-etiquettes')) return;
+	for (const t of await db.textes.toArray()) {
+		if (!t.etiquettes || t.dimensions) continue;
+		const d = depuisEtiquettes(t.etiquettes);
+		await db.textes.put({ ...t, dimensions: Object.fromEntries(DIMENSIONS.map((k) => [k, d[k] ?? []])) });
+	}
+	await db.meta.put({ cle: 'dimensions-etiquettes', valeur: true });
 }
 
 /** Une seule fois (meta « profil-rappels ») : les anniversaires du profil spirituel déjà saisis reçoivent le rappel la veille. */
