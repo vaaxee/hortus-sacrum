@@ -1,6 +1,6 @@
 import { readFileSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
-import { mentionDuTexte, noteDeTraduction, type Fiche, type Indulgences } from './indulgences.ts';
+import { latinEnPremier, mentionDuTexte, noteDeTraduction, type Fiche, type Indulgences } from './indulgences.ts';
 import { JACULATOIRES } from './liste.ts';
 
 const donnees = JSON.parse(readFileSync(new URL('../../../data/prieres/indulgences.json', import.meta.url), 'utf8')) as Indulgences;
@@ -31,6 +31,14 @@ describe('indulgences : Enchiridion de 1952 seulement', () => {
 		expect(mentionDuTexte({ ...ancien, original: JSON.stringify(ancien) })).toBeNull();
 		expect(mentionDuTexte({ indulgence: '500 jours (Ench. 1952, n° 20)', original: '{}' })).not.toBeNull();
 		expect(mentionDuTexte({ indulgence: 'ma note', original: JSON.stringify(ancien) })).toBe('ma note');
+	});
+	it('ouvre sur le latin quand aucune traduction n’est approuvée', () => {
+		const f: Fiche = { ref: 'Ench. 1952, n° 1', frequence: 'chaque fois', partielles: [] };
+		expect(latinEnPremier({ ...f, langue: 'latin' })).toBe(true);
+		expect(latinEnPremier({ ...f, langue: 'italien' })).toBe(true);
+		expect(latinEnPremier({ ...f, langue: 'latin', traduction: 'Thésaurisons' })).toBe(false);
+		expect(latinEnPremier({ ...f, langue: 'français' })).toBe(false);
+		expect(latinEnPremier(undefined)).toBe(false);
 	});
 	it('rappelle la règle des traductions (can. 934 § 2)', () => {
 		const f: Fiche = { ref: 'Ench. 1952, n° 1', frequence: 'chaque fois', partielles: [] };
