@@ -1,5 +1,6 @@
 # Chaignon, 20 nov. : propositions de commun/proposer.py (R1 mots coupés, R2 mots collés, R3 lettres confondues)
 # relues une à une dans leur contexte ; les cas sans certitude sont laissés (voir fin de fichier).
+# Vérifiés sur le scan aussi : l’oraison (t. 2, p. 318), lui mérite (p. 301), l’ouïe (t. 1, p. 357), contem-plons (t. 3, p. 519-520), mani-fester (p. 131).
 Puis-jeau moins	Puis-je au moins
 sur-lechamp	sur-le-champ	*
 surle-champ	sur-le-champ	*
