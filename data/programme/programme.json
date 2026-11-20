@@ -1,0 +1,934 @@
+{
+  "version": 1,
+  "description": "Programme unique (SPEC § 11). Transcription du programme cible de docs/audits/AUDIT_DEVOTIONS_2026-11-18.md (§ 2) avec les arbitrages du 19 novembre (SPEC § 11). Chaque pratique est déclarée une seule fois ; aucun texte n'est écrit ici : seulement des identifiants de data/prieres et des ancres exactes.",
+  "entrees": [
+    {
+      "id": "prog:priere-du-matin",
+      "titre": "Prière du matin et offrande",
+      "revision": 1,
+      "rang": "praecipua",
+      "source": "Audit des dévotions, § 2.1 ; arbitrage du 19 nov. : la prière du matin d'abord, l'offrande ensuite",
+      "page": {
+        "moment": "matin",
+        "ordre": 10,
+        "sections": [
+          {
+            "texte": "paroissien:priere-du-matin",
+            "coupures": [{ "point": "apres-vierge", "avant": "## Acte de foi" }]
+          },
+          { "texte": "hortus:offrande-du-matin", "titre": "Offrande" },
+          { "point": "intentions" },
+          { "champ": "Intentions particulières du jour" },
+          { "point": "fin" }
+        ]
+      }
+    },
+    {
+      "id": "prog:salve-regina",
+      "titre": "Salve Regina",
+      "revision": 1,
+      "source": "Arbitrage du 19 nov. : le Salve Regina le matin, après « Invoquons la sainte Vierge »",
+      "insertions": [
+        {
+          "hote": "prog:priere-du-matin",
+          "point": "apres-vierge",
+          "sections": [{ "texte": "beringer:salve-regina" }]
+        }
+      ]
+    },
+    {
+      "id": "prog:veni-creator-1er-janvier",
+      "titre": "Veni Creator (1er janvier)",
+      "revision": 1,
+      "quand": { "dates": ["01-01"] },
+      "source": "Arbitrage du 19 nov. : Veni Creator le 1er janvier",
+      "page": {
+        "moment": "matin",
+        "ordre": 15,
+        "sections": [{ "texte": "jardin:veni-creator-spiritus" }]
+      }
+    },
+    {
+      "id": "prog:cordon-gloria",
+      "titre": "Cordon de saint Joseph : sept Gloria Patri",
+      "revision": 1,
+      "quand": { "sauf": { "jours_semaine": [3] } },
+      "source": "SPEC § 11 : une seule page pour les Gloria ; audit du corpus A11 : la notice de Beringer en tête",
+      "page": {
+        "moment": "matin",
+        "ordre": 20,
+        "sections": [
+          {
+            "notice": "beringer:cordon-saint-joseph",
+            "titre": "Le cordon de saint Joseph"
+          },
+          { "texte": "hortus:cordon-sept-gloria" }
+        ]
+      }
+    },
+    {
+      "id": "prog:angelus",
+      "titre": "Angélus",
+      "revision": 1,
+      "rang": "praecipua",
+      "source": "Audit des dévotions, § 2.1 ; Regina cæli au temps pascal, les deux le samedi saint (Beringer 1925, n° 428)",
+      "page": {
+        "moment": "journee",
+        "ordre": 30,
+        "heures": ["06:00", "12:00", "18:00"],
+        "sections": [
+          {
+            "texte": "paroissien:angelus",
+            "quand": { "sauf": { "tempora": ["Temps pascal"] } }
+          },
+          {
+            "texte": "beringer:regina-caeli",
+            "quand": {
+              "ou": [
+                { "tempora": ["Temps pascal"] },
+                { "office": "^Samedi saint$" }
+              ]
+            }
+          },
+          { "point": "apres-oraison" }
+        ]
+      }
+    },
+    {
+      "id": "prog:fleche-d-or",
+      "titre": "La Flèche d'or",
+      "revision": 1,
+      "source": "Arbitrage du 19 nov. : une fois à chaque Angélus, dans la forme de Janvier 1895, sans la notice",
+      "insertions": [
+        {
+          "hote": "prog:angelus",
+          "point": "apres-oraison",
+          "sections": [
+            {
+              "texte": "janvier:fleche-d-or",
+              "extrait": {
+                "retirer": [
+                  "*(On dira trois fois cet acte de louange en l'honneur des trois personnes de la sainte Trinité.)*"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prog:agonisants",
+      "titre": "Prière pour les agonisants",
+      "revision": 1,
+      "source": "Arbitrage du 19 nov. : à l'Angélus de midi et dans les prières du matin et du soir, sans ligne propre",
+      "insertions": [
+        {
+          "hote": "prog:priere-du-matin",
+          "point": "fin",
+          "sections": [{ "texte": "jardin:priere-pour-les-agonisants" }]
+        },
+        {
+          "hote": "prog:angelus",
+          "point": "apres-oraison",
+          "heure": "12:00",
+          "sections": [{ "texte": "jardin:priere-pour-les-agonisants" }]
+        },
+        {
+          "hote": "prog:priere-du-soir",
+          "point": "fin",
+          "sections": [{ "texte": "jardin:priere-pour-les-agonisants" }]
+        }
+      ]
+    },
+    {
+      "id": "prog:scapulaire-jahenny",
+      "titre": "Scapulaire de bénédiction et de protection",
+      "revision": 1,
+      "source": "SPEC § 11, principe 2 : Crux ave le matin, salutations le soir ; la méditation de la Passion est tenue par les oraisons de sainte Brigitte",
+      "explication": ["jahenny:scapulaire-benediction-protection"],
+      "insertions": [
+        {
+          "hote": "prog:priere-du-matin",
+          "point": "fin",
+          "sections": [
+            {
+              "texte": "jahenny:scapulaire-benediction-protection",
+              "extrait": { "section": "### 1. Crux ave" }
+            }
+          ]
+        },
+        {
+          "hote": "prog:priere-du-soir",
+          "point": "fin",
+          "sections": [
+            {
+              "texte": "jahenny:scapulaire-benediction-protection",
+              "extrait": {
+                "section": "## III. Les trois salutations à Jésus crucifié"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prog:chapelet",
+      "titre": "Chapelet",
+      "revision": 1,
+      "rang": "praecipua",
+      "duree": 20,
+      "source": "SPEC § 10 : le chapelet du jour (joyeux lun. jeu., douloureux mar. ven., glorieux mer. sam. dim.)",
+      "page": {
+        "moment": "journee",
+        "ordre": 40,
+        "sections": [
+          {
+            "texte": {
+              "selon": "jour_semaine",
+              "valeurs": [
+                "hortus:chapelet-glorieux",
+                "hortus:chapelet-joyeux",
+                "hortus:chapelet-douloureux",
+                "hortus:chapelet-glorieux",
+                "hortus:chapelet-joyeux",
+                "hortus:chapelet-douloureux",
+                "hortus:chapelet-glorieux"
+              ]
+            },
+            "coupures": [
+              {
+                "point": "fin-dizaine",
+                "apres_chaque": { "niveau": 3, "motif": "^\\d° " }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "prog:fin-dizaine-o-marie",
+      "titre": "Ô Marie, conçue sans péché (fin de dizaine)",
+      "revision": 1,
+      "source": "SPEC § 11, principe 2 ; Weber 1899, p. 477 (1re phrase de la Demande d'une bonne mort)",
+      "insertions": [
+        {
+          "hote": "prog:chapelet",
+          "point": "fin-dizaine",
+          "sections": [
+            {
+              "texte": "weber:demande-d-une-bonne-mort",
+              "extrait": {
+                "phrase": "O Marie, conçue sans péché, priez pour nous qui avons recours à vous."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prog:triple-couronne",
+      "titre": "Triple Couronne d'or du Sacré-Cœur",
+      "revision": 1,
+      "duree": 15,
+      "source": "Arbitrage du 19 nov. : quotidienne ; 1re lun. mer. sam., 2e mar. ven., 3e jeu. dim. (Jardin, p. 21-25)",
+      "page": {
+        "moment": "journee",
+        "ordre": 50,
+        "sections": [
+          {
+            "texte": {
+              "selon": "jour_semaine",
+              "valeurs": [
+                "hortus:triple-couronne-3",
+                "hortus:triple-couronne-1",
+                "hortus:triple-couronne-2",
+                "hortus:triple-couronne-1",
+                "hortus:triple-couronne-3",
+                "hortus:triple-couronne-2",
+                "hortus:triple-couronne-1"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "prog:brigitte",
+      "titre": "Quinze oraisons de sainte Brigitte",
+      "revision": 1,
+      "duree": 20,
+      "source": "Audit des dévotions, § 2.2 ; SPEC § 11 : elles tiennent lieu de méditation de la Passion",
+      "page": {
+        "moment": "journee",
+        "ordre": 60,
+        "sections": [
+          { "texte": "jardin:les-quinze-oraisons-de-sainte-brigitte" }
+        ]
+      }
+    },
+    {
+      "id": "prog:devotion-dimanche",
+      "titre": "Dévotion du dimanche : la très sainte Trinité",
+      "revision": 1,
+      "quand": { "jours_semaine": [0] },
+      "source": "Audit des dévotions, § 2.3 ; arbitrage du 19 nov. : une seule litanie, celle de la roue ; en janvier, le saint Nom (§ 2.5)",
+      "page": {
+        "moment": "soir",
+        "ordre": 80,
+        "sections": [
+          {
+            "texte": {
+              "selon": "quand",
+              "cas": [
+                {
+                  "quand": { "mois": [1] },
+                  "texte": "paroissien:litanies-saint-nom"
+                }
+              ],
+              "sinon": {
+                "selon": "rotation",
+                "roue": "roue:litanies-0",
+                "unite": "semaine",
+                "parmi": [
+                  "fervent:litanies-sainte-trinite",
+                  "paroissien:litanies-saint-nom",
+                  "paroissien:litanies-des-saints"
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "prog:devotion-lundi",
+      "titre": "Dévotion du lundi : les âmes du purgatoire",
+      "revision": 1,
+      "quand": { "jours_semaine": [1] },
+      "source": "Audit des dévotions, § 2.3 ; arbitrage du 19 nov. : chapelet des Morts gardé le lundi (indulgences des associés non comptées)",
+      "page": {
+        "moment": "journee",
+        "ordre": 70,
+        "sections": [
+          { "texte": "beringer:chapelet-des-morts" },
+          {
+            "texte": "paroissien:de-profundis",
+            "titre": "Sur les gros grains"
+          },
+          {
+            "texte": {
+              "selon": "rotation",
+              "roue": "roue:litanies-1",
+              "unite": "semaine",
+              "parmi": [
+                "fsspx:litanies-delivrance-ames-purgatoire",
+                "salve-regina:litanies-fideles-defunts"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "prog:devotion-mardi",
+      "titre": "Dévotion du mardi : les saints Anges",
+      "revision": 1,
+      "quand": { "jours_semaine": [2] },
+      "source": "Audit des dévotions, § 2.3",
+      "page": {
+        "moment": "journee",
+        "ordre": 70,
+        "sections": [
+          { "texte": "jardin:chapelet-de-saint-michel-archange" },
+          { "texte": "jardin:a-saint-gabriel-archange" },
+          {
+            "texte": {
+              "selon": "rotation",
+              "roue": "roue:litanies-2",
+              "unite": "semaine",
+              "parmi": [
+                "fervent:litanies-ange-gardien",
+                "jardin:litanies-de-la-sainte-face"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "prog:devotion-mercredi",
+      "titre": "Dévotion du mercredi : saint Joseph et le cordon",
+      "revision": 1,
+      "quand": { "jours_semaine": [3] },
+      "source": "SPEC § 11 : le mercredi, une seule page réunit le renouvellement du cordon et les sept Gloria ; audit, § 2.3 : les Gloria sans les invocations, déjà dites dans les litanies ; en mars, les Douleurs et Allégresses (§ 2.5)",
+      "page": {
+        "moment": "matin",
+        "ordre": 20,
+        "sections": [
+          { "texte": "hortus:renouvellement-cordon-saint-joseph" },
+          { "texte": "beringer:saint-joseph-purete" },
+          { "texte": "beringer:litanies-saint-joseph" },
+          {
+            "texte": "hortus:cordon-sept-gloria",
+            "extrait": {
+              "retirer": [
+                "Joseph très chaste, priez pour nous.",
+                "Joseph très prudent, priez pour nous.",
+                "Joseph très obéissant, priez pour nous.",
+                "Joseph très fidèle, priez pour nous.",
+                "Miroir de patience, priez pour nous.",
+                "Amant de la pauvreté, priez pour nous.",
+                "Modèle des travailleurs, priez pour nous."
+              ]
+            }
+          },
+          {
+            "texte": "jardin:les-sept-douleurs-et-les-sept-allegresses-de-saint-joseph",
+            "quand": { "mois": [3] }
+          }
+        ]
+      }
+    },
+    {
+      "id": "prog:devotion-jeudi",
+      "titre": "Dévotion du jeudi : le Saint-Sacrement",
+      "revision": 1,
+      "quand": { "jours_semaine": [4] },
+      "source": "Audit des dévotions, § 2.3 ; arbitrage du 19 nov. : l'Heure sainte est une page explicative ; en janvier, le saint Nom (§ 2.5)",
+      "explication": ["jardin:heure-sainte"],
+      "page": {
+        "moment": "soir",
+        "ordre": 80,
+        "sections": [
+          {
+            "texte": {
+              "selon": "quand",
+              "cas": [
+                {
+                  "quand": { "mois": [1] },
+                  "texte": "paroissien:litanies-saint-nom"
+                }
+              ],
+              "sinon": {
+                "selon": "rotation",
+                "roue": "roue:litanies-4",
+                "unite": "semaine",
+                "parmi": [
+                  "fervent:litanies-saint-sacrement",
+                  "paroissien:litanies-saint-nom"
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "prog:devotion-vendredi",
+      "titre": "Dévotion du vendredi : la Passion et le Sacré-Cœur",
+      "revision": 1,
+      "quand": { "jours_semaine": [5] },
+      "source": "Audit des dévotions, § 2.3 ; en juillet, les sept offrandes du Précieux Sang (§ 2.5)",
+      "page": {
+        "moment": "journee",
+        "ordre": 65,
+        "heures": ["15:00"],
+        "sections": [
+          { "texte": "jardin:chaque-vendredi-devant-le-crucifix" },
+          {
+            "texte": "jardin:les-sept-offrandes-du-precieux-sang",
+            "quand": { "mois": [7] }
+          },
+          {
+            "texte": {
+              "selon": "rotation",
+              "roue": "roue:litanies-5",
+              "unite": "semaine",
+              "parmi": [
+                "beringer:litanies-sacre-coeur",
+                "jardin:litanies-de-notre-dame-des-sept-douleurs"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "prog:devotion-samedi",
+      "titre": "Dévotion du samedi : la sainte Vierge",
+      "revision": 1,
+      "quand": { "jours_semaine": [6] },
+      "source": "Audit des dévotions, § 2.3 ; en août, la prière au très saint Cœur de Marie (Weber, p. 405-406) ; en septembre, les sept Douleurs tiennent lieu du Cœur affligé (§ 2.5)",
+      "page": {
+        "moment": "soir",
+        "ordre": 80,
+        "sections": [
+          {
+            "texte": "beringer:coeur-afflige-de-marie",
+            "quand": { "sauf": { "mois": [9] } }
+          },
+          {
+            "texte": "weber:priere-tres-saint-coeur-de-marie",
+            "quand": { "mois": [8] }
+          },
+          {
+            "texte": {
+              "selon": "rotation",
+              "roue": "roue:litanies-6",
+              "unite": "semaine",
+              "parmi": [
+                "paroissien:litanies-sainte-vierge",
+                "jardin:litanies-de-notre-dame-des-sept-douleurs"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "prog:sept-douleurs-septembre",
+      "titre": "Les sept Douleurs de Marie (septembre)",
+      "revision": 1,
+      "quand": { "mois": [9] },
+      "source": "Audit des dévotions, § 2.5 : chaque jour de septembre (usage du livret)",
+      "page": {
+        "moment": "journee",
+        "ordre": 72,
+        "sections": [{ "texte": "jardin:les-sept-douleurs-de-marie" }]
+      }
+    },
+    {
+      "id": "prog:te-deum-31-decembre",
+      "titre": "Te Deum (31 décembre)",
+      "revision": 1,
+      "quand": { "dates": ["12-31"] },
+      "source": "Arbitrage du 19 nov. : Te Deum le 31 décembre",
+      "page": {
+        "moment": "soir",
+        "ordre": 85,
+        "sections": [{ "texte": "paroissien:te-deum" }]
+      }
+    },
+    {
+      "id": "prog:christ-roi",
+      "titre": "Au Christ-Roi",
+      "revision": 1,
+      "quand": { "office": "Jésus-Christ Roi$" },
+      "source": "Arbitrage du 19 nov. : Christ-Roi",
+      "page": {
+        "moment": "matin",
+        "ordre": 15,
+        "sections": [{ "texte": "thesaurisons:au-christ-roi" }]
+      }
+    },
+    {
+      "id": "prog:priere-du-soir",
+      "titre": "Prière du soir et examen de conscience",
+      "revision": 1,
+      "rang": "praecipua",
+      "source": "Audit des dévotions, § 2.1 ; audit du corpus A14 : l'antienne de la Vierge en dernier",
+      "page": {
+        "moment": "soir",
+        "ordre": 90,
+        "sections": [
+          { "point": "debut" },
+          { "texte": "paroissien:priere-du-soir" },
+          { "point": "fin" },
+          { "texte": "beringer:sub-tuum" }
+        ]
+      }
+    },
+    {
+      "id": "prog:don-du-jour",
+      "titre": "Demande du don du Saint-Esprit",
+      "revision": 1,
+      "quand": {
+        "sauf": { "ou": [{ "jours_semaine": [6] }, { "mois": [9] }] }
+      },
+      "source": "Arbitrage du 19 nov. : don et douleur du jour en une seule rotation, dans la prière du soir ; le samedi et en septembre, la prière entière est déjà dite (Cœur affligé, sept Douleurs)",
+      "insertions": [
+        {
+          "hote": "prog:priere-du-soir",
+          "point": "debut",
+          "sections": [
+            {
+              "texte": {
+                "selon": "jour_semaine",
+                "valeurs": [
+                  "beringer:don-sagesse",
+                  "beringer:don-intelligence",
+                  "beringer:don-conseil",
+                  "beringer:don-force",
+                  "beringer:don-science",
+                  "beringer:don-piete",
+                  null
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lec:office",
+      "titre": "Petit bréviaire du Sacré-Cœur",
+      "revision": 1,
+      "source": "SPEC § 11 et décisions du 20 nov. : l'office compté dans « Lectures du jour »",
+      "lecture": {
+        "section": "office",
+        "route": "/lecture",
+        "ordre": 10,
+        "compte": true,
+        "sections": [
+          {
+            "texte": {
+              "selon": "jour_semaine",
+              "valeurs": [
+                "breviaire-sc:office-dimanche",
+                "breviaire-sc:office-lundi",
+                "breviaire-sc:office-mardi",
+                "breviaire-sc:office-mercredi",
+                "breviaire-sc:office-jeudi",
+                "breviaire-sc:office-vendredi",
+                "breviaire-sc:office-samedi"
+              ]
+            },
+            "depliable": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "lec:ecriture",
+      "titre": "Évangile",
+      "revision": 1,
+      "source": "SPEC § 11, principe 3 : le chapitre suivant du marque-page",
+      "lecture": {
+        "section": "ecriture",
+        "route": "/ecriture",
+        "ordre": 20,
+        "compte": true
+      }
+    },
+    {
+      "id": "lec:doctrine",
+      "titre": "Somme théologique",
+      "revision": 1,
+      "source": "SPEC § 11 : un article par jour, traduction Lachat ; données à fournir, compté quand elles existeront",
+      "lecture": {
+        "section": "doctrine",
+        "route": "/lecture",
+        "ordre": 30,
+        "compte": false
+      }
+    },
+    {
+      "id": "lec:meditation",
+      "titre": "Méditation du jour",
+      "revision": 1,
+      "source": "SPEC § 11, principe 3",
+      "lecture": {
+        "section": "spirituel",
+        "route": "/meditation",
+        "ordre": 40,
+        "compte": true
+      }
+    },
+    {
+      "id": "lec:saint",
+      "titre": "Office et vie du saint",
+      "revision": 1,
+      "source": "SPEC § 11, principe 3",
+      "lecture": {
+        "section": "spirituel",
+        "route": "/saint",
+        "ordre": 50,
+        "compte": false,
+        "sections": [{ "point": "fin" }]
+      }
+    },
+    {
+      "id": "prog:gertrude-saint-du-jour",
+      "titre": "Prière de sainte Gertrude au saint du jour",
+      "revision": 1,
+      "source": "SPEC § 11 : à la fin de l'office du saint (Denis, p. 234-242 ; gertrude.ts)",
+      "insertions": [
+        {
+          "hote": "lec:saint",
+          "point": "fin",
+          "sections": [{ "texte": { "selon": "saint_du_jour" } }]
+        }
+      ]
+    }
+  ],
+  "plan": {
+    "quinze-samedis-du-rosaire": { "annote": "prog:chapelet" },
+    "premier-samedi-du-mois": { "annote": "prog:chapelet" },
+    "douze-samedis-avant-l-immaculee-conception": { "annote": "prog:chapelet" },
+    "neuvaine-du-rosaire": { "annote": "prog:chapelet" },
+    "sept-samedis-de-n-d-de-la-merci": { "annote": "prog:devotion-samedi" },
+    "premier-mercredi-s-joseph": { "annote": "prog:devotion-mercredi" },
+    "heure-sainte-veille-du-premier-vendredi": {
+      "annote": "prog:devotion-jeudi"
+    },
+    "sept-vendredis-des-douleurs": { "annote": "prog:devotion-vendredi" },
+    "treize-vendredis-de-s-francois-de-paule": {
+      "annote": "prog:devotion-vendredi"
+    },
+    "neuvaine-a-s-louis-marie-grignion-de-montfort-28-avr": {
+      "annote": "prog:priere-du-matin",
+      "note": "prière ancienne à fournir"
+    },
+    "premier-vendredi-du-mois": {
+      "moment": "journee",
+      "ordre": 66,
+      "sections": [{ "texte": "jardin:premiers-vendredis-du-mois" }]
+    },
+    "treize-mardis-de-s-antoine": {
+      "moment": "journee",
+      "ordre": 71,
+      "sections": [
+        { "notice": "jardin:treize-mardis-de-saint-antoine" },
+        { "texte": "jardin:les-treize-mardis-de-saint-antoine" }
+      ]
+    },
+    "quinze-mardis-de-s-dominique": {
+      "moment": "journee",
+      "ordre": 71,
+      "sections": [
+        { "notice": "jardin:quinze-mardis-de-saint-dominique" },
+        { "texte": "jardin:les-quinze-mardis-de-saint-dominique" }
+      ]
+    },
+    "sept-dimanches-de-s-joseph": {
+      "moment": "journee",
+      "ordre": 75,
+      "sections": [
+        { "notice": "jardin:sept-dimanches-de-saint-joseph" },
+        {
+          "texte": "jardin:les-sept-douleurs-et-les-sept-allegresses-de-saint-joseph"
+        }
+      ]
+    },
+    "six-dimanches-de-s-thomas-d-aquin": {
+      "moment": "journee",
+      "ordre": 75,
+      "sections": [{ "texte": "jardin:six-dimanches-de-saint-thomas-d-aquin" }]
+    },
+    "dix-dimanches-de-s-ignace": {
+      "moment": "journee",
+      "ordre": 75,
+      "sections": [{ "texte": "jardin:dix-dimanches-de-saint-ignace" }]
+    },
+    "six-dimanches-de-s-louis-de-gonzague": {
+      "moment": "journee",
+      "ordre": 75,
+      "sections": [
+        { "texte": "jardin:six-dimanches-de-saint-louis-de-gonzague" }
+      ]
+    },
+    "sept-dimanches-de-l-immaculee-conception": {
+      "moment": "journee",
+      "ordre": 75,
+      "sections": [
+        { "texte": "jardin:sept-dimanches-de-l-immaculee-conception" }
+      ]
+    },
+    "cinq-dimanches-des-stigmates-de-s-francois": {
+      "moment": "journee",
+      "ordre": 75,
+      "sections": [
+        { "texte": "jardin:cinq-dimanches-des-stigmates-de-saint-francois" }
+      ]
+    },
+    "neuvaine-a-l-immaculee-conception": {
+      "moment": "journee",
+      "ordre": 76,
+      "sections": [
+        {
+          "texte": "weber:neuvaine-immaculee-conception",
+          "extrait": { "section": "## Prière préparatoire" }
+        },
+        {
+          "texte": "weber:neuvaine-immaculee-conception",
+          "extrait": { "rang_du_jour": { "niveau": 3 } }
+        },
+        {
+          "texte": "weber:neuvaine-immaculee-conception",
+          "extrait": { "section": "## Après la prière du jour" }
+        },
+        {
+          "texte": "weber:neuvaine-immaculee-conception",
+          "extrait": { "section": "## Oraisons" }
+        }
+      ]
+    },
+    "neuvaine-de-noel": {
+      "moment": "journee",
+      "ordre": 76,
+      "sections": [
+        {
+          "texte": "liguori:neuvaine-de-noel",
+          "extrait": { "rang_du_jour": { "niveau": 3 } }
+        }
+      ]
+    },
+    "neuvaine-au-sacre-c-ur": {
+      "moment": "journee",
+      "ordre": 76,
+      "sections": [
+        {
+          "texte": "liguori:neuvaine-sacre-coeur",
+          "extrait": { "rang_du_jour": { "niveau": 3 } }
+        }
+      ]
+    },
+    "neuvaine-de-l-assomption": {
+      "moment": "journee",
+      "ordre": 76,
+      "sections": [
+        {
+          "texte": "neuvaines-1886:assomption",
+          "extrait": { "rang_du_jour": { "niveau": 3 } }
+        },
+        {
+          "texte": "neuvaines-1886:assomption",
+          "extrait": { "section": "## Verset et oraisons (chaque jour)" }
+        }
+      ]
+    },
+    "neuvaine-de-la-nativite-de-notre-dame": {
+      "moment": "journee",
+      "ordre": 76,
+      "sections": [{ "texte": "neuvaines-1886:nativite" }]
+    },
+    "neuvaine-de-la-toussaint": {
+      "moment": "soir",
+      "ordre": 81,
+      "sections": [{ "texte": "paroissien:litanies-des-saints" }]
+    },
+    "neuvaine-a-s-michel": {
+      "moment": "journee",
+      "ordre": 76,
+      "sections": [{ "texte": "jardin:chapelet-de-saint-michel-archange" }]
+    },
+    "neuvaine-a-s-gabriel": {
+      "moment": "journee",
+      "ordre": 76,
+      "sections": [{ "texte": "jardin:a-saint-gabriel-archange" }]
+    },
+    "priere-a-s-gabriel": {
+      "moment": "journee",
+      "ordre": 76,
+      "sections": [{ "texte": "jardin:a-saint-gabriel-archange" }]
+    },
+    "neuvaine-a-s-joseph": {
+      "moment": "journee",
+      "ordre": 76,
+      "sections": [
+        {
+          "texte": "jardin:les-sept-douleurs-et-les-sept-allegresses-de-saint-joseph"
+        }
+      ]
+    },
+    "douleurs-et-allegresses-de-s-joseph-hymne-te-joseph-celebren": {
+      "moment": "journee",
+      "ordre": 76,
+      "sections": [
+        {
+          "texte": "jardin:les-sept-douleurs-et-les-sept-allegresses-de-saint-joseph"
+        },
+        { "texte": "jardin:te-joseph-celebrent" }
+      ]
+    },
+    "les-sept-douleurs-de-marie": {
+      "moment": "journee",
+      "ordre": 76,
+      "sections": [{ "texte": "jardin:les-sept-douleurs-de-marie" }]
+    },
+    "neuvaine-au-saint-esprit-avant-la-pentecote": {
+      "moment": "matin",
+      "ordre": 16,
+      "sections": [{ "texte": "jardin:veni-creator-spiritus" }]
+    },
+    "veni-creator": {
+      "moment": "matin",
+      "ordre": 16,
+      "sections": [{ "texte": "jardin:veni-creator-spiritus" }]
+    },
+    "preparation-a-la-consecration-de-montfort": {
+      "moment": "matin",
+      "ordre": 17,
+      "sections": [
+        {
+          "texte": "montfort:preparation-consecration",
+          "extrait": { "a": "## Première semaine" },
+          "rangs": [1, 12]
+        },
+        {
+          "texte": "montfort:preparation-consecration",
+          "extrait": { "section": "## Première semaine" },
+          "rangs": [13, 19]
+        },
+        {
+          "texte": "montfort:preparation-consecration",
+          "extrait": { "section": "## Seconde semaine" },
+          "rangs": [20, 26]
+        },
+        {
+          "texte": "montfort:preparation-consecration",
+          "extrait": { "section": "## Troisième semaine" },
+          "rangs": [27, 33]
+        }
+      ]
+    },
+    "consecration-a-jesus-par-marie-renouvellement": {
+      "moment": "matin",
+      "ordre": 17,
+      "sections": [
+        {
+          "texte": "montfort:preparation-consecration",
+          "extrait": { "section": "## Le jour de la consécration" }
+        },
+        {
+          "texte": "jardin:consecration-de-soi-meme-a-jesus-christ-la-sagesse-incarnee-"
+        }
+      ]
+    }
+  },
+  "formules": [],
+  "a_fournir": [
+    {
+      "quoi": "« Ô mon Jésus, pardonnez-nous nos péchés… » (fin de dizaine, SPEC § 11) : source ancienne",
+      "ou": "prog:chapelet, point fin-dizaine"
+    },
+    {
+      "quoi": "« Cœur immaculé de Marie, priez pour nous… » (scapulaire vert) : source ancienne",
+      "ou": "prog:chapelet, point fin-dizaine"
+    },
+    {
+      "quoi": "Chemin de croix de saint Alphonse et Miserere (Carême)",
+      "ou": "une page de Carême",
+      "quand": { "tempora": ["Temps du Carême", "Temps de la Passion"] }
+    },
+    {
+      "quoi": "Adoro te et Lauda Sion (Fête-Dieu)",
+      "ou": "une page de la Fête-Dieu",
+      "quand": { "office": "^Fête-Dieu" }
+    },
+    {
+      "quoi": "Ad te, beate Ioseph (après le chapelet en octobre)",
+      "ou": "prog:chapelet, en octobre",
+      "quand": { "mois": [10] }
+    },
+    {
+      "quoi": "Prière ancienne à saint Louis-Marie Grignion de Montfort (neuvaine du 19 au 27 avril)",
+      "ou": "plan, neuvaine",
+      "quand": { "mois": [4] }
+    },
+    {
+      "quoi": "Somme théologique, traduction Lachat (1856), latin en regard",
+      "ou": "lec:doctrine"
+    }
+  ]
+}
