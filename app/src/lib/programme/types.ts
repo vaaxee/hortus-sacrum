@@ -224,3 +224,26 @@ export interface Journee {
 	conflits: { texte: string; garde: string; retire: string }[];
 	a_fournir: AFournir[];
 }
+
+// ------------------------------------------------------------------ dimensions (lot « Dimensions », LOT_DIMENSIONS.md)
+
+/** Les cinq dimensions d'une prière : ce qu'elle fait, à qui, ce qu'elle demande, pour qui, sous quelle forme. */
+export type Dimension = 'fin' | 'objet' | 'grace' | 'personne' | 'forme';
+export const DIMENSIONS: Dimension[] = ['fin', 'objet', 'grace', 'personne', 'forme'];
+/** Classement d'un texte : valeurs du vocabulaire (data/programme/dimensions.json), par dimension. */
+export type Dimensions = Partial<Record<Dimension, string[]>>;
+
+/** Vocabulaire fermé (data/programme/dimensions.json). */
+export interface Vocabulaire {
+	dimensions: Record<Dimension, { libelle: string; aide: string; valeurs: Record<string, string> }>;
+	/** Les cinq fins de la SPEC (§ 10), seules comptées pour la couverture de la semaine. */
+	fins_principales: string[];
+}
+
+/** Classement livré d'un texte (data/prieres/dimensions-textes.json). */
+export interface ClassementTexte extends Dimensions {
+	/** Date de relecture humaine ; sans elle, toutes les valeurs comptent comme devinées. */
+	releve?: string;
+	/** Dimensions encore issues des motifs de etiquettes.ts. */
+	devinee?: Dimension[];
+}
