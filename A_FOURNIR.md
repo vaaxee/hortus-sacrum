@@ -35,8 +35,8 @@ Les points réglés sont gardés pour l'historique. Dernière mise à jour : 13 
 Règle : une prière concédée en latin ou en italien ne garde son indulgence en français que si la traduction est déclarée
 fidèle par la S. Pénitencerie ou par un Ordinaire du lieu (can. 934 § 2 ; Ench. 1952, Praenotanda 3). *Thésaurisons pour
 le ciel* (Montréal, 1941, certifié par G. Chartier) a été dépouillé : il ne donne pas les textes ci-dessous (souvent il
-n'en cite que le titre). Piste : un autre recueil français certifié (Preces et Pia Opera traduits, *Recueil de prières et
-d'œuvres pies indulgenciées*, vers 1938-1952, avec déclaration de fidélité d'un évêque). En attendant, l'app affiche la
+n'en cite que le titre). Piste : un autre recueil français de prières indulgenciées publié avec une déclaration de fidélité
+(can. 934 § 2) d'un Ordinaire. En attendant, l'app affiche la
 note du can. 934 ; le latin, quand la pièce le donne, porte l'indulgence.
 
 | Pièce | Ench. 1952 | Langue | Latin dans la pièce |
