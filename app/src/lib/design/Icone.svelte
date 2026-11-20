@@ -4,6 +4,7 @@
 		| 'aujourdhui'
 		| 'calendrier'
 		| 'prieres'
+		| 'lecture'
 		| 'devotions'
 		| 'profil'
 		| 'chevron'
@@ -39,6 +40,9 @@
 		<!-- livre ouvert -->
 		<path d="M12 6.500C10 5 7 4.500 3.500 5v13.500c3.500-.500 6.500 0 8.500 1.500c2-1.500 5-2 8.500-1.500V5C17 4.500 14 5 12 6.500z" />
 		<path d="M12 6.500V20" />
+	{:else if nom === 'lecture'}
+		<!-- lutrin : livre ouvert posé sur son pied -->
+		<path d="M4 8.500l8 3l8-3v4l-8 3l-8-3z" /><path d="M12 11.500v4" /><path d="M12 15.500V21M8.500 21h7" />
 	{:else if nom === 'devotions'}
 		<!-- cœur surmonté d'une croix -->
 		<path d="M12 21C6.500 17.200 4 14 4 11.200A4 4 0 0 1 12 9.500a4 4 0 0 1 8 1.700c0 2.800-2.500 6-8 9.800z" />

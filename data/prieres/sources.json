@@ -59,11 +59,12 @@
    "source": {
     "ouvrage": "Beringer, Les Indulgences, leur nature et leur usage, t. I, n° 429",
     "edition": "trad. Ph. Mazoyer, 4e éd. française, Paris, P. Lethielleux, 1925",
-    "page": "224-225",
+    "page": "224-225 ; traduction française du Salve Regina et du ℣. Dignare me : Thésaurisons pour le ciel (Montréal, 1941), n° 192 (p. 82-83) et n° 106 (p. 45), traduction certifiée fidèle selon le can. 934 § 2",
     "url": "https://archive.org/details/lesindulgences0001beri"
    },
    "latin": "Salve, Regina, mater misericordiæ, vita, dulcedo et spes nostra, salve. Ad te clamamus exules filii Hevæ ; ad te suspiramus gementes et flentes in hac lacrymarum valle. Eia ergo, advocata nostra, illos tuos misericordes oculos ad nos converte. Et Jesum benedictum fructum ventris tui nobis post hoc exilium, ostende, O clemens, o pia, o dulcis Virgo Maria.\n\n℣. Dignare me laudare te, Virgo sacrata.\n℟. Da mihi virtutem contra hostes tuos.\n℣. Benedictus Deus in sanctis suis.\n℟. Amen.",
-   "corps": "[r]Le matin.[/r]\n\nSalut, ô notre Reine, mère de miséricorde, notre vie, notre douceur et notre espérance, salut. Nous élevons nos cris vers vous, pauvres exilés, malheureux enfants d’Eve ; nous soupirons vers vous, gémissants et pleurants dans cette vallée de larmes. Allons donc, ô notre avocate, tournez vers nous vos yeux compatissants, et, après cet exil, montrez-nous Jésus, le fruit béni de votre sein, ô clémente, ô miséricordieuse, ô douce Vierge Marie.\n\n℣. Daignez agréer mes louanges, ô Vierge sainte.\n℟. Donnez-moi force et courage contre vos ennemis.\n℣. Béni soit Dieu dans ses saints.\n℟. Ainsi soit-il."
+   "corps": "[r]Le matin.[/r]\n\nSalut, ô Reine, mère de miséricorde, notre vie, notre douceur et notre espérance, salut. Nous élevons nos cris vers vous, pauvres exilés, malheureux enfants d’Eve ; nous soupirons vers vous, gémissant et pleurant dans cette vallée de larmes. Ah ! nous vous en supplions, ô notre avocate, tournez vers nous vos regards compatissants et au sortir de cet exil, montrez-nous Jésus, le fruit béni de vos entrailles. Ô clémente, ô charitable, ô douce Vierge Marie !\n\n℣. Rendez-moi digne de vous louer, Vierge sainte ;\n℟. donnez-moi la force contre vos ennemis.\n℣. Béni soit Dieu dans ses saints.\n℟. Ainsi soit-il.",
+   "revision": 1
   },
   {
    "id": "beringer:sub-tuum",
@@ -75,12 +76,12 @@
    "source": {
     "ouvrage": "Beringer, Les Indulgences, leur nature et leur usage, t. I, n° 429",
     "edition": "trad. Ph. Mazoyer, 4e éd. française, Paris, P. Lethielleux, 1925",
-    "page": "224-225 (l’original abrège les versets en « Dignare me, etc. » ; ils sont donnés ici en entier, d’après le Salve Regina de la même page) ; invocations « Domina nostra… » : christusregnat.com (Sub tuum præsidium), fourni par l'utilisateur le 17 nov. 2026",
+    "page": "224-225 (l’original abrège les versets en « Dignare me, etc. » ; ils sont donnés ici en entier, d’après le Salve Regina de la même page) ; invocations « Domina nostra… » : christusregnat.com (Sub tuum præsidium), fourni par l'utilisateur le 17 nov. 2026 ; traduction française du Sub tuum et du ℣. Dignare me : Thésaurisons pour le ciel (Montréal, 1941), n° 193 (p. 83) et n° 106 (p. 45), traduction certifiée fidèle selon le can. 934 § 2",
     "url": "https://archive.org/details/lesindulgences0001beri"
    },
    "latin": "Sub tuum præsidium confugimus, sancta Dei genitrix : nostras deprecationes ne despicias in necessitatibus nostris, sed a periculis cunctis libera nos semper, Virgo gloriosa et benedicta.\n\nDomina nostra, Mediatrix nostra, Advocata nostra, Consolatrix nostra. Tuo Filio nos reconcilia, tuo Filio nos commenda, tuo Filio nos repræsenta. Amen.\n\n℣. Dignare me laudare te, Virgo sacrata.\n℟. Da mihi virtutem contra hostes tuos.\n℣. Benedictus Deus in sanctis suis.\n℟. Amen.",
-   "corps": "[r]Le soir.[/r]\n\nNous nous réfugions sous votre protection, sainte Mère de Dieu ; ne méprisez pas les prières que nous vous adressons dans nos besoins ; mais délivrez-nous toujours de tous les périls, Vierge comblée de gloire et de bénédiction.\n\nDomina nostra, Mediatrix nostra, Advocata nostra, Consolatrix nostra. Tuo Filio nos reconcilia, tuo Filio nos commenda, tuo Filio nos repræsenta. Amen.\n\n℣. Daignez agréer mes louanges, ô Vierge sainte.\n℟. Donnez-moi force et courage contre vos ennemis.\n℣. Béni soit Dieu dans ses saints.\n℟. Ainsi soit-il.",
-   "revision": 1
+   "corps": "[r]Le soir.[/r]\n\nNous nous réfugions sous votre protection, sainte Mère de Dieu : ne méprisez pas les prières que nous vous adressons dans nos besoins ; mais délivrez-nous toujours de tous les périls, Vierge comblée de gloire et de bénédiction.\n\nDomina nostra, Mediatrix nostra, Advocata nostra, Consolatrix nostra. Tuo Filio nos reconcilia, tuo Filio nos commenda, tuo Filio nos repræsenta. Amen.\n\n℣. Rendez-moi digne de vous louer, Vierge sainte ;\n℟. donnez-moi la force contre vos ennemis.\n℣. Béni soit Dieu dans ses saints.\n℟. Ainsi soit-il.",
+   "revision": 2
   },
   {
    "id": "paroissien:de-profundis",
@@ -218,13 +219,14 @@
    "usage": "Le mercredi, avec le cordon de saint Joseph, porté « afin d’honorer l’insigne pureté du glorieux Epoux de la Vierge Marie » (Beringer, t. II, n° 266). Ce n’est pas une formule de renouvellement propre au cordon : aucune n’a été trouvée dans les sources consultées.",
    "indulgence": "100 jours, une fois par jour. — Pie IX, 4 février 1877 ; en même temps fut annulée toute autre Indulgence accordée auparavant. — Racc. 405.",
    "source": {
-    "ouvrage": "Beringer, Les Indulgences, leur nature et leur usage, t. I, n° 480 (texte latin en note 1)",
-    "edition": "trad. Ph. Mazoyer, 4e éd. française, Paris, P. Lethielleux, 1925",
-    "page": "252",
-    "url": "https://archive.org/details/lesindulgences0001beri"
+    "ouvrage": "Thésaurisons pour le ciel. Recueil reproduisant la plupart des prières et œuvres indulgenciées des « Preces et Pia Opera » (1938)",
+    "edition": "Carmel de Montréal, 1941 ; préface du R. P. Louis C. de Léry, S. J.",
+    "page": "n° 151 (Preces 1938, n° 435), p. 58 ; latin : Beringer 1925, t. I, n° 480, p. 252 ; texte français antérieur : Beringer",
+    "url": "http://www.liberius.net/livres/Thesaurisons_pour_le_Ciel_000001335.pdf"
    },
-   "corps": "Saint Joseph, père et protecteur des vierges, gardien fidèle à qui Dieu confia Jésus, l’Innocence même, et Marie la Vierge des vierges, je vous en supplie et je vous en conjure par Jésus et Marie, ce double dépôt qui vous fut si cher, faites que, préservé de toute souillure, pur d’esprit et de cœur, et chaste de corps, je serve constamment Jésus et Marie dans une chasteté parfaite. Ainsi soit-il.",
-   "latin": "Virginum custos et pater, sancte Joseph, cujus fideli custodiæ ipsa innocentia Christus Jesus et Virgo virginum Maria commissa fuit, te per hoc utrumque carissimum pignus, Jesum et Mariam, obsecro et obtestor, ut me ab omni immunditia præservatum, mente incontaminata, puro corde et casto corpore Jesu et Mariæ semper facias castissime famulari. Amen."
+   "corps": "Ô glorieux saint Joseph, père et protecteur des vierges, gardien fidèle, à qui Dieu confia Jésus, l’innocence même, et Marie, la Vierge des vierges, je vous en supplie et je vous en conjure par Jésus et Marie, ce double dépôt qui vous fut si cher, faites que, préservé de toute souillure, pur d’esprit et de cœur, et chaste de corps, je serve constamment Jésus et Marie dans une chasteté parfaite. Ainsi soit-il.",
+   "latin": "Virginum custos et pater, sancte Joseph, cujus fideli custodiæ ipsa innocentia Christus Jesus et Virgo virginum Maria commissa fuit, te per hoc utrumque carissimum pignus, Jesum et Mariam, obsecro et obtestor, ut me ab omni immunditia præservatum, mente incontaminata, puro corde et casto corpore Jesu et Mariæ semper facias castissime famulari. Amen.",
+   "revision": 1
   },
   {
    "id": "beringer:regina-caeli",
@@ -541,10 +543,11 @@
     "ouvrage": "Chanoine A. Weber, Notre Mère ou le trésor du fervent serviteur de Marie",
     "edition": "3e éd., Paris-Lille, J. Lefort, 1899 ; approbation de l'évêque de Verdun",
     "url": "https://pdfs.bibliotheque-catholique.com/pdfs/mariologie/Abb%C3%A9%20Alfred%20Weber%20-%20Notre%20M%C3%A8re%20ou%20le%20tr%C3%A9sor%20du%20fervent%20serviteur%20de%20Marie.pdf",
-    "page": "307-308"
+    "page": "307-308 ; traduction du ℣. Dignare me : Thésaurisons pour le ciel (Montréal, 1941), n° 106 (p. 45), traduction certifiée fidèle selon le can. 934 § 2"
    },
-   "corps": "Nous vous saluons, Reine des Cieux ; nous vous saluons, Reine des Anges, tige sacrée, porte sainte d'où est sortie la lumière du monde. Vierge glorieuse, belle et ravissante par-dessus toutes les créatures, goûtez votre bonheur, recevez nos hommages, et intercédez pour nous auprès de Jésus-Christ, votre Fils.\n\n℣. Agréez, Vierge sainte, les louanges que je vous offre.\n℟. Obtenez-moi la force de résister à vos ennemis.\n\n*Prions.* Dieu de bonté, accordez à notre faiblesse le secours de votre grâce, et, comme nous honorons la mémoire de la sainte Mère de Dieu, faites que, par le secours de son intercession, nous puissions nous relever de nos iniquités. Nous vous en supplions par le même J.-C. N. S. Ainsi soit-il.",
-   "latin": "Ave, Regina Cœlorum ; Ave, Domina Angelorum ; Salve, radix, salve, porta Ex qua mundo Lux est orta. Gaude, Virgo gloriosa, Super omnes speciosa, Vale, o valde decora ; Et pro nobis Christum exora.\n\n℣. Dignare me laudare te, Virgo sacrata ; ℟. Da mihi virtutem contra hostes tuos.\n\n*Oremus.* Concede, misericors Deus, fragilitati nostræ præsidium, ut qui sanctæ Dei Genitricis memoriam agimus intercessionis ejus auxilio, a nostris iniquitatibus resurgamus. Per eumdem Christum Dominum nostrum. ℟. Amen."
+   "corps": "Nous vous saluons, Reine des Cieux ; nous vous saluons, Reine des Anges, tige sacrée, porte sainte d'où est sortie la lumière du monde. Vierge glorieuse, belle et ravissante par-dessus toutes les créatures, goûtez votre bonheur, recevez nos hommages, et intercédez pour nous auprès de Jésus-Christ, votre Fils.\n\n℣. Rendez-moi digne de vous louer, Vierge sainte ;\n℟. donnez-moi la force contre vos ennemis.\n\n*Prions.* Dieu de bonté, accordez à notre faiblesse le secours de votre grâce, et, comme nous honorons la mémoire de la sainte Mère de Dieu, faites que, par le secours de son intercession, nous puissions nous relever de nos iniquités. Nous vous en supplions par le même J.-C. N. S. Ainsi soit-il.",
+   "latin": "Ave, Regina Cœlorum ; Ave, Domina Angelorum ; Salve, radix, salve, porta Ex qua mundo Lux est orta. Gaude, Virgo gloriosa, Super omnes speciosa, Vale, o valde decora ; Et pro nobis Christum exora.\n\n℣. Dignare me laudare te, Virgo sacrata ; ℟. Da mihi virtutem contra hostes tuos.\n\n*Oremus.* Concede, misericors Deus, fragilitati nostræ præsidium, ut qui sanctæ Dei Genitricis memoriam agimus intercessionis ejus auxilio, a nostris iniquitatibus resurgamus. Per eumdem Christum Dominum nostrum. ℟. Amen.",
+   "revision": 1
   },
   {
    "id": "weber:souvenez-vous",
@@ -554,13 +557,14 @@
    "usage": "",
    "indulgence": "",
    "source": {
-    "ouvrage": "Chanoine A. Weber, Notre Mère ou le trésor du fervent serviteur de Marie",
-    "edition": "3e éd., Paris-Lille, J. Lefort, 1899 ; approbation de l'évêque de Verdun ; latin : Enchiridion indulgentiarum, 1952, n° 339",
-    "page": "467",
-    "url": "https://pdfs.bibliotheque-catholique.com/pdfs/mariologie/Abb%C3%A9%20Alfred%20Weber%20-%20Notre%20M%C3%A8re%20ou%20le%20tr%C3%A9sor%20du%20fervent%20serviteur%20de%20Marie.pdf"
+    "ouvrage": "Thésaurisons pour le ciel. Recueil reproduisant la plupart des prières et œuvres indulgenciées des « Preces et Pia Opera » (1938)",
+    "edition": "Carmel de Montréal, 1941 ; préface du R. P. Louis C. de Léry, S. J.",
+    "page": "n° 123 (Preces 1938, n° 309), p. 48 ; latin : Enchiridion indulgentiarum, 1952, n° 339 ; texte français antérieur : Weber, p. 467",
+    "url": "http://www.liberius.net/livres/Thesaurisons_pour_le_Ciel_000001335.pdf"
    },
-   "corps": "Souvenez-vous, ô très pieuse Vierge Marie, qu'on n'a jamais entendu dire qu'aucun de ceux qui ont eu recours à votre protection, imploré votre suffrage et réclamé votre secours, ait été abandonné. Animé d'une pareille confiance, ô Vierge des vierges, ô ma Mère, j'ai recours à vous, et gémissant sous le poids de mes péchés, je me prosterne à vos pieds. O Mère du Verbe incarné, ne rejetez pas mes humbles prières ; mais écoutez-les favorablement et daignez les exaucer. Ainsi soit-il.",
-   "latin": "Memorare, o piissima Virgo Maria, non esse auditum a sæculo, quemquam ad tua recurrentem præsidia, tua implorantem auxilia, tua petentem suffragia esse derelictum. Ego tali animatus confidentia ad te, Virgo Virginum, Mater, curro ; ad te venio ; coram te gemens peccator assisto. Noli, Mater Verbi, verba mea despicere, sed audi propitia et exaudi. Amen."
+   "corps": "Souvenez-vous, ô très douce Vierge Marie, qu’on n’a jamais entendu dire qu’aucun de ceux qui ont eu recours à votre protection, imploré votre assistance et réclamé vos suffrages, ait été abandonné. Animé d’une pareille confiance, ô Vierge des vierges, ô ma Mère, je cours vers vous, je viens à vous, et gémissant sous le poids de mes fautes, je me prosterne à vos pieds. Veuillez, ô Mère du Verbe, ne point mépriser mes prières, mais écoutez-les favorablement et daignez les exaucer. Ainsi soit-il.",
+   "latin": "Memorare, o piissima Virgo Maria, non esse auditum a sæculo, quemquam ad tua recurrentem præsidia, tua implorantem auxilia, tua petentem suffragia esse derelictum. Ego tali animatus confidentia ad te, Virgo Virginum, Mater, curro ; ad te venio ; coram te gemens peccator assisto. Noli, Mater Verbi, verba mea despicere, sed audi propitia et exaudi. Amen.",
+   "revision": 1
   },
   {
    "id": "weber:stabat-mater",
@@ -714,13 +718,14 @@
    "usage": "",
    "indulgence": "",
    "source": {
-    "ouvrage": "Chanoine A. Weber, Notre Mère ou le trésor du fervent serviteur de Marie",
-    "edition": "3e éd., Paris-Lille, J. Lefort, 1899 ; approbation de l'évêque de Verdun ; indulgence : Enchiridion indulgentiarum, 1952, n° 343 (O Domina mea, sancta Maria)",
-    "page": "473",
-    "url": "https://pdfs.bibliotheque-catholique.com/pdfs/mariologie/Abb%C3%A9%20Alfred%20Weber%20-%20Notre%20M%C3%A8re%20ou%20le%20tr%C3%A9sor%20du%20fervent%20serviteur%20de%20Marie.pdf"
+    "ouvrage": "Thésaurisons pour le ciel. Recueil reproduisant la plupart des prières et œuvres indulgenciées des « Preces et Pia Opera » (1938)",
+    "edition": "Carmel de Montréal, 1941 ; préface du R. P. Louis C. de Léry, S. J.",
+    "page": "n° 125 (Preces 1938, n° 313), p. 49 ; indulgence : Enchiridion indulgentiarum, 1952, n° 343 (O Domina mea, sancta Maria) ; texte français antérieur : Weber, p. 473",
+    "url": "http://www.liberius.net/livres/Thesaurisons_pour_le_Ciel_000001335.pdf"
    },
-   "corps": "Vierge Sainte, Marie, mon guide et ma Souveraine, je viens me jeter dans le sein de votre miséricorde, et mettre, dès ce moment et pour toujours, mon âme et mon corps sous votre sauvegarde et votre protection spéciale. Je vous confie et je remets entre vos mains toutes mes espérances et mes consolations, toutes mes peines et mes misères, ainsi que le cours et la fin de ma vie, afin que, par votre sainte intercession et par vos mérites, toutes mes œuvres soient faites selon votre volonté et en vue de plaire à votre divin Fils. Ainsi soit-il !",
-   "latin": ""
+   "corps": "Ô ma Souveraine, sainte Marie, je viens me jeter dans le sein de votre miséricorde et mettre dès ce moment et pour toujours, et pour l’heure de mon trépas, mon âme et mon corps sous votre sauvegarde et sous votre spéciale protection. Je vous confie et je remets entre vos mains toutes mes espérances et mes consolations, et le terme de ma vie, afin que par votre très sainte intercession et par vos mérites, toutes mes œuvres soient réglées et déterminées selon votre volonté et celle de votre divin Fils. Ainsi soit-il.",
+   "latin": "",
+   "revision": 1
   },
   {
    "id": "weber:priere-sainte-jeanne-de-chantal",
@@ -746,13 +751,14 @@
    "usage": "",
    "indulgence": "",
    "source": {
-    "ouvrage": "Chanoine A. Weber, Notre Mère ou le trésor du fervent serviteur de Marie",
-    "edition": "3e éd., Paris-Lille, J. Lefort, 1899 ; approbation de l'évêque de Verdun ; indulgence : Enchiridion indulgentiarum, 1952, n° 340 (O Domina mea ! O Mater mea !)",
-    "page": "474-475",
-    "url": "https://pdfs.bibliotheque-catholique.com/pdfs/mariologie/Abb%C3%A9%20Alfred%20Weber%20-%20Notre%20M%C3%A8re%20ou%20le%20tr%C3%A9sor%20du%20fervent%20serviteur%20de%20Marie.pdf"
+    "ouvrage": "Thésaurisons pour le ciel. Recueil reproduisant la plupart des prières et œuvres indulgenciées des « Preces et Pia Opera » (1938)",
+    "edition": "Carmel de Montréal, 1941 ; préface du R. P. Louis C. de Léry, S. J.",
+    "page": "n° 124 (Preces 1938, n° 310), p. 49 ; indulgence : Enchiridion indulgentiarum, 1952, n° 340 ; texte français antérieur : Weber, p. 474-475",
+    "url": "http://www.liberius.net/livres/Thesaurisons_pour_le_Ciel_000001335.pdf"
    },
-   "corps": "O ma Souveraine ! ô ma Mère ! je m'offre à vous tout entier ; et, pour vous donner une preuve de mon dévouement, je vous consacre aujourd'hui mes yeux, mes oreilles, ma bouche, mon cœur, tout moi-même. Puisque je vous appartiens, ô ma bonne Mère, gardez-moi, défendez-moi comme votre bien et votre propriété.",
-   "latin": ""
+   "corps": "Ave Maria, etc.\n\nÔ ma Souveraine, ô ma Mère ! je m’offre à vous tout entier, et pour vous donner une preuve de mon dévouement, je vous consacre aujourd’hui mes yeux, mes oreilles, ma bouche, mon cœur, tout moi-même. Puisque je vous appartiens, ô bonne Mère, gardez-moi, défendez-moi, comme votre bien et votre propriété.",
+   "latin": "",
+   "revision": 1
   },
   {
    "id": "weber:aspiration-dans-les-tentations",
@@ -794,13 +800,14 @@
    "usage": "",
    "indulgence": "",
    "source": {
-    "ouvrage": "Chanoine A. Weber, Notre Mère ou le trésor du fervent serviteur de Marie",
-    "edition": "3e éd., Paris-Lille, J. Lefort, 1899 ; approbation de l'évêque de Verdun ; indulgence : Enchiridion indulgentiarum, 1952, n° 642",
-    "page": "477",
-    "url": "https://pdfs.bibliotheque-catholique.com/pdfs/mariologie/Abb%C3%A9%20Alfred%20Weber%20-%20Notre%20M%C3%A8re%20ou%20le%20tr%C3%A9sor%20du%20fervent%20serviteur%20de%20Marie.pdf"
+    "ouvrage": "Thésaurisons pour le ciel. Recueil reproduisant la plupart des prières et œuvres indulgenciées des « Preces et Pia Opera » (1938)",
+    "edition": "Carmel de Montréal, 1941 ; préface du R. P. Louis C. de Léry, S. J.",
+    "page": "n° 492 (Preces 1938, n° 595), p. 167 (l’édition imprime « le grâce » et « topte assurance » : coquilles corrigées) ; indulgence : Enchiridion indulgentiarum, 1952, n° 642 ; texte français antérieur : Weber, p. 477",
+    "url": "http://www.liberius.net/livres/Thesaurisons_pour_le_Ciel_000001335.pdf"
    },
-   "corps": "O Marie, conçue sans péché, priez pour nous qui avons recours à vous. O refuge des pécheurs, mère des agonisants, veuillez ne point nous abandonner à l'heure de notre mort ; obtenez-nous alors une douleur parfaite, une contrition sincère et une surabondante rémission de nos péchés ; obtenez-nous aussi la grâce d'une réception salutaire du Saint-Viatique et de l'Extrême-Onction ; afin que nous puissions nous présenter en toute assurance devant le trône de Dieu, notre Rédempteur, juge équitable et plein de miséricorde.",
-   "latin": ""
+   "corps": "Ô Marie conçue sans péché, priez pour nous qui avons recours à vous. Refuge des pécheurs, Mère des agonisants, veuillez ne pas nous abandonner à l’heure de notre mort ; mais obtenez-nous une douleur parfaite, une sincère contrition, la rémission de nos péchés, la grâce de recevoir dignement le saint Viatique, et de puiser la force dans le sacrement de l’Extrême-Onction, afin que nous puissions être présentés en toute assurance, devant le trône du Juge équitable, mais plein de miséricorde, notre Dieu et notre Rédempteur. Ainsi soit-il.",
+   "latin": "",
+   "revision": 1
   },
   {
    "id": "weber:languentibus",
@@ -858,13 +865,14 @@
    "usage": "",
    "indulgence": "",
    "source": {
-    "ouvrage": "Chanoine A. Weber, Notre Mère ou le trésor du fervent serviteur de Marie",
-    "edition": "3e éd., Paris-Lille, J. Lefort, 1899 ; approbation de l'évêque de Verdun ; indulgence : Enchiridion indulgentiarum, 1952, n° 393",
-    "page": "405-406",
-    "url": "https://pdfs.bibliotheque-catholique.com/pdfs/mariologie/Abb%C3%A9%20Alfred%20Weber%20-%20Notre%20M%C3%A8re%20ou%20le%20tr%C3%A9sor%20du%20fervent%20serviteur%20de%20Marie.pdf"
+    "ouvrage": "Thésaurisons pour le ciel. Recueil reproduisant la plupart des prières et œuvres indulgenciées des « Preces et Pia Opera » (1938)",
+    "edition": "Carmel de Montréal, 1941 ; préface du R. P. Louis C. de Léry, S. J.",
+    "page": "n° 137 (Preces 1938, n° 358), p. 52 ; indulgence : Enchiridion indulgentiarum, 1952, n° 393 ; texte français antérieur (abrégé) : Weber, p. 405-406",
+    "url": "http://www.liberius.net/livres/Thesaurisons_pour_le_Ciel_000001335.pdf"
    },
-   "corps": "O Cœur de Marie, Mère de Dieu, et notre Mère, Cœur tout aimable, objet des complaisances de l'adorable Trinité, Cœur digne du respect et de l'amour des anges et des hommes, Cœur le plus ressemblant au Cœur de Jésus, dont vous êtes une image parfaite ; Cœur plein de bonté et toujours compatissant à nos misères, daignez fondre la glace de nos cœurs, et faites qu'ils se conforment entièrement à Celui du divin Jésus ; communiquez-leur vos vertus et le feu dont vous avez toujours brûlé. Veillez sur la sainte Église, protégez-la, soyez son refuge et sa défense contre les attaques de ses ennemis ; soyez la voie qui nous conduise à Jésus, et le canal qui nous transmette les grâces dont nous avons besoin pour être sauvés. Soyez notre soulagement dans nos peines, notre soutien dans nos tentations, notre refuge dans la persécution, notre secours dans les dangers et surtout dans notre dernier combat, à l'heure de la mort, lorsque tout l'enfer déchaîné cherchera à ravir nos âmes ; à ce moment redoutable, duquel dépend notre éternité, ô Vierge compatissante ! faites-nous éprouver la tendresse de votre Cœur maternel et la grandeur de votre pouvoir auprès de Jésus, en nous ouvrant un refuge assuré dans le sein de votre miséricorde, afin que nous soyons introduits dans le séjour des bienheureux, pour tous les siècles des siècles. Ainsi soit-il.",
-   "latin": ""
+   "corps": "Ô Cœur de Marie, Mère de Dieu et notre Mère, Cœur le plus aimable, objet des complaisances de l’adorable Trinité, digne de toute la vénération et de l’amour des anges et des hommes ; Cœur le plus ressemblant à celui de Jésus, dont vous êtes la plus parfaite image ; Cœur plein de bonté et de compassion pour nos misères, daignez fondre la glace de nos propres cœurs, et faites qu’ils se donnent entièrement à celui du divin Sauveur. Répandez en eux l’amour de vos vertus, et enflammez-les du feu dont vous brûlez constamment vous-même. Couvrez de votre protection la sainte Église, et soyez toujours son refuge et son invincible défense contre toutes les attaques de ses ennemis. Soyez notre voie pour aller à Jésus, et le canal qui nous transmette toutes les grâces nécessaires à notre salut. Soyez notre secours dans nos besoins, notre soulagement dans les afflictions, notre force dans les tentations, notre refuge dans les persécutions. Soyez notre secours dans tous les périls, mais surtout dans les derniers combats de notre vie, à l’heure de la mort lorsque, pour ravir nos âmes, tout l’enfer se déchaînera contre nous, en ce moment formidable, à cet instant terrible, d’où dépend notre éternelle destinée. Ah ! faites-nous alors, Vierge compatissante, ressentir la tendresse de votre Cœur maternel et la force de votre puissance sur le Cœur de Jésus, en nous ouvrant, dans la source même de la miséricorde, un refuge assuré d’où nous puissions aller le bénir avec vous en paradis pendant tous les siècles des siècles. Ainsi soit-il.",
+   "latin": "",
+   "revision": 1
   },
   {
    "id": "weber:priere-notre-dame-de-lourdes",
@@ -890,13 +898,14 @@
    "usage": "",
    "indulgence": "",
    "source": {
-    "ouvrage": "Chanoine A. Weber, Notre Mère ou le trésor du fervent serviteur de Marie",
-    "edition": "3e éd., Paris-Lille, J. Lefort, 1899 ; approbation de l'évêque de Verdun ; indulgence : Enchiridion indulgentiarum, 1952, n° 429",
-    "page": "455",
-    "url": "https://pdfs.bibliotheque-catholique.com/pdfs/mariologie/Abb%C3%A9%20Alfred%20Weber%20-%20Notre%20M%C3%A8re%20ou%20le%20tr%C3%A9sor%20du%20fervent%20serviteur%20de%20Marie.pdf"
+    "ouvrage": "Thésaurisons pour le ciel. Recueil reproduisant la plupart des prières et œuvres indulgenciées des « Preces et Pia Opera » (1938)",
+    "edition": "Carmel de Montréal, 1941 ; préface du R. P. Louis C. de Léry, S. J.",
+    "page": "n° 298 (Preces 1938, n° 394), p. 105 ; indulgence : Enchiridion indulgentiarum, 1952, n° 429 ; texte français antérieur : Weber, p. 455",
+    "url": "http://www.liberius.net/livres/Thesaurisons_pour_le_Ciel_000001335.pdf"
    },
-   "corps": "Très glorieuse Vierge Marie qui, par un décret divin, avez été choisie de toute éternité pour être la Mère du Verbe fait chair, la trésorière des grâces divines, l'avocate des pécheurs, moi, le plus indigne de vos serviteurs, je vous supplie ardemment de daigner être mon guide et ma conseillère dans cette vallée de larmes. Obtenez-moi, par le précieux sang de votre Fils, le pardon de mes péchés, le salut de mon âme, et les moyens nécessaires pour l'opérer. Je vous demande aussi pour la Sainte Église, qu'elle triomphe de ses ennemis, et qu'elle étende au loin le royaume de Dieu sur la terre. Ainsi soit-il.",
-   "latin": ""
+   "corps": "Ô très glorieuse Vierge, choisie par le Conseil éternel pour être la Mère du Verbe éternel fait chair, la trésorière des grâces divines et l’avocate des pécheurs, moi, le plus indigne de vos serviteurs, j’ai recours à vous, afin que vous daigniez être mon guide et mon conseil dans cette vallée de larmes. Obtenez-moi, par le très précieux Sang de votre Fils, le pardon de mes péchés, le salut de mon âme et les moyens nécessaires pour y parvenir. Obtenez à la sainte Église le triomphe sur ses ennemis et la propagation du règne de Jésus-Christ par toute la terre. Ainsi soit-il.",
+   "latin": "",
+   "revision": 1
   },
   {
    "id": "weber:priere-notre-dame-du-perpetuel-secours",
@@ -1994,14 +2003,14 @@
    "usage": "Recueil : à piocher pour la ligne du jour ou dans la journée.",
    "indulgence": "",
    "latin": "",
-   "corps": "*Les jaculatoires indulgenciées les plus courtes pour la plus forte indulgence, classées par rapport indulgence / longueur. Texte français de Thésaurisons pour le ciel (1941), traduction certifiée fidèle selon le can. 934 § 2 ; indulgences vérifiées sur l'Enchiridion indulgentiarum de 1952, qui abroge toutes celles qu'il ne reprend pas. Chacune : indulgence partielle chaque fois ; plénière une fois le mois aux conditions ordinaires si elle est dite chaque jour, quand l'Enchiridion le prévoit.*\n\n1. Jésus, Marie, Joseph. *(7 ans ; Ench. 1952, n° 274)*\n\n2. Jésus. *(300 jours ; Ench. 1952, n° 113)*\n\n3. Marie. *(300 jours ; Ench. 1952, n° 292)*\n\n4. Seigneur, augmentez notre foi. *(500 jours ; Ench. 1952, n° 38)*\n\n5. Mon Jésus, miséricorde ! *(300 jours ; Ench. 1952, n° 70)*\n\n6. Venez, Seigneur, et ne tardez pas. *(500 jours ; Ench. 1952, n° 154)*\n\n7. De mes ennemis, Seigneur, délivrez-moi. *(500 jours ; Ench. 1952, n° 22)*\n\n8. Par le signe de la croix, ô notre Dieu, délivrez-nous de nos ennemis. *(3 ans ; Ench. 1952, n° 188)*\n\n9. Ma Mère, ma confiance. *(300 jours ; Ench. 1952, n° 302)*\n\n10. Que le Nom du Seigneur soit béni ! *(500 jours ; Ench. 1952, n° 8 ; chaque fois que l’on entend blasphémer contre Dieu)*\n\n11. Jésus, Fils de David, ayez pitié de moi. *(500 jours ; Ench. 1952, n° 73)*\n\n12. Vous êtes le Christ, le Fils du Dieu vivant. *(500 jours ; Ench. 1952, n° 79 ; devant le très saint Sacrement, même renfermé dans le tabernacle)*\n\n13. Je vous salue, ô Croix, mon unique espérance. *(500 jours ; Ench. 1952, n° 187)*\n\n14. Cœur Sacré de Jésus, ayez pitié de nous. *(500 jours ; Ench. 1952, n° 242)*\n\n15. Mon Dieu et mon tout ! *(300 jours ; Ench. 1952, n° 5)*\n\n16. Mon Dieu, je vous aime. *(300 jours ; Ench. 1952, n° 39)*\n\n17. Ô Dieu, vous êtes tout-puissant, faites-moi saint. *(500 jours ; Ench. 1952, n° 15)*\n\n18. Nous vous adorons, ô Christ, et nous vous bénissons, parce que vous avez racheté le monde par votre sainte Croix. *(3 ans ; Ench. 1952, n° 191)*\n\n19. En vos mains, Seigneur, je remets mon esprit. *(500 jours ; Ench. 1952, n° 19)*\n\n20. Ô Dieu, ayez pitié de moi qui suis un pécheur. *(500 jours ; Ench. 1952, n° 14)*\n\n21. Jésus-Christ, mon aide et mon rédempteur. *(300 jours ; Ench. 1952, n° 85)*\n\n22. Cœur Sacré de Jésus, protégez nos familles. *(300 jours ; Ench. 1952, n° 236)*\n\n23. Doux Cœur de Marie, soyez mon salut. *(300 jours ; Ench. 1952, n° 386)*\n\n24. Doux Cœur de Jésus, soyez mon amour. *(300 jours ; Ench. 1952, n° 237)*\n\n25. Mère de la miséricorde, priez pour nous. *(300 jours ; Ench. 1952, n° 304)*\n\n26. Jésus, doux et humble de cœur, rendez mon cœur semblable au vôtre. *(500 jours ; Ench. 1952, n° 227)*\n\n27. Enseignez-moi à faire votre volonté, Seigneur, parce que vous êtes mon Dieu. *(500 jours ; Ench. 1952, n° 11)*\n\n28. Daignez, Seigneur, en ce jour, me préserver de tout péché. *(500 jours ; Ench. 1952, n° 21 ; le matin ou le soir)*\n\n29. Ô Jésus, soyez-moi Jésus et sauvez-moi ! *(300 jours ; Ench. 1952, n° 84)*\n\n30. Cœur de Jésus, j'ai confiance en vous ! *(300 jours ; Ench. 1952, n° 226)*\n\n31. Cœur Sacré de Jésus, que votre règne arrive ! *(300 jours ; Ench. 1952, n° 228)*\n\n32. Gloire, amour, reconnaissance au Sacré Cœur de Jésus. *(300 jours ; Ench. 1952, n° 231)*\n\n33. Vierge Marie, Mère de Jésus, faites-moi saint. *(300 jours ; Ench. 1952, n° 303)*\n\n34. Sainte Mère de Dieu, daignez graver dans mon cœur les plaies de Jésus crucifié. *(500 jours ; Ench. 1952, n° 375)*\n\n35. Ô Dieu, venez à mon aide ; Seigneur, hâtez-vous de me secourir. *(500 jours ; Ench. 1952, n° 20)*\n\n36. Vierge Marie, Mère de Dieu, priez Jésus pour moi. *(300 jours ; Ench. 1952, n° 305)*\n\n37. Jésus, mon Dieu, je vous aime par-dessus tout. *(300 jours ; Ench. 1952, n° 72)*\n\n38. D'une mort subite et imprévue, délivrez-nous, Seigneur. *(300 jours ; Ench. 1952, n° 637)*",
+   "corps": "*Les jaculatoires indulgenciées les plus courtes pour la plus forte indulgence, classées par rapport indulgence / longueur. Texte français de Thésaurisons pour le ciel (1941), traduction certifiée fidèle selon le can. 934 § 2 ; indulgences vérifiées sur l'Enchiridion indulgentiarum de 1952, qui abroge toutes celles qu'il ne reprend pas. Chacune : indulgence partielle chaque fois ; plénière une fois le mois aux conditions ordinaires si elle est dite chaque jour, quand l'Enchiridion le prévoit.*\n\n1. Jésus, Marie, Joseph. *(7 ans ; Ench. 1952, n° 274)*\n\n2. Jésus. *(300 jours ; Ench. 1952, n° 113)*\n\n3. Marie. *(300 jours ; Ench. 1952, n° 292)*\n\n4. Seigneur, augmentez notre foi. *(500 jours ; Ench. 1952, n° 38)*\n\n5. Mon Jésus, miséricorde ! *(300 jours ; Ench. 1952, n° 70)*\n\n6. Venez, Seigneur, et ne tardez pas. *(500 jours ; Ench. 1952, n° 154)*\n\n7. De mes ennemis, Seigneur, délivrez-moi. *(500 jours ; Ench. 1952, n° 22)*\n\n8. Par le signe de la croix, ô notre Dieu, délivrez-nous de nos ennemis. *(3 ans ; Ench. 1952, n° 188)*\n\n9. Ma Mère, ma confiance. *(300 jours ; Ench. 1952, n° 302)*\n\n10. Que le Nom du Seigneur soit béni ! *(500 jours ; Ench. 1952, n° 8 ; chaque fois que l’on entend blasphémer contre Dieu)*\n\n11. Jésus, Fils de David, ayez pitié de moi. *(500 jours ; Ench. 1952, n° 73)*\n\n12. Vous êtes le Christ, le Fils du Dieu vivant. *(500 jours ; Ench. 1952, n° 79 ; devant le très saint Sacrement, même renfermé dans le tabernacle)*\n\n13. Je vous salue, ô Croix, mon unique espérance. *(500 jours ; Ench. 1952, n° 187)*\n\n14. Cœur Sacré de Jésus, ayez pitié de nous. *(500 jours ; Ench. 1952, n° 242)*\n\n15. Mon Dieu et mon tout ! *(300 jours ; Ench. 1952, n° 5)*\n\n16. Mon Dieu, je vous aime. *(300 jours ; Ench. 1952, n° 39)*\n\n17. Ô Dieu, vous êtes tout-puissant, faites-moi saint. *(500 jours ; Ench. 1952, n° 15)*\n\n18. Nous vous adorons, ô Christ, et nous vous bénissons, parce que vous avez racheté le monde par votre sainte Croix. *(3 ans ; Ench. 1952, n° 191)*\n\n19. En vos mains, Seigneur, je remets mon esprit. *(500 jours ; Ench. 1952, n° 19)*\n\n20. Ô Dieu, ayez pitié de moi qui suis un pécheur. *(500 jours ; Ench. 1952, n° 14)*\n\n21. Jésus-Christ, mon aide et mon rédempteur. *(300 jours ; Ench. 1952, n° 85)*\n\n22. Cœur Sacré de Jésus, protégez nos familles. *(300 jours ; Ench. 1952, n° 236)*\n\n23. Doux Cœur de Marie, soyez mon salut. *(300 jours ; Ench. 1952, n° 386)*\n\n24. Tout pour vous, Cœur Sacré de Jésus. *(300 jours ; Ench. 1952, n° 234)*\n\n25. Doux Cœur de Jésus, soyez mon amour. *(300 jours ; Ench. 1952, n° 237)*\n\n26. Mère de la miséricorde, priez pour nous. *(300 jours ; Ench. 1952, n° 304)*\n\n27. Jésus, doux et humble de cœur, rendez mon cœur semblable au vôtre. *(500 jours ; Ench. 1952, n° 227)*\n\n28. Enseignez-moi à faire votre volonté, Seigneur, parce que vous êtes mon Dieu. *(500 jours ; Ench. 1952, n° 11)*\n\n29. Daignez, Seigneur, en ce jour, me préserver de tout péché. *(500 jours ; Ench. 1952, n° 21 ; le matin ou le soir)*\n\n30. Ô Jésus, soyez-moi Jésus et sauvez-moi ! *(300 jours ; Ench. 1952, n° 84)*\n\n31. Cœur de Jésus, j'ai confiance en vous ! *(300 jours ; Ench. 1952, n° 226)*\n\n32. Ô bon Jésus, cachez-moi dans vos Plaies. *(300 jours ; Ench. 1952, n° 199)*\n\n33. Cœur Sacré de Jésus, que votre règne arrive ! *(300 jours ; Ench. 1952, n° 228)*\n\n34. Gloire, amour, reconnaissance au Sacré Cœur de Jésus. *(300 jours ; Ench. 1952, n° 231)*\n\n35. Vierge Marie, Mère de Jésus, faites-moi saint. *(300 jours ; Ench. 1952, n° 303)*\n\n36. Sainte Mère de Dieu, daignez graver dans mon cœur les plaies de Jésus crucifié. *(500 jours ; Ench. 1952, n° 375)*\n\n37. Ô Dieu, venez à mon aide ; Seigneur, hâtez-vous de me secourir. *(500 jours ; Ench. 1952, n° 20)*\n\n38. Vierge Marie, Mère de Dieu, priez Jésus pour moi. *(300 jours ; Ench. 1952, n° 305)*\n\n39. Jésus, mon Dieu, je vous aime par-dessus tout. *(300 jours ; Ench. 1952, n° 72)*\n\n40. D'une mort subite et imprévue, délivrez-nous, Seigneur. *(300 jours ; Ench. 1952, n° 637)*",
    "source": {
     "ouvrage": "Thésaurisons pour le ciel. Recueil reproduisant la plupart des prières et œuvres indulgenciées des « Preces et Pia Opera » (1938)",
     "edition": "Carmel de Montréal, 1941 ; préface du R. P. Louis C. de Léry, S. J.",
     "url": "http://www.liberius.net/livres/Thesaurisons_pour_le_Ciel_000001335.pdf",
     "page": "n° cités"
    },
-   "revision": 1
+   "revision": 2
   },
   {
    "id": "gertrude:trois-ave-bonne-mort",
