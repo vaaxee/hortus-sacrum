@@ -169,7 +169,7 @@ function joursCoches(coches: Coche[]): Map<string, Set<string>> {
 /** Mois entiers : la ligne « Dévotion du mois » cochée chaque jour d'un mois civil terminé. */
 function deMois(liste: ElementListe[], parLigne: Map<string, Set<string>>, aujourdhui: string): Couronne[] {
 	const out: Couronne[] = [];
-	const lignes = liste.filter((e) => e.titre.startsWith('Dévotion du mois'));
+	const lignes = liste.filter((e) => e.titre?.startsWith('Dévotion du mois'));
 	const parMois = new Map<string, number>();
 	for (const e of lignes) {
 		const jours = parLigne.get(e.id);
@@ -205,7 +205,7 @@ function deMois(liste: ElementListe[], parLigne: Map<string, Set<string>>, aujou
 function deConstance(liste: ElementListe[], parLigne: Map<string, Set<string>>, aujourdhui: string): Couronne[] {
 	const out: Couronne[] = [];
 	for (const e of liste) {
-		if (!e.jours.every(Boolean) || e.supprimeLe) continue;
+		if (!e.jours?.every(Boolean) || e.supprimeLe) continue;
 		const jours = [...(parLigne.get(e.id) ?? [])].filter((d) => d <= aujourdhui).sort();
 		if (jours.length < PALIERS[0][0]) continue;
 		const fois = new Map<number, number>();
