@@ -1,7 +1,7 @@
 # Textes à fournir, à confirmer ou à recopier
 
 Règle : aucun texte de mémoire. Pour chaque point : la décision prise et ce qui reste à faire.
-Les points réglés sont gardés pour l'historique. Dernière mise à jour : 13 novembre 2026.
+Les points réglés sont gardés pour l'historique. Dernière mise à jour : 20 novembre 2026.
 
 **Fait le 13 novembre** : Salve Regina (matin) et Sub tuum (soir) avec leurs versets, Beringer 1925, t. I, n° 429, p. 224-225 (et non 294-295 : l'OCR avait mal lu le numéro de page).
 
@@ -27,8 +27,8 @@ Les points réglés sont gardés pour l'historique. Dernière mise à jour : 13 
 - ~~*Traité de la vraie dévotion*, n° 227-233~~ : **fait** (14 nov.), édition Gaume 1843, p. 200-204 (préparation) et p. 204 (petite couronne).
 - **Promesses de saint Michel** (notice du chapelet de saint Michel, apparition de 1751 à Antonia d'Astonaco) : à vérifier mot pour mot sur la *Raccolta* (1910) ou une autre édition ancienne. (Audit du 17 nov. : la seule mention trouvée dans les notes venait d'un site banni ; la mention a été retirée.)
 - ~~Invocations du Sub tuum~~ : **fait** (17 nov.), texte latin de christusregnat.com fourni par l’utilisateur ; traduction française à fournir.
-- **Prières de sainte Gertrude** (Denis, 11e éd., Lethielleux) : choisir les prières à transcrire ; trois Ave de sainte Mechtilde faits. **Fait (19 nov.)**, selon la décision de l'utilisateur : 25 pièces `gertrude:*` (prières portant une promesse de Notre-Seigneur ou de la sainte Vierge : Notre-Seigneur, Passion, sainte Vierge, saints, défunts ; et les prières aux saints par catégorie, avec « N. »). Laissées de côté, faute de promesse explicite de Notre-Seigneur ou de la Vierge : Amour de Dieu (p. 89), Autre manière de saluer les plaies (p. 122), Hostie divine (p. 147), Salut à tous les membres de Jésus (p. 163), Réparation à la sainte Vierge (p. 186), Ave Maria d'or (p. 191), Offrande du Cœur de Jésus à Marie (p. 198), A saint Benoît (promesse du saint, p. 227), Invocation de tous les Saints (p. 242), prières de la communion et de la messe (p. 35-54, 313-335) : à choisir par l'utilisateur.
-- **Sainte Face, petit chemin de croix, IVe station** (Janvier, *Manuel de l'Archiconfrérie*, 3e éd., Tours 1895, p. 185) : sur le scan, le mot avant « larmes » (« je vous offre … larmes ») est caché par une surcharge à la main ; transcrit « ces », lecture la plus probable. À vérifier sur un autre exemplaire (ou la feuille « Petit Chemin de Croix de la Sainte-Face » de l'Oratoire de Tours).
+- **Prières de sainte Gertrude** (Denis, 11e éd., Lethielleux) : choisir les prières à transcrire ; trois Ave de sainte Mechtilde faits. **Fait (19 nov.)**, selon la décision de l'utilisateur : 25 pièces `gertrude:*` (prières portant une promesse de Notre-Seigneur ou de la sainte Vierge : Notre-Seigneur, Passion, sainte Vierge, saints, défunts ; et les prières aux saints par catégorie, avec « N. »). Laissées de côté, faute de promesse explicite de Notre-Seigneur ou de la Vierge : Amour de Dieu (p. 89), Autre manière de saluer les plaies (p. 122), Hostie divine (p. 147), Salut à tous les membres de Jésus (p. 163), Réparation à la sainte Vierge (p. 186), Ave Maria d'or (p. 191), Offrande du Cœur de Jésus à Marie (p. 198), A saint Benoît (promesse du saint, p. 227), Invocation de tous les Saints (p. 242), prières de la communion et de la messe (p. 35-54, 313-335) : **Décision du 20 nov. : toutes transcrites, hors de la liste du jour** (consultables dans Prières).
+- **Sainte Face, petit chemin de croix, IVe station** (Janvier, *Manuel de l'Archiconfrérie*, 3e éd., Tours 1895, p. 185) : sur le scan, le mot avant « larmes » (« je vous offre … larmes ») est caché par une surcharge à la main ; transcrit « ces », lecture la plus probable. **Décision du 20 nov. : « ces » est gardé, sans autre recherche.**
 - **Apostolat de la prière** : **fait (20 nov.)**, Ramière, *L'Apostolat de la prière*, 4e éd., Le Puy, Marchessou, 1864 (archive.org `lapostolatdelapr00rami`) : offrande quotidienne et pratiques (`ramiere:*`). Reste : la « petite prière du Cœur agonisant » à dire après l'Angélus, que Ramière cite sans la donner (il renvoie au P. Lyonnard, *Le Cœur agonisant de Jésus et les agonisants de tous les jours*, Paris, Lecoffre) ; autre piste : *Petit manuel de l'Apostolat de la prière* (Montréal, Rolland, 1864, archive.org `cihm_39977`). Gautrelet non consulté.
 ## Traductions approuvées à trouver (20 novembre 2026)
 
@@ -37,7 +37,7 @@ fidèle par la S. Pénitencerie ou par un Ordinaire du lieu (can. 934 § 2 ; Enc
 le ciel* (Montréal, 1941, certifié par G. Chartier) a été dépouillé : il ne donne pas les textes ci-dessous (souvent il
 n'en cite que le titre). Piste : un autre recueil français de prières indulgenciées publié avec une déclaration de fidélité
 (can. 934 § 2) d'un Ordinaire. En attendant, l'app affiche la
-note du can. 934 ; le latin, quand la pièce le donne, porte l'indulgence.
+note du can. 934 ; le latin, quand la pièce le donne, porte l'indulgence. **Décision du 20 nov. : ces prières s'ouvrent sur le latin**, le français en regard.
 
 | Pièce | Ench. 1952 | Langue | Latin dans la pièce |
 |---|---|---|---|

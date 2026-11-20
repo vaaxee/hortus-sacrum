@@ -378,6 +378,10 @@ Après chaque implémentation :
   à trouver sont dans `A_FOURNIR.md`.
 - Données : `data/prieres/indulgences.json` ; scripts `engine/indulgences/ench1952.py` puis `verif1952.py`. Un test vérifie que chaque fiche
   comptée cite l'Enchiridion de 1952. Les mentions d'indulgence recopiées des anciens manuels ne sont pas affichées.
+- **Décision du 20 novembre : latin en premier.** Pour une prière concédée en latin (ou en italien) sans traduction
+  française approuvée, la page s'ouvre sur le latin, qui porte l'indulgence ; le français reste en regard, avec la note
+  du can. 934, et ne compte pas. Quand une traduction approuvée existe, le français vient en premier. Recherche d'un
+  recueil français approuvé (1938-1958) en cours ; rien ne sera utilisé avant d'être soumis à l'utilisateur.
 
 ### Arbitrages des audits du 19 novembre (tranchés par les principes du § 11 ; l'utilisateur peut les reprendre)
 Audits : `docs/audits/AUDIT_DEVOTIONS_2026-11-18.md` et `docs/audits/AUDIT_CORPUS_2026-11-18.md`.

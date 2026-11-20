@@ -1,0 +1,175 @@
+exami 1 ner	examiner	*
+préli 1 minaires	préliminaires	*
+tou. jours	toujours	*
+glo. rieux	glorieux	*
+di. vine	divine	*
+pren. drons	prendrons	*
+recon. naissance	reconnaissance	*
+Eucha. ristie	Eucharistie	*
+revien. nent	reviennent	*
+per. sonne	personne	*
+gouver. neur	gouverneur	*
+Ad. mirons	Admirons	*
+considé. ration	considération	*
+pro. grès	progrès	*
+heu « reuse	heureuse	*
+na « tions	nations	*
+chré. tienne	chrétienne	*
+au 1 torité	autorité	*
+com. ment	comment	*
+pos 1 session	possession	*
+as 2 pirations	aspirations	*
+mo. ments	moments	*
+com. mandement	commandement	*
+ber 1 gers	bergers	*
+sim. ples	simples	*
+béni 2 rai	bénirai	*
+dispo 01 sitions	dispositions	*
+trou 3 vèrent	trouvèrent	*
+sain 1 teté	sainteté	*
+mi. séricorde	miséricorde	*
+per 1 sonne	personne	*
+Jé. sus	Jésus	*
+ri. chesses	richesses	*
+pas. sées	passées	*
+con. duite	conduite	*
+mil. liers	milliers	*
+ca « ractère	caractère	*
+inexcu > sables	inexcusables	*
+flé.chir	fléchir	*
+sacri. fice	sacrifice	*
+Transfi. guration	Transfiguration	*
+ra. conte	raconte	*
+da 1 vantage	davantage	*
+vénéra 10 tion	vénération	*
+Transfigu-. ration	Transfiguration	*
+humi. lité	humilité	*
+pen. dant	pendant	*
+particu-. lier	particulier	*
+jus. tice	justice	*
+ex « trêmes	extrêmes	*
+pau « vres	pauvres	*
+sa 10 cré	sacré	*
+conver. tit	convertit	*
+ces. ser	cesser	*
+per. sécutes	persécutes	*
+tien « drai	tiendrai	*
+ser « vante	servante	*
+émi. nemment	éminemment	*
+re. tenue	retenue	*
+or « dres	ordres	*
+sacre. ments	sacrements	*
+souf. france	souffrance	*
+in > spiré	inspiré	*
+consi. dérer	considérer	*
+croyan 4 ces	croyances	*
+sem. blable	semblable	*
+da. vantage	davantage	*
+commu-. niquant	communiquant	*
+consola. tion	consolation	*
+re. froidir	refroidir	*
+dé. tachement	détachement	*
+mé > ritoire	méritoire	*
+bap 5 tême	baptême	*
+ma. gnifique	magnifique	*
+réso. lution	résolution	*
+froi. deur	froideur	*
+cour. roux	courroux	*
+rece 3 voir	recevoir	*
+sup 2 plément	supplément	*
+mé. ritera	méritera	*
+spiri. tuels	spirituels	*
+der. nier	dernier	*
+pen. serez	penserez	*
+merveil. leusement	merveilleusement	*
+mé. pris	mépris	*
+donne > rais	donnerais	*
+mar 10 cher	marcher	*
+ob > servait	observait	*
+atten. dre	attendre	*
+in. térêts	intérêts	*
+habi. tuellement	habituellement	*
+recher.ches	recherches	*
+mal. heurs	malheurs	*
+gémis. sant	gémissant	*
+descen. dant	descendant	*
+conve. nable	convenable	*
+pas. ser	passer	*
+bou. quet	bouquet	*
+hum. ble	humble	*
+or. gueilleux	orgueilleux	*
+moin. dre	moindre	*
+pro. fondément	profondément	*
+ja 1 mais	jamais	*
+ni. veau	niveau	*
+sembla. bles	semblables	*
+en. core	encore	*
+ca 4 pable	capable	*
+jar « din	jardin	*
+lan 9 gage	langage	*
+orgueil. leux	orgueilleux	*
+dédui. rons	déduirons	*
+recher. chent	recherchent	*
+der. nières	dernières	*
+conver-. sion	conversion	*
+jouis. sance	jouissance	*
+mortifi. cation	mortification	*
+pé. ril	péril	*
+pro « cèdent	procèdent	*
+lan. gage	langage	*
+amoin. drit	amoindrit	*
+quel. ques	quelques	*
+sé. rieuses	sérieuses	*
+diver. sion	diversion	*
+Sei « gneur	Seigneur	*
+mi « sère	misère	*
+admira. ble	admirable	*
+obser. vons	observons	*
+ré. flexions	réflexions	*
+paralyti *que	paralytique	*
+sacri. fier	sacrifier	*
+cé « lèbre	célèbre	*
+vou. dra	voudra	*
+tem. porels	temporels	*
+vio « lence	violence	*
+de. vons	devons	*
+mys 1 tique	mystique	*
+ai. mable	aimable	*
+ré 1 pande	répande	*
+hum. bles	humbles	*
+rem. plissons	remplissons	*
+distri. buer	distribuer	*
+chré. tien	chrétien	*
+vi. vra	vivra	*
+prin. cipe	principe	*
+travail. ler	travailler	*
+modes. tie	modestie	*
+préve. nir	prévenir	*
+mol. lesse	mollesse	*
+jouis « sance	jouissance	*
+vo « lontés	volontés	*
+in « ventions	inventions	*
+priva « tion	privation	*
+Sei. gneur	Seigneur	*
+aug. mentez	augmentez	*
+ridi. cule	ridicule	*
+va 1 nité	vanité	*
+sen. timents	sentiments	*
+na. ture	nature	*
+domes « tique	domestique	*
+dissipa. tion	dissipation	*
+hu. meur	humeur	*
+ta. bernacles	tabernacles	*
+con. sidérant	considérant	*
+reli. gieux	religieux	*
+mi. racle	miracle	*
+ac « tion	action	*
+incom. préhensible	incompréhensible	*
+ré. pond	répond	*
+pu. rifiée	purifiée	*
+soula. ger	soulager	*
+re « garde	regarde	*
+indul. gences	indulgences	*
+in. vite	invite	*
+cé. leste	céleste	*
+parta > gent	partagent	*
