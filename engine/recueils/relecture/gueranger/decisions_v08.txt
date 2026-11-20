@@ -1,0 +1,109 @@
+# Guéranger, t. 8 (entrées en OCR seulement : remplacer.py --ocr). Propositions de proposer_vol.sh relues une à une ;
+# vus sur le scan g08.pdf : « il l'élève » (p. 322), évêques (p. 407), amères (p. 427), réveiller (p. 432),
+# profondément (p. 482), réjouir (p. 526), répondent (p. 556), l'honneur (p. 563), chaînes (p. 145).
+# Laissés : « matant » (juste : mater sa chair), « et tinit », « de)eter », « ilprès », latin des colonnes (quavis, sû…).
+un ceil propice	un œil propice
+le luiavait prédit	le lui avait prédit
+briser les chaines de	briser les chaînes de
+la malicedu diable	la malice du diable
+reparaître, assurenous la	reparaître, assure-nous la
+gardeznous	gardez-nous	*
+nous jusau'ici	nous jusqu'ici
+nous nepouvons douter	nous ne pouvons douter
+veutil	veut-il	*
+protégeznous	protégez-nous	*
+disonsnous	disons-nous	*
+sa virginitéen ait	sa virginité en ait
+A lavue de	A la vue de
+sommesnous	sommes-nous	*
+Sommesnous	Sommes-nous	*
+que, ditce il	que, dit-il
+rendeznous	rendez-nous	*
+Rendeznous	Rendez-nous	*
+Lorsque cecruel ennemi	Lorsque ce cruel ennemi
+puritication	purification	*
+sacritices	sacrifices	*
+cet entrelien, la	cet entretien, la
+en souvenirde votre	en souvenir de votre
+dégoût duroyaume terrestre	dégoût du royaume terrestre
+ENTRE lesplus remarquables	ENTRE les plus remarquables
+le sanget par	le sang et par
+des taveurs nouvelles	des faveurs nouvelles
+l'ob jet	l'objet
+athlètes, splcndide flambeau	athlètes, splendide flambeau
+qu'elleest valeureuse	qu'elle est valeureuse
+avait cueilti.sa	avait cueilli sa
+un jeiine austère	un jeûne austère
+de naîtreau sein	de naître au sein
+une marclie religieuse	une marche religieuse
+célébrer chaqiie année	célébrer chaque année
+la fureurdes vents	la fureur des vents
+il nousdonne la	il nous donne la
+dès sapremière enfance	dès sa première enfance
+pour cettegrande cause	pour cette grande cause
+piété sanségale : et	piété sans égale : et
+mère desâmes ici	mère des âmes ici
+les jusquedans le	les jusque dans le
+le séjourde la	le séjour de la
+souvenezvous	souvenez-vous	*
+jours'ditférents, qui	jours différents, qui
+arc-enciel	arc-en-ciel	*
+contre toutebonne foi	contre toute bonne foi
+vrai Dieu de vra^i Dieu	vrai Dieu de vrai Dieu
+Croix; nousen choisirons	Croix; nous en choisirons
+se servirpour achever	se servir pour achever
+apprenezleur	apprenez-leur	*
+pour nousde sa	pour nous de sa
+sa "frande charité	sa grande charité
+bataillons angéliqucs qui	bataillons angéliques qui
+daigne nousassister toujours	daigne nous assister toujours
+l'austéritéde sa	l'austérité de sa
+à unirdans ses	à unir dans ses
+saison pascaie sans	saison pascale sans
+années, etplus tard	années, et plus tard
+dappui	d'appui	*
+lenfer	l'enfer	*
+gardonsnous	gardons-nous	*
+Rassurezvous	Rassurez-vous	*
+louvrier	l'ouvrier	*
+lanneau	l'anneau	*
+dixhuit	dix-huit	*
+Tillustre	l'illustre	*
+Christroi	Christ-roi	*
+Protégezles	Protégez-les	*
+rendezvous	rendez-vous	*
+astu	as-tu	*
+trentetroisième	trente-troisième	*
+Pardonnezleur	Pardonnez-leur	*
+reconnaîtronsnous	reconnaîtrons-nous	*
+attacheznous	attachez-nous	*
+présentezlui	présentez-lui	*
+léducation	l'éducation	*
+détacheznous	détachez-nous	*
+leffort	l'effort	*
+quunique	qu'unique	*
+nétait	n'était	*
+Toraison	l'oraison	*
+m.arqués	marqués	*
+exprim.e	exprime	*
+e.xemples	exemples	*
+ceu.x	ceux	*
+proclam.e	proclame	*
+A.pôtres	Apôtres	*
+triom.phal	triomphal	*
+Croi.x	Croix	*
+p>eu	peu	*
+di.xième	dixième	*
+troisiè.me	troisième	*
+Fortitiez	Fortifiez	*
+il rélève pour jamais	il l'élève pour jamais
+cinq êvêques	cinq évêques
+les larmes améres	les larmes amères
+sans reveiller	sans réveiller
+Adorant profondement	Adorant profondément
+venus rejouir	venus réjouir
+papale, repondent	papale, répondent
+concerts à Ihonneur	concerts à l'honneur
+hérétiques, Jes complaisances	hérétiques, les complaisances
+que tous Jes nuages	que tous les nuages
+en ma-, tière de religion	en matière de religion
