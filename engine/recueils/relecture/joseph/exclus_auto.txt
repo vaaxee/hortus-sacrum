@@ -1,0 +1,11 @@
+# Mois de saint Joseph : corrections automatiques (decider.py) écartées à la relecture de la liste.
+Ames	ânes
+Matines.	Maries.
+Matines.	Marines.
+MOiiT	MOûT
+psadme	PSAUME
+leute	cute
+Coll.	Col.
+ouïs,	ours,
+intercédante	intercedente
+assé	passé
