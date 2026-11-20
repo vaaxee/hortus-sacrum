@@ -9,7 +9,7 @@ ou par un Ordinaire du lieu où la langue est en usage).
 Les fiches tirées de « Thésaurisons pour le ciel » (1941, numérotation des Preces et Pia Opera de 1938) sont rapportées
 ici à leur numéro de 1952, vérifié dans le texte de l'Enchiridion (édition vaticane 1952). Les traductions de
 Thésaurisons sont certifiées fidèles selon le can. 934 § 2 (G. Chartier, vic. gén. de Montréal, 28 avril 1941).
-Usage : python3 -I engine/indulgences/ench1952.py
+Usage : python3 -I engine/indulgences/ench1952.py, puis verif1952.py (vérification fiche par fiche, 20 nov.).
 """
 import json, pathlib
 
@@ -56,7 +56,8 @@ THES = 'Thésaurisons pour le ciel (1941), traduction certifiée fidèle selon l
 for k, (n, langue, cond) in NUMEROS.items():
     f = F[k]
     ancien = f['ref']
-    f['ref'] = f'Ench. 1952, n° {n} (auparavant : {ancien})'
+    if not ancien.startswith('Ench. 1952'):  # déjà appliqué : rejouable sans doubler la référence
+        f['ref'] = f'Ench. 1952, n° {n} (auparavant : {ancien})'
     f['langue'] = langue
     if cond: f['intention'] = cond
     if langue != 'français': f['traduction'] = THES

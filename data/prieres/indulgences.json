@@ -24,7 +24,9 @@
      "texte": "300 jours (℣. Dignare me… ℟. Da mihi…)"
     }
    ],
-   "note": "Depuis l'Enchiridion de 1952, le Salve Regina seul est indulgencié (5 ans) et les versets Dignare me le sont à part (300 jours) ; l'intention de réparation demandée par Pie VI (Beringer 1925) n'est plus une condition."
+   "note": "Depuis l'Enchiridion de 1952, le Salve Regina seul est indulgencié (5 ans) et les versets Dignare me le sont à part (300 jours) ; l'intention de réparation demandée par Pie VI (Beringer 1925) n'est plus une condition.",
+   "langue": "latin",
+   "traduction": "Thésaurisons pour le ciel (1941), traduction certifiée fidèle selon le can. 934 § 2 (n° 192 et 106)"
   },
   "beringer:sub-tuum": {
    "ref": "Ench. 1952, n° 333 (Sub tuum) et n° 293 (℣. Dignare me)",
@@ -38,7 +40,9 @@
      "jours": 300,
      "texte": "300 jours (℣. Dignare me… ℟. Da mihi…)"
     }
-   ]
+   ],
+   "langue": "latin",
+   "traduction": "Thésaurisons pour le ciel (1941), traduction certifiée fidèle selon le can. 934 § 2 (n° 193 et 106)"
   },
   "paroissien:angelus": {
    "ref": "Ench. 1952, n° 331",
@@ -48,7 +52,10 @@
      "ans": 10,
      "texte": "10 ans chaque fois (matin, midi, soir)"
     }
-   ]
+   ],
+   "intention": "le matin, à midi et le soir (ou dès qu’on le peut ensuite)",
+   "note": "Au temps pascal, le Regina cæli avec son oraison ; à défaut de savoir ces prières, cinq Ave Maria (n° 331).",
+   "langue": "latin"
   },
   "beringer:regina-caeli": {
    "ref": "Ench. 1952, n° 331",
@@ -58,7 +65,9 @@
      "ans": 10,
      "texte": "10 ans chaque fois (matin, midi, soir)"
     }
-   ]
+   ],
+   "intention": "le matin, à midi et le soir (ou dès qu’on le peut ensuite)",
+   "langue": "latin"
   },
   "paroissien:de-profundis": {
    "ref": "Ench. 1952, n° 585",
@@ -79,17 +88,20 @@
      },
      "remplace": 0
     }
-   ]
+   ],
+   "note": "Le Pater et l’Ave avec le ℣. Requiem æternam, dits en suffrage pour les défunts, ont la même indulgence (n° 585).",
+   "langue": "latin"
   },
   "beringer:litanies-sacre-coeur": {
-   "ref": "Ench. 1952, Litanies du Sacré-Cœur (S. Rit. C., 2 avr. 1899 ; S. Pénit., 10 mars 1933)",
+   "ref": "Ench. 1952, n° 245",
    "frequence": "chaque fois",
    "partielles": [
     {
      "ans": 7,
-     "texte": "7 ans"
+     "texte": "7 ans (avec le ℣. et l’oraison)"
     }
-   ]
+   ],
+   "langue": "latin"
   },
   "beringer:litanies-saint-joseph": {
    "ref": "Ench. 1952, n° 462",
@@ -99,7 +111,8 @@
      "ans": 5,
      "texte": "5 ans"
     }
-   ]
+   ],
+   "langue": "latin"
   },
   "paroissien:litanies-sainte-vierge": {
    "ref": "Ench. 1952, n° 319",
@@ -109,7 +122,8 @@
      "ans": 7,
      "texte": "7 ans"
     }
-   ]
+   ],
+   "langue": "latin"
   },
   "paroissien:litanies-saint-nom": {
    "ref": "Ench. 1952, n° 114",
@@ -117,9 +131,10 @@
    "partielles": [
     {
      "ans": 7,
-     "texte": "7 ans"
+     "texte": "7 ans (avec les oraisons)"
     }
-   ]
+   ],
+   "langue": "latin"
   },
   "paroissien:litanies-des-saints": {
    "ref": "Ench. 1952, n° 687",
@@ -144,10 +159,11 @@
      },
      "remplace": 0
     }
-   ]
+   ],
+   "langue": "latin"
   },
   "beringer:saint-joseph-purete": {
-   "ref": "Ench. 1952, n° 478",
+   "ref": "Ench. 1952, n° 473 (Virginum custos et pater, sancte Joseph)",
    "frequence": "chaque fois",
    "partielles": [
     {
@@ -167,7 +183,9 @@
      },
      "remplace": 0
     }
-   ]
+   ],
+   "langue": "latin",
+   "traduction": "Thésaurisons pour le ciel (1941), traduction certifiée fidèle selon le can. 934 § 2 (n° 151)"
   },
   "jardin:priere-pour-les-agonisants": {
    "ref": "Ench. 1952, n° 671",
@@ -177,12 +195,23 @@
      "jours": 300,
      "texte": "300 jours"
     }
-   ]
+   ],
+   "langue": "latin",
+   "note": "Le livret suit de près la traduction de Thésaurisons (n° 498), sans la reproduire mot pour mot (« dans ce moment », « sang »)."
   },
   "jardin:la-triple-couronne-d-or-du-sacre-c-ur-de-jesus": {
-   "ref": "Ench. 1952, n° 221 (Jesu, mitis), n° 386 (Dulce Cor Mariæ), n° 70 (Mon Jésus, miséricorde), n° 287 (Veni, Sancte Spiritus)",
+   "ref": "Ench. 1952, n° 287 (Veni, Sancte Spiritus), 223 (Aimé soit partout), 227 (Iesu, mitis), 224 (Dolce Cuor del mio Gesù), 386 (Dolce Cuore di Maria) et 70 (Gesù mio, misericordia)",
    "frequence": "chaque fois",
    "partielles": [
+    {
+     "ans": 5,
+     "texte": "5 ans (Veni, Sancte Spiritus, avec le ℣. Emitte et l’oraison)"
+    },
+    {
+     "jours": 300,
+     "repetitions": 5,
+     "texte": "5 × 300 jours (Aimé soit partout le Sacré-Cœur de Jésus)"
+    },
     {
      "jours": 500,
      "repetitions": 5,
@@ -190,50 +219,69 @@
     },
     {
      "jours": 300,
+     "repetitions": 50,
+     "texte": "50 × 300 jours (Dulce Cor Jesu, sur chaque grain des dizaines)"
+    },
+    {
+     "jours": 300,
      "repetitions": 5,
-     "texte": "5 × 300 jours (Dulce Cor Mariæ, sis salus mea)"
+     "texte": "5 × 300 jours (Dulce Cor Mariæ, à chaque mystère)"
     },
     {
      "jours": 300,
      "repetitions": 5,
      "texte": "5 × 300 jours (Mon Jésus, miséricorde !, cinq fois)"
-    },
-    {
-     "ans": 5,
-     "texte": "5 ans (Veni, Sancte Spiritus, avec ℣. Emitte et l'oraison)"
     }
    ],
-   "note": "« Dulce Cor Jesu, fac ut te magis ac magis diligam » n'est indulgencié qu'avec Pater, Ave et Gloria devant une image du Sacré-Cœur (n° 248) : non compté."
+   "note": "Dulce Cor Jesu et Dulce Cor Mariæ sont concédés en italien (n° 224 et 386) : leur forme latine n’est pas une traduction approuvée. Dire l’italien ou le français de Thésaurisons : « Doux Cœur de mon Jésus, faites que je vous aime de plus en plus » (n° 82 ; le livret porte « faites que je vous aime toujours de plus en plus ») et « Doux Cœur de Marie, soyez mon salut » (n° 134). « Aimé soit partout le Sacré-Cœur de Jésus » est concédé en français (n° 223). Le ℟. latin du livret « fac cor meum sicut Cor tuum » s’écarte du texte de l’Enchiridion (« fac cor nostrum secundum Cor tuum ») ; sa traduction française entre crochets est celle de Thésaurisons.",
+   "langue": "latin",
+   "traduction": "Thésaurisons pour le ciel (1941), traduction certifiée fidèle selon le can. 934 § 2, pour « Jésus, doux et humble de cœur, rendez mon cœur semblable au vôtre » (n° 85), « Doux Cœur de Marie, soyez mon salut » (n° 134) et « Mon Jésus, miséricorde » (n° 33)"
   },
   "jardin:acte-d-intention-de-communion-spirituelle-perpetuelle": {
-   "ref": "Ench. 1952, n° 164 (d'après le livret)",
+   "ref": "Ench. 1952, n° 164 (acte de communion spirituelle, quelle qu’en soit la formule)",
    "frequence": "chaque fois",
    "partielles": [
     {
      "ans": 3,
      "texte": "3 ans (acte de communion spirituelle)"
     }
-   ]
+   ],
+   "langue": "français",
+   "note": "Concession pour des prières quelconques (ou pour l’acte, quelle qu’en soit la formule) : la langue est indifférente."
   },
   "jardin:chaque-vendredi-devant-le-crucifix": {
-   "ref": "Ench. 1952 (d'après le livret)",
+   "ref": "Ench. 1952, n° 196 (sept Pater, Ave et Gloria le vendredi) et n° 201 (En ego, o bone et dulcissime Iesu)",
    "frequence": "chaque fois",
    "partielles": [
     {
      "ans": 7,
-     "texte": "7 ans (sept Pater, Ave et Gloria)"
+     "texte": "7 ans le vendredi (sept Pater, Ave et Gloria)",
+     "quand": {
+      "jours_semaine": [
+       5
+      ]
+     }
+    },
+    {
+     "ans": 10,
+     "texte": "10 ans (En ego, devant une image de Jésus crucifié)"
     }
-   ]
+   ],
+   "intention": "devant une image de Jésus crucifié",
+   "langue": "latin",
+   "note": "La traduction française d’En ego donnée par le livret n’est pas celle, approuvée, de Thésaurisons (n° 2 : « Me voici, ô bon et très doux Jésus, prosterné en votre présence… »)."
   },
   "jardin:a-saint-gabriel-archange": {
-   "ref": "Ench. 1952, nos 448-449 (d'après le livret)",
+   "ref": "Ench. 1952, n° 449 (Deus, qui inter ceteros Angelos)",
    "frequence": "chaque fois",
    "partielles": [
     {
      "ans": 3,
      "texte": "3 ans"
     }
-   ]
+   ],
+   "note": "Neuvaine de prières quelconques à saint Gabriel : 5 ans une fois le jour (n° 448), non comptée ici.",
+   "langue": "latin"
   },
   "jardin:les-sept-douleurs-de-marie": {
    "ref": "Ench. 1952, n° 383",
@@ -253,40 +301,44 @@
      },
      "remplace": 0
     }
-   ]
+   ],
+   "langue": "italien"
   },
   "jardin:les-sept-douleurs-et-les-sept-allegresses-de-saint-joseph": {
-   "ref": "Ench. 1952, n° 470 (vérifié sur le texte de l’Enchiridion ; le livret indiquait n° 410)",
+   "ref": "Ench. 1952, n° 470 (O Sposo purissimo di Maria ; le livret indiquait n° 410)",
    "frequence": "chaque fois",
    "partielles": [
     {
      "ans": 5,
      "texte": "5 ans"
     }
-   ]
+   ],
+   "langue": "italien"
   },
   "jardin:veni-creator-spiritus": {
-   "ref": "Ench. 1952 (d'après le livret)",
+   "ref": "Ench. 1952, n° 283",
    "frequence": "chaque fois",
    "partielles": [
     {
      "ans": 5,
-     "texte": "5 ans, avec ℣. Emitte et l'oraison"
+     "texte": "5 ans, avec le ℣. Emitte et l’oraison"
     }
-   ]
+   ],
+   "langue": "latin"
   },
   "jardin:ave-maris-stella": {
-   "ref": "Ench. 1952, n° 321 (d'après le livret)",
+   "ref": "Ench. 1952, n° 321",
    "frequence": "chaque fois",
    "partielles": [
     {
      "ans": 3,
      "texte": "3 ans"
     }
-   ]
+   ],
+   "langue": "latin"
   },
   "jardin:magnificat": {
-   "ref": "Ench. 1952, n° 320 (d'après le livret)",
+   "ref": "Ench. 1952, n° 320",
    "frequence": "chaque fois",
    "partielles": [
     {
@@ -306,27 +358,30 @@
      },
      "remplace": 0
     }
-   ]
+   ],
+   "langue": "latin"
   },
   "jardin:te-joseph-celebrent": {
-   "ref": "Ench. 1952, n° 463 (d'après le livret)",
+   "ref": "Ench. 1952, n° 463",
    "frequence": "chaque fois",
    "partielles": [
     {
      "ans": 3,
      "texte": "3 ans"
     }
-   ]
+   ],
+   "langue": "latin"
   },
   "jardin:auguste-reine-des-cieux": {
-   "ref": "Ench. 1952, n° 345 (d'après le livret)",
+   "ref": "Ench. 1952, n° 345",
    "frequence": "chaque fois",
    "partielles": [
     {
      "jours": 500,
      "texte": "500 jours"
     }
-   ]
+   ],
+   "langue": "français"
   },
   "paroissien:acte-de-foi": {
    "ref": "Ench. 1952, n° 36 (actes des vertus théologales, quelle que soit la formule d'un catéchisme approuvé)",
@@ -336,7 +391,9 @@
      "ans": 3,
      "texte": "3 ans (acte de foi)"
     }
-   ]
+   ],
+   "langue": "français",
+   "note": "Concession pour des prières quelconques (ou pour l’acte, quelle qu’en soit la formule) : la langue est indifférente."
   },
   "paroissien:acte-d-esperance": {
    "ref": "Ench. 1952, n° 36 (actes des vertus théologales, quelle que soit la formule d'un catéchisme approuvé)",
@@ -346,7 +403,9 @@
      "ans": 3,
      "texte": "3 ans (acte d'espérance)"
     }
-   ]
+   ],
+   "langue": "français",
+   "note": "Concession pour des prières quelconques (ou pour l’acte, quelle qu’en soit la formule) : la langue est indifférente."
   },
   "paroissien:acte-de-charite": {
    "ref": "Ench. 1952, n° 36 (actes des vertus théologales, quelle que soit la formule d'un catéchisme approuvé)",
@@ -356,7 +415,9 @@
      "ans": 3,
      "texte": "3 ans (acte de charité)"
     }
-   ]
+   ],
+   "langue": "français",
+   "note": "Concession pour des prières quelconques (ou pour l’acte, quelle qu’en soit la formule) : la langue est indifférente."
   },
   "paroissien:priere-du-matin": {
    "ref": "Ench. 1952, n° 36, 43 et 691",
@@ -383,7 +444,9 @@
      "ans": 3,
      "texte": "3 ans (acte de charité)"
     }
-   ]
+   ],
+   "langue": "latin",
+   "note": "Le Credo et le Confiteor y sont en latin, langue de la concession ; les actes des vertus théologales valent quelle qu’en soit la formule d’un catéchisme approuvé (n° 36)."
   },
   "paroissien:priere-du-soir": {
    "ref": "Ench. 1952, n° 43 et 691",
@@ -398,7 +461,9 @@
      "jours": 300,
      "texte": "300 jours (Confiteor, n° 691, avec contrition)"
     }
-   ]
+   ],
+   "langue": "latin",
+   "note": "Le Credo et le Confiteor y sont en français : aucune traduction approuvée n’a été trouvée pour ces textes ; pour l’indulgence, les dire en latin (comme dans la prière du matin)."
   },
   "sambucy:chapelet-saint-dominique": {
    "ref": "Ench. 1952, n° 395",
@@ -410,7 +475,8 @@
      "texte": "5 ans (un tiers du Rosaire)"
     }
    ],
-   "note": "10 ans, une fois le jour, si on le récite avec d'autres, en public ou en privé (n° 395 b) : non compté ici."
+   "note": "10 ans, une fois le jour, si on le récite avec d’autres, en public ou en privé (n° 395 b) : non compté ici. L’indulgence est attachée à la récitation du Rosaire (Pater, Ave, Gloria, en méditant les mystères) ; les prières ajoutées (clausules, oraisons de Montfort) ne sont pas indulgenciées pour elles-mêmes.",
+   "langue": "latin"
   },
   "montfort:petite-couronne": {
    "ref": "Ench. 1952, n° 293 (℣. Dignare me), 43 (Credo) et 333 (Sub tuum), comptés seuls",
@@ -429,7 +495,8 @@
      "texte": "5 ans (Sub tuum)"
     }
    ],
-   "note": "La petite couronne elle-même n'a pas de concession propre retrouvée dans l'Enchiridion de 1952 ; seules ses parties indulgenciées sont comptées."
+   "note": "La petite couronne elle-même n'a pas de concession propre retrouvée dans l'Enchiridion de 1952 ; seules ses parties indulgenciées sont comptées.",
+   "langue": "latin"
   },
   "weber:alma-redemptoris": {
    "ref": "Ench. 1952, n° 323",
@@ -439,7 +506,8 @@
      "ans": 5,
      "texte": "5 ans"
     }
-   ]
+   ],
+   "langue": "latin"
   },
   "weber:ave-regina-caelorum": {
    "ref": "Ench. 1952, n° 324 et n° 293 (℣. Dignare me)",
@@ -453,7 +521,8 @@
      "jours": 300,
      "texte": "300 jours (℣. Dignare me)"
     }
-   ]
+   ],
+   "langue": "latin"
   },
   "weber:souvenez-vous": {
    "ref": "Ench. 1952, n° 339",
@@ -463,7 +532,9 @@
      "ans": 3,
      "texte": "3 ans"
     }
-   ]
+   ],
+   "langue": "latin",
+   "traduction": "Thésaurisons pour le ciel (1941), traduction certifiée fidèle selon le can. 934 § 2 (n° 123)"
   },
   "weber:stabat-mater": {
    "ref": "Ench. 1952, n° 378",
@@ -473,7 +544,8 @@
      "ans": 7,
      "texte": "7 ans"
     }
-   ]
+   ],
+   "langue": "latin"
   },
   "weber:priere-notre-dame-sept-douleurs": {
    "ref": "Ench. 1952, n° 380 et 381",
@@ -489,7 +561,8 @@
      }
     }
    ],
-   "note": "Hors de septembre, 5 ans une fois le jour si l'on a le propos de prier ainsi neuf jours de suite en l'honneur de Notre-Dame des Douleurs (n° 380). Ces indulgences valent pour l'ensemble des prières à Notre-Dame des Douleurs du jour, non pour chacune."
+   "note": "Hors de septembre, 5 ans une fois le jour si l'on a le propos de prier ainsi neuf jours de suite en l'honneur de Notre-Dame des Douleurs (n° 380). Ces indulgences valent pour l'ensemble des prières à Notre-Dame des Douleurs du jour, non pour chacune. Concession pour des prières quelconques (ou pour l’acte, quelle qu’en soit la formule) : la langue est indifférente.",
+   "langue": "français"
   },
   "weber:priere-saint-bonaventure-mere-des-douleurs": {
    "ref": "Ench. 1952, n° 380 et 381",
@@ -505,7 +578,8 @@
      }
     }
    ],
-   "note": "Hors de septembre, 5 ans une fois le jour si l'on a le propos de prier ainsi neuf jours de suite en l'honneur de Notre-Dame des Douleurs (n° 380). Ces indulgences valent pour l'ensemble des prières à Notre-Dame des Douleurs du jour, non pour chacune."
+   "note": "Hors de septembre, 5 ans une fois le jour si l'on a le propos de prier ainsi neuf jours de suite en l'honneur de Notre-Dame des Douleurs (n° 380). Ces indulgences valent pour l'ensemble des prières à Notre-Dame des Douleurs du jour, non pour chacune. Concession pour des prières quelconques (ou pour l’acte, quelle qu’en soit la formule) : la langue est indifférente.",
+   "langue": "français"
   },
   "weber:o-quot-undis": {
    "ref": "Ench. 1952, n° 380 et 381",
@@ -521,7 +595,8 @@
      }
     }
    ],
-   "note": "Hors de septembre, 5 ans une fois le jour si l'on a le propos de prier ainsi neuf jours de suite en l'honneur de Notre-Dame des Douleurs (n° 380). Ces indulgences valent pour l'ensemble des prières à Notre-Dame des Douleurs du jour, non pour chacune."
+   "note": "Hors de septembre, 5 ans une fois le jour si l'on a le propos de prier ainsi neuf jours de suite en l'honneur de Notre-Dame des Douleurs (n° 380). Ces indulgences valent pour l'ensemble des prières à Notre-Dame des Douleurs du jour, non pour chacune. Concession pour des prières quelconques (ou pour l’acte, quelle qu’en soit la formule) : la langue est indifférente.",
+   "langue": "français"
   },
   "weber:priere-saint-louis-de-gonzague": {
    "ref": "Ench. 1952, n° 343",
@@ -532,7 +607,8 @@
      "texte": "3 ans"
     }
    ],
-   "note": "L'Enchiridion donne le texte latin (O Domina mea, sancta Maria) ; Weber en donne une traduction libre."
+   "langue": "latin",
+   "traduction": "Thésaurisons pour le ciel (1941), traduction certifiée fidèle selon le can. 934 § 2 (n° 125)"
   },
   "weber:priere-du-p-zucchi": {
    "ref": "Ench. 1952, n° 340",
@@ -543,7 +619,9 @@
      "texte": "500 jours"
     }
    ],
-   "note": "L'Enchiridion fait précéder l'offrande d'un Ave Maria."
+   "note": "L'Enchiridion fait précéder l'offrande d'un Ave Maria.",
+   "langue": "latin",
+   "traduction": "Thésaurisons pour le ciel (1941), traduction certifiée fidèle selon le can. 934 § 2 (n° 124)"
   },
   "weber:demande-d-une-bonne-mort": {
    "ref": "Ench. 1952, n° 642",
@@ -553,7 +631,9 @@
      "jours": 500,
      "texte": "500 jours"
     }
-   ]
+   ],
+   "langue": "latin",
+   "traduction": "Thésaurisons pour le ciel (1941), traduction certifiée fidèle selon le can. 934 § 2 (n° 492)"
   },
   "weber:priere-tres-saint-coeur-de-marie": {
    "ref": "Ench. 1952, n° 393",
@@ -564,7 +644,9 @@
      "texte": "500 jours"
     }
    ],
-   "note": "Weber donne une traduction abrégée de la prière ; il cite l'ancienne concession de Pie VII (60 jours)."
+   "note": "Weber citait l’ancienne concession de Pie VII (60 jours).",
+   "langue": "italien",
+   "traduction": "Thésaurisons pour le ciel (1941), traduction certifiée fidèle selon le can. 934 § 2 (n° 137)"
   },
   "weber:priere-notre-dame-du-bon-conseil": {
    "ref": "Ench. 1952, n° 429",
@@ -575,7 +657,9 @@
      "texte": "500 jours"
     }
    ],
-   "note": "Weber indique l'ancienne concession (100 jours)."
+   "note": "Weber indique l'ancienne concession (100 jours).",
+   "langue": "italien",
+   "traduction": "Thésaurisons pour le ciel (1941), traduction certifiée fidèle selon le can. 934 § 2 (n° 298)"
   },
   "weber:trois-prieres-perpetuel-secours": {
    "ref": "Ench. 1952, n° 427",
@@ -586,7 +670,8 @@
      "texte": "500 jours"
     }
    ],
-   "note": "Pour les trois prières, chacune suivie de l'Ave Maria (trois dans l'Enchiridion, cinq dans Weber). Weber indique l'ancienne concession de Pie IX (100 jours par prière, une fois le jour)."
+   "note": "Trois prières, chacune suivie de trois Ave Maria dans l’Enchiridion (Weber en met cinq). Thésaurisons ne donne pas leur traduction. Weber indiquait l’ancienne concession de Pie IX.",
+   "langue": "italien"
   },
   "paroissien:te-deum": {
    "ref": "Ench. 1952, n° 684 a)",
@@ -597,7 +682,8 @@
      "texte": "5 ans"
     }
    ],
-   "intention": "En action de grâces pour les bienfaits reçus."
+   "intention": "En action de grâces pour les bienfaits reçus.",
+   "langue": "latin"
   },
   "thesaurisons:action-de-graces": {
    "ref": "Ench. 1952, n° 683 (Thésaurisons, n° 500)",
@@ -607,18 +693,31 @@
      "jours": 300,
      "texte": "300 jours"
     }
-   ]
+   ],
+   "langue": "latin",
+   "traduction": "Thésaurisons pour le ciel (1941), traduction certifiée fidèle selon le can. 934 § 2 (n° 500)"
   },
   "weber:petit-chapelet-immaculee-conception": {
-   "ref": "Ench. 1952, n° 357",
+   "ref": "Ench. 1952, n° 357 (O Maria concepita senza peccato), n° 636 (Jésus, Marie, Joseph, je vous donne mon cœur) et n° 339 (Souvenez-vous)",
    "frequence": "chaque fois",
    "partielles": [
     {
-     "jours": 3600,
-     "texte": "12 × 300 jours"
+     "jours": 300,
+     "repetitions": 12,
+     "texte": "12 × 300 jours (Ô Marie conçue sans péché…)"
+    },
+    {
+     "ans": 7,
+     "texte": "7 ans (Jésus, Marie, Joseph, je vous donne mon cœur…)"
+    },
+    {
+     "ans": 3,
+     "texte": "3 ans (Souvenez-vous)"
     }
    ],
-   "note": "Pour les douze invocations « O Marie, conçue sans péché » (300 jours chacune). Le « Souvenez-vous » et « Jésus, Marie, Joseph » ont leurs propres indulgences."
+   "note": "Les mots de l’invocation sont ceux de Thésaurisons (n° 129). Le Souvenez-vous à dire est celui de Thésaurisons (n° 123), repris dans la pièce « Souvenez-vous ».",
+   "langue": "italien",
+   "traduction": "Thésaurisons pour le ciel (1941), traduction certifiée fidèle selon le can. 934 § 2 (n° 129 et 490 et 123)"
   },
   "weber:neuvaine-immaculee-conception": {
    "ref": "Ench. 1952, n° 361",
@@ -630,7 +729,8 @@
     }
    ],
    "intention": "En l’honneur de la Vierge Immaculée, avec le propos de prier ainsi neuf jours de suite avant sa fête.",
-   "note": "Faite publiquement à l'église : 7 ans chaque jour. En décembre, toute pratique en l'honneur de l'Immaculée vaut aussi 5 ans une fois le jour (n° 364)."
+   "note": "Faite publiquement à l'église : 7 ans chaque jour. En décembre, toute pratique en l'honneur de l'Immaculée vaut aussi 5 ans une fois le jour (n° 364). Concession pour des prières quelconques (ou pour l’acte, quelle qu’en soit la formule) : la langue est indifférente.",
+   "langue": "français"
   },
   "liguori:neuvaine-sacre-coeur": {
    "ref": "Ench. 1952, n° 250",
@@ -642,7 +742,8 @@
     }
    ],
    "intention": "En l’honneur du Sacré-Cœur, avec le propos de prier ainsi neuf jours de suite.",
-   "note": "Faite publiquement à l'église : 10 ans chaque jour."
+   "note": "Faite publiquement à l'église : 10 ans chaque jour. Concession pour des prières quelconques (ou pour l’acte, quelle qu’en soit la formule) : la langue est indifférente.",
+   "langue": "français"
   },
   "neuvaines-1886:nativite": {
    "ref": "Ench. 1952, n° 326",
@@ -653,7 +754,9 @@
      "texte": "5 ans, une fois le jour"
     }
    ],
-   "intention": "En l’honneur de la Nativité de la sainte Vierge, avec le propos de prier ainsi neuf jours de suite."
+   "intention": "En l’honneur de la Nativité de la sainte Vierge, avec le propos de prier ainsi neuf jours de suite.",
+   "langue": "français",
+   "note": "Concession pour des prières quelconques (ou pour l’acte, quelle qu’en soit la formule) : la langue est indifférente."
   },
   "neuvaines-1886:assomption": {
    "ref": "Ench. 1952, n° 326",
@@ -664,7 +767,9 @@
      "texte": "5 ans, une fois le jour"
     }
    ],
-   "intention": "En l’honneur de l’Assomption de la sainte Vierge, avec le propos de prier ainsi neuf jours de suite."
+   "intention": "En l’honneur de l’Assomption de la sainte Vierge, avec le propos de prier ainsi neuf jours de suite.",
+   "langue": "français",
+   "note": "Concession pour des prières quelconques (ou pour l’acte, quelle qu’en soit la formule) : la langue est indifférente."
   },
   "liguori:neuvaine-de-noel": {
    "ref": "Ench. 1952, n° 124",
@@ -676,7 +781,8 @@
     }
    ],
    "intention": "En l’honneur du divin Enfant Jésus, avec le propos de prier ainsi neuf jours de suite avant Noël.",
-   "note": "Faite publiquement à l'église : 10 ans chaque jour."
+   "note": "Faite publiquement à l'église : 10 ans chaque jour. Concession pour des prières quelconques (ou pour l’acte, quelle qu’en soit la formule) : la langue est indifférente.",
+   "langue": "français"
   },
   "thesaurisons:sainte-face-therese": {
    "ref": "Ench. 1952, n° 208 (auparavant : Thésaurisons, n° 235 (Preces et Pia Opera 1938, n° 178 ; S. P. A., 5 avr. 1931))",
@@ -700,7 +806,9 @@
      "texte": "5 × 500 jours (O Crux, ave, spes unica)"
     }
    ],
-   "note": "Dit 7 fois : 7 × 500 jours."
+   "note": "Dit 7 fois : 7 × 500 jours.",
+   "langue": "latin",
+   "traduction": "Thésaurisons pour le ciel (1941), traduction certifiée fidèle selon le can. 934 § 2 (n° 70)"
   },
   "thesaurisons:jac-100": {
    "ref": "Ench. 1952, n° 274 (auparavant : Thésaurisons, n° 100 (Preces et Pia Opera 1938, n° 256))",
@@ -1157,9 +1265,18 @@
    "traduction": "Thésaurisons pour le ciel (1941), traduction certifiée fidèle selon le can. 934 § 2"
   },
   "hortus:triple-couronne-1": {
-   "ref": "Ench. 1952, n° 221 (Jesu, mitis), n° 386 (Dulce Cor Mariæ), n° 70 (Mon Jésus, miséricorde), n° 287 (Veni, Sancte Spiritus)",
+   "ref": "Ench. 1952, n° 287 (Veni, Sancte Spiritus), 223 (Aimé soit partout), 227 (Iesu, mitis), 224 (Dolce Cuor del mio Gesù), 386 (Dolce Cuore di Maria) et 70 (Gesù mio, misericordia)",
    "frequence": "chaque fois",
    "partielles": [
+    {
+     "ans": 5,
+     "texte": "5 ans (Veni, Sancte Spiritus, avec le ℣. Emitte et l’oraison)"
+    },
+    {
+     "jours": 300,
+     "repetitions": 5,
+     "texte": "5 × 300 jours (Aimé soit partout le Sacré-Cœur de Jésus)"
+    },
     {
      "jours": 500,
      "repetitions": 5,
@@ -1167,25 +1284,37 @@
     },
     {
      "jours": 300,
+     "repetitions": 50,
+     "texte": "50 × 300 jours (Dulce Cor Jesu, sur chaque grain des dizaines)"
+    },
+    {
+     "jours": 300,
      "repetitions": 5,
-     "texte": "5 × 300 jours (Dulce Cor Mariæ, sis salus mea)"
+     "texte": "5 × 300 jours (Dulce Cor Mariæ, à chaque mystère)"
     },
     {
      "jours": 300,
      "repetitions": 5,
      "texte": "5 × 300 jours (Mon Jésus, miséricorde !, cinq fois)"
-    },
-    {
-     "ans": 5,
-     "texte": "5 ans (Veni, Sancte Spiritus, avec ℣. Emitte et l'oraison)"
     }
    ],
-   "note": "« Dulce Cor Jesu, fac ut te magis ac magis diligam » n'est indulgencié qu'avec Pater, Ave et Gloria devant une image du Sacré-Cœur (n° 248) : non compté."
+   "note": "Dulce Cor Jesu et Dulce Cor Mariæ sont concédés en italien (n° 224 et 386) : leur forme latine n’est pas une traduction approuvée. Dire l’italien ou le français de Thésaurisons : « Doux Cœur de mon Jésus, faites que je vous aime de plus en plus » (n° 82 ; le livret porte « faites que je vous aime toujours de plus en plus ») et « Doux Cœur de Marie, soyez mon salut » (n° 134). « Aimé soit partout le Sacré-Cœur de Jésus » est concédé en français (n° 223). Le ℟. latin du livret « fac cor meum sicut Cor tuum » s’écarte du texte de l’Enchiridion (« fac cor nostrum secundum Cor tuum ») ; sa traduction française entre crochets est celle de Thésaurisons.",
+   "langue": "latin",
+   "traduction": "Thésaurisons pour le ciel (1941), traduction certifiée fidèle selon le can. 934 § 2, pour « Jésus, doux et humble de cœur, rendez mon cœur semblable au vôtre » (n° 85), « Doux Cœur de Marie, soyez mon salut » (n° 134) et « Mon Jésus, miséricorde » (n° 33)"
   },
   "hortus:triple-couronne-2": {
-   "ref": "Ench. 1952, n° 221 (Jesu, mitis), n° 386 (Dulce Cor Mariæ), n° 70 (Mon Jésus, miséricorde), n° 287 (Veni, Sancte Spiritus)",
+   "ref": "Ench. 1952, n° 287 (Veni, Sancte Spiritus), 223 (Aimé soit partout), 227 (Iesu, mitis), 224 (Dolce Cuor del mio Gesù), 386 (Dolce Cuore di Maria) et 70 (Gesù mio, misericordia)",
    "frequence": "chaque fois",
    "partielles": [
+    {
+     "ans": 5,
+     "texte": "5 ans (Veni, Sancte Spiritus, avec le ℣. Emitte et l’oraison)"
+    },
+    {
+     "jours": 300,
+     "repetitions": 5,
+     "texte": "5 × 300 jours (Aimé soit partout le Sacré-Cœur de Jésus)"
+    },
     {
      "jours": 500,
      "repetitions": 5,
@@ -1193,25 +1322,37 @@
     },
     {
      "jours": 300,
+     "repetitions": 50,
+     "texte": "50 × 300 jours (Dulce Cor Jesu, sur chaque grain des dizaines)"
+    },
+    {
+     "jours": 300,
      "repetitions": 5,
-     "texte": "5 × 300 jours (Dulce Cor Mariæ, sis salus mea)"
+     "texte": "5 × 300 jours (Dulce Cor Mariæ, à chaque mystère)"
     },
     {
      "jours": 300,
      "repetitions": 5,
      "texte": "5 × 300 jours (Mon Jésus, miséricorde !, cinq fois)"
-    },
-    {
-     "ans": 5,
-     "texte": "5 ans (Veni, Sancte Spiritus, avec ℣. Emitte et l'oraison)"
     }
    ],
-   "note": "« Dulce Cor Jesu, fac ut te magis ac magis diligam » n'est indulgencié qu'avec Pater, Ave et Gloria devant une image du Sacré-Cœur (n° 248) : non compté."
+   "note": "Dulce Cor Jesu et Dulce Cor Mariæ sont concédés en italien (n° 224 et 386) : leur forme latine n’est pas une traduction approuvée. Dire l’italien ou le français de Thésaurisons : « Doux Cœur de mon Jésus, faites que je vous aime de plus en plus » (n° 82 ; le livret porte « faites que je vous aime toujours de plus en plus ») et « Doux Cœur de Marie, soyez mon salut » (n° 134). « Aimé soit partout le Sacré-Cœur de Jésus » est concédé en français (n° 223). Le ℟. latin du livret « fac cor meum sicut Cor tuum » s’écarte du texte de l’Enchiridion (« fac cor nostrum secundum Cor tuum ») ; sa traduction française entre crochets est celle de Thésaurisons.",
+   "langue": "latin",
+   "traduction": "Thésaurisons pour le ciel (1941), traduction certifiée fidèle selon le can. 934 § 2, pour « Jésus, doux et humble de cœur, rendez mon cœur semblable au vôtre » (n° 85), « Doux Cœur de Marie, soyez mon salut » (n° 134) et « Mon Jésus, miséricorde » (n° 33)"
   },
   "hortus:triple-couronne-3": {
-   "ref": "Ench. 1952, n° 221 (Jesu, mitis), n° 386 (Dulce Cor Mariæ), n° 70 (Mon Jésus, miséricorde), n° 287 (Veni, Sancte Spiritus)",
+   "ref": "Ench. 1952, n° 287 (Veni, Sancte Spiritus), 223 (Aimé soit partout), 227 (Iesu, mitis), 224 (Dolce Cuor del mio Gesù), 386 (Dolce Cuore di Maria) et 70 (Gesù mio, misericordia)",
    "frequence": "chaque fois",
    "partielles": [
+    {
+     "ans": 5,
+     "texte": "5 ans (Veni, Sancte Spiritus, avec le ℣. Emitte et l’oraison)"
+    },
+    {
+     "jours": 300,
+     "repetitions": 5,
+     "texte": "5 × 300 jours (Aimé soit partout le Sacré-Cœur de Jésus)"
+    },
     {
      "jours": 500,
      "repetitions": 5,
@@ -1219,20 +1360,23 @@
     },
     {
      "jours": 300,
+     "repetitions": 50,
+     "texte": "50 × 300 jours (Dulce Cor Jesu, sur chaque grain des dizaines)"
+    },
+    {
+     "jours": 300,
      "repetitions": 5,
-     "texte": "5 × 300 jours (Dulce Cor Mariæ, sis salus mea)"
+     "texte": "5 × 300 jours (Dulce Cor Mariæ, à chaque mystère)"
     },
     {
      "jours": 300,
      "repetitions": 5,
      "texte": "5 × 300 jours (Mon Jésus, miséricorde !, cinq fois)"
-    },
-    {
-     "ans": 5,
-     "texte": "5 ans (Veni, Sancte Spiritus, avec ℣. Emitte et l'oraison)"
     }
    ],
-   "note": "« Dulce Cor Jesu, fac ut te magis ac magis diligam » n'est indulgencié qu'avec Pater, Ave et Gloria devant une image du Sacré-Cœur (n° 248) : non compté."
+   "note": "Dulce Cor Jesu et Dulce Cor Mariæ sont concédés en italien (n° 224 et 386) : leur forme latine n’est pas une traduction approuvée. Dire l’italien ou le français de Thésaurisons : « Doux Cœur de mon Jésus, faites que je vous aime de plus en plus » (n° 82 ; le livret porte « faites que je vous aime toujours de plus en plus ») et « Doux Cœur de Marie, soyez mon salut » (n° 134). « Aimé soit partout le Sacré-Cœur de Jésus » est concédé en français (n° 223). Le ℟. latin du livret « fac cor meum sicut Cor tuum » s’écarte du texte de l’Enchiridion (« fac cor nostrum secundum Cor tuum ») ; sa traduction française entre crochets est celle de Thésaurisons.",
+   "langue": "latin",
+   "traduction": "Thésaurisons pour le ciel (1941), traduction certifiée fidèle selon le can. 934 § 2, pour « Jésus, doux et humble de cœur, rendez mon cœur semblable au vôtre » (n° 85), « Doux Cœur de Marie, soyez mon salut » (n° 134) et « Mon Jésus, miséricorde » (n° 33)"
   },
   "hortus:chapelet-joyeux": {
    "ref": "Ench. 1952, n° 395",
@@ -1244,7 +1388,8 @@
      "texte": "5 ans (un tiers du Rosaire)"
     }
    ],
-   "note": "10 ans, une fois le jour, si on le récite avec d'autres, en public ou en privé (n° 395 b) : non compté ici."
+   "note": "10 ans, une fois le jour, si on le récite avec d’autres, en public ou en privé (n° 395 b) : non compté ici. L’indulgence est attachée à la récitation du Rosaire (Pater, Ave, Gloria, en méditant les mystères) ; les prières ajoutées (clausules, oraisons de Montfort) ne sont pas indulgenciées pour elles-mêmes.",
+   "langue": "latin"
   },
   "hortus:chapelet-douloureux": {
    "ref": "Ench. 1952, n° 395",
@@ -1256,7 +1401,8 @@
      "texte": "5 ans (un tiers du Rosaire)"
     }
    ],
-   "note": "10 ans, une fois le jour, si on le récite avec d'autres, en public ou en privé (n° 395 b) : non compté ici."
+   "note": "10 ans, une fois le jour, si on le récite avec d’autres, en public ou en privé (n° 395 b) : non compté ici. L’indulgence est attachée à la récitation du Rosaire (Pater, Ave, Gloria, en méditant les mystères) ; les prières ajoutées (clausules, oraisons de Montfort) ne sont pas indulgenciées pour elles-mêmes.",
+   "langue": "latin"
   },
   "hortus:chapelet-glorieux": {
    "ref": "Ench. 1952, n° 395",
@@ -1268,7 +1414,8 @@
      "texte": "5 ans (un tiers du Rosaire)"
     }
    ],
-   "note": "10 ans, une fois le jour, si on le récite avec d'autres, en public ou en privé (n° 395 b) : non compté ici."
+   "note": "10 ans, une fois le jour, si on le récite avec d’autres, en public ou en privé (n° 395 b) : non compté ici. L’indulgence est attachée à la récitation du Rosaire (Pater, Ave, Gloria, en méditant les mystères) ; les prières ajoutées (clausules, oraisons de Montfort) ne sont pas indulgenciées pour elles-mêmes.",
+   "langue": "latin"
   }
  },
  "sans_compte": {
