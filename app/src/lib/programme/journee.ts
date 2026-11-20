@@ -111,6 +111,7 @@ export function journee(programme: Programme, ctx: Contexte): Journee {
 					...(s.titre && { titre: s.titre }),
 					...(s.depliable && { depliable: true }),
 					...(c.nom && { nom: c.nom }),
+					...(typeof s.texte !== 'string' && { variante: true }),
 					...(s.extrait && { extrait: s.extrait }),
 					...(s.extrait?.rang_du_jour && { rang })
 				};

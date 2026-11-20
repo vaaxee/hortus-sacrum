@@ -13,6 +13,7 @@ import type {
 	Texte,
 	Version
 } from './types';
+import type { ReglageProgramme } from './programme/types.ts';
 import { TABLES } from './types';
 
 /** Base locale (IndexedDB). La synchronisation entre appareils viendra s'y brancher (étape 6). */
@@ -28,6 +29,8 @@ export class HebdoDB extends Dexie {
 	coches!: Table<Coche, number>;
 	faits!: Table<Fait, number>;
 	meta!: Table<{ cle: string; valeur: unknown }, string>;
+	/** Réglages de l'utilisateur sur le programme unique, et ses ajouts (programme/types.ts). */
+	programme!: Table<ReglageProgramme, string>;
 	/** File d'envoi vers le serveur (voir sync.ts). */
 	sortie!: Table<{ cle: string; collection: string; id: string; efface: boolean; contenu: unknown }, string>;
 
@@ -47,6 +50,7 @@ export class HebdoDB extends Dexie {
 		});
 		this.version(2).stores({ faits: '++id, [pratiqueId+date], pratiqueId, date' });
 		this.version(3).stores({ sortie: 'cle' });
+		this.version(4).stores({ programme: 'id' });
 	}
 }
 
@@ -157,7 +161,7 @@ export interface Sauvegarde {
 
 export async function exporter(): Promise<Sauvegarde> {
 	const tables: Record<string, unknown[]> = {};
-	for (const nom of [...TABLES, 'versions', 'coches', 'faits', 'meta'] as const) {
+	for (const nom of [...TABLES, 'programme', 'versions', 'coches', 'faits', 'meta'] as const) {
 		tables[nom] = await (db[nom] as Table).toArray();
 	}
 	return { format: 'hebdomada', version: 1, date: maintenant(), tables };
@@ -167,7 +171,7 @@ export async function exporter(): Promise<Sauvegarde> {
 export async function importer(s: Sauvegarde, mode: 'remplacer' | 'fusionner'): Promise<number> {
 	if (s?.format !== 'hebdomada' || !s.tables) throw new Error('Ce fichier n’est pas une sauvegarde Hebdomada.');
 	let n = 0;
-	const noms = [...TABLES, 'versions', 'coches', 'faits', 'meta'] as const;
+	const noms = [...TABLES, 'programme', 'versions', 'coches', 'faits', 'meta'] as const;
 	await db.transaction(
 		'rw',
 		noms.map((x) => db[x] as Table),

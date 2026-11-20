@@ -17,6 +17,7 @@ export const COLLECTIONS = [
 	'textes',
 	'pratiques',
 	'liste',
+	'programme',
 	'recueils',
 	'meditations',
 	'fetes',
