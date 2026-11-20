@@ -48,6 +48,16 @@ Les points réglés sont gardés pour l'historique. Dernière mise à jour : 20 
   - **Reste à faire** : trouver une traduction latine ancienne des méthodes (piste : une édition des œuvres pour la cause
     de béatification, 1838-1888, ou une *Methodus* imprimée pour les confréries du Rosaire). Sinon, l'utilisateur
     tranche : garder le français seul, et l'écrire dans la SPEC § 10.3.
+- **Chapelet, invocations de fin de dizaine** (SPEC § 11, principe 2 ; demande du 18 nov. : trois invocations). Une est
+  en place : « Ô Marie conçue sans péché, priez pour nous qui avons recours à vous » (Weber 1899, p. 477,
+  `prog:fin-dizaine-o-marie`). **Deux restent sans source ancienne**, et ne sont donc pas dites dans l'app :
+  - « Ô mon Jésus, pardonnez-nous nos péchés… » (invocation citée par l'utilisateur) ;
+  - « Cœur immaculé de Marie, priez pour nous… » (scapulaire vert).
+
+  Elles sont aussi notées dans `data/programme/programme.json` › `a_fournir` (point `fin-dizaine` de `prog:chapelet`).
+  Pistes : pour la première, un recueil ancien imprimé avec approbation (La Porte Latine en donne une version, sans
+  source imprimée citée) ; pour la seconde, une notice ancienne du scapulaire vert (Justine Bisqueyburu, 1840 ; Pie IX,
+  1863 et 1870).
 
 ## Traductions approuvées à trouver (20 novembre 2026)
 
