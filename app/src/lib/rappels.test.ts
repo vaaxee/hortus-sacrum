@@ -10,22 +10,23 @@ const jours: Record<string, { office: string; rang: string; jeune_abstinence: { 
 	'2026-12-08': { office: 'Immaculée Conception', rang: '1re cl.', jeune_abstinence: null }
 };
 const ctx = {
-	liste: [
-		{
-			id: 'l1',
-			titre: 'Angélus',
-			moment: 'journee',
-			etiquette: 'ordinaire',
-			ordre: 1,
-			jours: [true, true, true, true, true, true, true],
-			rappels: ['06:00', '12:00', '18:00'],
-			textes: ['paroissien:angelus'],
-			actif: true,
-			origine: 'officielle',
-			creeLe: '',
-			modifieLe: ''
-		}
-	],
+	programme: {
+		version: 1,
+		entrees: [
+			{
+				id: 'prog:angelus',
+				titre: 'Angélus',
+				revision: 1,
+				rang: 'praecipua',
+				source: 'test',
+				page: { moment: 'journee', ordre: 30, heures: ['06:00', '12:00', '18:00'], sections: [{ texte: 'paroissien:angelus' }] }
+			}
+		],
+		plan: {},
+		formules: [],
+		a_fournir: []
+	},
+	reglages: [],
 	pratiques: [],
 	fetes: [
 		{

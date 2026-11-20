@@ -183,8 +183,8 @@ describe('journee()', () => {
 
 	it('les réglages : ordre et durée changés, entrée livrée désactivée', () => {
 		const e = appliquerReglages(PROGRAMME.entrees, [
-			{ id: 'prog:chapelet', ordre: 5, duree: 25 },
-			{ id: 'prog:brigitte', actif: false }
+			{ id: 'prog:chapelet', ordre: 5, duree: 25, modifieLe: '' },
+			{ id: 'prog:brigitte', actif: false, modifieLe: '' }
 		]);
 		expect(e.find((x) => x.id === 'prog:chapelet')).toMatchObject({ duree: 25, page: { ordre: 5 } });
 		expect(e.some((x) => x.id === 'prog:brigitte')).toBe(false);

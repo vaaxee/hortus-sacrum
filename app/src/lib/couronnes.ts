@@ -169,7 +169,7 @@ function joursCoches(coches: Coche[]): Map<string, Set<string>> {
 /** Mois entiers : la ligne « Dévotion du mois » cochée chaque jour d'un mois civil terminé. */
 function deMois(liste: ElementListe[], parLigne: Map<string, Set<string>>, aujourdhui: string): Couronne[] {
 	const out: Couronne[] = [];
-	const lignes = liste.filter((e) => e.titre.startsWith('Dévotion du mois'));
+	const lignes = liste.filter((e) => e.titre?.startsWith('Dévotion du mois'));
 	const parMois = new Map<string, number>();
 	for (const e of lignes) {
 		const jours = parLigne.get(e.id);
@@ -205,7 +205,7 @@ function deMois(liste: ElementListe[], parLigne: Map<string, Set<string>>, aujou
 function deConstance(liste: ElementListe[], parLigne: Map<string, Set<string>>, aujourdhui: string): Couronne[] {
 	const out: Couronne[] = [];
 	for (const e of liste) {
-		if (!e.jours.every(Boolean) || e.supprimeLe) continue;
+		if (!e.jours?.every(Boolean) || e.supprimeLe) continue;
 		const jours = [...(parLigne.get(e.id) ?? [])].filter((d) => d <= aujourdhui).sort();
 		if (jours.length < PALIERS[0][0]) continue;
 		const fois = new Map<number, number>();
@@ -310,13 +310,26 @@ export function couronnes(p: {
 /** Toutes les couronnes, d'après la base locale. */
 export async function couronnesDeLaBase(aujourdhui: string): Promise<Couronne[]> {
 	const { db } = await import('./db.ts');
-	const [pratiques, faits, liste, coches] = await Promise.all([
+	const { chargerProgramme } = await import('./programme/charger.ts');
+	const [pratiques, faits, ancienne, coches, programme, reglages] = await Promise.all([
 		db.pratiques.toArray(),
 		db.faits.toArray(),
 		db.liste.toArray(),
-		db.coches.toArray()
+		db.coches.toArray(),
+		chargerProgramme(),
+		db.programme.toArray()
 	]);
-	return couronnes({ pratiques, faits, liste, coches, aujourdhui });
+	// lignes du programme unique (les coches anciennes restent sur l'ancienne liste : leurs couronnes gardent leur nom)
+	const TOUS = [true, true, true, true, true, true, true];
+	const ligne = (id: string, titre: string, quotidienne: boolean): ElementListe =>
+		({ id, titre, jours: quotidienne ? TOUS : TOUS.map(() => false), actif: true }) as ElementListe;
+	const entrees = [...(programme?.entrees ?? []), ...reglages.flatMap((r) => (r.entree ? [r.entree] : []))];
+	const nouvelles = [
+		...entrees.filter((e) => e.page).map((e) => ligne(e.id, e.titre, !e.quand)),
+		// le mois se suit désormais par la méditation du jour, lue chaque jour du mois
+		ligne('lec:meditation', 'Dévotion du mois : méditation du jour', true)
+	];
+	return couronnes({ pratiques, faits, liste: [...ancienne, ...nouvelles], coches, aujourdhui });
 }
 
 /** Couronnes déjà montrées (sur cet appareil). */

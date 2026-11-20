@@ -1,0 +1,1 @@
+Bénissez-moi, ô bon Jésus, par votre toute-puissance, instruisez-moi par votre sagesse, remplissez mon âme de votre douceur, attirez-moi vers vous, unissez-vous à moi pour toujours par votre bonté. Ainsi soit-il.

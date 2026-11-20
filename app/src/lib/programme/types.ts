@@ -153,6 +153,8 @@ export interface ReglageProgramme {
 	heures?: string[];
 	quand?: Quand;
 	entree?: EntreeProgramme;
+	/** Date de la dernière modification (synchronisation : le plus récent l'emporte). */
+	modifieLe: string;
 }
 
 // ------------------------------------------------------------------ résultat
@@ -172,6 +174,8 @@ export interface SectionResolue {
 	nom?: string;
 	/** Libellé du champ libre. */
 	champ?: string;
+	/** Le texte varie (jour de la semaine, roue, temps) : son titre se montre sous celui de la ligne. */
+	variante?: boolean;
 	/** Rang du jour dans une série (neuvaine), pour un extrait `rang_du_jour`. */
 	rang?: number;
 }

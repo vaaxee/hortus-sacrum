@@ -348,5 +348,467 @@
    "edition": "11e édition, Paris, P. Lethielleux (Google Livres ; PDF fourni par l'utilisateur)",
    "page": "p. 281-285 (PDF p. 326-330)"
   }
+ },
+ {
+  "id": "gertrude:messe-commencement",
+  "titre": "Prière très-méritoire au commencement de la messe",
+  "partie": "Prières de sainte Gertrude",
+  "categorie": "",
+  "usage": "Au commencement de la messe. Promesses de Notre-Seigneur à sainte Gertrude pour qui entend dévotement la messe : autant de ses Saints envoyés à ses derniers moments qu'il aura entendu de messes, et le pardon pour le pécheur qui le demande. Le livre porte « infiiniment ».",
+  "indulgence": "",
+  "fichier": "messe-commencement.md",
+  "source": {
+   "ouvrage": "Prières de sainte Gertrude, ou Vrai esprit des prières que Jésus-Christ lui-même a révélées, pour la plupart, à sainte Gertrude et à sainte Mechtilde, traduites par le R. P. A. Denis, S. J.",
+   "edition": "11e édition, Paris, P. Lethielleux (Google Livres ; PDF fourni par l'utilisateur)",
+   "page": "p. 26-29 (PDF p. 71-74)"
+  }
+ },
+ {
+  "id": "gertrude:messe-kyrie",
+  "titre": "Prière à la très-sainte Trinité (pendant le Kyrie)",
+  "partie": "Prières de sainte Gertrude",
+  "categorie": "",
+  "usage": "A la messe, pendant le Kyrie. Tirée de Louis de Blois.",
+  "indulgence": "",
+  "fichier": "messe-kyrie.md",
+  "source": {
+   "ouvrage": "Prières de sainte Gertrude, ou Vrai esprit des prières que Jésus-Christ lui-même a révélées, pour la plupart, à sainte Gertrude et à sainte Mechtilde, traduites par le R. P. A. Denis, S. J.",
+   "edition": "11e édition, Paris, P. Lethielleux (Google Livres ; PDF fourni par l'utilisateur)",
+   "page": "p. 29-31 (PDF p. 74-76)"
+  }
+ },
+ {
+  "id": "gertrude:messe-gloria",
+  "titre": "Prière à Jésus (pendant le Gloria)",
+  "partie": "Prières de sainte Gertrude",
+  "categorie": "",
+  "usage": "A la messe, pendant le Gloria. Tirée de Louis de Blois.",
+  "indulgence": "",
+  "fichier": "messe-gloria.md",
+  "source": {
+   "ouvrage": "Prières de sainte Gertrude, ou Vrai esprit des prières que Jésus-Christ lui-même a révélées, pour la plupart, à sainte Gertrude et à sainte Mechtilde, traduites par le R. P. A. Denis, S. J.",
+   "edition": "11e édition, Paris, P. Lethielleux (Google Livres ; PDF fourni par l'utilisateur)",
+   "page": "p. 31-34 (PDF p. 76-79)"
+  }
+ },
+ {
+  "id": "gertrude:messe-profession-de-foi",
+  "titre": "Profession de foi (à l'Évangile et au Credo)",
+  "partie": "Prières de sainte Gertrude",
+  "categorie": "",
+  "usage": "A la messe, pendant l'Évangile et le Credo. Promesse de Notre-Seigneur à sainte Mechtilde : n'être jamais ébranlé dans la vraie foi jusqu'à la mort. Le livre porte « Melcht. ».",
+  "indulgence": "",
+  "fichier": "messe-profession-de-foi.md",
+  "source": {
+   "ouvrage": "Prières de sainte Gertrude, ou Vrai esprit des prières que Jésus-Christ lui-même a révélées, pour la plupart, à sainte Gertrude et à sainte Mechtilde, traduites par le R. P. A. Denis, S. J.",
+   "edition": "11e édition, Paris, P. Lethielleux (Google Livres ; PDF fourni par l'utilisateur)",
+   "page": "p. 34-36 (PDF p. 79-81)"
+  }
+ },
+ {
+  "id": "gertrude:messe-offertoire",
+  "titre": "Prière à l'offertoire",
+  "partie": "Prières de sainte Gertrude",
+  "categorie": "",
+  "usage": "A la messe, à l'offertoire et à l'Orate fratres. Parole de Notre-Seigneur à sainte Gertrude sur l'offrande de la bonne volonté. Le livre porte « Seignenr » dans la réponse à l'Orate fratres.",
+  "indulgence": "",
+  "fichier": "messe-offertoire.md",
+  "source": {
+   "ouvrage": "Prières de sainte Gertrude, ou Vrai esprit des prières que Jésus-Christ lui-même a révélées, pour la plupart, à sainte Gertrude et à sainte Mechtilde, traduites par le R. P. A. Denis, S. J.",
+   "edition": "11e édition, Paris, P. Lethielleux (Google Livres ; PDF fourni par l'utilisateur)",
+   "page": "p. 36-39 (PDF p. 81-84)"
+  }
+ },
+ {
+  "id": "gertrude:messe-secretes",
+  "titre": "Prière aux secrètes",
+  "partie": "Prières de sainte Gertrude",
+  "categorie": "",
+  "usage": "A la messe, aux secrètes.",
+  "indulgence": "",
+  "fichier": "messe-secretes.md",
+  "source": {
+   "ouvrage": "Prières de sainte Gertrude, ou Vrai esprit des prières que Jésus-Christ lui-même a révélées, pour la plupart, à sainte Gertrude et à sainte Mechtilde, traduites par le R. P. A. Denis, S. J.",
+   "edition": "11e édition, Paris, P. Lethielleux (Google Livres ; PDF fourni par l'utilisateur)",
+   "page": "p. 39-40 (PDF p. 84-85)"
+  }
+ },
+ {
+  "id": "gertrude:messe-preface",
+  "titre": "Prière à la préface",
+  "partie": "Prières de sainte Gertrude",
+  "categorie": "",
+  "usage": "A la messe, à la préface, puis un Pater. Promesse de Notre-Seigneur à sainte Mechtilde : la même grâce (le pardon et la réparation des négligences) pour tous ceux qui feront de même.",
+  "indulgence": "",
+  "fichier": "messe-preface.md",
+  "source": {
+   "ouvrage": "Prières de sainte Gertrude, ou Vrai esprit des prières que Jésus-Christ lui-même a révélées, pour la plupart, à sainte Gertrude et à sainte Mechtilde, traduites par le R. P. A. Denis, S. J.",
+   "edition": "11e édition, Paris, P. Lethielleux (Google Livres ; PDF fourni par l'utilisateur)",
+   "page": "p. 40-42 (PDF p. 85-87)"
+  }
+ },
+ {
+  "id": "gertrude:messe-canon",
+  "titre": "Prières au canon et à l'élévation",
+  "partie": "Prières de sainte Gertrude",
+  "categorie": "",
+  "usage": "A la messe, au canon, à l'adoration de la sainte Hostie et du calice.",
+  "indulgence": "",
+  "fichier": "messe-canon.md",
+  "source": {
+   "ouvrage": "Prières de sainte Gertrude, ou Vrai esprit des prières que Jésus-Christ lui-même a révélées, pour la plupart, à sainte Gertrude et à sainte Mechtilde, traduites par le R. P. A. Denis, S. J.",
+   "edition": "11e édition, Paris, P. Lethielleux (Google Livres ; PDF fourni par l'utilisateur)",
+   "page": "p. 42-45 (PDF p. 87-90)"
+  }
+ },
+ {
+  "id": "gertrude:messe-apres-elevation",
+  "titre": "Prière après l'élévation, et oblation",
+  "partie": "Prières de sainte Gertrude",
+  "categorie": "",
+  "usage": "A la messe, après l'élévation ; puis le Pater avec l'oblation pour les péchés de toute l'Église, « extrêmement agréable à Dieu » selon sainte Gertrude.",
+  "indulgence": "",
+  "fichier": "messe-apres-elevation.md",
+  "source": {
+   "ouvrage": "Prières de sainte Gertrude, ou Vrai esprit des prières que Jésus-Christ lui-même a révélées, pour la plupart, à sainte Gertrude et à sainte Mechtilde, traduites par le R. P. A. Denis, S. J.",
+   "edition": "11e édition, Paris, P. Lethielleux (Google Livres ; PDF fourni par l'utilisateur)",
+   "page": "p. 45-49 (PDF p. 90-94)"
+  }
+ },
+ {
+  "id": "gertrude:messe-agnus-dei",
+  "titre": "Prière à l'Agnus Dei",
+  "partie": "Prières de sainte Gertrude",
+  "categorie": "",
+  "usage": "A la messe, à l'Agnus Dei, selon ce que Notre-Seigneur a révélé à sainte Gertrude.",
+  "indulgence": "",
+  "fichier": "messe-agnus-dei.md",
+  "source": {
+   "ouvrage": "Prières de sainte Gertrude, ou Vrai esprit des prières que Jésus-Christ lui-même a révélées, pour la plupart, à sainte Gertrude et à sainte Mechtilde, traduites par le R. P. A. Denis, S. J.",
+   "edition": "11e édition, Paris, P. Lethielleux (Google Livres ; PDF fourni par l'utilisateur)",
+   "page": "p. 49-50 (PDF p. 94-95)"
+  }
+ },
+ {
+  "id": "gertrude:messe-domine-non-sum-dignus",
+  "titre": "Au Domine non sum dignus, et communion spirituelle",
+  "partie": "Prières de sainte Gertrude",
+  "categorie": "",
+  "usage": "A la messe, au Domine non sum dignus, avec la communion spirituelle de sainte Gertrude et de sainte Mechtilde.",
+  "indulgence": "",
+  "fichier": "messe-domine-non-sum-dignus.md",
+  "source": {
+   "ouvrage": "Prières de sainte Gertrude, ou Vrai esprit des prières que Jésus-Christ lui-même a révélées, pour la plupart, à sainte Gertrude et à sainte Mechtilde, traduites par le R. P. A. Denis, S. J.",
+   "edition": "11e édition, Paris, P. Lethielleux (Google Livres ; PDF fourni par l'utilisateur)",
+   "page": "p. 50-52 (PDF p. 95-97)"
+  }
+ },
+ {
+  "id": "gertrude:messe-communion",
+  "titre": "Prière à la communion de la messe",
+  "partie": "Prières de sainte Gertrude",
+  "categorie": "",
+  "usage": "A la messe, à la communion.",
+  "indulgence": "",
+  "fichier": "messe-communion.md",
+  "source": {
+   "ouvrage": "Prières de sainte Gertrude, ou Vrai esprit des prières que Jésus-Christ lui-même a révélées, pour la plupart, à sainte Gertrude et à sainte Mechtilde, traduites par le R. P. A. Denis, S. J.",
+   "edition": "11e édition, Paris, P. Lethielleux (Google Livres ; PDF fourni par l'utilisateur)",
+   "page": "p. 52 (PDF p. 97)"
+  }
+ },
+ {
+  "id": "gertrude:messe-postcommunion",
+  "titre": "Prière à la postcommunion",
+  "partie": "Prières de sainte Gertrude",
+  "categorie": "",
+  "usage": "A la messe, à la postcommunion. Le livre porte « Melcht. ».",
+  "indulgence": "",
+  "fichier": "messe-postcommunion.md",
+  "source": {
+   "ouvrage": "Prières de sainte Gertrude, ou Vrai esprit des prières que Jésus-Christ lui-même a révélées, pour la plupart, à sainte Gertrude et à sainte Mechtilde, traduites par le R. P. A. Denis, S. J.",
+   "edition": "11e édition, Paris, P. Lethielleux (Google Livres ; PDF fourni par l'utilisateur)",
+   "page": "p. 53-54 (PDF p. 98-99)"
+  }
+ },
+ {
+  "id": "gertrude:messe-benediction",
+  "titre": "Prière à la bénédiction",
+  "partie": "Prières de sainte Gertrude",
+  "categorie": "",
+  "usage": "A la messe, à la bénédiction.",
+  "indulgence": "",
+  "fichier": "messe-benediction.md",
+  "source": {
+   "ouvrage": "Prières de sainte Gertrude, ou Vrai esprit des prières que Jésus-Christ lui-même a révélées, pour la plupart, à sainte Gertrude et à sainte Mechtilde, traduites par le R. P. A. Denis, S. J.",
+   "edition": "11e édition, Paris, P. Lethielleux (Google Livres ; PDF fourni par l'utilisateur)",
+   "page": "p. 54 (PDF p. 99)"
+  }
+ },
+ {
+  "id": "gertrude:amour-de-dieu",
+  "titre": "Amour de Dieu",
+  "partie": "Prières de sainte Gertrude",
+  "categorie": "",
+  "usage": "Révélé à sainte Gertrude : une âme vraiment aimante apaise la colère de Dieu. Avec le « Désir d'une âme aimant Dieu » : promesse de Notre-Seigneur à sainte Gertrude, la récompense de qui désire l'aimer et le louer plus que toute créature. Le livre n'a pas de ponctuation après « qu'on ne vous aime pas » ni après « ô mon doux amour ».",
+  "indulgence": "",
+  "fichier": "amour-de-dieu.md",
+  "source": {
+   "ouvrage": "Prières de sainte Gertrude, ou Vrai esprit des prières que Jésus-Christ lui-même a révélées, pour la plupart, à sainte Gertrude et à sainte Mechtilde, traduites par le R. P. A. Denis, S. J.",
+   "edition": "11e édition, Paris, P. Lethielleux (Google Livres ; PDF fourni par l'utilisateur)",
+   "page": "p. 89-94 (PDF p. 134-139)"
+  }
+ },
+ {
+  "id": "gertrude:autre-salut-plaies",
+  "titre": "Autre manière de saluer les plaies de Jésus",
+  "partie": "Prières de sainte Gertrude",
+  "categorie": "Vendredi",
+  "usage": "Manière de saluer les plaies que sainte Mechtilde connut par l'inspiration du Saint-Esprit.",
+  "indulgence": "",
+  "fichier": "autre-salut-plaies.md",
+  "source": {
+   "ouvrage": "Prières de sainte Gertrude, ou Vrai esprit des prières que Jésus-Christ lui-même a révélées, pour la plupart, à sainte Gertrude et à sainte Mechtilde, traduites par le R. P. A. Denis, S. J.",
+   "edition": "11e édition, Paris, P. Lethielleux (Google Livres ; PDF fourni par l'utilisateur)",
+   "page": "p. 122-123 (PDF p. 167-168)"
+  }
+ },
+ {
+  "id": "gertrude:hostie-divine",
+  "titre": "Hostie divine pour les péchés",
+  "partie": "Prières de sainte Gertrude",
+  "categorie": "Vendredi",
+  "usage": "Offrande à Dieu le Père de son Fils attaché à la croix, d'après une révélation de sainte Mechtilde. Le livre porte « vousobéissant ».",
+  "indulgence": "",
+  "fichier": "hostie-divine.md",
+  "source": {
+   "ouvrage": "Prières de sainte Gertrude, ou Vrai esprit des prières que Jésus-Christ lui-même a révélées, pour la plupart, à sainte Gertrude et à sainte Mechtilde, traduites par le R. P. A. Denis, S. J.",
+   "edition": "11e édition, Paris, P. Lethielleux (Google Livres ; PDF fourni par l'utilisateur)",
+   "page": "p. 147-151 (PDF p. 192-196)"
+  }
+ },
+ {
+  "id": "gertrude:salut-membres-de-jesus",
+  "titre": "Salut adressé à tous les membres de Jésus",
+  "partie": "Prières de sainte Gertrude",
+  "categorie": "Vendredi",
+  "usage": "Selon sainte Gertrude, on reçoit l'innocence que Notre-Seigneur a acquise à l'Église par les souffrances de chacun de ses membres. Avec la prière à Jésus suspendu à la croix. Le livre porte « Je voue salue », « l'ame » et « votreâme ».",
+  "indulgence": "",
+  "fichier": "salut-membres-de-jesus.md",
+  "source": {
+   "ouvrage": "Prières de sainte Gertrude, ou Vrai esprit des prières que Jésus-Christ lui-même a révélées, pour la plupart, à sainte Gertrude et à sainte Mechtilde, traduites par le R. P. A. Denis, S. J.",
+   "edition": "11e édition, Paris, P. Lethielleux (Google Livres ; PDF fourni par l'utilisateur)",
+   "page": "p. 163-166 (PDF p. 208-211)"
+  }
+ },
+ {
+  "id": "gertrude:reparation-sainte-vierge",
+  "titre": "Réparation très-agréable à la sainte Vierge",
+  "partie": "Prières de sainte Gertrude",
+  "categorie": "Samedi",
+  "usage": "Notre-Seigneur supplée auprès de sa Mère aux négligences envers elle, comme il le fit pour sainte Gertrude. Suivie de l'action de grâce pour les grâces accordées à la sainte Vierge.",
+  "indulgence": "",
+  "fichier": "reparation-sainte-vierge.md",
+  "source": {
+   "ouvrage": "Prières de sainte Gertrude, ou Vrai esprit des prières que Jésus-Christ lui-même a révélées, pour la plupart, à sainte Gertrude et à sainte Mechtilde, traduites par le R. P. A. Denis, S. J.",
+   "edition": "11e édition, Paris, P. Lethielleux (Google Livres ; PDF fourni par l'utilisateur)",
+   "page": "p. 186-189 (PDF p. 231-234)"
+  }
+ },
+ {
+  "id": "gertrude:ave-maria-d-or",
+  "titre": "Ave Maria d'or",
+  "partie": "Prières de sainte Gertrude",
+  "categorie": "Samedi",
+  "usage": "La sainte Vierge à sainte Mechtilde : personne ne pourra la saluer plus agréablement.",
+  "indulgence": "",
+  "fichier": "ave-maria-d-or.md",
+  "source": {
+   "ouvrage": "Prières de sainte Gertrude, ou Vrai esprit des prières que Jésus-Christ lui-même a révélées, pour la plupart, à sainte Gertrude et à sainte Mechtilde, traduites par le R. P. A. Denis, S. J.",
+   "edition": "11e édition, Paris, P. Lethielleux (Google Livres ; PDF fourni par l'utilisateur)",
+   "page": "p. 191-193 (PDF p. 236-238)"
+  }
+ },
+ {
+  "id": "gertrude:offrande-coeur-de-jesus-a-marie",
+  "titre": "Offrande du Cœur de Jésus à la sainte Vierge",
+  "partie": "Prières de sainte Gertrude",
+  "categorie": "Samedi",
+  "usage": "Révélé à sainte Gertrude : nulle pratique de dévotion n'a fait tant d'honneur au cœur de Marie.",
+  "indulgence": "",
+  "fichier": "offrande-coeur-de-jesus-a-marie.md",
+  "source": {
+   "ouvrage": "Prières de sainte Gertrude, ou Vrai esprit des prières que Jésus-Christ lui-même a révélées, pour la plupart, à sainte Gertrude et à sainte Mechtilde, traduites par le R. P. A. Denis, S. J.",
+   "edition": "11e édition, Paris, P. Lethielleux (Google Livres ; PDF fourni par l'utilisateur)",
+   "page": "p. 198-199 (PDF p. 243-244)"
+  }
+ },
+ {
+  "id": "gertrude:a-saint-benoit",
+  "titre": "A saint Benoît",
+  "partie": "Prières de sainte Gertrude",
+  "categorie": "",
+  "usage": "Promesse de saint Benoît à sainte Gertrude : son assistance à l'heure de la mort.",
+  "indulgence": "",
+  "fichier": "a-saint-benoit.md",
+  "source": {
+   "ouvrage": "Prières de sainte Gertrude, ou Vrai esprit des prières que Jésus-Christ lui-même a révélées, pour la plupart, à sainte Gertrude et à sainte Mechtilde, traduites par le R. P. A. Denis, S. J.",
+   "edition": "11e édition, Paris, P. Lethielleux (Google Livres ; PDF fourni par l'utilisateur)",
+   "page": "p. 227 (PDF p. 272)"
+  }
+ },
+ {
+  "id": "gertrude:invocation-tous-les-saints",
+  "titre": "Invocation de tous les Saints",
+  "partie": "Prières de sainte Gertrude",
+  "categorie": "",
+  "usage": "Enseignée par Notre-Seigneur à sainte Mechtilde, qui lui ordonna de la réciter.",
+  "indulgence": "",
+  "fichier": "invocation-tous-les-saints.md",
+  "source": {
+   "ouvrage": "Prières de sainte Gertrude, ou Vrai esprit des prières que Jésus-Christ lui-même a révélées, pour la plupart, à sainte Gertrude et à sainte Mechtilde, traduites par le R. P. A. Denis, S. J.",
+   "edition": "11e édition, Paris, P. Lethielleux (Google Livres ; PDF fourni par l'utilisateur)",
+   "page": "p. 242-244 (PDF p. 287-289)"
+  }
+ },
+ {
+  "id": "gertrude:preparation-table-sainte",
+  "titre": "Préparation à la Table sainte",
+  "partie": "Prières de sainte Gertrude",
+  "categorie": "",
+  "usage": "Avant la communion.",
+  "indulgence": "",
+  "fichier": "preparation-table-sainte.md",
+  "source": {
+   "ouvrage": "Prières de sainte Gertrude, ou Vrai esprit des prières que Jésus-Christ lui-même a révélées, pour la plupart, à sainte Gertrude et à sainte Mechtilde, traduites par le R. P. A. Denis, S. J.",
+   "edition": "11e édition, Paris, P. Lethielleux (Google Livres ; PDF fourni par l'utilisateur)",
+   "page": "p. 313-317 (PDF p. 358-362)"
+  }
+ },
+ {
+  "id": "gertrude:communion-a-tous-les-saints",
+  "titre": "A tous les Saints (avant la communion)",
+  "partie": "Prières de sainte Gertrude",
+  "categorie": "",
+  "usage": "Avant la communion ; puis le psaume Laudate Dominum, omnes gentes, avec sainte Gertrude.",
+  "indulgence": "",
+  "fichier": "communion-a-tous-les-saints.md",
+  "source": {
+   "ouvrage": "Prières de sainte Gertrude, ou Vrai esprit des prières que Jésus-Christ lui-même a révélées, pour la plupart, à sainte Gertrude et à sainte Mechtilde, traduites par le R. P. A. Denis, S. J.",
+   "edition": "11e édition, Paris, P. Lethielleux (Google Livres ; PDF fourni par l'utilisateur)",
+   "page": "p. 317-318 (PDF p. 362-363)"
+  }
+ },
+ {
+  "id": "gertrude:communion-a-jesus-christ",
+  "titre": "A Jésus-Christ (avant la communion)",
+  "partie": "Prières de sainte Gertrude",
+  "categorie": "",
+  "usage": "Avant la communion. Ce que Notre-Seigneur dit à sainte Gertrude qu'elle avait obtenu par cette prière.",
+  "indulgence": "",
+  "fichier": "communion-a-jesus-christ.md",
+  "source": {
+   "ouvrage": "Prières de sainte Gertrude, ou Vrai esprit des prières que Jésus-Christ lui-même a révélées, pour la plupart, à sainte Gertrude et à sainte Mechtilde, traduites par le R. P. A. Denis, S. J.",
+   "edition": "11e édition, Paris, P. Lethielleux (Google Livres ; PDF fourni par l'utilisateur)",
+   "page": "p. 319-320 (PDF p. 364-365)"
+  }
+ },
+ {
+  "id": "gertrude:priere-avant-la-communion",
+  "titre": "Prière avant la communion",
+  "partie": "Prières de sainte Gertrude",
+  "categorie": "",
+  "usage": "Sur le point de communier. Promesse de Notre-Seigneur à sainte Mechtilde : il reçoit en nous l'amour que nous désirons avoir.",
+  "indulgence": "",
+  "fichier": "priere-avant-la-communion.md",
+  "source": {
+   "ouvrage": "Prières de sainte Gertrude, ou Vrai esprit des prières que Jésus-Christ lui-même a révélées, pour la plupart, à sainte Gertrude et à sainte Mechtilde, traduites par le R. P. A. Denis, S. J.",
+   "edition": "11e édition, Paris, P. Lethielleux (Google Livres ; PDF fourni par l'utilisateur)",
+   "page": "p. 320-322 (PDF p. 365-367)"
+  }
+ },
+ {
+  "id": "gertrude:invitation-a-jesus",
+  "titre": "Invitation à Jésus",
+  "partie": "Prières de sainte Gertrude",
+  "categorie": "",
+  "usage": "Au moment de la communion. Parole de Notre-Seigneur à sainte Gertrude : qui approche avec ces dispositions n'en approchera jamais avec irrévérence. Le livre ne ferme pas la parenthèse après « L. 4, c. 25. ».",
+  "indulgence": "",
+  "fichier": "invitation-a-jesus.md",
+  "source": {
+   "ouvrage": "Prières de sainte Gertrude, ou Vrai esprit des prières que Jésus-Christ lui-même a révélées, pour la plupart, à sainte Gertrude et à sainte Mechtilde, traduites par le R. P. A. Denis, S. J.",
+   "edition": "11e édition, Paris, P. Lethielleux (Google Livres ; PDF fourni par l'utilisateur)",
+   "page": "p. 323-326 (PDF p. 368-371)"
+  }
+ },
+ {
+  "id": "gertrude:apres-la-communion",
+  "titre": "Après la communion",
+  "partie": "Prières de sainte Gertrude",
+  "categorie": "",
+  "usage": "Après la communion (avec une incise pour le prêtre).",
+  "indulgence": "",
+  "fichier": "apres-la-communion.md",
+  "source": {
+   "ouvrage": "Prières de sainte Gertrude, ou Vrai esprit des prières que Jésus-Christ lui-même a révélées, pour la plupart, à sainte Gertrude et à sainte Mechtilde, traduites par le R. P. A. Denis, S. J.",
+   "edition": "11e édition, Paris, P. Lethielleux (Google Livres ; PDF fourni par l'utilisateur)",
+   "page": "p. 326-328 (PDF p. 371-373)"
+  }
+ },
+ {
+  "id": "gertrude:offrande-a-dieu-le-pere",
+  "titre": "Offrande à Dieu le Père (après la communion)",
+  "partie": "Prières de sainte Gertrude",
+  "categorie": "",
+  "usage": "Après la communion. « Cette offrande est d'une merveilleuse efficacité. »",
+  "indulgence": "",
+  "fichier": "offrande-a-dieu-le-pere.md",
+  "source": {
+   "ouvrage": "Prières de sainte Gertrude, ou Vrai esprit des prières que Jésus-Christ lui-même a révélées, pour la plupart, à sainte Gertrude et à sainte Mechtilde, traduites par le R. P. A. Denis, S. J.",
+   "edition": "11e édition, Paris, P. Lethielleux (Google Livres ; PDF fourni par l'utilisateur)",
+   "page": "p. 328-330 (PDF p. 373-375)"
+  }
+ },
+ {
+  "id": "gertrude:offrande-aux-saints",
+  "titre": "Offrande aux Saints (après la communion)",
+  "partie": "Prières de sainte Gertrude",
+  "categorie": "",
+  "usage": "Après la communion. Ce que vit sainte Gertrude en offrant la communion en l'honneur des saints Anges.",
+  "indulgence": "",
+  "fichier": "offrande-aux-saints.md",
+  "source": {
+   "ouvrage": "Prières de sainte Gertrude, ou Vrai esprit des prières que Jésus-Christ lui-même a révélées, pour la plupart, à sainte Gertrude et à sainte Mechtilde, traduites par le R. P. A. Denis, S. J.",
+   "edition": "11e édition, Paris, P. Lethielleux (Google Livres ; PDF fourni par l'utilisateur)",
+   "page": "p. 331-333 (PDF p. 376-378)"
+  }
+ },
+ {
+  "id": "gertrude:actions-de-graces-communion",
+  "titre": "Actions de grâces (après la communion)",
+  "partie": "Prières de sainte Gertrude",
+  "categorie": "",
+  "usage": "Après la communion.",
+  "indulgence": "",
+  "fichier": "actions-de-graces-communion.md",
+  "source": {
+   "ouvrage": "Prières de sainte Gertrude, ou Vrai esprit des prières que Jésus-Christ lui-même a révélées, pour la plupart, à sainte Gertrude et à sainte Mechtilde, traduites par le R. P. A. Denis, S. J.",
+   "edition": "11e édition, Paris, P. Lethielleux (Google Livres ; PDF fourni par l'utilisateur)",
+   "page": "p. 333-334 (PDF p. 378-379)"
+  }
+ },
+ {
+  "id": "gertrude:conclusion-tres-efficace",
+  "titre": "Conclusion très-efficace (après la communion)",
+  "partie": "Prières de sainte Gertrude",
+  "categorie": "",
+  "usage": "Après la communion.",
+  "indulgence": "",
+  "fichier": "conclusion-tres-efficace.md",
+  "source": {
+   "ouvrage": "Prières de sainte Gertrude, ou Vrai esprit des prières que Jésus-Christ lui-même a révélées, pour la plupart, à sainte Gertrude et à sainte Mechtilde, traduites par le R. P. A. Denis, S. J.",
+   "edition": "11e édition, Paris, P. Lethielleux (Google Livres ; PDF fourni par l'utilisateur)",
+   "page": "p. 334-336 (PDF p. 379-381)"
+  }
  }
 ]

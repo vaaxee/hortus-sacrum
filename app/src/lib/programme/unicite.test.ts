@@ -6,38 +6,11 @@
 import { describe, expect, it } from 'vitest';
 import { journee } from './journee.ts';
 import { couper, extraire, fragments, normaliser, partIncluse } from './texte.ts';
-import type { Choix, Section } from './types.ts';
+import { candidats, sectionsDuProgramme } from './inventaire.ts';
+import type { Section } from './types.ts';
 import { CALENDRIER, corps, PLAN, PROGRAMME, TEXTES } from './donnees-de-test.ts';
 
-/** Tous les textes qu'un choix peut donner. */
-function candidats(c: Choix): string[] {
-	if (typeof c === 'string') return [c];
-	switch (c.selon) {
-		case 'jour_semaine':
-			return c.valeurs.filter((v): v is string => !!v);
-		case 'rotation':
-			return c.parmi;
-		case 'quand':
-			return [...c.cas.flatMap((x) => candidats(x.texte)), ...(c.sinon ? candidats(c.sinon) : [])];
-		case 'saint_du_jour':
-			return [
-				'gertrude:a-une-vierge',
-				'gertrude:a-une-vierge-et-martyre',
-				'gertrude:a-un-martyr',
-				'gertrude:a-un-confesseur',
-				'gertrude:saint-du-jour'
-			];
-	}
-}
-
-const toutesLesSections: { ou: string; s: Section }[] = [
-	...PROGRAMME.entrees.flatMap((e) => [
-		...(e.page?.sections ?? []).map((s) => ({ ou: e.id, s })),
-		...(e.lecture?.sections ?? []).map((s) => ({ ou: e.id, s })),
-		...(e.insertions ?? []).flatMap((i) => i.sections.map((s) => ({ ou: e.id, s })))
-	]),
-	...Object.entries(PROGRAMME.plan).flatMap(([cle, r]) => ('sections' in r ? r.sections.map((s) => ({ ou: `plan:${cle}`, s })) : []))
-];
+const toutesLesSections = sectionsDuProgramme(PROGRAMME);
 
 const FORMULES = PROGRAMME.formules.map(normaliser);
 

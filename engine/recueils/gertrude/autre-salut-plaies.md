@@ -1,0 +1,3 @@
+*Sainte Mechtilde connut par l'inspiration du Saint-Esprit cette manière de saluer les saintes plaies : avant cela, elle n'en avait jamais entendu parler et n'en avait pas eu l'idée. L. 1, c. 16.*
+
+Je vous salue, ô très-précieuses plaies de Jésus, je vous salue dans la toute-puissance du Père, à laquelle nous en sommes redevables. Je vous salue dans la sagesse du Fils, qui les a endurées. Je vous salue dans la bonté du Saint-Esprit, qui a accompli par vous la rédemption du genre humain. C'est à vous, aimables plaies, que je me confie, c'est en vous que je me cache, c'est en vous que je me plonge, afin de me soustraire, par votre protection, aux regards de notre mortel ennemi. Ainsi soit-il.
