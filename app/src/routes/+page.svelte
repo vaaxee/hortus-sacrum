@@ -1,75 +1,78 @@
 <script lang="ts">
 	import { vivantSelon } from '#lib/vivant.svelte.ts';
 	import { page } from '$app/state';
-	import { anneeLiturgique, introitVersCorps, iso, jourDu, MOIS_DEVOTION, RANG, teinte, type Jour } from '#lib/calendrier.ts';
+	import { introitVersCorps, iso, RANG, teinte } from '#lib/calendrier.ts';
 	import { db } from '#lib/db.ts';
 	import Arche from '#lib/design/Arche.svelte';
 	import Case from '#lib/design/Case.svelte';
 	import Ornement from '#lib/design/Ornement.svelte';
 	import { invocation, nomLatin, TOUS_LES_SAINTS } from '#lib/invocations.ts';
 	import { invocationLatine } from '#lib/invocations-latines.ts';
-	import { textesDuJour } from '#lib/liste.ts';
+	import { JACULATOIRES } from '#lib/liste.ts';
 	import { bilanDuJour } from '#lib/etiquettes.ts';
-	import { chargerRecueil, choisirAvecMois, NOM_COURT, RECUEIL_DU_MOIS } from '#lib/meditations.ts';
-	import { garde, rangElement, rangPratique, RANGS } from '#lib/rangs.ts';
-	import { vivant } from '#lib/live.ts';
+	import { garde, rangPratique } from '#lib/rangs.ts';
 	import { rendre } from '#lib/markup.ts';
 	import { creer, enregistrer } from '#lib/db.ts';
-	import { occurrenceDu, type Occurrence } from '#lib/pratiques.ts';
-	import { basculerFait } from '#lib/suivi.ts';
-	import type { Coche, ElementListe, Fait, FetePerso, Moment, NoteJour, Pratique, Rang, Texte } from '#lib/types.ts';
+	import { occurrenceDu } from '#lib/pratiques.ts';
+	import type { Coche, Fait, FetePerso, NoteJour, Rang } from '#lib/types.ts';
 	import Icone from '#lib/design/Icone.svelte';
-	import { elementDu } from '#lib/roues.ts';
 	import { actionsDeGraces } from '#lib/anniversaires.ts';
 	import Accueil from '#lib/design/Accueil.svelte';
 	import CarteCouronne from '#lib/design/CarteCouronne.svelte';
 	import { couronnesDeLaBase, marquerVue, vues, type Couronne } from '#lib/couronnes.ts';
-	import { DUREES_FIXES, enMinutes, minutesDuTexte } from '#lib/durees.ts';
-	import { chargerIndulgences, enClair, enJours, fois, somme, valeurDuJour, type Indulgences, type Valeur } from '#lib/indulgences.ts';
+	import { enMinutes } from '#lib/durees.ts';
+	import { chargerIndulgences, enClair, enJours, type Indulgences } from '#lib/indulgences.ts';
+	import {
+		indulgencesDuJour,
+		jaculatoireAOuvrir,
+		jaculatoiresPermises,
+		minutesDeLaLigne,
+		minutesDUneRecitation,
+		recitations,
+		texteDeLaJournee
+	} from '#lib/programme/bilan.ts';
+	import { cocher, direJaculatoire } from '#lib/programme/suivi.ts';
+	import { journeeVivante } from '#lib/programme/vivant.svelte.ts';
+	import type { Ligne, Moment } from '#lib/programme/types.ts';
 
+	/**
+	 * Aujourd'hui (SPEC § 11) : la journée calculée par le programme unique. Une page par pratique, une seule fois par
+	 * jour ; ce qui se lit est résumé en une ligne ; jauges et bilan derrière un bouton ; une jaculatoire à chaque ouverture.
+	 */
 	const date = $derived(page.url.searchParams.get('date') ?? iso(new Date()));
-	let jour: Jour | undefined = $state();
-	$effect(() => {
-		jourDu(date).then((j) => (jour = j));
-	});
+	const vie = journeeVivante(() => date);
+	const jour = $derived(vie.jour);
+	const jr = $derived(vie.jr);
 
 	const d = $derived(new Date(date + 'T12:00:00'));
 	const dateLongue = $derived(d.toLocaleDateString('fr-FR', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' }));
 	const solennel = $derived(jour?.rang === '1re cl.' || jour?.rang === 'dim. 1re cl.');
-
-	const liste = vivant(() => db.liste.orderBy('ordre').toArray(), [] as ElementListe[]);
-	const titres = vivant(
-		async () => Object.fromEntries((await db.textes.toArray()).map((t) => [t.id, t.titre])),
-		{} as Record<string, string>
-	);
 	const MOMENTS: [Moment, string][] = [
 		['matin', 'Matin'],
-		['propre', 'Propre du jour'],
 		['journee', 'Au fil du jour'],
 		['soir', 'Soir']
 	];
-	// pratiques du jour : elles remplacent les deux lignes génériques « dévotion en cours » et « neuvaine ou trentain »
-	const pratiques = vivant(() => db.pratiques.toArray(), [] as Pratique[]);
-	const faitsDuJour = vivantSelon(() => {
-		const d = date;
-		return () => db.faits.where('date').equals(d).toArray();
-	}, [] as Fait[]);
-	const pratiquesDuJour = $derived(
-		$pratiques
-			.filter((p) => p.active && !p.supprimeLe)
-			.map((p) => ({ p, o: occurrenceDu(p, date) }))
-			.filter((x): x is { p: Pratique; o: Occurrence } => !!x.o)
-	);
-	const faite = (id: string) => faitsDuJour.v.some((f) => f.pratiqueId === id);
-	/** Pratiques rattachées à un élément générique de la liste, ou null si l'élément est ordinaire. */
-	function pratiquesPour(e: ElementListe) {
-		const gardees = pratiquesDuJour.filter((x) => garde(rangPratique(x.p), seuil));
-		if (e.titre.startsWith('Dévotion à jours comptés')) return gardees.filter((x) => !['neuvaine', 'trentain'].includes(x.p.type));
-		if (e.titre.startsWith('Neuvaine ou trentain')) return gardees.filter((x) => ['neuvaine', 'trentain'].includes(x.p.type));
-		return null;
-	}
 
-	// jour chargé : on n'affiche que les dévotions du rang choisi et au-dessus (réglage gardé pour ce jour, sur cet appareil)
+	// coches et faits du jour
+	const cochesDuJour = vivantSelon(() => {
+		const k = date;
+		return () => db.coches.where('date').equals(k).toArray();
+	}, [] as Coche[]);
+	const faitsDuJour = vivantSelon(() => {
+		const k = date;
+		return () => db.faits.where('date').equals(k).toArray();
+	}, [] as Fait[]);
+	const coches = $derived.by(() => {
+		const n: Record<string, number> = {};
+		for (const c of cochesDuJour.v) n[c.elementId] = (n[c.elementId] ?? 0) + 1;
+		return n;
+	});
+	const idsPratiques = $derived(new Set(vie.pratiques.map((p) => p.id)));
+	/** Récitations faites d'une ligne (une pratique du plan se suit dans `faits`). */
+	const faites = (l: Ligne) => (idsPratiques.has(l.id) ? (faitsDuJour.v.some((f) => f.pratiqueId === l.id) ? 1 : 0) : (coches[l.id] ?? 0));
+	const finie = (l: Ligne) => faites(l) >= recitations(l);
+
+	// jour chargé : seules les pratiques du rang choisi et au-dessus (réglage gardé pour ce jour, sur cet appareil)
 	let seuil = $state<Rang>('supererogatoria');
 	$effect(() => {
 		let v: string | null = null;
@@ -93,18 +96,96 @@
 		['pia', 'Sine supererogatoriis', 'laisser les dévotions surérogatoires'],
 		['praecipua', 'Præcipua tantum', 'seulement les dévotions principales']
 	];
-	const ABREGE = Object.fromEntries(RANGS.map((r) => [r.cle, r]));
-	const duJour = $derived(
-		$liste.filter((e) => {
-			if (!e.actif || e.supprimeLe || !e.jours[d.getDay()]) return false;
-			const pp = pratiquesPour(e);
-			return pp ? pp.length > 0 : garde(rangElement(e), seuil);
-		})
-	);
-	const fini = (e: ElementListe) => {
-		const pp = pratiquesPour(e);
-		return pp ? pp.every((x) => faite(x.p.id)) : (coches[e.id] ?? 0) >= Math.max(1, e.rappels.length);
+	const rangDe = (l: Ligne): Rang => {
+		const p = vie.pratiques.find((x) => x.id === l.id);
+		return p ? rangPratique(p) : (l.rang ?? 'pia');
 	};
+	const lignes = $derived((jr?.lignes ?? []).filter((l) => garde(rangDe(l), seuil)));
+
+	// lectures du jour : une ligne qui les résume (n/N), cochées une à une
+	const lectures = $derived((jr?.lectures ?? []).filter((l) => l.compte));
+	const lues = $derived(lectures.filter((l) => (coches[l.id] ?? 0) > 0).length);
+	async function lire(id: string) {
+		if (coches[id]) await db.coches.where('[date+elementId]').equals([date, id]).delete();
+		else await db.coches.add({ date, elementId: id, rang: 0, horodatage: new Date().toISOString() });
+	}
+
+	// avancement : chaque ligne compte pour une, et « Lectures du jour » pour une
+	const total = $derived(lignes.length + (lectures.length ? 1 : 0));
+	const faits = $derived(lignes.filter(finie).length + (lectures.length && lues === lectures.length ? 1 : 0));
+
+	// durées d'après les pages composées
+	const minutes = $derived.by(() => {
+		let tout = 0,
+			fait = 0;
+		for (const l of lignes) {
+			const m = minutesDeLaLigne(l, vie.corps);
+			tout += m;
+			fait += (m * Math.min(faites(l), recitations(l))) / recitations(l);
+		}
+		return { tout, fait };
+	});
+
+	// indulgences : seulement les fiches de l'Enchiridion de 1952 (traduction approuvée)
+	let ind = $state<Indulgences | null>(null);
+	chargerIndulgences().then((x) => (ind = x));
+	const jaculatoiresDites = $derived(
+		new Map(
+			Object.entries(coches)
+				.filter(([k]) => k.startsWith('jac:'))
+				.map(([k, n]) => [k.slice(4), n])
+		)
+	);
+	const indulgences = $derived(ind && jr ? indulgencesDuJour({ ...jr, lignes }, faites, jaculatoiresDites, ind, jour?.tempora) : null);
+
+	// jaculatoire d'ouverture : une autre à chaque ouverture, jamais une de celles que disent déjà les pages du jour
+	let jaculatoire = $state<string | undefined>();
+	let ditePourCetteOuverture = $state(false);
+	$effect(() => {
+		if (jaculatoire || !jr || !ind) return;
+		let derniere: string | undefined;
+		try {
+			derniere = localStorage.getItem('jaculatoire-derniere') ?? undefined;
+		} catch {
+			/* stockage indisponible */
+		}
+		const permises = jaculatoiresPermises(JACULATOIRES, ind, (id) => vie.textes.has(id));
+		jaculatoire = jaculatoireAOuvrir(permises, vie.corps, texteDeLaJournee([...jr.lignes, ...jr.lectures], vie.corps), derniere);
+		try {
+			if (jaculatoire) localStorage.setItem('jaculatoire-derniere', jaculatoire);
+		} catch {
+			/* stockage indisponible */
+		}
+	});
+	async function dire() {
+		if (!jaculatoire || ditePourCetteOuverture) return;
+		ditePourCetteOuverture = true;
+		await direJaculatoire(jaculatoire, date);
+	}
+	const valeurJaculatoire = $derived(jaculatoire && ind?.fiches[jaculatoire]?.partielles.map((p) => p.texte).join(' ; '));
+
+	// cadre pratique : fins, objets, grâces, personnes et pratiques couverts par les prières du jour
+	const cadre = $derived.by(() => {
+		if (!jr) return [];
+		const ids = [...new Set(lignes.flatMap((l) => l.sections.map((s) => s.texte).filter((t): t is string => !!t)))];
+		return bilanDuJour(ids, [...vie.textes.values()]);
+	});
+	const manques = $derived(cadre.reduce((a, c) => a + c.manques.length, 0));
+	// promesses attachées aux pratiques du jour
+	const promesses = $derived(
+		vie.pratiques
+			.filter((p) => p.active && !p.supprimeLe && p.promesses?.trim())
+			.map((p) => ({ p, o: occurrenceDu(p, date) }))
+			.filter((x) => x.o)
+	);
+
+	/** Sous-titre d'une ligne : la prière du jour quand elle change (chapelet, couronne), et les pratiques du plan. */
+	function sousTitre(l: Ligne): string {
+		const premier = l.sections.find((s) => s.genre === 'texte' && s.texte && s.origine === l.id);
+		const variante = premier?.variante && premier.texte ? (vie.textes.get(premier.texte)?.titre ?? '') : '';
+		return [variante, ...l.annotations.map((a) => a.texte)].filter(Boolean).join(' · ');
+	}
+	const ROMAINS = ['', 'i', 'ii', 'iii', 'iv', 'v', 'vi', 'vii', 'viii', 'ix'];
 
 	// fêtes et anniversaires personnels du jour
 	const fetes = vivantSelon(() => {
@@ -130,146 +211,13 @@
 		if (existante) await enregistrer('notes', { ...existante, corps });
 		else if (corps.trim()) await creer<NoteJour>('notes', { id: `note:${date}`, origine: 'personnel', date, corps });
 	}
-	// coches du jour, enregistrées et horodatées
-	const cochesDuJour = vivantSelon(() => {
-		const d = date;
-		return () => db.coches.where('date').equals(d).toArray();
-	}, [] as Coche[]);
-	const coches = $derived.by(() => {
-		const n: Record<string, number> = {};
-		for (const c of cochesDuJour.v) n[c.elementId] = (n[c.elementId] ?? 0) + 1;
-		return n;
-	});
-	async function compter(e: ElementListe, total: number) {
-		const fait = coches[e.id] ?? 0;
-		if (fait >= total) await db.coches.where('[date+elementId]').equals([date, e.id]).delete();
-		else await db.coches.add({ date, elementId: e.id, rang: fait, horodatage: new Date().toISOString() });
-	}
 	const decaler = (n: number) => {
 		const x = new Date(d);
 		x.setDate(x.getDate() + n);
 		return iso(x);
 	};
 	const estAujourdhui = $derived(date === iso(new Date()));
-	const faits = $derived(duJour.filter(fini).length);
 
-	/** Sous-titre des éléments du propre, tiré du calendrier. */
-	// titre de la méditation du jour (index légers des recueils, sans les textes)
-	let meditationDuJour = $state('');
-	$effect(() => {
-		const dt = date,
-			j = jour,
-			y = Number(dt.slice(0, 4));
-		if (!j) return;
-		const idMois = RECUEIL_DU_MOIS[Number(dt.slice(5, 7))];
-		Promise.all([
-			chargerRecueil('index/hamon'),
-			chargerRecueil('index/chaignon'),
-			idMois ? chargerRecueil(`index/${idMois}`) : Promise.resolve(null),
-			anneeLiturgique(y - 1),
-			anneeLiturgique(y)
-		])
-			.then(([h, c, m, a1, a2]) => {
-				const annee = [a1, a2].find((a) => a?.some((x) => x.date === dt)) ?? [];
-				const premier = choisirAvecMois(dt, j, annee, h, c, m)[0];
-				meditationDuJour = premier ? `${NOM_COURT[premier.recueil.id] ?? ''} · ${premier.entree.titre}` : '';
-			})
-			.catch(() => (meditationDuJour = ''));
-	});
-
-	function precision(e: ElementListe): string {
-		if (!jour) return '';
-		if (e.titre === 'Méditation du jour') return meditationDuJour;
-		if (e.titre.startsWith('Office du jour')) return jour.office;
-		if (e.titre.startsWith('Dévotion du mois')) return MOIS_DEVOTION[d.getMonth() + 1].nom;
-		if (e.titre === 'La roue du jour') return roueDuJour;
-		if (e.roue) {
-			const r = roues.find((x) => x.id === e.roue);
-			const el = r && elementDu(r, date);
-			if (el) return el.fr;
-		}
-		return '';
-	}
-	const roues = $derived($pratiques.filter((p) => p.type === 'roue'));
-	// roue symbolique : l'élément du jour de chaque roue active, du plus petit nombre au plus grand
-	const roueDuJour = $derived(
-		$pratiques
-			.filter((p) => p.type === 'roue' && p.active && !p.liste && !p.supprimeLe && (p.elements?.length ?? 0) > 1)
-			.sort((a, b) => (a.elements?.length ?? 0) - (b.elements?.length ?? 0))
-			.map((p) => elementDu(p, date)?.fr)
-			.filter(Boolean)
-			.join(' · ')
-	);
-	// indulgences partielles : ce que valent aujourd'hui les prières cochées, et ce que vaudrait la liste entière
-	let ind = $state<Indulgences | null>(null);
-	chargerIndulgences().then((x) => (ind = x));
-	function valeurDe(ids: string[], n: number): Valeur {
-		const vs: Valeur[] = [];
-		for (const id of ids) {
-			const f = ind?.fiches[id];
-			if (f) vs.push(fois(valeurDuJour(f, date, jour?.tempora), f.frequence === 'chaque fois' ? n : Math.min(n, 1)));
-		}
-		return somme(vs);
-	}
-	const bilan = $derived.by(() => {
-		const gagnees: Valeur[] = [],
-			possibles: Valeur[] = [];
-		if (!ind || !jour) return { gagnees: somme([]), possibles: somme([]) };
-		for (const e of duJour) {
-			const pp = pratiquesPour(e);
-			if (pp) {
-				for (const { p } of pp) {
-					possibles.push(valeurDe(p.textes, 1));
-					if (faite(p.id)) gagnees.push(valeurDe(p.textes, 1));
-				}
-				continue;
-			}
-			const tx = textesDuJour(e, date, jour, roues);
-			const total = Math.max(1, e.rappels.length);
-			possibles.push(valeurDe(tx, total));
-			gagnees.push(valeurDe(tx, Math.min(coches[e.id] ?? 0, total)));
-		}
-		return { gagnees: somme(gagnees), possibles: somme(possibles) };
-	});
-	// cadre pratique : fins, objets, grâces, personnes et pratiques couverts par les prières du jour ; ce qui manque
-	const bibliotheque = vivant(() => db.textes.toArray(), [] as Texte[]);
-	const cadre = $derived.by(() => {
-		const ids = duJour.flatMap((e) => pratiquesPour(e)?.flatMap(({ p }) => p.textes) ?? textesDuJour(e, date, jour, roues));
-		return $bibliotheque.length ? bilanDuJour(ids, $bibliotheque) : [];
-	});
-	// durée de prière : estimée d'après les textes (ou réglée à la main), pour chaque ligne et pour le jour entier
-	const minutesTextes = vivant(
-		async () => Object.fromEntries((await db.textes.toArray()).map((t) => [t.id, minutesDuTexte(t.corps ?? '')])),
-		{} as Record<string, number>
-	);
-	const minutesDe = (ids: string[]) => ids.reduce((a, id) => a + ($minutesTextes[id] ?? 0), 0);
-	function dureeDe(e: ElementListe): number {
-		const pp = pratiquesPour(e);
-		if (pp) return pp.reduce((a, { p }) => a + minutesDe(p.textes), 0);
-		return e.duree ?? DUREES_FIXES[e.titre] ?? minutesDe(textesDuJour(e, date, jour, roues));
-	}
-	const temps = $derived.by(() => {
-		let tout = 0,
-			fait = 0;
-		for (const e of duJour) {
-			const pp = pratiquesPour(e);
-			if (pp) {
-				for (const { p } of pp) {
-					const m = minutesDe(p.textes);
-					tout += m;
-					if (faite(p.id)) fait += m;
-				}
-				continue;
-			}
-			const total = Math.max(1, e.rappels.length),
-				m = dureeDe(e);
-			tout += m * total;
-			fait += m * Math.min(coches[e.id] ?? 0, total);
-		}
-		return { tout, fait };
-	});
-	// promesses attachées aux pratiques du jour (seulement celles que les pratiques portent : Brigitte n'en a pas)
-	const promesses = $derived(pratiquesDuJour.filter((x) => x.p.promesses?.trim()));
 	// écran d'accueil : une fois par ouverture de l'app (mémorisé pour la session de l'onglet)
 	let accueil = $state(false);
 	$effect(() => {
@@ -308,7 +256,6 @@
 		const [cs, v] = await Promise.all([couronnesDeLaBase(date), vues()]);
 		nouvelle = [...cs].reverse().find((c) => !v.has(c.id)) ?? null;
 	}
-	const ROMAINS = ['', 'i', 'ii', 'iii', 'iv', 'v', 'vi', 'vii', 'viii', 'ix'];
 </script>
 
 <svelte:head><title>Aujourd’hui — Hortus Sacrum</title></svelte:head>
@@ -318,7 +265,7 @@
 		introit={jour.introit_incipit ?? ''}
 		introitFr={jour.introit?.fr?.[0] ?? ''}
 		invocation={jour.martyrologe.map((m) => invocation(m.texte)?.texte).find(Boolean) ?? ''}
-		avancement={duJour.length ? faits / duJour.length : 0}
+		avancement={total ? faits / total : 0}
 		{entrer}
 	/>
 {:else if nouvelle && estAujourdhui}
@@ -378,154 +325,141 @@
 			{/if}
 		</header>
 
+		{#if jaculatoire && vie.textes.get(jaculatoire)}
+			{@const t = vie.textes.get(jaculatoire)!}
+			<button class="jaculatoire brut" class:dite={ditePourCetteOuverture} onclick={dire} aria-pressed={ditePourCetteOuverture}>
+				<span class="jac-texte">{t.corps.replace(/\s+/g, ' ').trim()}</span>
+				<span class="jac-pied interface">
+					{#if ditePourCetteOuverture}Dite{valeurJaculatoire ? ` · ${valeurJaculatoire}` : ''}{:else}Toucher pour la dire{valeurJaculatoire
+							? ` · ${valeurJaculatoire}`
+							: ''}{/if}
+				</span>
+			</button>
+		{/if}
+
 		<section class="liste" aria-label="Liste du jour">
-			<div class="avancement interface">
-				<span class="etiquette">Le jardin du jour</span>
-				<span class="trait"><span style="width: {duJour.length ? (100 * faits) / duJour.length : 0}%"></span></span>
-				<span class="chiffres-alignes">{faits} / {duJour.length}</span>
-			</div>
-			{#if temps.tout > 0}
+			<details class="bilan">
+				<summary class="interface">
+					<span class="etiquette">Bilan du jour</span>
+					<span class="trait"><span style="width: {total ? (100 * faits) / total : 0}%"></span></span>
+					<span class="chiffres-alignes"
+						>{faits} / {total}{#if minutes.tout > 0}
+							· {enMinutes(Math.max(0, minutes.tout - minutes.fait))} restantes{/if}</span
+					>
+				</summary>
 				<div
 					class="avancement interface temps"
-					title="Durée estimée d'après la longueur des prières ; chaque durée se règle dans « Régler la liste »"
+					title="Durée estimée d’après les pages du jour ; chaque durée se règle dans « Régler le programme »"
 				>
 					<span class="etiquette">Temps de prière</span>
-					<span class="trait"><span style="width: {(100 * temps.fait) / temps.tout}%"></span></span>
-					<span class="chiffres-alignes">{enMinutes(temps.fait)} / {enMinutes(temps.tout)}</span>
+					<span class="trait"><span style="width: {minutes.tout ? (100 * minutes.fait) / minutes.tout : 0}%"></span></span>
+					<span class="chiffres-alignes">{enMinutes(minutes.fait)} / {enMinutes(minutes.tout)}</span>
 				</div>
-			{/if}
-			{#if enJours(bilan.possibles) > 0}
-				<div
-					class="avancement interface indulg"
-					title="Indulgences partielles des prières cochées (Enchiridion 1952, à défaut Beringer 1925)"
-				>
-					<span class="etiquette">Indulgences</span>
-					<span class="trait"><span style="width: {(100 * enJours(bilan.gagnees)) / enJours(bilan.possibles)}%"></span></span>
-					<span class="chiffres-alignes">{enClair(bilan.gagnees)}</span>
-				</div>
-				<p class="aide total">sur {enClair(bilan.possibles)} pour la liste entière ; indulgences partielles seulement</p>
-			{/if}
-			{#if promesses.length}
-				<details class="promesses">
-					<summary class="aide">Promesses en cours ({promesses.length})</summary>
+				{#if indulgences && enJours(indulgences.possibles) > 0}
+					<div class="avancement interface indulg" title="Indulgences partielles des prières cochées (Enchiridion de 1952)">
+						<span class="etiquette">Indulgences</span>
+						<span class="trait"
+							><span style="width: {Math.min(100, (100 * enJours(indulgences.gagnees)) / enJours(indulgences.possibles))}%"></span></span
+						>
+						<span class="chiffres-alignes">{enClair(indulgences.gagnees)}</span>
+					</div>
+					<p class="aide total">
+						sur {enClair(indulgences.possibles)} pour le programme entier ; indulgences partielles de l’Enchiridion de 1952
+					</p>
+				{/if}
+				{#if promesses.length}
+					<p class="aide"><strong>Promesses en cours</strong></p>
 					{#each promesses as { p, o } (p.id)}<p class="aide">
-							<strong>{p.titre}</strong>{#if o.total}
+							<strong>{p.titre}</strong>{#if o?.total}
 								({o.rang}/{o.total}){/if} : {p.promesses}
 						</p>{/each}
-				</details>
-			{/if}
-			{#if cadre.length}
-				<details class="cadre">
-					<summary class="aide"
-						>Bilan du jour (fins, objets, grâces, personnes, pratiques) : {cadre.reduce((a, c) => a + c.manques.length, 0) || 'rien ne'} manque{cadre.reduce(
-							(a, c) => a + c.manques.length,
-							0
-						) > 1
-							? 'nt'
-							: ''}</summary
-					>
-					{#each cadre as c (c.categorie)}
-						<p class="aide"><strong>{c.libelle}</strong> — couvert : {c.couvertes.join(', ') || 'rien'}.</p>
-						{#if c.manques.length}
-							<ul class="aide manques">
-								{#each c.manques as m (m.etiquette)}
-									<li>
-										{m.etiquette}{#if m.proposition}
-											: <a href={`/prieres/${encodeURIComponent(m.proposition.id)}`}>{m.proposition.titre}</a>{/if}
-									</li>
-								{/each}
-							</ul>
-						{/if}
+				{/if}
+				{#if cadre.length}
+					<details class="cadre">
+						<summary class="aide"
+							>Fins, objets, grâces, personnes, pratiques : {manques || 'rien ne'} manque{manques > 1 ? 'nt' : ''}</summary
+						>
+						{#each cadre as c (c.categorie)}
+							<p class="aide"><strong>{c.libelle}</strong> — couvert : {c.couvertes.join(', ') || 'rien'}.</p>
+							{#if c.manques.length}
+								<ul class="aide manques">
+									{#each c.manques as m (m.etiquette)}
+										<li>
+											{m.etiquette}{#if m.proposition}
+												: <a href={`/prieres/${encodeURIComponent(m.proposition.id)}`}>{m.proposition.titre}</a>{/if}
+										</li>
+									{/each}
+								</ul>
+							{/if}
+						{/each}
+					</details>
+				{/if}
+				{#if jr?.a_fournir.length}
+					<p class="aide">
+						À transcrire pour ce jour : {jr.a_fournir.map((a) => a.quoi).join(' ; ')}.
+					</p>
+				{/if}
+				<div class="seuils interface" role="group" aria-label="Jour chargé : quelles dévotions afficher">
+					{#each SEUILS as [r, latin, fr] (r)}
+						<button class="brut" aria-pressed={seuil === r} title={fr} onclick={() => regler(r)}>{latin}</button>
 					{/each}
-				</details>
-			{/if}
-			<p class="regler"><a href="/liste">Régler la liste</a></p>
-			<div class="seuils interface" role="group" aria-label="Jour chargé : quelles dévotions afficher">
-				{#each SEUILS as [r, latin, fr]}
-					<button class="brut" aria-pressed={seuil === r} title={fr} onclick={() => regler(r)}>{latin}</button>
-				{/each}
-			</div>
+				</div>
+				<p class="regler"><a href="/programme">Régler le programme</a></p>
+			</details>
 
-			{#each MOMENTS as [moment, nom]}
-				{@const elements = duJour.filter((e) => e.moment === moment)}
-				{#if elements.length}
+			{#if !jr}
+				<p class="aide attente">Le programme du jour se prépare…</p>
+			{/if}
+			{#each MOMENTS as [moment, nom] (moment)}
+				{@const elements = lignes.filter((l) => l.moment === moment)}
+				{#if elements.length || (moment === 'journee' && lectures.length)}
 					<div class="tete">
 						<Ornement nom="grecque" />
 						<h2>{nom}</h2>
 					</div>
 					<ul>
-						{#each elements as e (e.id)}
-							{@const total = Math.max(1, e.rappels.length)}
-							{@const fait = coches[e.id] ?? 0}
-							{@const sous = precision(e)}
-							{@const pp = pratiquesPour(e)}
-							{@const tx = textesDuJour(e, date, jour, roues)}
-							{#if pp}
-								{#each pp as { p, o } (p.id)}
-									<li class:fini={faite(p.id)}>
-										<Case libelle={p.titre} bind:cochee={() => faite(p.id), () => basculerFait(p.id, date)} />
-										<div class="corps">
-											<a class="titre" href="/devotions/{encodeURIComponent(p.id)}">{p.titre}</a>
-											{#if p.notes}<span class="sous">{p.notes}</span>{/if}
-										</div>
-										{#if o.total}
-											<span class="medaillon fixe" title="{o.rang} sur {o.total}">
-												<Ornement nom="medaillon" taille={34} />
-												<span class="chiffres-alignes petit-chiffre">{o.rang}<i>/</i>{o.total}</span>
-											</span>
-										{/if}
-										<span class="genre pc propre">propre</span>
-									</li>
-								{/each}
-							{:else}
-								<li class:fini={fait >= total}>
-									<Case libelle={e.titre} bind:cochee={() => fait >= total, () => compter(e, total)} />
-									<div class="corps">
-										{#if tx.length === 1}
-											<a class="titre" href="/prieres/{encodeURIComponent(tx[0])}">{e.titre}</a>
-											{#if (e.alterner && e.textes.length > 1) || !e.textes.includes(tx[0])}<span class="sous">{$titres[tx[0]] ?? ''}</span
-												>{/if}
-										{:else if tx.length > 1}
-											<details class="plusieurs">
-												<summary class="titre">{e.titre}</summary>
-												{#each tx as id}
-													<a href="/prieres/{encodeURIComponent(id)}">{$titres[id] ?? id}</a>
-												{/each}
-											</details>
-										{:else if e.titre === 'Méditation du jour'}
-											<a class="titre" href="/meditation?date={date}">{e.titre}</a>
-										{:else if e.titre === 'La roue du jour'}
-											<a class="titre" href="/roue?date={date}">{e.titre}</a>
-										{:else if e.titre === 'Dévotion du mois'}
-											<a class="titre" href="/mois?date={date}">{e.titre}</a>
-										{:else if e.titre === 'Office du jour et vie du saint'}
-											<a class="titre" href="/saint?date={date}">{e.titre}</a>
-										{:else}
-											<span class="titre">{e.titre}</span>
-										{/if}
-										{#if sous}<span class="sous">{sous}</span>{/if}
-										{#if e.rappels.length}<span class="heures interface">{e.rappels.join(', ')}</span>{/if}
-										{#if dureeDe(e) > 0}<span class="duree interface">≈ {enMinutes(dureeDe(e))}</span>{/if}
-									</div>
-									{#if total > 1}
-										<button
-											class="medaillon brut"
-											onclick={() => compter(e, total)}
-											aria-label="{fait} sur {total} : compter une récitation de plus"
-										>
-											<Ornement nom="medaillon" taille={34} />
-											<span class="pc">{ROMAINS[fait] || '·'}<i>/</i>{ROMAINS[total]}</span>
-										</button>
-									{/if}
-									<span class="genre pc" class:propre={e.etiquette === 'propre'}
-										>{e.etiquette === 'propre' ? 'propre' : 'ord.'}<br /><span
-											class="rang rang-{rangElement(e)}"
-											title={ABREGE[rangElement(e)].latin + ' : ' + ABREGE[rangElement(e)].fr}>{ABREGE[rangElement(e)].abrege}</span
-										></span
+						{#each elements as l (l.id)}
+							{@const n = recitations(l)}
+							{@const fait = faites(l)}
+							{@const sous = sousTitre(l)}
+							{@const m = minutesDUneRecitation(l, vie.corps)}
+							<li class:fini={fait >= n}>
+								<Case libelle={l.titre} bind:cochee={() => fait >= n, () => cocher(l, date, fait, idsPratiques)} />
+								<div class="corps">
+									<a class="titre" href="/pratique/{encodeURIComponent(l.id)}?date={date}">{l.titre}</a>
+									{#if sous}<span class="sous">{sous}</span>{/if}
+									{#if l.heures?.length}<span class="heures interface">{l.heures.join(', ')}</span>{/if}
+									{#if m > 0}<span class="duree interface">≈ {enMinutes(m)}</span>{/if}
+								</div>
+								{#if n > 1}
+									<button
+										class="medaillon brut"
+										onclick={() => cocher(l, date, fait, idsPratiques)}
+										aria-label="{fait} sur {n} : compter une récitation de plus"
 									>
-								</li>
-							{/if}
+										<Ornement nom="medaillon" taille={34} />
+										<span class="pc">{ROMAINS[fait] || '·'}<i>/</i>{ROMAINS[n]}</span>
+									</button>
+								{/if}
+							</li>
 						{/each}
+						{#if moment === 'journee' && lectures.length}
+							<li class="lectures" class:fini={lues === lectures.length}>
+								<span class="compte pc chiffres-alignes" aria-hidden="true">{lues}/{lectures.length}</span>
+								<div class="corps">
+									<a class="titre" href="/lecture{estAujourdhui ? '' : `?date=${date}`}">Lectures du jour ({lues}/{lectures.length})</a>
+									<details class="a-lire">
+										<summary class="sous">{lectures.map((l) => l.titre).join(' · ')}</summary>
+										{#each lectures as l (l.id)}
+											<p class="lu">
+												<Case libelle="{l.titre} : lu" bind:cochee={() => (coches[l.id] ?? 0) > 0, () => lire(l.id)} />
+												<a href="{l.route}{l.route === '/lecture' || l.route === '/ecriture' ? '' : `?date=${date}`}">{l.titre}</a>
+											</p>
+										{/each}
+									</details>
+								</div>
+							</li>
+						{/if}
 					</ul>
 				{/if}
 			{/each}
@@ -542,13 +476,12 @@
 			></textarea>
 		</details>
 
-		<section class="martyrologe" aria-label="Martyrologe">
-			<div class="tete">
-				<Ornement nom="grecque" />
-				<h2>Martyrologe</h2>
-				<p class="etiquette">Les saints de ce jour</p>
-			</div>
-			{#each jour.martyrologe as m}
+		<details class="martyrologe">
+			<summary>
+				<span class="pc">Martyrologe</span>
+				<span class="etiquette">{jour.martyrologe.length} éloge{jour.martyrologe.length > 1 ? 's' : ''} · les saints de ce jour</span>
+			</summary>
+			{#each jour.martyrologe as m, i (i)}
 				{@const inv = invocation(m.texte)}
 				{@const la = invocationLatine(m.texte_la)?.texte ?? nomLatin(m.texte_la)}
 				<details class="eloge">
@@ -562,7 +495,7 @@
 			{/each}
 			<p class="tous"><span class="rub">✠</span> {TOUS_LES_SAINTS}</p>
 			<p class="source imprime">Martyrologe romain, traduction française donnée par Divinum Officium.</p>
-		</section>
+		</details>
 
 		<div class="cul"><Ornement nom="fleuron" /></div>
 	</main>
@@ -601,18 +534,9 @@
 		margin: 0;
 		font-size: 1rem;
 	}
-	a.titre,
-	.plusieurs summary {
+	a.titre {
 		color: var(--hs-encre);
 		text-decoration: none;
-	}
-	.plusieurs a {
-		display: block;
-		padding: 6px 0 6px 12px;
-		font-size: 1.0625rem;
-		text-decoration: none;
-		border-left: var(--hs-cheveu) solid var(--hs-or-trait);
-		margin: 2px 0;
 	}
 	.temps {
 		margin: 2px 0 var(--hs-e5);
@@ -713,10 +637,6 @@
 		margin: 2px 0 0;
 		text-align: right;
 	}
-	.promesses summary {
-		cursor: pointer;
-		text-align: right;
-	}
 	.perso {
 		margin: var(--hs-e3) 0 0;
 		font-style: italic;
@@ -757,13 +677,6 @@
 	.note-jour textarea {
 		margin-bottom: var(--hs-e4);
 	}
-	.medaillon.fixe {
-		cursor: default;
-	}
-	.petit-chiffre {
-		font-family: var(--hs-interface);
-		font-size: 0.625rem !important;
-	}
 	.regler {
 		margin: var(--hs-e2) 0 0;
 		text-align: right;
@@ -779,9 +692,6 @@
 	}
 	.tete h2 {
 		font-size: var(--hs-t2);
-	}
-	.tete .etiquette {
-		margin: -6px 0 0;
 	}
 	ul {
 		list-style: none;
@@ -824,27 +734,6 @@
 		font-size: 0.75rem;
 		margin-top: 2px;
 		opacity: 0.85;
-	}
-	.genre {
-		font-size: 0.9375rem;
-		color: var(--hs-encre-douce);
-		width: 3.2rem;
-		text-align: right;
-		flex: none;
-	}
-	.genre.propre {
-		color: var(--hs-rubrique);
-	}
-	.genre .rang {
-		font-size: 0.75rem;
-		letter-spacing: 0.04em;
-		color: var(--hs-encre-douce);
-	}
-	.genre .rang-praecipua {
-		color: var(--hs-or-texte);
-	}
-	.genre .rang-supererogatoria {
-		font-style: italic;
 	}
 	.seuils {
 		display: flex;
@@ -940,12 +829,85 @@
 		margin: var(--hs-e5) 0 var(--hs-e2);
 		font-style: italic;
 	}
-	.martyrologe .tete {
-		margin-bottom: var(--hs-e3);
-	}
 	.cul {
 		margin: var(--hs-e7) auto 0;
 		max-width: 16rem;
+	}
+
+	.jaculatoire {
+		display: grid;
+		gap: 4px;
+		width: 100%;
+		margin: var(--hs-e5) 0 0;
+		padding: var(--hs-e3) var(--hs-e2);
+		background: none;
+		border: 0;
+		border-block: var(--hs-cheveu) solid var(--hs-or-trait);
+		text-align: center;
+		cursor: pointer;
+		color: var(--hs-encre);
+		font: inherit;
+	}
+	.jac-texte {
+		font-style: italic;
+		font-size: 1.125rem;
+		line-height: 1.4;
+		text-wrap: balance;
+	}
+	.jac-pied {
+		font-size: var(--hs-t0);
+		letter-spacing: var(--hs-chasse-interface);
+		color: var(--hs-encre-douce);
+	}
+	.jaculatoire.dite .jac-pied {
+		color: var(--hs-vert);
+	}
+	.bilan summary {
+		display: flex;
+		align-items: center;
+		gap: 12px;
+		color: var(--hs-encre-douce);
+		cursor: pointer;
+		min-height: 44px;
+	}
+	.bilan[open] summary {
+		margin-bottom: var(--hs-e2);
+	}
+	.attente {
+		margin-top: var(--hs-e5);
+		font-style: italic;
+	}
+	li.lectures {
+		align-items: flex-start;
+	}
+	.compte {
+		flex: none;
+		width: 26px;
+		text-align: center;
+		color: var(--hs-or-texte);
+		font-size: 0.875rem;
+		padding-top: 4px;
+	}
+	.a-lire summary {
+		cursor: pointer;
+	}
+	.lu {
+		display: flex;
+		align-items: center;
+		gap: 12px;
+		margin: 8px 0 0;
+	}
+	.martyrologe {
+		margin-top: var(--hs-e6);
+		border-bottom: var(--hs-cheveu) solid var(--hs-filet);
+	}
+	.martyrologe > summary {
+		display: grid;
+		justify-items: center;
+		gap: 2px;
+		padding: var(--hs-e3) 0;
+		cursor: pointer;
+		font-size: var(--hs-t2);
 	}
 
 	@media (min-width: 700px) {

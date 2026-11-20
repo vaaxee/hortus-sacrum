@@ -2,6 +2,8 @@ import { anneeLiturgique } from './calendrier.ts';
 import { contenu, db, enregistrer } from './db.ts';
 import { SELON_LE_JOUR } from './liste.ts';
 import { pratiquesDuPlan } from './plan.ts';
+import { basculer } from './programme/bascule.ts';
+import { chargerProgramme } from './programme/charger.ts';
 import { amorcerRoues } from './roues.ts';
 import type { ElementListe, Moment, Pratique, Texte } from './types.ts';
 import { SOURCE_VIDE } from './types.ts';
@@ -189,6 +191,9 @@ export async function amorcer(fetchFn: typeof fetch = fetch): Promise<void> {
 		['beringer:cordon-saint-joseph'],
 		['hortus:cordon-sept-gloria', 'beringer:cordon-saint-joseph']
 	);
+	// refonte (SPEC § 11) : l'ancienne liste est archivée et remplacée par le programme unique, une seule fois
+	const programme = await chargerProgramme(fetchFn);
+	if (programme) await basculer(programme);
 }
 
 /** Textes sourcés trouvés pour des dévotions du plan restées sans texte (titre de la dévotion → texte). */
