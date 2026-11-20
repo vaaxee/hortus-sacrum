@@ -1,6 +1,7 @@
 # Guéranger, t. 8 (entrées en OCR seulement : remplacer.py --ocr). Propositions de proposer_vol.sh relues une à une ;
 # vus sur le scan g08.pdf : « il l'élève » (p. 322), évêques (p. 407), amères (p. 427), réveiller (p. 432),
 # profondément (p. 482), réjouir (p. 526), répondent (p. 556), l'honneur (p. 563), chaînes (p. 145).
+# « Christroi » → « Christ-roi » : vu p. 413, « Christ-» en fin de ligne après un mot entier, donc composé imprimé.
 # Laissés : « matant » (juste : mater sa chair), « et tinit », « de)eter », « ilprès », latin des colonnes (quavis, sû…).
 un ceil propice	un œil propice
 le luiavait prédit	le lui avait prédit
