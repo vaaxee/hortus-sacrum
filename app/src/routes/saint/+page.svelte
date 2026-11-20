@@ -6,6 +6,9 @@
 	import { rendre } from '#lib/markup.ts';
 	import LectureGueranger from '#lib/LectureGueranger.svelte';
 	import { chargerRecueil, type EntreeRecueil, type Recueil } from '#lib/meditations.ts';
+	import { db } from '#lib/db.ts';
+	import { avecLeNom, priereDuSaint } from '#lib/gertrude.ts';
+	import type { Texte } from '#lib/types.ts';
 
 	/** Office du jour et vie du saint : leçons du IIe nocturne du Bréviaire (Divino Afflatu), français et latin. */
 	const date = $derived(page.url.searchParams.get('date') ?? iso(new Date()));
@@ -26,6 +29,17 @@
 	const lecons = $derived<EntreeRecueil | undefined>(
 		breviaire && fichier ? breviaire.entrees.find((e) => e.cle === `O:${fichier}`) : undefined
 	);
+	// à la fin des lectures : la prière de sainte Gertrude propre à la catégorie du saint, avec son nom (SPEC § 11)
+	const priere = $derived(jour ? priereDuSaint(jour.office, jour.est_fete_sanctorale) : null);
+	let texteGertrude = $state<Texte | undefined>();
+	$effect(() => {
+		const p = priere;
+		if (!p) {
+			texteGertrude = undefined;
+			return;
+		}
+		db.textes.get(p.id).then((t) => (texteGertrude = t && !t.supprimeLe ? t : undefined));
+	});
 	const dateLongue = $derived(new Date(date + 'T12:00:00').toLocaleDateString('fr-FR', { weekday: 'long', day: 'numeric', month: 'long' }));
 </script>
 
@@ -68,6 +82,24 @@
 		<p class="centre">Pas de leçons propres pour l’office de ce jour (férie ou dimanche : voir la méditation du jour).</p>
 	{/if}
 	<LectureGueranger {date} {jour} titre="Dom Guéranger, L’Année liturgique" />
+
+	{#if priere && texteGertrude}
+		<section class="page gertrude" aria-label="Prière de sainte Gertrude au saint du jour">
+			<article class="texte">
+				<p class="pc rub centre">{texteGertrude.titre}</p>
+				<div class="lecture">{@html rendre(avecLeNom(texteGertrude.corps, priere.nom))}</div>
+			</article>
+			<aside class="marge" aria-label="Source">
+				<details open>
+					<summary><span class="pc">Source</span></summary>
+					<p class="imprime">
+						{texteGertrude.source.ouvrage}{#if texteGertrude.source.page}, p. {texteGertrude.source.page}{/if}
+					</p>
+					<p><a href="/prieres/{encodeURIComponent(texteGertrude.id)}">Ouvrir la prière</a></p>
+				</details>
+			</aside>
+		</section>
+	{/if}
 </main>
 
 <style>

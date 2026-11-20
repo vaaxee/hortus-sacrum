@@ -1,8 +1,7 @@
 /**
  * Données anciennes ou incomplètes (bug « Internal Error » de l'Historique, SPEC § 11).
  *
- * Ces tests décrivent le comportement attendu après correction. Tant que le bug n'est pas corrigé, ils sont marqués
- * `it.fails` : la suite reste verte, et elle deviendra rouge le jour de la correction, ce qui oblige à retirer `.fails`.
+ * Ces tests décrivent le comportement attendu ; le bug est corrigé (20 nov. 2026).
  * La reproduction complète (navigation Profil → Historique avec des coches anciennes) est dans
  * `app/tests/historique.e2e.mjs`.
  */
@@ -40,7 +39,7 @@ function occurrencesAvecDelai(regle: unknown, ms = 2000): Promise<unknown[]> {
 }
 
 describe('occurrences() sur des règles incomplètes (anciennes versions, imports, synchronisation)', () => {
-	it.fails('une pratique sans règle ne fait pas planter le calcul', () => {
+	it('une pratique sans règle ne fait pas planter le calcul', () => {
 		expect(() => occurrences(undefined as unknown as Regle, DE, A)).not.toThrow();
 	});
 
@@ -53,7 +52,7 @@ describe('occurrences() sur des règles incomplètes (anciennes versions, import
 		expect(occurrences(r, DE, A).every((o) => /^\d{4}-\d{2}-\d{2}$/.test(o.date))).toBe(true);
 	});
 
-	it.fails('« avant_fete » sans jour de semaine (champ absent) rend la main', async () => {
+	it('« avant_fete » sans jour de semaine (champ absent) rend la main', async () => {
 		const r = { genre: 'avant_fete', nombre: 9, mois: 12, jour: 8 };
 		await expect(occurrencesAvecDelai(r)).resolves.toBeInstanceOf(Array);
 	});
