@@ -63,3 +63,25 @@ export function marquerRelu(
 ): NonNullable<Texte['dimensions']> {
 	return { ...dimensionsEffectives(t, livre).valeurs, releve: date };
 }
+
+/**
+ * Pour chaque valeur (« objet:passion »), les prières de la bibliothèque qui la portent, de la plus courte à la plus
+ * longue : de quoi proposer, sous un manque, une prière à lire. Rien n'est ajouté à la journée.
+ */
+export function indexDesValeurs(
+	bibliotheque: Iterable<Texte>,
+	classements?: Record<string, ClassementTexte> | null
+): Map<string, Pick<Texte, 'id' | 'titre'>[]> {
+	const index = new Map<string, (Pick<Texte, 'id' | 'titre'> & { n: number })[]>();
+	for (const t of bibliotheque) {
+		if (t.supprimeLe || !t.corps) continue;
+		const { valeurs } = dimensionsEffectives(t, classements?.[t.id]);
+		for (const d of DIMENSIONS)
+			for (const v of valeurs[d] ?? []) {
+				const l = index.get(`${d}:${v}`) ?? [];
+				l.push({ id: t.id, titre: t.titre, n: t.corps.length });
+				index.set(`${d}:${v}`, l);
+			}
+	}
+	return new Map([...index].map(([k, l]) => [k, l.sort((a, b) => a.n - b.n).map(({ id, titre }) => ({ id, titre }))]));
+}

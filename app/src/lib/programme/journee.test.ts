@@ -3,7 +3,7 @@ import { appliquerReglages, journee } from './journee.ts';
 import { vaut } from './quand.ts';
 import { couper, extraire, fragments, partIncluse } from './texte.ts';
 import type { Journee, Programme } from './types.ts';
-import { CALENDRIER, corps, PLAN, PROGRAMME } from './donnees-de-test.ts';
+import { CALENDRIER, corps, CYCLES, dimensions, PLAN, PROGRAMME, VOCABULAIRE } from './donnees-de-test.ts';
 
 const jourDe = (date: string) => {
 	const j = CALENDRIER.find((x) => x.date === date);
@@ -196,5 +196,42 @@ describe('journee()', () => {
 				.a_fournir.map((a) => a.quoi)
 				.join()
 		).toMatch(/Chemin de croix/);
+	});
+});
+
+describe('contexte dévotionnel et couverture (lot « Dimensions »)', () => {
+	const avec = (date: string) => calculer(date, PROGRAMME, { cycles: CYCLES, dimensions, vocabulaire: VOCABULAIRE });
+
+	it('vendredi → Passion, avec sa source ; couverte par la dévotion du vendredi', () => {
+		const jr = avec('2026-12-04');
+		expect(jr.contexte.objets).toContain('passion');
+		expect(jr.contexte.sources).toContainEqual({ dimension: 'objet', valeur: 'passion', de: 'vendredi' });
+		expect(jr.couverture.objet.find((c) => c.valeur === 'passion')?.par).toContain('prog:devotion-vendredi');
+	});
+
+	it('juillet → Précieux Sang ; Carême → réparation ; temps pascal → action de grâces', () => {
+		expect(avec('2027-07-09').contexte.sources).toContainEqual({ dimension: 'objet', valeur: 'precieux-sang', de: 'mois de juillet' });
+		expect(avec('2027-03-03').contexte.fins).toEqual(['reparation']);
+		expect(avec('2027-04-06').contexte.fins).toEqual(['action-de-graces']);
+		expect(avec('2026-12-02').contexte.fins).toEqual([]); // le thème de la semaine du mois n'est pas adopté
+	});
+
+	it('fête du sanctoral : le saint est noté ; fête de la Vierge : objet ajouté', () => {
+		expect(avec('2026-12-03').contexte.sanctoral).toMatch(/François-Xavier/);
+		expect(avec('2026-12-08').contexte.objets).toContain('sainte-vierge');
+	});
+
+	it('manques : les valeurs non couvertes, les fins principales marquées requises', () => {
+		const jr = avec('2026-12-01');
+		const couvertes = new Set(jr.couverture.fin.map((c) => c.valeur));
+		for (const m of jr.manques) expect(couvertes.has(m.valeur) && m.dimension === 'fin').toBe(false);
+		for (const m of jr.manques.filter((x) => x.dimension === 'fin' && VOCABULAIRE.fins_principales.includes(x.valeur)))
+			expect(m.requis).toBe(true);
+	});
+
+	it('sans cycles ni dimensions : contexte vide, mêmes lignes', () => {
+		const a = calculer('2026-12-04');
+		expect(a.contexte.objets).toEqual([]);
+		expect(a.lignes).toEqual(avec('2026-12-04').lignes);
 	});
 });

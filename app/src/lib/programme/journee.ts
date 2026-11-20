@@ -8,9 +8,12 @@ import { occurrenceDu } from '../pratiques.ts';
 import { elementDu, pas } from '../roues-calcul.ts';
 import type { Pratique } from '../types.ts';
 import { vaut, type JourDuProgramme } from './quand.ts';
+import { contexteDevotionnel, couvertureDe, manquesDe } from './contexte.ts';
 import { couper } from './texte.ts';
 import type {
 	Choix,
+	Cycles,
+	Dimensions,
 	EntreeProgramme,
 	Journee,
 	Lecture,
@@ -19,7 +22,8 @@ import type {
 	Programme,
 	ReglageProgramme,
 	Section,
-	SectionResolue
+	SectionResolue,
+	Vocabulaire
 } from './types.ts';
 
 export interface Contexte {
@@ -30,6 +34,11 @@ export interface Contexte {
 	corps?: (id: string) => string | undefined;
 	/** Surcouche de l'utilisateur (lot 4). */
 	reglages?: ReglageProgramme[];
+	/** Lot « Dimensions » (descriptif seulement : rien n'y change les lignes). Cycles dévotionnels du jour. */
+	cycles?: Cycles | null;
+	/** Dimensions d'un texte (dimensions.ts : réglage de l'utilisateur, classement livré, motifs). */
+	dimensions?: (id: string) => Dimensions | undefined;
+	vocabulaire?: Vocabulaire | null;
 }
 
 type Bloc = SectionResolue | { point: string };
@@ -301,13 +310,20 @@ export function journee(programme: Programme, ctx: Contexte): Journee {
 		const { blocs: _b, ...reste } = h;
 		return reste;
 	};
+	const lignesFinales = ordonnees.map(fermer);
+	// lot « Dimensions » : décrire la journée déjà fixée (contexte, couverture, manques), sans rien y changer
+	const contexte = contexteDevotionnel(j, ctx.cycles);
+	const couverture = couvertureDe(lignesFinales, ctx.dimensions ?? (() => undefined));
 	return {
 		date,
-		lignes: ordonnees.map(fermer),
+		lignes: lignesFinales,
 		lectures: lues.map(fermer),
 		textes,
 		fusions,
 		conflits,
-		a_fournir: programme.a_fournir.filter((a) => vaut(a.quand, j))
+		a_fournir: programme.a_fournir.filter((a) => vaut(a.quand, j)),
+		contexte,
+		couverture,
+		manques: manquesDe(couverture, contexte, ctx.vocabulaire)
 	};
 }

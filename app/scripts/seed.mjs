@@ -18,6 +18,7 @@ mkdirSync(join(cible, 'programme'), { recursive: true });
 compact(join(racine, 'data', 'programme', 'programme.json'), join(cible, 'programme', 'programme.json'));
 // dimensions (lot « Dimensions ») : vocabulaire fermé et classement des textes
 compact(join(racine, 'data', 'programme', 'dimensions.json'), join(cible, 'programme', 'dimensions.json'));
+compact(join(racine, 'data', 'programme', 'cycles.json'), join(cible, 'programme', 'cycles.json'));
 compact(join(racine, 'data', 'prieres', 'dimensions-textes.json'), join(cible, 'prieres', 'dimensions-textes.json'));
 // Écriture sainte (engine/ecriture/bible.py) : un fichier par livre, la source à part
 mkdirSync(join(cible, 'ecriture'), { recursive: true });

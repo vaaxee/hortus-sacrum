@@ -1,17 +1,15 @@
 /**
- * Tests de la matrice dévotionnelle (docs/conception/LOT_DIMENSIONS.md, § 5). Lot D1 : tests 1 et 2.
+ * Tests de la matrice dévotionnelle (docs/conception/LOT_DIMENSIONS.md, § 5) : tests 1 et 2 (D1), 3 à 5 (D3). Le test 6
+ * (thème de la semaine du mois) reste désactivé : le thème n'est pas adopté.
  * Ils décrivent et vérifient ; ils ne changent rien à la journée calculée.
  */
-import { readFileSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
 import { CLE_DE_L_ETIQUETTE, dimensionsDevinees, ETIQUETTES } from '../etiquettes.ts';
 import { textesDuProgramme } from './inventaire.ts';
-import { DIMENSIONS, type ClassementTexte, type Vocabulaire } from './types.ts';
-import { PROGRAMME, TEXTES } from './donnees-de-test.ts';
+import { DIMENSIONS } from './types.ts';
+import { journee } from './journee.ts';
+import { CALENDRIER, CLASSEMENTS, corps, CYCLES, dimensions, PLAN, PROGRAMME, TEXTES, VOCABULAIRE } from './donnees-de-test.ts';
 
-const lire = <T>(chemin: string): T => JSON.parse(readFileSync(new URL(`../../../../data/${chemin}`, import.meta.url), 'utf-8')) as T;
-const VOCABULAIRE = lire<Vocabulaire>('programme/dimensions.json');
-const CLASSEMENTS = lire<{ textes: Record<string, ClassementTexte> }>('prieres/dimensions-textes.json').textes;
 const admise = (dim: (typeof DIMENSIONS)[number], v: string) => v in VOCABULAIRE.dimensions[dim].valeurs;
 
 describe('vocabulaire', () => {
@@ -53,5 +51,57 @@ describe('classement des textes du programme', () => {
 			for (const dim of c.devinee ?? []) if (!DIMENSIONS.includes(dim)) inconnues.push(`${id} → devinee:${dim}`);
 		}
 		expect(inconnues).toEqual([]);
+	});
+});
+
+// ------------------------------------------------------------------ tests 3 à 5 (D3) : ils signalent, ils ne modifient rien
+
+const ANNEE = CALENDRIER.map((jour) =>
+	journee(PROGRAMME, { jour, pratiques: PLAN, corps, cycles: CYCLES, dimensions, vocabulaire: VOCABULAIRE })
+);
+
+describe(`matrice sur ${ANNEE.length} jours`, () => {
+	it('la matrice ne change aucune ligne : la journée est la même avec ou sans dimensions', () => {
+		for (const j of ANNEE.filter((_, i) => i % 7 === 0)) {
+			const sans = journee(PROGRAMME, { jour: CALENDRIER.find((x) => x.date === j.date)!, pratiques: PLAN, corps });
+			expect(j.lignes, j.date).toEqual(sans.lignes);
+			expect(j.lectures, j.date).toEqual(sans.lectures);
+		}
+	});
+
+	it('test 3 : chaque jour, les objets du contexte sont couverts par au moins une ligne', () => {
+		const trous = ANNEE.flatMap((j) =>
+			j.contexte.objets
+				.filter((o) => !j.couverture.objet.some((c) => c.valeur === o))
+				.map((o) => `${j.date} ${o} ← ${j.contexte.sources.find((s) => s.valeur === o)?.de}`)
+		);
+		expect(trous).toEqual([]);
+	});
+
+	it('test 4 : chaque semaine couvre les cinq fins principales de la SPEC', () => {
+		const trous: string[] = [];
+		for (let i = 0; i + 7 <= ANNEE.length; i += 7) {
+			const semaine = ANNEE.slice(i, i + 7);
+			const fins = new Set(semaine.flatMap((j) => j.couverture.fin.map((c) => c.valeur)));
+			for (const f of VOCABULAIRE.fins_principales) if (!fins.has(f)) trous.push(`semaine du ${semaine[0].date} : ${f}`);
+		}
+		expect(trous).toEqual([]);
+	});
+
+	it('test 5 : le motif d’une entrée a au moins une fin commune avec ses textes', () => {
+		const contradictions: string[] = [];
+		for (const e of PROGRAMME.entrees as ((typeof PROGRAMME.entrees)[number] & { motif?: { fins?: string[] } })[]) {
+			if (!e.motif?.fins?.length) continue;
+			// les fins des textes que l'entrée apporte elle-même (dans sa page ou chez son hôte)
+			const fins = new Set(
+				ANNEE.flatMap((j) =>
+					[...j.lignes, ...j.lectures].flatMap((l) =>
+						l.sections.filter((s) => s.origine === e.id && s.texte).flatMap((s) => dimensions(s.texte!)?.fin ?? [])
+					)
+				)
+			);
+			if (!e.motif.fins.some((f) => fins.has(f))) contradictions.push(`${e.id} : ${e.motif.fins.join(', ')}`);
+		}
+		expect(contradictions).toEqual([]);
 	});
 });
