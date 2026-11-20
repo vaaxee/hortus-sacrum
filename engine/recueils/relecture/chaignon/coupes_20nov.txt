@@ -1,0 +1,24 @@
+# Chaignon, 20 nov. : mots coupés avec parasite (commun/parasites.py), mots en morceaux, apostrophes et traits d'union, liste relue.
+pou* vaient	pouvaient	*
+dai. gnez	daignez	*
+hu • milié	humilié	*
+humi* lié	humilié	*
+po.ur	pour	*
+vien • nent	viennent	*
+mouve • ments	mouvements	*
+p>as	pas	*
+conver « sions	conversions	*
+récom • pensée	récompensée	*
+Sa i nt	Saint	*
+e n arriverai	en arriverai	*
+e t de	et de	*
+qu i inspire	qui inspire	*
+Ils m ont	Ils m’ont	*
+Il s est	Il s’est	*
+grâce d une	grâce d’une	*
+quand d une	quand d’une	*
+pécheur s attache	pécheur s’attache	*
+très- sainte	très-sainte	*
+non- seulement	non-seulement	*
+est- ce	est-ce	*
+bien- aimés	bien-aimés	*
