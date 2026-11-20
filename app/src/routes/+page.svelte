@@ -343,8 +343,7 @@
 					<span class="etiquette">Bilan du jour</span>
 					<span class="trait"><span style="width: {total ? (100 * faits) / total : 0}%"></span></span>
 					<span class="chiffres-alignes"
-						>{faits} / {total}{#if minutes.tout > 0}
-							· {enMinutes(Math.max(0, minutes.tout - minutes.fait))} restantes{/if}</span
+						>{faits} / {total}{minutes.tout > 0 ? ` · ${enMinutes(Math.max(0, minutes.tout - minutes.fait))} restantes` : ''}</span
 					>
 				</summary>
 				<div
