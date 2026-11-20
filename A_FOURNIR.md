@@ -30,6 +30,25 @@ Les points réglés sont gardés pour l'historique. Dernière mise à jour : 20 
 - **Prières de sainte Gertrude** (Denis, 11e éd., Lethielleux) : choisir les prières à transcrire ; trois Ave de sainte Mechtilde faits. **Fait (19 nov.)**, selon la décision de l'utilisateur : 25 pièces `gertrude:*` (prières portant une promesse de Notre-Seigneur ou de la sainte Vierge : Notre-Seigneur, Passion, sainte Vierge, saints, défunts ; et les prières aux saints par catégorie, avec « N. »). Laissées de côté, faute de promesse explicite de Notre-Seigneur ou de la Vierge : Amour de Dieu (p. 89), Autre manière de saluer les plaies (p. 122), Hostie divine (p. 147), Salut à tous les membres de Jésus (p. 163), Réparation à la sainte Vierge (p. 186), Ave Maria d'or (p. 191), Offrande du Cœur de Jésus à Marie (p. 198), A saint Benoît (promesse du saint, p. 227), Invocation de tous les Saints (p. 242), prières de la communion et de la messe (p. 35-54, 313-335) : **Décision du 20 nov. : toutes transcrites, hors de la liste du jour** (consultables dans Prières). **Fait (20 nov.)** : 30 pièces relues page à page sur le scan (11 pour la messe, p. 34-54 ; 9 pièces isolées ; 10 pour la communion, p. 313-336 ; les trois petites prières à la Vierge, p. 318-319, étaient déjà faites). Rien d'illisible. Lectures sous une impression abîmée ou rognée au bord du scan, sûres par le contexte : « ceux qui me sont chers » (p. 46, lettres écrasées), « m'obtenir » (p. 332, tache), « vraie foi » (p. 36), « de m'éclairer » (p. 36), « soyez-moi » (p. 44), « tendu » (p. 148), « non à un désir » (p. 92), « votre sacré côté » (p. 316) ; « L. 4, c. 53 » (p. 186, dernier chiffre pâle, confirmé p. 189). Ponctuation absente à la p. 91 (« qu'on ne vous aime pas Combien », « ô mon doux amour de ce que »), gardée telle quelle. Début de la messe (p. 26-34 : prière au commencement, Kyrie et Gloria tirés de Louis de Blois) **fait** aussi le 20 nov. (3 pièces).
 - **Sainte Face, petit chemin de croix, IVe station** (Janvier, *Manuel de l'Archiconfrérie*, 3e éd., Tours 1895, p. 185) : sur le scan, le mot avant « larmes » (« je vous offre … larmes ») est caché par une surcharge à la main ; transcrit « ces », lecture la plus probable. **Décision du 20 nov. : « ces » est gardé, sans autre recherche.**
 - **Apostolat de la prière** : **fait (20 nov.)**, Ramière, *L'Apostolat de la prière*, 4e éd., Le Puy, Marchessou, 1864 (archive.org `lapostolatdelapr00rami`) : offrande quotidienne et pratiques (`ramiere:*`). Reste : la « petite prière du Cœur agonisant » à dire après l'Angélus, que Ramière cite sans la donner (il renvoie au P. Lyonnard, *Le Cœur agonisant de Jésus et les agonisants de tous les jours*, Paris, Lecoffre) ; autre piste : *Petit manuel de l'Apostolat de la prière* (Montréal, Rolland, 1864, archive.org `cihm_39977`). Gautrelet non consulté.
+- **Rosaire : clausules de Montfort en latin** (audit des consignes du 20 nov., point « contredit »).
+  - **Ce qu'a demandé l'utilisateur** (transcript, 17 nov., 21 h 04 UTC) : « Pour le rosaire/chapelet, ajouter à la page
+    la méthode de récitation montfortaine et composer des clausules en latin et en français : 2 clausules à alterner par
+    mystères donc 30 en tout ». À la question posée à 21 h 06 (« Pour les 2 clausules par mystère (30 en tout), latin et
+    français »), il a répondu à 21 h 08 : « **Toutes de Montfort** » (option : « Seulement ses textes ; s'il n'en donne
+    qu'une par mystère, la seconde reprend une autre de ses méthodes »). Le latin a donc bien été demandé.
+  - **Ce qui est en place** : les deux formules françaises de Montfort par mystère (offrande de la dizaine et « Grâce du
+    mystère… »), d'après *Le bienheureux Louis-Marie Grignon de Montfort : notice… suivie de sa méthode pour réciter avec
+    fruit le saint Rosaire* (PDF p. 34-43), dans `hortus:chapelet-joyeux`, `-douloureux` et `-glorieux`.
+  - **Recherche du 20 nov.** : Montfort a écrit ses méthodes en français. Aucune édition latine ancienne n'a été trouvée :
+    recherche sur le web (« methodus », « Rosarium », « Grignion ») et dans le catalogue d'archive.org (auteur ou titre
+    « Grignion », et « Montfort » ou « Grignion » avec « rosarium » en latin : 0 résultat ; seules des éditions françaises,
+    anglaises, espagnoles et portugaises).
+  - **Donc rien n'est appliqué** : une traduction latine faite ici ne serait pas un texte de Montfort ni une source
+    ancienne. Le report toucherait de plus `data/prieres/sources.json`, sur lequel travaille un autre agent.
+  - **Reste à faire** : trouver une traduction latine ancienne des méthodes (piste : une édition des œuvres pour la cause
+    de béatification, 1838-1888, ou une *Methodus* imprimée pour les confréries du Rosaire). Sinon, l'utilisateur
+    tranche : garder le français seul, et l'écrire dans la SPEC § 10.3.
+
 ## Traductions approuvées à trouver (20 novembre 2026)
 
 Règle : une prière concédée en latin ou en italien ne garde son indulgence en français que si la traduction est déclarée
