@@ -30,3 +30,30 @@ Les points réglés sont gardés pour l'historique. Dernière mise à jour : 13 
 - **Prières de sainte Gertrude** (Denis, 11e éd., Lethielleux) : choisir les prières à transcrire ; trois Ave de sainte Mechtilde faits. **Fait (19 nov.)**, selon la décision de l'utilisateur : 25 pièces `gertrude:*` (prières portant une promesse de Notre-Seigneur ou de la sainte Vierge : Notre-Seigneur, Passion, sainte Vierge, saints, défunts ; et les prières aux saints par catégorie, avec « N. »). Laissées de côté, faute de promesse explicite de Notre-Seigneur ou de la Vierge : Amour de Dieu (p. 89), Autre manière de saluer les plaies (p. 122), Hostie divine (p. 147), Salut à tous les membres de Jésus (p. 163), Réparation à la sainte Vierge (p. 186), Ave Maria d'or (p. 191), Offrande du Cœur de Jésus à Marie (p. 198), A saint Benoît (promesse du saint, p. 227), Invocation de tous les Saints (p. 242), prières de la communion et de la messe (p. 35-54, 313-335) : à choisir par l'utilisateur.
 - **Sainte Face, petit chemin de croix, IVe station** (Janvier, *Manuel de l'Archiconfrérie*, 3e éd., Tours 1895, p. 185) : sur le scan, le mot avant « larmes » (« je vous offre … larmes ») est caché par une surcharge à la main ; transcrit « ces », lecture la plus probable. À vérifier sur un autre exemplaire (ou la feuille « Petit Chemin de Croix de la Sainte-Face » de l'Oratoire de Tours).
 - **Apostolat de la prière** : **fait (20 nov.)**, Ramière, *L'Apostolat de la prière*, 4e éd., Le Puy, Marchessou, 1864 (archive.org `lapostolatdelapr00rami`) : offrande quotidienne et pratiques (`ramiere:*`). Reste : la « petite prière du Cœur agonisant » à dire après l'Angélus, que Ramière cite sans la donner (il renvoie au P. Lyonnard, *Le Cœur agonisant de Jésus et les agonisants de tous les jours*, Paris, Lecoffre) ; autre piste : *Petit manuel de l'Apostolat de la prière* (Montréal, Rolland, 1864, archive.org `cihm_39977`). Gautrelet non consulté.
+## Traductions approuvées à trouver (20 novembre 2026)
+
+Règle : une prière concédée en latin ou en italien ne garde son indulgence en français que si la traduction est déclarée
+fidèle par la S. Pénitencerie ou par un Ordinaire du lieu (can. 934 § 2 ; Ench. 1952, Praenotanda 3). *Thésaurisons pour
+le ciel* (Montréal, 1941, certifié par G. Chartier) a été dépouillé : il ne donne pas les textes ci-dessous (souvent il
+n'en cite que le titre). Piste : un autre recueil français certifié (Preces et Pia Opera traduits, *Recueil de prières et
+d'œuvres pies indulgenciées*, vers 1938-1952, avec déclaration de fidélité d'un évêque). En attendant, l'app affiche la
+note du can. 934 ; le latin, quand la pièce le donne, porte l'indulgence.
+
+| Pièce | Ench. 1952 | Langue | Latin dans la pièce |
+|---|---|---|---|
+| Angélus ; Regina cæli | n° 331 | latin | oui |
+| De profundis | n° 585 | latin | oui |
+| Litanies du Sacré-Cœur ; de saint Joseph | n° 245, 462 | latin | oui |
+| Litanies de la sainte Vierge ; du saint Nom ; des Saints (Paroissien) | n° 319, 114, 687 | latin | **non** : latin à fournir aussi |
+| Credo et Confiteor de la prière du soir | n° 43, 691 | latin | non (latin dans la prière du matin) |
+| Prière pour les agonisants (livret) | n° 671 | latin | oui ; le français du livret est presque celui de Thésaurisons n° 498 (proposition dans le rapport) |
+| Triple Couronne d'or : « Doux Cœur de Jésus, faites que je vous aime toujours de plus en plus » | n° 224 | italien | latin non approuvé ; Thésaurisons n° 82 : « Doux Cœur de mon Jésus, faites que je vous aime de plus en plus » (à reporter dans le livret) |
+| En ego, devant le crucifix (livret) | n° 201 | latin | incipit seul ; Thésaurisons n° 2 (« Me voici, ô bon et très doux Jésus… ») à reporter dans le livret |
+| Oraison à saint Gabriel | n° 449 | latin | oui |
+| Sept Douleurs de Marie (livret) ; En l'honneur du Cœur affligé de Marie (Beringer) | n° 383 | italien | non |
+| Sept Douleurs et Allégresses de saint Joseph (livret) | n° 470 | italien | non ; Thésaurisons n° 150 les donne (à reporter dans le livret) |
+| Veni Creator ; Ave maris stella ; Magnificat ; Te Joseph celebrent (livret) | n° 283, 321, 320, 463 | latin | oui |
+| Chapelet (Pater, Ave, Gloria) | n° 395 | latin | à confirmer : la concession porte sur la récitation du Rosaire ; trouver si l'Ave et le Pater français usuels sont approuvés |
+| Alma Redemptoris ; Ave Regina cælorum (l'antienne) ; Stabat Mater | n° 323, 324, 378 | latin | oui |
+| Te Deum | n° 684 | latin | oui |
+| Trois prières à Notre-Dame du Perpétuel Secours | n° 427 | italien | non |
