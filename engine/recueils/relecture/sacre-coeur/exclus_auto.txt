@@ -1,0 +1,25 @@
+# Mois du Sacré-Cœur : corrections automatiques (decider.py) écartées à la relecture de la liste.
+jout	put
+Lat	les
+Piis	Pis
+etpacem	pacem
+wr	sur
+seronV	seron
+d^ns	dens
+CMS	CRIS
+tOH	son
+COBUR	COUR
+botw	bono
+demandai	demander
+falta	faite
+tion	ton
+pa	pas
+poi	pot
+dam	dans
+Jor	dor
+perfusum,	perfusam,
+trists	triste
+Enfante	Enfants
+von.	VOIX.
+cœlis,	cælis,
+cœlo	cælo
