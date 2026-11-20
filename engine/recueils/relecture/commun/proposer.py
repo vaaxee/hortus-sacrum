@@ -72,6 +72,7 @@ def variantes(w):
     return out
 
 
+RELAX = bool(os.environ.get('RELAX'))  # RELAX=1 : sans la condition sur les voisins, pour une liste à trancher sur le scan
 d = json.load(open(F))
 props = []  # (règle, avant, après)
 TOK = re.compile(rf"[{L}]+|[^{L}]")
@@ -97,7 +98,7 @@ for e in d['entrees']:
                     continue
             if connu(w): continue
             # mot voisin inconnu : sans doute un mot coupé en morceaux, on laisse à l'œil
-            if any(x is not None and not (x.group(0).lower() in sp or x.group(0).lower() in OUTILS) for x in (prev, nxt)): continue
+            if not RELAX and any(x is not None and not (x.group(0).lower() in sp or x.group(0).lower() in OUTILS) for x in (prev, nxt)): continue
             # R2
             cands = []
             for i in range(2, len(w) - 1):

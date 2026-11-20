@@ -1,0 +1,35 @@
+# Hamon : traits d'union suivis d'une espace (mot coupé en fin de ligne, composé gardé) et « 11 » lu pour « Il » en début de phrase.
+ci- dessus	ci-dessus	*
+est- à	est-à	*
+amour- propre	amour-propre	*
+est- ce	est-ce	*
+à- dire	à-dire	*
+nousm- êmes	nous-mêmes	*
+nousm- ême	nous-même	*
+luim- ême	lui-même	*
+soim- ême	soi-même	*
+ellem- ême	elle-même	*
+bellem- ère	belle-mère	*
+peut- être	peut-être	*
+tout- puissant	tout-puissant	*
+lout- puissant	tout-puissant	*
+avant- goût	avant-goût	*
+au- dessus	au-dessus	*
+au- dessous	au-dessous	*
+par- dessus	par-dessus	*
+étaient- ce	étaient-ce	*
+quelques- uns	quelques-uns	*
+très- pur	très-pur	*
+très- facile	très-facile	*
+très- fâché	très-fâché	*
+très- sainte	très-sainte	*
+soixante- dix	soixante-dix	*
+sont- ce	sont-ce	*
+cinquante- trois	cinquante-trois	*
+fût- ce	fût-ce	*
+contre- temps	contre-temps	*
+savoir- vivre	savoir-vivre	*
+esl- à	est-à	*
+ces. 11 hait	ces. Il hait	*
+récompense. 11 en	récompense. Il en	*
+chef- d	chef-d	*
