@@ -39,24 +39,30 @@ n'en cite que le titre). Piste : un autre recueil français de prières indulgen
 (can. 934 § 2) d'un Ordinaire. En attendant, l'app affiche la
 note du can. 934 ; le latin, quand la pièce le donne, porte l'indulgence. **Décision du 20 nov. : ces prières s'ouvrent sur le latin**, le français en regard.
 
-| Pièce | Ench. 1952 | Langue | Latin dans la pièce |
+État au 20 novembre (report de Beringer 1925 et des Pater, Ave, Gloria usuels, `engine/indulgences/beringer1925.py`) :
+**fait** = le français porte l'indulgence et s'ouvre en premier ; **latin d'abord** = reste à trouver.
+
+| Pièce | Ench. 1952 | Langue | État |
 |---|---|---|---|
-| Angélus ; Regina cæli | n° 331 | latin | oui |
-| De profundis | n° 585 | latin | oui |
-| Litanies du Sacré-Cœur ; de saint Joseph | n° 245, 462 | latin | oui |
-| Litanies de la sainte Vierge ; du saint Nom ; des Saints (Paroissien) | n° 319, 114, 687 | latin | **non** : latin à fournir aussi |
-| Credo et Confiteor de la prière du soir | n° 43, 691 | latin | non (latin dans la prière du matin) |
-| Prière pour les agonisants (livret) | n° 671 | latin | oui ; le français du livret est presque celui de Thésaurisons n° 498 (proposition dans le rapport) |
-| Triple Couronne d'or : « Doux Cœur de Jésus, faites que je vous aime toujours de plus en plus » | n° 224 | italien | latin non approuvé ; Thésaurisons n° 82 : « Doux Cœur de mon Jésus, faites que je vous aime de plus en plus » (à reporter dans le livret) |
-| En ego, devant le crucifix (livret) | n° 201 | latin | incipit seul ; Thésaurisons n° 2 (« Me voici, ô bon et très doux Jésus… ») à reporter dans le livret |
-| Oraison à saint Gabriel | n° 449 | latin | oui |
-| Sept Douleurs de Marie (livret) ; En l'honneur du Cœur affligé de Marie (Beringer) | n° 383 | italien | non |
-| Sept Douleurs et Allégresses de saint Joseph (livret) | n° 470 | italien | non ; Thésaurisons n° 150 les donne (à reporter dans le livret) |
-| Veni Creator ; Ave maris stella ; Magnificat ; Te Joseph celebrent (livret) | n° 283, 321, 320, 463 | latin | oui |
-| Chapelet (Pater, Ave, Gloria) | n° 395 | latin | à confirmer : la concession porte sur la récitation du Rosaire ; trouver si l'Ave et le Pater français usuels sont approuvés |
-| Alma Redemptoris ; Ave Regina cælorum (l'antienne) ; Stabat Mater | n° 323, 324, 378 | latin | oui |
-| Te Deum | n° 684 | latin | oui |
-| Trois prières à Notre-Dame du Perpétuel Secours | n° 427 | italien | non |
+| Angélus ; Regina cæli | n° 331 | latin | **Fait** : Beringer n° 428, p. 221-223. Le français et le latin de l'Angélus du Paroissien sont remplacés par ceux de Beringer (révision) ; le Regina cæli était déjà Beringer |
+| De profundis | n° 585 | latin | **Fait** : Beringer n° 614, p. 322, pour les huit versets du psaume (seuls indulgenciés) ; versets et oraison du Paroissien gardés |
+| Magnificat (livret) | n° 320 | latin | **Fait** : le livret donne déjà, mot pour mot, Beringer n° 437, p. 228-229 |
+| En ego, devant le crucifix (livret) | n° 201 | latin | **Fait** : le livret donne déjà, mot pour mot, Beringer n° 384, p. 202 ; les sept Pater, Ave, Gloria (n° 196) sont usuels |
+| Sept Douleurs de Marie (livret) ; En l'honneur du Cœur affligé de Marie (Beringer) | n° 383 | italien | **Fait** : Beringer n° 450, p. 237-238 (et non n° 447 ou 887 : voir plus bas), déjà dans les deux pièces |
+| Trois prières à Notre-Dame du Perpétuel Secours | n° 427 | italien | **Fait** : Beringer n° 459, p. 243-244, avec les trois Ave après chaque prière que demande l'Enchiridion (Beringer ne les marque pas) ; le texte de Weber est remplacé (révision) |
+| Chapelet (Pater, Ave, Gloria) | n° 395 | latin | **Fait** : usuels, fidélité notoire (*L'Ami du clergé*, 9 avril 1931) |
+| Litanies de la sainte Vierge (Paroissien) | n° 319 | latin | **Latin d'abord** : Beringer n° 439 (p. 229-232) n'a pas « Regina in caelum assumpta » (S. R. C., 31 oct. 1950). La pièce du Paroissien (1890) n'a pas non plus « Mère du bon conseil », « Reine de la paix » ni « Reine élevée au ciel » ; latin à fournir |
+| Litanies du saint Nom (Paroissien) | n° 114 | latin | **Latin d'abord** : Beringer n° 305 (p. 154-157, et non 154 seule) rend librement plusieurs mots (« pardonnez-nous nos péchés », « exaucez nos prières », « qui nous honorez de votre amour » pour *amator noster*, oraison : « que notre bouche et nos actions vous bénissent » pour *ore et opere diligamus*). **À trancher par l'utilisateur** ; latin à fournir |
+| Triple Couronne d'or : « Doux Cœur de Jésus, faites que je vous aime toujours de plus en plus » | n° 224 | italien | **Latin d'abord** : Beringer n° 333 (p. 170) dit « Doux cœur de Jésus » pour « Dolce Cuor del mio Gesù ». Thésaurisons n° 82 (« Doux Cœur de mon Jésus, faites que je vous aime de plus en plus ») répond, lui, mot pour mot : à reporter dans le livret |
+| Sept Douleurs et Allégresses de saint Joseph (livret) | n° 470 | italien | **Latin d'abord** : Beringer n° 485 (p. 255-257) ajoute « ami intime » (V), « celui qui était votre vie » (VII), « qu'il reçut alors » (III), absents de l'italien de 1952 (vérifié sur l'image, p. 343). Thésaurisons n° 150 les donne : à reporter dans le livret |
+| Litanies du Sacré-Cœur ; de saint Joseph | n° 245, 462 | latin | Latin d'abord |
+| Litanies des Saints (Paroissien) | n° 687 | latin | Latin d'abord ; latin à fournir |
+| Credo et Confiteor de la prière du soir | n° 43, 691 | latin | Latin d'abord (latin dans la prière du matin) |
+| Prière pour les agonisants (livret) | n° 671 | latin | Latin d'abord ; le français du livret est presque celui de Thésaurisons n° 498 (proposition dans le rapport) |
+| Oraison à saint Gabriel | n° 449 | latin | Latin d'abord |
+| Veni Creator ; Ave maris stella ; Te Joseph celebrent (livret) | n° 283, 321, 463 | latin | Latin d'abord (hymnes : les traductions de Beringer sont en vers) |
+| Alma Redemptoris ; Ave Regina cælorum (l'antienne) ; Stabat Mater | n° 323, 324, 378 | latin | Latin d'abord |
+| Te Deum | n° 684 | latin | Latin d'abord |
 
 ### Recherche du 20 novembre (agent Traductions) : résultat
 - **Aucun recueil 1938-1960 en ligne** ne porte de déclaration de fidélité (can. 934 § 2). *L'Ami du clergé* (31 mai 1951,
@@ -72,3 +78,23 @@ note du can. 934 ; le latin, quand la pièce le donne, porte l'indulgence. **Dé
   prière pour les agonisants, oraison à saint Gabriel, Alma Redemptoris, Ave Regina cælorum, Te Deum, Te Joseph celebrent.
 - **À chercher en bibliothèque** : *Recueil de prières et œuvres pies* (Raccolta), Tournai, Desclée, 1901-1902, « seule édition
   reconnue authentique par la S. Congrégation des indulgences ».
+
+### Report de Beringer 1925, pièce par pièce (20 novembre, agent Traductions)
+Chaque texte a été lu sur l'image du scan (archive.org `lesindulgences0001beri`, PDF), l'OCR relu, puis comparé phrase par
+phrase à la formule de l'Enchiridion de 1952. Règle suivie : Beringer n'est retenu que si son français rend la formule de
+1952 sans ajout ni coupure ; une tournure de traduction (« par l'opération du Saint-Esprit ») ne compte pas comme ajout.
+Script rejouable : `engine/indulgences/beringer1925.py` (après `composer.py`, `ench1952.py`, `verif1952.py`).
+- **Pages** : la table d'archive.org est juste pour les n° 428 (p. 221-222, suite p. 223 pour le Regina cæli), 614 (p. 322),
+  384 (p. 202), 333 (p. 170), 459 (p. 243-244) ; le Magnificat va de la p. 228 à la p. 229, les litanies de Lorette de la
+  p. 229 à la p. 232, celles du saint Nom de la p. 154 à la p. 157, saint Joseph de la p. 255 à la p. 257.
+- **Sept Douleurs** : le n° 447 de Beringer est un autre exercice (sept Ave avec la strophe *Sancta Mater, istud agas*), le
+  n° 887 le chapelet des Servites. La formule du n° 383 (« Vi compatisco, Addolorata Maria ») est le **n° 450**,
+  « En l'honneur du Cœur affligé de Marie » (p. 237-238). Au 7e, Beringer dit « votre Cœur sacré, abreuvé d'amertumes »
+  pour « il vostro Cuore in estremo rammaricato » : tournure, retenue.
+- **Perpétuel Secours** : prières rendues phrase par phrase ; l'Enchiridion de 1952 fait suivre chacune de trois Ave, que
+  Beringer (concession de Pie IX, 100 jours pour chacune) ne marque pas : la pièce les ajoute (« Trois *Ave Maria*. »).
+  **À confirmer par l'utilisateur.** Le verset et l'oraison de Weber, hors de la formule, sont retirés.
+- **Coquilles corrigées** : Angélus, « Je vous salue, Marie etc... » (1er verset) ; Perpétuel Secours, « Voici à vos
+  pieds; ô Mère ».
+- Les modifications faites par l'utilisateur dans l'app ne sont pas écrasées (révision appliquée seulement aux textes
+  intacts).

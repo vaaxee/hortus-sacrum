@@ -40,6 +40,51 @@ describe('indulgences : Enchiridion de 1952 seulement', () => {
 		expect(latinEnPremier({ ...f, langue: 'français' })).toBe(false);
 		expect(latinEnPremier(undefined)).toBe(false);
 	});
+	it('les traductions de Beringer (1925) et les Pater, Ave, Gloria usuels ouvrent sur le français', () => {
+		const beringer = Object.entries(donnees.fiches).filter(([, f]) => f.traduction?.startsWith('Beringer'));
+		expect(beringer.map(([id]) => id).sort()).toEqual(
+			[
+				'paroissien:angelus',
+				'beringer:regina-caeli',
+				'paroissien:de-profundis',
+				'jardin:magnificat',
+				'jardin:chaque-vendredi-devant-le-crucifix',
+				'beringer:coeur-afflige-de-marie',
+				'jardin:les-sept-douleurs-de-marie',
+				'weber:trois-prieres-perpetuel-secours'
+			].sort()
+		);
+		for (const [id, f] of beringer) {
+			expect(f.traduction, id).toMatch(/11 juillet 1925/);
+			expect(latinEnPremier(f), id).toBe(false);
+		}
+		for (const id of ['sambucy:chapelet-saint-dominique', 'hortus:chapelet-joyeux', 'hortus:chapelet-douloureux', 'hortus:chapelet-glorieux']) {
+			expect(donnees.fiches[id]?.traduction, id).toMatch(/L’Ami du clergé, 9 avril 1931/);
+			expect(latinEnPremier(donnees.fiches[id]), id).toBe(false);
+		}
+	});
+	it('les hymnes en vers et les textes de Beringer qui ne suivent pas la formule de 1952 restent en latin d’abord', () => {
+		for (const id of [
+			'jardin:veni-creator-spiritus',
+			'jardin:ave-maris-stella',
+			'weber:stabat-mater',
+			'paroissien:litanies-sainte-vierge',
+			'paroissien:litanies-saint-nom',
+			'jardin:les-sept-douleurs-et-les-sept-allegresses-de-saint-joseph'
+		])
+			expect(latinEnPremier(donnees.fiches[id]), id).toBe(true);
+	});
+	it('les textes remplacés par ceux de Beringer portent une révision', () => {
+		const sources = JSON.parse(readFileSync(new URL('../../../data/prieres/sources.json', import.meta.url), 'utf8')) as {
+			pieces: { id: string; corps: string; revision?: number }[];
+		};
+		const p = (id: string) => sources.pieces.find((x) => x.id === id);
+		expect(p('paroissien:angelus')?.corps).toContain('par la voix de l’Ange');
+		expect(p('paroissien:de-profundis')?.corps).toContain('Des profondeurs de l’abîme');
+		expect(p('weber:trois-prieres-perpetuel-secours')?.corps).toContain('Voici à vos pieds, ô Mère du Perpétuel Secours');
+		for (const id of ['paroissien:angelus', 'paroissien:de-profundis', 'weber:trois-prieres-perpetuel-secours'])
+			expect(p(id)?.revision ?? 0, id).toBeGreaterThan(0);
+	});
 	it('rappelle la règle des traductions (can. 934 § 2)', () => {
 		const f: Fiche = { ref: 'Ench. 1952, n° 1', frequence: 'chaque fois', partielles: [] };
 		expect(noteDeTraduction({ ...f, langue: 'français' })).toBeNull();
