@@ -26,6 +26,7 @@
 		chargerIndulgences,
 		enClair,
 		mentionDuTexte,
+		latinEnPremier,
 		noteDeTraduction,
 		valeurDuJour,
 		valeursDuJour,
@@ -41,6 +42,7 @@
 		undefined as Texte | undefined
 	);
 	let latin = $state(false);
+	let latinChoisi = false; // l'utilisateur a basculé lui-même : on ne le contredit plus
 	// indulgence (partielle) d'aujourd'hui, annoncée avant la prière, avec son intention éventuelle
 	let ind = $state<Indulgences | null>(null);
 	let tempora = $state<string | null>(null);
@@ -48,6 +50,10 @@
 	chargerIndulgences().then((x) => (ind = x));
 	jourDu(aujourdhui).then((j) => (tempora = j?.tempora ?? null));
 	const fiche = $derived(ind?.fiches[id]);
+	const latinIndulgencie = $derived(latinEnPremier(fiche));
+	$effect(() => {
+		if (latinIndulgencie && !latinChoisi) latin = true;
+	});
 	// chapelet : passer aux autres mystères (rosaire entier)
 	const autresChapelets = $derived(CHAPELETS.includes(id) ? CHAPELETS.filter((c) => c !== id) : []);
 	const NOM_CHAPELET = (c: string) => `Mystères ${c.slice('hortus:chapelet-'.length)}`;
@@ -204,7 +210,15 @@
 			<article class="texte" class:vers class:bilingue={latin && aDuLatin}>
 				{#if aDuLatin}
 					<div class="bascule">
-						<button class="bouton" aria-pressed={latin} onclick={() => (latin = !latin)}>{latin ? 'Masquer le latin' : 'Latin'}</button>
+						<button
+							class="bouton"
+							aria-pressed={latin}
+							onclick={() => {
+								latinChoisi = true;
+								latin = !latin;
+							}}>{latin ? 'Masquer le latin' : 'Latin'}</button
+						>
+						{#if latinIndulgencie}<p class="note-latin">Le latin porte l’indulgence ; le français est en regard.</p>{/if}
 					</div>
 				{/if}
 				{#each blocs as b}
@@ -344,8 +358,17 @@
 	}
 	.bascule {
 		display: flex;
-		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+		gap: var(--hs-e2);
 		margin-bottom: var(--hs-e5);
+	}
+	.note-latin {
+		margin: 0;
+		font-size: 0.85em;
+		font-style: italic;
+		color: var(--hs-encre-douce);
+		text-align: center;
 	}
 	.bascule .bouton {
 		min-height: 36px;

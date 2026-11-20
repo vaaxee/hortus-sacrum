@@ -56,6 +56,10 @@ export function noteDeTraduction(f: Fiche): string | null {
 	if (f.traduction) return `Traduction approuvée : ${f.traduction}.`;
 	return "En français, l'indulgence n'est gagnée qu'avec une traduction approuvée (can. 934 § 2) ; sinon, dire la formule de la concession.";
 }
+/** Décision du 20 nov. : sans traduction française approuvée, la prière s'ouvre sur le latin, qui porte l'indulgence. */
+export function latinEnPremier(f: Fiche | undefined): boolean {
+	return !!f?.langue && f.langue !== 'français' && !f.traduction;
+}
 export interface Indulgences {
 	fiches: Record<string, Fiche>;
 	sans_compte: Record<string, string>;
