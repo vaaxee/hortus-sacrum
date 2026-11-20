@@ -29,8 +29,8 @@
 		for (const c of $coches) m.set(`${c.date}|${c.elementId}`, (m.get(`${c.date}|${c.elementId}`) ?? 0) + 1);
 		return m;
 	});
-	const fait = (e: ElementListe, d: string) => (nCoches.get(`${d}|${e.id}`) ?? 0) >= Math.max(1, e.rappels.length);
-	const prevu = (e: ElementListe, d: string) => e.jours[new Date(d + 'T12:00:00').getDay()];
+	const fait = (e: ElementListe, d: string) => (nCoches.get(`${d}|${e.id}`) ?? 0) >= Math.max(1, e.rappels?.length ?? 0);
+	const prevu = (e: ElementListe, d: string) => !!e.jours?.[new Date(d + 'T12:00:00').getDay()];
 
 	const parJour = $derived(
 		jours.map((d) => {
@@ -47,6 +47,7 @@
 				const p = jours.filter((d) => compte(d) && prevu(e, d));
 				const f = p.filter((d) => fait(e, d)).length;
 				return {
+					id: e.id,
 					titre: e.titre,
 					prevus: p.length,
 					faits: f,
@@ -61,9 +62,15 @@
 		$pratiques
 			.filter((p) => p.active && !p.supprimeLe && p.type !== 'roue' && premier)
 			.map((p) => {
-				const occ = occurrences(p.regle, jours[0] < premier! ? premier! : jours[0], iso(auj));
+				// une dévotion aux données anciennes ou incomplètes ne doit jamais faire tomber la page
+				let occ: ReturnType<typeof occurrences> = [];
+				try {
+					occ = occurrences(p.regle, jours[0] < premier! ? premier! : jours[0], iso(auj));
+				} catch {
+					occ = [];
+				}
 				const f = occ.filter((o) => faitsSet.has(`${p.id}|${o.date}`)).length;
-				return { titre: p.titre, prevus: occ.length, faits: f, taux: occ.length ? f / occ.length : 0 };
+				return { id: p.id, titre: p.titre, prevus: occ.length, faits: f, taux: occ.length ? f / occ.length : 0 };
 			})
 			.filter((x) => x.prevus > 0)
 	);
@@ -130,7 +137,7 @@
 			<h2>Régularité de chaque dévotion</h2>
 			<p class="aide">Sur la période choisie ; les petites cases montrent les quatre dernières semaines.</p>
 			<ul class="reg">
-				{#each regularite.sort((a, b) => b.taux - a.taux) as r (r.titre)}
+				{#each [...regularite].sort((a, b) => b.taux - a.taux) as r (r.id)}
 					<li>
 						<span class="nom">{r.titre}</span>
 						<span class="mini"
@@ -146,7 +153,7 @@
 			<section>
 				<h2>Pratiques et séries</h2>
 				<ul class="reg">
-					{#each suiviPratiques as r (r.titre)}
+					{#each suiviPratiques as r (r.id)}
 						<li><span class="nom">{r.titre}</span><span class="taux chiffres-alignes">{r.faits} / {r.prevus}</span></li>
 					{/each}
 				</ul>

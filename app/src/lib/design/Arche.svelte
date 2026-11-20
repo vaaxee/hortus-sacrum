@@ -10,7 +10,16 @@
 </script>
 
 <div class="arche" class:solennel>
-	<div class="interieur">{@render children()}</div>
+	<div class="interieur">
+		{@render children()}
+		<!-- rameau de laurier sous le nom, dans les deux directions -->
+		<span class="rameau" aria-hidden="true"><Ornement nom="laurier" /></span>
+	</div>
+	<!-- grecque : chrisme à la clé, palmettes aux angles, filet intérieur de tesselles -->
+	<span class="cle da-grecque"><Ornement nom="chrisme" taille={22} /></span>
+	<span class="pattee g da-grecque"><Ornement nom="palmette" taille={16} /></span>
+	<span class="pattee d da-grecque"><Ornement nom="palmette" taille={16} /></span>
+	<span class="filet-interieur da-grecque" aria-hidden="true"></span>
 	<!-- latine : fleur de lys à la clé de l'arche, croix pattées aux angles -->
 	<span class="cle da-latine"><Ornement nom="lis" taille={22} /></span>
 	<span class="pattee g da-latine"><Ornement nom="croix-pattee" taille={14} /></span>
@@ -77,6 +86,23 @@
 	}
 	.solennel .pattee {
 		bottom: 34px;
+	}
+	.rameau {
+		display: block;
+		width: min(60%, 12rem);
+		color: var(--hs-arche-filet);
+		opacity: 0.85;
+		line-height: 0;
+	}
+	/* filet intérieur pointillé, à 6 px du bord : l'arche paraît sertie */
+	.filet-interieur {
+		position: absolute;
+		inset: 6px;
+		pointer-events: none;
+		border: 1px dotted var(--hs-arche-filet);
+		border-bottom: 0;
+		border-radius: 1000px 1000px 0 0;
+		opacity: 0.7;
 	}
 	.coin {
 		position: absolute;

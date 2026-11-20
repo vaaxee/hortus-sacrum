@@ -96,3 +96,12 @@ describe('regleEnClair', () => {
 		expect(regleEnClair({ genre: 'mensuel', rang: 1, jourSemaine: 5 })).toBe('le premier vendredi de chaque mois');
 	});
 });
+
+describe('données anciennes ou incomplètes', () => {
+	it('une règle absente ou sans jour de semaine valide ne plante ni ne boucle', async () => {
+		const { occurrences } = await import('./pratiques.ts');
+		expect(occurrences(undefined, '2026-01-01', '2026-12-31')).toEqual([]);
+		const r = { genre: 'avant_fete', mois: 12, jour: 8, nombre: 9 } as unknown as Parameters<typeof occurrences>[0];
+		expect(() => occurrences(r, '2026-01-01', '2026-12-31')).not.toThrow();
+	});
+});

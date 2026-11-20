@@ -18,6 +18,8 @@ for m in manifeste:
     corps = open(os.path.join(dossier, m['fichier']), encoding='utf-8').read().strip()
     corps = re.sub(r"\n{3,}", "\n\n", corps)
     piece = {k: (corps if k == 'corps' else m.get(k, '')) for k in ORDRE}
+    if m.get('fichier_latin'):  # texte latin en regard, au même balisage
+        piece['latin'] = open(os.path.join(dossier, m['fichier_latin']), encoding='utf-8').read().strip()
     if m['id'] in ids:
         ancien = P[ids[m['id']]]
         if ancien.get('source') != m['source'] or ancien.get('partie') != m['partie']:

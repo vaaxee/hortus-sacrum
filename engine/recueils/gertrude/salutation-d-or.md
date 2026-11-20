@@ -1,0 +1,3 @@
+*Sainte Gertrude apprit par révélation que la sainte Vierge se ferait une joie de montrer à celui qui la saluerait ainsi, combien son cœur surabonde de tendresse maternelle. Et à sa sortie de ce monde, ajouta-t-elle, je lui apparaîtrai avec tant de charmes et d'éclat, que j'inonderai son âme d'une merveilleuse consolation, et l'initierai aux délices du ciel. L. 3, c. 19.*
+
+Je vous salue, ô lis plus blanc que la neige, lis de la radieuse et toujours immuable Trinité. Je vous salue, rose brillante de la céleste aménité, de qui le roi du ciel a voulu naître, et dont il a daigné recevoir le lait virginal ; venez à mon secours, pauvre pécheur que je suis ; venez maintenant et à l'heure de ma mort. Ainsi soit-il.
