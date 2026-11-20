@@ -208,7 +208,7 @@
 								<span class="titre">{e.titre}</span>
 								<span class="detail"
 									>{resume(e)}{e.textes.length
-										? `, ${e.textes.length} prière${e.textes.length > 1 ? 's' : ''}${e.alterner && e.textes.length > 1 ? ' en alternance' : ''}{e.roue ? ', par la roue' : ''}`
+										? `, ${e.textes.length} prière${e.textes.length > 1 ? 's' : ''}${e.alterner && e.textes.length > 1 ? ' en alternance' : ''}${e.roue ? ', par la roue' : ''}`
 										: ''}{e.actif ? '' : ', masqué'}</span
 								>
 							</button>

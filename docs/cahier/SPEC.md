@@ -403,3 +403,19 @@ Audits : `docs/audits/AUDIT_DEVOTIONS_2026-11-18.md` et `docs/audits/AUDIT_CORPU
 - **Temps liturgique** : chemin de croix de saint Alphonse et Miserere en Carême ; Adoro te et Lauda Sion à la Fête-Dieu ;
   Te Deum le 31 décembre ; Veni Creator le 1ᵉʳ janvier ; Christ-Roi. On les ajoute à mesure que des textes sourcés
   sont transcrits.
+
+### Conception de la refonte (20 novembre) : décisions
+Document : `docs/conception/REFONTE_2026-11-18.md`. Ergonomie : `docs/audits/ergonomie-2026-11-18.md`. Ordre des lots :
+lot 0 (réparations, fait), puis les lots 1, 2 et 3 en parallèle, puis les lots 4 à 10.
+
+Réponses aux questions de l'ingénieur-concepteur, tranchées par les principes du § 11 :
+- **Office compté dans « Lectures du jour »** : le Petit bréviaire du Sacré-Cœur. Le Bréviaire romain et l'Officium parvum
+  sont proposés dans Lecture › Office, sans être comptés.
+- **Bréviaire romain** : en latin seul, tant qu'aucune traduction française ancienne et identifiée n'est trouvée ; aucune
+  traduction de mémoire. À fournir : une édition bilingue ancienne.
+- **Rappels aux heures canoniales** : aucun par défaut, réglables.
+- **Lignes modifiées par l'utilisateur** : reprises automatiquement, avec une page « Ce qui a changé » qui permet de
+  revenir en arrière.
+- **Jaculatoire d'ouverture** : seulement celles de l'Enchiridion de 1952, dans une traduction approuvée (Thésaurisons
+  1941) ou dans la langue de la concession.
+- **Les trois seuils** (Omnia, Sine supererogatoriis, Præcipua tantum) sont gardés.
