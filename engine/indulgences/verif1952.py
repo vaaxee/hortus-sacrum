@@ -187,6 +187,44 @@ maj('weber:trois-prieres-perpetuel-secours',
     note='Trois prières, chacune suivie de trois Ave Maria dans l’Enchiridion (Weber en met cinq). Thésaurisons ne '
          'donne pas leur traduction. Weber indiquait l’ancienne concession de Pie IX.')
 
+# Abrogations prononcées à tort par ench1952.py : ces œuvres figurent dans l'Enchiridion de 1952.
+ABROGEE = 'Indulgence abrogée'
+RETABLIES = {
+    'thesaurisons:jac-244': dict(
+        ref='Ench. 1952, n° 234 (Tutto per voi, Cuore sacratissimo di Gesù ; Thésaurisons, n° 244 ; Preces 1938, n° 203)',
+        frequence='chaque fois', partielles=[{'jours': 300, 'texte': '300 jours'}], langue='italien',
+        traduction=thes(244)),
+    'thesaurisons:jac-232': dict(
+        ref='Ench. 1952, n° 199 (O bone Iesu, intra tua vulnera absconde me ; Thésaurisons, n° 232 ; Preces 1938, n° 169)',
+        frequence='chaque fois', partielles=[{'jours': 300, 'texte': '300 jours'}], langue='latin',
+        traduction=thes(232)),
+    # « En l'honneur du Cœur affligé de Marie » (Pie VII, 14 janv. 1815) est l'exercice « Vi compatisco, Addolorata
+    # Maria » du n° 383, repris en 1952.
+    'beringer:coeur-afflige-de-marie': dict(
+        ref='Ench. 1952, n° 383 (Vi compatisco, Addolorata Maria ; Pie VII, 14 janv. 1815)', frequence='chaque fois',
+        partielles=[{'ans': 5, 'texte': '5 ans'},
+                    {'ans': 7, 'texte': '7 ans chaque jour de septembre', 'quand': {'mois': [9]}, 'remplace': 0}],
+        langue='italien',
+        note='L’indulgence est attachée à l’exercice entier (℣. Deus, in adiutorium, Gloria, les sept douleurs suivies '
+             'chacune d’un Ave, ℣. Ora pro nobis et l’oraison). La traduction de Beringer n’est pas une traduction '
+             'approuvée ; Thésaurisons ne donne pas cet exercice.'),
+}
+for k, fiche in RETABLIES.items():
+    if k not in F:
+        F[k] = fiche
+    else:
+        F[k].update(fiche)
+    d['sans_compte'].pop(k, None)
+PARTIE = ('Une des sept douleurs de l’exercice « Vi compatisco, Addolorata Maria » (Ench. 1952, n° 383 ; Pie VII, '
+          '14 janv. 1815) : l’indulgence (5 ans ; 7 ans en septembre) est attachée à l’exercice entier, non à une '
+          'douleur seule. Non comptée.')
+for k in [x for x in d['sans_compte'] if x.startswith('beringer:don-')]:
+    d['sans_compte'][k] = PARTIE
+d['sans_compte']['thesaurisons:au-christ-roi'] = (
+    'Indulgence plénière une fois le jour, seulement (Ench. 1952, n° 272, concédé en français) : les plénières ne sont '
+    'pas comptées.')
+assert all(ABROGEE not in v for k, v in d['sans_compte'].items() if k in RETABLIES)
+
 # toutes les fiches ont une langue
 sans = [k for k, f in F.items() if 'langue' not in f]
 assert not sans, sans

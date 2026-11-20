@@ -1416,23 +1416,66 @@
    ],
    "note": "10 ans, une fois le jour, si on le récite avec d’autres, en public ou en privé (n° 395 b) : non compté ici. L’indulgence est attachée à la récitation du Rosaire (Pater, Ave, Gloria, en méditant les mystères) ; les prières ajoutées (clausules, oraisons de Montfort) ne sont pas indulgenciées pour elles-mêmes.",
    "langue": "latin"
+  },
+  "thesaurisons:jac-244": {
+   "ref": "Ench. 1952, n° 234 (Tutto per voi, Cuore sacratissimo di Gesù ; Thésaurisons, n° 244 ; Preces 1938, n° 203)",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "jours": 300,
+     "texte": "300 jours"
+    }
+   ],
+   "langue": "italien",
+   "traduction": "Thésaurisons pour le ciel (1941), traduction certifiée fidèle selon le can. 934 § 2 (n° 244)"
+  },
+  "thesaurisons:jac-232": {
+   "ref": "Ench. 1952, n° 199 (O bone Iesu, intra tua vulnera absconde me ; Thésaurisons, n° 232 ; Preces 1938, n° 169)",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "jours": 300,
+     "texte": "300 jours"
+    }
+   ],
+   "langue": "latin",
+   "traduction": "Thésaurisons pour le ciel (1941), traduction certifiée fidèle selon le can. 934 § 2 (n° 232)"
+  },
+  "beringer:coeur-afflige-de-marie": {
+   "ref": "Ench. 1952, n° 383 (Vi compatisco, Addolorata Maria ; Pie VII, 14 janv. 1815)",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "ans": 5,
+     "texte": "5 ans"
+    },
+    {
+     "ans": 7,
+     "texte": "7 ans chaque jour de septembre",
+     "quand": {
+      "mois": [
+       9
+      ]
+     },
+     "remplace": 0
+    }
+   ],
+   "langue": "italien",
+   "note": "L’indulgence est attachée à l’exercice entier (℣. Deus, in adiutorium, Gloria, les sept douleurs suivies chacune d’un Ave, ℣. Ora pro nobis et l’oraison). La traduction de Beringer n’est pas une traduction approuvée ; Thésaurisons ne donne pas cet exercice."
   }
  },
  "sans_compte": {
   "beringer:chapelet-des-morts": "Indulgences réservées aux associés de Notre-Dame du Suffrage, avec le chapelet bénit (Beringer 1925, t. II, n° 306 a).",
   "beringer:cordon-saint-joseph": "Indulgences réservées aux associés de l'archiconfrérie qui portent le cordon (Beringer 1925, t. II, n° 266).",
   "jardin:priere-de-la-milice-angelique": "Indulgences réservées aux associés du cordon de saint Thomas.",
-  "beringer:don-sagesse": "Indulgence abrogée : « En l’honneur du Cœur affligé de Marie » (Pie VII, 14 janv. 1815 ; Beringer 1925, n° 450) ne figure pas dans l’Enchiridion indulgentiarum de 1952 (décret du 3 mars 1952 : « obrogatis ceteris omnibus generalibus indulgentiarum concessionibus, quae in hoc enchiridion non sint relatae »).",
-  "beringer:don-intelligence": "Indulgence abrogée : « En l’honneur du Cœur affligé de Marie » (Pie VII, 14 janv. 1815 ; Beringer 1925, n° 450) ne figure pas dans l’Enchiridion indulgentiarum de 1952 (décret du 3 mars 1952 : « obrogatis ceteris omnibus generalibus indulgentiarum concessionibus, quae in hoc enchiridion non sint relatae »).",
-  "beringer:don-conseil": "Indulgence abrogée : « En l’honneur du Cœur affligé de Marie » (Pie VII, 14 janv. 1815 ; Beringer 1925, n° 450) ne figure pas dans l’Enchiridion indulgentiarum de 1952 (décret du 3 mars 1952 : « obrogatis ceteris omnibus generalibus indulgentiarum concessionibus, quae in hoc enchiridion non sint relatae »).",
-  "beringer:don-force": "Indulgence abrogée : « En l’honneur du Cœur affligé de Marie » (Pie VII, 14 janv. 1815 ; Beringer 1925, n° 450) ne figure pas dans l’Enchiridion indulgentiarum de 1952 (décret du 3 mars 1952 : « obrogatis ceteris omnibus generalibus indulgentiarum concessionibus, quae in hoc enchiridion non sint relatae »).",
-  "beringer:don-science": "Indulgence abrogée : « En l’honneur du Cœur affligé de Marie » (Pie VII, 14 janv. 1815 ; Beringer 1925, n° 450) ne figure pas dans l’Enchiridion indulgentiarum de 1952 (décret du 3 mars 1952 : « obrogatis ceteris omnibus generalibus indulgentiarum concessionibus, quae in hoc enchiridion non sint relatae »).",
-  "beringer:don-piete": "Indulgence abrogée : « En l’honneur du Cœur affligé de Marie » (Pie VII, 14 janv. 1815 ; Beringer 1925, n° 450) ne figure pas dans l’Enchiridion indulgentiarum de 1952 (décret du 3 mars 1952 : « obrogatis ceteris omnibus generalibus indulgentiarum concessionibus, quae in hoc enchiridion non sint relatae »).",
-  "beringer:don-crainte": "Indulgence abrogée : « En l’honneur du Cœur affligé de Marie » (Pie VII, 14 janv. 1815 ; Beringer 1925, n° 450) ne figure pas dans l’Enchiridion indulgentiarum de 1952 (décret du 3 mars 1952 : « obrogatis ceteris omnibus generalibus indulgentiarum concessionibus, quae in hoc enchiridion non sint relatae »).",
-  "thesaurisons:au-christ-roi": "Indulgence plénière une fois le jour (S. P. A., 21 févr. 1923) : les plénières ne sont pas comptées.",
-  "thesaurisons:jac-244": "Indulgence abrogée : « Tout pour vous, Cœur sacré de Jésus » (Preces 1938, n° 203) ne figure pas dans l’Enchiridion indulgentiarum de 1952 (décret du 3 mars 1952 : « obrogatis ceteris omnibus generalibus indulgentiarum concessionibus, quae in hoc enchiridion non sint relatae »).",
-  "thesaurisons:jac-232": "Indulgence abrogée : « Ô bon Jésus, cachez-moi dans vos plaies » (Preces 1938, n° 169 ; ne subsiste que dans l’Anima Christi, n° 131) ne figure pas dans l’Enchiridion indulgentiarum de 1952 (décret du 3 mars 1952 : « obrogatis ceteris omnibus generalibus indulgentiarum concessionibus, quae in hoc enchiridion non sint relatae »).",
-  "jardin:chapelet-de-saint-michel-archange": "Indulgence abrogée : chapelet de saint Michel (Pie IX, 8 août 1851) ne figure pas dans l’Enchiridion indulgentiarum de 1952 (décret du 3 mars 1952 : « obrogatis ceteris omnibus generalibus indulgentiarum concessionibus, quae in hoc enchiridion non sint relatae »).",
-  "beringer:coeur-afflige-de-marie": "Indulgence abrogée : « En l’honneur du Cœur affligé de Marie » (Pie VII, 14 janv. 1815 ; Beringer 1925, n° 450) ne figure pas dans l’Enchiridion indulgentiarum de 1952 (décret du 3 mars 1952 : « obrogatis ceteris omnibus generalibus indulgentiarum concessionibus, quae in hoc enchiridion non sint relatae »)."
+  "beringer:don-sagesse": "Une des sept douleurs de l’exercice « Vi compatisco, Addolorata Maria » (Ench. 1952, n° 383 ; Pie VII, 14 janv. 1815) : l’indulgence (5 ans ; 7 ans en septembre) est attachée à l’exercice entier, non à une douleur seule. Non comptée.",
+  "beringer:don-intelligence": "Une des sept douleurs de l’exercice « Vi compatisco, Addolorata Maria » (Ench. 1952, n° 383 ; Pie VII, 14 janv. 1815) : l’indulgence (5 ans ; 7 ans en septembre) est attachée à l’exercice entier, non à une douleur seule. Non comptée.",
+  "beringer:don-conseil": "Une des sept douleurs de l’exercice « Vi compatisco, Addolorata Maria » (Ench. 1952, n° 383 ; Pie VII, 14 janv. 1815) : l’indulgence (5 ans ; 7 ans en septembre) est attachée à l’exercice entier, non à une douleur seule. Non comptée.",
+  "beringer:don-force": "Une des sept douleurs de l’exercice « Vi compatisco, Addolorata Maria » (Ench. 1952, n° 383 ; Pie VII, 14 janv. 1815) : l’indulgence (5 ans ; 7 ans en septembre) est attachée à l’exercice entier, non à une douleur seule. Non comptée.",
+  "beringer:don-science": "Une des sept douleurs de l’exercice « Vi compatisco, Addolorata Maria » (Ench. 1952, n° 383 ; Pie VII, 14 janv. 1815) : l’indulgence (5 ans ; 7 ans en septembre) est attachée à l’exercice entier, non à une douleur seule. Non comptée.",
+  "beringer:don-piete": "Une des sept douleurs de l’exercice « Vi compatisco, Addolorata Maria » (Ench. 1952, n° 383 ; Pie VII, 14 janv. 1815) : l’indulgence (5 ans ; 7 ans en septembre) est attachée à l’exercice entier, non à une douleur seule. Non comptée.",
+  "beringer:don-crainte": "Une des sept douleurs de l’exercice « Vi compatisco, Addolorata Maria » (Ench. 1952, n° 383 ; Pie VII, 14 janv. 1815) : l’indulgence (5 ans ; 7 ans en septembre) est attachée à l’exercice entier, non à une douleur seule. Non comptée.",
+  "thesaurisons:au-christ-roi": "Indulgence plénière une fois le jour, seulement (Ench. 1952, n° 272, concédé en français) : les plénières ne sont pas comptées.",
+  "jardin:chapelet-de-saint-michel-archange": "Indulgence abrogée : chapelet de saint Michel (Pie IX, 8 août 1851) ne figure pas dans l’Enchiridion indulgentiarum de 1952 (décret du 3 mars 1952 : « obrogatis ceteris omnibus generalibus indulgentiarum concessionibus, quae in hoc enchiridion non sint relatae »)."
  }
 }

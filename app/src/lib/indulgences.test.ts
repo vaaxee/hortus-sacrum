@@ -10,15 +10,18 @@ describe('indulgences : Enchiridion de 1952 seulement', () => {
 		for (const [id, f] of Object.entries(donnees.fiches)) expect(f.ref, id).toMatch(/Ench\. 1952/);
 	});
 	it('les concessions absentes de l’Enchiridion ne sont plus comptées', () => {
-		for (const id of [
-			'thesaurisons:jac-244',
-			'thesaurisons:jac-232',
-			'jardin:chapelet-de-saint-michel-archange',
-			'beringer:coeur-afflige-de-marie'
-		]) {
+		for (const id of ['jardin:chapelet-de-saint-michel-archange']) {
 			expect(donnees.fiches[id], id).toBeUndefined();
 			expect(donnees.sans_compte[id], id).toMatch(/abrogée/);
 		}
+	});
+	it('les œuvres reprises en 1952 sous un autre numéro restent comptées', () => {
+		expect(donnees.fiches['thesaurisons:jac-244']?.ref).toMatch(/n° 234/);
+		expect(donnees.fiches['thesaurisons:jac-232']?.ref).toMatch(/n° 199/);
+		expect(donnees.fiches['beringer:coeur-afflige-de-marie']?.ref).toMatch(/n° 383/);
+	});
+	it('chaque fiche indique la langue de la concession', () => {
+		for (const [id, f] of Object.entries(donnees.fiches)) expect(f.langue, id).toBeTruthy();
 	});
 	it('les jaculatoires du jour sont toutes indulgenciées en 1952', () => {
 		for (const id of JACULATOIRES) expect(donnees.fiches[id]?.ref, id).toMatch(/Ench\. 1952/);
