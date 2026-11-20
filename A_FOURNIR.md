@@ -65,9 +65,9 @@ note du can. 934 ; le latin, quand la pièce le donne, porte l'indulgence. **Dé
 - **Beringer 1925** (4e éd. fr., Lethielleux ; archive.org `lesindulgences0001beri`) porte un décret de la S. Pénitencerie
   du 11 juillet 1925 qui reconnaît la fidélité de la traduction (t. I, p. v-vi). Il couvre 10 lignes du tableau : Angélus,
   De profundis, litanies de Lorette, Doux Cœur (n° 333), En ego (n° 384), Douleurs et allégresses de saint Joseph (n° 485),
-  Veni Creator, Ave maris stella et Stabat (en vers), Magnificat, Perpétuel Secours (n° 459). **Soumis à l'utilisateur.**
+  Veni Creator, Ave maris stella et Stabat (en vers), Magnificat, Perpétuel Secours (n° 459). **Décision du 20 nov. : approuvé, sauf les hymnes en vers ; à reporter pièce par pièce après relecture sur le scan.**
 - **Pater, Ave, Gloria** : *L'Ami du clergé*, 9 avril 1931, p. 252-253 (archive.org `per_esprit-et-vie_lami-du-clerge_1931-04-09_48_15`) :
-  les traductions usuelles « dont […] la fidélité est notoire » gardent l'indulgence, malgré l'absence d'attestation officielle.
+  les traductions usuelles « dont […] la fidélité est notoire » gardent l'indulgence, malgré l'absence d'attestation officielle. **Décision du 20 nov. : suivi.**
 - **Sans source française déclarée fidèle** (le latin seul porte l'indulgence) : litanies des Saints, Credo et Confiteor,
   prière pour les agonisants, oraison à saint Gabriel, Alma Redemptoris, Ave Regina cælorum, Te Deum, Te Joseph celebrent.
 - **À chercher en bibliothèque** : *Recueil de prières et œuvres pies* (Raccolta), Tournai, Desclée, 1901-1902, « seule édition

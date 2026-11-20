@@ -382,6 +382,12 @@ Après chaque implémentation :
   française approuvée, la page s'ouvre sur le latin, qui porte l'indulgence ; le français reste en regard, avec la note
   du can. 934, et ne compte pas. Quand une traduction approuvée existe, le français vient en premier. Recherche d'un
   recueil français approuvé (1938-1958) en cours ; rien ne sera utilisé avant d'être soumis à l'utilisateur.
+- **Décisions du 20 novembre (après recherche)** :
+  - **Beringer 1925** (décret de la S. Pénitencerie du 11 juillet 1925, t. I, p. v-vi : traduction reconnue fidèle) vaut
+    traduction approuvée, **quand son français répond mot pour mot à la formule de 1952**. Les hymnes en vers (Veni
+    Creator, Ave maris stella, Stabat) sont des paraphrases : elles restent en latin d'abord.
+  - **Pater, Ave, Gloria** : les traductions usuelles gardent l'indulgence (*L'Ami du clergé*, 9 avril 1931, p. 252-253 :
+    fidélité « notoire »). Le chapelet en français compte.
 
 ### Arbitrages des audits du 19 novembre (tranchés par les principes du § 11 ; l'utilisateur peut les reprendre)
 Audits : `docs/audits/AUDIT_DEVOTIONS_2026-11-18.md` et `docs/audits/AUDIT_CORPUS_2026-11-18.md`.
