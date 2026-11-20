@@ -1,0 +1,94 @@
+{
+  "description": "Vocabulaire fermé des cinq dimensions d'une prière (docs/conception/LOT_DIMENSIONS.md, § 3.1). Les valeurs sont des classements, non des textes. L'utilisateur peut en ajouter dans l'app ; une valeur livrée utilisée par un texte ne se supprime pas.",
+  "dimensions": {
+    "fin": {
+      "libelle": "Fins",
+      "aide": "ce que fait la prière",
+      "valeurs": {
+        "adoration": "adoration",
+        "action-de-graces": "action de grâces",
+        "reparation": "réparation",
+        "propitiation": "propitiation",
+        "demande": "demande",
+        "intercession": "intercession",
+        "louange": "louange"
+      }
+    },
+    "objet": {
+      "libelle": "Objets",
+      "aide": "à qui ou à quoi elle s'adresse",
+      "valeurs": {
+        "trinite": "Trinité",
+        "jesus-christ": "Jésus-Christ",
+        "passion": "Passion",
+        "precieux-sang": "Précieux Sang",
+        "eucharistie": "Eucharistie",
+        "sacre-coeur": "Sacré-Cœur",
+        "sainte-face": "sainte Face",
+        "sainte-vierge": "sainte Vierge",
+        "coeur-immacule": "Cœur immaculé",
+        "saint-joseph": "saint Joseph",
+        "saint-esprit": "Saint-Esprit",
+        "anges": "anges",
+        "saints": "saints",
+        "ames-du-purgatoire": "âmes du purgatoire"
+      }
+    },
+    "grace": {
+      "libelle": "Grâces demandées",
+      "aide": "ce qui est demandé",
+      "valeurs": {
+        "salut": "salut",
+        "perseverance-finale": "persévérance finale",
+        "sanctification": "sanctification",
+        "charite": "charité",
+        "vertus": "vertus",
+        "preservation-du-peche": "préservation du péché",
+        "protection-et-sante": "protection et santé",
+        "devoir-d-etat": "devoir d'état",
+        "graces-temporelles": "grâces temporelles"
+      }
+    },
+    "personne": {
+      "libelle": "Personnes",
+      "aide": "pour qui l'on prie",
+      "valeurs": {
+        "soi-meme": "soi-même",
+        "famille": "famille",
+        "amis": "amis",
+        "ennemis": "ennemis",
+        "pecheurs": "pécheurs",
+        "eglise-et-pretres": "Église et prêtres",
+        "dirigeants": "dirigeants",
+        "mourants": "mourants",
+        "defunts": "défunts"
+      }
+    },
+    "forme": {
+      "libelle": "Formes",
+      "aide": "sous quelle forme",
+      "valeurs": {
+        "oraison": "oraison",
+        "acte": "acte",
+        "litanie": "litanie",
+        "chapelet": "chapelet",
+        "office": "office",
+        "meditation": "méditation",
+        "lecture": "lecture",
+        "jaculatoire": "jaculatoire",
+        "examen": "examen",
+        "hymne": "hymne",
+        "neuvaine": "neuvaine",
+        "messe": "messe",
+        "oeuvre": "œuvre"
+      }
+    }
+  },
+  "fins_principales": [
+    "adoration",
+    "action-de-graces",
+    "reparation",
+    "demande",
+    "intercession"
+  ]
+}

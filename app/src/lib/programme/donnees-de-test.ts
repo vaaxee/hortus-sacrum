@@ -5,7 +5,7 @@
 import { readFileSync } from 'node:fs';
 import type { Jour } from '../calendrier.ts';
 import { pratiquesDuPlan } from '../plan.ts';
-import { pieceVersTexte } from '../seed.ts';
+import { pieceVersTexte } from '../livret.ts';
 import type { Pratique, Texte } from '../types.ts';
 import type { Programme } from './types.ts';
 

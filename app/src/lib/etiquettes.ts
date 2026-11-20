@@ -4,64 +4,66 @@
  * Étiquettes par défaut : déduites du titre et du texte par mots-clés. L'utilisateur les corrige dans la fiche de la
  * prière (champ « étiquettes ») ; ses étiquettes remplacent alors celles qui sont déduites.
  */
+import type { Dimension, Dimensions } from './programme/types.ts';
 import type { Texte } from './types.ts';
 
-export type Categorie = 'fin' | 'objet' | 'grace' | 'personne' | 'pratique';
+/** Les cinq dimensions (lot « Dimensions ») ; l'ancienne catégorie « pratique » s'appelle désormais « forme ». */
+export type Categorie = Dimension;
 
 export const CATEGORIES: [Categorie, string][] = [
 	['fin', 'Fins'],
 	['objet', 'Objets'],
 	['grace', 'Grâces demandées'],
 	['personne', 'Personnes'],
-	['pratique', 'Pratiques']
+	['forme', 'Formes']
 ];
 
-/** Étiquette → [catégorie, motif cherché dans le titre et le texte (minuscules)]. */
-const CADRE: Record<string, [Categorie, RegExp]> = {
-	adoration: ['fin', /\badore|adoration|\bgloire soit\b|gloria patri/],
-	'action de grâces': ['fin', /remerci|actions? de grâces|reconnaissance/],
-	réparation: ['fin', /répar|amende honorable|outrage|blasphème/],
-	demande: ['fin', /accordez|donnez-(?:moi|nous)|faites que|je vous (?:en )?(?:prie|supplie|demande)|obtenez/],
-	intercession: ['fin', /priez pour (?:nous|eux|moi)|ora pro|orate pro|intercession/],
-	Trinité: ['objet', /trinité|trinitas/],
-	'Jésus-Christ': ['objet', /jésus|jesu/],
-	Eucharistie: ['objet', /saint[- ]sacrement|eucharist|hostie|communion/],
-	'Sacré-Cœur': ['objet', /sacré[- ]c(?:œ|oe)ur|c(?:œ|oe)ur de jésus|cor jesu/],
-	'sainte Vierge': ['objet', /\bmarie\b|vierge|\bave\b|maria/],
-	'Cœur immaculé': ['objet', /c(?:œ|oe)ur immaculé|c(?:œ|oe)ur de marie|cor mariæ/],
-	'saint Joseph': ['objet', /joseph/],
-	'Saint-Esprit': ['objet', /saint[- ]esprit|esprit[- ]saint|sancte spiritus|veni creator/],
-	anges: ['objet', /\bange|archange|michel|gabriel|raphaël/],
-	'sainte Face': ['objet', /sainte face/],
-	'âmes du purgatoire': ['objet', /purgatoire|défunts|trépassés|requiem|de profundis/],
-	salut: ['grace', /\bsalut\b|sauvez|damn/],
-	'persévérance finale': ['grace', /persévérance|heure de (?:la|ma|notre) mort|bonne mort|derniers moments/],
-	sanctification: ['grace', /sanctifi|sainteté|perfection/],
-	charité: ['grace', /charité|vous aimer|aimer davantage|de plus en plus/],
-	vertus: ['grace', /humilité|patience|pureté|chasteté|douceur|obéissance|vertus?/],
-	'préservation du péché': ['grace', /tentation|éviter (?:le|tout) (?:péché|mal)|préserv/],
-	'protection et santé': ['grace', /protection|protégez|santé|malades?|infirm|dangers/],
-	"devoir d'état": ['grace', /devoirs?\b|vocation/],
-	'grâces temporelles': ['grace', /temporel|besoins|notre pain/],
-	'soi-même': ['personne', /\bmon âme\b|\bmoi\b/],
-	famille: ['personne', /famille|parents|foyers?|ancêtres/],
-	amis: ['personne', /\bamis\b|bienfaiteurs/],
-	ennemis: ['personne', /ennemis|persécut/],
-	pécheurs: ['personne', /pécheurs|conversion/],
-	'Église et prêtres': ['personne', /\béglise\b|prêtres|pape|pontife|ministres/],
-	dirigeants: ['personne', /\brois?\b|chefs|patrie|france|princes/],
-	mourants: ['personne', /agonisants|mourants|à l'agonie/],
-	défunts: ['personne', /purgatoire|défunts|trépassés/],
-	chapelet: ['pratique', /chapelet|rosaire|dizaine/],
-	litanies: ['pratique', /litanies/],
-	office: ['pratique', /\boffice\b|bréviaire|matines|vêpres|complies/],
-	examen: ['pratique', /examen/],
-	méditation: ['pratique', /méditation|méditer/],
-	jaculatoires: ['pratique', /jaculatoire/],
-	messe: ['pratique', /\bmesse\b|saint sacrifice/]
+/** Étiquette → [catégorie, motif cherché dans le titre et le texte (minuscules), clé du vocabulaire (dimensions.json)]. */
+const CADRE: Record<string, [Categorie, RegExp, string]> = {
+	adoration: ['fin', /\badore|adoration|\bgloire soit\b|gloria patri/, 'adoration'],
+	'action de grâces': ['fin', /remerci|actions? de grâces|reconnaissance/, 'action-de-graces'],
+	réparation: ['fin', /répar|amende honorable|outrage|blasphème/, 'reparation'],
+	demande: ['fin', /accordez|donnez-(?:moi|nous)|faites que|je vous (?:en )?(?:prie|supplie|demande)|obtenez/, 'demande'],
+	intercession: ['fin', /priez pour (?:nous|eux|moi)|ora pro|orate pro|intercession/, 'intercession'],
+	Trinité: ['objet', /trinité|trinitas/, 'trinite'],
+	'Jésus-Christ': ['objet', /jésus|jesu/, 'jesus-christ'],
+	Eucharistie: ['objet', /saint[- ]sacrement|eucharist|hostie|communion/, 'eucharistie'],
+	'Sacré-Cœur': ['objet', /sacré[- ]c(?:œ|oe)ur|c(?:œ|oe)ur de jésus|cor jesu/, 'sacre-coeur'],
+	'sainte Vierge': ['objet', /\bmarie\b|vierge|\bave\b|maria/, 'sainte-vierge'],
+	'Cœur immaculé': ['objet', /c(?:œ|oe)ur immaculé|c(?:œ|oe)ur de marie|cor mariæ/, 'coeur-immacule'],
+	'saint Joseph': ['objet', /joseph/, 'saint-joseph'],
+	'Saint-Esprit': ['objet', /saint[- ]esprit|esprit[- ]saint|sancte spiritus|veni creator/, 'saint-esprit'],
+	anges: ['objet', /\bange|archange|michel|gabriel|raphaël/, 'anges'],
+	'sainte Face': ['objet', /sainte face/, 'sainte-face'],
+	'âmes du purgatoire': ['objet', /purgatoire|défunts|trépassés|requiem|de profundis/, 'ames-du-purgatoire'],
+	salut: ['grace', /\bsalut\b|sauvez|damn/, 'salut'],
+	'persévérance finale': ['grace', /persévérance|heure de (?:la|ma|notre) mort|bonne mort|derniers moments/, 'perseverance-finale'],
+	sanctification: ['grace', /sanctifi|sainteté|perfection/, 'sanctification'],
+	charité: ['grace', /charité|vous aimer|aimer davantage|de plus en plus/, 'charite'],
+	vertus: ['grace', /humilité|patience|pureté|chasteté|douceur|obéissance|vertus?/, 'vertus'],
+	'préservation du péché': ['grace', /tentation|éviter (?:le|tout) (?:péché|mal)|préserv/, 'preservation-du-peche'],
+	'protection et santé': ['grace', /protection|protégez|santé|malades?|infirm|dangers/, 'protection-et-sante'],
+	"devoir d'état": ['grace', /devoirs?\b|vocation/, 'devoir-d-etat'],
+	'grâces temporelles': ['grace', /temporel|besoins|notre pain/, 'graces-temporelles'],
+	'soi-même': ['personne', /\bmon âme\b|\bmoi\b/, 'soi-meme'],
+	famille: ['personne', /famille|parents|foyers?|ancêtres/, 'famille'],
+	amis: ['personne', /\bamis\b|bienfaiteurs/, 'amis'],
+	ennemis: ['personne', /ennemis|persécut/, 'ennemis'],
+	pécheurs: ['personne', /pécheurs|conversion/, 'pecheurs'],
+	'Église et prêtres': ['personne', /\béglise\b|prêtres|pape|pontife|ministres/, 'eglise-et-pretres'],
+	dirigeants: ['personne', /\brois?\b|chefs|patrie|france|princes/, 'dirigeants'],
+	mourants: ['personne', /agonisants|mourants|à l'agonie/, 'mourants'],
+	défunts: ['personne', /purgatoire|défunts|trépassés/, 'defunts'],
+	chapelet: ['forme', /chapelet|rosaire|dizaine/, 'chapelet'],
+	litanies: ['forme', /litanies/, 'litanie'],
+	office: ['forme', /\boffice\b|bréviaire|matines|vêpres|complies/, 'office'],
+	examen: ['forme', /examen/, 'examen'],
+	méditation: ['forme', /méditation|méditer/, 'meditation'],
+	jaculatoires: ['forme', /jaculatoire/, 'jaculatoire'],
+	messe: ['forme', /\bmesse\b|saint sacrifice/, 'messe']
 };
 
-export const ETIQUETTES: Record<Categorie, string[]> = { fin: [], objet: [], grace: [], personne: [], pratique: [] };
+export const ETIQUETTES: Record<Categorie, string[]> = { fin: [], objet: [], grace: [], personne: [], forme: [] };
 for (const [e, [c]] of Object.entries(CADRE)) ETIQUETTES[c].push(e);
 
 /** Étiquettes d'une prière : celles de l'utilisateur, sinon celles déduites du titre et du texte. */
@@ -101,4 +103,51 @@ export function bilanDuJour(duJour: string[], bibliotheque: (Texte & { etiquette
 			});
 		return { categorie, libelle, couvertes: toutes.filter((e) => couvert.has(e)), manques };
 	});
+}
+
+// ------------------------------------------------------------------ dimensions (lot « Dimensions », brouillon)
+
+/**
+ * Motifs supplémentaires, pour les valeurs du vocabulaire qui n'ont pas d'étiquette du cadre pratique. Ils ne servent
+ * qu'au brouillon des dimensions (`devinee`), jamais au bilan du jour.
+ */
+const DEVINE: [Dimension, RegExp, string][] = [
+	['fin', /\blou(?:é|e|ange|ons)\b|béni soit|bénissons|hosanna|alléluia|magnificat|te deum/, 'louange'],
+	['fin', /ayez pitié|miséricorde|pardonnez|soyez-(?:nous|moi) propice|miserere|propitia/, 'propitiation'],
+	['objet', /passion|crucifi|\bcroix\b|plaies|calvaire|agonie de jésus/, 'passion'],
+	['objet', /précieux sang|sang précieux|sang de jésus|sang de notre-seigneur/, 'precieux-sang'],
+	['objet', /\bsaints\b|bienheureux|apôtres?\b|martyrs?\b/, 'saints'],
+	['forme', /\boraison\b|\bprions\b|oremus/, 'oraison'],
+	['forme', /\bacte d|\bactes d/, 'acte'],
+	['forme', /\bhymne\b|te deum|magnificat|veni creator|stabat mater|ave maris stella/, 'hymne'],
+	['forme', /neuvaine/, 'neuvaine']
+];
+
+/** Correspondance : étiquette du cadre pratique (réglages déjà saisis dans `Texte.etiquettes`) → dimension et clé. */
+export const CLE_DE_L_ETIQUETTE: Record<string, [Dimension, string]> = Object.fromEntries(
+	Object.entries(CADRE).map(([e, [c, , cle]]) => [e, [c, cle]])
+);
+
+const ajouterA = (d: Dimensions, dim: Dimension, cle: string) => {
+	const v = (d[dim] ??= []);
+	if (!v.includes(cle)) v.push(cle);
+};
+
+/** Dimensions déduites du titre et du texte (brouillon : chaque valeur reste « devinée » jusqu'à relecture). */
+export function dimensionsDevinees(t: Pick<Texte, 'titre' | 'corps'>): Dimensions {
+	const s = `${t.titre}\n${t.corps}`.toLowerCase();
+	const d: Dimensions = {};
+	for (const [, [c, re, cle]] of Object.entries(CADRE)) if (re.test(s)) ajouterA(d, c, cle);
+	for (const [c, re, cle] of DEVINE) if (re.test(s)) ajouterA(d, c, cle);
+	return d;
+}
+
+/** Les étiquettes réglées par l'utilisateur (ancien champ `Texte.etiquettes`), traduites en dimensions. */
+export function depuisEtiquettes(etiquettes: string[]): Dimensions {
+	const d: Dimensions = {};
+	for (const e of etiquettes) {
+		const c = CLE_DE_L_ETIQUETTE[e];
+		if (c) ajouterA(d, c[0], c[1]);
+	}
+	return d;
 }
