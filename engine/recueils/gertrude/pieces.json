@@ -350,6 +350,48 @@
   }
  },
  {
+  "id": "gertrude:messe-commencement",
+  "titre": "Prière très-méritoire au commencement de la messe",
+  "partie": "Prières de sainte Gertrude",
+  "categorie": "",
+  "usage": "Au commencement de la messe. Promesses de Notre-Seigneur à sainte Gertrude pour qui entend dévotement la messe : autant de ses Saints envoyés à ses derniers moments qu'il aura entendu de messes, et le pardon pour le pécheur qui le demande. Le livre porte « infiiniment ».",
+  "indulgence": "",
+  "fichier": "messe-commencement.md",
+  "source": {
+   "ouvrage": "Prières de sainte Gertrude, ou Vrai esprit des prières que Jésus-Christ lui-même a révélées, pour la plupart, à sainte Gertrude et à sainte Mechtilde, traduites par le R. P. A. Denis, S. J.",
+   "edition": "11e édition, Paris, P. Lethielleux (Google Livres ; PDF fourni par l'utilisateur)",
+   "page": "p. 26-29 (PDF p. 71-74)"
+  }
+ },
+ {
+  "id": "gertrude:messe-kyrie",
+  "titre": "Prière à la très-sainte Trinité (pendant le Kyrie)",
+  "partie": "Prières de sainte Gertrude",
+  "categorie": "",
+  "usage": "A la messe, pendant le Kyrie. Tirée de Louis de Blois.",
+  "indulgence": "",
+  "fichier": "messe-kyrie.md",
+  "source": {
+   "ouvrage": "Prières de sainte Gertrude, ou Vrai esprit des prières que Jésus-Christ lui-même a révélées, pour la plupart, à sainte Gertrude et à sainte Mechtilde, traduites par le R. P. A. Denis, S. J.",
+   "edition": "11e édition, Paris, P. Lethielleux (Google Livres ; PDF fourni par l'utilisateur)",
+   "page": "p. 29-31 (PDF p. 74-76)"
+  }
+ },
+ {
+  "id": "gertrude:messe-gloria",
+  "titre": "Prière à Jésus (pendant le Gloria)",
+  "partie": "Prières de sainte Gertrude",
+  "categorie": "",
+  "usage": "A la messe, pendant le Gloria. Tirée de Louis de Blois.",
+  "indulgence": "",
+  "fichier": "messe-gloria.md",
+  "source": {
+   "ouvrage": "Prières de sainte Gertrude, ou Vrai esprit des prières que Jésus-Christ lui-même a révélées, pour la plupart, à sainte Gertrude et à sainte Mechtilde, traduites par le R. P. A. Denis, S. J.",
+   "edition": "11e édition, Paris, P. Lethielleux (Google Livres ; PDF fourni par l'utilisateur)",
+   "page": "p. 31-34 (PDF p. 76-79)"
+  }
+ },
+ {
   "id": "gertrude:messe-profession-de-foi",
   "titre": "Profession de foi (à l'Évangile et au Credo)",
   "partie": "Prières de sainte Gertrude",
