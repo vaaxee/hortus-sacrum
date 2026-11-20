@@ -153,6 +153,8 @@ export interface ReglageProgramme {
 	heures?: string[];
 	quand?: Quand;
 	entree?: EntreeProgramme;
+	/** Date de la dernière modification (synchronisation : le plus récent l'emporte). */
+	modifieLe: string;
 }
 
 // ------------------------------------------------------------------ résultat

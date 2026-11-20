@@ -24,7 +24,11 @@ export const DUREES_FIXES: Record<string, number> = {
 
 /** Minutes de récitation d'un texte (au moins une demi-minute ; les rubriques en italique ne se disent pas). */
 export function minutesDuTexte(corps: string): number {
-	const dit = corps.replace(/\*[^*\n]+\*/g, ' ').replace(/^#{2,3} .*$/gm, ' ');
+	// rubriques ([r]…[/r]), consignes en italique et titres ne se disent pas (audit des dévotions, § 1.7)
+	const dit = corps
+		.replace(/\[r\][\s\S]*?\[\/r\]/g, ' ')
+		.replace(/\*[^*\n]+\*/g, ' ')
+		.replace(/^#{2,6} .*$/gm, ' ');
 	const mots = dit.split(/\s+/).filter((w) => /[\p{L}]/u.test(w)).length;
 	return Math.max(0.5, mots / MOTS_PAR_MINUTE);
 }
