@@ -41,7 +41,10 @@
 </script>
 
 <div class="hs">
-	{#if $direction === 'grecque'}<Ornement nom="mosaique" />{/if}
+	<!-- bandeau du haut, sous la zone de l'encoche ; propre à chaque direction artistique -->
+	<div class="bandeau-haut" aria-hidden="true">
+		{#if $direction === 'grecque'}<Ornement nom="mosaique" />{:else}<Ornement nom="grecque" />{/if}
+	</div>
 
 	<div class="cadre">
 		<nav class="sommaire" aria-label="Navigation principale">
@@ -84,6 +87,11 @@
 		background: var(--hs-fond);
 		z-index: 15;
 		pointer-events: none;
+	}
+	.bandeau-haut {
+		padding-top: calc(env(safe-area-inset-top) + 6px);
+		color: var(--hs-or);
+		line-height: 0;
 	}
 	.cadre {
 		max-width: var(--hs-page);
