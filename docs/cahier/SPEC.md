@@ -388,6 +388,10 @@ Après chaque implémentation :
     Creator, Ave maris stella, Stabat) sont des paraphrases : elles restent en latin d'abord.
   - **Pater, Ave, Gloria** : les traductions usuelles gardent l'indulgence (*L'Ami du clergé*, 9 avril 1931, p. 252-253 :
     fidélité « notoire »). Le chapelet en français compte.
+  - **Report pièce par pièce (20 nov., soir)** : Perpétuel Secours, les « Trois *Ave Maria* » de la formule de 1952 sont
+    gardés en rubrique ; litanies du saint Nom, la traduction de Beringer est tenue pour approuvée telle quelle ; litanies de
+    Lorette, ajouter les invocations postérieures à 1890 (Bon Conseil, Reine de la paix, Reine élevée au ciel), sourcées, le
+    latin seul à défaut de traduction approuvée.
   - **Report fait le 20 nov.** (`beringer1925.py`, chaque texte relu sur le scan et comparé à la formule de 1952) : Angélus
     et Regina cæli, De profundis, Magnificat, En ego, Sept Douleurs (Beringer n° 450 = Ench. n° 383), Perpétuel Secours
     (avec les trois Ave de 1952), chapelet. Non retenus, faute de répondre mot pour mot à 1952 : litanies de Lorette,
