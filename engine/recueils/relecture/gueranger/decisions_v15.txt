@@ -1,0 +1,91 @@
+# Guéranger, t. 15 (entrées en OCR seulement : remplacer.py --ocr). Propositions de proposer_vol.sh relues une à une ;
+# vus sur le scan g15.pdf : souffrent (p. 116), trépassés (p. 120), contenir les (p. 194), épîtres (p. 220),
+# récompenses (p. 232), répondra (p. 290), réciter (p. 404). Gardé : « miis » (p. 509, imprimé ainsi).
+# Laissés (passages mêlés des deux colonnes, ou incertains) : « écoute rai », « endésir », « mon :ceur », « f>our », « tù », « qù ».
+couronne, appeleznous de	couronne, appelez-nous de
+ces vaillantsun triomphe	ces vaillants un triomphe
+premier jourde Novembre	premier jour de Novembre
+sainte partrois jours	sainte par trois jours
+et fai sons	et faisons
+bienheureux ceux qui frent persécution	bienheureux ceux qui souffrent persécution
+les peuplus fidèles	les peuples fidèles
+la plainte des trépasses. Aux	la plainte des trépassés. Aux
+bonne, vovez aux	bonne, voyez aux
+sans consis tance	sans consistance
+grâce daigneêtre avec	grâce daigne être avec
+moi toujoursplus de	moi toujours plus de
+de moniniquité, purifiez	de mon iniquité, purifiez
+des bêles dévorantes	des bêtes dévorantes
+et contenii puissants	et contenir les puissants
+toute larmc des	toute larme des
+consacre pourautels ; lui	consacre pour autels ; lui
+point cesséde se	point cessé de se
+habitants de cecontrées furent	habitants de ces contrées furent
+plus qu*unmot: Venez	plus qu'un mot: Venez
+lumière desflambeaux.au chant	lumière des flambeaux, au chant
+la mameile : simples	la mamelle : simples
+crosse épiscopaleil trace	crosse épiscopale il trace
+nous re çoive	nous reçoive
+vous vovant, toute	vous voyant, toute
+Paul, ho noré	Paul, honoré
+fait tortau moraliste	fait tort au moraliste
+haute cependantqui fût	haute cependant qui fût
+Slaves durit grec	Slaves du rit grec
+métropole religieuseet leur	métropole religieuse et leur
+préjugés, fi ls	préjugés, fils
+science davint telle	science devint telle
+la mauière que	la manière que
+des grâcesde la	des grâces de la
+son painen travaillant	son pain en travaillant
+la coière de	la colère de
+saint Clé ment	saint Clément
+est lavoie même	est la voie même
+de ses rangs sélevait	de ses rangs s'élevait
+des peines de lenfer	des peines de l'enfer
+Enfin lélevant	Enfin l'élevant
+ces épitres ;	ces épîtres ;
+sublimes recompenses	sublimes récompenses
+corruption *, repondra	corruption *, répondra
+de les reciter	de les réciter
+tournezvous	tournez-vous	*
+feraije	ferai-je	*
+sontils	sont-ils	*
+cellelà	celle-là	*
+paraîtraije	paraîtrai-je	*
+purifiezmoi	purifiez-moi	*
+jourlà	jour-là	*
+cellesci	celles-ci	*
+recevezles	recevez-les	*
+Réjouissezvous	Réjouissez-vous	*
+exauceznous	exaucez-nous	*
+laveznous	lavez-nous	*
+priezle	priez-le	*
+rappelletoi	rappelle-toi	*
+Unissezvous	Unissez-vous	*
+Etaitce	Etait-ce	*
+trentetrois	trente-trois	*
+mainforte	main-forte	*
+futil	fut-il	*
+Puissionsnous	Puissions-nous	*
+soixantesept	soixante-sept	*
+préserveznous	préservez-nous	*
+laisseznous	laissez-nous	*
+eutil	eut-il	*
+Enseigneznous	Enseignez-nous	*
+disaitelle	disait-elle	*
+cheflieu	chef-lieu	*
+rappelonsnous	rappelons-nous	*
+jusquelà	jusque-là	*
+Aurionsnous	Aurions-nous	*
+sauvezle	sauvez-le	*
+mon* tagnes	montagnes
+renou.vellement	renouvellement
+a ux calendes	aux calendes
+Requ iem	Requiem	*
+Vo s mains	Vos mains
+m e donnera	me donnera
+A fi n	Afin
+enfa n t	enfant
+off r e	offre
+part i e	partie
+p our célébrer	pour célébrer
