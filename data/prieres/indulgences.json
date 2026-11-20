@@ -55,7 +55,8 @@
    ],
    "intention": "le matin, à midi et le soir (ou dès qu’on le peut ensuite)",
    "note": "Au temps pascal, le Regina cæli avec son oraison ; à défaut de savoir ces prières, cinq Ave Maria (n° 331).",
-   "langue": "latin"
+   "langue": "latin",
+   "traduction": "Beringer, Les Indulgences (1925), traduction reconnue fidèle par la S. Pénitencerie (décret du 11 juillet 1925)"
   },
   "beringer:regina-caeli": {
    "ref": "Ench. 1952, n° 331",
@@ -67,7 +68,8 @@
     }
    ],
    "intention": "le matin, à midi et le soir (ou dès qu’on le peut ensuite)",
-   "langue": "latin"
+   "langue": "latin",
+   "traduction": "Beringer, Les Indulgences (1925), traduction reconnue fidèle par la S. Pénitencerie (décret du 11 juillet 1925)"
   },
   "paroissien:de-profundis": {
    "ref": "Ench. 1952, n° 585",
@@ -90,7 +92,8 @@
     }
    ],
    "note": "Le Pater et l’Ave avec le ℣. Requiem æternam, dits en suffrage pour les défunts, ont la même indulgence (n° 585).",
-   "langue": "latin"
+   "langue": "latin",
+   "traduction": "Beringer, Les Indulgences (1925), traduction reconnue fidèle par la S. Pénitencerie (décret du 11 juillet 1925)"
   },
   "beringer:litanies-sacre-coeur": {
    "ref": "Ench. 1952, n° 245",
@@ -269,7 +272,8 @@
    ],
    "intention": "devant une image de Jésus crucifié",
    "langue": "latin",
-   "note": "La traduction française d’En ego donnée par le livret n’est pas celle, approuvée, de Thésaurisons (n° 2 : « Me voici, ô bon et très doux Jésus, prosterné en votre présence… »)."
+   "note": "Le français d’En ego donné par le livret est, mot pour mot, celui de Beringer (1925, n° 384, p. 202), dont la traduction est reconnue fidèle par la S. Pénitencerie.",
+   "traduction": "Beringer, Les Indulgences (1925), traduction reconnue fidèle par la S. Pénitencerie (décret du 11 juillet 1925) ; Pater, Ave, Gloria usuels : fidélité notoire (L’Ami du clergé, 9 avril 1931, p. 252-253)"
   },
   "jardin:a-saint-gabriel-archange": {
    "ref": "Ench. 1952, n° 449 (Deus, qui inter ceteros Angelos)",
@@ -302,7 +306,8 @@
      "remplace": 0
     }
    ],
-   "langue": "italien"
+   "langue": "italien",
+   "traduction": "Beringer, Les Indulgences (1925), traduction reconnue fidèle par la S. Pénitencerie (décret du 11 juillet 1925)"
   },
   "jardin:les-sept-douleurs-et-les-sept-allegresses-de-saint-joseph": {
    "ref": "Ench. 1952, n° 470 (O Sposo purissimo di Maria ; le livret indiquait n° 410)",
@@ -359,7 +364,8 @@
      "remplace": 0
     }
    ],
-   "langue": "latin"
+   "langue": "latin",
+   "traduction": "Beringer, Les Indulgences (1925), traduction reconnue fidèle par la S. Pénitencerie (décret du 11 juillet 1925)"
   },
   "jardin:te-joseph-celebrent": {
    "ref": "Ench. 1952, n° 463",
@@ -476,7 +482,8 @@
     }
    ],
    "note": "10 ans, une fois le jour, si on le récite avec d’autres, en public ou en privé (n° 395 b) : non compté ici. L’indulgence est attachée à la récitation du Rosaire (Pater, Ave, Gloria, en méditant les mystères) ; les prières ajoutées (clausules, oraisons de Montfort) ne sont pas indulgenciées pour elles-mêmes.",
-   "langue": "latin"
+   "langue": "latin",
+   "traduction": "Pater, Ave, Gloria usuels : fidélité notoire (L’Ami du clergé, 9 avril 1931, p. 252-253)"
   },
   "montfort:petite-couronne": {
    "ref": "Ench. 1952, n° 293 (℣. Dignare me), 43 (Credo) et 333 (Sub tuum), comptés seuls",
@@ -670,8 +677,9 @@
      "texte": "500 jours"
     }
    ],
-   "note": "Trois prières, chacune suivie de trois Ave Maria dans l’Enchiridion (Weber en met cinq). Thésaurisons ne donne pas leur traduction. Weber indiquait l’ancienne concession de Pie IX.",
-   "langue": "italien"
+   "note": "Trois prières, chacune suivie de trois Ave Maria (Enchiridion de 1952, n° 427). Beringer (1925, n° 459) donne les prières sans les Ave, selon l’ancienne concession de Pie IX (100 jours pour chacune).",
+   "langue": "italien",
+   "traduction": "Beringer, Les Indulgences (1925), traduction reconnue fidèle par la S. Pénitencerie (décret du 11 juillet 1925) ; Pater, Ave, Gloria usuels : fidélité notoire (L’Ami du clergé, 9 avril 1931, p. 252-253)"
   },
   "paroissien:te-deum": {
    "ref": "Ench. 1952, n° 684 a)",
@@ -1389,7 +1397,8 @@
     }
    ],
    "note": "10 ans, une fois le jour, si on le récite avec d’autres, en public ou en privé (n° 395 b) : non compté ici. L’indulgence est attachée à la récitation du Rosaire (Pater, Ave, Gloria, en méditant les mystères) ; les prières ajoutées (clausules, oraisons de Montfort) ne sont pas indulgenciées pour elles-mêmes.",
-   "langue": "latin"
+   "langue": "latin",
+   "traduction": "Pater, Ave, Gloria usuels : fidélité notoire (L’Ami du clergé, 9 avril 1931, p. 252-253)"
   },
   "hortus:chapelet-douloureux": {
    "ref": "Ench. 1952, n° 395",
@@ -1402,7 +1411,8 @@
     }
    ],
    "note": "10 ans, une fois le jour, si on le récite avec d’autres, en public ou en privé (n° 395 b) : non compté ici. L’indulgence est attachée à la récitation du Rosaire (Pater, Ave, Gloria, en méditant les mystères) ; les prières ajoutées (clausules, oraisons de Montfort) ne sont pas indulgenciées pour elles-mêmes.",
-   "langue": "latin"
+   "langue": "latin",
+   "traduction": "Pater, Ave, Gloria usuels : fidélité notoire (L’Ami du clergé, 9 avril 1931, p. 252-253)"
   },
   "hortus:chapelet-glorieux": {
    "ref": "Ench. 1952, n° 395",
@@ -1415,7 +1425,8 @@
     }
    ],
    "note": "10 ans, une fois le jour, si on le récite avec d’autres, en public ou en privé (n° 395 b) : non compté ici. L’indulgence est attachée à la récitation du Rosaire (Pater, Ave, Gloria, en méditant les mystères) ; les prières ajoutées (clausules, oraisons de Montfort) ne sont pas indulgenciées pour elles-mêmes.",
-   "langue": "latin"
+   "langue": "latin",
+   "traduction": "Pater, Ave, Gloria usuels : fidélité notoire (L’Ami du clergé, 9 avril 1931, p. 252-253)"
   },
   "thesaurisons:jac-244": {
    "ref": "Ench. 1952, n° 234 (Tutto per voi, Cuore sacratissimo di Gesù ; Thésaurisons, n° 244 ; Preces 1938, n° 203)",
@@ -1461,7 +1472,8 @@
     }
    ],
    "langue": "italien",
-   "note": "L’indulgence est attachée à l’exercice entier (℣. Deus, in adiutorium, Gloria, les sept douleurs suivies chacune d’un Ave, ℣. Ora pro nobis et l’oraison). La traduction de Beringer n’est pas une traduction approuvée ; Thésaurisons ne donne pas cet exercice."
+   "note": "L’indulgence est attachée à l’exercice entier (℣. Deus, in adiutorium, Gloria, les sept douleurs suivies chacune d’un Ave, ℣. Ora pro nobis et l’oraison).",
+   "traduction": "Beringer, Les Indulgences (1925), traduction reconnue fidèle par la S. Pénitencerie (décret du 11 juillet 1925)"
   }
  },
  "sans_compte": {
