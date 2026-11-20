@@ -75,3 +75,8 @@ enseignemenls	enseignements	*
 lrou« vera lous les biens	trouvera tous les biens
 nous porl er en peu	nous porter en peu
 consommation delà loiT la règle	consommation de la loi, la règle
+protecleur	protecteur	*
+cel	cet	*
+sainle	sainte	*
+faule	faute	*
+morl	mort	*
