@@ -6,8 +6,11 @@ import { iso, jourDu, type Jour } from './calendrier.ts';
 import { SUPABASE_URL, VAPID_PUBLIC } from './config.ts';
 import { db } from './db.ts';
 import { occurrenceDu } from './pratiques.ts';
-import { garde, rangElement } from './rangs.ts';
-import type { ElementListe, FetePerso, Pratique } from './types.ts';
+import { chargerProgramme } from './programme/charger.ts';
+import { journee } from './programme/journee.ts';
+import type { Programme, ReglageProgramme } from './programme/types.ts';
+import { garde } from './rangs.ts';
+import type { FetePerso, Pratique } from './types.ts';
 
 export interface ReglagesRappels {
 	actif: boolean;
@@ -62,7 +65,9 @@ const longue = (date: string) =>
 
 /** Données nécessaires au calcul, lues une fois. */
 export interface Contexte {
-	liste: ElementListe[];
+	/** Programme unique (null s'il n'a pas pu être chargé : pas de rappels aux heures fixes). */
+	programme: Programme | null;
+	reglages: ReglageProgramme[];
 	pratiques: Pratique[];
 	fetes: FetePerso[];
 	titres: Record<string, string>;
@@ -89,15 +94,18 @@ export async function rappelsDu(date: string, r: ReglagesRappels, ctx: Contexte)
 		].filter(Boolean);
 		out.push({ quand: a(date, r.matin), titre: `Aujourd’hui, ${longue(date)}`, corps: morceaux.join(' — '), url: `/?date=${date}` });
 	}
-	if (r.heuresFixes) {
-		for (const e of ctx.liste) {
-			if (!e.actif || e.supprimeLe || !e.jours[d.getDay()] || !garde(rangElement(e), r.rangMini)) continue;
-			for (const h of e.rappels) {
+	if (r.heuresFixes && ctx.programme) {
+		// heures des pratiques de la journée calculée (Angélus, vendredi à 15 h, ajouts personnels…)
+		const jr = journee(ctx.programme, { jour: j ?? { date }, pratiques: ctx.pratiques, reglages: ctx.reglages });
+		for (const l of jr.lignes) {
+			if (!l.heures?.length || !garde(l.rang ?? 'pia', r.rangMini)) continue;
+			const premier = l.sections.find((s) => s.genre === 'texte' && s.texte)?.texte;
+			for (const h of l.heures) {
 				out.push({
 					quand: a(date, h),
-					titre: e.titre,
-					corps: e.textes[0] ? (ctx.titres[e.textes[0]] ?? '') : '',
-					url: e.textes[0] ? `/prieres/${encodeURIComponent(e.textes[0])}` : `/?date=${date}`
+					titre: l.titre,
+					corps: premier && premier !== l.titre ? (ctx.titres[premier] ?? '') : '',
+					url: `/pratique/${encodeURIComponent(l.id)}?date=${date}`
 				});
 			}
 		}
@@ -146,13 +154,21 @@ export async function rappelsDu(date: string, r: ReglagesRappels, ctx: Contexte)
 }
 
 export async function contexte(): Promise<Contexte> {
-	const [liste, pratiques, fetes, textes] = await Promise.all([
-		db.liste.toArray(),
+	const [programme, reglages, pratiques, fetes, textes] = await Promise.all([
+		chargerProgramme(),
+		db.programme.toArray(),
 		db.pratiques.toArray(),
 		db.fetes.toArray(),
 		db.textes.toArray()
 	]);
-	return { liste, pratiques, fetes, titres: Object.fromEntries(textes.map((t) => [t.id, t.titre])), jour: (dt) => jourDu(dt) };
+	return {
+		programme,
+		reglages,
+		pratiques,
+		fetes,
+		titres: Object.fromEntries(textes.map((t) => [t.id, t.titre])),
+		jour: (dt) => jourDu(dt)
+	};
 }
 
 /** Rappels des `jours` prochains jours à partir de maintenant. */

@@ -4,10 +4,15 @@
 	import Ornement from '#lib/design/Ornement.svelte';
 	import { vivant } from '#lib/live.ts';
 	import { occurrences } from '#lib/pratiques.ts';
-	import type { Coche, ElementListe, Fait, Pratique } from '#lib/types.ts';
+	import type { Coche, Fait, Pratique } from '#lib/types.ts';
+	import { ancienneListe } from '#lib/programme/bascule.ts';
+	import { recitations } from '#lib/programme/bilan.ts';
+	import { chargerProgramme } from '#lib/programme/charger.ts';
+	import { journee } from '#lib/programme/journee.ts';
+	import { traduireCoche } from '#lib/programme/migration.ts';
+	import type { Ligne, Programme, ReglageProgramme } from '#lib/programme/types.ts';
 
-	/** Historique : régularité de chaque dévotion et grille de constance, depuis le premier jour coché. */
-	const liste = vivant(() => db.liste.orderBy('ordre').toArray(), [] as ElementListe[]);
+	/** Historique : régularité de chaque pratique du programme et grille de constance, depuis le premier jour coché. */
 	const coches = vivant(() => db.coches.toArray(), [] as Coche[]);
 	const faits = vivant(() => db.faits.toArray(), [] as Fait[]);
 	const pratiques = vivant(() => db.pratiques.toArray(), [] as Pratique[]);
@@ -21,42 +26,69 @@
 	const premier = $derived([...$coches.map((c) => c.date), ...$faits.map((f) => f.date)].sort()[0]);
 	const compte = (d: string) => !!premier && d >= premier && d <= iso(auj);
 
-	// éléments dont le suivi se fait par les pratiques ou par une page propre
-	const GENERIQUES = ['Dévotion à jours comptés', 'Neuvaine ou trentain'];
-	const elements = $derived($liste.filter((e) => e.actif && !e.supprimeLe && !GENERIQUES.some((g) => e.titre.startsWith(g))));
-	const nCoches = $derived.by(() => {
-		const m = new Map<string, number>();
-		for (const c of $coches) m.set(`${c.date}|${c.elementId}`, (m.get(`${c.date}|${c.elementId}`) ?? 0) + 1);
+	// la journée de chaque jour, calculée par le programme unique ; les anciennes coches sont traduites vers ses lignes
+	let programme = $state.raw<Programme | null>(null);
+	chargerProgramme().then((p) => (programme = p));
+	const reglages = vivant(() => db.programme.toArray(), [] as ReglageProgramme[]);
+	let personnels = $state.raw(new Set<string>());
+	ancienneListe().then((l) => (personnels = new Set(l.filter((e) => e.origine === 'personnel').map((e) => e.id))));
+	const idsPratiques = $derived(new Set($pratiques.map((p) => p.id)));
+	/** Lignes prévues chaque jour (sans les pratiques du plan, suivies plus bas). */
+	const prevues = $derived.by(() => {
+		const m = new Map<string, Ligne[]>();
+		if (!programme) return m;
+		for (const d of jours) {
+			if (!compte(d)) continue;
+			const jr = journee(programme, { jour: { date: d }, pratiques: $pratiques, reglages: $reglages });
+			m.set(
+				d,
+				jr.lignes.filter((l) => !idsPratiques.has(l.id))
+			);
+		}
 		return m;
 	});
-	const fait = (e: ElementListe, d: string) => (nCoches.get(`${d}|${e.id}`) ?? 0) >= Math.max(1, e.rappels?.length ?? 0);
-	const prevu = (e: ElementListe, d: string) => !!e.jours?.[new Date(d + 'T12:00:00').getDay()];
+	const nCoches = $derived.by(() => {
+		const m = new Map<string, number>();
+		if (!programme) return m;
+		for (const c of $coches) {
+			const k = `${c.date}|${traduireCoche(c.elementId, programme, personnels)}`;
+			m.set(k, (m.get(k) ?? 0) + 1);
+		}
+		return m;
+	});
+	const fait = (l: Ligne, d: string) => (nCoches.get(`${d}|${l.id}`) ?? 0) >= recitations(l);
+	const prevu = (id: string, d: string) => prevues.get(d)?.find((l) => l.id === id);
 
 	const parJour = $derived(
 		jours.map((d) => {
-			if (!compte(d)) return { d, taux: -1 };
-			const p = elements.filter((e) => prevu(e, d));
-			return { d, taux: p.length ? p.filter((e) => fait(e, d)).length / p.length : -1 };
+			const p = prevues.get(d);
+			if (!p) return { d, taux: -1 };
+			return { d, taux: p.length ? p.filter((l) => fait(l, d)).length / p.length : -1 };
 		})
 	);
 	const niveau = (t: number) => (t < 0 ? 'hors' : t === 0 ? 'n0' : t < 0.34 ? 'n1' : t < 0.67 ? 'n2' : t < 1 ? 'n3' : 'n4');
 
-	const regularite = $derived(
-		elements
-			.map((e) => {
-				const p = jours.filter((d) => compte(d) && prevu(e, d));
-				const f = p.filter((d) => fait(e, d)).length;
+	const regularite = $derived.by(() => {
+		const titres = new Map<string, string>();
+		for (const ls of prevues.values()) for (const l of ls) titres.set(l.id, l.titre);
+		return [...titres]
+			.map(([id, titre]) => {
+				const p = jours.filter((d) => prevu(id, d));
+				const f = p.filter((d) => fait(prevu(id, d)!, d)).length;
 				return {
-					id: e.id,
-					titre: e.titre,
+					id,
+					titre,
 					prevus: p.length,
 					faits: f,
 					taux: p.length ? f / p.length : 0,
-					cases: jours.slice(-28).map((d) => (!compte(d) || !prevu(e, d) ? 'hors' : fait(e, d) ? 'fait' : 'manque'))
+					cases: jours.slice(-28).map((d) => {
+						const l = prevu(id, d);
+						return !l ? 'hors' : fait(l, d) ? 'fait' : 'manque';
+					})
 				};
 			})
-			.filter((x) => x.prevus > 0)
-	);
+			.filter((x) => x.prevus > 0);
+	});
 	const faitsSet = $derived(new Set($faits.map((f) => `${f.pratiqueId}|${f.date}`)));
 	const suiviPratiques = $derived(
 		$pratiques

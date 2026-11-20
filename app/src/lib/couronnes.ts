@@ -310,13 +310,26 @@ export function couronnes(p: {
 /** Toutes les couronnes, d'après la base locale. */
 export async function couronnesDeLaBase(aujourdhui: string): Promise<Couronne[]> {
 	const { db } = await import('./db.ts');
-	const [pratiques, faits, liste, coches] = await Promise.all([
+	const { chargerProgramme } = await import('./programme/charger.ts');
+	const [pratiques, faits, ancienne, coches, programme, reglages] = await Promise.all([
 		db.pratiques.toArray(),
 		db.faits.toArray(),
 		db.liste.toArray(),
-		db.coches.toArray()
+		db.coches.toArray(),
+		chargerProgramme(),
+		db.programme.toArray()
 	]);
-	return couronnes({ pratiques, faits, liste, coches, aujourdhui });
+	// lignes du programme unique (les coches anciennes restent sur l'ancienne liste : leurs couronnes gardent leur nom)
+	const TOUS = [true, true, true, true, true, true, true];
+	const ligne = (id: string, titre: string, quotidienne: boolean): ElementListe =>
+		({ id, titre, jours: quotidienne ? TOUS : TOUS.map(() => false), actif: true }) as ElementListe;
+	const entrees = [...(programme?.entrees ?? []), ...reglages.flatMap((r) => (r.entree ? [r.entree] : []))];
+	const nouvelles = [
+		...entrees.filter((e) => e.page).map((e) => ligne(e.id, e.titre, !e.quand)),
+		// le mois se suit désormais par la méditation du jour, lue chaque jour du mois
+		ligne('lec:meditation', 'Dévotion du mois : méditation du jour', true)
+	];
+	return couronnes({ pratiques, faits, liste: [...ancienne, ...nouvelles], coches, aujourdhui });
 }
 
 /** Couronnes déjà montrées (sur cet appareil). */

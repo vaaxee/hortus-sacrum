@@ -4,10 +4,10 @@
 	import { db } from '#lib/db.ts';
 	import Ornement from '#lib/design/Ornement.svelte';
 	import { invocation } from '#lib/invocations.ts';
-	import { textesDuJour } from '#lib/liste.ts';
-	import { occurrenceDu } from '#lib/pratiques.ts';
 	import { elementDu } from '#lib/roues.ts';
-	import type { ElementListe, FetePerso, Moment, Pratique } from '#lib/types.ts';
+	import type { FetePerso, Pratique } from '#lib/types.ts';
+	import type { Ligne, Moment } from '#lib/programme/types.ts';
+	import { journeeVivante } from '#lib/programme/vivant.svelte.ts';
 
 	/** Fiche du jour (A5) : propre, liste à cocher, roue, saints du martyrologe, place pour une note. */
 	const date = $derived(page.url.searchParams.get('date') ?? iso(new Date()));
@@ -15,7 +15,7 @@
 	const dateLongue = $derived(d.toLocaleDateString('fr-FR', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' }));
 
 	let jour = $state<Jour | undefined>();
-	let liste = $state<ElementListe[]>([]);
+	const vie = journeeVivante(() => date);
 	let pratiques = $state<Pratique[]>([]);
 	let fetes = $state<FetePerso[]>([]);
 	let titres = $state<Record<string, string>>({});
@@ -23,10 +23,6 @@
 		const dt = date,
 			dd = d;
 		jourDu(dt).then((j) => (jour = j));
-		db.liste
-			.orderBy('ordre')
-			.toArray()
-			.then((l) => (liste = l.filter((e) => e.actif && !e.supprimeLe && e.jours[dd.getDay()])));
 		db.pratiques.toArray().then((p) => (pratiques = p.filter((x) => !x.supprimeLe && (x.active || x.type === 'roue'))));
 		db.fetes
 			.where('[mois+jour]')
@@ -37,28 +33,15 @@
 	});
 	const MOMENTS: [Moment, string][] = [
 		['matin', 'Matin'],
-		['propre', 'Propre du jour'],
 		['journee', 'Au fil du jour'],
 		['soir', 'Soir']
 	];
-	const sansAccent = (x: string) =>
-		x
-			.normalize('NFD')
-			.replace(/[\u0300-\u036f’']/g, '')
-			.toLowerCase();
-	/** Le titre de la prière répète-t-il celui de la ligne ? (« Triple Couronne… » / « La Triple Couronne… ») */
-	const proche = (a: string, b: string) => {
-		const x = sansAccent(a),
-			y = sansAccent(b).slice(0, 14);
-		return x.includes(y) || sansAccent(b).includes(x.slice(0, 14));
-	};
-	const generiques = ['Dévotion à jours comptés', 'Neuvaine ou trentain', 'La roue du jour'];
-	const enCours = $derived(
-		pratiques
-			.filter((p) => p.type !== 'roue' && p.active)
-			.map((p) => ({ p, o: occurrenceDu(p, date) }))
-			.filter((x) => x.o)
-	);
+	/** Sous-titre : la prière du jour quand elle varie, et les pratiques du plan qui qualifient la ligne. */
+	function sous(l: Ligne): string {
+		const v = l.sections.find((x) => x.genre === 'texte' && x.origine === l.id && x.variante);
+		return [v?.texte ? titres[v.texte] : '', ...l.annotations.map((a) => a.texte)].filter(Boolean).join(' · ');
+	}
+	const lectures = $derived((vie.jr?.lectures ?? []).filter((l) => l.compte));
 	const roue = $derived(
 		pratiques
 			.filter((p) => p.type === 'roue' && p.active && !p.liste && (p.elements?.length ?? 0) > 1)
@@ -95,31 +78,22 @@
 				</p>{/if}
 		</header>
 
-		{#each MOMENTS as [m, nom]}
-			{@const el = liste.filter((e) => e.moment === m && !generiques.some((g) => e.titre.startsWith(g)))}
-			{#if el.length || (m === 'propre' && (enCours.length || roue.length))}
+		{#each MOMENTS as [m, nom] (m)}
+			{@const el = (vie.jr?.lignes ?? []).filter((l) => l.moment === m)}
+			{#if el.length}
 				<h2>{nom}</h2>
 				<ul>
-					{#each el as e (e.id)}
-						{@const tx = textesDuJour(
-							e,
-							date,
-							jour,
-							pratiques.filter((x) => x.type === 'roue')
-						)}
+					{#each el as l (l.id)}
 						<li>
-							<span class="case"></span>{e.titre}{#if tx.length === 1 && titres[tx[0]] && !proche(titres[tx[0]], e.titre)}
-								<em>— {titres[tx[0]]}</em>{/if}{#if e.rappels.length > 1}
-								<span class="fois">({e.rappels.join(', ')})</span>{/if}
+							<span class="case"></span>{l.titre}{#if sous(l)}
+								<em>— {sous(l)}</em>{/if}{#if (l.heures?.length ?? 0) > 1}
+								<span class="fois">({l.heures!.join(', ')})</span>{/if}
 						</li>
 					{/each}
-					{#if m === 'propre'}
-						{#each enCours as { p, o } (p.id)}
-							<li>
-								<span class="case"></span>{p.titre}{#if o?.total}
-									<span class="fois">{o.rang}/{o.total}</span>{/if}
-							</li>
-						{/each}
+					{#if m === 'journee'}
+						{#if lectures.length}
+							<li><span class="case"></span>Lectures du jour : {lectures.map((l) => l.titre).join(' · ')}</li>
+						{/if}
 						{#if roue.length}
 							<li class="roue">
 								<span class="case"></span>La roue du jour : {roue
