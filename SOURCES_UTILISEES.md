@@ -31,6 +31,15 @@
 | Regina Cæli (latin et français, oraison, indulgences) ; remplace l'Angélus au temps pascal | Beringer 1925, t. I, n° 428 | 222-223 | archive.org `lesindulgences0001beri` |
 | En l'honneur du Cœur affligé de Marie : prière entière et ses sept invocations, une par don du Saint-Esprit (un don par jour) | Beringer 1925, t. I, n° 450 | 237-238 | archive.org `lesindulgences0001beri` |
 
+## Bréviaire romain (lot 9, 21 novembre 2026)
+
+| Texte | Source | Accès |
+|---|---|---|
+| *Breviarium Romanum*, heures complètes (Matines à Complies), latin, chaque jour de l'année liturgique 2026-2027 | Divinum Officium, version « Divino Afflatu - 1954 » (rubriques de saint Pie X, 1911, avec les changements jusqu'en 1954, sans ceux de 1955 ni de 1960) ; texte produit par le moteur du site lui-même, exécuté hors ligne sur le dépôt épinglé (commit `454a86ea`) | https://github.com/DivinumOfficium/divinum-officium ; `engine/office/breviaire.py` → `data/office/breviaire/` |
+
+Le français n'est pas donné : les fichiers français de DO ne disent pas leur édition (REFONTE § 5.5). Une édition bilingue
+ancienne reste à trouver.
+
 ## Étape 9 — Méditations et lectures
 
 | Recueil | Édition | Usage | Accès |

@@ -5,6 +5,7 @@
 	import Icone from '#lib/design/Icone.svelte';
 	import Ornement from '#lib/design/Ornement.svelte';
 	import Office from '#lib/Office.svelte';
+	import { breviaireDuJour, chargerCommuns, prechargerSemaine, type JourBreviaire } from '#lib/office/breviaire.ts';
 	import { chargerParvum, parvumDuJour, type DonneesParvum } from '#lib/office/parvum.ts';
 	import { heuresDe } from '#lib/programme/heures.ts';
 	import { heuresDeLaLecture } from '#lib/programme/lectures.ts';
@@ -15,7 +16,8 @@
 	/**
 	 * Lecture › Office (REFONTE § 4.4) : le bréviaire du jour, une heure à la fois. Le Petit bréviaire du Sacré-Cœur est
 	 * l'office compté dans « Lectures du jour ». L'Officium parvum (latin, d'après Divinum Officium) s'affiche dans le
-	 * même composant, ses heures cochées à part (« lec:parvum:<heure> ») ; le Bréviaire romain viendra dans le même cadre.
+	 * même composant, ses heures cochées à part (« lec:parvum:<heure> ») ; le Bréviaire romain aussi (« lec:romain:<heure> »,
+	 * heures complètes d'après le moteur de Divinum Officium, lot 9).
 	 */
 	const date = $derived(page.url.searchParams.get('date') ?? iso(new Date()));
 	const q = $derived(page.url.searchParams.get('date') ? `?date=${date}` : '');
@@ -47,6 +49,21 @@
 	$effect(() => {
 		if (breviaire === 'parvum' && parvum === undefined) chargerParvum().then((d) => (parvum = d));
 	});
+	// Bréviaire romain (lot 9) : un fichier par jour, chargé à la demande ; la semaine qui vient est préchargée
+	let romain = $state<JourBreviaire | null | undefined>();
+	let sourceRomain = $state('');
+	$effect(() => {
+		if (breviaire !== 'romain') return;
+		const d = date;
+		romain = undefined;
+		breviaireDuJour(d).then((j) => {
+			if (d !== date) return;
+			romain = j;
+			if (j) prechargerSemaine(d);
+		});
+		chargerCommuns(2026).then((c) => (sourceRomain = c?.source.depot ?? ''));
+	});
+	const heuresRomain = $derived(romain ? heuresDe(romain.corps) : []);
 	const jourParvum = $derived(parvum ? parvumDuJour(parvum, date) : undefined);
 	const heuresParvum = $derived(jourParvum ? heuresDe(jourParvum.corps) : []);
 	const jourFr = $derived(new Date(date + 'T12:00:00').toLocaleDateString('fr-FR', { weekday: 'long', day: 'numeric', month: 'long' }));
@@ -79,11 +96,22 @@
 			<p class="aide">Préparation de l’office…</p>
 		{/if}
 	{:else if breviaire === 'romain'}
-		<p>
-			Les heures complètes, selon les rubriques d’avant 1955, sont en préparation (latin seul, d’après Divinum Officium). En attendant : <a
-				href="/saint{q}">les leçons du jour et la vie du saint</a
-			>.
-		</p>
+		{#if romain && heuresRomain.length}
+			<p class="petit"><em lang="la">{romain.office}</em> · latin</p>
+			<Office corps={romain.corps} heures={heuresRomain} ligne="lec:romain" {date} {coches} />
+			<p class="source">
+				Texte de <a href={sourceRomain}>Divinum Officium</a>, rubriques de 1954 (<em>Divino afflatu</em>). La traduction des leçons est sur
+				<a href="/saint{q}">la page du saint</a>.
+			</p>
+		{:else if romain === null}
+			<p class="aide">
+				Le Bréviaire romain n’est calculé que pour l’année liturgique 2026-2027. <a href="/saint{q}"
+					>Les leçons du jour et la vie du saint</a
+				>.
+			</p>
+		{:else}
+			<p class="aide">Préparation de l’office…</p>
+		{/if}
 	{:else if jourParvum && heuresParvum.length}
 		<p class="petit">{jourParvum.nomDuTemps.replace(/\s*\(.*\)$/, '')} · latin</p>
 		<Office corps={jourParvum.corps} heures={heuresParvum} ligne="lec:parvum" {date} {coches} />
