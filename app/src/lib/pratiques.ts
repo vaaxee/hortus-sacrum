@@ -159,6 +159,8 @@ const quantieme = (j: number) => (j === 1 ? '1er' : String(j));
 export function regleEnClair(r: Regle): string {
 	switch (r.genre) {
 		case 'consecutifs':
+			// un seul jour (renouvellement d'une consécration) : pas de « 1 jours de suite »
+			if (r.nombre === 1) return `le ${dateFr(r.debut)}`;
 			return r.jourSemaine === null
 				? `${r.nombre} jours de suite, à partir du ${dateFr(r.debut)}`
 				: `${r.nombre} ${JOURS[r.jourSemaine]}s de suite, à partir du ${dateFr(r.debut)}`;

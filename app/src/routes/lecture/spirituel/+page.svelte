@@ -60,6 +60,12 @@
 		<li class="sans-case">
 			<a href="/roue{q}"><strong>Les roues du jour</strong><span>le verset de chaque roue, et ce qu’il ouvre</span></a>
 		</li>
+		<li class="sans-case">
+			<a href="/recueils"
+				><strong>Bibliothèque des méditations</strong><span>Hamon, Chaignon, les livres des mois, Guéranger, les leçons du Bréviaire</span
+				></a
+			>
+		</li>
 		{#if avril}
 			<li class="sans-case">
 				<a href="/recueils?r=liguori-visites"
