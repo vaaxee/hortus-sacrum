@@ -30,7 +30,10 @@
 	let mois = $state<Recueil | null>(null);
 	let moisDemain = $state<Recueil | null>(null);
 	let charge = $state(false);
-	/** Recueils de l'utilisateur hors mois (proposés le jour de leurs clés), lus comme des recueils livrés. */
+	/**
+	 * Recueils de l'utilisateur, lus comme des recueils livrés : leurs entrées à clé de date, de temps ou de fête sont
+	 * proposées ce jour-là (y compris dans un recueil affecté à un mois, dont les entrées « J:n » passent en tête).
+	 */
 	let autres = $state<Recueil[]>([]);
 	// éditeur de recueils (lot 11) : corrections de l'utilisateur, recueils masqués, recueils ajoutés
 	const livre = async (id: string, meds: Meditation[], masques: string[]) => {
@@ -52,7 +55,7 @@
 		charge = false;
 		Promise.all([recueilsPerso(), toutesLesMeditations(), recueilsMasques()])
 			.then(([perso, meds, masques]) => {
-				autres = perso.filter((r) => r.affectation.genre !== 'mois').map((r) => versRecueil(r, meds));
+				autres = perso.map((r) => versRecueil(r, meds));
 				return Promise.all([
 					jourDu(d),
 					jourDu(l),

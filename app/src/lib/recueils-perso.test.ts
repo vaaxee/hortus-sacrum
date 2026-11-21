@@ -65,6 +65,12 @@ describe('recueil de l’utilisateur', () => {
 		expect(recueilDuMoisPerso([r, { ...neuf, supprimeLe: '2026-11-23' }], 9)?.id).toBe('anges');
 	});
 
+	it('dans un recueil de mois, une entrée à clé de date est proposée ce jour-là (rien ne disparaît)', () => {
+		const lu = versRecueil(r, [...meds, med('anges', 2, 'Saint Michel', { cle: 'D:09-29' })]);
+		expect(lu.entrees.map((e) => e.cle)).toEqual(['J:1', 'J:2', 'D:09-29']);
+		expect(choixPerso([lu], '2027-09-29', { tempora: 'Pent18-3' }).map((c) => c.entree.titre)).toEqual(['Saint Michel']);
+	});
+
 	it('une entrée qui porte une clé est proposée ce jour-là', () => {
 		const fete = versRecueil(perso('fete', { genre: 'fete', valeur: 'S. Michel' }), [med('fete', 0, 'Saint Michel', { cle: 'D:09-29' })]);
 		expect(choixPerso([fete], '2027-09-29', { tempora: 'Pent18-3' }).map((c) => c.entree.titre)).toEqual(['Saint Michel']);

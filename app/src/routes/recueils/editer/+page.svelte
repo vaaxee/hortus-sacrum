@@ -30,6 +30,8 @@
 	let rapport = $state<string[]>([]);
 	let erreur = $state('');
 	let charge = $state(false);
+	/** Recueil demandé absent ou à la corbeille : pas de formulaire (on ne réécrit pas un recueil supprimé). */
+	let introuvable = $state(false);
 
 	$effect(() => {
 		const r = id;
@@ -46,7 +48,7 @@
 				entrees = meds
 					.sort((a, b) => a.rang - b.rang)
 					.map((m) => ({ titre: m.titre, corps: m.corps, pratique: m.pratique ?? '', cle: m.cle ?? '' }));
-			}
+			} else introuvable = true;
 			charge = true;
 		});
 	});
@@ -116,7 +118,9 @@
 		<Ornement nom="fleuron" />
 	</div>
 
-	{#if charge}
+	{#if introuvable}
+		<p class="aide">Ce recueil n’existe pas ou est à la corbeille. <a href="/recueils/editer">Ajouter un recueil</a></p>
+	{:else if charge}
 		<form
 			onsubmit={(ev) => {
 				ev.preventDefault();
