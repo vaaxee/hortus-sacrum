@@ -2,7 +2,7 @@
  * Dimensions des textes (lot « Dimensions ») : vocabulaire fermé et classement livré, chargés une fois.
  * Données : static/data/programme/dimensions.json et static/data/prieres/dimensions-textes.json (scripts/seed.mjs).
  */
-import type { ClassementTexte, Vocabulaire } from './types.ts';
+import type { ClassementTexte, Cycles, Vocabulaire } from './types.ts';
 
 function charger<T>(chemin: string, fetchFn: typeof fetch): Promise<T | null> {
 	return fetchFn(chemin)
@@ -27,4 +27,15 @@ export function chargerClassements(fetchFn: typeof fetch = fetch): Promise<Recor
 		return c?.textes ?? null;
 	});
 	return classements;
+}
+
+let cycles: Promise<Cycles | null> | undefined;
+
+/** Cycles dévotionnels (static/data/programme/cycles.json). */
+export function chargerCycles(fetchFn: typeof fetch = fetch): Promise<Cycles | null> {
+	cycles ??= charger<Cycles>('/data/programme/cycles.json', fetchFn).then((c) => {
+		if (!c) cycles = undefined;
+		return c;
+	});
+	return cycles;
 }

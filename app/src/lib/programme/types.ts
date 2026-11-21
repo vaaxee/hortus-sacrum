@@ -223,6 +223,12 @@ export interface Journee {
 	/** Textes en double entre entrées du programme, retirés par la garde : doit rester vide (test d'unicité). */
 	conflits: { texte: string; garde: string; retire: string }[];
 	a_fournir: AFournir[];
+	/** Contexte dévotionnel (cycles du jour). Descriptif : il ne change pas les lignes. */
+	contexte: ContexteDevotionnel;
+	/** Valeurs de chaque dimension couvertes par les prières du jour (lignes, invités compris). */
+	couverture: Record<Dimension, Couverture[]>;
+	/** Valeurs non couvertes ; `requis` : demandée par le contexte du jour (ou fin principale de la SPEC). */
+	manques: { dimension: Dimension; valeur: string; requis: boolean }[];
 }
 
 // ------------------------------------------------------------------ dimensions (lot « Dimensions », LOT_DIMENSIONS.md)
@@ -238,6 +244,43 @@ export interface Vocabulaire {
 	dimensions: Record<Dimension, { libelle: string; aide: string; valeurs: Record<string, string> }>;
 	/** Les cinq fins de la SPEC (§ 10), seules comptées pour la couverture de la semaine. */
 	fins_principales: string[];
+}
+
+/** Ce qu'un cycle apporte au contexte du jour. */
+export interface Qualification {
+	objets?: string[];
+	fins?: string[];
+	note?: string;
+}
+
+/** Cycles dévotionnels (data/programme/cycles.json) : ils qualifient le jour, sans rien ajouter ni retirer. */
+export interface Cycles {
+	jour_semaine: Record<string, Qualification>;
+	mois: Record<string, Qualification>;
+	/** Thème de la semaine du mois : vide tant qu'il n'est pas adopté (question 1). */
+	semaine_du_mois: Record<string, Qualification>;
+	/** Temps liturgique (libellé du calendrier). */
+	temps: Record<string, Qualification>;
+	/** Fêtes, par expression régulière sur l'office du jour. */
+	fetes: (Qualification & { office: string })[];
+}
+
+/** Contexte dévotionnel du jour (LOT_DIMENSIONS.md, § 4.1) : affiché, testé ; ne filtre rien. */
+export interface ContexteDevotionnel {
+	temps: string;
+	/** Office du saint du jour, quand c'est une fête du sanctoral. */
+	sanctoral?: string;
+	objets: string[];
+	fins: string[];
+	/** Traçabilité : « passion ← vendredi ». */
+	sources: { dimension: Dimension; valeur: string; de: string }[];
+}
+
+/** Valeur couverte par les lignes du jour. */
+export interface Couverture {
+	valeur: string;
+	/** Identifiants des lignes qui la portent. */
+	par: string[];
 }
 
 /** Classement livré d'un texte (data/prieres/dimensions-textes.json). */
