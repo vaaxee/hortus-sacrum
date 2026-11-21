@@ -9,6 +9,10 @@ export interface EntreeRecueil {
 	page: number;
 	sommaire?: string;
 	corps: string;
+	/** Pratique ou résolution, quand le recueil en donne une (recueils de l'utilisateur). */
+	pratique?: string;
+	/** Entrée corrigée par l'utilisateur (surcharge locale d'un recueil livré). */
+	corrige?: boolean;
 }
 
 export interface Recueil {

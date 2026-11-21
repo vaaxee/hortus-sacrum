@@ -6,6 +6,16 @@
 	import { rendre } from '#lib/markup.ts';
 	import LectureGueranger from '#lib/LectureGueranger.svelte';
 	import { chargerRecueil, choisirAvecMois, NOM_COURT, RECUEIL_DU_MOIS, type Choix, type Recueil } from '#lib/meditations.ts';
+	import {
+		avecSurcharges,
+		choixPerso,
+		recueilDuMoisPerso,
+		recueilsMasques,
+		recueilsPerso,
+		toutesLesMeditations,
+		versRecueil
+	} from '#lib/recueils-perso.ts';
+	import type { Meditation, Recueil as RecueilPerso } from '#lib/types.ts';
 
 	/** Méditation du jour : Hamon les dimanches et aux temps forts, le parcours de Chaignon les jours ordinaires. */
 	const date = $derived(page.url.searchParams.get('date') ?? iso(new Date()));
@@ -20,38 +30,57 @@
 	let mois = $state<Recueil | null>(null);
 	let moisDemain = $state<Recueil | null>(null);
 	let charge = $state(false);
-	const recueilDuMois = (d: string) => {
-		const id = RECUEIL_DU_MOIS[Number(d.slice(5, 7))];
-		return id ? chargerRecueil(id) : Promise.resolve(null);
+	/** Recueils de l'utilisateur hors mois (proposés le jour de leurs clés), lus comme des recueils livrés. */
+	let autres = $state<Recueil[]>([]);
+	// éditeur de recueils (lot 11) : corrections de l'utilisateur, recueils masqués, recueils ajoutés
+	const livre = async (id: string, meds: Meditation[], masques: string[]) => {
+		if (masques.includes(id)) return null;
+		const r = await chargerRecueil(id);
+		return r && avecSurcharges(r, meds);
+	};
+	const recueilDuMois = (d: string, perso: RecueilPerso[], meds: Meditation[], masques: string[]) => {
+		const mois = Number(d.slice(5, 7));
+		const p = recueilDuMoisPerso(perso, mois);
+		if (p) return Promise.resolve(versRecueil(p, meds));
+		const id = RECUEIL_DU_MOIS[mois];
+		return id ? livre(id, meds, masques) : Promise.resolve(null);
 	};
 	$effect(() => {
 		const d = date,
 			l = lendemain,
 			y = Number(d.slice(0, 4));
 		charge = false;
-		Promise.all([
-			jourDu(d),
-			jourDu(l),
-			chargerRecueil('hamon'),
-			chargerRecueil('chaignon'),
-			anneeLiturgique(y - 1),
-			anneeLiturgique(y),
-			recueilDuMois(d),
-			recueilDuMois(l)
-		]).then(([j, jd, h, c, a1, a2, m, md]) => {
-			jour = j;
-			jourDemain = jd;
-			hamon = h;
-			chaignon = c;
-			mois = m;
-			moisDemain = md;
-			annee = [a1, a2].find((a) => a?.some((x) => x.date === d)) ?? [];
-			charge = true;
-		});
+		Promise.all([recueilsPerso(), toutesLesMeditations(), recueilsMasques()])
+			.then(([perso, meds, masques]) => {
+				autres = perso.filter((r) => r.affectation.genre !== 'mois').map((r) => versRecueil(r, meds));
+				return Promise.all([
+					jourDu(d),
+					jourDu(l),
+					livre('hamon', meds, masques),
+					livre('chaignon', meds, masques),
+					anneeLiturgique(y - 1),
+					anneeLiturgique(y),
+					recueilDuMois(d, perso, meds, masques),
+					recueilDuMois(l, perso, meds, masques)
+				]);
+			})
+			.then(([j, jd, h, c, a1, a2, m, md]) => {
+				jour = j;
+				jourDemain = jd;
+				hamon = h;
+				chaignon = c;
+				mois = m;
+				moisDemain = md;
+				annee = [a1, a2].find((a) => a?.some((x) => x.date === d)) ?? [];
+				charge = true;
+			});
 	});
 
-	const entrees = $derived<Choix[]>(choisirAvecMois(date, jour, annee, hamon, chaignon, mois));
-	const demain = $derived<Choix[]>(choisirAvecMois(lendemain, jourDemain, annee, hamon, chaignon, moisDemain));
+	const entrees = $derived<Choix[]>([...choisirAvecMois(date, jour, annee, hamon, chaignon, mois), ...choixPerso(autres, date, jour)]);
+	const demain = $derived<Choix[]>([
+		...choisirAvecMois(lendemain, jourDemain, annee, hamon, chaignon, moisDemain),
+		...choixPerso(autres, lendemain, jourDemain)
+	]);
 	let choix = $state(0);
 	$effect(() => {
 		void date;
@@ -88,7 +117,7 @@
 		<div class="choix interface" role="group" aria-label="Méditations de ce jour">
 			{#each entrees as e, i}
 				<button class="bouton" aria-pressed={choix === i} onclick={() => (choix = i)}
-					>{NOM_COURT[e.recueil.id] ?? e.recueil.id} · {e.entree.titre}</button
+					>{NOM_COURT[e.recueil.id] ?? e.recueil.titre} · {e.entree.titre}</button
 				>
 			{/each}
 		</div>
@@ -104,13 +133,18 @@
 					</details>
 				{/if}
 				<div class="lecture">{@html rendre(m.corps)}</div>
+				{#if m.pratique}
+					<h2 class="pc pratique">Pratique</h2>
+					<div class="lecture">{@html rendre(m.pratique)}</div>
+				{/if}
+				{#if m.corrige}<p class="petit corrige">Texte corrigé par vous (Méditations › recueil › « Corriger »).</p>{/if}
 			</article>
 
 			<aside class="marge" aria-label="Source">
 				<details open>
 					<summary><span class="pc">Source</span></summary>
 					<p class="imprime">
-						{recueil?.auteur}, <em>{recueil?.titre}</em><br />{edition(c)}, t. {m.tome}{#if m.page}, p. {m.page}{/if}
+						{recueil?.auteur}, <em>{recueil?.titre}</em>{#if m.tome}<br />{edition(c)}, t. {m.tome}{/if}{#if m.page}, p. {m.page}{/if}
 					</p>
 					<p>{recueil?.provenance}</p>
 				</details>
@@ -183,6 +217,15 @@
 		margin: var(--hs-e5) 0 var(--hs-e2);
 		font-variant: small-caps;
 		letter-spacing: 0.04em;
+	}
+	.pratique {
+		text-align: center;
+		font-size: var(--hs-t1, 1.25rem);
+		margin: var(--hs-e5) 0 var(--hs-e2);
+	}
+	.corrige {
+		color: var(--hs-encre-douce);
+		font-style: italic;
 	}
 	.sommaire {
 		border-block: var(--hs-cheveu) solid var(--hs-filet);
