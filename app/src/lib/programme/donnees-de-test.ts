@@ -5,9 +5,10 @@
 import { readFileSync } from 'node:fs';
 import type { Jour } from '../calendrier.ts';
 import { pratiquesDuPlan } from '../plan.ts';
-import { pieceVersTexte } from '../seed.ts';
+import { pieceVersTexte } from '../livret.ts';
 import type { Pratique, Texte } from '../types.ts';
-import type { Programme } from './types.ts';
+import { dimensionsEffectives } from '../dimensions.ts';
+import type { ClassementTexte, Cycles, Programme, Vocabulaire } from './types.ts';
 
 const lire = <T>(chemin: string): T => JSON.parse(readFileSync(new URL(`../../../../data/${chemin}`, import.meta.url), 'utf-8')) as T;
 
@@ -26,3 +27,12 @@ export const PLAN: Pratique[] = pratiquesDuPlan(CALENDRIER, [...TEXTES.values()]
 	creeLe: '',
 	modifieLe: ''
 }));
+
+// lot « Dimensions » : vocabulaire, cycles, classement des textes (comme dans l'app : dimensions.ts)
+export const VOCABULAIRE = lire<Vocabulaire>('programme/dimensions.json');
+export const CYCLES = lire<Cycles>('programme/cycles.json');
+export const CLASSEMENTS = lire<{ textes: Record<string, ClassementTexte> }>('prieres/dimensions-textes.json').textes;
+export const dimensions = (id: string) => {
+	const t = TEXTES.get(id);
+	return t ? dimensionsEffectives(t, CLASSEMENTS[id]).valeurs : undefined;
+};

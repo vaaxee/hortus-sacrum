@@ -9,7 +9,7 @@
 	import { invocation, nomLatin, TOUS_LES_SAINTS } from '#lib/invocations.ts';
 	import { invocationLatine } from '#lib/invocations-latines.ts';
 	import { JACULATOIRES } from '#lib/liste.ts';
-	import { bilanDuJour } from '#lib/etiquettes.ts';
+	import { indexDesValeurs } from '#lib/dimensions.ts';
 	import { garde, rangPratique } from '#lib/rangs.ts';
 	import { rendre } from '#lib/markup.ts';
 	import { creer, enregistrer } from '#lib/db.ts';
@@ -33,7 +33,7 @@
 	} from '#lib/programme/bilan.ts';
 	import { cocher, direJaculatoire } from '#lib/programme/suivi.ts';
 	import { journeeVivante } from '#lib/programme/vivant.svelte.ts';
-	import type { Ligne, Moment } from '#lib/programme/types.ts';
+	import { DIMENSIONS, type Ligne, type Moment } from '#lib/programme/types.ts';
 
 	/**
 	 * Aujourd'hui (SPEC § 11) : la journée calculée par le programme unique. Une page par pratique, une seule fois par
@@ -164,13 +164,20 @@
 	}
 	const valeurJaculatoire = $derived(jaculatoire && ind?.fiches[jaculatoire]?.partielles.map((p) => p.texte).join(' ; '));
 
-	// cadre pratique : fins, objets, grâces, personnes et pratiques couverts par les prières du jour
-	const cadre = $derived.by(() => {
-		if (!jr) return [];
-		const ids = [...new Set(lignes.flatMap((l) => l.sections.map((s) => s.texte).filter((t): t is string => !!t)))];
-		return bilanDuJour(ids, [...vie.textes.values()]);
-	});
-	const manques = $derived(cadre.reduce((a, c) => a + c.manques.length, 0));
+	// lot « Dimensions » : le contexte du jour et ce que couvrent ses prières, calculés par journee() ; ils décrivent la
+	// journée, ils ne la changent pas
+	const libelle = (d: string, v: string) =>
+		vie.vocabulaire?.dimensions[d as keyof NonNullable<typeof vie.vocabulaire>['dimensions']]?.valeurs[v] ?? v;
+	const ligneDeContexte = $derived(
+		jr
+			? [...jr.contexte.objets.map((o) => libelle('objet', o)), ...jr.contexte.fins.map((f) => `temps de ${libelle('fin', f)}`)].join(' · ')
+			: ''
+	);
+	const sourcesDuContexte = $derived(jr ? jr.contexte.sources.map((s) => `${libelle(s.dimension, s.valeur)} ← ${s.de}`).join(' ; ') : '');
+	const index = $derived(indexDesValeurs(vie.textes.values(), vie.classements));
+	/** Une prière de la bibliothèque, la plus courte, qui porte la valeur et n'est pas déjà dite ce jour-là. */
+	const propositionPour = (d: string, v: string) => index.get(`${d}:${v}`)?.find((t) => !jr?.textes.has(t.id));
+	const manquesRequis = $derived((jr?.manques ?? []).filter((m) => m.requis));
 	// promesses attachées aux pratiques du jour
 	const promesses = $derived(
 		vie.pratiques
@@ -284,6 +291,7 @@
 			</p>
 			{#if !estAujourdhui}<p class="revenir"><a href="/">Revenir à aujourd’hui</a></p>{/if}
 			<p class="temps etiquette">{jour.temps}</p>
+			{#if ligneDeContexte}<p class="contexte" title={sourcesDuContexte}>{ligneDeContexte}</p>{/if}
 
 			<Arche {solennel}>
 				<span class="pastille" style="--pastille: {teinte(jour)}" title="Couleur liturgique : {jour.couleur}"></span>
@@ -373,24 +381,34 @@
 								({o.rang}/{o.total}){/if} : {p.promesses}
 						</p>{/each}
 				{/if}
-				{#if cadre.length}
+				{#if jr && vie.vocabulaire}
 					<details class="cadre">
 						<summary class="aide"
-							>Fins, objets, grâces, personnes, pratiques : {manques || 'rien ne'} manque{manques > 1 ? 'nt' : ''}</summary
+							>Fins, objets, grâces, personnes, formes{manquesRequis.length
+								? ` : manque ${manquesRequis.map((m) => libelle(m.dimension, m.valeur)).join(', ')}`
+								: ''}</summary
 						>
-						{#each cadre as c (c.categorie)}
-							<p class="aide"><strong>{c.libelle}</strong> — couvert : {c.couvertes.join(', ') || 'rien'}.</p>
-							{#if c.manques.length}
+						{#each DIMENSIONS as d (d)}
+							{@const couvertes = jr.couverture[d]}
+							{@const manques = jr.manques.filter((m) => m.dimension === d)}
+							<p class="aide">
+								<strong>{vie.vocabulaire.dimensions[d].libelle}</strong> — couvert : {couvertes
+									.map((c) => libelle(d, c.valeur))
+									.join(', ') || 'rien'}.
+							</p>
+							{#if manques.length}
 								<ul class="aide manques">
-									{#each c.manques as m (m.etiquette)}
-										<li>
-											{m.etiquette}{#if m.proposition}
-												: <a href={`/prieres/${encodeURIComponent(m.proposition.id)}`}>{m.proposition.titre}</a>{/if}
+									{#each manques as m (m.valeur)}
+										{@const p = propositionPour(d, m.valeur)}
+										<li class:requis={m.requis}>
+											{libelle(d, m.valeur)}{#if p}
+												: <a href={`/prieres/${encodeURIComponent(p.id)}`}>{p.titre}</a>{/if}
 										</li>
 									{/each}
 								</ul>
 							{/if}
 						{/each}
+						<p class="aide">Le classement des prières se relit dans leur fiche (Modifier) ; il ne change pas la liste du jour.</p>
 					</details>
 				{/if}
 				{#if jr?.a_fournir.length}
@@ -528,6 +546,27 @@
 		width: 40px;
 		height: 40px;
 		color: var(--hs-encre-douce);
+	}
+	.contexte {
+		margin: -2px 0 var(--hs-e4);
+		font-size: 0.9375rem;
+		font-style: italic;
+		color: var(--hs-encre-douce);
+	}
+	ul.manques {
+		margin: 0 0 var(--hs-e2);
+		padding-left: 1.2em;
+		list-style: disc;
+	}
+	.manques li {
+		display: list-item;
+		min-height: 0;
+		padding: 2px 0;
+		border: 0;
+	}
+	.manques li.requis {
+		color: var(--hs-encre);
+		font-weight: 600;
 	}
 	.revenir {
 		margin: 0;

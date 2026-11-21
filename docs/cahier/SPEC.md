@@ -376,7 +376,7 @@ Après chaque implémentation :
   abrogé. Trois concessions d'abord déclarées abrogées à tort ont été rétablies (n° 234, 199 et 383). Les textes
   français ont été remplacés, quand c'était possible, par ceux de Thésaurisons (`revision`). Les traductions qui restent
   à trouver sont dans `A_FOURNIR.md`.
-- Données : `data/prieres/indulgences.json` ; scripts `engine/indulgences/ench1952.py` puis `verif1952.py`. Un test vérifie que chaque fiche
+- Données : `data/prieres/indulgences.json` ; scripts `engine/indulgences/ench1952.py`, `verif1952.py`, puis `beringer1925.py`. Un test vérifie que chaque fiche
   comptée cite l'Enchiridion de 1952. Les mentions d'indulgence recopiées des anciens manuels ne sont pas affichées.
 - **Décision du 20 novembre : latin en premier.** Pour une prière concédée en latin (ou en italien) sans traduction
   française approuvée, la page s'ouvre sur le latin, qui porte l'indulgence ; le français reste en regard, avec la note
@@ -388,6 +388,14 @@ Après chaque implémentation :
     Creator, Ave maris stella, Stabat) sont des paraphrases : elles restent en latin d'abord.
   - **Pater, Ave, Gloria** : les traductions usuelles gardent l'indulgence (*L'Ami du clergé*, 9 avril 1931, p. 252-253 :
     fidélité « notoire »). Le chapelet en français compte.
+  - **Report pièce par pièce (20 nov., soir)** : Perpétuel Secours, les « Trois *Ave Maria* » de la formule de 1952 sont
+    gardés en rubrique ; litanies du saint Nom, la traduction de Beringer est tenue pour approuvée telle quelle ; litanies de
+    Lorette, ajouter les invocations postérieures à 1890 (Bon Conseil, Reine de la paix, Reine élevée au ciel), sourcées, le
+    latin seul à défaut de traduction approuvée.
+  - **Report fait le 20 nov.** (`beringer1925.py`, chaque texte relu sur le scan et comparé à la formule de 1952) : Angélus
+    et Regina cæli, De profundis, Magnificat, En ego, Sept Douleurs (Beringer n° 450 = Ench. n° 383), Perpétuel Secours
+    (avec les trois Ave de 1952), chapelet. Non retenus, faute de répondre mot pour mot à 1952 : litanies de Lorette,
+    litanies du saint Nom, « Doux Cœur de Jésus », Douleurs et allégresses de saint Joseph (détail dans `A_FOURNIR.md`).
 
 ### Arbitrages des audits du 19 novembre (tranchés par les principes du § 11 ; l'utilisateur peut les reprendre)
 Audits : `docs/audits/AUDIT_DEVOTIONS_2026-11-18.md` et `docs/audits/AUDIT_CORPUS_2026-11-18.md`.

@@ -1,0 +1,44 @@
+{
+	"description": "Cycles dévotionnels (docs/conception/LOT_DIMENSIONS.md, § 4) : ils qualifient le jour (contexte) et servent aux tests ; ils n'ajoutent ni ne retirent aucune ligne. Défauts tenus le 21 novembre 2026 (§ 8) : thème de la semaine du mois non adopté ; Carême et Passion → réparation, temps pascal → action de grâces ; pas de roue des intentions.",
+	"jour_semaine": {
+		"0": { "objets": ["trinite"], "note": "dimanche, la très sainte Trinité" },
+		"1": { "objets": ["ames-du-purgatoire"], "note": "lundi, les âmes du purgatoire" },
+		"2": { "objets": ["anges"], "note": "mardi, les saints Anges" },
+		"3": { "objets": ["saint-joseph"], "note": "mercredi, saint Joseph" },
+		"4": { "objets": ["eucharistie"], "note": "jeudi, le Saint-Sacrement" },
+		"5": { "objets": ["passion"], "note": "vendredi, la Passion" },
+		"6": { "objets": ["sainte-vierge"], "note": "samedi, la sainte Vierge" }
+	},
+	"mois": {
+		"1": { "objets": ["jesus-christ"], "note": "mois du saint Nom de Jésus" },
+		"2": { "objets": ["jesus-christ", "sainte-vierge", "saint-joseph"], "note": "mois de la Sainte Famille" },
+		"3": { "objets": ["saint-joseph"], "note": "mois de saint Joseph" },
+		"4": { "objets": ["eucharistie"], "note": "mois eucharistique" },
+		"5": { "objets": ["sainte-vierge"], "note": "mois de Marie" },
+		"6": { "objets": ["sacre-coeur"], "note": "mois du Sacré-Cœur" },
+		"7": { "objets": ["precieux-sang"], "note": "mois du Précieux Sang" },
+		"8": { "objets": ["coeur-immacule"], "note": "mois du Cœur immaculé de Marie" },
+		"9": { "objets": ["sainte-vierge"], "note": "mois des Sept Douleurs" },
+		"10": { "objets": ["sainte-vierge"], "note": "mois du Rosaire" },
+		"11": { "objets": ["ames-du-purgatoire"], "note": "mois des fidèles trépassés" },
+		"12": { "objets": ["sainte-vierge"], "note": "mois de l'Immaculée Conception" }
+	},
+	"semaine_du_mois": {},
+	"temps": {
+		"Temps du Carême": { "fins": ["reparation"], "note": "Carême" },
+		"Temps de la Passion": { "fins": ["reparation"], "note": "temps de la Passion" },
+		"Temps pascal": { "fins": ["action-de-graces"], "note": "temps pascal" }
+	},
+	"fetes": [
+		{ "office": "Sacré-Cœur", "objets": ["sacre-coeur"] },
+		{ "office": "Précieux Sang", "objets": ["precieux-sang"] },
+		{ "office": "Saint-Sacrement|Fête-Dieu", "objets": ["eucharistie"] },
+		{ "office": "Trinité", "objets": ["trinite"] },
+		{ "office": "Vierge|Notre-Dame|Marie", "objets": ["sainte-vierge"] },
+		{ "office": "\\bS\\. Joseph", "objets": ["saint-joseph"] },
+		{ "office": "Michel|Gabriel|Raphaël|Anges", "objets": ["anges"] },
+		{ "office": "Toussaint", "objets": ["saints"] },
+		{ "office": "Défunts|trépassés", "objets": ["ames-du-purgatoire"] },
+		{ "office": "Pentecôte", "objets": ["saint-esprit"] }
+	]
+}

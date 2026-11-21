@@ -64,7 +64,11 @@ export function nouvelId(): string {
 
 /** Contenu d'un objet sans ses champs techniques : sert aux versions et à l'original. */
 export function contenu<T extends Base>(o: T): string {
-	const { original, creeLe, modifieLe, supprimeLe, ...reste } = o;
+	// le classement (étiquettes, dimensions) n'est pas le texte : le régler ne rend pas un texte « modifié », et ne le
+	// prive donc pas des corrections livrées (révisions)
+	const { original, creeLe, modifieLe, supprimeLe, ...reste } = o as T & { etiquettes?: unknown; dimensions?: unknown };
+	delete reste.etiquettes;
+	delete reste.dimensions;
 	return JSON.stringify(reste);
 }
 

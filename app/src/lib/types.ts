@@ -34,6 +34,11 @@ export interface Texte extends Base {
 	favori?: boolean;
 	/** Étiquettes du cadre pratique, réglées par l’utilisateur (sinon déduites du texte : etiquettes.ts). */
 	etiquettes?: string[];
+	/**
+	 * Dimensions réglées par l'utilisateur (lot « Dimensions ») : chaque dimension présente remplace, pour ce texte, le
+	 * classement livré ; `releve` date sa relecture (dimensions.ts).
+	 */
+	dimensions?: Partial<Record<'fin' | 'objet' | 'grace' | 'personne' | 'forme', string[]>> & { releve?: string };
 	ordre: number;
 }
 
