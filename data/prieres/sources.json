@@ -104,7 +104,7 @@
   {
    "id": "beringer:chapelet-des-morts",
    "titre": "Chapelet des Morts",
-   "partie": "Dévotions",
+   "partie": "Couronnes et chapelets",
    "categorie": "Lundi",
    "usage": "Le lundi. Quarante grains : sur les gros grains, le De profundis et le Requiem æternam (voir « Prière pour les défunts »), ou un Pater et un Ave ; sur les petits grains, l’invocation.",
    "indulgence": "Indulgences du chapelet des morts : 100 jours pour chacun des grains, gros et petits ; — 7 ans et 7 quarantaines pour toutes les personnes qui récitent le chapelet des morts en entier. Pour toutes les personnes qui récitent le chapelet journellement, Indulgence plénière : 1° une fois par mois, au jour qu’elles choisiront ; — 2° le jour de la fête de Notre-Dame de la Merci, fête patronale de l’archiconfrérie ; — 3° le Jour des Morts ou le lendemain et le 30 novembre, jour de la clôture du mois des âmes du purgatoire (brefs de Pie IX du 13 juin 1873 et du 12 juin 1877). Ces Indulgences sont applicables aux âmes du purgatoire ; mais elles ne peuvent être gagnées que par les associés de l’Archiconfrérie de Notre-Dame du Suffrage. — On ne peut gagner les Indulgences attachées au chapelet des morts que si l’on récite les prières dont il se compose sur le chapelet spécial de l’archiconfrérie.",
@@ -120,7 +120,7 @@
   {
    "id": "beringer:cordon-saint-joseph",
    "titre": "Cordon de saint Joseph : sept Gloria Patri",
-   "partie": "Dévotions",
+   "partie": "Saint Joseph",
    "categorie": "",
    "usage": "quot., facultatif : sept fois le Gloria Patri, en l’honneur de saint Joseph. Pratique conseillée, non obligatoire, par l’archiconfrérie de Saint-Joseph à Rome.",
    "indulgence": "Indulgences (applicables), d’après le sommaire approuvé par la Sacrée Congrégation des Indulgences, le 16 mai 1885, pour les associés de l’archiconfrérie : Plénières : le jour de l’entrée dans la confrérie (confession et communion) ; — à l’article de la mort (conditions habituelles) ; — à chacun des seize jours ou fêtes qui suivent (confession, communion, visite d’une église avec prières aux intentions du Souverain Pontife) : Noël, Circoncision, Epiphanie, Ascension, Pentecôte, Fête-Dieu, Immaculée-Conception, Nativité de la très sainte Vierge, Epousailles, Annonciation, Visitation, Purification, Assomption, saint Joseph (19 mars — ou l’un des neuf jours qui précèdent immédiatement cette fête), mercredi avant le troisième dimanche après Pâques (ou l’un des trois jours qui précèdent immédiatement), le jour où l’on célèbre dans l’église de la confrérie l’office pour les associés défunts. Partielles : 7 ans et 7 quarantaines, pour les associés qui assistent à l’office en l’honneur de saint Joseph, célébré le premier mercredi de chaque mois à l’église de la confrérie ; — 100 jours, chaque fois qu’ils font une bonne œuvre quelconque pour le but de la confrérie ; — 50 jours, chaque jour, s’ils récitent en l’honneur de saint Joseph les sept Gloria Patri.",
@@ -218,7 +218,7 @@
   {
    "id": "beringer:saint-joseph-purete",
    "titre": "A saint Joseph pour obtenir la vertu de pureté",
-   "partie": "Dévotions",
+   "partie": "Saint Joseph",
    "categorie": "Mercredi",
    "usage": "Le mercredi, avec le cordon de saint Joseph, porté « afin d’honorer l’insigne pureté du glorieux Epoux de la Vierge Marie » (Beringer, t. II, n° 266). Ce n’est pas une formule de renouvellement propre au cordon : aucune n’a été trouvée dans les sources consultées.",
    "indulgence": "100 jours, une fois par jour. — Pie IX, 4 février 1877 ; en même temps fut annulée toute autre Indulgence accordée auparavant. — Racc. 405.",
@@ -251,7 +251,7 @@
   {
    "id": "beringer:coeur-afflige-de-marie",
    "titre": "En l’honneur du Cœur affligé de Marie",
-   "partie": "Dévotions",
+   "partie": "Prières à la Sainte Vierge",
    "categorie": "",
    "usage": "Chaque invocation demande une vertu et un des sept dons du Saint-Esprit.",
    "indulgence": "300 jours, chaque fois. — Pie VII, 14 janvier 1815. — Racc. 320. (L’indulgence est attachée à la prière entière.)",
@@ -476,7 +476,7 @@
   {
    "id": "sambucy:chapelet-saint-dominique",
    "titre": "Le chapelet de saint Dominique",
-   "partie": "Chapelet et Rosaire",
+   "partie": "Couronnes et chapelets",
    "categorie": "",
    "usage": "Une dizaine : un Pater, dix Ave et un Gloria Patri. En le récitant, on médite les mystères du Rosaire du jour (voir la roue des trois chapelets).",
    "indulgence": "",
@@ -492,7 +492,7 @@
   {
    "id": "montfort:preparation-consecration",
    "titre": "Préparation à la consécration à Jésus par Marie",
-   "partie": "Consécrations",
+   "partie": "Consécration à Jésus par Marie",
    "categorie": "",
    "usage": "Douze jours pour se vider de l'esprit du monde, puis trois semaines ; consécration le trente-quatrième jour, renouvelée chaque année.",
    "indulgence": "",
@@ -508,7 +508,7 @@
   {
    "id": "montfort:petite-couronne",
    "titre": "La petite couronne de la Sainte Vierge",
-   "partie": "Consécrations",
+   "partie": "Consécration à Jésus par Marie",
    "categorie": "Samedi",
    "usage": "Tous les jours de sa vie, sans pourtant aucune gêne : trois Pater et douze Ave, en l'honneur des douze priviléges et grandeurs de la très-sainte Vierge.",
    "indulgence": "",
@@ -524,7 +524,7 @@
   {
    "id": "weber:alma-redemptoris",
    "titre": "Alma Redemptoris Mater",
-   "partie": "Antiennes à la Sainte Vierge",
+   "partie": "Prières à la Sainte Vierge",
    "categorie": "",
    "usage": "Depuis le premier dimanche de l'Avent jusqu'à la Purification.",
    "indulgence": "",
@@ -540,7 +540,7 @@
   {
    "id": "weber:ave-regina-caelorum",
    "titre": "Ave, Regina cælorum",
-   "partie": "Antiennes à la Sainte Vierge",
+   "partie": "Prières à la Sainte Vierge",
    "categorie": "",
    "usage": "Depuis Complies du jour de la Purification jusqu'au Jeudi Saint exclusivement.",
    "indulgence": "",
@@ -996,7 +996,7 @@
   {
    "id": "hortus:renouvellement-cordon-saint-joseph",
    "titre": "Renouvellement de la consécration au cordon de saint Joseph",
-   "partie": "Prières à saint Joseph",
+   "partie": "Saint Joseph",
    "categorie": "Mercredi",
    "usage": "Le mercredi, en touchant le cordon. Formule composée pour l’app, faute de formule ancienne : à modifier librement.",
    "indulgence": "",
@@ -1332,7 +1332,7 @@
   {
    "id": "hortus:cordon-sept-gloria",
    "titre": "Cordon de saint Joseph : les sept Gloria Patri, avec les invocations",
-   "partie": "Prières à saint Joseph",
+   "partie": "Saint Joseph",
    "categorie": "",
    "usage": "Chaque jour, pour les associés du cordon. Invocations choisies à la demande de l'utilisateur (17 nov. 2026) : sept vertus de saint Joseph.",
    "indulgence": "",
@@ -1348,7 +1348,7 @@
   {
    "id": "jahenny:scapulaire-benediction-protection",
    "titre": "Scapulaire de bénédiction et de protection",
-   "partie": "Passion",
+   "partie": "Passion et réparation",
    "categorie": "",
    "usage": "Chaque jour, en portant le scapulaire : 5 ou 7 Crux ave et 1 à 3 minutes de méditation de la Passion.",
    "indulgence": "",
@@ -2021,7 +2021,7 @@
   {
    "id": "gertrude:trois-ave-bonne-mort",
    "titre": "Trois Ave Maria pour obtenir une bonne mort (sainte Mechtilde)",
-   "partie": "Sainte Vierge",
+   "partie": "Prières à la Sainte Vierge",
    "categorie": "Chapelets",
    "usage": "Au chapelet, les trois Ave du début peuvent se dire sous cette forme : on accomplit ainsi, en même temps, la pratique des trois Ave révélée à sainte Mechtilde.",
    "indulgence": "",
@@ -2906,7 +2906,7 @@
   {
    "id": "montfort:methode-rosaire",
    "titre": "Méthode de saint Louis-Marie de Montfort pour dire avec fruit le saint Rosaire",
-   "partie": "Rosaire",
+   "partie": "Couronnes et chapelets",
    "categorie": "Chapelets",
    "usage": "Pour chaque dizaine : l'offrande avant, la clausule « Grâce du Mystère… » après. Pour le chapelet du jour, prendre les cinq mystères du jour.",
    "indulgence": "",

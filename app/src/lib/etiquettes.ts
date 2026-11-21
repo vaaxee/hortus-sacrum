@@ -151,3 +151,52 @@ export function depuisEtiquettes(etiquettes: string[]): Dimensions {
 	}
 	return d;
 }
+
+// ------------------------------------------------------------------ type d'une prière (filtres de Prières, lot 7)
+
+/** Les types montrés en filtre, chacun une valeur de la dimension « forme » (corrigeable dans la fiche). */
+export const TYPES: [string, string][] = [
+	['litanie', 'Litanies'],
+	['chapelet', 'Chapelets et couronnes'],
+	['office', 'Offices'],
+	['neuvaine', 'Neuvaines'],
+	['acte', 'Actes et offrandes'],
+	['jaculatoire', 'Jaculatoires'],
+	['hymne', 'Hymnes et antiennes'],
+	['oraison', 'Autres prières']
+];
+
+/**
+ * Type d'une prière, déduit de sa partie et de son titre (un seul) : sert aux filtres tant que la forme n'a pas été
+ * réglée ou relue. L'ordre des règles compte : une neuvaine en litanies reste une neuvaine.
+ */
+export function typeDeduit(t: Pick<Texte, 'titre' | 'partie'>): string {
+	const titre = t.titre.toLowerCase();
+	const partie = (t.partie ?? '').toLowerCase();
+	// d'abord le titre, qui dit ce qu'est la pièce ; puis la partie où le livre la range
+	if (/jaculatoire/.test(partie)) return 'jaculatoire';
+	if (/^neuvaine/.test(titre)) return 'neuvaine';
+	if (/^litanies/.test(titre)) return 'litanie';
+	if (
+		/te deum|magnificat|veni creator|stabat|ave maris|salve regina|sub tuum|regina c|alma redemptoris|ave, regina|inviolata|o gloriosa|o quot undis|te, joseph|hymne/.test(
+			titre
+		)
+	)
+		return 'hymne';
+	if (/chapelet|couronne|rosaire|dizaine/.test(titre)) return 'chapelet';
+	if (/^(acte|actes|offrande|consécration|devoir|intention)\b/.test(titre)) return 'acte';
+	if (/\boffice\b|bréviaire/.test(titre)) return 'office';
+	if (/neuvaine/.test(partie)) return 'neuvaine';
+	if (partie === 'litanies') return 'litanie';
+	if (/hymne/.test(partie)) return 'hymne';
+	if (/chapelet|couronne|rosaire/.test(partie)) return 'chapelet';
+	if (/bréviaire|office/.test(partie)) return 'office';
+	if (/offrande|devoir|consécration|apostolat/.test(partie)) return 'acte';
+	return 'oraison';
+}
+
+/** Les types d'une prière : sa forme réglée ou relue si elle en a une parmi les types, sinon le type déduit. */
+export function typesDe(t: Pick<Texte, 'titre' | 'partie'>, formeReglee?: string[]): string[] {
+	const reglees = (formeReglee ?? []).filter((f) => TYPES.some(([k]) => k === f));
+	return reglees.length ? reglees : [typeDeduit(t)];
+}

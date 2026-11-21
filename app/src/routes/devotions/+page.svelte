@@ -4,7 +4,9 @@
 	import { vivant } from '#lib/live.ts';
 	import { etat, regleEnClair, versIso, type Etat } from '#lib/pratiques.ts';
 	import { importerPlan } from '#lib/seed.ts';
-	import type { Fait, Pratique } from '#lib/types.ts';
+	import { chargerProgramme } from '#lib/programme/charger.ts';
+	import type { Programme } from '#lib/programme/types.ts';
+	import type { Fait, Pratique, Texte } from '#lib/types.ts';
 
 	// les roues symboliques ont leur page (/roue)
 	const pratiques = vivant(async () => (await db.pratiques.toArray()).filter((p) => p.type !== 'roue'), [] as Pratique[]);
@@ -22,11 +24,44 @@
 			.map((p) => ({ p, e: etat(p, aujourdhui, parPratique.get(p.id) ?? new Set()) }))
 			.sort((a, b) => (a.e.prochaine?.date ?? '9').localeCompare(b.e.prochaine?.date ?? '9'))
 	);
-	const GROUPES: [Etat['phase'], string, string][] = [
-		['en_cours', 'En cours', 'Aucune série en cours. Ajoutez une neuvaine, un trentain ou une série.'],
-		['a_venir', 'À venir', ''],
-		['permanente', 'Chaque mois, chaque année', '']
+	// En cours ; ce mois-ci (prochain jour avant la fin du mois) ; plus tard, groupé par mois (REFONTE § 4.6)
+	const finDuMois = aujourdhui.slice(0, 8) + '31';
+	const enCours = $derived(lignes.filter((l) => l.e.phase === 'en_cours'));
+	const aVenir = $derived(lignes.filter((l) => (l.e.phase === 'a_venir' || l.e.phase === 'permanente') && l.e.prochaine));
+	const ceMois = $derived(aVenir.filter((l) => l.e.prochaine!.date <= finDuMois));
+	const plusTard = $derived.by(() => {
+		const m = new Map<string, typeof lignes>();
+		for (const l of aVenir.filter((x) => x.e.prochaine!.date > finDuMois)) {
+			const k = l.e.prochaine!.date.slice(0, 7);
+			m.set(k, [...(m.get(k) ?? []), l]);
+		}
+		return [...m.entries()];
+	});
+	const nomDuMois = (k: string) => new Date(k + '-15T12:00:00').toLocaleDateString('fr-FR', { month: 'long', year: 'numeric' });
+
+	// pages explicatives : pratiques qui se lisent (règles, port d'un scapulaire, confréries) et non des prières du jour
+	let programme = $state.raw<Programme | null>(null);
+	chargerProgramme().then((x) => (programme = x));
+	const textes = vivant(() => db.textes.toArray(), [] as Texte[]);
+	const EXPLICATIVES = [
+		'beringer:cordon-saint-joseph',
+		'jardin:heure-sainte',
+		'jardin:offrandes-de-la-garde-d-honneur',
+		'jardin:priere-de-la-milice-angelique',
+		'jardin:acte-heroique-de-charite',
+		'jardin:premiers-vendredis-du-mois',
+		'jardin:premiers-samedis-du-mois',
+		'jardin:treize-mardis-de-saint-antoine',
+		'jardin:quinze-mardis-de-saint-dominique',
+		'jardin:sept-dimanches-de-saint-joseph',
+		'jardin:douze-samedis-avant-l-immaculee-conception',
+		'jardin:quinze-samedis-du-rosaire'
 	];
+	const explicatives = $derived.by(() => {
+		const ids = [...new Set([...(programme?.entrees.flatMap((e) => e.explication ?? []) ?? []), ...EXPLICATIVES])];
+		const par = new Map($textes.filter((t) => !t.supprimeLe).map((t) => [t.id, t]));
+		return ids.flatMap((id) => (par.get(id) ? [par.get(id)!] : []));
+	});
 	const terminees = $derived(lignes.filter((l) => l.e.phase === 'terminee'));
 	const masquees = $derived($pratiques.filter((p) => !p.supprimeLe && !p.active));
 	const corbeille = $derived($pratiques.filter((p) => p.supprimeLe));
@@ -52,45 +87,81 @@
 		<h1>Dévotions</h1>
 		<Ornement nom="fleuron" />
 	</div>
-	<div class="rangee">
-		<a class="bouton principal" href="/devotions/nouvelle">Ajouter une pratique</a>
-		<button onclick={reprendrePlan}>Reprendre le plan de l’année</button>
-		<a class="bouton" href="/roue">La roue symbolique</a>
-	</div>
-	{#if message}<p class="petit" role="status">{message}</p>{/if}
+	{#snippet ligne(p: Pratique, e: Etat)}
+		<li>
+			<a href="/devotions/{encodeURIComponent(p.id)}">
+				<span class="titre">{p.titre}</span>
+				<span class="detail">{regleEnClair(p.regle)}{quand(e) ? ` ; ${quand(e)}` : ''}</span>
+				{#if e.manquees.length}
+					<span class="alerte">Série interrompue : {e.manquees.length} jour{e.manquees.length > 1 ? 's' : ''} sans coche</span>
+				{/if}
+			</a>
+			{#if e.serie.length}
+				<span class="medaillon" class:plein={e.faites === e.serie.length} title="{e.faites} sur {e.serie.length}">
+					<Ornement nom="medaillon" taille={40} />
+					<span class="chiffres-alignes">{e.faites}<i>/</i>{e.serie.length}</span>
+				</span>
+			{/if}
+		</li>
+	{/snippet}
 
-	{#each GROUPES as [phase, nom, vide]}
-		{@const groupe = lignes.filter((l) => l.e.phase === phase)}
-		{#if groupe.length || vide}
-			<section>
-				<div class="tete-section">
-					<Ornement nom="grecque" />
-					<h2>{nom}</h2>
-				</div>
+	<section>
+		<div class="tete-section">
+			<Ornement nom="grecque" />
+			<h2>En cours</h2>
+		</div>
+		<ul class="reglee">
+			{#each enCours as { p, e } (p.id)}
+				{@render ligne(p, e)}
+			{:else}
+				<li class="vide petit">Aucune série en cours.</li>
+			{/each}
+		</ul>
+	</section>
+
+	<section>
+		<div class="tete-section">
+			<Ornement nom="grecque" />
+			<h2>Ce mois-ci</h2>
+		</div>
+		<ul class="reglee">
+			{#each ceMois as { p, e } (p.id)}
+				{@render ligne(p, e)}
+			{:else}
+				<li class="vide petit">Rien d’autre ce mois-ci.</li>
+			{/each}
+		</ul>
+	</section>
+
+	{#if plusTard.length}
+		<details class="reste">
+			<summary>Plus tard ({plusTard.reduce((a, [, l]) => a + l.length, 0)})</summary>
+			{#each plusTard as [mois, groupe] (mois)}
+				<h3 class="mois">{nomDuMois(mois)}</h3>
 				<ul class="reglee">
 					{#each groupe as { p, e } (p.id)}
-						<li>
-							<a href="/devotions/{encodeURIComponent(p.id)}">
-								<span class="titre">{p.titre}</span>
-								<span class="detail">{regleEnClair(p.regle)}{quand(e) ? ` ; ${quand(e)}` : ''}</span>
-								{#if e.manquees.length}
-									<span class="alerte">Série interrompue : {e.manquees.length} jour{e.manquees.length > 1 ? 's' : ''} sans coche</span>
-								{/if}
-							</a>
-							{#if e.serie.length}
-								<span class="medaillon" class:plein={e.faites === e.serie.length} title="{e.faites} sur {e.serie.length}">
-									<Ornement nom="medaillon" taille={40} />
-									<span class="chiffres-alignes">{e.faites}<i>/</i>{e.serie.length}</span>
-								</span>
-							{/if}
-						</li>
-					{:else}
-						<li class="vide petit">{vide}</li>
+						{@render ligne(p, e)}
 					{/each}
 				</ul>
-			</section>
-		{/if}
-	{/each}
+			{/each}
+		</details>
+	{/if}
+
+	{#if explicatives.length}
+		<details class="reste">
+			<summary>Pages explicatives ({explicatives.length})</summary>
+			<p class="petit">
+				Ce qui se lit et se règle une fois : conditions des séries, scapulaire, confréries. Ce ne sont pas des prières du jour.
+			</p>
+			<ul class="reglee">
+				{#each explicatives as t (t.id)}
+					<li>
+						<a href="/prieres/{encodeURIComponent(t.id)}"><span class="titre">{t.titre}</span></a>
+					</li>
+				{/each}
+			</ul>
+		</details>
+	{/if}
 
 	{#if terminees.length || masquees.length || corbeille.length}
 		<details class="reste">
@@ -115,9 +186,25 @@
 			</ul>
 		</details>
 	{/if}
+
+	<div class="rangee administration">
+		<a class="bouton principal" href="/devotions/nouvelle">Ajouter une pratique</a>
+		<button onclick={reprendrePlan}>Reprendre le plan de l’année</button>
+		<a class="bouton" href="/roue">La roue symbolique</a>
+	</div>
+	{#if message}<p class="petit" role="status">{message}</p>{/if}
 </main>
 
 <style>
+	.administration {
+		margin-top: var(--hs-e6);
+	}
+	.mois {
+		margin: var(--hs-e4) 0 0;
+		font-size: var(--hs-t1, 1rem);
+		color: var(--hs-encre-douce);
+		text-transform: capitalize;
+	}
 	.tete-page :global(.filet) {
 		max-width: 16rem;
 	}
