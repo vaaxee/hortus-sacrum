@@ -191,7 +191,7 @@
 	/** Sous-titre d'une ligne : la prière du jour quand elle change (chapelet, couronne), et les pratiques du plan. */
 	function sousTitre(l: Ligne): string {
 		const premier = l.sections.find((s) => s.genre === 'texte' && s.texte && s.origine === l.id);
-		const variante = premier?.variante && premier.texte ? (vie.textes.get(premier.texte)?.titre ?? '') : '';
+		const variante = l.sousTitre || (premier?.variante && premier.texte ? (vie.textes.get(premier.texte)?.titre ?? '') : '');
 		return [variante, ...l.annotations.map((a) => a.texte)].filter(Boolean).join(' · ');
 	}
 	const ROMAINS = ['', 'i', 'ii', 'iii', 'iv', 'v', 'vi', 'vii', 'viii', 'ix'];

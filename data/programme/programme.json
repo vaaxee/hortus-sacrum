@@ -5,7 +5,7 @@
     {
       "id": "prog:priere-du-matin",
       "titre": "Prière du matin et offrande",
-      "revision": 1,
+      "revision": 2,
       "rang": "praecipua",
       "source": "Audit des dévotions, § 2.1 ; arbitrage du 19 nov. : la prière du matin d'abord, l'offrande ensuite",
       "page": {
@@ -22,8 +22,88 @@
             ]
           },
           {
-            "texte": "hortus:offrande-du-matin",
-            "titre": "Offrande"
+            "editorial": "## Intention d’indulgences"
+          },
+          {
+            "texte": "jardin:intention-d-indulgences",
+            "extrait": {
+              "niveau": 1
+            }
+          },
+          {
+            "editorial": "## Acte de soumission à la volonté de Dieu"
+          },
+          {
+            "texte": "jardin:acte-de-soumission-a-la-volonte-de-dieu",
+            "extrait": {
+              "niveau": 1
+            }
+          },
+          {
+            "editorial": "## Acte d’intention de communion spirituelle perpétuelle"
+          },
+          {
+            "texte": "jardin:acte-d-intention-de-communion-spirituelle-perpetuelle",
+            "extrait": {
+              "niveau": 1
+            }
+          },
+          {
+            "editorial": "## Acte de recommandation des âmes rencontrées"
+          },
+          {
+            "texte": "jardin:acte-de-recommandation-des-ames-rencontrees",
+            "extrait": {
+              "niveau": 1
+            }
+          },
+          {
+            "editorial": "## Actes des devoirs de charité"
+          },
+          {
+            "editorial": "### Devoir envers l’Église et ses ministres"
+          },
+          {
+            "texte": "jardin:devoir-envers-l-eglise-et-ses-ministres",
+            "extrait": {
+              "niveau": 2
+            }
+          },
+          {
+            "editorial": "### Devoir envers la famille"
+          },
+          {
+            "texte": "jardin:devoir-envers-la-famille",
+            "extrait": {
+              "niveau": 2
+            }
+          },
+          {
+            "editorial": "### Devoir envers la patrie"
+          },
+          {
+            "texte": "jardin:devoir-envers-la-patrie",
+            "extrait": {
+              "niveau": 2
+            }
+          },
+          {
+            "editorial": "### Devoir envers les pauvres, les persécutés, les affligés"
+          },
+          {
+            "texte": "jardin:devoir-envers-les-pauvres-les-persecutes-les-affliges",
+            "extrait": {
+              "niveau": 2
+            }
+          },
+          {
+            "editorial": "### Devoir envers moi-même"
+          },
+          {
+            "texte": "jardin:devoir-envers-moi-meme",
+            "extrait": {
+              "niveau": 2
+            }
           },
           {
             "point": "intentions"
@@ -228,26 +308,50 @@
     {
       "id": "prog:chapelet",
       "titre": "Chapelet",
-      "revision": 1,
+      "revision": 2,
       "rang": "praecipua",
       "duree": 20,
-      "source": "SPEC § 10 : le chapelet du jour (joyeux lun. jeu., douloureux mar. ven., glorieux mer. sam. dim.)",
+      "source": "SPEC § 10 : le chapelet du jour (joyeux lun. jeu., douloureux mar. ven., glorieux mer. sam. dim.) ; lot 6 : page composée à l’affichage (Sambucy, Montfort, trois Ave de sainte Mechtilde), identique à l’ancienne page hortus:chapelet-*",
       "page": {
         "moment": "journee",
         "ordre": 40,
         "sections": [
           {
-            "texte": {
-              "selon": "jour_semaine",
-              "valeurs": [
-                "hortus:chapelet-glorieux",
-                "hortus:chapelet-joyeux",
-                "hortus:chapelet-douloureux",
-                "hortus:chapelet-glorieux",
-                "hortus:chapelet-joyeux",
-                "hortus:chapelet-douloureux",
-                "hortus:chapelet-glorieux"
-              ]
+            "editorial": "## Le chapelet de saint Dominique"
+          },
+          {
+            "texte": "sambucy:chapelet-saint-dominique",
+            "extrait": {
+              "niveau": 1
+            }
+          },
+          {
+            "editorial": "## Ouverture (méthode de saint Louis-Marie de Montfort)"
+          },
+          {
+            "texte": "montfort:methode-rosaire",
+            "extrait": {
+              "a": "## Mystères joyeux"
+            }
+          },
+          {
+            "editorial": "### Les trois Ave de sainte Mechtilde"
+          },
+          {
+            "editorial": "*On peut dire les trois Ave sous cette forme :*"
+          },
+          {
+            "texte": "gertrude:trois-ave-bonne-mort"
+          },
+          {
+            "texte": "montfort:methode-rosaire",
+            "extrait": {
+              "de": "## Mystères joyeux",
+              "a": "## Mystères douloureux"
+            },
+            "suite": true,
+            "quand": {
+              "jours_semaine": [1, 4]
             },
             "coupures": [
               {
@@ -258,8 +362,67 @@
                 }
               }
             ]
+          },
+          {
+            "texte": "montfort:methode-rosaire",
+            "extrait": {
+              "de": "## Mystères douloureux",
+              "a": "## Mystères glorieux"
+            },
+            "suite": true,
+            "quand": {
+              "jours_semaine": [2, 5]
+            },
+            "coupures": [
+              {
+                "point": "fin-dizaine",
+                "apres_chaque": {
+                  "niveau": 3,
+                  "motif": "^\\d+° "
+                }
+              }
+            ]
+          },
+          {
+            "texte": "montfort:methode-rosaire",
+            "extrait": {
+              "de": "## Mystères glorieux",
+              "a": "## Dieu seul"
+            },
+            "suite": true,
+            "quand": {
+              "jours_semaine": [0, 3, 6]
+            },
+            "coupures": [
+              {
+                "point": "fin-dizaine",
+                "apres_chaque": {
+                  "niveau": 3,
+                  "motif": "^\\d+° "
+                }
+              }
+            ]
+          },
+          {
+            "texte": "montfort:methode-rosaire",
+            "extrait": {
+              "de": "## Dieu seul"
+            },
+            "suite": true
           }
-        ]
+        ],
+        "sous_titre": {
+          "selon": "jour_semaine",
+          "valeurs": [
+            "Mystères glorieux",
+            "Mystères joyeux",
+            "Mystères douloureux",
+            "Mystères glorieux",
+            "Mystères joyeux",
+            "Mystères douloureux",
+            "Mystères glorieux"
+          ]
+        }
       }
     },
     {
@@ -285,28 +448,236 @@
     {
       "id": "prog:triple-couronne",
       "titre": "Triple Couronne d'or du Sacré-Cœur",
-      "revision": 1,
+      "revision": 2,
       "duree": 15,
-      "source": "Arbitrage du 19 nov. : quotidienne ; 1re lun. mer. sam., 2e mar. ven., 3e jeu. dim. (Jardin, p. 21-25)",
+      "source": "Arbitrage du 19 nov. : quotidienne ; 1re lun. mer. sam., 2e mar. ven., 3e jeu. dim. (Jardin, p. 21-25) ; lot 6 : page composée à l’affichage (ordinaire et propre de la couronne du livret), identique à l’ancienne page hortus:triple-couronne-*",
       "page": {
         "moment": "journee",
         "ordre": 50,
         "sections": [
           {
-            "texte": {
-              "selon": "jour_semaine",
-              "valeurs": [
-                "hortus:triple-couronne-3",
-                "hortus:triple-couronne-1",
-                "hortus:triple-couronne-2",
-                "hortus:triple-couronne-1",
-                "hortus:triple-couronne-3",
-                "hortus:triple-couronne-2",
-                "hortus:triple-couronne-1"
-              ]
+            "texte": "jardin:premiere-couronne-le-sacre-c-ur-de-jesus-dans-son-incarnatio",
+            "extrait": {
+              "paras": [0, 1]
+            },
+            "quand": {
+              "jours_semaine": [1, 3, 6]
+            }
+          },
+          {
+            "texte": "jardin:la-triple-couronne-d-or-du-sacre-c-ur-de-jesus",
+            "extrait": {
+              "paras": [1, 6]
+            },
+            "quand": {
+              "jours_semaine": [1, 3, 6]
+            }
+          },
+          {
+            "editorial": "## Invocation propre",
+            "quand": {
+              "jours_semaine": [1, 3, 6]
+            }
+          },
+          {
+            "texte": "jardin:premiere-couronne-le-sacre-c-ur-de-jesus-dans-son-incarnatio",
+            "extrait": {
+              "paras": [2, 3]
+            },
+            "suite": true,
+            "quand": {
+              "jours_semaine": [1, 3, 6]
+            }
+          },
+          {
+            "texte": "jardin:la-triple-couronne-d-or-du-sacre-c-ur-de-jesus",
+            "extrait": {
+              "paras": [7, 25]
+            },
+            "suite": true,
+            "quand": {
+              "jours_semaine": [1, 3, 6]
+            }
+          },
+          {
+            "editorial": "## Mystères",
+            "quand": {
+              "jours_semaine": [1, 3, 6]
+            }
+          },
+          {
+            "texte": "jardin:premiere-couronne-le-sacre-c-ur-de-jesus-dans-son-incarnatio",
+            "extrait": {
+              "paras": [4, 9]
+            },
+            "suite": true,
+            "quand": {
+              "jours_semaine": [1, 3, 6]
+            }
+          },
+          {
+            "texte": "jardin:la-triple-couronne-d-or-du-sacre-c-ur-de-jesus",
+            "extrait": {
+              "paras": [25]
+            },
+            "suite": true,
+            "quand": {
+              "jours_semaine": [1, 3, 6]
+            }
+          },
+          {
+            "texte": "jardin:deuxieme-couronne-le-sacre-c-ur-de-jesus-dans-sa-passion",
+            "extrait": {
+              "paras": [0, 1]
+            },
+            "quand": {
+              "jours_semaine": [2, 5]
+            }
+          },
+          {
+            "texte": "jardin:la-triple-couronne-d-or-du-sacre-c-ur-de-jesus",
+            "extrait": {
+              "paras": [1, 6]
+            },
+            "quand": {
+              "jours_semaine": [2, 5]
+            }
+          },
+          {
+            "editorial": "## Invocation propre",
+            "quand": {
+              "jours_semaine": [2, 5]
+            }
+          },
+          {
+            "texte": "jardin:deuxieme-couronne-le-sacre-c-ur-de-jesus-dans-sa-passion",
+            "extrait": {
+              "paras": [2, 3]
+            },
+            "suite": true,
+            "quand": {
+              "jours_semaine": [2, 5]
+            }
+          },
+          {
+            "texte": "jardin:la-triple-couronne-d-or-du-sacre-c-ur-de-jesus",
+            "extrait": {
+              "paras": [7, 25]
+            },
+            "suite": true,
+            "quand": {
+              "jours_semaine": [2, 5]
+            }
+          },
+          {
+            "editorial": "## Mystères",
+            "quand": {
+              "jours_semaine": [2, 5]
+            }
+          },
+          {
+            "texte": "jardin:deuxieme-couronne-le-sacre-c-ur-de-jesus-dans-sa-passion",
+            "extrait": {
+              "paras": [4, 9]
+            },
+            "suite": true,
+            "quand": {
+              "jours_semaine": [2, 5]
+            }
+          },
+          {
+            "texte": "jardin:la-triple-couronne-d-or-du-sacre-c-ur-de-jesus",
+            "extrait": {
+              "paras": [25]
+            },
+            "suite": true,
+            "quand": {
+              "jours_semaine": [2, 5]
+            }
+          },
+          {
+            "texte": "jardin:troisieme-couronne-le-sacre-c-ur-de-jesus-dans-l-eucharistie",
+            "extrait": {
+              "paras": [0, 1]
+            },
+            "quand": {
+              "jours_semaine": [0, 4]
+            }
+          },
+          {
+            "texte": "jardin:la-triple-couronne-d-or-du-sacre-c-ur-de-jesus",
+            "extrait": {
+              "paras": [1, 6]
+            },
+            "quand": {
+              "jours_semaine": [0, 4]
+            }
+          },
+          {
+            "editorial": "## Invocation propre",
+            "quand": {
+              "jours_semaine": [0, 4]
+            }
+          },
+          {
+            "texte": "jardin:troisieme-couronne-le-sacre-c-ur-de-jesus-dans-l-eucharistie",
+            "extrait": {
+              "paras": [2, 3]
+            },
+            "suite": true,
+            "quand": {
+              "jours_semaine": [0, 4]
+            }
+          },
+          {
+            "texte": "jardin:la-triple-couronne-d-or-du-sacre-c-ur-de-jesus",
+            "extrait": {
+              "paras": [7, 25]
+            },
+            "suite": true,
+            "quand": {
+              "jours_semaine": [0, 4]
+            }
+          },
+          {
+            "editorial": "## Mystères",
+            "quand": {
+              "jours_semaine": [0, 4]
+            }
+          },
+          {
+            "texte": "jardin:troisieme-couronne-le-sacre-c-ur-de-jesus-dans-l-eucharistie",
+            "extrait": {
+              "paras": [4, 9]
+            },
+            "suite": true,
+            "quand": {
+              "jours_semaine": [0, 4]
+            }
+          },
+          {
+            "texte": "jardin:la-triple-couronne-d-or-du-sacre-c-ur-de-jesus",
+            "extrait": {
+              "paras": [25]
+            },
+            "suite": true,
+            "quand": {
+              "jours_semaine": [0, 4]
             }
           }
-        ]
+        ],
+        "sous_titre": {
+          "selon": "jour_semaine",
+          "valeurs": [
+            "Troisième couronne : le Sacré-Cœur de Jésus dans l’Eucharistie",
+            "Première couronne : le Sacré-Cœur de Jésus dans son incarnation",
+            "Deuxième couronne : le Sacré-Cœur de Jésus dans sa passion",
+            "Première couronne : le Sacré-Cœur de Jésus dans son incarnation",
+            "Troisième couronne : le Sacré-Cœur de Jésus dans l’Eucharistie",
+            "Deuxième couronne : le Sacré-Cœur de Jésus dans sa passion",
+            "Première couronne : le Sacré-Cœur de Jésus dans son incarnation"
+          ]
+        }
       }
     },
     {

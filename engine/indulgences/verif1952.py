@@ -91,8 +91,7 @@ COURONNE = dict(
          '« Doux Cœur de Marie, soyez mon salut » (n° 134). « Aimé soit partout le Sacré-Cœur de Jésus » est concédé en '
          'français (n° 223). Le ℟. latin du livret « fac cor meum sicut Cor tuum » s’écarte du texte de l’Enchiridion '
          '(« fac cor nostrum secundum Cor tuum ») ; sa traduction française entre crochets est celle de Thésaurisons.')
-for k in ['jardin:la-triple-couronne-d-or-du-sacre-c-ur-de-jesus', 'hortus:triple-couronne-1',
-          'hortus:triple-couronne-2', 'hortus:triple-couronne-3']:
+for k in ['jardin:la-triple-couronne-d-or-du-sacre-c-ur-de-jesus']:  # lot 6 : plus de pages hortus:* composées
     maj(k, **COURONNE)
 
 maj('jardin:acte-d-intention-de-communion-spirituelle-perpetuelle',

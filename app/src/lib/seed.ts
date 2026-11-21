@@ -35,6 +35,7 @@ export async function amorcer(fetchFn: typeof fetch = fetch): Promise<void> {
 	await rappelsDuProfil();
 	await textesDesDevotions();
 	await etiquettesEnDimensions();
+	await retirerPagesComposees();
 	const programme = await chargerProgramme(fetchFn);
 	if (programme) await basculer(programme);
 }
@@ -89,6 +90,30 @@ async function etiquettesEnDimensions(): Promise<void> {
 		await db.textes.put({ ...t, dimensions: Object.fromEntries(DIMENSIONS.map((k) => [k, d[k] ?? []])) });
 	}
 	await db.meta.put({ cle: 'dimensions-etiquettes', valeur: true });
+}
+
+/**
+ * Une seule fois (meta « pages-composees-retirees ») : les pages du chapelet, de la Triple Couronne et de l'offrande que
+ * livrait composer.py sont désormais composées à l'affichage par le programme (lot 6). Leurs copies en base vont à la
+ * corbeille (restaurables), seulement si l'utilisateur ne les a pas modifiées.
+ */
+const PAGES_COMPOSEES = [
+	'hortus:triple-couronne-1',
+	'hortus:triple-couronne-2',
+	'hortus:triple-couronne-3',
+	'hortus:offrande-du-matin',
+	'hortus:chapelet-joyeux',
+	'hortus:chapelet-douloureux',
+	'hortus:chapelet-glorieux'
+];
+async function retirerPagesComposees(): Promise<void> {
+	if (await db.meta.get('pages-composees-retirees')) return;
+	for (const id of PAGES_COMPOSEES) {
+		const t = await db.textes.get(id);
+		if (t && !t.supprimeLe && (t.modifieLe === DEPART || t.original === contenu(t)))
+			await db.textes.put({ ...t, supprimeLe: new Date().toISOString() });
+	}
+	await db.meta.put({ cle: 'pages-composees-retirees', valeur: true });
 }
 
 /** Une seule fois (meta « profil-rappels ») : les anniversaires du profil spirituel déjà saisis reçoivent le rappel la veille. */
