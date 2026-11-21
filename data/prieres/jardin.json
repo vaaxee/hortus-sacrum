@@ -232,7 +232,7 @@
    "page_livret": 6,
    "usage": "quot., trois fois : matin, midi et soir",
    "indulgence": "300 j. — Plénière, aux conditions ordinaires, si elle est dite trois fois le jour, à trois moments distincts, pendant un mois. S. C. des Indulgences, 2 févr. 1850 ; S. Pénit., 15 mai 1933. — Ench. 1952, no 671.",
-   "source": "Beringer, Les Indulgences, t. I, 1905, no 210",
+   "source": "Beringer, Les Indulgences, t. I, 1905, no 210 ; texte français : Thésaurisons pour le ciel (Carmel de Montréal, 1941), traduction certifiée fidèle selon le can. 934 § 2, n° 498, p. 168",
    "parent": null,
    "blocs": [
     {
@@ -241,18 +241,18 @@
     },
     {
      "type": "texte",
-     "texte": "Ô très miséricordieux Jésus, vous qui brûlez d’amour pour les âmes, je vous en supplie, par l’agonie de votre Cœur très saint et par les douleurs de votre Mère immaculée, purifiez dans votre sang les pécheurs du monde entier qui sont dans ce moment à l’agonie et qui doivent mourir aujourd’hui. Ainsi soit-il."
+     "texte": "Ô très miséricordieux Jésus, vous qui brûlez d’amour pour les âmes, je vous en supplie, par l’agonie de votre Cœur très saint et par les douleurs de votre Mère immaculée, purifiez dans votre Sang les pécheurs du monde entier qui sont en ce moment à l’agonie et qui doivent mourir aujourd’hui. Ainsi soit-il."
     },
     {
-     "type": "verset",
-     "v": "Cœur agonisant de Jésus,",
-     "r": "ayez pitié des mourants !"
+     "type": "texte",
+     "texte": "Cœur agonisant de Jésus, ayez pitié des mourants."
     },
     {
      "type": "traduction",
      "texte": "*O clementissime Jesu, amator animarum, obsecro te per agoniam Cordis tui sanctissimi, et per dolores Matris tuæ immaculatæ, lava in sanguine tuo peccatores totius mundi nunc positos in agonia et hodie morituros. Amen. Cor Jesu in agonia factum, miserere morientium !*"
     }
-   ]
+   ],
+   "revision": 1
   },
   {
    "id": "devoir-envers-l-eglise-et-ses-ministres",
@@ -903,7 +903,7 @@
    "page_livret": 21,
    "usage": "quot. : 1ʳᵉ couronne lun., mer., sam. ; 2ᵉ mar., ven. ; 3ᵉ jeu., dim.",
    "indulgence": "*Jesu, mitis et humilis Corde* : 500 j. ; plénière, cond. ord., si l’invocation est dite chaque jour pendant un mois. Ench. 1952, no 221.",
-   "source": null,
+   "source": "« Doux Cœur de mon Jésus, faites que je vous aime de plus en plus » : Thésaurisons pour le ciel (Carmel de Montréal, 1941), traduction certifiée fidèle selon le can. 934 § 2, n° 82, p. 41",
    "parent": null,
    "blocs": [
     {
@@ -995,7 +995,7 @@
     },
     {
      "type": "traduction",
-     "texte": "Doux Cœur de Jésus, faites que je vous aime toujours de plus en plus."
+     "texte": "Doux Cœur de mon Jésus, faites que je vous aime de plus en plus."
     },
     {
      "type": "rubrique",
@@ -1058,7 +1058,8 @@
      "type": "texte",
      "texte": "℟. Ainsi soit-il."
     }
-   ]
+   ],
+   "revision": 1
   },
   {
    "id": "premiere-couronne-le-sacre-c-ur-de-jesus-dans-son-incarnatio",
@@ -1624,7 +1625,7 @@
    "page_livret": 34,
    "usage": "mer. ; les sept dim. avant le 19 mars ; mois de mars",
    "indulgence": "5 ans. — Plénière, aux conditions ordinaires, si ces prières sont dites chaque jour pendant un mois. Pie VII, 9 déc. 1819 ; S. Pénit., 12 mai 1932. — Ench. 1952, no 410. — Sept dimanches consécutifs (ces prières, ou sept Pater et Ave) : 5 ans et plénière chacun (Raccolta 1943, no 427). — Premier mercredi du mois : 5 ans et plénière (*ibid.*, no 430).",
-   "source": "Beringer, Les Indulgences, t. I, 1905, no 155",
+   "source": "Beringer, Les Indulgences, t. I, 1905, no 155 ; texte français : Thésaurisons pour le ciel (Carmel de Montréal, 1941), traduction certifiée fidèle selon le can. 934 § 2, n° 150, p. 55-57",
    "parent": null,
    "blocs": [
     {
@@ -1634,37 +1635,37 @@
     {
      "type": "numero",
      "numero": "I",
-     "texte": "Ô très chaste époux de Marie, glorieux saint Joseph, quelles ne furent pas l’affliction et l’angoisse de votre cœur, dans la perplexité où vous étiez de savoir s’il fallait abandonner votre épouse sans tache ! Mais aussi quelle ne fut pas votre allégresse, quand l’ange vous révéla le grand mystère de l’Incarnation ! Nous vous prions, par cette douleur et par cette allégresse, de consoler notre cœur à présent et dans nos dernières douleurs, par la joie d’une bonne vie et d’une sainte mort, semblable à la vôtre, entre Jésus et Marie."
+     "texte": "Ô très chaste époux de Marie, glorieux saint Joseph, quelles ne furent pas l’affliction et l’angoisse de votre cœur, dans la perplexité où vous étiez de savoir s’il fallait abandonner votre épouse sans tache ! Mais aussi quelle ne fut pas votre allégresse, quand l’ange vous révéla le grand mystère de l’Incarnation ! Nous vous prions, par cette douleur et par cette allégresse, de consoler notre cœur à présent et dans nos dernières douleurs, par la joie d’une bonne vie et d’une sainte mort, semblable à la vôtre, entre Jésus et Marie. Pater, Ave et Gloria Patri."
     },
     {
      "type": "numero",
      "numero": "II",
-     "texte": "Ô bienheureux patriarche, glorieux saint Joseph, choisi pour être le père putatif du Verbe fait homme, la douleur que vous avez ressentie en voyant naître l’Enfant Jésus dans une grande pauvreté se changea subitement en une joie céleste, devant l’harmonie des concerts angéliques et la contemplation des merveilles de cette nuit resplendissante. Nous vous supplions, par cette douleur et par cette allégresse, de nous obtenir, après cette vie, d’aller entendre les louanges angéliques et jouir des splendeurs de la gloire céleste."
+     "texte": "Ô bienheureux patriarche, glorieux saint Joseph, choisi pour être le père putatif du Verbe fait homme, la douleur que vous avez ressentie en voyant naître l’Enfant Jésus dans une si grande pauvreté, se changea subitement en une joie céleste, devant l’harmonie des concerts angéliques et la contemplation des merveilles de cette nuit resplendissante. Nous vous supplions, par cette douleur et par cette allégresse, de nous obtenir, après cette vie, d’aller entendre les louanges angéliques et jouir des splendeurs de la gloire céleste. Pater, Ave et Gloria Patri."
     },
     {
      "type": "numero",
      "numero": "III",
-     "texte": "Ô très obéissant observateur des lois divines, glorieux saint Joseph, le sang précieux que le Rédempteur enfant versa dans la circoncision vous transperça le cœur ; mais le nom de Jésus qu’il reçut alors vous rendit la vie, en vous comblant de joie. Obtenez-nous, par cette douleur et par cette allégresse, de vivre éloignés de tout péché, afin d’expirer joyeux avec le très saint nom de Jésus dans le cœur et sur les lèvres."
+     "texte": "Ô très obéissant observateur des lois divines, glorieux saint Joseph, le Sang précieux que le Rédempteur enfant versa dans la circoncision, vous transperça le cœur ; mais le nom de Jésus qu’il reçut alors vous rendit la vie, en vous comblant de joie. Obtenez-nous, par cette douleur et par cette allégresse, de vivre éloignés de tout péché, afin d’expirer joyeux avec le très saint Nom de Jésus dans le cœur et sur les lèvres. Pater, Ave et Gloria Patri."
     },
     {
      "type": "numero",
      "numero": "IV",
-     "texte": "Ô saint très fidèle, le confident des mystères de notre Rédemption, glorieux saint Joseph, si la prophétie de Siméon, concernant les souffrances que devaient endurer Jésus et Marie, vous occasionna une douleur mortelle, elle vous combla aussi de joie, en annonçant en même temps le salut et la glorieuse résurrection qui devaient en résulter pour un grand nombre d’âmes. Obtenez-nous, par cette douleur et par cette allégresse, d’être du nombre de ceux qui, en considération des mérites de Jésus et de l’intercession de la bienheureuse Vierge Marie, doivent ressusciter glorieusement."
+     "texte": "Ô Saint très fidèle, le confident des mystères de notre rédemption, glorieux saint Joseph, si la prophétie de Siméon, concernant les souffrances que devaient endurer Jésus et Marie, vous occasionna une douleur mortelle, elle vous combla aussi de joie, en annonçant en même temps le salut et la glorieuse résurrection qui devaient en résulter pour un grand nombre d’âmes. Obtenez-nous, par cette douleur et par cette allégresse, d’être du nombre de ceux qui, en considération des mérites de Jésus et de l’intercession de la bienheureuse Vierge Marie, doivent ressusciter glorieusement. Pater, Ave et Gloria."
     },
     {
      "type": "numero",
      "numero": "V",
-     "texte": "Ô gardien très vigilant, ami intime du Fils de Dieu incarné, glorieux saint Joseph, combien n’avez-vous pas souffert pour nourrir et servir le Fils du Très-Haut, particulièrement dans votre fuite en Égypte ! mais aussi quelle ne fut point votre joie d’avoir toujours ce Dieu avec vous et de voir renversées les idoles d’Égypte ! Obtenez-nous, par cette douleur et par cette allégresse, d’éloigner à jamais de nous le tyran des enfers, surtout par la fuite des occasions dangereuses, et de renverser dans notre cœur toute idole des affections terrestres, afin qu’entièrement occupés à servir Jésus et Marie, nous ayons le bonheur de vivre et de mourir uniquement pour eux."
+     "texte": "Ô gardien très vigilant, ami intime du Fils de Dieu incarné, glorieux saint Joseph, combien n’avez-vous pas souffert pour nourrir et servir le Fils du Très-Haut, particulièrement dans votre fuite en Égypte ! mais aussi quelle ne fut point votre joie d’avoir toujours ce Dieu avec vous et de voir renversées les idoles d’Égypte ! Par cette douleur et par cette allégresse, obtenez-nous d’éloigner à jamais de nous le tyran des enfers, surtout par la fuite des occasions dangereuses, et de renverser dans notre cœur toute idole des affections terrestres, afin qu’entièrement occupés à servir Jésus et Marie, nous vivions uniquement pour eux et mourions dans la joie de leur amour. Pater, Ave et Gloria Patri."
     },
     {
      "type": "numero",
      "numero": "VI",
-     "texte": "Ange de la terre, glorieux saint Joseph, qui avez pu admirer, soumis à vos moindres volontés, le Roi du ciel ; si la joie de le ramener d’Égypte fut troublée par la crainte d’Archélaüs, bientôt rassuré par l’ange vous fûtes heureux de demeurer à Nazareth, avec Jésus et Marie. Obtenez-nous, par cette douleur et par cette allégresse, d’écarter de notre cœur toute crainte nuisible, de posséder la paix de la conscience, de vivre contents avec Jésus et Marie, et de mourir aussi avec eux."
+     "texte": "Ô Ange de la terre, glorieux saint Joseph, qui avez pu admirer, soumis à vos moindres volontés, le Roi du ciel ; si la joie de le ramener d’Égypte fut troublée par la crainte d’Archélaüs, bientôt, rassuré par l’Ange, vous fûtes heureux de demeurer à Nazareth avec Jésus et Marie. Obtenez-nous, par cette douleur et par cette allégresse, d’écarter de notre cœur toute crainte nuisible, de posséder la paix de la conscience, de vivre contents avec Jésus et Marie et de mourir aussi avec eux. Pater, Ave et Gloria Patri."
     },
     {
      "type": "numero",
      "numero": "VII",
-     "texte": "Ô modèle de toute sainteté, glorieux saint Joseph, ayant perdu sans votre faute l’Enfant Jésus, vous l’avez cherché pendant trois jours plongé dans une douleur profonde, jusqu’au moment où, plein de joie, vous avez retrouvé dans le temple, au milieu des docteurs, celui qui était votre vie. Par cette douleur et par cette allégresse, nous vous supplions, de cœur et de bouche, d’intercéder en notre faveur, afin qu’il ne nous arrive jamais de perdre Jésus par quelque faute grave. Si nous avions cet immense malheur, faites que nous le cherchions avec une douleur qui ne nous laisse pas de repos jusqu’à ce que nous le retrouvions favorable, surtout à notre mort, afin d’aller le posséder au ciel, et d’y chanter éternellement avec vous ses divines miséricordes."
+     "texte": "Ô modèle de toute sainteté, glorieux saint Joseph, ayant perdu sans votre faute l’Enfant Jésus, vous l’avez cherché pendant trois jours, plongé dans une douleur profonde, jusqu’au moment où, plein de joie, vous avez retrouvé dans le temple, au milieu des docteurs, celui qui était votre vie. Par cette douleur et par cette allégresse, nous vous supplions, de cœur et de bouche, d’intercéder en notre faveur, afin qu’il ne nous arrive plus de perdre Jésus par quelque faute grave. Si nous avions cet immense malheur, faites que nous le cherchions avec une douleur qui ne nous laisse pas de repos jusqu’à ce que nous le retrouvions favorable, surtout à notre mort, afin d’aller le posséder au ciel et d’y chanter éternellement avec vous ses divines miséricordes. Pater, Ave et Gloria Patri."
     },
     {
      "type": "rubrique",
@@ -1685,9 +1686,10 @@
     },
     {
      "type": "texte",
-     "texte": "Ô Dieu, qui par une providence admirable avez daigné choisir le bienheureux Joseph pour être l’époux de votre très sainte Mère, faites, nous vous en supplions, que, le vénérant sur la terre comme notre protecteur, nous méritions de l’avoir pour intercesseur dans les cieux. Vous qui vivez et régnez dans les siècles des siècles. Ainsi soit-il."
+     "texte": "Ô Dieu, qui, par une providence admirable, avez daigné choisir le bienheureux Joseph pour être l’époux de votre très sainte Mère, faites, nous vous en supplions, que, le vénérant sur la terre comme notre protecteur, nous méritions de l’avoir pour intercesseur dans les cieux. Vous qui vivez et régnez dans les siècles des siècles. Ainsi soit-il."
     }
-   ]
+   ],
+   "revision": 1
   },
   {
    "id": "les-treize-mardis-de-saint-antoine",

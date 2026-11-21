@@ -53,12 +53,12 @@ note du can. 934 ; le latin, quand la pièce le donne, porte l'indulgence. **Dé
 | Chapelet (Pater, Ave, Gloria) | n° 395 | latin | **Fait** : usuels, fidélité notoire (*L'Ami du clergé*, 9 avril 1931) |
 | Litanies de la sainte Vierge | n° 319 | latin | **Fait (21 nov., décision de l'utilisateur)** : texte refait dans l'ordre de 1952. Français de Beringer n° 439 (p. 231-232), qui donne déjà « Mère du bon conseil » (1903) et « Reine de la paix » (1917) ; Thésaurisons ne donne pas ces invocations isolées. « Regina in caelum assumpta » (1950) **en latin** : Beringer et Thésaurisons sont antérieurs, aucune traduction approuvée trouvée. Verset de Beringer (n° 428), oraison de Thésaurisons n° 126 (p. 49). Latin de l'Enchiridion. La fiche porte `traduction` : chaque partie est soit approuvée, soit dite dans la langue de la concession |
 | Litanies du saint Nom | n° 114 | latin | **Fait (21 nov., décision de l'utilisateur : la traduction de Beringer est approuvée telle quelle)** : Beringer n° 305, p. 155-157 ; latin de l'Enchiridion |
-| Triple Couronne d'or : « Doux Cœur de Jésus, faites que je vous aime toujours de plus en plus » | n° 224 | italien | **Latin d'abord** : Beringer n° 333 (p. 170) dit « Doux cœur de Jésus » pour « Dolce Cuor del mio Gesù ». Thésaurisons n° 82 (« Doux Cœur de mon Jésus, faites que je vous aime de plus en plus ») répond, lui, mot pour mot : à reporter dans le livret |
-| Sept Douleurs et Allégresses de saint Joseph (livret) | n° 470 | italien | **Latin d'abord** : Beringer n° 485 (p. 255-257) ajoute « ami intime » (V), « celui qui était votre vie » (VII), « qu'il reçut alors » (III), absents de l'italien de 1952 (vérifié sur l'image, p. 343). Thésaurisons n° 150 les donne : à reporter dans le livret |
+| Triple Couronne d'or : « Doux Cœur de mon Jésus, faites que je vous aime de plus en plus » | n° 224 | italien | **Fait (21 nov.)** : Thésaurisons n° 82 (p. 41), qui répond mot pour mot à « Dolce Cuor del mio Gesù, fa' che io ti ami sempre più ». Reporté dans le livret (Triple Couronne d'or) et dans les trois pages composées (`revision`) ; Beringer n° 333 (« Doux cœur de Jésus ») non retenu |
+| Sept Douleurs et Allégresses de saint Joseph (livret) | n° 470 | italien | **Fait (21 nov.)** : Thésaurisons n° 150 (p. 55-57), reporté dans le livret (`revision`), avec Pater, Ave et Gloria après chaque prière, antienne, verset et oraison comme dans l'Enchiridion. Thésaurisons garde les gloses de Beringer (« ami intime », « qu'il reçut alors », « celui qui était votre vie ») : traduction certifiée par l'Ordinaire, retenue telle quelle |
 | Litanies du Sacré-Cœur ; de saint Joseph | n° 245, 462 | latin | Latin d'abord |
 | Litanies des Saints (Paroissien) | n° 687 | latin | Latin d'abord ; latin à fournir |
 | Credo et Confiteor de la prière du soir | n° 43, 691 | latin | Latin d'abord (latin dans la prière du matin) |
-| Prière pour les agonisants (livret) | n° 671 | latin | Latin d'abord ; le français du livret est presque celui de Thésaurisons n° 498 (proposition dans le rapport) |
+| Prière pour les agonisants (livret) | n° 671 | latin | **Fait (21 nov.)** : texte exact de Thésaurisons n° 498 (p. 168 : « en ce moment », « Sang ») reporté dans le livret (`revision`) ; l'invocation « Cœur agonisant de Jésus, ayez pitié des mourants. » d'une ligne, comme dans Thésaurisons |
 | Oraison à saint Gabriel | n° 449 | latin | Latin d'abord |
 | Veni Creator ; Ave maris stella ; Te Joseph celebrent (livret) | n° 283, 321, 463 | latin | Latin d'abord (hymnes : les traductions de Beringer sont en vers) |
 | Alma Redemptoris ; Ave Regina cælorum (l'antienne) ; Stabat Mater | n° 323, 324, 378 | latin | Latin d'abord |
@@ -75,7 +75,7 @@ note du can. 934 ; le latin, quand la pièce le donne, porte l'indulgence. **Dé
 - **Pater, Ave, Gloria** : *L'Ami du clergé*, 9 avril 1931, p. 252-253 (archive.org `per_esprit-et-vie_lami-du-clerge_1931-04-09_48_15`) :
   les traductions usuelles « dont […] la fidélité est notoire » gardent l'indulgence, malgré l'absence d'attestation officielle. **Décision du 20 nov. : suivi.**
 - **Sans source française déclarée fidèle** (le latin seul porte l'indulgence) : litanies des Saints, Credo et Confiteor,
-  prière pour les agonisants, oraison à saint Gabriel, Alma Redemptoris, Ave Regina cælorum, Te Deum, Te Joseph celebrent.
+  oraison à saint Gabriel, Alma Redemptoris, Ave Regina cælorum, Te Deum, Te Joseph celebrent.
 - **À chercher en bibliothèque** : *Recueil de prières et œuvres pies* (Raccolta), Tournai, Desclée, 1901-1902, « seule édition
   reconnue authentique par la S. Congrégation des indulgences ».
 
@@ -83,7 +83,7 @@ note du can. 934 ; le latin, quand la pièce le donne, porte l'indulgence. **Dé
 Chaque texte a été lu sur l'image du scan (archive.org `lesindulgences0001beri`, PDF), l'OCR relu, puis comparé phrase par
 phrase à la formule de l'Enchiridion de 1952. Règle suivie : Beringer n'est retenu que si son français rend la formule de
 1952 sans ajout ni coupure ; une tournure de traduction (« par l'opération du Saint-Esprit ») ne compte pas comme ajout.
-Script rejouable : `engine/indulgences/beringer1925.py` (après `composer.py`, `ench1952.py`, `verif1952.py`).
+Script rejouable : `engine/indulgences/beringer1925.py` (après `composer.py`, `ench1952.py`, `verif1952.py`). Report de Thésaurisons dans le livret (n° 82, 150, 498) : `engine/indulgences/thesaurisons_livret.py`, à lancer ensuite ; les pièces du livret portant `revision` sont remplacées dans l'app si l'utilisateur ne les a pas modifiées (`reviserLivret`).
 - **Pages** : la table d'archive.org est juste pour les n° 428 (p. 221-222, suite p. 223 pour le Regina cæli), 614 (p. 322),
   384 (p. 202), 333 (p. 170), 459 (p. 243-244) ; le Magnificat va de la p. 228 à la p. 229, les litanies de Lorette de la
   p. 229 à la p. 232, celles du saint Nom de la p. 154 à la p. 157, saint Joseph de la p. 255 à la p. 257.
