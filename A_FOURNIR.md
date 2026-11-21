@@ -29,7 +29,7 @@ Les points réglés sont gardés pour l'historique. Dernière mise à jour : 20 
 - ~~Invocations du Sub tuum~~ : **fait** (17 nov.), texte latin de christusregnat.com fourni par l’utilisateur ; traduction française à fournir.
 - **Prières de sainte Gertrude** (Denis, 11e éd., Lethielleux) : choisir les prières à transcrire ; trois Ave de sainte Mechtilde faits. **Fait (19 nov.)**, selon la décision de l'utilisateur : 25 pièces `gertrude:*` (prières portant une promesse de Notre-Seigneur ou de la sainte Vierge : Notre-Seigneur, Passion, sainte Vierge, saints, défunts ; et les prières aux saints par catégorie, avec « N. »). Laissées de côté, faute de promesse explicite de Notre-Seigneur ou de la Vierge : Amour de Dieu (p. 89), Autre manière de saluer les plaies (p. 122), Hostie divine (p. 147), Salut à tous les membres de Jésus (p. 163), Réparation à la sainte Vierge (p. 186), Ave Maria d'or (p. 191), Offrande du Cœur de Jésus à Marie (p. 198), A saint Benoît (promesse du saint, p. 227), Invocation de tous les Saints (p. 242), prières de la communion et de la messe (p. 35-54, 313-335) : **Décision du 20 nov. : toutes transcrites, hors de la liste du jour** (consultables dans Prières). **Fait (20 nov.)** : 30 pièces relues page à page sur le scan (11 pour la messe, p. 34-54 ; 9 pièces isolées ; 10 pour la communion, p. 313-336 ; les trois petites prières à la Vierge, p. 318-319, étaient déjà faites). Rien d'illisible. Lectures sous une impression abîmée ou rognée au bord du scan, sûres par le contexte : « ceux qui me sont chers » (p. 46, lettres écrasées), « m'obtenir » (p. 332, tache), « vraie foi » (p. 36), « de m'éclairer » (p. 36), « soyez-moi » (p. 44), « tendu » (p. 148), « non à un désir » (p. 92), « votre sacré côté » (p. 316) ; « L. 4, c. 53 » (p. 186, dernier chiffre pâle, confirmé p. 189). Ponctuation absente à la p. 91 (« qu'on ne vous aime pas Combien », « ô mon doux amour de ce que »), gardée telle quelle. Début de la messe (p. 26-34 : prière au commencement, Kyrie et Gloria tirés de Louis de Blois) **fait** aussi le 20 nov. (3 pièces).
 - **Sainte Face, petit chemin de croix, IVe station** (Janvier, *Manuel de l'Archiconfrérie*, 3e éd., Tours 1895, p. 185) : sur le scan, le mot avant « larmes » (« je vous offre … larmes ») est caché par une surcharge à la main ; transcrit « ces », lecture la plus probable. **Décision du 20 nov. : « ces » est gardé, sans autre recherche.**
-- **Apostolat de la prière** : **fait (20 nov.)**, Ramière, *L'Apostolat de la prière*, 4e éd., Le Puy, Marchessou, 1864 (archive.org `lapostolatdelapr00rami`) : offrande quotidienne et pratiques (`ramiere:*`). Reste : la « petite prière du Cœur agonisant » à dire après l'Angélus, que Ramière cite sans la donner (il renvoie au P. Lyonnard, *Le Cœur agonisant de Jésus et les agonisants de tous les jours*, Paris, Lecoffre) ; autre piste : *Petit manuel de l'Apostolat de la prière* (Montréal, Rolland, 1864, archive.org `cihm_39977`). Gautrelet non consulté.
+- **Apostolat de la prière** : **fait (20 nov.)**, Ramière, *L'Apostolat de la prière*, 4e éd., Le Puy, Marchessou, 1864 (archive.org `lapostolatdelapr00rami`) : offrande quotidienne et pratiques (`ramiere:*`). Reste : la « petite prière du Cœur agonisant » à dire après l'Angélus, que Ramière cite sans la donner (il renvoie au P. Lyonnard, *Le Cœur agonisant de Jésus et les agonisants de tous les jours*, Paris, Lecoffre) ; autre piste : *Petit manuel de l'Apostolat de la prière* (Montréal, Rolland, 1864, archive.org `cihm_39977`). Gautrelet non consulté. **Trouvé (21 nov., à valider)** : le *Petit manuel* (Montréal, 1864, approbation de Mgr Bourget) donne la prière p. 106-107 (« Dévotion au Cœur agonisant de Jésus. Prière. O Très-Miséricordieux Jésus, ardent ami des âmes… ») et, dans le règlement de vie, p. 138 : « Ajoutez-y [à l'Angelus] la petite prière pour les agonisants » ; lu sur les images (n121, n122, n153). Ajoutée : `apostolat1864:coeur-agonisant` (non branchée). C'est la même prière que la « Prière pour les agonisants » du livret (Thésaurisons n° 498, traduction qui porte l'indulgence de l'Ench. 1952, n° 671) : pour la ligne après l'Angélus, la pièce du livret est préférable (indulgence) ; celle de 1864 garde la forme de l'Apostolat. Lyonnard (*Le Cœur agonisant de Jésus*, Lecoffre) non trouvé sur archive.org.
 - **Rosaire : clausules de Montfort en latin** (audit des consignes du 20 nov., point « contredit »).
   - **Ce qu'a demandé l'utilisateur** (transcript, 17 nov., 21 h 04 UTC) : « Pour le rosaire/chapelet, ajouter à la page
     la méthode de récitation montfortaine et composer des clausules en latin et en français : 2 clausules à alterner par
@@ -58,6 +58,45 @@ Les points réglés sont gardés pour l'historique. Dernière mise à jour : 20 
   Pistes : pour la première, un recueil ancien imprimé avec approbation (La Porte Latine en donne une version, sans
   source imprimée citée) ; pour la seconde, une notice ancienne du scapulaire vert (Justine Bisqueyburu, 1840 ; Pie IX,
   1863 et 1870).
+
+  **Recherche du 21 nov. (à valider par l'utilisateur)** :
+  - « Ô mon Jésus… » : **trouvé sous sa forme ancienne** et ajouté (`castelbranco1943:o-mon-jesus-fatima`, non branché
+    dans le programme) : J. Castelbranco, *Le miracle inouï de Fatima*, Montréal, 1943, imprimatur du 5 juin 1943
+    (archive.org `lemiracleinouide00cast`), p. 38 (et p. 47), lu sur l'image : « O mon Jésus, pardonnez-nous nos péchés !
+    délivrez-nous du feu de l'enfer ! et soulagez les âmes du purgatoire, surtout les plus délaissées ! ». C'est la forme
+    d'avant les Mémoires de sœur Lucie (« âmes du purgatoire ») ; la forme courante (« préservez-nous du feu de l'enfer,
+    conduisez au ciel toutes les âmes… ») **reste sans édition ancienne lisible** : les livres français de 1943-1954 trouvés
+    sur archive.org sont en prêt contrôlé, texte non accessible (`notredamedurosai0000bous`, Montréal, Centre dominicain,
+    1945 ; `fatimamerveillei0000unse`, 1943 ; `fatimalenouveaul0000vari`, 1936) ; Barthas (*Fatima, merveille du XXe siècle*,
+    *Il était trois petits enfants*) n'est pas en ligne. *Enchiridion* 1952 : aucune entrée (ni « inferni » ni « Fatima ») ;
+    *Thésaurisons* 1941 (d'après les *Preces* 1938) ne la donne pas. La forme courante se lit sur FSSPX Actualités
+    (12 juillet 2019, « Ô mon Jésus, pardonnez-nous nos péchés ») : site admis pour les prières courantes, à retenir si
+    l'utilisateur le préfère. **Décision à prendre** : forme de 1943 imprimée, ou forme courante d'après un site FSSPX.
+  - « Cœur immaculé de Marie, priez pour nous maintenant et à l'heure de notre mort » : **non trouvé** dans une notice
+    ancienne lisible. Cherché : archive.org (titres « scapulaire » 1840-1955 : Mont-Carmel, Sacré-Cœur, Passion, scapulaire
+    bleu, aucun scapulaire vert ; « Bisqueyburu » : 0 résultat), Gallica (recherche refusée par le pare-feu de Gallica
+    depuis cet environnement), recherche web (seules des pages récentes ; la notice du P. Mott, *Le scapulaire vert et ses
+    prodiges*, 1923, n'est pas numérisée en français ; La Porte Latine, « Le scapulaire vert », *Marchons droit* n° 112,
+    2005, raconte l'apparition). Pistes : Mott 1923 sur Gallica (à chercher depuis un navigateur), *Annales de la
+    Congrégation de la Mission* (1870-1880), notices des Filles de la Charité.
+
+- **Prière au bienheureux Louis-Marie Grignion de Montfort** (neuvaine du 28 avril, `docs/REPRISE.md`, point 7) :
+  **non intégrée** (21 nov.). Seule prière trouvée : l'invocation finale du chap. XXI de P.-M. Chauvin, curé-doyen de
+  Montfort, *Le bienheureux L.-M. Grignion de Montfort*, Rennes, H. Caillière, 1888, p. 208-210 (« O Bienheureux Montfort,
+  priez pour l'Église ! … Enfin soyez notre protecteur, notre guide, notre modèle ! »), lue sur les images du scan publié
+  par les Montfortains (montfortian.info, `archive/files/16-Chpp-XX-XXI-pp-197-210.pdf`). Écartée faute d'approbation
+  imprimée (page de titre et avant-propos vus : aucune) et parce qu'elle est propre à la paroisse de Montfort (« votre
+  ville natale », « cette paroisse », « notre diocèse ») ; l'utilisateur peut la retenir s'il le souhaite. Cherché sans
+  résultat : archive.org (titres « Grignion » ou « Montfort », 1880-1955 : `cihm_76458`, Ottawa 1913, imprimatur ;
+  `cihm_79783`, *Vie admirable*, Montréal 1920 ; `cihm_74357` ; `cihm_13015` : aucune prière au bienheureux ;
+  `cihm_77872`, *Dieu seul : cantiques du bienheureux L.-M. Grignion de Montfort*, Ottawa, 1904, approbation du
+  12 février 1904 : un cantique n° 86, « Prière au Bienheureux de Montfort » (refrain « Priez pour nous, Bienheureux
+  Montfort, Conduisez-nous au céleste port », p. 173 environ, OCR seul, non relu), chant en vers, non retenu comme prière
+  de neuvaine mais à proposer à l'utilisateur), la *Notice* de 1886 avec la méthode du Rosaire (bibliotheque-catholique.com, aucune prière au
+  bienheureux), *Enchiridion* 1952 (rien). Pistes : manuel de la confrérie de Marie Reine des Cœurs (Montfortains,
+  Eastview ou Saint-Laurent-sur-Sèvre, 1899-1947) ; litanies et neuvaine du Secrétariat de Marie Médiatrice (Louvain,
+  *de consensu Ordinarii*, Malines, 7 janvier 1942) ; oraison propre de la messe du bienheureux (propre des diocèses de
+  Luçon ou de Rennes, après 1888).
 
 ## Traductions approuvées à trouver (20 novembre 2026)
 

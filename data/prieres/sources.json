@@ -3137,6 +3137,38 @@
     "url": "https://archive.org/details/lapostolatdelapr00rami",
     "page": "p. 303-316 (PDF p. 389-402)"
    }
+  },
+  {
+   "id": "apostolat1864:coeur-agonisant",
+   "titre": "Petite prière du Cœur agonisant de Jésus (Apostolat de la prière)",
+   "partie": "Apostolat de la prière",
+   "categorie": "",
+   "usage": "À dire après l'Angelus, selon le règlement de vie des associés (p. 138 : « Ajoutez-y la petite prière pour les agonisants ») ; c'est la « petite prière du Cœur agonisant » que Ramière demande de réciter après l'Angelus. Même prière que la « Prière pour les agonisants » du livret, dont la traduction de Thésaurisons (n° 498) porte l'indulgence de l'Enchiridion de 1952 (n° 671) ; la note d'indulgence de 1864 (droit antérieur) n'est pas reprise.",
+   "indulgence": "",
+   "source": {
+    "ouvrage": "R. P. H. Ramière, s.j., Petit manuel de l'Apostolat de la prière",
+    "edition": "Première édition canadienne d'après la 4e édition française, Montréal, J.-B. Rolland et fils, 1864 ; approbation de Mgr Bourget, évêque de Montréal (archive.org, cihm_39977)",
+    "page": "106-107 (art. V, « Dévotion au Cœur agonisant de Jésus ») ; règle de l'Angelus p. 138. L'édition imprime « Ainsi so t-il » (lettre tombée) : lu « soit-il ».",
+    "url": "https://archive.org/details/cihm_39977"
+   },
+   "latin": "",
+   "corps": "*Dévotion au Cœur agonisant de Jésus. Prière.*\n\nO Très-Miséricordieux Jésus, ardent ami des âmes, je vous en conjure, par l'Agonie de votre divin Cœur et par les Douleurs de votre Mère immaculée, purifiez dans votre Sang tous les pécheurs de la terre, qui sont maintenant à l'agonie, et qui, aujourd'hui même, doivent mourir.—Ainsi soit-il.\n\nCœur agonisant de Jésus, ayez pitié des mourants !"
+  },
+  {
+   "id": "castelbranco1943:o-mon-jesus-fatima",
+   "titre": "Ô mon Jésus, pardonnez-nous nos péchés (prière de Fatima après chaque dizaine, forme de 1943)",
+   "partie": "Couronnes et chapelets",
+   "categorie": "",
+   "usage": "Après le Gloria Patri de chaque dizaine du chapelet. Forme imprimée avant la diffusion des Mémoires de sœur Lucie (« soulagez les âmes du purgatoire ») ; la forme répandue depuis (« préservez-nous du feu de l'enfer, conduisez au ciel toutes les âmes… ») n'a pas encore été trouvée dans une édition ancienne lisible. Aucune indulgence dans l'Enchiridion de 1952.",
+   "indulgence": "",
+   "source": {
+    "ouvrage": "J. Castelbranco, Le miracle inouï de Fatima",
+    "edition": "Montréal, 1943 ; nihil obstat de Mgr L. Le Hunsec, imprimatur de Ph. Perrier, v. g., Montréal, 5 juin 1943 (archive.org, lemiracleinouide00cast)",
+    "page": "38 (même formule p. 47)",
+    "url": "https://archive.org/details/lemiracleinouide00cast"
+   },
+   "latin": "",
+   "corps": "*(…) réciter tous les jours le chapelet, en ajoutant après chaque dizaine :*\n\nO mon Jésus, pardonnez-nous nos péchés ! délivrez-nous du feu de l'enfer ! et soulagez les âmes du purgatoire, surtout les plus délaissées !"
   }
  ]
 }

@@ -63,6 +63,13 @@ ancienne reste à trouver.
 | Litanies de l'Ange gardien, avec la prière | idem | 579-580 | idem |
 | Roues symboliques : listes et versets | Vulgate clémentine ; *Catéchisme de saint Pie X* ; Bréviaire romain (S. Grégoire, 29 sept., neuf chœurs) ; Paroissien 1890 ; *Jardin de l'âme* | — | `engine/roues/construire.py` |
 
+## Textes ajoutés le 21 novembre 2026 (relus sur l'image du scan, en attente de validation)
+
+| Texte | Source | Pages | Accès |
+|---|---|---|---|
+| Petite prière du Cœur agonisant de Jésus, à dire après l'Angelus (`apostolat1864:coeur-agonisant`) | Ramière, *Petit manuel de l'Apostolat de la prière*, 1re éd. canadienne d'après la 4e éd. française, Montréal, J.-B. Rolland et fils, 1864 ; approbation de Mgr Bourget | 106-107 (règle de l'Angelus p. 138) | archive.org `cihm_39977` (pages n121, n122, n153) |
+| « O mon Jésus, pardonnez-nous nos péchés ! délivrez-nous du feu de l'enfer !… » (Fatima, forme de 1943, `castelbranco1943:o-mon-jesus-fatima`) | J. Castelbranco, *Le miracle inouï de Fatima*, Montréal, 1943 ; imprimatur du 5 juin 1943 | 38 (et 47) | archive.org `lemiracleinouide00cast` (pages n39, n48 ; imprimatur n3) |
+
 ## Indulgences (compteur), 14 novembre 2026
 
 Règle : la concession la plus récente fait foi : *Enchiridion indulgentiarum*, 1952 (archive.org `enchiridion_indulgentiarum_1952`) ; à défaut *Thésaurisons pour le ciel*, Carmel de Montréal, 1941, imprimatur du 28 avril 1941, d'après les *Preces et Pia Opera* de 1938 (http://www.liberius.net/livre.php?id_livre=1335) ; à défaut Beringer 1925. Données : `data/prieres/indulgences.json` (indulgences partielles seulement ; plénières et indulgences réservées aux confréries non comptées). Vérifiés dans l'Enchiridion : n° 36 (actes de foi, d'espérance, de charité), 43 (Symbole des Apôtres), 114, 221, 293, 319, 331, 332, 333, 462, 478, 585, 671, 687, 691 (Confiteor), 395 (chapelet), litanies du Sacré-Cœur.
