@@ -102,16 +102,18 @@
 	<div class="barre">
 		<input type="search" placeholder="Chercher un titre, un mot" bind:value={recherche} aria-label="Chercher une prière" />
 		<div class="rangee" role="group" aria-label="Filtre">
-			{#each filtres as [v, nom] (v)}
-				<button type="button" aria-pressed={filtre === v} onclick={() => (filtre = v)}>{nom}</button>
-			{/each}
+			<span class="segments">
+				{#each filtres as [v, nom] (v)}
+					<button type="button" aria-pressed={filtre === v} onclick={() => (filtre = v)}>{nom}</button>
+				{/each}
+			</span>
 			<span class="espace"></span>
 			<a class="bouton principal" href="/prieres/nouveau">Ajouter une prière</a>
 		</div>
 		<div class="pastilles" role="group" aria-label="Thème">
 			<span class="etiquette">Thème</span>
 			{#each THEMES as v (v)}
-				<button type="button" class="brut pastille-filtre" aria-pressed={theme === v} onclick={() => (theme = theme === v ? null : v)}
+				<button type="button" class="brut puce" aria-pressed={theme === v} onclick={() => (theme = theme === v ? null : v)}
 					>{libelleObjet(v)}</button
 				>
 			{/each}
@@ -119,7 +121,7 @@
 		<div class="pastilles" role="group" aria-label="Type">
 			<span class="etiquette">Type</span>
 			{#each TYPES as [v, nom] (v)}
-				<button type="button" class="brut pastille-filtre" aria-pressed={type === v} onclick={() => (type = type === v ? null : v)}
+				<button type="button" class="brut puce" aria-pressed={type === v} onclick={() => (type = type === v ? null : v)}
 					>{nom}</button
 				>
 			{/each}
@@ -165,40 +167,21 @@
 		display: grid;
 		gap: var(--hs-e3);
 	}
-	.barre button {
-		min-height: 36px;
-	}
 	/* une rangée de pastilles qui défile horizontalement, sans élargir la page */
 	.pastilles {
 		display: flex;
 		gap: 6px;
 		align-items: center;
 		overflow-x: auto;
-		padding-bottom: 4px;
+		padding: 5px 4px;
+		margin-inline: -4px;
 		scrollbar-width: none;
+		/* la rangée s'efface au bord droit : on devine qu'elle continue */
+		mask-image: linear-gradient(to right, #000 calc(100% - 28px), transparent);
 	}
 	.pastilles .etiquette {
 		flex: none;
 		margin-right: 4px;
-	}
-	.pastilles .pastille-filtre {
-		flex: none;
-		white-space: nowrap;
-		min-height: 32px;
-		padding: 4px 11px;
-		border: var(--hs-cheveu) solid var(--hs-filet);
-		border-radius: 999px;
-		background: none;
-		color: var(--hs-encre-douce);
-		font-family: var(--hs-interface);
-		font-size: 0.8125rem;
-		line-height: 1.2;
-		cursor: pointer;
-	}
-	.pastilles .pastille-filtre[aria-pressed='true'] {
-		color: var(--hs-encre);
-		border-color: var(--hs-or-trait);
-		background: color-mix(in srgb, var(--hs-or) 18%, var(--hs-fond));
 	}
 	.compte {
 		margin: 0;

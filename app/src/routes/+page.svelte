@@ -432,9 +432,15 @@
 			{#each MOMENTS as [moment, nom] (moment)}
 				{@const elements = lignes.filter((l) => l.moment === moment)}
 				{#if elements.length || (moment === 'journee' && lectures.length)}
-					<div class="tete">
-						<Ornement nom="grecque" />
+					{@const avecLectures = moment === 'journee' && lectures.length > 0}
+					{@const nFaits = elements.filter(finie).length + (avecLectures && lues === lectures.length ? 1 : 0)}
+					{@const nTout = elements.length + (avecLectures ? 1 : 0)}
+					<div class="tete" class:acheve={nFaits === nTout}>
+						<div class="filet-moment" aria-hidden="true">
+							<span></span><Icone nom={moment === 'matin' ? 'matin' : moment === 'soir' ? 'soir' : 'midi'} taille={24} /><span></span>
+						</div>
 						<h2>{nom}</h2>
+						<p class="compte-moment pc chiffres-alignes">{nFaits} sur {nTout}</p>
 					</div>
 					<ul>
 						{#each elements as l (l.id)}
@@ -445,10 +451,14 @@
 							<li class:fini={fait >= n}>
 								<Case libelle={l.titre} bind:cochee={() => fait >= n, () => cocher(l, date, fait, idsPratiques)} />
 								<div class="corps">
-									<a class="titre" href="/pratique/{encodeURIComponent(l.id)}?date={date}">{l.titre}</a>
+									<a class="titre" href="/pratique/{encodeURIComponent(l.id)}?date={date}"><span class="fil">{l.titre}</span></a>
 									{#if sous}<span class="sous">{sous}</span>{/if}
-									{#if l.heures?.length}<span class="heures interface">{l.heures.join(', ')}</span>{/if}
-									{#if m > 0}<span class="duree interface">≈ {enMinutes(m)}</span>{/if}
+									{#if l.heures?.length || m > 0}
+										<span class="meta chiffres-alignes">
+											{#if l.heures?.length}<span class="heures">{l.heures.join(' · ')}</span>{/if}
+											{#if m > 0}<span class="duree">≈ {enMinutes(m)}</span>{/if}
+										</span>
+									{/if}
 								</div>
 								{#if n > 1}
 									<button
@@ -466,7 +476,9 @@
 							<li class="lectures" class:fini={lues === lectures.length}>
 								<span class="compte pc chiffres-alignes" aria-hidden="true">{lues}/{lectures.length}</span>
 								<div class="corps">
-									<a class="titre" href="/lecture{estAujourdhui ? '' : `?date=${date}`}">Lectures du jour ({lues}/{lectures.length})</a>
+									<a class="titre" href="/lecture{estAujourdhui ? '' : `?date=${date}`}"
+										><span class="fil">Lectures du jour ({lues}/{lectures.length})</span></a
+									>
 									<details class="a-lire">
 										<summary class="sous">{lectures.map((x) => x.lecture.titre).join(' · ')}</summary>
 										{#each lectures as x (x.lecture.id)}
@@ -733,39 +745,84 @@
 		font-size: var(--hs-t0);
 		letter-spacing: var(--hs-chasse-interface);
 	}
+	/* tête d'un moment : filet d'or, l'astre de l'heure au milieu, le titre, puis le compte */
 	.tete {
 		margin-top: var(--hs-e7);
 		text-align: center;
 		display: grid;
-		gap: var(--hs-e3);
+		justify-items: center;
+		gap: 2px;
+	}
+	.filet-moment {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		width: 100%;
+		color: var(--hs-or-texte);
+		margin-bottom: 4px;
+	}
+	.filet-moment span {
+		flex: 1;
+		height: 4px;
+		border-block: var(--hs-cheveu) solid var(--hs-or-trait);
 	}
 	.tete h2 {
 		font-size: var(--hs-t2);
+		line-height: 1.15;
+	}
+	.compte-moment {
+		margin: 0;
+		font-size: 0.9375rem;
+		color: var(--hs-encre-douce);
+		transition: color var(--hs-duree) var(--hs-courbe);
+	}
+	.tete.acheve .compte-moment {
+		color: var(--hs-vert);
 	}
 	ul {
 		list-style: none;
 		margin: var(--hs-e3) 0 0;
 		padding: 0;
+		border-top: var(--hs-cheveu) solid var(--hs-filet);
 	}
 	li {
 		display: flex;
 		align-items: center;
-		gap: 14px;
-		padding: 11px 0;
+		gap: var(--hs-e4);
+		padding: var(--hs-e3) 2px;
 		border-bottom: var(--hs-cheveu) solid var(--hs-filet);
-		min-height: 56px;
+		min-height: 60px;
+		transition: background var(--hs-duree) var(--hs-courbe);
+	}
+	li.fini {
+		background: linear-gradient(to right, color-mix(in srgb, var(--hs-vert) 7%, transparent), transparent 70%);
 	}
 	.corps {
 		flex: 1;
 		min-width: 0;
 		display: grid;
+		gap: 1px;
 	}
 	.titre {
+		font-size: 1.1875rem;
 		line-height: 1.3;
 		transition: color var(--hs-duree) var(--hs-courbe);
 	}
-	li.fini .titre {
+	/* titre : barré d'un fil d'or qui se tire de gauche à droite quand la ligne est faite */
+	.fil {
+		background-image: linear-gradient(var(--hs-or-texte), var(--hs-or-texte));
+		background-repeat: no-repeat;
+		background-position: 0 58%;
+		background-size: 0% 1px;
+		-webkit-box-decoration-break: clone;
+		box-decoration-break: clone;
+		transition: background-size var(--hs-duree-lente) var(--hs-courbe);
+	}
+	li.fini > .corps > a.titre {
 		color: var(--hs-encre-douce);
+	}
+	li.fini > .corps > a.titre .fil {
+		background-size: 100% 1px;
 	}
 	.sous {
 		font-style: italic;
@@ -773,16 +830,19 @@
 		line-height: 1.35;
 		color: var(--hs-encre-douce);
 	}
-	.heures {
-		color: var(--hs-encre-douce);
-		font-size: 0.75rem;
+	.meta {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 2px 14px;
 		margin-top: 2px;
+		font-size: 0.9375rem;
+		font-variant-caps: all-small-caps;
+		letter-spacing: 0.05em;
+		color: var(--hs-encre-douce);
+		line-height: 1.3;
 	}
-	.duree {
-		color: var(--hs-encre-douce);
-		font-size: 0.75rem;
-		margin-top: 2px;
-		opacity: 0.85;
+	.heures {
+		color: var(--hs-or-texte);
 	}
 	.seuils {
 		display: flex;
@@ -796,7 +856,7 @@
 	.seuils button {
 		color: var(--hs-encre-douce);
 		padding: 2px 0;
-		min-height: 0;
+		min-height: 44px;
 		background: none;
 		border: 0;
 		border-bottom: 1px solid transparent;
