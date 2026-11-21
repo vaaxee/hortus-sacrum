@@ -5,7 +5,7 @@ import { basculer } from './programme/bascule.ts';
 import { chargerProgramme } from './programme/charger.ts';
 import { DIMENSIONS } from './programme/types.ts';
 import { depuisEtiquettes } from './etiquettes.ts';
-import { pieceVersTexte, type Piece } from './livret.ts';
+import { pieceVersTexte, revisionsDuLivret, type Piece } from './livret.ts';
 import { amorcerRoues } from './roues.ts';
 import type { Pratique, Texte } from './types.ts';
 import { SOURCE_VIDE } from './types.ts';
@@ -28,6 +28,7 @@ export async function amorcer(fetchFn: typeof fetch = fetch): Promise<void> {
 	if (niveau < 2) await importerPlan(fetchFn);
 	if (niveau < 2) await db.meta.put({ cle: 'amorce', valeur: 2 });
 	await amorcerSources(fetchFn);
+	await reviserLivret(fetchFn);
 	await amorcerRoues(fetchFn);
 	await rouesDesLitanies();
 	await retirerRoueDesChapelets();
@@ -223,6 +224,14 @@ export async function importerPlan(fetchFn: typeof fetch = fetch): Promise<numbe
 	}
 	return n;
 }
+/** Corrections du livret (pièces de jardin.json portant `revision`), appliquées aux textes que l'utilisateur n'a pas modifiés. */
+async function reviserLivret(fetchFn: typeof fetch): Promise<void> {
+	const rep = await fetchFn('/data/prieres/jardin.json');
+	if (!rep.ok) return;
+	const doc = (await rep.json()) as { pieces: Piece[] };
+	await reviser(revisionsDuLivret(doc.pieces) as (Texte & { revision?: number })[]);
+}
+
 async function amorcerLivret(fetchFn: typeof fetch): Promise<void> {
 	const rep = await fetchFn('/data/prieres/jardin.json');
 	const doc = (await rep.json()) as { pieces: Piece[] };

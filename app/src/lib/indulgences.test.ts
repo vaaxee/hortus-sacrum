@@ -2,6 +2,7 @@ import { readFileSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
 import { latinEnPremier, mentionDuTexte, noteDeTraduction, type Fiche, type Indulgences } from './indulgences.ts';
 import { JACULATOIRES } from './liste.ts';
+import { revisionsDuLivret, type Piece } from './livret.ts';
 
 const donnees = JSON.parse(readFileSync(new URL('../../../data/prieres/indulgences.json', import.meta.url), 'utf8')) as Indulgences;
 
@@ -71,12 +72,7 @@ describe('indulgences : Enchiridion de 1952 seulement', () => {
 		}
 	});
 	it('les hymnes en vers et les textes de Beringer qui ne suivent pas la formule de 1952 restent en latin d’abord', () => {
-		for (const id of [
-			'jardin:veni-creator-spiritus',
-			'jardin:ave-maris-stella',
-			'weber:stabat-mater',
-			'jardin:les-sept-douleurs-et-les-sept-allegresses-de-saint-joseph'
-		])
+		for (const id of ['jardin:veni-creator-spiritus', 'jardin:ave-maris-stella', 'weber:stabat-mater'])
 			expect(latinEnPremier(donnees.fiches[id]), id).toBe(true);
 	});
 	it('les textes remplacés par ceux de Beringer portent une révision', () => {
@@ -109,6 +105,32 @@ describe('indulgences : Enchiridion de 1952 seulement', () => {
 			'paroissien:litanies-sainte-vierge'
 		])
 			expect(p(id)?.revision ?? 0, id).toBeGreaterThan(0);
+	});
+	it('les traductions certifiées de Thésaurisons sont reportées dans le livret (n° 82, 150, 498)', () => {
+		const jardin = JSON.parse(readFileSync(new URL('../../../data/prieres/jardin.json', import.meta.url), 'utf8')) as {
+			pieces: Piece[];
+		};
+		const revs = new Map(revisionsDuLivret(jardin.pieces).map((r) => [r.id, r]));
+		const couronne = revs.get('jardin:la-triple-couronne-d-or-du-sacre-c-ur-de-jesus')?.corps ?? '';
+		expect(couronne).toContain('Doux Cœur de mon Jésus, faites que je vous aime de plus en plus.');
+		expect(couronne).not.toContain('toujours de plus en plus');
+		expect(revs.get('jardin:les-sept-douleurs-et-les-sept-allegresses-de-saint-joseph')?.corps).toContain(
+			'nous vivions uniquement pour eux et mourions dans la joie de leur amour'
+		);
+		expect(revs.get('jardin:priere-pour-les-agonisants')?.corps).toContain('qui sont en ce moment à l’agonie');
+		const sources = JSON.parse(readFileSync(new URL('../../../data/prieres/sources.json', import.meta.url), 'utf8')) as {
+			pieces: { id: string; corps: string; revision?: number }[];
+		};
+		for (const n of [1, 2, 3]) {
+			const q = sources.pieces.find((x) => x.id === `hortus:triple-couronne-${n}`);
+			expect(q?.corps).toContain('[Doux Cœur de mon Jésus, faites que je vous aime de plus en plus.]');
+			expect(q?.revision ?? 0).toBeGreaterThan(0);
+		}
+		for (const id of ['jardin:les-sept-douleurs-et-les-sept-allegresses-de-saint-joseph', 'jardin:priere-pour-les-agonisants']) {
+			expect(donnees.fiches[id]?.traduction, id).toMatch(/Thésaurisons/);
+			expect(latinEnPremier(donnees.fiches[id]), id).toBe(false);
+		}
+		expect(donnees.fiches['hortus:triple-couronne-1']?.traduction).toMatch(/n° 82/);
 	});
 	it('rappelle la règle des traductions (can. 934 § 2)', () => {
 		const f: Fiche = { ref: 'Ench. 1952, n° 1', frequence: 'chaque fois', partielles: [] };
