@@ -19,10 +19,11 @@ reste fixe à l'exécution.** La matrice décrit, vérifie, propose ; elle ne ch
 | Contexte, couverture, manques | `app/src/lib/programme/contexte.ts`, appelés dans `journee()` |
 | Déduction par motifs (brouillon → `devinee`) | `app/src/lib/etiquettes.ts`, `app/src/lib/dimensions.ts`, `app/scripts/dimensions.mjs` |
 | Relecture dans la fiche | `app/src/lib/ClassementTexte.svelte`, `FicheTexte.svelte` |
-| Tests | `app/src/lib/programme/matrice.test.ts`, `dimensions.test.ts`, `etiquettes.test.ts` |
+| Compositeur d'ordo (propose, n'écrit que le rapport) | `app/src/lib/programme/ordo.ts`, `app/scripts/ordo.ts` |
+| Tests | `app/src/lib/programme/matrice.test.ts`, `ordo.test.ts`, `dimensions.test.ts`, `etiquettes.test.ts` |
 
-État des lots : voir `LOT_DIMENSIONS.md` § 7, « État des lots ». D1, D3 et D4 (`motif` sur chaque entrée) faits ;
-D2 (relecture humaine) à faire.
+État des lots : voir `LOT_DIMENSIONS.md` § 7, « État des lots ». D1, D3, D4 (`motif`) et D5 (compositeur
+`npm run ordo`, rapport dans `docs/audits/ORDO_*.md`) faits ; D2 (relecture humaine) à faire.
 
 ## Distinctions (ne jamais fusionner)
 
