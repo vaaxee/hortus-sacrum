@@ -20,6 +20,9 @@ compact(join(racine, 'data', 'programme', 'programme.json'), join(cible, 'progra
 compact(join(racine, 'data', 'programme', 'dimensions.json'), join(cible, 'programme', 'dimensions.json'));
 compact(join(racine, 'data', 'programme', 'cycles.json'), join(cible, 'programme', 'cycles.json'));
 compact(join(racine, 'data', 'prieres', 'dimensions-textes.json'), join(cible, 'prieres', 'dimensions-textes.json'));
+// Officium parvum B.M.V. (engine/office/parvum.py, d'après Divinum Officium)
+mkdirSync(join(cible, 'office'), { recursive: true });
+compact(join(racine, 'data', 'office', 'parvum.json'), join(cible, 'office', 'parvum.json'));
 // Écriture sainte (engine/ecriture/bible.py) : un fichier par livre, la source à part
 mkdirSync(join(cible, 'ecriture'), { recursive: true });
 for (const f of readdirSync(join(racine, 'data', 'ecriture'))) {
