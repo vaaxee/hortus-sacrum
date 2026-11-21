@@ -146,7 +146,13 @@ try {
 			.getByRole('link', { name: /Historique/ })
 			.first()
 			.click();
-		await page.waitForTimeout(2500);
+		// attendre la page elle-même plutôt qu'un délai fixe (2,5 s ne suffisaient pas toujours sous charge)
+		await page
+			.getByRole('heading', { name: /Historique/i })
+			.first()
+			.waitFor({ timeout: 15000 })
+			.catch(() => {});
+		await page.waitForTimeout(500);
 		const texte = await page.evaluate(() => document.body.innerText);
 		const ok = !/Internal Error/.test(texte) && /Historique/i.test(texte) && !erreurs.length;
 		if (!ok) echecs++;
