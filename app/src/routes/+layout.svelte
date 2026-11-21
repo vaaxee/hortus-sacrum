@@ -56,11 +56,11 @@
 					<Icone nom={o.icone} taille={20} /><span>{o.nom}</span>
 				</a>
 			{/each}
-			<a href="/reglages" class:actif={profilActif} aria-current={profilActif ? 'page' : undefined}>
+			<a href="/profil" class:actif={profilActif} aria-current={profilActif ? 'page' : undefined}>
 				<Icone nom="profil" taille={20} /><span>Profil</span>
 			</a>
 		</nav>
-		<a class="profil-haut" href="/reglages" aria-label="Profil et réglages" class:actif={profilActif}><Icone nom="profil" taille={22} /></a>
+		<a class="profil-haut" href="/profil" aria-label="Profil et réglages" class:actif={profilActif}><Icone nom="profil" taille={22} /></a>
 		<div class="contenu">
 			{#if erreur}<p class="page erreur" role="alert">{erreur}</p>{/if}
 			{#if pret}{@render children()}{/if}
