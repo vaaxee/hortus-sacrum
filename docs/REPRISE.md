@@ -51,4 +51,12 @@ Chaque push sur `main` reconstruit automatiquement https://hortus-sacrum.vercel.
     neuvaine, et corriger une entrée livrée. Planifié comme **lot 11** dans `docs/conception/REFONTE_2026-11-18.md` § 6,
     après le lot 5.
 
-- Lot Dimensions (D1 à D5) : docs/conception/LOT_DIMENSIONS.md, après le lot 4.
+- Lot Dimensions : D1, D3, D4, D5 faits (docs/conception/LOT_DIMENSIONS.md § 7) ; **D2 (relecture humaine des 89
+  classements) reste à faire par l'utilisateur**, dans la fiche de chaque texte.
+11. **Bréviaire romain (lot 9) : fait pour 2026-2027 (21 nov.).** Pour l'année suivante : `python3 engine/office/breviaire.py
+    2027` (Perl, `libcgi-pm-perl`, `web/cgi-bin` dans `vendor/do`), puis ajouter 2027 à `ANNEES_CALCULEES`
+    (`app/src/lib/office/breviaire.ts`) et lancer `engine/office/test_breviaire.py` (à paramétrer pour l'année). À faire
+    avant le 28 novembre 2027.
+12. **Questions ouvertes pour l'utilisateur (21 nov.)** : forme de l'« Ô mon Jésus » en fin de dizaine (forme imprimée de
+    1943 trouvée, forme répandue non trouvée dans une édition ancienne : voir A_FOURNIR.md) ; thème de la semaine du mois
+    (LOT_DIMENSIONS § 8, non adopté par défaut).
