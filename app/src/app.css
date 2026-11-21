@@ -477,7 +477,10 @@ body {
 /* ---- lettrine : la première lettre d'une prière, en rubrique, sur deux lignes ----
    Seulement sur la page d'une prière (premier bloc de texte, hors vers et hors latin en regard)
    et sur la première prière d'une pratique ; jamais devant un ℣/℟. */
-.hs article.texte:not(.vers):not(.bilingue) > .lecture:not(.lecture ~ .lecture):not(.strophe ~ .lecture) > p:first-child:not(.verset)::first-letter,
+.hs
+	article.texte:not(.vers):not(.bilingue)
+	> .lecture:not(.lecture ~ .lecture):not(.strophe ~ .lecture)
+	> p:first-child:not(.verset)::first-letter,
 .hs section.priere:not(.priere ~ .priere) > .lecture > p:first-child:not(.verset)::first-letter {
 	float: left;
 	font-family: var(--hs-titre);

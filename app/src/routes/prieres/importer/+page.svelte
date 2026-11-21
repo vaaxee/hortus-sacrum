@@ -194,7 +194,7 @@
 
 		<h2>{pieces.length} pièce{pieces.length > 1 ? 's' : ''} à enregistrer</h2>
 		<ul class="pieces">
-			{#each pieces as p, i}
+			{#each pieces as p, i (i)}
 				<li>
 					<button class="discret ligne" aria-expanded={apercu === i} onclick={() => (apercu = apercu === i ? undefined : i)}>
 						<span>{apercu === i ? '▾' : '▸'} {p.titre || 'Sans titre'}</span>

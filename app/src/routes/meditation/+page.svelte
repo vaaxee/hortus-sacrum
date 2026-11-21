@@ -118,7 +118,7 @@
 
 	{#if entrees.length > 1}
 		<div class="choix interface" role="group" aria-label="Méditations de ce jour">
-			{#each entrees as e, i}
+			{#each entrees as e, i (i)}
 				<button class="bouton" aria-pressed={choix === i} onclick={() => (choix = i)}
 					>{NOM_COURT[e.recueil.id] ?? e.recueil.titre} · {e.entree.titre}</button
 				>

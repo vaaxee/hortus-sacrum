@@ -115,11 +115,25 @@ try {
 		await page.waitForFunction(
 			() =>
 				new Promise((ok) => {
+					// Ne jamais créer la base ni la garder ouverte : sinon, si l'on passe avant l'app, on crée une base vide
+					// (sans « meta ») et l'on bloque la mise à niveau de Dexie — l'amorçage n'aboutit jamais.
 					const r = indexedDB.open('hebdomada');
+					r.onupgradeneeded = () => r.transaction?.abort();
 					r.onsuccess = () => {
-						const q = r.result.transaction('meta').objectStore('meta').get('elements');
-						q.onsuccess = () => ok(!!q.result);
-						q.onerror = () => ok(false);
+						const idb = r.result;
+						if (!idb.objectStoreNames.contains('meta')) {
+							idb.close();
+							return ok(false);
+						}
+						const q = idb.transaction('meta').objectStore('meta').get('elements');
+						q.onsuccess = () => {
+							idb.close();
+							ok(!!q.result);
+						};
+						q.onerror = () => {
+							idb.close();
+							ok(false);
+						};
 					};
 					r.onerror = () => ok(false);
 				}),

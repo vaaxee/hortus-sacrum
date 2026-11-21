@@ -71,7 +71,7 @@
 					— comm. {jour.commemoraisons.join(' ; ')}{/if}
 			</p>
 			{#if jour.jeune_abstinence}<p class="rub">{jour.jeune_abstinence.libelle}</p>{/if}
-			{#each fetes as f}<p class="rub">✠ {f.titre}</p>{/each}
+			{#each fetes as f, i (i)}<p class="rub">✠ {f.titre}</p>{/each}
 			{#if jour.introit_incipit}<p class="introit">
 					<span class="pc">Introït</span> <em lang="la">{jour.introit_incipit}</em>{#if jour.station}
 						· {jour.station}{/if}

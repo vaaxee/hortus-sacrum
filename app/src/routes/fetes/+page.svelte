@@ -84,14 +84,14 @@
 			<label>
 				<span>Genre</span>
 				<select bind:value={brouillon.genre}
-					>{#each GENRES as [v, n]}<option value={v}>{n}</option>{/each}</select
+					>{#each GENRES as [v, n] (v)}<option value={v}>{n}</option>{/each}</select
 				>
 			</label>
 			<div class="trois">
 				<label><span>Jour</span><input type="number" min="1" max="31" bind:value={brouillon.jour} /></label>
 				<label
 					><span>Mois</span><select bind:value={brouillon.mois}
-						>{#each MOIS as m, i}<option value={i + 1}>{m}</option>{/each}</select
+						>{#each MOIS as m, i (i)}<option value={i + 1}>{m}</option>{/each}</select
 					></label
 				>
 				<label><span>Année (facultatif)</span><input type="number" min="1900" max="2100" bind:value={brouillon.annee} /></label>
@@ -115,7 +115,7 @@
 		</section>
 	{/if}
 
-	{#each GENRES as [genre, nom]}
+	{#each GENRES as [genre, nom] (genre)}
 		{@const groupe = visibles.filter((f) => f.genre === genre)}
 		<section>
 			<div class="tete-section">

@@ -147,7 +147,7 @@
 		{#if nouvelle && !brouillon}
 			<p class="petit">De quoi partir ?</p>
 			<div class="rangee">
-				{#each MODELES as [nom, m]}<button onclick={() => partirDe(m)}>{nom}</button>{/each}
+				{#each MODELES as [nom, m] (nom)}<button onclick={() => partirDe(m)}>{nom}</button>{/each}
 			</div>
 		{:else if brouillon}
 			<FichePratique bind:pratique={brouillon} />
