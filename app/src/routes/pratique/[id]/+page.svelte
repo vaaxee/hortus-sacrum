@@ -26,7 +26,26 @@
 	const vie = journeeVivante(() => date);
 	const ligne = $derived(vie.jr?.lignes.find((l) => l.id === id));
 	const lecture = $derived(vie.jr?.lectures.find((l) => l.id === id));
-	const sections = $derived(ligne?.sections ?? lecture?.sections ?? []);
+	// « voir » : une autre variante de la même page, prise un autre jour de la même semaine (les autres mystères du
+	// chapelet, pour dire le rosaire entier) ; la case reste celle du jour
+	const voir = $derived(page.url.searchParams.get('voir'));
+	const vue = journeeVivante(() => voir ?? date);
+	const ligneVue = $derived(voir ? vue.jr?.lignes.find((l) => l.id === id) : ligne);
+	const sections = $derived(ligneVue?.sections ?? lecture?.sections ?? []);
+	/** Les variantes de la page dans la semaine (un jour par sous-titre différent). */
+	const variantes = $derived.by(() => {
+		const st = vie.programme?.entrees.find((e) => e.id === id)?.page?.sous_titre;
+		if (id !== 'prog:chapelet' || !st || typeof st === 'string') return [];
+		const d0 = new Date(date + 'T12:00:00');
+		const vus = new Map<string, string>();
+		for (let k = -3; k <= 3; k++) {
+			const d = new Date(d0.getTime() + k * 864e5);
+			const nom = st.valeurs[d.getDay()];
+			if (nom && !vus.has(nom)) vus.set(nom, iso(d));
+		}
+		return [...vus];
+	});
+	const lienVariante = (d: string) => (d === date ? `?date=${date}` : `?date=${date}&voir=${d}`);
 	const titre = $derived(ligne?.titre ?? lecture?.titre ?? '');
 
 	const coches = vivantSelon(() => {
@@ -57,6 +76,12 @@
 	/** Le titre d'un texte ne se répète pas : texte coupé en morceaux, invité dit à chaque dizaine. */
 	const dernierMorceau = (k: number) =>
 		!sections.slice(k + 1).some((x) => x.texte === sections[k].texte && x.origine === sections[k].origine);
+	/** Le texte suit un titre de mise en page (page composée) : son propre titre ne s'ajoute pas. */
+	const sousUnTitre = (k: number) => k > 0 && sections[k - 1].genre === 'editorial';
+	/** Page composée (elle porte ses propres titres) : ses textes n'ajoutent pas leur titre ; les invités, si. */
+	const composee = $derived(sections.some((s) => s.genre === 'editorial'));
+	const avecTitre = (k: number) =>
+		nouveauTexte(k) && !sousUnTitre(k) && !sections[k].suite && !(composee && sections[k].origine === (ligneVue?.id ?? id));
 	const nouveauTexte = (k: number) => !sections.slice(0, k).some((x) => x.texte === sections[k].texte && x.origine === sections[k].origine);
 
 	// champ libre (intentions particulières) : une note du jour à part
@@ -88,12 +113,20 @@
 		<div class="tete-page">
 			<p class="etiquette">{dateFr}</p>
 			<h1>{titre}</h1>
+			{#if ligneVue?.sousTitre}<p class="sous-titre">{ligneVue.sousTitre}</p>{/if}
 			{#if ligne?.heures?.length}<p class="petit">{ligne.heures.join(' · ')}</p>{/if}
 			{#if ligne && minutesDUneRecitation(ligne, vie.corps) > 0}<p class="petit">
 					≈ {enMinutes(minutesDUneRecitation(ligne, vie.corps))}
 				</p>{/if}
 			<Ornement nom="fleuron" />
 		</div>
+		{#if variantes.length > 1}
+			<p class="variantes interface">
+				{#each variantes as [nom, d] (nom)}
+					<a href={lienVariante(d)} aria-current={ligneVue?.sousTitre === nom ? 'true' : undefined}>{nom}</a>
+				{/each}
+			</p>
+		{/if}
 		{#each ligne?.annotations ?? [] as a (a.source)}
 			<p class="annotation"><span class="rub">✠</span> {a.texte}</p>
 		{/each}
@@ -106,6 +139,8 @@
 					<textarea rows="3" aria-label={s.champ} value={intentions.v?.corps ?? ''} onblur={(ev) => noterIntentions(ev.currentTarget.value)}
 					></textarea>
 				</section>
+			{:else if s.genre === 'editorial'}
+				<div class="editorial lecture">{@html rendre(s.contenu ?? '')}</div>
 			{:else if s.genre === 'notice'}
 				<details class="notice">
 					<summary class="pc">{titreDe(s) || 'Notice'}</summary>
@@ -120,7 +155,7 @@
 				</details>
 			{:else}
 				<section class="priere" class:invite={ligne && s.origine !== ligne.id}>
-					{#if nouveauTexte(k)}
+					{#if avecTitre(k)}
 						<h2>
 							{titreDe(s)}
 							{#if s.heure}<span class="heure interface">à {s.heure}</span>{/if}
@@ -153,6 +188,28 @@
 		text-decoration: none;
 		font-family: var(--hs-interface);
 		font-size: var(--hs-t0);
+	}
+	.sous-titre {
+		margin: 0;
+		font-style: italic;
+		color: var(--hs-encre-douce);
+	}
+	.variantes {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 4px 14px;
+		font-size: var(--hs-t0);
+	}
+	.variantes a {
+		text-decoration: none;
+		color: var(--hs-encre-douce);
+		padding: 6px 0;
+		border-bottom: 1px solid transparent;
+	}
+	.variantes a[aria-current='true'] {
+		color: var(--hs-encre);
+		border-bottom-color: currentColor;
 	}
 	.annotation {
 		font-style: italic;

@@ -59,11 +59,18 @@ export function extraire(corps: string, ex: Extrait | undefined, rang = 0): stri
 		if (!t.includes(ex.phrase)) return null;
 		t = ex.phrase;
 	}
+	if (ex.paras) {
+		t = t
+			.split(/\n\s*\n/)
+			.slice(ex.paras[0], ex.paras[1])
+			.join('\n\n');
+	}
 	if (ex.retirer?.length) {
 		const paras = t.split(/\n\s*\n/);
 		if (!ex.retirer.every((r) => paras.some((p) => p.trim() === r))) return null;
 		t = paras.filter((p) => !ex.retirer!.includes(p.trim())).join('\n\n');
 	}
+	if (ex.niveau) t = t.replace(/^## /gm, `${'#'.repeat(2 + ex.niveau)} `);
 	return t.trim();
 }
 

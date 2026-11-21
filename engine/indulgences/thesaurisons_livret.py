@@ -127,6 +127,9 @@ PJ.write_text(json.dumps(jardin, ensure_ascii=False, indent=1) + '\n')
 src = json.loads(PS.read_text())
 P = {q['id']: q for q in src['pieces']}
 for n in (1, 2, 3):
+    # lot 6 : les pages composées ne sont plus livrées (le programme les compose à l'affichage, depuis le livret)
+    if f'hortus:triple-couronne-{n}' not in P:
+        continue
     q = P[f'hortus:triple-couronne-{n}']
     q['corps'] = q['corps'].replace(f'[{DOUX_AVANT}]', f'[{DOUX}]')
     assert f'[{DOUX}]' in q['corps'] and DOUX_AVANT not in q['corps']
@@ -138,8 +141,8 @@ PS.write_text(json.dumps(src, ensure_ascii=False, indent=1) + '\n')
 # ---------------------------------------------------------------------------------------------------------------
 d = json.loads(PI.read_text())
 F = d['fiches']
-for k in ['jardin:la-triple-couronne-d-or-du-sacre-c-ur-de-jesus', 'hortus:triple-couronne-1',
-          'hortus:triple-couronne-2', 'hortus:triple-couronne-3']:
+for k in [x for x in ['jardin:la-triple-couronne-d-or-du-sacre-c-ur-de-jesus', 'hortus:triple-couronne-1',
+          'hortus:triple-couronne-2', 'hortus:triple-couronne-3'] if x in F]:
     F[k]['traduction'] = (f'{THES}, pour « Jésus, doux et humble de cœur, rendez mon cœur semblable au vôtre » (n° 85), '
                           f'« {DOUX[:-1]} » (n° 82), « Doux Cœur de Marie, soyez mon salut » (n° 134) et « Mon Jésus, '
                           'miséricorde » (n° 33)')

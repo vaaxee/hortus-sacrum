@@ -429,9 +429,6 @@ TRADUCTIONS = {
                                           '(1941), traduction certifiée fidèle selon le can. 934 § 2 (n° 126), pour '
                                           'l’oraison ; « Regina in caelum assumpta » se dit en latin'),
     'sambucy:chapelet-saint-dominique': USUELS,
-    'hortus:chapelet-joyeux': USUELS,
-    'hortus:chapelet-douloureux': USUELS,
-    'hortus:chapelet-glorieux': USUELS,
 }
 for k, t in TRADUCTIONS.items():
     assert F[k]['langue'] in ('latin', 'italien'), k

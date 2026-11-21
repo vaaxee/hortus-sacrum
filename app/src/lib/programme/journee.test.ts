@@ -67,7 +67,8 @@ describe('journee()', () => {
 	it('chapelet du jour, avec l’invocation à la fin de chaque dizaine', () => {
 		const jr = calculer('2026-12-03'); // jeudi : mystères joyeux
 		const l = ligne(jr, 'prog:chapelet')!;
-		expect(l.sections[0].texte).toBe('hortus:chapelet-joyeux');
+		expect(l.sousTitre).toBe('Mystères joyeux');
+		expect(l.sections.some((s) => s.genre === 'editorial' && s.contenu === '## Le chapelet de saint Dominique')).toBe(true);
 		expect(l.sections.filter((s) => s.origine === 'prog:fin-dizaine-o-marie')).toHaveLength(5);
 		expect(l.invites).toContain('prog:fin-dizaine-o-marie');
 	});
@@ -85,12 +86,23 @@ describe('journee()', () => {
 	});
 
 	it('prière du matin : Salve après l’invocation à la Vierge, Crux ave et agonisants à la fin', () => {
-		const s = textesDe(calculer('2026-12-01'), 'prog:priere-du-matin');
+		const s = (ligne(calculer('2026-12-01'), 'prog:priere-du-matin')?.sections ?? [])
+			.filter((x) => x.genre !== 'editorial')
+			.map((x) => x.texte);
 		expect(s).toEqual([
 			'paroissien:priere-du-matin',
 			'beringer:salve-regina',
 			'paroissien:priere-du-matin',
-			'hortus:offrande-du-matin',
+			// l'offrande, composée à l'affichage : les actes du livret, chacun sous son titre
+			'jardin:intention-d-indulgences',
+			'jardin:acte-de-soumission-a-la-volonte-de-dieu',
+			'jardin:acte-d-intention-de-communion-spirituelle-perpetuelle',
+			'jardin:acte-de-recommandation-des-ames-rencontrees',
+			'jardin:devoir-envers-l-eglise-et-ses-ministres',
+			'jardin:devoir-envers-la-famille',
+			'jardin:devoir-envers-la-patrie',
+			'jardin:devoir-envers-les-pauvres-les-persecutes-les-affliges',
+			'jardin:devoir-envers-moi-meme',
 			undefined, // champ des intentions
 			'jahenny:scapulaire-benediction-protection',
 			'jardin:priere-pour-les-agonisants'

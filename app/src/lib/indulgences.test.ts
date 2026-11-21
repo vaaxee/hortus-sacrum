@@ -61,12 +61,8 @@ describe('indulgences : Enchiridion de 1952 seulement', () => {
 			expect(f.traduction, id).toMatch(/11 juillet 1925/);
 			expect(latinEnPremier(f), id).toBe(false);
 		}
-		for (const id of [
-			'sambucy:chapelet-saint-dominique',
-			'hortus:chapelet-joyeux',
-			'hortus:chapelet-douloureux',
-			'hortus:chapelet-glorieux'
-		]) {
+		// les pages du chapelet sont composées à l'affichage (lot 6) : la fiche est celle de Sambucy
+		for (const id of ['sambucy:chapelet-saint-dominique']) {
 			expect(donnees.fiches[id]?.traduction, id).toMatch(/L’Ami du clergé, 9 avril 1931/);
 			expect(latinEnPremier(donnees.fiches[id]), id).toBe(false);
 		}
@@ -118,19 +114,13 @@ describe('indulgences : Enchiridion de 1952 seulement', () => {
 			'nous vivions uniquement pour eux et mourions dans la joie de leur amour'
 		);
 		expect(revs.get('jardin:priere-pour-les-agonisants')?.corps).toContain('qui sont en ce moment à l’agonie');
-		const sources = JSON.parse(readFileSync(new URL('../../../data/prieres/sources.json', import.meta.url), 'utf8')) as {
-			pieces: { id: string; corps: string; revision?: number }[];
-		};
-		for (const n of [1, 2, 3]) {
-			const q = sources.pieces.find((x) => x.id === `hortus:triple-couronne-${n}`);
-			expect(q?.corps).toContain('[Doux Cœur de mon Jésus, faites que je vous aime de plus en plus.]');
-			expect(q?.revision ?? 0).toBeGreaterThan(0);
-		}
 		for (const id of ['jardin:les-sept-douleurs-et-les-sept-allegresses-de-saint-joseph', 'jardin:priere-pour-les-agonisants']) {
 			expect(donnees.fiches[id]?.traduction, id).toMatch(/Thésaurisons/);
 			expect(latinEnPremier(donnees.fiches[id]), id).toBe(false);
 		}
-		expect(donnees.fiches['hortus:triple-couronne-1']?.traduction).toMatch(/n° 82/);
+		// la Triple Couronne est composée à l'affichage depuis le livret (lot 6) : la fiche est celle du livret
+		expect(donnees.fiches['jardin:la-triple-couronne-d-or-du-sacre-c-ur-de-jesus']?.traduction).toMatch(/n° 82/);
+		expect(donnees.fiches['hortus:triple-couronne-1']).toBeUndefined();
 	});
 	it('rappelle la règle des traductions (can. 934 § 2)', () => {
 		const f: Fiche = { ref: 'Ench. 1952, n° 1', frequence: 'chaque fois', partielles: [] };

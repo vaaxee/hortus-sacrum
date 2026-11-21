@@ -1,33 +1,7 @@
 /**
- * Constantes de l'ancienne liste du jour encore utilisées : pages « du jour », chapelets, jaculatoires.
+ * Constante de l'ancienne liste du jour encore utilisée : la liste des jaculatoires.
  * La liste du jour est désormais calculée par le programme unique (programme/journee.ts).
  */
-
-/**
- * Pages dont la prière change selon le jour de la semaine (dimanche → samedi) :
- *  - Triple Couronne d'or : 1re lundi, mercredi, samedi ; 2e mardi, vendredi ; 3e jeudi, dimanche (Jardin, p. 21-25) ;
- *  - Chapelet : joyeux lundi et jeudi ; douloureux mardi et vendredi ; glorieux mercredi, samedi et dimanche ;
- *  - Petit bréviaire du Sacré-Cœur : un office par jour (Nancy, 1883).
- */
-const TC = (n: number) => `hortus:triple-couronne-${n}`;
-const CH = (n: string) => `hortus:chapelet-${n}`;
-export const SELON_LE_JOUR: Record<string, string[]> = {
-	'hortus:triple-couronne-du-jour': [TC(3), TC(1), TC(2), TC(1), TC(3), TC(2), TC(1)],
-	'hortus:chapelet-du-jour': [
-		CH('glorieux'),
-		CH('joyeux'),
-		CH('douloureux'),
-		CH('glorieux'),
-		CH('joyeux'),
-		CH('douloureux'),
-		CH('glorieux')
-	],
-	'hortus:petit-breviaire-du-jour': ['dimanche', 'lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi'].map(
-		(j) => `breviaire-sc:office-${j}`
-	)
-};
-/** Les trois chapelets, pour passer de l'un à l'autre (rosaire entier). */
-export const CHAPELETS = [CH('joyeux'), CH('douloureux'), CH('glorieux')];
 
 /**
  * Jaculatoires de Thésaurisons pour le ciel (1941), parmi lesquelles se tire la jaculatoire d'ouverture de l'écran du jour
