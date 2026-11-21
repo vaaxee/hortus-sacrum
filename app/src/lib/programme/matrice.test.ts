@@ -88,9 +88,19 @@ describe(`matrice sur ${ANNEE.length} jours`, () => {
 		expect(trous).toEqual([]);
 	});
 
+	it('D4 : chaque entrée du programme dit son motif, avec des valeurs du vocabulaire', () => {
+		const fautes: string[] = [];
+		for (const e of PROGRAMME.entrees) {
+			if (!e.motif?.note) fautes.push(`${e.id} : motif absent`);
+			for (const f of e.motif?.fins ?? []) if (!admise('fin', f)) fautes.push(`${e.id} → fin:${f}`);
+			for (const o of e.motif?.objets ?? []) if (!admise('objet', o)) fautes.push(`${e.id} → objet:${o}`);
+		}
+		expect(fautes).toEqual([]);
+	});
+
 	it('test 5 : le motif d’une entrée a au moins une fin commune avec ses textes', () => {
 		const contradictions: string[] = [];
-		for (const e of PROGRAMME.entrees as ((typeof PROGRAMME.entrees)[number] & { motif?: { fins?: string[] } })[]) {
+		for (const e of PROGRAMME.entrees) {
 			if (!e.motif?.fins?.length) continue;
 			// les fins des textes que l'entrée apporte elle-même (dans sa page ou chez son hôte)
 			const fins = new Set(

@@ -137,6 +137,18 @@ export interface EntreeProgramme {
 	duree?: number;
 	/** Décision, audit ou source qui justifie l'entrée. */
 	source: string;
+	/**
+	 * Pourquoi l'entrée est là : sa fonction dans l'économie du jour (LOT_DIMENSIONS § 3.3, lot D4). Descriptif : ne filtre
+	 * rien et ne change pas la journée. Un test vérifie que ses fins rejoignent celles de ses textes.
+	 */
+	motif?: Motif;
+}
+
+/** Intention de l'auteur du programme pour une entrée : valeurs du vocabulaire (dimensions.json) et note libre. */
+export interface Motif {
+	fins?: string[];
+	objets?: string[];
+	note?: string;
 }
 
 /** Pratique du plan (table `pratiques`) : ce qu'elle fait dans la journée, selon son identifiant sans l'année. */

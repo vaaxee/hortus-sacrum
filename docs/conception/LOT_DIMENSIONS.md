@@ -209,6 +209,19 @@ Le compositeur **n'écrit jamais lui-même** dans `programme.json`, et ne propos
 
 Chaque lot se termine comme les autres : lint, `check`, tests, build, revue critique, audit des consignes.
 
+### État des lots (21 novembre 2026)
+
+- **D1** et **D3** : faits (vocabulaire, classement deviné de 89 textes, contexte, couverture, manques dans `journee()`).
+- **D2** : l'interface de relecture existe (`ClassementTexte.svelte`) ; **aucun** classement n'est encore relu (`releve`).
+- **D4** : fait. Chaque entrée de `programme.json` porte un `motif` (`fins`, `objets`, `note` qui cite la décision ou la
+  source) ; type `Motif` dans `types.ts` ; test « chaque entrée dit son motif, avec des valeurs du vocabulaire » et
+  test 5 (au moins une fin commune avec les textes de l'entrée) dans `matrice.test.ts`.
+  Quatre entrées n'ont pas de `fins` dans leur motif parce que leurs textes n'ont aucune fin classée : à reprendre à la
+  relecture D2 — `jardin:veni-creator-spiritus` (Veni Creator du 1er janvier), `jahenny:scapulaire-benediction-protection`,
+  `thesaurisons:au-christ-roi` ; les lectures (`lec:ecriture`, `lec:doctrine`, `lec:meditation`, `lec:saint`) n'ont pas de
+  texte classé et ne portent qu'un objet ou une note.
+- **D5** : à faire.
+
 ## 8. Questions pour l'utilisateur
 
 1. **Thème de la semaine du mois** : l'adopter ? Avec quelle correspondance (I action de grâces, II réparation,
