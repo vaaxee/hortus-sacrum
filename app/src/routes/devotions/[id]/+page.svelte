@@ -195,11 +195,23 @@
 			</div>
 		{/if}
 
+		{#if e?.phase === 'non_commencee'}
+			<div class="alerte" role="status">
+				<p>
+					<strong>Série ouverte le {jourCourt(e.serie[0].date)}, pas commencée.</strong>
+					Aucun jour n’est coché.
+				</p>
+				<div class="rangee">
+					<button class="principal" onclick={reprendre}>La commencer aujourd’hui</button>
+				</div>
+			</div>
+		{/if}
+
 		{#if e?.serie.length}
 			<section>
 				<div class="tete-section">
 					<Ornement nom="grecque" />
-					<h2>{e.phase === 'a_venir' ? 'Série à venir' : 'Série en cours'}</h2>
+					<h2>{e.phase === 'a_venir' ? 'Série à venir' : e.phase === 'non_commencee' ? 'Série ouverte' : 'Série en cours'}</h2>
 					<p class="petit chiffres-alignes">{e.faites} sur {e.serie.length}</p>
 				</div>
 				<ul class="reglee jours">
