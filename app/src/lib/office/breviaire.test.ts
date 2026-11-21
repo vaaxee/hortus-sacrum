@@ -5,7 +5,7 @@
 import { readFileSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
 import { heuresDe } from '../programme/heures.ts';
-import { breviaireDuJour, jourDuBreviaire, type CommunsBreviaire, type FichierJour } from './breviaire.ts';
+import { breviaireDuJour, chargerCommuns, jourDuBreviaire, type CommunsBreviaire, type FichierJour } from './breviaire.ts';
 
 const racine = new URL('../../../../data/office/breviaire/2026-2027/', import.meta.url);
 const lire = <T>(f: string) => JSON.parse(readFileSync(new URL(f, racine), 'utf-8')) as T;
@@ -34,6 +34,13 @@ describe('Bréviaire romain 2026-2027', () => {
 		const laudes = j.corps.split('## Laudes')[1].split('## Prime')[0];
 		expect(laudes).toContain('Excita, quǽsumus, Dómine, poténtiam tuam, et veni');
 		expect(laudes).toContain('[r]Psalmus 92[/r]');
+	});
+
+	it('un échec passager du chargement n’est pas gardé : la demande suivante réessaie', async () => {
+		const enPanne = (async () => ({ ok: false, json: async () => null })) as unknown as typeof fetch;
+		expect(await chargerCommuns(2099, enPanne)).toBeNull();
+		await new Promise((r) => setTimeout(r, 0));
+		expect((await chargerCommuns(2099, fetchLocal))?.heures).toHaveLength(8);
 	});
 
 	it('charge un jour à la demande, et rien hors de l’année calculée', async () => {

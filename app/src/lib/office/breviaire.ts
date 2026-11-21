@@ -54,7 +54,14 @@ const lire = <T>(url: string, fetchFn: typeof fetch) =>
 		.catch(() => null);
 
 export function chargerCommuns(annee: number, fetchFn: typeof fetch = fetch): Promise<CommunsBreviaire | null> {
-	if (!communs.has(annee)) communs.set(annee, lire<CommunsBreviaire>(`${dossier(annee)}/communs.json`, fetchFn));
+	if (!communs.has(annee)) {
+		const p = lire<CommunsBreviaire>(`${dossier(annee)}/communs.json`, fetchFn);
+		communs.set(annee, p);
+		// un échec passager (hors ligne) n'est pas gardé : la prochaine demande réessaie
+		void p.then((c) => {
+			if (!c) communs.delete(annee);
+		});
+	}
 	return communs.get(annee)!;
 }
 

@@ -57,13 +57,17 @@ def main() -> int:
     P = communs["paragraphes"]
     fautes: list[str] = []
     ecarts: list[str] = []
+    non_verifiees: list[str] = []
     for j in cal:
         f = DOSSIER / f"{j['date'][5:]}.json"
         if not f.exists():
             fautes.append(f"{j['date']} : fichier absent")
             continue
         d = json.loads(f.read_text(encoding="utf-8"))
-        if d["date"] != j["date"] or len(d["heures"]) != 8:
+        if d["date"] != j["date"]:
+            fautes.append(f"{j['date']} : le fichier porte la date {d['date']}")
+            continue
+        if len(d["heures"]) != 8:
             fautes.append(f"{j['date']} : {len(d['heures'])} heures")
             continue
         heures = []
@@ -83,9 +87,15 @@ def main() -> int:
             # jusqu'au premier « N. » (le nom du saint, que DO remplace), huit mots au plus
             mots = norm(o.split(" N.")[0]).split()[:8]
             debut = " ".join(mots)
-            if debut not in norm(heures[1]) and j["date"] not in CONNUS:
+            if len(mots) < 4:
+                # trop court pour comparer (oraison qui commence par le nom du saint) : compté, jamais tenu pour bon
+                non_verifiees.append(j["date"])
+            elif debut not in norm(heures[1]) and j["date"] not in CONNUS:
                 ecarts.append(f"{j['date']} {j['office']} ({j['fichier_divinum_officium']}) — DO : {d['office']}")
-    print(f"{len(cal)} jours ; {len(P)} paragraphes communs ; {len(fautes)} faute(s) ; {len(ecarts)} écart(s) d'oraison")
+    print(
+        f"{len(cal)} jours ; {len(P)} paragraphes communs ; {len(fautes)} faute(s) ; {len(ecarts)} écart(s) d'oraison ;"
+        f" {len(non_verifiees)} oraison(s) trop courte(s) pour comparer {non_verifiees}"
+    )
     for x in fautes[:30] + ecarts[:60]:
         print("  ", x)
     return 1 if fautes or ecarts else 0
