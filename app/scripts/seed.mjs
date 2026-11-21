@@ -1,5 +1,5 @@
 // Copie les données générées (../data) dans static/data pour l'app, en JSON compact.
-import { mkdirSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -48,5 +48,14 @@ for (const f of readdirSync(join(racine, 'data', 'recueils'))) {
 mkdirSync(join(cible, 'recueils', 'gueranger'), { recursive: true });
 for (const f of readdirSync(join(racine, 'data', 'recueils', 'gueranger'))) {
 	compact(join(racine, 'data', 'recueils', 'gueranger', f), join(cible, 'recueils', 'gueranger', f));
+}
+// Bréviaire romain (engine/office/breviaire.py) : un dossier par année liturgique, un fichier par jour, chargés à la demande
+const breviaire = join(racine, 'data', 'office', 'breviaire');
+if (existsSync(breviaire)) {
+	for (const annee of readdirSync(breviaire)) {
+		mkdirSync(join(cible, 'office', 'breviaire', annee), { recursive: true });
+		for (const f of readdirSync(join(breviaire, annee)))
+			if (f.endsWith('.json')) compact(join(breviaire, annee, f), join(cible, 'office', 'breviaire', annee, f));
+	}
 }
 console.log('données copiées dans static/data');

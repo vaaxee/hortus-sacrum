@@ -21,10 +21,12 @@ Compagnon quotidien de prière (PWA), selon le calendrier romain de 1954 et le l
 ## Générer une année
 ```bash
 git clone --depth 1 --filter=blob:none --sparse https://github.com/DivinumOfficium/divinum-officium vendor/do
-cd vendor/do && git sparse-checkout set web/www/Tabulae web/www/horas web/www/missa
+cd vendor/do && git sparse-checkout set web/www/Tabulae web/www/horas web/www/missa web/cgi-bin
 git fetch --depth 1 --filter=blob:none origin 454a86ea && git checkout 454a86ea && cd ../..   # commit épinglé
 cd engine && python -m hebdo.build 2027 2028
 python tests/compare_2026.py      # doit afficher « 0 écart(s) »
+cd .. && python3 engine/office/breviaire.py 2026   # Bréviaire romain (Perl + libcgi-pm-perl ; web/cgi-bin dans vendor/do)
+python3 engine/office/test_breviaire.py           # 0 faute, 0 écart d'oraison
 ```
 
 `AAAA` = année du premier dimanche de l'Avent : `2026` produit l'année liturgique 2026-2027.
