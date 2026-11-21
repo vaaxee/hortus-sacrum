@@ -5,6 +5,7 @@
     {
       "id": "prog:priere-du-matin",
       "titre": "Prière du matin et offrande",
+      "motif": {"fins": ["adoration", "action-de-graces", "demande"], "objets": ["trinite"], "note": "consacrer la journée à Dieu : prière du matin, offrande et intention d'indulgences (LISTE_DU_JOUR, Matin)"},
       "revision": 2,
       "rang": "praecipua",
       "source": "Audit des dévotions, § 2.1 ; arbitrage du 19 nov. : la prière du matin d'abord, l'offrande ensuite",
@@ -120,6 +121,7 @@
     {
       "id": "prog:salve-regina",
       "titre": "Salve Regina",
+      "motif": {"fins": ["louange", "demande"], "objets": ["sainte-vierge"], "note": "antienne mariale du matin, avec ses versets (LISTE_DU_JOUR, Matin)"},
       "revision": 1,
       "source": "Arbitrage du 19 nov. : le Salve Regina le matin, après « Invoquons la sainte Vierge »",
       "insertions": [
@@ -137,6 +139,7 @@
     {
       "id": "prog:veni-creator-1er-janvier",
       "titre": "Veni Creator (1er janvier)",
+      "motif": {"objets": ["saint-esprit"], "note": "ouvrir l'année civile en invoquant le Saint-Esprit (SPEC § 11, temps liturgique) ; fin du texte à classer (D2)"},
       "revision": 1,
       "quand": {
         "dates": ["01-01"]
@@ -155,6 +158,7 @@
     {
       "id": "prog:cordon-gloria",
       "titre": "Cordon de saint Joseph : sept Gloria Patri",
+      "motif": {"fins": ["adoration"], "objets": ["trinite", "saint-joseph"], "note": "pratique du cordon de saint Joseph : sept Gloria Patri pour la pureté (Beringer 1925, t. II, n° 266)"},
       "revision": 1,
       "quand": {
         "sauf": {
@@ -179,6 +183,7 @@
     {
       "id": "prog:angelus",
       "titre": "Angélus",
+      "motif": {"fins": ["louange", "intercession"], "objets": ["jesus-christ", "sainte-vierge"], "note": "sanctifier le matin, midi et le soir par le mystère de l'Incarnation ; Regina cæli au temps pascal"},
       "revision": 1,
       "rang": "praecipua",
       "source": "Audit des dévotions, § 2.1 ; Regina cæli au temps pascal, les deux le samedi saint (Beringer 1925, n° 428)",
@@ -217,6 +222,7 @@
     {
       "id": "prog:fleche-d-or",
       "titre": "La Flèche d'or",
+      "motif": {"fins": ["reparation", "louange"], "objets": ["trinite", "sainte-face"], "note": "louange réparatrice du saint Nom de Dieu, une fois à chaque Angélus (arbitrage du 19 nov.)"},
       "revision": 1,
       "source": "Arbitrage du 19 nov. : une fois à chaque Angélus, dans la forme de Janvier 1895, sans la notice",
       "insertions": [
@@ -239,6 +245,7 @@
     {
       "id": "prog:scapulaire-jahenny",
       "titre": "Scapulaire de bénédiction et de protection",
+      "motif": {"objets": ["passion", "jesus-christ"], "note": "protection et méditation de la Passion, réparties entre matin et soir (SPEC § 11.2) ; fin du texte à classer (D2)"},
       "revision": 1,
       "source": "SPEC § 11, principe 2 : Crux ave le matin, salutations le soir ; la méditation de la Passion est tenue par les oraisons de sainte Brigitte",
       "explication": ["jahenny:scapulaire-benediction-protection"],
@@ -272,6 +279,7 @@
     {
       "id": "prog:agonisants",
       "titre": "Prière pour les agonisants",
+      "motif": {"fins": ["intercession", "demande"], "objets": ["sacre-coeur"], "note": "pour les mourants du jour, trois fois par jour, sans ligne propre (arbitrage du 19 nov.)"},
       "revision": 1,
       "source": "Arbitrage du 19 nov. : à l'Angélus de midi et dans les prières du matin et du soir, sans ligne propre",
       "insertions": [
@@ -308,6 +316,7 @@
     {
       "id": "prog:chapelet",
       "titre": "Chapelet",
+      "motif": {"fins": ["demande", "intercession", "adoration"], "objets": ["sainte-vierge", "jesus-christ"], "note": "méditer les mystères du jour (méthodes de saint Dominique et de Montfort)"},
       "revision": 2,
       "rang": "praecipua",
       "duree": 20,
@@ -428,6 +437,7 @@
     {
       "id": "prog:fin-dizaine-o-marie",
       "titre": "Ô Marie, conçue sans péché (fin de dizaine)",
+      "motif": {"fins": ["demande"], "objets": ["sainte-vierge"], "note": "invocation de la médaille miraculeuse à chaque fin de dizaine (SPEC § 11.2)"},
       "revision": 1,
       "source": "SPEC § 11, principe 2 ; Weber 1899, p. 477 (1re phrase de la Demande d'une bonne mort)",
       "insertions": [
@@ -448,6 +458,7 @@
     {
       "id": "prog:triple-couronne",
       "titre": "Triple Couronne d'or du Sacré-Cœur",
+      "motif": {"fins": ["reparation", "adoration", "action-de-graces"], "objets": ["sacre-coeur", "eucharistie"], "note": "honorer chaque jour le Sacré-Cœur, couronne selon le jour (SPEC § 10, corrections 4)"},
       "revision": 2,
       "duree": 15,
       "source": "Arbitrage du 19 nov. : quotidienne ; 1re lun. mer. sam., 2e mar. ven., 3e jeu. dim. (Jardin, p. 21-25) ; lot 6 : page composée à l’affichage (ordinaire et propre de la couronne du livret), identique à l’ancienne page hortus:triple-couronne-*",
@@ -683,6 +694,7 @@
     {
       "id": "prog:brigitte",
       "titre": "Quinze oraisons de sainte Brigitte",
+      "motif": {"fins": ["reparation", "action-de-graces"], "objets": ["passion"], "note": "méditation quotidienne de la Passion ; tient lieu de tâche de méditation (SPEC § 11.2)"},
       "revision": 1,
       "duree": 20,
       "source": "Audit des dévotions, § 2.2 ; SPEC § 11 : elles tiennent lieu de méditation de la Passion",
@@ -699,6 +711,7 @@
     {
       "id": "prog:devotion-dimanche",
       "titre": "Dévotion du dimanche : la très sainte Trinité",
+      "motif": {"fins": ["louange", "action-de-graces"], "objets": ["trinite"], "note": "dédicace du dimanche : la très sainte Trinité (cycles.json)"},
       "revision": 1,
       "quand": {
         "jours_semaine": [0]
@@ -737,6 +750,7 @@
     {
       "id": "prog:devotion-lundi",
       "titre": "Dévotion du lundi : les âmes du purgatoire",
+      "motif": {"fins": ["intercession", "propitiation"], "objets": ["ames-du-purgatoire"], "note": "dédicace du lundi : les âmes du purgatoire (cycles.json)"},
       "revision": 1,
       "quand": {
         "jours_semaine": [1]
@@ -770,6 +784,7 @@
     {
       "id": "prog:devotion-mardi",
       "titre": "Dévotion du mardi : les saints Anges",
+      "motif": {"fins": ["demande", "intercession"], "objets": ["anges"], "note": "dédicace du mardi : les saints Anges, leur garde et leur protection (cycles.json)"},
       "revision": 1,
       "quand": {
         "jours_semaine": [2]
@@ -802,6 +817,7 @@
     {
       "id": "prog:devotion-mercredi",
       "titre": "Dévotion du mercredi : saint Joseph et le cordon",
+      "motif": {"fins": ["demande"], "objets": ["saint-joseph"], "note": "dédicace du mercredi : saint Joseph, avec le renouvellement du cordon (SPEC § 11, décisions)"},
       "revision": 1,
       "quand": {
         "jours_semaine": [3]
@@ -846,6 +862,7 @@
     {
       "id": "prog:devotion-jeudi",
       "titre": "Dévotion du jeudi : le Saint-Sacrement",
+      "motif": {"fins": ["adoration", "demande"], "objets": ["eucharistie"], "note": "dédicace du jeudi : le Saint-Sacrement (cycles.json)"},
       "revision": 1,
       "quand": {
         "jours_semaine": [4]
@@ -884,6 +901,7 @@
     {
       "id": "prog:devotion-vendredi",
       "titre": "Dévotion du vendredi : la Passion et le Sacré-Cœur",
+      "motif": {"fins": ["reparation", "propitiation"], "objets": ["passion", "sacre-coeur"], "note": "dédicace du vendredi : la Passion et le Sacré-Cœur (cycles.json ; LOT_DIMENSIONS § 3.3)"},
       "revision": 1,
       "quand": {
         "jours_semaine": [5]
@@ -920,6 +938,7 @@
     {
       "id": "prog:devotion-samedi",
       "titre": "Dévotion du samedi : la sainte Vierge",
+      "motif": {"fins": ["louange", "demande"], "objets": ["sainte-vierge"], "note": "dédicace du samedi : la sainte Vierge (cycles.json)"},
       "revision": 1,
       "quand": {
         "jours_semaine": [6]
@@ -960,6 +979,7 @@
     {
       "id": "prog:sept-douleurs-septembre",
       "titre": "Les sept Douleurs de Marie (septembre)",
+      "motif": {"fins": ["demande"], "objets": ["sainte-vierge", "passion"], "note": "mois des Sept Douleurs (cycles.json, septembre)"},
       "revision": 1,
       "quand": {
         "mois": [9]
@@ -978,6 +998,7 @@
     {
       "id": "prog:te-deum-31-decembre",
       "titre": "Te Deum (31 décembre)",
+      "motif": {"fins": ["action-de-graces", "louange"], "objets": ["trinite"], "note": "action de grâces pour l'année écoulée (SPEC § 11, temps liturgique)"},
       "revision": 1,
       "quand": {
         "dates": ["12-31"]
@@ -996,6 +1017,7 @@
     {
       "id": "prog:christ-roi",
       "titre": "Au Christ-Roi",
+      "motif": {"objets": ["jesus-christ"], "note": "fête du Christ-Roi (SPEC § 11, temps liturgique) ; fin du texte à classer (D2)"},
       "revision": 1,
       "quand": {
         "office": "Jésus-Christ Roi$"
@@ -1014,6 +1036,7 @@
     {
       "id": "prog:priere-du-soir",
       "titre": "Prière du soir et examen de conscience",
+      "motif": {"fins": ["action-de-graces", "demande", "reparation"], "objets": ["trinite"], "note": "rendre grâces, examiner sa conscience et demander pardon avant la nuit (LISTE_DU_JOUR, Soir)"},
       "revision": 1,
       "rang": "praecipua",
       "source": "Audit des dévotions, § 2.1 ; audit du corpus A14 : l'antienne de la Vierge en dernier",
@@ -1039,6 +1062,7 @@
     {
       "id": "prog:don-du-jour",
       "titre": "Demande du don du Saint-Esprit",
+      "motif": {"fins": ["demande"], "objets": ["saint-esprit", "sainte-vierge"], "note": "un don du Saint-Esprit par jour, avec la douleur de Marie correspondante (Ench. 1952, n° 383)"},
       "revision": 1,
       "quand": {
         "sauf": {
@@ -1079,6 +1103,7 @@
     {
       "id": "lec:office",
       "titre": "Petit bréviaire du Sacré-Cœur",
+      "motif": {"fins": ["louange", "adoration"], "objets": ["sacre-coeur"], "note": "l'office compté dans les Lectures du jour : Petit bréviaire du Sacré-Cœur (SPEC § 11, conception)"},
       "revision": 1,
       "source": "SPEC § 11 et décisions du 20 nov. : l'office compté dans « Lectures du jour »",
       "lecture": {
@@ -1108,6 +1133,7 @@
     {
       "id": "lec:ecriture",
       "titre": "Évangile",
+      "motif": {"objets": ["jesus-christ"], "note": "lecture suivie des Évangiles (Lecture › Écriture)"},
       "revision": 1,
       "source": "SPEC § 11, principe 3 : le chapitre suivant du marque-page",
       "lecture": {
@@ -1120,6 +1146,7 @@
     {
       "id": "lec:doctrine",
       "titre": "Somme théologique",
+      "motif": {"note": "instruction doctrinale : Somme théologique, un article par jour (SPEC § 11, décisions)"},
       "revision": 1,
       "source": "SPEC § 11 : un article par jour, traduction Lachat ; données à fournir, compté quand elles existeront",
       "lecture": {
@@ -1132,6 +1159,7 @@
     {
       "id": "lec:meditation",
       "titre": "Méditation du jour",
+      "motif": {"note": "oraison mentale sur le recueil du jour (SPEC § 6)"},
       "revision": 1,
       "source": "SPEC § 11, principe 3",
       "lecture": {
@@ -1144,6 +1172,7 @@
     {
       "id": "lec:saint",
       "titre": "Office et vie du saint",
+      "motif": {"objets": ["saints"], "note": "connaître et imiter le saint du jour (SPEC § 1, Vie du saint)"},
       "revision": 1,
       "source": "SPEC § 11, principe 3",
       "lecture": {
@@ -1161,6 +1190,7 @@
     {
       "id": "prog:gertrude-saint-du-jour",
       "titre": "Prière de sainte Gertrude au saint du jour",
+      "motif": {"fins": ["louange", "demande"], "objets": ["saints"], "note": "à la fin de l'office du saint, prière de sainte Gertrude propre à sa catégorie (SPEC § 11, décisions)"},
       "revision": 1,
       "source": "SPEC § 11 : à la fin de l'office du saint (Denis, p. 234-242 ; gertrude.ts)",
       "insertions": [

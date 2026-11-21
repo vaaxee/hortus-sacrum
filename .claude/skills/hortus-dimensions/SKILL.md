@@ -21,8 +21,8 @@ reste fixe à l'exécution.** La matrice décrit, vérifie, propose ; elle ne ch
 | Relecture dans la fiche | `app/src/lib/ClassementTexte.svelte`, `FicheTexte.svelte` |
 | Tests | `app/src/lib/programme/matrice.test.ts`, `dimensions.test.ts`, `etiquettes.test.ts` |
 
-État des lots : D1 fait, D3 fait, D2 (relecture humaine) à faire, D4 (`motif`) partiel (3 entrées), D5
-(`engine/ordo/composer.py`, rapport seulement) non commencé.
+État des lots : voir `LOT_DIMENSIONS.md` § 7, « État des lots ». D1, D3 et D4 (`motif` sur chaque entrée) faits ;
+D2 (relecture humaine) à faire.
 
 ## Distinctions (ne jamais fusionner)
 
