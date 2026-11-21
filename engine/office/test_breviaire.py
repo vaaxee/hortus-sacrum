@@ -1,8 +1,8 @@
-"""Contrôle du Bréviaire romain livré (data/office/breviaire/2026-2027), produit par engine/office/breviaire.py.
+"""Contrôle du Bréviaire romain livré (data/office/breviaire/<AAAA-AAAA>), produit par engine/office/breviaire.py.
 
-    python3 engine/office/test_breviaire.py
+    python3 engine/office/test_breviaire.py [année]    # année du premier dimanche de l'Avent (2026 par défaut)
 
-1. Chaque jour du calendrier 2026-2027 a son fichier, huit heures non vides, et chaque référence se résout.
+1. Chaque jour du calendrier de l'année a son fichier, huit heures non vides, et chaque référence se résout.
 2. **Témoin croisé** entre deux moteurs indépendants : pour chaque jour, l'oraison de l'office que donne *notre*
    calendrier (data/calendar, champ `fichier_divinum_officium`, section [Oratio] du fichier latin de DO) doit se
    retrouver dans les Laudes produites par le moteur de DO. Un désaccord signale une erreur de précédence de l'un des
@@ -18,7 +18,8 @@ import unicodedata
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
-DOSSIER = ROOT / "data" / "office" / "breviaire" / "2026-2027"
+ANNEE = int(sys.argv[1]) if len(sys.argv) > 1 else 2026
+DOSSIER = ROOT / "data" / "office" / "breviaire" / f"{ANNEE}-{ANNEE + 1}"
 LATIN = ROOT / "vendor" / "do" / "web" / "www" / "horas" / "Latin"
 CONNUS: dict[str, str] = {}
 
@@ -53,7 +54,7 @@ def oraison(fichier: str) -> str | None:
 
 def main() -> int:
     communs = json.loads((DOSSIER / "communs.json").read_text(encoding="utf-8"))
-    cal = json.loads((ROOT / "data" / "calendar" / "2026-2027.json").read_text(encoding="utf-8"))
+    cal = json.loads((ROOT / "data" / "calendar" / f"{ANNEE}-{ANNEE + 1}.json").read_text(encoding="utf-8"))
     P = communs["paragraphes"]
     fautes: list[str] = []
     ecarts: list[str] = []

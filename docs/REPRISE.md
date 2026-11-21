@@ -55,7 +55,7 @@ Chaque push sur `main` reconstruit automatiquement https://hortus-sacrum.vercel.
   classements) reste à faire par l'utilisateur**, dans la fiche de chaque texte.
 11. **Bréviaire romain (lot 9) : fait pour 2026-2027 (21 nov.).** Pour l'année suivante : `python3 engine/office/breviaire.py
     2027` (Perl, `libcgi-pm-perl`, `web/cgi-bin` dans `vendor/do`), puis ajouter 2027 à `ANNEES_CALCULEES`
-    (`app/src/lib/office/breviaire.ts`) et lancer `engine/office/test_breviaire.py` (à paramétrer pour l'année). À faire
+    (`app/src/lib/office/breviaire.ts`) et lancer `python3 engine/office/test_breviaire.py 2027`. À faire
     avant le 28 novembre 2027.
 12. **Questions ouvertes pour l'utilisateur (21 nov.)** : forme de l'« Ô mon Jésus » en fin de dizaine (forme imprimée de
     1943 trouvée, forme répandue non trouvée dans une édition ancienne : voir A_FOURNIR.md) ; thème de la semaine du mois
