@@ -154,6 +154,8 @@ export interface Meditation extends Base {
 	titre: string;
 	corps: string;
 	pratique: string;
+	/** Clé du jour (meditations.ts : T:…, D:MM-JJ, F:…, J:n) ; sans clé, l'affectation du recueil décide. */
+	cle?: string;
 }
 
 export interface FetePerso extends Base {
