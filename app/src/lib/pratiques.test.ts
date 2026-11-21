@@ -82,6 +82,7 @@ describe('etat', () => {
 	});
 	it('série à venir, puis terminée', () => {
 		expect(etat(pratique(r), '2026-11-01', new Set()).phase).toBe('a_venir');
+		expect(etat(pratique(r), '2026-11-10', new Set()).phase).toBe('en_cours'); // premier jour : encore à temps
 		expect(etat(pratique(r), '2026-12-01', new Set()).phase).toBe('terminee');
 	});
 	it('recommencer repart d’aujourd’hui', () => {
@@ -103,5 +104,23 @@ describe('données anciennes ou incomplètes', () => {
 		expect(occurrences(undefined, '2026-01-01', '2026-12-31')).toEqual([]);
 		const r = { genre: 'avant_fete', mois: 12, jour: 8, nombre: 9 } as unknown as Parameters<typeof occurrences>[0];
 		expect(() => occurrences(r, '2026-01-01', '2026-12-31')).not.toThrow();
+	});
+});
+
+describe('série jamais commencée (audit du 20 nov.)', () => {
+	// « Douze samedis avant l'Immaculée Conception » : la série du plan s'ouvre le 19 septembre 2026
+	const r: Regle = { genre: 'avant_fete', nombre: 12, jourSemaine: 6, mois: 12, jour: 8 };
+	it('ouverte depuis septembre, aucune coche : non commencée, pas en cours', () => {
+		const e = etat(pratique(r), '2026-11-20', new Set());
+		expect(e.serie[0].date).toBe('2026-09-19');
+		expect(e.faites).toBe(0);
+		expect(e.phase).toBe('non_commencee');
+		expect(e.manquees).toEqual([]);
+	});
+	it('un seul samedi coché suffit : en cours', () => {
+		expect(etat(pratique(r), '2026-11-20', new Set(['2026-11-14'])).phase).toBe('en_cours');
+	});
+	it('le premier jour, rien n’est encore manqué : en cours', () => {
+		expect(etat(pratique(r), '2026-09-19', new Set()).phase).toBe('en_cours');
 	});
 });

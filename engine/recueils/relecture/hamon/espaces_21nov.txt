@@ -1,0 +1,242 @@
+# Hamon, 21 nov. : espaces parasites (engine/recueils/relecture/hamon/espaces.py), relus un à un.
+# Écartés (la forme séparée existe aussi en français, à voir au cas par cas) : Ce lui, En fin, En suite, Pour quoi, Puis que, Quel que, au tour, aussi tôt, autre fois, autre ment, avant age, bien heureux, bien tôt, ce lui, de dans, de gré, de hors, de main, de puis, de vient, des seins, des sous, des sus, du quel, dé passe, en droit, en fin, en lève, en suite, en tendre, en tendu, en tiers, en vers, le quel, le ver, les quels, lors que, mal gré, mal heureux, par don, par fait, par faite, par faits, pour quoi, puis que, quel que, quelque fois, sa voir, se courir
+c'est - à - dire	c'est-à-dire	*
+c'est - à -dire	c'est-à-dire	*
+c'est - à dire	c'est-à-dire	*
+c'est -à - dire	c'est-à-dire	*
+c'est -à -dire	c'est-à-dire	*
+c'est -à-dire	c'est-à-dire	*
+c'est à -dire	c'est-à-dire	*
+c'est à-dire	c'est-à-dire	*
+c'est--à -dire	c'est-à-dire	*
+c'est-à - dire	c'est-à-dire	*
+c'est-à -dire	c'est-à-dire	*
+c'est-à dire	c'est-à-dire	*
+nou velle	nouvelle	*
+spéciale ment	spécialement	*
+bien -être	bien-être	*
+sera -ce	sera-ce	*
+ci -dessus	ci-dessus	*
+a - t-il	a-t-il	*
+unique ment	uniquement	*
+ci - dessus	ci-dessus	*
+con science	conscience	*
+non -seulement	non-seulement	*
+Est - ce	Est-ce	*
+es prit	esprit	*
+pè che	pèche	*
+va leur	valeur	*
+très -sainte	très-sainte	*
+au rions	aurions	*
+misé ricorde	miséricorde	*
+chef -d	chef-d	*
+au -dessous	au-dessous	*
+au -dessus	au-dessus	*
+non - seulement	non-seulement	*
+par donne	pardonne	*
+Homme- Dieu	Homme-Dieu	*
+Est -ce	Est-ce	*
+est -ce	est-ce	*
+souf fert	souffert	*
+commence ment	commencement	*
+Non -seulement	Non-seulement	*
+très -parfaitement	très-parfaitement	*
+parfaite ment	parfaitement	*
+par lait	parlait	*
+bien -aimés	bien-aimés	*
+en semble	ensemble	*
+Ju dée	Judée	*
+Ma rie	Marie	*
+sera - ce	sera-ce	*
+premier -né	premier-né	*
+infini ment	infiniment	*
+tendre ment	tendrement	*
+par -dessus	par-dessus	*
+bien -aimé	bien-aimé	*
+Saint- Sacrement	Saint-Sacrement	*
+con naître	connaître	*
+Gene viève	Geneviève	*
+homme- Dieu	homme-Dieu	*
+juge ment	jugement	*
+ai mer	aimer	*
+peut -être	peut-être	*
+nouveau -né	nouveau-né	*
+Saint - Sacrement	Saint-Sacrement	*
+Jo seph	Joseph	*
+éternelle ment	éternellement	*
+cou che	couche	*
+sou tenir	soutenir	*
+bien - aimé	bien-aimé	*
+Gali lée	Galilée	*
+ai ment	aiment	*
+Sont- ce	Sont-ce	*
+mer veilles	merveilles	*
+regar dant	regardant	*
+Serait -ce	Serait-ce	*
+Serait - ce	Serait-ce	*
+en core	encore	*
+au -devant	au-devant	*
+passe -temps	passe-temps	*
+Est- ce	Est-ce	*
+in time	intime	*
+pa lais	palais	*
+pas sion	passion	*
+dira - t-on	dira-t-on	*
+ti tres	titres	*
+Bénissons- le	Bénissons-le	*
+des cendre	descendre	*
+for tune	fortune	*
+quelques -uns	quelques-uns	*
+apô tres	apôtres	*
+Sa les	Sales	*
+Naza reth	Nazareth	*
+dix -huit	dix-huit	*
+viva cités	vivacités	*
+amour -propre	amour-propre	*
+Jésus- Christ	Jésus-Christ	*
+au - dessus	au-dessus	*
+ado rations	adorations	*
+enseigne ment	enseignement	*
+sainte ment	saintement	*
+vrai ment	vraiment	*
+dé mon	démon	*
+seule ment	seulement	*
+sou vent	souvent	*
+de mander	demander	*
+bai ser	baiser	*
+ou verte	ouverte	*
+jacula toires	jaculatoires	*
+ail leurs	ailleurs	*
+im mense	immense	*
+au - dessous	au-dessous	*
+Saint -Siége	Saint-Siége	*
+quelques - uns	quelques-uns	*
+de mande	demande	*
+toute -puissance	toute-puissance	*
+souveraine ment	souverainement	*
+ou vert	ouvert	*
+Fran çois	François	*
+beau coup	beaucoup	*
+non - seule	non-seule	*
+ana chorètes	anachorètes	*
+suivez -moi	suivez-moi	*
+quelques -unes	quelques-unes	*
+si non	sinon	*
+mai son	maison	*
+occu per	occuper	*
+Jé rusalem	Jérusalem	*
+mer veilleux	merveilleux	*
+Jean - Baptiste	Jean-Baptiste	*
+Dieu -homme	Dieu-homme	*
+au tres	autres	*
+obéis sance	obéissance	*
+Très -Haut	Très-Haut	*
+Tout -Puissant	Tout-Puissant	*
+dix - huit	dix-huit	*
+Marie -Madeleine	Marie-Madeleine	*
+dé goûts	dégoûts	*
+sa chant	sachant	*
+cinquante -trois	cinquante-trois	*
+au près	auprès	*
+fer vent	fervent	*
+sang -froid	sang-froid	*
+ju gement	jugement	*
+séche resses	sécheresses	*
+don ner	donner	*
+de mandaient	demandaient	*
+de mandons	demandons	*
+Esprit- Saint	Esprit-Saint	*
+de mandes	demandes	*
+se raient	seraient	*
+ac tion	action	*
+Pen tecôte	Pentecôte	*
+De mandons	Demandons	*
+digne ment	dignement	*
+pen dant	pendant	*
+Pente côte	Pentecôte	*
+eus sent	eussent	*
+mi lieu	milieu	*
+sou venir	souvenir	*
+en nui	ennui	*
+a - t-elle	a-t-elle	*
+SAINT -SACREMENT	SAINT-SACREMENT	*
+chef - d	chef-d	*
+soumis sion	soumission	*
+Vierge -Mère	Vierge-Mère	*
+cepen dant	cependant	*
+sou mission	soumission	*
+Notre -Seigneur	Notre-Seigneur	*
+est - ce	est-ce	*
+commande ment	commandement	*
+rare ment	rarement	*
+man que	manque	*
+con vient	convient	*
+sont -ce	sont-ce	*
+prompte ment	promptement	*
+Ai mer	Aimer	*
+con tenir	contenir	*
+telle ment	tellement	*
+amour - propre	amour-propre	*
+con naissance	connaissance	*
+Jean- Baptiste	Jean-Baptiste	*
+Jean -Baptiste	Jean-Baptiste	*
+pen ser	penser	*
+toute -puissante	toute-puissante	*
+sera - t-il	sera-t-il	*
+dé clare	déclare	*
+dis penser	dispenser	*
+émi nent	éminent	*
+æu vres	æuvres	*
+vé ritable	véritable	*
+au tant	autant	*
+dé courage	décourage	*
+princi pes	principes	*
+es time	estime	*
+quatre -vingts	quatre-vingts	*
+dis cours	discours	*
+en nuis	ennuis	*
+Non - seulement	Non-seulement	*
+Ber nard	Bernard	*
+sa vent	savent	*
+continuelle ment	continuellement	*
+Jac ques	Jacques	*
+chrétienne ment	chrétiennement	*
+extérieu res	extérieures	*
+cru cifié	crucifié	*
+DIX -HUITIÈME	DIX-HUITIÈME	*
+dé plaire	déplaire	*
+dis position	disposition	*
+non -seule	non-seule	*
+très -adorable	très-adorable	*
+priè res	prières	*
+Té rèse	Térèse	*
+spirituel les	spirituelles	*
+simple ment	simplement	*
+savoir -vivre	savoir-vivre	*
+serait -ce	serait-ce	*
+Jésus- Christs	Jésus-Christs	*
+VINGT - TROISIÈME	VINGT-TROISIÈME	*
+toutes -puissantes	toutes-puissantes	*
+met tant	mettant	*
+va nité	vanité	*
+égale ment	également	*
+cher cher	chercher	*
+très - sainte	très-sainte	*
+NOTRE -DAME	NOTRE-DAME	*
+ré demption	rédemption	*
+sancti fie	sanctifie	*
+main tenir	maintenir	*
+sécheres ses	sécheresses	*
+vé rité	vérité	*
+contre -temps	contre-temps	*
+Es prit	Esprit	*
+mer veille	merveille	*
+dé plaît	déplaît	*
+Jéru salem	Jérusalem	*
+Com bien	Combien	*
+Dix- septième	Dix-septième	*
+Dix -septième	Dix-septième	*
+Vingt -deuxième	Vingt-deuxième	*
+Vingt -quatrième	Vingt-quatrième	*
+NOTRE -SEIGNEUR	NOTRE-SEIGNEUR	*
+Esprit - Saint	Esprit-Saint	*

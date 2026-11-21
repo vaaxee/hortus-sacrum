@@ -127,7 +127,7 @@ try {
 			{ timeout: 30000, polling: 500 }
 		);
 		await fabriquer(page, ops);
-		await page.goto(URL_APP + '/reglages');
+		await page.goto(URL_APP + '/profil');
 		await page
 			.getByRole('link', { name: /Historique/ })
 			.first()

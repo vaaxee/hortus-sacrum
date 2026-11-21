@@ -6,7 +6,7 @@
  */
 
 const TITRES =
-	'Martyrs?|Martyres?|Vierges?|Évêques?|Evêques?|Archevêques?|Confesseurs?|Papes?|Pontifes?|Prêtres?|Diacres?|Sous-Diacres?|Sous-diacres?|Abbés?|Abbesses?|Apôtres?|Évangélistes?|Docteurs?|Veuves?|Moines?|Ermites?|Anachorètes?|Lecteurs?|Exorcistes?|Acolytes?|Soldats?|Rois?|Reines?|Empereurs?|Impératrices?|Patriarches?|Prophètes?|Cardinal|Cardinaux|Pénitentes?|Solitaires?|Frères|Sœurs|Lévites?|Disciples?';
+	'Martyrs?|Martyres?|Stylites?|Précurseur|Archidiacres?|Portiers?|Portugais|Vierges?|Évêques?|Evêques?|Archevêques?|Confesseurs?|Papes?|Pontifes?|Prêtres?|Diacres?|Sous-Diacres?|Sous-diacres?|Abbés?|Abbesses?|Apôtres?|Évangélistes?|Docteurs?|Veuves?|Moines?|Ermites?|Anachorètes?|Lecteurs?|Exorcistes?|Acolytes?|Soldats?|Rois?|Reines?|Empereurs?|Impératrices?|Patriarches?|Prophètes?|Cardinal|Cardinaux|Pénitentes?|Solitaires?|Frères|Sœurs|Lévites?|Disciples?';
 const RE_TITRE = new RegExp(`^(?:${TITRES})(?![\\p{L}])`, 'u');
 const RANGS =
 	'reine|roi|pape|évêque|abbé|abbesse|prêtre|diacre|vieillard|martyrs?|frères|sœurs|vierges?|apôtres?|confesseurs?|prophètes?|patriarches?|pontifes?|soldats?|moines?|enfants?|ermites?|femmes?|hommes?|vieillards?|docteurs?|lévites?';
@@ -41,7 +41,8 @@ function liste(noms: string[]): string {
 
 /** Génère l'invocation d'une entrée du martyrologe, ou null si le nom n'est pas sûr. */
 export function invocation(eloge: string): Invocation | null {
-	const phrase = premierePhrase(eloge);
+	// « des Basiliques de Saint Pierre et de Saint Paul » : un seul sujet, deux saints
+	const phrase = premierePhrase(eloge).replace(/\s+et\s+de\s+(?:[Ss]aint|[Ss]ainte)\s+(?=\p{Lu})/gu, ' et ');
 	const m = RE_SUJET.exec(phrase);
 	if (!m) return null;
 	const genre = m[1].toLowerCase();

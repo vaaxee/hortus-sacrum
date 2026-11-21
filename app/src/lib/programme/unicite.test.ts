@@ -100,19 +100,27 @@ describe(`unicité sur ${CALENDRIER.length} jours (${CALENDRIER[0].date} → ${C
 
 	it('aucun texte du jour n’est contenu dans un autre texte du même jour', () => {
 		const inclus = new Set<string>();
+		// Fragments mis en cache : le calcul est quadratique et passait la limite de 5 s quand la suite tourne en parallèle.
+		const cache = new Map<string, ReturnType<typeof fragmentsDe>>();
+		const frag = (s: (typeof JOURS)[number]['lignes'][number]['sections'][number]) => {
+			const cle = `${s.texte}|${JSON.stringify(s.extrait ?? null)}|${s.rang ?? ''}`;
+			let f = cache.get(cle);
+			if (!f) cache.set(cle, (f = fragmentsDe(s.texte!, s.extrait, s.rang)));
+			return f;
+		};
 		for (const j of JOURS) {
 			const sections = [...j.lignes, ...j.lectures].flatMap((l) => l.sections.filter((s) => s.texte && s.genre === 'texte'));
 			for (const a of sections)
 				for (const b of sections) {
 					if (a === b || a.origine === b.origine) continue;
-					const fa = fragmentsDe(a.texte!, a.extrait, a.rang);
+					const fa = frag(a);
 					if (fa.size < 2) continue;
-					const part = partIncluse(fa, fragmentsDe(b.texte!, b.extrait, b.rang));
+					const part = partIncluse(fa, frag(b));
 					if (part >= 1 / 3) inclus.add(`${a.texte} (${a.origine}) ⊂ ${b.texte} (${b.origine}) : ${Math.round(part * 100)} %`);
 				}
 		}
 		expect([...inclus]).toEqual([]);
-	});
+	}, 30_000);
 
 	it('chaque jour a sa prière du matin, son chapelet, sa prière du soir et une seule litanie', () => {
 		const LITANIES = /litanies/;
