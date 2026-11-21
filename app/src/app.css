@@ -157,24 +157,26 @@ body {
 	outline-offset: 3px;
 }
 
-/* principal : l'aplat rubis, le filet d'or en retrait comme sur une reliure */
+/* principal : l'aplat de l'arche (rubis profond, ou outremer en DA grecque), le filet d'or en retrait
+   comme sur une reliure ; de nuit il reste profond, au lieu de l'aplat clair des liens */
 .hs button.principal,
 .hs .bouton.principal {
-	--b-fond: var(--hs-lapis);
-	--b-encre: var(--hs-sur-lapis);
-	--b-or: color-mix(in srgb, var(--hs-or) 75%, var(--hs-lapis));
+	--b-trait: var(--hs-arche-fond);
+	--b-fond: var(--hs-arche-fond);
+	--b-encre: var(--hs-arche-encre);
+	--b-or: var(--hs-arche-filet);
 	box-shadow:
 		inset 0 0 0 2px var(--b-fond),
 		inset 0 0 0 2.75px var(--b-or);
 }
 .hs button.principal:hover,
 .hs .bouton.principal:hover {
-	--b-fond: color-mix(in srgb, var(--hs-lapis) 84%, var(--hs-encre));
-	--b-or: var(--hs-or);
+	--b-fond: color-mix(in srgb, var(--hs-arche-fond) 88%, var(--hs-encre));
+	--b-or: var(--hs-arche-accent);
 }
 .hs button.principal:active:not(:disabled),
 .hs .bouton.principal:active {
-	--b-fond: color-mix(in srgb, var(--hs-lapis) 72%, var(--hs-encre));
+	--b-fond: color-mix(in srgb, var(--hs-arche-fond) 78%, var(--hs-encre));
 }
 
 .hs button.danger,
@@ -276,7 +278,7 @@ body {
 	--b-fond: transparent;
 }
 .hs button.principal:disabled:hover {
-	--b-fond: var(--hs-lapis);
+	--b-fond: var(--hs-arche-fond);
 }
 .hs button.brut {
 	font: inherit;
@@ -341,11 +343,11 @@ body {
 .hs label > span,
 .hs legend {
 	display: block;
-	font-family: var(--hs-interface);
-	font-size: 0.6875rem;
-	font-weight: 600;
-	text-transform: uppercase;
-	letter-spacing: 0.1em;
+	font-family: var(--hs-lecture);
+	font-size: 1rem;
+	font-weight: 500;
+	font-variant-caps: all-small-caps;
+	letter-spacing: 0.07em;
 	color: var(--hs-encre-douce);
 	margin-bottom: 2px;
 }
@@ -402,6 +404,40 @@ body {
 	accent-color: var(--hs-vert);
 }
 
+/* cases natives (réglages, éditeurs) : même dessin que la case de la liste du jour */
+.hs input[type='checkbox'] {
+	appearance: none;
+	-webkit-appearance: none;
+	flex: none;
+	width: 22px;
+	height: 22px;
+	margin: 0 10px 0 0;
+	vertical-align: -5px;
+	border: var(--hs-trait) solid var(--hs-lapis);
+	border-radius: 0;
+	background: var(--hs-fond);
+	box-shadow:
+		inset 0 0 0 2px var(--hs-fond),
+		inset 0 0 0 2.75px var(--hs-or-trait);
+	cursor: pointer;
+	transition:
+		background var(--hs-duree-vive) var(--hs-courbe),
+		border-color var(--hs-duree-vive) var(--hs-courbe);
+}
+.hs input[type='checkbox']:checked {
+	border-color: var(--hs-vert);
+	background: var(--hs-vert);
+	box-shadow: inset 0 0 0 4px var(--hs-fond);
+}
+.hs input[type='checkbox']:focus-visible {
+	outline: 2px solid var(--hs-or-texte);
+	outline-offset: 3px;
+}
+.hs input[type='checkbox']:disabled {
+	opacity: 0.42;
+	cursor: not-allowed;
+}
+
 /* ---- texte d'une prière ---- */
 .hs .priere p {
 	margin: 0 0 calc(var(--hs-ligne) / 2);
@@ -419,6 +455,98 @@ body {
 	background: var(--hs-surface);
 	border: var(--hs-cheveu) solid var(--hs-filet);
 	padding: var(--hs-e5);
+}
+
+/* ---- versets, psaumes, ℣/℟ : au fer à gauche ----
+   La justification creuse de grands blancs sur les lignes courtes et coupées des versets.
+   Tout paragraphe qui commence par ℣/℟, qui en contient, ou qui garde ses retours de ligne (psaume,
+   hymne, litanie) se compose au fer à gauche, césuré. Classe d'appoint pour un bloc entier :
+   <div class="lecture versets">. Dans un office (Officium parvum, Petit bréviaire : .office),
+   tout le texte est au fer à gauche. */
+.hs .lecture p:is(.verset, :has(br), :has(.vr)),
+.hs .lecture.versets p,
+.hs .office .lecture p {
+	text-align: start;
+	hyphens: auto;
+	text-wrap: pretty;
+}
+.hs .lecture p.verset + p.verset {
+	margin-top: calc(var(--hs-ligne) / -4);
+}
+
+/* ---- lettrine : la première lettre d'une prière, en rubrique, sur deux lignes ----
+   Seulement sur la page d'une prière (premier bloc de texte, hors vers et hors latin en regard)
+   et sur la première prière d'une pratique ; jamais devant un ℣/℟. */
+.hs article.texte:not(.vers):not(.bilingue) > .lecture:not(.lecture ~ .lecture):not(.strophe ~ .lecture) > p:first-child:not(.verset)::first-letter,
+.hs section.priere:not(.priere ~ .priere) > .lecture > p:first-child:not(.verset)::first-letter {
+	float: left;
+	font-family: var(--hs-titre);
+	font-weight: 500;
+	font-style: normal;
+	font-size: 3.55em;
+	line-height: 0.82;
+	margin: 0.07em 0.09em -0.05em 0;
+	color: var(--hs-rubrique);
+	font-variant-numeric: lining-nums;
+}
+
+/* ---- heures d'un office : bascules de petites capitales, comme les puces de filtre ----
+   (le composant de l'office garde sa logique ; seule l'apparence est reprise ici) */
+.hs .office .heures button.heure {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	min-height: 40px;
+	padding: 0 12px 2px;
+	border: var(--hs-cheveu) solid var(--hs-filet);
+	border-radius: 0;
+	background: var(--hs-fond);
+	color: var(--hs-encre-douce);
+	font-family: var(--hs-lecture);
+	font-size: 1.0625rem;
+	font-variant-caps: all-small-caps;
+	letter-spacing: 0.06em;
+	font-weight: 400;
+	transition:
+		color var(--hs-duree-vive) var(--hs-courbe),
+		border-color var(--hs-duree-vive) var(--hs-courbe),
+		background var(--hs-duree-vive) var(--hs-courbe);
+}
+.hs .office .heures button.heure::before {
+	content: '';
+	flex: none;
+	width: 0;
+	height: 6px;
+	margin-inline-end: -6px;
+	background: var(--hs-or-texte);
+	transform: rotate(45deg) scale(0);
+	transition:
+		transform var(--hs-duree-vive) var(--hs-courbe),
+		width var(--hs-duree-vive) var(--hs-courbe),
+		margin var(--hs-duree-vive) var(--hs-courbe);
+}
+.hs .office .heures button.heure:hover {
+	color: var(--hs-encre);
+	border-color: var(--hs-or);
+}
+.hs .office .heures button.heure.dite {
+	color: var(--hs-vert);
+	border-color: color-mix(in srgb, var(--hs-vert) 55%, var(--hs-filet));
+}
+.hs .office .heures button.heure[aria-selected='true'] {
+	color: var(--hs-encre);
+	border-color: var(--hs-lapis);
+	background: color-mix(in srgb, var(--hs-lapis) 9%, var(--hs-fond));
+	font-weight: 500;
+}
+.hs .office .heures button.heure[aria-selected='true']::before {
+	width: 6px;
+	margin-inline-end: 0;
+	transform: rotate(45deg) scale(1);
+}
+.hs .office .heures button.heure:focus-visible {
+	outline: 2px solid var(--hs-or-texte);
+	outline-offset: 2px;
 }
 
 /* ---- listes réglées ---- */
