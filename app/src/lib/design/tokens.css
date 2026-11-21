@@ -194,7 +194,8 @@
 	text-decoration-thickness: var(--hs-cheveu);
 }
 .hs :focus-visible {
-	outline: var(--hs-trait) solid var(--hs-or);
+	/* or assombri : l'anneau de focus garde 3:1 sur la nacre comme sur la nuit */
+	outline: 2px solid var(--hs-or-texte);
 	outline-offset: 3px;
 }
 
@@ -318,43 +319,7 @@
 	outline-offset: 3px;
 }
 
-/* boutons */
-.hs .bouton {
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	gap: var(--hs-e2);
-	min-height: 44px;
-	padding: 0 var(--hs-e5);
-	font-family: var(--hs-interface);
-	font-size: 0.75rem;
-	font-weight: 600;
-	text-transform: uppercase;
-	letter-spacing: 0.1em;
-	text-decoration: none;
-	cursor: pointer;
-	border-radius: var(--hs-rayon-tactile);
-	border: var(--hs-trait) solid var(--hs-lapis);
-	background: transparent;
-	color: var(--hs-lapis);
-	transition:
-		background var(--hs-duree-vive) var(--hs-courbe),
-		color var(--hs-duree-vive) var(--hs-courbe);
-}
-.hs .bouton.principal {
-	background: var(--hs-lapis);
-	color: var(--hs-sur-lapis);
-}
-.hs .bouton.danger {
-	border-color: var(--hs-rubrique);
-	color: var(--hs-rubrique);
-}
-.hs .bouton:hover {
-	background: color-mix(in srgb, var(--hs-lapis) 12%, transparent);
-}
-.hs .bouton.principal:hover {
-	background: color-mix(in srgb, var(--hs-lapis) 86%, var(--hs-encre));
-}
+/* boutons : le système complet est dans app.css (section « boutons ») */
 .hs .glyphe {
 	background: none;
 	border: 0;
@@ -579,7 +544,7 @@
 	}
 }
 /* artefacts en cobalt : cases à cocher et icônes de la barre d'onglets */
-:root[data-da='grecque'] .hs .case {
+:root[data-da='grecque'] .hs .case:not(.cochee) {
 	border-color: var(--hs-cobalt);
 }
 :root[data-da='grecque'] .hs nav.onglets a,
@@ -654,7 +619,7 @@
 	}
 }
 /* artefacts latins en rubis : cases et onglets */
-:root:not([data-da='grecque']) .hs .case {
+:root:not([data-da='grecque']) .hs .case:not(.cochee) {
 	border-color: var(--hs-lapis);
 }
 :root:not([data-da='grecque']) .hs nav.onglets a.actif,

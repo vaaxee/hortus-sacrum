@@ -90,68 +90,250 @@ body {
 	color: var(--hs-rubrique);
 }
 
-/* ---- boutons : tout <button> qui n'est pas marqué « brut » ---- */
+/* ---- boutons : tout <button> qui n'est pas marqué « brut » ----
+   Un seul système, d'après les livres d'église : petites capitales d'EB Garamond, cadre carré
+   à double filet (le trait de la couleur, puis un filet d'or en retrait), jamais d'arrondi.
+   - par défaut (secondaire) : cadre rubis, filet d'or intérieur ;
+   - .principal : aplat rubis, filet d'or intérieur, texte nacre ;
+   - .danger : cadre de rubrique, sans or ;
+   - .discret : sans cadre, souligné d'un cheveu au survol ;
+   - .icone : carré de 44 px, sans cadre ;
+   - [aria-pressed] / .actif : bascule ; enfoncée, elle prend un fond teinté et un losange d'or. */
 .hs button:not(.brut),
 .hs .bouton {
+	--b-trait: var(--hs-lapis);
+	--b-fond: transparent;
+	--b-encre: var(--hs-lapis);
+	--b-or: var(--hs-or-trait);
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
 	gap: var(--hs-e2);
 	min-height: 44px;
-	padding: 0 var(--hs-e4);
-	font-family: var(--hs-interface);
-	font-size: 0.75rem;
-	font-weight: 600;
-	text-transform: uppercase;
-	letter-spacing: 0.1em;
-	line-height: 1.2;
+	min-width: 44px;
+	padding: 0 var(--hs-e4) 2px;
+	font-family: var(--hs-lecture);
+	font-size: 1.0625rem;
+	font-weight: 500;
+	font-variant-caps: all-small-caps;
+	font-variant-numeric: lining-nums;
+	text-transform: none;
+	letter-spacing: 0.07em;
+	line-height: 1.15;
 	text-decoration: none;
+	text-align: center;
 	cursor: pointer;
-	border-radius: var(--hs-rayon-tactile);
-	border: var(--hs-trait) solid var(--hs-lapis);
-	background: transparent;
-	color: var(--hs-lapis);
+	border-radius: 0;
+	border: var(--hs-trait) solid var(--b-trait);
+	background: var(--b-fond);
+	color: var(--b-encre);
+	box-shadow:
+		inset 0 0 0 2px var(--hs-fond),
+		inset 0 0 0 2.75px var(--b-or);
+	-webkit-tap-highlight-color: transparent;
+	touch-action: manipulation;
 	transition:
 		background var(--hs-duree-vive) var(--hs-courbe),
-		color var(--hs-duree-vive) var(--hs-courbe);
+		color var(--hs-duree-vive) var(--hs-courbe),
+		box-shadow var(--hs-duree-vive) var(--hs-courbe),
+		transform 90ms var(--hs-courbe);
 }
 .hs button:not(.brut):hover,
 .hs .bouton:hover {
-	background: color-mix(in srgb, var(--hs-lapis) 12%, transparent);
+	--b-fond: color-mix(in srgb, var(--hs-lapis) 8%, var(--hs-fond));
+	--b-or: var(--hs-or);
+	box-shadow:
+		inset 0 0 0 2px var(--b-fond),
+		inset 0 0 0 2.75px var(--b-or);
 }
+.hs button:not(.brut):active:not(:disabled),
+.hs .bouton:active {
+	transform: translateY(1px);
+	--b-fond: color-mix(in srgb, var(--hs-lapis) 16%, var(--hs-fond));
+}
+.hs button:not(.brut):focus-visible,
+.hs .bouton:focus-visible {
+	outline: 2px solid var(--hs-or-texte);
+	outline-offset: 3px;
+}
+
+/* principal : l'aplat de l'arche (rubis profond, ou outremer en DA grecque), le filet d'or en retrait
+   comme sur une reliure ; de nuit il reste profond, au lieu de l'aplat clair des liens */
 .hs button.principal,
 .hs .bouton.principal {
-	background: var(--hs-lapis);
-	color: var(--hs-sur-lapis);
+	--b-trait: var(--hs-arche-fond);
+	--b-fond: var(--hs-arche-fond);
+	--b-encre: var(--hs-arche-encre);
+	--b-or: var(--hs-arche-filet);
+	box-shadow:
+		inset 0 0 0 2px var(--b-fond),
+		inset 0 0 0 2.75px var(--b-or);
 }
 .hs button.principal:hover,
 .hs .bouton.principal:hover {
-	background: color-mix(in srgb, var(--hs-lapis) 86%, var(--hs-encre));
+	--b-fond: color-mix(in srgb, var(--hs-arche-fond) 88%, var(--hs-encre));
+	--b-or: var(--hs-arche-accent);
 }
+.hs button.principal:active:not(:disabled),
+.hs .bouton.principal:active {
+	--b-fond: color-mix(in srgb, var(--hs-arche-fond) 78%, var(--hs-encre));
+}
+
 .hs button.danger,
 .hs .bouton.danger {
-	border-color: var(--hs-rubrique);
-	color: var(--hs-rubrique);
+	--b-trait: var(--hs-rubrique);
+	--b-encre: var(--hs-rubrique);
+	--b-or: transparent;
 }
-.hs button.danger:hover {
-	background: color-mix(in srgb, var(--hs-rubrique) 12%, transparent);
+.hs button.danger:hover,
+.hs .bouton.danger:hover {
+	--b-fond: color-mix(in srgb, var(--hs-rubrique) 10%, var(--hs-fond));
+	--b-or: transparent;
 }
-.hs button.discret {
-	border-color: transparent;
-	color: var(--hs-encre-douce);
+
+/* discret : une ligne de texte, le cheveu vient au survol */
+.hs button.discret,
+.hs .bouton.discret {
+	--b-trait: transparent;
+	--b-encre: var(--hs-encre-douce);
+	--b-or: transparent;
 	padding-inline: var(--hs-e2);
+	text-decoration: underline;
+	text-decoration-color: transparent;
+	text-decoration-thickness: var(--hs-cheveu);
+	text-underline-offset: 0.3em;
 }
-.hs button[aria-pressed='true']:not(.brut) {
-	background: color-mix(in srgb, var(--hs-lapis) 14%, transparent);
-	border-color: var(--hs-or);
+.hs button.discret:hover,
+.hs .bouton.discret:hover {
+	--b-fond: transparent;
+	--b-or: transparent;
+	color: var(--hs-encre);
+	text-decoration-color: var(--hs-or);
 }
-.hs button:disabled {
-	opacity: 0.45;
-	cursor: default;
+
+/* icône : un carré tactile de 44 px, sans cadre */
+.hs button.icone,
+.hs .bouton.icone {
+	--b-trait: transparent;
+	--b-encre: var(--hs-encre-douce);
+	--b-or: transparent;
+	width: 44px;
+	padding: 0;
+}
+.hs button.icone:hover,
+.hs .bouton.icone:hover {
+	color: var(--hs-lapis);
+	--b-or: var(--hs-or-trait);
+}
+
+/* bascules : enfoncée = fond teinté, cadre plein, losange d'or (l'état ne tient pas qu'à la couleur) */
+.hs button[aria-pressed]:not(.brut)::before,
+.hs .bouton.actif::before,
+.hs .puce::before {
+	content: '';
+	flex: none;
+	width: 0;
+	height: 6px;
+	transform: rotate(45deg) scale(0);
+	margin-inline-end: calc(-1 * var(--hs-e2));
+	background: var(--hs-or-texte);
+	transition:
+		margin var(--hs-duree-vive) var(--hs-courbe),
+		transform var(--hs-duree-vive) var(--hs-courbe),
+		width var(--hs-duree-vive) var(--hs-courbe);
+}
+.hs button[aria-pressed='true']:not(.brut),
+.hs .bouton.actif {
+	--b-fond: color-mix(in srgb, var(--hs-lapis) 12%, var(--hs-fond));
+	--b-encre: var(--hs-encre);
+	--b-or: var(--hs-or);
+	box-shadow:
+		inset 0 0 0 2px var(--b-fond),
+		inset 0 0 0 2.75px var(--b-or);
+}
+.hs button[aria-pressed='true']:not(.brut)::before,
+.hs .bouton.actif::before,
+.hs .puce[aria-pressed='true']::before {
+	width: 6px;
+	margin-inline-end: 0;
+	transform: rotate(45deg) scale(1);
+}
+
+/* rangée de bascules jointives (segments) : <div class="segments"> */
+.hs .segments {
+	display: inline-flex;
+	flex-wrap: wrap;
+}
+.hs .segments > :is(button, .bouton):not(:first-child) {
+	margin-left: calc(-1 * var(--hs-trait));
+}
+
+.hs button:disabled,
+.hs .bouton[aria-disabled='true'] {
+	opacity: 0.42;
+	cursor: not-allowed;
+	transform: none;
+}
+.hs button:disabled:hover {
+	--b-fond: transparent;
+}
+.hs button.principal:disabled:hover {
+	--b-fond: var(--hs-arche-fond);
 }
 .hs button.brut {
 	font: inherit;
 	color: inherit;
+	-webkit-tap-highlight-color: transparent;
+}
+
+/* puces de filtre : petits cartouches de petites capitales ; choisies, un losange d'or et le cadre rubis */
+.hs .puce,
+.hs button.brut.puce {
+	flex: none;
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	white-space: nowrap;
+	min-height: 36px;
+	padding: 0 12px 2px;
+	border: var(--hs-cheveu) solid var(--hs-filet);
+	border-radius: 0;
+	background: var(--hs-fond);
+	color: var(--hs-encre-douce);
+	font-family: var(--hs-lecture);
+	font-size: 1rem;
+	font-variant-caps: all-small-caps;
+	letter-spacing: 0.06em;
+	line-height: 1.2;
+	cursor: pointer;
+	position: relative;
+	transition:
+		color var(--hs-duree-vive) var(--hs-courbe),
+		border-color var(--hs-duree-vive) var(--hs-courbe),
+		background var(--hs-duree-vive) var(--hs-courbe);
+}
+/* zone tactile de 44 px sans grossir la puce */
+.hs .puce::after {
+	content: '';
+	position: absolute;
+	inset: -4px 0;
+}
+.hs .puce:hover {
+	color: var(--hs-encre);
+	border-color: var(--hs-or);
+}
+.hs .puce[aria-pressed='true'] {
+	color: var(--hs-encre);
+	border-color: var(--hs-lapis);
+	background: color-mix(in srgb, var(--hs-lapis) 9%, var(--hs-fond));
+}
+.hs .puce:focus-visible {
+	outline: 2px solid var(--hs-or-texte);
+	outline-offset: 2px;
+}
+
+.hs .puce:not([aria-pressed='true'])::before {
+	margin-inline-end: -6px;
 }
 
 /* ---- formulaires : étiquette en petites capitales Manrope, champ avec un seul filet en pied ---- */
@@ -161,11 +343,11 @@ body {
 .hs label > span,
 .hs legend {
 	display: block;
-	font-family: var(--hs-interface);
-	font-size: 0.6875rem;
-	font-weight: 600;
-	text-transform: uppercase;
-	letter-spacing: 0.1em;
+	font-family: var(--hs-lecture);
+	font-size: 1rem;
+	font-weight: 500;
+	font-variant-caps: all-small-caps;
+	letter-spacing: 0.07em;
 	color: var(--hs-encre-douce);
 	margin-bottom: 2px;
 }
@@ -222,6 +404,40 @@ body {
 	accent-color: var(--hs-vert);
 }
 
+/* cases natives (réglages, éditeurs) : même dessin que la case de la liste du jour */
+.hs input[type='checkbox'] {
+	appearance: none;
+	-webkit-appearance: none;
+	flex: none;
+	width: 22px;
+	height: 22px;
+	margin: 0 10px 0 0;
+	vertical-align: -5px;
+	border: var(--hs-trait) solid var(--hs-lapis);
+	border-radius: 0;
+	background: var(--hs-fond);
+	box-shadow:
+		inset 0 0 0 2px var(--hs-fond),
+		inset 0 0 0 2.75px var(--hs-or-trait);
+	cursor: pointer;
+	transition:
+		background var(--hs-duree-vive) var(--hs-courbe),
+		border-color var(--hs-duree-vive) var(--hs-courbe);
+}
+.hs input[type='checkbox']:checked {
+	border-color: var(--hs-vert);
+	background: var(--hs-vert);
+	box-shadow: inset 0 0 0 4px var(--hs-fond);
+}
+.hs input[type='checkbox']:focus-visible {
+	outline: 2px solid var(--hs-or-texte);
+	outline-offset: 3px;
+}
+.hs input[type='checkbox']:disabled {
+	opacity: 0.42;
+	cursor: not-allowed;
+}
+
 /* ---- texte d'une prière ---- */
 .hs .priere p {
 	margin: 0 0 calc(var(--hs-ligne) / 2);
@@ -239,6 +455,98 @@ body {
 	background: var(--hs-surface);
 	border: var(--hs-cheveu) solid var(--hs-filet);
 	padding: var(--hs-e5);
+}
+
+/* ---- versets, psaumes, ℣/℟ : au fer à gauche ----
+   La justification creuse de grands blancs sur les lignes courtes et coupées des versets.
+   Tout paragraphe qui commence par ℣/℟, qui en contient, ou qui garde ses retours de ligne (psaume,
+   hymne, litanie) se compose au fer à gauche, césuré. Classe d'appoint pour un bloc entier :
+   <div class="lecture versets">. Dans un office (Officium parvum, Petit bréviaire : .office),
+   tout le texte est au fer à gauche. */
+.hs .lecture p:is(.verset, :has(br), :has(.vr)),
+.hs .lecture.versets p,
+.hs .office .lecture p {
+	text-align: start;
+	hyphens: auto;
+	text-wrap: pretty;
+}
+.hs .lecture p.verset + p.verset {
+	margin-top: calc(var(--hs-ligne) / -4);
+}
+
+/* ---- lettrine : la première lettre d'une prière, en rubrique, sur deux lignes ----
+   Seulement sur la page d'une prière (premier bloc de texte, hors vers et hors latin en regard)
+   et sur la première prière d'une pratique ; jamais devant un ℣/℟. */
+.hs article.texte:not(.vers):not(.bilingue) > .lecture:not(.lecture ~ .lecture):not(.strophe ~ .lecture) > p:first-child:not(.verset)::first-letter,
+.hs section.priere:not(.priere ~ .priere) > .lecture > p:first-child:not(.verset)::first-letter {
+	float: left;
+	font-family: var(--hs-titre);
+	font-weight: 500;
+	font-style: normal;
+	font-size: 3.55em;
+	line-height: 0.82;
+	margin: 0.07em 0.09em -0.05em 0;
+	color: var(--hs-rubrique);
+	font-variant-numeric: lining-nums;
+}
+
+/* ---- heures d'un office : bascules de petites capitales, comme les puces de filtre ----
+   (le composant de l'office garde sa logique ; seule l'apparence est reprise ici) */
+.hs .office .heures button.heure {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	min-height: 40px;
+	padding: 0 12px 2px;
+	border: var(--hs-cheveu) solid var(--hs-filet);
+	border-radius: 0;
+	background: var(--hs-fond);
+	color: var(--hs-encre-douce);
+	font-family: var(--hs-lecture);
+	font-size: 1.0625rem;
+	font-variant-caps: all-small-caps;
+	letter-spacing: 0.06em;
+	font-weight: 400;
+	transition:
+		color var(--hs-duree-vive) var(--hs-courbe),
+		border-color var(--hs-duree-vive) var(--hs-courbe),
+		background var(--hs-duree-vive) var(--hs-courbe);
+}
+.hs .office .heures button.heure::before {
+	content: '';
+	flex: none;
+	width: 0;
+	height: 6px;
+	margin-inline-end: -6px;
+	background: var(--hs-or-texte);
+	transform: rotate(45deg) scale(0);
+	transition:
+		transform var(--hs-duree-vive) var(--hs-courbe),
+		width var(--hs-duree-vive) var(--hs-courbe),
+		margin var(--hs-duree-vive) var(--hs-courbe);
+}
+.hs .office .heures button.heure:hover {
+	color: var(--hs-encre);
+	border-color: var(--hs-or);
+}
+.hs .office .heures button.heure.dite {
+	color: var(--hs-vert);
+	border-color: color-mix(in srgb, var(--hs-vert) 55%, var(--hs-filet));
+}
+.hs .office .heures button.heure[aria-selected='true'] {
+	color: var(--hs-encre);
+	border-color: var(--hs-lapis);
+	background: color-mix(in srgb, var(--hs-lapis) 9%, var(--hs-fond));
+	font-weight: 500;
+}
+.hs .office .heures button.heure[aria-selected='true']::before {
+	width: 6px;
+	margin-inline-end: 0;
+	transform: rotate(45deg) scale(1);
+}
+.hs .office .heures button.heure:focus-visible {
+	outline: 2px solid var(--hs-or-texte);
+	outline-offset: 2px;
 }
 
 /* ---- listes réglées ---- */
