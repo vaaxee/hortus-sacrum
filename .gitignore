@@ -2,6 +2,12 @@ vendor/do/
 vendor/sources/
 __pycache__/
 *.pyc
-.claude/
+# .claude : seuls les skills, agents et réglages partagés du projet sont versionnés
+.claude/*
+!.claude/skills/
+!.claude/agents/
+!.claude/settings.json
 deploy/
 graphify-out/
+app/test-results/
+app/playwright-report/

@@ -21,7 +21,8 @@ Compagnon quotidien de prière (PWA), selon le calendrier romain de 1954 et le l
 ## Générer une année
 ```bash
 git clone --depth 1 --filter=blob:none --sparse https://github.com/DivinumOfficium/divinum-officium vendor/do
-cd vendor/do && git sparse-checkout set web/www/Tabulae web/www/horas web/www/missa && cd ../..
+cd vendor/do && git sparse-checkout set web/www/Tabulae web/www/horas web/www/missa
+git fetch --depth 1 --filter=blob:none origin 454a86ea && git checkout 454a86ea && cd ../..   # commit épinglé
 cd engine && python -m hebdo.build 2027 2028
 python tests/compare_2026.py      # doit afficher « 0 écart(s) »
 ```

@@ -62,14 +62,22 @@ Chaque agent ne touche que ses fichiers, pour éviter les conflits.
 **Faits**
 - Mise en place du lint (ESLint et Prettier).
 
-## Outils
+## Outils (relevé du 21 novembre 2026)
 
-- **Skills de la session** : `code-review`, `simplify`, `security-review`, `frontend-design`, `design:*`
-  (accessibilité, critique, textes de l'interface, système de design), `pdf`, `edition-deluxe`.
-- **Plugin** : A11y Enforcer (WCAG, Svelte).
-- **Connecteurs** : GitHub, Supabase.
-- **graphify** (installé le 18 nov.) : graphe du code (`app/`, `engine/`, docs), sans les données ni les PDF
-  (`.graphifyignore`).
-  - Reconstruction sans coût : `graphify update .` (sortie dans `graphify-out/`, non versionné).
-  - Requêtes : `graphify query "…"`, `graphify explain "X"`, `graphify affected "X"`, `graphify god-nodes`.
+- **Skills du projet** (`.claude/skills/`, versionnés) : `hortus-sources`, `hortus-liturgie`, `hortus-ordo`,
+  `hortus-dimensions`, `hortus-calendar`, `hortus-content`, `hortus-ocr`, `hortus-qa`.
+- **Sous-agents du projet** (`.claude/agents/`) : `hortus-architecte`, `hortus-frontend`, `hortus-qa`, `hortus-sources`,
+  `hortus-liturgie` (rôles ci-dessus, chacun limité à ses fichiers).
+- **Skills de la session** : `code-review`, `simplify`, `security-review`, `pdf`, `skill-creator`, `deep-research`.
+- **Connecteurs** : GitHub, Supabase (projet `jlbcpkmysmdehjocqzmb`), Vercel, Graphify, Context7 (documentation
+  technique), Parallel Search (recherche web), Linear (non utilisé).
+- **Tests de bout en bout** : Playwright (`@playwright/test` 1.63.0, version du Chromium installé), `npm run test:e2e`
+  après `npm run build` ; projets bureau-clair, bureau-sombre, telephone.
+- **OCR** : Tesseract 5 (fra, lat), à réinstaller dans une session neuve (`hortus-ocr`).
+- **Divinum Officium** : `vendor/do` épinglé au commit `454a86ea` (0 écart de `compare_2026.py`).
+- **Graphify** : graphe du code (`app/`, `engine/`, docs), sans les données ni les PDF (`.graphifyignore`).
+  - Connecteur : `graphify_impact`, `graphify_callers`, `graphify_find`, `query_graph`… ; le graphe vaut pour le commit
+    indiqué par `commitSha` (à comparer à `git rev-parse HEAD`). Offre gratuite : seul `README.md` est indexé parmi les
+    documents.
+  - En local (si installé) : `graphify update .` (sortie dans `graphify-out/`, non versionné).
   - À utiliser avant chaque refonte, pour mesurer l'impact d'un changement.
