@@ -9,7 +9,7 @@ import { elementDu, pas } from '../roues-calcul.ts';
 import type { Pratique } from '../types.ts';
 import { vaut, type JourDuProgramme } from './quand.ts';
 import { contexteDevotionnel, couvertureDe, manquesDe } from './contexte.ts';
-import { couper } from './texte.ts';
+import { couper, extraire } from './texte.ts';
 import type {
 	Choix,
 	Cycles,
@@ -99,12 +99,17 @@ export function journee(programme: Programme, ctx: Contexte): Journee {
 		}
 	}
 
+	function sousTitre(st: string | { selon: 'jour_semaine'; valeurs: string[] }): string {
+		return typeof st === 'string' ? st : (st.valeurs[new Date(date + 'T12:00:00').getDay()] ?? '');
+	}
+
 	function resoudre(sections: Section[], origine: string, rang = 0): Bloc[] {
 		const out: Bloc[] = [];
 		for (const s of sections) {
 			if (!vaut(s.quand, j)) continue;
 			if ('point' in s) out.push({ point: s.point });
 			else if ('champ' in s) out.push({ genre: 'champ', champ: s.champ, origine });
+			else if ('editorial' in s) out.push({ genre: 'editorial', contenu: s.editorial, origine });
 			else if ('notice' in s) {
 				const c = choisir(s.notice);
 				if (c)
@@ -122,21 +127,31 @@ export function journee(programme: Programme, ctx: Contexte): Journee {
 					...(c.nom && { nom: c.nom }),
 					...(typeof s.texte !== 'string' && { variante: true }),
 					...(s.extrait && { extrait: s.extrait }),
-					...(s.extrait?.rang_du_jour && { rang })
+					...(s.extrait?.rang_du_jour && { rang }),
+					...(s.suite && { suite: true })
 				};
 				if (!s.coupures?.length) {
 					out.push(base);
 					continue;
 				}
+				// une coupure dans un extrait (« de » … « a ») : les morceaux restent bornés par l'extrait
 				const corps = ctx.corps?.(c.id);
-				const morceaux = corps ? couper(corps, s.coupures) : null;
+				const borne = s.extrait && Object.keys(s.extrait).every((k) => k === 'de' || k === 'a') ? s.extrait : undefined;
+				const texte = corps === undefined ? undefined : s.extrait ? (borne ? extraire(corps, borne) : null) : corps;
+				const morceaux = texte ? couper(texte, s.coupures) : null;
 				if (!morceaux) {
 					// texte inconnu ou ancre absente : le texte entier, puis les points (le test des ancres le signale)
 					out.push(base, ...s.coupures.map((x) => ({ point: x.point })));
 					continue;
 				}
 				morceaux.forEach((m, k) => {
-					if (!m.vide) out.push({ ...base, ...(m.extrait && { extrait: m.extrait }), ...(k > 0 && { titre: undefined }) });
+					const extrait = borne || m.extrait ? { ...borne, ...m.extrait } : undefined;
+					if (!m.vide)
+						out.push({
+							...base,
+							...(extrait && { extrait }),
+							...(k > 0 && { titre: undefined, suite: true })
+						});
 					for (const p of m.points) out.push({ point: p });
 				});
 			}
@@ -161,6 +176,7 @@ export function journee(programme: Programme, ctx: Contexte): Journee {
 				moment: e.page.moment,
 				ordre: e.page.ordre,
 				...(e.page.heures && { heures: e.page.heures }),
+				...(e.page.sous_titre && { sousTitre: sousTitre(e.page.sous_titre) }),
 				sections: [],
 				blocs: resoudre(e.page.sections, e.id),
 				invites: [],

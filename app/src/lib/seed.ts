@@ -5,7 +5,7 @@ import { basculer } from './programme/bascule.ts';
 import { chargerProgramme } from './programme/charger.ts';
 import { DIMENSIONS } from './programme/types.ts';
 import { depuisEtiquettes } from './etiquettes.ts';
-import { pieceVersTexte, type Piece } from './livret.ts';
+import { pieceVersTexte, revisionsDuLivret, type Piece } from './livret.ts';
 import { amorcerRoues } from './roues.ts';
 import type { Pratique, Texte } from './types.ts';
 import { SOURCE_VIDE } from './types.ts';
@@ -28,12 +28,14 @@ export async function amorcer(fetchFn: typeof fetch = fetch): Promise<void> {
 	if (niveau < 2) await importerPlan(fetchFn);
 	if (niveau < 2) await db.meta.put({ cle: 'amorce', valeur: 2 });
 	await amorcerSources(fetchFn);
+	await reviserLivret(fetchFn);
 	await amorcerRoues(fetchFn);
 	await rouesDesLitanies();
 	await retirerRoueDesChapelets();
 	await rappelsDuProfil();
 	await textesDesDevotions();
 	await etiquettesEnDimensions();
+	await retirerPagesComposees();
 	const programme = await chargerProgramme(fetchFn);
 	if (programme) await basculer(programme);
 }
@@ -88,6 +90,30 @@ async function etiquettesEnDimensions(): Promise<void> {
 		await db.textes.put({ ...t, dimensions: Object.fromEntries(DIMENSIONS.map((k) => [k, d[k] ?? []])) });
 	}
 	await db.meta.put({ cle: 'dimensions-etiquettes', valeur: true });
+}
+
+/**
+ * Une seule fois (meta « pages-composees-retirees ») : les pages du chapelet, de la Triple Couronne et de l'offrande que
+ * livrait composer.py sont désormais composées à l'affichage par le programme (lot 6). Leurs copies en base vont à la
+ * corbeille (restaurables), seulement si l'utilisateur ne les a pas modifiées.
+ */
+const PAGES_COMPOSEES = [
+	'hortus:triple-couronne-1',
+	'hortus:triple-couronne-2',
+	'hortus:triple-couronne-3',
+	'hortus:offrande-du-matin',
+	'hortus:chapelet-joyeux',
+	'hortus:chapelet-douloureux',
+	'hortus:chapelet-glorieux'
+];
+async function retirerPagesComposees(): Promise<void> {
+	if (await db.meta.get('pages-composees-retirees')) return;
+	for (const id of PAGES_COMPOSEES) {
+		const t = await db.textes.get(id);
+		if (t && !t.supprimeLe && (t.modifieLe === DEPART || t.original === contenu(t)))
+			await db.textes.put({ ...t, supprimeLe: new Date().toISOString() });
+	}
+	await db.meta.put({ cle: 'pages-composees-retirees', valeur: true });
 }
 
 /** Une seule fois (meta « profil-rappels ») : les anniversaires du profil spirituel déjà saisis reçoivent le rappel la veille. */
@@ -223,6 +249,14 @@ export async function importerPlan(fetchFn: typeof fetch = fetch): Promise<numbe
 	}
 	return n;
 }
+/** Corrections du livret (pièces de jardin.json portant `revision`), appliquées aux textes que l'utilisateur n'a pas modifiés. */
+async function reviserLivret(fetchFn: typeof fetch): Promise<void> {
+	const rep = await fetchFn('/data/prieres/jardin.json');
+	if (!rep.ok) return;
+	const doc = (await rep.json()) as { pieces: Piece[] };
+	await reviser(revisionsDuLivret(doc.pieces) as (Texte & { revision?: number })[]);
+}
+
 async function amorcerLivret(fetchFn: typeof fetch): Promise<void> {
 	const rep = await fetchFn('/data/prieres/jardin.json');
 	const doc = (await rep.json()) as { pieces: Piece[] };

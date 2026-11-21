@@ -376,7 +376,7 @@ Après chaque implémentation :
   abrogé. Trois concessions d'abord déclarées abrogées à tort ont été rétablies (n° 234, 199 et 383). Les textes
   français ont été remplacés, quand c'était possible, par ceux de Thésaurisons (`revision`). Les traductions qui restent
   à trouver sont dans `A_FOURNIR.md`.
-- Données : `data/prieres/indulgences.json` ; scripts `engine/indulgences/ench1952.py`, `verif1952.py`, puis `beringer1925.py`. Un test vérifie que chaque fiche
+- Données : `data/prieres/indulgences.json` ; scripts `engine/indulgences/ench1952.py`, `verif1952.py`, `beringer1925.py`, puis `thesaurisons_livret.py`. Un test vérifie que chaque fiche
   comptée cite l'Enchiridion de 1952. Les mentions d'indulgence recopiées des anciens manuels ne sont pas affichées.
 - **Décision du 20 novembre : latin en premier.** Pour une prière concédée en latin (ou en italien) sans traduction
   française approuvée, la page s'ouvre sur le latin, qui porte l'indulgence ; le français reste en regard, avec la note
@@ -394,8 +394,14 @@ Après chaque implémentation :
     latin seul à défaut de traduction approuvée.
   - **Report fait le 20 nov.** (`beringer1925.py`, chaque texte relu sur le scan et comparé à la formule de 1952) : Angélus
     et Regina cæli, De profundis, Magnificat, En ego, Sept Douleurs (Beringer n° 450 = Ench. n° 383), Perpétuel Secours
-    (avec les trois Ave de 1952), chapelet. Non retenus, faute de répondre mot pour mot à 1952 : litanies de Lorette,
-    litanies du saint Nom, « Doux Cœur de Jésus », Douleurs et allégresses de saint Joseph (détail dans `A_FOURNIR.md`).
+    (avec les trois Ave de 1952), chapelet. Non retenus, faute de répondre mot pour mot à 1952 : « Doux Cœur de Jésus »,
+    Douleurs et allégresses de saint Joseph (remplacés depuis par Thésaurisons, voir plus bas).
+  - **Décisions du 21 nov.** : litanies du saint Nom de Beringer approuvées telles quelles ; litanies de Lorette
+    complétées dans l'ordre de 1952 (Mère du bon conseil et Reine de la paix de Beringer ; « Regina in caelum assumpta »
+    en latin, faute de traduction approuvée ; oraison de Thésaurisons n° 126) ; trois Ave du Perpétuel Secours gardés.
+  - **Report de Thésaurisons dans le livret (21 nov.)** : « Doux Cœur de mon Jésus… » (n° 82 ; Triple Couronne et ses
+    trois pages), Douleurs et allégresses de saint Joseph (n° 150), prière pour les agonisants (n° 498). Les pièces du
+    livret peuvent porter `revision`, appliquée comme pour les textes sourcés (`reviserLivret`).
 
 ### Arbitrages des audits du 19 novembre (tranchés par les principes du § 11 ; l'utilisateur peut les reprendre)
 Audits : `docs/audits/AUDIT_DEVOTIONS_2026-11-18.md` et `docs/audits/AUDIT_CORPUS_2026-11-18.md`.

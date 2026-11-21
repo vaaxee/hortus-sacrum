@@ -53,6 +53,10 @@ export interface Extrait {
 	retirer?: string[];
 	/** Le n-ième titre de ce niveau, n = rang du jour dans la série (neuvaine : « Premier jour »…). */
 	rang_du_jour?: { niveau: number };
+	/** Paragraphes [début, fin) du passage retenu (après les ancres) : pour prendre un bloc précis d'un texte du livret. */
+	paras?: [number, number?];
+	/** Abaisse les titres de n niveaux (« ## » → « ### » pour n = 1), quand le texte entre dans une page composée. */
+	niveau?: number;
 }
 
 /** Coupe un texte hôte : un point d'insertion avant une ancre, ou après chaque partie dont le titre suit un motif. */
@@ -72,6 +76,8 @@ export type Section =
 			depliable?: boolean;
 			quand?: Quand;
 			coupures?: Coupure[];
+			/** Suite d'un texte déjà commencé dans la page (page composée) : il n'est compté qu'une fois (indulgences). */
+			suite?: boolean;
 			/** Pratique du plan : seulement du n-ième au m-ième jour de la série (préparation de Montfort). */
 			rangs?: [number, number];
 	  }
@@ -80,7 +86,12 @@ export type Section =
 	/** Point d'insertion nommé. */
 	| { point: string; quand?: Quand }
 	/** Champ libre (intentions particulières) : ni case ni durée. */
-	| { champ: string; quand?: Quand };
+	| { champ: string; quand?: Quand }
+	/**
+	 * Titre ou consigne de mise en page d'une page composée (« ## Mystères », « *On peut dire…* ») : jamais une prière.
+	 * C'est ce qu'écrivait engine/composer/composer.py entre les textes sourcés.
+	 */
+	| { editorial: string; quand?: Quand };
 
 export type Moment = 'matin' | 'journee' | 'soir';
 
@@ -102,7 +113,14 @@ export interface EntreeProgramme {
 	quand?: Quand;
 	rang?: 'praecipua' | 'pia' | 'supererogatoria';
 	/** Pratique autonome : une ligne à cocher, qui ouvre sa page. */
-	page?: { moment: Moment; ordre: number; heures?: string[]; sections: Section[] };
+	page?: {
+		moment: Moment;
+		ordre: number;
+		heures?: string[];
+		sections: Section[];
+		/** Sous-titre de la ligne (la couronne ou les mystères du jour). */
+		sous_titre?: string | { selon: 'jour_semaine'; valeurs: string[] };
+	};
 	/** Petite pratique placée dans d'autres pages ; cochée avec elles. */
 	insertions?: Insertion[];
 	/** Ce qui se lit (onglet Lecture). `compte` : compté dans « Lectures du jour ». */
@@ -160,7 +178,7 @@ export interface ReglageProgramme {
 // ------------------------------------------------------------------ résultat
 
 export interface SectionResolue {
-	genre: 'texte' | 'notice' | 'champ';
+	genre: 'texte' | 'notice' | 'champ' | 'editorial';
 	/** Identifiant du texte (absent pour un champ). */
 	texte?: string;
 	extrait?: Extrait;
@@ -176,6 +194,10 @@ export interface SectionResolue {
 	champ?: string;
 	/** Le texte varie (jour de la semaine, roue, temps) : son titre se montre sous celui de la ligne. */
 	variante?: boolean;
+	/** Suite d'un texte déjà commencé dans la page : compté une seule fois. */
+	suite?: boolean;
+	/** Titre ou consigne de mise en page (genre « editorial »). */
+	contenu?: string;
 	/** Rang du jour dans une série (neuvaine), pour un extrait `rang_du_jour`. */
 	rang?: number;
 }
@@ -197,6 +219,8 @@ export interface Ligne {
 	/** Entrées insérées dans la page, cochées avec elle. */
 	invites: string[];
 	annotations: Annotation[];
+	/** La couronne, les mystères du jour… */
+	sousTitre?: string;
 	rang?: EntreeProgramme['rang'];
 	duree?: number;
 }

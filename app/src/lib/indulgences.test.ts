@@ -2,6 +2,7 @@ import { readFileSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
 import { latinEnPremier, mentionDuTexte, noteDeTraduction, type Fiche, type Indulgences } from './indulgences.ts';
 import { JACULATOIRES } from './liste.ts';
+import { revisionsDuLivret, type Piece } from './livret.ts';
 
 const donnees = JSON.parse(readFileSync(new URL('../../../data/prieres/indulgences.json', import.meta.url), 'utf8')) as Indulgences;
 
@@ -51,27 +52,23 @@ describe('indulgences : Enchiridion de 1952 seulement', () => {
 				'jardin:chaque-vendredi-devant-le-crucifix',
 				'beringer:coeur-afflige-de-marie',
 				'jardin:les-sept-douleurs-de-marie',
-				'weber:trois-prieres-perpetuel-secours'
+				'weber:trois-prieres-perpetuel-secours',
+				'paroissien:litanies-saint-nom',
+				'paroissien:litanies-sainte-vierge'
 			].sort()
 		);
 		for (const [id, f] of beringer) {
 			expect(f.traduction, id).toMatch(/11 juillet 1925/);
 			expect(latinEnPremier(f), id).toBe(false);
 		}
-		for (const id of ['sambucy:chapelet-saint-dominique', 'hortus:chapelet-joyeux', 'hortus:chapelet-douloureux', 'hortus:chapelet-glorieux']) {
+		// les pages du chapelet sont composées à l'affichage (lot 6) : la fiche est celle de Sambucy
+		for (const id of ['sambucy:chapelet-saint-dominique']) {
 			expect(donnees.fiches[id]?.traduction, id).toMatch(/L’Ami du clergé, 9 avril 1931/);
 			expect(latinEnPremier(donnees.fiches[id]), id).toBe(false);
 		}
 	});
 	it('les hymnes en vers et les textes de Beringer qui ne suivent pas la formule de 1952 restent en latin d’abord', () => {
-		for (const id of [
-			'jardin:veni-creator-spiritus',
-			'jardin:ave-maris-stella',
-			'weber:stabat-mater',
-			'paroissien:litanies-sainte-vierge',
-			'paroissien:litanies-saint-nom',
-			'jardin:les-sept-douleurs-et-les-sept-allegresses-de-saint-joseph'
-		])
+		for (const id of ['jardin:veni-creator-spiritus', 'jardin:ave-maris-stella', 'weber:stabat-mater'])
 			expect(latinEnPremier(donnees.fiches[id]), id).toBe(true);
 	});
 	it('les textes remplacés par ceux de Beringer portent une révision', () => {
@@ -82,8 +79,48 @@ describe('indulgences : Enchiridion de 1952 seulement', () => {
 		expect(p('paroissien:angelus')?.corps).toContain('par la voix de l’Ange');
 		expect(p('paroissien:de-profundis')?.corps).toContain('Des profondeurs de l’abîme');
 		expect(p('weber:trois-prieres-perpetuel-secours')?.corps).toContain('Voici à vos pieds, ô Mère du Perpétuel Secours');
-		for (const id of ['paroissien:angelus', 'paroissien:de-profundis', 'weber:trois-prieres-perpetuel-secours'])
+		const lorette = p('paroissien:litanies-sainte-vierge')?.corps ?? '';
+		const ordre = [
+			'Mère admirable',
+			'Mère du bon conseil',
+			'Mère du Créateur',
+			'péché originel',
+			'Regina in caelum assumpta',
+			'très saint Rosaire',
+			'Reine de la paix'
+		];
+		expect(ordre.map((x) => lorette.indexOf(x))).toEqual(ordre.map((x) => lorette.indexOf(x)).sort((a, b) => a - b));
+		expect(ordre.every((x) => lorette.includes(x))).toBe(true);
+		expect(p('paroissien:litanies-saint-nom')?.corps).toContain('Par votre institution de la très sainte Eucharistie');
+		expect(p('weber:trois-prieres-perpetuel-secours')?.corps.match(/Trois \*Ave Maria\*/g)).toHaveLength(3);
+		for (const id of [
+			'paroissien:angelus',
+			'paroissien:de-profundis',
+			'weber:trois-prieres-perpetuel-secours',
+			'paroissien:litanies-saint-nom',
+			'paroissien:litanies-sainte-vierge'
+		])
 			expect(p(id)?.revision ?? 0, id).toBeGreaterThan(0);
+	});
+	it('les traductions certifiées de Thésaurisons sont reportées dans le livret (n° 82, 150, 498)', () => {
+		const jardin = JSON.parse(readFileSync(new URL('../../../data/prieres/jardin.json', import.meta.url), 'utf8')) as {
+			pieces: Piece[];
+		};
+		const revs = new Map(revisionsDuLivret(jardin.pieces).map((r) => [r.id, r]));
+		const couronne = revs.get('jardin:la-triple-couronne-d-or-du-sacre-c-ur-de-jesus')?.corps ?? '';
+		expect(couronne).toContain('Doux Cœur de mon Jésus, faites que je vous aime de plus en plus.');
+		expect(couronne).not.toContain('toujours de plus en plus');
+		expect(revs.get('jardin:les-sept-douleurs-et-les-sept-allegresses-de-saint-joseph')?.corps).toContain(
+			'nous vivions uniquement pour eux et mourions dans la joie de leur amour'
+		);
+		expect(revs.get('jardin:priere-pour-les-agonisants')?.corps).toContain('qui sont en ce moment à l’agonie');
+		for (const id of ['jardin:les-sept-douleurs-et-les-sept-allegresses-de-saint-joseph', 'jardin:priere-pour-les-agonisants']) {
+			expect(donnees.fiches[id]?.traduction, id).toMatch(/Thésaurisons/);
+			expect(latinEnPremier(donnees.fiches[id]), id).toBe(false);
+		}
+		// la Triple Couronne est composée à l'affichage depuis le livret (lot 6) : la fiche est celle du livret
+		expect(donnees.fiches['jardin:la-triple-couronne-d-or-du-sacre-c-ur-de-jesus']?.traduction).toMatch(/n° 82/);
+		expect(donnees.fiches['hortus:triple-couronne-1']).toBeUndefined();
 	});
 	it('rappelle la règle des traductions (can. 934 § 2)', () => {
 		const f: Fiche = { ref: 'Ench. 1952, n° 1', frequence: 'chaque fois', partielles: [] };

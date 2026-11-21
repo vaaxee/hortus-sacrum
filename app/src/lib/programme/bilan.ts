@@ -53,7 +53,8 @@ function compter(lignes: Ligne[], faites: (l: Ligne) => number): Map<string, num
 		if (!k) continue;
 		const heures = l.heures ?? [];
 		for (const s of l.sections) {
-			if (s.genre !== 'texte' || !s.texte) continue;
+			// la suite d'un texte coupé dans une page composée n'est pas une récitation de plus
+			if (s.genre !== 'texte' || !s.texte || s.suite) continue;
 			// une partie propre à une heure n'est dite qu'à cette récitation-là
 			const dites = s.heure ? (heures.indexOf(s.heure) < k ? 1 : 0) : k;
 			n.set(s.texte, (n.get(s.texte) ?? 0) + dites);
