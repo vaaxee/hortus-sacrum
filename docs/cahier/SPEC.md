@@ -394,8 +394,11 @@ Après chaque implémentation :
     latin seul à défaut de traduction approuvée.
   - **Report fait le 20 nov.** (`beringer1925.py`, chaque texte relu sur le scan et comparé à la formule de 1952) : Angélus
     et Regina cæli, De profundis, Magnificat, En ego, Sept Douleurs (Beringer n° 450 = Ench. n° 383), Perpétuel Secours
-    (avec les trois Ave de 1952), chapelet. Non retenus, faute de répondre mot pour mot à 1952 : litanies de Lorette,
-    litanies du saint Nom, « Doux Cœur de Jésus », Douleurs et allégresses de saint Joseph (détail dans `A_FOURNIR.md`).
+    (avec les trois Ave de 1952), chapelet. Non retenus, faute de répondre mot pour mot à 1952 : « Doux Cœur de Jésus »,
+    Douleurs et allégresses de saint Joseph (détail dans `A_FOURNIR.md`).
+  - **Décisions du 21 nov.** : litanies du saint Nom de Beringer approuvées telles quelles ; litanies de Lorette
+    complétées dans l'ordre de 1952 (Mère du bon conseil et Reine de la paix de Beringer ; « Regina in caelum assumpta »
+    en latin, faute de traduction approuvée ; oraison de Thésaurisons n° 126) ; trois Ave du Perpétuel Secours gardés.
 
 ### Arbitrages des audits du 19 novembre (tranchés par les principes du § 11 ; l'utilisateur peut les reprendre)
 Audits : `docs/audits/AUDIT_DEVOTIONS_2026-11-18.md` et `docs/audits/AUDIT_CORPUS_2026-11-18.md`.

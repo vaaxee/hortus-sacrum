@@ -13,11 +13,12 @@ Chaque texte ci-dessous a été lu sur l'image du scan (archive.org, PDF), l'OCR
   Cœur affligé de Marie » (n° 450, p. 237-238 ; Ench. n° 383 : c'est lui, et non les n° 447 ou 887, qui répond à
   « Vi compatisco, Addolorata Maria »), trois prières à N.-D. du Perpétuel Secours (n° 459, p. 243-244 ; Ench. n° 427,
   avec les trois Ave que l'Enchiridion fait dire après chacune et que Beringer ne marque pas) ;
-- non appliqués (le français ne répond pas mot pour mot à la formule de 1952) : litanies de Lorette (n° 439,
-  p. 229-232 : sans « Regina in caelum assumpta », ajoutée en 1950), « Doux Cœur de Jésus » (n° 333, p. 170 : « de
-  Jésus » pour « del mio Gesù »), Douleurs et allégresses de saint Joseph (n° 485, p. 255-257 : ajouts « ami intime »,
-  « celui qui était votre vie », « qu'il reçut alors »), litanies du saint Nom (n° 305, p. 154-157 : « pardonnez-nous
-  nos péchés », « exaucez nos prières », oraison paraphrasée). Détail dans A_FOURNIR.md.
+- non appliqués (le français ne répond pas mot pour mot à la formule de 1952) : « Doux Cœur de Jésus » (n° 333, p. 170 :
+  « de Jésus » pour « del mio Gesù »), Douleurs et allégresses de saint Joseph (n° 485, p. 255-257 : ajouts « ami
+  intime », « celui qui était votre vie », « qu'il reçut alors »). Détail dans A_FOURNIR.md.
+- décisions de l'utilisateur du 21 nov. : litanies du saint Nom (n° 305, p. 154-157) tenues pour approuvées telles
+  quelles ; litanies de Lorette (n° 439, p. 229-232) complétées et remises dans l'ordre de 1952 (voir LOR_ORA) ; les
+  trois Ave du Perpétuel Secours gardés.
 - Pater, Ave, Gloria usuels : fidélité « notoire » (L'Ami du clergé, 9 avril 1931, p. 252-253) ; le chapelet compte.
 
 Les textes remplacés dans data/prieres/sources.json prennent une `revision` de plus : l'app remplace le texte en base,
@@ -162,7 +163,146 @@ SECOURS = [
     'péchés, l’amour de Jésus, la persévérance finale et la grâce de recourir toujours à vous, ô Mère du Perpétuel '
     'Secours !',
 ]
-TROIS_AVE = 'Trois *Ave Maria*.'
+TROIS_AVE = 'Trois *Ave Maria*.'  # décision de l'utilisateur (21 nov.) : gardé après chaque prière
+
+# Litanies : paires (français, latin) dans l'ordre de l'Enchiridion de 1952 ; le latin est celui de l'Enchiridion
+# (relu sur l'image), le français celui de Beringer (relu sur l'image). Les réponses que Beringer met en accolade sont
+# écrites à chaque ligne.
+MISERERE = (', ayez pitié de nous.', ', miserere nobis.')
+KYRIE = [('Seigneur, ayez pitié de nous.', 'Kyrie, eleison.'), ('Jésus-Christ, ayez pitié de nous.', 'Christe, eleison.'),
+         ('Seigneur, ayez pitié de nous.', 'Kyrie, eleison.')]
+TRINITE = [('Père céleste qui êtes Dieu', 'Pater de caelis, Deus'),
+           ('Dieu le Fils, Rédempteur du monde', 'Fili, Redemptor mundi, Deus'),
+           ('Dieu le Saint-Esprit', 'Spiritus Sancte, Deus')]
+
+# Litanies du saint Nom : Beringer n° 305, p. 155-157 (décision de l'utilisateur, 21 nov. : la traduction est tenue
+# pour approuvée telle quelle) ; Ench. 1952, n° 114
+NOM_JESUS = [
+    ('Jésus, Fils du Dieu vivant', 'Iesu, Fili Dei vivi'), ('Jésus, splendeur du Père', 'Iesu, splendor Patris'),
+    ('Jésus, l’éclat de la lumière éternelle', 'Iesu, candor lucis aeternae'), ('Jésus, Roi de gloire', 'Iesu, rex gloriae'),
+    ('Jésus, soleil de justice', 'Iesu, sol iustitiae'), ('Jésus, Fils de la Vierge Marie', 'Iesu, Fili Mariae Virginis'),
+    ('Jésus aimable', 'Iesu amabilis'), ('Jésus admirable', 'Iesu admirabilis'), ('Jésus, Dieu fort', 'Iesu, Deus fortis'),
+    ('Jésus, Père du siècle à venir', 'Iesu, pater futuri saeculi'),
+    ('Jésus, Ange du grand conseil', 'Iesu, magni consilii angele'), ('Jésus très puissant', 'Iesu potentissime'),
+    ('Jésus très patient', 'Iesu patientissime'), ('Jésus très obéissant', 'Iesu obedientissime'),
+    ('Jésus doux et humble de cœur', 'Iesu, mitis et humilis corde'),
+    ('Jésus, amateur de la chasteté', 'Iesu, amator castitatis'),
+    ('Jésus, qui nous honorez de votre amour', 'Iesu, amator noster'), ('Jésus, Dieu de paix', 'Iesu, Deus pacis'),
+    ('Jésus, auteur de la vie', 'Iesu, auctor vitae'), ('Jésus, modèle des vertus', 'Iesu, exemplar virtutum'),
+    ('Jésus, zélateur des âmes', 'Iesu, zelator animarum'), ('Jésus, notre Dieu', 'Iesu, Deus noster'),
+    ('Jésus, notre refuge', 'Iesu, refugium nostrum'), ('Jésus, père des pauvres', 'Iesu, pater pauperum'),
+    ('Jésus, trésor des fidèles', 'Iesu, thesaure fidelium'), ('Jésus, bon Pasteur', 'Iesu, bone pastor'),
+    ('Jésus, vraie lumière', 'Iesu, lux vera'), ('Jésus, sagesse éternelle', 'Iesu, sapientia aeterna'),
+    ('Jésus, bonté infinie', 'Iesu, bonitas infinita'), ('Jésus, notre voie et notre vie', 'Iesu, via et vita nostra'),
+    ('Jésus, la joie des Anges', 'Iesu, gaudium Angelorum'), ('Jésus, le roi des Patriarches', 'Iesu, rex Patriarcharum'),
+    ('Jésus, le maître des Apôtres', 'Iesu, magister Apostolorum'),
+    ('Jésus, le docteur des Evangélistes', 'Iesu, doctor Evangelistarum'),
+    ('Jésus, la force des Martyrs', 'Iesu, fortitudo Martyrum'),
+    ('Jésus, la lumière des Confesseurs', 'Iesu, lumen Confessorum'),
+    ('Jésus, la pureté des Vierges', 'Iesu, puritas Virginum'),
+    ('Jésus, la couronne de tous les Saints', 'Iesu, corona Sanctorum omnium'),
+]
+NOM_LIBERA = [
+    ('De tout mal', 'Ab omni malo'), ('De tout péché', 'Ab omni peccato'), ('De votre colère', 'Ab ira tua'),
+    ('Des embûches du démon', 'Ab insidiis diaboli'), ('De l’esprit de fornication', 'A spiritu fornicationis'),
+    ('De la mort éternelle', 'A morte perpetua'),
+    ('Du mépris de vos divines inspirations', 'A neglectu inspirationum tuarum'),
+    ('Par le mystère de votre sainte Incarnation', 'Per mysterium sanctae Incarnationis tuae'),
+    ('Par votre naissance', 'Per nativitatem tuam'), ('Par votre enfance', 'Per infantiam tuam'),
+    ('Par votre vie toute divine', 'Per divinissimam vitam tuam'), ('Par vos travaux', 'Per labores tuos'),
+    ('Par votre agonie et par votre passion', 'Per agoniam et passionem tuam'),
+    ('Par votre croix et par votre abandonnement', 'Per crucem et derelictionem tuam'),
+    ('Par vos langueurs', 'Per languores tuos'), ('Par votre mort et par votre sépulture', 'Per mortem et sepulturam tuam'),
+    ('Par votre résurrection', 'Per resurrectionem tuam'), ('Par votre ascension', 'Per ascensionem tuam'),
+    ('Par votre institution de la très sainte Eucharistie', 'Per sanctissimae Eucharistiae institutionem tuam'),
+    ('Par vos saintes joies', 'Per gaudia tua'), ('Par votre gloire', 'Per gloriam tuam'),
+]
+NOM_ORAISONS = [
+    ('Prions. Seigneur Jésus-Christ, qui avez dit : Demandez et vous recevrez, cherchez et vous trouverez, frappez et il '
+     'vous sera ouvert ; nous vous supplions d’allumer en nous le feu de votre divin amour, afin que nous vous aimions de '
+     'tout notre cœur, que notre bouche et nos actions vous bénissent, et que jamais nous ne cessions de vous louer.',
+     'Oremus. Domine Iesu Christe, qui dixisti : Petite et accipietis ; quaerite et invenietis ; pulsate et aperietur '
+     'vobis ; quaesumus, da nobis petentibus divinissimi tui amoris affectum, ut te toto corde, ore et opere diligamus et '
+     'a tua nunquam laude cessemus.'),
+    ('Faites, Seigneur, que nous ayons sans cesse en nos cœurs la crainte et l’amour de votre saint nom, puisque vous '
+     'n’abandonnez jamais ceux que vous avez solidement affermis dans votre divine charité : Vous qui vivez et régnez dans '
+     'les siècles des siècles. Ainsi soit-il.',
+     'Sancti Nominis tui, Domine, timorem pariter et amorem fac nos habere perpetuum, quia numquam tua gubernatione '
+     'destituis, quos in soliditate tuae dilectionis instituis : Qui vivis et regnas in saecula saeculorum. Amen.'),
+]
+NOM = [
+    KYRIE + [('Jésus, écoutez-nous.', 'Iesu, audi nos.'), ('Jésus, exaucez-nous.', 'Iesu, exaudi nos.')],
+    [(f + MISERERE[0], l + MISERERE[1]) for f, l in TRINITE + [('Sainte Trinité, qui êtes un seul Dieu', 'Sancta Trinitas, unus Deus')]],
+    [(f + MISERERE[0], l + MISERERE[1]) for f, l in NOM_JESUS],
+    [('Soyez-nous propice, Jésus, pardonnez-nous nos péchés.', 'Propitius esto, parce nobis, Iesu.'),
+     ('Soyez-nous propice, Jésus, exaucez nos prières.', 'Propitius esto, exaudi nos, Iesu.')],
+    [(f + ', délivrez-nous, Jésus.', l + ', libera nos, Iesu.') for f, l in NOM_LIBERA],
+    [('Agneau de Dieu, qui effacez les péchés du monde, pardonnez-nous, Jésus.',
+      'Agnus Dei, qui tollis peccata mundi, parce nobis, Iesu.'),
+     ('Agneau de Dieu, qui effacez les péchés du monde, exaucez-nous, Jésus.',
+      'Agnus Dei, qui tollis peccata mundi, exaudi nos, Iesu.'),
+     ('Agneau de Dieu, qui effacez les péchés du monde, ayez pitié de nous, Jésus.',
+      'Agnus Dei, qui tollis peccata mundi, miserere nobis, Iesu.'),
+     ('Jésus, écoutez-nous.', 'Iesu, audi nos.'), ('Jésus, exaucez-nous.', 'Iesu, exaudi nos.')],
+]
+
+# Litanies de Lorette (décision de l'utilisateur, 21 nov. : ajouter les invocations postérieures, avec leur source).
+# Français : Beringer n° 439, p. 231-232, qui donne déjà « Mère du bon conseil » (S. R. C., 22 avril 1903) et « Reine de
+# la paix » (Benoît XV, 5 mai 1917), à la place que leur garde l'Enchiridion de 1952 ; Thésaurisons (1941) ne donne
+# pas ces invocations isolées. « Regina in caelum assumpta » (S. R. C., 31 oct. 1950) : aucune traduction française
+# approuvée n'a été trouvée (Beringer 1925 et Thésaurisons 1941 sont antérieurs) : elle se dit en latin (fr = None).
+# Verset : celui de l'Angélus de Beringer (n° 428, même latin) ; oraison « Concede nos famulos » : Thésaurisons n° 126
+# (Preces 1938, n° 319), p. 49, relue sur l'image. Ench. 1952, n° 319.
+LOR_ORA = [
+    ('Sainte Marie', 'Sancta Maria'), ('Sainte Mère de Dieu', 'Sancta Dei Genitrix'),
+    ('Sainte Vierge des Vierges', 'Sancta Virgo Virginum'), ('Mère de Jésus-Christ', 'Mater Christi'),
+    ('Mère de la divine grâce', 'Mater divinae gratiae'), ('Mère très pure', 'Mater purissima'),
+    ('Mère très chaste', 'Mater castissima'), ('Mère toujours vierge', 'Mater inviolata'),
+    ('Mère sans tache', 'Mater intemerata'), ('Mère aimable', 'Mater amabilis'), ('Mère admirable', 'Mater admirabilis'),
+    ('Mère du bon conseil', 'Mater boni consilii'), ('Mère du Créateur', 'Mater Creatoris'),
+    ('Mère du Sauveur', 'Mater Salvatoris'), ('Vierge très prudente', 'Virgo prudentissima'),
+    ('Vierge vénérable', 'Virgo veneranda'), ('Vierge digne de louanges', 'Virgo praedicanda'),
+    ('Vierge puissante', 'Virgo potens'), ('Vierge clémente', 'Virgo clemens'), ('Vierge fidèle', 'Virgo fidelis'),
+    ('Miroir de justice', 'Speculum iustitiae'), ('Trône de la divine Sagesse', 'Sedes sapientiae'),
+    ('Cause de notre joie', 'Causa nostrae laetitiae'), ('Vase spirituel', 'Vas spirituale'),
+    ('Vase d’honneur', 'Vas honorabile'), ('Vase insigne de la dévotion', 'Vas insigne devotionis'),
+    ('Rose mystique', 'Rosa mystica'), ('Tour de David', 'Turris davidica'), ('Tour d’ivoire', 'Turris eburnea'),
+    ('Maison d’or', 'Domus aurea'), ('Arche d’alliance', 'Foederis arca'), ('Porte du Ciel', 'Ianua caeli'),
+    ('Étoile du matin', 'Stella matutina'), ('Santé des infirmes', 'Salus infirmorum'),
+    ('Refuge des pécheurs', 'Refugium peccatorum'), ('Consolatrice des affligés', 'Consolatrix afflictorum'),
+    ('Secours des chrétiens', 'Auxilium Christianorum'), ('Reine des Anges', 'Regina Angelorum'),
+    ('Reine des Patriarches', 'Regina Patriarcharum'), ('Reine des Prophètes', 'Regina Prophetarum'),
+    ('Reine des Apôtres', 'Regina Apostolorum'), ('Reine des Martyrs', 'Regina Martyrum'),
+    ('Reine des Confesseurs', 'Regina Confessorum'), ('Reine des Vierges', 'Regina Virginum'),
+    ('Reine de tous les Saints', 'Regina Sanctorum omnium'),
+    ('Reine conçue sans la tache du péché originel', 'Regina sine labe originali concepta'),
+    (None, 'Regina in caelum assumpta'),
+    ('Reine du très saint Rosaire', 'Regina sacratissimi Rosarii'), ('Reine de la paix', 'Regina pacis'),
+]
+LORETTE = [
+    KYRIE + [('Jésus-Christ, écoutez-nous.', 'Christe, audi nos.'), ('Jésus-Christ, exaucez-nous.', 'Christe, exaudi nos.')],
+    [(f + MISERERE[0], l + MISERERE[1]) for f, l in TRINITE + [('Sainte Trinité qui êtes un seul Dieu', 'Sancta Trinitas, unus Deus')]],
+    [((f + ', priez pour nous.') if f else f'*{l}, ora pro nobis.*', l + ', ora pro nobis.') for f, l in LOR_ORA],
+    [('Agneau de Dieu qui effacez les péchés du monde, pardonnez-nous, Seigneur.',
+      'Agnus Dei, qui tollis peccata mundi, parce nobis, Domine.'),
+     ('Agneau de Dieu qui effacez les péchés du monde, exaucez-nous, Seigneur.',
+      'Agnus Dei, qui tollis peccata mundi, exaudi nos, Domine.'),
+     ('Agneau de Dieu qui effacez les péchés du monde, ayez pitié de nous.',
+      'Agnus Dei, qui tollis peccata mundi, miserere nobis.')],
+    [('℣. Priez pour nous, sainte Mère de Dieu,\n℟. Afin que nous devenions dignes des promesses de Jésus-Christ.',
+      '℣. Ora pro nobis, sancta Dei Genitrix,\n℟. Ut digni efficiamur promissionibus Christi.')],
+    [('Prions. Seigneur, notre Dieu, accordez, s’il vous plaît, à nous vos serviteurs, de jouir d’une perpétuelle santé '
+      'de l’âme et du corps ; et grâce à la glorieuse intercession de la bienheureuse Marie toujours Vierge, d’être '
+      'délivrés des tristesses du temps présent puis de goûter les joies éternelles. Par J.-C. N. S. Ainsi soit-il.',
+      'Oremus. Concede nos famulos tuos, quaesumus, Domine Deus, perpetua mentis et corporis sanitate gaudere : et '
+      'gloriosa beatae Mariae semper Virginis intercessione, a praesenti liberari tristitia et aeterna perfrui laetitia. '
+      'Per Christum Dominum nostrum. Amen.')],
+]
+
+
+def litanie(blocs, i):
+    """Corps (i = 0) ou latin (i = 1) d'une litanie : un bloc par paragraphe, une invocation par ligne."""
+    return '\n\n'.join('\n'.join(p[i] for p in b) for b in blocs)
 
 
 def mots(t):
@@ -245,6 +385,26 @@ p = P['beringer:coeur-afflige-de-marie']
 remplacer('beringer:coeur-afflige-de-marie', p['corps'].replace(
     'conseil. — *Je vous salue, Marie*, etc.', 'conseil. — *Je vous salue, Marie*.'))
 
+# Litanies : nombre d'invocations de l'Enchiridion de 1952 (n° 114 : 5 + 4 + 38 + 2 + 21 + 5 ; n° 319 : 5 + 4 + 49 + 3)
+assert [len(b) for b in NOM] == [5, 4, 38, 2, 21, 5]
+assert [len(b) for b in LORETTE] == [5, 4, 49, 3, 1, 1]
+remplacer('paroissien:litanies-saint-nom', litanie(NOM, 0) + '\n\n' + '\n\n'.join(f for f, _ in NOM_ORAISONS),
+          latin=litanie(NOM, 1) + '\n\n' + '\n\n'.join(l for _, l in NOM_ORAISONS), source={
+              'ouvrage': f'{B_OUVRAGE}, n° 305', 'edition': B_EDITION,
+              'page': '155-157 (litanies p. 154-157) ; latin : Enchiridion indulgentiarum, 1952, n° 114 ; texte français '
+                      'antérieur : Paroissien romain, Tours, Mame, 1890, p. 13-16', 'url': B_URL})
+remplacer('paroissien:litanies-sainte-vierge', litanie(LORETTE, 0), latin=litanie(LORETTE, 1), source={
+    'ouvrage': f'{B_OUVRAGE}, n° 439', 'edition': B_EDITION,
+    'page': '231-232 (avec « Mère du bon conseil », S. R. C., 22 avril 1903, et « Reine de la paix », Benoît XV, 5 mai '
+            '1917, déjà dans Beringer) ; « Regina in caelum assumpta » (S. R. C., 31 oct. 1950) en latin, faute de '
+            'traduction française approuvée ; verset : Beringer, n° 428, p. 222 ; oraison : Thésaurisons pour le ciel '
+            '(Montréal, 1941), n° 126, p. 49, traduction certifiée fidèle selon le can. 934 § 2 ; latin et ordre : '
+            'Enchiridion indulgentiarum, 1952, n° 319 ; texte français antérieur : Paroissien romain, Tours, Mame, '
+            '1890, p. 23-25', 'url': B_URL})
+P['paroissien:litanies-sainte-vierge']['usage'] = (
+    'Dans l’ordre de l’Enchiridion de 1952. « Regina in caelum assumpta » (1950) se dit en latin : aucune traduction '
+    'française approuvée n’a été trouvée.')
+
 for t in [ANGELUS, *DE_PROFUNDIS, *SECOURS]:
     assert any(contient(P[k]['corps'], t) for k in
                ['paroissien:angelus', 'paroissien:de-profundis', 'weber:trois-prieres-perpetuel-secours'])
@@ -264,6 +424,10 @@ TRADUCTIONS = {
     'beringer:coeur-afflige-de-marie': BERINGER,
     'jardin:les-sept-douleurs-de-marie': BERINGER,
     'weber:trois-prieres-perpetuel-secours': f'{BERINGER} ; {USUELS}',
+    'paroissien:litanies-saint-nom': BERINGER,
+    'paroissien:litanies-sainte-vierge': (f'{BERINGER}, pour les invocations et le verset ; Thésaurisons pour le ciel '
+                                          '(1941), traduction certifiée fidèle selon le can. 934 § 2 (n° 126), pour '
+                                          'l’oraison ; « Regina in caelum assumpta » se dit en latin'),
     'sambucy:chapelet-saint-dominique': USUELS,
     'hortus:chapelet-joyeux': USUELS,
     'hortus:chapelet-douloureux': USUELS,
