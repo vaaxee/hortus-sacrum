@@ -258,3 +258,52 @@ Restent hors des tableaux :
   - martyrologe ;
   - parties de Prières qui se recouvrent ;
   - doublons de la liste, en cours.
+
+## Vérification après la fusion des lots 2 et 4 (20 novembre, soir)
+
+Vérifié sur `main` (5270cbe, PR n° 38) : `npm run build`, `vite preview`, Playwright en 390 × 844 après « Entrer au jardin ».
+Mêmes 13 dates que plus haut. Chaque ligne de la liste a été ouverte (`/pratique/…`), puis les titres de pièces ont été
+comparés d'une page à l'autre.
+
+- **Doublons de la liste** : **réglé**. Aucune prière n'est ouverte deux fois dans la journée, sauf ce que le programme
+  répartit volontairement entre le matin et le soir :
+  - Pater, Ave, Credo et Confiteor sont dans les deux prières (Paroissien 1890) ;
+  - le scapulaire de Jahenny est dit le matin (Crux ave) et le soir (salutations) ;
+  - la prière pour les agonisants est dite le matin et le soir (arbitrage du 19 nov.).
+
+  Le mercredi n'a plus qu'une ligne « Dévotion du mercredi : saint Joseph et le cordon », et aucune ligne « Cordon… ».
+  Le seul autre titre commun est « Oraison », qui désigne des oraisons différentes (Angélus et dévotion du jour).
+- **Ligne « Lectures du jour »** : **en place** les 13 jours (« Lectures du jour (0/3) » : petit bréviaire du
+  Sacré-Cœur, Évangile, méditation). La méditation, la roue et l'office du saint ne sont plus des lignes à part.
+- **Scapulaire de Jahenny** : **sans ligne propre**. Il est inséré à la fin de la prière du matin et dans la prière du
+  soir.
+- **Longueur de l'écran** : de 2 116 à 2 409 px, soit 2,5 à 2,9 écrans, contre 5 332 px avant la fusion.
+
+Les relevés sont dans `/tmp/claude-0/hs-a82/fusion2-all.txt`.
+
+## Martyrologe chanté : contrôle de l'année (21 novembre)
+
+Contrôle écrit dans le moteur des invocations : `app/src/lib/martyrologe-controle.ts`, testé sur toute l'année
+liturgique 2026-2027 (`martyrologe-controle.test.ts`, 3 232 éloges). Il compare l'invocation française et l'invocation
+latine de chaque éloge : même nombre de saints, vocatifs, découpage des noms.
+
+- **Corrigé (sûr)** :
+  - 18 nov. : « Saints Pierre et Paul » / « Sancti Petre et Paule » ;
+  - 20 nov. : « Sancti Octávi, Solutor et Adventor » (« Thebánæ legiónis » n'est plus un nom) ;
+  - vocatifs en -el (« Daniel », « Misael », « Gabriel »), en -tas (« Felicitas »), en -genes (« Hermógenes »), en
+    -cles et en -crates ;
+  - titres pris pour des noms (« Protomártyris », « Præcursóris Dómini », « Procónsulis », « Ducis », « Cómitis ») ;
+    « Senatóris » et « Sacerdótis » restent des noms quand ils viennent en tête ;
+  - lieux (« Assisiénsis », « Nilópolis »), nombres (« Trium »), persécuteurs à l'ablatif (« Diocletiáno
+    Imperatóre », « Décio imperánte ») ; « Dei Genitrix » ; « Sanctæ » pour un groupe de saintes ;
+  - en français, épithètes prises pour des saints (« Stylite », « Précurseur », « Archidiacre », « Portier »,
+    « Portugais »).
+- **Reste** (liste complète : `docs/audits/martyrologe-invocations-reste.tsv`, régénérée depuis `app/` par
+  `node --experimental-strip-types scripts/controle-martyrologe.mjs`) :
+  - 180 vocatifs incertains, surtout des noms de la 3e déclinaison dont le nominatif ne se déduit pas du génitif
+    (« Olympíadis », « Apollináris », « Basílidis ») ;
+  - 82 écarts de nombre, presque tous des listes françaises abrégées en « et vos compagnons » ;
+  - 42 éloges dont l'invocation n'existe que dans une langue ;
+  - 1 faux positif (« Castrénsis » est un nom de saint).
+
+  Le test plafonne ces nombres : une régression le fait échouer.

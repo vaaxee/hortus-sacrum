@@ -116,7 +116,11 @@ export interface Etat {
 	faites: number;
 	/** Occurrences passées de la série qui n'ont pas été cochées. */
 	manquees: Occurrence[];
-	phase: 'en_cours' | 'a_venir' | 'terminee' | 'permanente';
+	/**
+	 * « non_commencee » : la série a commencé à une date passée (souvent importée du plan de l'année), mais aucun de ses
+	 * jours n'a été coché. Elle n'est pas « en cours » pour l'utilisateur : on lui propose de la commencer aujourd'hui.
+	 */
+	phase: 'en_cours' | 'non_commencee' | 'a_venir' | 'terminee' | 'permanente';
 }
 
 /**
@@ -146,7 +150,10 @@ export function etat(p: Pratique, aujourdhui: string, faits: Set<string>): Etat 
 	// une série commencée avant l'installation, ou jamais suivie, n'est pas « interrompue »
 	const premierFait = enCours?.find((o) => faits.has(o.date))?.date;
 	const manquees = enCours && premierFait ? enCours.filter((o) => o.date > premierFait && o.date < aujourdhui && !faits.has(o.date)) : [];
-	return { serie, prochaine, faites, manquees, phase: enCours ? 'en_cours' : aVenir ? 'a_venir' : 'terminee' };
+	// ouverte depuis un jour passé, sans aucune coche : pas « en cours » (le premier jour lui-même compte encore)
+	const jamaisCommencee = enCours && faites === 0 && enCours[0].date < aujourdhui;
+	const phase = enCours ? (jamaisCommencee ? 'non_commencee' : 'en_cours') : aVenir ? 'a_venir' : 'terminee';
+	return { serie, prochaine, faites, manquees, phase };
 }
 
 const JOURS = ['dimanche', 'lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi'];

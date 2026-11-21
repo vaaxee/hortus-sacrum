@@ -27,6 +27,8 @@
 	// En cours ; ce mois-ci (prochain jour avant la fin du mois) ; plus tard, groupé par mois (REFONTE § 4.6)
 	const finDuMois = aujourdhui.slice(0, 8) + '31';
 	const enCours = $derived(lignes.filter((l) => l.e.phase === 'en_cours'));
+	// ouvertes à une date passée sans aucune coche : pas « en cours » (audit du 20 nov.)
+	const nonCommencees = $derived(lignes.filter((l) => l.e.phase === 'non_commencee'));
 	const aVenir = $derived(lignes.filter((l) => (l.e.phase === 'a_venir' || l.e.phase === 'permanente') && l.e.prochaine));
 	const ceMois = $derived(aVenir.filter((l) => l.e.prochaine!.date <= finDuMois));
 	const plusTard = $derived.by(() => {
@@ -118,6 +120,21 @@
 			{/each}
 		</ul>
 	</section>
+
+	{#if nonCommencees.length}
+		<section>
+			<div class="tete-section">
+				<Ornement nom="grecque" />
+				<h2>Ouvertes, pas commencées</h2>
+			</div>
+			<p class="petit">Ces séries ont commencé sans vous : rien n’est coché. Vous pouvez les commencer aujourd’hui.</p>
+			<ul class="reglee">
+				{#each nonCommencees as { p, e } (p.id)}
+					{@render ligne(p, e)}
+				{/each}
+			</ul>
+		</section>
+	{/if}
 
 	<section>
 		<div class="tete-section">

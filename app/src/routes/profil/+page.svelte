@@ -6,8 +6,11 @@
 	import Ornement from '#lib/design/Ornement.svelte';
 	import { vivant } from '#lib/live.ts';
 	import type { FetePerso } from '#lib/types.ts';
+	import Reglages from '#lib/Reglages.svelte';
 
 	/**
+	 * Le Profil, une seule page (REFONTE § 4.1) : profil spirituel en tête, puis les entrées (Historique, Couronnes,
+	 * Fêtes personnelles, Imprimer), puis les réglages techniques. L'ancienne adresse /reglages mène à « #reglages ».
 	 * Profil spirituel : sacrements reçus, consécrations, saint patron et saints aimés.
 	 * Chaque ligne est une fête personnelle (même table que /fetes) : anniversaire rappelé, saint rappelé la veille.
 	 */
@@ -113,54 +116,16 @@
 	];
 </script>
 
-<svelte:head><title>Profil spirituel — Hortus Sacrum</title></svelte:head>
+<svelte:head><title>Profil — Hortus Sacrum</title></svelte:head>
 
 <main class="page entree">
 	<div class="tete-page">
-		<h1>Profil spirituel</h1>
+		<h1>Profil</h1>
 		<Ornement nom="fleuron" />
 		<p class="petit">
 			Les grâces reçues et les protecteurs choisis ; leurs anniversaires et leurs fêtes reviennent dans la journée et dans les rappels.
 		</p>
 	</div>
-
-	<section class="tresor">
-		<h2>Couronnes</h2>
-		<p class="aide">
-			Les quêtes achevées sans manquer de jour : séries à jours comptés, mois entiers, constance, lectures. Un jour manqué fait recommencer
-			la série.
-		</p>
-		{#if tresor.length}
-			{#each GENRES as [g, nom] (g)}
-				{@const cs = tresor.filter((c) => c.genre === g)}
-				{#if cs.length}
-					<h3 class="pc">{nom}</h3>
-					<ul>
-						{#each cs as c (c.id)}
-							<li class="couronne">
-								<button
-									class="brut ligne-couronne"
-									onclick={() => (ouverte = ouverte === c.id ? '' : c.id)}
-									aria-expanded={ouverte === c.id}
-								>
-									<span class="nom"
-										>✠ {c.titre}{#if c.fois > 1}
-											<span class="fois">({c.fois}e fois)</span>{/if}</span
-									>
-									<span class="quand"
-										>{new Date(c.date + 'T12:00:00').toLocaleDateString('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' })}</span
-									>
-								</button>
-								{#if ouverte === c.id}<CarteCouronne {c} />{/if}
-							</li>
-						{/each}
-					</ul>
-				{/if}
-			{/each}
-		{:else}
-			<p class="vide">Aucune couronne encore. La première viendra avec la première série menée jusqu’au bout.</p>
-		{/if}
-	</section>
 
 	<section>
 		<h2>Sacrements reçus</h2>
@@ -213,9 +178,85 @@
 	{/each}
 
 	<p class="petit fin">Toutes ces dates se retrouvent, modifiables, dans <a href="/fetes">les fêtes personnelles</a>.</p>
+
+	<nav class="portes" aria-label="Profil">
+		<a href="/historique"><span class="pc">Historique</span><em>régularité et constance</em></a>
+		<a href="#couronnes"><span class="pc">Couronnes</span><em>les quêtes achevées</em></a>
+		<a href="/fetes"><span class="pc">Fêtes personnelles</span><em>anniversaires et saints aimés</em></a>
+		<a href="/imprimer"><span class="pc">Imprimer</span><em>livret, fiche du jour, calendrier</em></a>
+		<a href="#reglages"><span class="pc">Réglages</span><em>compte, rappels, apparence, sauvegarde, corbeille</em></a>
+	</nav>
+
+	<section class="tresor" id="couronnes">
+		<h2>Couronnes</h2>
+		<p class="aide">
+			Les quêtes achevées sans manquer de jour : séries à jours comptés, mois entiers, constance, lectures. Un jour manqué fait recommencer
+			la série.
+		</p>
+		{#if tresor.length}
+			{#each GENRES as [g, nom] (g)}
+				{@const cs = tresor.filter((c) => c.genre === g)}
+				{#if cs.length}
+					<h3 class="pc">{nom}</h3>
+					<ul>
+						{#each cs as c (c.id)}
+							<li class="couronne">
+								<button
+									class="brut ligne-couronne"
+									onclick={() => (ouverte = ouverte === c.id ? '' : c.id)}
+									aria-expanded={ouverte === c.id}
+								>
+									<span class="nom"
+										>✠ {c.titre}{#if c.fois > 1}
+											<span class="fois">({c.fois}e fois)</span>{/if}</span
+									>
+									<span class="quand"
+										>{new Date(c.date + 'T12:00:00').toLocaleDateString('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' })}</span
+									>
+								</button>
+								{#if ouverte === c.id}<CarteCouronne {c} />{/if}
+							</li>
+						{/each}
+					</ul>
+				{/if}
+			{/each}
+		{:else}
+			<p class="vide">Aucune couronne encore. La première viendra avec la première série menée jusqu’au bout.</p>
+		{/if}
+	</section>
+
+	<hr class="filet" />
+
+	<section id="reglages">
+		<h2>Réglages</h2>
+		<Reglages />
+	</section>
 </main>
 
 <style>
+	.portes {
+		display: grid;
+		gap: 0;
+		margin-top: var(--hs-e4);
+		border-top: var(--hs-cheveu) solid var(--hs-filet);
+	}
+	.portes a {
+		display: grid;
+		padding: 12px 0;
+		border-bottom: var(--hs-cheveu) solid var(--hs-filet);
+		text-decoration: none;
+		color: var(--hs-encre);
+	}
+	.portes em {
+		font-size: 1rem;
+		color: var(--hs-encre-douce);
+	}
+	@media (min-width: 640px) {
+		.portes {
+			grid-template-columns: 1fr 1fr;
+			column-gap: var(--hs-e5);
+		}
+	}
 	section {
 		margin-top: var(--hs-e6);
 	}

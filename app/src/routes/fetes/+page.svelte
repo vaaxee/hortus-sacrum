@@ -70,7 +70,7 @@
 <svelte:head><title>Fêtes et anniversaires — Hortus Sacrum</title></svelte:head>
 
 <main class="page entree">
-	<a class="retour" href="/reglages"><Icone nom="retour" taille={16} /> Profil</a>
+	<a class="retour" href="/profil"><Icone nom="retour" taille={16} /> Profil</a>
 	<div class="tete-page">
 		<h1>Fêtes et anniversaires</h1>
 		<Ornement nom="fleuron" />
