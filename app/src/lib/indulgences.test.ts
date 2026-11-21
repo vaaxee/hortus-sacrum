@@ -51,14 +51,21 @@ describe('indulgences : Enchiridion de 1952 seulement', () => {
 				'jardin:chaque-vendredi-devant-le-crucifix',
 				'beringer:coeur-afflige-de-marie',
 				'jardin:les-sept-douleurs-de-marie',
-				'weber:trois-prieres-perpetuel-secours'
+				'weber:trois-prieres-perpetuel-secours',
+				'paroissien:litanies-saint-nom',
+				'paroissien:litanies-sainte-vierge'
 			].sort()
 		);
 		for (const [id, f] of beringer) {
 			expect(f.traduction, id).toMatch(/11 juillet 1925/);
 			expect(latinEnPremier(f), id).toBe(false);
 		}
-		for (const id of ['sambucy:chapelet-saint-dominique', 'hortus:chapelet-joyeux', 'hortus:chapelet-douloureux', 'hortus:chapelet-glorieux']) {
+		for (const id of [
+			'sambucy:chapelet-saint-dominique',
+			'hortus:chapelet-joyeux',
+			'hortus:chapelet-douloureux',
+			'hortus:chapelet-glorieux'
+		]) {
 			expect(donnees.fiches[id]?.traduction, id).toMatch(/L’Ami du clergé, 9 avril 1931/);
 			expect(latinEnPremier(donnees.fiches[id]), id).toBe(false);
 		}
@@ -68,8 +75,6 @@ describe('indulgences : Enchiridion de 1952 seulement', () => {
 			'jardin:veni-creator-spiritus',
 			'jardin:ave-maris-stella',
 			'weber:stabat-mater',
-			'paroissien:litanies-sainte-vierge',
-			'paroissien:litanies-saint-nom',
 			'jardin:les-sept-douleurs-et-les-sept-allegresses-de-saint-joseph'
 		])
 			expect(latinEnPremier(donnees.fiches[id]), id).toBe(true);
@@ -82,7 +87,27 @@ describe('indulgences : Enchiridion de 1952 seulement', () => {
 		expect(p('paroissien:angelus')?.corps).toContain('par la voix de l’Ange');
 		expect(p('paroissien:de-profundis')?.corps).toContain('Des profondeurs de l’abîme');
 		expect(p('weber:trois-prieres-perpetuel-secours')?.corps).toContain('Voici à vos pieds, ô Mère du Perpétuel Secours');
-		for (const id of ['paroissien:angelus', 'paroissien:de-profundis', 'weber:trois-prieres-perpetuel-secours'])
+		const lorette = p('paroissien:litanies-sainte-vierge')?.corps ?? '';
+		const ordre = [
+			'Mère admirable',
+			'Mère du bon conseil',
+			'Mère du Créateur',
+			'péché originel',
+			'Regina in caelum assumpta',
+			'très saint Rosaire',
+			'Reine de la paix'
+		];
+		expect(ordre.map((x) => lorette.indexOf(x))).toEqual(ordre.map((x) => lorette.indexOf(x)).sort((a, b) => a - b));
+		expect(ordre.every((x) => lorette.includes(x))).toBe(true);
+		expect(p('paroissien:litanies-saint-nom')?.corps).toContain('Par votre institution de la très sainte Eucharistie');
+		expect(p('weber:trois-prieres-perpetuel-secours')?.corps.match(/Trois \*Ave Maria\*/g)).toHaveLength(3);
+		for (const id of [
+			'paroissien:angelus',
+			'paroissien:de-profundis',
+			'weber:trois-prieres-perpetuel-secours',
+			'paroissien:litanies-saint-nom',
+			'paroissien:litanies-sainte-vierge'
+		])
 			expect(p(id)?.revision ?? 0, id).toBeGreaterThan(0);
 	});
 	it('rappelle la règle des traductions (can. 934 § 2)', () => {
