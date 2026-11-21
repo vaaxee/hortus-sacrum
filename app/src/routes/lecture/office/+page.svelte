@@ -5,6 +5,8 @@
 	import Icone from '#lib/design/Icone.svelte';
 	import Ornement from '#lib/design/Ornement.svelte';
 	import Office from '#lib/Office.svelte';
+	import { chargerParvum, parvumDuJour, type DonneesParvum } from '#lib/office/parvum.ts';
+	import { heuresDe } from '#lib/programme/heures.ts';
 	import { heuresDeLaLecture } from '#lib/programme/lectures.ts';
 	import { journeeVivante } from '#lib/programme/vivant.svelte.ts';
 	import type { Coche } from '#lib/types.ts';
@@ -12,7 +14,8 @@
 
 	/**
 	 * Lecture › Office (REFONTE § 4.4) : le bréviaire du jour, une heure à la fois. Le Petit bréviaire du Sacré-Cœur est
-	 * l'office compté dans « Lectures du jour » ; le Bréviaire romain et l'Officium parvum viendront dans le même cadre.
+	 * l'office compté dans « Lectures du jour ». L'Officium parvum (latin, d'après Divinum Officium) s'affiche dans le
+	 * même composant, ses heures cochées à part (« lec:parvum:<heure> ») ; le Bréviaire romain viendra dans le même cadre.
 	 */
 	const date = $derived(page.url.searchParams.get('date') ?? iso(new Date()));
 	const q = $derived(page.url.searchParams.get('date') ? `?date=${date}` : '');
@@ -37,7 +40,15 @@
 		{ cle: 'romain', nom: 'Bréviaire romain' },
 		{ cle: 'parvum', nom: 'Officium parvum' }
 	] as const;
-	let breviaire = $state<(typeof BREVIAIRES)[number]['cle']>('sacre-coeur');
+	type Cle = (typeof BREVIAIRES)[number]['cle'];
+	const demande = page.url.searchParams.get('breviaire');
+	let breviaire = $state<Cle>(BREVIAIRES.find((b) => b.cle === demande)?.cle ?? 'sacre-coeur');
+	let parvum = $state<DonneesParvum | null | undefined>();
+	$effect(() => {
+		if (breviaire === 'parvum' && parvum === undefined) chargerParvum().then((d) => (parvum = d));
+	});
+	const jourParvum = $derived(parvum ? parvumDuJour(parvum, date) : undefined);
+	const heuresParvum = $derived(jourParvum ? heuresDe(jourParvum.corps) : []);
 	const jourFr = $derived(new Date(date + 'T12:00:00').toLocaleDateString('fr-FR', { weekday: 'long', day: 'numeric', month: 'long' }));
 </script>
 
@@ -73,8 +84,17 @@
 				href="/saint{q}">les leçons du jour et la vie du saint</a
 			>.
 		</p>
+	{:else if jourParvum && heuresParvum.length}
+		<p class="petit">{jourParvum.nomDuTemps.replace(/\s*\(.*\)$/, '')} · latin</p>
+		<Office corps={jourParvum.corps} heures={heuresParvum} ligne="lec:parvum" {date} {coches} />
+		<p class="source">
+			Texte de <a href={parvum?.source.depot}>Divinum Officium</a>, rubriques de 1954 ({jourParvum.nomDuTemps.match(/\((.*)\)$/)?.[1] ??
+				'Commune/C12'})
+		</p>
+	{:else if parvum === null || parvum}
+		<p class="aide">L’Officium parvum n’est pas calculé pour ce jour.</p>
 	{:else}
-		<p>L’Officium parvum de la sainte Vierge est en préparation ; il s’affichera ici, une heure à la fois.</p>
+		<p class="aide">Préparation de l’office…</p>
 	{/if}
 </main>
 
