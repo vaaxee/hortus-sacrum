@@ -202,7 +202,7 @@
     }
    ],
    "langue": "latin",
-   "note": "Le livret suit de près la traduction de Thésaurisons (n° 498), sans la reproduire mot pour mot (« dans ce moment », « sang »)."
+   "traduction": "Thésaurisons pour le ciel (1941), traduction certifiée fidèle selon le can. 934 § 2 (n° 498)"
   },
   "jardin:la-triple-couronne-d-or-du-sacre-c-ur-de-jesus": {
    "ref": "Ench. 1952, n° 287 (Veni, Sancte Spiritus), 223 (Aimé soit partout), 227 (Iesu, mitis), 224 (Dolce Cuor del mio Gesù), 386 (Dolce Cuore di Maria) et 70 (Gesù mio, misericordia)",
@@ -238,9 +238,9 @@
      "texte": "5 × 300 jours (Mon Jésus, miséricorde !, cinq fois)"
     }
    ],
-   "note": "Dulce Cor Jesu et Dulce Cor Mariæ sont concédés en italien (n° 224 et 386) : leur forme latine n’est pas une traduction approuvée. Dire l’italien ou le français de Thésaurisons : « Doux Cœur de mon Jésus, faites que je vous aime de plus en plus » (n° 82 ; le livret porte « faites que je vous aime toujours de plus en plus ») et « Doux Cœur de Marie, soyez mon salut » (n° 134). « Aimé soit partout le Sacré-Cœur de Jésus » est concédé en français (n° 223). Le ℟. latin du livret « fac cor meum sicut Cor tuum » s’écarte du texte de l’Enchiridion (« fac cor nostrum secundum Cor tuum ») ; sa traduction française entre crochets est celle de Thésaurisons.",
+   "note": "Dulce Cor Jesu et Dulce Cor Mariæ sont concédés en italien (n° 224 et 386) : leur forme latine n’est pas une traduction approuvée ; le français de la page est celui de Thésaurisons (n° 82 et 134). « Aimé soit partout le Sacré-Cœur de Jésus » est concédé en français (n° 223). Le ℟. latin du livret « fac cor meum sicut Cor tuum » s’écarte du texte de l’Enchiridion (« fac cor nostrum secundum Cor tuum ») ; sa traduction française entre crochets est celle de Thésaurisons.",
    "langue": "latin",
-   "traduction": "Thésaurisons pour le ciel (1941), traduction certifiée fidèle selon le can. 934 § 2, pour « Jésus, doux et humble de cœur, rendez mon cœur semblable au vôtre » (n° 85), « Doux Cœur de Marie, soyez mon salut » (n° 134) et « Mon Jésus, miséricorde » (n° 33)"
+   "traduction": "Thésaurisons pour le ciel (1941), traduction certifiée fidèle selon le can. 934 § 2, pour « Jésus, doux et humble de cœur, rendez mon cœur semblable au vôtre » (n° 85), « Doux Cœur de mon Jésus, faites que je vous aime de plus en plus » (n° 82), « Doux Cœur de Marie, soyez mon salut » (n° 134) et « Mon Jésus, miséricorde » (n° 33)"
   },
   "jardin:acte-d-intention-de-communion-spirituelle-perpetuelle": {
    "ref": "Ench. 1952, n° 164 (acte de communion spirituelle, quelle qu’en soit la formule)",
@@ -320,7 +320,9 @@
      "texte": "5 ans"
     }
    ],
-   "langue": "italien"
+   "langue": "italien",
+   "traduction": "Thésaurisons pour le ciel (1941), traduction certifiée fidèle selon le can. 934 § 2 (n° 150)",
+   "note": "Texte français de Thésaurisons (n° 150), qui suit Beringer et en garde les gloses (« ami intime », « qu’il reçut alors », « celui qui était votre vie ») : traduction certifiée par l’Ordinaire, retenue telle quelle."
   },
   "jardin:veni-creator-spiritus": {
    "ref": "Ench. 1952, n° 283",
@@ -1308,9 +1310,9 @@
      "texte": "5 × 300 jours (Mon Jésus, miséricorde !, cinq fois)"
     }
    ],
-   "note": "Dulce Cor Jesu et Dulce Cor Mariæ sont concédés en italien (n° 224 et 386) : leur forme latine n’est pas une traduction approuvée. Dire l’italien ou le français de Thésaurisons : « Doux Cœur de mon Jésus, faites que je vous aime de plus en plus » (n° 82 ; le livret porte « faites que je vous aime toujours de plus en plus ») et « Doux Cœur de Marie, soyez mon salut » (n° 134). « Aimé soit partout le Sacré-Cœur de Jésus » est concédé en français (n° 223). Le ℟. latin du livret « fac cor meum sicut Cor tuum » s’écarte du texte de l’Enchiridion (« fac cor nostrum secundum Cor tuum ») ; sa traduction française entre crochets est celle de Thésaurisons.",
+   "note": "Dulce Cor Jesu et Dulce Cor Mariæ sont concédés en italien (n° 224 et 386) : leur forme latine n’est pas une traduction approuvée ; le français de la page est celui de Thésaurisons (n° 82 et 134). « Aimé soit partout le Sacré-Cœur de Jésus » est concédé en français (n° 223). Le ℟. latin du livret « fac cor meum sicut Cor tuum » s’écarte du texte de l’Enchiridion (« fac cor nostrum secundum Cor tuum ») ; sa traduction française entre crochets est celle de Thésaurisons.",
    "langue": "latin",
-   "traduction": "Thésaurisons pour le ciel (1941), traduction certifiée fidèle selon le can. 934 § 2, pour « Jésus, doux et humble de cœur, rendez mon cœur semblable au vôtre » (n° 85), « Doux Cœur de Marie, soyez mon salut » (n° 134) et « Mon Jésus, miséricorde » (n° 33)"
+   "traduction": "Thésaurisons pour le ciel (1941), traduction certifiée fidèle selon le can. 934 § 2, pour « Jésus, doux et humble de cœur, rendez mon cœur semblable au vôtre » (n° 85), « Doux Cœur de mon Jésus, faites que je vous aime de plus en plus » (n° 82), « Doux Cœur de Marie, soyez mon salut » (n° 134) et « Mon Jésus, miséricorde » (n° 33)"
   },
   "hortus:triple-couronne-2": {
    "ref": "Ench. 1952, n° 287 (Veni, Sancte Spiritus), 223 (Aimé soit partout), 227 (Iesu, mitis), 224 (Dolce Cuor del mio Gesù), 386 (Dolce Cuore di Maria) et 70 (Gesù mio, misericordia)",
@@ -1346,9 +1348,9 @@
      "texte": "5 × 300 jours (Mon Jésus, miséricorde !, cinq fois)"
     }
    ],
-   "note": "Dulce Cor Jesu et Dulce Cor Mariæ sont concédés en italien (n° 224 et 386) : leur forme latine n’est pas une traduction approuvée. Dire l’italien ou le français de Thésaurisons : « Doux Cœur de mon Jésus, faites que je vous aime de plus en plus » (n° 82 ; le livret porte « faites que je vous aime toujours de plus en plus ») et « Doux Cœur de Marie, soyez mon salut » (n° 134). « Aimé soit partout le Sacré-Cœur de Jésus » est concédé en français (n° 223). Le ℟. latin du livret « fac cor meum sicut Cor tuum » s’écarte du texte de l’Enchiridion (« fac cor nostrum secundum Cor tuum ») ; sa traduction française entre crochets est celle de Thésaurisons.",
+   "note": "Dulce Cor Jesu et Dulce Cor Mariæ sont concédés en italien (n° 224 et 386) : leur forme latine n’est pas une traduction approuvée ; le français de la page est celui de Thésaurisons (n° 82 et 134). « Aimé soit partout le Sacré-Cœur de Jésus » est concédé en français (n° 223). Le ℟. latin du livret « fac cor meum sicut Cor tuum » s’écarte du texte de l’Enchiridion (« fac cor nostrum secundum Cor tuum ») ; sa traduction française entre crochets est celle de Thésaurisons.",
    "langue": "latin",
-   "traduction": "Thésaurisons pour le ciel (1941), traduction certifiée fidèle selon le can. 934 § 2, pour « Jésus, doux et humble de cœur, rendez mon cœur semblable au vôtre » (n° 85), « Doux Cœur de Marie, soyez mon salut » (n° 134) et « Mon Jésus, miséricorde » (n° 33)"
+   "traduction": "Thésaurisons pour le ciel (1941), traduction certifiée fidèle selon le can. 934 § 2, pour « Jésus, doux et humble de cœur, rendez mon cœur semblable au vôtre » (n° 85), « Doux Cœur de mon Jésus, faites que je vous aime de plus en plus » (n° 82), « Doux Cœur de Marie, soyez mon salut » (n° 134) et « Mon Jésus, miséricorde » (n° 33)"
   },
   "hortus:triple-couronne-3": {
    "ref": "Ench. 1952, n° 287 (Veni, Sancte Spiritus), 223 (Aimé soit partout), 227 (Iesu, mitis), 224 (Dolce Cuor del mio Gesù), 386 (Dolce Cuore di Maria) et 70 (Gesù mio, misericordia)",
@@ -1384,9 +1386,9 @@
      "texte": "5 × 300 jours (Mon Jésus, miséricorde !, cinq fois)"
     }
    ],
-   "note": "Dulce Cor Jesu et Dulce Cor Mariæ sont concédés en italien (n° 224 et 386) : leur forme latine n’est pas une traduction approuvée. Dire l’italien ou le français de Thésaurisons : « Doux Cœur de mon Jésus, faites que je vous aime de plus en plus » (n° 82 ; le livret porte « faites que je vous aime toujours de plus en plus ») et « Doux Cœur de Marie, soyez mon salut » (n° 134). « Aimé soit partout le Sacré-Cœur de Jésus » est concédé en français (n° 223). Le ℟. latin du livret « fac cor meum sicut Cor tuum » s’écarte du texte de l’Enchiridion (« fac cor nostrum secundum Cor tuum ») ; sa traduction française entre crochets est celle de Thésaurisons.",
+   "note": "Dulce Cor Jesu et Dulce Cor Mariæ sont concédés en italien (n° 224 et 386) : leur forme latine n’est pas une traduction approuvée ; le français de la page est celui de Thésaurisons (n° 82 et 134). « Aimé soit partout le Sacré-Cœur de Jésus » est concédé en français (n° 223). Le ℟. latin du livret « fac cor meum sicut Cor tuum » s’écarte du texte de l’Enchiridion (« fac cor nostrum secundum Cor tuum ») ; sa traduction française entre crochets est celle de Thésaurisons.",
    "langue": "latin",
-   "traduction": "Thésaurisons pour le ciel (1941), traduction certifiée fidèle selon le can. 934 § 2, pour « Jésus, doux et humble de cœur, rendez mon cœur semblable au vôtre » (n° 85), « Doux Cœur de Marie, soyez mon salut » (n° 134) et « Mon Jésus, miséricorde » (n° 33)"
+   "traduction": "Thésaurisons pour le ciel (1941), traduction certifiée fidèle selon le can. 934 § 2, pour « Jésus, doux et humble de cœur, rendez mon cœur semblable au vôtre » (n° 85), « Doux Cœur de mon Jésus, faites que je vous aime de plus en plus » (n° 82), « Doux Cœur de Marie, soyez mon salut » (n° 134) et « Mon Jésus, miséricorde » (n° 33)"
   },
   "hortus:chapelet-joyeux": {
    "ref": "Ench. 1952, n° 395",

@@ -34,6 +34,8 @@ export interface Piece {
 	indulgence: string | null;
 	source: string | null;
 	blocs: Bloc[];
+	/** Correction du texte livré (ex. traduction approuvée reportée) : remplace le texte en base s'il est intact. */
+	revision?: number;
 }
 
 export function blocsVersCorps(blocs: Bloc[]): { corps: string; latin: string } {
@@ -82,6 +84,16 @@ export function blocsVersCorps(blocs: Bloc[]): { corps: string; latin: string } 
 		}
 	}
 	return { corps: fr.filter(Boolean).join('\n\n'), latin: la.filter(Boolean).join('\n\n') };
+}
+
+/** Corrections du livret à appliquer aux textes déjà livrés (seed.ts, reviser) : seulement les champs du texte. */
+export function revisionsDuLivret(pieces: Piece[]): (Pick<Texte, 'id' | 'corps' | 'latin' | 'source'> & { revision: number })[] {
+	return pieces
+		.filter((p) => p.revision)
+		.map((p) => {
+			const { id, corps, latin, source } = pieceVersTexte(p);
+			return { id, corps, latin, source, revision: p.revision as number };
+		});
 }
 
 export function pieceVersTexte(p: Piece): Texte {
