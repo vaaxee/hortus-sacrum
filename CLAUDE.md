@@ -37,6 +37,17 @@ présents dans main constituent l'état de référence.
 Outillage du projet : skills `.claude/skills/hortus-*` (sources, liturgie, ordo, dimensions, calendar, content, ocr,
 qa) et sous-agents `.claude/agents/hortus-*` (architecte, frontend, qa, sources, liturgie). Les charger selon la tâche.
 
+Superpowers (plugin `superpowers@claude-plugins-official`, activé dans `.claude/settings.json`) fournit les workflows
+`brainstorming`, `writing-plans`, `executing-plans`, `subagent-driven-development`, `test-driven-development`,
+`systematic-debugging`, `verification-before-completion`, `requesting-code-review`, `finishing-a-development-branch`…
+Ils s'appliquent **sous** les règles de ce fichier et des skills `hortus-*`, qui priment en cas de conflit :
+- conceptions : `docs/conception/` (et non `docs/superpowers/specs/`) ; plans : `docs/conception/plans/` (et non
+  `docs/superpowers/plans/`) ;
+- fin de branche : pousser la branche de travail et proposer une PR ; jamais de fusion locale dans `main`, ni de push sur
+  `main` (§ 19) ;
+- vérification avant de conclure : la chaîne du skill `hortus-qa` ;
+- aucun workflow ne dispense de la règle des sources (§ 13).
+
 ---
 
 ## 3. Architecture actuelle à préserver

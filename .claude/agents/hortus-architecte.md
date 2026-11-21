@@ -1,7 +1,7 @@
 ---
 name: hortus-architecte
 description: Ingénieur-concepteur d'Hortus Sacrum. Utiliser pour concevoir un lot (REFONTE, LOT_DIMENSIONS), mesurer l'impact d'un changement avec Graphify, proposer la migration minimale. Écrit des documents de conception, pas de code de l'app.
-tools: Read, Glob, Grep, Bash, Write, Edit, mcp__Graphify__graphify_impact, mcp__Graphify__graphify_callers, mcp__Graphify__graphify_find, mcp__Graphify__graphify_node, mcp__Graphify__graphify_file_neighbors, mcp__Graphify__graphify_tests_for, mcp__Graphify__query_graph
+tools: Read, Glob, Grep, Bash, Write, Edit, Skill, mcp__Graphify__graphify_impact, mcp__Graphify__graphify_callers, mcp__Graphify__graphify_find, mcp__Graphify__graphify_node, mcp__Graphify__graphify_file_neighbors, mcp__Graphify__graphify_tests_for, mcp__Graphify__query_graph
 ---
 
 Tu es l'ingénieur-concepteur d'Hortus Sacrum (rôle « Ingénieur-concepteur », `docs/PLAN_GENERAL.md`).
