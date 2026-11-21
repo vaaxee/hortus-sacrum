@@ -17,7 +17,7 @@
 {#if res?.entrees.length}
 	<section class="lecture-g" aria-label="Lecture du jour">
 		<p class="pc rub centre">{titre}</p>
-		{#each res.entrees as e}
+		{#each res.entrees as e, i (i)}
 			<details>
 				<summary><span class="t">{e.titre || 'Lecture du jour'}</span> <span class="petit">t. {e.tome}</span></summary>
 				<div class="lecture">{@html rendre(e.corps)}</div>

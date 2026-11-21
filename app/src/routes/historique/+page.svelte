@@ -144,7 +144,7 @@
 		<section>
 			<h2>Grille de constance</h2>
 			<div class="grille" style="--n: {semaines}">
-				{#each NOMS_JOURS as j, k}<span class="nj" style="grid-row: {k + 1}">{j}</span>{/each}
+				{#each NOMS_JOURS as j, k (k)}<span class="nj" style="grid-row: {k + 1}">{j}</span>{/each}
 				{#each parJour as { d, taux }, i (d)}
 					<span
 						class="cel {niveau(taux)}"
@@ -173,7 +173,7 @@
 					<li>
 						<span class="nom">{r.titre}</span>
 						<span class="mini"
-							>{#each r.cases as c}<i class={c}></i>{/each}</span
+							>{#each r.cases as c, i (i)}<i class={c}></i>{/each}</span
 						>
 						<span class="taux chiffres-alignes" title="{r.faits} sur {r.prevus}">{pct(r.taux)}</span>
 					</li>

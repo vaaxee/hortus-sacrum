@@ -21,9 +21,11 @@ export default ts.config(
 			],
 			// app statique, sans chemin de base : les liens simples suffisent
 			'svelte/no-navigation-without-resolve': 'off',
-			// à reprendre peu à peu (rôle « Qualité ») : clés des boucles, Date/Map réactives
-			'svelte/require-each-key': 'warn',
-			'svelte/prefer-svelte-reactivity': 'warn',
+			// toute boucle a sa clé (une clé en double fait planter Svelte : clé d'identifiant seulement quand elle est unique)
+			'svelte/require-each-key': 'error',
+			// les Map, Set et Date signalés sont des valeurs locales, construites dans un $derived ou une fonction et rendues
+			// sans être modifiées ensuite : des versions réactives (SvelteMap…) n'y apporteraient rien
+			'svelte/prefer-svelte-reactivity': 'off',
 			// le balisage des prières est produit par markup.ts à partir de textes sourcés, jamais d'une saisie extérieure
 			'svelte/no-at-html-tags': 'off'
 		}

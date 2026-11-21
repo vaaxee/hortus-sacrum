@@ -24,15 +24,23 @@ Références : `docs/conception/REFONTE_2026-11-18.md` § 5 (format DO, import h
   `app/scripts/controle-martyrologe.mjs`, `martyrologe-controle.test.ts`.
 - Fin de l'office du saint : prière de sainte Gertrude selon la catégorie du saint (`gertrude.ts`, `selon: 'saint_du_jour'`).
 
+## Bréviaire romain (lot 9, fait)
+
+`engine/office/breviaire.py <année>` exécute le moteur Perl de DO (`vendor/do/web/cgi-bin/horas/officium.pl`) : ne pas
+réécrire de rubriques. Prérequis : `perl`, `apt-get install -y libcgi-pm-perl`, `git sparse-checkout add web/cgi-bin`
+dans `vendor/do`. Sortie `data/office/breviaire/<AAAA-AAAA>/` ; chargeur `app/src/lib/office/breviaire.ts`
+(`ANNEES_CALCULEES` à compléter pour une nouvelle année).
+
 ## Contrôles
 
 ```bash
 python3 engine/office/test_parvum.py        # « 93 textes vérifiés, témoins des temps conformes »
+python3 engine/office/test_breviaire.py     # 0 faute, 0 écart d'oraison (calendrier ↔ moteur DO)
 cd app && npx vitest run src/lib/programme/heures.test.ts
 ```
 
-Lot 9 (Bréviaire romain complet, risque élevé) : 20 jours témoins comparés mot à mot à la sortie du site DO, enregistrés
-dans `engine/office/temoins/` ; volume < 6 Mo par an. Ne pas commencer sans ces témoins.
+Le témoin du Bréviaire est croisé : l'oraison de l'office de notre calendrier doit se retrouver dans les Laudes de DO,
+chaque jour de l'année.
 
 ## Interdits
 

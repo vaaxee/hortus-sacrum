@@ -212,7 +212,7 @@
 						{#if latinIndulgencie}<p class="note-latin">Le latin porte l’indulgence ; le français est en regard.</p>{/if}
 					</div>
 				{/if}
-				{#each blocs as b}
+				{#each blocs as b, i (i)}
 					{#if b.genre === 'rubrique'}
 						<p class="rubrique rub">{@html rendre(b.fr.slice(3, -4)).replace(/^<p>|<\/p>$/g, '')}</p>
 					{:else if b.la}

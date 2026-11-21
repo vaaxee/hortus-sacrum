@@ -13,10 +13,11 @@ const sw = self as unknown as ServiceWorkerGlobalScope;
 const CACHE = `hortus-${version}`;
 // les données d'essai et les modèles d'OCR (téléchargés à la demande) ne sont pas préchargés
 // chemins relatifs à la racine du site (base vide)
-// les recueils de méditations et de lectures (~20 Mo) ne sont pas préchargés : chaque fichier est gardé dès sa première lecture
+// les recueils de méditations et de lectures (~20 Mo) et les jours du Bréviaire romain ne sont pas préchargés : chaque
+// fichier est gardé dès sa première lecture (la page Office précharge la semaine qui vient)
 const A_GARDER = [...immutable, ...assets]
 	.map((f) => '/' + String(f.path).replace(/^\//, ''))
-	.filter((f) => !f.includes('/essai/') && !f.startsWith('/data/recueils/'));
+	.filter((f) => !f.includes('/essai/') && !f.startsWith('/data/recueils/') && !f.startsWith('/data/office/breviaire/'));
 
 sw.addEventListener('install', (e) => {
 	e.waitUntil(

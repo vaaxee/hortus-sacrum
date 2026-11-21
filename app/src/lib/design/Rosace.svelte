@@ -58,7 +58,7 @@
 	<circle r="206" fill="url(#rosace-lumiere)" />
 	<circle r={R1 + 14} class="pierre" />
 	<circle r={R1 + 3} class="pierre fin" />
-	{#each perles as [x, y]}<circle cx={x} cy={y} r="1.3" class="perle" />{/each}
+	{#each perles as [x, y], i (i)}<circle cx={x} cy={y} r="1.3" class="perle" />{/each}
 
 	{#each anneaux as a, i (a.id)}
 		{@const [r0, r1] = bornes[i]}
@@ -72,7 +72,7 @@
 			onclick={() => (choisi = a.id)}
 			onkeydown={(e) => (e.key === 'Enter' || e.key === ' ') && (choisi = a.id)}
 		>
-			{#each Array(a.nombre) as _, k}
+			{#each Array(a.nombre) as _, k (k)}
 				{@const a0 = (k * Math.PI * 2) / a.nombre}
 				{@const a1 = ((k + 1) * Math.PI * 2) / a.nombre}
 				{@const m = (a0 + a1) / 2}

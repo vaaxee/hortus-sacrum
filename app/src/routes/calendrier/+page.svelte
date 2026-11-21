@@ -119,7 +119,7 @@
 			</div>
 			<table class="ordo">
 				<tbody>
-					{#each principaux as j}
+					{#each principaux as j, i (i)}
 						<tr class:fete={j.est_fete_sanctorale || j.rang.startsWith('dim')}>
 							<td class="p"><span class="pastille" style="--pastille: {teinte(j)}" title={j.couleur}></span></td>
 							<td class="d pc chiffres-alignes">{Number(j.date.slice(8))} <span>{jourSem(j)}</span></td>

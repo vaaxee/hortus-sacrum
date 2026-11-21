@@ -51,7 +51,7 @@
 	<div class="cadre">
 		<nav class="sommaire" aria-label="Navigation principale">
 			<a class="marque" href="/"><Ornement nom="chrisme" taille={22} /><span>Hortus Sacrum</span></a>
-			{#each onglets as o}
+			{#each onglets as o (o.href)}
 				<a href={o.href} class:actif={actif(o.href)} aria-current={actif(o.href) ? 'page' : undefined}>
 					<Icone nom={o.icone} taille={20} /><span>{o.nom}</span>
 				</a>
@@ -71,7 +71,7 @@
 	<div class="barre-etat" aria-hidden="true"></div>
 
 	<nav class="onglets" aria-label="Navigation principale">
-		{#each onglets as o}
+		{#each onglets as o (o.href)}
 			<a href={o.href} class:actif={actif(o.href)} aria-current={actif(o.href) ? 'page' : undefined}>
 				<!-- l'onglet actif se loge dans une niche, une croisette d'or à la clef -->
 				<span class="niche" aria-hidden="true">

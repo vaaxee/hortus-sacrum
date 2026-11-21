@@ -60,7 +60,7 @@
 		<p class="petit">Format de poche, 110 × 170 mm. Cochez les prières dans l’ordre où elles doivent paraître.</p>
 		<label><span>Titre du livret</span><input type="text" bind:value={titreLivret} /></label>
 		<label><span>Chercher une prière</span><input type="search" bind:value={filtre} /></label>
-		{#each parties as [partie, liste]}
+		{#each parties as [partie, liste], i (i)}
 			{@const vues = liste.filter(visible)}
 			{#if vues.length}
 				<fieldset>
