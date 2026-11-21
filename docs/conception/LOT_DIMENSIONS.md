@@ -185,7 +185,9 @@ Le bilan affiché sur Aujourd'hui lit `couverture` et `manques` ; `bilanDuJour` 
 Les tests 3 à 6 ne modifient rien : ils signalent un trou dans `programme.json`, que l'on comble à la main ou avec le
 compositeur.
 
-## 6. Le compositeur (hors ligne, lot suivant)
+## 6. Le compositeur (hors ligne)
+
+*Réalisé en TypeScript (voir § 7, « État des lots ») ; la description ci-dessous reste celle de la conception.*
 
 `engine/ordo/composer.py` (Python, comme les autres moteurs ; ne remplace pas `engine/composer/`, qui disparaît au
 lot 6) :
@@ -220,7 +222,14 @@ Chaque lot se termine comme les autres : lint, `check`, tests, build, revue crit
   relecture D2 — `jardin:veni-creator-spiritus` (Veni Creator du 1er janvier), `jahenny:scapulaire-benediction-protection`,
   `thesaurisons:au-christ-roi` ; les lectures (`lec:ecriture`, `lec:doctrine`, `lec:meditation`, `lec:saint`) n'ont pas de
   texte classé et ne portent qu'un objet ou une note.
-- **D5** : à faire.
+- **D5** : fait, avec un écart. Le compositeur est `app/src/lib/programme/ordo.ts` (fonctions pures) et
+  `app/scripts/ordo.ts` (`npm run ordo -- <début> <fin>`), en TypeScript et non en Python : il réutilise `journee()`,
+  `dimensionsEffectives()` et le contrôle d'inclusion du test d'unicité au lieu d'en refaire une copie (CLAUDE.md § 3 et
+  § 17). Il détaille les manques **requis** jour par jour et résume les autres manques de la période, avec pour chacun
+  les textes sourcés candidats ; il n'écrit que le rapport. Tests : `ordo.test.ts` (Avent 2026 : aucun candidat déjà dit,
+  ni inclus dans un texte du jour ; candidats sourcés et porteurs de la valeur ; rapport déterministe). Premier rapport :
+  `docs/audits/ORDO_2026-11-29_2026-12-24.md` — aucun manque requis ; formes « examen », « lecture », « œuvre » et
+  objet « sainte Face » presque jamais portés, souvent faute de classement relu (D2).
 
 ## 8. Questions pour l'utilisateur
 
