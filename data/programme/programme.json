@@ -712,7 +712,7 @@
       "source": "SPEC § 11 et décisions du 20 nov. : l'office compté dans « Lectures du jour »",
       "lecture": {
         "section": "office",
-        "route": "/lecture",
+        "route": "/lecture/office",
         "ordre": 10,
         "compte": true,
         "sections": [

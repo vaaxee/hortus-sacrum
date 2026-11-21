@@ -58,7 +58,12 @@ describe('indulgences : Enchiridion de 1952 seulement', () => {
 			expect(f.traduction, id).toMatch(/11 juillet 1925/);
 			expect(latinEnPremier(f), id).toBe(false);
 		}
-		for (const id of ['sambucy:chapelet-saint-dominique', 'hortus:chapelet-joyeux', 'hortus:chapelet-douloureux', 'hortus:chapelet-glorieux']) {
+		for (const id of [
+			'sambucy:chapelet-saint-dominique',
+			'hortus:chapelet-joyeux',
+			'hortus:chapelet-douloureux',
+			'hortus:chapelet-glorieux'
+		]) {
 			expect(donnees.fiches[id]?.traduction, id).toMatch(/L’Ami du clergé, 9 avril 1931/);
 			expect(latinEnPremier(donnees.fiches[id]), id).toBe(false);
 		}

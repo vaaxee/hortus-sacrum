@@ -5,6 +5,8 @@
 	import Case from '#lib/design/Case.svelte';
 	import Icone from '#lib/design/Icone.svelte';
 	import Ornement from '#lib/design/Ornement.svelte';
+	import Office from '#lib/Office.svelte';
+	import { heuresDe } from '#lib/programme/heures.ts';
 	import { enMinutes } from '#lib/durees.ts';
 	import { avecLeNom } from '#lib/gertrude.ts';
 	import { rendre } from '#lib/markup.ts';
@@ -36,6 +38,13 @@
 		return () => db.faits.where('date').equals(k).toArray();
 	}, [] as Fait[]);
 	const idsPratiques = $derived(new Set(vie.pratiques.map((p) => p.id)));
+	const parId = $derived.by(() => {
+		const n: Record<string, number> = {};
+		for (const c of coches.v) n[c.elementId] = (n[c.elementId] ?? 0) + 1;
+		return n;
+	});
+	/** Un texte entier qui est un office à plusieurs heures : une heure à la fois (Office.svelte). */
+	const heuresDeLaSection = (s: SectionResolue) => (s.texte && !s.extrait ? heuresDe(vie.corps(s.texte) ?? '') : []);
 	const faites = (l: Ligne) =>
 		idsPratiques.has(l.id) ? (faits.v.some((f) => f.pratiqueId === l.id) ? 1 : 0) : coches.v.filter((c) => c.elementId === l.id).length;
 
@@ -90,6 +99,7 @@
 		{/each}
 
 		{#each sections as s, k (k)}
+			{@const hs = heuresDeLaSection(s)}
 			{#if s.genre === 'champ'}
 				<section class="champ">
 					<h2 class="pc">{s.champ}</h2>
@@ -101,6 +111,8 @@
 					<summary class="pc">{titreDe(s) || 'Notice'}</summary>
 					<div class="lecture">{@html html(s)}</div>
 				</details>
+			{:else if hs.length}
+				<Office corps={vie.corps(s.texte!) ?? ''} heures={hs} ligne={id} {date} coches={parId} />
 			{:else if s.depliable}
 				<details class="depliable">
 					<summary>{titreDe(s)}</summary>

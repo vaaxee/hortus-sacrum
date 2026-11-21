@@ -31,6 +31,7 @@
 		recitations,
 		texteDeLaJournee
 	} from '#lib/programme/bilan.ts';
+	import { etatDesLectures } from '#lib/programme/lectures.ts';
 	import { cocher, direJaculatoire } from '#lib/programme/suivi.ts';
 	import { journeeVivante } from '#lib/programme/vivant.svelte.ts';
 	import { DIMENSIONS, type Ligne, type Moment } from '#lib/programme/types.ts';
@@ -103,8 +104,9 @@
 	const lignes = $derived((jr?.lignes ?? []).filter((l) => garde(rangDe(l), seuil)));
 
 	// lectures du jour : une ligne qui les résume (n/N), cochées une à une
-	const lectures = $derived((jr?.lectures ?? []).filter((l) => l.compte));
-	const lues = $derived(lectures.filter((l) => (coches[l.id] ?? 0) > 0).length);
+	const etatLectures = $derived(jr ? etatDesLectures(jr, coches, vie.corps) : null);
+	const lectures = $derived(etatLectures?.lectures ?? []);
+	const lues = $derived(etatLectures?.lues ?? 0);
 	async function lire(id: string) {
 		if (coches[id]) await db.coches.where('[date+elementId]').equals([date, id]).delete();
 		else await db.coches.add({ date, elementId: id, rang: 0, horodatage: new Date().toISOString() });
@@ -466,11 +468,20 @@
 								<div class="corps">
 									<a class="titre" href="/lecture{estAujourdhui ? '' : `?date=${date}`}">Lectures du jour ({lues}/{lectures.length})</a>
 									<details class="a-lire">
-										<summary class="sous">{lectures.map((l) => l.titre).join(' · ')}</summary>
-										{#each lectures as l (l.id)}
+										<summary class="sous">{lectures.map((x) => x.lecture.titre).join(' · ')}</summary>
+										{#each lectures as x (x.lecture.id)}
+											{@const l = x.lecture}
+											{@const lien = `${l.route}${estAujourdhui ? '' : `?date=${date}`}`}
 											<p class="lu">
-												<Case libelle="{l.titre} : lu" bind:cochee={() => (coches[l.id] ?? 0) > 0, () => lire(l.id)} />
-												<a href="{l.route}{l.route === '/lecture' || l.route === '/ecriture' ? '' : `?date=${date}`}">{l.titre}</a>
+												{#if x.heures}
+													<span class="heures-dites pc chiffres-alignes" aria-hidden="true">{x.faites}/{x.total}</span>
+													<a href={lien}
+														>{l.titre} : {x.faites} heure{(x.faites ?? 0) > 1 ? 's' : ''} dite{(x.faites ?? 0) > 1 ? 's' : ''} sur {x.total}</a
+													>
+												{:else}
+													<Case libelle="{l.titre} : lu" bind:cochee={() => x.lu, () => lire(l.id)} />
+													<a href={lien}>{l.titre}</a>
+												{/if}
 											</p>
 										{/each}
 									</details>
@@ -925,6 +936,13 @@
 		color: var(--hs-or-texte);
 		font-size: 0.875rem;
 		padding-top: 4px;
+	}
+	.heures-dites {
+		flex: none;
+		width: 26px;
+		text-align: center;
+		font-size: 0.75rem;
+		color: var(--hs-or-texte);
 	}
 	.a-lire summary {
 		cursor: pointer;
