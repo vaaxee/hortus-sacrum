@@ -129,7 +129,7 @@
 
 	<section>
 		<h2>Sacrements reçus</h2>
-		{#each SACREMENTS as [cle, nom]}
+		{#each SACREMENTS as [cle, nom] (cle)}
 			{@const f = du(cle)[0]}
 			<div class="ligne">
 				<label
@@ -144,7 +144,7 @@
 		{/each}
 	</section>
 
-	{#each RUBRIQUES as [cle, nom, aide, libelleDate]}
+	{#each RUBRIQUES as [cle, nom, aide, libelleDate] (cle)}
 		<section>
 			<h2>{nom}</h2>
 			<p class="aide">{aide}</p>

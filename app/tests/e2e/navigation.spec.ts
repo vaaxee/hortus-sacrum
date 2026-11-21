@@ -27,6 +27,8 @@ for (const { nom, chemin } of PAGES) {
 		const erreurs = surveiller(page);
 		await page.goto(chemin);
 		await page.waitForLoadState('networkidle');
+		// la page demandée est bien celle qui s'affiche (aucune redirection silencieuse vers l'accueil)
+		expect(new URL(page.url()).pathname).toBe(chemin);
 		await expect(page.locator('body')).not.toContainText('Internal Error');
 		expect(erreurs, erreurs.join('\n')).toEqual([]);
 		if (info.project.name === 'telephone') {

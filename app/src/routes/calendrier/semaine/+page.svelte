@@ -69,7 +69,7 @@
 	</div>
 
 	<div class="filtres rangee" role="group" aria-label="Afficher">
-		{#each FILTRES as [k, nom]}
+		{#each FILTRES as [k, nom] (k)}
 			<button aria-pressed={voir[k]} onclick={() => (voir[k] = !voir[k])}>{nom}</button>
 		{/each}
 	</div>

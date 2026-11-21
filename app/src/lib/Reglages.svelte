@@ -270,13 +270,13 @@
 		</label>
 		<p class="aide">Thème</p>
 		<div class="rangee" role="group" aria-label="Thème">
-			{#each themes as [v, nom]}
+			{#each themes as [v, nom] (v)}
 				<button aria-pressed={$theme === v} onclick={() => theme.set(v)}>{nom}</button>
 			{/each}
 		</div>
 		<p class="aide">Direction artistique</p>
 		<div class="rangee" role="group" aria-label="Direction artistique">
-			{#each directions as [v, nom]}
+			{#each directions as [v, nom] (v)}
 				<button aria-pressed={$direction === v} onclick={() => direction.set(v)}>{nom}</button>
 			{/each}
 		</div>

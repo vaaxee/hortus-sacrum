@@ -164,7 +164,7 @@
 			Une roue active prend place dans la rosace. Chaque nombre a plusieurs roues : vous pouvez en garder une ou plusieurs. Les sources de
 			chaque liste sont indiquées ; les noms des éléments se modifient.
 		</p>
-		{#each parNombre as [nombre, liste]}
+		{#each parNombre as [nombre, liste], i (i)}
 			<fieldset>
 				<legend>{nombre === 1 ? 'L’unité' : nombre > 15 ? 'Lectures suivies' : `Le nombre ${nombre}`}</legend>
 				{#each liste as r (r.id)}
@@ -176,7 +176,7 @@
 								value={uniteDe(r)}
 								onchange={(ev) => changerUnite(r, ev.currentTarget.value as UniteRoue)}
 							>
-								{#each UNITES as [u, nom]}<option value={u}>{nom}</option>{/each}
+								{#each UNITES as [u, nom] (u)}<option value={u}>{nom}</option>{/each}
 							</select>
 						{/if}
 						<button class="discret" onclick={() => (ouverte = ouverte === r.id ? '' : r.id)} aria-expanded={ouverte === r.id}
@@ -185,7 +185,7 @@
 					</div>
 					{#if ouverte === r.id}
 						<ol class="elements">
-							{#each r.elements ?? [] as e, k}
+							{#each r.elements ?? [] as e, k (k)}
 								<li>
 									<input type="text" value={e.fr} aria-label="Élément {k + 1}" onblur={(ev) => renommer(r, k, ev.currentTarget.value)} />
 									<select

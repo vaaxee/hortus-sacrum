@@ -69,13 +69,13 @@
 <label>
 	<span>Genre de pratique</span>
 	<select bind:value={pratique.type}>
-		{#each TYPES as [v, n]}<option value={v}>{n}</option>{/each}
+		{#each TYPES as [v, n] (v)}<option value={v}>{n}</option>{/each}
 	</select>
 </label>
 <label>
 	<span>Rang</span>
 	<select bind:value={() => rangPratique(pratique), (v: Rang) => (pratique.rang = v)}>
-		{#each RANGS as r}<option value={r.cle} title={r.aide}>{r.latin} ({r.fr})</option>{/each}
+		{#each RANGS as r (r.cle)}<option value={r.cle} title={r.aide}>{r.latin} ({r.fr})</option>{/each}
 	</select>
 </label>
 
@@ -84,7 +84,7 @@
 	<label>
 		<span>Règle</span>
 		<select value={pratique.regle.genre} onchange={(e) => changerGenre(e.currentTarget.value as Regle['genre'])}>
-			{#each GENRES as [v, n]}<option value={v}>{n}</option>{/each}
+			{#each GENRES as [v, n] (v)}<option value={v}>{n}</option>{/each}
 		</select>
 	</label>
 
@@ -99,7 +99,7 @@
 					onchange={(e) => (r.jourSemaine = lireJour(e.currentTarget.value))}
 				>
 					<option value="">tous les jours</option>
-					{#each JOURS as j, i}<option value={String(i)}>les {j}s</option>{/each}
+					{#each JOURS as j, i (i)}<option value={String(i)}>les {j}s</option>{/each}
 				</select>
 			</label>
 		</div>
@@ -114,7 +114,7 @@
 			<label>
 				<span>Mois</span>
 				<select bind:value={r.mois}
-					>{#each MOIS as m, i}<option value={i + 1}>{m}</option>{/each}</select
+					>{#each MOIS as m, i (i)}<option value={i + 1}>{m}</option>{/each}</select
 				>
 			</label>
 		</div>
@@ -125,13 +125,13 @@
 			<label>
 				<span>Rang dans le mois</span>
 				<select bind:value={r.rang}>
-					{#each ['premier', 'deuxième', 'troisième', 'quatrième'] as n, i}<option value={i + 1}>{n}</option>{/each}
+					{#each ['premier', 'deuxième', 'troisième', 'quatrième'] as n, i (i)}<option value={i + 1}>{n}</option>{/each}
 				</select>
 			</label>
 			<label>
 				<span>Jour</span>
 				<select bind:value={r.jourSemaine}
-					>{#each JOURS as j, i}<option value={i}>{j}</option>{/each}</select
+					>{#each JOURS as j, i (i)}<option value={i}>{j}</option>{/each}</select
 				>
 			</label>
 		</div>
@@ -148,7 +148,7 @@
 		<label>
 			<span>Mois</span>
 			<select bind:value={pratique.regle.mois}
-				>{#each MOIS as m, i}<option value={i + 1}>{m}</option>{/each}</select
+				>{#each MOIS as m, i (i)}<option value={i + 1}>{m}</option>{/each}</select
 			>
 		</label>
 	{/if}
@@ -156,7 +156,7 @@
 		<label>
 			<span>Jour</span>
 			<select bind:value={pratique.regle.jourSemaine}
-				>{#each JOURS as j, i}<option value={i}>{j}</option>{/each}</select
+				>{#each JOURS as j, i (i)}<option value={i}>{j}</option>{/each}</select
 			>
 		</label>
 	{/if}
@@ -165,7 +165,7 @@
 
 <fieldset>
 	<legend>Prières liées</legend>
-	{#each pratique.textes as id}
+	{#each pratique.textes as id, i (i)}
 		<div class="liee">
 			<span>{titres[id] ?? 'Prière introuvable'}</span>
 			<button
@@ -177,7 +177,7 @@
 		</div>
 	{/each}
 	<input type="search" placeholder="Chercher une prière à lier" bind:value={recherche} aria-label="Chercher une prière à lier" />
-	{#each trouves as t}
+	{#each trouves as t, i (i)}
 		<button
 			class="trouve brut"
 			type="button"

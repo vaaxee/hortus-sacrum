@@ -35,7 +35,7 @@
 		<!-- cadre : frises en haut et en bas, quarts de rosace aux angles -->
 		<div class="frise haut" aria-hidden="true"><Ornement nom="grecque" /></div>
 		<div class="frise bas" aria-hidden="true"><Ornement nom="grecque" /></div>
-		{#each ['hg', 'hd', 'bg', 'bd'] as c}<span class="coin {c}" aria-hidden="true"><Ornement nom="coin" taille={30} /></span>{/each}
+		{#each ['hg', 'hd', 'bg', 'bd'] as c (c)}<span class="coin {c}" aria-hidden="true"><Ornement nom="coin" taille={30} /></span>{/each}
 
 		<p class="nom">Hortus Sacrum</p>
 		<div class="filet-titre" aria-hidden="true"><Ornement nom="fleuron" /></div>
@@ -57,7 +57,7 @@
 		<div class="filet-milieu" aria-hidden="true"><Ornement nom="laurier" /></div>
 		{#if invocation}<p class="invocation">{invocation}</p>{/if}
 		<div class="fleurons" role="img" aria-label="Jardin du jour : {allumes} sur 3">
-			{#each [0, 1, 2] as i}<span class:allume={i < allumes}><Ornement nom="lis" taille={18} /></span>{/each}
+			{#each [0, 1, 2] as i (i)}<span class:allume={i < allumes}><Ornement nom="lis" taille={18} /></span>{/each}
 		</div>
 		<button class="entrer" onclick={entrer}>Entrer au jardin</button>
 		<p class="credit">{image === 'gravure' ? 'D’après ' : ''}Velázquez, <em>Le Couronnement de la Vierge</em>, v. 1635</p>

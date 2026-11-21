@@ -52,7 +52,7 @@
 		<p class="devotion">{MOIS_DEVOTION[mois]?.nom}</p>
 	</header>
 	<div class="grille">
-		{#each JOURS as j}<div class="entete pc">{j}</div>{/each}
+		{#each JOURS as j, i (i)}<div class="entete pc">{j}</div>{/each}
 		{#each cases as n, i (i)}
 			{#if n === null}<div class="vide"></div>
 			{:else}
@@ -63,8 +63,8 @@
 					</p>
 					{#if jr}<p class="office">{jr.office}</p>{/if}
 					{#if jr?.jeune_abstinence}<p class="jeune">{jr.jeune_abstinence.libelle}</p>{/if}
-					{#each fetes.filter((f) => f.jour === n) as f}<p class="perso">✠ {f.titre}</p>{/each}
-					{#each pratiquesDu[cle(n)] ?? [] as p}<p class="prat">{p}</p>{/each}
+					{#each fetes.filter((f) => f.jour === n) as f, i (i)}<p class="perso">✠ {f.titre}</p>{/each}
+					{#each pratiquesDu[cle(n)] ?? [] as p, i (i)}<p class="prat">{p}</p>{/each}
 				</div>
 			{/if}
 		{/each}

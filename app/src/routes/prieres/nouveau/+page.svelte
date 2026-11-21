@@ -84,7 +84,7 @@
 				<strong>Nettoyage :</strong>
 				{#if rapport.length}
 					<ul>
-						{#each rapport as r}<li>{r}</li>{/each}
+						{#each rapport as r, i (i)}<li>{r}</li>{/each}
 					</ul>
 				{:else}
 					rien à corriger.

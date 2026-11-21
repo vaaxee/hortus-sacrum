@@ -186,7 +186,7 @@
 		{:else if nom === 'cherubin'}
 			<!-- chérubin du calendrier papier (docs/calendrier/source/cherub.tex), retranscrit trait pour trait -->
 			<g transform="scale(1,-1)" fill="none" stroke="currentColor" stroke-width="0.19" stroke-linecap="round" stroke-linejoin="round">
-				{#each [1, -1] as s}
+				{#each [1, -1] as s (s)}
 					<g transform="scale({s},1)">
 						<path
 							d="M2.9 1.4C4.5 4.8 8.5 7.2 12.6 7.4C12.2 6.4 11.8 5.9 11.1 5.4C12 4.9 12 4.1 11.3 3.6C10 3.6 9.4 3.3 9.4 2.4C8.6 2.6 7.3 2.1 7.2 1C6.2 1.1 5.1.5 5-.6C4.3-.6 3.6-.9 3.2-1.4"
@@ -197,7 +197,7 @@
 					</g>
 				{/each}
 				<circle cx="0" cy="0.2" r="3.3" fill="var(--hs-fond)" />
-				{#each [[-1.8, 3], [0, 3.5], [1.8, 3]] as [x, y]}
+				{#each [[-1.8, 3], [0, 3.5], [1.8, 3]] as [x, y] (x)}
 					<path d="M{x - 0.6} {y}A.6.6 0 1 0 {x} {y - 0.6}" />
 				{/each}
 				<path d="M-1.6.6A.6.6 0 0 1-.472.6" />

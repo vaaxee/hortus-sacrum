@@ -121,9 +121,7 @@
 		<div class="pastilles" role="group" aria-label="Type">
 			<span class="etiquette">Type</span>
 			{#each TYPES as [v, nom] (v)}
-				<button type="button" class="brut puce" aria-pressed={type === v} onclick={() => (type = type === v ? null : v)}
-					>{nom}</button
-				>
+				<button type="button" class="brut puce" aria-pressed={type === v} onclick={() => (type = type === v ? null : v)}>{nom}</button>
 			{/each}
 		</div>
 		<p class="petit compte">

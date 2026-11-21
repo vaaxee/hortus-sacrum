@@ -19,7 +19,7 @@
 		<span>Partie</span>
 		<input type="text" bind:value={texte.partie} list="parties" />
 		<datalist id="parties"
-			>{#each parties as p}<option value={p}></option>{/each}</datalist
+			>{#each parties as p, i (i)}<option value={p}></option>{/each}</datalist
 		>
 	</label>
 	<label>
