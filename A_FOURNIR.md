@@ -51,7 +51,9 @@ Les points réglés sont gardés pour l'historique. Dernière mise à jour : 20 
 - **Chapelet, invocations de fin de dizaine** (SPEC § 11, principe 2 ; demande du 18 nov. : trois invocations). Une est
   en place : « Ô Marie conçue sans péché, priez pour nous qui avons recours à vous » (Weber 1899, p. 477,
   `prog:fin-dizaine-o-marie`). **Deux restent sans source ancienne**, et ne sont donc pas dites dans l'app :
-  - « Ô mon Jésus, pardonnez-nous nos péchés… » (invocation citée par l'utilisateur) ;
+  - « Ô mon Jésus, pardonnez-nous nos péchés… » : **réglé le 22 nov.** — l'utilisateur retient la forme courante (FSSPX
+    Actualités, 12 juillet 2019, `fsspx:o-mon-jesus-fatima`), dite à chaque fin de dizaine (`prog:fin-dizaine-fatima`) ;
+    la forme imprimée en 1943 reste dans la bibliothèque ;
   - « Cœur immaculé de Marie, priez pour nous… » (scapulaire vert).
 
   Elles sont aussi notées dans `data/programme/programme.json` › `a_fournir` (point `fin-dizaine` de `prog:chapelet`).
