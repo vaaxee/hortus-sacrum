@@ -3,9 +3,9 @@
  "source": {
   "ouvrage": "Petit office de la Sainte Vierge et des morts, sépulture des défunts, messe, chemin de la croix, prières des quarante-heures, etc.",
   "edition": "Montréal, 1905 (emblème de la Congrégation de Notre-Dame de Montréal sur la page de titre) ; « Permis d'imprimer, ✠ Zotique, Év. de Pogla, V. G., Aux. à Montréal, 4 juin 1905 » (Mgr Zotique Racicot, évêque auxiliaire) ; latin et français en regard (français page paire, latin page impaire)",
-  "page": "36-58 (Complies et antiennes à la sainte Vierge)",
+  "page": "10-180 (Vêpres pp. 10-36, Complies et antiennes à la sainte Vierge pp. 36-58, Matines pp. 60-106, Laudes pp. 108-136, Prime à None pp. 138-180)",
   "url": "https://archive.org/details/cihm_98272",
-  "scan": "microfiche ICMH/Canadiana n° 98272 (exemplaire de la Bibliothèque nationale du Québec), 300 ppi, images n37-n59",
+  "scan": "microfiche ICMH/Canadiana n° 98272 (exemplaire de la Bibliothèque nationale du Québec), 300 ppi ; pages françaises = images n11-n89 (impaires) et n94-n184 (paires, après la mire de microfilmage n91-n93)",
   "traducteur": "non nommé"
  },
  "methode": "Français recopié mot pour mot, orthographe et ponctuation de l'édition gardées (petites capitales et lettrines rendues en casse ordinaire) ; double lecture (texte ABBYY d'archive.org et Tesseract fra) puis relecture de chaque page sur l'image. Les abréviations de l'édition (« etc. ») sont gardées ; un renvoi de l'édition à une autre de ses pages est résolu par le texte de cette page (noté).",
