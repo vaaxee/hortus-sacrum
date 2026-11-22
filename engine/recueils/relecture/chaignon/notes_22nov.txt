@@ -1,0 +1,13 @@
+# Chaignon, 22 nov. : les trois notes latines restées dans le corps du texte (restes_22nov.txt : S:3, S:53, S:78), remises
+# sous « ### Notes » à leur rang (ordre des pages, comme notes.py), le latin recopié sur l'image ; le mot coupé par la note
+# est ressoudé. Vu sur le scan : S:3 t1 p68-69, S:53 t1 p454-456, S:78 t2 p118-124. Appliqué par commun/remplacer.py.
+#
+# S:3 (t1 p68 ; la note 8, « Accipe… », est p69)
+dont nous ne pouvons\n\n1 Donata sunt nobis omnia ad aliquam utilitatem ; sed alia ad sus_ tentationeni, alia ad eruditionem, posfremo ctiaai no i pauca ad correptionem.\n\nentièrement nous passer	dont nous ne pouvons entièrement nous passer
+\n\n8. Accipe, redde, lime. Accipe obsequium	\n\n8. Donata sunt nobis omnia ad aliquam utilitatem ; sed alia ad sustentationem, alia ad eruditionem, postremo etiam non pauca ad correptionem.\n\n9. Accipe, redde, lime. Accipe obsequium
+# S:53 (t1 p454 ; les notes 1 et 2 actuelles sont p456)
+je doistou-\n\n1 Quolies me resignabo, et in quibusmereliinjuam Umit. 1, 3. c. 37.s\n\n2Semper et omni hora ; sicut in parvo, sic et in magno ; nihil excipio. Imit. I. 3.c- 37.\n\n— Wü - jours être pour lui-, toujours le servir	je dois toujours être pour lui, toujours le servir
+\n\n### Notes\n\n1. II. Cor. 4. 17.\n\n2. Munda quoque cor meum	\n\n### Notes\n\n1. Quoties me resignabo, et in quibus me relinquam ? Imit. l. 3. c. 37.\n\n2. Semper et omni hora ; sicut in parvo, sic et in magno ; nihil excipio. Imit. l. 3. c. 37.\n\n3. II. Cor. 4. 17.\n\n4. Munda quoque cor meum
+# S:78 (t2 p123 ; notes 1-2 p118, 4 p122)
+pour la sanetifi-\n\nAntc onmia opéra verbtim vcrax præccdal le. Eccli. 37. 20.\n\ncation de votre vie	pour la sanctification de votre vie
+\n\n4. P. Nouet.\n\n5. ~ Purificate corda	\n\n4. P. Nouet.\n\n5. Ante omnia opera verbum verax præcedat te. Eccli. 37. 20.\n\n6. ~ Purificate corda

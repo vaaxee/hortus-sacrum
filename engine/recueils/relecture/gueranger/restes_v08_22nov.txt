@@ -1,0 +1,13 @@
+# Guéranger, t. 8, 22 nov. : cas vus pendant la relecture sur le scan (archive.org lanneliturgiqu08gu.pdf, page du PDF)
+# des entrées en OCR D:04-02 et D:04-05, laissés tels quels. Format : clé | texte actuel | page | raison.
+#
+D:04-02 | « beaucoup de prépietatis studio concurrerent… prima sui Ordinis fundamenta jecit. » puis « dictions par un esprit prophétique » | p335-336 | colonnes latin-français entremêlées : le mot « pré-dictions » est coupé par la colonne latine ; à recomposer colonne par colonne, pas mot à mot
+D:04-02 | « Saint François de Paule, Confesseur. » ; « Le Temps Pascal. » | p335-336 | titres courants restés entre les colonnes (ceux qui coupaient une phrase française ont été retirés)
+D:04-02 | « IL avait le don », « DIEU attesta », « ERAT in eo » | p335 | capitales des lettrines, gardées telles quelles
+D:04-05 | les leçons et les répons sont entremêlés (latin / français, colonne par colonne, p350-354) ; « V/. Pas une heure … * Le soir, il appliquait magistrum populi : refert… » | p350-354 | à recomposer colonne par colonne
+D:04-05 | « les josjia on nous vivcn^ le sont plus encore … notre tidc protecteur » | p355 | bas de page effacé sur le scan (« les jours où nous vivons » se devine, « fid… » est illisible)
+D:04-05 | « Saint Vincent Février, Confesseur. 341 » et titres courants entre colonnes | p351-355 | titres courants (ceux qui coupaient une phrase ont été retirés)
+#
+# Reste du t. 8 en OCR non relu sur le scan : T:Pasc2-0 (le temporal du 2e dimanche après Pâques et sa semaine, 290 000
+# signes) et le sanctoral du 11 avril (D:04-11) au 19 mai ; puis t. 9, 12-15 (sanctoral de mai à novembre) et les entrées OCR
+# des t. 10-11 (dimanches après la Pentecôte). Défaut principal : colonnes latin-français entremêlées et titres courants.
