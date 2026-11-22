@@ -110,6 +110,7 @@ export function journee(programme: Programme, ctx: Contexte): Journee {
 			if ('point' in s) out.push({ point: s.point });
 			else if ('champ' in s) out.push({ genre: 'champ', champ: s.champ, origine });
 			else if ('editorial' in s) out.push({ genre: 'editorial', contenu: s.editorial, origine });
+			else if ('partie' in s) out.push({ genre: 'partie', contenu: s.partie, origine, ...(s.replie && { replie: true }) });
 			else if ('notice' in s) {
 				const c = choisir(s.notice);
 				if (c)

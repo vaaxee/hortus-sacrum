@@ -6,7 +6,7 @@
       "id": "prog:priere-du-matin",
       "titre": "Prière du matin et offrande",
       "motif": {"fins": ["adoration", "action-de-graces", "demande"], "objets": ["trinite"], "note": "consacrer la journée à Dieu : prière du matin, offrande et intention d'indulgences (LISTE_DU_JOUR, Matin)"},
-      "revision": 2,
+      "revision": 3,
       "rang": "praecipua",
       "source": "Audit des dévotions, § 2.1 ; arbitrage du 19 nov. : la prière du matin d'abord, l'offrande ensuite",
       "page": {
@@ -14,13 +14,29 @@
         "ordre": 10,
         "sections": [
           {
+            "partie": "Prière du matin"
+          },
+          {
             "texte": "paroissien:priere-du-matin",
-            "coupures": [
-              {
-                "point": "apres-vierge",
-                "avant": "## Acte de foi"
-              }
-            ]
+            "extrait": {
+              "a": "## Acte de foi"
+            }
+          },
+          {
+            "point": "apres-vierge"
+          },
+          {
+            "partie": "Actes de foi, d’espérance et de charité"
+          },
+          {
+            "texte": "paroissien:priere-du-matin",
+            "extrait": {
+              "de": "## Acte de foi"
+            },
+            "suite": true
+          },
+          {
+            "partie": "Offrande de la journée"
           },
           {
             "editorial": "## Intention d’indulgences"
@@ -59,7 +75,8 @@
             }
           },
           {
-            "editorial": "## Actes des devoirs de charité"
+            "partie": "Actes des devoirs de charité",
+            "replie": true
           },
           {
             "editorial": "### Devoir envers l’Église et ses ministres"
@@ -105,6 +122,9 @@
             "extrait": {
               "niveau": 2
             }
+          },
+          {
+            "partie": "Intentions et recommandations"
           },
           {
             "point": "intentions"
@@ -730,7 +750,7 @@
       "id": "prog:devotion-dimanche",
       "titre": "Dévotion du dimanche : la très sainte Trinité",
       "motif": {"fins": ["louange", "action-de-graces"], "objets": ["trinite"], "note": "dédicace du dimanche : la très sainte Trinité (cycles.json)"},
-      "revision": 1,
+      "revision": 2,
       "quand": {
         "jours_semaine": [0]
       },
@@ -761,6 +781,18 @@
                 ]
               }
             }
+          },
+          {
+            "texte": {
+              "selon": "rotation",
+              "roue": "roue:gertrude-0",
+              "unite": "semaine",
+              "parmi": [
+                  "gertrude:reconnaitre-bienfaits",
+                  "gertrude:confiance-en-dieu",
+                  "gertrude:amour-de-dieu"
+              ]
+            }
           }
         ]
       }
@@ -769,7 +801,7 @@
       "id": "prog:devotion-lundi",
       "titre": "Dévotion du lundi : les âmes du purgatoire",
       "motif": {"fins": ["intercession", "propitiation"], "objets": ["ames-du-purgatoire"], "note": "dédicace du lundi : les âmes du purgatoire (cycles.json)"},
-      "revision": 1,
+      "revision": 2,
       "quand": {
         "jours_semaine": [1]
       },
@@ -795,6 +827,17 @@
                 "salve-regina:litanies-fideles-defunts"
               ]
             }
+          },
+          {
+            "texte": {
+              "selon": "rotation",
+              "roue": "roue:gertrude-1",
+              "unite": "semaine",
+              "parmi": [
+                  "gertrude:quatre-prieres-morts",
+                  "gertrude:pater-pour-les-morts"
+              ]
+            }
           }
         ]
       }
@@ -803,7 +846,7 @@
       "id": "prog:devotion-mardi",
       "titre": "Dévotion du mardi : les saints Anges",
       "motif": {"fins": ["demande", "intercession"], "objets": ["anges"], "note": "dédicace du mardi : les saints Anges, leur garde et leur protection (cycles.json)"},
-      "revision": 1,
+      "revision": 2,
       "quand": {
         "jours_semaine": [2]
       },
@@ -828,6 +871,19 @@
                 "jardin:litanies-de-la-sainte-face"
               ]
             }
+          },
+          {
+            "texte": {
+              "selon": "rotation",
+              "roue": "roue:gertrude-2",
+              "unite": "semaine",
+              "parmi": [
+                  "gertrude:invocation-tous-les-saints",
+                  "gertrude:a-saint-benoit",
+                  "gertrude:demande-par-sainte-gertrude",
+                  "gertrude:actions-de-graces-sainte-mechtilde"
+              ]
+            }
           }
         ]
       }
@@ -836,7 +892,7 @@
       "id": "prog:devotion-mercredi",
       "titre": "Dévotion du mercredi : saint Joseph et le cordon",
       "motif": {"fins": ["demande"], "objets": ["saint-joseph"], "note": "dédicace du mercredi : saint Joseph, avec le renouvellement du cordon (SPEC § 11, décisions)"},
-      "revision": 1,
+      "revision": 2,
       "quand": {
         "jours_semaine": [3]
       },
@@ -873,6 +929,17 @@
             "quand": {
               "mois": [3]
             }
+          },
+          {
+            "texte": {
+              "selon": "rotation",
+              "roue": "roue:gertrude-3",
+              "unite": "semaine",
+              "parmi": [
+                  "gertrude:caresses-a-jesus",
+                  "gertrude:salut-coeur-de-jesus"
+              ]
+            }
           }
         ]
       }
@@ -881,7 +948,7 @@
       "id": "prog:devotion-jeudi",
       "titre": "Dévotion du jeudi : le Saint-Sacrement",
       "motif": {"fins": ["adoration", "demande"], "objets": ["eucharistie"], "note": "dédicace du jeudi : le Saint-Sacrement (cycles.json)"},
-      "revision": 1,
+      "revision": 2,
       "quand": {
         "jours_semaine": [4]
       },
@@ -912,6 +979,9 @@
                 ]
               }
             }
+          },
+          {
+            "texte": "gertrude:hostie-divine"
           }
         ]
       }
@@ -920,7 +990,7 @@
       "id": "prog:devotion-vendredi",
       "titre": "Dévotion du vendredi : la Passion et le Sacré-Cœur",
       "motif": {"fins": ["reparation", "propitiation"], "objets": ["passion", "sacre-coeur"], "note": "dédicace du vendredi : la Passion et le Sacré-Cœur (cycles.json ; LOT_DIMENSIONS § 3.3)"},
-      "revision": 1,
+      "revision": 2,
       "quand": {
         "jours_semaine": [5]
       },
@@ -949,6 +1019,24 @@
                 "jardin:litanies-de-notre-dame-des-sept-douleurs"
               ]
             }
+          },
+          {
+            "texte": {
+              "selon": "rotation",
+              "roue": "roue:gertrude-5",
+              "unite": "semaine",
+              "parmi": [
+                  "gertrude:salut-plaies",
+                  "gertrude:autre-salut-plaies",
+                  "gertrude:cinq-offrandes-passion",
+                  "gertrude:offrande-passion-courte",
+                  "gertrude:soupirs-ame-compatissante",
+                  "gertrude:priere-jesus-souffrant",
+                  "gertrude:caresses-jesus-blaspheme",
+                  "gertrude:baiser-cinq-plaies",
+                  "gertrude:salut-membres-de-jesus"
+              ]
+            }
           }
         ]
       }
@@ -957,7 +1045,7 @@
       "id": "prog:devotion-samedi",
       "titre": "Dévotion du samedi : la sainte Vierge",
       "motif": {"fins": ["louange", "demande"], "objets": ["sainte-vierge"], "note": "dédicace du samedi : la sainte Vierge (cycles.json)"},
-      "revision": 1,
+      "revision": 2,
       "quand": {
         "jours_semaine": [6]
       },
@@ -988,6 +1076,21 @@
               "parmi": [
                 "paroissien:litanies-sainte-vierge",
                 "jardin:litanies-de-notre-dame-des-sept-douleurs"
+              ]
+            }
+          },
+          {
+            "texte": {
+              "selon": "rotation",
+              "roue": "roue:gertrude-6",
+              "unite": "semaine",
+              "parmi": [
+                  "gertrude:salutation-d-or",
+                  "gertrude:ave-maria-d-or",
+                  "gertrude:ecce-ancilla",
+                  "gertrude:reparation-sainte-vierge",
+                  "gertrude:offrande-coeur-de-jesus-a-marie",
+                  "gertrude:office-sainte-vierge"
               ]
             }
           }
@@ -1055,7 +1158,7 @@
       "id": "prog:priere-du-soir",
       "titre": "Prière du soir et examen de conscience",
       "motif": {"fins": ["action-de-graces", "demande", "reparation"], "objets": ["trinite"], "note": "rendre grâces, examiner sa conscience et demander pardon avant la nuit (LISTE_DU_JOUR, Soir)"},
-      "revision": 1,
+      "revision": 2,
       "rang": "praecipua",
       "source": "Audit des dévotions, § 2.1 ; audit du corpus A14 : l'antienne de la Vierge en dernier",
       "page": {
@@ -1063,10 +1166,19 @@
         "ordre": 90,
         "sections": [
           {
+            "partie": "Don du Saint-Esprit du jour"
+          },
+          {
             "point": "debut"
           },
           {
+            "partie": "Prière du soir"
+          },
+          {
             "texte": "paroissien:priere-du-soir"
+          },
+          {
+            "partie": "Recommandations du soir"
           },
           {
             "point": "fin"

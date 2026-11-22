@@ -31,6 +31,8 @@ second système de règles `Quand` ; tirage aléatoire dans la journée.
   (regex), `ou`, `sauf`. Même vocabulaire que `indulgences.json`.
 - `Choix` : identifiant, `selon: 'jour_semaine' | 'rotation' | 'quand' | 'saint_du_jour'`. Un choix donne **un** texte ou rien.
 - `Extrait` : `section`, `de`/`a`, `phrase`, `retirer`, `rang_du_jour` — ancres **exactes**, vérifiées par test.
+- `Section` : `texte`, `notice`, `point`, `champ`, `editorial` (titre de mise en page), `partie` (titre repliable qui regroupe
+  les sections suivantes ; `replie` = fermée à l'ouverture).
 - `Insertion` / `Coupure` : points d'insertion (fin de dizaine, Angélus, prières du matin et du soir, fin de l'office du saint).
 - `EntreeProgramme.motif` : descriptif, ne filtre rien.
 

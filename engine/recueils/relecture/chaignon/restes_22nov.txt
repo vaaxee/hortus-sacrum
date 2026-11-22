@@ -7,7 +7,6 @@
 # (graphies de l'époque : « collége », « répons-tu », « malédifier », « ribunaux », « destitinée », « fasant » sont
 # imprimés ainsi), ni le latin des notes, qui n'a pas été relu.
 
-S:3  | « ad sus_ tentationeni, alia ad eruditionem, posfremo ctiaai no i pauca ad correptionem. » | t1 p68 | note latine restée dans le corps du texte, à remettre sous « ### Notes » avant de corriger les mots
 S:6  | « Elève-toi, ^mon âme » | t1 p82 | la ligne n'a pas été retrouvée dans la couche texte du PDF
 S:9  | « habebit se optimè in optimo » | t1 p106 | accent sur « optime » illisible (note dans le corps)
 S:10 | « fons totius coaselationis » ; « Iuchoatio vitæ æternæ » | t1 p114, p119 | notes mêlées au texte, ligne non retrouvée
@@ -32,12 +31,10 @@ S:45 | « en lui découvrantla bonté » ; « Visus est Ccphœ » | t1 p394 | es
 S:47 | « En l’ofîrant à son Père » | t1 p408 | ligne non vue
 S:49 | « Quoi T des feuilles inutiles » ; « et^pendant les trente ans » | t1 p417, p426 | signe trop petit ; ligne non retrouvée
 S:51 | « in corde suo, sedcrediderit » ; « assisteznous » | t1 p435, p439 | ligne non vue
-S:53 | « je doistou- 1 Quolies me resignabo… » | t1 p454 | note latine mêlée au texte : à remettre sous « ### Notes »
 S:56 | « tout l’ordrè et le plan de ma vie » | t1 p473 | accent douteux
 S:57 | titre « L’iMiTATlON DE JÉSUS-CHRIST. — SA NÉCESSITÉ » | t1 | page non retrouvée (même titre corrigé en S:59)
 S:75 | « î U nous guérit. » ; « n’aurait pas- fait » | t2 p98, p103 | ligne non vue ; trait imprimé ou tache
 S:76 | « à qui tout doit béissance » | t2 p110 | coupure « o-béissance » non vue
-S:78 | « sanetifi- Antc onmia opéra verbtim vcrax præccdal le. Eccli. 37. 20. cation » | t2 p123 | note latine mêlée au texte
 S:79 | « Touchants mystères de f noire foi » | t2 p126 | ligne non vue
 S:80 | « toujours ^colère » | t2 p138 | « toujours en colère » ? signe illisible
 S:82 | « II s’agit m de séduire » | t2 p147 | ligne suivante non vue
@@ -49,3 +46,5 @@ S:92 | « félicitonsde de sa victoire » | t2 p232 | « félicitons-le » proba
 #
 # Restent aussi : les latins des citations et des notes (ligatures œ/æ, accents « opéra », « libéra »), qui n'ont pas
 # été revus, et toutes les méditations hors parcours (T:*, D:*, L:*), dont les mots douteux n'ont pas été relus.
+#
+# Les trois notes latines restées dans le corps (S:3, S:53, S:78) ont été remises sous « ### Notes » : notes_22nov.txt.

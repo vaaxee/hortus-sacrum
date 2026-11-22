@@ -91,7 +91,12 @@ export type Section =
 	 * Titre ou consigne de mise en page d'une page composée (« ## Mystères », « *On peut dire…* ») : jamais une prière.
 	 * C'est ce qu'écrivait engine/composer/composer.py entre les textes sourcés.
 	 */
-	| { editorial: string; quand?: Quand };
+	| { editorial: string; quand?: Quand }
+	/**
+	 * Début d'une partie de la page (« Prière du matin », « Offrande de la journée ») : les sections qui suivent, jusqu'à la
+	 * partie suivante, se replient sous ce titre de mise en page. `replie` : fermée à l'ouverture de la page. Jamais une prière.
+	 */
+	| { partie: string; replie?: boolean; quand?: Quand };
 
 export type Moment = 'matin' | 'journee' | 'soir';
 
@@ -190,7 +195,7 @@ export interface ReglageProgramme {
 // ------------------------------------------------------------------ résultat
 
 export interface SectionResolue {
-	genre: 'texte' | 'notice' | 'champ' | 'editorial';
+	genre: 'texte' | 'notice' | 'champ' | 'editorial' | 'partie';
 	/** Identifiant du texte (absent pour un champ). */
 	texte?: string;
 	extrait?: Extrait;
@@ -208,8 +213,10 @@ export interface SectionResolue {
 	variante?: boolean;
 	/** Suite d'un texte déjà commencé dans la page : compté une seule fois. */
 	suite?: boolean;
-	/** Titre ou consigne de mise en page (genre « editorial »). */
+	/** Titre ou consigne de mise en page (genre « editorial »), titre de la partie (genre « partie »). */
 	contenu?: string;
+	/** Partie fermée à l'ouverture de la page (genre « partie »). */
+	replie?: boolean;
 	/** Rang du jour dans une série (neuvaine), pour un extrait `rang_du_jour`. */
 	rang?: number;
 }

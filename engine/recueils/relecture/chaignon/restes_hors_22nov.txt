@@ -1,0 +1,50 @@
+# Chaignon, 22 nov. (suite) : cas vus pendant la relecture des méditations hors parcours de l'Avent et du temps de Noël
+# (T:Adv1-0 à T:Adv4-0, L:3 à L:14, D:11-30, D:12-03, D:12-08 ×2, D:12-21, D:12-26, D:12-27, D:01-01, D:01-06, D:01-25,
+# D:01-29, D:02-02), laissés tels quels faute de pouvoir trancher sur l'image. Page = page du PDF d'archive.org, tome 2.
+# Format : clé | texte actuel | page | ce qui empêche de trancher.
+#
+# Repérage : mots inconnus et motifs suspects (bin cand.py du 22 nov.) puis lecture suivie du corps de chaque méditation ;
+# chaque cas corrigé a été vu sur une bande du scan à 300 dpi (decisions_hors_22nov.txt). Ne sont pas listés : les graphies
+# de l'édition (« d’en empire », « à quels souffrances », « l’humilité sc concilie », « Disciples », « privilége »).
+#
+# 1. Mots et signes non tranchés
+T:Adv1-0 | « De quelle profonde misère a-telle retiré » ; « Ce Sauveur plein de m bonté » | p279 | page 279 illisible dans la couche texte (encre du verso), ligne non retrouvée
+T:Adv2-0 | « en connaissez-vous le moyen 2 ? » | p284 | appel de note ou ponctuation, non vu
+T:Adv2-0 | « m'invite votre grâce. IIe P. » | p287 | saut d'alinéa probable, non vu
+T:Adv4-0 | « Universel propter\n\n“279 scmetipsum operatus » | p300 | folio mêlé au texte, ligne non retrouvée (« semetipsum » probable)
+T:Adv4-0 | « il s’est présenté à son Père. comme une victime » | p299 | point parasite probable, bande mal située
+L:3 | « au milieu de Vombre de la mort » | p307 | ligne non retrouvée (« l’ombre » probable)
+L:6 | « a Je vous annonce un grand sujet de joie » ; « qui donc n’a pas besoin de vigilance 1 ? » ; « dénùment » | p324-326 | guillemet et appel non vus
+D:01-06 | « né pour; régner » ; « préoccupés y font » (imprimé « v font » ?) ; « recueillement profond î » ; « à le, servir » | p335-340 | signe trop petit ou bande mal située
+D:01-06 | « Recevez y Seigneur, etc.1. 2. » (fin de la méditation) | p340 | ligne non vue
+L:9 | « des choses d’icibas » ; « l’y adorer ’; » ; « l’étoile de la foi 1 me » | p344-348 | coupure « ici-bas » et appels non vus
+L:10 | « Ce qu’ils donnent. k » ; « comme les Mages : Et se j prosternant » ; « Ile p. Qu'offrent » ; « IL Elle l’aveugle. » | p349-356 | bandes mal situées ou ligne coupée
+L:11 | « O enfant des hommes î » | p365 | bande mal située
+L:12 | « ensuite à Joseph 2 ; Dieu lui-même Ta donné à son Fils rDonavit illi nomen » | p369 | ligne suivante non vue (« l’a donné… : Donavit » probable)
+L:12 | « Quoi que vous / cessiez » ; « Notre- Seigneur Jésus-Christ » | p374-375 | bande mal située ; coupure non vue
+L:14 | « Tournant contré eux » ; « ne pouvait manquer d’ètre souffrance » ; « vers eux*. » | p396-398 | accent douteux sur l'image
+D:11-30 | « l’amour qu’il lui porte’: » ; « Peut*on vous connaître » ; « se communiquer au bois 9 ? » | p402 | signes et appels trop petits
+D:12-03 | « multitudes d’inficlèles » ; « Il craint pour m lui » ; « je crains qu’iis » ; « Satis est, Domine, salis est » | p408-414 | lignes non vues (latin non touché sans l'image)
+D:12-08 | « le privilège de m l'immaculée Conception » ; « création, ui donnant » ; « Apoc. 2t. 3. » | p415-418 | début de ligne coupé
+D:12-21 | « quelle audace î » ; « l’en exclure 1 ? » ; « Dominas meus » ; « chemin de Damas 4 ; » ; « notre piété b » | p429-433 | signe trop petit, bande mal située
+D:12-27 | « au Sauveur 8. Sa fidélité » | p446 | appel de note non retiré (chiffre)
+D:02-02 | « ✓ nous au Seigneur, h me considérait » ; « 1er P. Tout prétexte » | p382-386 | bande mal située
+#
+# 2. Notes de bas de page restées dans le corps (à ranger sous « ### Notes » comme notes_22nov.txt, après vue du latin)
+T:Adv3-0 | « 1 Oratio justi clavis est cœli, » ; « 2 Fructus spiritus… Gal. 5. 22. » ; « trésor inépuisable de\n\n## II. Si la tristesse » | p292-296 | la fin de la phrase (« sainteté ») est partie dans les notes ; les notes de T:Adv3-0 mêlent celles de T:Adv1-0 et T:Adv2-0 (deux sections « ### Notes »)
+L:3 | « 1 Diligentibus Deum… » ; « 2 Bonum est confidere… Ps. 117. 8, 9. » | p306 | notes et guillemet isolé « » » au milieu de la phrase
+L:10 | « Dominus autem intuetur cor. » ; « vue cor- ,Obsecro...utexhibeatis corpora… porelle » ; « Quis restitit ei… Job, 6. 4. » | p352-357 | note mêlée au mot coupé « corporelle »
+L:11 | « l’Es-\n\nMatth. 3. 13.\n\nprit saint » ; « Jesu baplizato… Luc. 3. 21.\n\nn. 25 descend sur lui enferme de colombe » | p362-367 | notes et folio au milieu d'un mot
+D:11-30 | « à la\n\n. O bona crux… suscepisti!\n\n* Suscipe discipulum Christi.\n\npatrie ? » | p405-406 | notes au milieu de la phrase
+D:12-08 | « la plus légère ? *\n\nApoc. 2t. 3. » ; « des lions,\n\n’ activité des flammes » | p417-418 | note et mot coupé (« l’activité »)
+D:12-27 | « Qui et recubuit in cœna super pectus ejus. » | p441 | note dans le corps
+D:01-25 | « * Ul si- quos invenisset liujus viæ… perduccret in Jérusalem. » | p451 | note latine dans le corps
+D:02-02 | « des\n\nEgyptiens » | p382 | alinéa coupé au saut de page
+L:14 | « 2 Si enim cognovissent… crucilixissent.\n\n## I. Cor. 2. 8. » | p398 | note devenue un faux intertitre
+#
+# 3. Découpage (méditations fondues, intertitres de section), à reprendre avec chaignon.py, pas ici
+L:10 | « XIII. MÉDITATION. TROTS CHATIMENTS DE LA RESISTANCE A LA GRACE DANS LA PERSONNE D’HÉRODE. » | p356 | la méditation XIII est fondue dans L:10
+D:02-02 | « XVII. MÉDITATION. MÊME SUJET. — L’OBÉISSANCE GLORIFIEE… » ; « XVIII. méditation. » | p381-387 | la méditation XVII est fondue dans D:02-02
+D:01-29 | « SECTION DEUXIÈME. CARÊME ET TEMPS PASCAL. §Ier. PROPRE DU TEMP S » et l'introduction de la Septuagésime | p466-467 | introduction de section collée à la fin de D:01-29
+L:14 | « § IL PROPRE DES SAINTS, » | p400 | intertitre de section à la fin de la méditation
+T:Adv4-0, L:12, D:12-27 | titre courant répété en tête du corps (« QUATRIÈME DIMANCHE DE l’aVENT… », « 27 DECEMBRE. — SAINT JEAN L EVANGELISTE. DlSCipulus… ») | — | à retirer avec le découpage

@@ -5,7 +5,8 @@ test('le 1er dimanche de l’Avent, les huit heures du Bréviaire romain', async
 	const erreurs: string[] = [];
 	page.on('pageerror', (e) => erreurs.push(e.message));
 	await page.goto('/lecture/office?breviaire=romain&date=2026-11-29');
-	await expect(page.getByText('Dominica I Adventus')).toBeVisible();
+	// exact : à l'heure des Vêpres, la commémoraison du dimanche porte aussi ce nom
+	await expect(page.getByText('Dominica I Adventus', { exact: true })).toBeVisible();
 	for (const h of ['Matines', 'Laudes', 'Prime', 'Tierce', 'Sexte', 'None', 'Vêpres', 'Complies'])
 		await expect(page.getByRole('tab', { name: h, exact: true })).toBeVisible();
 	await page.getByRole('tab', { name: 'Laudes', exact: true }).first().click();

@@ -87,7 +87,7 @@ describe('journee()', () => {
 
 	it('prière du matin : Salve après l’invocation à la Vierge, Crux ave et agonisants à la fin', () => {
 		const s = (ligne(calculer('2026-12-01'), 'prog:priere-du-matin')?.sections ?? [])
-			.filter((x) => x.genre !== 'editorial')
+			.filter((x) => x.genre !== 'editorial' && x.genre !== 'partie')
 			.map((x) => x.texte);
 		expect(s).toEqual([
 			'paroissien:priere-du-matin',
@@ -245,5 +245,24 @@ describe('contexte dévotionnel et couverture (lot « Dimensions »)', () => {
 		const a = calculer('2026-12-04');
 		expect(a.contexte.objets).toEqual([]);
 		expect(a.lignes).toEqual(avec('2026-12-04').lignes);
+	});
+});
+
+describe('prières de sainte Gertrude dans la dévotion du jour (demande du 22 nov.)', () => {
+	const JOURS = ['dimanche', 'lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi'];
+	it('une seule par jour, du thème du jour, et toutes reviennent au fil des semaines', () => {
+		const vues = new Map<string, Set<string>>();
+		for (const j of CALENDRIER) {
+			const k = new Date(j.date + 'T12:00:00').getDay();
+			const l = ligne(calculer(j.date), `prog:devotion-${JOURS[k]}`);
+			if (!l) continue;
+			const g = l.sections.filter((s) => s.texte?.startsWith('gertrude:'));
+			expect(g, j.date).toHaveLength(1);
+			if (!vues.has(JOURS[k])) vues.set(JOURS[k], new Set());
+			vues.get(JOURS[k])!.add(g[0].texte!);
+		}
+		expect([...vues.values()].map((v) => v.size)).toEqual([3, 2, 4, 2, 1, 9, 6]);
+		expect(vues.get('vendredi')).toContain('gertrude:salut-plaies');
+		expect(vues.get('samedi')).toContain('gertrude:salutation-d-or');
 	});
 });
