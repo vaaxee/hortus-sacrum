@@ -13,7 +13,7 @@ reste fixe à l'exécution.** La matrice décrit, vérifie, propose ; elle ne ch
 | Élément | Fichier |
 |---|---|
 | Vocabulaire fermé, libellés, `fins_principales` | `data/programme/dimensions.json` |
-| Classement des textes (`releve`, `devinee`) | `data/prieres/dimensions-textes.json` (89 textes ; **0 relu** au 21 nov.) |
+| Classement des textes (`releve`, `devinee`) | `data/prieres/dimensions-textes.json` (89 textes **relus** le 22 nov. ; reste la fin de `jardin:les-quinze-oraisons-de-sainte-brigitte`, devinée) |
 | Cycles (jour de semaine, mois, temps ; `semaine_du_mois` **vide**) | `data/programme/cycles.json` |
 | Types `Dimension`, `Dimensions`, `ContexteDevotionnel`, `Couverture` | `app/src/lib/programme/types.ts` |
 | Contexte, couverture, manques | `app/src/lib/programme/contexte.ts`, appelés dans `journee()` |
@@ -23,7 +23,8 @@ reste fixe à l'exécution.** La matrice décrit, vérifie, propose ; elle ne ch
 | Tests | `app/src/lib/programme/matrice.test.ts`, `ordo.test.ts`, `dimensions.test.ts`, `etiquettes.test.ts` |
 
 État des lots : voir `LOT_DIMENSIONS.md` § 7, « État des lots ». D1, D3, D4 (`motif`) et D5 (compositeur
-`npm run ordo`, rapport dans `docs/audits/ORDO_*.md`) faits ; D2 (relecture humaine) à faire.
+`npm run ordo`, rapport dans `docs/audits/ORDO_*.md`) faits ; D2 fait le 22 nov. (`docs/audits/D2_RELECTURE_2026-11-22.md` :
+intercession = prière pour autrui ; cas à arbitrer).
 
 ## Distinctions (ne jamais fusionner)
 
