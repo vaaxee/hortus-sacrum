@@ -6,7 +6,7 @@
       "id": "prog:priere-du-matin",
       "titre": "Prière du matin et offrande",
       "motif": {"fins": ["adoration", "action-de-graces", "demande"], "objets": ["trinite"], "note": "consacrer la journée à Dieu : prière du matin, offrande et intention d'indulgences (LISTE_DU_JOUR, Matin)"},
-      "revision": 2,
+      "revision": 3,
       "rang": "praecipua",
       "source": "Audit des dévotions, § 2.1 ; arbitrage du 19 nov. : la prière du matin d'abord, l'offrande ensuite",
       "page": {
@@ -14,13 +14,29 @@
         "ordre": 10,
         "sections": [
           {
+            "partie": "Prière du matin"
+          },
+          {
             "texte": "paroissien:priere-du-matin",
-            "coupures": [
-              {
-                "point": "apres-vierge",
-                "avant": "## Acte de foi"
-              }
-            ]
+            "extrait": {
+              "a": "## Acte de foi"
+            }
+          },
+          {
+            "point": "apres-vierge"
+          },
+          {
+            "partie": "Actes de foi, d’espérance et de charité"
+          },
+          {
+            "texte": "paroissien:priere-du-matin",
+            "extrait": {
+              "de": "## Acte de foi"
+            },
+            "suite": true
+          },
+          {
+            "partie": "Offrande de la journée"
           },
           {
             "editorial": "## Intention d’indulgences"
@@ -59,7 +75,8 @@
             }
           },
           {
-            "editorial": "## Actes des devoirs de charité"
+            "partie": "Actes des devoirs de charité",
+            "replie": true
           },
           {
             "editorial": "### Devoir envers l’Église et ses ministres"
@@ -105,6 +122,9 @@
             "extrait": {
               "niveau": 2
             }
+          },
+          {
+            "partie": "Intentions et recommandations"
           },
           {
             "point": "intentions"
@@ -1055,7 +1075,7 @@
       "id": "prog:priere-du-soir",
       "titre": "Prière du soir et examen de conscience",
       "motif": {"fins": ["action-de-graces", "demande", "reparation"], "objets": ["trinite"], "note": "rendre grâces, examiner sa conscience et demander pardon avant la nuit (LISTE_DU_JOUR, Soir)"},
-      "revision": 1,
+      "revision": 2,
       "rang": "praecipua",
       "source": "Audit des dévotions, § 2.1 ; audit du corpus A14 : l'antienne de la Vierge en dernier",
       "page": {
@@ -1063,10 +1083,19 @@
         "ordre": 90,
         "sections": [
           {
+            "partie": "Don du Saint-Esprit du jour"
+          },
+          {
             "point": "debut"
           },
           {
+            "partie": "Prière du soir"
+          },
+          {
             "texte": "paroissien:priere-du-soir"
+          },
+          {
+            "partie": "Recommandations du soir"
           },
           {
             "point": "fin"

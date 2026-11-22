@@ -77,12 +77,26 @@
 	const dernierMorceau = (k: number) =>
 		!sections.slice(k + 1).some((x) => x.texte === sections[k].texte && x.origine === sections[k].origine);
 	/** Le texte suit un titre de mise en page (page composée) : son propre titre ne s'ajoute pas. */
-	const sousUnTitre = (k: number) => k > 0 && sections[k - 1].genre === 'editorial';
+	const sousUnTitre = (k: number) =>
+		k > 0 &&
+		(sections[k - 1].genre === 'editorial' || (sections[k - 1].genre === 'partie' && sections[k - 1].origine === sections[k].origine));
 	/** Page composée (elle porte ses propres titres) : ses textes n'ajoutent pas leur titre ; les invités, si. */
 	const composee = $derived(sections.some((s) => s.genre === 'editorial'));
 	const avecTitre = (k: number) =>
 		nouveauTexte(k) && !sousUnTitre(k) && !sections[k].suite && !(composee && sections[k].origine === (ligneVue?.id ?? id));
 	const nouveauTexte = (k: number) => !sections.slice(0, k).some((x) => x.texte === sections[k].texte && x.origine === sections[k].origine);
+	/**
+	 * Parties de la page (« Prière du matin », « Offrande de la journée ») : chaque partie replie les sections qui la suivent,
+	 * jusqu'à la suivante. Une partie vide ce jour-là (rien d'inséré à son point) ne s'affiche pas.
+	 */
+	const parties = $derived.by(() => {
+		const out: { tete?: SectionResolue; k: number; membres: number[] }[] = [{ k: -1, membres: [] }];
+		sections.forEach((s, k) => {
+			if (s.genre === 'partie') out.push({ tete: s, k, membres: [] });
+			else out[out.length - 1].membres.push(k);
+		});
+		return out.filter((p) => p.membres.length);
+	});
 
 	// champ libre (intentions particulières) : une note du jour à part
 	const intentions = vivantSelon(
@@ -131,7 +145,8 @@
 			<p class="annotation"><span class="rub">✠</span> {a.texte}</p>
 		{/each}
 
-		{#each sections as s, k (k)}
+		{#snippet section(k: number)}
+			{@const s = sections[k]}
 			{@const hs = heuresDeLaSection(s)}
 			{#if s.genre === 'champ'}
 				<section class="champ">
@@ -166,6 +181,17 @@
 						<p class="seule"><a href="/prieres/{encodeURIComponent(s.texte)}">la prière seule, sa source et son indulgence</a></p>
 					{/if}
 				</section>
+			{/if}
+		{/snippet}
+
+		{#each parties as p (p.k)}
+			{#if p.tete}
+				<details class="partie" open={!p.tete.replie}>
+					<summary><h2 class="pc">{p.tete.contenu}</h2></summary>
+					{#each p.membres as k (k)}{@render section(k)}{/each}
+				</details>
+			{:else}
+				{#each p.membres as k (k)}{@render section(k)}{/each}
 			{/if}
 		{/each}
 
@@ -247,6 +273,46 @@
 		padding: 12px 0;
 		cursor: pointer;
 		color: var(--hs-encre-douce);
+	}
+	/* parties d'une longue page (prière du matin, du soir) : un titre qu'on replie pour s'arrêter et reprendre */
+	.partie {
+		margin-top: var(--hs-e6, 48px);
+		border-top: var(--hs-cheveu) solid var(--hs-or-trait);
+	}
+	.partie > summary {
+		display: flex;
+		align-items: baseline;
+		gap: 10px;
+		min-height: 44px;
+		padding-top: var(--hs-e3);
+		cursor: pointer;
+		list-style: none;
+	}
+	.partie > summary::-webkit-details-marker {
+		display: none;
+	}
+	.partie > summary::before {
+		content: '';
+		flex: none;
+		width: 7px;
+		height: 7px;
+		border-right: 1.5px solid var(--hs-lapis);
+		border-bottom: 1.5px solid var(--hs-lapis);
+		transform: translateY(-3px) rotate(-45deg);
+		transition: transform 0.15s;
+	}
+	.partie[open] > summary::before {
+		transform: translateY(-5px) rotate(45deg);
+	}
+	.partie > summary h2 {
+		margin: 0;
+		font-size: var(--hs-t2);
+		color: var(--hs-lapis);
+	}
+	@media (prefers-reduced-motion: reduce) {
+		.partie > summary::before {
+			transition: none;
+		}
 	}
 	.champ {
 		margin-top: var(--hs-e5);
