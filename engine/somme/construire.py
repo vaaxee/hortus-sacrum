@@ -249,6 +249,9 @@ def main():
             n = max(len(rep), len(la['ad']))
             reponses = [{'la': la['ad'][j] if j < len(la['ad']) else '', 'fr': rep[j] if j < len(rep) else ''}
                         for j in range(n)]
+            notes = []
+            if not sc:
+                notes.append('Le « Sed contra » n’est pas traduit dans l’édition de Lachat : le latin est donné seul.')
             articles.append({
                 'ref': ref,
                 'titre': {'la': tq['articles'][str(k)], 'fr': titre},
@@ -257,6 +260,7 @@ def main():
                 'respondeo': {'la': la['co'], 'fr': co},
                 'reponses': reponses,
                 'pages': {'fr': pages_art[k]},
+                **({'notes': notes} if notes else {}),
             })
             index.append({'ref': ref, 'fichier': f'Ia-{int(q):02d}.json', 'question': int(q), 'article': k})
         doc = {

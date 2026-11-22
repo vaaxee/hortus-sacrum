@@ -49,6 +49,11 @@ mkdirSync(join(cible, 'recueils', 'gueranger'), { recursive: true });
 for (const f of readdirSync(join(racine, 'data', 'recueils', 'gueranger'))) {
 	compact(join(racine, 'data', 'recueils', 'gueranger', f), join(cible, 'recueils', 'gueranger', f));
 }
+// Somme théologique (engine/somme/construire.py) : index et un fichier par question
+mkdirSync(join(cible, 'somme'), { recursive: true });
+for (const f of readdirSync(join(racine, 'data', 'somme'))) {
+	if (f.endsWith('.json')) compact(join(racine, 'data', 'somme', f), join(cible, 'somme', f));
+}
 // Bréviaire romain (engine/office/breviaire.py) : un dossier par année liturgique, un fichier par jour, chargés à la demande
 const breviaire = join(racine, 'data', 'office', 'breviaire');
 if (existsSync(breviaire)) {

@@ -63,7 +63,7 @@ describe('« Lectures du jour » : un seul calcul', () => {
 		expect(etatDesLectures(jr, { 'lecture:Mt 5': 1 }, corps).lectures.find((x) => x.lecture.id === 'lec:ecriture')?.lu).toBe(true);
 		expect(etatDesLectures(jr, { 'lec:ecriture': 1 }, corps).lectures.find((x) => x.lecture.id === 'lec:ecriture')?.lu).toBe(true);
 	});
-	it('N = les lectures comptées (office, Évangile, méditation)', () => {
-		expect(etatDesLectures(jr, {}, corps).total).toBe(3);
+	it('N = les lectures comptées (office, Évangile, Somme, méditation)', () => {
+		expect(etatDesLectures(jr, {}, corps).total).toBe(4);
 	});
 });
