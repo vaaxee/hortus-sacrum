@@ -1,0 +1,180 @@
+# Somme théologique, trad. Lachat (Paris, Vivès, 4e éd., 1880, t. I) : corrections relues sur l'image (scan
+# archive.org sommetheologique01thom, page/n<page>.jpg), ligne par ligne, après le vote des quatre lectures.
+# page<TAB>ligne<TAB>texte de la ligne tel qu'imprimé (ligne vide : ligne retirée ; « n+ » : ligne ajoutée après n).
+# Les appels de notes « (1) » sont gardés ici et retirés à la construction ; les numéros « 1° » sont écrits tels quels.
+6	2	Pour renfermer notre sujet dans de justes limites, nous rechercherons
+6	3	avant tout ce qu'est la théologie et à quoi elle s'étend (1).
+6	4	Ici se présente dix questions : 1° La théologie est-elle nécessaire?
+7	0	argumentative? 9° L'Écriture sainte, qui fait partie de la théologie,
+7	5	Il paroît qu'il n'est pas nécessaire qu'il y ait une autre doctrine que
+7	6	les sciences philosophiques (1). 1° D'une part, l'homme ne doit pas cher-
+7	7	cher à connoître ce qui est au-dessus de la raison; car l'Ecclésiastique
+7	12	2° L'être est l'unique objet de la science; car on ne peut savoir que
+8	4	Mais on lit dans saint Paul, II. Timoth., III, 16 : « Toute Écriture
+8	8	créées par la raison humaine. Il est donc utile qu'il y ait, outre les
+8	10	(Conclusion. — Pour que l'homme pût obtenir le salut éternel, il étoit
+8	19	car Isaïe dit, LXIV, 4 : « L'œil n'a point vu sans votre secours, ô Dieu,
+9	0	connoître sa fin, pour qu'il puisse y diriger sa volonté et ses actions. Il
+9	4	lement, il falloit encore que la révélation vînt à son secours. En effet, si
+9	6	nombre seulement parviendroient, après de longs efforts, au milieu de
+9	10	nel, il falloit, encore une fois, que la révélation vînt éclairer son intel-
+9	13	Je réponds aux arguments : 1° Sans doute les choses qui sont au-des-
+9	16	foi. Aussi, l'auteur de l'Ecclésiastique dit-il, III, 25, après les paroles
+9	17	citées dans l'argument : « Il (Dieu) vous a découvert beaucoup de choses
+10	3	naturelle. Voilà pourquoi la théologie, qui appartient à la doctrine sacrée,
+10	5	ARTICLE II.
+10	7	Il paroît que la théologie n'est pas une science. 1° Toute science procède
+10	12	2° La science ne traite point de choses particulières. Or la théologie
+10	15	Mais saint Augustin dit, De la Trin., XIV : « C'est par cette science
+11	0	(Conclusion. — La théologie est une science qui dérive des princi-
+11	2	reux.)
+11	5	l'arithmétique, la géométrie, etc.; les autres partent de principes connus
+11	10	Dieu et de ses élus (1). Ainsi, comme l'harmoniste accepte les principes
+11	13	Je réponds aux arguments : 1° Les principes de tout ordre de connois-
+12	0	2° Si cette science divine parle de choses particulières, par exemple
+12	3	d'exemple dans la morale, ou pour faire ressortir l'autorité des hommes
+12	4+	ARTICLE III.
+12	6	Il paroît que la théologie n'est pas une science une. 1° Cette science
+12	9	même genre (1). Donc la théologie n'est pas une science une.
+12	10	2° La théologie traite des anges, des créatures corporelles et des actes
+12	13	Mais l'Écriture sainte parle de la théologie comme d'une science une;
+12	14	car la Sagesse dit, X, 10 : « Elle lui a donné la science des saints. »
+13	0	(Conclusion. — Comme la théologie considère toute chose au point de
+13	2	Il faut dire ceci : l'unité d'une science (1) se juge d'après son objet
+13	10	Je réponds aux arguments : 1° La théologie ne traite pas également,
+13	14	2° Les diverses matières qui diversifient les sciences inférieures, peu-
+13	17	
+14	0	vue plus élevé : ainsi la physique réunit l'objet de la perspective, celui
+14	1	de l'acoustique, de la mécanique, etc. De même les choses qui sont trai-
+14	8	Il paroît que la théologie est une science purement pratique. 1° La
+14	10	l'action pour fin; car saint Jacques dit, Epît. I, 22 : « Observez la pa-
+14	13	2° La théologie traite, comme en deux parties, de la loi ancienne et de
+14	20	(Conclusion. — La théologie, science d'un ordre supérieur, est émi-
+15	2	Il faut dire ceci : La théologie embrasse, tout en restant une, ainsi que
+15	7	les envisageant sous le même point de vue, tout ainsi que Dieu connoît
+15	13	Ces observations renferment la réponse aux arguments (1).
+15	13+	ARTICLE V.
+15	14	La théologie surpasse-t-elle en dignité les autres sciences?
+15	15	Il paroît que la théologie ne surpasse pas en dignité les autres sciences.
+15	16	1° La certitude est une des choses qui font la dignité d'une science. Or,
+16	1	les esprits. Donc les sciences profanes surpassent la théologie en dignité.
+16	2	2° Le propre d'une science inférieure est d'emprunter aux sciences su-
+16	8	dans la sagesse profane ou leurs connoissances dans les saintes Ecritu-
+16	11	(Conclusion. — La théologie, soit comme science spéculative, soit
+16	13	Il faut dire ceci : La théologie, science partie spéculative, partie pra-
+17	0	certitude, car elle la reçoit des lumières de la science divine qui est in-
+17	7	le but de la milice c'est le bien de la cité. Or la théologie, comme science
+17	11	Je réponds aux arguments : 1° Les vérités les plus certaines en elles-
+17	19	comme le dit encore le philosophe que nous venons de nommer (1).
+18	0	2° Si la théologie emprunte à la philosophie, ce n'est pas qu'elle ait
+19	2	Il paroît que la théologie n'est pas la sagesse. 1° Toute science qui cher-
+19	6	principes hors d'elle-même. Donc elle n'est pas la sagesse (1).
+19	7	2° Il appartient à la sagesse de prouver les principes des sciences, ce
+19	9	Aristote. Or la théologie ne prouve pas les principes des sciences; donc
+19	11	3° La science théologique s'acquiert par l'étude; mais la sagesse est
+19	12	donnée par grâce infuse, si bien qu'Isaïe la compte parmi les dons du
+19	16	(Conclusion. — La théologie, traitant de Dieu comme de la première
+20	2	Il faut dire ceci : La science sacrée est, soit relativement, soit absolu-
+20	10	I Cor. III, 10 : « J'ai posé le fondement comme un sage architecte; »
+20	13	qui a fait dire à l'Esprit-Saint, Prov. X, 23 : « La sagesse est la prudence. »
+20	16	(ainsi que l'ont connu les philosophes, selon ce mot de saint Paul : « Ce
+20	18	noît lui-même et qu'il s'est fait connoître par la révélation. La théologie
+21	0	Je réponds aux arguments : 1° Ce n'est pas aux sciences humaines
+21	2	vine, souveraine sagesse qui est la source et la fin de toutes nos con-
+21	4	2° Les principes des sciences humaines, ou ne peuvent être prouvés à
+21	6	quelque autre science. Or la théologie ne repose pas sur la raison naturelle,
+21	7	mais sur la révélation. Il ne lui appartient donc pas de prouver les prin-
+21	10	songe. C'est pourquoi saint Paul écrit, II Cor. X, 4, 5 : « Détruisons
+21	13	3° Il y a deux manières de juger, par conséquent deux sortes de sagesse.
+21	18	peut juger de la vertu, bien qu'il n'en ait point l'habitude. Or la pre-
+21	21	écrit encore, I Cor. II, 15 : « L'homme spirituel juge de toutes choses; » et
+22	0	Denys l'Aréopagite (1) dit d'un certain Hiérothee : « Il est devenu savant,
+22	5	Dieu est-il l'objet de la théologie?
+22	6	Il paroît que Dieu n'est pas l'objet de la théologie. 1° Chaque science
+22	11	2° Toutes les choses dont traite une science sont comprises dans son
+23	2	(Conclusion. — Comme la théologie considère toute chose relative-
+23	5	Il faut dire ceci : L'objet est à la science ce qu'il est à la faculté (2). Or
+23	6	l'objet d'une faculté, c'est, à proprement parler, ce par quoi les choses se
+23	7	rapportent à cette faculté; ainsi, comme l'homme et la pierre se rappor-
+24	2	de l'Église. Il est vrai que la théologie traite de tout cela, mais elle consi-
+24	4	Je réponds aux objections : 1° Comme nous ne savons pas ce qu'est
+24	6	de ses effets, soit naturels, soit surnaturels, pour arriver à sa connois-
+24	9	2° Toutes les choses dont traite la théologie sont comprises en Dieu,
+24	12	ARTICLE VIII.
+24	14	Il paroît que la théologie n'est pas argumentative. 1° Saint Ambroise
+24	17	tout; d'où saint Jean dit, XX, 31 : « Ces choses ont été écrites, afin que
+24	19	2° Si la science théologique étoit argumentative, elle argumenteroit ou
+25	0	d'après l'autorité, ou d'après la raison. Or, si elle argumentoit d'après
+25	1	l'autorité, cela dérogeroit à sa dignité, car la preuve tirée de l'autorité est
+25	2	la plus faible de toutes, selon Boëce (1); si elle argumentoit d'après la
+25	4	d'après saint Grégoire, quand la raison lui donne l'évidence. Donc la
+25	6	Mais saint Paul dit, Tit. I, 9, en parlant de l'évêque : « Il faut qu'il
+25	10	(Conclusion. — La science sacrée n'argumente pas pour prouver ses
+25	17	prouver ses principes, qui sont des articles de foi, mais elle en excipe pour
+26	0	rection des corps sur la résurrection de Jésus-Christ. Mais si les sciences
+26	3	la métaphysique, science suprême dans l'ordre des connoissances hu-
+26	16	toutes les raisons qu'on apporte à l'encontre de la foi ne sont pas des dé-
+26	18	Je réponds aux arguments : 1° Sans doute la raison humaine ne peut
+26	22	2° La théologie argumente souvent d'après l'autorité; tenant ses prin-
+26	23	cipes de la révélation divine, elle doit reconnoître le témoignage de ceux
+27	9	Paul dit, II Cor. X, 5 : « Réduisant en captivité toute intelligence, sous
+27	11	losophes en faveur des vérités qu'ils ont pu connoître par la lumière na-
+27	12	turelle; et l'Apôtre cita lui même Aratus quand il s'écria dans l'Aréopage,
+27	13	Act. XVII, 28 : « Comme l'ont dit quelques-uns de vos poëtes, nous
+27	20	foi repose sur la révélation qui a été faite aux auteurs des livres canoniques,
+27	24	les ont écrits sont seuls, pour moi, à l'abri de toute erreur. Quant aux autres
+28	0	docteurs, quelle que soit l'éminence de leur doctrine et de leur sainteté,
+28	2	qu'ils l'ont pensé ou écrit (1). »
+28	4	L'Ecriture sainte doit-elle se servir de métaphores (2)?
+28	6	1° La science sacrée, qui tient le premier rang parmi les sciences, comme
+29	0	il ne convient pas à la science sacrée d'employer des figures et des
+29	2	2° La science sacrée a pour but la manifestation de la vérité, et l'Ec-
+29	3	clésiastique promet des récompenses à ceux qui la manifestent; il lui fait
+29	4	tenir ce langage, XXIV, 31 : « Ceux qui m'éclaircissent auront la vie éter-
+29	5	nelle. » Or les figures et les images vont droit à obscurcir la vérité. Donc
+29	8	3° Plus les créatures sont élevées, plus elles approchent de la ressem-
+29	11	créatures les plus élevées, et non dans les créatures infimes. Cependant
+29	13	Mais on lit dans le livre d'Osée, XII, 10 : « C'est moi qui ai parlé aux
+29	18	(Conclusion. — Comme la doctrine sacrée s'adresse à tous les hommes,
+29	19	il est très-convenable qu'elle expose les choses divines par des métaphores
+30	0	sibles, puisque nos connoissances ont leur commencement dans les sens (1).
+30	1	Il étoit donc d'une haute convenance que l'Écriture sainte nous trans-
+30	2	mît les choses spirituelles sous des images corporelles. C'est ce que remar-
+30	3	que Denys le philosophe, Hiér. cél. II : « Il faut que la lumière divine,
+30	4	
+31	0	pour briller à nos yeux, s'enveloppe de voiles sacrés. » D'ailleurs l'Écri-
+31	1	ture sainte est faite pour tous, d'après ce mot de saint Paul, Rom. I, 14 :
+31	5	Je réponds aux arguments : 1° La poésie se sert de métaphores pour
+31	9	2° La révélation n'est point altérée par les figures sensibles dont elle
+32	0	ces emblèmes; car elle élève les auteurs inspirés, et par cela même ceux
+32	2	Ce qui est présenté métaphoriquement dans un passage, l'Écriture l'expose
+32	8	3° La doctrine sacrée devoit emprunter aux créatures de l'ordre infé-
+32	9	rieur, plutôt qu'aux créatures les plus élevées, les images sous lesquelles
+32	17	vons mieux, de cet Être infini, ce qu'il n'est pas que ce qu'il est; si bien
+32	22	
+33	1	L'Écriture sainte renferme-t-elle pluieurs sens sous une seule lettre?
+33	2	Il paroît que l'Écriture sainte ne renferme pas, sous la même lettre,
+33	4	allégorique, le sens tropologique ou moral, et le sens anagogique. 1° La
+33	7	équivoques, et les signale comme une des ruses du sophisme. Or l'Écri-
+33	11	2° Saint Augustin trouve quatre choses dans l'Ancien Testament : l'his-
+33	16	3° Il y a de plus le sens parabolique, qui n'est point renfermé dans les
+33	17	précédents.
+33	18	Mais saint Grégoire dit, Moral., XX, 1 : « L'Écriture sainte surpasse
+33	21	(Conclusion. — Comme Dieu embrasse toute chose à la fois dans son
+34	0	intelligence, l'Écriture sainte renferme des sens multiples sous une seule
+34	3	Il faut dire ceci : L'auteur de L'Écriture sainte, Dieu, peut donner une
+34	13	La loi ancienne est, comme le montre saint Paul, Hebr., VII, 1, et sui-
+34	24	ne pourroit-elle, demande saint Augustin, Conf., XII, 18 et 19, renfermer
+34	26	Je réponds aux arguments : 1° La multiplicité des sens dans l'Écriture
+35	0	ne produit ni équivoque ni ambiguïté; car ces sens sont multiples,
+35	1	comme nous l'avons dit, non parce que les mots ont plusieurs significa-
+35	11	2° L'histoire, l'étiologie et l'allégorie rentrent dans le sens littéral. En
+35	19	sens spirituels que nous posions tout à l'heure. Hugues de Saint-Victor
+36	0	voilà comment il n'en assigne que trois dans les Sentences, l'historique,
+36	1	l'allégorique, et le tropologique.
+36	2	3° Le sens parabolique est renfermé dans le sens littéral; car les mots
+36	7	mais qu'il a ce que signifie ce membre, c'est-à-dire la puissance d'agir.
+36	8	De cette manière le sens littéral ne peut jamais renfermer l'erreur (1).
+23	8	tent à la vue par la couleur, la couleur est l'objet de la vue. Or non-seu-
+33	5	multiplicité des sens engendre la confusion, produit l'erreur et détruit la
+35	5	ral, qui a le privilége exclusif de fournir des arguments à la science,

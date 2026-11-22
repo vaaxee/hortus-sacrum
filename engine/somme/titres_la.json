@@ -1,0 +1,19 @@
+{
+ "_note": "Intitulés latins de l'édition léonine (t. IV, Rome 1888 ; archive.org operaomniaiussui04thom), relus sur l'image (planche_leo.py). Imprimés en capitales ; transcrits ici en minuscules, majuscules aux noms propres (Deus, Scriptura) comme dans le corps du texte léonin. La mention « in … articulos divisa » n'est pas reprise.",
+ "1": {
+  "titre": "De sacra doctrina, qualis sit, et ad quae se extendat",
+  "page_scan": 23,
+  "articles": {
+   "1": "Utrum sit necessarium, praeter philosophicas disciplinas, aliam doctrinam haberi",
+   "2": "Utrum sacra doctrina sit scientia",
+   "3": "Utrum sacra doctrina sit una scientia",
+   "4": "Utrum sacra doctrina sit scientia practica",
+   "5": "Utrum sacra doctrina sit dignior aliis scientiis",
+   "6": "Utrum haec doctrina sit sapientia",
+   "7": "Utrum Deus sit subiectum huius scientiae",
+   "8": "Utrum haec doctrina sit argumentativa",
+   "9": "Utrum sacra Scriptura debeat uti metaphoris",
+   "10": "Utrum sacra Scriptura sub una littera habeat plures sensus"
+  }
+ }
+}
