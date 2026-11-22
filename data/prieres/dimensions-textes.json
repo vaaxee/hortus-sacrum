@@ -403,6 +403,7 @@
     "jardin:devoir-envers-les-pauvres-les-persecutes-les-affliges": {
       "fin": ["intercession"],
       "objet": ["sainte-vierge", "saints"],
+      "personne": ["pauvres-et-affliges"],
       "forme": ["acte"],
       "releve": "2026-11-22"
     },
@@ -455,8 +456,7 @@
       ],
       "personne": ["soi-meme"],
       "forme": ["oraison"],
-      "releve": "2026-11-22",
-      "devinee": ["fin"]
+      "releve": "2026-11-22"
     },
     "jardin:les-sept-douleurs-de-marie": {
       "fin": ["demande"],

@@ -75,6 +75,16 @@
 
 	// jour chargé : seules les pratiques du rang choisi et au-dessus (réglage gardé pour ce jour, sur cet appareil)
 	let seuil = $state<Rang>('supererogatoria');
+	// retour d'une pratique marquée « faite » (/?#ligne-<id>) : la liste se calcule après coup, on y va une fois rendue
+	let ancreFaite = '';
+	$effect(() => {
+		const h = page.url.hash;
+		if (!jr || !h.startsWith('#ligne-') || ancreFaite === h) return;
+		const el = document.getElementById(decodeURIComponent(h.slice(1)));
+		if (!el) return;
+		ancreFaite = h;
+		el.scrollIntoView({ block: 'center', behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+	});
 	$effect(() => {
 		let v: string | null = null;
 		try {
@@ -448,7 +458,7 @@
 							{@const fait = faites(l)}
 							{@const sous = sousTitre(l)}
 							{@const m = minutesDUneRecitation(l, vie.corps)}
-							<li class:fini={fait >= n}>
+							<li class:fini={fait >= n} id="ligne-{l.id}">
 								<Case libelle={l.titre} bind:cochee={() => fait >= n, () => cocher(l, date, fait, idsPratiques)} />
 								<div class="corps">
 									<a class="titre" href="/pratique/{encodeURIComponent(l.id)}?date={date}"><span class="fil">{l.titre}</span></a>
