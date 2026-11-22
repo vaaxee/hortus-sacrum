@@ -35,7 +35,10 @@ Les PR et commits antérieurs sont utiles pour comprendre les décisions, mais l
 présents dans main constituent l'état de référence.
 
 Outillage du projet : skills `.claude/skills/hortus-*` (sources, liturgie, ordo, dimensions, calendar, content, ocr,
-qa) et sous-agents `.claude/agents/hortus-*` (architecte, frontend, qa, sources, liturgie). Les charger selon la tâche.
+qa) et sous-agents `.claude/agents/hortus-*` (architecte, frontend, qa, sources, liturgie, esthetique, ux). Les charger
+selon la tâche. Intégrateurs d'interface : **Impeccable** (skill `impeccable`, agent `hortus-esthetique` : direction
+visuelle) et **UI UX Pro Max** (skill `ui-ux-pro-max`, agent `hortus-ux` : ergonomie, accessibilité) ; ils travaillent
+sous les règles de ce fichier (identité existante, textes sourcés intouchables).
 
 Superpowers (plugin `superpowers@claude-plugins-official`, activé dans `.claude/settings.json`) fournit les workflows
 `brainstorming`, `writing-plans`, `executing-plans`, `subagent-driven-development`, `test-driven-development`,
