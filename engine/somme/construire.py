@@ -3,7 +3,8 @@
 Entrées :
  - R.json (resoudre.py) : lignes du texte français par page du scan de 1880, après vote ;
  - corrections_fr.txt : chaque ligne relue sur l'image (« page<TAB>ligne<TAB>texte », « n+ » ajoute, vide retire) ;
- - LA.json (latin_ct.py) : latin léonin d'après le Corpus Thomisticum, relu sur l'édition de 1888 ;
+ - LA.json (latin_ct.py) : latin léonin d'après le Corpus Thomisticum, contrôlé sur la lecture de l'édition de 1888
+   (latin_controle.py) ; écarts tranchés sur l'image dans corrections_la.txt (appliqué ici) ;
  - titres_la.json : intitulés latins des questions et des articles (édition léonine, relus sur l'image).
 
 Mise en forme (présentation seulement, aucun mot touché) : coupures de fin de ligne recollées ; appels de notes « (1) »
@@ -37,10 +38,13 @@ def charger_corrections(path):
 def lignes_corrigees(page, cor):
     out = []
     c = cor.get(page['page'], {})
+    xs = sorted(l['x'] for l in page['lignes'] if l.get('x') is not None)
+    marge = xs[len(xs) // 2] if xs else 0
     for i, l in enumerate(page['lignes']):
         t = c.get(str(i), l['t'])
+        retrait = (l.get('x') or 0) - marge
         if t.strip():
-            out.append(dict(t=t.strip(), page=page['page']))
+            out.append(dict(t=t.strip(), page=page['page'], alinea=30 <= retrait <= 120))
         if f'{i}+' in c:
             out.append(dict(t=c[f'{i}+'], page=page['page']))
     for l in out:
@@ -73,14 +77,17 @@ def typo(s):
 
 
 INTITULE = re.compile(r'(ARTICLE|QUESTION)\b')
-MARQUE = re.compile(r'(\d+°|Il paro[iî]t|Mais |\(Conclusion|Il faut dire|Je réponds|Ces observations|Disons donc)')
+MARQUE = re.compile(r'(\d+°|Il paro[iî]t|Mais |\(Conclusion|Il faut dire|Je réponds|Ces observations|Disons donc|'
+                    r'(Premi|Deuxi|Secon|Troisi|Quatri|Cinqui|Sixi)[eè]m?e?ment\b)')
 FIN = re.compile(r'[.?!:»)]$')
+FORT = re.compile(r'[.»)]$')  # « 2° » après « : » ou « ? » : suite d'une énumération (prologues)
 
 
 def paragraphes(lignes):
     """Paragraphes d'après la mise en page : intitulés ; « ¶ » en tête d'une ligne corrigée (alinéa relu sur l'image) ;
-    sinon, après une ligne finie par une ponctuation forte, une ligne plus courte que la justification (fin d'alinéa)
-    ou une marque de la structure de l'article (« 2° », « Mais », « Je réponds »…)."""
+    sinon, après une ligne plus courte que la justification finie par une ponctuation (fin d'alinéa), ou après une
+    ligne finie par « . », « » » ou « ) » : une marque de la structure de l'article (« 2° », « Mais », « Je réponds », « Deuxièmement »…) ou un retrait de
+    première ligne (30 à 120 pixels à droite de la marge de la page, d'après la lecture Tesseract)."""
     longueurs = sorted(len(l['t']) for l in lignes) or [0]
     pleine = longueurs[len(longueurs) // 2]
     paras = []
@@ -90,7 +97,8 @@ def paragraphes(lignes):
         force = t.startswith('¶')
         t = t.lstrip('¶ ')
         neuf = (force or not paras or INTITULE.match(t) or INTITULE.match(paras[-1])
-                or (prec is not None and FIN.search(prec) and (len(prec) < 0.88 * pleine or MARQUE.match(t))))
+                or (prec is not None and FIN.search(prec) and len(prec) < 0.88 * pleine)
+                or (prec is not None and FORT.search(prec) and (MARQUE.match(t) or l.get('alinea'))))
         if not neuf and len(paras) >= 2 and INTITULE.match(paras[-2]) and FIN.search(prec or ''):
             neuf = True  # après le titre (une ligne ou deux) d'une question ou d'un article
         if neuf:
@@ -140,14 +148,34 @@ def decouper_article(ps, ref):
     return obj, '\n\n'.join(sc), '\n\n'.join(co), rep
 
 
-def latin_titre(s):
-    return s
+def corriger_latin(LA, path):
+    """corrections_la.txt : écarts du Corpus Thomisticum tranchés sur l'édition léonine (texte unique dans la partie)."""
+    if not os.path.exists(path):
+        return
+    for ligne in open(path, encoding='utf-8'):
+        if not ligne.strip() or ligne.startswith('#'):
+            continue
+        q, a, part, ancien, nouveau = ligne.rstrip('\n').split('\t')
+        if q not in LA:
+            continue
+        A = LA[q]['articles'][a] if a != '0' else LA[q]
+        m = re.fullmatch(r'(arg|ad)(\d+)', part)
+        cle, rang = (m.group(1), int(m.group(2)) - 1) if m else (part, None)
+        texte = A[cle][rang] if rang is not None else A[cle]
+        if texte.count(ancien) != 1:
+            raise SystemExit(f'corrections_la : « {ancien} » non unique ou absent (q. {q} a. {a} {part})')
+        texte = texte.replace(ancien, nouveau)
+        if rang is not None:
+            A[cle][rang] = texte
+        else:
+            A[cle] = texte
 
 
 def main():
     R = {p['page']: p for p in json.load(open(sys.argv[1]))}
     cor = charger_corrections(sys.argv[2])
     LA = json.load(open(sys.argv[3]))
+    corriger_latin(LA, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'corrections_la.txt'))
     TL = json.load(open(sys.argv[4]))
     PAGES = json.load(open(sys.argv[5]))
     dest = sys.argv[6]
@@ -157,12 +185,18 @@ def main():
         'fr': {'ouvrage': 'Somme théologique de S. Thomas d’Aquin, traduite en français et annotée par F. Lachat',
                'edition': 'Paris, Louis Vivès, 4e édition, 1880, tome premier (même composition que l’édition de 1874)',
                'url': 'https://archive.org/details/sommetheologique01thom',
-               'controle': 'https://archive.org/details/sommethologique07lachgoog'},
+               'controle': 'https://archive.org/details/sommethologique07lachgoog',
+               'relecture': 'vote de quatre lectures (Tesseract et ABBYY sur les scans de 1880 et de 1874, même '
+                            'composition) ; chaque ligne sans accord relue sur l’image (corrections_fr.txt) ; '
+                            'notes de Lachat et « (Conclusion. — …) » des éditeurs non repris'},
         'la': {'ouvrage': 'Sancti Thomae Aquinatis Opera omnia iussu impensaque Leonis XIII P. M. edita, t. IV : '
                           'Pars prima Summae theologiae a quaestione I ad quaestionem XLIX',
                'edition': 'Romae, ex Typographia Polyglotta S. C. de Propaganda Fide, 1888',
                'url': 'https://archive.org/details/operaomniaiussui04thom',
-               'transcription': 'https://www.corpusthomisticum.org/sth1001.html (E. Alarcón, d’après l’édition léonine)'},
+               'transcription': 'https://www.corpusthomisticum.org/sth1001.html (E. Alarcón, d’après l’édition léonine)',
+               'relecture': 'alignement mot à mot sur la lecture ABBYY du scan de 1888 (latin_controle.py), écarts '
+                            'isolés vus sur l’image (corrections_la.txt) ; intitulés relus sur l’image ; ponctuation '
+                            'du Corpus Thomisticum ; pas de relecture intégrale du latin sur l’image'},
     }
     for q in sorted(PAGES, key=int):
         p0, p1 = PAGES[q]

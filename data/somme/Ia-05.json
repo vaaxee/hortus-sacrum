@@ -1,0 +1,362 @@
+{
+ "ref": "Iª q. 5",
+ "partie": "Ia",
+ "question": 5,
+ "titre": {
+  "la": "De bono in communi",
+  "fr": "Du bon en général."
+ },
+ "prooemium": {
+  "la": "Deinde quaeritur de bono, et primo de bono in communi; secundo de bonitate Dei. Circa primum quaeruntur sex. Primo, utrum bonum et ens sint idem secundum rem. Secundo, supposito quod differant ratione tantum, quid sit prius secundum rationem, utrum bonum vel ens. Tertio, supposito quod ens sit prius, utrum omne ens sit bonum. Quarto, ad quam causam ratio boni reducatur. Quinto, utrum ratio boni consistat in modo, specie et ordine. Sexto, quomodo dividatur bonum in honestum, utile et delectabile.",
+  "fr": "Maintenant nous devons parler du bon, et d’abord du bon en général, ensuite de la bonté de Dieu.\n\nSix questions se présentent sur le premier point : 1° le bon et l’être sont-ils la même chose dans la réalité? 2° Supposé qu’ils diffèrent seulement dans l’idée, lequel, du bon ou de l’être, a la priorité rationnellement? 3° En admettant que l’être a la priorité, tout être est-il bon? 4° A quelle sorte de cause se rattache l’idée du bon? 5° La nature du bon consiste-elle dans le mode, l’espèce et l’ordre? 6° Peut-on diviser le bon dans les trois catégories de l’honnête, de l’utile et de l’agréable?"
+ },
+ "articles": [
+  {
+   "ref": "Iª q. 5 a. 1",
+   "titre": {
+    "la": "Utrum bonum differat secundum rem ab ente",
+    "fr": "Le bon différe-t-il de l’être dans la réalité des choses?"
+   },
+   "objections": [
+    {
+     "la": "Ad primum sic proceditur. Videtur quod bonum differat secundum rem ab ente. Dicit enim Boetius, in libro de Hebdom., *intueor in rebus aliud esse quod sunt bona, et aliud esse quod sunt*. Ergo bonum et ens differunt secundum rem.",
+     "fr": "Il paroît que le bon ne diffère pas de l’être dans la réalité des choses.\n\n1° Boëce dit : « Je vois qu’autre chose est d’être bon, autre chose d’être. » Donc le bon diffère de l’être dans la réalité des choses."
+    },
+    {
+     "la": "Praeterea, nihil informatur seipso. Sed bonum dicitur per informationem entis, ut habetur in commento libri de causis. Ergo bonum differt secundum rem ab ente.",
+     "fr": "2° Rien ne s’informe soi-même. Or le bon n’est pas informé par l’être, comme on voit dans le Commentaire du livre des causes : donc le bon diffère de l’être dans la réalité."
+    },
+    {
+     "la": "Praeterea, bonum suscipit magis et minus. Esse autem non suscipit magis et minus. Ergo bonum differt secundum rem ab ente.",
+     "fr": "3° Le bon admet le plus et le moins. Or l’être n’admet pas le plus et le moins : donc le bon diffère de l’être dans la réalité."
+    }
+   ],
+   "sed_contra": {
+    "la": "Sed contra est quod Augustinus dicit, in libro de doctrina Christiana, quod *inquantum sumus, boni sumus*.",
+    "fr": "Mais saint Augustin dit, Doct. chrét., I, 31 : « En tant que nous sommes, nous sommes bons. »"
+   },
+   "respondeo": {
+    "la": "Respondeo dicendum quod bonum et ens sunt idem secundum rem, sed differunt secundum rationem tantum. Quod sic patet. Ratio enim boni in hoc consistit, quod aliquid sit appetibile, unde philosophus, in I Ethic., dicit quod *bonum est quod omnia appetunt*. Manifestum est autem quod unumquodque est appetibile secundum quod est perfectum, nam omnia appetunt suam perfectionem. Intantum est autem perfectum unumquodque, inquantum est actu, unde manifestum est quod intantum est aliquid bonum, inquantum est ens, esse enim est actualitas omnis rei, ut ex superioribus patet. Unde manifestum est quod bonum et ens sunt idem secundum rem, sed bonum dicit rationem appetibilis, quam non dicit ens.",
+    "fr": "Il faut dire ceci : Le bon et l’être sont la même chose réellement, mais ils diffèrent rationnellement : deux mots vont le faire comprendre. La nature du bon consiste dans l’appétibilité; ce qui a fait dire au Philosophe, dans l’Ethique : « Le bon est ce que tout appète. » Or, d’une part, les choses sont appétibles selon qu’elles sont parfaites, puisque tout aspire à la perfection; d’une autre part, elles sont parfaites selon qu’elles sont en acte : donc elles sont bonnes autant qu’elles sont êtres, car l’être est l’acte de tout. Ainsi l’être et le bon sont un dans la nature des choses; mais le bon implique l’idée d’appétibilité, tandis que l’être ne l’implique pas."
+   },
+   "reponses": [
+    {
+     "la": "Ad primum ergo dicendum quod, licet bonum et ens sint idem secundum rem, quia tamen differunt secundum rationem, non eodem modo dicitur aliquid ens simpliciter, et bonum simpliciter. Nam cum ens dicat aliquid proprie esse in actu; actus autem proprie ordinem habeat ad potentiam; secundum hoc simpliciter aliquid dicitur ens, secundum quod primo discernitur ab eo quod est in potentia tantum. Hoc autem est esse substantiale rei uniuscuiusque; unde per suum esse substantiale dicitur unumquodque ens simpliciter. Per actus autem superadditos, dicitur aliquid esse secundum quid, sicut esse album significat esse secundum quid, non enim esse album aufert esse in potentia simpliciter, cum adveniat rei iam praeexistenti in actu. Sed bonum dicit rationem perfecti, quod est appetibile, et per consequens dicit rationem ultimi. Unde id quod est ultimo perfectum, dicitur bonum simpliciter. Quod autem non habet ultimam perfectionem quam debet habere, quamvis habeat aliquam perfectionem inquantum est actu, non tamen dicitur perfectum simpliciter, nec bonum simpliciter, sed secundum quid. Sic ergo secundum primum esse, quod est substantiale, dicitur aliquid ens simpliciter et bonum secundum quid, idest inquantum est ens, secundum vero ultimum actum dicitur aliquid ens secundum quid, et bonum simpliciter. Sic ergo quod dicit Boetius, quod *in rebus aliud est quod sunt bona, et aliud quod sunt*, referendum est ad esse bonum et ad esse simpliciter, quia secundum primum actum est aliquid ens simpliciter; et secundum ultimum, bonum simpliciter. Et tamen secundum primum actum est quodammodo bonum, et secundum ultimum actum est quodammodo ens.",
+     "fr": "Je réponds aux arguments : 1° Quoique le bon et l’être soient un dans la réalité des choses, comme ils diffèrent dans l’idée que nous nous en formons, un objet ne se dit point être et bon purement et simplement sous le même rapport. Puisque l’être désigne proprement ce qui est en acte, et que l’acte se rapporte à la puissance, une chose est dite être simplement du point de vue qui la distingue radicalement de ce qui n’est qu’en puissance : c’est là l’être substantiel de tout. On appelle donc les choses êtres simplement à cause de leur être substantiel, et on les appelle êtres relativement à cause de leurs actes accidentels : ainsi être blanc c’est être relativement; car ce n’est pas cette sorte d’être qui fait disparoître l’être en puissance, puisqu’il s’attache à un objet qui existe déjà. Quant au bon, il implique l’idée d’appétibilité, de perfection, par conséquent l’idée d’acte dernier. Les choses donc qui ont atteint leur dernier degré de perfection, sont dites bonnes simplement; mais celles qui n’ont pas leur dernière perfection, bien qu’elles en approchent plus ou moins comme étant en acte, on ne les dit ni parfaites ni bonnes simplement, mais relativement. D’après tout cela, le premier degré de l’être, l’être substantiel fait appeler les choses être simplement et bonnes relativement, c’est-à-dire en tant qu’elles ont l’être; mais le dernier acte de l’être les fait dire être relativement et bonnes simplement. Les paroles de Boëce : « Je vois qu’autre chose est d’être bon, autre chose d’être, » doivent donc s’entendre de l’être et du bon pur et simple : car ces deux entités résultent, l’une du premier et l’autre du dernier acte de l’être, quoique le premier renferme déjà une certaine bonté, et que le dernier soit encore l’être."
+    },
+    {
+     "la": "Ad secundum dicendum quod bonum dicitur per informationem, prout accipitur bonum simpliciter, secundum ultimum actum.",
+     "fr": "2° Le bon est formé par l’être, quand il s’agit de bon pur et simple, qui est la dernière perfection des choses"
+    },
+    {
+     "la": "Et similiter dicendum ad tertium, quod bonum dicitur secundum magis et minus, secundum actum supervenientem; puta secundum scientiam vel virtutem.",
+     "fr": "3° Le bon admet le plus et le moins par les actes accidentels, comme la science et la vertu qui s’ajoutent à l’être substantiel."
+    }
+   ],
+   "pages": {
+    "fr": [
+     85,
+     88
+    ]
+   }
+  },
+  {
+   "ref": "Iª q. 5 a. 2",
+   "titre": {
+    "la": "Utrum bonum secundum rationem sit prius quam ens",
+    "fr": "Le bon précède-t-il l’être rationnellement?"
+   },
+   "objections": [
+    {
+     "la": "Ad secundum sic proceditur. Videtur quod bonum secundum rationem sit prius quam ens. Ordo enim nominum est secundum ordinem rerum significatarum per nomina. Sed Dionysius, inter alia nomina Dei, prius ponit bonum quam ens, ut patet, in III cap. de Div. Nom. Ergo bonum secundum rationem est prius quam ens.",
+     "fr": "Il paroît que le bon précède l’être dans l’idée que nous nous en formons.\n\n1° L’ordre des noms suit l’ordre des choses qu’ils expriment. Or l’Aréopagite, faisant la classification des noms divins, met celui de bon avant celui d’être. Donc le bon précède l’être dans l’idée."
+    },
+    {
+     "la": "Praeterea, illud est prius secundum rationem, quod ad plura se extendit. Sed bonum ad plura se extendit quam ens, quia, ut dicit Dionysius, V cap. de Div. Nom., *bonum se extendit ad existentia et non existentia, ens vero ad existentia tantum*. Ergo bonum est prius secundum rationem quam ens.",
+     "fr": "2° Cela possède rationnellement la priorité, qui s’étend à un plus grand nombre de choses. Or le bon s’étend à un plus grand nombre de choses que l’être; car il s’étend aux choses existantes et aux choses non existantes, tandis que l’être n’embrasse que les choses existantes. Donc le bon précède l’être rationnellement."
+    },
+    {
+     "la": "Praeterea, quod est universalius, est prius secundum rationem. Sed bonum videtur universalius esse quam ens, quia bonum habet rationem appetibilis; quibusdam autem appetibile est ipsum non esse; dicitur enim, Matth. XXVI, de Iuda, *bonum erat ei, si natus non fuisset* etc. Ergo bonum est prius quam ens, secundum rationem.",
+     "fr": "3° Ce qui comprend plus de choses a la priorité rationnelle sur ce qui en comprend moins. Or le bon comprend plus de choses que l’être. En effet, le bon renferme l’appétibilité, mais l’être ne la renferme pas toujours; car il est dit de Judas, Matth., XXVI, 24 : « Il vaudroit mieux pour lui qu’il ne fût jamais né. » Donc le bon précède l’être rationnellement."
+    },
+    {
+     "la": "Praeterea, non solum esse est appetibile, sed et vita et sapientia, et multa huiusmodi, et sic videtur quod esse sit quoddam particulare appetibile, et bonum, universale. Bonum ergo simpliciter est prius secundum rationem quam ens.",
+     "fr": "4° Parmi les choses appétibles, nous devons placer non-seulement l’être, mais encore la vie, la sagesse, etc. L’être est donc un objet particulier, et le bon un objet général d’appétibilité. Le bon pur et simple est donc avant l’être rationnellement."
+    }
+   ],
+   "sed_contra": {
+    "la": "Sed contra est quod dicitur in libro de causis, quod *prima rerum creatarum est esse*.",
+    "fr": "Mais on lit dans le livre des Causes, prop. IV : « La première des choses créées, c’est l’être. »"
+   },
+   "respondeo": {
+    "la": "Respondeo dicendum quod ens secundum rationem est prius quam bonum. Ratio enim significata per nomen, est id quod concipit intellectus de re, et significat illud per vocem, illud ergo est prius secundum rationem, quod prius cadit in conceptione intellectus. Primo autem in conceptione intellectus cadit ens, quia secundum hoc unumquodque cognoscibile est, inquantum est actu, ut dicitur in IX Metaphys. Unde ens est proprium obiectum intellectus, et sic est primum intelligibile, sicut sonus est primum audibile. Ita ergo secundum rationem prius est ens quam bonum.",
+    "fr": "Il faut dire ceci : L’être précède le bon dans l’idée L’idée exprimée par le nom, c’est ce que l’intelligence conçoit et dénonce au moyen de la parole : donc cette chose a la priorité dans l’idée, qui tombe avant les autres sous le concept de l’intelligence. Or ce qui tombe avant tout sous le concept de l’intelligence, c’est l’être; car les choses ne peuvent être connues, comme le remarque le Philosophe, qu’autant qu’elles sont en acte. Ainsi l’être est l’objet propre de l’intelligence, il est la première chose intelligible pour l’esprit, de même que les couleurs sont la première chose visible pour l’œil. L’être est donc avant le bon rationnellement."
+   },
+   "reponses": [
+    {
+     "la": "Ad primum ergo dicendum quod Dionysius determinat de divinis nominibus secundum quod important circa Deum habitudinem causae, nominamus enim Deum, ut ipse dicit, ex creaturis, sicut causam ex effectibus. Bonum autem, cum habeat rationem appetibilis, importat habitudinem causae finalis, cuius causalitas prima est, quia agens non agit nisi propter finem, et ab agente materia movetur ad formam, unde dicitur quod finis est causa causarum. Et sic, in causando, bonum est prius quam ens, sicut finis quam forma, et hac ratione, inter nomina significantia causalitatem divinam, prius ponitur bonum quam ens. Et iterum quia, secundum Platonicos, qui, materiam a privatione non distinguentes, dicebant materiam esse non ens, ad plura se extendit participatio boni quam participatio entis. Nam materia prima participat bonum, cum appetat ipsum (nihil autem appetit nisi simile sibi), non autem participat ens, cum ponatur non ens. Et ideo dicit Dionysius quod *bonum extenditur ad non existentia*.",
+     "fr": "Je réponds aux arguments : 1° L’Aréopagite classe les noms divins selon leurs rapports avec Dieu considéré comme cause : car (il le remarque lui-même) nous nommons Dieu d’après les créatures, ainsi que la cause d’après les effets. Or, comme le bon renferme l’idée d’appétibilité, il implique par cela même l’idée de cause finale, qui tient le premier rang dans toute opération; car l’agent poursuit une fin et c’est lui qui imprime la forme à la matière, d’où la fin est appelée la cause des causes. Ainsi, dans l’ordre des causes, le bon précède l’être, comme la fin précède la forme; et voilà pourquoi l’on place, parmi les noms qui expriment les opérations divines, le bon avant l’être. De plus, si l’on considère avec les platoniciens la matière comme une privation, c’est-à-dire comme un non-être, le bon se communique à un plus grand nombre de choses que l’être. En effet, la matière première participe au bon, puisqu’elle y tend et que rien n’a de tendance que vers ce qui lui ressemble; mais la matière première ne participe pas à l’être, puisqu’elle n’existe pas dans l’hypothèse où nous nous sommes placés. Voilà aussi pourquoi Denys le Philosophe dit que le bon s’étend à ce qui n’existe pas."
+    },
+    {
+     "la": "Unde patet solutio ad secundum. Vel dicendum quod bonum extenditur ad existentia et non existentia, non secundum praedicationem, sed secundum causalitatem, ut per non existentia intelligamus, non ea simpliciter quae penitus non sunt, sed ea quae sunt in potentia et non in actu, quia bonum habet rationem finis, in quo non solum quiescunt quae sunt in actu, sed ad ipsum etiam ea moventur quae in actu non sunt sed in potentia tantum. Ens autem non importat habitudinem causae nisi formalis tantum, vel inhaerentis vel exemplaris, cuius causalitas non se extendit nisi ad ea quae sunt in actu.",
+     "fr": "2° Cette observation résout le deuxième argument. On peut dire aussi que le bon s’étend aux choses privées de l’existence, non comme prédicat, mais comme cause. Par choses non existantes, nous entendons non pas les choses qui ne sont d’aucune manière, mais les choses qui ne sont qu’en puissance. Or, comme le bon renferme l’idée de fin, il est non-seulement le point où reposent les choses en acte, mais le terme où tendent les choses en puissance. Au contraire, l’être n’implique que l’idée de cause formelle, soit inhérente, soit exemplaire; il s’étend donc seulement aux choses qui sont en acte."
+    },
+    {
+     "la": "Ad tertium dicendum quod non esse secundum se non est appetibile, sed per accidens, inquantum scilicet ablatio alicuius mali est appetibilis, quod malum quidem aufertur per non esse. Ablatio vero mali non est appetibilis, nisi inquantum per malum privatur quodam esse. Illud igitur quod per se est appetibile, est esse, non esse vero per accidens tantum, inquantum scilicet quoddam esse appetitur, quo homo non sustinet privari. Et sic etiam per accidens non esse dicitur bonum.",
+     "fr": "3° Le non-être n’est point appétible de sa nature; il ne l’est que par accident, autant qu’il peut délivrer d’un mal dont on désire la fin. Et pourquoi désire-t-on la délivrance de ce mal, sinon parce qu’il prive de certains degrés de l’être? Ainsi l’être est seul désiré pour lui-même; le non-être ne l’est, répétons-le, qu’accidentellement, en ce qu’on aspire à un certain être dont la privation fait le tourment de l’âme. Le non-être n’est donc pas un bien."
+    },
+    {
+     "la": "Ad quartum dicendum quod vita et scientia, et alia huiusmodi, sic appetuntur ut sunt in actu, unde in omnibus appetitur quoddam esse. Et sic nihil est appetibile nisi ens, et per consequens nihil est bonum nisi ens.",
+     "fr": "4° On appète la vie et la sagesse, parce qu’elles sont en acte : l’être seul est donc appété dans ces entités comme en toutes choses; l’être seul est donc appétible, par conséquent seul bon."
+    }
+   ],
+   "pages": {
+    "fr": [
+     88,
+     92
+    ]
+   }
+  },
+  {
+   "ref": "Iª q. 5 a. 3",
+   "titre": {
+    "la": "Utrum omne ens sit bonum",
+    "fr": "Tout être est-il bon?"
+   },
+   "objections": [
+    {
+     "la": "Ad tertium sic proceditur. Videtur quod non omne ens sit bonum. Bonum enim addit supra ens, ut ex dictis patet. Ea vero quae addunt aliquid supra ens, contrahunt ipsum, sicut substantia, quantitas, qualitas, et alia huiusmodi. Ergo bonum contrahit ens. Non igitur omne ens est bonum.",
+     "fr": "Il paroît que tout être n’est pas bon : 1° Le bon ajoute à l’être, ainsi que nous l’avons vu tout à l’heure. Or les choses qui ajoutent à l’être, comme la substance, la quantité, la qualité, le contractent et le limitent. Donc le bon limite l’être, donc tout être n’est pas bon."
+    },
+    {
+     "la": "Praeterea, nullum malum est bonum, Isaiae V, *vae qui dicitis malum bonum, et bonum malum*. Sed aliquod ens dicitur malum. Ergo non omne ens est bonum.",
+     "fr": "2° Le mal n’est jamais bon; car Isaïe dit, V, 20 : « Malheur à vous, qui appelez mal le bien et bien le mal! » Or il y a des êtres qui sont mauvais : donc tout être n’est pas bon."
+    },
+    {
+     "la": "Praeterea, bonum habet rationem appetibilis. Sed materia prima non habet rationem appetibilis, sed appetentis tantum. Ergo materia prima non habet rationem boni. Non igitur omne ens est bonum.",
+     "fr": "3° La nature du bon, c’est l’appétibilité. Or la matière première n’a pas l’appétibilité : donc elle n’a pas la nature du bon; donc tout être n’est pas bon."
+    },
+    {
+     "la": "Praeterea, philosophus dicit, in III Metaphys., quod in mathematicis non est bonum. Sed mathematica sunt quaedam entia, alioquin de eis non esset scientia. Ergo non omne ens est bonum.",
+     "fr": "4° Le Philosophe dit que le bon n’est pas dans les mathématiques. Or les mathématiques sont des êtres, car autrement elles ne seroient pas l’objet d’une science : donc tout être n’est pas bon."
+    }
+   ],
+   "sed_contra": {
+    "la": "Sed contra, omne ens quod non est Deus, est Dei creatura. Sed omnis creatura Dei est bona, ut dicitur I ad Tim., IV cap., Deus vero est maxime bonus. Ergo omne ens est bonum.",
+    "fr": "Mais tout ce qui est être est en Dieu, ou créature de Dieu. Or, selon saint Paul I, Timoth., IV, 4, toute créature de Dieu est bonne, et Dieu est souverainement bon. Donc tout être est bon."
+   },
+   "respondeo": {
+    "la": "Respondeo dicendum quod omne ens, inquantum est ens, est bonum. Omne enim ens, inquantum est ens, est in actu, et quodammodo perfectum, quia omnis actus perfectio quaedam est. Perfectum vero habet rationem appetibilis et boni, ut ex dictis patet. Unde sequitur omne ens, inquantum huiusmodi, bonum esse.",
+    "fr": "Il faut dire ceci : Tout être, comme tel, est bon. En effet tout être, considéré comme être, est en acte et parfait de quelque manière, puisque tout acte est une perfection. Mais tout être parfait renferme l’idée du bon, ainsi que nous l’avons vu précédemment. Donc tout être, comme tel, est bon."
+   },
+   "reponses": [
+    {
+     "la": "Ad primum ergo dicendum quod substantia, quantitas et qualitas, et ea quae sub eis continentur, contrahunt ens applicando ens ad aliquam quidditatem seu naturam. Sic autem non addit aliquid bonum super ens, sed rationem tantum appetibilis et perfectionis, quod convenit ipsi esse in quacumque natura sit. Unde bonum non contrahit ens.",
+     "fr": "Je réponds aux arguments : 1° La substance, la quantité, la qualité et tout ce qu’elles renferment, limitent l’être en l’attachant à telle ou telle essence, à telle ou telle nature. Mais le bon n’ajoute rien à l’être : car, en y attachant l’appétibilité, il ne lui donne rien qu’il n’ait déjà, dans quelque état que nous le concevions. Le bien ne limite donc pas l’être."
+    },
+    {
+     "la": "Ad secundum dicendum quod nullum ens dicitur malum inquantum est ens, sed inquantum caret quodam esse, sicut homo dicitur malus inquantum caret esse virtutis, et oculus dicitur malus inquantum caret acumine visus.",
+     "fr": "2° Aucun être n’est mauvais parce qu’il est être, mais parce qu’il manque de quelque degré de l’être; ainsi l’homme et l’œil sont appelés mauvais quand ils manquent, l’homme de la vertu, et l’œil de la faculté de voir."
+    },
+    {
+     "la": "Ad tertium dicendum quod materia prima, sicut non est ens nisi in potentia, ita nec bonum nisi in potentia. Licet, secundum Platonicos, dici possit quod materia prima est non ens, propter privationem adiunctam. Sed tamen participat aliquid de bono, scilicet ipsum ordinem vel aptitudinem ad bonum. Et ideo non convenit sibi quod sit appetibile, sed quod appetat.",
+     "fr": "3° Comme la matière première n’est être qu’en puissance, elle n’est bonne non plus que de cette manière. Selon les platoniciens, la matière première, à cause de la privation qu’elle renferme, est un non-être, cela est vrai; mais elle n’en apas moins quelque chose du bon, savoir l’aptitude à le recevoir. Elle n’est donc pas appétée, mais elle appète elle-même."
+    },
+    {
+     "la": "Ad quartum dicendum quod mathematica non subsistunt separata secundum esse, quia si subsisterent, esset in eis bonum, scilicet ipsum esse ipsorum. Sunt autem mathematica separata secundum rationem tantum, prout abstrahuntur a motu et a materia, et sic abstrahuntur a ratione finis, qui habet rationem moventis. Non est autem inconveniens quod in aliquo ente secundum rationem non sit bonum vel ratio boni, cum ratio entis sit prior quam ratio boni, sicut supra dictum est.",
+     "fr": "3° Les mathématiques pures n’existent pas réellement dans la nature; car, autrement, elles renfermeroient quelque chose de bon, ne fût-ce que l’existence. C’est donc l’intelligence qui leur donne toute leur réalité. Elle les abstrait du mouvement et de la matière, par conséquent elle les sépare de la cause finale, qui meut la volonté de l’agent. L’être de raison peut n’être pas bon, puisque l’être précède le bon rationnellement, comme nous l’avons vu plus haut."
+    }
+   ],
+   "pages": {
+    "fr": [
+     92,
+     94
+    ]
+   }
+  },
+  {
+   "ref": "Iª q. 5 a. 4",
+   "titre": {
+    "la": "Utrum bonum habeat rationem causae finalis",
+    "fr": "Le bon renferme-t-il l’idée de cause finale?"
+   },
+   "objections": [
+    {
+     "la": "Ad quartum sic proceditur. Videtur quod bonum non habeat rationem causae finalis, sed magis aliarum. Ut enim dicit Dionysius, IV cap. de Div. Nom., *bonum laudatur ut pulchrum*. Sed pulchrum importat rationem causae formalis. Ergo bonum habet rationem causae formalis.",
+     "fr": "Il paroît que le bon ne renferme pas l’idée de cause finale, mais plutôt l’idée des autres causes. 1° Nous lisons dans l’Aréopagite : « Le bon a le beau pour qualificatif; » or le beau renferme l’idée de cause formelle; donc le bon aussi."
+    },
+    {
+     "la": "Praeterea, bonum est diffusivum sui esse, ut ex verbis Dionysii accipitur, quibus dicit quod *bonum est ex quo omnia subsistunt et sunt*. Sed esse diffusivum importat rationem causae efficientis. Ergo bonum habet rationem causae efficientis.",
+     "fr": "2° Le bon tend à répandre son être, comme on le voit par cette parole de Denys : « C’est le bon qui donne à tout l’existence. » Or répandre son être, donner l’existence, emporte l’idée de cause efficiente : donc le bon renferme l’idée de cause efficiente."
+    },
+    {
+     "la": "Praeterea, dicit Augustinus in I de Doctr. Christ., quod *quia Deus bonus est, nos sumus*. Sed ex Deo sumus sicut ex causa efficiente. Ergo bonum importat rationem causae efficientis.",
+     "fr": "3° Saint Augustin dit aussi : « Dieu nous a créés, parce qu’il est bon. » Or créer renferme l’idée de cause efficiente : donc le bon renferme, encoreune fois, l’idée de cause efficiente."
+    }
+   ],
+   "sed_contra": {
+    "la": "Sed contra est quod philosophus dicit, in II Physic., quod *illud cuius causa est, est sicut finis et bonum aliorum*. Bonum ergo habet rationem causae finalis.",
+    "fr": "Mais Aristote dit : « Ce qui détermine à faire une chose, c’est la fin et le bon. » Donc le bon implique l’idée de cause finale."
+   },
+   "respondeo": {
+    "la": "Respondeo dicendum quod, cum bonum sit quod omnia appetunt, hoc autem habet rationem finis; manifestum est quod bonum rationem finis importat. Sed tamen ratio boni praesupponit rationem causae efficientis, et rationem causae formalis. Videmus enim quod id quod est primum in causando, ultimum est in causato, ignis enim primo calefacit quam formam ignis inducat, cum tamen calor in igne consequatur formam substantialem. In causando autem, primum invenitur bonum et finis, qui movet efficientem; secundo, actio efficientis, movens ad formam; tertio advenit forma. Unde e converso esse oportet in causato, quod primum sit ipsa forma, per quam est ens; secundo consideratur in ea virtus effectiva, secundum quod est perfectum in esse (quia unumquodque tunc perfectum est, quando potest sibi simile facere, ut dicit philosophus in IV Meteor.); tertio consequitur ratio boni, per quam in ente perfectio fundatur.",
+    "fr": "Il faut dire ceci : Puisque le bon est ce que tout appète, il implique manifestement l’idée de cause finale, mais il présuppose aussi l’idée de cause efficiente et de cause formelle. Ce qui est le premier dans la progression des causes est le dernier dans l’ordre des effets : ainsi le feu, bien qu’il produise la chaleur par la forme substantielle, échauffe avant d’avoir revêtu cette forme. Dans sa succession des causes, nous trouvons d’abord le bon et la fin qui meut la cause efficiente; succède ensuite l’action de la cause efficiente, qui dirige le mouvement vers la forme; enfin se présente la forme elle-même. Au contraire, dans la série des effets, nous voyons avant tout la forme qui constitue l’être; ensuite vient la cause efficiente, dont la perfection consiste dans la production d’un effet semblable à elle; enfin paroit le bien, qui perfectionne et complète l’action."
+   },
+   "reponses": [
+    {
+     "la": "Ad primum ergo dicendum quod pulchrum et bonum in subiecto quidem sunt idem, quia super eandem rem fundantur, scilicet super formam, et propter hoc, bonum laudatur ut pulchrum. Sed ratione differunt. Nam bonum proprie respicit appetitum, est enim bonum quod omnia appetunt. Et ideo habet rationem finis, nam appetitus est quasi quidam motus ad rem. Pulchrum autem respicit vim cognoscitivam, pulchra enim dicuntur quae visa placent. Unde pulchrum in debita proportione consistit, quia sensus delectatur in rebus debite proportionatis, sicut in sibi similibus; nam et sensus ratio quaedam est, et omnis virtus cognoscitiva. Et quia cognitio fit per assimilationem, similitudo autem respicit formam, pulchrum proprie pertinet ad rationem causae formalis.",
+     "fr": "Je réponds aux arguments : 1° Le beau et le bon sont une seule et même chose dans le sujet, puisqu’ils reposent sur une base commune, savoir sur la forme, et voilà pourquoi l’un est le prédicat de l’autre : mais cela n’empêche pasqueces deux entités ne diffèrent rationnellement, dans l’idée que nous nous en formons. En effet, le bon se rapporte proprement à la faculté appétitive,puisqu’il est ce que toute chose appète, et forme par cela même la cause finale. Au contraire, le beau se rapporte à la faculté cognitive, attendu qu’on appelle belles les choses qui plaisent à la vue; il consiste dans une juste proportion où les sens retrouvent leur ressemblance avec bonheur, car ils ont eux-mêmes des rapports d’ordre et d’harmonie. Et comme, d’une part, la connoissance s’opère à l’aide de l’assimilation par l’idée; comme, d’une autre part, l’assimilation se rapporte à la forme, le beau appartient proprement à l’idée de cause formelle."
+    },
+    {
+     "la": "Ad secundum dicendum quod bonum dicitur diffusivum sui esse, eo modo quo finis dicitur movere.",
+     "fr": "2° Le bon tend à répandre son être, parce qu’il détermine la cause efficiente à l’action."
+    },
+    {
+     "la": "Ad tertium dicendum quod quilibet habens voluntatem, dicitur bonus inquantum habet bonam voluntatem, quia per voluntatem utimur omnibus quae in nobis sunt. Unde non dicitur bonus homo, qui habet bonum intellectum, sed qui habet bonam voluntatem. Voluntas autem respicit finem ut obiectum proprium, et sic, quod dicitur, quia Deus est bonus, sumus, refertur ad causam finalem.",
+     "fr": "3° L’être doué de spontanéité est bon quand il a une bonne volonté, car c’est par cette faculté que nous employons tout ce qui est en nous. L’homme bon, ce n’est donc pas celuiqui a une bonne intelligence, mais celui qui a une bonne volonté. Or la volonté se rapporte à la fin comme à son objet propre. Quand donc saint Augustin dit : « Dieu nous acréés, parce qu’il est bon, » ces paroles ont trait à la cause finale."
+    }
+   ],
+   "pages": {
+    "fr": [
+     94,
+     96
+    ]
+   }
+  },
+  {
+   "ref": "Iª q. 5 a. 5",
+   "titre": {
+    "la": "Utrum ratio boni consistat in modo, specie et ordine",
+    "fr": "La nature du bon consiste-elle dans le mode, l’espèce et l’ordre"
+   },
+   "objections": [
+    {
+     "la": "Ad quintum sic proceditur. Videtur quod ratio boni non consistat in modo, specie et ordine. Bonum enim et ens ratione differunt, ut supra dictum est. Sed modus, species et ordo pertinere ad rationem entis videntur, quia, sicut dicitur Sap. XI, *omnia in numero, pondere et mensura disposuisti*, ad quae tria reducuntur species, modus et ordo, quia, ut dicit Augustinus, IV super Gen. ad litteram, *mensura omni rei modum praefigit, et numerus omni rei speciem praebet, et pondus omnem rem ad quietem et stabilitatem trahit*. Ergo ratio boni non consistit in modo, specie et ordine.",
+     "fr": "Il paroît que la nature du bon ne consiste pas dans le mode, l’espèce et l’ordre. 1° Le bon et l’être diffèrent rationnellement, comme nous l’avons dit plus haut. Or le mode, l’espèce et l’ordre appartiennent à la nature de l’être. En effet, la Sagesse dit, XI, 21 : « Vous avez tout disposé dans le nombre, le poids et la mesure; » trois termes synonymes de l’espèce, du mode et de l’ordre; car, ainsi que le dit saint Augustin, la mesure fixe le mode des choses, le nombre leur donne l’espèce etle poids les amène au repos et à la stabilité. Donc l’essence du bon ne consiste pas dans le mode, l’espèce et l’ordre."
+    },
+    {
+     "la": "Praeterea, ipse modus, species et ordo bona quaedam sunt. Si ergo ratio boni consistit in modo, specie et ordine, oportet etiam quod modus habeat modum, speciem et ordinem, et similiter species et ordo. Ergo procederetur in infinitum.",
+     "fr": "2° Le mode, l’espèce et l’ordre sont des choses bonnes. Si donc la nature du bon consiste dans le mode, l’espèce et l’ordre, il faudra que le mode lui-même renferme aussi le mode, l’espèce et l’ordre, et nous devons en dire autant de ces deux dernières entités; nous serons donc entraînés dans une progression sans terme, infinie. Donc la nature du bon ne consiste pas dans le mode, l’espèce et l’ordre."
+    },
+    {
+     "la": "Praeterea, malum est privatio modi et speciei et ordinis. Sed malum non tollit totaliter bonum. Ergo ratio boni non consistit in modo, specie et ordine.",
+     "fr": "3° Le mal est la privation du mode, de l’espèce et de l’ordre. Or le mal n’enlève pas entièrement le bon : donc l’essence du bien ne consiste pas dans le mode, l’espèce et l’ordre."
+    },
+    {
+     "la": "Praeterea, illud in quo consistit ratio boni, non potest dici malum. Sed dicitur malus modus, mala species, malus ordo. Ergo ratio boni non consistit in modo, specie et ordine.",
+     "fr": "4° Ce qui forme la nature du bon ne peut être dit mauvais. Or le mode est dit mauvais, l’espèce mauvaise, l’ordre mauvais. Donc la nature du bon ne consiste pas dans le mode, l’espèce et l’ordre."
+    },
+    {
+     "la": "Praeterea, modus, species et ordo ex pondere, numero et mensura causantur, ut ex auctoritate Augustini inducta patet. Non autem omnia bona habent pondus, numerum et mensuram, dicit enim Ambrosius, in Hexaemeron, quod *lucis natura est, ut non in numero, non in pondere, non in mensura creata sit*. Non ergo ratio boni consistit in modo, specie et ordine.",
+     "fr": "5° Le mode, l’espèce et l’ordre sont produits, comme saint Augustin nous le montroit tout à l’heure, par le poids, le nombre et la mesure. Or toutes les choses bonnes n’ont pas le poids, le nombre et la mesure; car saint Ambroise dit : « La nature de la lumière est telle, qu’elle n’a été créée ni dans le nombre, ni dans le poids, ni dans la mesure. » Donc la nature du bien ne consiste pas dans le mode, l’espèce et l’ordre."
+    }
+   ],
+   "sed_contra": {
+    "la": "Sed contra est quod dicit Augustinus, in libro de natura boni, *haec tria, modus, species et ordo, tanquam generalia bona sunt in rebus a Deo factis, et ita, haec tria ubi magna sunt, magna bona sunt; ubi parva, parva bona sunt; ubi nulla, nullum bonum est*. Quod non esset, nisi ratio boni in eis consisteret. Ergo ratio boni consistit in modo, specie et ordine.",
+    "fr": "Mais saint Augustin dit, De la nature du bon, III : « Le mode, l’espèce et l’ordre se trouvent, comme biens généraux, dans tous les ouvrages de Dieu : où ces trois choses sont éminemment, il y beaucoup de bien : où elles son imparfaitement, il y a peu de bien; où elles ne sont d’aucune manière, il n’y a pas de bien. » Or cela ne seroit pas, si la nature du bon ne consistoit dans le mode, l’espèce et l’ordre; donc la nature du bon consiste dans ces trois entités."
+   },
+   "respondeo": {
+    "la": "Respondeo dicendum quod unumquodque dicitur bonum, inquantum est perfectum, sic enim est appetibile, ut supra dictum est. Perfectum autem dicitur, cui nihil deest secundum modum suae perfectionis. Cum autem unumquodque sit id quod est, per suam formam; forma autem praesupponit quaedam, et quaedam ad ipsam ex necessitate consequuntur; ad hoc quod aliquid sit perfectum et bonum, necesse est quod formam habeat, et ea quae praeexiguntur ad eam, et ea quae consequuntur ad ipsam. Praeexigitur autem ad formam determinatio sive commensuratio principiorum, seu materialium, seu efficientium ipsam, et hoc significatur per modum, unde dicitur quod mensura modum praefigit. Ipsa autem forma significatur per speciem, quia per formam unumquodque in specie constituitur. Et propter hoc dicitur quod numerus speciem praebet, quia definitiones significantes speciem sunt sicut numeri, secundum philosophum in VIII Metaphys.; sicut enim unitas addita vel subtracta variat speciem numeri, ita in definitionibus differentia apposita vel subtracta. Ad formam autem consequitur inclinatio ad finem, aut ad actionem, aut ad aliquid huiusmodi, quia unumquodque, inquantum est actu, agit, et tendit in id quod sibi convenit secundum suam formam. Et hoc pertinet ad pondus et ordinem. Unde ratio boni, secundum quod consistit in perfectione, consistit etiam in modo, specie et ordine.",
+    "fr": "Il faut dire ceci : Une chose est bonne selon qu’elle est parfaite, et c’est là ce qui lui donne l’appétibilité, comme nous l’avons vu précédemment. Or on appelle parfait ce à quoi il ne manque rien selon le genre de sa perfection. Mais comme, d’une part, tout être est ce qu’il est par sa forme; comme, d’une autre part, la forme suppose certaines choses qui marchent avant elles et viennent à sa suite : pour qu’un être soit parfait et bon, il faut qu’il ait non-seulement la forme, mais encore les choses qui la précèdent et la suivent. Or les choses qui précèdent la forme, c’est la détermination ou commensuration de ses principes, soit matériels, soit efficients; c’est précisément ce que l’on entend par mode, et ce qui fait dire que la mesure fixe cette entité. La forme elle-même a l’espèce pour signe, puisqu’elle met chaque chose dans sa classification spécifique; elle est donnée par le nombre, car les attributs qui la définissent appartiennent, d’après Aristote, à cette dernière catégorie des êtres; de même que l’unité ajoutée ou retranchée change l’espèce du nombre, ainsi une différence de plus ou de moins dans la définition change l’espèce de l’objet défini. Enfin les choses qui suivent la forme, c’est la tendance à la fin ou à l’action; car l’être agit en tant qu’il est en acte, et tend vers ce qui a des rapports avec lui par la forme : voilà le poids et l’ordre. Ainsi l’essence du bon, consistant dans la perfection, consiste par cela même dans le mode, l’espèce et l’ordre."
+   },
+   "reponses": [
+    {
+     "la": "Ad primum ergo dicendum quod ista tria non consequuntur ens, nisi inquantum est perfectum, et secundum hoc est bonum.",
+     "fr": "Je réponds aux arguments : 1° Le mode, l’espèce et l’ordre ne se trouvent dans l’être qu’autant qu’il est parfait, et dès lors il est bon."
+    },
+    {
+     "la": "Ad secundum dicendum quod modus, species et ordo eo modo dicuntur bona, sicut et entia, non quia ipsa sint quasi subsistentia, sed quia eis alia sunt et entia et bona. Unde non oportet quod ipsa habeant aliqua alia, quibus sint bona. Non enim sic dicuntur bona, quasi formaliter aliis sint bona; sed quia ipsis formaliter aliqua sunt bona; sicut albedo non dicitur ens quia ipsa aliquo sit, sed quia ipsa aliquid est secundum quid, scilicet album.",
+     "fr": "2° Si les trois entités dont il s’agit sont dites bonnes, comme on les dit êtres, ce n’est pas qu’elles subsistent seules, sans sujet, mais c’est que par elles les autres choses sont êtres et bonnes. Elles n’ont donc besoin de rien recevoir qui les rende bonnes; car on les dit bonnes, non qu’elles le soient formellement par les autres choses, mais dans ce sens que les autres choses le sont par elles. Ainsi la blancheur est dite être, non parce qu’elle existe par d’autres êtres, mais parce que d’autres êtres existent par elle d’une manière déterminée."
+    },
+    {
+     "la": "Ad tertium dicendum quod quodlibet esse est secundum formam aliquam, unde secundum quodlibet esse rei, consequuntur ipsam modus, species et ordo, sicut homo habet speciem, modum et ordinem, inquantum est homo; et similiter inquantum est albus, habet similiter modum, speciem et ordinem; et inquantum est virtuosus, et inquantum est sciens, et secundum omnia quae de ipso dicuntur. Malum autem privat quodam esse, sicut caecitas privat esse visus, unde non tollit omnem modum, speciem et ordinem; sed solum modum, speciem et ordinem quae consequuntur esse visus.",
+     "fr": "3° Chaque degré d’être a sa forme; par conséquent chaque entité d’une chose a le mode, l’espèce et l’ordre : ainsi l’homme a ces trois choses comme homme; il les a pareillement comme blanc, comme vertueux, comme savant et comme possédant toute qualité qu’on peut lui prêter. Or le mal prive d’un certain degré de l’être; la cécité, par exemple, enlève l’entité de la vue : elle ne détruit donc pas tout le mode, toute espèce et tout ordre; mais seulement le mode, l’espèce et l’ordre qui constituent l’entité de la vue."
+    },
+    {
+     "la": "Ad quartum dicendum quod, sicut dicit Augustinus in libro de natura boni, *omnis modus, inquantum modus, bonus est* (et sic potest dici de specie et ordine), *sed malus modus, vel mala species, vel malus ordo, aut ideo dicuntur quia minora sunt quam esse debuerunt; aut quia non his rebus accommodantur, quibus accommodanda sunt; ut ideo dicantur mala, quia sunt aliena et incongrua*.",
+     "fr": "4° Ainsi que saint Augustin le remarquoit naguère, tout mode, comme tel, est bon, et l’on ne doit point parler autrement de l’espèce et del’ordre. Cependant on peu dire le mode, mauvais, l’espèce mauvaise et l’ordre mauvais dans deux cas : lorsqu’ils n’ont pas toute la perfection qu’ils devroient avoir, ou lorsqu’ils ne se trouvent pas dans les êtres où ils devroient se trouver. Ils sont donc mauvais par imperfection et par déplacement."
+    },
+    {
+     "la": "Ad quintum dicendum quod natura lucis dicitur esse sine numero et pondere et mensura, non simpliciter, sed per comparationem ad corporalia, quia virtus lucis ad omnia corporalia se extendit, inquantum est qualitas activa primi corporis alterantis, scilicet caeli.",
+     "fr": "5° Quand on dit que la lumière n’a ni le nombre, ni le poids, ni la mesure, on ne parle pas d’une manière absolue, mais relativement aux choses corporelles; car la lumière, propriété du premier moteur matériel, s’étend à tous les corps."
+    }
+   ],
+   "pages": {
+    "fr": [
+     97,
+     100
+    ]
+   }
+  },
+  {
+   "ref": "Iª q. 5 a. 6",
+   "titre": {
+    "la": "Utrum convenienter dividatur bonum per honestum, utile et delectabile",
+    "fr": "Le bon peut-il se diviser dans les trois catégories de l’honnête, de l’utile et de l’agréable?"
+   },
+   "objections": [
+    {
+     "la": "Ad sextum sic proceditur. Videtur quod non convenienter dividatur bonum per honestum, utile et delectabile. Bonum enim, sicut dicit philosophus in I Ethic., dividitur per decem praedicamenta. Honestum autem, utile et delectabile inveniri possunt in uno praedicamento. Ergo non convenienter per haec dividitur bonum.",
+     "fr": "Il paroît qu’on ne peut convenablement diviser le bon dans les trois catégories de l’honnête, de l’utile et de l’agréable. 1° Le bon se divise, d’après Aristote, en dix catégories; mais l’honnête, l’utile et l’agréable se trouvent souvent dans une seule. Donc on ne peut diviser le bon dans les catégories susdites."
+    },
+    {
+     "la": "Praeterea, omnis divisio fit per opposita. Sed haec tria non videntur esse opposita, nam honesta sunt delectabilia, nullumque inhonestum est utile (quod tamen oportet, si divisio fieret per opposita, ut opponerentur honestum et utile), ut etiam dicit Tullius, in libro de officiis. Ergo praedicta divisio non est conveniens.",
+     "fr": "2° Toute division doit reposer sur des oppositions. Or l’honnête, l’utile et l’agréable ne sont pas opposés; car ce qui est honnête est aussi agréable et rien de ce qui est deshonnête n’est utile, comme le remarque Cicéron.\n\nDonc on ne doit pas admettre la division dont il s’agit."
+    },
+    {
+     "la": "Praeterea, ubi unum propter alterum, ibi unum tantum est. Sed utile non est bonum nisi propter delectabile vel honestum. Ergo non debet utile dividi contra delectabile et honestum.",
+     "fr": "3° Deux choses qui sont l’une par l’autre n’en font qu’une. Or l’utile n’est bon que par l’agréable ou par l’honnête. Donc on ne peut diviser l’utile dans les deux catégories de l’agréable et l’honnête."
+    }
+   ],
+   "sed_contra": {
+    "la": "Sed contra est quod Ambrosius, in libro de officiis, utitur ista divisione boni.",
+    "fr": "Mais saint Ambroise admet, dans le livre des Devoirs, la division que nous avons donnée plus haut."
+   },
+   "respondeo": {
+    "la": "Respondeo dicendum quod haec divisio proprie videtur esse boni humani. Si tamen altius et communius rationem boni consideremus, invenitur haec divisio proprie competere bono, secundum quod bonum est. Nam bonum est aliquid, inquantum est appetibile, et terminus motus appetitus. Cuius quidem motus terminatio considerari potest ex consideratione motus corporis naturalis. Terminatur autem motus corporis naturalis, simpliciter quidem ad ultimum; secundum quid autem etiam ad medium, per quod itur ad ultimum quod terminat motum, et dicitur aliquis terminus motus, inquantum aliquam partem motus terminat. Id autem quod est ultimus terminus motus, potest accipi dupliciter, vel ipsa res in quam tenditur, utpote locus vel forma; vel quies in re illa. Sic ergo in motu appetitus, id quod est appetibile terminans motum appetitus secundum quid, ut medium per quod tenditur in aliud, vocatur utile. Id autem quod appetitur ut ultimum, terminans totaliter motum appetitus, sicut quaedam res in quam per se appetitus tendit, vocatur honestum, quia honestum dicitur quod per se desideratur. Id autem quod terminat motum appetitus ut quies in re desiderata, est delectatio.",
+    "fr": "Il faut dire ceci : Quoique notre division paroisse ne convenir qu’au bien considéré dans ses rapports avec l’homme, quand on envisage la chose d’une manière plus générale et d’un point de vue plus élevé, on voit qu’elle s’applique proprement au bien considéré dans sa nature même. Une chose est bonne autant qu’elle est appétible et forme le terme du mouvement qu’elle provoque dans la volonté : mouvement qu’on peut comparer au mouvement des corps physiques. Or le mouvement des corps finit entièrement à son dernier point, pareillement aux moyens qu’il traverse pour y parvenir, et tout ce qui le termine en tout ou en partie s’appelle le terme du mouvement. De plus, le dernier terme du mouvement peut se prendre de deux manières, ou pour la chose même que le mobile s’efforce d’atteindre, ou pour le repos du mobile dans cette chose. Cela s’applique de tout point au mouvement moral provoqué par le bon et l’appétible : ce qui le termine en partie, comme le moyen par lequel on arrive à un autre but, s’appelle l’utile; ce qui le termine entièrement, comme le dernier but qu’on se propose, s’appelle l’honnête, car cette sorte de bien est désirée pour elle-même; enfin ce qui le termine comme but du repos, s’appelle l’agréable."
+   },
+   "reponses": [
+    {
+     "la": "Ad primum ergo dicendum quod bonum, inquantum est idem subiecto cum ente, dividitur per decem praedicamenta, sed secundum propriam rationem, competit sibi ista divisio.",
+     "fr": "Je réponds aux arguments : 1° Quand l’on considère le bon subjectivement, comme ne formant qu’une seule et même chose avec l’être, il se divise en dix prédicaments; mais quand on l’envisage dans sa nature propre, il se divise dans les trois catégories que nous avons désignées."
+    },
+    {
+     "la": "Ad secundum dicendum quod haec divisio non est per oppositas res, sed per oppositas rationes. Dicuntur tamen illa proprie delectabilia, quae nullam habent aliam rationem appetibilitatis nisi delectationem, cum aliquando sint et noxia et inhonesta. Utilia vero dicuntur, quae non habent in se unde desiderentur; sed desiderantur solum ut sunt ducentia in alterum, sicut sumptio medicinae amarae. Honesta vero dicuntur, quae in seipsis habent unde desiderentur.",
+     "fr": "2° Notre division ne se fonde pas sur l’opposition des choses, mais sur l’opposition des idées. En effet, on appelle agréables les choses que l’on désire pour le plaisir, quoiqu’elles puissent être nuisibles ou deshonnêtes; on appelle utiles celles qu’on ne désire pas pour elles-mêmes, mais comme moyen d’arriver à un autre but, comme lorsqu’on prend une potion amère en vue de recouvrer la santé; enfin l’on appelle honnêtes celles qu’on désire pour elles-mêmes."
+    },
+    {
+     "la": "Ad tertium dicendum quod bonum non dividitur in ista tria sicut univocum aequaliter de his praedicatum, sed sicut analogum, quod praedicatur secundum prius et posterius. Per prius enim praedicatur de honesto; et secundario de delectabili; tertio de utili.",
+     "fr": "3° Si le bon renferme l’honnête, l’agréable et l’utile, il ne s’affirme pas de ces trois choses d’une manière univoque, mais par analogie, d’après un ordre hiérarchique, si l’on nous passe l’expression; il s’affirme d’abord de l’honnête, ensuite de l’agréable, puis enfin de l’utile."
+    }
+   ],
+   "pages": {
+    "fr": [
+     100,
+     103
+    ]
+   }
+  }
+ ],
+ "source": {
+  "fr": {
+   "ouvrage": "Somme théologique de S. Thomas d’Aquin, traduite en français et annotée par F. Lachat",
+   "edition": "Paris, Louis Vivès, 4e édition, 1880, tome premier (même composition que l’édition de 1874)",
+   "url": "https://archive.org/details/sommetheologique01thom",
+   "controle": "https://archive.org/details/sommethologique07lachgoog",
+   "relecture": "vote de quatre lectures (Tesseract et ABBYY sur les scans de 1880 et de 1874, même composition) ; chaque ligne sans accord relue sur l’image (corrections_fr.txt) ; notes de Lachat et « (Conclusion. — …) » des éditeurs non repris"
+  },
+  "la": {
+   "ouvrage": "Sancti Thomae Aquinatis Opera omnia iussu impensaque Leonis XIII P. M. edita, t. IV : Pars prima Summae theologiae a quaestione I ad quaestionem XLIX",
+   "edition": "Romae, ex Typographia Polyglotta S. C. de Propaganda Fide, 1888",
+   "url": "https://archive.org/details/operaomniaiussui04thom",
+   "transcription": "https://www.corpusthomisticum.org/sth1001.html (E. Alarcón, d’après l’édition léonine)",
+   "relecture": "alignement mot à mot sur la lecture ABBYY du scan de 1888 (latin_controle.py), écarts isolés vus sur l’image (corrections_la.txt) ; intitulés relus sur l’image ; ponctuation du Corpus Thomisticum ; pas de relecture intégrale du latin sur l’image"
+  },
+  "pages_fr": [
+   85,
+   103
+  ]
+ },
+ "revision": 1
+}

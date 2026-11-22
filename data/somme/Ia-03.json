@@ -1,0 +1,404 @@
+{
+ "ref": "Iª q. 3",
+ "partie": "Ia",
+ "question": 3,
+ "titre": {
+  "la": "De Dei simplicitate",
+  "fr": "De la simplicité de Dieu."
+ },
+ "prooemium": {
+  "la": "Cognito de aliquo an sit, inquirendum restat quomodo sit, ut sciatur de eo quid sit. Sed quia de Deo scire non possumus quid sit, sed quid non sit, non possumus considerare de Deo quomodo sit, sed potius quomodo non sit. Primo ergo considerandum est quomodo non sit; secundo, quomodo a nobis cognoscatur; tertio, quomodo nominetur. Potest autem ostendi de Deo quomodo non sit, removendo ab eo ea quae ei non conveniunt, utpote compositionem, motum, et alia huiusmodi. Primo ergo inquiratur de simplicitate ipsius, per quam removetur ab eo compositio. Et quia simplicia in rebus corporalibus sunt imperfecta et partes, secundo inquiretur de perfectione ipsius; tertio, de infinitate eius; quarto, de immutabilitate; quinto, de unitate. Circa primum quaeruntur octo. Primo, utrum Deus sit corpus. Secundo, utrum sit in eo compositio formae et materiae. Tertio, utrum sit in eo compositio quidditatis, sive essentiae, vel naturae, et subiecti. Quarto, utrum sit in eo compositio quae est ex essentia et esse. Quinto, utrum sit in eo compositio generis et differentiae. Sexto, utrum sit in eo compositio subiecti et accidentis. Septimo, utrum sit quocumque modo compositus, vel totaliter simplex. Octavo, utrum veniat in compositionem cum aliis.",
+  "fr": "Après avoir acquis la connoissance qu’une chose est, il faut rechercher comment elle est, afin de savoir ce qu’elle est. Mais comme l’homme ne peut savoir de Dieu que ce qu’il n’est pas, et non ce qu’il est, au lieu d’examiner comment il est, on doit demander comment il n’est pas. Nous allons donc rechercher : premièrement, comment Dieu n’est pas; deuxièmement, comment il est connu par nous; troisièmement, comment il est nommé.\n\nOr, pour savoir comment Dieu n’est pas, il faut écarter de son être ce qui lui répugne, comme le composé, le mouvement et les choses semblabes. Nous parlerons donc : premièrement de sa simplicité qui exclut le composé. Et comme, dans la nature corporelle, les choses simples sont imparfaites et ne forment que des parties, nous parlerons : deuxièmement, de la perfection de Dieu; troisièmement, de son infinité; quatrièmement de son immutabilité; cinquièmement de son unité.\n\nA l’égard du premier point, huit questions se présentent : 1° Dieu est-il un corps composé de parties quantitatives? 2° Est-il composé de matière et de forme? 3° Est-il composé d’une essence et d’un sujet? 4° Est-il composé d’une essence et d’un être? 5° Ést-il composé d’un genre et de différence? 6° Est-il composé d’un sujet et d’accidents? 7° Est-il composé d’une manière quelconque, ou absolument simple? 8° Enfin, Dieu entre-t-il dans la composition des autres êtres?"
+ },
+ "articles": [
+  {
+   "ref": "Iª q. 3 a. 1",
+   "titre": {
+    "la": "Utrum Deus sit corpus",
+    "fr": "Dieu est-il un corps?"
+   },
+   "objections": [
+    {
+     "la": "Ad primum sic proceditur. Videtur quod Deus sit corpus. Corpus enim est quod habet trinam dimensionem. Sed sacra Scriptura attribuit Deo trinam dimensionem, dicitur enim Iob XI, *excelsior caelo est, et quid facies? Profundior Inferno, et unde cognosces? Longior terra mensura eius, et latior mari*. Ergo Deus est corpus.",
+     "fr": "Il paroît que Dieu est un corps. 1° Les corps sont ce qui a la triple dimension. Or l’Ecriture sainte attribue à Dieu la triple dimension; car elle dit dans Job, XI, 8 : « Dieu est plus élevé que les cieux : comment l’atteindrois-tu? plus profond que l’enfer : comment tes regards pour-roient-ils le pénétrer? Il est plus étendu que la terre et plus vaste que la mer. » Donc Dieu est un corps."
+    },
+    {
+     "la": "Praeterea, omne figuratum est corpus, cum figura sit qualitas circa quantitatem. Sed Deus videtur esse figuratus, cum scriptum sit Gen. I, *faciamus hominem ad imaginem et similitudinem nostram*, figura enim imago dicitur, secundum illud Hebr. I, *cum sit splendor gloriae, et figura substantiae eius*, idest imago. Ergo Deus est corpus.",
+     "fr": "2° Tout ce qui a une figure est un corps, puisque la figure est un mode de la quantité. Or Dieu a une figure, car il dit dans la Genèse, I, 26 : « Faisons l’homme à notre image et à notre ressemblance. » A notre image, c’est-à-dire sur le modèle de notre figure; car ces deux mots se prennent l’un pour l’autre, comme on le voit par cette parole de saint Paul aux Hébreux, I, 3; « Il (le Fils éternel du Père) est la splendeur de sa gloire et la figure de sa substance. » Donc Dieu est un corps."
+    },
+    {
+     "la": "Praeterea, omne quod habet partes corporeas, est corpus. Sed Scriptura attribuit Deo partes corporeas, dicitur enim Iob XL, *si habes brachium ut Deus*; et in Psalmo, *oculi domini super iustos; et, dextera domini fecit virtutem*. Ergo Deus est corpus.",
+     "fr": "3° Tout ce qui a des membres et des organes corporels est un corps. Or l’Ecriture sainte attribue à Dieu des membres et des organes corporels; car il est dit dans Job, XL, 4 : « As-tu un bras comme Dieu? » Et dans le Ps. XXXIII, 15 : « Les yeux du Seigneur sont ouverts sur les justes. » Et encore, Ps. CXVII, 16 : « Sa droite a déployé sa force. » Donc Dieu est un corps."
+    },
+    {
+     "la": "Praeterea, situs non convenit nisi corpori. Sed ea quae ad situm pertinent, in Scripturis dicuntur de Deo, dicitur enim Isaiae VI, *vidi dominum sedentem*; et Isaiae III, *stat ad iudicandum dominus*. Ergo Deus est corpus.",
+     "fr": "4° L’attitude ne convient qu’aux corps. Or les Livres saints prêtent à Dieu tout ce qui se rapporte à l’attitude; car Isaïe dit, VI, 1 : « J’ai vu le Seigneur assis sur son trône élevé; » et encore III, 13 : « Le Seigneur est débout pour juger. » Donc Dieu est un corps."
+    },
+    {
+     "la": "Praeterea, nihil potest esse terminus localis a quo vel ad quem, nisi sit corpus vel aliquod corporeum. Sed Deus in Scriptura dicitur esse terminus localis ut ad quem, secundum illud Psalmi, *accedite ad eum, et illuminamini*; et ut a quo, secundum illud Hierem. XVII, recedentes a te in terra scribentur. Ergo Deus est corpus.",
+     "fr": "5° Les corps peuvent seuls avoir des rapports locaux, soit de rapprochement, soit d’éloignement. Or l’Ecriture sainte attribue à Dieu des rapports locaux : d’abord de rapprochement dans les Psaumes, XXXIII, 5 : « Approchez de lui, et vous serez éclairés; » ensuite d’éloignement, dans Jérémie, XVII, 13 : « Les noms de ceux qui s’éloignent de vous seront écrits sur la terre. » Donc Dieu est un corps."
+    }
+   ],
+   "sed_contra": {
+    "la": "Sed contra est quod dicitur Ioan. IV, *spiritus est Deus*.",
+    "fr": "Mais il est écrit dans saint Jean, IV, 21 : « Dieu est esprit. »"
+   },
+   "respondeo": {
+    "la": "Respondeo dicendum absolute Deum non esse corpus. Quod tripliciter ostendi potest. Primo quidem, quia nullum corpus movet non motum, ut patet inducendo per singula. Ostensum est autem supra quod Deus est primum movens immobile. Unde manifestum est quod Deus non est corpus. Secundo, quia necesse est id quod est primum ens, esse in actu, et nullo modo in potentia. Licet enim in uno et eodem quod exit de potentia in actum, prius sit potentia quam actus tempore, simpliciter tamen actus prior est potentia, quia quod est in potentia, non reducitur in actum nisi per ens actu. Ostensum est autem supra quod Deus est primum ens. Impossibile est igitur quod in Deo sit aliquid in potentia. Omne autem corpus est in potentia, quia continuum, inquantum huiusmodi, divisibile est in infinitum. Impossibile est igitur Deum esse corpus. Tertio, quia Deus est id quod est nobilissimum in entibus, ut ex dictis patet. Impossibile est autem aliquod corpus esse nobilissimum in entibus. Quia corpus aut est vivum, aut non vivum. Corpus autem vivum, manifestum est quod est nobilius corpore non vivo. Corpus autem vivum non vivit inquantum corpus, quia sic omne corpus viveret, oportet igitur quod vivat per aliquid aliud, sicut corpus nostrum vivit per animam. Illud autem per quod vivit corpus, est nobilius quam corpus. Impossibile est igitur Deum esse corpus.",
+    "fr": "Il faut dire ceci : Dieu n’est pas un corps et nous pouvons le démontrer de trois manières. Premièrement un corps ne ment point les autres corps sans avoir été mû lui-même; il suffit d’ouvrir les yeux pour s’en convaincre. Or nous avons montré plus haut que Dieu est le premier moteur immobile; il n’est donc pas un corps.\n\nDeuxièmement. Il faut que le premier Etre soit en acte, et nullement en puissance. Sans doute, sous le rapport du temps, la puissance est avant l’acte dans l’être qui passe du premier au second de ces états; mais, quand on considère la chose en elle-même, absolument, l’acte est avant la puissance, car ce qui est potentiel ne peut être amené à l’acte que par un être agissant. Or nous avons prouvé que Dieu est le premier Etre; donc il ne peut être en puissance. Mais tous les corps sont en puissance, car ils sont continus, et partant divisibles à l’infini. Donc Dieu ne peut être un corps.\n\nTroisièmement. Dieu est l’Etre souverainement parfait, nous l’avons vu. Or la souveraine perfection ne peut se trouver dans un corps. En effet, un corps est vivant ou n’est pas vivant. S’il est vivant, il est plus parfait que s’il n’étoit pas vivant; mais un corps vivant ne vit pas en tant que corps, car autrement tous les corps vivroient; il vit par un autre être, comme notre corps vit par l’âme. Or ce par quoi les corps vivent, est plus parfait que les corps; donc Dieu n’est pas un corps."
+   },
+   "reponses": [
+    {
+     "la": "Ad primum ergo dicendum quod, sicut supra dictum est, sacra Scriptura tradit nobis spiritualia et divina sub similitudinibus corporalium. Unde, cum trinam dimensionem Deo attribuit, sub similitudine quantitatis corporeae, quantitatem virtualem ipsius designat, utpote per profunditatem, virtutem ad cognoscendum occulta; per altitudinem, excellentiam virtutis super omnia; per longitudinem, durationem sui esse; per latitudinem, affectum dilectionis ad omnia. Vel, ut dicit Dionysius, cap. IX de Div. Nom., per profunditatem Dei intelligitur incomprehensibilitas ipsius essentiae; per longitudinem, processus virtutis eius, omnia penetrantis; per latitudinem vero, superextensio eius ad omnia, inquantum scilicet sub eius protectione omnia continentur.",
+     "fr": "Je réponds aux arguments : 1° l’Ecriture sainte nous présente, comme déjà nous l’avons dit, les choses spirituelles et divines sous l’image des choses sensibles. Ainsi, quand elle nous montre Dieu réunissant la triple dimension, elle nous révèle ses attributs suprêmes par les qualités des corps : la pénétration de sa science par la profondeur; l’excellence de son Etre, par la hauteur; la durée de son existence, par la longueur; enfin l’immensité de son amour, par la largeur. Préfère-t-on le commentaire de l’Aréopagite, il dit : « La profondeur signifie l’incompréhensibilité de Dieu; la longueur, l’étendue de sa vertu qui pénètre toute chose; la largeur, l’universalité de sa providence qui gouverne et protége toutes les créatures."
+    },
+    {
+     "la": "Ad secundum dicendum quod homo dicitur esse ad imaginem Dei, non secundum corpus, sed secundum id quo homo excellit alia animalia, unde, Gen. I, postquam dictum est, *faciamus hominem ad imaginem et similitudinem nostram*, subditur, *ut praesit piscibus maris,* et cetera. Excellit autem homo omnia animalia quantum ad rationem et intellectum. Unde secundum intellectum et rationem, quae sunt incorporea, homo est ad imaginem Dei.",
+     "fr": "2° L’homme est l’image de Dieu, non dans son corps, mais dans la partie de son être qui l’élève au-dessus des animaux. En effet, la Genèse, après avoir dit, I, 26 : « Faisons l’homme à notre image et à notre ressemblance, » ajoute immédiatement après : « Afin qu’il domine sur les poissons de la mer, sur les oiseaux du ciel, sur les animaux qui demeurent sous le ciel et sur tous les reptiles. » Or l’homme domine sur les animaux par la raison et l’intelligence; c’est donc par l’intelligence et la raison, c’est par sa partie incorporelle qu’il est l’image de Dieu."
+    },
+    {
+     "la": "Ad tertium dicendum quod partes corporeae attribuuntur Deo in Scripturis ratione suorum actuum, secundum quandam similitudinem. Sicut actus oculi est videre, unde oculus de Deo dictus, significat virtutem eius ad videndum modo intelligibili, non sensibili. Et simile est de aliis partibus.",
+     "fr": "3° L’Ecriture prête à Dieu des membres et des organes corporels par analogie avec ses actes; quand elle lui attribue des yeux, elle veut nous faire comprendre qu’il jouit de la vision intellectuelle, et non pas de la vue sensible. Ainsi pour tout le reste."
+    },
+    {
+     "la": "Ad quartum dicendum quod etiam ea quae ad situm pertinent, non attribuuntur Deo nisi secundum quandam similitudinem, sicut dicitur sedens, propter suam immobilitatem et auctoritatem; et stans, propter suam fortitudinem ad debellandum omne quod adversatur.",
+     "fr": "4° C’est aussi par similitude que l’Ecriture sainte donne à Dieu diverses attitudes : quand elle nous le représente assis, elle nous révèle son immutabilité et son autorité; et quand elle nous le montre debout, elle nous signifie la force avec laquelle il terrasse ses ennemis."
+    },
+    {
+     "la": "Ad quintum dicendum quod ad Deum non acceditur passibus corporalibus, cum ubique sit, sed affectibus mentis, et eodem modo ab eo receditur. Et sic accessus et recessus, sub similitudine localis motus, designant spiritualem affectum.",
+     "fr": "5° On approche de Dieu, comme on s’en éloigne, non par le mouvement du corps, puisqu’il est partout, mais par les sentiments du cœur; de sorte que l’approchement et l’éloignement nous représentent ici, sous l’idée du mouvement physique, les affections spirituelles."
+    }
+   ],
+   "pages": {
+    "fr": [
+     48,
+     53
+    ]
+   }
+  },
+  {
+   "ref": "Iª q. 3 a. 2",
+   "titre": {
+    "la": "Utrum in Deo sit compositio formae et materiae",
+    "fr": "Dieu est-il composé de matière et de forme?"
+   },
+   "objections": [
+    {
+     "la": "Ad secundum sic proceditur. Videtur quod in Deo sit compositio formae et materiae. Omne enim quod habet animam, est compositum ex materia et forma, quia anima est forma corporis. Sed Scriptura attribuit animam Deo, introducitur enim ad Hebr. X, ex persona Dei, *iustus autem meus ex fide vivit; quod si subtraxerit se, non placebit animae meae*. Ergo Deus est compositus ex materia et forma.",
+     "fr": "Il paroît que Dieu est composé de matière et de forme. 1° Tout ce qui a une âme est composé de matière et de forme, puisque l’âme est la forme du corps. Or l’Ecriture sainte attribue une âme à Dieu, car elle lui fait dire dans l’Epître aux Hébreux, X, 38 : « Le juste qui m’appartient vit de la foi; que s’il se soustrait à son joug, il ne plaira plus à mon âme. » Donc Dieu est composé de matière et de forme."
+    },
+    {
+     "la": "Praeterea, ira, gaudium, et huiusmodi, sunt passiones coniuncti, ut dicitur I de anima. Sed huiusmodi attribuuntur Deo in Scriptura dicitur enim in Psalmo, *iratus est furore dominus in populum suum*. Ergo Deus ex materia et forma est compositus.",
+     "fr": "2° La joie, la colère, la haine sont, comme on le voit dans Aristote, des affections mixtes, c’est-à-dire qui impliquent une matière et une forme. Or l’Ecriture sainte prête à Dieu ces affections; car il est dit dans les Psaumes, CV, 39 : « L’Eternel s’enflamma de fureur contre son peuple. « Donc Dieu est composé de matière et de forme."
+    },
+    {
+     "la": "Praeterea, materia est principium individuationis. Sed Deus videtur esse individuum, non enim de multis praedicatur. Ergo est compositus ex materia et forma.",
+     "fr": "3° La matière est le principe de l’individualité. Or Dieu est un être individuel, car son nom ne se dit pas de plusieurs. Donc Dieu est composé de matière et de forme."
+    }
+   ],
+   "sed_contra": {
+    "la": "Sed contra, omne compositum ex materia et forma est corpus, quantitas enim dimensiva est quae primo inhaeret materiae. Sed Deus non est corpus, ut ostensum est. Ergo Deus non est compositus ex materia et forma.",
+    "fr": "Mais tout être composé de matière et de forme est un corps, car la quantité dimensive est le premier accident de la matière. Or Dieu n’est pas un corps, ainsi que nous l’avons démontré; donc il n’est pas composé de matière et de forme."
+   },
+   "respondeo": {
+    "la": "Respondeo dicendum quod impossibile est in Deo esse materiam. Primo quidem, quia materia est id quod est in potentia. Ostensum est autem quod Deus est purus actus, non habens aliquid de potentialitate. Unde impossibile est quod Deus sit compositus ex materia et forma. Secundo, quia omne compositum ex materia et forma est perfectum et bonum per suam formam, unde oportet quod sit bonum per participationem, secundum quod materia participat formam. Primum autem quod est bonum et optimum, quod Deus est, non est bonum per participationem, quia bonum per essentiam, prius est bono per participationem. Unde impossibile est quod Deus sit compositus ex materia et forma. Tertio, quia unumquodque agens agit per suam formam, unde secundum quod aliquid se habet ad suam formam, sic se habet ad hoc quod sit agens. Quod igitur primum est et per se agens, oportet quod sit primo et per se forma. Deus autem est primum agens, cum sit prima causa efficiens, ut ostensum est. Est igitur per essentiam suam forma; et non compositus ex materia et forma.",
+    "fr": "Il faut dire ceci : Il ne peut y avoir de matière en Dieu.\n\nPremièrement. La matière est ce qui est en puissance. Or nous avons montré que Dieu est un acte pur, n’ayant rien de potentiel. Donc il ne peut être composé de matière et de forme.\n\nDeuxièmement. Toute chose composée de matière est bonne en vertu de sa forme, comme participant à cette entité, par participation. Or le bien premier, le bien suprême, Dieu n’est pas bon de cette manière; car il vaut mieux être bon par essence que par participation. Donc Dieu n’est pas composé de matière et d’une forme.\n\nTroisièmement. Puisque l’agent opère par sa forme, il est formé de la même manière qu’il est agent; donc le premier agent par lui-même est aussi la première forme par lui-même. Or Dieu est le premier agent, puisque nous avons prouvé qu’il est la première cause efficiente. Donc il est forme par son essence, donc il n’est pas composé de matière et de forme."
+   },
+   "reponses": [
+    {
+     "la": "Ad primum ergo dicendum quod anima attribuitur Deo per similitudinem actus. Quod enim volumus aliquid nobis, ex anima nostra est, unde illud dicitur esse placitum animae Dei, quod est placitum voluntati ipsius.",
+     "fr": "Je réponds aux arguments : 1° On donne une âme à Dieu par similitude avec nos actes et nos sentiments. En nous, c’est l’âme qui veut; et voilà pourquoi nous attribuons à l’âme de Dieu ce qui est l’œuvre de sa volonté."
+    },
+    {
+     "la": "Ad secundum dicendum quod ira et huiusmodi attribuuntur Deo secundum similitudinem effectus, quia enim proprium est irati punire, ira eius punitio metaphorice vocatur.",
+     "fr": "2° La colère et les autres sentiments sont prêtés à Dieu par similitude d’effets : comme le propre de la colère est de punir, nous appelons métaphoriquement colère de Dieu, les punitions qu’il inflige à l’homme."
+    },
+    {
+     "la": "Ad tertium dicendum quod formae quae sunt receptibiles in materia individuantur per materiam, quae non potest esse in alio, cum sit primum subiectum substans, forma vero, quantum est de se, nisi aliquid aliud impediat, recipi potest a pluribus. Sed illa forma quae non est receptibilis in materia, sed est per se subsistens, ex hoc ipso individuatur, quod non potest recipi in alio, et huiusmodi forma est Deus. Unde non sequitur quod habeat materiam.",
+     "fr": "3° Les formes qui peuvent être reçues dans la matière sont individualisées par elle. En effet, tant qu’elles sont seules, ces formes peuvent s’unir à plusieurs substances; mais elles ne le peuvent plus, quand elles ont fait alliance avec leur compagne naturelle; car la matière, premier sujet des êtres corporels ne peut elle-même avoir de sujet. Quant à la forme qui ne peut être reçue dans la matière, mais qui subsiste en elle-même, elle est individualisée par cela qu’elle ne peut avoir de sujet. Or cette forme est Dieu : donc Dieu n’est pas individualisé par la matière, donc il ne renferme point de matière."
+    }
+   ],
+   "pages": {
+    "fr": [
+     53,
+     57
+    ]
+   }
+  },
+  {
+   "ref": "Iª q. 3 a. 3",
+   "titre": {
+    "la": "Utrum sit idem Deus quod sua essentia vel natura",
+    "fr": "Dieu est-il la même chose que sa nature ou son essence?"
+   },
+   "objections": [
+    {
+     "la": "Ad tertium sic proceditur. Videtur quod non sit idem Deus quod sua essentia vel natura. Nihil enim est in seipso. Sed essentia vel natura Dei, quae est deitas, dicitur esse in Deo. Ergo videtur quod Deus non sit idem quod sua essentia vel natura.",
+     "fr": "Il paroît que Dieu n’est pas la même chose que son essence ou sa nature. 1° Rien n’est en soi-même. Or on dit que la divinité, en d’autres termes l’essence ou la nature divine est en Dieu. Donc Dieu n’est pas la même chose que sa nature ou son essence."
+    },
+    {
+     "la": "Praeterea, effectus assimilatur suae causae, quia omne agens agit sibi simile. Sed in rebus creatis non est idem suppositum quod sua natura, non enim idem est homo quod sua humanitas. Ergo nec Deus est idem quod sua deitas.",
+     "fr": "2° Il y a ressemblance entre l’effet et la cause, parce que la cause produit un être semblable à elle. Or, dans les choses créées, le suppôt diffère de la nature; ainsi l’homme, par exemple, diffère de l’humanité. Donc le suppôt diffère, dans Dieu, de la nature."
+    }
+   ],
+   "sed_contra": {
+    "la": "Contra, de Deo dicitur quod est vita, et non solum quod est vivens, ut patet Ioan. XIV, *ego sum via, veritas et vita*. Sicut autem se habet vita ad viventem, ita deitas ad Deum. Ergo Deus est ipsa deitas.",
+    "fr": "Mais il est dit de Dieu qu’il est la vie, et non pas seulement qu’il est vivant; car on lit dans saint Jean, XIV, 6 : « Je suis la voie, la vérité et la vie. » Or ce que la vie est aux êtres vivants, la divinité l’est à Dieu. Donc Dieu est lui-même sa divinité ou son essence."
+   },
+   "respondeo": {
+    "la": "Respondeo dicendum quod Deus est idem quod sua essentia vel natura. Ad cuius intellectum sciendum est, quod in rebus compositis ex materia et forma, necesse est quod differant natura vel essentia et suppositum. Quia essentia vel natura comprehendit in se illa tantum quae cadunt in definitione speciei, sicut humanitas comprehendit in se ea quae cadunt in definitione hominis, his enim homo est homo, et hoc significat humanitas, hoc scilicet quo homo est homo. Sed materia individualis, cum accidentibus omnibus individuantibus ipsam, non cadit in definitione speciei, non enim cadunt in definitione hominis hae carnes et haec ossa, aut albedo vel nigredo, vel aliquid huiusmodi. Unde hae carnes et haec ossa, et accidentia designantia hanc materiam, non concluduntur in humanitate. Et tamen in eo quod est homo, includuntur, unde id quod est homo, habet in se aliquid quod non habet humanitas. Et propter hoc non est totaliter idem homo et humanitas, sed humanitas significatur ut pars formalis hominis; quia principia definientia habent se formaliter, respectu materiae individuantis. In his igitur quae non sunt composita ex materia et forma, in quibus individuatio non est per materiam individualem, idest per hanc materiam, sed ipsae formae per se individuantur, oportet quod ipsae formae sint supposita subsistentia. Unde in eis non differt suppositum et natura. Et sic, cum Deus non sit compositus ex materia et forma, ut ostensum est, oportet quod Deus sit sua deitas, sua vita, et quidquid aliud sic de Deo praedicatur.",
+    "fr": "Il faut dire ceci : Dieu est la même chose que son essence ou sa nature. Pour comprendre cette vérité, il faut savoir que, dans les choses composées de matière et de forme, l’essence ou la nature diffère essentiellement du suppôt. En effet, l’essence ou la nature ne renferme que les choses qui constituent l’espèce, ou qui entrent dans sa définition; ainsi, l’humanité comprend seulement ce qui fait l’homme, ce qui le détermine, ce qui le définit. Or la matière n’entre pas, non plus que les accidents qui l’individualisent, dans la définition de l’espèce; ainsi l’on ne voit figurer, dans la définition de l’homme, ni les chairs, ni les os, ni la couleur de la peau; en sorte que toutes ces choses ne sont pas renfermées dans l’humanité, bien qu’elles se trouvent dans l’homme. L’homme a donc quelque chose que n’a pas l’humanité, il n’est donc pas absolument la même chose que l’humanité; mais l’humanité est la partie formelle de l’homme, parce que les principes constitutifs sont la forme de la matière qui individualise les êtres. Au contraire, dans les choses qui ne renferment point de matière, qui, par conséquent, tiennent leur individualisation non de cette entité, mais d’elles-mêmes, il faut que les formes soient des suppôts subsistants, et dès lors ces suppôts ne peuvent plus différer de la nature. Or Dieu n’est pas composé de matière et de forme, nous l’avons démontré; donc Dieu est sa divinité, sa vie et tout ce qu’on peut affirmer de lui."
+   },
+   "reponses": [
+    {
+     "la": "Ad primum ergo dicendum quod de rebus simplicibus loqui non possumus, nisi per modum compositorum, a quibus cognitionem accipimus. Et ideo, de Deo loquentes, utimur nominibus concretis, ut significemus eius subsistentiam, quia apud nos non subsistunt nisi composita, et utimur nominibus abstractis, ut significemus eius simplicitatem. Quod ergo dicitur deitas vel vita, vel aliquid huiusmodi, esse in Deo, referendum est ad diversitatem quae est in acceptione intellectus nostri; et non ad aliquam diversitatem rei.",
+     "fr": "Je réponds aux arguments : 1° Nous parlons des choses simples d’après les choses composées, qui sont le principe de nos connoissances. Ainsi, comme nous ne voyons exister autour de nous que des êtres composés, nous employons des expressions concrètes pour exprimer l’existence de Dieu, et nous nous servons de termes abstraits pour désigner la simplicité de sa nature. Si donc nous disons que la divinité, ou la vie, ou quelque autre degré de l’être est en Dieu, ce n’est pas que les deux termes de la proposition diffèrent l’un de l’autre dans la réalité des choses, ils diffèrent seulement dans la conception de notre esprit."
+    },
+    {
+     "la": "Ad secundum dicendum quod effectus Dei imitantur ipsum, non perfecte, sed secundum quod possunt. Et hoc ad defectum imitationis pertinet, quod id quod est simplex et unum, non potest repraesentari nisi per multa, et sic accidit in eis compositio, ex qua provenit quod in eis non est idem suppositum quod natura.",
+     "fr": "2° Les effets de Dieu lui ressemblent non parfaitement, mais autant que le comporte la nature des choses. Une loi qui rend la ressemblance défectueuse, c’est que le simple et le un ne peut être représenté que par le multiple; d’où les copies contractent une composition qui rend en elles le suppôt différent de la nature."
+    }
+   ],
+   "pages": {
+    "fr": [
+     57,
+     60
+    ]
+   }
+  },
+  {
+   "ref": "Iª q. 3 a. 4",
+   "titre": {
+    "la": "Utrum in Deo sit idem essentia et esse",
+    "fr": "L’essence de Dieu est-elle la même chose que son être?"
+   },
+   "objections": [
+    {
+     "la": "Ad quartum sic proceditur. Videtur quod in Deo non sit idem essentia et esse. Si enim hoc sit, tunc ad esse divinum nihil additur. Sed esse cui nulla fit additio, est esse commune quod de omnibus praedicatur, sequitur ergo quod Deus sit ens commune praedicabile de omnibus. Hoc autem est falsum, secundum illud Sap. XIV, *incommunicabile nomen lignis et lapidibus imposuerunt*. Ergo esse Dei non est eius essentia.",
+     "fr": "Il paroît que l’essence de Dieu n’est pas la même chose que son être ou son existence. 1° Si, dans Dieu, l’essence étoit la même chose que l’être, on ne pourroit rien ajouter à l’être de Dieu. Or l’être auquel on ne peut rien ajouter, c’est l’être en général, qui forme le prédicat de tous les êtres. Mais Dieu n’est pas l’être en général, prédicat de tous les êtres; car le livre de la Sagesse dit, XIV, 21 : « Ils donnèrent aux pierres et au bois le nom incommunicable. » Donc l’être ou l’existence de Dieu n’est pas la même chose que son essence."
+    },
+    {
+     "la": "Praeterea, de Deo scire possumus an sit, ut supra dictum est. Non autem possumus scire quid sit. Ergo non est idem esse Dei, et quod quid est eius, sive quidditas vel natura.",
+     "fr": "2. Nous pouvons savoir ce que Dieu n’est pas, comme il a été dit plus haut, mais nous ne pouvons savoir ce qu’il est. Donc être pour Dieu, ce n’est pas être telle ou telle chose, avoir telle ou telle essence; donc l’essence de Dieu n’est pas la même chose que son être."
+    }
+   ],
+   "sed_contra": {
+    "la": "Sed contra est quod Hilarius dicit in VII de Trin., *esse non est accidens in Deo, sed subsistens veritas*. Id ergo quod subsistit in Deo, est suum esse.",
+    "fr": "Mais saint Hilaire dit, De la Trin., VII : « Être n’est pas un accident en Dieu, c’est une vérité subsistante. » Donc ce qui subsiste en Dieu est son être."
+   },
+   "respondeo": {
+    "la": "Respondeo dicendum quod Deus non solum est sua essentia, ut ostensum est, sed etiam suum esse. Quod quidem multipliciter ostendi potest. Primo quidem, quia quidquid est in aliquo quod est praeter essentiam eius, oportet esse causatum vel a principiis essentiae, sicut accidentia propria consequentia speciem, ut risibile consequitur hominem et causatur ex principiis essentialibus speciei; vel ab aliquo exteriori, sicut calor in aqua causatur ab igne. Si igitur ipsum esse rei sit aliud ab eius essentia, necesse est quod esse illius rei vel sit causatum ab aliquo exteriori, vel a principiis essentialibus eiusdem rei. Impossibile est autem quod esse sit causatum tantum ex principiis essentialibus rei, quia nulla res sufficit quod sit sibi causa essendi, si habeat esse causatum. Oportet ergo quod illud cuius esse est aliud ab essentia sua, habeat esse causatum ab alio. Hoc autem non potest dici de Deo, quia Deum dicimus esse primam causam efficientem. Impossibile est ergo quod in Deo sit aliud esse, et aliud eius essentia. Secundo, quia esse est actualitas omnis formae vel naturae, non enim bonitas vel humanitas significatur in actu, nisi prout significamus eam esse. Oportet igitur quod ipsum esse comparetur ad essentiam quae est aliud ab ipso, sicut actus ad potentiam. Cum igitur in Deo nihil sit potentiale, ut ostensum est supra, sequitur quod non sit aliud in eo essentia quam suum esse. Sua igitur essentia est suum esse. Tertio, quia sicut illud quod habet ignem et non est ignis, est ignitum per participationem, ita illud quod habet esse et non est esse, est ens per participationem. Deus autem est sua essentia, ut ostensum est. Si igitur non sit suum esse, erit ens per participationem, et non per essentiam. Non ergo erit primum ens, quod absurdum est dicere. Est igitur Deus suum esse, et non solum sua essentia.",
+    "fr": "Il faut dire ceci : Non-seulement Dieu est son essence, comme nous l’avons vu plus haut, mais encore il est son être; et nous pouvons le prouver de plusieurs manières.\n\nPremièrement. Tout ce qui se trouve dans une chose sans appartenir à son essence, est produit ou par les principes de sa nature, ou pour une cause étrangère : par les principes de sa nature, comme la faculté de rire dans l’homme vient des principes essentiels de son espèce; par une cause étrangère, comme la chaleur dans l’eau vient du feu. Si Donc l’être d’une chose diffère de son essence, il faut que cet être soit produit, ou par une cause étrangère, ou par ses principes essentiels. Or il ne peut être produit par ses principes essentiels, car rien ne peut se produire soi-même; donc tout ce qui a une essence différant de son être est produit par une cause étrangère. Mais cela ne peut se dire de Dieu, parce qu’il est la première cause efficiente; donc son être n’est pas une chose et son essence uneautre.\n\nDeuxièmement. L’être est l’actualité de la forme ou de la nature; car la bonté et l’humanité, par exemple, n’existent en acte qu’autant qu’elles ont l’être. Lors donc que l’être diffère de l’essence, ces deux choses sont l’une à l’autre ce que l’acte est à la puissance. Puis donc que Dieu ne renferme rien de potentiel, comme nous l’avons démontré précédemment, il s’ensuit que son essence n’est autre chose que son être.\n\nTroisièmement. Comme ce qui est chaud sans être feu est chaud par participation, de même ce qui a l’être sans être l’être est être par emprunt. Or Dieu est son essence, ainsi que nous l’avons vu. Si donc il n’est pas son être, il sera être par participation et non par essence; il ne sera pas le premier être, ce qui répugne. Donc Dieu est son être, et non pas seulement son essence."
+   },
+   "reponses": [
+    {
+     "la": "Ad primum ergo dicendum quod aliquid cui non fit additio potest intelligi dupliciter. Uno modo, ut de ratione eius sit quod non fiat ei additio; sicut de ratione animalis irrationalis est, ut sit sine ratione. Alio modo intelligitur aliquid cui non fit additio, quia non est de ratione eius quod sibi fiat additio, sicut animal commune est sine ratione, quia non est de ratione animalis communis ut habeat rationem; sed nec de ratione eius est ut careat ratione. Primo igitur modo, esse sine additione, est esse divinum, secundo modo, esse sine additione, est esse commune.",
+     "fr": "Je réponds aux arguments : 1° On peut ne rien ajouter à un être pour deux raisons : ou parce qu’il est de sa nature qu’on n’y ajoute rien, et c’est ainsi qu’on attribue pas la raison à tel ou tel animal qui en est privé; ou parce qu’il n’est pas dans sa nature qu’on y ajoute quelque chose, et c’est ainsi qu’on n’attribue pas la raison à l’animal en général, bien qu’il ne soit pas de son essence d’en être privé. Or l’être auquel on n’ajoute rien pour la première raison, c’est l’Être divin; et l’être auquel on n’ajoute rien pour la seconde raison, c’est l’être en général."
+    },
+    {
+     "la": "Ad secundum dicendum quod esse dupliciter dicitur, uno modo, significat actum essendi; alio modo, significat compositionem propositionis, quam anima adinvenit coniungens praedicatum subiecto. Primo igitur modo accipiendo esse, non possumus scire esse Dei, sicut nec eius essentiam, sed solum secundo modo. Scimus enim quod haec propositio quam formamus de Deo, cum dicimus Deus est, vera est. Et hoc scimus ex eius effectibus, ut supra dictum est.",
+     "fr": "2° Le mot être peut s’employer dans deux acceptions : d’abord pour exprimer la manière d’être, ensuite pour marquer l’existence qu’énonce la copule en unissant le sujet et l’attribut dans la proposition. Or nous ne pouvons connoître l’être de Dieu dans le premier sens, mais nous le pouvons dans le second; car nous savons que cette proposition : « Dieu est, » renferme la vérité; nous le savons, comme nous l’avons dit, par les effets du Créateur."
+    }
+   ],
+   "pages": {
+    "fr": [
+     60,
+     63
+    ]
+   }
+  },
+  {
+   "ref": "Iª q. 3 a. 5",
+   "titre": {
+    "la": "Utrum Deus sit in genere aliquo",
+    "fr": "Dieu est-il dans un genre?"
+   },
+   "objections": [
+    {
+     "la": "Ad quintum sic proceditur. Videtur quod Deus sit in genere aliquo. Substantia enim est ens per se subsistens. Hoc autem maxime convenit Deo. Ergo Deus est in genere substantiae.",
+     "fr": "Il paroît que Dieu est dans un genre. 1° La substance est l’être subsistant par soi. Or Dieu est par excellence l’être suprême, subsistant par soi : donc il est dans le genre de la substance."
+    },
+    {
+     "la": "Praeterea, unumquodque mensuratur per aliquid sui generis; sicut longitudines per longitudinem, et numeri per numerum. Sed Deus est mensura omnium substantiarum, ut patet per Commentatorem, X Metaphys. Ergo Deus est in genere substantiae.",
+     "fr": "2° Toute chose se mesure par une chose du même genre; ainsi les longueurs se mesurent par la longueur, et les nombres par le nombre. Or Dieu est la mesure, comme le prouve le Commentateur, de toutes les substances. Donc Dieu est dans le genre de la substance."
+    }
+   ],
+   "sed_contra": {
+    "la": "Sed contra, genus est prius, secundum intellectum, eo quod in genere continetur. Sed nihil est prius Deo, nec secundum rem, nec secundum intellectum. Ergo Deus non est in aliquo genere.",
+    "fr": "Mais le genre est antérieur, intellectuellement, à tout ce qu’il renferme. Or rien n’est antérieur à Dieu, ni intellectuellement, ni réellement, Donc Dieu n’est dans aucun genre."
+   },
+   "respondeo": {
+    "la": "Respondeo dicendum quod aliquid est in genere dupliciter. Uno modo simpliciter et proprie; sicut species, quae sub genere continentur. Alio modo, per reductionem, sicut principia et privationes, sicut punctus et unitas reducuntur ad genus quantitatis, sicut principia; caecitas autem, et omnis privatio, reducitur ad genus sui habitus. Neutro autem modo Deus est in genere. Quod enim non possit esse species alicuius generis, tripliciter ostendi potest. Primo quidem, quia species constituitur ex genere et differentia. Semper autem id a quo sumitur differentia constituens speciem, se habet ad illud unde sumitur genus, sicut actus ad potentiam. Animal enim sumitur a natura sensitiva per modum concretionis; hoc enim dicitur animal, quod naturam sensitivam habet, rationale vero sumitur a natura intellectiva, quia rationale est quod naturam intellectivam habet, intellectivum autem comparatur ad sensitivum, sicut actus ad potentiam. Et similiter manifestum est in aliis. Unde, cum in Deo non adiungatur potentia actui, impossibile est quod sit in genere tanquam species. Secundo, quia, cum esse Dei sit eius essentia, ut ostensum est, si Deus esset in aliquo genere, oporteret quod genus eius esset ens, nam genus significat essentiam rei, cum praedicetur in eo quod quid est. Ostendit autem philosophus in III Metaphys., quod ens non potest esse genus alicuius, omne enim genus habet differentias quae sunt extra essentiam generis; nulla autem differentia posset inveniri, quae esset extra ens; quia non ens non potest esse differentia. Unde relinquitur quod Deus non sit in genere. Tertio, quia omnia quae sunt in genere uno, communicant in quidditate vel essentia generis, quod praedicatur de eis in eo quod quid est. Differunt autem secundum esse, non enim idem est esse hominis et equi, nec huius hominis et illius hominis. Et sic oportet quod quaecumque sunt in genere, differant in eis esse et quod quid est, idest essentia. In Deo autem non differt, ut ostensum est. Unde manifestum est quod Deus non est in genere sicut species. Et ex hoc patet quod non habet genus, neque differentias; neque est definitio ipsius; neque demonstratio, nisi per effectum, quia definitio est ex genere et differentia, demonstrationis autem medium est definitio. Quod autem Deus non sit in genere per reductionem ut principium, manifestum est ex eo quod principium quod reducitur in aliquod genus, non se extendit ultra genus illud, sicut punctum non est principium nisi quantitatis continuae, et unitas quantitatis discretae. Deus autem est principium totius esse, ut infra ostendetur. Unde non continetur in aliquo genere sicut principium.",
+    "fr": "Il faut dire ceci : Une chose peut être dans un genre de deux manières : immédiatement, proprement, comme espèce, ainsi cheval est dans le genre animal; ensuite médiatement, réductivement, comme les principes des choses et les privations : ainsi le point et l’unité sont ramenés à la quantité, la cécité et la misère à la condition humaine. Or Dieu ne peut être dans un genre ni de la première, ni de la seconde manière. D’abord, que Dieu ne puisse être dans un genre immédiatement, comme espèce, en voici trois preuves.\n\nPremièrement. L’espèce se forme du genre et de la différence. Or l’objet d’où l’on tire la différence est à l’objet d’où l’on tire le genre, ce que l’acte est à la puissance : ainsi dans la définition de l’homme, par exemple, l’idée d’animal se tire de la nature sensitive considérée d’une manière concrète, car on appelle animal ce qui sent; puis l’idée de la raison se tire de la nature intellective, car on appelle raison ce qui comprend; or l’intelligence est à la sensibilité ce que l’acte est à la puissance. Mais Dieu ne réunit pas la puissance à l’acte; donc il ne peut être comme espèce dans un genre quelconque.\n\nSecondement. Puisque l’être de Dieu est son essence, comme nous l’avons prouvé, si Dieu étoit dans un genre, il faudroit que ce genre fût son être; car le genre, exprimant l’essence, dénonce ce que sont les choses. Or l’être ne peut former, comme le prouve Aristote, le genre de quoi que ce soit. En effet, le genre a des différences qui sont hors de son essence; mais on chercheroit vainement des différences hors de l’être, puisque le non-être ne sauroit en constituer aucune. Donc Dieu n’est pas dans un genre comme espèce.\n\nTroisièmement. Les choses qui appartiennent au même genre se ressemblent quant à l’essence, puisque le genre énonce ce qu’elles sont; mais elles diffèrent quant à l’être, puisque l’être de l’homme et celui du cheval, par exemple, ne sont pas semblables, non plus que l’être de tel homme et celui de tel autre. Lors donc qu’une chose est dans un genre, son être et son essence diffèrent nécessairement; mais l’essence et l’être ne diffèrent pas en Dieu, comme nous l’avons prouvé; donc Dieu n’est pas dans un genre comme espèce.\n\nDe ce qui précède, il suit que Dieu n’a ni genre ni différence, et par une conséquence ultérieure qu’on ne peut ni le définir ni le démontrer que par ses effets; car la définition se tire du genre et de la différence, et la démonstration prend sa source dans la définition.\n\nReste à prouver que Dieu n’appartient pas à un genre par réduction, comme principe. Le principe qu’on peut ramener à un genre ne s’étend pas au delà de ce genre; ainsi le point ne dépasse pas la quantité continue, ni l’unité la quantité discrète. Or Dieu est, comme nous le prouverons plus tard, le principe de tous les êtres. Donc il n’est pas contenu dans un genre comme principe."
+   },
+   "reponses": [
+    {
+     "la": "Ad primum ergo dicendum quod substantiae nomen non significat hoc solum quod est per se esse, quia hoc quod est esse, non potest per se esse genus, ut ostensum est. Sed significat essentiam cui competit sic esse, idest per se esse, quod tamen esse non est ipsa eius essentia. Et sic patet quod Deus non est in genere substantiae.",
+     "fr": "Je réponds aux arguments : 1° Le mot substance ne signifie pas seulement ce qui est être par soi, car ce qui est être ne peut par soi former de genre, comme nous l’avons vu; mais il désigne l’essence qui est tel ou tel être, c’est-à-dire être par soi, bien que l’être et l’essence ne soient pas ici la même chose. On voit donc que Dieu n’est pas dans le genre de la substance."
+    },
+    {
+     "la": "Ad secundum dicendum quod obiectio illa procedit de mensura proportionata, hanc enim oportet esse homogeneam mensurato. Deus autem non est mensura proportionata alicui. Dicitur tamen mensura omnium, ex eo quod unumquodque tantum habet de esse, quantum ei appropinquat.",
+     "fr": "2° La mesure proportionnée est du même genre que le mesuré, tout le monde le reconnoît; mais Dieu n’est pas une mesure proportionnée pour quoi que ce soit. Cependant on dit que Dieu est la mesure de toutes les choses, mais pourquoi? Parce que toutes les choses n’ont d’être qu’autant qu’elles approchent de Dieu."
+    }
+   ],
+   "pages": {
+    "fr": [
+     63,
+     67
+    ]
+   }
+  },
+  {
+   "ref": "Iª q. 3 a. 6",
+   "titre": {
+    "la": "Utrum in Deo sint aliqua accidentia",
+    "fr": "Y a-t-il des accidents en Dieu."
+   },
+   "objections": [
+    {
+     "la": "Ad sextum sic proceditur. Videtur quod in Deo sint aliqua accidentia. Substantia enim nulli est accidens, ut dicitur in I Physic. Quod ergo in uno est accidens, non potest in alio esse substantia, sicut probatur quod calor non sit forma substantialis ignis, quia in aliis est accidens. Sed sapientia, virtus, et huiusmodi, quae in nobis sunt accidentia, Deo attribuuntur. Ergo et in Deo sunt accidentia.",
+     "fr": "Il paroît qu’il y a des accidents en Dieu. 1° La substance ne devient jamais accident, comme on le voit dans Aristote. Donc ce qui est accident dans une chose ne peut être substance dans une autre; si bien que l’on prouve que la chaleur n’est pas la substance du feu, par cela seul qu’elle est accident dans d’autres corps. Or la sagesse, la bonté et d’autres qualités semblables qui forment dans l’homme des accidents, sont attribuées à Dieu; donc il y a dans Dieu des accidents."
+    },
+    {
+     "la": "Praeterea, in quolibet genere est unum primum. Multa autem sunt genera accidentium. Si igitur prima illorum generum non sunt in Deo, erunt multa prima extra Deum, quod est inconveniens.",
+     "fr": "2° Tout genre a un principe. Or on compte beaucoup de genres d’accidents. Si donc les principes de ces genres n’étoient pas en Dieu, il y auroit beaucoup de principes hors de Dieu, ce qu’on ne peut admettre."
+    }
+   ],
+   "sed_contra": {
+    "la": "Sed contra, omne accidens in subiecto est. Deus autem non potest esse subiectum, quia *forma simplex non potest esse subiectum*, ut dicit Boetius in Lib. de Trin. Ergo in Deo non potest esse accidens.",
+    "fr": "Mais tout accident réside dans un sujet. Or Dieu ne peut être un sujet, parce qu’une forme simple ne sauroit, comme le dit Boèce, recevoir un autre être dans son sein. Donc il ne peut y avoir en Dieu des accidents."
+   },
+   "respondeo": {
+    "la": "Respondeo dicendum quod, secundum praemissa, manifeste apparet quod in Deo accidens esse non potest. Primo quidem, quia subiectum comparatur ad accidens, sicut potentia ad actum, subiectum enim secundum accidens est aliquo modo in actu. Esse autem in potentia, omnino removetur a Deo, ut ex praedictis patet. Secundo, quia Deus est suum esse, et, ut Boetius dicit in Lib. de Hebdomad., *licet id quod est, aliquid aliud possit habere adiunctum, tamen ipsum esse nihil aliud adiunctum habere potest*, sicut quod est calidum, potest habere aliquid extraneum quam calidum, ut albedinem; sed ipse calor nihil habet praeter calorem. Tertio, quia omne quod est per se, prius est eo quod est per accidens. Unde, cum Deus sit simpliciter primum ens, in eo non potest esse aliquid per accidens. Sed nec accidentia per se in eo esse possunt, sicut risibile est per se accidens hominis. Quia huiusmodi accidentia causantur ex principiis subiecti, in Deo autem nihil potest esse causatum, cum sit causa prima. Unde relinquitur quod in Deo nullum sit accidens.",
+    "fr": "Il faut dire qu’il ne peut y avoir en Dieu des accidents, et cela résulte manifestement de ce qui a été établi jusqu’ici.\n\nPremièrement. Le sujet est à l’accident ce que la puissance est à l’acte, car le sujet est comme en acte à l’égard de l’accident. Or, nous l’avons prouvé, Dieu ne peut être en puissance d’aucune manière.\n\nSecondement. Dieu est l’être même. Or, si ce qui est peut recevoir des accidents, l’être même ne sauroit, comme le dit Boèce, en recevoir aucun; ainsi ce qui est chaud peut avoir autre chose que le chaud, la blancheur par exemple, mais la chaleur même ne peut avoir que la chaleur.\n\nTroisièmement. Ce qui est par soi précède ce qui est par accident. Or Dieu est essentiellement, nécessairement le premier être. D’un autre côté, les accidents absolus, les accidents par soi, comme la risibilité dans l’homme, sont produits par les principes du sujet; mais il ne peut y avoir en Dieu rien de produit. Reste donc à dire que Dieu ne renferme aucun accident."
+   },
+   "reponses": [
+    {
+     "la": "Ad primum ergo dicendum quod virtus et sapientia non univoce dicuntur de Deo et de nobis, ut infra patebit. Unde non sequitur quod accidentia sint in Deo, sicut in nobis.",
+     "fr": "Je réponds aux arguments : 1° La sagesse et la bonté n’appartiennent pas à Dieu et à l’homme, nous le verrons plus tard, de la même manière : elles peuvent donc être accidents dans l’homme et ne pas l’être dans Dieu."
+    },
+    {
+     "la": "Ad secundum dicendum quod, cum substantia sit prior accidentibus, principia accidentium reducuntur in principia substantiae sicut in priora. Quamvis Deus non sit primum contentum in genere substantiae, sed primum extra omne genus, respectu totius esse.",
+     "fr": "2° Comme la substance est avant les accidents, les principes des accidents se ramènent aux principes de la substance; et si Dieu n’est pas dans le genre de la substance, il la domine comme principe de tous les êtres."
+    }
+   ],
+   "pages": {
+    "fr": [
+     67,
+     68
+    ]
+   }
+  },
+  {
+   "ref": "Iª q. 3 a. 7",
+   "titre": {
+    "la": "Utrum Deus sit omnino simplex",
+    "fr": "Dieu est-il absolument simple?"
+   },
+   "objections": [
+    {
+     "la": "Ad septimum sic proceditur. Videtur quod Deus non sit omnino simplex. Ea enim quae sunt a Deo, imitantur ipsum, unde a primo ente sunt omnia entia, et a primo bono sunt omnia bona. Sed in rebus quae sunt a Deo, nihil est omnino simplex. Ergo Deus non est omnino simplex.",
+     "fr": "Il paroît que Dieu n’est pas absolument simple. 1° Tout ce qui vient de Dieu lui ressemble; de sorte que l’on peut conclure par cette seule considération que tous les êtres viennent du premier être, et tous les biens du premier bien. Or rien n’est absolument simple dans les choses qui viennent de Dieu; donc Dieu ne l’est pas lui-même."
+    },
+    {
+     "la": "Praeterea, omne quod est melius, Deo attribuendum est. Sed, apud nos, composita sunt meliora simplicibus, sicut corpora mixta elementis, et elementa suis partibus. Ergo non est dicendum quod Deus sit omnino simplex.",
+     "fr": "2° Il faut attribuer à Dieu tout ce qu’il y a de meilleur. Or, dans le monde, les choses composées sont meilleures que les choses simples; par exemple les corps l’emportent en bonté sur leurs éléments, et les animaux sur leurs parties. Donc il faut dire que Dieu n’est pas entièrement simple."
+    }
+   ],
+   "sed_contra": {
+    "la": "Sed contra est quod Augustinus dicit, VI de Trin., quod Deus vere et summe simplex est.",
+    "fr": "Mais nous lisons dans saint Augustin, De la Trin., VI, 7 et 8 : « Dieu est véritablement, souverainement simple. »"
+   },
+   "respondeo": {
+    "la": "Respondeo dicendum quod Deum omnino esse simplicem, multipliciter potest esse manifestum. Primo quidem per supradicta. Cum enim in Deo non sit compositio, neque quantitativarum partium, quia corpus non est; neque compositio formae et materiae, neque in eo sit aliud natura et suppositum; neque aliud essentia et esse, neque in eo sit compositio generis et differentiae; neque subiecti et accidentis, manifestum est quod Deus nullo modo compositus est, sed est omnino simplex. Secundo, quia omne compositum est posterius suis componentibus, et dependens ex eis. Deus autem est primum ens, ut supra ostensum est. Tertio, quia omne compositum causam habet, quae enim secundum se diversa sunt, non conveniunt in aliquod unum nisi per aliquam causam adunantem ipsa. Deus autem non habet causam, ut supra ostensum est, cum sit prima causa efficiens. Quarto, quia in omni composito oportet esse potentiam et actum, quod in Deo non est, quia vel una partium est actus respectu alterius; vel saltem omnes partes sunt sicut in potentia respectu totius. Quinto, quia omne compositum est aliquid quod non convenit alicui suarum partium. Et quidem in totis dissimilium partium, manifestum est, nulla enim partium hominis est homo, neque aliqua partium pedis est pes. In totis vero similium partium, licet aliquid quod dicitur de toto, dicatur de parte, sicut pars aeris est aer, et aquae aqua; aliquid tamen dicitur de toto, quod non convenit alicui partium, non enim si tota aqua est bicubita, et pars eius. Sic igitur in omni composito est aliquid quod non est ipsum. Hoc autem etsi possit dici de habente formam, quod scilicet habeat aliquid quod non est ipsum (puta in albo est aliquid quod non pertinet ad rationem albi), tamen in ipsa forma nihil est alienum. Unde, cum Deus sit ipsa forma, vel potius ipsum esse, nullo modo compositus esse potest. Et hanc rationem tangit Hilarius, VII de Trin., dicens, *Deus, qui virtus est, ex infirmis non continetur, neque qui lux est, ex obscuris coaptatur*.",
+    "fr": "Il faut dire ceci : On peut démontrer la simplicité divine de plusieurs manières.\n\nPremièrement, par ce qui a été établi jusqu’ici. Comme Dieu ne renferme point de parties quantitatives, attendu qu’il n’est pas un corps; comme il n’est pas composé de matière et de forme, vu qu’il est un acte pur; comme en lui la nature ne diffère pas du suppôt, ni l’essence de l’être; comme il n’a ni genre, ni différence, ni sujet, ni accident : il s’ensuit manifestement qu’il n’est composé d’aucune manière, mais qu’il est absolument simple.\n\nDeuxièmement. Le composé est postérieur au composant et reste sous sa dépendance : mais Dieu est, comme nous l’avons vu, le premier être et le souverain Seigneur de toute chose.\n\nTroisièmement. Tout composé a une cause, pourquoi? parce que des choses diverses ne peuvent se réunir en une seule que sous l’action d’une cause étrangère. Or Dieu, nous l’avons prouvé, n’a point de cause; au contraire, il est lui-même la première cause de tous les êtres.\n\nQuatrièmement. Tout composé renferme acte et puissance; car, dans le tout, certaines parties sont en acte à l’égard des autres, ou du moins toutes les parties sont en puissance à l’égard de l’ensemble. Or il ne peut y avoir en Dieu puissance et acte.\n\nCinquièmement. Le composé est une chose qui n’est pas telle ou telle de ses parties. En effet, deux sortes de composés : ceux qui sont formés de parties dissemblables et ceux qui sont formés de parties semblables. Or, dans les composés de la première sorte, les parties ne sont pas la même chose que le tout : une partie de l’homme, par exemple, n’est pas l’homme, une partie du pied n’est pas le pied. Ensuite, dans les composés de la seconde espèce, on peut dire des parties, nous le savons, certaines choses qu’on dit du tout : ainsi une partie d’air est de l’air, une partie d’eau est de l’eau; mais tout ce que nous disons du tout nous ne pouvons le dire des parties : car si une masse d’eau a deux coudées, pour nous servir de cet exemple, une partie ne les a pas. Il est donc vrai que tout composé a quelque chose qui n’est pas lui-même. Mais si ce qui a une forme peut renfermer quelque chose qui ne soit pas dans sa nature; si le blanc, par exemple, peut réunir quelque entité qui n’appartienne pas à la blancheur : par contre la forme elle-même ne peut rien contenir qui lui soit étranger. Or Dieu est la forme ou plutôt l’être même; donc il ne peut rien avoir hors de sa nature, donc il n’est pas un tout, donc il est absolument simple. Saint Hilaire touche ce raisonnement, quand il dit, De la Trinit., VII : « Dieu qui est la force et la lumière, n’a ni la faiblesse ni les ténèbres. »"
+   },
+   "reponses": [
+    {
+     "la": "Ad primum ergo dicendum quod ea quae sunt a Deo, imitantur Deum sicut causata primam causam. Est autem hoc de ratione causati, quod sit aliquo modo compositum, quia ad minus esse eius est aliud quam quod quid est, ut infra patebit.",
+     "fr": "Je réponds aux arguments : 1° Les choses qui viennent de Dieu lui ressemblent autant qu’un effet peut ressembler à la première cause. Or il est de la nature d’un effet d’être composé de quelque manière, ne seroitce que parce que son être diffère de son essence, comme nous le verrons dans la suite."
+    },
+    {
+     "la": "Ad secundum dicendum quod apud nos composita sunt meliora simplicibus, quia perfectio bonitatis creaturae non invenitur in uno simplici, sed in multis. Sed perfectio divinae bonitatis invenitur in uno simplici, ut infra ostendetur.",
+     "fr": "2° Si, dans ce monde, les êtres composés sont meilleurs que les êtres simples, c’est que la bonté de la créature se trouve dans plusieurs choses, et non pas dans une seule; mais il n’en est point ainsi de la bonté divine : elle se trouve tout entière, comme nous le verrons plus tard, dans une forme simple."
+    }
+   ],
+   "pages": {
+    "fr": [
+     68,
+     71
+    ]
+   }
+  },
+  {
+   "ref": "Iª q. 3 a. 8",
+   "titre": {
+    "la": "Utrum Deus in compositionem aliorum veniat",
+    "fr": "Dieu entre-t-il dans la composition des créatures?"
+   },
+   "objections": [
+    {
+     "la": "Ad octavum sic proceditur. Videtur quod Deus in compositionem aliorum veniat. Dicit enim Dionysius, IV cap. Cael. Hier., *esse omnium est, quae super esse est deitas*. Sed esse omnium intrat compositionem uniuscuiusque. Ergo Deus in compositionem aliorum venit.",
+     "fr": "Il paroît que Dieu entre dans la composition des créatures. 1° Denys le philosophe dit, Hiér. cél., IV : « La Divinité, être suprême, est l’être de tous les êtres. » Or l’être de tous les êtres entre dans la composition de chacun. Donc Dieu entre dans la composition des autres êtres."
+    },
+    {
+     "la": "Praeterea, Deus est forma, dicit enim Augustinus, in libro de verbis domini, quod verbum Dei (quod est Deus) est forma quaedam non formata. Sed forma est pars compositi. Ergo Deus est pars alicuius compositi.",
+     "fr": "2° Dieu est une forme; car saint Augustin dit, Des paroles du Seigneur, serm. XXXIII : « Le Verbe de Dieu, qui est Dieu, est une certaine forme qui n’a pas été formée. » Or toute forme fait partie d’un composé; donc Dieu aussi."
+    },
+    {
+     "la": "Praeterea, quaecumque sunt et nullo modo differunt, sunt idem. Sed Deus et materia prima sunt, et nullo modo differunt. Ergo penitus sunt idem. Sed materia prima intrat compositionem rerum. Ergo et Deus. Probatio mediae, quaecumque differunt, aliquibus differentiis differunt, et ita oportet ea esse composita; sed Deus et materia prima sunt omnino simplicia; ergo nullo modo differunt.",
+     "fr": "3° Les êtres qui existent et ne diffèrent d’aucune manière sont une seule et même chose. Or Dieu et la matière première existent et ne diffèrent d’aucune manière; donc la matière première et Dieu sont une seule et même chose. Mais la matière première entre dans la composition des créatures, donc Dieu y entre pareillement. La mineure se prouve ainsi : toutes les choses qui diffèrent entre elles, diffèrent par quelque différence et sont composées par cela même; mais Dieu et la matière première sont absolument simples, donc ils ne diffèrent d’aucune manière."
+    }
+   ],
+   "sed_contra": {
+    "la": "Sed contra est quod dicit Dionysius, II cap. de Div. Nom., quod neque tactus est eius (scilicet Dei), *neque alia quaedam ad partes commiscendi communio*. Praeterea, dicitur in libro de causis, quod *causa prima regit omnes res, praeterquam commisceatur eis*.",
+    "fr": "Mais nous lisons dans l’Aréopagite : « Il n’y a pour Dieu ni contact, ni commerce qui puisse le mêler à ce qui a des parties. » Et le Philosophe dit, dans le livre des Causes : « La cause première gouverne tous les êtres sans se confondre avec eux. »"
+   },
+   "respondeo": {
+    "la": "Respondeo dicendum quod circa hoc fuerunt tres errores. Quidam enim posuerunt quod Deus esset anima mundi, ut patet per Augustinum in Lib. VII de civitate Dei, et ad hoc etiam reducitur, quod quidam dixerunt Deum esse animam primi caeli. Alii autem dixerunt Deum esse principium formale omnium rerum. Et haec dicitur fuisse opinio Almarianorum. Sed tertius error fuit David de Dinando, qui stultissime posuit Deum esse materiam primam. Omnia enim haec manifestam continent falsitatem, neque est possibile Deum aliquo modo in compositionem alicuius venire, nec sicut principium formale, nec sicut principium materiale. Primo quidem, quia supra diximus Deum esse primam causam efficientem. Causa autem efficiens cum forma rei factae non incidit in idem numero, sed solum in idem specie, homo enim generat hominem. Materia vero cum causa efficiente non incidit in idem numero, nec in idem specie, quia hoc est in potentia, illud vero in actu. Secundo, quia cum Deus sit prima causa efficiens, eius est primo et per se agere. Quod autem venit in compositionem alicuius, non est primo et per se agens, sed magis compositum, non enim manus agit, sed homo per manum; et ignis calefacit per calorem. Unde Deus non potest esse pars alicuius compositi. Tertio, quia nulla pars compositi potest esse simpliciter prima in entibus; neque etiam materia et forma, quae sunt primae partes compositorum. Nam materia est in potentia, potentia autem est posterior actu simpliciter, ut ex dictis patet. Forma autem quae est pars compositi, est forma participata, sicut autem participans est posterius eo quod est per essentiam, ita et ipsum participatum; sicut ignis in ignitis est posterior eo quod est per essentiam. Ostensum est autem quod Deus est primum ens simpliciter.",
+    "fr": "Il faut dire ceci : Il y a eu trois erreurs sur le point qui nous occupe. Les uns ont avancé, comme on le voit dans saint Augustin, que Dieu forme l’âme du monde, ou ce qui revient au même, l’âme du premier ciel; d’autres, comme Amaury de Chartres et ses disciples, ont soutenu qu’il est le principe formel de toute chose; enfin quelques autres, parmi lesquels David de Dinand, ont follement prétendu qu’il ne diffère pas de la matière première. Ces trois opinions sont manifestement fausses. Dieu ne peut entrer dans la composition des créatures, de quelque manière que ce soit, ni comme principe formel, ni comme principe matériel.\n\nPremièrement. Dieu est la première cause efficiente, nous l’avons prouvé plus haut. Or la cause efficiente et l’effet formel ne sont pas une même chose en nombre, mais seulement en espèce; car lorsque l’homme engendre l’homme, il y a deux êtres, bien qu’il n’y ait qu’une espèce. Nous devons dire plus : la matière et la cause efficiente ne sont une même chose ni numériquement, ni spécifiquement, car l’une est en puissance et l’autre en acte. Donc Dieu et la créature ne sont pas une même chose.\n\nDeuxièmement. Puisque Dieu est la première cause efficiente, il est agent primordial et par soi-même. Or ce qui entre dans la composition d’une chose ne peut être agent primordial et par soi, le composé seul a ce privilége : ce n’est pas la main de l’homme qui agit, mais c’est l’homme qui agit par la main, comme aussi c’est le feu qui échauffe par la chaleur. Dieu ne peut donc faire partie d’un être composé.\n\nTroisièmement. Aucune partie des composés, pas même celles qui entrent avant toutes les autres dans leur formation, comme la matière et la forme, ne peut être le premier être. D’abord la matière est en puissance; or la puissance est postérieure à l’acte, comme nous l’avons démontré précédemment. Ensuite la forme qui fait partie d’un composé est une forme participée; mais le participant, et conséquemment le preticipé, vient après l’être par essence; ainsi le feu dans un corps en ignition suit le feu considéré dans lui-même. Or nous avons prouvé que Dieu est nécessairement le premier être; donc il ne peut entrer comme partie dans la composition des créatures."
+   },
+   "reponses": [
+    {
+     "la": "Ad primum ergo dicendum quod deitas dicitur esse omnium effective et exemplariter, non autem per essentiam.",
+     "fr": "Je réponds aux arguments : 1° La divinité est l’être des êtres, non par essence, mais virtuellement et formellement."
+    },
+    {
+     "la": "Ad secundum dicendum quod verbum est forma exemplaris, non autem forma quae est pars compositi.",
+     "fr": "2° Le Verbe est la forme exemplaire des créatures; mais il n’est pas cette forme qui fait partie des êtres composés."
+    },
+    {
+     "la": "Ad tertium dicendum quod simplicia non differunt aliquibus aliis differentiis, hoc enim compositorum est. Homo enim et equus differunt rationali et irrationali differentiis, quae quidem differentiae non differunt amplius ab invicem aliis differentiis. Unde, si fiat vis in verbo, non proprie dicuntur differre, sed diversa esse, nam, secundum philosophum X Metaphys., diversum absolute dicitur, sed omne differens aliquo differt. Unde, si fiat vis in verbo, materia prima et Deus non differunt, sed sunt diversa seipsis. Unde non sequitur quod sint idem.",
+     "fr": "3° Les choses simples n’ont point de différences, comme les choses composées. L’homme et le cheval différent en ce que l’un est doué de la raison, tandis que l’autre en est privé; mais la rationalité et l’irrationalité n’ont point de différences ultérieures; en sorte qu’il faudroit dire, à parler exactement, non pas qu’elles diffèrent, mais qu’elles sont diverses. Selon le Philosophe, divers se dit absolument, mais différent implique relation; donc la matière première et Dieu ne sont pas, dans la rigueur des termes, différents, mais divers. L’argument ne prouve donc pas que la matière et son Auteur forment une seule et même chose."
+    }
+   ],
+   "pages": {
+    "fr": [
+     71,
+     74
+    ]
+   }
+  }
+ ],
+ "source": {
+  "fr": {
+   "ouvrage": "Somme théologique de S. Thomas d’Aquin, traduite en français et annotée par F. Lachat",
+   "edition": "Paris, Louis Vivès, 4e édition, 1880, tome premier (même composition que l’édition de 1874)",
+   "url": "https://archive.org/details/sommetheologique01thom",
+   "controle": "https://archive.org/details/sommethologique07lachgoog",
+   "relecture": "vote de quatre lectures (Tesseract et ABBYY sur les scans de 1880 et de 1874, même composition) ; chaque ligne sans accord relue sur l’image (corrections_fr.txt) ; notes de Lachat et « (Conclusion. — …) » des éditeurs non repris"
+  },
+  "la": {
+   "ouvrage": "Sancti Thomae Aquinatis Opera omnia iussu impensaque Leonis XIII P. M. edita, t. IV : Pars prima Summae theologiae a quaestione I ad quaestionem XLIX",
+   "edition": "Romae, ex Typographia Polyglotta S. C. de Propaganda Fide, 1888",
+   "url": "https://archive.org/details/operaomniaiussui04thom",
+   "transcription": "https://www.corpusthomisticum.org/sth1001.html (E. Alarcón, d’après l’édition léonine)",
+   "relecture": "alignement mot à mot sur la lecture ABBYY du scan de 1888 (latin_controle.py), écarts isolés vus sur l’image (corrections_la.txt) ; intitulés relus sur l’image ; ponctuation du Corpus Thomisticum ; pas de relecture intégrale du latin sur l’image"
+  },
+  "pages_fr": [
+   47,
+   75
+  ]
+ },
+ "revision": 1
+}

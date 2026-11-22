@@ -1,0 +1,185 @@
+{
+ "note": "Ordre de lecture de la Somme théologique (un article par jour, à la suite).",
+ "articles": [
+  {
+   "ref": "Iª q. 1 a. 1",
+   "fichier": "Ia-01.json",
+   "question": 1,
+   "article": 1
+  },
+  {
+   "ref": "Iª q. 1 a. 2",
+   "fichier": "Ia-01.json",
+   "question": 1,
+   "article": 2
+  },
+  {
+   "ref": "Iª q. 1 a. 3",
+   "fichier": "Ia-01.json",
+   "question": 1,
+   "article": 3
+  },
+  {
+   "ref": "Iª q. 1 a. 4",
+   "fichier": "Ia-01.json",
+   "question": 1,
+   "article": 4
+  },
+  {
+   "ref": "Iª q. 1 a. 5",
+   "fichier": "Ia-01.json",
+   "question": 1,
+   "article": 5
+  },
+  {
+   "ref": "Iª q. 1 a. 6",
+   "fichier": "Ia-01.json",
+   "question": 1,
+   "article": 6
+  },
+  {
+   "ref": "Iª q. 1 a. 7",
+   "fichier": "Ia-01.json",
+   "question": 1,
+   "article": 7
+  },
+  {
+   "ref": "Iª q. 1 a. 8",
+   "fichier": "Ia-01.json",
+   "question": 1,
+   "article": 8
+  },
+  {
+   "ref": "Iª q. 1 a. 9",
+   "fichier": "Ia-01.json",
+   "question": 1,
+   "article": 9
+  },
+  {
+   "ref": "Iª q. 1 a. 10",
+   "fichier": "Ia-01.json",
+   "question": 1,
+   "article": 10
+  },
+  {
+   "ref": "Iª q. 2 a. 1",
+   "fichier": "Ia-02.json",
+   "question": 2,
+   "article": 1
+  },
+  {
+   "ref": "Iª q. 2 a. 2",
+   "fichier": "Ia-02.json",
+   "question": 2,
+   "article": 2
+  },
+  {
+   "ref": "Iª q. 2 a. 3",
+   "fichier": "Ia-02.json",
+   "question": 2,
+   "article": 3
+  },
+  {
+   "ref": "Iª q. 3 a. 1",
+   "fichier": "Ia-03.json",
+   "question": 3,
+   "article": 1
+  },
+  {
+   "ref": "Iª q. 3 a. 2",
+   "fichier": "Ia-03.json",
+   "question": 3,
+   "article": 2
+  },
+  {
+   "ref": "Iª q. 3 a. 3",
+   "fichier": "Ia-03.json",
+   "question": 3,
+   "article": 3
+  },
+  {
+   "ref": "Iª q. 3 a. 4",
+   "fichier": "Ia-03.json",
+   "question": 3,
+   "article": 4
+  },
+  {
+   "ref": "Iª q. 3 a. 5",
+   "fichier": "Ia-03.json",
+   "question": 3,
+   "article": 5
+  },
+  {
+   "ref": "Iª q. 3 a. 6",
+   "fichier": "Ia-03.json",
+   "question": 3,
+   "article": 6
+  },
+  {
+   "ref": "Iª q. 3 a. 7",
+   "fichier": "Ia-03.json",
+   "question": 3,
+   "article": 7
+  },
+  {
+   "ref": "Iª q. 3 a. 8",
+   "fichier": "Ia-03.json",
+   "question": 3,
+   "article": 8
+  },
+  {
+   "ref": "Iª q. 4 a. 1",
+   "fichier": "Ia-04.json",
+   "question": 4,
+   "article": 1
+  },
+  {
+   "ref": "Iª q. 4 a. 2",
+   "fichier": "Ia-04.json",
+   "question": 4,
+   "article": 2
+  },
+  {
+   "ref": "Iª q. 4 a. 3",
+   "fichier": "Ia-04.json",
+   "question": 4,
+   "article": 3
+  },
+  {
+   "ref": "Iª q. 5 a. 1",
+   "fichier": "Ia-05.json",
+   "question": 5,
+   "article": 1
+  },
+  {
+   "ref": "Iª q. 5 a. 2",
+   "fichier": "Ia-05.json",
+   "question": 5,
+   "article": 2
+  },
+  {
+   "ref": "Iª q. 5 a. 3",
+   "fichier": "Ia-05.json",
+   "question": 5,
+   "article": 3
+  },
+  {
+   "ref": "Iª q. 5 a. 4",
+   "fichier": "Ia-05.json",
+   "question": 5,
+   "article": 4
+  },
+  {
+   "ref": "Iª q. 5 a. 5",
+   "fichier": "Ia-05.json",
+   "question": 5,
+   "article": 5
+  },
+  {
+   "ref": "Iª q. 5 a. 6",
+   "fichier": "Ia-05.json",
+   "question": 5,
+   "article": 6
+  }
+ ]
+}

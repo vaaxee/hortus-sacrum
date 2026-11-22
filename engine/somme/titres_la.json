@@ -15,5 +15,49 @@
    "9": "Utrum sacra Scriptura debeat uti metaphoris",
    "10": "Utrum sacra Scriptura sub una littera habeat plures sensus"
   }
+ },
+ "2": {
+  "titre": "De Deo, an Deus sit",
+  "page_scan": 44,
+  "articles": {
+   "1": "Utrum Deum esse sit per se notum",
+   "2": "Utrum Deum esse sit demonstrabile",
+   "3": "Utrum Deus sit"
+  }
+ },
+ "3": {
+  "titre": "De Dei simplicitate",
+  "page_scan": 52,
+  "articles": {
+   "1": "Utrum Deus sit corpus",
+   "2": "Utrum in Deo sit compositio formae et materiae",
+   "3": "Utrum sit idem Deus quod sua essentia vel natura",
+   "4": "Utrum in Deo sit idem essentia et esse",
+   "5": "Utrum Deus sit in genere aliquo",
+   "6": "Utrum in Deo sint aliqua accidentia",
+   "7": "Utrum Deus sit omnino simplex",
+   "8": "Utrum Deus in compositionem aliorum veniat"
+  }
+ },
+ "4": {
+  "titre": "De Dei perfectione",
+  "page_scan": 67,
+  "articles": {
+   "1": "Utrum Deus sit perfectus",
+   "2": "Utrum in Deo sint perfectiones omnium rerum",
+   "3": "Utrum aliqua creatura possit esse similis Deo"
+  }
+ },
+ "5": {
+  "titre": "De bono in communi",
+  "page_scan": 73,
+  "articles": {
+   "1": "Utrum bonum differat secundum rem ab ente",
+   "2": "Utrum bonum secundum rationem sit prius quam ens",
+   "3": "Utrum omne ens sit bonum",
+   "4": "Utrum bonum habeat rationem causae finalis",
+   "5": "Utrum ratio boni consistat in modo, specie et ordine",
+   "6": "Utrum convenienter dividatur bonum per honestum, utile et delectabile"
+  }
  }
 }
