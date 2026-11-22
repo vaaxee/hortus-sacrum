@@ -1,0 +1,120 @@
+# Guéranger, t. 8, 22 nov. : relecture sur le scan des entrées en OCR, dans l'ordre où l'app les lit en 2026-2027
+# (sanctoral d'avril d'abord). Cas sûrs seulement, chacun vu sur une bande de la page à 300 dpi (archive.org
+# lanneliturgiqu08gu.pdf, page du PDF en commentaire). Appliqué par commun/remplacer.py v08.json … --ocr.
+# Laissés (restes_v08_22nov.txt) : colonnes latin-français entremêlées, titres courants dans le texte.
+#
+# D:04-02, saint François de Paule (p333-337)
+B I-Rançois de Fal'le, confesseur	S. François de Paule, confesseur
+vient nous apprendre 'par son exemple	vient nous apprendre par son exemple
+et voulut mourir "entre ses bras.	et voulut mourir entre ses bras.
+le \'endredi saint de l'an iSoy.	le Vendredi saint de l'an 1507.
+que Léon X, en i3i8, célébra	que Léon X, en 1518, célébra
+F1ANCISCUS Paulae. quod est Calabrias oppidum	FRANCISCUS Paulæ, quod est Calabriæ oppidum
+beati Francise! precibus susceperiint. Is adolescens	beati Francisci precibus susceperunt. Is adolescens
+ubi annis sex -victu asperam, sed meditationibus cœlestibus suavetn vltam duxit	ubi annis sex victu asperam, sed meditationibus cœlestibus suavem vitam duxit
+naquit dans une huriible condition	naquit dans une humble condition
+beaucoup de personnes\n\nSaint François de Paule, Confesseur. 32 1 l'allaienl trouver	beaucoup de personnes l'allaient trouver
+une église près de Paule. et jeta	une église près de Paule, et jeta
+par un grand nombre de miracles. dont le plus célèbre	par un grand nombre de miracles, dont le plus célèbre
+pedibus incedens, humi.cubabat.	pedibus incedens, humi cubabat.
+et ad panem et aqu3s potum	et ad panem et aquæ potum
+toto anni tempore retineient. quarto eos voto adstrin.xit.	toto anni tempore retinerent, quarto eos voto adstrinxit.
+MULTis miraculis servi	MULTIS miraculis servi
+quod a nautis rejectus, Siciliœ fretum strate super	quod a nautis rejectus, Siciliæ fretum strato super
+futura prophetico spiritu pra?dixit.	futura prophetico spiritu prædixit.
+A Ludovico Undecimo Francoriim rege expetitus, magnoque in honore est hahitus. Denique annum primum et nona- •^esimiim agens. Turonis migravii ad Doniinum. anno salutis millesimo quingentesimo ?epti;no : cujus corpus dies undecim insepultum, ita incorruptum permansit. ut suavem	A Ludovico Undecimo Francorum rege expetitus, magnoque in honore est habitus. Denique annum primum et nonagesimum agens, Turonis migravit ad Dominum, anno salutis millesimo quingentesimo septimo : cujus corpus dies undecim insepultum, ita incorruptum permansit, ut suavem
+prophétique. Louis XL roi de France	prophétique. Louis XI, roi de France
+avec beaucoup d honneur.	avec beaucoup d'honneur.
+A PÔTRE de la Pénitence, François de Paulc, -**■ vous êtes	APÔTRE de la Pénitence, François de Paule, vous êtes
+disciples d'Emmaûs: cr II fallait « que	disciples d'Emmaüs : « Il fallait « que
+que la loi du.Maîltre devait	que la loi du Maître devait
+l'honneur de vous posséder, 6 François!	l'honneur de vous posséder, ô François!
+de son sein que votre\n\nSaint François de Paule, Confesseur. 323 âme bénie	de son sein que votre âme bénie
+corps sacré, temple de TEsprit-Saint	corps sacré, temple de l'Esprit-Saint
+suosque alumnos Minimes appellari	suosque alumnos Minimos appellari
+concurrerent, fraternse charitatis causa	concurrerent, fraternæ charitatis causa
+ecclesiam prope Paulam asdificavit	ecclesiam prope Paulam ædificavit
+in Quadragesima licet : quam coasuetudinem ut fratres	in Quadragesima licet : quam consuetudinem ut fratres
+l'établit avec\n\nLe Temps Pascal.\n\nses religieux au Plessis-lez-Tours	l'établit avec ses religieux au Plessis-lez-Tours
+# D:04-05, saint Vincent Ferrier (p345-355, vu page entière)
+Saini Vincent I-Erkiek, confesseur	Saint Vincent Ferrier, confesseur
+chrétien. Vincent Ferricr, l’Ange du jugement	chrétien. Vincent Ferrier, l’Ange du jugement
+qui se rapporte au jour\n\n332 Le -Temps Pascal.\n\nmême de Pâques.	qui se rapporte au jour même de Pâques.
+« Que le Christ," dit-il, ait apparu	« Que le Christ, dit-il, ait apparu
+et elle l'a vue <( avant tout autre. »	et elle l'a vue « avant tout autre. »
+souffert dans la'passion de son fils	souffert dans la passion de son fils
+écrit : « Le Seigneur ap-\n\nSaint Vincent Février, Confesseur. 333\n\n« paraît à ceux qui ont foi en lui i. »	écrit : « Le Seigneur ap- « paraît à ceux qui ont foi en lui. »
+et je l'aimerai moite même, et je me manifesterai à lui -. » Il a donc dû se manifestera Marie avant tout autre, (c Disons	et je l'aimerai moi- « même, et je me manifesterai à lui. » Il a donc dû se manifester à Marie avant tout autre.\n\n« Disons
+« Lève-toi, 6 « ma gloire! lève-toi, 6 mon psaltérion, 6 « ma ifiarpe ! »	« Lève-toi, ô « ma gloire! lève-toi, ô mon psaltérion, ô « ma harpe ! »
+nous vivrons en sa présence, nous « lé suivrons	nous vivrons en sa présence, nous « le suivrons
+le moment où il sorte tira 3. w Alors Marie se leva et dit : « Trois\n\n.L\n\n334 Le Temps Pascal.\n\n« témoignages	le moment où il sor- « tira. » Alors Marie se leva et dit : « Trois « témoignages
+ici que je lui parlerai. j)Elle regarda	ici que je lui parlerai. » Elle regarda
+« Bientôt mon fiL va « ressusciter, »	« Bientôt mon fils va « ressusciter. »
+« Levez-vous^ Seigneur, « venez	« Levez-vous, Seigneur, « venez
+Dieu d'Is- « raël 1 !» A ce moment	Dieu d'Is- « raël ! » A ce moment
+va (( lui annoncer ma résurrection, d Plein	va « lui annoncer ma résurrection. » Plein
+ainsi qu'il l'avait dit, u alléluia. »	ainsi qu'il l'avait dit, « alléluia. »
+et disant: a Chères blessures qui m'avez causé <( Vendredi	et disant: « Chères blessures qui m'avez causé « Vendredi
+la serrant dans ses bras, lui dit : <r Ma « mère, réjouissez-vous ; il n'est plus maintt tenant question	la serrant dans ses bras, lui dit : « Ma « mère, réjouissez-vous ; il n'est plus main- « tenant question
+désormais je ferai fête le\n\nSaint Vincent Ferrier, Confesseur. 335 a Dimanche	désormais je ferai fête le « Dimanche
+Bénie êtes-vous, 6 notre (( fille et maîtresse	Bénie êtes-vous, ô notre « fille et maîtresse
+Eve dit : « J'avais C( par mon péché	Eve dit : « J'avais « par mon péché
+ils disaient: « Vous êtes la < gloire de Jérusalem, l'allégresse d'Israël, (( l'honneur de notre race •. »	ils disaient: « Vous êtes la « gloire de Jérusalem, l'allégresse d'Israël, « l'honneur de notre race. »
+en disant : « \'ous êtes la « race élue	en disant : « Vous êtes la « race élue
+admirable lu- « mière -. ï Après que	admirable lu- « mière. » Après que
+consoler aussi Alarie-Madeleine	consoler aussi Marie-Madeleine
+en a souffert bien ce plus encore ; daignez la consoler, ainsi que a mes sœurs qui sont parties ce matin même\n\nLe Temps Pascal.\n\nCL pour le sépulcre, afin d'embaumer votre	en a souffert bien « plus encore ; daignez la consoler, ainsi que « mes sœurs qui sont parties ce matin même « pour le sépulcre, afin d'embaumer votre « corps. »
+WiNCENTics honesta ^ stirpe	VINCENTIUS honesta stirpe
+pro ingenii sui module considcraret, Religionis habitum in Ordine Prxdicatorum décime octavo ætatis suaî anno suscepit ; et emissa s o 1 e m n i professione. sacris	pro ingenii sui modulo consideraret, Religionis habitum in Ordine Prædicatorum decimo octavo ætatis suæ anno suscepit ; et emissa solemni professione, sacris
+Theologiœ lauream sumraa cam laude consecut'js est.	Theologiæ lauream summa cum laude consecutus est.
+ut ingentem ipsorura infidelium multitudinem ad Christi fidem perduN'erit, et multa Christianorum raillia	ut ingentem ipsorum infidelium multitudinem ad Christi fidem perduxerit, et multa Christianorum millia
+dans l'Ordre des Frères-Précheurs.	dans l'Ordre des Frères-Prêcheurs.
+un nombre immense d'infidèles. et fit passer	un nombre immense d'infidèles, et fit passer
+du vice à la vertu, l! avait été choisi de Dieu pour répandre les enseignementsdu	du vice à la vertu. Il avait été choisi de Dieu pour répandre les enseignements du
+I. Sermones S. Vincentii Eerrerii. Pars.xstivalis. Ir die sancro Paschæ, Serm. II.	I. Sermones S. Vincentii Ferrerii. Pars æstivalis. In die sancto Paschæ, Serm. II.
+\n\nSaint Vincent Ferrier, Confesseur. 33j salut chez toutes	\n\nsalut chez toutes
+il gardait un jeune inviolable, à moins dune urgente nécessité	il gardait un jeûne inviolable, à moins d'une urgente nécessité
+r N hoc autem apostolico I munere hic vitîe ejus ténor perpetuus fuit.	IN hoc autem apostolico munere hic vitæ ejus tenor perpetuus fuit.
+nisi urgens adesset nécessitas, servavit ; sancta et recta consilia nullisdenegavit, carnes numquam comedit. nec vestem	nisi urgens adesset necessitas, servavit ; sancta et recta consilia nullis denegavit, carnes numquam comedit, nec vestem
+dissidentia régna pace composuit	dissidentia regna pace composuit
+Virtutibus omnibus claruit. suosque detractores	Virtutibus omnibus claruit, suosque detractores
+PER ipsum divina virîus. in confirmationcm vitae et praedicationis ejus. multa signa et miracula fecit. Nam frequcntissime super œgros manus imposui*, et sanitatem adepti sunt : spiritus •mmundos e corporibus expulit ; surdis auditum, muiis loquelam, caecis visum restituit ; Icprosos mundavit	PER ipsum divina virtus, in confirmationem vitæ et prædicationis ejus, multa signa et miracula fecit. Nam frequentissime super ægros manus imposuit, et sanitatem adepti sunt : spiritus immundos e corporibus expulit ; surdis auditum, mutis loquelam, cæcis visum restituit ; leprosos mundavit
+cum ingenti animarum fractu peragratis, Venetia: in Britannia minori, prsedicationis et vitae cursum féliciter consummavit	cum ingenti animarum fructu peragratis, Venetiæ in Britannia minori, prædicationis et vitæ cursum feliciter consummavit
+Calixtus Tertius Sanctorum numéro adscripsit.	Calixtus Tertius Sanctorum numero adscripsit.
+Nous lui emprunterons quatre Répons" et une Antienne	Nous lui emprunterons quatre Répons et une Antienne
+cet infatigable héraut de lEvangile	cet infatigable héraut de l'Evangile
+'■ O ac rector gentium, in vespere labentis s^eculi. novum vatem misit Vinccniium, christiani	R/. SUMMUS Parens, ac rector gentium, in vespere labentis sæculi, novum vatem misit Vincentium, christiani
+TE Père souverain,\n\n/■ L celui qui gouverne les peuples, sur le soir du monde qui s’affaisse, a envoyé\n\n\'incent, comme un nouveau\n\nSaint Vincent Février, Confesseur. 33g prophète	R/. LE Père souverain, celui qui gouverne les peuples, sur le soir du monde qui s’affaisse, a envoyé Vincent, comme un nouveau prophète
+le jugement de Dieu est proche, ' Ce jugement	le jugement de Dieu est proche, * Ce jugement
+'p. II s'écrie souvent	V/. Il s'écrie souvent
+'Bf. La nuit il s'appliquait	R/. La nuit il s'appliquait
+refert instare Dei judicîum, * Quod	refert instare Dei judicium, * Quod
+Timete Deum, clamât saîpius : venit	Timete Deum, clamat sæpius : venit
+erat flammis ardentior. ' Oram illuminât occiduam	erat flammis ardentior. * Oram illuminat occiduam
+* Oram illuminât occiduam, toto factus in orbe celebris.\n\nf. Cujus	* Oram illuminat occiduam, toto factus in orbe celebris.\n\nf. Cujus
+* Morbos omnis vespere generis salutari peliens remedio.	* Morbos omnis vespere generis salutari pellens remedio.
+f. Nulla prjeterit hora temporis, qua non recti quid asat operis. * Morbos omnis vespere gène-\n\nLe Temps Pascal.\n\nris salutari pellens remedio.	V/. Nulla præterit hora temporis, qua non recti quid agat operis. * Morbos omnis vespere generis salutari pellens remedio.
+animos inflamimt adstantium	animos inflammat adstantium
+de virtutibus alta disserens ; ' Fr^-çnare docet omne vitium.	de virtutibus alta disserens ; * Frænare docet omne vitium.
+^. lllum avida turba sequitur. dum hoc ore divino loquitur. * Fr.Tnare docet omne vitium.	V/. Illum avida turba sequitur, dum hoc ore divino loquitur. * Frænare docet omne vitium.
+Qui prophetico fretus lumlne. mira de mundi fine docuit ; in occiduo terrîe cardine	Qui prophetico fretus lumine, mira de mundi fine docuit ; in occiduo terræ cardine
+lucidas cœli sedes tenait.	lucidas cœli sedes tenuit.
+J^. Proférant les paroles de réternelie vie, il enflammait l'àme de ses auditeurs	R/. Proférant les paroles de l'éternelle vie, il enflammait l'âme de ses auditeurs
+avec une science profonde. ' Il enseignait	avec une science profonde. * Il enseignait
+il se coucha a l'Occident de la terre. et escorté	il se coucha à l'Occident de la terre, et escorté
+Nos pères entendirent cette'voix;	Nos pères entendirent cette voix;
+nous avons réHcchi sur nos fins dernières, et\n\nSaint Vincent Février, Confesseur. 341 la méditation	nous avons réfléchi sur nos fins dernières, et la méditation
+Sa mort a été notre vie, st nous sommes	Sa mort a été notre vie, et nous sommes
+Priez, ô Vincent, afin'que nous	Priez, ô Vincent, afin que nous
+l'Ange du jugement,lorsqu'elle retentira	l'Ange du jugement, lorsqu'elle retentira
+Priez aussi, 6 Vincent, pour l'Espagne	Priez aussi, ô Vincent, pour l'Espagne
+souvenez-vous de la catho^lique Bretagne, qui garde si religieusement \otre dépouille	souvenez-vous de la catholique Bretagne, qui garde si religieusement votre dépouille
+^. Marchant à la suite du Christ	R/. Marchant à la suite du Christ
+f. Sa doctrine éclatait comme un soleil	V/. Sa doctrine éclatait comme un soleil
+f. Pas une heure de sa vie	V/. Pas une heure de sa vie
+f. Timete Deum	V/. Timete Deum
+^ Christi viam secutus arduam	R/. Christi viam secutus arduam
+f. Cujus doctrina sole gratior	V/. Cujus doctrina sole gratior
+^. Nocte sacris incumbens	R/. Nocte sacris incumbens
+^. Verba perennis vitae proferens	R/. Verba perennis vitæ proferens
+f. Une foule avide de l'entendre	V/. Une foule avide de l'entendre
