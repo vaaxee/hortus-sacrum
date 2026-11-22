@@ -247,3 +247,22 @@ describe('contexte dévotionnel et couverture (lot « Dimensions »)', () => {
 		expect(a.lignes).toEqual(avec('2026-12-04').lignes);
 	});
 });
+
+describe('prières de sainte Gertrude dans la dévotion du jour (demande du 22 nov.)', () => {
+	const JOURS = ['dimanche', 'lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi'];
+	it('une seule par jour, du thème du jour, et toutes reviennent au fil des semaines', () => {
+		const vues = new Map<string, Set<string>>();
+		for (const j of CALENDRIER) {
+			const k = new Date(j.date + 'T12:00:00').getDay();
+			const l = ligne(calculer(j.date), `prog:devotion-${JOURS[k]}`);
+			if (!l) continue;
+			const g = l.sections.filter((s) => s.texte?.startsWith('gertrude:'));
+			expect(g, j.date).toHaveLength(1);
+			if (!vues.has(JOURS[k])) vues.set(JOURS[k], new Set());
+			vues.get(JOURS[k])!.add(g[0].texte!);
+		}
+		expect([...vues.values()].map((v) => v.size)).toEqual([3, 2, 4, 2, 1, 9, 6]);
+		expect(vues.get('vendredi')).toContain('gertrude:salut-plaies');
+		expect(vues.get('samedi')).toContain('gertrude:salutation-d-or');
+	});
+});

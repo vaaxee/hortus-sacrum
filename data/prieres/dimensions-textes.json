@@ -787,6 +787,185 @@
       "personne": ["soi-meme", "pecheurs"],
       "forme": ["jaculatoire"],
       "releve": "2026-11-22"
+    },
+    "gertrude:a-saint-benoit": {
+      "fin": ["demande"],
+      "grace": ["salut", "perseverance-finale"],
+      "personne": ["soi-meme"],
+      "devinee": ["fin", "grace", "personne"]
+    },
+    "gertrude:actions-de-graces-sainte-mechtilde": {
+      "fin": ["action-de-graces", "demande"],
+      "objet": ["jesus-christ", "saint-esprit"],
+      "grace": ["perseverance-finale", "vertus"],
+      "personne": ["soi-meme"],
+      "forme": ["office"],
+      "devinee": ["fin", "objet", "grace", "personne", "forme"]
+    },
+    "gertrude:amour-de-dieu": {
+      "fin": ["action-de-graces", "reparation"],
+      "objet": ["passion", "saints"],
+      "grace": ["salut", "charite", "vertus"],
+      "personne": ["soi-meme"],
+      "devinee": ["fin", "objet", "grace", "personne"]
+    },
+    "gertrude:autre-salut-plaies": {
+      "objet": ["jesus-christ", "saint-esprit", "passion"],
+      "grace": ["protection-et-sante"],
+      "devinee": ["objet", "grace"]
+    },
+    "gertrude:ave-maria-d-or": {
+      "objet": ["trinite", "jesus-christ", "sainte-vierge", "saint-esprit", "anges"],
+      "grace": ["sanctification", "vertus"],
+      "devinee": ["objet", "grace"]
+    },
+    "gertrude:baiser-cinq-plaies": {
+      "objet": ["jesus-christ", "passion"],
+      "grace": ["salut", "sanctification"],
+      "devinee": ["objet", "grace"]
+    },
+    "gertrude:caresses-a-jesus": {
+      "objet": ["jesus-christ"],
+      "grace": ["sanctification", "vertus"],
+      "personne": ["soi-meme", "amis", "dirigeants"],
+      "devinee": ["objet", "grace", "personne"]
+    },
+    "gertrude:caresses-jesus-blaspheme": {
+      "fin": ["reparation", "demande"],
+      "objet": ["jesus-christ", "passion"],
+      "grace": ["salut", "vertus"],
+      "personne": ["soi-meme", "amis", "ennemis"],
+      "forme": ["messe", "acte"],
+      "devinee": ["fin", "objet", "grace", "personne", "forme"]
+    },
+    "gertrude:cinq-offrandes-passion": {
+      "fin": ["action-de-graces", "reparation", "demande", "propitiation"],
+      "objet": ["jesus-christ", "sacre-coeur", "saint-esprit", "passion", "precieux-sang"],
+      "grace": ["salut", "vertus"],
+      "personne": ["soi-meme", "amis", "pecheurs"],
+      "forme": ["acte"],
+      "devinee": ["fin", "objet", "grace", "personne", "forme"]
+    },
+    "gertrude:confiance-en-dieu": {
+      "fin": ["propitiation"],
+      "grace": ["salut", "vertus", "graces-temporelles"],
+      "personne": ["soi-meme", "amis", "ennemis"],
+      "devinee": ["fin", "grace", "personne"]
+    },
+    "gertrude:demande-par-sainte-gertrude": {
+      "fin": ["action-de-graces", "demande", "propitiation"],
+      "objet": ["trinite", "jesus-christ"],
+      "devinee": ["fin", "objet"]
+    },
+    "gertrude:ecce-ancilla": {
+      "fin": ["demande", "louange"],
+      "objet": ["sainte-vierge", "saint-esprit"],
+      "devinee": ["fin", "objet"]
+    },
+    "gertrude:hostie-divine": {
+      "fin": ["reparation", "propitiation"],
+      "objet": ["jesus-christ", "eucharistie", "passion"],
+      "grace": ["sanctification", "vertus"],
+      "personne": ["soi-meme", "pecheurs"],
+      "devinee": ["fin", "objet", "grace", "personne"]
+    },
+    "gertrude:invocation-tous-les-saints": {
+      "fin": ["action-de-graces", "demande"],
+      "objet": ["jesus-christ", "sacre-coeur", "sainte-vierge", "saints"],
+      "grace": ["salut", "sanctification", "vertus", "preservation-du-peche", "devoir-d-etat"],
+      "personne": ["soi-meme"],
+      "devinee": ["fin", "objet", "grace", "personne"]
+    },
+    "gertrude:office-sainte-vierge": {
+      "fin": ["louange"],
+      "objet": ["jesus-christ", "sacre-coeur", "sainte-vierge", "saint-esprit", "passion", "saints"],
+      "grace": ["salut", "perseverance-finale", "vertus", "graces-temporelles"],
+      "personne": ["soi-meme"],
+      "forme": ["office"],
+      "devinee": ["fin", "objet", "grace", "personne", "forme"]
+    },
+    "gertrude:offrande-coeur-de-jesus-a-marie": {
+      "fin": ["reparation", "louange"],
+      "objet": ["jesus-christ", "sacre-coeur", "sainte-vierge", "saint-esprit", "saints"],
+      "grace": ["vertus"],
+      "devinee": ["fin", "objet", "grace"]
+    },
+    "gertrude:offrande-passion-courte": {
+      "fin": ["reparation"],
+      "objet": ["jesus-christ", "sainte-vierge", "passion"],
+      "grace": ["sanctification"],
+      "personne": ["dirigeants"],
+      "devinee": ["fin", "objet", "grace", "personne"]
+    },
+    "gertrude:pater-pour-les-morts": {
+      "fin": ["reparation", "demande", "propitiation"],
+      "objet": ["eucharistie", "ames-du-purgatoire", "passion", "saints"],
+      "grace": ["sanctification", "vertus", "preservation-du-peche", "graces-temporelles"],
+      "personne": ["ennemis", "defunts"],
+      "forme": ["oraison"],
+      "devinee": ["fin", "objet", "grace", "personne", "forme"]
+    },
+    "gertrude:priere-jesus-souffrant": {
+      "fin": ["action-de-graces", "reparation", "demande"],
+      "objet": ["jesus-christ", "saint-esprit", "anges", "passion", "precieux-sang", "saints"],
+      "grace": ["vertus"],
+      "personne": ["soi-meme", "ennemis", "dirigeants"],
+      "devinee": ["fin", "objet", "grace", "personne"]
+    },
+    "gertrude:quatre-prieres-morts": {
+      "fin": ["adoration", "action-de-graces", "reparation", "demande"],
+      "objet": ["jesus-christ", "eucharistie", "sainte-vierge", "ames-du-purgatoire", "passion", "saints"],
+      "grace": ["salut", "sanctification", "vertus"],
+      "personne": ["soi-meme", "defunts"],
+      "devinee": ["fin", "objet", "grace", "personne"]
+    },
+    "gertrude:reconnaitre-bienfaits": {
+      "fin": ["action-de-graces"],
+      "objet": ["jesus-christ", "sainte-vierge"],
+      "grace": ["vertus", "protection-et-sante"],
+      "personne": ["soi-meme"],
+      "devinee": ["fin", "objet", "grace", "personne"]
+    },
+    "gertrude:reparation-sainte-vierge": {
+      "fin": ["action-de-graces", "reparation", "demande"],
+      "objet": ["trinite", "jesus-christ", "sainte-vierge", "saint-esprit", "anges"],
+      "grace": ["salut", "perseverance-finale", "vertus", "preservation-du-peche", "graces-temporelles"],
+      "personne": ["soi-meme", "dirigeants"],
+      "devinee": ["fin", "objet", "grace", "personne"]
+    },
+    "gertrude:salut-coeur-de-jesus": {
+      "fin": ["adoration", "reparation", "louange", "propitiation"],
+      "objet": ["trinite", "jesus-christ", "sacre-coeur", "sainte-vierge", "saint-esprit", "passion"],
+      "grace": ["salut", "vertus"],
+      "personne": ["soi-meme"],
+      "devinee": ["fin", "objet", "grace", "personne"]
+    },
+    "gertrude:salut-membres-de-jesus": {
+      "fin": ["propitiation"],
+      "objet": ["trinite", "jesus-christ", "passion"],
+      "grace": ["salut", "charite"],
+      "personne": ["soi-meme", "dirigeants"],
+      "devinee": ["fin", "objet", "grace", "personne"]
+    },
+    "gertrude:salut-plaies": {
+      "fin": ["demande", "propitiation"],
+      "objet": ["trinite", "jesus-christ", "passion"],
+      "grace": ["salut", "perseverance-finale"],
+      "personne": ["soi-meme", "pecheurs"],
+      "devinee": ["fin", "objet", "grace", "personne"]
+    },
+    "gertrude:salutation-d-or": {
+      "objet": ["trinite", "sainte-vierge"],
+      "grace": ["perseverance-finale"],
+      "personne": ["dirigeants"],
+      "devinee": ["objet", "grace", "personne"]
+    },
+    "gertrude:soupirs-ame-compatissante": {
+      "fin": ["reparation"],
+      "objet": ["jesus-christ", "passion"],
+      "grace": ["charite"],
+      "personne": ["soi-meme", "amis", "ennemis", "dirigeants"],
+      "devinee": ["fin", "objet", "grace", "personne"]
     }
   }
 }

@@ -162,6 +162,7 @@
 					<div class="lecture">{@html html(s)}</div>
 				</details>
 			{:else if hs.length}
+				{#if avecTitre(k) && sections.length > 1}<h2 class="titre-office">{titreDe(s)}</h2>{/if}
 				<Office corps={vie.corps(s.texte!) ?? ''} heures={hs} ligne={id} {date} coches={parId} />
 			{:else if s.depliable}
 				<details class="depliable">
@@ -313,6 +314,10 @@
 		.partie > summary::before {
 			transition: none;
 		}
+	}
+	.titre-office {
+		font-size: var(--hs-t2);
+		margin: var(--hs-e5) 0 var(--hs-e2);
 	}
 	.champ {
 		margin-top: var(--hs-e5);
