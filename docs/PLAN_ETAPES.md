@@ -15,6 +15,10 @@ Remplace CONSIGNE §4. Validation de l'utilisateur à la fin de chaque étape.
 | 9 | Méditations et vies de saints | Éditeur de recueils (découpage par jours, affectation) ; Guéranger, « mois » ; leçons du Bréviaire | fait (13 nov.) : Hamon, Chaignon, Guéranger, Bréviaire, mois ; éditeur de recueils fait (21 nov., lot 11) |
 | 10 | Finitions | Export PDF d'une sélection ; historique et régularité ; profil spirituel | à faire |
 
+Somme théologique (lot 10 de `docs/conception/REFONTE_2026-11-18.md` § 6, 22 nov.) : Iª q. 1-5 (30 articles) livrées
+dans `data/somme` (Lachat, Vivès 1880, relu sur l'image ; latin léonin du Corpus Thomisticum) ; page
+`/lecture/doctrine`, marque-page (meta `marque-somme`), lecture comptée dans « Lectures du jour ». Suite : q. 6-13.
+
 Ordre voulu : l'éditeur passe avant le contenu, pour que tout texte ajouté ensuite soit d'emblée modifiable.
 
 | — | Identité Hortus Sacrum | Jetons, ornements, deux directions artistiques (latine, grecque), jour et nuit, appliqués à toute l'app | faite, à valider |

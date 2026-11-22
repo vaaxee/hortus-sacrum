@@ -1,0 +1,191 @@
+{
+ "ref": "Iª q. 4",
+ "partie": "Ia",
+ "question": 4,
+ "titre": {
+  "la": "De Dei perfectione",
+  "fr": "De la perfection de Dieu."
+ },
+ "prooemium": {
+  "la": "Post considerationem divinae simplicitatis, de perfectione ipsius Dei dicendum est. Et quia unumquodque, secundum quod perfectum est, sic dicitur bonum, primo agendum est de perfectione divina; secundo de eius bonitate. Circa primum quaeruntur tria. Primo, utrum Deus sit perfectus. Secundo, utrum Deus sit universaliter perfectus omnium in se perfectiones habens. Tertio, utrum creaturae similes Deo dici possint.",
+  "fr": "Après la simplicité de Dieu, vient sa perfection; et comme une chose est bonne selon qu’elle est parfaite, nous traiterons : premièrement, de la perfection de Dieu; secondement, de sa bonté.\n\nTrois questions se présentent sur le premier point : 1° Dieu est-il parfait? 2° Dieu est-il universellement parfait, c’est-à-dire possède-t-il les perfections de tous les êtres? 3° Les créatures peuvent-elles être dites semblables à Dieu."
+ },
+ "articles": [
+  {
+   "ref": "Iª q. 4 a. 1",
+   "titre": {
+    "la": "Utrum Deus sit perfectus",
+    "fr": "Dieu est-il parfait?"
+   },
+   "objections": [
+    {
+     "la": "Ad primum sic proceditur. Videtur quod esse perfectum non conveniat Deo. Perfectum enim dicitur quasi totaliter factum. Sed Deo non convenit esse factum. Ergo nec esse perfectum.",
+     "fr": "Il paroît que Dieu n’est pas parfait. 1° Le mot parfait signifie entièrement fait. Or on ne peut dire que Dieu est fait; donc on ne peut dire non plus qu’il est parfait."
+    },
+    {
+     "la": "Praeterea, Deus est primum rerum principium. Sed principia rerum videntur esse imperfecta, semen enim est principium animalium et plantarum. Ergo Deus est imperfectus.",
+     "fr": "2° Dieu est le premier principe des choses. Or les premiers principes des choses sont imparfaits; voyez, par exemple, la semence qui est le principe des plantes et des animaux. Donc Dieu est imparfait."
+    },
+    {
+     "la": "Praeterea, ostensum est supra quod essentia Dei est ipsum esse. Sed ipsum esse videtur esse imperfectissimum, cum sit communissimum, et recipiens omnium additiones. Ergo Deus est imperfectus.",
+     "fr": "3° Nous avons montré plus haut que Dieu est l’être même. Or l’être même est très-imparfait, car il est la chose la plus commune et reçoit tout ce qu’on y ajoute. Donc Dieu est imparfait."
+    }
+   ],
+   "sed_contra": {
+    "la": "Sed contra est quod dicitur Matt. V, *estote perfecti, sicut et pater vester caelestis perfectus est*.",
+    "fr": "Mais il est dit dans saint Matthieu, V, 48 : « Soyez parfaits comme votre Père céleste est parfait. »"
+   },
+   "respondeo": {
+    "la": "Respondeo dicendum quod, sicut philosophus narrat in XII Metaphys., quidam antiqui philosophi, scilicet Pythagorici et Speusippus, non attribuerunt optimum et perfectissimum primo principio. Cuius ratio est, quia philosophi antiqui consideraverunt principium materiale tantum, primum autem principium materiale imperfectissimum est. Cum enim materia, inquantum huiusmodi, sit in potentia, oportet quod primum principium materiale sit maxime in potentia; et ita maxime imperfectum. Deus autem ponitur primum principium, non materiale, sed in genere causae efficientis, et hoc oportet esse perfectissimum. Sicut enim materia, inquantum huiusmodi, est in potentia; ita agens, inquantum huiusmodi, est in actu. Unde primum principium activum oportet maxime esse in actu, et per consequens maxime esse perfectum. Secundum hoc enim dicitur aliquid esse perfectum, secundum quod est actu, nam perfectum dicitur, cui nihil deest secundum modum suae perfectionis.",
+    "fr": "Il faut dire ceci : Quelques philosophes de l’antiquité, les Pythagoriciens et Speusippe n’attribuoient point au premier principe, comme le rapporte Aristote, la souveraine perfection. La raison en est que ces philosophes ne voyoient que le principe matériel, lequel est effectivement très-imparfait. La matière, comme telle, est en puissance; donc le premier principe matériel est souverainement en puissance, et partant souverainement imparfait. Mais Dieu n’est pas le premier principe comme matière; il l’est comme cause efficiente, et dès lors nous devons dire qu’il est très-parfait. De même que la matière est essentiellement en puissance, ainsi l’agent est en acte par sa nature; donc le premier principe actif est souverainement en acte, et partant souverainement parfait. En effet, une chose est plus ou moins parfaite, selon qu’elle est plus ou moins en acte; car on appelle parfait ce qui a tout ce qu’il peut avoir dans le genre de sa perfection."
+   },
+   "reponses": [
+    {
+     "la": "Ad primum ergo dicendum quod, sicut dicit Gregorius, *balbutiendo ut possumus, excelsa Dei resonamus, quod enim factum non est, perfectum proprie dici non potest*. Sed quia in his quae fiunt, tunc dicitur esse aliquid perfectum, cum de potentia educitur in actum; transumitur hoc nomen perfectum ad significandum omne illud cui non deest esse in actu, sive hoc habeat per modum factionis, sive non.",
+     "fr": "Je réponds aux arguments : 1° Nous balbutions, comme le remarque saint Grégoire, quand nous parlons des grandeurs de Dieu. Sans doute ce qui n’a pas été fait, on ne peut l’appeler parfait dans le sens propre du mot; mais comme nous disons, dans l’ordre des choses faites, qu’elles sont parfaites quand elles ont passé de la puissance à l’acte, nous appliquons métaphoriquement ce qualificatif aux choses qui ne manquent pas de l’être actuel, qu’elles aient été faites ou non."
+    },
+    {
+     "la": "Ad secundum dicendum quod principium materiale, quod apud nos imperfectum invenitur, non potest esse simpliciter primum, sed praeceditur ab alio perfecto. Nam semen, licet sit principium animalis generati ex semine, tamen habet ante se animal vel plantam unde deciditur. Oportet enim ante id quod est in potentia, esse aliquid actu, cum ens in potentia non reducatur in actum, nisi per aliquod ens in actu.",
+     "fr": "2° Le principe matériel, imparfait dans les choses de ce monde, n’est pas absolument le premier principe; mais il est précédé d’un principe parfait : car la semence, bien qu’elle soit le principe de la plante qu’elle produit, vient après la plante d’où elle sort. Avant ce qui est en puissance, il y a nécessairement quelque chose en acte, puisque l’être en puissance n’est réduit à l’acte que par un être qui est en acte lui-même."
+    },
+    {
+     "la": "Ad tertium dicendum quod ipsum esse est perfectissimum omnium, comparatur enim ad omnia ut actus. Nihil enim habet actualitatem, nisi inquantum est, unde ipsum esse est actualitas omnium rerum, et etiam ipsarum formarum. Unde non comparatur ad alia sicut recipiens ad receptum, sed magis sicut receptum ad recipiens. Cum enim dico esse hominis, vel equi, vel cuiuscumque alterius, ipsum esse consideratur ut formale et receptum, non autem ut illud cui competit esse.",
+     "fr": "3° De toutes les choses l’être même est la plus parfaite, car il est acte à l’égard de toutes les choses; rien n’a l’actualité que ce qui est, si bien que l’être forme l’actualité de tout, même des formes; il n’est point aux autres choses ce que le contenant est au contenu, mais plutôt ce que le contenu est au contenant; quand je dis l’être de l’homme ou du cheval, on comprend ce qu’ils ont de formel et de reçu, et non pas quelque chose qui possède l’être en propre."
+    }
+   ],
+   "pages": {
+    "fr": [
+     75,
+     77
+    ]
+   }
+  },
+  {
+   "ref": "Iª q. 4 a. 2",
+   "titre": {
+    "la": "Utrum in Deo sint perfectiones omnium rerum",
+    "fr": "Dieu a-t-il les perfections de tous les êtres?"
+   },
+   "objections": [
+    {
+     "la": "Ad secundum sic proceditur. Videtur quod in Deo non sint perfectiones omnium rerum. Deus enim simplex est, ut ostensum est. Sed perfectiones rerum sunt multae et diversae. Ergo in Deo non sunt omnes perfectiones rerum.",
+     "fr": "Il paroît que Dieu n’a pas les perfections de tous les êtres. 1° Dieu est simple, nous l’avons montré. Or les perfections des êtres sont diverses et multiples : donc Dieu n’a pas les perfections de tous les êtres."
+    },
+    {
+     "la": "Praeterea, opposita non possunt esse in eodem. Sed perfectiones rerum sunt oppositae, unaquaeque enim species perficitur per suam differentiam specificam; differentiae autem quibus dividitur genus et constituuntur species, sunt oppositae. Cum ergo opposita non possint simul esse in eodem, videtur quod non omnes rerum perfectiones sint in Deo.",
+     "fr": "2° Des attributs opposés ne peuvent être dans le même sujet. Or les perfections des êtres sont opposées : car chaque chose reçoit sa perfection de la différence spécifique, et les différences qui divisent le genre et constituent les espèces sont opposées. Puis donc que des attributs opposés ne peuvent être dans le même sujet, Dieu n’a point les perfections de tous les êtres."
+    },
+    {
+     "la": "Praeterea, vivens est perfectius quam ens, et sapiens quam vivens, ergo et vivere est perfectius quam esse, et sapere quam vivere. Sed essentia Dei est ipsum esse. Ergo non habet in se perfectionem vitae et sapientiae, et alias huiusmodi perfectiones.",
+     "fr": "3° L’être vivant l’emporte en perfection sur l’être existant, et l’être sage sur l’être vivant; donc vivre est plus parfait que d’exister, et être sage que de vivre. Or l’essence de Dieu est l’être même : donc Dieu n’a pas la perfection de la vie et de la sagesse, non plus que les autres perfections de ce genre."
+    }
+   ],
+   "sed_contra": {
+    "la": "Sed contra est quod dicit Dionysius, cap. V de Div. Nom., quod Deus in uno existentia omnia praehabet.",
+    "fr": "Mais Denys le Philosophe dit : « Dieu renferme éminemment toutes les choses dans une seule essence. »"
+   },
+   "respondeo": {
+    "la": "Respondeo dicendum quod in Deo sunt perfectiones omnium rerum. Unde et dicitur universaliter perfectus, quia non deest ei aliqua nobilitas quae inveniatur in aliquo genere, ut dicit Commentator in V Metaphys. Et hoc quidem ex duobus considerari potest. Primo quidem, per hoc quod quidquid perfectionis est in effectu, oportet inveniri in causa effectiva, vel secundum eandem rationem, si sit agens univocum, ut homo generat hominem; vel eminentiori modo, si sit, agens aequivocum, sicut in sole est similitudo eorum quae generantur per virtutem solis. Manifestum est enim quod effectus praeexistit virtute in causa agente, praeexistere autem in virtute causae agentis, non est praeexistere imperfectiori modo, sed perfectiori; licet praeexistere in potentia causae materialis, sit praeexistere imperfectiori modo, eo quod materia, inquantum huiusmodi, est imperfecta; agens vero, inquantum huiusmodi, est perfectum. Cum ergo Deus sit prima causa effectiva rerum, oportet omnium rerum perfectiones praeexistere in Deo secundum eminentiorem modum. Et hanc rationem tangit Dionysius, cap. V de Div. Nom., dicens de Deo quod *non hoc quidem est, hoc autem non est, sed omnia est, ut omnium causa*. Secundo vero, ex hoc quod supra ostensum est, quod Deus est ipsum esse per se subsistens, ex quo oportet quod totam perfectionem essendi in se contineat. Manifestum est enim quod, si aliquod calidum non habeat totam perfectionem calidi, hoc ideo est, quia calor non participatur secundum perfectam rationem, sed si calor esset per se subsistens, non posset ei aliquid deesse de virtute caloris. Unde, cum Deus sit ipsum esse subsistens, nihil de perfectione essendi potest ei deesse. Omnium autem perfectiones pertinent ad perfectionem essendi, secundum hoc enim aliqua perfecta sunt, quod aliquo modo esse habent. Unde sequitur quod nullius rei perfectio Deo desit. Et hanc etiam rationem tangit Dionysius, cap. V de Div. Nom., dicens quod *Deus non quodammodo est existens, sed simpliciter et incircumscripte totum in seipso uniformiter esse praeaccipit*, et postea subdit quod *ipse est esse subsistentibus*.",
+    "fr": "Il faut dire ceci : Dieu a les perfections de toutes les choses; il est appelé universellement parfait, parce qu’il réunit, comme le remarque le Commentateur d’Aristote, les prérogatives qui se trouvent dans toutes les catégories des êtres, et cela peut se démontrer par deux preuves.\n\nPremièrement. Les perfections de l’effet se trouvent dans la cause de deux manières : substantiellement, lorsque l’agent est univoque, comme dans la génération de l’homme par l’homme; suréminemment, lorsque l’agent est équivoque, comme dans les productions de la terre par le soleil. Il est clair que l’effet préexiste virtuellement dans la cause agissante. Or, si préexister en puissance dans la cause matérielle implique une moindre perfection, parce que la matière comme telle est imparfaite : au contraire, préexister virtuellement dans la cause agissante emporte un plus haut degré de perfection, parce que l’agent comme tel est parfait. Puis donc que Dieu est la première cause effective, il faut que les perfections de toutes les choses préexistent suréminemment en Dieu. Denys le Philosophe touche ce raisonnement, quand il dit : « Dieu n’est pas ceci, n’est pas cela; cause de tout, il est tout. »\n\nSecondement. Dieu est l’être même subsistant par soi; donc il a toute la perfection de l’être. En effet, quand un corps chaud n’est point parfaitement chaud, c’est que la chaleur ne lui a pas été communiquée d’une manière parfaite, tout entière; mais si la chaleur existoit par soi, il posséderoit nécessairement toute la propriété de la chaleur. Puis donc que Dieu est l’être même subsistant, il a toute la perfection de l’être. Or la perfection de l’être réunit les perfections de toutes les choses, car elles sont parfaites à proportion de l’être qu’elles possèdent; donc Dieu renferme les perfections de toutes les choses. Denys l’Aréopagite fait encore allusion à ce raisonnement quand il dit : « Dieu n’existe pas de telle ou telle façon, il possède tout l’être dès l’origine simplement indéterminément,..; il est l’être de tout ce qui existe."
+   },
+   "reponses": [
+    {
+     "la": "Ad primum ergo dicendum quod, *sicut sol*, ut dicit Dionysius, cap. V de Div. Nom., *sensibilium substantias et qualitates multas et differentes, ipse unus existens et uniformiter lucendo, in seipso uniformiter praeaccipit; ita multo magis in causa omnium necesse est praeexistere omnia secundum naturalem unionem*. Et sic, quae sunt diversa et opposita in seipsis, in Deo praeexistunt ut unum, absque detrimento simplicitatis ipsius.",
+     "fr": "Je réponds aux arguments : 1° Si, comme le remarque l’Aréopagite, le soleil, un dans son essence et dans sa lumière, réunit en lui comme dans une seule forme, les qualités si multiples et si diverses des substances corporelles : combien, à plus forte raison, la cause universelle ne doit-elle pas réunir dans une union substantielle les perfections de tous les êtres? Ainsi les choses les plus différentes et les plus contraires en elles-mêmes peuvent exister réunies dans Dieu, sans nuire à sa simplicité."
+    },
+    {
+     "la": "Et per hoc patet solutio ad secundum.",
+     "fr": "2° Cette observation résout le deuxième argument."
+    },
+    {
+     "la": "Ad tertium dicendum quod, sicut in eodem capite idem Dionysius dicit, licet ipsum esse sit perfectius quam vita, et ipsa vita quam ipsa sapientia, si considerentur secundum quod distinguuntur ratione, tamen vivens est perfectius quam ens tantum, quia vivens etiam est ens; et sapiens est ens et vivens. Licet igitur ens non includat in se vivens et sapiens, quia non oportet quod illud quod participat esse, participet ipsum secundum omnem modum essendi, tamen ipsum esse Dei includit in se vitam et sapientiam; quia nulla de perfectionibus essendi potest deesse ei quod est ipsum esse subsistens.",
+     "fr": "3° Sans doute, à considérer les choses abstractivement, séparément, l’être l’emporte en perfection sur la vie, et la vie sur la sagesse : mais au point de vue concret, ce qui vit est plus parfait que ce qui existe, et ce qui est sage que ce qui vit; car on ne peut vivre sans exister, ni être sage sans vivre. Ainsi l’être ne renferme pas la vie et la sagesse, parce que ce qui a l’être par participation ne l’a pas nécessairement dans toute sa plénitude; mais l’être nécessaire de Dieu renferme la vie et la sagesse, parce qu’aucune des perfections de l’être ne peut manquer à ce qui est l’être même subsistant."
+    }
+   ],
+   "pages": {
+    "fr": [
+     77,
+     80
+    ]
+   }
+  },
+  {
+   "ref": "Iª q. 4 a. 3",
+   "titre": {
+    "la": "Utrum aliqua creatura possit esse similis Deo",
+    "fr": "Les créatures peuvent-elles être semblables à Dieu?"
+   },
+   "objections": [
+    {
+     "la": "Ad tertium sic proceditur. Videtur quod nulla creatura possit esse similis Deo. Dicitur enim in Psalmo, *non est similis tui in diis, domine*. Sed inter omnes creaturas, excellentiores sunt quae dicuntur dii participative. Multo ergo minus aliae creaturae possunt dici Deo similes.",
+     "fr": "Il paroît qu’aucune créature ne peut être semblable à Dieu. 1° On lit dans le Psaume LXXXV, 8 : « Nul n’est semblable à vous, Seigneur, parmi les dieux. » Or les créatures que la Bible appelle dieux sont les plus excellentes de toutes; donc aucune créature ne peut être semblable à Dieu."
+    },
+    {
+     "la": "Praeterea, similitudo est comparatio quaedam. Non est autem comparatio eorum quae sunt diversorum generum; ergo nec similitudo, non enim dicimus quod dulcedo sit similis albedini. Sed nulla creatura est eiusdem generis cum Deo, cum Deus non sit in genere, ut supra ostensum est. Ergo nulla creatura est similis Deo.",
+     "fr": "2° La ressemblance est une certaine comparaison. Or il n’y a pas de comparaison entre les choses qui sont de différents genres : donc il n’y a pas non plus de ressemblance, car nous ne disons pas la douceur, par exemple, semblable à la blancheur. Mais aucune créature n’est du même genre que Dieu, puisque Dieu n’est d’aucun genre, comme nous l’avons prouvé : donc aucune créature n’est semblable à Dieu."
+    },
+    {
+     "la": "Praeterea, similia dicuntur quae conveniunt in forma. Sed nihil convenit cum Deo in forma, nullius enim rei essentia est ipsum esse, nisi solius Dei. Ergo nulla creatura potest esse similis Deo.",
+     "fr": "3° Ces choses-là sont semblables, qui ont la même forme. Or rien n’a la même forme que Dieu, puisque Dieu seul a pour essence l’être même. Donc aucune créature ne peut être semblable à Dieu."
+    },
+    {
+     "la": "Praeterea, in similibus est mutua similitudo, nam simile est simili simile. Si igitur aliqua creatura est similis Deo, et Deus erit similis alicui creaturae. Quod est contra id quod dicitur Isaiae XL, *cui similem fecistis Deum?*",
+     "fr": "4° La ressemblance des choses est mutuelle; car si d ressemble à p, p ressemble à d. Si donc une créature étoit semblable à Dieu, Dieu à son tour seroit semblable à cette créature, ce qui est contraire au mot d’Isaïe XL, 18 : « A qui avez-vous rendu Dieu semblable? »"
+    }
+   ],
+   "sed_contra": {
+    "la": "Sed contra est quod dicitur Gen. I, *faciamus hominem ad imaginem et similitudinem nostram*; et I Ioann. III, *cum apparuerit, similes ei erimus*.",
+    "fr": "Mais nous lisons, Genèse, I, 26 : « Faisons l’homme à notre image et à notre ressemblance; « et Jean, III, 2 : « Quand il apparoîtra, nous serons semblables à lui. »"
+   },
+   "respondeo": {
+    "la": "Respondeo dicendum quod, cum similitudo attendatur secundum convenientiam vel communicationem in forma, multiplex est similitudo, secundum multos modos communicandi in forma. Quaedam enim dicuntur similia, quae communicant in eadem forma secundum eandem rationem, et secundum eundem modum, et haec non solum dicuntur similia, sed aequalia in sua similitudine; sicut duo aequaliter alba, dicuntur similia in albedine. Et haec est perfectissima similitudo. Alio modo dicuntur similia, quae communicant in forma secundum eandem rationem, et non secundum eundem modum, sed secundum magis et minus; ut minus album dicitur simile magis albo. Et haec est similitudo imperfecta. Tertio modo dicuntur aliqua similia, quae communicant in eadem forma, sed non secundum eandem rationem; ut patet in agentibus non univocis. Cum enim omne agens agat sibi simile inquantum est agens, agit autem unumquodque secundum suam formam, necesse est quod in effectu sit similitudo formae agentis. Si ergo agens sit contentum in eadem specie cum suo effectu, erit similitudo inter faciens et factum in forma, secundum eandem rationem speciei; sicut homo generat hominem. Si autem agens non sit contentum in eadem specie, erit similitudo, sed non secundum eandem rationem speciei, sicut ea quae generantur ex virtute solis, accedunt quidem ad aliquam similitudinem solis, non tamen ut recipiant formam solis secundum similitudinem speciei, sed secundum similitudinem generis. Si igitur sit aliquod agens, quod non in genere contineatur, effectus eius adhuc magis accedent remote ad similitudinem formae agentis, non tamen ita quod participent similitudinem formae agentis secundum eandem rationem speciei aut generis, sed secundum aliqualem analogiam, sicut ipsum esse est commune omnibus. Et hoc modo illa quae sunt a Deo, assimilantur ei inquantum sunt entia, ut primo et universali principio totius esse.",
+    "fr": "Il faut dire ceci : Comme la ressemblance est un rapport dans la forme, il y a autant de sortes de ressemblances qu’il y a de manières de se rapporter à la forme. D’abord sont semblables les choses qui se rapportent à la même forme par une qualité commune et de la même manière; ainsi deux corps pareillement blancs sont semblables en blancheur; et cette ressemblance est la plus parfaite, elle forme l’égalité.\n\nEnsuite sont semblables les choses qui se rapportent à la même forme par une qualité commune, mais non de la même manière, seulement plus ou moins : ainsi le corps moins blanc est semblable au corps plus blanc; cette ressemblance est impartaite.\n\nDe plus sont semblables les choses qui se rapportent à la même forme, mais non par une qualité commune, telles sont les causes équivoques et leurs effets. Comme la cause agit selon sa forme et produit un effet semblable à elle, l’effet ressemble nécessairement à la forme de la cause. Si donc la cause est renfermée dans la même espèce que son effet, il y aura ressemblance formelle entre la cause et l’effet quant à l’espèce, comme lorsque l’homme engendre l’homme; si, au contraire, la cause n’est pas contenue dans la même espèce, il y aura encore ressemblance, mais non selon l’espèce; ainsi les choses produites par l’action du soleil ne ressemblent pas à cet astre dans l’espèce, mais dans le genre seulement. Supposez donc que la cause n’est renfermée dans aucun genre ni dans aucune espèce, ses effets auront avec elle des rapports encore plus éloignés; ils ne lui ressembleront ni dans l’espèce ni dans le genre, mais seulement par une certaine analogie, en tant que tous les êtres participent à l’être même. Voilà les rapports que les créatures ont avec Dieu : elles lui ressemblent parce qu’elles sont des êtres, et qu’il est le principe universel et premier de tout être."
+   },
+   "reponses": [
+    {
+     "la": "Ad primum ergo dicendum quod, sicut dicit Dionysius cap. IX de Div. Nom., cum sacra Scriptura dicit aliquid non esse simile Deo, *non est contrarium assimilationi ad ipsum. Eadem enim sunt similia Deo, et dissimilia, similia quidem secundum quod imitantur ipsum, prout contingit eum imitari qui non perfecte imitabilis est dissimilia vero, secundum quod deficiunt a sua causa*; non solum secundum intensionem et remissionem, sicut minus album deficit a magis albo; sed quia non est convenientia nec secundum speciem nec secundum genus.",
+     "fr": "Je réponds aux arguments : 1° Quand l’Ecriture dit que rien n’est semblable à Dieu, cela ne veut pas dire, comme le remarque l’Aréopagite, que les créatures n’ont aucune ressemblance avec leur créateur. Car les mêmes choses ressemblent et tout à la fois ne ressemblent pas à Dieu : elles lui ressemblent en ce quelles sont son image, autant qu’une copie peut représenter un original qu’il n’est pas possible d’imiter parfaitement : elles ne lui ressemblent pas en ce qu’elles s’éloignent de leur cause, non-seulement par un moindre degré d’être et de perfection, mais parce qu’elles n’appartiennent ni à la même espèce ni au même genre."
+    },
+    {
+     "la": "Ad secundum dicendum quod Deus non se habet ad creaturas sicut res diversorum generum, sed sicut id quod est extra omne genus, et principium omnium generum.",
+     "fr": "2° Dieu est à l’égard des créatures, non pas un être de genre différent, mais un être qui est hors de tous les genres et le principe de chacun d’eux."
+    },
+    {
+     "la": "Ad tertium dicendum quod non dicitur esse similitudo creaturae ad Deum propter communicantiam in forma secundum eandem rationem generis et speciei, sed secundum analogiam tantum; prout scilicet Deus est ens per essentiam, et alia per participationem.",
+     "fr": "3° Nous ne disons pas que les créatures ressemblent à Dieu, parce qu’elles se rapportent à la même forme selon le genre et l’espèce, mais parce qu’elles ont avec lui une certaine analogie; car Dieu est être par essence, et les créatures par participation."
+    },
+    {
+     "la": "Ad quartum dicendum quod, licet aliquo modo concedatur quod creatura sit similis Deo, nullo tamen modo concedendum est quod Deus sit similis creaturae, quia, ut dicit Dionysius cap. IX de Div. Nom., *in his quae unius ordinis sunt, recipitur mutua similitudo, non autem in causa et causato*, dicimus enim quod imago sit similis homini, et non e converso. Et similiter dici potest aliquo modo quod creatura sit similis Deo, non tamen quod Deus sit similis creaturae.",
+     "fr": "4° De ce que la créature ressemble à Dieu de quelque manière, on ne peut en conclure que Dieu ressemble à la créature. Entre les choses du même ordre, la ressemblance est réciproque, comme le remarque Denys l’Aréopagite; mais il n’en est pas ainsi entre la cause et l’effet. De même que le portrait est semblable à l’homme qu’il représente, mais non réciproquement; ainsi la créature ressemble à Dieu, mais Dieu ne ressemble pas à la créature."
+    }
+   ],
+   "pages": {
+    "fr": [
+     81,
+     84
+    ]
+   }
+  }
+ ],
+ "source": {
+  "fr": {
+   "ouvrage": "Somme théologique de S. Thomas d’Aquin, traduite en français et annotée par F. Lachat",
+   "edition": "Paris, Louis Vivès, 4e édition, 1880, tome premier (même composition que l’édition de 1874)",
+   "url": "https://archive.org/details/sommetheologique01thom",
+   "controle": "https://archive.org/details/sommethologique07lachgoog",
+   "relecture": "vote de quatre lectures (Tesseract et ABBYY sur les scans de 1880 et de 1874, même composition) ; chaque ligne sans accord relue sur l’image (corrections_fr.txt) ; notes de Lachat et « (Conclusion. — …) » des éditeurs non repris"
+  },
+  "la": {
+   "ouvrage": "Sancti Thomae Aquinatis Opera omnia iussu impensaque Leonis XIII P. M. edita, t. IV : Pars prima Summae theologiae a quaestione I ad quaestionem XLIX",
+   "edition": "Romae, ex Typographia Polyglotta S. C. de Propaganda Fide, 1888",
+   "url": "https://archive.org/details/operaomniaiussui04thom",
+   "transcription": "https://www.corpusthomisticum.org/sth1001.html (E. Alarcón, d’après l’édition léonine)",
+   "relecture": "alignement mot à mot sur la lecture ABBYY du scan de 1888 (latin_controle.py), écarts isolés vus sur l’image (corrections_la.txt) ; intitulés relus sur l’image ; ponctuation du Corpus Thomisticum ; pas de relecture intégrale du latin sur l’image"
+  },
+  "pages_fr": [
+   75,
+   85
+  ]
+ },
+ "revision": 1
+}

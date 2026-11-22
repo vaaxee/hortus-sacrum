@@ -1277,13 +1277,13 @@
       "id": "lec:doctrine",
       "titre": "Somme théologique",
       "motif": {"note": "instruction doctrinale : Somme théologique, un article par jour (SPEC § 11, décisions)"},
-      "revision": 1,
-      "source": "SPEC § 11 : un article par jour, traduction Lachat ; données à fournir, compté quand elles existeront",
+      "revision": 2,
+      "source": "SPEC § 11 : un article par jour, traduction Lachat, latin en regard ; data/somme (lot 10), marque-page meta marque-somme",
       "lecture": {
         "section": "doctrine",
-        "route": "/lecture",
+        "route": "/lecture/doctrine",
         "ordre": 30,
-        "compte": false
+        "compte": true
       }
     },
     {
@@ -1721,7 +1721,7 @@
       }
     },
     {
-      "quoi": "Somme théologique, traduction Lachat (1856), latin en regard",
+      "quoi": "Somme théologique, traduction Lachat, latin en regard : la suite après la Iª q. 5 (Iª q. 1-5 livrées, lot 10)",
       "ou": "lec:doctrine"
     }
   ]

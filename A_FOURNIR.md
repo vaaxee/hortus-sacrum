@@ -18,6 +18,11 @@ Les points réglés sont gardés pour l'historique. Dernière mise à jour : 22 
 | 7 | Propre de France | **Abandonné.** On reste sur le calendrier romain universel. L'utilisateur ajoutera lui-même ses fêtes dans l'app. | — |
 
 ## Restent ouverts
+- **Somme théologique (lot 10)** : Iª q. 1-5 livrées (22 nov.). **Suite** : Iª q. 6-13 ont leurs lectures votées
+  (scan de 1880, pages n107-n272) et leur latin (Corpus Thomisticum), mais les lignes sans accord restent à relire sur
+  l'image (`engine/somme/planche74.py`, puis `corrections_fr.txt`) et les intitulés latins à relire (`titres_la.json`) ;
+  au-delà de la q. 13 : tomes suivants de Lachat (archive.org, même édition Vivès) à repérer. Latin : relecture
+  intégrale sur l'image de l'édition léonine non faite (seulement les écarts isolés de l'alignement).
 - **Bréviaire romain et Officium parvum en français (édition bilingue ancienne)** : recherche du 22 nov.,
   `docs/audits/BREVIAIRE_FRANCAIS_2026-11-22.md`. *Petit office* : retenu **Montréal 1905** (archive.org `cihm_98272`,
   permis d'imprimer de Mgr Racicot) ; **toutes les heures transcrites** (`data/office/parvum-fr.json`, 201 paragraphes

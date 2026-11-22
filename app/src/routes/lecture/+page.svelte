@@ -8,6 +8,7 @@
 	import { etatDesLectures } from '#lib/programme/lectures.ts';
 	import { journeeVivante } from '#lib/programme/vivant.svelte.ts';
 	import { elementDu } from '#lib/roues-calcul.ts';
+	import { articleDuJour, chargerIndex, chargerQuestion, lireMarque } from '#lib/somme.ts';
 	import type { Coche, Pratique } from '#lib/types.ts';
 	import { vivantSelon } from '#lib/vivant.svelte.ts';
 
@@ -39,6 +40,17 @@
 	const office = $derived.by(() => {
 		const id = vie.jr?.lectures.find((l) => l.id === 'lec:office')?.sections.find((s) => s.texte)?.texte;
 		return id ? vie.textes.get(id) : undefined;
+	});
+	/** Article du jour de la Somme (marque-page de l'appareil). */
+	let somme = $state<{ ref: string; titre: string } | undefined>();
+	$effect(() => {
+		const d = date;
+		Promise.all([chargerIndex(), lireMarque()]).then(async ([ix, m]) => {
+			if (!ix?.articles.length) return;
+			const e = articleDuJour(ix, m, d).entree;
+			const qn = await chargerQuestion(e.fichier);
+			somme = { ref: e.ref, titre: qn?.articles.find((a) => a.ref === e.ref)?.titre.fr ?? '' };
+		});
 	});
 	let evangile = $state<{ href: string; libelle: string } | undefined>();
 	$effect(() => {
@@ -99,9 +111,13 @@
 	<section aria-labelledby="t-doctrine">
 		<h2 id="t-doctrine" class="pc rub">Doctrine</h2>
 		<ul class="lectures">
-			<li class="sans-case avenir-ligne">
-				<strong>Somme théologique</strong>
-				<p class="avenir">Un article par jour, traduction Lachat (1856), latin en regard : en préparation.</p>
+			<li class:lu={de('lec:doctrine')?.lu}>
+				<Case libelle="Somme théologique : article lu" bind:cochee={() => !!de('lec:doctrine')?.lu, () => lire('lec:doctrine')} />
+				<a href="/lecture/doctrine{q}">
+					<strong>Somme théologique</strong><span
+						>{somme ? `${somme.ref} · ${somme.titre}` : 'un article par jour, à la suite ; latin en regard'}</span
+					>
+				</a>
 			</li>
 		</ul>
 	</section>
@@ -155,11 +171,7 @@
 	.lectures li.sans-case {
 		padding-left: 40px;
 	}
-	.lectures li.avenir-ligne {
-		display: grid;
-	}
-	.lectures a,
-	.avenir-ligne {
+	.lectures a {
 		flex: 1;
 		display: grid;
 		gap: 2px;
@@ -184,13 +196,5 @@
 	}
 	.lectures li.lu .avancement {
 		color: var(--hs-vert);
-	}
-	.avenir {
-		margin: 0 4px 10px;
-		font-size: 0.9em;
-		color: var(--hs-encre-douce);
-	}
-	.avenir-ligne .avenir {
-		margin: 0;
 	}
 </style>
