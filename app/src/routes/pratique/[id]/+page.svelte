@@ -6,6 +6,7 @@
 	import Case from '#lib/design/Case.svelte';
 	import Icone from '#lib/design/Icone.svelte';
 	import Ornement from '#lib/design/Ornement.svelte';
+	import ModeEglise from '#lib/ModeEglise.svelte';
 	import Office from '#lib/Office.svelte';
 	import { heuresDe } from '#lib/programme/heures.ts';
 	import { enMinutes } from '#lib/durees.ts';
@@ -124,7 +125,10 @@
 <svelte:head><title>{titre || 'Pratique'} — Hortus Sacrum</title></svelte:head>
 
 <main class="page entree">
-	<a class="retour" href="/{date === iso(new Date()) ? '' : `?date=${date}`}"><Icone nom="retour" taille={16} /> Aujourd’hui</a>
+	<div class="barre-page">
+		<a class="retour" href="/{date === iso(new Date()) ? '' : `?date=${date}`}"><Icone nom="retour" taille={16} /> Aujourd’hui</a>
+		<ModeEglise />
+	</div>
 	{#if !vie.jr}
 		<p class="aide">Préparation de la page…</p>
 	{:else if !ligne && !lecture}

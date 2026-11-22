@@ -24,6 +24,7 @@ Chaque push sur `main` reconstruit automatiquement https://hortus-sacrum.vercel.
 - Méditation du jour : `app/src/lib/meditations.ts` (livre du mois d'abord, sinon Hamon dimanches et temps forts, Chaignon en semaine ordinaire ; Guéranger = lecture).
 - Rappels push : Supabase `jlbcpkmysmdehjocqzmb`, `supabase/functions/*`, sans compte (identifiant d'appareil).
 - Charte : grecque (outremer `#0E0C52`, cobalt) et latine (nacre `#faf5ef` / rubis `#7a1f2b` le jour ; bordeaux `#22080f` / rubis vif `#f08593` la nuit) ; motifs fleur de lys, croix pattée, rinceaux.
+- **Mode église** (décision du 22 nov.) : bouton-cierge (`app/src/lib/ModeEglise.svelte`) sur `/pratique/[id]` et `/lecture/office` ; pose `<html data-eglise>` (lecture ×1,3 par `--hs-echelle-eglise`, barre d'onglets, profil, ornements du bandeau et liens « la prière seule » masqués, dans `app.css`), garde l'écran allumé (Screen Wake Lock, repris à `visibilitychange`, relâché à la sortie du mode ou de la page ; sans l'API, le mode marche quand même). Choix gardé sur l'appareil (`hs-eglise`, `apparence.ts`), appliqué seulement sur ces pages. Test : `app/tests/e2e/mode-eglise.spec.ts`.
 
 ## Bibliothèque (14 nov.)
 
