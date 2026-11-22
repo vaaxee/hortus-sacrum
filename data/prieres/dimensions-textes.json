@@ -3,1226 +3,790 @@
   "textes": {
     "beringer:chapelet-des-morts": {
       "fin": ["intercession"],
-      "objet": [
-        "jesus-christ",
-        "sainte-vierge",
-        "coeur-immacule",
-        "ames-du-purgatoire",
-        "passion",
-        "saints"
-      ],
-      "grace": ["devoir-d-etat"],
-      "personne": ["defunts"],
-      "forme": ["chapelet", "oraison"],
-      "devinee": ["fin", "objet", "grace", "personne", "forme"]
+      "objet": ["coeur-immacule", "ames-du-purgatoire"],
+      "personne": ["soi-meme", "defunts"],
+      "forme": ["chapelet"],
+      "releve": "2026-11-22"
     },
     "beringer:coeur-afflige-de-marie": {
-      "fin": ["adoration", "demande", "intercession"],
-      "objet": ["jesus-christ", "sainte-vierge", "saint-esprit", "passion"],
-      "grace": ["perseverance-finale", "charite", "vertus"],
-      "personne": ["soi-meme", "dirigeants"],
+      "fin": ["demande"],
+      "objet": ["passion", "sainte-vierge", "coeur-immacule"],
+      "grace": ["vertus"],
+      "personne": ["soi-meme"],
       "forme": ["oraison"],
-      "devinee": ["fin", "objet", "grace", "personne", "forme"]
+      "releve": "2026-11-22"
     },
     "beringer:don-conseil": {
-      "fin": ["demande", "intercession"],
-      "objet": ["jesus-christ", "sainte-vierge", "passion"],
+      "fin": ["demande"],
+      "objet": ["passion", "sainte-vierge", "coeur-immacule"],
       "grace": ["vertus"],
       "personne": ["soi-meme"],
-      "devinee": ["fin", "objet", "grace", "personne"]
+      "forme": ["oraison"],
+      "releve": "2026-11-22"
     },
     "beringer:don-force": {
-      "fin": ["demande", "intercession"],
-      "objet": ["jesus-christ", "sainte-vierge", "passion"],
+      "fin": ["demande"],
+      "objet": ["passion", "sainte-vierge", "coeur-immacule"],
       "grace": ["vertus"],
       "personne": ["soi-meme"],
-      "devinee": ["fin", "objet", "grace", "personne"]
+      "forme": ["oraison"],
+      "releve": "2026-11-22"
     },
     "beringer:don-intelligence": {
-      "fin": ["demande", "intercession"],
-      "objet": ["jesus-christ", "sainte-vierge"],
-      "grace": ["charite", "vertus"],
+      "fin": ["demande"],
+      "objet": ["passion", "sainte-vierge", "coeur-immacule"],
+      "grace": ["vertus"],
       "personne": ["soi-meme"],
-      "devinee": ["fin", "objet", "grace", "personne"]
+      "forme": ["oraison"],
+      "releve": "2026-11-22"
     },
     "beringer:don-piete": {
-      "fin": ["demande", "intercession"],
-      "objet": ["jesus-christ", "sainte-vierge"],
+      "fin": ["demande"],
+      "objet": ["sainte-vierge", "coeur-immacule"],
       "grace": ["vertus"],
       "personne": ["soi-meme"],
-      "devinee": ["fin", "objet", "grace", "personne"]
+      "forme": ["oraison"],
+      "releve": "2026-11-22"
     },
     "beringer:don-sagesse": {
-      "fin": ["demande", "intercession"],
-      "objet": ["jesus-christ", "sainte-vierge"],
-      "grace": ["vertus"],
-      "personne": ["soi-meme", "dirigeants"],
-      "devinee": ["fin", "objet", "grace", "personne"]
-    },
-    "beringer:don-science": {
-      "fin": ["demande", "intercession"],
-      "objet": ["jesus-christ", "sainte-vierge"],
+      "fin": ["demande"],
+      "objet": ["passion", "sainte-vierge", "coeur-immacule"],
       "grace": ["vertus"],
       "personne": ["soi-meme"],
-      "devinee": ["fin", "objet", "grace", "personne"]
+      "forme": ["oraison"],
+      "releve": "2026-11-22"
+    },
+    "beringer:don-science": {
+      "fin": ["demande"],
+      "objet": ["sainte-vierge", "coeur-immacule"],
+      "grace": ["vertus"],
+      "personne": ["soi-meme"],
+      "forme": ["oraison"],
+      "releve": "2026-11-22"
     },
     "beringer:litanies-sacre-coeur": {
-      "fin": ["demande", "propitiation"],
-      "objet": [
-        "trinite",
-        "jesus-christ",
-        "sacre-coeur",
-        "sainte-vierge",
-        "saint-esprit",
-        "saints"
-      ],
-      "grace": ["salut", "sanctification", "charite", "vertus"],
-      "personne": ["pecheurs", "dirigeants"],
-      "forme": ["litanie", "oraison"],
-      "devinee": ["fin", "objet", "grace", "personne", "forme"]
+      "fin": ["propitiation", "demande"],
+      "objet": ["sacre-coeur"],
+      "grace": ["vertus"],
+      "personne": ["soi-meme", "pecheurs"],
+      "forme": ["litanie"],
+      "releve": "2026-11-22"
     },
     "beringer:litanies-saint-joseph": {
-      "fin": ["demande", "intercession", "propitiation"],
-      "objet": [
-        "trinite",
-        "jesus-christ",
-        "sainte-vierge",
-        "saint-joseph",
-        "saint-esprit",
-        "saints"
-      ],
-      "grace": ["vertus", "protection-et-sante"],
-      "personne": ["famille", "mourants"],
-      "forme": ["litanie", "oraison"],
-      "devinee": ["fin", "objet", "grace", "personne", "forme"]
+      "fin": ["demande"],
+      "objet": ["saint-joseph"],
+      "personne": ["soi-meme"],
+      "forme": ["litanie"],
+      "releve": "2026-11-22"
     },
     "beringer:regina-caeli": {
+      "fin": ["demande", "louange"],
       "objet": ["jesus-christ", "sainte-vierge"],
+      "grace": ["salut"],
+      "personne": ["soi-meme"],
       "forme": ["oraison"],
-      "devinee": ["objet", "forme"]
+      "releve": "2026-11-22"
     },
     "beringer:saint-joseph-purete": {
       "fin": ["demande"],
-      "objet": ["jesus-christ", "sainte-vierge", "saint-joseph"],
+      "objet": ["saint-joseph"],
       "grace": ["vertus", "preservation-du-peche"],
-      "devinee": ["fin", "objet", "grace"]
+      "personne": ["soi-meme"],
+      "forme": ["oraison"],
+      "releve": "2026-11-22"
     },
     "beringer:salve-regina": {
-      "fin": ["demande", "louange", "propitiation"],
-      "objet": ["jesus-christ", "sainte-vierge", "saints"],
-      "grace": ["salut", "vertus"],
-      "personne": ["soi-meme", "ennemis"],
-      "devinee": ["fin", "objet", "grace", "personne"]
+      "fin": ["demande", "louange"],
+      "objet": ["sainte-vierge"],
+      "grace": ["salut"],
+      "personne": ["soi-meme"],
+      "forme": ["oraison"],
+      "releve": "2026-11-22"
     },
     "beringer:sub-tuum": {
       "fin": ["demande", "louange"],
-      "objet": ["sainte-vierge", "saints"],
-      "grace": ["protection-et-sante", "graces-temporelles"],
-      "personne": ["soi-meme", "ennemis"],
-      "devinee": ["fin", "objet", "grace", "personne"]
+      "objet": ["sainte-vierge"],
+      "grace": ["protection-et-sante"],
+      "personne": ["soi-meme"],
+      "forme": ["oraison"],
+      "releve": "2026-11-22"
     },
     "breviaire-sc:office-dimanche": {
       "fin": [
         "adoration",
-        "action-de-graces",
-        "reparation",
+        "propitiation",
         "demande",
-        "louange",
-        "propitiation"
+        "intercession",
+        "louange"
       ],
-      "objet": [
-        "jesus-christ",
-        "eucharistie",
-        "sacre-coeur",
-        "sainte-vierge",
-        "saint-esprit",
-        "ames-du-purgatoire",
-        "passion",
-        "saints"
-      ],
-      "grace": [
-        "salut",
-        "perseverance-finale",
-        "sanctification",
-        "charite",
-        "vertus",
-        "protection-et-sante"
-      ],
-      "personne": [
-        "soi-meme",
-        "amis",
-        "ennemis",
-        "pecheurs",
-        "dirigeants",
-        "defunts"
-      ],
-      "forme": ["office", "oraison", "hymne"],
-      "devinee": ["fin", "objet", "grace", "personne", "forme"]
+      "objet": ["sacre-coeur", "ames-du-purgatoire"],
+      "grace": ["salut", "perseverance-finale"],
+      "personne": ["soi-meme", "defunts"],
+      "forme": ["office"],
+      "releve": "2026-11-22"
     },
     "breviaire-sc:office-jeudi": {
-      "fin": ["adoration", "reparation", "demande", "propitiation"],
-      "objet": [
-        "jesus-christ",
-        "eucharistie",
-        "sacre-coeur",
-        "sainte-vierge",
-        "saint-esprit",
-        "ames-du-purgatoire",
-        "passion"
+      "fin": ["adoration", "demande", "intercession", "louange"],
+      "objet": ["sacre-coeur", "ames-du-purgatoire"],
+      "grace": ["salut", "perseverance-finale", "vertus"],
+      "personne": ["soi-meme", "defunts"],
+      "forme": ["office"],
+      "releve": "2026-11-22"
+    },
+    "breviaire-sc:office-lundi": {
+      "fin": ["adoration", "reparation", "demande", "intercession", "louange"],
+      "objet": ["eucharistie", "sacre-coeur", "ames-du-purgatoire"],
+      "grace": ["salut", "perseverance-finale", "charite", "vertus"],
+      "personne": ["soi-meme", "defunts"],
+      "forme": ["office"],
+      "releve": "2026-11-22"
+    },
+    "breviaire-sc:office-mardi": {
+      "fin": ["adoration", "demande", "intercession", "louange"],
+      "objet": ["passion", "sacre-coeur", "ames-du-purgatoire"],
+      "grace": ["salut", "perseverance-finale", "vertus"],
+      "personne": ["soi-meme", "defunts"],
+      "forme": ["office"],
+      "releve": "2026-11-22"
+    },
+    "breviaire-sc:office-mercredi": {
+      "fin": ["adoration", "demande", "intercession", "louange"],
+      "objet": ["sacre-coeur", "ames-du-purgatoire"],
+      "grace": ["salut", "perseverance-finale", "vertus"],
+      "personne": ["soi-meme", "defunts"],
+      "forme": ["office"],
+      "releve": "2026-11-22"
+    },
+    "breviaire-sc:office-samedi": {
+      "fin": ["adoration", "demande", "intercession", "louange"],
+      "objet": ["sacre-coeur", "ames-du-purgatoire"],
+      "grace": ["salut", "perseverance-finale"],
+      "personne": [
+        "soi-meme",
+        "famille",
+        "amis",
+        "pecheurs",
+        "mourants",
+        "defunts"
       ],
+      "forme": ["office"],
+      "releve": "2026-11-22"
+    },
+    "breviaire-sc:office-vendredi": {
+      "fin": [
+        "adoration",
+        "reparation",
+        "propitiation",
+        "demande",
+        "intercession",
+        "louange"
+      ],
+      "objet": ["passion", "sacre-coeur", "ames-du-purgatoire"],
+      "grace": ["salut", "perseverance-finale"],
+      "personne": ["soi-meme", "pecheurs", "defunts"],
+      "forme": ["office"],
+      "releve": "2026-11-22"
+    },
+    "fervent:litanies-ange-gardien": {
+      "fin": ["demande"],
+      "objet": ["anges"],
+      "grace": ["salut", "protection-et-sante"],
+      "personne": ["soi-meme"],
+      "forme": ["litanie"],
+      "releve": "2026-11-22"
+    },
+    "fervent:litanies-saint-sacrement": {
+      "fin": ["propitiation", "demande"],
+      "objet": ["eucharistie"],
+      "grace": ["perseverance-finale", "vertus", "preservation-du-peche"],
+      "personne": ["soi-meme"],
+      "forme": ["litanie"],
+      "releve": "2026-11-22"
+    },
+    "fervent:litanies-sainte-trinite": {
+      "fin": ["adoration", "action-de-graces", "demande", "louange"],
+      "objet": ["trinite"],
+      "grace": ["perseverance-finale", "vertus"],
+      "personne": ["soi-meme"],
+      "forme": ["litanie"],
+      "releve": "2026-11-22"
+    },
+    "fsspx:litanies-delivrance-ames-purgatoire": {
+      "fin": ["propitiation", "intercession"],
+      "objet": ["ames-du-purgatoire"],
+      "grace": ["salut"],
+      "personne": ["famille", "amis", "defunts"],
+      "forme": ["litanie"],
+      "releve": "2026-11-22"
+    },
+    "gertrude:a-un-confesseur": {
+      "fin": ["action-de-graces", "propitiation", "demande", "louange"],
+      "objet": ["trinite", "saints"],
+      "grace": ["perseverance-finale"],
+      "personne": ["soi-meme"],
+      "forme": ["oraison"],
+      "releve": "2026-11-22"
+    },
+    "gertrude:a-un-martyr": {
+      "fin": ["adoration", "demande", "louange"],
+      "objet": ["trinite", "saints"],
+      "grace": ["perseverance-finale"],
+      "personne": ["soi-meme"],
+      "forme": ["oraison"],
+      "releve": "2026-11-22"
+    },
+    "gertrude:a-une-vierge": {
+      "fin": ["propitiation", "demande", "louange"],
+      "objet": ["saints"],
+      "grace": ["vertus", "preservation-du-peche"],
+      "personne": ["soi-meme"],
+      "forme": ["oraison"],
+      "releve": "2026-11-22"
+    },
+    "gertrude:a-une-vierge-et-martyre": {
+      "fin": ["demande", "louange"],
+      "objet": ["saints"],
+      "grace": ["perseverance-finale"],
+      "personne": ["soi-meme"],
+      "forme": ["oraison"],
+      "releve": "2026-11-22"
+    },
+    "gertrude:saint-du-jour": {
+      "fin": ["adoration", "demande", "louange"],
+      "objet": ["saints"],
+      "grace": ["perseverance-finale"],
+      "personne": ["soi-meme"],
+      "forme": ["oraison"],
+      "releve": "2026-11-22"
+    },
+    "gertrude:trois-ave-bonne-mort": {
+      "fin": ["demande"],
+      "objet": ["sainte-vierge"],
+      "grace": ["perseverance-finale"],
+      "personne": ["soi-meme"],
+      "forme": ["oraison"],
+      "releve": "2026-11-22"
+    },
+    "hortus:cordon-sept-gloria": {
+      "fin": ["demande", "louange"],
+      "objet": ["trinite", "saint-joseph"],
+      "personne": ["soi-meme"],
+      "forme": ["jaculatoire"],
+      "releve": "2026-11-22"
+    },
+    "hortus:renouvellement-cordon-saint-joseph": {
+      "fin": ["demande"],
+      "objet": ["saint-joseph"],
+      "grace": ["vertus", "preservation-du-peche"],
+      "personne": ["soi-meme"],
+      "forme": ["acte"],
+      "releve": "2026-11-22"
+    },
+    "jahenny:scapulaire-benediction-protection": {
+      "fin": ["demande", "louange"],
+      "objet": ["jesus-christ", "passion", "sainte-vierge"],
+      "grace": ["protection-et-sante"],
+      "personne": ["soi-meme"],
+      "forme": ["meditation", "jaculatoire"],
+      "releve": "2026-11-22"
+    },
+    "janvier:fleche-d-or": {
+      "fin": ["reparation", "louange"],
+      "objet": ["trinite"],
+      "forme": ["acte"],
+      "releve": "2026-11-22"
+    },
+    "jardin:a-saint-gabriel-archange": {
+      "fin": ["demande"],
+      "objet": ["anges"],
+      "grace": ["protection-et-sante"],
+      "personne": ["soi-meme"],
+      "forme": ["oraison"],
+      "releve": "2026-11-22"
+    },
+    "jardin:acte-d-intention-de-communion-spirituelle-perpetuelle": {
+      "fin": ["adoration", "demande"],
+      "objet": ["jesus-christ", "eucharistie"],
+      "grace": ["charite"],
+      "personne": ["soi-meme"],
+      "forme": ["acte"],
+      "releve": "2026-11-22"
+    },
+    "jardin:acte-de-recommandation-des-ames-rencontrees": {
+      "fin": ["intercession"],
+      "objet": ["jesus-christ", "sainte-vierge"],
+      "grace": ["salut"],
+      "personne": ["pecheurs", "eglise-et-pretres", "mourants"],
+      "forme": ["acte"],
+      "releve": "2026-11-22"
+    },
+    "jardin:acte-de-soumission-a-la-volonte-de-dieu": {
+      "fin": ["demande"],
+      "objet": ["trinite"],
+      "grace": ["vertus"],
+      "personne": ["soi-meme"],
+      "forme": ["acte"],
+      "releve": "2026-11-22"
+    },
+    "jardin:chapelet-de-saint-michel-archange": {
+      "fin": ["demande"],
+      "objet": ["anges"],
       "grace": [
-        "salut",
         "perseverance-finale",
-        "sanctification",
         "charite",
         "vertus",
         "preservation-du-peche",
         "protection-et-sante"
       ],
-      "personne": ["soi-meme", "dirigeants", "defunts"],
-      "forme": ["office", "meditation", "oraison", "acte", "hymne"],
-      "devinee": ["fin", "objet", "grace", "personne", "forme"]
+      "personne": ["soi-meme"],
+      "forme": ["chapelet"],
+      "releve": "2026-11-22"
     },
-    "breviaire-sc:office-lundi": {
-      "fin": ["adoration", "reparation", "demande", "propitiation"],
-      "objet": [
-        "jesus-christ",
-        "eucharistie",
-        "sacre-coeur",
-        "sainte-vierge",
-        "saint-esprit",
-        "ames-du-purgatoire",
-        "passion"
-      ],
+    "jardin:chaque-vendredi-devant-le-crucifix": {
+      "fin": ["demande"],
+      "objet": ["jesus-christ", "passion"],
+      "grace": ["charite", "vertus"],
+      "personne": ["soi-meme"],
+      "forme": ["oraison"],
+      "releve": "2026-11-22"
+    },
+    "jardin:cinq-dimanches-des-stigmates-de-saint-francois": {
+      "objet": ["passion", "saints"],
+      "forme": ["meditation", "jaculatoire"],
+      "releve": "2026-11-22"
+    },
+    "jardin:consecration-de-soi-meme-a-jesus-christ-la-sagesse-incarnee-": {
+      "fin": ["adoration", "action-de-graces", "demande", "louange"],
+      "objet": ["jesus-christ", "sainte-vierge"],
+      "grace": ["sanctification"],
+      "personne": ["soi-meme"],
+      "forme": ["acte"],
+      "releve": "2026-11-22"
+    },
+    "jardin:deuxieme-couronne-le-sacre-c-ur-de-jesus-dans-sa-passion": {
+      "fin": ["demande"],
+      "objet": ["passion", "sacre-coeur"],
+      "grace": ["vertus", "preservation-du-peche"],
+      "personne": ["soi-meme"],
+      "forme": ["chapelet", "meditation"],
+      "releve": "2026-11-22"
+    },
+    "jardin:devoir-envers-l-eglise-et-ses-ministres": {
+      "fin": ["intercession"],
+      "objet": ["trinite", "saints", "ames-du-purgatoire"],
+      "grace": ["perseverance-finale", "sanctification", "graces-temporelles"],
+      "personne": ["eglise-et-pretres", "defunts"],
+      "forme": ["acte"],
+      "releve": "2026-11-22"
+    },
+    "jardin:devoir-envers-la-famille": {
+      "fin": ["intercession"],
+      "objet": ["saint-joseph"],
       "grace": [
         "salut",
         "perseverance-finale",
         "sanctification",
-        "charite",
-        "vertus"
+        "graces-temporelles"
       ],
-      "personne": ["soi-meme", "ennemis", "pecheurs", "dirigeants", "defunts"],
-      "forme": ["office", "oraison", "acte", "hymne"],
-      "devinee": ["fin", "objet", "grace", "personne", "forme"]
+      "personne": ["famille", "defunts"],
+      "forme": ["acte"],
+      "releve": "2026-11-22"
     },
-    "breviaire-sc:office-mardi": {
-      "fin": ["adoration", "reparation", "demande", "propitiation"],
-      "objet": [
-        "jesus-christ",
-        "eucharistie",
-        "sacre-coeur",
-        "sainte-vierge",
-        "saint-esprit",
-        "ames-du-purgatoire",
-        "passion"
-      ],
+    "jardin:devoir-envers-la-patrie": {
+      "fin": ["intercession"],
+      "objet": ["sacre-coeur", "sainte-vierge", "saints"],
+      "grace": ["salut"],
+      "personne": ["dirigeants", "defunts"],
+      "forme": ["acte"],
+      "releve": "2026-11-22"
+    },
+    "jardin:devoir-envers-les-pauvres-les-persecutes-les-affliges": {
+      "fin": ["intercession"],
+      "objet": ["sainte-vierge", "saints"],
+      "forme": ["acte"],
+      "releve": "2026-11-22"
+    },
+    "jardin:devoir-envers-moi-meme": {
+      "fin": ["demande"],
+      "objet": ["anges"],
+      "grace": ["salut", "sanctification"],
+      "personne": ["soi-meme"],
+      "forme": ["acte"],
+      "releve": "2026-11-22"
+    },
+    "jardin:dix-dimanches-de-saint-ignace": {
+      "fin": ["demande"],
+      "objet": ["trinite", "saints"],
+      "grace": ["charite"],
+      "personne": ["soi-meme"],
+      "forme": ["oraison", "meditation"],
+      "releve": "2026-11-22"
+    },
+    "jardin:intention-d-indulgences": {
+      "fin": ["reparation", "intercession"],
+      "objet": ["trinite", "ames-du-purgatoire"],
+      "personne": ["soi-meme", "defunts"],
+      "forme": ["acte"],
+      "releve": "2026-11-22"
+    },
+    "jardin:la-triple-couronne-d-or-du-sacre-c-ur-de-jesus": {
+      "fin": ["reparation", "demande", "intercession"],
+      "objet": ["sacre-coeur", "coeur-immacule"],
+      "grace": ["charite", "vertus"],
+      "personne": ["soi-meme", "eglise-et-pretres"],
+      "forme": ["chapelet"],
+      "releve": "2026-11-22"
+    },
+    "jardin:les-quinze-mardis-de-saint-dominique": {
+      "fin": ["demande"],
+      "objet": ["saints"],
+      "personne": ["soi-meme"],
+      "forme": ["oraison", "chapelet"],
+      "releve": "2026-11-22"
+    },
+    "jardin:les-quinze-oraisons-de-sainte-brigitte": {
+      "fin": ["action-de-graces", "reparation", "propitiation", "demande"],
+      "objet": ["jesus-christ", "passion", "precieux-sang"],
       "grace": [
         "salut",
         "perseverance-finale",
-        "sanctification",
         "charite",
-        "vertus",
         "protection-et-sante"
       ],
-      "personne": ["soi-meme", "amis", "ennemis", "dirigeants", "defunts"],
-      "forme": ["office", "oraison", "hymne"],
-      "devinee": ["fin", "objet", "grace", "personne", "forme"]
+      "personne": ["soi-meme"],
+      "forme": ["oraison"],
+      "releve": "2026-11-22",
+      "devinee": ["fin"]
     },
-    "breviaire-sc:office-mercredi": {
-      "fin": ["adoration", "reparation", "demande", "propitiation"],
-      "objet": [
-        "jesus-christ",
-        "eucharistie",
-        "sacre-coeur",
-        "sainte-vierge",
-        "saint-esprit",
-        "ames-du-purgatoire",
-        "passion",
-        "saints"
-      ],
-      "grace": [
-        "salut",
-        "perseverance-finale",
-        "sanctification",
-        "charite",
-        "vertus"
-      ],
-      "personne": ["soi-meme", "amis", "dirigeants", "defunts"],
-      "forme": ["office", "oraison", "acte", "hymne"],
-      "devinee": ["fin", "objet", "grace", "personne", "forme"]
+    "jardin:les-sept-douleurs-de-marie": {
+      "fin": ["demande"],
+      "objet": ["passion", "sainte-vierge", "coeur-immacule"],
+      "grace": ["vertus"],
+      "personne": ["soi-meme"],
+      "forme": ["chapelet", "meditation"],
+      "releve": "2026-11-22"
     },
-    "breviaire-sc:office-samedi": {
-      "fin": [
-        "adoration",
-        "action-de-graces",
-        "reparation",
-        "demande",
-        "louange",
-        "propitiation"
-      ],
-      "objet": [
-        "jesus-christ",
-        "eucharistie",
-        "sacre-coeur",
-        "sainte-vierge",
-        "saint-esprit",
-        "ames-du-purgatoire",
-        "passion"
-      ],
-      "grace": ["salut", "perseverance-finale", "sanctification", "charite"],
+    "jardin:les-sept-douleurs-et-les-sept-allegresses-de-saint-joseph": {
+      "fin": ["demande"],
+      "objet": ["saint-joseph"],
+      "grace": ["salut", "perseverance-finale"],
+      "personne": ["soi-meme"],
+      "forme": ["oraison"],
+      "releve": "2026-11-22"
+    },
+    "jardin:les-sept-offrandes-du-precieux-sang": {
+      "fin": ["action-de-graces", "intercession", "louange"],
+      "objet": ["precieux-sang", "ames-du-purgatoire"],
+      "grace": ["salut", "graces-temporelles"],
       "personne": [
         "soi-meme",
         "famille",
         "amis",
         "ennemis",
         "pecheurs",
+        "eglise-et-pretres",
         "dirigeants",
         "mourants",
         "defunts"
       ],
-      "forme": ["office", "oraison", "hymne"],
-      "devinee": ["fin", "objet", "grace", "personne", "forme"]
-    },
-    "breviaire-sc:office-vendredi": {
-      "fin": ["adoration", "reparation", "demande", "propitiation"],
-      "objet": [
-        "jesus-christ",
-        "eucharistie",
-        "sacre-coeur",
-        "sainte-vierge",
-        "saint-esprit",
-        "ames-du-purgatoire",
-        "passion"
-      ],
-      "grace": ["salut", "perseverance-finale", "sanctification", "charite"],
-      "personne": ["soi-meme", "ennemis", "pecheurs", "dirigeants", "defunts"],
-      "forme": ["office", "oraison", "hymne"],
-      "devinee": ["fin", "objet", "grace", "personne", "forme"]
-    },
-    "fervent:litanies-ange-gardien": {
-      "fin": ["demande", "intercession", "propitiation"],
-      "objet": [
-        "trinite",
-        "jesus-christ",
-        "sainte-vierge",
-        "saint-esprit",
-        "anges"
-      ],
-      "grace": [
-        "salut",
-        "protection-et-sante",
-        "devoir-d-etat",
-        "graces-temporelles"
-      ],
-      "personne": ["soi-meme", "dirigeants"],
-      "forme": ["litanie"],
-      "devinee": ["fin", "objet", "grace", "personne", "forme"]
-    },
-    "fervent:litanies-saint-sacrement": {
-      "fin": ["demande", "propitiation"],
-      "objet": [
-        "trinite",
-        "jesus-christ",
-        "eucharistie",
-        "saint-esprit",
-        "anges",
-        "passion",
-        "precieux-sang",
-        "saints"
-      ],
-      "grace": [
-        "perseverance-finale",
-        "charite",
-        "vertus",
-        "preservation-du-peche"
-      ],
-      "personne": ["pecheurs"],
-      "forme": ["litanie", "oraison"],
-      "devinee": ["fin", "objet", "grace", "personne", "forme"]
-    },
-    "fervent:litanies-sainte-trinite": {
-      "fin": ["action-de-graces", "demande", "louange", "propitiation"],
-      "objet": ["trinite", "jesus-christ", "saint-esprit"],
-      "grace": [
-        "sanctification",
-        "vertus",
-        "protection-et-sante",
-        "graces-temporelles"
-      ],
-      "personne": ["pecheurs", "dirigeants"],
-      "forme": ["litanie", "oraison"],
-      "devinee": ["fin", "objet", "grace", "personne", "forme"]
-    },
-    "fsspx:litanies-delivrance-ames-purgatoire": {
-      "fin": ["propitiation"],
-      "objet": [
-        "trinite",
-        "jesus-christ",
-        "sainte-vierge",
-        "saint-joseph",
-        "saint-esprit",
-        "anges",
-        "ames-du-purgatoire",
-        "passion",
-        "saints"
-      ],
-      "grace": ["salut", "vertus"],
-      "personne": [
-        "famille",
-        "amis",
-        "eglise-et-pretres",
-        "dirigeants",
-        "defunts"
-      ],
-      "forme": ["litanie", "oraison"],
-      "devinee": ["fin", "objet", "grace", "personne", "forme"]
-    },
-    "gertrude:a-un-confesseur": {
-      "fin": ["action-de-graces"],
-      "objet": ["trinite", "jesus-christ", "saints"],
-      "grace": ["salut", "sanctification", "charite", "vertus"],
-      "personne": ["soi-meme"],
-      "forme": ["office"],
-      "devinee": ["fin", "objet", "grace", "personne", "forme"]
-    },
-    "gertrude:a-un-martyr": {
-      "fin": ["adoration", "demande", "louange"],
-      "objet": [
-        "trinite",
-        "jesus-christ",
-        "sacre-coeur",
-        "precieux-sang",
-        "saints"
-      ],
-      "grace": ["perseverance-finale", "sanctification", "vertus"],
-      "devinee": ["fin", "objet", "grace"]
-    },
-    "gertrude:a-une-vierge": {
-      "fin": ["demande"],
-      "objet": ["jesus-christ", "sainte-vierge", "saints"],
-      "grace": ["sanctification", "charite", "vertus"],
-      "personne": ["soi-meme", "dirigeants"],
-      "devinee": ["fin", "objet", "grace", "personne"]
-    },
-    "gertrude:a-une-vierge-et-martyre": {
-      "objet": [
-        "jesus-christ",
-        "sacre-coeur",
-        "sainte-vierge",
-        "saint-esprit",
-        "passion"
-      ],
-      "grace": ["perseverance-finale", "protection-et-sante"],
-      "devinee": ["objet", "grace"]
-    },
-    "gertrude:saint-du-jour": {
-      "fin": ["adoration", "louange"],
-      "objet": ["jesus-christ", "sacre-coeur", "anges", "saints"],
-      "grace": ["vertus"],
-      "personne": ["soi-meme"],
-      "devinee": ["fin", "objet", "grace", "personne"]
-    },
-    "gertrude:trois-ave-bonne-mort": {
-      "fin": ["propitiation"],
-      "objet": [
-        "trinite",
-        "jesus-christ",
-        "sainte-vierge",
-        "saint-esprit",
-        "saints"
-      ],
-      "grace": ["perseverance-finale", "vertus"],
-      "personne": ["soi-meme"],
-      "devinee": ["fin", "objet", "grace", "personne"]
-    },
-    "hortus:cordon-sept-gloria": {
-      "fin": ["adoration", "intercession"],
-      "objet": ["saint-joseph", "saint-esprit"],
-      "grace": ["vertus", "devoir-d-etat"],
-      "forme": ["litanie"],
-      "devinee": ["fin", "objet", "grace", "forme"]
-    },
-    "hortus:renouvellement-cordon-saint-joseph": {
-      "fin": ["demande", "intercession"],
-      "objet": ["jesus-christ", "sainte-vierge", "saint-joseph"],
-      "grace": ["vertus", "preservation-du-peche"],
-      "personne": ["soi-meme"],
-      "devinee": ["fin", "objet", "grace", "personne"]
-    },
-    "jahenny:scapulaire-benediction-protection": {
-      "objet": ["jesus-christ", "sainte-vierge", "anges", "passion", "saints"],
-      "grace": ["protection-et-sante"],
-      "forme": ["meditation"],
-      "devinee": ["objet", "grace", "forme"]
-    },
-    "janvier:fleche-d-or": {
-      "fin": ["louange"],
-      "objet": ["trinite", "jesus-christ", "eucharistie", "sacre-coeur"],
-      "forme": ["acte"],
-      "devinee": ["fin", "objet", "forme"]
-    },
-    "jardin:a-saint-gabriel-archange": {
-      "fin": ["demande"],
-      "objet": ["sainte-vierge", "anges"],
-      "grace": ["protection-et-sante"],
-      "forme": ["oraison"],
-      "devinee": ["fin", "objet", "grace", "forme"]
-    },
-    "jardin:acte-d-intention-de-communion-spirituelle-perpetuelle": {
-      "fin": ["adoration", "demande"],
-      "objet": ["jesus-christ", "eucharistie", "sainte-vierge"],
-      "grace": ["devoir-d-etat"],
-      "personne": ["soi-meme"],
-      "forme": ["acte"],
-      "devinee": ["fin", "objet", "grace", "personne", "forme"]
-    },
-    "jardin:acte-de-recommandation-des-ames-rencontrees": {
-      "fin": ["intercession"],
-      "objet": ["jesus-christ", "sainte-vierge", "coeur-immacule", "passion"],
-      "grace": ["salut", "protection-et-sante"],
-      "personne": ["soi-meme", "pecheurs"],
-      "forme": ["acte"],
-      "devinee": ["fin", "objet", "grace", "personne", "forme"]
-    },
-    "jardin:acte-de-soumission-a-la-volonte-de-dieu": {
-      "fin": ["demande"],
-      "objet": ["jesus-christ", "sainte-vierge"],
-      "grace": ["salut", "vertus", "protection-et-sante"],
-      "personne": ["soi-meme"],
-      "forme": ["acte"],
-      "devinee": ["fin", "objet", "grace", "personne", "forme"]
-    },
-    "jardin:chapelet-de-saint-michel-archange": {
-      "fin": ["intercession", "propitiation"],
-      "objet": [
-        "jesus-christ",
-        "eucharistie",
-        "sainte-vierge",
-        "anges",
-        "ames-du-purgatoire",
-        "passion",
-        "saints"
-      ],
-      "grace": [
-        "salut",
-        "perseverance-finale",
-        "sanctification",
-        "charite",
-        "vertus",
-        "preservation-du-peche",
-        "protection-et-sante"
-      ],
-      "personne": ["ennemis", "eglise-et-pretres", "defunts"],
-      "forme": ["chapelet", "oraison"],
-      "devinee": ["fin", "objet", "grace", "personne", "forme"]
-    },
-    "jardin:chaque-vendredi-devant-le-crucifix": {
-      "fin": ["demande"],
-      "objet": ["jesus-christ", "eucharistie", "sainte-vierge", "passion"],
-      "grace": ["charite"],
-      "personne": ["soi-meme"],
-      "devinee": ["fin", "objet", "grace", "personne"]
-    },
-    "jardin:cinq-dimanches-des-stigmates-de-saint-francois": {
-      "objet": ["eucharistie", "passion"],
-      "forme": ["chapelet", "meditation"],
-      "devinee": ["objet", "forme"]
-    },
-    "jardin:consecration-de-soi-meme-a-jesus-christ-la-sagesse-incarnee-": {
-      "fin": [
-        "adoration",
-        "action-de-graces",
-        "intercession",
-        "louange",
-        "propitiation"
-      ],
-      "objet": [
-        "trinite",
-        "jesus-christ",
-        "eucharistie",
-        "sainte-vierge",
-        "anges",
-        "passion"
-      ],
-      "grace": ["protection-et-sante"],
-      "personne": ["soi-meme", "pecheurs"],
-      "devinee": ["fin", "objet", "grace", "personne"]
-    },
-    "jardin:deuxieme-couronne-le-sacre-c-ur-de-jesus-dans-sa-passion": {
-      "objet": ["jesus-christ", "sacre-coeur", "passion"],
-      "grace": ["sanctification", "vertus", "devoir-d-etat"],
-      "personne": ["dirigeants"],
-      "devinee": ["objet", "grace", "personne"]
-    },
-    "jardin:devoir-envers-l-eglise-et-ses-ministres": {
-      "fin": ["intercession"],
-      "objet": ["jesus-christ", "ames-du-purgatoire", "saints"],
-      "grace": [
-        "perseverance-finale",
-        "sanctification",
-        "devoir-d-etat",
-        "graces-temporelles"
-      ],
-      "personne": ["eglise-et-pretres", "defunts"],
-      "devinee": ["fin", "objet", "grace", "personne"]
-    },
-    "jardin:devoir-envers-la-famille": {
-      "fin": ["propitiation"],
-      "objet": [
-        "jesus-christ",
-        "sainte-vierge",
-        "saint-joseph",
-        "ames-du-purgatoire"
-      ],
-      "grace": [
-        "salut",
-        "perseverance-finale",
-        "sanctification",
-        "devoir-d-etat",
-        "graces-temporelles"
-      ],
-      "personne": ["famille", "pecheurs", "defunts"],
-      "devinee": ["fin", "objet", "grace", "personne"]
-    },
-    "jardin:devoir-envers-la-patrie": {
-      "fin": ["intercession"],
-      "objet": ["jesus-christ", "sacre-coeur", "anges", "saints"],
-      "grace": ["salut", "devoir-d-etat"],
-      "personne": ["pecheurs", "dirigeants"],
-      "devinee": ["fin", "objet", "grace", "personne"]
-    },
-    "jardin:devoir-envers-les-pauvres-les-persecutes-les-affliges": {
-      "fin": ["intercession", "propitiation"],
-      "objet": ["jesus-christ", "sainte-vierge"],
-      "grace": ["salut", "protection-et-sante", "devoir-d-etat"],
-      "personne": ["ennemis", "pecheurs"],
-      "devinee": ["fin", "objet", "grace", "personne"]
-    },
-    "jardin:devoir-envers-moi-meme": {
-      "fin": ["intercession"],
-      "objet": ["anges"],
-      "grace": ["salut", "sanctification", "charite", "devoir-d-etat"],
-      "personne": ["soi-meme"],
-      "devinee": ["fin", "objet", "grace", "personne"]
-    },
-    "jardin:dix-dimanches-de-saint-ignace": {
-      "fin": ["demande"],
-      "objet": ["eucharistie"],
-      "personne": ["soi-meme"],
-      "forme": ["meditation"],
-      "devinee": ["fin", "objet", "personne", "forme"]
-    },
-    "jardin:intention-d-indulgences": {
-      "fin": ["reparation", "demande"],
-      "objet": ["ames-du-purgatoire"],
-      "personne": ["soi-meme", "defunts"],
-      "devinee": ["fin", "objet", "personne"]
-    },
-    "jardin:la-triple-couronne-d-or-du-sacre-c-ur-de-jesus": {
-      "fin": ["reparation", "demande", "intercession", "propitiation"],
-      "objet": [
-        "jesus-christ",
-        "sacre-coeur",
-        "sainte-vierge",
-        "coeur-immacule",
-        "saint-joseph",
-        "saint-esprit",
-        "anges",
-        "passion",
-        "saints"
-      ],
-      "grace": [
-        "salut",
-        "sanctification",
-        "charite",
-        "vertus",
-        "devoir-d-etat"
-      ],
-      "personne": ["soi-meme", "amis", "dirigeants"],
-      "forme": ["chapelet", "meditation", "oraison"],
-      "devinee": ["fin", "objet", "grace", "personne", "forme"]
-    },
-    "jardin:les-quinze-mardis-de-saint-dominique": {
-      "fin": ["intercession"],
-      "objet": ["jesus-christ", "eucharistie", "saint-esprit", "saints"],
-      "grace": ["protection-et-sante"],
-      "forme": ["chapelet", "oraison"],
-      "devinee": ["fin", "objet", "grace", "forme"]
-    },
-    "jardin:les-quinze-oraisons-de-sainte-brigitte": {
-      "fin": ["action-de-graces", "reparation", "demande", "propitiation"],
-      "objet": [
-        "jesus-christ",
-        "sainte-vierge",
-        "anges",
-        "passion",
-        "precieux-sang",
-        "saints"
-      ],
-      "grace": [
-        "salut",
-        "perseverance-finale",
-        "charite",
-        "vertus",
-        "protection-et-sante"
-      ],
-      "personne": ["soi-meme", "amis", "ennemis", "pecheurs", "dirigeants"],
-      "forme": ["office", "oraison"],
-      "devinee": ["fin", "objet", "grace", "personne", "forme"]
-    },
-    "jardin:les-sept-douleurs-de-marie": {
-      "fin": ["demande", "intercession"],
-      "objet": ["jesus-christ", "sainte-vierge", "saint-esprit", "passion"],
-      "grace": ["perseverance-finale", "sanctification", "charite", "vertus"],
-      "personne": ["soi-meme", "famille", "pecheurs", "dirigeants"],
-      "forme": ["chapelet", "meditation", "oraison"],
-      "devinee": ["fin", "objet", "grace", "personne", "forme"]
-    },
-    "jardin:les-sept-douleurs-et-les-sept-allegresses-de-saint-joseph": {
-      "fin": ["adoration", "demande", "intercession", "propitiation"],
-      "objet": [
-        "jesus-christ",
-        "sainte-vierge",
-        "saint-joseph",
-        "anges",
-        "precieux-sang",
-        "saints"
-      ],
-      "grace": ["salut", "sanctification"],
-      "personne": ["dirigeants"],
-      "forme": ["oraison"],
-      "devinee": ["fin", "objet", "grace", "personne", "forme"]
-    },
-    "jardin:les-sept-offrandes-du-precieux-sang": {
-      "fin": ["adoration", "action-de-graces", "louange"],
-      "objet": [
-        "jesus-christ",
-        "sainte-vierge",
-        "ames-du-purgatoire",
-        "precieux-sang"
-      ],
-      "grace": ["protection-et-sante", "graces-temporelles"],
-      "personne": [
-        "soi-meme",
-        "famille",
-        "amis",
-        "ennemis",
-        "pecheurs",
-        "eglise-et-pretres",
-        "dirigeants",
-        "defunts"
-      ],
-      "forme": ["jaculatoire", "oraison"],
-      "devinee": ["fin", "objet", "grace", "personne", "forme"]
+      "forme": ["oraison", "jaculatoire"],
+      "releve": "2026-11-22"
     },
     "jardin:les-treize-mardis-de-saint-antoine": {
-      "fin": ["intercession"],
-      "objet": ["jesus-christ", "eucharistie", "saint-esprit", "saints"],
+      "fin": ["demande"],
+      "objet": ["saints"],
       "grace": ["protection-et-sante"],
-      "forme": ["meditation", "oraison"],
-      "devinee": ["fin", "objet", "grace", "forme"]
+      "personne": ["eglise-et-pretres"],
+      "forme": ["oraison"],
+      "releve": "2026-11-22"
     },
     "jardin:litanies-de-la-sainte-face": {
-      "fin": [
-        "adoration",
-        "reparation",
-        "demande",
-        "intercession",
-        "propitiation"
-      ],
-      "objet": [
-        "jesus-christ",
-        "eucharistie",
-        "sainte-vierge",
-        "saint-joseph",
-        "saint-esprit",
-        "anges",
-        "sainte-face",
-        "passion",
-        "saints"
-      ],
-      "grace": ["sanctification", "charite", "vertus", "devoir-d-etat"],
-      "personne": ["soi-meme", "ennemis", "pecheurs"],
-      "forme": ["litanie", "oraison"],
-      "devinee": ["fin", "objet", "grace", "personne", "forme"]
+      "fin": ["adoration", "reparation", "demande", "intercession"],
+      "objet": ["passion", "sainte-face"],
+      "grace": ["sanctification"],
+      "personne": ["soi-meme", "pecheurs"],
+      "forme": ["litanie"],
+      "releve": "2026-11-22"
     },
     "jardin:litanies-de-notre-dame-des-sept-douleurs": {
-      "fin": ["demande", "intercession", "propitiation"],
-      "objet": [
-        "trinite",
-        "jesus-christ",
-        "sainte-vierge",
-        "saint-esprit",
-        "passion",
-        "saints"
-      ],
-      "grace": ["vertus", "protection-et-sante", "devoir-d-etat"],
-      "personne": ["dirigeants"],
-      "forme": ["litanie", "oraison"],
-      "devinee": ["fin", "objet", "grace", "personne", "forme"]
+      "fin": ["demande"],
+      "objet": ["passion", "sainte-vierge"],
+      "grace": ["salut"],
+      "personne": ["soi-meme"],
+      "forme": ["litanie"],
+      "releve": "2026-11-22"
     },
     "jardin:premiere-couronne-le-sacre-c-ur-de-jesus-dans-son-incarnatio": {
       "fin": ["adoration"],
-      "objet": ["jesus-christ", "sacre-coeur", "sainte-vierge", "passion"],
-      "grace": ["vertus", "protection-et-sante", "devoir-d-etat"],
-      "personne": ["pecheurs"],
-      "devinee": ["fin", "objet", "grace", "personne"]
+      "objet": ["sacre-coeur"],
+      "grace": ["vertus"],
+      "personne": ["soi-meme"],
+      "forme": ["chapelet", "meditation"],
+      "releve": "2026-11-22"
     },
     "jardin:premiers-vendredis-du-mois": {
-      "fin": ["reparation", "demande", "intercession", "propitiation"],
-      "objet": [
-        "jesus-christ",
-        "eucharistie",
-        "sacre-coeur",
-        "sainte-vierge",
-        "saint-esprit",
-        "passion",
-        "saints"
-      ],
-      "grace": [
-        "salut",
-        "perseverance-finale",
-        "charite",
-        "vertus",
-        "devoir-d-etat"
-      ],
-      "personne": ["eglise-et-pretres", "dirigeants"],
+      "fin": ["reparation", "propitiation", "demande"],
+      "objet": ["eucharistie", "sacre-coeur"],
+      "grace": ["perseverance-finale"],
+      "personne": ["soi-meme", "pecheurs"],
       "forme": ["acte"],
-      "devinee": ["fin", "objet", "grace", "personne", "forme"]
+      "releve": "2026-11-22"
     },
     "jardin:priere-pour-les-agonisants": {
-      "fin": ["demande", "propitiation"],
-      "objet": ["jesus-christ", "sacre-coeur"],
+      "fin": ["intercession"],
+      "objet": ["sacre-coeur"],
+      "grace": ["salut"],
       "personne": ["pecheurs", "mourants"],
-      "devinee": ["fin", "objet", "personne"]
+      "forme": ["oraison", "jaculatoire"],
+      "releve": "2026-11-22"
     },
     "jardin:sept-dimanches-de-l-immaculee-conception": {
-      "objet": ["eucharistie", "sainte-vierge", "saint-esprit"],
+      "fin": ["louange"],
+      "objet": ["sainte-vierge"],
       "forme": ["chapelet"],
-      "devinee": ["objet", "forme"]
+      "releve": "2026-11-22"
     },
     "jardin:six-dimanches-de-saint-louis-de-gonzague": {
-      "objet": ["jesus-christ", "eucharistie", "sainte-vierge", "passion"],
+      "fin": ["demande"],
+      "objet": ["saints"],
       "grace": ["vertus", "preservation-du-peche"],
       "personne": ["soi-meme"],
-      "devinee": ["objet", "grace", "personne"]
+      "forme": ["oraison"],
+      "releve": "2026-11-22"
     },
     "jardin:six-dimanches-de-saint-thomas-d-aquin": {
-      "fin": ["demande", "intercession"],
-      "objet": ["eucharistie"],
+      "fin": ["demande"],
+      "objet": ["saints"],
       "grace": ["vertus"],
-      "forme": ["meditation"],
-      "devinee": ["fin", "objet", "grace", "forme"]
+      "personne": ["soi-meme"],
+      "forme": ["oraison"],
+      "releve": "2026-11-22"
     },
     "jardin:te-joseph-celebrent": {
-      "fin": ["demande"],
-      "objet": ["trinite", "sainte-vierge", "saint-joseph", "anges", "saints"],
-      "personne": ["eglise-et-pretres"],
-      "forme": ["office", "hymne"],
-      "devinee": ["fin", "objet", "personne", "forme"]
+      "fin": ["demande", "louange"],
+      "objet": ["saint-joseph"],
+      "grace": ["salut"],
+      "personne": ["soi-meme"],
+      "forme": ["hymne"],
+      "releve": "2026-11-22"
     },
     "jardin:troisieme-couronne-le-sacre-c-ur-de-jesus-dans-l-eucharistie": {
-      "fin": ["action-de-graces", "reparation"],
-      "objet": [
-        "jesus-christ",
-        "eucharistie",
-        "sacre-coeur",
-        "sainte-vierge",
-        "saint-joseph",
-        "saints"
-      ],
-      "grace": ["charite", "devoir-d-etat"],
-      "forme": ["messe"],
-      "devinee": ["fin", "objet", "grace", "forme"]
+      "fin": ["demande"],
+      "objet": ["eucharistie", "sacre-coeur"],
+      "grace": ["charite"],
+      "personne": ["soi-meme"],
+      "forme": ["chapelet", "meditation"],
+      "releve": "2026-11-22"
     },
     "jardin:veni-creator-spiritus": {
-      "objet": ["jesus-christ", "saint-esprit"],
-      "grace": ["vertus", "protection-et-sante"],
+      "fin": ["demande", "louange"],
+      "objet": ["saint-esprit"],
+      "grace": ["charite", "vertus"],
+      "personne": ["soi-meme"],
       "forme": ["hymne"],
-      "devinee": ["objet", "grace", "forme"]
+      "releve": "2026-11-22"
     },
     "liguori:neuvaine-de-noel": {
-      "fin": [
-        "action-de-graces",
-        "reparation",
-        "demande",
-        "intercession",
-        "propitiation"
-      ],
-      "objet": [
-        "jesus-christ",
-        "sacre-coeur",
-        "sainte-vierge",
-        "saint-joseph",
-        "anges",
-        "passion",
-        "precieux-sang",
-        "saints"
-      ],
-      "grace": [
-        "salut",
-        "perseverance-finale",
-        "charite",
-        "vertus",
-        "protection-et-sante"
-      ],
-      "personne": ["soi-meme", "ennemis", "dirigeants"],
-      "forme": ["meditation", "neuvaine"],
-      "devinee": ["fin", "objet", "grace", "personne", "forme"]
+      "fin": ["action-de-graces", "propitiation", "demande"],
+      "objet": ["jesus-christ", "sainte-vierge"],
+      "grace": ["salut", "perseverance-finale", "charite"],
+      "personne": ["soi-meme"],
+      "forme": ["neuvaine"],
+      "releve": "2026-11-22"
     },
     "liguori:neuvaine-sacre-coeur": {
-      "fin": ["action-de-graces", "demande", "propitiation"],
-      "objet": [
-        "jesus-christ",
-        "eucharistie",
-        "sacre-coeur",
-        "sainte-vierge",
-        "anges",
-        "passion",
-        "saints"
-      ],
-      "grace": ["salut", "charite", "vertus"],
-      "personne": ["soi-meme", "pecheurs", "dirigeants"],
-      "forme": ["meditation", "neuvaine"],
-      "devinee": ["fin", "objet", "grace", "personne", "forme"]
+      "fin": ["propitiation", "demande"],
+      "objet": ["sacre-coeur", "sainte-vierge"],
+      "grace": ["perseverance-finale", "charite"],
+      "personne": ["soi-meme"],
+      "forme": ["neuvaine"],
+      "releve": "2026-11-22"
     },
     "montfort:methode-rosaire": {
-      "fin": ["adoration", "demande", "intercession", "propitiation"],
-      "objet": [
-        "trinite",
-        "jesus-christ",
-        "eucharistie",
-        "sainte-vierge",
-        "saint-esprit",
-        "ames-du-purgatoire",
-        "passion",
-        "saints"
-      ],
-      "grace": [
-        "salut",
-        "perseverance-finale",
-        "sanctification",
-        "charite",
-        "vertus"
-      ],
-      "personne": ["soi-meme", "pecheurs", "dirigeants", "defunts"],
+      "fin": ["demande", "louange"],
+      "objet": ["jesus-christ", "sainte-vierge"],
+      "grace": ["perseverance-finale", "charite", "vertus"],
+      "personne": ["soi-meme"],
       "forme": ["chapelet"],
-      "devinee": ["fin", "objet", "grace", "personne", "forme"]
+      "releve": "2026-11-22"
     },
     "montfort:preparation-consecration": {
-      "fin": ["reparation"],
-      "objet": ["jesus-christ", "eucharistie", "sainte-vierge", "saint-esprit"],
+      "fin": ["demande"],
+      "objet": ["jesus-christ", "sainte-vierge", "saint-esprit"],
       "grace": ["vertus"],
-      "forme": ["chapelet", "litanie", "meditation", "oraison", "hymne"],
-      "devinee": ["fin", "objet", "grace", "forme"]
+      "personne": ["soi-meme"],
+      "forme": ["meditation", "lecture"],
+      "releve": "2026-11-22"
     },
     "neuvaines-1886:assomption": {
-      "fin": [
-        "reparation",
-        "demande",
-        "intercession",
-        "louange",
-        "propitiation"
-      ],
-      "objet": [
-        "jesus-christ",
-        "sainte-vierge",
-        "saint-esprit",
-        "anges",
-        "ames-du-purgatoire",
-        "passion",
-        "saints"
-      ],
+      "fin": ["demande", "intercession", "louange"],
+      "objet": ["sainte-vierge"],
+      "grace": ["perseverance-finale", "preservation-du-peche"],
+      "personne": ["soi-meme", "eglise-et-pretres"],
+      "forme": ["neuvaine"],
+      "releve": "2026-11-22"
+    },
+    "neuvaines-1886:nativite": {
+      "fin": ["demande", "louange"],
+      "objet": ["sainte-vierge"],
+      "grace": ["salut"],
+      "personne": ["soi-meme"],
+      "forme": ["neuvaine"],
+      "releve": "2026-11-22"
+    },
+    "paroissien:angelus": {
+      "fin": ["demande", "louange"],
+      "objet": ["jesus-christ", "sainte-vierge"],
+      "grace": ["salut"],
+      "personne": ["soi-meme"],
+      "forme": ["oraison"],
+      "releve": "2026-11-22"
+    },
+    "paroissien:de-profundis": {
+      "fin": ["propitiation", "intercession"],
+      "objet": ["ames-du-purgatoire"],
+      "grace": ["salut"],
+      "personne": ["defunts"],
+      "forme": ["oraison"],
+      "releve": "2026-11-22"
+    },
+    "paroissien:litanies-des-saints": {
+      "fin": ["propitiation", "demande", "intercession"],
+      "objet": ["sainte-vierge", "anges", "saints"],
       "grace": [
         "salut",
-        "sanctification",
-        "vertus",
         "preservation-du-peche",
         "protection-et-sante",
         "graces-temporelles"
       ],
-      "personne": ["eglise-et-pretres", "defunts"],
-      "forme": ["litanie", "office", "oraison", "hymne", "neuvaine"],
-      "devinee": ["fin", "objet", "grace", "personne", "forme"]
-    },
-    "neuvaines-1886:nativite": {
-      "fin": ["louange"],
-      "objet": ["trinite", "sainte-vierge", "saint-esprit", "anges", "saints"],
-      "grace": [
-        "salut",
-        "vertus",
-        "protection-et-sante",
-        "devoir-d-etat",
-        "graces-temporelles"
-      ],
-      "personne": ["pecheurs", "eglise-et-pretres"],
-      "forme": ["litanie", "oraison", "neuvaine"],
-      "devinee": ["fin", "objet", "grace", "personne", "forme"]
-    },
-    "paroissien:angelus": {
-      "fin": ["intercession"],
-      "objet": [
-        "jesus-christ",
-        "sainte-vierge",
-        "saint-esprit",
-        "anges",
-        "passion"
-      ],
-      "forme": ["oraison"],
-      "devinee": ["fin", "objet", "forme"]
-    },
-    "paroissien:de-profundis": {
-      "fin": ["demande", "propitiation"],
-      "objet": ["saint-esprit", "ames-du-purgatoire"],
-      "personne": ["soi-meme", "defunts"],
-      "forme": ["oraison"],
-      "devinee": ["fin", "objet", "personne", "forme"]
-    },
-    "paroissien:litanies-des-saints": {
-      "fin": ["demande", "intercession", "propitiation"],
-      "objet": [
-        "trinite",
-        "jesus-christ",
-        "sainte-vierge",
-        "saint-joseph",
-        "saint-esprit",
-        "anges",
-        "ames-du-purgatoire",
-        "passion",
-        "saints"
-      ],
-      "grace": ["salut", "devoir-d-etat"],
       "personne": [
+        "soi-meme",
         "famille",
-        "amis",
-        "ennemis",
-        "pecheurs",
         "eglise-et-pretres",
         "dirigeants",
         "defunts"
       ],
-      "forme": ["litanie", "oraison"],
-      "devinee": ["fin", "objet", "grace", "personne", "forme"]
+      "forme": ["litanie"],
+      "releve": "2026-11-22"
     },
     "paroissien:litanies-saint-nom": {
-      "fin": ["demande", "propitiation"],
-      "objet": [
-        "trinite",
-        "jesus-christ",
-        "eucharistie",
-        "sainte-vierge",
-        "saint-esprit",
-        "anges",
-        "passion",
-        "saints"
-      ],
-      "grace": ["charite", "vertus"],
-      "personne": ["dirigeants"],
-      "forme": ["litanie", "oraison"],
-      "devinee": ["fin", "objet", "grace", "personne", "forme"]
+      "fin": ["demande"],
+      "objet": ["jesus-christ"],
+      "grace": ["charite"],
+      "personne": ["soi-meme"],
+      "forme": ["litanie"],
+      "releve": "2026-11-22"
     },
     "paroissien:litanies-sainte-vierge": {
-      "fin": ["demande", "intercession", "propitiation"],
-      "objet": [
-        "trinite",
-        "jesus-christ",
-        "sainte-vierge",
-        "saint-esprit",
-        "anges",
-        "saints"
-      ],
-      "grace": ["protection-et-sante"],
-      "personne": ["pecheurs"],
-      "forme": ["chapelet", "litanie", "oraison"],
-      "devinee": ["fin", "objet", "grace", "personne", "forme"]
+      "fin": ["demande"],
+      "objet": ["sainte-vierge"],
+      "grace": ["salut", "protection-et-sante"],
+      "personne": ["soi-meme"],
+      "forme": ["litanie"],
+      "releve": "2026-11-22"
     },
     "paroissien:priere-du-matin": {
-      "fin": [
-        "adoration",
-        "action-de-graces",
-        "demande",
-        "intercession",
-        "propitiation"
-      ],
-      "objet": [
-        "trinite",
-        "jesus-christ",
-        "eucharistie",
-        "sainte-vierge",
-        "saint-esprit",
-        "anges",
-        "passion",
-        "saints"
-      ],
-      "grace": [
-        "perseverance-finale",
-        "sanctification",
-        "charite",
-        "vertus",
-        "preservation-du-peche",
-        "protection-et-sante",
-        "graces-temporelles"
-      ],
+      "fin": ["adoration", "action-de-graces", "propitiation", "demande"],
+      "objet": ["trinite", "sainte-vierge", "anges"],
+      "grace": ["vertus", "preservation-du-peche"],
       "personne": ["soi-meme"],
       "forme": ["oraison", "acte"],
-      "devinee": ["fin", "objet", "grace", "personne", "forme"]
+      "releve": "2026-11-22"
     },
     "paroissien:priere-du-soir": {
       "fin": [
         "adoration",
         "action-de-graces",
-        "reparation",
+        "propitiation",
         "demande",
-        "intercession",
-        "propitiation"
+        "intercession"
       ],
       "objet": [
-        "jesus-christ",
-        "eucharistie",
+        "trinite",
         "sainte-vierge",
         "saint-esprit",
-        "anges",
-        "ames-du-purgatoire",
-        "passion",
-        "saints"
+        "saints",
+        "ames-du-purgatoire"
       ],
-      "grace": [
-        "perseverance-finale",
-        "sanctification",
-        "preservation-du-peche",
-        "protection-et-sante",
-        "devoir-d-etat",
-        "graces-temporelles"
-      ],
+      "grace": ["preservation-du-peche", "protection-et-sante"],
       "personne": [
         "soi-meme",
         "famille",
         "amis",
         "ennemis",
         "pecheurs",
+        "eglise-et-pretres",
+        "dirigeants",
         "mourants",
         "defunts"
       ],
-      "forme": ["oraison"],
-      "devinee": ["fin", "objet", "grace", "personne", "forme"]
+      "forme": ["oraison", "examen"],
+      "releve": "2026-11-22"
     },
     "paroissien:te-deum": {
-      "fin": [
-        "adoration",
-        "action-de-graces",
-        "reparation",
-        "louange",
-        "propitiation"
-      ],
-      "objet": [
-        "sainte-vierge",
-        "saint-esprit",
-        "anges",
-        "precieux-sang",
-        "saints"
-      ],
+      "fin": ["adoration", "action-de-graces", "demande", "louange"],
+      "objet": ["trinite", "jesus-christ"],
       "grace": ["salut", "preservation-du-peche"],
-      "personne": ["dirigeants"],
-      "forme": ["oraison", "hymne"],
-      "devinee": ["fin", "objet", "grace", "personne", "forme"]
+      "personne": ["soi-meme"],
+      "forme": ["hymne"],
+      "releve": "2026-11-22"
     },
     "salve-regina:litanies-fideles-defunts": {
-      "fin": ["demande", "propitiation"],
-      "objet": [
-        "trinite",
-        "jesus-christ",
-        "eucharistie",
-        "sainte-vierge",
-        "saint-joseph",
-        "saint-esprit",
-        "anges",
-        "sainte-face",
-        "ames-du-purgatoire",
-        "passion",
-        "precieux-sang",
-        "saints"
-      ],
+      "fin": ["propitiation", "intercession"],
+      "objet": ["ames-du-purgatoire"],
       "grace": ["salut"],
-      "personne": ["famille", "amis", "eglise-et-pretres", "defunts"],
-      "forme": ["litanie", "messe"],
-      "devinee": ["fin", "objet", "grace", "personne", "forme"]
+      "personne": ["famille", "amis", "defunts"],
+      "forme": ["litanie"],
+      "releve": "2026-11-22"
     },
     "sambucy:chapelet-saint-dominique": {
-      "fin": ["adoration"],
-      "objet": [
-        "jesus-christ",
-        "sainte-vierge",
-        "saint-esprit",
-        "ames-du-purgatoire",
-        "passion",
-        "saints"
-      ],
-      "forme": ["chapelet", "meditation", "oraison"],
-      "devinee": ["fin", "objet", "forme"]
+      "objet": ["jesus-christ", "sainte-vierge"],
+      "forme": ["chapelet", "meditation"],
+      "releve": "2026-11-22"
     },
     "thesaurisons:au-christ-roi": {
+      "fin": ["adoration", "demande"],
       "objet": ["jesus-christ", "sacre-coeur"],
-      "personne": ["soi-meme", "dirigeants"],
-      "devinee": ["objet", "personne"]
+      "personne": ["soi-meme"],
+      "forme": ["acte"],
+      "releve": "2026-11-22"
     },
     "weber:demande-d-une-bonne-mort": {
-      "fin": ["demande", "intercession", "propitiation"],
+      "fin": ["demande"],
       "objet": ["sainte-vierge"],
       "grace": ["perseverance-finale"],
-      "personne": ["pecheurs", "mourants"],
-      "devinee": ["fin", "objet", "grace", "personne"]
+      "personne": ["soi-meme"],
+      "forme": ["oraison"],
+      "releve": "2026-11-22"
     },
     "weber:neuvaine-immaculee-conception": {
-      "fin": [
-        "adoration",
-        "action-de-graces",
-        "reparation",
-        "demande",
-        "intercession",
-        "louange",
-        "propitiation"
-      ],
-      "objet": [
-        "trinite",
-        "jesus-christ",
-        "sainte-vierge",
-        "saint-esprit",
-        "anges",
-        "passion",
-        "saints"
-      ],
-      "grace": [
-        "salut",
-        "sanctification",
-        "vertus",
-        "preservation-du-peche",
-        "protection-et-sante"
-      ],
-      "personne": ["soi-meme", "ennemis", "pecheurs"],
-      "forme": ["litanie", "oraison", "neuvaine"],
-      "devinee": ["fin", "objet", "grace", "personne", "forme"]
+      "fin": ["action-de-graces", "demande", "intercession", "louange"],
+      "objet": ["trinite", "sainte-vierge"],
+      "grace": ["sanctification", "preservation-du-peche"],
+      "personne": ["soi-meme", "eglise-et-pretres"],
+      "forme": ["neuvaine"],
+      "releve": "2026-11-22"
     },
     "weber:priere-tres-saint-coeur-de-marie": {
-      "fin": ["propitiation"],
-      "objet": [
-        "trinite",
-        "jesus-christ",
-        "sacre-coeur",
-        "sainte-vierge",
-        "coeur-immacule",
-        "anges",
-        "passion"
-      ],
+      "fin": ["demande"],
+      "objet": ["sainte-vierge", "coeur-immacule"],
       "grace": [
         "salut",
         "perseverance-finale",
         "vertus",
-        "preservation-du-peche",
-        "protection-et-sante",
-        "graces-temporelles"
+        "protection-et-sante"
       ],
-      "personne": ["ennemis"],
-      "devinee": ["fin", "objet", "grace", "personne"]
+      "personne": ["soi-meme", "eglise-et-pretres"],
+      "forme": ["oraison"],
+      "releve": "2026-11-22"
+    },
+    "fsspx:o-mon-jesus-fatima": {
+      "fin": ["demande", "intercession"],
+      "objet": ["jesus-christ"],
+      "grace": ["salut"],
+      "personne": ["soi-meme", "pecheurs"],
+      "forme": ["jaculatoire"],
+      "releve": "2026-11-22"
     }
   }
 }

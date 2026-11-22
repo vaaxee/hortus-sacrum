@@ -211,15 +211,22 @@ Le compositeur **n'écrit jamais lui-même** dans `programme.json`, et ne propos
 
 Chaque lot se termine comme les autres : lint, `check`, tests, build, revue critique, audit des consignes.
 
-### État des lots (21 novembre 2026)
+### État des lots (22 novembre 2026)
 
 - **D1** et **D3** : faits (vocabulaire, classement deviné de 89 textes, contexte, couverture, manques dans `journee()`).
-- **D2** : l'interface de relecture existe (`ClassementTexte.svelte`) ; **aucun** classement n'est encore relu (`releve`).
+- **D2** : fait le 22 novembre 2026 (décision de l'utilisateur : l'agent relit, l'utilisateur corrige ensuite dans la
+  fiche, `ClassementTexte.svelte`). Les **89** classements devinés sont relus (`releve: 2026-11-22`, `devinee` retiré),
+  d'après le texte lui-même, sans changer le vocabulaire ; tests 1 à 5 verts. Reste **un cas** laissé deviné : la fin des
+  Quinze oraisons de sainte Brigitte (le texte ne porte ni réparation ni action de grâces, que dit le motif de
+  `prog:brigitte` ; un classement honnête casserait le test 5). Règle retenue : la fin « intercession » est la prière
+  pour autrui, non le recours à un saint. Détail, changements notables et cas à arbitrer (motifs `angelus`, `chapelet`,
+  `devotion-mardi`, `priere-du-soir`, `cordon-gloria` ; motif `Pentecôte` de `cycles.json` trop large ; personne
+  « pauvres, affligés » absente du vocabulaire) : `docs/audits/D2_RELECTURE_2026-11-22.md`.
 - **D4** : fait. Chaque entrée de `programme.json` porte un `motif` (`fins`, `objets`, `note` qui cite la décision ou la
   source) ; type `Motif` dans `types.ts` ; test « chaque entrée dit son motif, avec des valeurs du vocabulaire » et
   test 5 (au moins une fin commune avec les textes de l'entrée) dans `matrice.test.ts`.
-  Quatre entrées n'ont pas de `fins` dans leur motif parce que leurs textes n'ont aucune fin classée : à reprendre à la
-  relecture D2 — `jardin:veni-creator-spiritus` (Veni Creator du 1er janvier), `jahenny:scapulaire-benediction-protection`,
+  Quatre entrées n'ont pas de `fins` dans leur motif parce que leurs textes n'avaient aucune fin classée (depuis D2, leurs
+  textes en ont une : les motifs peuvent être complétés) — `jardin:veni-creator-spiritus` (Veni Creator du 1er janvier), `jahenny:scapulaire-benediction-protection`,
   `thesaurisons:au-christ-roi` ; les lectures (`lec:ecriture`, `lec:doctrine`, `lec:meditation`, `lec:saint`) n'ont pas de
   texte classé et ne portent qu'un objet ou une note.
 - **D5** : fait, avec un écart. Le compositeur est `app/src/lib/programme/ordo.ts` (fonctions pures) et

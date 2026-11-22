@@ -1,0 +1,1438 @@
+{
+ "titre": "Officium parvum B.M.V. : traduction française (proposition, non branchée)",
+ "source": {
+  "ouvrage": "Petit office de la Sainte Vierge et des morts, sépulture des défunts, messe, chemin de la croix, prières des quarante-heures, etc.",
+  "edition": "Montréal, 1905 (emblème de la Congrégation de Notre-Dame de Montréal sur la page de titre) ; « Permis d'imprimer, ✠ Zotique, Év. de Pogla, V. G., Aux. à Montréal, 4 juin 1905 » (Mgr Zotique Racicot, évêque auxiliaire) ; latin et français en regard (français page paire, latin page impaire)",
+  "page": "36-58 (Complies et antiennes à la sainte Vierge)",
+  "url": "https://archive.org/details/cihm_98272",
+  "scan": "microfiche ICMH/Canadiana n° 98272 (exemplaire de la Bibliothèque nationale du Québec), 300 ppi, images n37-n59",
+  "traducteur": "non nommé"
+ },
+ "methode": "Français recopié mot pour mot, orthographe et ponctuation de l'édition gardées (petites capitales et lettrines rendues en casse ordinaire) ; double lecture (texte ABBYY d'archive.org et Tesseract fra) puis relecture de chaque page sur l'image. Les abréviations de l'édition (« etc. ») sont gardées ; un renvoi de l'édition à une autre de ses pages est résolu par le texte de cette page (noté).",
+ "alignement": {
+  "fichier": "data/office/parvum.json",
+  "cle": "indice dans « paragraphes »",
+  "controle": "la_sha1 = 12 premiers caractères du SHA-1 du paragraphe latin ; engine/office/test_parvum_fr.py vérifie qu'ils correspondent encore (parvum.json régénéré = réalignement à faire)",
+  "paragraphes_latins": 224
+ },
+ "paragraphes": [
+  {
+   "i": 0,
+   "la_sha1": "72c0789081e6",
+   "fr": null,
+   "statut": "sans équivalent",
+   "note": "Titre de section de DO (« Incipit ») : l'édition n'en imprime pas."
+  },
+  {
+   "i": 1,
+   "la_sha1": "430cec91c45f",
+   "page": "36",
+   "fr": "Je vous salue, Marie, etc.\n℣. Convertissez-nous à vous, ô Dieu notre sauveur ;\n℟. Et détournez de nous votre colère.\n℣. O Dieu, venez à mon aide:\n℟. Hâtez-vous, Seigneur, de me secourir.\nGloire soit au Père, au Fils, et au Saint-Esprit : Maintenant et toujours, comme dès le commencement, et dans tous les siècles des siècles. Ainsi soit-il. Louez Dieu.",
+   "statut": "aligné",
+   "note": "L'édition abrège l'Ave (« Je vous salue, Marie, etc. »). « Louez Dieu » rend « Allelúja » (p. 36 : « Louez Dieu. Ou Louange à vous… »)."
+  },
+  {
+   "i": 2,
+   "la_sha1": "6d29aa499b16",
+   "fr": null,
+   "statut": "sans équivalent",
+   "note": "Titre de section de DO (« Psalmi ») : l'édition n'en imprime pas."
+  },
+  {
+   "i": 3,
+   "la_sha1": "7aac474a2ebc",
+   "page": "36-38",
+   "fr": "[r]Psaume 128.[/r]\nC'est maintenant qu'Israël peut se dire: Mes ennemis m'ont souvent attaqué depuis ma jeunesse.\nIls ont souvent renouvelé leurs attaques, et ils n'ont rien pu contre moi.\nLes pécheurs ont frappé sur moi à coups redoublés: ils m'ont fait sentir longtemps leurs injustices.\nMais le Seigneur est juste, il a brisé la tête des pécheurs: que tous ceux qui haïssent Sion soient ainsi confondus et réduits à une fuite honteuse.\nQu'ils soient comme l'herbe des toits, qui sèche avant qu'on l'arrache:\nQui ne remplit jamais la main du moissonneur, ni le sein de celui qui recueille les gerbes.\nEt ceux qui passaient n'ont pas dit: Que la bénédiction du Seigneur soit sur vous ; nous vous bénissons au nom du Seigneur.\nGloire soit au Père, etc.",
+   "statut": "aligné",
+   "note": "Gloria Patri abrégé par l'édition (« Gloire soit au Père, etc. »)."
+  },
+  {
+   "i": 4,
+   "la_sha1": "aaab3e772c6c",
+   "page": "38",
+   "fr": "[r]Psaume 129.[/r]\nDu fond de l'abîme j'ai crié vers vous, Seigneur: Seigneur, écoutez ma voix.\nQue vos entrailles soient attentives à la voix de ma prière.\nSi vous exigez, Seigneur, un compte sévère de nos iniquités, qui pourra subsister devant vous, ô mon Dieu!\nMais vous aimez à pardonner ; aussi, appuyé sur votre loi, j'attends, Seigneur, votre secours.\nMon âme l'attend, fondée sur vos promesses ; mon âme se confie dans le Seigneur.\nDe la veille du matin jusqu'au soir, qu'Israël espère dans le Seigneur.\nCar le Seigneur est plein de miséricorde, et l'on trouve en lui une abondante rédemption.\nC'est lui qui rachètera Israël de toutes ses iniquités.\nGloire soit au Père, etc.",
+   "statut": "aligné",
+   "note": "Gloria Patri abrégé par l'édition."
+  },
+  {
+   "i": 5,
+   "la_sha1": "be1388c39ad8",
+   "page": "40",
+   "fr": "[r]Psaume 130.[/r]\nSeigneur, mon cœur ne s'est point enorgueilli, mes yeux ne se sont point élevés avec fierté.\nJe n'ai pas recherché la grandeur et l'éclat, ni affecté ce qui était au-dessus de moi.\nSi je n'ai pas eu d'humbles sentiments, et si mon cœur s'est enflé d'orgueil,\nQue mon âme soit réduite à l'état d'un enfant que sa mère vient de relever.\nQu'Israël espère dans le Seigneur, maintenant et à jamais.\nGloire soit au Père, etc.",
+   "statut": "aligné",
+   "note": "Gloria Patri abrégé par l'édition."
+  },
+  {
+   "i": 6,
+   "la_sha1": "420fa9ef6311",
+   "page": "40",
+   "fr": "### Hymne",
+   "statut": "aligné"
+  },
+  {
+   "i": 7,
+   "la_sha1": "f34c27949303",
+   "page": "40",
+   "fr": "Souvenez-vous, auteur de tous biens, que pour naître parmi nous, vous avez pris un corps semblable au nôtre dans le sein d'une vierge sans tache.",
+   "statut": "aligné"
+  },
+  {
+   "i": 8,
+   "la_sha1": "236c3039408a",
+   "page": "40",
+   "fr": "Marie, mère de grâce, mère de miséricorde, défendez-nous contre nos ennemis, et protégez-nous à l'heure de la mort.",
+   "statut": "aligné"
+  },
+  {
+   "i": 9,
+   "la_sha1": "32eb23170283",
+   "page": "40",
+   "fr": "O Jésus, né d'une Vierge, soyez glorifié avec le Père et le Saint-Esprit, dans toute la suite des siècles.\nAinsi soit-il.",
+   "statut": "aligné",
+   "note": "L'hymne est traduite en prose, une strophe par paragraphe."
+  },
+  {
+   "i": 10,
+   "la_sha1": "0c715932a400",
+   "page": "40",
+   "fr": "### Capitule",
+   "statut": "aligné"
+  },
+  {
+   "i": 11,
+   "la_sha1": "04f99ab3c2cb",
+   "page": "42",
+   "fr": "[r]Isaïe, 7.[/r]\nUne vierge concevra et mettra au monde un fils, qui sera appelé Emmanuel: il mangera le beurre et le miel, en sorte qu'il sache rejeter le mal et choisir le bien.\n℟. Rendons grâces à Dieu.",
+   "statut": "aligné"
+  },
+  {
+   "i": 12,
+   "la_sha1": "cf9a20e74673",
+   "page": "42",
+   "fr": "℣. L'Ange du Seigneur a annoncé à Marie.\n℟. Et elle a conçu par l'opération du Saint-Esprit.",
+   "statut": "aligné en partie",
+   "note": "NON ALIGNÉ EN PARTIE : ce paragraphe sert aussi après l'Alma Redemptoris de l'Avent ; l'édition y imprime une autre forme (p. 50 : « L'Ange du Seigneur annonça à Marie. ℟. Et elle conçut par l'opération du Saint-Esprit. »). Le texte de la p. 42 (capitule de Complies) est retenu ici."
+  },
+  {
+   "i": 13,
+   "la_sha1": "03d62930c96e",
+   "page": "42",
+   "fr": "### Cantique du vieillard Siméon",
+   "statut": "aligné"
+  },
+  {
+   "i": 14,
+   "la_sha1": "af7ef4e891e1",
+   "page": "42-44",
+   "fr": "[r]Ant.[/r] Le Saint-Esprit.\n[r]Cantique du vieillard Siméon, Luc, 2.[/r]\nSeigneur, laissez aller maintenant votre serviteur en paix, selon votre parole,\nCar mes yeux ont vu le Sauveur,\nQue vous destinez pour être manifesté à toutes les nations,\nPour être la lumière qui éclairera les peuples, et la gloire d'Israël.\nGloire soit au Père, etc.\n[r]Ant.[/r] Le Saint-Esprit descendra sur vous, Marie, ne craignez point, vous porterez le Fils de Dieu dans votre sein,",
+   "statut": "aligné",
+   "note": "La traduction de l'antienne (p. 44) ne rend pas l'« allelúja » final du latin ; elle s'arrête sur une virgule, comme imprimé.",
+   "lecture": "Impression abîmée p. 42 : « Que vou[s] destinez … manifesté à toutes les n[ati]ons » ; lecture sûre par le contexte."
+  },
+  {
+   "i": 15,
+   "la_sha1": "6626d66d7a5b",
+   "fr": null,
+   "statut": "sans équivalent",
+   "note": "Titre de section de DO (« Oratio ») : l'édition imprime seulement « PRIONS », repris dans le paragraphe suivant."
+  },
+  {
+   "i": 16,
+   "la_sha1": "f82c37c9f56c",
+   "page": "44-46",
+   "fr": "Seigneur, ayez pitié de nous.\nJésus-Christ, ayez pitié de nous.\nSeigneur, ayez pitié de nous.\n℣. Seigneur, exaucez ma prière,\n℟. Et que mes cris s'élèvent jusqu'à vous.\nPrions.\nO Dieu! qui avez voulu qu'à la parole de l'Ange, votre Verbe prît un corps dans le sein de la bienheureuse Vierge Marie, faites, nous vous en supplions, que nous, qui croyons qu'elle est véritablement mère de Dieu, soyons aidés auprès de vous par son intercession. Par Notre-Seigneur Jésus-Christ, qui vit et règne avec vous en l'unité du Saint-Esprit dans tous les siècles des siècles.\n℟. Ainsi soit-il.",
+   "statut": "aligné",
+   "note": "Kyrie et versets p. 44, oraison de l'Avent p. 46."
+  },
+  {
+   "i": 17,
+   "la_sha1": "f29ead522c3c",
+   "fr": null,
+   "statut": "sans équivalent",
+   "note": "Titre de section de DO (« Conclusio ») : l'édition n'en imprime pas."
+  },
+  {
+   "i": 18,
+   "la_sha1": "46155291b903",
+   "page": "48",
+   "fr": "℣. Seigneur, exaucez ma prière,\n℟. Et que mes cris s'élèvent jusqu'à vous.\n℣. Bénissons le Seigneur.\n℟. Rendons grâces à Dieu.\n[r]Bénédiction.[/r] Que le Seigneur tout-puissant et miséricordieux, le Père, le Fils et le Saint-Esprit, nous bénisse et nous conserve.\n℟. Ainsi soit-il.",
+   "statut": "aligné"
+  },
+  {
+   "i": 19,
+   "la_sha1": "2ef9ca29c177",
+   "page": "50",
+   "fr": "### Antiennes à la sainte Vierge",
+   "statut": "aligné"
+  },
+  {
+   "i": 20,
+   "la_sha1": "e1672952baa1",
+   "page": "50",
+   "fr": "Mère auguste du Rédempteur, porte du ciel toujours ouverte, étoile de la mer, secourez un peuple qui succombe et qui désire se relever ; vous qui, au grand étonnement de la nature, avez mis au monde Celui qui vous a créée. Vierge avant et après l'enfantement, recevez le salut de l'Archange, et prenez pitié des pécheurs.",
+   "statut": "aligné"
+  },
+  {
+   "i": 21,
+   "la_sha1": "fb8603a0cfe0",
+   "page": "50, 58",
+   "fr": "Prions.\nNous vous supplions, Seigneur, de répandre votre grâce dans nos âmes, afin qu'ayant connu par la voix de l'Ange l'incarnation de votre Fils, Jésus-Christ, nous arrivions, par les mérites de sa passion et de sa croix, à la gloire de la résurrection. Par le même Jésus-Christ Notre-Seigneur. ℟. Ainsi soit-il.\n℣. Que la grâce de Dieu demeure toujours en nous.\n℟. Ainsi soit-il.",
+   "statut": "aligné",
+   "note": "Le verset final renvoie à la p. 58 (« Que la grâce de Dieu, etc., p. 58 ») ; il est donné ici comme la p. 58 l'imprime."
+  },
+  {
+   "i": 22,
+   "la_sha1": "30276a859c15",
+   "page": "58",
+   "fr": "[r]A voix basse,[/r] Pater,... Ave,... Credo...",
+   "statut": "aligné",
+   "note": "Pater, Ave, Credo : l'édition n'en donne que les premiers mots latins, à voix basse (p. 58)."
+  },
+  {
+   "i": 23,
+   "la_sha1": "1cf225f0050a",
+   "page": "36",
+   "fr": "Je vous salue, Marie, etc.\n℣. Convertissez-nous à vous, ô Dieu notre sauveur ;\n℟. Et détournez de nous votre colère.\n℣. O Dieu, venez à mon aide:\n℟. Hâtez-vous, Seigneur, de me secourir.\nGloire soit au Père, au Fils, et au Saint-Esprit : Maintenant et toujours, comme dès le commencement, et dans tous les siècles des siècles. Ainsi soit-il.\nLouange à vous, Seigneur, Roi d'éternelle gloire.",
+   "statut": "aligné",
+   "note": "Comme 1, avec « Louange à vous, Seigneur, Roi d'éternelle gloire » (Septuagésime), même page."
+  },
+  {
+   "i": 24,
+   "la_sha1": "5efe076c9f72",
+   "page": "42-44",
+   "fr": "[r]Ant.[/r] Le Saint-Esprit.\n[r]Cantique du vieillard Siméon, Luc, 2.[/r]\nSeigneur, laissez aller maintenant votre serviteur en paix, selon votre parole,\nCar mes yeux ont vu le Sauveur,\nQue vous destinez pour être manifesté à toutes les nations,\nPour être la lumière qui éclairera les peuples, et la gloire d'Israël.\nGloire soit au Père, etc.\n[r]Ant.[/r] Le Saint-Esprit descendra sur vous, Marie, ne craignez point, vous porterez le Fils de Dieu dans votre sein,",
+   "statut": "aligné",
+   "note": "Même texte que 14 : l'édition n'a qu'une forme de l'antienne (le latin de DO n'a pas ici l'« allelúja »).",
+   "lecture": "Comme 14."
+  },
+  {
+   "i": 25,
+   "la_sha1": "47df70360df9",
+   "page": "52",
+   "fr": "Salut, Reine des cieux!\nSalut, Souveraine des Anges!\nSalut, tige féconde!\nSalut, porte par laquelle la lumière s'est levée sur le monde!",
+   "statut": "aligné",
+   "lecture": "p. 52 : « s'est [l]evée », lettre brisée."
+  },
+  {
+   "i": 26,
+   "la_sha1": "195ae802e409",
+   "page": "52",
+   "fr": "Réjouissez-vous, Vierge glorieuse, qui l'emportez sur toutes en beauté!\nTriomphez, ô toute belle, et priez pour nous Jésus-Christ.",
+   "statut": "aligné"
+  },
+  {
+   "i": 27,
+   "la_sha1": "8166c07b7f8d",
+   "page": "52",
+   "fr": "℣. Rendez-moi digne de vous louer, Vierge sainte.\n℟. Donnez-moi la force de triompher de vos ennemis.",
+   "statut": "aligné",
+   "lecture": "p. 52 : « digne de v[o]us louer » (imprimé « veus », lettre brisée)."
+  },
+  {
+   "i": 28,
+   "la_sha1": "09507d57af32",
+   "page": "54, 58",
+   "fr": "Prions.\nDieu de bonté, accordez à notre faiblesse le secours de votre grâce ; et comme nous honorons la mémoire de la sainte Mère de Dieu, faites que, par le secours de son intercession, nous puissions nous relever de nos iniquités. Par le même J.-C N.-S. ℟. Ainsi soit-il.\n℣. Que la grâce de Dieu demeure toujours en nous.\n℟. Ainsi soit-il.",
+   "statut": "aligné",
+   "note": "« J.-C N.-S. » sans point après C, comme imprimé ; verset final pris p. 58 (renvoi de l'édition)."
+  },
+  {
+   "i": 29,
+   "la_sha1": "b1ba7408f455",
+   "page": "54",
+   "fr": "Reine du ciel, réjouissez-vous, alleluia, puisque celui que vous avez mérité de porter dans votre sein, alleluia, est ressuscité comme il l'a dit, alleluia. Priez Dieu pour nous, alleluia.",
+   "statut": "aligné"
+  },
+  {
+   "i": 30,
+   "la_sha1": "4d270c848ac6",
+   "page": "54",
+   "fr": "℣. Réjouissez-vous et tressaillez de joie, ô Vierge Marie, alleluia.\n℣. Parce que le Seigneur est véritablement ressuscité, alleluia.",
+   "statut": "aligné",
+   "note": "Le répons est marqué ℣ dans l'édition (p. 54), gardé tel quel."
+  },
+  {
+   "i": 31,
+   "la_sha1": "42bc205b4061",
+   "page": "54, 58",
+   "fr": "Prions.\nO Dieu, qui, par la résurrection de votre Fils Notre-Seigneur Jésus-Christ, avez daigné réjouir le monde: faites, nous vous en prions, que, par sa sainte Mère la Vierge Marie, nous participions aux joies de la vie éternelle. Nous vous le demandons par le même J.-C. N.-S.\n℟. Ainsi soit-il.\n℣. Que la grâce de Dieu demeure toujours en nous.\n℟. Ainsi soit-il.",
+   "statut": "aligné",
+   "note": "Verset final pris p. 58 (l'édition imprime ici « Que le grâce de Dieu, etc., p. 58 »)."
+  },
+  {
+   "i": 32,
+   "la_sha1": "851cc44f3af3",
+   "page": "40-42",
+   "fr": "[r]Eccl., 24.[/r]\nJe suis la mère du saint amour, de la crainte, de la grandeur, et de l'espérance sainte.\n℟. Rendons grâces à Dieu.",
+   "statut": "aligné",
+   "note": "« de la grandeur » (pour « agnitiónis ») : tel qu'imprimé."
+  },
+  {
+   "i": 33,
+   "la_sha1": "c06abf9c1a35",
+   "page": "42",
+   "fr": "℣. Priez pour nous, sainte Mère de Dieu.\n℟. Afin que nous devenions dignes des promesses de Jésus-Christ.",
+   "statut": "aligné"
+  },
+  {
+   "i": 34,
+   "la_sha1": "5d6d85945a79",
+   "page": "42-44",
+   "fr": "[r]Ant.[/r] O mystère ineffable de l'héritage céleste.\n[r]Cantique du vieillard Siméon, Luc, 2.[/r]\nSeigneur, laissez aller maintenant votre serviteur en paix, selon votre parole,\nCar mes yeux ont vu le Sauveur,\nQue vous destinez pour être manifesté à toutes les nations,\nPour être la lumière qui éclairera les peuples, et la gloire d'Israël.\nGloire soit au Père, etc.\n[r]Ant.[/r] O mystère ineffable de l'héritage céleste! le sein d'une Vierge est devenu le temple de Dieu, et le Dieu incarné dans ses chastes entrailles n'a rien perdu de sa sainteté: les nations viendront, et diront: Gloire à vous, Seigneur.",
+   "statut": "aligné",
+   "lecture": "Comme 14 ; et p. 44 : « l'hér[i]tage céleste », « temple [d]e », « chastes [e]n-trailles », « les n[a]-tions » : lettres effacées, lecture sûre par le contexte."
+  },
+  {
+   "i": 35,
+   "la_sha1": "8cd13acb95ed",
+   "page": "44, 48",
+   "fr": "Seigneur, ayez pitié de nous.\nJésus-Christ, ayez pitié de nous.\nSeigneur, ayez pitié de nous.\n℣. Seigneur, exaucez ma prière,\n℟. Et que mes cris s'élèvent jusqu'à vous.\nPrions.\nO Dieu, qui, par la virginité féconde de la bienheureuse Vierge Marie, avez donné au genre humain le prix du salut éternel, accordez-nous, s'il vous plaît, la grâce de ressentir l'effet de l'intercession de celle par qui nous avons reçu l'auteur de la vie, Notre-Seigneur Jésus-Christ, qui vit et règne en l'unité du Saint-Esprit, dans tous les siècles des siècles.\n℟. Ainsi soit-il.",
+   "statut": "aligné",
+   "note": "Kyrie et versets p. 44, oraison de Noël p. 48."
+  },
+  {
+   "i": 36,
+   "la_sha1": "aa53b66d6d47",
+   "page": "50",
+   "fr": "Mère auguste du Rédempteur, porte du ciel toujours ouverte, étoile de la mer, secourez un peuple qui succombe et qui désire se relever ; vous qui, au grand étonnement de la nature, avez mis au monde Celui qui vous a créée. Vierge avant et après l'enfantement, recevez le salut de l'Archange, et prenez pitié des pécheurs.",
+   "statut": "aligné",
+   "note": "Même texte que 20 (l'édition ne distingue pas les deux coupes du latin)."
+  },
+  {
+   "i": 37,
+   "la_sha1": "fc1fdfc56af7",
+   "page": "52",
+   "fr": "℣. Vous êtes demeurée vierge après l'enfantement.\n℟. Mère de Dieu, intercédez pour nous.",
+   "statut": "aligné"
+  },
+  {
+   "i": 38,
+   "la_sha1": "5d70d0815ff0",
+   "page": "52, 58",
+   "fr": "Prions.\nO Dieu, qui, par la virginité féconde de la bienheureuse Vierge Marie, avez assuré au genre humain le prix du salut éternel, accordez-nous, s'il vous plaît, la grâce de ressentir l'effet de l'intercession de celle par qui nous avons reçu l'auteur de la vie, Notre-Seigneur Jésus-Christ, votre Fils.\n℟. Ainsi soit-il.\n℣. Que la grâce de Dieu demeure toujours en nous.\n℟. Ainsi soit-il.",
+   "statut": "aligné",
+   "note": "Verset final pris p. 58 (renvoi de l'édition)."
+  },
+  {
+   "i": 39,
+   "la_sha1": "94f0a7f2d931",
+   "page": "42-44",
+   "fr": "[r]Ant.[/r] Reine du ciel.\n[r]Cantique du vieillard Siméon, Luc, 2.[/r]\nSeigneur, laissez aller maintenant votre serviteur en paix, selon votre parole,\nCar mes yeux ont vu le Sauveur,\nQue vous destinez pour être manifesté à toutes les nations,\nPour être la lumière qui éclairera les peuples, et la gloire d'Israël.\nGloire soit au Père, etc.\n[r]Ant.[/r] Reine du ciel, réjouissez-vous, alleluia ; puisque celui que vous avez mérité de porter dans votre sein, alleluia, est ressuscité comme il l'a dit, alleluia. Priez Dieu pour nous, alleluia.",
+   "statut": "aligné",
+   "lecture": "Comme 14."
+  },
+  {
+   "i": 40,
+   "la_sha1": "3aa38251c0f9",
+   "page": "44-46",
+   "fr": "Seigneur, ayez pitié de nous.\nJésus-Christ, ayez pitié de nous.\nSeigneur, ayez pitié de nous.\n℣. Seigneur, exaucez ma prière,\n℟. Et que mes cris s'élèvent jusqu'à vous.\nPrions.\nQue l'intercession de la bienheureuse et glorieuse Marie toujours vierge nous protège, Seigneur, et nous conduise à l'éternité bienheureuse. Par Notre-Seigneur Jésus-Christ, votre Fils, qui vit et règne avec vous, en l'unité du Saint-Esprit, dans tous les siècles des siècles.\n℟. Ainsi soit-il.",
+   "statut": "aligné",
+   "note": "Kyrie et versets p. 44, oraison p. 46.",
+   "lecture": "p. 46 : « bien[h]eureuse », lettre brisée."
+  },
+  {
+   "i": 41,
+   "la_sha1": "7436aac8c2a4",
+   "page": "42-44",
+   "fr": "[r]Ant.[/r] Nous avons recours.\n[r]Cantique du vieillard Siméon, Luc, 2.[/r]\nSeigneur, laissez aller maintenant votre serviteur en paix, selon votre parole,\nCar mes yeux ont vu le Sauveur,\nQue vous destinez pour être manifesté à toutes les nations,\nPour être la lumière qui éclairera les peuples, et la gloire d'Israël.\nGloire soit au Père, etc.\n[r]Ant.[/r] Nous avons recours à votre protection, sainte Mère de Dieu: ne rejetez pas les prières que nous vous adressons dans nos pressants besoins ; mais délivrez-nous toujours de tous les dangers auxquels nous sommes exposés, ô Vierge comblée de gloire et de bénédictions.",
+   "statut": "aligné",
+   "lecture": "Comme 14."
+  },
+  {
+   "i": 42,
+   "la_sha1": "d4584ffda5e0",
+   "page": "56",
+   "fr": "Salut, ô Reine, Mère de miséricorde, notre vie, notre douceur et notre espérance, salut. Enfants d'Eve, malheureux exilés, nous élevons nos cris vers vous ; nous soupirons vers vous, gémissant et pleurant dans cette vallée de larmes.\nOh! de grâce, notre avocate, tournez donc vers nous vos regards miséricordieux, et, après cet exil, montrez-nous Jésus, le fruit béni de vos entrailles,\nO clémente! ô charitable! ô douce Vierge Marie!",
+   "statut": "aligné"
+  },
+  {
+   "i": 43,
+   "la_sha1": "8d489cb1b82f",
+   "page": "56",
+   "fr": "℣. Priez pour nous, sainte Mère de Dieu.\n℟. Afin que nous devenions dignes des promesses de Jésus-Christ.",
+   "statut": "aligné",
+   "note": "Même texte que 33."
+  },
+  {
+   "i": 44,
+   "la_sha1": "f23feac20580",
+   "page": "56-58",
+   "fr": "Prions.\nDieu tout-puissant et éternel, qui, par la coopération du Saint-Esprit, avez préparé le corps et l'âme de la glorieuse Vierge Marie pour en faire une demeure digne de votre Fils, accordez-nous d'être délivrés des maux présents et de la mort éternelle par l'intercession de celle dont nous célébrons la mémoire avec joie. Nous vous en supplions par le même Jésus-Christ Notre-Seigneur. ℟. Ainsi soit-il.\n℣. Que la grâce de Dieu demeure toujours en nous.\n℟. Ainsi soit-il.",
+   "statut": "aligné"
+  },
+  {
+   "i": 45,
+   "la_sha1": "5b70b3ed8bf6",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 46,
+   "la_sha1": "b3750a01cb5f",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 47,
+   "la_sha1": "c6d06e4171f3",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 48,
+   "la_sha1": "4e980200c8fb",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 49,
+   "la_sha1": "de222db2fd77",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 50,
+   "la_sha1": "47461b7d1e23",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 51,
+   "la_sha1": "9f9272ecc41d",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 52,
+   "la_sha1": "5db4cea0b955",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 53,
+   "la_sha1": "9394c5cb8ad4",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 54,
+   "la_sha1": "b2a158729a10",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 55,
+   "la_sha1": "f3d85b1a9a42",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 56,
+   "la_sha1": "58e1ab01a179",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 57,
+   "la_sha1": "a56ed059f850",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 58,
+   "la_sha1": "47bf9540210e",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 59,
+   "la_sha1": "cfd2f444f7fc",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 60,
+   "la_sha1": "e70ecc37ec92",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 61,
+   "la_sha1": "7eaa477146e6",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 62,
+   "la_sha1": "7a8c79db4e0f",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 63,
+   "la_sha1": "ce06266e8792",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 64,
+   "la_sha1": "e0a7f5227fba",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 65,
+   "la_sha1": "ea3515f289d2",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 66,
+   "la_sha1": "b40d88e1c9bd",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 67,
+   "la_sha1": "e2af91b3c5ed",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 68,
+   "la_sha1": "ba845b6ab0e8",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 69,
+   "la_sha1": "af94651af524",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 70,
+   "la_sha1": "4428667fa4ca",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 71,
+   "la_sha1": "16d132f95c19",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 72,
+   "la_sha1": "d062c4fa38c6",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 73,
+   "la_sha1": "c34912125844",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 74,
+   "la_sha1": "b2bb5de8ed77",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 75,
+   "la_sha1": "5c58171db976",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 76,
+   "la_sha1": "20fcda365257",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 77,
+   "la_sha1": "8791c0dd9eb5",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 78,
+   "la_sha1": "e1c026e37d4f",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 79,
+   "la_sha1": "7f60e656331f",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 80,
+   "la_sha1": "3fd5f0dc029b",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 81,
+   "la_sha1": "1fd6eeb97c54",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 82,
+   "la_sha1": "0f1acc5e6320",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 83,
+   "la_sha1": "4ac461a5a3a6",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 84,
+   "la_sha1": "46a21ec8cc6a",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 85,
+   "la_sha1": "05092badbbc8",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 86,
+   "la_sha1": "3e1852626245",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 87,
+   "la_sha1": "530b73019c72",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 88,
+   "la_sha1": "05d0e3d0c58c",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 89,
+   "la_sha1": "50b9b46f2388",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 90,
+   "la_sha1": "f0855bf75672",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 91,
+   "la_sha1": "a1df5acd2ca0",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 92,
+   "la_sha1": "7e7e76874b7b",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 93,
+   "la_sha1": "908ae4794946",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 94,
+   "la_sha1": "49316a6a2bc2",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 95,
+   "la_sha1": "66ac1cddcb39",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 96,
+   "la_sha1": "4ea177ea9bcc",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 97,
+   "la_sha1": "c271ef581ca6",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 98,
+   "la_sha1": "b551e417b467",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 99,
+   "la_sha1": "811c270cf736",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 100,
+   "la_sha1": "404b150afee6",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 101,
+   "la_sha1": "d3b7a5a72e60",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 102,
+   "la_sha1": "5768c4fe1e54",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 103,
+   "la_sha1": "d31d7cd27a1d",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 104,
+   "la_sha1": "13112775df35",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 105,
+   "la_sha1": "0840c9709ca6",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 106,
+   "la_sha1": "0d03ae913a9f",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 107,
+   "la_sha1": "f369c333a7ce",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 108,
+   "la_sha1": "97522dba2aa0",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 109,
+   "la_sha1": "99bb5411dcfb",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 110,
+   "la_sha1": "6cc8460dc103",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 111,
+   "la_sha1": "758360272c14",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 112,
+   "la_sha1": "f77956daea30",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 113,
+   "la_sha1": "455a092cfe2e",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 114,
+   "la_sha1": "b3de6922b323",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 115,
+   "la_sha1": "d335dd1b080a",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 116,
+   "la_sha1": "88737328bd2a",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 117,
+   "la_sha1": "7e70f8ffa30d",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 118,
+   "la_sha1": "461bb2ca9bd5",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 119,
+   "la_sha1": "0874bda7e969",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 120,
+   "la_sha1": "8593a4771c2c",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 121,
+   "la_sha1": "074b751ea6d2",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 122,
+   "la_sha1": "f65800c7cc26",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 123,
+   "la_sha1": "54f2f880da74",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 124,
+   "la_sha1": "41e10db3226a",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 125,
+   "la_sha1": "3c82a0edfeda",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 126,
+   "la_sha1": "37eb4d5c6e19",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 127,
+   "la_sha1": "77f7ff8915f8",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 128,
+   "la_sha1": "78fdc2c946b3",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 129,
+   "la_sha1": "01aa9da99b1d",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 130,
+   "la_sha1": "798f91075629",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 131,
+   "la_sha1": "01b2b7a6f666",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 132,
+   "la_sha1": "4e91daeea94d",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 133,
+   "la_sha1": "efedaa9109a5",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 134,
+   "la_sha1": "11cdb3de9491",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 135,
+   "la_sha1": "223d075a5b66",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 136,
+   "la_sha1": "d70f42d05f34",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 137,
+   "la_sha1": "ddb985508b5a",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 138,
+   "la_sha1": "8fd76f834daa",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 139,
+   "la_sha1": "bc6f638ad6c7",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 140,
+   "la_sha1": "699b1f75fa08",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 141,
+   "la_sha1": "0c073ff8ea8b",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 142,
+   "la_sha1": "5d10bf5b17c3",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 143,
+   "la_sha1": "fbd46b0340c1",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 144,
+   "la_sha1": "9888c9f29ec9",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 145,
+   "la_sha1": "b8e034a404cf",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 146,
+   "la_sha1": "7ca430cfbb9c",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 147,
+   "la_sha1": "fe1fd56268ac",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 148,
+   "la_sha1": "13ee5886dd48",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 149,
+   "la_sha1": "925b24ec8d6f",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 150,
+   "la_sha1": "72fb974cd007",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 151,
+   "la_sha1": "0f73afdf9b3e",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 152,
+   "la_sha1": "5ef000c34e70",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 153,
+   "la_sha1": "2b7a8c31ba18",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 154,
+   "la_sha1": "faf8a6821faa",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 155,
+   "la_sha1": "9855880dfeef",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 156,
+   "la_sha1": "d88fa59ced4d",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 157,
+   "la_sha1": "5d32dc870188",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 158,
+   "la_sha1": "4a3e90d443e2",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 159,
+   "la_sha1": "5c4430c46ecb",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 160,
+   "la_sha1": "243598d9eedc",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 161,
+   "la_sha1": "872143f66d38",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 162,
+   "la_sha1": "8cbdd4240a1b",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 163,
+   "la_sha1": "5de54d014f71",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 164,
+   "la_sha1": "6a4df367ae14",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 165,
+   "la_sha1": "f4fe3d766056",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 166,
+   "la_sha1": "f1e97c471393",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 167,
+   "la_sha1": "4d031a23875f",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 168,
+   "la_sha1": "477506c2613e",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 169,
+   "la_sha1": "3960ee066f6c",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 170,
+   "la_sha1": "34aa18077901",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 171,
+   "la_sha1": "e66038abbd1c",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 172,
+   "la_sha1": "fa34d38c9bb4",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 173,
+   "la_sha1": "cb6cd1506388",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 174,
+   "la_sha1": "531c76aa2e11",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 175,
+   "la_sha1": "d96fcb35e753",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 176,
+   "la_sha1": "38c7d6c0ea40",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 177,
+   "la_sha1": "4848124029c9",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 178,
+   "la_sha1": "1f833813a150",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 179,
+   "la_sha1": "f7533f081664",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 180,
+   "la_sha1": "67da69d2b3d7",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 181,
+   "la_sha1": "b07fb8ea8f6e",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 182,
+   "la_sha1": "94129523ee87",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 183,
+   "la_sha1": "b78ac4ad4dd0",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 184,
+   "la_sha1": "0bdb155329c8",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 185,
+   "la_sha1": "95567b5ffce4",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 186,
+   "la_sha1": "2d2272dcd306",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 187,
+   "la_sha1": "e12f74010a8b",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 188,
+   "la_sha1": "36eccd3a0041",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 189,
+   "la_sha1": "a6ad6b740192",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 190,
+   "la_sha1": "9f3306b262d1",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 191,
+   "la_sha1": "0f1219fad872",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 192,
+   "la_sha1": "5a5c59b5b327",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 193,
+   "la_sha1": "4c99d3e99911",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 194,
+   "la_sha1": "701ca417edb7",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 195,
+   "la_sha1": "1a8830e18c8d",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 196,
+   "la_sha1": "125133aa0ac4",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 197,
+   "la_sha1": "fd1d375a9209",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 198,
+   "la_sha1": "4e86b64c70f3",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 199,
+   "la_sha1": "c11dfb7de487",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 200,
+   "la_sha1": "a4fea3385a15",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 201,
+   "la_sha1": "358115484fb7",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 202,
+   "la_sha1": "ef72cc24f0c4",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 203,
+   "la_sha1": "3c781d107927",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 204,
+   "la_sha1": "2fe14f0c128b",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 205,
+   "la_sha1": "ddd3aa58d8e2",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 206,
+   "la_sha1": "b22a3543a4a0",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 207,
+   "la_sha1": "647a5e72353c",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 208,
+   "la_sha1": "493bcd4a406b",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 209,
+   "la_sha1": "0c468b3546ce",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 210,
+   "la_sha1": "84c67e0ae900",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 211,
+   "la_sha1": "1008b9896441",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 212,
+   "la_sha1": "05f521bd115a",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 213,
+   "la_sha1": "b8639a115019",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 214,
+   "la_sha1": "d29f01ccad22",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 215,
+   "la_sha1": "da2f0715067d",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 216,
+   "la_sha1": "6fa75909309b",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 217,
+   "la_sha1": "908fcb5ec776",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 218,
+   "la_sha1": "3f11346bd22e",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 219,
+   "la_sha1": "c8b51c422016",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 220,
+   "la_sha1": "2ccd47814437",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 221,
+   "la_sha1": "c87bfba7d18d",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 222,
+   "la_sha1": "9ff4a0572cd1",
+   "fr": null,
+   "statut": "à transcrire"
+  },
+  {
+   "i": 223,
+   "la_sha1": "f07192a51e3a",
+   "fr": null,
+   "statut": "à transcrire"
+  }
+ ]
+}
