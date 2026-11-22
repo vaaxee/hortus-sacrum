@@ -1095,6 +1095,58 @@
       "personne": ["soi-meme"],
       "forme": ["oraison"],
       "devinee": ["fin", "objet", "grace", "personne", "forme"]
+    },
+    "desgenettes:louanges-de-la-semaine": {
+      "fin": ["demande", "reparation"],
+      "objet": ["sainte-vierge", "coeur-immacule"],
+      "grace": ["salut", "perseverance-finale"],
+      "personne": ["soi-meme"],
+      "forme": ["oraison"],
+      "devinee": ["fin", "objet", "grace", "personne", "forme"]
+    },
+    "desgenettes:priere-salut-de-la-france": {
+      "fin": ["demande"],
+      "objet": ["jesus-christ", "coeur-immacule"],
+      "grace": ["salut"],
+      "forme": ["oraison"],
+      "devinee": ["fin", "objet", "grace", "forme"]
+    },
+    "garde1886:priere-reparatrice": {
+      "fin": ["reparation"],
+      "objet": ["sacre-coeur", "eucharistie"],
+      "personne": ["pecheurs"],
+      "forme": ["litanie"],
+      "devinee": ["fin", "objet", "personne", "forme"]
+    },
+    "garde1886:renovation-enrolement": {
+      "fin": ["adoration", "demande"],
+      "objet": ["sacre-coeur"],
+      "grace": ["charite", "perseverance-finale"],
+      "personne": ["soi-meme"],
+      "forme": ["acte"],
+      "devinee": ["fin", "objet", "grace", "personne", "forme"]
+    },
+    "janvier:consecration-archiconfrerie": {
+      "fin": ["reparation", "demande"],
+      "objet": ["sainte-face"],
+      "grace": ["preservation-du-peche"],
+      "personne": ["soi-meme", "defunts"],
+      "forme": ["acte"],
+      "devinee": ["fin", "objet", "grace", "personne", "forme"]
+    },
+    "janvier:litanies-sainte-face-ecriture": {
+      "fin": ["reparation", "demande"],
+      "objet": ["sainte-face", "passion"],
+      "grace": ["salut"],
+      "personne": ["soi-meme"],
+      "forme": ["litanie"],
+      "devinee": ["fin", "objet", "grace", "personne", "forme"]
+    },
+    "janvier:louanges-saint-nom-de-dieu": {
+      "fin": ["louange", "reparation"],
+      "objet": ["trinite", "jesus-christ", "eucharistie", "sainte-vierge", "anges", "saints"],
+      "forme": ["acte"],
+      "devinee": ["fin", "objet", "forme"]
     }
   }
 }

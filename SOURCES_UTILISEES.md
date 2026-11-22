@@ -91,6 +91,17 @@ relu mot à mot sur l'image : seuls les écarts isolés de l'alignement automati
 | « O mon Jésus, pardonnez-nous nos péchés ! délivrez-nous du feu de l'enfer !… » (Fatima, forme de 1943, `castelbranco1943:o-mon-jesus-fatima`) | J. Castelbranco, *Le miracle inouï de Fatima*, Montréal, 1943 ; imprimatur du 5 juin 1943 | 38 (et 47) | archive.org `lemiracleinouide00cast` (pages n39, n48 ; imprimatur n3) |
 | « Ô mon Jésus, pardonnez-nous nos péchés… », forme courante (fin de dizaine ; décision de l'utilisateur du 22 nov.) | FSSPX Actualités, « Ô mon Jésus, pardonnez-nous nos péchés », 12 juillet 2019 (site admis pour les prières courantes) | — | https://fsspx.news/fr/news/o-mon-jesus-pardonnez-nous-nos-peches-22114 |
 
+## Manuels d'archiconfréries en français (22 novembre 2026, non branchés au programme)
+
+Double lecture (couche texte du scan et Tesseract `fra`), désaccords et fins de page tranchés sur l'image ; audit et
+proposition d'intégration : `docs/audits/ARCHICONFRERIES_FR_2026-11-22.md`.
+
+| Texte | Source | Pages | Accès |
+|---|---|---|---|
+| Litanies de la sainte Face tirées de l'Écriture (latin-français), consécration à l'usage des membres, acte d'amour, deux actes de réparation, louanges de la sainte Face, louanges au saint Nom de Dieu, couronnes du saint Nom de Dieu et du saint Nom de Jésus, sept Ave à la Mère de douleurs (`janvier:*`, 10 pièces) | Abbé P.-D. Janvier, *Manuel de l'Archiconfrérie de la Sainte-Face*, 3e éd., Tours, Bureau de l'Oratoire, 1895, approuvé par le cardinal Meignan | 143-150, 160-166, 178-180, 234-237, 245 | bibliotheque-catholique.com (PDF Google) |
+| Exercice de louanges pour chaque jour de la semaine (saint Alphonse), consécration des œuvres de la journée, oraison pour se consacrer au sacré Cœur de Marie, litanies du saint Cœur de Marie, prière d'une mère, prière pour le salut de la France (`desgenettes:*`, 6 pièces) | Dufriche-Desgenettes, *Manuel d'instructions et de prières… de l'Archiconfrérie du très-saint et immaculé Cœur de Marie*, 13e éd., Paris, Sagnier et Bray, 1852 ; statuts autorisés par Mgr de Quélen, 16 déc. 1836 | 435-453 | archive.org `manueldinstruct00dufrgoog` |
+| Offrande de l'Heure de Garde, très précieuse Offrande, acte d'oblation, adoration réparatrice, rénovation de l'enrôlement, prière au Cœur blessé par la lance, amende honorable, prière à Marie au pied de la Croix, prière réparatrice, consécration au Cœur de Jésus (`garde1886:*`, 10 pièces) | *Manuel de l'Archiconfrérie de la Garde d'Honneur du Sacré Cœur de Jésus*, 9e éd., Bourg-en-Bresse, Monastère de la Visitation, 1886 ; approbation de l'évêque de Belley, 23 mars 1883 | 131-151 | Google Livres `YxAtAYVrCuwC` (copie PDF du même scan : saint-eugene.net) |
+
 ## Manuels d'archiconfréries en anglais (22 novembre 2026, relus sur l'image, à valider)
 
 Décision de l'utilisateur du 22 nov. ; détail, tables des matières et proposition d'intégration :
