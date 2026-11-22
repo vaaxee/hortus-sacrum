@@ -37,8 +37,15 @@
 |---|---|---|
 | *Breviarium Romanum*, heures complètes (Matines à Complies), latin, chaque jour de l'année liturgique 2026-2027 | Divinum Officium, version « Divino Afflatu - 1954 » (rubriques de saint Pie X, 1911, avec les changements jusqu'en 1954, sans ceux de 1955 ni de 1960) ; texte produit par le moteur du site lui-même, exécuté hors ligne sur le dépôt épinglé (commit `454a86ea`) | https://github.com/DivinumOfficium/divinum-officium ; `engine/office/breviaire.py` → `data/office/breviaire/` |
 
-Le français n'est pas donné : les fichiers français de DO ne disent pas leur édition (REFONTE § 5.5). Une édition bilingue
-ancienne reste à trouver.
+Le français n'est pas donné : les fichiers français de DO ne disent pas leur édition (REFONTE § 5.5). Éditions bilingues
+anciennes identifiées le 22 nov. (`docs/audits/BREVIAIRE_FRANCAIS_2026-11-22.md`) : Fillion, *Le nouveau psautier du
+Bréviaire romain*, 7e éd., Lecoffre-Gabalda, 1917 (archive.org `lenouveaupsautie00gl`) pour les psaumes ; Hugueny, *Le
+Bréviaire romain, textes latins et français*, Labergerie, 1934 (rééd. 1947 ; archive.org `le-breviaire-romain-000001439`
+et fascicules) pour le reste. Rien n'est encore transcrit pour le Bréviaire.
+
+| Texte | Source | Accès |
+|---|---|---|
+| *Officium parvum B.M.V.*, français des Complies et des antiennes finales (41 paragraphes alignés sur `data/office/parvum.json`, proposition non branchée) | *Petit office de la Sainte Vierge et des morts…*, Montréal, 1905, « Permis d'imprimer » de Mgr Zotique Racicot, aux. de Montréal, 4 juin 1905 ; latin-français en regard, traducteur non nommé ; pp. 36-58 ; double lecture (ABBYY, Tesseract) puis relecture de chaque page sur l'image | archive.org `cihm_98272` (images n37-n59) → `data/office/parvum-fr.json` ; contrôle `engine/office/test_parvum_fr.py` |
 
 ## Étape 9 — Méditations et lectures
 
