@@ -20,9 +20,13 @@ Les points réglés sont gardés pour l'historique. Dernière mise à jour : 22 
 ## Restent ouverts
 - **Bréviaire romain et Officium parvum en français (édition bilingue ancienne)** : recherche du 22 nov.,
   `docs/audits/BREVIAIRE_FRANCAIS_2026-11-22.md`. *Petit office* : retenu **Montréal 1905** (archive.org `cihm_98272`,
-  permis d'imprimer de Mgr Racicot) ; **Complies et antiennes finales transcrites** (`data/office/parvum-fr.json`,
-  41 paragraphes sur 224, non branché) ; restent Matines, Laudes, Prime, Tierce, Sexte, None, Vêpres, et le verset
-  *Angelus Domini* (para. 12) qui a deux traductions selon l'heure. Écartés : Tournai 1875 (latin seul), recueils
+  permis d'imprimer de Mgr Racicot) ; **toutes les heures transcrites** (`data/office/parvum-fr.json`, 201 paragraphes
+  alignés sur 224, non branché) ; **restent 12 paragraphes illisibles sur le scan** (marge droite coupée par la prise de
+  vue ou impression effacée, mots entiers manquants) : ouverture et psaume 92 de Laudes (p. 108, image n112), psaumes 125
+  et 126 de None (pp. 170-172, n174 et n176), oraisons « De la Purification à l'Avent » de Prime (p. 146, n150) et de
+  Sexte (p. 168, n172) ; il faut un autre exemplaire (Canadiana, BAnQ, imprimé). Reste aussi à décider comment
+  représenter un paragraphe latin que l'édition traduit différemment selon l'heure (para. 12 et autres « aligné en
+  partie »). Écartés : Tournai 1875 (latin seul), recueils
   canadiens de 1873-1915 (latin seul pour l'office). Piste : Dom G. Froment, *Le Petit office de la Sainte Vierge expliqué
   et commenté*, édition latine-française, Ligugé, 1893 (*imprimatur* de Poitiers), vu seulement sur Scribd (non admis) :
   scan libre à trouver (Gallica inaccessible depuis l'environnement, quota Google Livres épuisé). *Bréviaire* : proposés

@@ -45,7 +45,7 @@ et fascicules) pour le reste. Rien n'est encore transcrit pour le Bréviaire.
 
 | Texte | Source | Accès |
 |---|---|---|
-| *Officium parvum B.M.V.*, français des Complies et des antiennes finales (41 paragraphes alignés sur `data/office/parvum.json`, proposition non branchée) | *Petit office de la Sainte Vierge et des morts…*, Montréal, 1905, « Permis d'imprimer » de Mgr Zotique Racicot, aux. de Montréal, 4 juin 1905 ; latin-français en regard, traducteur non nommé ; pp. 36-58 ; double lecture (ABBYY, Tesseract) puis relecture de chaque page sur l'image | archive.org `cihm_98272` (images n37-n59) → `data/office/parvum-fr.json` ; contrôle `engine/office/test_parvum_fr.py` |
+| *Officium parvum B.M.V.*, français de toutes les heures (201 paragraphes alignés sur 224 de `data/office/parvum.json`, 12 illisibles sur le scan ; proposition non branchée) | *Petit office de la Sainte Vierge et des morts…*, Montréal, 1905, « Permis d'imprimer » de Mgr Zotique Racicot, aux. de Montréal, 4 juin 1905 ; latin-français en regard, traducteur non nommé ; pp. 10-180 ; double lecture (ABBYY, Tesseract) puis relecture de chaque page sur l'image | archive.org `cihm_98272` (images n11-n184, pages françaises) → `data/office/parvum-fr.json` ; contrôle `engine/office/test_parvum_fr.py` |
 
 ## Étape 9 — Méditations et lectures
 

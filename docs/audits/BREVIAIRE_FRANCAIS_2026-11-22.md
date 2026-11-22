@@ -96,9 +96,24 @@ faisable, mais il faut d'abord découper Fillion par verset (OCR à relire, mise
 
 - `data/office/parvum-fr.json` (proposition, **non branchée** : ni chargeur, ni `seed.mjs`, ni affichage) : une entrée par
   paragraphe latin de `parvum.json` (224), avec `la_sha1`, `statut`, `page`, `fr`, `note`, `lecture`.
-  - **Complies et antiennes finales, pp. 36-58 de l'édition** : 41 paragraphes alignés (indices 1, 3-14, 16, 18-44 ;
-    le 12 « aligné en partie »), 4 titres de DO sans équivalent (0, 2, 15, 17) ;
-  - 179 paragraphes (Matines, Laudes, Prime, Tierce, Sexte, None, Vêpres : indices 45-223) : « à transcrire ».
+  - **état au 22 nov. au soir : 201 paragraphes alignés sur 224** (159 « aligné », 42 « aligné en partie »),
+    11 sans équivalent (titres ou rubriques de DO que l'édition n'imprime pas, et le verset de l'Avent *Hodie scietis*,
+    para. 120, absent de l'édition), **12 « à transcrire »** (voir § 5) ;
+  - par heure : Complies et antiennes finales (pp. 36-58), Vêpres (pp. 10-36), Laudes (pp. 108-136), Prime, Tierce,
+    Sexte, None (pp. 138-180), **Matines (pp. 60-106)** : invitatoire et psaume 94, hymne *Quem terra*, psaumes des trois
+    nocturnes avec leurs antiennes, Pater et absolution, bénédictions, leçons de l'Avent (S. Luc) et « de Noël à l'Avent »
+    (Ecclésiastique) avec leurs répons, *Te Deum* ;
+  - « aligné en partie » : un même paragraphe latin imprimé sous plusieurs formes selon l'heure (la forme retenue et
+    les autres sont dans la note), formes pascales avec *alleluia* que l'édition n'imprime pas (para. 123, 124),
+    répons dont DO omet le Gloria alors que l'édition ne l'imprime qu'avec (122, 135), ouverture de Matines dont
+    l'édition omet le répons « Hâtez-vous… » (89, 121, 132).
+  - Écarts de l'imprimé gardés et notés (Matines) : « le Très-Haut a sacrifié son tabernacle » (Ps 45, p. 78, pour
+    *sanctificavit*), « Eaint-Esprit » (p. 90), « Les fille de Tyr » (p. 76), « Rendons grâce à Dieu » (p. 92),
+    « Vous. Seigneur » (p. 92), « Deuxieme », « Troisieme » sans accent ; Pater de la p. 72 « Et ne nous induisez pas
+    en tentation » et de la p. 90 « Et ne nous laissez pas succomber à la tentation » (la p. 90 est retenue, l'autre
+    notée). Lectures douteuses de Matines : ponctuation effacée après « Saint-Esprit » (Gloria de l'invitatoire, p. 62)
+    et après « ô Dieu » (premier verset du *Te Deum*, p. 96), rendues par deux-points et virgule ; répons *Missus est*
+    (p. 100) sous une impression tachée, lettres restituées par le contexte (liste dans le champ `lecture`).
 - Méthode : texte ABBYY d'archive.org et Tesseract (fra, `--psm 6`) comparés mot à mot à la transcription, puis chaque
   page française (images n37 à n59) relue sur l'image. Lectures sous une impression abîmée, sûres par le contexte :
   « Que vou[s] destinez … à toutes les n[ati]ons » (p. 42), « l'hér[i]tage céleste », « temple [d]e », « chastes
@@ -109,9 +124,12 @@ faisable, mais il faut d'abord découper Fillion par verset (OCR à relire, mise
 
 ## 5. Ce qui reste
 
-1. Petit office : Vêpres (images n11-n36), Matines (n61-n110), Laudes (n111-n142), Prime, Tierce, Sexte, None
-   (n143-n184 ; repérage d'après les titres courants, à préciser), même méthode ; prévoir de relire à l'image les pages dont la couche ABBYY est illisible (n53, n59, n67,
-   n71, n75, n81, n89, n104, n112, n142, n148…).
+1. Petit office : **12 paragraphes restent « à transcrire »**, faute d'un scan lisible : la prise de vue de la microfiche
+   coupe la marge droite ou l'impression est effacée, et il manque des mots entiers. Ouverture de Laudes (46, 63) et
+   psaume 92 avec ses antiennes (47, 66, 71, 80), p. 108 (image n112) ; psaume 125 de None (137, 145, 149), p. 170
+   (n174) ; psaume 126 de None (138), p. 172 (n176) ; oraison de Prime « De la Purification à l'Avent » (162), p. 146
+   (n150) ; oraison de Sexte (174), p. 168 (n172). archive.org n'a pas d'autre exemplaire de cette édition ; il faut un
+   autre scan (Canadiana, BAnQ) ou l'imprimé.
 2. Décider comment représenter un paragraphe latin qui a deux traductions selon le contexte (para. 12) : soit une
    variante par heure dans `parvum-fr.json`, soit dédoubler le paragraphe dans `parvum.py`.
 3. Brancher l'affichage (chargeur dans `app/src/lib/office/parvum.ts`, `seed.mjs`, test mot pour mot) quand l'office
