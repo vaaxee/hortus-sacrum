@@ -966,6 +966,135 @@
       "grace": ["charite"],
       "personne": ["soi-meme", "amis", "ennemis", "dirigeants"],
       "devinee": ["fin", "objet", "grace", "personne"]
+    },
+    "beringer:ames-purgatoire-dimanche": {
+      "fin": ["intercession"],
+      "objet": ["precieux-sang", "ames-du-purgatoire"],
+      "grace": ["salut"],
+      "personne": ["defunts"],
+      "forme": ["oraison"],
+      "devinee": ["fin", "objet", "grace", "personne", "forme"]
+    },
+    "bonamors1896:reflexion-dimanche": {
+      "fin": ["demande"],
+      "grace": ["perseverance-finale", "salut"],
+      "personne": ["soi-meme"],
+      "forme": ["meditation"],
+      "devinee": ["fin", "grace", "personne", "forme"]
+    },
+    "beringer:ames-purgatoire-lundi": {
+      "fin": ["intercession"],
+      "objet": ["precieux-sang", "ames-du-purgatoire"],
+      "grace": ["salut"],
+      "personne": ["defunts"],
+      "forme": ["oraison"],
+      "devinee": ["fin", "objet", "grace", "personne", "forme"]
+    },
+    "bonamors1896:reflexion-lundi": {
+      "fin": ["demande"],
+      "grace": ["perseverance-finale", "salut"],
+      "personne": ["soi-meme"],
+      "forme": ["meditation"],
+      "devinee": ["fin", "grace", "personne", "forme"]
+    },
+    "beringer:ames-purgatoire-mardi": {
+      "fin": ["intercession"],
+      "objet": ["precieux-sang", "ames-du-purgatoire"],
+      "grace": ["salut"],
+      "personne": ["defunts"],
+      "forme": ["oraison"],
+      "devinee": ["fin", "objet", "grace", "personne", "forme"]
+    },
+    "bonamors1896:reflexion-mardi": {
+      "fin": ["demande"],
+      "grace": ["perseverance-finale", "salut"],
+      "personne": ["soi-meme"],
+      "forme": ["meditation"],
+      "devinee": ["fin", "grace", "personne", "forme"]
+    },
+    "beringer:ames-purgatoire-mercredi": {
+      "fin": ["intercession"],
+      "objet": ["precieux-sang", "ames-du-purgatoire"],
+      "grace": ["salut"],
+      "personne": ["defunts"],
+      "forme": ["oraison"],
+      "devinee": ["fin", "objet", "grace", "personne", "forme"]
+    },
+    "bonamors1896:reflexion-mercredi": {
+      "fin": ["demande"],
+      "grace": ["perseverance-finale", "salut"],
+      "personne": ["soi-meme"],
+      "forme": ["meditation"],
+      "devinee": ["fin", "grace", "personne", "forme"]
+    },
+    "beringer:ames-purgatoire-jeudi": {
+      "fin": ["intercession"],
+      "objet": ["eucharistie", "ames-du-purgatoire"],
+      "grace": ["salut"],
+      "personne": ["defunts"],
+      "forme": ["oraison"],
+      "devinee": ["fin", "objet", "grace", "personne", "forme"]
+    },
+    "bonamors1896:reflexion-jeudi": {
+      "fin": ["demande"],
+      "grace": ["perseverance-finale", "salut"],
+      "personne": ["soi-meme"],
+      "forme": ["meditation"],
+      "devinee": ["fin", "grace", "personne", "forme"]
+    },
+    "beringer:ames-purgatoire-vendredi": {
+      "fin": ["intercession"],
+      "objet": ["precieux-sang", "ames-du-purgatoire"],
+      "grace": ["salut"],
+      "personne": ["defunts"],
+      "forme": ["oraison"],
+      "devinee": ["fin", "objet", "grace", "personne", "forme"]
+    },
+    "bonamors1896:reflexion-vendredi": {
+      "fin": ["demande"],
+      "grace": ["perseverance-finale", "salut"],
+      "personne": ["soi-meme"],
+      "forme": ["meditation"],
+      "devinee": ["fin", "grace", "personne", "forme"]
+    },
+    "beringer:ames-purgatoire-samedi": {
+      "fin": ["intercession"],
+      "objet": ["precieux-sang", "sacre-coeur", "sainte-vierge", "ames-du-purgatoire"],
+      "grace": ["salut"],
+      "personne": ["defunts"],
+      "forme": ["oraison"],
+      "devinee": ["fin", "objet", "grace", "personne", "forme"]
+    },
+    "bonamors1896:reflexion-samedi": {
+      "fin": ["demande"],
+      "grace": ["perseverance-finale", "salut"],
+      "personne": ["soi-meme"],
+      "forme": ["meditation"],
+      "devinee": ["fin", "grace", "personne", "forme"]
+    },
+    "beringer:pour-une-bonne-mort": {
+      "fin": ["demande"],
+      "objet": ["jesus-christ"],
+      "grace": ["perseverance-finale", "salut"],
+      "personne": ["soi-meme"],
+      "forme": ["litanie"],
+      "devinee": ["fin", "objet", "grace", "personne", "forme"]
+    },
+    "boylesve1882:petit-chapelet-precieux-sang": {
+      "fin": ["adoration", "reparation", "demande"],
+      "objet": ["precieux-sang", "passion"],
+      "grace": ["vertus"],
+      "personne": ["soi-meme"],
+      "forme": ["chapelet"],
+      "devinee": ["fin", "objet", "grace", "personne", "forme"]
+    },
+    "beringer:a-la-sainte-famille": {
+      "fin": ["demande"],
+      "objet": ["jesus-christ", "sainte-vierge", "saint-joseph"],
+      "grace": ["perseverance-finale"],
+      "personne": ["soi-meme"],
+      "forme": ["oraison"],
+      "devinee": ["fin", "objet", "grace", "personne", "forme"]
     }
   }
 }
