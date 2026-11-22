@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { goto } from '$app/navigation';
 	import { page } from '$app/state';
 	import { iso } from '#lib/calendrier.ts';
 	import { creer, db, enregistrer } from '#lib/db.ts';
@@ -112,6 +113,11 @@
 		if (existante) await enregistrer('notes', { ...existante, corps });
 		else if (corps.trim()) await creer<NoteJour>('notes', { id: k, origine: 'personnel', date, corps });
 	}
+	/** « Fait » : la ligne cochée, puis retour à la liste du jour, à cette ligne (décision du 22 nov.). */
+	async function faire(l: Ligne, f: number, n: number) {
+		await cocher(l, date, f, idsPratiques);
+		if (f + 1 >= n) await goto(`/${date === iso(new Date()) ? '' : `?date=${date}`}#ligne-${l.id}`);
+	}
 	const dateFr = $derived(new Date(date + 'T12:00:00').toLocaleDateString('fr-FR', { weekday: 'long', day: 'numeric', month: 'long' }));
 </script>
 
@@ -200,7 +206,7 @@
 			{@const n = recitations(ligne)}
 			{@const f = faites(ligne)}
 			<div class="fait">
-				<Case libelle="{ligne.titre} : fait" bind:cochee={() => f >= n, () => cocher(ligne, date, f, idsPratiques)} />
+				<Case libelle="{ligne.titre} : fait" bind:cochee={() => f >= n, () => faire(ligne, f, n)} />
 				<span>{n > 1 ? `Récitations faites : ${f} sur ${n}` : f ? 'Fait' : 'Marquer comme fait'}</span>
 			</div>
 		{/if}

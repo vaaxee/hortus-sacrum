@@ -165,3 +165,12 @@ classement relu.
 | `weber:demande-d-une-bonne-mort` | F : demande, intercession, propitiation ; O : sainte-vierge ; G : perseverance-finale ; P : pecheurs, mourants ; Fo : — | F : demande ; O : sainte-vierge ; G : perseverance-finale ; P : soi-meme ; Fo : oraison | F −intercession −propitiation ; P +soi-meme −mourants −pecheurs ; Fo +oraison |  |
 | `weber:neuvaine-immaculee-conception` | F : adoration, action-de-graces, reparation, demande, intercession, louange, propitiation ; O : trinite, jesus-christ, sainte-vierge, saint-esprit, anges, passion, saints ; G : salut, sanctification, vertus, preservation-du-peche, protection-et-sante ; P : soi-meme, ennemis, pecheurs ; Fo : litanie, oraison, neuvaine | F : action-de-graces, demande, intercession, louange ; O : trinite, sainte-vierge ; G : sanctification, preservation-du-peche ; P : soi-meme, eglise-et-pretres ; Fo : neuvaine | F −adoration −propitiation −reparation ; O −anges −jesus-christ −passion −saint-esprit −saints ; G −protection-et-sante −salut −vertus ; P +eglise-et-pretres −ennemis −pecheurs ; Fo −litanie −oraison |  |
 | `weber:priere-tres-saint-coeur-de-marie` | F : propitiation ; O : trinite, jesus-christ, sacre-coeur, sainte-vierge, coeur-immacule, anges, passion ; G : salut, perseverance-finale, vertus, preservation-du-peche, protection-et-sante, graces-temporelles ; P : ennemis ; Fo : — | F : demande ; O : sainte-vierge, coeur-immacule ; G : salut, perseverance-finale, vertus, protection-et-sante ; P : soi-meme, eglise-et-pretres ; Fo : oraison | F +demande −propitiation ; O −anges −jesus-christ −passion −sacre-coeur −trinite ; G −graces-temporelles −preservation-du-peche ; P +eglise-et-pretres +soi-meme −ennemis ; Fo +oraison | « ennemis » sont ceux de l'Église ; la protection est demandée pour l'Église |
+
+## Arbitrages de l'utilisateur (22 novembre, soir)
+
+- **Quinze oraisons de sainte Brigitte** : fin = demande, propitiation, réparation, action de grâces (avec les fins que
+  la tradition lui attribue) ; classement désormais entièrement relu.
+- **« Intercession » = prier pour autrui** : les motifs de `prog:angelus`, `prog:chapelet` et `prog:devotion-mardi`
+  passent à « demande » (le recours à Marie ou aux Anges n'est pas une intercession au sens de la matrice).
+- **Personne « pauvres-et-affliges »** ajoutée au vocabulaire (`dimensions.json`), utilisée par
+  `jardin:devoir-envers-les-pauvres-les-persecutes-les-affliges`.

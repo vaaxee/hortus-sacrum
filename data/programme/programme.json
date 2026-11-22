@@ -203,7 +203,7 @@
     {
       "id": "prog:angelus",
       "titre": "Angélus",
-      "motif": {"fins": ["louange", "intercession"], "objets": ["jesus-christ", "sainte-vierge"], "note": "sanctifier le matin, midi et le soir par le mystère de l'Incarnation ; Regina cæli au temps pascal"},
+      "motif": {"fins": ["louange", "demande"], "objets": ["jesus-christ", "sainte-vierge"], "note": "sanctifier le matin, midi et le soir par le mystère de l'Incarnation ; Regina cæli au temps pascal"},
       "revision": 1,
       "rang": "praecipua",
       "source": "Audit des dévotions, § 2.1 ; Regina cæli au temps pascal, les deux le samedi saint (Beringer 1925, n° 428)",
@@ -336,7 +336,7 @@
     {
       "id": "prog:chapelet",
       "titre": "Chapelet",
-      "motif": {"fins": ["demande", "intercession", "adoration"], "objets": ["sainte-vierge", "jesus-christ"], "note": "méditer les mystères du jour (méthodes de saint Dominique et de Montfort)"},
+      "motif": {"fins": ["demande", "adoration"], "objets": ["sainte-vierge", "jesus-christ"], "note": "méditer les mystères du jour (méthodes de saint Dominique et de Montfort)"},
       "revision": 2,
       "rang": "praecipua",
       "duree": 20,
@@ -845,7 +845,7 @@
     {
       "id": "prog:devotion-mardi",
       "titre": "Dévotion du mardi : les saints Anges",
-      "motif": {"fins": ["demande", "intercession"], "objets": ["anges"], "note": "dédicace du mardi : les saints Anges, leur garde et leur protection (cycles.json)"},
+      "motif": {"fins": ["demande"], "objets": ["anges"], "note": "dédicace du mardi : les saints Anges, leur garde et leur protection (cycles.json)"},
       "revision": 2,
       "quand": {
         "jours_semaine": [2]
