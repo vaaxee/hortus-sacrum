@@ -15,11 +15,13 @@ const REF = JSON.parse(readFileSync(new URL('./references/pages-composees.json',
 
 /** Le texte de la page, sans les petites pratiques insérées (fin de dizaine) ni celles des autres entrées. */
 function page(l: Ligne, de?: (s: Ligne['sections'][number]) => boolean): string {
-	return l.sections
-		.filter((s) => s.origine === l.id && (!de || de(s)))
-		// une partie de la page (titre replié) tient lieu du titre « ## … » de la page livrée
-		.map((s) => (s.genre === 'editorial' ? (s.contenu ?? '') : s.genre === 'partie' ? `## ${s.contenu}` : contenuDe(s, corps)))
-		.join('\n\n');
+	return (
+		l.sections
+			.filter((s) => s.origine === l.id && (!de || de(s)))
+			// une partie de la page (titre replié) tient lieu du titre « ## … » de la page livrée
+			.map((s) => (s.genre === 'editorial' ? (s.contenu ?? '') : s.genre === 'partie' ? `## ${s.contenu}` : contenuDe(s, corps)))
+			.join('\n\n')
+	);
 }
 const jourDeSemaine = (k: number) => CALENDRIER.find((j) => new Date(j.date + 'T12:00:00').getDay() === k)!;
 const ligneDu = (k: number, id: string) =>
