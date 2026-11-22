@@ -4,6 +4,7 @@
 	import { db } from '#lib/db.ts';
 	import Icone from '#lib/design/Icone.svelte';
 	import Ornement from '#lib/design/Ornement.svelte';
+	import ModeEglise from '#lib/ModeEglise.svelte';
 	import Office from '#lib/Office.svelte';
 	import { breviaireDuJour, chargerCommuns, prechargerSemaine, type JourBreviaire } from '#lib/office/breviaire.ts';
 	import { chargerParvum, parvumDuJour, type DonneesParvum } from '#lib/office/parvum.ts';
@@ -72,7 +73,10 @@
 <svelte:head><title>Office — Hortus Sacrum</title></svelte:head>
 
 <main class="page entree">
-	<a class="retour" href="/lecture{q}"><Icone nom="retour" taille={16} /> Lecture</a>
+	<div class="barre-page">
+		<a class="retour" href="/lecture{q}"><Icone nom="retour" taille={16} /> Lecture</a>
+		<ModeEglise />
+	</div>
 	<div class="tete-page">
 		<p class="etiquette">Office · {jourFr}</p>
 		<h1>{BREVIAIRES.find((b) => b.cle === breviaire)?.nom}</h1>
