@@ -91,7 +91,7 @@
    "page": "40",
    "fr": "O Jésus, né d'une Vierge, soyez glorifié avec le Père et le Saint-Esprit, dans toute la suite des siècles.\nAinsi soit-il.",
    "statut": "aligné",
-   "note": "L'hymne est traduite en prose, une strophe par paragraphe. Laudes (p. 126) impriment la même doxologie."
+   "note": "L'hymne est traduite en prose, une strophe par paragraphe. Laudes (p. 126) impriment la même doxologie. Matines (p. 64) aussi."
   },
   {
    "i": 10,
@@ -729,68 +729,87 @@
   {
    "i": 89,
    "la_sha1": "50b9b46f2388",
-   "fr": null,
-   "statut": "à transcrire"
+   "page": "60",
+   "fr": "℣. Seigneur, vous ouvrirez mes lèvres.\n℟. Et ma bouche annoncera vos louanges.\n℣. O Dieu, venez à mon aide.\nGloire soit au Père, etc.\nLouez Dieu.",
+   "statut": "aligné en partie",
+   "note": "NON ALIGNÉ EN PARTIE : l'édition n'imprime pas le répons « ℟. Hâtez-vous, Seigneur, de me secourir » après « O Dieu, venez à mon aide » (p. 60), et abrège le Gloria Patri (« Gloire soit au Père, etc. »). Elle donne « Louez Dieu, ou Louange à vous, Seigneur, Roi d'éternelle gloire » : « Louez Dieu » rend « Allelúja »."
   },
   {
    "i": 90,
    "la_sha1": "f0855bf75672",
-   "fr": null,
-   "statut": "à transcrire"
+   "page": "60",
+   "fr": "### Invitatoire",
+   "statut": "aligné"
   },
   {
    "i": 91,
    "la_sha1": "a1df5acd2ca0",
-   "fr": null,
-   "statut": "à transcrire"
+   "page": "60-62",
+   "fr": "Je vous salue, Marie, pleine de grâces, le Seigneur est avec vous.\nJe vous salue, Marie, pleine de grâces, le Seigneur est avec vous.\n[r]Psaume 94.[/r]\nVenez, réjouissons-nous dans le Seigneur, faisons éclater notre joie devant Dieu notre Sauveur: présentons-nous à lui avec des chants d'allégresse, et célébrons sa grandeur.\nJe vous salue, Marie, pleine de grâces, le Seigneur est avec vous.\nCar le Seigneur est le grand Dieu, le grand Roi, élevé au-dessus de toute puissance: le Seigneur n'a pas rejeté son peuple, lui qui tient dans sa main toute l'étendue de l'univers, et qui voit les fondements cachés des montagnes.\nLe Seigneur est avec vous.\nLa mer est à lui, c'est lui qui l'a faite, et ses mains ont fondé la terre: venez, adorons-le, prosternons-nous à ses pieds: pleurons devant le Seigneur; c'est lui qui nous a créés, il est le Seigneur notre Dieu; nous sommes son peuple et son troupeau qu'il nourrit dans ses pâturages.\nJe vous salue, Marie, pleine de grâces: le Seigneur est avec vous.\nSi vous entendez aujourd'hui sa voix, gardez-vous bien d'endurcir vos cœurs, comme au jour où le peuple le tenta dans le désert. C'est là, dit-il, que vos pères m'ont tenté pour m'éprouver, et ils virent mes œuvres.\nLe Seigneur est avec vous.\nPendant quarante ans je me suis tenu auprès de ce peuple, et j'ai dit: Leurs cœurs sont toujours égarés; ils n'ont pas connu mes voies, et j'ai juré dans ma colère qu'ils n'entreraient pas dans le lieu de mon repos.\nJe vous salue, Marie, pleine de grâces: le Seigneur est avec vous.\nGloire au Père, au Fils, et au Saint-Esprit: Maintenant et toujours, comme dès le commencement, et dans tous les siècles des siècles. Ainsi soit-il.\nLe Seigneur est avec vous.\nJe vous salue, Marie, pleine de grâces: Le Seigneur est avec vous.",
+   "statut": "aligné",
+   "note": "Psaume 94 traduit en prose, l'invitatoire répété comme l'édition l'imprime (sans « Ant. ») ; Gloria imprimé en entier.",
+   "lecture": "p. 62 : impression très pâle à droite : « Saint-Esprit[:] » (ponctuation effacée), « pleine de grâces[:] » (deux fois), « peu[ple] », « pâtu[rages] », « co[mmen]cement », « [l]es siècles » ; lecture sûre par le contexte, sauf la ponctuation après « Saint-Esprit », invisible (deux-points d'après la majuscule qui suit)."
   },
   {
    "i": 92,
    "la_sha1": "7e7e76874b7b",
-   "fr": null,
-   "statut": "à transcrire"
+   "page": "64",
+   "fr": "Marie porte dans son sein celui que le ciel, la terre et la mer servent, adorent et annoncent: le souverain Maître de l'univers.",
+   "statut": "aligné",
+   "note": "L'hymne est traduite en prose, une strophe par paragraphe ; la doxologie (p. 64) est celle du paragraphe 9."
   },
   {
    "i": 93,
    "la_sha1": "908ae4794946",
-   "fr": null,
-   "statut": "à transcrire"
+   "page": "64",
+   "fr": "Celui à qui le soleil, la lune et toutes choses obéissent pendant la durée des siècles, est porté dans les entrailles d'une vierge rendue féconde par la grâce céleste.",
+   "statut": "aligné"
   },
   {
    "i": 94,
    "la_sha1": "49316a6a2bc2",
-   "fr": null,
-   "statut": "à transcrire"
+   "page": "64",
+   "fr": "O bienheureuse Mère, dans le sein de laquelle s'est renfermé le souverain Créateur, qui tient l'univers entier dans sa main!",
+   "statut": "aligné"
   },
   {
    "i": 95,
    "la_sha1": "66ac1cddcb39",
-   "fr": null,
-   "statut": "à transcrire"
+   "page": "64",
+   "fr": "Bienheureuse Vierge, qu'un envoyé du ciel a visitée, que le Saint-Esprit a rendue féconde, et qui a donné naissance au Désiré des nations!",
+   "statut": "aligné"
   },
   {
    "i": 96,
    "la_sha1": "4ea177ea9bcc",
    "fr": null,
-   "statut": "à transcrire"
+   "statut": "sans équivalent",
+   "note": "Titre de section de DO (« Psalmi cum lectionibus ») : l'édition imprime seulement le titre de chaque nocturne, repris dans le paragraphe suivant."
   },
   {
    "i": 97,
    "la_sha1": "c271ef581ca6",
-   "fr": null,
-   "statut": "à transcrire"
+   "page": "64-66",
+   "fr": "[r]Premier Nocturne.[/r]\n[r]Dimanche, Lundi et Jeudi.[/r]\n[r]Ant.[/r] Vous êtes bénie.\n[r]Psaume 8.[/r]\nDieu, notre souverain Seigneur, que votre nom est digne d'être admiré dans toute la terre!\nVotre gloire s'élève au-dessus des cieux.\nVous avez tiré la louange la plus parfaite de la bouche des enfants et de ceux qui sont encore à la mamelle, pour confondre la haine et la vengeance de vos ennemis.\nJe verrai vos cieux, ouvrage de vos doigts, la lune et les étoiles, que vous avez formées.\nQu'est-ce que l'homme pour que vous vous souveniez de lui? Qu'est-ce que le fils de l'homme, pour que vous le visitiez?\nVous l'avez placé un peu au-dessous des Anges, vous l'avez couronné de gloire et d'honneur, vous lui avez donné l'empire sur les œuvres de vos mains.\nVous lui avez tout soumis, les animaux qui le servent et ceux qui errent dans la campagne;\nLes oiseaux du ciel, et les poissons de la mer qui parcourent ses humides sentiers.\nO Seigneur notre Dieu, que votre nom est digne d'être admiré dans toute la terre!\nGloire soit au Père, etc.\n[r]Ant.[/r] Vous êtes bénie entre toutes les femmes, et le fruit de vos entrailles est béni.",
+   "statut": "aligné",
+   "note": "Composé comme l'édition l'imprime : incipit de l'antienne avant le psaume, « Gloire soit au Père, etc. », antienne entière après le psaume."
   },
   {
    "i": 98,
    "la_sha1": "b551e417b467",
-   "fr": null,
-   "statut": "à transcrire"
+   "page": "66-70",
+   "fr": "[r]Ant.[/r] Sainte Mère de Dieu\n[r]Psaume 18.[/r]\nLes cieux racontent la gloire de Dieu, et le firmament publie les œuvres de ses mains.\nLe jour révèle au jour sa puissance, et la nuit l'annonce à la nuit.\nIl n'est point de langue au monde dans laquelle on n'entende ce langage des cieux.\nC'est une parole qui a retenti par toute la terre, une voix qui a pénétré jusqu'aux extrémités de l'univers.\nDieu a placé sa tente dans le soleil; cet astre est semblable à un époux qui sort de sa couche nuptiale.\nIl s'est élancé comme un géant pour parcourir sa carrière: il est parti des hauteurs du ciel.\nIl est arrivé à l'autre extrémité, et rien ne peut se dérober à ses rayons.\nLa loi de Dieu est sans tache, elle convertit les âmes; la parole du Seigneur est fidèle, elle donne la sagesse aux petits.\nLes justices du Seigneur sont pures; les ordonnances du Seigneur sont lumineuses, elles éclairent les esprits.\nLa crainte du Seigneur est sainte, elle subsiste dans tous les siècles: les jugements du Seigneur sont vrais, ils se justifient par eux-mêmes.\nLa loi du Seigneur est plus désirable que l'or, plus précieuse que les pierreries, plus douce que le miel le plus pur.\nVotre serviteur, ô mon Dieu, garde vos ordonnances; une grande récompense attend ceux qui les observent.\nMais qui peut comprendre tous les égarements du cœur? Purifiez-moi, Seigneur, des fautes que j'ignore, et ne permettez pas que je participe à celles d'autrui.\nSi je résiste à leurs exemples contagieux, je serai pur et à l'abri des plus grands péchés.\nAlors les paroles de ma bouche vous seront agréables, et les méditations de mon cœur s'élèveront sans cesse vers vous.\nSeigneur, vous êtes mon soutien et mon Sauveur.\nGloire soit au Père, etc.\n[r]Ant.[/r] Sainte Mère de Dieu, vous avez répandu une odeur suave, pareille à celle de la myrrhe la plus excellente.",
+   "statut": "aligné",
+   "note": "Incipit de l'antienne sans point final, tel qu'imprimé (p. 66). L'antienne française commence par « Sainte Mère de Dieu » (ordre des mots de la traduction ; latin « Sicut myrrha »).",
+   "lecture": "p. 68 : « l[e]s âmes » (lettre brisée), « [c]rainte » ; p. 70 : un point parasite après « autrui. » n'est pas repris."
   },
   {
    "i": 99,
    "la_sha1": "811c270cf736",
-   "fr": null,
-   "statut": "à transcrire"
+   "page": "70-72",
+   "fr": "[r]Ant.[/r] Chantez de saints cantiques.\n[r]Psaume 23.[/r]\nLa terre et tout ce qu'elle contient est au Seigneur; le globe terrestre et tous ceux qui l'habitent sont à lui;\nCar c'est lui qui a affermi la terre au-dessus des eaux, et qui l'a élevée au-dessus du niveau des fleuves.\nQui montera sur la montagne du Seigneur? qui demeurera dans son sanctuaire?\nCelui qui a les mains innocentes et le cœur pur, qui n'a pas reçu son âme en vain, qui n'a pas été parjure et trompeur envers son prochain.\nCelui-là recevra la bénédiction du Seigneur, et la miséricorde de Dieu son Sauveur.\nTelle est la race de ceux qui cherchent le Seigneur, qui cherchent la présence du Dieu de Jacob.\nPrinces, ouvrez vos portes; portes éternelles, ouvrez-vous, et le Roi de gloire entrera.\nQuel est ce Roi de gloire? C'est le Seigneur fort et puissant, le Dieu qui triomphe dans les combats.\nPrinces, ouvrez vos portes; portes éternelles, ouvrez-vous, et le Roi de gloire entrera.\nQuel est ce Roi de gloire? Ce Roi de gloire est le Dieu des armées.\nGloire soit au Père, etc.\n[r]Ant.[/r] Chantez de saints cantiques pour honorer celle qui est devenue mère sans cesser d'être vierge.",
+   "statut": "aligné",
+   "lecture": "p. 72 : « h[o]norer », « [o]uvrez-vous », « [v]ierge » : lettres brisées, lecture sûre par le contexte."
   },
   {
    "i": 100,
@@ -798,217 +817,289 @@
    "page": "26",
    "fr": "℣. La grâce est répandue sur vos lèvres.\n℟. C'est pourquoi Dieu vous a bénie pour l'éternité.",
    "statut": "aligné en partie",
-   "note": "NON ALIGNÉ EN PARTIE : une autre heure imprime une autre forme de ce texte. Texte des Vêpres (p. 26). Tierce (p. 156) imprime une autre traduction : « ℣. La grâce brille sur vos lèvres. ℟. Le Seigneur vous a bénie pour l'éternité. »"
+   "note": "NON ALIGNÉ EN PARTIE : une autre heure imprime une autre forme de ce texte. Texte des Vêpres (p. 26). Tierce (p. 156) imprime une autre traduction : « ℣. La grâce brille sur vos lèvres. ℟. Le Seigneur vous a bénie pour l'éternité. » Matines (pp. 72, 82, 90) impriment la forme des Vêpres."
   },
   {
    "i": 101,
    "la_sha1": "d3b7a5a72e60",
-   "fr": null,
-   "statut": "à transcrire"
+   "page": "90",
+   "fr": "Notre Père, [r]le reste à voix basse jusqu'à:[/r]\n℣. Et ne nous laissez pas succomber à la tentation.\n℟. Mais délivrez-nous du mal.\n[r]Absolution.[/r]\nQue par les prières et les mérites de la bienheureuse Marie toujours vierge, et de tous les Saints, le Seigneur nous conduise au royaume des cieux. ℟. Ainsi soit-il.",
+   "statut": "aligné",
+   "note": "Texte de la p. 90 (fin du premier nocturne, où renvoient les pp. 72 et 82). La p. 72 imprime une autre forme : « Notre Père, le reste bas jusqu'à: ℣. Et ne nous induisez pas en tentation. ℟. Mais délivrez-nous du mal. L'Absolution Que par les prières, … page 90. » ; la p. 100 (Avent) imprime « de la bienheureuse Marie, toujours vierge, » (avec virgule).",
+   "lecture": "p. 90 : « t[o]ujours » (o brisé)."
   },
   {
    "i": 102,
    "la_sha1": "5768c4fe1e54",
-   "fr": null,
-   "statut": "à transcrire"
+   "page": "90",
+   "fr": "℣. Mon père, donnez-moi votre bénédiction.",
+   "statut": "aligné",
+   "note": "Imprimé six fois (pp. 90, 92, 94, 100, 102, 104) ; « Mon Père » avec majuscule pp. 92 et 94."
   },
   {
    "i": 103,
    "la_sha1": "d31d7cd27a1d",
-   "fr": null,
-   "statut": "à transcrire"
+   "page": "90",
+   "fr": "Bénédiction. — Que la Vierge Marie nous obtienne la bénédiction de son divin Fils.\n℟. Ainsi soit-il.",
+   "statut": "aligné",
+   "note": "Même texte p. 100 (« Ainsi soit il », sans trait d'union)."
   },
   {
    "i": 104,
    "la_sha1": "13112775df35",
-   "fr": null,
-   "statut": "à transcrire"
+   "page": "100",
+   "fr": "[r]Première leçon. S. Luc, I, 26-28.[/r]\nL'Ange Gabriel fut envoyé par Dieu en une ville de Galilée appelée Nazareth, à une Vierge qu'un homme de la maison de David, nommé Joseph, avait épousée: et cette Vierge s'appelait Marie. L'Ange étant entré dans le lieu où elle était, lui dit: Je vous salue, pleine de grâces: le Seigneur est avec vous; vous êtes bénie entre toutes les femmes. Vous, Seigneur, ayez pitié de nous.\n℟. Rendons grâces à Dieu.",
+   "statut": "aligné"
   },
   {
    "i": 105,
    "la_sha1": "0840c9709ca6",
-   "fr": null,
-   "statut": "à transcrire"
+   "page": "100-102",
+   "fr": "℟. L'Ange Gabriel fut envoyé à la Vierge Marie, épouse de Joseph, et lui annonça ce que Dieu lui avait ordonné de lui dire. La Vierge étant surprise de l'éclat de sa lumière, il lui dit: Ne craignez point, Marie; vous avez trouvé grâce devant le Seigneur:\n* Vous allez concevoir et vous mettrez au monde un fils qui sera appelé le Fils du Très-Haut.\n℣. Le Seigneur Dieu lui donnera le trône de David son père, et il régnera éternellement sur la maison de Jacob.\n* Vous allez, etc.",
+   "statut": "aligné",
+   "lecture": "p. 100 (couche ABBYY illisible, relue sur l'image) : le répons « L'Ange Gabriel fut envoyé… » est imprimé sous une impression tachée et brisée : « Gab[r]iel f[u]t », « [V]ierge », « [é]pouse de [J]oseph », « an[n]on[ç]a », « [d]e lui dire », « s[a] lumière », « vo[u]s ave[z] », « devan[t] l[e] Seigneur » ; la ponctuation après « Marie » (point-virgule) et après « Seigneur » (deux-points) est entamée. « Ainsi soit il » sans trait d'union : tel qu'imprimé. p. 102 : « trône [d]e » (au bord), « [a]ppelé » : lecture sûre par le contexte. Le répons imprime ici « le fruit qui naîtra », p. 104 « le fruit saint qui naîtra » : tels qu'imprimés."
   },
   {
    "i": 106,
    "la_sha1": "0d03ae913a9f",
-   "fr": null,
-   "statut": "à transcrire"
+   "page": "92",
+   "fr": "Bénédiction. — Que la Vierge des vierges intercède pour nous auprès du Seigneur.\n℟. Ainsi soit-il.",
+   "statut": "aligné",
+   "note": "Même texte p. 102."
   },
   {
    "i": 107,
    "la_sha1": "f369c333a7ce",
-   "fr": null,
-   "statut": "à transcrire"
+   "page": "102",
+   "fr": "[r]Deuxième leçon. S. Luc, I, 29-33.[/r]\nMarie fut troublée en entendant ces paroles, et elle cherchait ce que voulait dire cette salutation. L'Ange lui dit: Ne craignez point, Marie, car vous avez trouvé grâce devant Dieu. Vous allez concevoir dans votre sein, et vous mettrez au monde un fils à qui vous donnerez le nom de Jésus. Il sera grand, on l'appellera le Fils du Très-Haut: le Seigneur Dieu lui donnera le trône de David son père: il régnera éternellement sur la maison de Jacob, et son règne n'aura pas de fin. Vous, Seigneur, ayez pitié de nous.\n℟. Rendons grâces à Dieu.",
+   "statut": "aligné"
   },
   {
    "i": 108,
    "la_sha1": "97522dba2aa0",
-   "fr": null,
-   "statut": "à transcrire"
+   "page": "102-104",
+   "fr": "℟. Je vous salue, Marie, pleine de grâces: le Seigneur est avec vous.\n* Le Saint-Esprit descendra sur vous, et la vertu du Très-Haut vous couvrira de son ombre: c'est pourquoi le fruit qui naîtra de vous sera appelé le Fils de Dieu.\n℣. Comment cela se fera-t-il? Car je ne connais point d'homme. L'Ange lui répondit:\n* Le Saint-Esprit descendra sur vous, et la vertu du Très-Haut vous couvrira de son ombre: c'est pourquoi le fruit saint qui naîtra de vous sera appelé le Fils de Dieu.",
+   "statut": "aligné",
+   "note": "L'édition ajoute ensuite « Quand on dit le Te Deum, il faut ajouter: ℣. Gloire soit au Père, au Fils et au Saint-Esprit. * Le Saint-Esprit descendra… » (p. 104), que ce paragraphe latin de DO n'a pas ; non repris. La reprise imprime « le fruit saint qui naîtra » (p. 104), la première fois « le fruit qui naîtra » (p. 102) : tels qu'imprimés."
   },
   {
    "i": 109,
    "la_sha1": "99bb5411dcfb",
-   "fr": null,
-   "statut": "à transcrire"
+   "page": "94",
+   "fr": "Bénédiction. — Que le Seigneur nous accorde le salut et la paix, par l'intercession de celle qui est devenue mère sans cesser d'être vierge.\n℟. Ainsi soit-il.",
+   "statut": "aligné",
+   "note": "Même texte p. 104.",
+   "lecture": "p. 94 : « qu[i] » (lettre brisée) ; intact p. 104."
   },
   {
    "i": 110,
    "la_sha1": "6cc8460dc103",
-   "fr": null,
-   "statut": "à transcrire"
+   "page": "104-106",
+   "fr": "[r]Troisième leçon. S. Luc, I, 34-38.[/r]\nAlors Marie dit à l'Ange: Comment cela se fera-t-il? car je ne connais point d'homme. L'Ange lui répondit: Le Saint-Esprit descendra sur vous, et la vertu du Très-Haut vous couvrira de son ombre, c'est pourquoi le fruit saint qui naîtra de vous sera appelé le Fils de Dieu. Et voilà qu'Elisabeth votre cousine a elle-même conçu un fils dans sa vieillesse, et celle qu'on appelait stérile est maintenant dans son sixième mois: parce qu'il n'y a rien d'impossible à Dieu. Marie dit alors: Voici la servante du Seigneur, qu'il me soit fait selon votre parole. Vous, Seigneur, ayez pitié de nous.\n℟. Rendons grâces à Dieu.",
+   "statut": "aligné",
+   "lecture": "p. 106 : « [D]ieu », « S[e]igneur », « pi[t]ié », « ann[on]cer », « d[e]viendrez », « Saint-Es[prit] » : impression pâle ou brisée, lecture sûre par le contexte."
   },
   {
    "i": 111,
    "la_sha1": "758360272c14",
-   "fr": null,
-   "statut": "à transcrire"
+   "page": "106",
+   "fr": "℟. Recevez, ô Vierge Marie, la parole que le Seigneur vous a fait annoncer par un Ange: Vous concevrez un fils qui sera Dieu et homme tout ensemble,\n* En sorte que vous serez appelée la Vierge bénie entre toutes les femmes.\n℣. Vous enfanterez un fils sans rien perdre de votre virginité: vous serez enceinte et vous deviendrez mère sans cesser jamais d'être vierge.\n* En sorte que vous serez appelée la Vierge bénie, etc.\nGloire soit au Père, au Fils et au Saint-Esprit.\n* En sorte que, etc.",
+   "statut": "aligné",
+   "lecture": "p. 106 : « [D]ieu », « S[e]igneur », « pi[t]ié », « ann[on]cer », « d[e]viendrez », « Saint-Es[prit] » : impression pâle ou brisée, lecture sûre par le contexte."
   },
   {
    "i": 112,
    "la_sha1": "f77956daea30",
    "fr": null,
-   "statut": "à transcrire"
+   "statut": "sans équivalent",
+   "note": "Rubrique de DO : l'édition n'en imprime pas (elle enchaîne Laudes, p. 108)."
   },
   {
    "i": 113,
    "la_sha1": "455a092cfe2e",
    "fr": null,
-   "statut": "à transcrire"
+   "statut": "sans équivalent",
+   "note": "Pater à voix basse à la fin de Matines quand les Laudes sont séparées : l'édition ne l'imprime pas (Matines finissent p. 106 sur le dernier répons)."
   },
   {
    "i": 114,
    "la_sha1": "b3de6922b323",
-   "fr": null,
-   "statut": "à transcrire"
+   "page": "74-76",
+   "fr": "[r]Deuxieme Nocturne.[/r]\n[r]Mardi et Vendredi.[/r]\n[r]Ant.[/r] Paré de votre gloire.\n[r]Psaume 44.[/r]\nMon cœur a proféré avec joie une heureuse parole: c'est au Roi que s'adressent mes chants.\nMa langue est, sous l'impression de l'Esprit-Saint, comme la plume dans la main de l'écrivain rapide.\nO le plus beau des enfants des hommes, la grâce est répandue sur vos lèvres; c'est pourquoi Dieu vous a béni pour l'éternité.\nCeignez-vous de votre glaive, Roi très puissant.\nParé de votre gloire et de votre beauté, apprêtez-vous à combattre, à vaincre et à régner.\nPar votre vérité, par votre douceur et par votre justice; et votre droite vous conduira au milieu des merveilles.\nVos flèches aiguës perceront le cœur de vos ennemis, et les peuples tomberont à vos pieds.\nVotre trône, ô Dieu, est un trône éternel: le sceptre de votre royauté est un sceptre d'équité.\nVous avez aimé la justice, et haï l'iniquité; c'est pourquoi, ô Dieu, votre Dieu vous a sacré d'une onction de joie au-dessus de ceux qui y ont part avec vous.\nLe parfum de la myrrhe, de l'ambre et de l'aloès s'exhale de vos vêtements, et des palais de délices qu'ont préparés pour vous les filles des rois.\nLa reine est assise à votre droite, vêtue d'or et couverte d'ornements précieux.\nEcoutez, ma fille, voyez et prêtez l'oreille; oubliez votre peuple et la maison de votre père:\nEt le roi sera épris de votre beauté; car il est le Seigneur votre Dieu, et les peuples l'adoreront.\nLes fille de Tyr vous offriront des présents: tous les puissants de la terre brigueront la faveur de vos regards.\nLa fille du roi paraît brillante d'or et de broderies; mais sa véritable gloire est intérieure.\nA sa suite, les vierges seront amenées au roi: ses compagnes seront présentées à l'époux.\nElles seront présentées au milieu de la joie et de l'allégresse, et introduites dans le palais du roi.\nPour remplacer vos pères que vous avez quittés, il vous naîtra des fils que vous établirez princes sur toute la terre.\nIls se souviendront de votre nom, Seigneur, dans toute la suite des générations.\nC'est pourquoi les peuples publieront vos louanges dans les siècles des siècles.\nGloire soit au Père, etc.\n[r]Ant.[/r] Paré de votre gloire et de votre beauté, apprêtez-vous à combattre, à vaincre et à régner.",
+   "statut": "aligné",
+   "note": "« Deuxieme » sans accent, tel qu'imprimé.",
+   "lecture": "p. 76 : « est assise » (lettres brisées), « [v]otre peuple », « [a]pprêtez », « c[o]mbattre » : lecture sûre par le contexte. « Les fille de Tyr » : tel qu'imprimé."
   },
   {
    "i": 115,
    "la_sha1": "d335dd1b080a",
-   "fr": null,
-   "statut": "à transcrire"
+   "page": "76-80",
+   "fr": "[r]Ant.[/r] Dieu l'aidera.\n[r]Psaume 45.[/r]\nDieu est notre refuge et notre force; il a été notre soutien dans les maux qui nous ont accablés.\nAussi ne craindrions-nous rien quand toute la terre serait troublée, quand les montagnes seraient emportées dans le sein de la mer.\nLes eaux se sont soulevées avec bruit; les montagnes ont été ébranlées.\nMais un fleuve de joie a inondé la cité de Dieu; le Très-Haut a sacrifié son tabernacle.\nLe Seigneur est au milieu de la cité sainte, elle ne sera point ébranlée: Dieu la protégera dès l'aurore.\nLes nations ont été dans le trouble et les empires ont chancelé: la terre a tremblé à la voix du Seigneur.\nMais le Dieu des armées est avec nous; le Dieu de Jacob est notre appui.\nVenez et contemplez les œuvres du Seigneur, les prodiges qu'il a opérés sur la terre; il a fait cesser la guerre dans tout l'univers.\nIl a brisé les arcs et les armures, et jeté au feu les boucliers.\nIl a dit: Vivez en paix, et reconnaissez que je suis Dieu: je serai glorifié parmi les nations, et jusqu'aux extrémités de la terre.\nLe Dieu des armées est avec nous; le Dieu de Jacob est notre appui.\nGloire soit au Père, etc.\n[r]Ant.[/r] Dieu l'aidera par ses regards favorables: Dieu est au milieu d'elle, elle ne sera point ébranlée.",
+   "statut": "aligné",
+   "lecture": "p. 78 : « la m[e]r », « a [i]nondé », « [a] sacrifié », « t[a]bernacle », « milieu d[e] la », « trou[b]le », « terr[e] a », « [a]rmures », « de [l]a terre » : lettres brisées, lecture sûre par le contexte ; le point après « ébranlées » est à peine marqué. « le Très-Haut a sacrifié son tabernacle » : tel qu'imprimé (vérifié à l'agrandissement ; le latin dit « sanctificávit »). p. 80 : « mi[l]ieu », « e[ll]e » : lettres brisées, lecture sûre par le contexte."
   },
   {
    "i": 116,
    "la_sha1": "88737328bd2a",
-   "fr": null,
-   "statut": "à transcrire"
+   "page": "80",
+   "fr": "[r]Ant.[/r] La paix et la joie.\n[r]Psaume 86.[/r]\nJérusalem est bâtie sur les saintes montagnes: le Seigneur préfère les portes de Sion à tous les pavillons de Jacob.\nO cité de Dieu, on publie de vous des choses merveilleuses.\nJe me souviendrai de Rahab et de Babylone, qui me connaîtront.\nLes Philistins, les peuples de Tyr et de l'Ethiopie viendront m'y rendre leurs hommages.\nAlors on dira de Sion: Elle se remplit sans cesse de nouveaux habitants, et c'est le Très-Haut qui l'a fondée.\nLe Seigneur pourra seul faire le dénombrement des peuples et des princes qui composeront cette cité sainte.\nLa paix et la joie sont le partage de ceux qui t'appartiennent, ô Sion.\nGloire soit au Père, etc.\n[r]Ant.[/r] La paix et la joie sont le partage de tous ceux d'entre nous qui vous appartiennent, ô sainte Mère de Dieu.",
+   "statut": "aligné"
   },
   {
    "i": 117,
    "la_sha1": "7e70f8ffa30d",
-   "fr": null,
-   "statut": "à transcrire"
+   "page": "82-84",
+   "fr": "[r]Troisieme Nocturne.[/r]\n[r]Mercredi et Samedi.[/r]\n[r]Ant.[/r] Réjouissez-vous.\n[r]Psaume 95.[/r]\nChantez au Seigneur un cantique nouveau; que toute la terre chante au Seigneur.\nChantez au Seigneur, et bénissez son nom: annoncez de jour en jour son salut.\nPubliez sa gloire parmi les nations, et ses merveilles chez tous les peuples;\nCar le Seigneur est grand et infiniment digne de louange; il est plus redoutable que tous les dieux de la terre.\nTous les dieux des nations ne sont que des démons; c'est le Seigneur qui a fait les cieux.\nLa gloire et la majesté l'environnent; la sainteté et la magnificence résident dans son sanctuaire.\nVenez, tribus des nations, venez offrir au Seigneur vos hommages; venez rendre à son nom la gloire qui lui est due.\nPréparez vos offrandes et entrez dans ses parvis: adorez le Seigneur dans son saint temple.\nQue la terre entière tremble en sa présence: dites parmi les nations: Voici que le Seigneur règne.\nIl a affermi l'univers, qui ne sera plus ébranlé: il jugera les peuples dans sa justice.\nQue les cieux se réjouissent, et que la terre tressaille; que la mer s'émeuve avec tout ce qu'elle renferme; les campagnes et tout ce qui les habite seront dans l'allégresse.\nAlors tous les arbres des forêts tressailliront en la présence du Seigneur, parce qu'il vient juger la terre.\nIl jugera l'univers dans sa justice, et les peuples dans sa vérité.\nGloire soit au Père, etc.\n[r]Ant.[/r] Réjouissez-vous, Vierge Marie, votre puissante intercession a fait triompher l'Eglise de toutes les hérésies.",
+   "statut": "aligné",
+   "note": "« Troisieme » sans accent, tel qu'imprimé.",
+   "lecture": "p. 84 : « présence[:] » au bord droit (deux-points en partie coupé ; la couche ABBYY lit « : »)."
   },
   {
    "i": 118,
    "la_sha1": "461bb2ca9bd5",
-   "fr": null,
-   "statut": "à transcrire"
+   "page": "84-86",
+   "fr": "[r]Ant.[/r] Rendez-moi digne.\n[r]Psaume 96.[/r]\nLe Seigneur est entré dans son règne: que la terre tressaille, que les îles lointaines se réjouissent.\nUn sombre nuage l'environne; la justice et l'équité sont l'appui de son trône.\nUn feu dévorant le précède, et consume tous ses ennemis.\nSes éclairs ont brillé, d'un bout de l'univers à l'autre; la terre les a vus, et en a été ébranlée.\nLes montagnes se sont fondues comme la cire devant le Seigneur; toute la terre a tremblé à la présence du Seigneur.\nLes cieux ont annoncé sa justice, et tous les peuples ont vu sa gloire.\nQu'ils soient confondus tous ceux qui adorent de faux dieux, et qui se glorifient dans leurs idoles.\nMais adorez-le, vous tous qui êtes ses anges: Sion a entendu la voix de son Dieu, et s'est réjouie.\nLes filles de Juda ont été dans l'allégresse au souvenir de vos jugements, Seigneur.\nCar vous êtes le Très-Haut, élevé au-dessus de tous les dieux.\nDétestez le mal, vous qui aimez le Seigneur: le Seigneur garde les âmes de ses saints; il les délivrera de la puissance des pécheurs.\nLa lumière s'est levée pour le juste, le jour de l'allégresse a lui pour les cœurs droits.\nJustes, réjouissez-vous dans le Seigneur, et célébrez les témoignages de sa sainteté.\nGloire soit au Père, etc.\n[r]Ant.[/r] Rendez-moi digne de vous louer, Vierge sainte: donnez-moi la force de vaincre vos ennemis.",
+   "statut": "aligné",
+   "lecture": "p. 86 : « [c]élébrez » (c effacé), « l[e] Très-Haut » : lecture sûre par le contexte."
   },
   {
    "i": 119,
    "la_sha1": "0874bda7e969",
-   "fr": null,
-   "statut": "à transcrire"
+   "page": "86-90",
+   "fr": "[r]Pendant l'Avent.[/r]\n[r]Ant.[/r] L'Ange du Seigneur.\n[r]Psaume 97.[/r]\nChantez au Seigneur un cantique nouveau, parce qu'il a fait des choses merveilleuses.\nC'est sa droite, c'est son bras saint qui nous a sauvés.\nLe Seigneur a manifesté le salut qu'il avait promis: il a révélé sa justice aux yeux des nations.\nIl s'est souvenu de sa miséricorde et de sa fidélité en faveur de la maison d'Israël.\nToutes les extrémités de la terre ont vu le salut que notre Dieu a envoyé.\nLouez le Seigneur avec des transports de joie, habitants de toute la terre; élevez vos voix, tressaillez d'allègresse, chantez des cantiques.\nCélébrez le Seigneur sur la harpe, mêlez vos voix au son des instruments; sonnez, clairons et trompettes.\nRéjouissez-vous en présence du Seigneur votre Roi; que la mer et tout ce qu'elle renferme, que la terre et tous ceux qui l'habitent soient dans la joie.\nLes fleuves applaudiront, les montagnes tressailliront à la vue du Seigneur, parce qu'il vient juger la terre.\nIl jugera l'univers selon la justice et les peuples selon l'équité.\nGloire soit au Père, etc.\n[r]Pendant l'Avent et le jour de l'Annonciation.[/r]\n[r]Ant.[/r] L'Ange du Seigneur a annoncé à Marie, et elle a conçu par l'opération du Eaint-Esprit",
+   "statut": "aligné",
+   "note": "Composé comme l'édition l'imprime : incipit sous « Pendant l'Avent » (p. 86), psaume 97 commun (p. 88), antienne entière sous « Pendant l'Avent et le jour de l'Annonciation » (p. 90). « Eaint-Esprit », sans ponctuation finale : tel qu'imprimé.",
+   "lecture": "p. 88 (couche ABBYY illisible, relue sur l'image) : impression pâle au début (« Sei[gne]ur », « dr[oi]te ») ; « d'allègresse » (accent grave) tel qu'imprimé. p. 90 : après « Marie » un point ou une virgule mal venus (rendu par une virgule, la phrase continue en minuscule) ; « Eaint-Esprit » sans ponctuation finale : tel qu'imprimé (coquille pour « Saint-Esprit », vérifiée à l'agrandissement) ; « t[o]ujours » (o brisé)."
   },
   {
    "i": 120,
    "la_sha1": "8593a4771c2c",
    "fr": null,
-   "statut": "à transcrire"
+   "statut": "sans équivalent",
+   "note": "Verset de l'Avent « Hódie sciétis » : l'édition ne l'imprime pas ; elle donne partout « ℣. La grâce est répandue sur vos lèvres » (pp. 72, 82, 90)."
   },
   {
    "i": 121,
    "la_sha1": "074b751ea6d2",
-   "fr": null,
-   "statut": "à transcrire"
+   "page": "60",
+   "fr": "℣. Seigneur, vous ouvrirez mes lèvres.\n℟. Et ma bouche annoncera vos louanges.\n℣. O Dieu, venez à mon aide.\nGloire soit au Père, etc.\nLouange à vous, Seigneur, Roi d'éternelle gloire.",
+   "statut": "aligné en partie",
+   "note": "NON ALIGNÉ EN PARTIE : l'édition n'imprime pas le répons « ℟. Hâtez-vous, Seigneur, de me secourir » après « O Dieu, venez à mon aide » (p. 60), et abrège le Gloria Patri (« Gloire soit au Père, etc. »). Elle donne « Louez Dieu, ou Louange à vous, Seigneur, Roi d'éternelle gloire » : « Louange à vous… » rend « Laus tibi, Dómine… » (Septuagésime)."
   },
   {
    "i": 122,
    "la_sha1": "f65800c7cc26",
-   "fr": null,
-   "statut": "à transcrire"
+   "page": "106",
+   "fr": "℟. Recevez, ô Vierge Marie, la parole que le Seigneur vous a fait annoncer par un Ange: Vous concevrez un fils qui sera Dieu et homme tout ensemble,\n* En sorte que vous serez appelée la Vierge bénie entre toutes les femmes.\n℣. Vous enfanterez un fils sans rien perdre de votre virginité: vous serez enceinte et vous deviendrez mère sans cesser jamais d'être vierge.\n* En sorte que vous serez appelée la Vierge bénie, etc.",
+   "statut": "aligné en partie",
+   "note": "NON ALIGNÉ EN PARTIE : l'édition n'imprime ce répons qu'avec le Gloria (p. 106) et dit de l'omettre quand on dit le Te Deum ; texte de la p. 106 sans les deux dernières lignes (« Gloire soit au Père… * En sorte que, etc. »), comme le latin de DO (« Gloria omittitur »)."
   },
   {
    "i": 123,
    "la_sha1": "54f2f880da74",
-   "fr": null,
-   "statut": "à transcrire"
+   "page": "100-102",
+   "fr": "℟. L'Ange Gabriel fut envoyé à la Vierge Marie, épouse de Joseph, et lui annonça ce que Dieu lui avait ordonné de lui dire. La Vierge étant surprise de l'éclat de sa lumière, il lui dit: Ne craignez point, Marie; vous avez trouvé grâce devant le Seigneur:\n* Vous allez concevoir et vous mettrez au monde un fils qui sera appelé le Fils du Très-Haut.\n℣. Le Seigneur Dieu lui donnera le trône de David son père, et il régnera éternellement sur la maison de Jacob.\n* Vous allez, etc.",
+   "statut": "aligné en partie",
+   "note": "NON ALIGNÉ EN PARTIE : l'édition n'imprime pas la forme pascale de ce répons (« Allelúja » de DO) ; texte du paragraphe 105.",
+   "lecture": "p. 100 (couche ABBYY illisible, relue sur l'image) : le répons « L'Ange Gabriel fut envoyé… » est imprimé sous une impression tachée et brisée : « Gab[r]iel f[u]t », « [V]ierge », « [é]pouse de [J]oseph », « an[n]on[ç]a », « [d]e lui dire », « s[a] lumière », « vo[u]s ave[z] », « devan[t] l[e] Seigneur » ; la ponctuation après « Marie » (point-virgule) et après « Seigneur » (deux-points) est entamée. « Ainsi soit il » sans trait d'union : tel qu'imprimé. p. 102 : « trône [d]e » (au bord), « [a]ppelé » : lecture sûre par le contexte. Le répons imprime ici « le fruit qui naîtra », p. 104 « le fruit saint qui naîtra » : tels qu'imprimés."
   },
   {
    "i": 124,
    "la_sha1": "41e10db3226a",
-   "fr": null,
-   "statut": "à transcrire"
+   "page": "102-104",
+   "fr": "℟. Je vous salue, Marie, pleine de grâces: le Seigneur est avec vous.\n* Le Saint-Esprit descendra sur vous, et la vertu du Très-Haut vous couvrira de son ombre: c'est pourquoi le fruit qui naîtra de vous sera appelé le Fils de Dieu.\n℣. Comment cela se fera-t-il? Car je ne connais point d'homme. L'Ange lui répondit:\n* Le Saint-Esprit descendra sur vous, et la vertu du Très-Haut vous couvrira de son ombre: c'est pourquoi le fruit saint qui naîtra de vous sera appelé le Fils de Dieu.",
+   "statut": "aligné en partie",
+   "note": "NON ALIGNÉ EN PARTIE : l'édition n'imprime pas la forme pascale de ce répons (« Allelúja » de DO) ; texte du paragraphe 108."
   },
   {
    "i": 125,
    "la_sha1": "3c82a0edfeda",
-   "fr": null,
-   "statut": "à transcrire"
+   "page": "90-92",
+   "fr": "[r]Première leçon. Ecclés., XXIV, 11-13.[/r]\nJ'ai cherché partout un lieu de repos; je demeurerai dans l'héritage du Seigneur. Le Créateur de l'univers m'a donné ses ordres et m'a parlé: Celui qui m'a créée s'est reposé dans mon sein, et m'a dit: Habitez dans Jacob, qu'Israël soit votre héritage, et prenez racine dans mes élus. Vous, Seigneur, ayez pitié de nous.\n℟. Rendons grâce à Dieu.",
+   "statut": "aligné",
+   "note": "Titre de l'édition au-dessus : « De Noël à l'Avent. » (p. 90). « Rendons grâce à Dieu » (singulier) : tel qu'imprimé."
   },
   {
    "i": 126,
    "la_sha1": "37eb4d5c6e19",
-   "fr": null,
-   "statut": "à transcrire"
+   "page": "92",
+   "fr": "℟. O Vierge sainte et immaculée, je ne sais par quelles louanges exalter votre gloire.\n* Car vous avez porté dans votre sein Celui que les cieux ne pouvaient contenir.\n℣. Vous êtes bénie entre toutes les femmes, et le fruit de vos entrailles est béni.\n* Car vous avez porté dans votre sein Celui que les cieux ne pouvaient contenir.",
+   "statut": "aligné"
   },
   {
    "i": 127,
    "la_sha1": "77f7ff8915f8",
-   "fr": null,
-   "statut": "à transcrire"
+   "page": "92",
+   "fr": "[r]Deuxième leçon. Ecclés., XXIV[/r]\nJ'ai été ainsi affermie dans Sion; j'ai trouvé mon repos dans la cité sainte, et ma puissance s'est établie dans Jérusalem. J'ai pris racine dans le peuple que le Seigneur a honoré, et qu'il a choisi pour sa portion et son héritage, et ma demeure est dans l'assemblée de tous les saints. Vous. Seigneur, ayez pitié de nous.\n℟. Rendons grâces à Dieu.",
+   "statut": "aligné",
+   "note": "« Vous. Seigneur » (point) : tel qu'imprimé."
   },
   {
    "i": 128,
    "la_sha1": "78fdc2c946b3",
-   "fr": null,
-   "statut": "à transcrire"
+   "page": "92-94",
+   "fr": "℟. Vous êtes heureuse, ô Vierge Marie, qui avez porté le Seigneur Créateur du monde.\n* Vous avez enfanté Celui qui vous a créée, et vous n'avez pas cessé d'être vierge.\n℣. Je vous salue, Marie, pleine de grâces; le Seigneur est avec vous.\n* Vous avez enfanté Celui qui vous a créée, et vous n'avez pas cessé d'être vierge.\n[r]Quand on dit le Te Deum, on ajoute:[/r]\n℣. Gloire soit au Père, au Fils et au Saint-Esprit.\n℟. Vous avez enfanté Celui qui vous a créée, et vous n'avez pas cessé d'être vierge.",
+   "statut": "aligné",
+   "lecture": "p. 92 : « Rendons grâce à Dieu » (singulier, première leçon) et « Vous. Seigneur » (point, deuxième leçon) : tels qu'imprimés ; « d[e] nous » ; dernière ligne abîmée « [e]t vous n'avez pa[s] [ce]ssé d'être vierge », lecture sûre par la même phrase imprimée deux fois, intacte, p. 94."
   },
   {
    "i": 129,
    "la_sha1": "01aa9da99b1d",
-   "fr": null,
-   "statut": "à transcrire"
+   "page": "94",
+   "fr": "[r]Troisième leçon. Ecclés., XXIV,[/r]\nJe suis aussi élevée que les cèdres du Liban et les cyprès de la montagne de Sion. Je suis aussi élevée que les palmiers de Cadès et les rosiers de Jéricho. Je suis comme les beaux oliviers de la campagne, et comme les peupliers plantés sur le bord des eaux. J'ai répandu une odeur suave, pareille à celle de la cannelle et du baume, une odeur aussi douce et aussi agréable que celle de la myrrhe la plus excellente. Vous, Seigneur, ayez pitié de nous.\n℟. Rendons grâces à Dieu.",
+   "statut": "aligné",
+   "lecture": "p. 94 : « [s]uis aussi », « [e]t les cyprès » : lettres brisées, lecture sûre par le contexte."
   },
   {
    "i": 130,
    "la_sha1": "798f91075629",
-   "fr": null,
-   "statut": "à transcrire"
+   "page": "96-100",
+   "fr": "[r]Hymne.[/r]\nNous vous louons, ô Dieu, nous vous reconnaissons pour le souverain Seigneur.\nPère éternel, la terre entière vous révère.\nTous les Anges, les Cieux et toutes les Puissances célestes,\nLes Chérubins et les Séraphins redisent éternellement:\nSaint, Saint, Saint, le Seigneur, Dieu des armées.\nLes cieux et la terre sont remplis de la majesté de votre gloire.\nLe chœur glorieux des Apôtres,\nLa troupe vénérable des Prophètes,\nL'éclatante armée des Martyrs chantent vos louanges.\nDans toute l'étendue de l'univers, l'Eglise vous adore,\nO Père dont la majesté est infinie,\nEt votre Fils unique et véritable,\nEt le Saint-Esprit Consolateur.\nO Christ, vous êtes le Roi de gloire,\nVous êtes le Fils éternel du Père.\nFait homme pour sauver l'homme, vous n'avez pas dédaigné de descendre dans le sein d'une Vierge.\nBrisant l'aiguillon de la mort, vous avez ouvert à ceux qui croient le royaume des cieux.\nVous êtes assis à la droite de Dieu, dans la gloire du Père.\nNous croyons que vous viendrez un jour juger l'univers.\nSecourez donc, nous vous en conjurons, vos serviteurs rachetés par votre sang précieux.\nFaites qu'ils soient comptés parmi vos Saints dans la gloire éternelle.\nSauvez votre peuple, Seigneur, et bénissez votre héritage.\nConduisez vos enfants, et élevez-les jusqu'à la gloire de l'éternité.\nChaque jour nous vous bénissons.\nNous louons votre nom maintenant, et dans tous les siècles des siècles.\nDaignez, Seigneur, pendant ce jour, nous préserver de tout péché.\nAyez pitié de nous, Seigneur, ayez pitié de nous.\nRépandez sur nous votre miséricorde, Seigneur, selon que nous avons espéré en vous.\nJ'ai espéré en vous, Seigneur, je ne serai point confondu à jamais.",
+   "statut": "aligné",
+   "note": "Te Deum (« HYMNE. ») ; l'édition le fait précéder de la rubrique « On ne dit le Te Deum ni pendant l'Avent, ni depuis la Septuagésime jusqu'à Pâques, excepté aux fêtes de la sainte Vierge et de saint Joseph. » (p. 96), non reprise.",
+   "lecture": "p. 96 : rubrique du Te Deum trouée (« le [T]e Deum », « la S[eptu]agésime », « fêt[es d]e ») ; premier verset du Te Deum : « ô Dieu[,] [n]ous vous reconnaissons pour le souvera[in] Seigneur » : la ponctuation après « Dieu » est effacée (rendue par une virgule), lettres manquantes sûres par le contexte."
   },
   {
    "i": 131,
    "la_sha1": "01b2b7a6f666",
-   "fr": null,
-   "statut": "à transcrire"
+   "page": "86-88",
+   "fr": "[r]Ant.[/r] Vous êtes demeurée Vierge.\n[r]Psaume 97.[/r]\nChantez au Seigneur un cantique nouveau, parce qu'il a fait des choses merveilleuses.\nC'est sa droite, c'est son bras saint qui nous a sauvés.\nLe Seigneur a manifesté le salut qu'il avait promis: il a révélé sa justice aux yeux des nations.\nIl s'est souvenu de sa miséricorde et de sa fidélité en faveur de la maison d'Israël.\nToutes les extrémités de la terre ont vu le salut que notre Dieu a envoyé.\nLouez le Seigneur avec des transports de joie, habitants de toute la terre; élevez vos voix, tressaillez d'allègresse, chantez des cantiques.\nCélébrez le Seigneur sur la harpe, mêlez vos voix au son des instruments; sonnez, clairons et trompettes.\nRéjouissez-vous en présence du Seigneur votre Roi; que la mer et tout ce qu'elle renferme, que la terre et tous ceux qui l'habitent soient dans la joie.\nLes fleuves applaudiront, les montagnes tressailliront à la vue du Seigneur, parce qu'il vient juger la terre.\nIl jugera l'univers selon la justice et les peuples selon l'équité.\nGloire soit au Père, etc.\n[r]Ant.[/r] Vous êtes demeurée Vierge après votre enfantement: Mère de Dieu, intercédez pour nous.",
+   "statut": "aligné",
+   "note": "Antienne « Post partum » (hors de l'Avent).",
+   "lecture": "p. 88 (couche ABBYY illisible, relue sur l'image) : impression pâle au début (« Sei[gne]ur », « dr[oi]te ») ; « d'allègresse » (accent grave) tel qu'imprimé."
   },
   {
    "i": 132,
    "la_sha1": "4e91daeea94d",
-   "fr": null,
-   "statut": "à transcrire"
+   "page": "60",
+   "fr": "℣. Seigneur, vous ouvrirez mes lèvres.\n℟. Et ma bouche annoncera vos louanges.\n℣. O Dieu, venez à mon aide.\nGloire soit au Père, etc.\nLouez Dieu.",
+   "statut": "aligné en partie",
+   "note": "NON ALIGNÉ EN PARTIE : l'édition n'imprime pas le répons « ℟. Hâtez-vous, Seigneur, de me secourir » après « O Dieu, venez à mon aide » (p. 60), et abrège le Gloria Patri (« Gloire soit au Père, etc. »). Elle donne « Louez Dieu, ou Louange à vous, Seigneur, Roi d'éternelle gloire » : « Louez Dieu » rend « Allelúja ». Même texte que 89 (DO sans la rubrique)."
   },
   {
    "i": 133,
    "la_sha1": "efedaa9109a5",
-   "fr": null,
-   "statut": "à transcrire"
+   "page": "92-94",
+   "fr": "℟. Vous êtes heureuse, ô Vierge Marie, qui avez porté le Seigneur Créateur du monde.\n* Vous avez enfanté Celui qui vous a créée, et vous n'avez pas cessé d'être vierge.\n℣. Je vous salue, Marie, pleine de grâces; le Seigneur est avec vous.\n* Vous avez enfanté Celui qui vous a créée, et vous n'avez pas cessé d'être vierge.",
+   "statut": "aligné",
+   "note": "Forme sans le Gloria : l'édition imprime le Gloria sous la rubrique « Quand on dit le Te Deum, on ajoute: » (p. 94), non reprise ici, comme dans le latin de DO.",
+   "lecture": "p. 92 : « Rendons grâce à Dieu » (singulier, première leçon) et « Vous. Seigneur » (point, deuxième leçon) : tels qu'imprimés ; « d[e] nous » ; dernière ligne abîmée « [e]t vous n'avez pa[s] [ce]ssé d'être vierge », lecture sûre par la même phrase imprimée deux fois, intacte, p. 94."
   },
   {
    "i": 134,
    "la_sha1": "11cdb3de9491",
-   "fr": null,
-   "statut": "à transcrire"
+   "page": "94-96",
+   "fr": "[r]On omet le Répons suivant quand on dit le Te Deum.[/r]\n℟. Vous êtes bienheureuse, ô Marie, Vierge sainte et digne de toute louange; * Car de vous est sorti le Soleil de justice, * Jésus-Christ notre Dieu.\n℣. Priez pour le peuple, intercédez pour le clergé, et pour les femmes pieuses et fidèles: que tous ceux qui honorent votre sainte mémoire éprouvent votre assistance.\n* Car de vous est sorti le Soleil de justice, * Jésus-Christ notre Dieu.\nGloire soit au Père, au Fils et au Saint-Esprit. * Jésus-Christ notre Dieu.",
+   "statut": "aligné",
+   "note": "L'édition marque deux astérisques dans le répons (« * Car de vous… * Jésus-Christ… »), tels qu'imprimés."
   },
   {
    "i": 135,
    "la_sha1": "223d075a5b66",
-   "fr": null,
-   "statut": "à transcrire"
+   "page": "94-96",
+   "fr": "[r]On omet le Répons suivant quand on dit le Te Deum.[/r]\n℟. Vous êtes bienheureuse, ô Marie, Vierge sainte et digne de toute louange; * Car de vous est sorti le Soleil de justice, * Jésus-Christ notre Dieu.\n℣. Priez pour le peuple, intercédez pour le clergé, et pour les femmes pieuses et fidèles: que tous ceux qui honorent votre sainte mémoire éprouvent votre assistance.\n* Car de vous est sorti le Soleil de justice, * Jésus-Christ notre Dieu.",
+   "statut": "aligné en partie",
+   "note": "NON ALIGNÉ EN PARTIE : l'édition n'imprime ce répons qu'avec le Gloria (p. 96) ; texte des pp. 94-96 sans la ligne « Gloire soit au Père… * Jésus-Christ notre Dieu. », comme le latin de DO (« Gloria omittitur »)."
   },
   {
    "i": 136,
