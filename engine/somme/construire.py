@@ -18,7 +18,6 @@ import collections
 import json
 import os
 import re
-import statistics
 import sys
 
 GARDE_TRAIT = {'elle', 'elles', 'il', 'ils', 'on', 'même', 'mêmes', 'dessus', 'dessous', 'ci', 'là', 'unes', 'uns',
@@ -38,14 +37,12 @@ def charger_corrections(path):
 def lignes_corrigees(page, cor):
     out = []
     c = cor.get(page['page'], {})
-    xs = [l['x'] for l in page['lignes'] if l.get('x') is not None]
-    marge = statistics.median(xs) if xs else 0
     for i, l in enumerate(page['lignes']):
         t = c.get(str(i), l['t'])
         if t.strip():
-            out.append(dict(t=t.strip(), alinea=(l.get('x') or 0) > marge + 25, page=page['page']))
+            out.append(dict(t=t.strip(), page=page['page']))
         if f'{i}+' in c:
-            out.append(dict(t=c[f'{i}+'], alinea=True, page=page['page']))
+            out.append(dict(t=c[f'{i}+'], page=page['page']))
     for l in out:
         if '⟦' in l['t']:
             raise SystemExit(f"page {l['page']} : signalement non tranché : {l['t']}")
@@ -75,16 +72,32 @@ def typo(s):
     return s.strip()
 
 
+INTITULE = re.compile(r'(ARTICLE|QUESTION)\b')
+MARQUE = re.compile(r'(\d+°|Il paro[iî]t|Mais |\(Conclusion|Il faut dire|Je réponds|Ces observations|Disons donc)')
+FIN = re.compile(r'[.?!:»)]$')
+
+
 def paragraphes(lignes):
+    """Paragraphes d'après la mise en page : intitulés ; « ¶ » en tête d'une ligne corrigée (alinéa relu sur l'image) ;
+    sinon, après une ligne finie par une ponctuation forte, une ligne plus courte que la justification (fin d'alinéa)
+    ou une marque de la structure de l'article (« 2° », « Mais », « Je réponds »…)."""
+    longueurs = sorted(len(l['t']) for l in lignes) or [0]
+    pleine = longueurs[len(longueurs) // 2]
     paras = []
+    prec = None
     for l in lignes:
         t = l['t']
-        neuf = (l['alinea'] or re.match(r'(ARTICLE|QUESTION)\b', t) or not paras
-                or re.match(r'(ARTICLE|QUESTION)\b', paras[-1]))
+        force = t.startswith('¶')
+        t = t.lstrip('¶ ')
+        neuf = (force or not paras or INTITULE.match(t) or INTITULE.match(paras[-1])
+                or (prec is not None and FIN.search(prec) and (len(prec) < 0.88 * pleine or MARQUE.match(t))))
+        if not neuf and len(paras) >= 2 and INTITULE.match(paras[-2]) and FIN.search(prec or ''):
+            neuf = True  # après le titre (une ligne ou deux) d'une question ou d'un article
         if neuf:
             paras.append(t)
         else:
             paras[-1] = recoller(paras[-1], t)
+        prec = t
     return [typo(p) for p in paras]
 
 
@@ -98,11 +111,11 @@ def decouper_article(ps, ref):
     for p in ps:
         if p.startswith('(Conclusion'):
             etat = 'concl'
-            if p.endswith('.)') or p.endswith(')'):
+            if re.search(r'\)\.?$', p):
                 etat = 'apres-concl'
             continue
         if etat == 'concl':
-            if p.endswith(')'):
+            if re.search(r'\)\.?$', p):
                 etat = 'apres-concl'
             continue
         if p.startswith(('Je réponds aux', 'Ces observations renferment la réponse')):
@@ -113,7 +126,7 @@ def decouper_article(ps, ref):
             if p.startswith('Mais '):
                 etat = 'sc'
                 sc.append(p)
-            elif NUM.match(p) or not obj:
+            elif (NUM.match(p) and not (len(obj) == 1 and p.startswith('1°') and '1°' not in obj[0])) or not obj:
                 obj.append(p)
             else:
                 obj[-1] += '\n\n' + p

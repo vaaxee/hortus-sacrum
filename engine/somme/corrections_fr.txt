@@ -178,3 +178,122 @@
 23	8	tent à la vue par la couleur, la couleur est l'objet de la vue. Or non-seu-
 33	5	multiplicité des sens engendre la confusion, produit l'erreur et détruit la
 35	5	ral, qui a le privilége exclusif de fournir des arguments à la science,
+# --- Iª q. 2 et suivantes : relecture de chaque ligne sur l’image (exemplaire de 1874, même composition ; 1880 en cas de doute)
+37	0	QUESTION II.
+37	1	De l'existence de Dieu.
+37	2	
+37	3	Comme le principal but de la théologie est de nous faire connoître Dieu
+37	5	spécialement de la créature raisonnable, pour exposer complétement la
+37	9	arriver à Dieu (1).
+37	10	Le traité de Dieu aura trois subdivisions; nous parlerons: première-
+37	11	ment, de l'essence du souverain Etre; deuxièmement, des personnes
+37	15	ment, si Dieu est; deuxièmement, ce qu'il est ou plutôt ce qu'il n'est
+37	16	pas; troisièmement, comment nous devons considérer ses opérations,
+37	19	1° L'existence de Dieu est-elle connue par elle-même? 2° Peut-elle être
+37	20	démontrée? 3° Comment est-elle démontrée?
+38	1	L'existence de Dieu est-elle connue par elle-même.
+38	2	
+38	3	Il paroît que l'existence de Dieu est connue par elle-même. 1° On dit
+38	5	connoissance en nous, comme cela a lieu pour les premiers principes. Or
+38	6	saint Jean Damascène dit, De la foi orth.. I, 1-3, que la connoissance de
+38	7	Dieu est innée dans tous les hommes. Donc la connoissance de Dieu est
+38	8	connue par elle-même (1).
+38	9	2° On dit aussi connues par elles-mêmes les choses que l'on connoît
+38	10	par la simple intelligence des mots qui les expriment; ainsi quand l'on
+38	11	comprend ce que c'est que le tout et la partie, on comprend par cela
+39	11	XIV, 6: «Je suis la voie, la vérité et la vie.» Donc l'existence de Dieu
+39	13	Mais on peut, comme Aristote le prouve dans la Métaphysique,
+39	15	concevoir le contraire de l'existence de Dieu, car on lit dans le Psal-
+40	0	miste, LII, 1: «L'insensé a dit dans son cœur: Il n'y a pas de Dieu.»
+40	2	(Conclusion. — Puisque Dieu est son être et que nous ne savons
+40	6	nous.)
+40	8	manières: d'abord intrinsèquement et non pour nous, ensuite intrinsè-
+40	12	ment dans l'idée de l'homme. De plus, si tous comprennent l'attribut et
+40	13	le sujet de cette proposition, elle sera connue par elle-même pour tous,
+40	14	ainsi que les premiers principes, dont les termes expriment des choses
+40	23	Dieu existe, est connue par elle-même intrinsèquement; car l'attribut
+40	24	est renfermé dans le sujet, puisque Dieu est son être, ainsi qu'on le verra
+41	1	la proposition dont il s'agit ne nous est pas connue par elle-même; il
+41	5	Je réponds aux arguments: 1° Nous avons bien, par le fait de la
+41	10	pas la pure connoissance de Dieu, pas plus que l'on ne connoît un homme
+41	14	2° Celui qui entend le nom de Dieu, peut ne pas comprendre ce qu'il
+42	2	3° Que la vérité en général existe, cela est connu par soi; mais que
+42	5	pour l'homme.
+42	6	ARTICLE II.
+42	7	L'existence de Dieu peut-elle être démontrée?
+42	8	Il paroît que l'existence de Dieu ne peut être démontrée. 1° L'exis-
+42	11	voyons dans l'Epître aux Hébreux, XI, 1. Donc l'existence de Dieu ne
+42	13	2° On ne peut démontrer une chose que par sa définition, en partant
+42	15	mascène, De la foi orth., I, 4, savoir ce qu'est Dieu, mais seulement
+42	18	Dieu.
+42	19	3° On ne pourroit démontrer l'existence de Dieu que d'une seule ma-
+42	20	nière, par ses effets. Mais entre Dieu et ses effets, il n'y a point de pro-
+42	21	portion, puisque Dieu est infini et que ses effets sont finis. Or une cause
+42	23	nés; donc on ne peut démontrer l'existence de Dieu.
+42	24	Mais saint Paul écrit aux Romains, I, 20: «Les perfections invisibles
+43	3	car la première chose qu'on peut connoître d'un être quelconque, c'est
+43	5	(Conclusion. — On ne peut prouver a priori que Dieu existe, mais on
+43	7	Il faut dire ceci: Il y a deux sortes de démonstrations: l'une par la
+43	8	cause, dite propter quid, c'est la démonstration a priori; l'autre par
+43	9	l'effet, nommée quia, c'est la démonstration a posteriori. Comme la
+43	10	cause nous est souvent révélée par l'effet, de même l'effet, quand nous
+43	15	Je réponds aux arguments: 1° L'existence de Dieu et les autres vérités
+43	18	les paroles de saint Paul aux Romains, ne sont pas des articles de foi,
+43	19	mais des préambules à la foi; car la foi suppose des connoissances hu-
+44	0	maines, de même que la grâce suppose la nature (1). Cependant rien n'em-
+44	1	pêche que des vérités susceptibles d'être démontrées, ne soient reçues
+44	2	comme des choses de foi par ceux qui n'en saisissent par la démonstration.
+44	3	2° Dans la preuve a posteriori, nous devons nécessairement, surtout
+44	4	quand il s'agit de Dieu, prouver l'existence de la cause non par sa nature,
+44	6	Ne faut-il pas savoir si une chose est avant de dire ce qu'elle est? Or les
+44	8	nous pouvons donc, pour démontrer son existence, partir de la signifi-
+44	9	cation de ses noms adorables.
+44	11	donner la connoissance parfaite, adéquate, il est vrai; mais il peut la
+44	13	tures prouvent d'une manière invincible l'existence de Dieu, bien
+44	14	qu'elles ne puissent nous faire connoître son essence.
+44	15	ARTICLE III.
+44	16	Dieu existe-t-il?
+44	17	Il paroît que Dieu n'existe pas. 1° Une chose infinie détruiroit la chose
+44	18	contraire. Or tout le monde entend par Dieu le bien infini; donc, si Dieu
+44	19	
+44	20	
+45	2	2° Ce qui peut être fait par un plus petit nombre de causes, n'est pas
+45	6	raison ou la volonté humaine. Donc il n'est pas nécessaire d'admettre
+45	8	Mais l'Exode dit, III, 14: «Je suis celui qui suis.» Donc Dieu est.
+45	9	(Conclusion. — Il faut qu'il y ait dans la nature un être premier mo-
+45	10	teur, cause efficace, nécessaire par lui-même, souverainement parfait et
+46	0	acte (1). Car mouvoir, c'est amener à l'acte une chose qui étoit en puis-
+46	2	ainsi le chaud en acte, le feu fait passer le bois de la chaleur potentielle à
+46	3	la chaleur actuelle, et voilà comment il le change, l'altère et le meut (2).
+46	5	sous le même rapport; un corps, par exemple, ne peut être actuellement
+46	9	mû, est mû par un autre. Or, s'il en est ainsi, l'être qui imprime le pre-
+46	10	mier mouvement est mû lui-même par un autre être, le troisième, le
+47	9	voyons dans le monde les causes efficientes s'enchaîner les unes aux autres;
+47	12	ce qui répugne. On ne peut non plus remonter de cause en cause indéfi-
+47	13	niment; car, dans une série progressive de causes subordonnées, la pre-
+48	2	y a eu un temps où rien n'existoit dans le monde. Mais s'il en avoit jamais
+48	5	existé dans un temps donné, rien n'auroit pu commencer jamais d'exis-
+48	12	faut donc reconnoître un être nécessaire par lui-même, qui ne trouve
+49	9	leur fin, et c'est là ce que tous les hommes appellent Dieu.
+49	10	Je réponds aux arguments: 1° Si Dieu, souverainement bon, permet
+49	14	2° Comme la nature tend à une fin déterminée sous la direction d'un
+50	3	
+50	5	
+50	6	De la simplicité de Dieu.
+50	7	Après avoir acquis la connoissance qu'une chose est, il faut rechercher
+50	8	comment elle est, afin de savoir ce qu'elle est. Mais comme l'homme ne
+50	9	peut savoir de Dieu que ce qu'il n'est pas, et non ce qu'il est, au lieu
+50	10	d'examiner comment il est, on doit demander comment il n'est pas.
+50	11	Nous allons donc rechercher: premièrement, comment Dieu n'est pas;
+50	12	deuxièmement, comment il est connu par nous; troisièmement, comment
+50	13	il est nommé.
+50	14	Or, pour savoir comment Dieu n'est pas, il faut écarter de son être ce
+50	15	qui lui répugne, comme le composé, le mouvement et les choses semblabes.
+50	16	Nous parlerons donc: premièrement de sa simplicité qui exclut le
+50	17	composé. Et comme, dans la nature corporelle, les choses simples sont
+50	18	imparfaites et ne forment que des parties, nous parlerons: deuxième-
+50	19	ment, de la perfection de Dieu; troisièmement, de son infinité; quatriè-
+50	20	mement de son immutabilité; cinquièmement de son unité.
+50	21	A l'égard du premier point, huit questions se présentent: 1° Dieu est-il
+50	22	un corps composé de parties quantitatives? 2° Est-il composé de matière
+41	8	bonheur, et tout ce que nous désirons naturellement, nous le connois-
