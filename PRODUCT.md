@@ -126,17 +126,14 @@ Donner chaque jour, sur le téléphone, **ce qu'il y a à prier aujourd'hui et p
 - Libellés ARIA des boutons-icônes ; l'état d'une bascule ne tient pas qu'à la couleur.
 - Mouvement réduit respecté (`prefers-reduced-motion`).
 
-## Questions ouvertes pour l'utilisateur
+## Réponses de l'utilisateur (22 novembre)
 
-Les documents ne répondent pas à ces points ; ils sont laissés ouverts plutôt que devinés.
+1. **Autres utilisateurs** : l'app est **pour lui seul**. Pas d'accueil de nouveau venu, pas de ton « grand public ».
+2. **Couleur de l'app installée** : elle **suit la direction et le thème choisis** (fait, `apparence.ts`).
+3. **Lecture à l'église** : **oui**, un mode église est souhaité (grand corps, écran qui reste allumé) ; à concevoir.
+4. **Taille de texte réglable** : non retenue pour l'instant (le zoom du système suffit).
+5. **Impression** : toujours la **charte des livrets**, quelle que soit la direction choisie.
+6. **Langue de l'interface** : question non tranchée ; le français reste la seule langue de l'interface.
 
-1. **Autres utilisateurs** : l'app est-elle pour vous seul, ou destinée à être partagée (famille, fidèles d'une
-   chapelle) ? Cela change le ton des textes d'aide et l'accueil d'un nouveau venu.
-2. **Direction par défaut** : la latine est le défaut dans le code, mais le manifeste de l'app installée annonce
-   l'outremer de la grecque. Laquelle doit être la « vraie » couleur de l'app installée ?
-3. **Lecture à l'église** : faut-il une présentation dédiée (plus grand corps, écran qui reste allumé, luminosité
-   réduite) pour prier sans toucher le téléphone ?
-4. **Âge et vue** : une taille de texte réglable dans l'app est-elle souhaitée, au-delà du zoom du système ?
-5. **Impression** : les pages imprimables doivent-elles suivre la direction choisie, ou toujours la charte des livrets
-   (encre et rubrique sur blanc) ?
-6. **Langue de l'interface** : le français seul, ou un jour le latin pour les libellés (onglets, mois) ?
+Le reste de cette fiche (nom « Le livre d'heures », règles nommées de `DESIGN.md`) attend encore la relecture de
+l'utilisateur.
