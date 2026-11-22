@@ -1,0 +1,126 @@
+{
+	"schemaVersion": 2,
+	"generatedAt": "2026-11-22T12:00:00Z",
+	"title": "Design System: Hortus Sacrum",
+	"extensions": {
+		"colorMeta": {
+			"latine-rubis": { "role": "primary", "displayName": "Rubis", "canonical": "#a83d49" },
+			"latine-rubis-profond": { "role": "primary", "displayName": "Rubis profond", "canonical": "#7a1f2b" },
+			"latine-nuit-bordeaux": { "role": "neutral", "displayName": "Bordeaux profond (nuit latine)", "canonical": "#22080f" },
+			"grecque-outremer": { "role": "primary", "displayName": "Outremer", "canonical": "#1a1a8f" },
+			"grecque-nuit-outremer": { "role": "neutral", "displayName": "Outremer profond (nuit grecque)", "canonical": "#0e0c52" },
+			"grecque-cobalt": { "role": "primary", "displayName": "Cobalt", "canonical": "#0047ab" },
+			"or": { "role": "secondary", "displayName": "Or au trait", "canonical": "#d9b66d" },
+			"latine-nacre": { "role": "neutral", "displayName": "Nacre", "canonical": "#faf5ef" }
+		},
+		"typographyMeta": {
+			"titre-page": { "displayName": "Titre de page", "purpose": "Capitales espacées de Cormorant : titres de page, nom de la fête." },
+			"lecture": { "displayName": "Lecture", "purpose": "Texte des prières, offices et méditations, chiffres elzéviriens." },
+			"petites-capitales": { "displayName": "Petites capitales", "purpose": "Étiquettes, boutons, onglets, dates." },
+			"interface": { "displayName": "Interface", "purpose": "Aides, compteurs, onglets internes." }
+		},
+		"shadows": [
+			{
+				"name": "double-filet",
+				"value": "inset 0 0 0 2px var(--hs-fond), inset 0 0 0 2.75px var(--hs-or-trait)",
+				"purpose": "Filet d'or en retrait des boutons, cases et bascules."
+			},
+			{
+				"name": "barre-onglets",
+				"value": "0 -6px 14px -12px color-mix(in srgb, var(--hs-encre) 40%, transparent)",
+				"purpose": "Sépare la barre d'onglets du texte qui défile."
+			}
+		],
+		"motion": [
+			{ "name": "courbe", "value": "cubic-bezier(0.22, 0.61, 0.36, 1)", "purpose": "Courbe unique, lente et calme." },
+			{ "name": "duree", "value": "300ms", "purpose": "Transitions ordinaires (vive 240 ms, lente 400 ms)." }
+		],
+		"breakpoints": [
+			{ "name": "titre-large", "value": "700px" },
+			{ "name": "bureau", "value": "900px" }
+		]
+	},
+	"components": [
+		{
+			"name": "Bouton",
+			"kind": "button",
+			"refersTo": "bouton",
+			"description": "Bouton secondaire : cadre de l'accent, filet d'or en retrait, petites capitales.",
+			"html": "<button class=\"ds-bouton\">Ajouter</button>",
+			"css": ".ds-bouton{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 16px 2px;font-family:'EB Garamond',Garamond,serif;font-size:1.0625rem;font-weight:500;font-variant-caps:all-small-caps;letter-spacing:.07em;color:var(--hs-lapis,#a83d49);background:transparent;border:1px solid var(--hs-lapis,#a83d49);border-radius:0;box-shadow:inset 0 0 0 2px var(--hs-fond,#faf5ef),inset 0 0 0 2.75px rgb(217 182 109/.6);cursor:pointer;transition:background .24s cubic-bezier(.22,.61,.36,1)}.ds-bouton:hover{background:color-mix(in srgb,var(--hs-lapis,#a83d49) 8%,var(--hs-fond,#faf5ef));box-shadow:inset 0 0 0 2px var(--hs-fond,#faf5ef),inset 0 0 0 2.75px #d9b66d}.ds-bouton:focus-visible{outline:2px solid #8a6a1f;outline-offset:3px}"
+		},
+		{
+			"name": "Bouton principal",
+			"kind": "button",
+			"refersTo": "bouton-principal",
+			"description": "Aplat de l'arche, filet d'or en retrait, comme une reliure.",
+			"html": "<button class=\"ds-principal\">Entrer au jardin</button>",
+			"css": ".ds-principal{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 16px 2px;font-family:'EB Garamond',Garamond,serif;font-size:1.0625rem;font-weight:500;font-variant-caps:all-small-caps;letter-spacing:.07em;color:#f8efe6;background:#7a1f2b;border:1px solid #7a1f2b;border-radius:0;box-shadow:inset 0 0 0 2px #7a1f2b,inset 0 0 0 2.75px rgb(236 208 138/.85);cursor:pointer}.ds-principal:hover{box-shadow:inset 0 0 0 2px #7a1f2b,inset 0 0 0 2.75px #ecd08a}.ds-principal:focus-visible{outline:2px solid #8a6a1f;outline-offset:3px}"
+		},
+		{
+			"name": "Puce de filtre",
+			"kind": "chip",
+			"refersTo": "puce",
+			"description": "Cartouche carré ; choisi, cadre de l'accent et losange d'or.",
+			"html": "<button class=\"ds-puce\" aria-pressed=\"true\">Trinité</button>",
+			"css": ".ds-puce{display:inline-flex;align-items:center;gap:6px;min-height:36px;padding:0 12px 2px;border:.75px solid #dcc5b8;border-radius:0;background:#faf5ef;color:#5d5647;font-family:'EB Garamond',serif;font-size:1rem;font-variant-caps:all-small-caps;letter-spacing:.06em;cursor:pointer}.ds-puce[aria-pressed=true]{color:#2a2620;border-color:#a83d49;background:color-mix(in srgb,#a83d49 9%,#faf5ef)}.ds-puce[aria-pressed=true]::before{content:'';width:6px;height:6px;background:#8a6a1f;transform:rotate(45deg)}.ds-puce:hover{border-color:#d9b66d}"
+		},
+		{
+			"name": "Case de la liste",
+			"kind": "custom",
+			"refersTo": "case",
+			"description": "Case carrée à double filet ; cochée, fond vert.",
+			"html": "<span class=\"ds-case\"></span> <span class=\"ds-case ds-cochee\"></span>",
+			"css": ".ds-case{display:inline-block;width:26px;height:26px;border:1px solid #a83d49;background:#faf5ef;box-shadow:inset 0 0 0 2px #faf5ef,inset 0 0 0 2.75px rgb(217 182 109/.6)}.ds-case.ds-cochee{background:#456b49;border-color:#456b49}"
+		},
+		{
+			"name": "Champ",
+			"kind": "input",
+			"refersTo": "champ",
+			"description": "Un seul filet en pied ; au focus, l'accent.",
+			"html": "<input class=\"ds-champ\" placeholder=\"Chercher un titre, un mot\">",
+			"css": ".ds-champ{width:100%;padding:9px 2px;font-family:'EB Garamond',serif;font-size:1.1875rem;color:#2a2620;background:transparent;border:0;border-bottom:1px solid #dcc5b8;border-radius:0}.ds-champ:focus-visible{outline:none;border-bottom-color:#a83d49}"
+		},
+		{
+			"name": "Arche de la fête",
+			"kind": "card",
+			"refersTo": "arche",
+			"description": "Plein cintre d'aplat rubis profond, nom de la fête en capitales Cormorant.",
+			"html": "<div class=\"ds-arche\"><span>Dimanche</span><strong>Saint André, Apôtre</strong></div>",
+			"css": ".ds-arche{display:grid;justify-items:center;gap:8px;max-width:26rem;padding:5rem 24px 32px;background:#7a1f2b;color:#f8efe6;border:1px solid rgb(236 208 138/.85);border-radius:1000px 1000px 0 0;text-align:center}.ds-arche span{font-family:'EB Garamond',serif;font-variant-caps:all-small-caps;letter-spacing:.06em;color:#e3c9c4}.ds-arche strong{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:1.75rem;text-transform:uppercase;letter-spacing:.08em}"
+		}
+	],
+	"narrative": {
+		"northStar": "Le livre d'heures",
+		"overview": "L'app se compose comme un livre d'église imprimé : une colonne de texte en EB Garamond, des titres en capitales espacées de Cormorant, des petites capitales pour tout ce qui étiquette, la rubrique en rouge, beaucoup de blanc. Angles vifs, double filet d'or en retrait ; seule l'arche en plein cintre porte la fête. Deux directions (latine : nacre et rubis, bordeaux la nuit ; grecque : ivoire et outremer, outremer profond et cobalt la nuit).",
+		"keyCharacteristics": [
+			"Typographie de livre : Garamond pour lire, Cormorant pour titrer, petites capitales pour étiqueter.",
+			"Angles vifs partout, sauf l'arche en plein cintre.",
+			"Double filet (couleur + or en retrait).",
+			"Ornements au trait fin tirés de la tradition chrétienne.",
+			"Mouvement lent et calme."
+		],
+		"rules": [
+			{ "name": "La règle de l'or au trait", "body": "L'or dessine (filets, ornements, focus), il ne remplit jamais une surface.", "section": "colors" },
+			{ "name": "La règle de la rubrique", "body": "Le rouge de rubrique est réservé à ce que le livre imprimé mettrait en rouge : ℣, ℟, rubriques, lettrines, intitulés liturgiques, jeûne. L'accent interactif a sa propre variable.", "section": "colors" },
+			{ "name": "La règle de l'encre", "body": "Jamais de noir pur : l'encre est un brun très sombre (latine) ou une encre d'outremer (grecque) ; la nuit, une encre d'ivoire.", "section": "colors" },
+			{ "name": "La règle des petites capitales", "body": "Tout ce qui étiquette (date, rang, bouton, onglet, légende) est en petites capitales de Garamond, pas en capitales tapées ni en gras.", "section": "typography" },
+			{ "name": "La règle du fer à gauche", "body": "Un paragraphe qui contient ℣/℟ ou des retours de ligne (psaume, hymne, litanie) n'est jamais justifié.", "section": "typography" },
+			{ "name": "La règle du papier", "body": "La profondeur vient du papier et des filets, pas d'ombres portées ni de flou.", "section": "elevation" }
+		],
+		"dos": [
+			"Do passer par les variables --hs-* : une couleur écrite en dur ne suit ni la nuit ni l'autre direction.",
+			"Do dessiner chaque ornement dans les deux directions (da-latine / da-grecque) quand il est propre à l'une.",
+			"Do garder l'or au trait et les angles vifs ; l'arche est la seule courbe de structure.",
+			"Do composer le texte liturgique au fer à gauche dès qu'il porte ℣/℟ ou des retours de ligne.",
+			"Do vérifier chaque écran dans les quatre combinaisons (latine/grecque × jour/nuit), au téléphone et au bureau."
+		],
+		"donts": [
+			"Don't modifier un texte religieux (prière, rubrique, office, méditation) pour la mise en page.",
+			"Don't introduire un symbole étranger à la tradition catholique, ni une image générée présentée comme ancienne.",
+			"Don't arrondir les boutons, puces ou panneaux, ni ajouter des ombres portées.",
+			"Don't utiliser l'or en aplat, ni le rouge de rubrique comme simple couleur d'accent d'interface.",
+			"Don't utiliser du noir pur pour l'encre."
+		]
+	}
+}
