@@ -1,7 +1,7 @@
 # Textes à fournir, à confirmer ou à recopier
 
 Règle : aucun texte de mémoire. Pour chaque point : la décision prise et ce qui reste à faire.
-Les points réglés sont gardés pour l'historique. Dernière mise à jour : 20 novembre 2026.
+Les points réglés sont gardés pour l'historique. Dernière mise à jour : 22 novembre 2026.
 
 **Fait le 13 novembre** : Salve Regina (matin) et Sub tuum (soir) avec leurs versets, Beringer 1925, t. I, n° 429, p. 224-225 (et non 294-295 : l'OCR avait mal lu le numéro de page).
 
@@ -18,6 +18,18 @@ Les points réglés sont gardés pour l'historique. Dernière mise à jour : 20 
 | 7 | Propre de France | **Abandonné.** On reste sur le calendrier romain universel. L'utilisateur ajoutera lui-même ses fêtes dans l'app. | — |
 
 ## Restent ouverts
+- **Bréviaire romain et Officium parvum en français (édition bilingue ancienne)** : recherche du 22 nov.,
+  `docs/audits/BREVIAIRE_FRANCAIS_2026-11-22.md`. *Petit office* : retenu **Montréal 1905** (archive.org `cihm_98272`,
+  permis d'imprimer de Mgr Racicot) ; **Complies et antiennes finales transcrites** (`data/office/parvum-fr.json`,
+  41 paragraphes sur 224, non branché) ; restent Matines, Laudes, Prime, Tierce, Sexte, None, Vêpres, et le verset
+  *Angelus Domini* (para. 12) qui a deux traductions selon l'heure. Écartés : Tournai 1875 (latin seul), recueils
+  canadiens de 1873-1915 (latin seul pour l'office). Piste : Dom G. Froment, *Le Petit office de la Sainte Vierge expliqué
+  et commenté*, édition latine-française, Ligugé, 1893 (*imprimatur* de Poitiers), vu seulement sur Scribd (non admis) :
+  scan libre à trouver (Gallica inaccessible depuis l'environnement, quota Google Livres épuisé). *Bréviaire* : proposés
+  **Fillion 1917** (psautier de la Vulgate, *imprimatur* Paris 1912, `lenouveaupsautie00gl`) et **Hugueny, Labergerie,
+  1934/1947** (tout le Bréviaire, latin-français, psaumes traduits de l'hébreu ; archive.org `le-breviaire-romain-*`,
+  fascicule 8 du Propre du temps absent) ; **à valider par l'utilisateur** (droits : Hugueny † 1942, abbé Obert, date
+  inconnue). Crampon 1923 écarté pour le psautier liturgique (hébreu, numérotation décalée).
 - ~~Mois du Précieux Sang (juillet)~~ : **fait** (14 nov.), Boylesve 1882, autre scan lisible (archive.org `cihm_41458`).
 - **Litanies des défunts (lundi)** : **fait** (14 nov.) avec les textes donnés par l'utilisateur : FSSPX Canada (litanies pour la délivrance des âmes du purgatoire) et salve-regina.com (litanies pour les fidèles défunts) ; en plus, litanies de la bonne mort (Le Petit Sacristain).
 - **Formule de renouvellement de la consécration au cordon de saint Joseph** (demandée le 13 nov., chaque mercredi) : **introuvable** dans Beringer 1925, l'*Enchiridion* 1952, la *Raccolta* 1949 et le *Livre d'or*. Seule existe la bénédiction du cordon, en latin, réservée au prêtre (Beringer, t. II, n° 475). En attendant, le mercredi porte la prière n° 480 « A saint Joseph pour obtenir la vertu de pureté » (Pie IX, 1877), qui répond à la fin du cordon. Piste : un manuel ancien de l'archiconfrérie de Saint-Joseph (Rome, Saint-Roch) ou de Vérone. **14 nov. : à la demande de l'utilisateur, une formule a été composée pour l'app** (`hortus:renouvellement-cordon-saint-joseph`, marquée comme telle) ; à remplacer si une formule ancienne est trouvée.
