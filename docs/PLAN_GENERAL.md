@@ -61,6 +61,10 @@ Chaque agent ne touche que ses fichiers, pour éviter les conflits.
 
 **Faits**
 - Mise en place du lint (ESLint et Prettier).
+- 21 novembre (session autonome, PR #50 à #56) : outillage (Playwright, skills et sous-agents, CLAUDE.md, Superpowers) ;
+  Dimensions D4 (motifs) et D5 (compositeur d'ordo, `npm run ordo`) ; lot 11 (éditeur de recueils) ; lot 9 (Bréviaire
+  romain 2026-2027, moteur de DO exécuté hors ligne) ; qualité (0 avertissement ESLint, tests e2e fiabilisés) ; sources
+  (prière du Cœur agonisant, prière de Fatima de 1943).
 
 ## Outils (relevé du 21 novembre 2026)
 
@@ -79,7 +83,7 @@ Chaque agent ne touche que ses fichiers, pour éviter les conflits.
     `ui-styling`, `slides`, `banner-design`) ; agent du projet **`hortus-ux`** (architecture de l'information, parcours,
     ergonomie, accessibilité, responsive).
 - **Skills de la session** : `code-review`, `simplify`, `security-review`, `pdf`, `skill-creator`, `deep-research`.
-- **Connecteurs** : GitHub, Supabase (projet `jlbcpkmysmdehjocqzmb`), Vercel, Graphify, Context7 (documentation
+- **Connecteurs** : GitHub, Supabase (projet `jlbcpkmysmdehjocqzmb`), Vercel (projet `hortus-sacrum`, équipe `gabriel3-06a3`), Graphify, Context7 (documentation
   technique), Parallel Search (recherche web), Linear (non utilisé).
 - **Tests de bout en bout** : Playwright (`@playwright/test` 1.63.0, version du Chromium installé), `npm run test:e2e`
   après `npm run build` ; projets bureau-clair, bureau-sombre, telephone.

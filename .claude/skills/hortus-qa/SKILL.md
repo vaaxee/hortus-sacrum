@@ -19,12 +19,13 @@ cd app && npm ci                                  # dépendances
 
 ```bash
 npm run check          # svelte-kit sync + svelte-check : 0 erreur, 0 avertissement attendus
-npm run lint           # ESLint : 0 erreur (avertissements require-each-key / prefer-svelte-reactivity tolérés, à réduire)
+npm run lint           # ESLint : 0 problème (toute boucle {#each} a sa clé : règle en erreur)
 npm run format:check   # Prettier
 npm run test           # vitest : unicité et matrice sur toute l'année 2026-2027, pages composées mot pour mot
 npm run build          # prébuild = seed.mjs (data/ → static/data)
 npm run test:e2e       # Playwright : projets bureau-clair, bureau-sombre, telephone (après build)
 node tests/historique.e2e.mjs   # scénarios de l'ancien bug « Internal Error » (après build)
+npm run ordo -- <début> <fin>   # facultatif : rapport des manques de la matrice (docs/audits/ORDO_*.md)
 ```
 
 Moteur Python, quand il est touché :
@@ -32,6 +33,7 @@ Moteur Python, quand il est touché :
 ```bash
 cd engine && python3 tests/compare_2026.py     # 0 écart(s) sur 364 jours
 python3 engine/office/test_parvum.py           # 93 textes vérifiés
+python3 engine/office/test_breviaire.py        # 0 faute, 0 écart d'oraison (calendrier ↔ moteur DO)
 ```
 
 ## Interface
