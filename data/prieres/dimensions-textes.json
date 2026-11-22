@@ -1223,6 +1223,14 @@
       ],
       "personne": ["ennemis"],
       "devinee": ["fin", "objet", "grace", "personne"]
+    },
+    "fsspx:o-mon-jesus-fatima": {
+      "fin": ["demande", "intercession"],
+      "objet": ["jesus-christ"],
+      "grace": ["salut"],
+      "personne": ["soi-meme", "pecheurs"],
+      "forme": ["jaculatoire"],
+      "releve": "2026-11-22"
     }
   }
 }
