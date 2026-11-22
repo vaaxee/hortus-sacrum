@@ -91,6 +91,32 @@ relu mot à mot sur l'image : seuls les écarts isolés de l'alignement automati
 | « O mon Jésus, pardonnez-nous nos péchés ! délivrez-nous du feu de l'enfer !… » (Fatima, forme de 1943, `castelbranco1943:o-mon-jesus-fatima`) | J. Castelbranco, *Le miracle inouï de Fatima*, Montréal, 1943 ; imprimatur du 5 juin 1943 | 38 (et 47) | archive.org `lemiracleinouide00cast` (pages n39, n48 ; imprimatur n3) |
 | « Ô mon Jésus, pardonnez-nous nos péchés… », forme courante (fin de dizaine ; décision de l'utilisateur du 22 nov.) | FSSPX Actualités, « Ô mon Jésus, pardonnez-nous nos péchés », 12 juillet 2019 (site admis pour les prières courantes) | — | https://fsspx.news/fr/news/o-mon-jesus-pardonnez-nous-nos-peches-22114 |
 
+## Manuels d'archiconfréries en anglais (22 novembre 2026, relus sur l'image, à valider)
+
+Décision de l'utilisateur du 22 nov. ; détail, tables des matières et proposition d'intégration :
+`docs/audits/ARCHICONFRERIES_EN_2026-11-22.md`. Le français ancien est pris quand il existe ; sinon traduction de travail
+marquée (`traduction`), original anglais gardé (`anglais`), aucune indulgence comptée.
+
+| Texte | Source | Pages | Accès |
+|---|---|---|---|
+| Pour une bonne mort (« Jésus, mon Seigneur, Dieu de bonté… », avec la prière au Père éternel) (`beringer:pour-une-bonne-mort`) ; même prière que les « Invocations for a Good Death » de la Bona Mors et que les litanies données d'après Le Petit Sacristain | Beringer 1925, t. I, n° 582 | 310-312 | archive.org `lesindulgences0001beri` (images n325-n327) |
+| Pour les âmes du purgatoire, une prière par jour de la semaine (`beringer:ames-purgatoire-*`, 7 pièces) ; équivalent des « Prayers for the whole week » du *Purgatorian Consoler* | Beringer 1925, t. I, n° 615 (« Je uous salue » corrigé) | 323-324 | idem (n338-n339) |
+| A la Sainte Famille (`beringer:a-la-sainte-famille`) | Beringer 1925, t. I, n° 298 | 151 | idem (n166) |
+| Acte de consécration de l'Association de la Bonne Mort (`lefebvre1870:acte-de-consecration-bonne-mort`) | Al. Lefebvre, S. J., *La science de bien mourir, manuel de l'Association de la Bonne Mort*, 5e éd., Paris, Librairie Saint-Germain-des-Prés, 1870 | 401-402 | archive.org `lasciencedebienm00lefeuoft` (n416-n417) |
+| Petit chapelet du précieux Sang, avec l'oraison « O Sang très-précieux » et l'oraison *Omnipotens* (`boylesve1882:petit-chapelet-precieux-sang`) | [Boylesve], *Le mois du Précieux Sang*, Saint-Hyacinthe, 1882 (lettres retournées corrigées, liste dans la fiche) | 42-43, 48-49 | archive.org `cihm_41458` (n43-n44, n49-n50) |
+| Cordon de saint François : les six *Pater*, *Ave* et *Gloria* (`cordon1876:six-pater-ave-gloria`) | *Le Cordon de saint François d'Assise*, Québec, imprimatur du 2 déc. 1876 († E. A. [Taschereau]) | 2-3 | archive.org `cihm_10448` (n6-n7) |
+| **Traduction de travail** : réflexions sur la mort, du dimanche au samedi (`bonamors1896:reflexion-*`, 7 pièces) | *The Manual of the Bona Mors Confraternity*, New York, Apostleship of Prayer, 1896, imprimatur de Mgr Corrigan | 33-34 | archive.org `manualofbonamors00unse` (n44-n45) |
+| **Traduction de travail** : courtes prières en disant les *Pater* (`cordon1878:courtes-prieres`) | *Manual of the Arch-Confraternity of the Cord of S. Francis*, Londres, Burns & Oates, 1878, imprimatur du 21 fév. 1878 | 35, 37 | archive.org `ManualCordOfSFrancis` (n45) |
+| **Traduction de travail** : acte de consécration à Jésus, Marie, Joseph (`saintefamille1875:acte-de-consecration`) | *Manual of the Arch-Confraternity of the Holy Family*, [Québec], 1875 ; statuts approuvés par l'évêque de Liège, 29 juil. 1850 | 44-45 | archive.org `manualofthearchc00unknuoft` (n47-n48) |
+
+Manuels consultés sans pièce ajoutée : *The Book of the Confraternity of the Precious Blood*, Londres, 1850 (rescrit de
+Pie IX, 12 août 1850 ; `TheBookOfTheConfraternity`) et Caswall, *Confraternity Manual of the Most Precious Blood*,
+Londres, 1861 (`ConfraternityManualOfThe`) ; *Purgatorian Consoler*, Baltimore, 1868 (`purgatorianconso00queluoft`) ;
+*Manual of the Confraternity of Our Lady of Perpetual Help*, New York, [19..] (`manualofconfrate00arch`) ; Janvier,
+*Manual of the Archconfraternity of the Holy Face* (`manualofthe-archconfraternityofthe-holy-face`) ; Beringer 1925,
+t. II, n° 230, 234, 255, 262, 272, 306, 308 (sommaires français des archiconfréries) ; *Enchiridion* 1952, n° 594, 636-649
+(contrôle, sur l'OCR).
+
 ## Indulgences (compteur), 14 novembre 2026
 
 Règle : la concession la plus récente fait foi : *Enchiridion indulgentiarum*, 1952 (archive.org `enchiridion_indulgentiarum_1952`) ; à défaut *Thésaurisons pour le ciel*, Carmel de Montréal, 1941, imprimatur du 28 avril 1941, d'après les *Preces et Pia Opera* de 1938 (http://www.liberius.net/livre.php?id_livre=1335) ; à défaut Beringer 1925. Données : `data/prieres/indulgences.json` (indulgences partielles seulement ; plénières et indulgences réservées aux confréries non comptées). Vérifiés dans l'Enchiridion : n° 36 (actes de foi, d'espérance, de charité), 43 (Symbole des Apôtres), 114, 221, 293, 319, 331, 332, 333, 462, 478, 585, 671, 687, 691 (Confiteor), 395 (chapelet), litanies du Sacré-Cœur.
