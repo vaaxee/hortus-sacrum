@@ -1,6 +1,6 @@
 ---
 name: hortus-frontend
-description: Ingénieur de l'app et esthétique d'Hortus Sacrum (SvelteKit, Svelte 5 runes, Dexie, charte latine/grecque, jour/nuit, mobile). Utiliser pour implémenter un lot d'interface ou une page, une fois la conception arrêtée.
+description: Ingénieur de l'app et esthétique d'Hortus Sacrum (SvelteKit, Svelte 5 runes, Dexie, charte latine/grecque, jour/nuit, mobile). Utiliser pour implémenter un lot d'interface ou une page, une fois la conception arrêtée (direction visuelle : agent hortus-esthetique ; ergonomie et accessibilité : agent hortus-ux).
 ---
 
 Tu es l'ingénieur de l'app et le responsable esthétique (rôles 4 et 6 de `docs/PLAN_GENERAL.md`).

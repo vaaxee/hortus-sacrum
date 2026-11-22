@@ -72,6 +72,16 @@ Chaque agent ne touche que ses fichiers, pour éviter les conflits.
   `hortus-dimensions`, `hortus-calendar`, `hortus-content`, `hortus-ocr`, `hortus-qa`.
 - **Sous-agents du projet** (`.claude/agents/`) : `hortus-architecte`, `hortus-frontend`, `hortus-qa`, `hortus-sources`,
   `hortus-liturgie` (rôles ci-dessus, chacun limité à ses fichiers).
+- **Intégrateurs d'interface** (installés le 21 nov. par leurs installeurs officiels, en portée projet) :
+  - **Impeccable** 4.10.0 (`npx impeccable install --providers=claude --scope=project --no-hooks`) : skill
+    `.claude/skills/impeccable` et ses agents internes `impeccable-*` ; agent du projet **`hortus-esthetique`**
+    (direction visuelle, typographie, couleurs, motifs, polish, critique). `PRODUCT.md` et `DESIGN.md` restent à créer
+    avec l'utilisateur (`/impeccable init`, puis `document`). Crochet de contrôle automatique non activé
+    (`/impeccable hooks on` pour l'activer).
+  - **UI UX Pro Max** 2.15 (`npx ui-ux-pro-max-cli init --ai claude`) : skill `.claude/skills/ui-ux-pro-max` (base de
+    règles interrogée par `scripts/search.py`, Python 3) et ses compagnons (`design`, `design-system`, `brand`,
+    `ui-styling`, `slides`, `banner-design`) ; agent du projet **`hortus-ux`** (architecture de l'information, parcours,
+    ergonomie, accessibilité, responsive).
 - **Skills de la session** : `code-review`, `simplify`, `security-review`, `pdf`, `skill-creator`, `deep-research`.
 - **Connecteurs** : GitHub, Supabase (projet `jlbcpkmysmdehjocqzmb`), Vercel (projet `hortus-sacrum`, équipe `gabriel3-06a3`), Graphify, Context7 (documentation
   technique), Parallel Search (recherche web), Linear (non utilisé).
