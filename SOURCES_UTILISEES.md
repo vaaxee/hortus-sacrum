@@ -47,6 +47,19 @@ et fascicules) pour le reste. Rien n'est encore transcrit pour le Bréviaire.
 |---|---|---|
 | *Officium parvum B.M.V.*, français des Complies et des antiennes finales (41 paragraphes alignés sur `data/office/parvum.json`, proposition non branchée) | *Petit office de la Sainte Vierge et des morts…*, Montréal, 1905, « Permis d'imprimer » de Mgr Zotique Racicot, aux. de Montréal, 4 juin 1905 ; latin-français en regard, traducteur non nommé ; pp. 36-58 ; double lecture (ABBYY, Tesseract) puis relecture de chaque page sur l'image | archive.org `cihm_98272` (images n37-n59) → `data/office/parvum-fr.json` ; contrôle `engine/office/test_parvum_fr.py` |
 
+## Somme théologique (lot 10, 22 novembre 2026)
+
+| Texte | Source | Accès |
+|---|---|---|
+| *Somme théologique*, Iª pars, q. 1 à 5 (30 articles), français | *Somme théologique de S. Thomas d'Aquin*, traduite en français et annotée par F. Lachat, Paris, Louis Vivès, 4e éd., 1880, t. I, p. 3-103 (même composition que l'exemplaire de 1874, Harvard/Google, utilisé en contrôle). Vote de quatre lectures (Tesseract et ABBYY, sur les deux scans) ; chaque ligne sans accord relue sur l'image (`engine/somme/corrections_fr.txt`) ; orthographe de l'édition gardée (« paroît », « connoître », « privilége ») ; notes de Lachat et paragraphes « (Conclusion. — …) » des éditeurs non repris | archive.org `sommetheologique01thom` (contrôle `sommethologique07lachgoog`) → `engine/somme/construire.py` → `data/somme/Ia-NN.json`, `index.json` |
+| Même texte, latin | *Sancti Thomae Aquinatis Opera omnia iussu Leonis XIII*, t. IV, Rome, Typographia Polyglotta, 1888 ; texte de la transcription du Corpus Thomisticum (E. Alarcón), contrôlé par alignement sur la lecture ABBYY du scan léonin (`engine/somme/latin_controle.py`) ; écarts isolés vus sur l'image (`corrections_la.txt` : « etc. » rétabli, q. 5 a. 2) ; intitulés des questions et articles relus sur l'image (`titres_la.json`) ; ponctuation du Corpus Thomisticum | archive.org `operaomniaiussui04thom` ; https://www.corpusthomisticum.org/sth1001.html |
+
+Points laissés tels qu'imprimés (Lachat) : « Ici se présente dix questions » (q. 1), « 2. » pour « 2° » (q. 3 a. 4,
+obj. 2), deux réponses numérotées « 3° » (q. 5 a. 3, la quatrième), « il y beaucoup de bien » (q. 5 a. 5, lettre tombée
+à l'impression, même chose sur les deux exemplaires), « impartaite » (q. 4 a. 3), « consiste-elle » (q. 5). Le *Sed
+contra* de la q. 1 a. 5 n'est pas traduit par Lachat : le latin est donné seul (note dans l'article). Le latin n'a pas été
+relu mot à mot sur l'image : seuls les écarts isolés de l'alignement automatique l'ont été.
+
 ## Étape 9 — Méditations et lectures
 
 | Recueil | Édition | Usage | Accès |

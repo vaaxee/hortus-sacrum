@@ -60,3 +60,14 @@ Chaque push sur `main` reconstruit automatiquement https://hortus-sacrum.vercel.
 12. **Questions ouvertes pour l'utilisateur (21 nov.)** : forme de l'« Ô mon Jésus » en fin de dizaine (forme imprimée de
     1943 trouvée, forme répandue non trouvée dans une édition ancienne : voir A_FOURNIR.md) ; thème de la semaine du mois
     (LOT_DIMENSIONS § 8, non adopté par défaut).
+13. **Somme théologique (lot 10) : Iª q. 1-5 faites (22 nov., branche `claude/lot10-somme`).** Chaîne dans `engine/somme/`
+    (docstrings de chaque script) : `tess.py` + `selection.py` (Tesseract sur les scans de 1880 et 1874), `voter.py`
+    (quatre lectures), `resoudre.py`, puis `planche74.py` (image de l'exemplaire de 1874 et lignes numérotées, « ? » =
+    ligne sans accord à relire) ; décisions dans `corrections_fr.txt` (« ¶ » en tête force un alinéa) ; latin :
+    `latin_ct.py` (Corpus Thomisticum) contrôlé par `latin_controle.py`, écarts dans `corrections_la.txt` ; intitulés
+    latins dans `titres_la.json` ; `construire.py <R.json> corrections_fr.txt <LA.json> titres_la.json pages.json
+    data/somme`. Les fichiers intermédiaires (R.json, V.json, LA.json, TL.json, Dsel.json, scans) sont hors dépôt : à
+    régénérer avec les scripts s'ils sont perdus. App : `app/src/lib/somme.ts` (article du jour d'après le marque-page
+    de l'appareil, meta `marque-somme`), `/lecture/doctrine` (latin en regard comme l'Évangile), `lec:doctrine` comptée
+    dans « Lectures du jour » (programme, révision 2). **Suite** : relire q. 6-13 (pages n107-n272 du scan de 1880), puis
+    les ajouter à `pages.json`. Points douteux : `SOURCES_UTILISEES.md` (Somme).
