@@ -101,7 +101,7 @@ def paragraphes(lignes):
     return [typo(p) for p in paras]
 
 
-NUM = re.compile(r'^\d+°')
+NUM = re.compile(r'^\d+(°|\. )')  # « 2. » : faute d'impression pour « 2° » (Iª q. 3 a. 4)
 
 
 def decouper_article(ps, ref):
@@ -110,13 +110,8 @@ def decouper_article(ps, ref):
     etat = 'obj'
     for p in ps:
         if p.startswith('(Conclusion'):
-            etat = 'concl'
-            if re.search(r'\)\.?$', p):
-                etat = 'apres-concl'
-            continue
-        if etat == 'concl':
-            if re.search(r'\)\.?$', p):
-                etat = 'apres-concl'
+            # un seul alinéa, fermé d'ordinaire par « .) » (une fois par « » » : Iª q. 3 a. 1, faute d'impression)
+            etat = 'apres-concl'
             continue
         if p.startswith(('Je réponds aux', 'Ces observations renferment la réponse')):
             etat = 'rep'
