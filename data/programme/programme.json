@@ -435,6 +435,24 @@
       }
     },
     {
+      "id": "prog:fin-dizaine-fatima",
+      "titre": "Ô mon Jésus, pardonnez-nous nos péchés (fin de dizaine)",
+      "motif": {"fins": ["demande", "intercession"], "objets": ["jesus-christ"], "note": "prière enseignée à Fatima (13 juillet 1917), à chaque fin de dizaine ; forme courante retenue par l'utilisateur le 22 nov. 2026"},
+      "revision": 1,
+      "source": "SPEC § 11, principe 2 ; décision de l'utilisateur du 22 nov. 2026 (forme courante) ; FSSPX Actualités, 12 juillet 2019",
+      "insertions": [
+        {
+          "hote": "prog:chapelet",
+          "point": "fin-dizaine",
+          "sections": [
+            {
+              "texte": "fsspx:o-mon-jesus-fatima"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "prog:fin-dizaine-o-marie",
       "titre": "Ô Marie, conçue sans péché (fin de dizaine)",
       "motif": {"fins": ["demande"], "objets": ["sainte-vierge"], "note": "invocation de la médaille miraculeuse à chaque fin de dizaine (SPEC § 11.2)"},
@@ -1558,10 +1576,6 @@
     "Gloire au Père, au Fils et au Saint-Esprit, maintenant et toujours, comme dans le commencement et dans les siècles des siècles. Ainsi soit-il."
   ],
   "a_fournir": [
-    {
-      "quoi": "« Ô mon Jésus, pardonnez-nous nos péchés… » (fin de dizaine, SPEC § 11) : source ancienne",
-      "ou": "prog:chapelet, point fin-dizaine"
-    },
     {
       "quoi": "« Cœur immaculé de Marie, priez pour nous… » (scapulaire vert) : source ancienne",
       "ou": "prog:chapelet, point fin-dizaine"

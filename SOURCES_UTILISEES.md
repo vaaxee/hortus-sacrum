@@ -69,6 +69,7 @@ ancienne reste à trouver.
 |---|---|---|---|
 | Petite prière du Cœur agonisant de Jésus, à dire après l'Angelus (`apostolat1864:coeur-agonisant`) | Ramière, *Petit manuel de l'Apostolat de la prière*, 1re éd. canadienne d'après la 4e éd. française, Montréal, J.-B. Rolland et fils, 1864 ; approbation de Mgr Bourget | 106-107 (règle de l'Angelus p. 138) | archive.org `cihm_39977` (pages n121, n122, n153) |
 | « O mon Jésus, pardonnez-nous nos péchés ! délivrez-nous du feu de l'enfer !… » (Fatima, forme de 1943, `castelbranco1943:o-mon-jesus-fatima`) | J. Castelbranco, *Le miracle inouï de Fatima*, Montréal, 1943 ; imprimatur du 5 juin 1943 | 38 (et 47) | archive.org `lemiracleinouide00cast` (pages n39, n48 ; imprimatur n3) |
+| « Ô mon Jésus, pardonnez-nous nos péchés… », forme courante (fin de dizaine ; décision de l'utilisateur du 22 nov.) | FSSPX Actualités, « Ô mon Jésus, pardonnez-nous nos péchés », 12 juillet 2019 (site admis pour les prières courantes) | — | https://fsspx.news/fr/news/o-mon-jesus-pardonnez-nous-nos-peches-22114 |
 
 ## Indulgences (compteur), 14 novembre 2026
 
