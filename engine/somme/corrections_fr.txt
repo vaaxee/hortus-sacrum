@@ -679,4 +679,95 @@
 117	12	Quatre questions se présentent sur le premier point : 1° Dieu est-il
 117	13	infini? 2° Y a-t-il autre chose que Dieu qui soit infini par essence? 3° Peut-
 117	14	il y avoir un infini en étendue? 4° Peut-il en exister un en multiplicité?
+118	2	Il paroît que Dieu n'est pas infini. 1° Tout infini est imparfait, parce
+118	3	qu'il implique l'idée de matière et de parties, comme le dit Aristote dans
+118	6	2° Le fini et l'infini renferment, d'après le même philosophe, la quan-
+118	7	tité. Or Dieu ne renferme pas la quantité puisqu'il n'est pas un corps,
+118	9	3° Ce qui est ici et n'est pas là est fini quant au lieu; donc ce qui est
+118	10	ceci et n'est pas cela est fini quant à la substance. Or Dieu est ceci et n'est
+118	13	Mais saint Jean Damascène dit, De la foi orth., I, 4 : « Dieu est infini,
+118	15	(Conclusion. — Comme Dieu n'a pas l'être dans un sujet, mais qu'il
+118	17	Il faut dire ceci : Tous les anciens philosophes attribuoient, comme le
+118	18	remarque Aristote, l'infinité au premier principe, car la raison leur
+119	17	que l'être divin n'est pas un être reçu dans un sujet, mais l'être sub-
+119	20	Je réponds aux arguments : 1° Ce qui précède résout la première
+119	22	2° Le terme ou la fin de la quantité est comme sa forme; car la figure
+120	2	ce n'est pas, comme on vient de le voir, cette sorte d'infini qu'on attribue
+120	4	¶3° Par cela seul que l'être divin subsiste dans lui-même et non dans
+120	6	Si la blancheur subsistoit par elle-même, elle seroit toute autre chose que
+120	8	ARTICLE II.
+120	10	Il paroît qu'autre chose que Dieu peut être infini par essence. 1° L'effi-
+120	12	Dieu est infinie, son efficacité l'est aussi; donc il peut produire un effet
+120	15	2° Tout ce qui a une force infinie a une essence infinie. Or l'intelligence
+120	16	créée a une force infinie, puisqu'elle embrasse l'universel, qui peut s'éten-
+120	17	dre à une infinité de choses. Donc l'intelligence créée a une essence infinie.
+120	18	3° La matière première est autre chose que Dieu, comme nous l'avons
+120	21	Mais tout ce qui est infini ne peut venir d'un principe, ainsi que le dit
+121	0	Aristote. Or tout ce qui n'est pas Dieu vient de Dieu comme du premier
+121	1	principe. Donc il n'y a que Dieu qui soit infini.
+121	2	(Conclusion. — Dieu seul est infini par essence et absolument; les
+121	4	Il faut dire ceci : Il peut y avoir hors de Dieu des infinis relatifs; mais
+121	6	fini matériel, il est incontestable que tout être en acte a une forme et
+121	12	l'infini. Quant à l'infini formel, on voit aussi clairement que les êtres
+121	13	mêlés de forme et de matière sont finis absolument et qu'ils ne sont
+121	15	dans la matière, mais en elles-mêmes, comme plusieurs le pensent des
+121	20	absolument infini.
+121	21	Je réponds aux arguments : 2° Un être créé n'est pas son être à soi-
+121	22	même, car être son être à soi-même c'est n'être pas créé. Donc il est im-
+121	24	gré sa toute-puissance, créer une chose qui ne fût pas créée, car cela im-
+122	2	2° Si l'intelligence embrasse en quelque sorte l'infini, c'est qu'elle est
+122	6	3° La matière première n'existe point par elle-même, substantielle-
+122	8	seulement un être en puissance, si bien qu'elle a été concréée plutôt que
+122	9	créée (1). Et quand on la considère comme être potentiel, encore n'est-
+122	11	peut recevoir que des formes matérielles.
+122	14	Il paroît qu'il peut y avoir un infini actuel en étendue. 1° L'erreur
+122	19	un infini en étendue.
+122	20	2° Une chose peut renfermer ce qui n'est pas contraire à l'idée qui la
+123	0	faut que la quantité varie entre le fini et l'infini. Donc l'étendue peut
+123	1	renfermer l'infini.
+123	2	3° L'étendue est divisible à l'infini; car le continu, comme le définit
+123	3	Aristote, n'est autre chose que l'infini divisible. Mais les contraires
+123	5	la division, et l'accroissement à la diminution. Si donc l'étendue peut se
+123	6	diviser à l'infini, elle peut s'augmenter de même; donc il peut exister
+123	7	une grandeur infinie.
+123	10	Or le temps et le mouvement peuvent être infinis, puisque tous les points
+123	14	sions, n'est autre chose que le terme et la limite d'un corps fini. On peut
+123	17	(Conclusion. — Aucun corps, soit physique, soit mathématique, ne
+123	20	de l'être en étendue. Etablissez donc qu'un corps, par exemple l'air ou le
+124	4	ment, sous le rapport de la quantité abstraite; physiquement, dans l'idée
+124	8	comme la forme substantielle entraîne des accessoires de la même nature,
+124	12	le mouvement. Tout corps physique a un mouvement physique; mais un
+124	13	corps infini, quel mouvement pourroit-il avoir? D'abord pas le mouvement
+124	24	Maintenant, pour le corps mathématique, nous ne saurions le concevoir
+125	1	mathématique aura une figure, donc il sera fini, car la figure est renfer-
+125	3	Je réponds aux arguments : 1° Le géomètre ne suppose pas, car il n'en
+125	7	2° L'infini n'est pas contraire à l'idée de l'étendue en général, cela est
+125	11	genre; donc il n'y a pas d'étendue infinie, puisque ses espèces ne le sont pas.
+125	12	3° L'infini que forme la quantité trouve son principe dans la matière.
+126	0	§Le mouvement et le temps ne sont pas en acte tout entiers, mais en
+127	0	ARTICLE IV.
+127	0+	Peut-il y avoir un infini actuel en multiplicité?
+127	1	Il paroît qu'il peut y avoir une multiplicité actuellement infinie. 1° Ce
+127	5	2° Un individu de chaque espèce peut être en acte; or les espèces de
+127	7	3° Les choses qui ne sont point opposées ne s'excluent pas les unes les
+127	14	(Conclusion. — Une multitude infinie ne peut être en acte ni par soi
+127	15	ni par accident, mais elle peut être en puissance.)
+128	17	philosophes, une multitude infinie par accident.
+128	18	Mais la chose n'est pas ainsi. Toute multitude est dans quelque espèce
+129	3	que nous déduisions à l'instant même. Mais si la multiplicité ne peut
+129	4	être infinie en acte, elle peut l'être en puissance. Plus on divise un corps,
+129	8	Je réponds aux arguments : 1° Tout ce qui est en puissance passe à
+129	13	2° Les espèces de figures tiennent leur infinité du nombre, car elles
+129	18	3° Sans doute on peut poser successivement les choses qui ne sont point
+129	19	opposées les unes aux autres, mais l'infinité est contraire à chaque espèce de
+130	0	QUESTION VIII.
+130	0+	De l'existence de Dieu dans les choses.
+130	4	chose? 2° Dieu est-il partout? 3° Dieu est-il en tout lieu par son essence,
+130	10	parole du Psalmiste, CXII, 4 : « Le Seigneur est au-dessus de toutes les
+130	12	2° Ce qui est dans une chose est contenu par elle? Or Dieu n'est pas
+130	17	3° Plus un agent a de force, plus son action s'étend au loin. Or Dieu
+130	19	
+130	20	
+130	21	
 112	6	¶3° Toute chose est bonne par sa bonté. Si donc il y a des choses qui ne
+119	0	trompoient sur la nature de ce principe, ils durent se tromper aussi sur son

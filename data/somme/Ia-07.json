@@ -1,0 +1,243 @@
+{
+ "ref": "Iª q. 7",
+ "partie": "Ia",
+ "question": 7,
+ "titre": {
+  "la": "De infinitate Dei",
+  "fr": "De l’infinité de Dieu."
+ },
+ "prooemium": {
+  "la": "Post considerationem divinae perfectionis, considerandum est de eius infinitate, et de existentia eius in rebus, attribuitur enim Deo quod sit ubique et in omnibus rebus, inquantum est incircumscriptibilis et infinitus. Circa primum quaeruntur quatuor. Primo, utrum Deus sit infinitus. Secundo, utrum aliquid praeter ipsum sit infinitum secundum essentiam. Tertio, utrum aliquid possit esse infinitum secundum magnitudinem. Quarto, utrum possit esse infinitum in rebus secundum multitudinem.",
+  "fr": "Après avoir parlé de la perfection de Dieu, nous devons traiter de son infinité et de son existence dans les choses; car il doit être partout, dans tous lieux, s’il est sans limites et sans fin.\n\nQuatre questions se présentent sur le premier point : 1° Dieu est-il infini? 2° Y a-t-il autre chose que Dieu qui soit infini par essence? 3° Peut-il y avoir un infini en étendue? 4° Peut-il en exister un en multiplicité?"
+ },
+ "articles": [
+  {
+   "ref": "Iª q. 7 a. 1",
+   "titre": {
+    "la": "Utrum Deus sit infinitus",
+    "fr": "Dieu est-il infini?"
+   },
+   "objections": [
+    {
+     "la": "Ad primum sic proceditur. Videtur quod Deus non sit infinitus. Omne enim infinitum est imperfectum, quia habet rationem partis et materiae, ut dicitur in III Physic. Sed Deus est perfectissimus. Ergo non est infinitus.",
+     "fr": "Il paroît que Dieu n’est pas infini. 1° Tout infini est imparfait, parce qu’il implique l’idée de matière et de parties, comme le dit Aristote dans la Métaphysique. Or Dieu est souverainement parfait : donc il n’est pas infini."
+    },
+    {
+     "la": "Praeterea, secundum philosophum in I Physic., finitum et infinitum conveniunt quantitati. Sed in Deo non est quantitas, cum non sit corpus, ut supra ostensum est. Ergo non competit sibi esse infinitum.",
+     "fr": "2° Le fini et l’infini renferment, d’après le même philosophe, la quantité. Or Dieu ne renferme pas la quantité puisqu’il n’est pas un corps, ainsi que nous l’avons démontré précédemment : donc il n’est pas infini."
+    },
+    {
+     "la": "Praeterea, quod ita est hic quod non alibi, est finitum secundum locum, ergo quod ita est hoc quod non est aliud, est finitum secundum substantiam. Sed Deus est hoc, et non est aliud, non enim est lapis nec lignum. Ergo Deus non est infinitus secundum substantiam.",
+     "fr": "3° Ce qui est ici et n’est pas là est fini quant au lieu; donc ce qui est ceci et n’est pas cela est fini quant à la substance. Or Dieu est ceci et n’est pas cela, par exemple il n’est ni le bois ni la pierre : donc Dieu n’est pas infini quant à la substance."
+    }
+   ],
+   "sed_contra": {
+    "la": "Sed contra est quod dicit Damascenus, quod *Deus est infinitus et aeternus et incircumscriptibilis*.",
+    "fr": "Mais saint Jean Damascène dit, De la foi orth., I, 4 : « Dieu est infini, éternel et dans tout lieu. »"
+   },
+   "respondeo": {
+    "la": "Respondeo dicendum quod omnes antiqui philosophi attribuunt infinitum primo principio, ut dicitur in III Physic., et hoc rationabiliter, considerantes res effluere a primo principio in infinitum. Sed quia quidam erraverunt circa naturam primi principii, consequens fuit ut errarent circa infinitatem ipsius. Quia enim ponebant primum principium materiam, consequenter attribuerunt primo principio infinitatem materialem; dicentes aliquod corpus infinitum esse primum principium rerum. Considerandum est igitur quod infinitum dicitur aliquid ex eo quod non est finitum. Finitur autem quodammodo et materia per formam, et forma per materiam. Materia quidem per formam, inquantum materia, antequam recipiat formam, est in potentia ad multas formas, sed cum recipit unam, terminatur per illam. Forma vero finitur per materiam, inquantum forma, in se considerata, communis est ad multa, sed per hoc quod recipitur in materia, fit forma determinate huius rei. Materia autem perficitur per formam per quam finitur, et ideo infinitum secundum quod attribuitur materiae, habet rationem imperfecti; est enim quasi materia non habens formam. Forma autem non perficitur per materiam, sed magis per eam eius amplitudo contrahitur, unde infinitum secundum quod se tenet ex parte formae non determinatae per materiam, habet rationem perfecti. Illud autem quod est maxime formale omnium, est ipsum esse, ut ex superioribus patet. Cum igitur esse divinum non sit esse receptum in aliquo, sed ipse sit suum esse subsistens, ut supra ostensum est; manifestum est quod ipse Deus sit infinitus et perfectus.",
+    "fr": "Il faut dire ceci : Tous les anciens philosophes attribuoient, comme le remarque Aristote, l’infinité au premier principe, car la raison leur montroit que les êtres en découlent à l’infini. Mais comme plusieurs se trompoient sur la nature de ce principe, ils durent se tromper aussi sur son infinité; pensant qu’il n’étoit autre chose que la matière, ils lui prêtèrent l’infini matériel, et firent du premier principe un corps sans limites.\n\nQu’est-ce donc qu’être infini? C’est, comme le dit Aristote, n’être pas fini. Or la matière est en quelque sorte finie par la forme, et la forme par la matière. D’abord la matière est finie par la forme : car tant qu’elle n’a pas cette entité pour compagne, elle peut en recevoir une multitude; mais quand elle est devenue le support d’une seule, elle est déterminée, limitée par elle. Ensuite la forme est finie par la matière : car, envisagée dans elle-même, elle peut s’appliquer à une foule d’êtres; mais dès qu’elle a été reçue dans son sujet, elle est limitée à telle ou telle chose. D’un autre coté, la matière est perfectionnée par la forme qui la rend finie; si bien que l’infini considéré du côté matériel implique l’idée d’imperfection, puisqu’il est la matière sans forme. Au contraire, la forme n’est pas perfectionnée, mais plutôt limitée par la matière; en sorte que l’infini formel implique, comme tel, l’idée de perfection. Or la forme la plus complète de toutes, c’est l’être, comme on l’a vu plus haut. Puis donc que l’être divin n’est pas un être reçu dans un sujet, mais l’être subsistant en lui-même, il s’ensuit manifestement que Dieu est infini et parfait."
+   },
+   "reponses": [
+    {
+     "la": "Et per hoc patet responsio ad primum.",
+     "fr": "Je réponds aux arguments : 1° Ce qui précède résout la première objection."
+    },
+    {
+     "la": "Ad secundum dicendum quod terminus quantitatis est sicut forma ipsius, cuius signum est, quod figura, quae consistit in terminatione quantitatis, est quaedam forma circa quantitatem. Unde infinitum quod competit quantitati, est infinitum quod se tenet ex parte materiae, et tale infinitum non attribuitur Deo, ut dictum est.",
+     "fr": "2° Le terme ou la fin de la quantité est comme sa forme; car la figure qu’elle trace par la circonférence où elle se termine est une forme quantitative. L’infini qui renferme la quantité est donc l’infini matériel. Or ce n’est pas, comme on vient de le voir, cette sorte d’infini qu’on attribue à Dieu"
+    },
+    {
+     "la": "Ad tertium dicendum quod, ex hoc ipso quod esse Dei est per se subsistens non receptum in aliquo, prout dicitur infinitum, distinguitur ab omnibus aliis, et alia removentur ab eo, sicut, si esset albedo subsistens, ex hoc ipso quod non esset in alio, differret ab omni albedine existente in subiecto.",
+     "fr": "3° Par cela seul que l’être divin subsiste dans lui-même et non dans un sujet, l’infini qui appartient à Dieu diffère de tous les autres infinis. Si la blancheur subsistoit par elle-même, elle seroit toute autre chose que la blancheur qui existe dans un sujet."
+    }
+   ],
+   "pages": {
+    "fr": [
+     115,
+     117
+    ]
+   }
+  },
+  {
+   "ref": "Iª q. 7 a. 2",
+   "titre": {
+    "la": "Utrum aliquid aliud quam Deus possit esse infinitum per essentiam",
+    "fr": "Y a-t-il autre chose que Dieu qui puisse être infini par essence?"
+   },
+   "objections": [
+    {
+     "la": "Ad secundum sic proceditur. Videtur quod aliquid aliud quam Deus possit esse infinitum per essentiam. Virtus enim rei proportionatur essentiae eius. Si igitur essentia Dei est infinita, oportet quod eius virtus sit infinita. Ergo potest producere effectum infinitum, cum quantitas virtutis per effectum cognoscatur.",
+     "fr": "Il paroît qu’autre chose que Dieu peut être infini par essence. 1° L’efficacité d’une chose est en proportion de son essence. Si donc l’essence de Dieu est infinie, son efficacité l’est aussi; donc il peut produire un effet infini, puisque l’effet dépend de l’efficacité de la chose; donc il peut y avoir autre chose que Dieu qui soit infini."
+    },
+    {
+     "la": "Praeterea, quidquid habet virtutem infinitam, habet essentiam infinitam. Sed intellectus creatus habet virtutem infinitam, apprehendit enim universale, quod se potest extendere ad infinita singularia. Ergo omnis substantia intellectualis creata est infinita.",
+     "fr": "2° Tout ce qui a une force infinie a une essence infinie. Or l’intelligence créée a une force infinie, puisqu’elle embrasse l’universel, qui peut s’étendre à une infinité de choses. Donc l’intelligence créée a une essence infinie."
+    },
+    {
+     "la": "Praeterea, materia prima aliud est a Deo, ut supra ostensum est. Sed materia prima est infinita. Ergo aliquid aliud praeter Deum potest esse infinitum.",
+     "fr": "3° La matière première est autre chose que Dieu, comme nous l’avons montré dans une discussion précédente. Or la matière première est infinie; donc autre chose que Dieu peut être infini."
+    }
+   ],
+   "sed_contra": {
+    "la": "Sed contra est quod infinitum non potest esse ex principio aliquo, ut dicitur in III Physic. Omne autem quod est praeter Deum, est ex Deo sicut ex primo principio. Ergo nihil quod est praeter Deum, potest esse infinitum.",
+    "fr": "Mais tout ce qui est infini ne peut venir d’un principe, ainsi que le dit Aristote. Or tout ce qui n’est pas Dieu vient de Dieu comme du premier principe. Donc il n’y a que Dieu qui soit infini."
+   },
+   "respondeo": {
+    "la": "Respondeo dicendum quod aliquid praeter Deum potest esse infinitum secundum quid, sed non simpliciter. Si enim loquamur de infinito secundum quod competit materiae, manifestum est quod omne existens in actu, habet aliquam formam, et sic materia eius est terminata per formam. Sed quia materia, secundum quod est sub una forma substantiali, remanet in potentia ad multas formas accidentales; quod est finitum simpliciter, potest esse infinitum secundum quid, utpote lignum est finitum secundum suam formam, sed tamen est infinitum secundum quid, inquantum est in potentia ad figuras infinitas. Si autem loquamur de infinito secundum quod convenit formae, sic manifestum est quod illa quorum formae sunt in materia, sunt simpliciter finita, et nullo modo infinita. Si autem sint aliquae formae creatae non receptae in materia, sed per se subsistentes, ut quidam de Angelis opinantur, erunt quidem infinitae secundum quid, inquantum huiusmodi formae non terminantur neque contrahuntur per aliquam materiam, sed quia forma creata sic subsistens habet esse, et non est suum esse, necesse est quod ipsum eius esse sit receptum et contractum ad determinatam naturam. Unde non potest esse infinitum simpliciter.",
+    "fr": "Il faut dire ceci : Il peut y avoir hors de Dieu des infinis relatifs; mais il ne peut y avoir d’infinis absolus. En effet, pour parler d’abord de l’infini matériel, il est incontestable que tout être en acte a une forme et que sa matière est déterminée limitée par cela même. Mais comme la matière revêtue d’une forme substantielle conserve l’aptitude de recevoir une multitude de formes accidentelles, l’être fini absolument peut être infini relativement : ainsi le bois est fini dans sa forme actuelle; mais il est infini sous un autre rapport, en tant qu’il peut changer de figures à l’infini. Quant à l’infini formel, on voit aussi clairement que les êtres mêlés de forme et de matière sont finis absolument et qu’ils ne sont infinis d’aucune manière. S’il est des formes créées qui n’existent pas dans la matière, mais en elles-mêmes, comme plusieurs le pensent des anges, ces formes auront bien l’infinité sous un rapport, en tant qu’elles ne sont ni limitées, ni restreintes par la matière; mais comme leur être n’est pas leur être propre, puisqu’elles l’ont reçu du dehors, il est nécessairement borné à une nature déterminée. Il ne peut donc être absolument infini."
+   },
+   "reponses": [
+    {
+     "la": "Ad primum ergo dicendum quod hoc est contra rationem facti, quod essentia rei sit ipsum esse eius, quia esse subsistens non est esse creatum, unde contra rationem facti est, quod sit simpliciter infinitum. Sicut ergo Deus, licet habeat potentiam infinitam, non tamen potest facere aliquid non factum (hoc enim esset contradictoria esse simul); ita non potest facere aliquid infinitum simpliciter.",
+     "fr": "Je réponds aux arguments : 2° Un être créé n’est pas son être à soi-même, car être son être à soi-même c’est n’être pas créé. Donc il est impossible qu’un être créé soit absolument infini. Or Dieu ne sauroit, malgré sa toute-puissance, créer une chose qui ne fût pas créée, car cela implique contradiction dans les termes : donc il ne peut créer quelque chose d’absolument infini."
+    },
+    {
+     "la": "Ad secundum dicendum quod hoc ipsum quod virtus intellectus extendit se quodammodo ad infinita, procedit ex hoc quod intellectus est forma non in materia; sed vel totaliter separata, sicut sunt substantiae Angelorum; vel ad minus potentia intellectiva, quae non est actus alicuius organi, in anima intellectiva corpori coniuncta.",
+     "fr": "2° Si l’intelligence embrasse en quelque sorte l’infini, c’est qu’elle est une forme spirituelle : ou elle se trouve entièrement séparée de la matière comme dans les anges; ou du moins elle n’est pas le produit des organes corporels si elle est unie à la matière, comme dans l’homme."
+    },
+    {
+     "la": "Ad tertium dicendum quod materia prima non existit in rerum natura per seipsam, cum non sit ens in actu, sed potentia tantum, unde magis est aliquid concreatum, quam creatum. Nihilominus tamen materia prima, etiam secundum potentiam, non est infinita simpliciter, sed secundum quid, quia eius potentia non se extendit nisi ad formas naturales.",
+     "fr": "3° La matière première n’existe point par elle-même, substantiellement, dans la nature des choses; elle est non pas un être en acte, mais seulement un être en puissance, si bien qu’elle a été concréée plutôt que créée. Et quand on la considère comme être potentiel, encore n’est-elle pas infinie d’une manière absolue, mais relativement, car elle ne peut recevoir que des formes matérielles."
+    }
+   ],
+   "pages": {
+    "fr": [
+     117,
+     119
+    ]
+   }
+  },
+  {
+   "ref": "Iª q. 7 a. 3",
+   "titre": {
+    "la": "Utrum possit esse aliquid infinitum actu secundum magnitudinem",
+    "fr": "Peut-il y avoir un infini actuel en étendue?"
+   },
+   "objections": [
+    {
+     "la": "Ad tertium sic proceditur. Videtur quod possit esse aliquid infinitum actu secundum magnitudinem. In scientiis enim mathematicis non invenitur falsum, *quia abstrahentium non est mendacium*, ut dicitur in II Physic. Sed scientiae mathematicae utuntur infinito secundum magnitudinem, dicit enim geometra in suis demonstrationibus, sit linea talis infinita. Ergo non est impossibile aliquid esse infinitum secundum magnitudinem.",
+     "fr": "Il paroît qu’il peut y avoir un infini actuel en étendue. 1° L’erreur n’existe pas dans les sciences mathématiques; car les principes abstraits ne mentent point comme s’exprime Aristote. Or les sciences mathématiques se servent de l’infini en étendue, puisque le géomètre suppose souvent des lignes infinies dans ses démonstrations. Donc il peut y avoir un infini en étendue."
+    },
+    {
+     "la": "Praeterea, id quod non est contra rationem alicuius, non est impossibile convenire sibi. Sed esse infinitum non est contra rationem magnitudinis, sed magis finitum et infinitum videntur esse passiones quantitatis. Ergo non est impossibile aliquam magnitudinem esse infinitam.",
+     "fr": "2° Une chose peut renfermer ce qui n’est pas contraire à l’idée qui la constitue. Or l’infini n’est pas contraire à l’idée de l’étendue, tant s’en faut que la quantité varie entre le fini et l’infini. Donc l’étendue peut renfermer l’infini."
+    },
+    {
+     "la": "Praeterea, magnitudo divisibilis est in infinitum, sic enim definitur continuum, quod est in infinitum divisibile, ut patet in III Physic. Sed contraria nata sunt fieri circa idem. Cum ergo divisioni opponatur additio, et diminutioni augmentum, videtur quod magnitudo possit crescere in infinitum. Ergo possibile est esse magnitudinem infinitam.",
+     "fr": "3° L’étendue est divisible à l’infini; car le continu, comme le définit Aristote, n’est autre chose que l’infini divisible. Mais les contraires peuvent se réaliser dans les mêmes choses. Or l’addition est contraire a la division, et l’accroissement à la diminution. Si donc l’étendue peut se diviser à l’infini, elle peut s’augmenter de même; donc il peut exister une grandeur infinie."
+    },
+    {
+     "la": "Praeterea, motus et tempus habent quantitatem et continuitatem a magnitudine super quam transit motus, ut dicitur in IV Physic. Sed non est contra rationem temporis et motus quod sint infinita, cum unumquodque indivisibile signatum in tempore et motu circulari, sit principium et finis. Ergo nec contra rationem magnitudinis erit quod sit infinita.",
+     "fr": "4° Le mouvement et le temps empruntent, comme le dit Aristote, la quantité et la continuité à l’étendue, sur laquelle se meuvent les corps. Or le temps et le mouvement peuvent être infinis, puisque tous les points indivisibles qu’ils marquent dans leur passage sont tout à la fois principe et fin. Donc l’étendue peut être aussi infinie."
+    }
+   ],
+   "sed_contra": {
+    "la": "Sed contra, omne corpus superficiem habet. Sed omne corpus superficiem habens est finitum, quia superficies est terminus corporis finiti. Ergo omne corpus est finitum. Et similiter potest dici de superficie et linea. Nihil est ergo infinitum secundum magnitudinem.",
+    "fr": "Mais tout corps a une superficie. Or la superficie dans ses trois dimensions, n’est autre chose que le terme et la limite d’un corps fini. On peut en dire autant de la ligne, qui est l’élément de la superficie. Il n’y a donc pas d’infini en étendue."
+   },
+   "respondeo": {
+    "la": "Respondeo dicendum quod aliud est esse infinitum secundum suam essentiam, et secundum magnitudinem. Dato enim quod esset aliquod corpus infinitum secundum magnitudinem, utpote ignis vel aer, non tamen esset infinitum secundum essentiam, quia essentia sua esset terminata ad aliquam speciem per formam, et ad aliquod individuum per materiam. Et ideo, habito ex praemissis quod nulla creatura est infinita secundum essentiam, adhuc restat inquirere utrum aliquid creatum sit infinitum secundum magnitudinem. Sciendum est igitur quod corpus, quod est magnitudo completa, dupliciter sumitur, scilicet mathematice, secundum quod consideratur in eo sola quantitas; et naturaliter, secundum quod consideratur in eo materia et forma. Et de corpore quidem naturali, quod non possit esse infinitum in actu, manifestum est. Nam omne corpus naturale aliquam formam substantialem habet determinatam, cum igitur ad formam substantialem consequantur accidentia, necesse est quod ad determinatam formam consequantur determinata accidentia; inter quae est quantitas. Unde omne corpus naturale habet determinatam quantitatem et in maius et in minus. Unde impossibile est aliquod corpus naturale infinitum esse. Hoc etiam ex motu patet. Quia omne corpus naturale habet aliquem motum naturalem. Corpus autem infinitum non posset habere aliquem motum naturalem, nec rectum, quia nihil movetur naturaliter motu recto, nisi cum est extra suum locum, quod corpori infinito accidere non posset; occuparet enim omnia loca, et sic indifferenter quilibet locus esset locus eius. Et similiter etiam neque secundum motum circularem. Quia in motu circulari oportet quod una pars corporis transferatur ad locum in quo fuit alia pars; quod in corpore circulari, si ponatur infinitum, esse non posset, quia duae lineae protractae a centro, quanto longius protrahuntur a centro, tanto longius distant ab invicem; si ergo corpus esset infinitum, in infinitum lineae distarent ab invicem, et sic una nunquam posset pervenire ad locum alterius. De corpore etiam mathematico eadem ratio est. Quia si imaginemur corpus mathematicum existens actu, oportet quod imaginemur ipsum sub aliqua forma, quia nihil est actu nisi per suam formam. Unde, cum forma quanti, inquantum huiusmodi, sit figura, oportebit quod habeat aliquam figuram. Et sic erit finitum, est enim figura, quae termino vel terminis comprehenditur.",
+    "fr": "Il faut dire ceci : Autre chose est d’être infini par essence, autre chose de l’être en étendue. Etablissez donc qu’un corps, par exemple l’air ou le calorique, a ce dernier infini, il ne s’ensuivra pas qu’il ait le premier; car son essence sera toujours limitée à une espèce par la forme, à un individu par la matière. Ce n’est donc point assez d’avoir prouvé que les choses créées ne sont pas infinies par essence, il faut encore démontrer qu’elles ne le sont point en étendue.\n\nDisons donc que les corps, lesquels forment l’étendue parfaite, l’étendue en tout sens, peuvent être considérés de deux manières : mathématiquement, sous le rapport de la quantité abstraite; physiquement, dans l’idée de matière et de forme. Eh bien, les corps physiques, pour commencer par là, ne peuvent être actuellement infinis, cela est de toute évidence. En effet, tout corps physique a une forme substantielle déterminée; et comme la forme substantielle entraîne des accessoires de la même nature, elle a de plus des accidents limités aussi; elle a par conséquent la quantité. Or la quantité est limitée, soit en plus, soit en moins; les corps physiques ne peuvent donc être infinis. La même chose se voit aussi par le mouvement. Tout corps physique a un mouvement physique; mais un corps infini, quel mouvement pourroit-il avoir? D’abord pas le mouvement en ligne droite : car le corps qui se meut dans cette direction sort de son lieu; mais cela ne pourroit arriver à un corps infini, parce qu’il occuperoit tous les lieux, et que chaque lieu seroit indifféremment son lieu. Il ne pourroit non plus avoir le mouvement circulaire : car, dans ce mouvement, il faut qu’une partie du corps arrive au point qu’a quitté une autre partie; mais deux lignes partant de son centre vers la circonférence s’éloigneront d’autant plus l’une de l’autre qu’elles se prolongeront davantage, et si le corps est sans limites, elles se trouveront enfin séparées par une distance infinie, et la dernière dès lors ne pourra plus parvenir au lieu qu’occupoit la première.\n\nMaintenant, pour le corps mathématique, nous ne saurions le concevoir en acte sans y ajouter l’idée de forme, car aucun être n’est en acte que par sa forme. Or la forme de la quantité est une figure; donc le corps mathématique aura une figure, donc il sera fini, car la figure est renfermée dans une ou plusieurs limites."
+   },
+   "reponses": [
+    {
+     "la": "Ad primum ergo dicendum quod geometer non indiget sumere aliquam lineam esse infinitam actu, sed indiget accipere aliquam lineam finitam actu, a qua possit subtrahi quantum necesse est, et hanc nominat lineam infinitam.",
+     "fr": "Je réponds aux arguments : 1° Le géomètre ne suppose pas, car il n’en a pas besoin, de lignes actuellement infinies; il suppose des lignes finies en acte, dont il peut retrancher tous les nombres nécessaires à ses opérations. Voilà ce qu’il appelle lignes infinies."
+    },
+    {
+     "la": "Ad secundum dicendum quod, licet infinitum non sit contra rationem magnitudinis in communi, est tamen contra rationem cuiuslibet speciei eius, scilicet contra rationem magnitudinis bicubitae vel tricubitae, sive circularis vel triangularis, et similium. Non autem est possibile in genere esse quod in nulla specie est. Unde non est possibile esse aliquam magnitudinem infinitam, cum nulla species magnitudinis sit infinita.",
+     "fr": "2° L’infini n’est pas contraire à l’idée de l’étendue en général, cela est vrai; mais il est contraire à toute espèce d’étendue particulière, par exemple à l’étendue de deux ou de trois coudées, de forme circulaire ou triangulaire, etc. Or ce qui n’est dans aucune espèce ne peut être dans le genre; donc il n’y a pas d’étendue infinie, puisque ses espèces ne le sont pas."
+    },
+    {
+     "la": "Ad tertium dicendum quod infinitum quod convenit quantitati, ut dictum est, se tenet ex parte materiae. Per divisionem autem totius acceditur ad materiam, nam partes se habent in ratione materiae, per additionem autem acceditur ad totum, quod se habet in ratione formae. Et ideo non invenitur infinitum in additione magnitudinis, sed in divisione tantum.",
+     "fr": "3° L’infini que forme la quantité trouve son principe dans la matière. Or, en divisant le tout, on descend à la matière, car les parties en ont la nature; en additionnant les parties, on remonte au tout, qui a la nature de la forme. On n’arrive donc pas à l’infini par l’addition de l’étendue, mais seulement par sa division."
+    },
+    {
+     "la": "Ad quartum dicendum quod motus et tempus non sunt secundum totum in actu, sed successive, unde habent potentiam permixtam actui. Sed magnitudo est tota in actu. Et ideo infinitum quod convenit quantitati, et se tenet ex parte materiae, repugnat totalitati magnitudinis, non autem totalitati temporis vel motus, esse enim in potentia convenit materiae.",
+     "fr": "Le mouvement et le temps ne sont pas en acte tout entiers, mais en partie, successivement, si bien qu’ils ont une potentialité mêlée d’acte. Or l’étendue est en acte tout entière, simultanément. L’infini qui renferme la quantité et qui trouve sa raison dans la matière répugne donc à la totalité de l’étendue, mais il ne répugne pas à la totalité du temps et du mouvement, car la potentialité forme l’essence de la matière."
+    }
+   ],
+   "pages": {
+    "fr": [
+     119,
+     123
+    ]
+   },
+   "notes": [
+    "Lachat n’imprime pas le numéro de la réponse 4 ; le paragraphe est rendu tel quel."
+   ]
+  },
+  {
+   "ref": "Iª q. 7 a. 4",
+   "titre": {
+    "la": "Utrum possit esse infinitum in rebus secundum multitudinem",
+    "fr": "Peut-il y avoir un infini actuel en multiplicité?"
+   },
+   "objections": [
+    {
+     "la": "Ad quartum sic proceditur. Videtur quod possibile sit esse multitudinem infinitam secundum actum. Non enim est impossibile id quod est in potentia reduci ad actum. Sed numerus est in infinitum multiplicabilis. Ergo non est impossibile esse multitudinem infinitam in actu.",
+     "fr": "Il paroît qu’il peut y avoir une multiplicité actuellement infinie. 1° Ce qui est en puissance peut être réduit à l’acte. Or un nombre multiplié à l’infini est en puissance. Donc il peut y avoir une multiplicité actuellement infinie."
+    },
+    {
+     "la": "Praeterea, cuiuslibet speciei possibile est esse aliquod individuum in actu. Sed species figurae sunt infinitae. Ergo possibile est esse infinitas figuras in actu.",
+     "fr": "2° Un individu de chaque espèce peut être en acte; or les espèces de figures sont infinies : donc il peut y avoir un nombre infini de figures."
+    },
+    {
+     "la": "Praeterea, ea quae non opponuntur ad invicem, non impediunt se invicem. Sed, posita aliqua multitudine rerum, adhuc possunt fieri alia multa quae eis non opponuntur, ergo non est impossibile aliqua iterum simul esse cum eis, et sic in infinitum. Ergo possibile est esse infinita in actu.",
+     "fr": "3° Les choses qui ne sont point opposées ne s’excluent pas les unes les autres. Or posé une multitude de choses, on peut en poser une deuxième qui n’est point opposée à la première, puis une troisième, puis une quatrième, ainsi de suite à l’infini. Donc il peut y avoir des infinis actuellement existant."
+    }
+   ],
+   "sed_contra": {
+    "la": "Sed contra est quod dicitur Sap. XI, *omnia in pondere, numero et mensura disposuisti*.",
+    "fr": "Mais on lit dans le livre de la Sagesse, XI, 21 : « Vous avez tout disposé dans le poids, dans le nombre et dans la mesure. »"
+   },
+   "respondeo": {
+    "la": "Respondeo dicendum quod circa hoc fuit duplex opinio. Quidam enim, sicut Avicenna et Algazel, dixerunt quod impossibile est esse multitudinem actu infinitam per se, sed infinitam per accidens multitudinem esse, non est impossibile. Dicitur enim multitudo esse infinita per se, quando requiritur ad aliquid ut multitudo infinita sit. Et hoc est impossibile esse, quia sic oporteret quod aliquid dependeret ex infinitis; unde eius generatio nunquam compleretur, cum non sit infinita pertransire. Per accidens autem dicitur multitudo infinita, quando non requiritur ad aliquid infinitas multitudinis, sed accidit ita esse. Et hoc sic manifestari potest in operatione fabri, ad quam quaedam multitudo requiritur per se, scilicet quod sit ars in anima, et manus movens, et martellus. Et si haec in infinitum multiplicarentur, nunquam opus fabrile compleretur, quia dependeret ex infinitis causis. Sed multitudo martellorum quae accidit ex hoc quod unum frangitur et accipitur aliud, est multitudo per accidens, accidit enim quod multis martellis operetur; et nihil differt utrum uno vel duobus vel pluribus operetur, vel infinitis, si infinito tempore operaretur. Per hunc igitur modum, posuerunt quod possibile est esse actu multitudinem infinitam per accidens. Sed hoc est impossibile. Quia omnem multitudinem oportet esse in aliqua specie multitudinis. Species autem multitudinis sunt secundum species numerorum. Nulla autem species numeri est infinita, quia quilibet numerus est multitudo mensurata per unum. Unde impossibile est esse multitudinem infinitam actu, sive per se, sive per accidens. Item, multitudo in rerum natura existens est creata, et omne creatum sub aliqua certa intentione creantis comprehenditur, non enim in vanum agens aliquod operatur. Unde necesse est quod sub certo numero omnia creata comprehendantur. Impossibile est ergo esse multitudinem infinitam in actu, etiam per accidens. Sed esse multitudinem infinitam in potentia, possibile est. Quia augmentum multitudinis consequitur divisionem magnitudinis, quanto enim aliquid plus dividitur, tanto plura secundum numerum resultant. Unde, sicut infinitum invenitur in potentia in divisione continui, quia proceditur ad materiam, ut supra ostensum est; eadem ratione etiam infinitum invenitur in potentia in additione multitudinis.",
+    "fr": "Il faut dire ceci : Il y a deux opinions sur le point qui nous occupe. Quelques philosophes, comme Avicenne et Algazel, ont dit qu’il ne peut y avoir une multitude actuellement infinie par soi, mais qu’il peut y avoir une multitude infinie par accident. D’abord il y a multitude infinie par soi, disent ces auteurs, quand un effet exige une infinité de causes et de moyens; mais on voit qu’un pareil effet ne se réaliseroit jamais; car il dépendroit d’actes infinis, dont il ne pourroit traverser la série sans bornes, incommensurable. Ensuite il y a multitude infinie par accident, lorsqu’un effet, sans avoir besoin d’une infinité de causes, les emploie fortuitement pour s’accomplir. Voici un exemple qui va nous le faire comprendre. Cet ouvrier veut exercer son art : plusieurs choses, l’adresse de l’esprit, l’agilité de la main, un marteau, lui sont nécessaires par soi; mais si l’on multiplioit indéfiniment ces moyens d’action, on le réduiroit à l’impuissance d’opérer quoi que ce fût, car son œuvre dépendroit alors d’une infinité de causes. Au contraire, faites intervenir tout cela fortuitement; supposez que notre artisan prend un deuxième marteau parce qu’il a brisé le premier, puis un troisième, puis un centième, puis une foule innombrable, qu’importe le nombre, pourvu qu’il travaille pendant un temps sans fin : il en résultera, concluent nos philosophes, une multitude infinie par accident.\n\nMais la chose n’est pas ainsi. Toute multitude est dans quelque espèce de la multitude; or les espèces de la multitude se rapportent aux espèces des nombres, dont aucun n’est infini, puisqu’ils sont tous mesurés par l’unité; il ne peut donc y avoir de multitude actuellement infinie, ni par soi, ni par accident. De plus, toute multitude existant dans la nature des choses est créée; tout être créé se trouve circonscrit par l’intention du créateur, car l’agent n’opère que pour une fin; les choses créées sont donc renfermées dans certaines limites, d’où suit encore la conséquence que nous déduisions à l’instant même. Mais si la multiplicité ne peut être infinie en acte, elle peut l’être en puissance. Plus on divise un corps, plus augmente le nombre des parties; et comme on arrive à l’infini potentiel par la division du continu, parce qu’on descend à la matière, de même on y arrive par l’addition de la pluralité."
+   },
+   "reponses": [
+    {
+     "la": "Ad primum ergo dicendum quod unumquodque quod est in potentia, reducitur in actum secundum modum sui esse, dies enim non reducitur in actum ut sit tota simul, sed successive. Et similiter infinitum multitudinis non reducitur in actum ut sit totum simul, sed successive, quia post quamlibet multitudinem, potest sumi alia multitudo in infinitum.",
+     "fr": "Je réponds aux arguments : 1° Tout ce qui est en puissance passe à l’acte selon le mode de son existence; ainsi le jour s’accomplit, non pas tout entier à la fois, mais successivement. Il n’en est pas autrement de la multitude infinie : elle ne se forme pas tout d’un coup, mais par progression, les nombres s’ajoutent aux nombres indéfiniment."
+    },
+    {
+     "la": "Ad secundum dicendum quod species figurarum habent infinitatem ex infinitate numeri, sunt enim species figurarum, trilaterum, quadrilaterum, et sic inde. Unde, sicut multitudo infinita numerabilis non reducitur in actum quod sit tota simul, ita nec multitudo figurarum.",
+     "fr": "2° Les espèces de figures tiennent leur infinité du nombre, car elles impliquent toutes, comme la triangulaire, la quadrangulaire, etc., cette dernière entité. Si donc l’infinité numérique ne se réalise pas tout entière à la fois, nous devons dire la même chose de la multiplicité composée de figures."
+    },
+    {
+     "la": "Ad tertium dicendum quod, licet, quibusdam positis, alia poni non sit eis oppositum; tamen infinita poni opponitur cuilibet speciei multitudinis. Unde non est possibile esse aliquam multitudinem actu infinitam.",
+     "fr": "3° Sans doute on peut poser successivement les choses qui ne sont point opposées les unes aux autres, mais l’infinité est contraire à chaque espèce de la multiplicité. Il ne peut donc y avoir de multiplicité actuellement infinie."
+    }
+   ],
+   "pages": {
+    "fr": [
+     124,
+     126
+    ]
+   }
+  }
+ ],
+ "source": {
+  "fr": {
+   "ouvrage": "Somme théologique de S. Thomas d’Aquin, traduite en français et annotée par F. Lachat",
+   "edition": "Paris, Louis Vivès, 4e édition, 1880, tome premier (même composition que l’édition de 1874)",
+   "url": "https://archive.org/details/sommetheologique01thom",
+   "controle": "https://archive.org/details/sommethologique07lachgoog",
+   "relecture": "vote de quatre lectures (Tesseract et ABBYY sur les scans de 1880 et de 1874, même composition) ; chaque ligne sans accord relue sur l’image (corrections_fr.txt) ; notes de Lachat et « (Conclusion. — …) » des éditeurs non repris"
+  },
+  "la": {
+   "ouvrage": "Sancti Thomae Aquinatis Opera omnia iussu impensaque Leonis XIII P. M. edita, t. IV : Pars prima Summae theologiae a quaestione I ad quaestionem XLIX",
+   "edition": "Romae, ex Typographia Polyglotta S. C. de Propaganda Fide, 1888",
+   "url": "https://archive.org/details/operaomniaiussui04thom",
+   "transcription": "https://www.corpusthomisticum.org/sth1001.html (E. Alarcón, d’après l’édition léonine)",
+   "relecture": "alignement mot à mot sur la lecture ABBYY du scan de 1888 (latin_controle.py), écarts isolés vus sur l’image (corrections_la.txt) ; intitulés relus sur l’image ; ponctuation du Corpus Thomisticum ; pas de relecture intégrale du latin sur l’image"
+  },
+  "pages_fr": [
+   114,
+   127
+  ]
+ },
+ "revision": 1
+}
