@@ -9,6 +9,11 @@
 - **Bannis** : Hozana, Aleteia, Notre-Dame de Chrétienté — ne jamais utiliser ni citer.
 - Exception : Guéranger, *L'Année liturgique*, transcrit par l'abbaye Saint-Benoît de Port-Valais.
 - Éviter l'OCR quand une transcription propre existe ; sinon corriger l'OCR en relisant les scans (archive.org, Gallica).
+- **Manuels d'archiconfréries** d'avant Vatican II : sources validées par l'utilisateur (22 nov.). Pour un manuel en
+  langue étrangère, on cherche d'abord la version française ancienne de chaque pièce (manuel français, Beringer 1925) ;
+  à défaut seulement, **traduction de travail** autorisée par l'utilisateur : original gardé dans la fiche (`anglais`),
+  mention `traduction: "Hortus Sacrum, traduction de travail du …, à relire"`, aucune indulgence comptée (can. 934 § 2),
+  liste des traductions à relire dans l'audit du manuel.
 - Arbitrage : piété, cohérence, praticité, tradition. Tout doit rester modifiable dans l'app.
 - Secrets Supabase (VAPID, clé cron) : dans le Vault, jamais dans le dépôt.
 

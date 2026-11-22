@@ -18,6 +18,29 @@ Les points réglés sont gardés pour l'historique. Dernière mise à jour : 22 
 | 7 | Propre de France | **Abandonné.** On reste sur le calendrier romain universel. L'utilisateur ajoutera lui-même ses fêtes dans l'app. | — |
 
 ## Restent ouverts
+- **Manuels d'archiconfréries en anglais (22 nov.)** : 21 pièces ajoutées, non branchées
+  (`docs/audits/ARCHICONFRERIES_EN_2026-11-22.md`). **À relire par l'utilisateur** : 9 traductions de travail
+  (`bonamors1896:reflexion-*`, `cordon1878:courtes-prieres`, `saintefamille1875:acte-de-consecration`), à remplacer
+  si un original français ancien est trouvé. **Cherché sans résultat** :
+  - Lenoir, *Manual of the Archconfraternity of Our Lady of Perpetual Help and St Alphonsus*, New York, 1885 : absent
+    d'archive.org (recherche avancée « perpetual help », « Lenoir ») et de la recherche web ; seule une édition
+    [19..] des Rédemptoristes de New York (`manualofconfrate00arch`) ;
+  - *Mother Love* (Archiconfrérie des Mères chrétiennes) : seule l'édition de 1975 est numérisée
+    (`motherloveprayer0000ofmc`, écartée, postérieure à 1962) ; l'édition anglaise de 1888 n'est pas en ligne ; piste :
+    W. Cramer, *The Christian Mother*, Benziger, 1880 (archive.org `TheChristianMother`, domaine public), et le
+    sommaire français de Beringer, t. II, n° 308 ;
+  - manuel français de l'Archiconfrérie de la Sainte-Famille (*Manuel de piété à l'usage des associés*, Bruges et
+    Lille, 12e éd., 1888, cité par Beringer ; Lejeune, *L'Archiconfrérie de la Sainte-Famille établie à Liège*, 1894) :
+    aucun scan libre trouvé (archive.org, recherche web ; un exemplaire sans objet numérique à Madrid) : il donnerait
+    l'acte de consécration en français ;
+  - *The Holy Hour* (archiconfrérie de l'Heure sainte) : pas de section anglaise propre trouvée ; notice française dans
+    Beringer, t. II, n° 230 ; le *Nouveau manuel de l'Archiconfrérie de l'Heure-Sainte* (date lue « 1944 » sur l'OCR de Beringer, sans doute 1914) qu'il cite n'est pas
+    cherché encore.
+  - Équivalents français non trouvés pour : dévotion aux cinq plaies et colloque de S. Pie V (Bona Mors 1896,
+    p. 12-22 ; cherchés dans Lefebvre 1870, le *Petit manuel de l'union de prières et de la bonne mort*, Montréal, 1873,
+    `cihm_04796`, et Beringer t. I-II) ; courtes prières du cordon (notice de Québec 1876, Beringer t. II n° 272).
+- **Indulgences à vérifier sur le scan de l'*Enchiridion* 1952** : n° 594 (prières pour chaque jour de la semaine
+  pour les âmes) et n° 643 (*Fac nos, Domine Iesu*) : numéros et teneur lus sur l'OCR seulement.
 - **Somme théologique (lot 10)** : Iª q. 1-5 livrées (22 nov.). **Suite** : Iª q. 6-13 ont leurs lectures votées
   (scan de 1880, pages n107-n272) et leur latin (Corpus Thomisticum), mais les lignes sans accord restent à relire sur
   l'image (`engine/somme/planche74.py`, puis `corrections_fr.txt`) et les intitulés latins à relire (`titres_la.json`) ;
