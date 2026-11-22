@@ -120,6 +120,23 @@ Les points réglés sont gardés pour l'historique. Dernière mise à jour : 22 
   Eastview ou Saint-Laurent-sur-Sèvre, 1899-1947) ; litanies et neuvaine du Secrétariat de Marie Médiatrice (Louvain,
   *de consensu Ordinarii*, Malines, 7 janvier 1942) ; oraison propre de la messe du bienheureux (propre des diocèses de
   Luçon ou de Rennes, après 1888).
+- **Manuels d'archiconfréries en français** (22 nov., audit `docs/audits/ARCHICONFRERIES_FR_2026-11-22.md`) : 26 pièces
+  transcrites (Janvier 1895, Desgenettes 1852, Garde d'honneur 1886), non branchées. Reste :
+  - *Agonie de N.-S.* (archiconfrérie de Paris, 95 rue de Sèvres) : **aucun manuel trouvé** (archive.org, Canadiana,
+    recherche web ; seule la notice de F. Hernandez, *Siècles*, 12, 2000, en donne la bibliographie, surtout XVIIe-XVIIIe s.).
+  - *Archiconfrérie de Saint-Joseph* (Angers, PP. Jésuites) : **non trouvée** ; seuls des manuels canadiens (Montréal,
+    `cihm_61528`, s. d. ; cordon, `cihm_28660`, 1871).
+  - *Notre-Dame des Sept Douleurs* : Allibert, *Manuel de la Confrérie…*, Lyon, 1838 (Google Livres `YAkym_DUqF0C`) :
+    téléchargement bloqué par un captcha, PDF à fournir.
+  - *Garde d'honneur* : l'« Acte de suprême confiance » du livret n'est pas dans la table du manuel de 1886 : toujours sans
+    édition ancienne. Les éditions Google de 1881 (`yjyjtig3i_IC`) et `xEZv7YdJMYoC` n'ont pas pu être téléchargées.
+  - Desgenettes 1852, « Prière journalière à la sainte Vierge » (p. 444) : le mot après « Vierge » est taché sur le
+    scan (« Vierge … Marie, ma souveraine ») : non transcrite ; autre exemplaire à trouver.
+  - Manuels identifiés à dépouiller au prochain lot : Bonne Mort (Lefebvre 1870, `lasciencedebienm00lefeuoft`),
+    Perpétuel Secours (Montréal 1878, `cihm_52280`), Précieux Sang (Saint-Hyacinthe 1890, `cihm_92923`), Saint Nom de
+    Jésus (1899, `cihm_26544`), Saint-Sacrement (Québec 1920, `cihm_78894`).
+  - Janvier : les invocations à Jésus outragé (p. 151-156) sont le texte de `jardin:litanies-de-la-sainte-face`, dont le
+    livret ne donne pas d'édition : à relire mot à mot sur Janvier pour lui en donner une.
 
 ## Traductions approuvées à trouver (20 novembre 2026)
 
