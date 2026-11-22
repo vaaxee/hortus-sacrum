@@ -608,3 +608,75 @@
 106	9	bord de l'honnête, ensuite de l'agréable, puis enfin de l'utile.
 91	0	¶ 3° Le bon admet le plus et le moins par les actes accidentels, comme
 103	14	5° Quand on dit que la lumière n'a ni le nombre, ni le poids, ni la
+# --- Iª q. 6-13 (suite, 22 nov.) : même méthode ; « § » en tête de ligne : objection ou réponse dont Lachat n'imprime pas le numéro
+107	1	De la bonté de Dieu.
+107	3	Quatre questions se présentent sur ce sujet : 1° Dieu est-il bon? 2° Dieu
+107	4	est-il souverain bien? 3° Dieu seul est-il bon par essence? 4° Toutes les
+107	8	Il paroît que la bonté ne convient pas à Dieu. 1° La nature du bon
+107	12	§Le bien est ce que toutes les créatures appètent. Or toutes les créatures
+107	14	n'appète que ce que l'on connoît. Donc la bonté ne convient pas à Dieu.
+107	15	Mais l'Ecriture sainte dit, Thren., III, 25 : « Le Seigneur est bon pour
+107	17	(Conclusion. — Puisque Dieu est la cause efficiente de tous les êtres et
+108	0	c'est ce qu'on appète (1). Or les êtres appètent, quoi? leurs perfections.
+108	6	Aussi l'Aréopagite lui attribue-t il la bonté comme à la première cause,
+109	0	2° En appétant leur propre perfection, les créatures appètent Dieu
+109	1	même; car toutes les perfections sont une certaine ressemblance de l'être
+109	2	divin, comme on l'a vu précédemment. Or, parmi les créatures qui
+109	3	tendent vers Dieu, les unes le connoissent lui-même, ce sont les créa-
+109	8	ARTICLE II.
+109	10	Il paroît que Dieu n'est pas le souverain bien. 1° Le souverain bien
+109	15	2° Le bon est ce que tous les êtres appètent, suivant Aristote. Or ce
+109	17	de tout; donc il n'y a rien de bon que Dieu seul, comme le dit l'Évan-
+109	18	géliste, Luc, XVIII, 19 : « Dieu seul est bon. » Mais souverainement
+109	19	bon, expression relative, n'indique que plusieurs choses bonnes, comme
+110	0	3° Souverainement emporte comparaison. Or les choses qui ne sont
+110	2	dira, par exemple, que la douceur est plus grande ou plus petite que la
+110	5	Mais saint Augustin dit, De la Trin., I. 2 : « Dieu en trois personnes
+110	7	(Conclusion. — Puisque le bien est en Dieu comme dans la cause non
+110	9	le bien de la manière la plus excellente et qu'il est souverainement bon.)
+110	10	Il faut dire ceci : Dieu est le souverain bien, non-seulement d'une
+110	13	parce que toutes les perfections désirées par les créatures découlent de
+110	15	d'un agent univoque, cela résulte de ce qui précède, mais comme d'un
+110	23	Je réponds aux arguments : 1° Le souverain bien ajoute au bien pur
+111	1	les relations qu'on établit entre le ciel et la terre existent réellement dans
+111	8	2° Lorsqu'on dit que le bon est ce que tous les êtres appètent, on ne veut
+111	9	pas dire que toutes les sortes de bien sont appétées par tous les êtres;
+111	13	3° Les choses qui ne sont pas du même genre parce qu'elles appar-
+111	20	ARTICLE III.
+111	20+	Dieu seul est-il-bon par essence?
+111	21	Il paroît que Dieu n'est pas seul bon par essence. 1° Comme nous
+112	0	avec l'être (1). Or tout être est un par essence; donc tout être est bon
+112	2	2° Le bon est ce qu'on appète, nous l'avons dit souvent; or tout
+112	8	pas leur essence. Mais cette dernière bonté devra être bonne elle-même,
+112	10	bonne, celle ci de même, et jusqu'à l'infini; nous serons donc obligés de
+112	13	Mais Boëce dit, De la Trin., III : « Hors de Dieu, tous les êtres
+113	1	(Conclusion. — Puisque Dieu seul possède la perfection absolue, qu'il
+113	2	trouve son essence dans son être, qu'il a essentiellement tout ce qu'il
+113	5	Il faut dire ceci : Dieu seul est bon par essence. Tout être est bon selon
+113	6	ce qu'il est parfait. Or une chose peut être parfaite de trois manières :
+113	10	perfection du feu, par exemple, consiste dans l'être qui lui donne sa forme
+113	12	et d'autres propriétés semblables; la troisième enfin, dans l'accomplisse-
+113	18	lui-même la fin de toutes choses. Ainsi Dieu seul a dans son essence
+113	20	Je réponds aux arguments : 1° L'unité n'implique pas l'idée de per-
+113	21	
+114	0	fection; elle énonce seulement l'indivision qui appartient à l'essence
+114	2	choses simples le sont par l'acte et par la puissance. Les choses sont donc
+114	4	comme nous le prouvions tout à l'heure.
+114	5	2° Les choses créées sont bonnes par leur être; mais leur être n'est pas
+114	7	3° La bonté des choses créées n'est pas leur essence, mais quelque
+114	15	Toutes les choses sont-elles bonnes de la bonté divine?
+114	17	Il paroît que toutes les choses sont bonnes de la bonté divine. 1° Saint
+114	18	Augustin dit, De la Trin., VIII, 3 : « Ecartez les différents biens pour
+114	20	que Dieu est bon non par tel ou tel bien, mais de tout bien. » Donc
+114	22	2° Tous les êtres, comme le dit Boëce, sont bons parce qu'ils ont
+115	5	(Conclusion. — Toutes les choses sont bonnes de la bonté divine extrin-
+115	8	Il faut dire ceci : Les choses relatives peuvent recevoir leurs dénomi-
+115	10	çoivent du lieu, les choses mesurées de la mesure. Quant aux choses
+116	2	minations de l'être et du un par soi, qui se communiquent à tout ce
+116	3	qui a l'existence et l'unité. Or l'être et le un par soi formoient, pour
+117	6	Ces observations renferment la réponse aux arguments.
+117	7	QUESTION VII.
+117	12	Quatre questions se présentent sur le premier point : 1° Dieu est-il
+117	13	infini? 2° Y a-t-il autre chose que Dieu qui soit infini par essence? 3° Peut-
+117	14	il y avoir un infini en étendue? 4° Peut-il en exister un en multiplicité?
+112	6	¶3° Toute chose est bonne par sa bonté. Si donc il y a des choses qui ne

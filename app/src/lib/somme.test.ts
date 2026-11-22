@@ -47,8 +47,12 @@ describe('Somme : données', () => {
 					if (p === a.sed_contra && !p.fr) expect(a.notes?.join(' '), a.ref).toMatch(/Sed contra/);
 					else expect(p.fr.trim(), a.ref).not.toBe('');
 				}
-				// objections numérotées comme dans Lachat : « Il paroît … 1° », puis « 2° », « 3° »…
-				a.objections.slice(1).forEach((o, k) => expect(o.fr, a.ref).toMatch(new RegExp(`^${k + 2}(°|\\. )`)));
+				// objections numérotées comme dans Lachat : « Il paroît … 1° », puis « 2° », « 3° »… ; quand Lachat
+				// n'imprime pas le numéro (Iª q. 6 a. 1, obj. 2), le manque est dit dans les notes de l'article
+				a.objections.slice(1).forEach((o, k) => {
+					if (a.notes?.some((n) => n.includes(`l’objection ${k + 2} `))) expect(o.fr, a.ref).not.toMatch(/^\d/);
+					else expect(o.fr, a.ref).toMatch(new RegExp(`^${k + 2}(°|\\. )`));
+				});
 				expect(a.objections[0].fr, a.ref).toMatch(/^Il paro[iî]t/);
 				if (a.sed_contra.fr) expect(a.sed_contra.fr, a.ref).toMatch(/^Mais /);
 				expect(a.reponses[0].fr, a.ref).toMatch(/^(Je réponds aux |Ces observations)/);
@@ -61,7 +65,7 @@ describe('Somme : données', () => {
 	it('aucune marque de relecture ou de vote restée dans le texte', () => {
 		for (const q of questions) {
 			const t = JSON.stringify([q.titre, q.prooemium, q.articles]);
-			expect(t).not.toMatch(/[⟦⟧⁞¶]/);
+			expect(t).not.toMatch(/[⟦⟧⁞¶§]/);
 			expect(t).not.toMatch(/\(Conclusion/);
 		}
 	});
