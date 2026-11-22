@@ -595,3 +595,38 @@ body {
 .accueil-ouvert .hs .sommaire {
 	display: none;
 }
+
+/* ---- mode église (décision du 22 nov.) : prier à l'église, le téléphone à la main ----
+   Rangée du haut d'une page de prière : le retour à gauche, le cierge à droite (au téléphone, il laisse la place
+   de l'icône du profil). Mode actif (<html data-eglise>, posé par ModeEglise.svelte) : corps de lecture ×1,3, barre
+   d'onglets, ornements du bandeau et liens secondaires masqués. Pure présentation : aucun texte n'est touché. */
+.hs .barre-page {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: var(--hs-e3);
+	min-height: 44px;
+}
+@media (max-width: 899px) {
+	.hs .barre-page .mode-eglise {
+		margin-inline-end: 52px;
+	}
+	:root[data-eglise] .hs .barre-page .mode-eglise {
+		margin-inline-end: 0;
+	}
+}
+:root[data-eglise] {
+	--hs-echelle-eglise: 1.3;
+}
+:root[data-eglise] .hs .lecture:not(.lecture .lecture) {
+	font-size: calc(var(--hs-echelle-eglise) * 1em);
+	max-width: calc(var(--hs-echelle-eglise) * var(--hs-mesure));
+}
+:root[data-eglise] .hs :is(nav.onglets, .profil-haut, .seule),
+:root[data-eglise] .hs .bandeau-haut > * {
+	display: none;
+}
+/* sans la barre d'onglets, le bas de page ne garde que la zone de l'indicateur d'accueil */
+:root[data-eglise] .hs .contenu {
+	padding-bottom: calc(var(--hs-e6) + env(safe-area-inset-bottom));
+}

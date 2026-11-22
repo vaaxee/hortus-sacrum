@@ -19,7 +19,8 @@
 		| 'source'
 		| 'matin'
 		| 'midi'
-		| 'soir';
+		| 'soir'
+		| 'cierge';
 
 	let { nom, taille = 24 }: { nom: Nom; taille?: number } = $props();
 </script>
@@ -116,6 +117,11 @@
 		<g class="fin"
 			><path d="M18.500 3v3.400M16.800 4.700h3.400M20.800 9.300v1.800M19.900 10.200h1.800M10.200 9.800c-.700 1.500-.700 3.300.2 4.800" /></g
 		>
+	{:else if nom === 'cierge'}
+		<!-- cierge allumé : le mode église -->
+		<path d="M12 3c1.700 1.900 2.100 3.400 1.400 4.600a1.600 1.600 0 0 1-2.800 0C9.900 6.400 10.300 4.900 12 3z" />
+		<path d="M9.500 11h5v9.500h-5z" />
+		<g class="fin"><path d="M12 9.200V11M7 20.500h10M11.400 13v2.500" /></g>
 	{:else if nom === 'source'}
 		<path d="M6 4.500h9l3 3V19.500H6z" /><path d="M9 11h6M9 14.500h6" />
 	{/if}
