@@ -7,10 +7,11 @@ decisions.txt, un bloc par page :
   f: A T "Il" A …         un choix par désaccord du brouillon, dans l'ordre : T, A, ou "texte" ("" = rien)
   v: 3 7                  lignes du brouillon (numérotées à partir de 1) qui commencent un verset
   c: 4                    lignes qui continuent le verset précédent
-  x: 1 2                  lignes à supprimer (parasites)
+  x: 1 2 21-67            lignes à supprimer (parasites, notes prises avec le texte)
   h: 5 Psaume IV          la ligne 5 est un titre, de ce texte
   +: 5 c texte            ajoute après la ligne 5 une ligne (v, c ou h) de ce texte (0 = en tête)
-  r: ancien => nouveau    remplacement dans le texte de la page relue (occurrence unique)
+  r: ancien => nouveau    remplacement dans le texte de la page relue (occurrence unique ; « \\n » = saut de ligne,
+                          « \\nv| » coupe la ligne là où un verset commence au milieu)
   ?: mot — remarque       lecture douteuse, recopiée dans la note du verset qui contient « mot »
   ok                      page entièrement relue sur l'image
 
@@ -67,8 +68,10 @@ def appliquer(p, ops):
         if o.strip() == 'ok':
             relu = True
         elif tag in ('v', 'c', 'x'):
-            for n in map(int, reste.split()):
-                lignes[n - 1][0] = tag
+            for tok in reste.split():
+                a, _, b = tok.partition('-')
+                for n in range(int(a), int(b or a) + 1):
+                    lignes[n - 1][0] = tag
         elif tag == 'h':
             n, txt = reste.strip().split(' ', 1)
             lignes[int(n) - 1][0:2] = ['h', txt.strip()]
@@ -84,7 +87,7 @@ def appliquer(p, ops):
     for o in ops:
         if o.startswith('r:'):
             a, b = o[2:].split('=>')
-            a, b = a.strip(), b.strip()
+            a, b = a.strip().replace('\\n', '\n'), b.strip().replace('\\n', '\n')
             if texte.count(a) != 1:
                 raise SystemExit(f'p{p} : « {a} » trouvé {texte.count(a)} fois')
             texte = texte.replace(a, b)

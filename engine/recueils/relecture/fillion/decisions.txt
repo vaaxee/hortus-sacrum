@@ -1,0 +1,123 @@
+// Fillion, Le nouveau psautier du Bréviaire romain, 7e éd., 1917 : décisions prises sur l'image, page par page.
+// Format : voir appliquer.py. Chaque page marquée « ok » a été relue entièrement sur l'image (crop2/n<N>.png).
+
+== p13
+f: "salut." A
+ok
+
+== p15
+f: "" T T A "à" "Ils" A "[impies," A T "et" T T
+c: 2
+r: vos cœurs, comme => vos cœurs,\nv| comme
+r: ]l sera => Il sera
+ok
+
+== p17
+f: "" T T "" A
+r: et lies princes => et les princes
+ok
+
+== p19
+f: A T T A T "droite." "[pliés" A A ""
+?: protecteur — note manuscrite au crayon dans la marge du scan (« bouclier »), non reprise
+ok
+
+== p21
+f: A "Je ne craindrai" "les milliers d'hommes du peuple qui m'en-" "Dieu." "" A
+ok
+
+== p23
+f: "" A "d'honneur," T "notre Maître," A "" A A
+ok
+
+== p25
+f: "" "" A A A T ";" "" "" A
+r: les siècles des\n => les siècles des siècles.\n
+r: cherchent,\nh| [Seigneur. => cherchent, Seigneur.
+r: fille de Sion. [de vous. => fille de Sion.
+r: qui me viendra\n => qui me viendra de vous.\n
+ok
+
+== p27
+f: "" "" A T ";" T A A T "ses" "temps." "Vos" A "face ;" "Car"
+ok
+
+== p29
+f: "" "" "" A T "[repaire." A A "" A A ""
+r: insolemment sur la => insolemment sur la terre.
+ok
+
+== p31
+f: "" "Émigre" A A "[droit." T T T A "hait" T A T
+c: 15
+r: contemple équité => contemple l'équité
+?: Émigre — « Émigre » imprimé sans accent final (impératif)
+ok
+
+== p33
+f: "" A ";" A A "" T
+r: Louez son nom, car => Louez son nom,\nv| car
+ok
+
+== p35
+f: "" T A T T A "Dans" T "vies ;" "d'allégresse." T "eux,"
+v: 19
+r: soutenu. [la vie. => soutenu.
+r: à m'ôter => à m'ôter la vie.
+ok
+
+== p37
+f: "" "" T T T T T "" A A
+h: 8 Cantique des trois jeunes gens. Dan. iii, 57-88 et 56.
+r: se féliciteront, [mée. => se féliciteront,
+r: a été fer- => a été fermée.
+r: au-dessus des cieux, bénissez le => au-dessus des cieux, bénissez le Seigneur.
+ok
+
+== p39
+f: A T T T
+r: dans tous les\nh| [siècles. => dans tous les siècles.
+ok
+
+== p41
+f: "" A T A A T T A T T T T T A A T
+h: 24 Cantique de Zacharie. Luc. i, 68-79.
+ok
+
+== p43
+f: A A A "" A "" A A "quité."
+r: le prophète du Très- => le prophète du Très-Haut ;
+ok
+
+== p45
+f: "" A "" A T "" A "Détournez" "O"
+r: mystères de votre => mystères de votre sagesse.
+ok
+
+== p47
+f: "" "" A "" A T
+r: contrit et hu- => contrit et humilié.
+ok
+
+== p49
+f: "retentit"
+?: retentit — en italique ; la troisième lettre ressemble à un l (« relentit ») : t italique lu « retentit »
+?: tomber,. — « tomber,. » : point après la virgule, tel qu'imprimé (sans doute parasite)
+ok
+
+== p51
+f: A T T A "C'est" T "O" A "Seigneur." A
+r: maison du Seigneur. [mière. => maison du Seigneur.
+r: sur nous la lu- => sur nous la lumière.
+ok
+
+== p53
+f: "" "" T T T T T T A "Vous" A A "O"
+h: 9 Cantique des trois jeunes gens. Dan. iii, 52-57.
+r: nos pères ; [siècles ; => nos pères ;
+r: exalté dans tous les\n => exalté dans tous les siècles ;\n
+r: les sièeles. => les siècles.
+r: du ciel ; tous les siècles. => du ciel ;
+r: toute gloire dans\n => toute gloire dans tous les siècles.\n
+?: temple saint — v. 53 : « siècles » sous une tache (lu « sièeles » par l'OCR) ; lecture sûre par les versets voisins
+ok

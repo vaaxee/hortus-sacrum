@@ -21,14 +21,17 @@ _HOCR = None
 
 
 def filet(im):
-    """Premier trait horizontal (filet des notes) sous le haut de la page, ou None."""
+    """Premier trait horizontal (filet des notes) sous le haut de la page, ou None : plus longue suite de pixels
+    sombres dans une bande de 5 lignes (le filet peut être un peu penché ou interrompu)."""
     g = np.asarray(im)
-    a = g < (np.median(g) - 70)
+    a = g < (np.median(g) - 60)
     h, w = a.shape
-    cnt = a.sum(axis=1)
-    for y in range(int(h * 0.12), int(h * 0.97)):
-        if cnt[y] > w * 0.42 and cnt[max(0, y - 12)] < w * 0.25 and cnt[min(h - 1, y + 12)] < w * 0.25:
-            return y
+    for y in range(int(h * 0.12), int(h * 0.97) - 5, 2):
+        band = a[y:y + 5].any(axis=0)
+        d = np.diff(np.concatenate(([0], band.astype(np.int8), [0])))
+        s, e = np.where(d == 1)[0], np.where(d == -1)[0]
+        if len(s) and (e - s).max() > w * 0.33:
+            return y + 2
     return None
 
 
