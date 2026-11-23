@@ -1,7 +1,7 @@
 # p15 (image n28)
 c| n'endurcissez pas vos cœurs,
-v| comme lorsqu'ils excitè-
-c| au jour de la tentation dans le désert, [rent ma colère,
+v| comme lorsqu'ils excitèrent ma colère,
+c| au jour de la tentation dans le désert,
 c| où vos pères m'ont tenté,
 c| m'ont mis à l'épreuve, et ont vu mes œuvres.
 v| Pendant quarante ans je fus auprès de cette génération ;
@@ -11,8 +11,8 @@ c| contre eux j'ai juré dans ma colère :
 c| Ils n'entreront point dans mon repos.
 h| PREMIER NOCTURNE
 h| Psaume I
-v| Heureux l'homme qui n'a point marché dans le conseil des
-c| qui ne s'est pas arrêté dans la voie des pécheurs, [impies,
+v| Heureux l'homme qui n'a point marché dans le conseil des impies,
+c| qui ne s'est pas arrêté dans la voie des pécheurs,
 c| et qui ne s'est point assis dans la chaire de pestilence ;
 v| mais qui a ses affections dans la loi du Seigneur,
 c| et qui médite cette loi jour et nuit.

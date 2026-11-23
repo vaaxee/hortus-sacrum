@@ -39,6 +39,34 @@ def blocs(path):
     return out
 
 
+def renvois(texte):
+    """Renvoi typographique « [fin » imprimé au bout d'une ligne voisine : remis à la ligne qu'il complète.
+    La ligne complétée est celle du dessus si elle finit par un trait d'union, sinon celle du dessous si elle en finit
+    par un, sinon la première des deux (dessus, puis dessous) qui ne finit pas par une ponctuation."""
+    L = texte.split('\n')
+    for i, l in enumerate(L):
+        m = re.search(r'\s\[(\S.*)$', l)
+        if not m or l.startswith('h|'):
+            continue
+        frag = m.group(1).strip()
+        L[i] = l[:m.start()].rstrip()
+        def fin(j):
+            return L[j].rstrip()[-1:] if 0 <= j < len(L) and not L[j].startswith('h|') else '.'
+        P, N = i - 1, i + 1
+        if fin(P) == '-':
+            j = P
+        elif fin(N) == '-':
+            j = N
+        elif fin(P) not in '.,;:?!':
+            j = P
+        elif fin(N) not in '.,;:?!':
+            j = N
+        else:
+            raise SystemExit(f'renvoi « [{frag} » sans ligne à compléter : {l}')
+        L[j] = L[j][:-1] + frag if L[j].endswith('-') else L[j] + ' ' + frag
+    return '\n'.join(L)
+
+
 def appliquer(p, ops):
     br = (B / 'brouillon' / f'p{p:03d}.txt').read_text(encoding='utf-8').splitlines()
     choix = []
@@ -91,6 +119,7 @@ def appliquer(p, ops):
             if texte.count(a) != 1:
                 raise SystemExit(f'p{p} : « {a} » trouvé {texte.count(a)} fois')
             texte = texte.replace(a, b)
+    texte = renvois(texte)
     if not relu:
         raise SystemExit(f'p{p} : page non marquée « ok »')
     entete = f'# p{p} (image n{p + 13})\n'

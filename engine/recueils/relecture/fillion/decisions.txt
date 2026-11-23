@@ -540,3 +540,18 @@ ok
 f: A "pécheurs," "Rendez-leur" "et selon" ";" A "le" "peuple,"
 r: qui commettent l'ini-\nc| qui parlent de paix avec leur prochain, [quité, => qui commettent l'iniquité,\nc| qui parlent de paix avec leur prochain,
 ok
+
+== p141
+f: "dans" "hâtez-vous" "et," "" "me"
+ok
+
+== p143
+f: "" "suis affligé" "sont" "connaissent." "car" ";" "sauvez-moi" "[voqué." "Que" "muettes, [l'enfer" "avec"
+ok
+
+== p145
+f: "" "" "Seigneur," "dou-" "vous" "Pour" "criais" "" "et dont" "Heureux"
+v: 8
+r: v| la vue des enfants => c| à la vue des enfants
+?: à la vue — « à » en début de ligne, manqué par les deux lectures, vu sur l'image
+ok

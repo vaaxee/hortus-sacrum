@@ -651,13 +651,13 @@
     },
     {
      "n": 4,
-     "fr": "Quand je considère vos cieux, œuvre de vos doigts, lui ? la lune et les étoiles que vous avez créées :",
+     "fr": "Quand je considère vos cieux, œuvre de vos doigts, la lune et les étoiles que vous avez créées :",
      "page": 21,
      "ligne_la": "4"
     },
     {
      "n": 5,
-     "fr": "Qu'est-ce que l'homme, pour que vous vous souveniez de ou le fils de l'homme, pour que vous le visitiez ?",
+     "fr": "Qu'est-ce que l'homme, pour que vous vous souveniez de lui ? ou le fils de l'homme, pour que vous le visitiez ?",
      "page": 21,
      "ligne_la": "5"
     },
@@ -2385,6 +2385,84 @@
    ]
   },
   {
+   "numero": 27,
+   "titre": "Psaume XXVII",
+   "versets": [
+    {
+     "n": 1,
+     "fr": "Je crierai vers vous, Seigneur ; mon Dieu, ne gardez pas le silence à mon égard, de peur que, si vous ne me répondez pas, je ne sois semblable à ceux qui descendent dans la fosse.",
+     "page": 139,
+     "ligne_la": "1"
+    },
+    {
+     "n": 2,
+     "fr": "Exaucez, Seigneur, la voix de ma supplication, quand je vous prie, quand je lève mes mains vers votre saint temple.",
+     "page": 139,
+     "ligne_la": "2"
+    },
+    {
+     "n": 3,
+     "fr": "Ne m'entraînez pas avec les pécheurs, et ne me perdez pas avec ceux qui commettent l'iniquité, qui parlent de paix avec leur prochain, et qui ont la méchanceté dans leurs cœurs.",
+     "page": 139,
+     "ligne_la": "3"
+    },
+    {
+     "n": 4,
+     "fr": "Rendez-leur selon leurs œuvres, et selon la malignité de leurs desseins. Traitez-les selon les œuvres de leurs mains ; donnez-leur le salaire qu'ils méritent.",
+     "page": 139,
+     "ligne_la": "4"
+    },
+    {
+     "n": 5,
+     "fr": "Car ils n'ont pas compris les œuvres du Seigneur, et les œuvres de ses mains ; vous les détruirez, et vous ne les rétablirez pas.",
+     "page": 139,
+     "ligne_la": "5"
+    },
+    {
+     "n": 6,
+     "fr": "Béni soit le Seigneur, car il a exaucé la voix de ma supplication.",
+     "page": 139,
+     "ligne_la": "6"
+    },
+    {
+     "n": 7,
+     "fr": "Le Seigneur est mon aide et mon protecteur ; mon cœur a espéré en lui, et j'ai été secouru. Et ma chair a refleuri ; aussi le louerai-je de tout mon cœur.",
+     "page": 139,
+     "ligne_la": "7"
+    },
+    {
+     "n": 8,
+     "fr": "Le Seigneur est la force de son peuple, et le protecteur qui ménage les délivrances à son oint.",
+     "page": 139,
+     "ligne_la": "8"
+    },
+    {
+     "n": 9,
+     "fr": "Sauvez votre peuple, Seigneur, et bénissez votre héritage ; conduisez-les, et exaltez-les à jamais.",
+     "page": 141,
+     "ligne_la": "9"
+    }
+   ],
+   "lignes_la": [
+    "1",
+    "2",
+    "3",
+    "3",
+    "4",
+    "4",
+    "5",
+    "6",
+    "7",
+    "7",
+    "8",
+    "9"
+   ],
+   "pages": [
+    139,
+    141
+   ]
+  },
+  {
    "numero": 28,
    "titre": "Psaume XXVIII",
    "versets": [
@@ -2572,6 +2650,197 @@
    "pages": [
     119,
     121
+   ]
+  },
+  {
+   "numero": 30,
+   "titre": "Psaume XXX",
+   "versets": [
+    {
+     "n": 2,
+     "fr": "J'ai espéré en vous, Seigneur ; que je ne sois jamais confondu ; dans votre justice délivrez-moi.",
+     "page": 141,
+     "ligne_la": "2"
+    },
+    {
+     "n": 3,
+     "fr": "Inclinez vers moi votre oreille ; hâtez-vous de me délivrer. Soyez-moi un Dieu protecteur et une maison de refuge, afin de me sauver.",
+     "page": 141,
+     "ligne_la": "3"
+    },
+    {
+     "n": 4,
+     "fr": "Car vous êtes ma force et mon refuge, et, à cause de votre nom, vous me conduirez et me nourrirez",
+     "page": 141,
+     "ligne_la": "4"
+    },
+    {
+     "n": 5,
+     "fr": "Vous me tirerez de ce piège qu'ils ont caché contre moi, car vous êtes mon protecteur.",
+     "page": 141,
+     "ligne_la": "5"
+    },
+    {
+     "n": 6,
+     "fr": "Je remets mon âme entre vos mains ; vous m'avez racheté, Seigneur, Dieu de vérité.",
+     "page": 141,
+     "ligne_la": "6"
+    },
+    {
+     "n": 7,
+     "fr": "Vous haïssez ceux qui s'attachent sans aucun fruit à des choses vaines. Pour moi, j'ai mis mon espérance dans le Seigneur.",
+     "page": 141,
+     "ligne_la": "7"
+    },
+    {
+     "n": 8,
+     "fr": "Je tressaillirai de joie et d'allégresse dans votre miséricorde, car vous avez regardé mon état humilié ; vous avez sauvé mon âme des angoisses,",
+     "page": 141,
+     "ligne_la": "8"
+    },
+    {
+     "n": 9,
+     "fr": "et vous ne m'avez pas livré aux mains de l'ennemi ; vous avez mis mes pieds au large.",
+     "page": 141,
+     "ligne_la": "9"
+    },
+    {
+     "n": 10,
+     "fr": "Ayez pitié de moi, Seigneur, car je suis affligé ; mon œil, mon âme et mes entrailles sont troublés par la colère.",
+     "page": 143,
+     "ligne_la": "10"
+    },
+    {
+     "n": 11,
+     "fr": "Car ma vie se consume dans la douleur, et mes années dans les gémissements. Ma force s'est affaiblie par la pauvreté, et mes os sont ébranlés.",
+     "page": 143,
+     "ligne_la": "11"
+    },
+    {
+     "n": 12,
+     "fr": "Plus que tous mes ennemis, je suis devenu un objet d'opprobre, surtout à mes voisins, et l'effroi de ceux qui me connaissent. Ceux qui me voyaient dehors fuyaient loin de moi.",
+     "page": 143,
+     "ligne_la": "12"
+    },
+    {
+     "n": 13,
+     "fr": "J'ai été oublié des cœurs, comme un mort. J'ai été comme un vase brisé ;",
+     "page": 143,
+     "ligne_la": "13"
+    },
+    {
+     "n": 14,
+     "fr": "car j'ai entendu les injures d'un grand nombre de ceux qui demeurent alentour. Quand ils se réunissaient ensemble contre moi, ils ont tenu conseil pour m'ôter la vie.",
+     "page": 143,
+     "ligne_la": "14"
+    },
+    {
+     "n": 15,
+     "fr": "Mais j'ai espéré en vous, Seigneur ; j'ai dit : Vous êtes mon Dieu ;",
+     "page": 143,
+     "ligne_la": "15"
+    },
+    {
+     "n": 16,
+     "fr": "mes destinées sont entre vos mains. Arrachez-moi de la main de mes ennemis et de mes persécuteurs.",
+     "page": 143,
+     "ligne_la": "16"
+    },
+    {
+     "n": 17,
+     "fr": "Faites luire votre visage sur votre serviteur ; sauvez-moi par votre miséricorde.",
+     "page": 143,
+     "ligne_la": "17"
+    },
+    {
+     "n": 18,
+     "fr": "Seigneur, que je ne sois pas confondu, car je vous ai invoqué. Que les impies rougissent, et qu'ils soient conduits dans l'enfer ;",
+     "page": 143,
+     "ligne_la": "18"
+    },
+    {
+     "n": 19,
+     "fr": "que les lèvres trompeuses deviennent muettes, elles qui profèrent l'iniquité contre le juste, avec orgueil et insolence.",
+     "page": 143,
+     "ligne_la": "19"
+    },
+    {
+     "n": 20,
+     "fr": "Qu'elle est grande, Seigneur, l'abondance de votre douceur, que vous avez mise en réserve pour ceux qui vous craignent ! Vous l'exercez envers ceux qui espèrent en vous, à la vue des enfants des hommes.",
+     "page": 145,
+     "ligne_la": "20",
+     "lecture": [
+      "p. 145 : à la vue — « à » en début de ligne, manqué par les deux lectures, vu sur l'image"
+     ]
+    },
+    {
+     "n": 21,
+     "fr": "Vous les cacherez dans le secret de votre face, à l'abri du tumulte des hommes. Vous les protégerez dans votre tabernacle contre les langues qui les attaquent.",
+     "page": 145,
+     "ligne_la": "21"
+    },
+    {
+     "n": 22,
+     "fr": "Béni soit le Seigneur, car il a signalé envers moi sa miséricorde dans une ville fortifiée.",
+     "page": 145,
+     "ligne_la": "22"
+    },
+    {
+     "n": 23,
+     "fr": "Pour moi j'ai dit dans le transport de mon esprit : J'ai été rejeté de devant vos yeux. C'est pour cela que vous avez exaucé la voix de ma prière, lorsque je criais vers vous.",
+     "page": 145,
+     "ligne_la": "23"
+    },
+    {
+     "n": 24,
+     "fr": "Aimez le Seigneur, vous tous ses saints ; car le Seigneur recherchera la vérité, et il châtiera largement ceux qui se livrent à l'orgueil.",
+     "page": 145,
+     "ligne_la": "24"
+    },
+    {
+     "n": 25,
+     "fr": "Agissez avec courage, et que votre cœur s'affermisse, vous tous qui espérez au Seigneur.",
+     "page": 145,
+     "ligne_la": "25"
+    }
+   ],
+   "lignes_la": [
+    "2",
+    "3",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "11",
+    "12",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "18",
+    "19",
+    "20",
+    "20",
+    "21",
+    "21",
+    "22",
+    "23",
+    "23",
+    "24",
+    "25"
+   ],
+   "pages": [
+    141,
+    143,
+    145
    ]
   },
   {

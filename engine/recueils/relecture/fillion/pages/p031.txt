@@ -1,11 +1,11 @@
 # p31 (image n44)
 h| Psaume X
-v| Je me confie au Seigneur ; comment dites-vous à mon
-c| Émigre sur la montagne comme un passereau ? [âme :
+v| Je me confie au Seigneur ; comment dites-vous à mon âme :
+c| Émigre sur la montagne comme un passereau ?
 v| Car voici que les pécheurs ont tendu l'arc ;
 c| ils ont préparé leurs flèches dans leur carquois,
-c| pour tirer dans l'ombre contre ceux qui ont le cœur
-v| Car ce que vous aviez établi, ils l'ont détruit ; [droit.
+c| pour tirer dans l'ombre contre ceux qui ont le cœur droit.
+v| Car ce que vous aviez établi, ils l'ont détruit ;
 c| mais le juste, qu'a-t-il fait ?
 v| Le Seigneur est dans son saint temple ;
 c| le Seigneur a son trône dans le ciel.
