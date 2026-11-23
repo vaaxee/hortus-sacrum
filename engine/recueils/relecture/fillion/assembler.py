@@ -43,6 +43,13 @@ CANTIQUES = {
                                    "Divinum Officium chante ce cantique en 7 lignes numérotées 12:1 à 12:7, qui ne "
                                    "suivent pas les versets de la Vulgate (6 versets, comme chez Fillion) : numéros "
                                    "de Fillion, sans alignement ligne à ligne."),
+    'Cantique de Tobie': (212, 'Cantique de Tobie', 'Tob. xiii, 1-10', list(range(1, 11)),
+                          "Divinum Officium chante ce cantique en 11 lignes numérotées 13:1 à 13:11, coupées autrement "
+                          "que les 10 versets de Fillion : numéros de Fillion, sans alignement ligne à ligne."),
+    "Cantique d'Ézéchias": (222, "Cantique d'Ézéchias", 'Is. xxxviii, 10-20', list(range(10, 21)),
+                            "Divinum Officium chante ce cantique en 15 lignes numérotées 38:10 à 38:24, coupées "
+                            "autrement que les 11 versets de Fillion : numéros de Fillion, sans alignement ligne à "
+                            "ligne."),
     'Cantique de David': (211, 'Cantique de David', 'I Par. xxix, 10-13'),
     'Cantique de Siméon': (233, 'Cantique de Siméon', 'Luc. ii, 29-32'),
 }
@@ -62,6 +69,15 @@ NOTES = {
          "à 18 ; numérotation de la Vulgate (9-26) donnée ici, comme dans le latin.",
     115: "Fillion numérote ce psaume de 10 à 19, à la suite du Ps 114 (l'hébreu en fait un seul psaume, 116) ; "
          "numérotation de la Vulgate (1-10) donnée ici, comme dans le latin.",
+}
+
+# psaumes dont DO numérote les lignes autrement que les versets de la Vulgate : verset → ligne latine où il commence
+# (les étiquettes `lignes_la` restent celles de DO ; une ligne sans verset qui y commence continue le précédent)
+DECOUPE = {
+    42: ({1: '1', 2: '2', 3: '3', 4: '4', 5: '5'},
+         "Divinum Officium coupe ce psaume en 6 lignes numérotées 1-6 (« Confitebor tibi in cithara » = 5, « Spera in "
+         "Deo » = 6) ; Fillion suit les 5 versets de la Vulgate (v. 4 jusqu'à « Deus meus », v. 5 « Quare tristis "
+         "es… »). Le v. 5 commence au milieu de la ligne latine « 5 »."),
 }
 
 ROMAINS = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100}
@@ -182,6 +198,11 @@ def assembler():
         elif pc.get('numero') in SANS_DO:
             premier, note = SANS_DO[pc['numero']]
             ordre, etiq, debut = list(range(premier, premier + len(pc['versets']))), None, {}
+            pc['note'] = note
+        elif pc.get('numero') in DECOUPE:
+            debuts, note = DECOUPE[pc['numero']]
+            _, etiq, _ = latin(fichier)
+            ordre, debut = list(debuts), dict(debuts)
             pc['note'] = note
         else:
             ordre, etiq, debut = latin(fichier)
