@@ -1147,6 +1147,19 @@
       "objet": ["trinite", "jesus-christ", "eucharistie", "sainte-vierge", "anges", "saints"],
       "forme": ["acte"],
       "devinee": ["fin", "objet", "forme"]
+    },
+    "desgenettes:oraison-consecration-coeur-de-marie": {
+      "fin": ["action-de-graces", "propitiation"],
+      "objet": ["trinite", "jesus-christ", "sacre-coeur", "sainte-vierge", "coeur-immacule", "anges", "saints"],
+      "grace": ["salut", "charite", "vertus", "graces-temporelles"],
+      "forme": ["oraison"],
+      "devinee": ["fin", "objet", "grace", "forme"]
+    },
+    "garde1886:consecration-coeur-de-jesus": {
+      "fin": ["reparation", "demande", "louange"],
+      "objet": ["jesus-christ", "sacre-coeur", "anges", "saints"],
+      "personne": ["soi-meme"],
+      "devinee": ["fin", "objet", "personne"]
     }
   }
 }

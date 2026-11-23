@@ -750,7 +750,7 @@
       "id": "prog:devotion-dimanche",
       "titre": "Dévotion du dimanche : la très sainte Trinité",
       "motif": {"fins": ["louange", "action-de-graces"], "objets": ["trinite"], "note": "dédicace du dimanche : la très sainte Trinité (cycles.json)"},
-      "revision": 2,
+      "revision": 3,
       "quand": {
         "jours_semaine": [0]
       },
@@ -793,6 +793,17 @@
                   "gertrude:amour-de-dieu"
               ]
             }
+          },
+          {
+            "texte": "desgenettes:louanges-de-la-semaine",
+            "extrait": {
+              "section": "## Le dimanche."
+            },
+            "quand": {
+              "mois": [
+                8
+              ]
+            }
           }
         ]
       }
@@ -801,7 +812,7 @@
       "id": "prog:devotion-lundi",
       "titre": "Dévotion du lundi : les âmes du purgatoire",
       "motif": {"fins": ["intercession", "propitiation"], "objets": ["ames-du-purgatoire"], "note": "dédicace du lundi : les âmes du purgatoire (cycles.json)"},
-      "revision": 2,
+      "revision": 3,
       "quand": {
         "jours_semaine": [1]
       },
@@ -838,6 +849,17 @@
                   "gertrude:pater-pour-les-morts"
               ]
             }
+          },
+          {
+            "texte": "desgenettes:louanges-de-la-semaine",
+            "extrait": {
+              "section": "## Le lundi."
+            },
+            "quand": {
+              "mois": [
+                8
+              ]
+            }
           }
         ]
       }
@@ -846,7 +868,7 @@
       "id": "prog:devotion-mardi",
       "titre": "Dévotion du mardi : les saints Anges",
       "motif": {"fins": ["demande"], "objets": ["anges"], "note": "dédicace du mardi : les saints Anges, leur garde et leur protection (cycles.json)"},
-      "revision": 2,
+      "revision": 3,
       "quand": {
         "jours_semaine": [2]
       },
@@ -868,7 +890,8 @@
               "unite": "semaine",
               "parmi": [
                 "fervent:litanies-ange-gardien",
-                "jardin:litanies-de-la-sainte-face"
+                "jardin:litanies-de-la-sainte-face",
+                "janvier:litanies-sainte-face-ecriture"
               ]
             }
           },
@@ -884,6 +907,17 @@
                   "gertrude:actions-de-graces-sainte-mechtilde"
               ]
             }
+          },
+          {
+            "texte": "desgenettes:louanges-de-la-semaine",
+            "extrait": {
+              "section": "## Le mardi."
+            },
+            "quand": {
+              "mois": [
+                8
+              ]
+            }
           }
         ]
       }
@@ -892,7 +926,7 @@
       "id": "prog:devotion-mercredi",
       "titre": "Dévotion du mercredi : saint Joseph et le cordon",
       "motif": {"fins": ["demande"], "objets": ["saint-joseph"], "note": "dédicace du mercredi : saint Joseph, avec le renouvellement du cordon (SPEC § 11, décisions)"},
-      "revision": 2,
+      "revision": 3,
       "quand": {
         "jours_semaine": [3]
       },
@@ -940,6 +974,17 @@
                   "gertrude:salut-coeur-de-jesus"
               ]
             }
+          },
+          {
+            "texte": "desgenettes:louanges-de-la-semaine",
+            "extrait": {
+              "section": "## Le mercredi."
+            },
+            "quand": {
+              "mois": [
+                8
+              ]
+            }
           }
         ]
       }
@@ -948,7 +993,7 @@
       "id": "prog:devotion-jeudi",
       "titre": "Dévotion du jeudi : le Saint-Sacrement",
       "motif": {"fins": ["adoration", "demande"], "objets": ["eucharistie"], "note": "dédicace du jeudi : le Saint-Sacrement (cycles.json)"},
-      "revision": 2,
+      "revision": 3,
       "quand": {
         "jours_semaine": [4]
       },
@@ -982,6 +1027,17 @@
           },
           {
             "texte": "gertrude:hostie-divine"
+          },
+          {
+            "texte": "desgenettes:louanges-de-la-semaine",
+            "extrait": {
+              "section": "## Le jeudi."
+            },
+            "quand": {
+              "mois": [
+                8
+              ]
+            }
           }
         ]
       }
@@ -990,7 +1046,7 @@
       "id": "prog:devotion-vendredi",
       "titre": "Dévotion du vendredi : la Passion et le Sacré-Cœur",
       "motif": {"fins": ["reparation", "propitiation"], "objets": ["passion", "sacre-coeur"], "note": "dédicace du vendredi : la Passion et le Sacré-Cœur (cycles.json ; LOT_DIMENSIONS § 3.3)"},
-      "revision": 2,
+      "revision": 3,
       "quand": {
         "jours_semaine": [5]
       },
@@ -1037,6 +1093,33 @@
                   "gertrude:salut-membres-de-jesus"
               ]
             }
+          },
+          {
+            "texte": "garde1886:priere-reparatrice",
+            "quand": {
+              "semaines_du_mois": [
+                1
+              ]
+            }
+          },
+          {
+            "texte": "garde1886:renovation-enrolement",
+            "quand": {
+              "semaines_du_mois": [
+                1
+              ]
+            }
+          },
+          {
+            "texte": "desgenettes:louanges-de-la-semaine",
+            "extrait": {
+              "section": "## Le vendredi."
+            },
+            "quand": {
+              "mois": [
+                8
+              ]
+            }
           }
         ]
       }
@@ -1045,7 +1128,7 @@
       "id": "prog:devotion-samedi",
       "titre": "Dévotion du samedi : la sainte Vierge",
       "motif": {"fins": ["louange", "demande"], "objets": ["sainte-vierge"], "note": "dédicace du samedi : la sainte Vierge (cycles.json)"},
-      "revision": 2,
+      "revision": 3,
       "quand": {
         "jours_semaine": [6]
       },
@@ -1091,6 +1174,17 @@
                   "gertrude:reparation-sainte-vierge",
                   "gertrude:offrande-coeur-de-jesus-a-marie",
                   "gertrude:office-sainte-vierge"
+              ]
+            }
+          },
+          {
+            "texte": "desgenettes:louanges-de-la-semaine",
+            "extrait": {
+              "section": "## Le samedi."
+            },
+            "quand": {
+              "mois": [
+                8
               ]
             }
           }
@@ -1188,6 +1282,137 @@
           }
         ]
       }
+    },
+    {
+      "id": "prog:ames-du-soir",
+      "titre": "Prière du jour pour les âmes du purgatoire",
+      "motif": {
+        "fins": [
+          "intercession",
+          "propitiation"
+        ],
+        "objets": [
+          "ames-du-purgatoire"
+        ],
+        "note": "chaque soir, la prière du jour pour les défunts (Beringer, n° 615) ; le lundi a sa dévotion propre"
+      },
+      "revision": 1,
+      "source": "Décision de l'utilisateur du 22 nov. : chaque soir sauf le lundi, à la fin de la prière du soir (audit ARCHICONFRERIES_EN)",
+      "insertions": [
+        {
+          "hote": "prog:priere-du-soir",
+          "point": "fin",
+          "sections": [
+            {
+              "texte": {
+                "selon": "jour_semaine",
+                "valeurs": [
+                  "beringer:ames-purgatoire-dimanche",
+                  null,
+                  "beringer:ames-purgatoire-mardi",
+                  "beringer:ames-purgatoire-mercredi",
+                  "beringer:ames-purgatoire-jeudi",
+                  "beringer:ames-purgatoire-vendredi",
+                  "beringer:ames-purgatoire-samedi"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prog:sainte-famille",
+      "titre": "A la Sainte Famille",
+      "motif": {
+        "fins": [
+          "demande"
+        ],
+        "objets": [
+          "jesus-christ",
+          "sainte-vierge",
+          "saint-joseph"
+        ],
+        "note": "mois de la Sainte Famille (février) et sa fête"
+      },
+      "revision": 1,
+      "quand": {
+        "ou": [
+          {
+            "mois": [
+              2
+            ]
+          },
+          {
+            "office": "^Sainte Famille"
+          }
+        ]
+      },
+      "source": "Décision de l'utilisateur du 22 nov. : en février et à la fête de la Sainte Famille (Beringer, n° 298)",
+      "insertions": [
+        {
+          "hote": "prog:priere-du-soir",
+          "point": "fin",
+          "sections": [
+            {
+              "texte": "beringer:a-la-sainte-famille"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prog:consecrations-fetes",
+      "titre": "Consécration du jour de la fête",
+      "motif": {
+        "fins": [
+          "adoration",
+          "louange"
+        ],
+        "objets": [
+          "sacre-coeur",
+          "coeur-immacule",
+          "jesus-christ"
+        ],
+        "note": "renouveler une fois l'an la consécration propre à la fête (archiconfréries)"
+      },
+      "revision": 1,
+      "source": "Décision de l'utilisateur du 22 nov. : les consécrations des archiconfréries le jour de leur fête (audit ARCHICONFRERIES_FR)",
+      "insertions": [
+        {
+          "hote": "prog:priere-du-matin",
+          "point": "fin",
+          "sections": [
+            {
+              "texte": {
+                "selon": "quand",
+                "cas": [
+                  {
+                    "quand": {
+                      "office": "^Sacré-Cœur de Jésus$"
+                    },
+                    "texte": "garde1886:consecration-coeur-de-jesus"
+                  },
+                  {
+                    "quand": {
+                      "office": "^Cœur Immaculé de Marie$"
+                    },
+                    "texte": "desgenettes:oraison-consecration-coeur-de-marie"
+                  },
+                  {
+                    "quand": {
+                      "code_tempora": [
+                        "Quadp3-2"
+                      ]
+                    },
+                    "texte": "janvier:consecration-archiconfrerie"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "prog:don-du-jour",
