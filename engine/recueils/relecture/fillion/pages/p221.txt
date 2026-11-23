@@ -1,10 +1,19 @@
 # p221 (image n234)
+c| vous qui mangez le pain de la douleur,
+c| car c'est Dieu qui donne le sommeil à ses bien-aimés.
+v| C'est un héritage du Seigneur que des enfants ;
+c| le fruit des entrailles est une récompense.
+v| Comme les flèches dans la main d'un homme vaillant,
+c| ainsi sont les fils des hommes opprimés.
+v| Heureux l'homme qui en a rempli son désir.
+c| Il ne sera point confondu lorsqu'il parlera à ses ennemis
+c| à la porte de la ville.
 h| Compiles.
 h| Psaume XI
 v| Sauvez-moi, Seigneur, car il n'y a plus de saint,
 c| car les vérités ont été diminuées par les enfants des
 c| hommes.
-v| Chacun ne dit à-son prochain que des choses vaines ;
+v| Chacun ne dit à son prochain que des choses vaines ;
 c| leurs lèvres sont trompeuses, et ils parlent avec un cœur
 c| double.
 v| Que le Seigneur détruise toutes les lèvres trompeuses,
@@ -12,3 +21,4 @@ c| et la langue qui se vante avec jactance.
 v| Ils ont dit : Nous ferons éclater la puissance de notre langue ;
 c| nos lèvres ne dépendent que de nous.
 c| Qui est notre maître ?
+?| Chacun ne dit à son prochain — point parasite entre « à » et « son » (lu « à-son » au premier passage, corrigé le 23 nov.)

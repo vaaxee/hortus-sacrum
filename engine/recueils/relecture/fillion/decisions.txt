@@ -258,10 +258,10 @@ ok
 f: "Si" "" A A "Voici" A A
 ok
 
-// Complies du mardi (pp. 221-225) ; le haut de la p. 221 (fin du psaume 126) n'est pas encore relu.
+// Complies du mardi (pp. 221-225) ; haut de la p. 221 : fin du psaume 126 (Vêpres).
 == p221
-f: T T "Heureux" A T "maître" ""
-x: 1-9
+f: T ";" "Heureux" A "à son" "maître" ""
+?: Chacun ne dit à son prochain — point parasite entre « à » et « son » (lu « à-son » au premier passage, corrigé le 23 nov.)
 r: puissance de notre\nc| nos lèvres ne dépendent que de nous. [langue ; => puissance de notre langue ;\nc| nos lèvres ne dépendent que de nous.
 ok
 
@@ -712,4 +712,53 @@ ok
 f: "" A "car" "d'eux" "l'iniquité" "Il" ""
 h: 2 Sexte.
 v: 4
+ok
+
+== p207
+f: "" "m'avez affermi" "présence." "soit le Seigneur," "Comme" "ô" ";" "viendrai-je," "Je" "j'ai" "" "troubles-tu" "lui, le salut" "" ""
+x: 1
+v: 9
+r: mon àme ? => mon âme ?
+r: de mon visage, et mon Dieu. => de mon visage,\nv| et mon Dieu.
+?: et mon Dieu — Fillion imprime le numéro 7 au milieu de la ligne, devant « et mon Dieu » (DO commence 41, 7 à « Ad meipsum ») : découpage de l'imprimé gardé
+ok
+
+== p209
+f: "l'Hermon," "[Jourdain," "L'abime" "l'abîme," "passé" A "Je" "dois-je" "mes" "O" "[anciens."
+h: 1 Psaume XLI, ii.
+h: 21 None.
+h: 22 Psaume XLIII, i.
+r: tandis que l'ennemi\nv| Pendant que mes os sont brisés, [m'afflige ? => tandis que l'ennemi m'afflige ?\nv| Pendant que mes os sont brisés,
+?: L'abime appelle l'abîme — premier « abime » sans circonflexe, second avec, tels qu'imprimés
+ok
+
+== p211
+f: "à" "vous" "chassés." "n'est" "les a" "[pays," "c'est" "et la" "vous" "Jacob." "nos" "" "et en" "mépriserons" "Car" "n'est" "confierai," "sauvera." "sauvés" "et" "ô" "Dieu," "armées." "ennemis," "nous" "" "Vous" "prix,"
+c: 2
+ok
+
+== p213
+f: "n'avez" "et" A "[fliction," A A "Levez-vous" "Seigneur" "visage ?" "pourquoi" "Car" "Levez-vous," "secourez-nous," "rachetez-nous à cause"
+ok
+
+== p215
+f: "" "vous," "" "cieux." "maîtres," "maîtresse," "Ayez" "nous," "les" "" "âme a"
+x: 16
+v: 6
+v: 18
+c: 10 21
+r: car notre àme => car notre âme
+r: riches, et de mépris => riches, et de mépris pour les superbes.
+ok
+
+== p217
+f: A A "" "l'héritage" "[cheurs" "emmènera" "[l'iniquité."
+r: celui qui habite dans Jéru- => celui qui habite\nv| dans Jéru-
+?: dans Jérusalem — Fillion imprime le numéro 2 au milieu de la ligne, devant « dans Jérusalem » (DO : « qui habitat in Jerusalem » à la fin de sa ligne 1) : découpage de l'imprimé gardé
+ok
+
+== p219
+f: "fut" A "" "avons" "captifs," "le pays" "Ceux qui sèment" "l'allégresse." "Ils" "c'est" "bâtissent." "C'est" "vous" "après vous être reposés,"
+h: 18 Psaume CXXVI
+v: 4 12
 ok

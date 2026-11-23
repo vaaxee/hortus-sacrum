@@ -1069,9 +1069,12 @@
     },
     {
      "n": 3,
-     "fr": "Chacun ne dit à-son prochain que des choses vaines ; leurs lèvres sont trompeuses, et ils parlent avec un cœur double.",
+     "fr": "Chacun ne dit à son prochain que des choses vaines ; leurs lèvres sont trompeuses, et ils parlent avec un cœur double.",
      "page": 221,
-     "ligne_la": "3"
+     "ligne_la": "3",
+     "lecture": [
+      "p. 221 : Chacun ne dit à son prochain — point parasite entre « à » et « son » (lu « à-son » au premier passage, corrigé le 23 nov.)"
+     ]
     },
     {
      "n": 4,
@@ -4387,6 +4390,210 @@
    ]
   },
   {
+   "numero": 40,
+   "titre": "Psaume XL",
+   "versets": [
+    {
+     "n": 2,
+     "fr": "Heureux celui qui a l'intelligence de l'indigent et du pauvre ; au jour mauvais le Seigneur le délivrera.",
+     "page": 205,
+     "ligne_la": "2"
+    },
+    {
+     "n": 3,
+     "fr": "Que le Seigneur le conserve, et le fasse vivre, et qu'il le rende heureux sur la terre, et qu'il ne le livre pas au désir de ses ennemis.",
+     "page": 205,
+     "ligne_la": "3"
+    },
+    {
+     "n": 4,
+     "fr": "Que le Seigneur lui porte secours sur son lit de douleur. Vous avez retourné toute sa couche dans sa maladie.",
+     "page": 205,
+     "ligne_la": "4"
+    },
+    {
+     "n": 5,
+     "fr": "J'ai dit : Seigneur, ayez pitié de moi ; guérissez mon àme, car j'ai péché contre vous.",
+     "page": 205,
+     "ligne_la": "5"
+    },
+    {
+     "n": 6,
+     "fr": "Mes ennemis ont dit du mal contre moi : Quand mourra-t-il, et quand périra son nom ?",
+     "page": 205,
+     "ligne_la": "6"
+    },
+    {
+     "n": 7,
+     "fr": "Si l'un d'eux entrait pour me voir, il tenait de vains discours ; son cœur amassait l'iniquité en lui-même. Il sortait dehors, et parlait.",
+     "page": 205,
+     "ligne_la": "7"
+    },
+    {
+     "n": 8,
+     "fr": "Tous mes ennemis ensemble chuchotaient contre moi ; ils tramaient des maux contre moi.",
+     "page": 205,
+     "ligne_la": "8"
+    },
+    {
+     "n": 9,
+     "fr": "Ils se sont arrêtés contre moi à une parole inique : Est-ce que celui qui dort ne pourra jamais se lever ?",
+     "page": 205,
+     "ligne_la": "9"
+    },
+    {
+     "n": 10,
+     "fr": "Même l'homme de mon intimité, en qui je me suis confié, et qui mangeait mon pain, a fait éclater sa trahison contre moi.",
+     "page": 205,
+     "ligne_la": "10"
+    },
+    {
+     "n": 11,
+     "fr": "Mais vous, Seigneur, ayez pitié de moi, et ressuscitez-moi, et je leur rendrai ce qu'ils méritent.",
+     "page": 205,
+     "ligne_la": "11"
+    },
+    {
+     "n": 12,
+     "fr": "J'ai connu quel a été votre amour pour moi, en ce que mon ennemi ne se réjouira point à mon sujet.",
+     "page": 207,
+     "ligne_la": "12"
+    },
+    {
+     "n": 13,
+     "fr": "Vous m'avez accueilli à cause de mon innocence, et vous m'avez affermi pour toujours en votre présence.",
+     "page": 207,
+     "ligne_la": "13"
+    },
+    {
+     "n": 14,
+     "fr": "Béni soit le Seigneur, le Dieu d'Israël, dans les siècles des siècles. Ainsi soit-il. Ainsi soit-il.",
+     "page": 207,
+     "ligne_la": "14"
+    }
+   ],
+   "lignes_la": [
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14"
+   ],
+   "pages": [
+    205,
+    207
+   ]
+  },
+  {
+   "numero": 41,
+   "titre": "Psaume XLI",
+   "versets": [
+    {
+     "n": 2,
+     "fr": "Comme le cerf soupire après les sources des eaux, ainsi mon âme soupire vers vous, ô Dieu.",
+     "page": 207,
+     "ligne_la": "2"
+    },
+    {
+     "n": 3,
+     "fr": "Mon âme a soif du Dieu fort et vivant ; quand viendrai-je, et paraitrai-je devant la face de Dieu ?",
+     "page": 207,
+     "ligne_la": "3"
+    },
+    {
+     "n": 4,
+     "fr": "Mes larmes ont été ma nourriture le jour et la nuit, pendant qu'on me dit tous les jours : Où est ton Dieu ?",
+     "page": 207,
+     "ligne_la": "4"
+    },
+    {
+     "n": 5,
+     "fr": "Je me suis souvenu de ces choses, et j'ai répandu mon âme au dedans de moi ; car je passerai dans le lieu du tabernacle admirable, jusqu'à la maison de Dieu, parmi les chants d'allégresse et de louange, pareils au bruit d'un festin.",
+     "page": 207,
+     "ligne_la": "5"
+    },
+    {
+     "n": 6,
+     "fr": "Pourquoi es-tu triste, mon âme ? et pourquoi me troubles-tu ? Espère en Dieu, car je le louerai encore, lui, le salut de mon visage,",
+     "page": 207,
+     "ligne_la": "6"
+    },
+    {
+     "n": 7,
+     "fr": "et mon Dieu. Mon âme a été toute troublée en moi-même ; c'est pourquoi je me souviendrai de vous, du pays du Jourdain, et de l'Hermon, et de la petite montagne.",
+     "page": 207,
+     "ligne_la": "7",
+     "lecture": [
+      "p. 207 : et mon Dieu — Fillion imprime le numéro 7 au milieu de la ligne, devant « et mon Dieu » (DO commence 41, 7 à « Ad meipsum ») : découpage de l'imprimé gardé"
+     ]
+    },
+    {
+     "n": 8,
+     "fr": "L'abime appelle l'abîme, au bruit de vos cataractes. Toutes vos vagues amoncelées et vos flots ont passé sur moi.",
+     "page": 209,
+     "ligne_la": "8",
+     "lecture": [
+      "p. 209 : L'abime appelle l'abîme — premier « abime » sans circonflexe, second avec, tels qu'imprimés"
+     ]
+    },
+    {
+     "n": 9,
+     "fr": "Pendant le jour le Seigneur a envoyé sa miséricorde, et la nuit son cantique. Au dedans de moi est une prière pour le Dieu de ma vie.",
+     "page": 209,
+     "ligne_la": "9"
+    },
+    {
+     "n": 10,
+     "fr": "Je dirai à Dieu : Vous êtes mon défenseur ; pourquoi m'avez-vous oublié ? et pourquoi dois-je marcher attristé, tandis que l'ennemi m'afflige ?",
+     "page": 209,
+     "ligne_la": "10"
+    },
+    {
+     "n": 11,
+     "fr": "Pendant que mes os sont brisés, mes ennemis qui me persécutent m'accablent par leurs reproches, me disant tous les jours : Où est ton Dieu ?",
+     "page": 209,
+     "ligne_la": "11"
+    },
+    {
+     "n": 12,
+     "fr": "Pourquoi es-tu triste, mon âme ? et pourquoi me troubles-tu ? Espère en Dieu, car je le louerai encore, lui, le salut de mon visage et mon Dieu.",
+     "page": 209,
+     "ligne_la": "12"
+    }
+   ],
+   "lignes_la": [
+    "2",
+    "3",
+    "4",
+    "5",
+    "5",
+    "6",
+    "6",
+    "7",
+    "8",
+    "8",
+    "9",
+    "9",
+    "10",
+    "11",
+    "11",
+    "12"
+   ],
+   "pages": [
+    207,
+    209
+   ]
+  },
+  {
    "numero": 42,
    "titre": "Psaume XLII",
    "versets": [
@@ -4436,6 +4643,197 @@
    "pages": [
     185,
     187
+   ]
+  },
+  {
+   "numero": 43,
+   "titre": "Psaume XLIII",
+   "versets": [
+    {
+     "n": 2,
+     "fr": "O Dieu, nous avons entendu de nos oreilles ; nos pères nous ont annoncé l'œuvre que vous avez faite en leurs jours et aux jours anciens.",
+     "page": 209,
+     "ligne_la": "2"
+    },
+    {
+     "n": 3,
+     "fr": "Votre main a exterminé les nations, et vous les avez plantés à leur place ; vous avez affligé les peuples, et vous les avez chassés.",
+     "page": 211,
+     "ligne_la": "3"
+    },
+    {
+     "n": 4,
+     "fr": "Car ce n'est point par leur glaive qu'ils ont conquis ce pays, et ce n'est pas leur bras qui les a sauvés, mais c'est votre droite et votre bras, et la lumière de votre visage, parce que vous les aimiez.",
+     "page": 211,
+     "ligne_la": "4"
+    },
+    {
+     "n": 5,
+     "fr": "Vous êtes, vous, mon roi et mon Dieu, vous qui ordonnez le salut de Jacob.",
+     "page": 211,
+     "ligne_la": "5"
+    },
+    {
+     "n": 6,
+     "fr": "Par vous nous renverserons nos ennemis à coups de corne, et en votre nom nous mépriserons ceux qui se lèvent contre nous.",
+     "page": 211,
+     "ligne_la": "6"
+    },
+    {
+     "n": 7,
+     "fr": "Car ce n'est pas dans mon arc que je me confierai, et ce n'est pas mon glaive qui me sauvera.",
+     "page": 211,
+     "ligne_la": "7"
+    },
+    {
+     "n": 8,
+     "fr": "Mais c'est vous qui nous avez sauvés de ceux qui nous affligeaient, et qui avez confondu ceux qui nous haïssaient.",
+     "page": 211,
+     "ligne_la": "8"
+    },
+    {
+     "n": 9,
+     "fr": "En Dieu nous nous glorifierons tout le jour, et nous célébrerons à jamais votre nom.",
+     "page": 211,
+     "ligne_la": "9"
+    },
+    {
+     "n": 10,
+     "fr": "Mais maintenant vous nous avez repoussés et couverts de honte, et vous ne sortez plus, ô Dieu, avec nos armées.",
+     "page": 211,
+     "ligne_la": "10"
+    },
+    {
+     "n": 11,
+     "fr": "Vous nous avez fait tourner le dos à nos ennemis, et ceux qui nous haïssent nous mettaient au pillage.",
+     "page": 211,
+     "ligne_la": "11"
+    },
+    {
+     "n": 12,
+     "fr": "Vous nous avez livrés comme des brebis de boucherie, et vous nous avez dispersés parmi les nations.",
+     "page": 211,
+     "ligne_la": "12"
+    },
+    {
+     "n": 13,
+     "fr": "Vous avez vendu votre peuple à vil prix, et il n'y a pas eu foule dans l'achat qui s'en est fait.",
+     "page": 211,
+     "ligne_la": "13"
+    },
+    {
+     "n": 14,
+     "fr": "Vous nous avez rendus l'opprobre de nos voisins, un objet d'insulte et de moquerie pour ceux qui nous entourent.",
+     "page": 213,
+     "ligne_la": "14"
+    },
+    {
+     "n": 15,
+     "fr": "Vous nous avez rendus la fable des nations ; les peuples branlent la tête à notre sujet.",
+     "page": 213,
+     "ligne_la": "15"
+    },
+    {
+     "n": 16,
+     "fr": "Tout le jour ma honte est devant moi, et la confusion de mon visage me couvre tout entier,",
+     "page": 213,
+     "ligne_la": "16"
+    },
+    {
+     "n": 17,
+     "fr": "à la voix de celui qui m'outrage et m'injurie, à la vue de l'ennemi et du persécuteur.",
+     "page": 213,
+     "ligne_la": "17"
+    },
+    {
+     "n": 18,
+     "fr": "Tous ces maux sont venus sur nous, et nous ne vous avons pas oublié, et nous n'avons pas agi iniquement contre votre alliance.",
+     "page": 213,
+     "ligne_la": "18"
+    },
+    {
+     "n": 19,
+     "fr": "Et notre cœur ne s'est point retiré en arrière, et vous n'avez point détourné nos pas de votre voie.",
+     "page": 213,
+     "ligne_la": "19"
+    },
+    {
+     "n": 20,
+     "fr": "Et pourtant vous nous avez humiliés dans un lieu d'affliction, et l'ombre de la mort nous a recouverts.",
+     "page": 213,
+     "ligne_la": "20"
+    },
+    {
+     "n": 21,
+     "fr": "Si nous avons oublié le nom de notre Dieu, et si nous avons étendu nos mains vers un dieu étranger,",
+     "page": 213,
+     "ligne_la": "21"
+    },
+    {
+     "n": 22,
+     "fr": "Dieu n'en rcdemandera-t-il pas compte ? Car il connaît les secrets du cœur. Car à cause de vous nous sommes tous les jours livrés à la mort ; on nous regarde comme des brebis de boucherie.",
+     "page": 213,
+     "ligne_la": "22"
+    },
+    {
+     "n": 23,
+     "fr": "Levez-vous ; pourquoi dormez-vous, Seigneur ? Levez-vous, et ne nous repoussez pas à jamais.",
+     "page": 213,
+     "ligne_la": "23"
+    },
+    {
+     "n": 24,
+     "fr": "Pourquoi détournez-vous votre visage ? pourquoi oubliez-vous notre misère et notre détresse ?",
+     "page": 213,
+     "ligne_la": "24"
+    },
+    {
+     "n": 25,
+     "fr": "Car notre âme est humiliée dans la poussière, notre sein est collé à la terre.",
+     "page": 213,
+     "ligne_la": "25"
+    },
+    {
+     "n": 26,
+     "fr": "Levez-vous, Seigneur ; secourez-nous, et rachetez-nous à cause de votre nom.",
+     "page": 213,
+     "ligne_la": "26"
+    }
+   ],
+   "lignes_la": [
+    "2",
+    "2",
+    "3",
+    "4",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "18",
+    "19",
+    "20",
+    "21",
+    "22",
+    "22",
+    "23",
+    "24",
+    "25",
+    "26"
+   ],
+   "pages": [
+    209,
+    211,
+    213
    ]
   },
   {
@@ -8530,6 +8928,266 @@
    "pages": [
     157,
     159
+   ]
+  },
+  {
+   "numero": 122,
+   "titre": "Psaume CXXII",
+   "versets": [
+    {
+     "n": 1,
+     "fr": "J'ai élevé mes yeux vers vous, ô Dieu, qui habitez dans les cieux.",
+     "page": 215,
+     "ligne_la": "1"
+    },
+    {
+     "n": 2,
+     "fr": "Comme les yeux des serviteurs sont fixés sur les mains de leurs maîtres, comme les yeux de la servante sont fixés sur les mains de sa maîtresse, ainsi nos yeux sont tournés vers le Seigneur notre Dieu, jusqu'à ce qu'il ait pitié de nous.",
+     "page": 215,
+     "ligne_la": "2a"
+    },
+    {
+     "n": 3,
+     "fr": "Ayez pitié de nous, Seigneur, ayez pitié de nous, car nous sommes tout à fait rassasiés de mépris ;",
+     "page": 215,
+     "ligne_la": "3"
+    },
+    {
+     "n": 4,
+     "fr": "car notre âme n'est que trop rassasiée d'être un sujet d'opprobre pour les riches, et de mépris pour les superbes.",
+     "page": 215,
+     "ligne_la": "4"
+    }
+   ],
+   "lignes_la": [
+    "1",
+    "2a",
+    "2b",
+    "3",
+    "4"
+   ],
+   "pages": [
+    215
+   ]
+  },
+  {
+   "numero": 123,
+   "titre": "Psaume CXXIII",
+   "versets": [
+    {
+     "n": 1,
+     "fr": "Si le Seigneur n'avait été avec nous, qu'Israël maintenant le dise,",
+     "page": 215,
+     "ligne_la": "1"
+    },
+    {
+     "n": 2,
+     "fr": "si le Seigneur n'avait été avec nous, lorsque les hommes s'élevaient contre nous,",
+     "page": 215,
+     "ligne_la": "1"
+    },
+    {
+     "n": 3,
+     "fr": "ils auraient pu nous dévorer tout vivants ; lorsque leur fureur s'est irritée contre nous,",
+     "page": 215,
+     "ligne_la": "2b"
+    },
+    {
+     "n": 4,
+     "fr": "les eaux auraient pu nous engloutir.",
+     "page": 215,
+     "ligne_la": "3b"
+    },
+    {
+     "n": 5,
+     "fr": "Notre âme a traversé le torrent ; mais notre âme aurait pu pénétrer dans une eau infranchissable.",
+     "page": 215,
+     "ligne_la": "5"
+    },
+    {
+     "n": 6,
+     "fr": "Béni soit le Seigneur, qui ne nous a point donnés en proie à leurs dents.",
+     "page": 217,
+     "ligne_la": "6"
+    },
+    {
+     "n": 7,
+     "fr": "Notre âme s'est échappée, comme un passereau, du filet des chasseurs ; le filet a été brisé, et nous avons été délivrés.",
+     "page": 217,
+     "ligne_la": "7a"
+    },
+    {
+     "n": 8,
+     "fr": "Notre secours est dans le nom du Seigneur, qui a fait le ciel et la terre.",
+     "page": 217,
+     "ligne_la": "8"
+    }
+   ],
+   "lignes_la": [
+    "1",
+    "2b",
+    "3b",
+    "5",
+    "6",
+    "7a",
+    "7b",
+    "8"
+   ],
+   "pages": [
+    215,
+    217
+   ]
+  },
+  {
+   "numero": 124,
+   "titre": "Psaume CXXIV",
+   "versets": [
+    {
+     "n": 1,
+     "fr": "Ceux qui se confient dans le Seigneur sont comme la montagne de Sion ; il ne sera jamais ébranlé, celui qui habite",
+     "page": 217,
+     "ligne_la": "1"
+    },
+    {
+     "n": 2,
+     "fr": "dans Jérusalem. Des montagnes sont autour d'elle ; et le Seigneur est autour de son peuple, dès maintenant et à jamais.",
+     "page": 217,
+     "ligne_la": "1",
+     "lecture": [
+      "p. 217 : dans Jérusalem — Fillion imprime le numéro 2 au milieu de la ligne, devant « dans Jérusalem » (DO : « qui habitat in Jerusalem » à la fin de sa ligne 1) : découpage de l'imprimé gardé"
+     ]
+    },
+    {
+     "n": 3,
+     "fr": "Car le Seigneur ne laissera pas toujours la verge des pécheurs sur l'héritage des justes, de peur que les justes n'étendent leurs mains vers l'iniquité.",
+     "page": 217,
+     "ligne_la": "3"
+    },
+    {
+     "n": 4,
+     "fr": "Faites du bien aux bons, Seigneur, et à ceux dont le cœur est droit.",
+     "page": 217,
+     "ligne_la": "4"
+    },
+    {
+     "n": 5,
+     "fr": "Quant à ceux qui se détournent en des voies tortueuses, le Seigneur les emmènera avec ceux qui commettent l'iniquité. Que la paix soit sur Israël !",
+     "page": 217,
+     "ligne_la": "5"
+    }
+   ],
+   "lignes_la": [
+    "1",
+    "2b",
+    "3",
+    "4",
+    "5"
+   ],
+   "pages": [
+    217
+   ]
+  },
+  {
+   "numero": 125,
+   "titre": "Psaume CXXV",
+   "versets": [
+    {
+     "n": 1,
+     "fr": "Quand le Seigneur ramena les captifs de Sion, nous fûmes tout à fait consolés.",
+     "page": 219,
+     "ligne_la": "1"
+    },
+    {
+     "n": 2,
+     "fr": "Alors notre bouche fut remplie de chants de joie, et notre langue de cris d'allégresse. Alors on disait parmi les nations : Le Seigneur a fait de grandes choses pour eux.",
+     "page": 219,
+     "ligne_la": "2a"
+    },
+    {
+     "n": 3,
+     "fr": "Le Seigneur a fait pour nous de grandes choses ; nous en avons été remplis de joie.",
+     "page": 219,
+     "ligne_la": "3"
+    },
+    {
+     "n": 4,
+     "fr": "Ramenez, Seigneur, nos captifs, comme un torrent dans le pays du midi.",
+     "page": 219,
+     "ligne_la": "4"
+    },
+    {
+     "n": 5,
+     "fr": "Ceux qui sèment dans les larmes moissonneront dans l'allégresse.",
+     "page": 219,
+     "ligne_la": "5"
+    },
+    {
+     "n": 6,
+     "fr": "Ils allaient et venaient en pleurant, tandis qu'ils jetaient leurs semences. Mais ils reviendront avec allégresse, chargés de leurs gerbes.",
+     "page": 219,
+     "ligne_la": "6a"
+    }
+   ],
+   "lignes_la": [
+    "1",
+    "2a",
+    "2b",
+    "3",
+    "4",
+    "5",
+    "6a",
+    "6b"
+   ],
+   "pages": [
+    219
+   ]
+  },
+  {
+   "numero": 126,
+   "titre": "Psaume CXXVI",
+   "versets": [
+    {
+     "n": 1,
+     "fr": "Si le Seigneur ne bâtit la maison, c'est en vain que travaillent ceux qui la bâtissent. Si le Seigneur ne garde la cité, c'est en vain que veille celui qui la garde.",
+     "page": 219,
+     "ligne_la": "1a"
+    },
+    {
+     "n": 2,
+     "fr": "C'est en vain que vous vous levez avant le jour. Levez-vous après vous être reposés, vous qui mangez le pain de la douleur, car c'est Dieu qui donne le sommeil à ses bien-aimés.",
+     "page": 219,
+     "ligne_la": "2a"
+    },
+    {
+     "n": 3,
+     "fr": "C'est un héritage du Seigneur que des enfants ; le fruit des entrailles est une récompense.",
+     "page": 221,
+     "ligne_la": "2b"
+    },
+    {
+     "n": 4,
+     "fr": "Comme les flèches dans la main d'un homme vaillant, ainsi sont les fils des hommes opprimés.",
+     "page": 221,
+     "ligne_la": "4"
+    },
+    {
+     "n": 5,
+     "fr": "Heureux l'homme qui en a rempli son désir. Il ne sera point confondu lorsqu'il parlera à ses ennemis à la porte de la ville.",
+     "page": 221,
+     "ligne_la": "5"
+    }
+   ],
+   "lignes_la": [
+    "1a",
+    "1b",
+    "2a",
+    "2b",
+    "4",
+    "5"
+   ],
+   "pages": [
+    219,
+    221
    ]
   },
   {
