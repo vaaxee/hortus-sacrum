@@ -41,7 +41,11 @@ Le français n'est pas donné : les fichiers français de DO ne disent pas leur 
 anciennes identifiées le 22 nov. (`docs/audits/BREVIAIRE_FRANCAIS_2026-11-22.md`) : Fillion, *Le nouveau psautier du
 Bréviaire romain*, 7e éd., Lecoffre-Gabalda, 1917 (archive.org `lenouveaupsautie00gl`) pour les psaumes ; Hugueny, *Le
 Bréviaire romain, textes latins et français*, Labergerie, 1934 (rééd. 1947 ; archive.org `le-breviaire-romain-000001439`
-et fascicules) pour le reste. Rien n'est encore transcrit pour le Bréviaire.
+et fascicules) pour le reste ; choix confirmé par l'utilisateur le 22 nov.
+
+| Texte | Source | Accès |
+|---|---|---|
+| Psautier du Bréviaire romain en français, psaume par psaume et verset par verset (numérotation de la Vulgate), avec les cantiques ; en cours : office du dimanche et Complies de la semaine (voir l'audit pour le détail) ; données non branchées | L. Cl. Fillion, *Le nouveau psautier du Bréviaire romain, texte et traduction, avec notes succinctes*, 7e éd. « soigneusement revue », Paris, Lecoffre, J. Gabalda, 1917 ; *Nihil obstat* H. Garriguet, sup. s. s. ; *Imprimatur* Paris, 4 juin 1912, P. Thomas, v. g. ; traduction de la Vulgate (« au fond, celle de Sacy », revue) ; pages françaises impaires 13-531 ; double lecture (couche ABBYY d'archive.org, Tesseract fra), désaccords tranchés et chaque page relue sur l'image ; décisions rejouables `engine/recueils/relecture/fillion/decisions.txt` | archive.org `lenouveaupsautie00gl` (exemplaire de l'Université d'Ottawa, images n<page + 13>) → `data/office/breviaire-fr/psautier-fillion.json` ; contrôle `engine/office/test_psautier_fr.py` |
 
 | Texte | Source | Accès |
 |---|---|---|

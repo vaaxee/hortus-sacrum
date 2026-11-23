@@ -57,11 +57,14 @@ Les points réglés sont gardés pour l'historique. Dernière mise à jour : 22 
   partie »). Écartés : Tournai 1875 (latin seul), recueils
   canadiens de 1873-1915 (latin seul pour l'office). Piste : Dom G. Froment, *Le Petit office de la Sainte Vierge expliqué
   et commenté*, édition latine-française, Ligugé, 1893 (*imprimatur* de Poitiers), vu seulement sur Scribd (non admis) :
-  scan libre à trouver (Gallica inaccessible depuis l'environnement, quota Google Livres épuisé). *Bréviaire* : proposés
-  **Fillion 1917** (psautier de la Vulgate, *imprimatur* Paris 1912, `lenouveaupsautie00gl`) et **Hugueny, Labergerie,
-  1934/1947** (tout le Bréviaire, latin-français, psaumes traduits de l'hébreu ; archive.org `le-breviaire-romain-*`,
-  fascicule 8 du Propre du temps absent) ; **à valider par l'utilisateur** (droits : Hugueny † 1942, abbé Obert, date
-  inconnue). Crampon 1923 écarté pour le psautier liturgique (hébreu, numérotation décalée).
+  scan libre à trouver (Gallica inaccessible depuis l'environnement, quota Google Livres épuisé). *Bréviaire* : décision
+  de l'utilisateur du 22 nov. : **Fillion 1917 pour les psaumes, Hugueny (Labergerie, 1934/1947) pour tout le reste**.
+  Psautier de Fillion en cours (`data/office/breviaire-fr/psautier-fillion.json`, non branché) : office du dimanche et
+  Complies de toute la semaine faits ; **restent à transcrire** les psaumes des Matines, Laudes, petites Heures et
+  Vêpres du lundi au samedi (pp. 99-517 de Fillion, voir l'audit § 5) et les cantiques de Laudes de la semaine. Hugueny :
+  rien de transcrit ; table des fascicules dans l'audit ; **le fascicule 8 du Propre du temps (du dimanche in albis au
+  samedi avant le IVe dimanche après Pâques) manque sur archive.org** : à chercher sur liberius.net (Bibliothèque Saint
+  Libère). Crampon 1923 écarté pour le psautier liturgique (hébreu, numérotation décalée).
 - ~~Mois du Précieux Sang (juillet)~~ : **fait** (14 nov.), Boylesve 1882, autre scan lisible (archive.org `cihm_41458`).
 - **Litanies des défunts (lundi)** : **fait** (14 nov.) avec les textes donnés par l'utilisateur : FSSPX Canada (litanies pour la délivrance des âmes du purgatoire) et salve-regina.com (litanies pour les fidèles défunts) ; en plus, litanies de la bonne mort (Le Petit Sacristain).
 - **Formule de renouvellement de la consécration au cordon de saint Joseph** (demandée le 13 nov., chaque mercredi) : **introuvable** dans Beringer 1925, l'*Enchiridion* 1952, la *Raccolta* 1949 et le *Livre d'or*. Seule existe la bénédiction du cordon, en latin, réservée au prêtre (Beringer, t. II, n° 475). En attendant, le mercredi porte la prière n° 480 « A saint Joseph pour obtenir la vertu de pureté » (Pie IX, 1877), qui répond à la fin du cordon. Piste : un manuel ancien de l'archiconfrérie de Saint-Joseph (Rome, Saint-Roch) ou de Vérone. **14 nov. : à la demande de l'utilisateur, une formule a été composée pour l'app** (`hortus:renouvellement-cordon-saint-joseph`, marquée comme telle) ; à remplacer si une formule ancienne est trouvée.
