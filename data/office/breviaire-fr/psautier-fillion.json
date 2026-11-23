@@ -321,6 +321,105 @@
    ]
   },
   {
+   "numero": 5,
+   "titre": "Psaume V",
+   "versets": [
+    {
+     "n": 2,
+     "fr": "Seigneur, prêtez l'oreille à mes paroles ; comprenez mon cri.",
+     "page": 123,
+     "ligne_la": "2"
+    },
+    {
+     "n": 3,
+     "fr": "Soyez attentif à la voix de ma prière, ô mon roi et mon Dieu.",
+     "page": 123,
+     "ligne_la": "3"
+    },
+    {
+     "n": 4,
+     "fr": "Car c'est vous que je prierai, Seigneur ; dès le matin vous exaucerez ma voix.",
+     "page": 123,
+     "ligne_la": "4"
+    },
+    {
+     "n": 5,
+     "fr": "Dès le matin je me tiendrai devant vous, et je verrai que vous n'êtes pas un Dieu qui aime l'iniquité.",
+     "page": 123,
+     "ligne_la": "5"
+    },
+    {
+     "n": 6,
+     "fr": "Le méchant n'habitera pas auprès de vous. et les injustes ne subsisteront point devant vos yeux.",
+     "page": 123,
+     "ligne_la": "6"
+    },
+    {
+     "n": 7,
+     "fr": "Vous haïssez tous ceux qui commettent l'iniquité ; vous perdrez tous ceux qui profèrent le mensonge. Le Seigneur aura en abomination l'homme sanguinaire et trompeur.",
+     "page": 123,
+     "ligne_la": "7a"
+    },
+    {
+     "n": 8,
+     "fr": "Mais moi, grâce à l'abondance de votre miséricorde, j'entrerai dans votre maison ; j'adorerai dans votre saint temple, pénétré de votre crainte.",
+     "page": 123,
+     "ligne_la": "7b"
+    },
+    {
+     "n": 9,
+     "fr": "Seigneur, conduisez-moi dans votre justice ; à cause de mes ennemis, rendez ma voie droite en votre présence.",
+     "page": 123,
+     "ligne_la": "9"
+    },
+    {
+     "n": 10,
+     "fr": "Car la vérité n'est point dans leur bouche ; leur cœur est vain.",
+     "page": 123,
+     "ligne_la": "10"
+    },
+    {
+     "n": 11,
+     "fr": "Leur gosier est un sépulcre ouvert ; ils se sont servis de leurs langues pour tromper. Jugez-les, ô Dieu. Qu'ils échouent dans leurs desseins ; repoussez-les selon la multitude de leurs impiétés, parce qu'ils vous ont irrité, Seigneur.",
+     "page": 123,
+     "ligne_la": "11a"
+    },
+    {
+     "n": 12,
+     "fr": "Mais que tous ceux qui espèrent en vous se réjouissent ; ils seront éternellement dans l'allégresse, et vous habiterez en eux. Et tous ceux qui aiment votre nom se glorifieront en vous,",
+     "page": 125,
+     "ligne_la": "12a"
+    },
+    {
+     "n": 13,
+     "fr": "parce que vous bénirez le juste. Seigneur, vous nous avez entourés de votre amour comme d'un bouclier.",
+     "page": 125,
+     "ligne_la": "12b"
+    }
+   ],
+   "lignes_la": [
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7a",
+    "7b",
+    "8b",
+    "9",
+    "10",
+    "11a",
+    "11b",
+    "12a",
+    "12b",
+    "13b"
+   ],
+   "pages": [
+    123,
+    125
+   ]
+  },
+  {
    "numero": 6,
    "titre": "Psaume VI",
    "versets": [
@@ -1861,6 +1960,302 @@
    ]
   },
   {
+   "numero": 20,
+   "titre": "Psaume XX",
+   "versets": [
+    {
+     "n": 2,
+     "fr": "Seigneur, le roi se réjouira dans votre force, et il tressaillira d'une vive allégresse, parce que vous l'avez sauvé.",
+     "page": 117,
+     "ligne_la": "2"
+    },
+    {
+     "n": 3,
+     "fr": "Vous lui avez accordé le désir de son cœur, et vous ne l'avez point frustré de la demande de ses lèvres.",
+     "page": 117,
+     "ligne_la": "3"
+    },
+    {
+     "n": 4,
+     "fr": "Car vous l'avez prévenu des plus douces bénédictions ; vous avez mis sur sa tête une couronne de pierres précieuses.",
+     "page": 117,
+     "ligne_la": "4"
+    },
+    {
+     "n": 5,
+     "fr": "Il vous a demandé la vie, et vous lui avez accordé des jours qui dureront dans les siècles des siècles.",
+     "page": 117,
+     "ligne_la": "5"
+    },
+    {
+     "n": 6,
+     "fr": "Sa gloire est grande, grâce à votre salut ; vous le couvrirez de gloire et d'un honneur immense.",
+     "page": 117,
+     "ligne_la": "6"
+    },
+    {
+     "n": 7,
+     "fr": "Car vous ferez de lui une source de bénédictions perpétuelles ; vous le comblerez de joie en lui montrant votre visage.",
+     "page": 117,
+     "ligne_la": "7"
+    },
+    {
+     "n": 8,
+     "fr": "Car le roi espère au Seigneur, et la miséricorde du Très-Haut le rendra inébranlable.",
+     "page": 117,
+     "ligne_la": "8"
+    },
+    {
+     "n": 9,
+     "fr": "Que votre main atteigne tous vos ennemis ; que votre droite trouve tous ceux qui vous haïssent.",
+     "page": 117,
+     "ligne_la": "9"
+    },
+    {
+     "n": 10,
+     "fr": "Vous en ferez comme une fournaise ardente, au temps où vous montrerez votre visage irrité ; le Seigneur dans sa colère les remplira de trouble, et le feu les dévorera.",
+     "page": 117,
+     "ligne_la": "10",
+     "lecture": [
+      "p. 117 : votre visage irrité — en italique, lu « irrilé » par Tesseract : t italique"
+     ]
+    },
+    {
+     "n": 11,
+     "fr": "Vous exterminerez leur fruit de dessus la terre, et leur race d'entre les enfants des hommes.",
+     "page": 117,
+     "ligne_la": "11"
+    },
+    {
+     "n": 12,
+     "fr": "Car ils ont fait tomber des maux sur vous ; ils ont formé des desseins qu'ils n'ont pu exécuter.",
+     "page": 117,
+     "ligne_la": "12"
+    },
+    {
+     "n": 13,
+     "fr": "Car vous leur ferez tourner le dos ; vous préparerez leur visage à recevoir les traits qui vous restent.",
+     "page": 117,
+     "ligne_la": "13"
+    },
+    {
+     "n": 14,
+     "fr": "Lovez-vous, Seigneur, dans votre force : nous chanterons et nous célébrerons vos actions d'éclat.",
+     "page": 119,
+     "ligne_la": "14"
+    }
+   ],
+   "lignes_la": [
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14"
+   ],
+   "pages": [
+    117,
+    119
+   ]
+  },
+  {
+   "numero": 28,
+   "titre": "Psaume XXVIII",
+   "versets": [
+    {
+     "n": 1,
+     "fr": "Offrez au Seigneur, enfants de Dieu, offrez au Seigneur les petits des béliers.",
+     "page": 125,
+     "ligne_la": "1"
+    },
+    {
+     "n": 2,
+     "fr": "Offrez au Seigneur la gloire et l'honneur ; offrez au Seigneur la gloire due à son nom ; adorez le Seigneur dans son saint parvis.",
+     "page": 125,
+     "ligne_la": "2"
+    },
+    {
+     "n": 3,
+     "fr": "La voix du Seigneur est au-dessus des eaux ; le Dieu de majesté a tonné ; le Seigneur est au-dessus des grandes eaux.",
+     "page": 125,
+     "ligne_la": "3"
+    },
+    {
+     "n": 4,
+     "fr": "La voix du Seigneur est puissante ; la voix du Seigneur est majestueuse.",
+     "page": 125,
+     "ligne_la": "4"
+    },
+    {
+     "n": 5,
+     "fr": "La voix du Seigneur brise les cèdres, et le Seigneur brisera les cèdres du Liban.",
+     "page": 125,
+     "ligne_la": "5"
+    },
+    {
+     "n": 6,
+     "fr": "Il les mettra en pièces comme un jeune taureau du Liban, et le bien-aimé est comme le petit des licornes.",
+     "page": 125,
+     "ligne_la": "6"
+    },
+    {
+     "n": 7,
+     "fr": "La voix du Seigneur fait jaillir des flammes de feu.",
+     "page": 125,
+     "ligne_la": "7"
+    },
+    {
+     "n": 8,
+     "fr": "La voix du Seigneur ébranle le désert, et le Seigneur fera tressaillir le désert de Cadès.",
+     "page": 127,
+     "ligne_la": "7"
+    },
+    {
+     "n": 9,
+     "fr": "La voix du Seigneur prépare les cerfs, et découvre les lieux sombres ; et dans son temple tous publieront sa gloire.",
+     "page": 127,
+     "ligne_la": "9"
+    },
+    {
+     "n": 10,
+     "fr": "Le Seigneur fait persister le déluge, et le Seigneur trône en roi à jamais.",
+     "page": 127,
+     "ligne_la": "10"
+    },
+    {
+     "n": 11,
+     "fr": "Le Seigneur donnera la force à son peuple ; le Seigneur bénira son peuple dans la paix.",
+     "page": 127,
+     "ligne_la": "11"
+    }
+   ],
+   "lignes_la": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "9",
+    "10",
+    "11"
+   ],
+   "pages": [
+    125,
+    127
+   ]
+  },
+  {
+   "numero": 29,
+   "titre": "Psaume XXIX",
+   "versets": [
+    {
+     "n": 2,
+     "fr": "Je vous exalterai, Seigneur, parce que vous m'avez relevé, et que vous n'avez pas rejoui mes ennemis à mon sujet.",
+     "page": 119,
+     "ligne_la": "2",
+     "lecture": [
+      "p. 119 : pas rejoui — « rejoui » sans accent, tel qu'imprimé"
+     ]
+    },
+    {
+     "n": 3,
+     "fr": "Seigneur, mon Dieu, j'ai crié vers vous, et vous m'avez guéri.",
+     "page": 119,
+     "ligne_la": "3"
+    },
+    {
+     "n": 4,
+     "fr": "Seigneur, vous avez retiré mon âme du séjour des morts ; vous m'avez sauvé du milieu de ceux qui descendent dans la fosse.",
+     "page": 119,
+     "ligne_la": "4"
+    },
+    {
+     "n": 5,
+     "fr": "Chantez au Seigneur, vous, ses saints, et célébrez sa sainte mémoire.",
+     "page": 119,
+     "ligne_la": "5"
+    },
+    {
+     "n": 6,
+     "fr": "Car le châtiment provient de son indignation, et la vie de sa bienveillance. Les pleurs se répandent le soir, et au matin viendra la joie.",
+     "page": 119,
+     "ligne_la": "6"
+    },
+    {
+     "n": 7,
+     "fr": "Pour moi j'ai dit dans ma prospérité : Je ne serai jamais ébranlé.",
+     "page": 119,
+     "ligne_la": "7"
+    },
+    {
+     "n": 8,
+     "fr": "Seigneur, c'est par votre bonté que vous avez affermi ma gloire. Vous avez détourné de moi votre visage, et j'ai été troublé.",
+     "page": 119,
+     "ligne_la": "8"
+    },
+    {
+     "n": 9,
+     "fr": "Je crierai vers vous, Seigneur, et j'implorerai mon Dieu.",
+     "page": 119,
+     "ligne_la": "9"
+    },
+    {
+     "n": 10,
+     "fr": "Quelle utilité retirerez-vous de ma mort, lorsque je descendrai dans la pourriture ? Est-ce que la poussière chantera vos louanges ? ou publiera-t-elle votre vérité ?",
+     "page": 119,
+     "ligne_la": "10"
+    },
+    {
+     "n": 11,
+     "fr": "Le Seigneur a entendu, et il a eu pitié de moi ; le Seigneur s'est fait mon protecteur.",
+     "page": 121,
+     "ligne_la": "11"
+    },
+    {
+     "n": 12,
+     "fr": "Vous avez changé mes lamentations en allégresse ; vous avez déchiré mon sac, et vous m'avez environné de joie,",
+     "page": 121,
+     "ligne_la": "12"
+    },
+    {
+     "n": 13,
+     "fr": "afin que mon âme vous chante, et que je ne ressente plus la douleur. Seigneur, mon Dieu, je vous louerai éternellement.",
+     "page": 121,
+     "ligne_la": "13"
+    }
+   ],
+   "lignes_la": [
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "6",
+    "7",
+    "8",
+    "8",
+    "9",
+    "10",
+    "10",
+    "11",
+    "12",
+    "13"
+   ],
+   "pages": [
+    119,
+    121
+   ]
+  },
+  {
    "numero": 33,
    "titre": "Psaume XXXIII",
    "versets": [
@@ -2024,6 +2419,81 @@
    "pages": [
     291,
     293
+   ]
+  },
+  {
+   "numero": 46,
+   "titre": "Psaume XLVI",
+   "versets": [
+    {
+     "n": 2,
+     "fr": "Toutes les nations, battez des mains ; célébrez Dieu par des cris d'allégresse.",
+     "page": 121,
+     "ligne_la": "2"
+    },
+    {
+     "n": 3,
+     "fr": "Car le Seigneur est très haut et terrible, roi suprême sur toute la terre.",
+     "page": 121,
+     "ligne_la": "3"
+    },
+    {
+     "n": 4,
+     "fr": "Il nous a assujetti les peuples, il a mis les nations sous nos pieds.",
+     "page": 121,
+     "ligne_la": "4"
+    },
+    {
+     "n": 5,
+     "fr": "Il nous a choisis pour son héritage, la beauté de Jacob qu'il a aimée.",
+     "page": 121,
+     "ligne_la": "5"
+    },
+    {
+     "n": 6,
+     "fr": "Dieu est monté au milieu des cris de joie, et le Seigneur au son de la trompette.",
+     "page": 121,
+     "ligne_la": "6"
+    },
+    {
+     "n": 7,
+     "fr": "Chantez à notre Dieu, chantez ; chantez à notre roi, chantez.",
+     "page": 121,
+     "ligne_la": "7"
+    },
+    {
+     "n": 8,
+     "fr": "Car Dieu est le roi de toute la terre ; chantez avec sagesse.",
+     "page": 121,
+     "ligne_la": "8"
+    },
+    {
+     "n": 9,
+     "fr": "Dieu régnera sur les nations ; Dieu est assis sur son saint trône.",
+     "page": 123,
+     "ligne_la": "9"
+    },
+    {
+     "n": 10,
+     "fr": "Les princes des peuples se sont unis au Dieu d'Abraham ; car les dieux puissants de la terre ont été extrêmement élevés.",
+     "page": 123,
+     "ligne_la": "10"
+    }
+   ],
+   "lignes_la": [
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10"
+   ],
+   "pages": [
+    121,
+    123
    ]
   },
   {
@@ -6076,6 +6546,49 @@
    ],
    "pages": [
     97
+   ]
+  },
+  {
+   "do": "Psalm211",
+   "titre": "Cantique de David",
+   "reference": "I Par. xxix, 10-13",
+   "versets": [
+    {
+     "n": 10,
+     "fr": "Vous êtes béni, Seigneur, Dieu d'Israël notre père, depuis l'éternité jusqu'à l'éternité.",
+     "page": 127,
+     "ligne_la": "10"
+    },
+    {
+     "n": 11,
+     "fr": "A vous, Seigneur, appartiennent la magnificence et la puissance, et la gloire, et la victoire, et à vous la louange ; car tout ce qui est dans le ciel et sur la terre est à vous. A vous, Seigneur, est le royaume, et vous êtes au-dessus de tous les princes.",
+     "page": 127,
+     "ligne_la": "11"
+    },
+    {
+     "n": 12,
+     "fr": "A vous les richesses, et à vous la gloire ; vous dominez sur toutes choses. Dans votre main sont la force et la puissance ; dans votre main la grandeur et le pouvoir sur tout.",
+     "page": 127,
+     "ligne_la": "12"
+    },
+    {
+     "n": 13,
+     "fr": "Maintenant donc, notre Dieu, nous vous célébrons, et nous louons votre nom illustre.",
+     "page": 127,
+     "ligne_la": "13"
+    }
+   ],
+   "lignes_la": [
+    "10",
+    "11",
+    "11",
+    "11",
+    "12",
+    "12",
+    "13"
+   ],
+   "pages": [
+    127
    ]
   }
  ]

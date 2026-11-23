@@ -451,3 +451,49 @@ r: ils sont tombés : => ils sont tombés ;
 r: le nom du Seigneur notre\n => le nom du Seigneur notre Dieu.\n
 r: et nous restons\n => et nous restons debout.\n
 ok
+
+== p117
+f: A "[lèvres." A A "exécuter." "" "[restent." "à" "recevoir"
+?: votre visage irrité — en italique, lu « irrilé » par Tesseract : t italique
+h: 1 Psaume XX
+r: de son cœur, [lèvres. => de son cœur,
+r: la demande de ses\n => la demande de ses lèvres.\n
+r: ]l vous a demandé la vie, et vous lui avez accordé [cieuses. => Il vous a demandé la vie, et vous lui avez accordé
+r: de pierres pré-\n => de pierres précieuses.\n
+r: le dos ; [restent. => le dos ;
+r: les traits qui vous => les traits qui vous restent.
+ok
+
+== p119
+f: "" A ":" T "[dans" "[gloire." T "?" T
+r: ceux qui descendent\nv| Chantez au Seigneur, vous, ses saints, [dans la fosse. => ceux qui descendent dans la fosse.\nv| Chantez au Seigneur, vous, ses saints,
+r: affermi ma\nc| Vous avez détourné de moi votre visage, [gloire. => affermi ma gloire.\nc| Vous avez détourné de moi votre visage,
+?: pas rejoui — « rejoui » sans accent, tel qu'imprimé
+ok
+
+== p121
+f: A "" A "[la" "que je" "Seigneur," A "Toutes" "d'allégresse." "Il" A "pieds." A
+h: 9 Psaume XLVI
+c: 6
+r: environné de joie, [la douleur.\nc| afin que mon âme vous chante, et que je ne ressente plus => environné de joie,\nv| afin que mon âme vous chante, et que je ne ressente plus la douleur.
+ok
+
+== p123
+f: "" "ô" "" A ";" ";" "[présence." A ";" "ô"
+r: ô mon roi et mon\nv| Car c'est vous que je prierai, Seigneur ; [Dieu. => ô mon roi et mon Dieu.\nv| Car c'est vous que je prierai, Seigneur ;
+r: pénétré de votre crain-\nv| Seigneur, conduisez-moi dans votre justice ; [te. => pénétré de votre crainte.\nv| Seigneur, conduisez-moi dans votre justice ;
+r: droite en votre\nv| Car la vérité n'est point dans leur bouche ; [présence. => droite en votre présence.\nv| Car la vérité n'est point dans leur bouche ;
+ok
+
+== p125
+f: "Mais" "nom se" "" A
+r: le juste. [d'un bouclier. => le juste.
+r: de votre amour comme => de votre amour comme d'un bouclier.
+ok
+
+== p127
+f: T T T T "[puissance," "A" "" "A"
+h: 10 Cantique de David. I Par. xxix, 10-13.
+r: jusqu'à l'éternité. [puissance, => jusqu'à l'éternité.
+r: la magnificence et la\n => la magnificence et la puissance,\n
+ok

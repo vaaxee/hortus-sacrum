@@ -39,6 +39,7 @@ CANTIQUES = {
                                        "alignement ligne à ligne ; la doxologie (« Bénissons le Père… ») est imprimée "
                                        "avec le v. 88."),
     'Cantique de Zacharie': (231, 'Cantique de Zacharie', 'Luc. i, 68-79'),
+    'Cantique de David': (211, 'Cantique de David', 'I Par. xxix, 10-13'),
     'Cantique de Siméon': (233, 'Cantique de Siméon', 'Luc. ii, 29-32'),
 }
 
