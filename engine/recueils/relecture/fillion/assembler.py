@@ -207,10 +207,10 @@ def assembler():
         pc['pages'] = sorted({v['page'] for v in pc['versets']})
     for p, d in doutes:
         mot = d.split(' — ')[0].strip()
-        if os.environ.get('PARTIEL') and not any(p in pc.get('pages', []) or p - 2 in pc.get('pages', []) for pc in pieces):
-            continue
         cible = [v for pc in pieces for v in pc['versets'] if isinstance(v, dict) and 'fr' in v and v['page'] in (p, p - 2) and mot in v['fr']]
-        if not cible:
+        if not cible and os.environ.get('PARTIEL'):
+            print(f'(doute p{p} « {mot} » : psaume en cours, gardé pour plus tard)')
+        elif not cible:
             erreurs.append(f'p{p} : doute « {mot} » sans verset')
         else:
             cible[0].setdefault('lecture', []).append(f'p. {p} : {d}')

@@ -150,10 +150,11 @@ faisable, mais il faut d'abord découper Fillion par verset (OCR à relire, mise
   `--psm 6`), `brouillon.py` (lectures ABBYY et Tesseract alignées ligne à ligne et mot à mot, désaccords numérotés),
   `decisions.txt` (choix par désaccord, structure des versets, renvois, remarques ; chaque page marquée `ok` a été relue
   entière sur l'image), `appliquer.py` → `pages/p<NNN>.txt` (pages relues, versionnées), `assembler.py` → JSON.
-- **Fait : l'office du dimanche entier (pp. 13-97) et les Complies de toute la semaine**, soit 36 psaumes et 5 cantiques :
-  Ps 1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12, 15, 33, 50, 53, 60, 62, 69, 70, 76, 85, 87, 90, 92, 94, 99, 102, 109, 110, 111,
-  112, 113, 117, 118, 133, 148 ; cantiques des trois jeunes gens (Dan. 3, 57-88 et 56 ; Dan. 3, 52-57), de Zacharie,
-  de la sainte Vierge, de Siméon. **700 versets.**
+- **Fait : l'office du dimanche entier (pp. 13-97), les Complies de toute la semaine, et le lundi de Matines à None
+  (pp. 99-151)**, soit 54 psaumes et 7 cantiques, **959 versets** : Ps 1-20, 23, 26-33, 46, 50, 53, 60, 62, 69, 70,
+  76, 85, 87, 90, 92, 94, 99, 102, 109-113, 116, 117, 118, 133, 148 ; cantiques des trois jeunes gens (Dan. 3, 57-88
+  et 56 ; Dan. 3, 52-57), de Zacharie, de la sainte Vierge, de Siméon, de David (I Par. 29, 10-13), d'Isaïe (Is. 12).
+  Les Vêpres du lundi commencent p. 151 (Ps 114, 3 versets relus sur 9 : en attente, non livré).
 - Numéros des versets : ceux de la Vulgate, pris dans l'ordre du latin de DO (`Psalterium/Psalmorum/PsalmN.txt`), et
   vérifiés contre l'imprimé (même nombre de versets, sinon l'assemblage s'arrête). Fillion numérote les secondes parties
   des Ps 9 (« Ut quid, Domine », hébr. 10) et 113 (« Non nobis », hébr. 115) à partir de 1 : numéros de la Vulgate
@@ -164,7 +165,10 @@ faisable, mais il faut d'abord découper Fillion par verset (OCR à relire, mise
   commence) ; `engine/office/test_psautier_fr.py` vérifie, pour chacun des 365 paragraphes « Psalmus N(a-b) » du latin
   livré qui portent un psaume fait, que le nombre de lignes latines égale le nombre d'étiquettes. Un verset que DO laisse
   au milieu d'une ligne (Ps 76, 16) est rattaché à cette ligne.
-- Graphies et lectures gardées ou notées (champ `lecture` du verset) : « Émigre » (Ps 10, 2), « j'ai désire »
+- Graphies et lectures gardées ou notées (champ `lecture` du verset, 28 versets) : « Seigueur » (Ps 23, 8),
+  « environnné » (Ps 114, 3), « jusqu'a » (Ps 17, 7), « rejoui » (Ps 29, 2), « c'est elie » (Ps 26, 4 : l brisé, lu
+  « elle ») ; « à » initial perdu par les deux lectures et vu sur l'image (Ps 18, 12 ; Ps 30, 20) ; notes manuscrites au
+  crayon dans les marges (Ps 3, 4 ; Ps 17, 29 et 47), non reprises ; « Émigre » (Ps 10, 2), « j'ai désire »
   (Ps 118, 40), « Mon àme » (Ps 102, 2 : accent imprimé grave, circonflexe brisé ?) ; t italiques lus l par l'OCR
   (« retentit », Ps 117, 15 ; « atteint », Ps 70, 19 ; « s'étend », Ps 102, 17) ; points ou traits parasites non repris
   (« tomber,. », Ps 117, 13 ; « Seigneur,. », Ps 118, 174 ; « qui. était », Ps 112, 9 ; « pitié ?- », Ps 76, 10 ;
@@ -179,11 +183,14 @@ faisable, mais il faut d'abord découper Fillion par verset (OCR à relire, mise
 
 Les offices du lundi au samedi, sauf les Complies, dans l'ordre du livre (table des matières de Fillion : lundi p. 98,
 mardi p. 164, mercredi p. 228, jeudi p. 296, vendredi p. 370, samedi p. 450 ; pages françaises impaires jusqu'à 531).
-Psaumes du latin livré encore sans français (sortie de `test_psautier_fr.py`, numéros de la Vulgate) : 5, 13, 14, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 51, 52, 54, 55, 56, 57, 58, 59, 61, 63, 64, 65, 66, 67, 68, 71, 72, 73, 74, 75, 77, 78, 79, 80, 81, 82, 83, 84, 86, 88, 89, 91, 93, 95, 96, 97, 98, 100, 101, 103, 104, 105, 106, 107, 108, 114, 115, 116, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 149, 150.
+Psaumes du latin livré encore sans français (sortie de `test_psautier_fr.py`, numéros de la Vulgate) : 21, 22, 24, 25, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 47, 48, 49, 51, 52, 54, 55, 56, 57, 58, 59, 61, 63, 64, 65, 66, 67, 68, 71, 72, 73, 74, 75, 77, 78, 79, 80, 81, 82, 83, 84, 86, 88, 89, 91, 93, 95, 96, 97, 98, 100, 101, 103, 104, 105, 106, 107, 108, 114, 115, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 149, 150.
 Cantiques de Laudes de la semaine (Isaïe, Ézéchias, Anne, Moïse, Habacuc,
 Ecclésiastique, Tobie, Judith, Jérémie, David) : à faire avec leur office. La chaîne est prête : `prep.py` et `brouillon.py`
 ont déjà produit les brouillons de toutes les pages françaises (dossier de travail non versionné) ; il reste à trancher les
 désaccords et relire chaque page sur l'image.
+
+Renvois typographiques : `appliquer.py` remet chaque « [fin » à la ligne qu'il complète (règle écrite dans la fonction
+`renvois`), vérifiée sur chaque page relue.
 
 Pages où la fin d'un psaume précède les Complies et n'est pas encore relue (lignes écartées par `x:` dans
 `decisions.txt`) : haut des pp. 159, 221, 291, 363, 443 (psaume 141 entier), 519.

@@ -2844,6 +2844,267 @@
    ]
   },
   {
+   "numero": 31,
+   "titre": "Psaume XXXI",
+   "versets": [
+    {
+     "n": 1,
+     "fr": "Heureux ceux dont les iniquités ont été remises, et dont les péchés sont couverts.",
+     "page": 145,
+     "ligne_la": "1"
+    },
+    {
+     "n": 2,
+     "fr": "Heureux l'homme à qui le Seigneur n'a pas imputé de péché, et dont l'esprit est exempt de fraude.",
+     "page": 145,
+     "ligne_la": "2"
+    },
+    {
+     "n": 3,
+     "fr": "Parce que je me suis tu, mes os ont vieilli, tandis que je criais tout le jour.",
+     "page": 147,
+     "ligne_la": "3"
+    },
+    {
+     "n": 4,
+     "fr": "Car jour et nuit votre main s'est appesantie sur moi ; je me suis retourné dans ma douleur, pendant que l'épine s'enfonçait.",
+     "page": 147,
+     "ligne_la": "4"
+    },
+    {
+     "n": 5,
+     "fr": "Je vous ai fait connaître mon péché, et je n'ai pas caché mon injustice. J'ai dit : Je confesserai au Seigneur contre moi-même mon injustice ; et vous avez remis l'impiété de mon péché.",
+     "page": 147,
+     "ligne_la": "5"
+    },
+    {
+     "n": 6,
+     "fr": "Pour cela, tout homme saint vous priera au temps favorable. Et quand les grandes eaux fondront comme un déluge, elles n'approcheront pas de lui.",
+     "page": 147,
+     "ligne_la": "6",
+     "lecture": [
+      "p. 147 : au temps favorable — « homme », « fondront comme » en italique dans l'imprimé (mots ajoutés), non marqués"
+     ]
+    },
+    {
+     "n": 7,
+     "fr": "Vous êtes mon refuge dans la détresse qui m'a entouré ; ma joie, délivrez-moi de ceux qui m'environnent.",
+     "page": 147,
+     "ligne_la": "7"
+    },
+    {
+     "n": 8,
+     "fr": "Je te donnerai l'intelligence, et je t'enseignerai la voie par où tu dois marcher ; j'arrêterai mes yeux sur toi.",
+     "page": 147,
+     "ligne_la": "8"
+    },
+    {
+     "n": 9,
+     "fr": "Ne soyez pas comme le cheval et le mulet, qui n'ont pas d'intelligence. Serre leur bouche avec le mors et le frein, quand ils ne veulent point s'approcher de toi.",
+     "page": 147,
+     "ligne_la": "9"
+    },
+    {
+     "n": 10,
+     "fr": "Nombreuses seront les peines du pécheur ; mais celui qui espère au Seigneur sera environné de miséricorde.",
+     "page": 147,
+     "ligne_la": "10"
+    },
+    {
+     "n": 11,
+     "fr": "Justes, réjouissez-vous dans le Seigneur, et tressaillez d'allégresse ; et glorifiez-vous en lui, vous tous qui avez le cœur droit.",
+     "page": 147,
+     "ligne_la": "11"
+    }
+   ],
+   "lignes_la": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "5",
+    "6",
+    "6",
+    "7",
+    "8",
+    "9",
+    "9",
+    "10",
+    "11"
+   ],
+   "pages": [
+    145,
+    147
+   ]
+  },
+  {
+   "numero": 32,
+   "titre": "Psaume XXXII",
+   "versets": [
+    {
+     "n": 1,
+     "fr": "Justes, réjouissez-vous dans le Seigneur ; c'est aux hommes droits que sied la louange.",
+     "page": 149,
+     "ligne_la": "1"
+    },
+    {
+     "n": 2,
+     "fr": "Célébrez le Seigneur avec la harpe ; chantez sa gloire sur le psaltérion à dix cordes.",
+     "page": 149,
+     "ligne_la": "2"
+    },
+    {
+     "n": 3,
+     "fr": "Chantez-lui un cantique nouveau ; louez-le avec art par vos instruments et vos acclamations.",
+     "page": 149,
+     "ligne_la": "3"
+    },
+    {
+     "n": 4,
+     "fr": "Car la parole du Seigneur est droite, et dans toutes ses œuvres éclate la fidélité.",
+     "page": 149,
+     "ligne_la": "4"
+    },
+    {
+     "n": 5,
+     "fr": "Il aime la miséricorde et la justice ; la terre est remplie de la miséricorde du Seigneur.",
+     "page": 149,
+     "ligne_la": "5"
+    },
+    {
+     "n": 6,
+     "fr": "Les cieux ont été affermis par la parole du Seigneur, et toute leur armée par le souffle de sa bouche.",
+     "page": 149,
+     "ligne_la": "6"
+    },
+    {
+     "n": 7,
+     "fr": "Il rassemble les eaux de la mer comme dans une outre ; il renferme les océans dans ses trésors.",
+     "page": 149,
+     "ligne_la": "7"
+    },
+    {
+     "n": 8,
+     "fr": "Que toute la terre craigne le Seigneur, et que tous ceux qui habitent l'univers tremblent devant lui.",
+     "page": 149,
+     "ligne_la": "8"
+    },
+    {
+     "n": 9,
+     "fr": "Car il a dit, et tout a été fait ; il a commandé, et tout a été créé.",
+     "page": 149,
+     "ligne_la": "9"
+    },
+    {
+     "n": 10,
+     "fr": "Le Seigneur dissipe les desseins des nations ; il renverse les pensées des peuples, et il renverse les conseils des princes.",
+     "page": 149,
+     "ligne_la": "10"
+    },
+    {
+     "n": 11,
+     "fr": "Mais le conseil du Seigneur demeure éternellement ; les pensées de son cœur subsistent de race en race.",
+     "page": 149,
+     "ligne_la": "11"
+    },
+    {
+     "n": 12,
+     "fr": "Heureuse la nation qui a le Seigneur pour son Dieu ; heureux le peuple qu'il a choisi pour son héritage.",
+     "page": 149,
+     "ligne_la": "12"
+    },
+    {
+     "n": 13,
+     "fr": "Le Seigneur a regardé du haut du ciel ; il a vu tous les enfants des hommes.",
+     "page": 151,
+     "ligne_la": "13"
+    },
+    {
+     "n": 14,
+     "fr": "De la demeure qu'il s'est préparée il a jeté les yeux sur tous ceux qui habitent la terre ;",
+     "page": 151,
+     "ligne_la": "14"
+    },
+    {
+     "n": 15,
+     "fr": "lui qui a formé le cœur de chacun d'eux, et qui connaît toutes leurs œuvres.",
+     "page": 151,
+     "ligne_la": "15"
+    },
+    {
+     "n": 16,
+     "fr": "Ce n'est point dans sa grande puissance qu'un roi trouve le salut, et le géant ne se sauvera point par sa force extraordinaire.",
+     "page": 151,
+     "ligne_la": "16"
+    },
+    {
+     "n": 17,
+     "fr": "Le cheval trompe quiconque attend de lui le salut, et sa force, quelque grande qu'elle soit, ne le sauvera pas.",
+     "page": 151,
+     "ligne_la": "17"
+    },
+    {
+     "n": 18,
+     "fr": "Voici ! les yeux du Seigneur sont sur ceux qui le craignent, et sur ceux qui espèrent en sa miséricorde :",
+     "page": 151,
+     "ligne_la": "18"
+    },
+    {
+     "n": 19,
+     "fr": "pour délivrer leurs âmes de la mort, et les nourrir dans la famine.",
+     "page": 151,
+     "ligne_la": "19"
+    },
+    {
+     "n": 20,
+     "fr": "Notre âme attend le Seigneur, car il est notre secours et notre protecteur.",
+     "page": 151,
+     "ligne_la": "20"
+    },
+    {
+     "n": 21,
+     "fr": "Car c'est en lui que notre cœur se réjouira, et c'est en son saint nom que nous avons espéré.",
+     "page": 151,
+     "ligne_la": "21"
+    },
+    {
+     "n": 22,
+     "fr": "Faites paraître votre miséricorde sur nous, Seigneur, selon l'espérance que nous avons eue en vous.",
+     "page": 151,
+     "ligne_la": "22"
+    }
+   ],
+   "lignes_la": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "18",
+    "19",
+    "20",
+    "21",
+    "22"
+   ],
+   "pages": [
+    149,
+    151
+   ]
+  },
+  {
    "numero": 33,
    "titre": "Psaume XXXIII",
    "versets": [

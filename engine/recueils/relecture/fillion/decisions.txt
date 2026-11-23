@@ -555,3 +555,21 @@ v: 8
 r: v| la vue des enfants => c| à la vue des enfants
 ?: à la vue — « à » en début de ligne, manqué par les deux lectures, vu sur l'image
 ok
+
+== p147
+f: "" A A
+?: au temps favorable — « homme », « fondront comme » en italique dans l'imprimé (mots ajoutés), non marqués
+ok
+
+== p149
+f: "" "" "Chantez-lui" "" "" "[lui." "tout a" "il" "tout a" "" "héritage."
+x: 1 2
+h: 3 Psaume XXXII, i.
+v: 6 14
+ok
+
+== p151
+f: "" A ";" A A "[le" "salut," "" "crai-" "Notre" "Seigneur," "saint" "le" A "" "Les" "m'ont"
+v: 12 26
+?: environnné — coquille de l'imprimé (trois n), gardée telle quelle
+ok

@@ -59,9 +59,9 @@ Les points réglés sont gardés pour l'historique. Dernière mise à jour : 22 
   et commenté*, édition latine-française, Ligugé, 1893 (*imprimatur* de Poitiers), vu seulement sur Scribd (non admis) :
   scan libre à trouver (Gallica inaccessible depuis l'environnement, quota Google Livres épuisé). *Bréviaire* : décision
   de l'utilisateur du 22 nov. : **Fillion 1917 pour les psaumes, Hugueny (Labergerie, 1934/1947) pour tout le reste**.
-  Psautier de Fillion en cours (`data/office/breviaire-fr/psautier-fillion.json`, non branché) : office du dimanche et
-  Complies de toute la semaine faits ; **restent à transcrire** les psaumes des Matines, Laudes, petites Heures et
-  Vêpres du lundi au samedi (pp. 99-517 de Fillion, voir l'audit § 5) et les cantiques de Laudes de la semaine. Hugueny :
+  Psautier de Fillion en cours (`data/office/breviaire-fr/psautier-fillion.json`, non branché) : office du dimanche,
+  Complies de toute la semaine et lundi de Matines à None faits ; **restent à transcrire** les Vêpres du lundi et les
+  offices du mardi au samedi (pp. 151-517 de Fillion, voir l'audit § 5) et les cantiques de Laudes de la semaine. Hugueny :
   rien de transcrit ; table des fascicules dans l'audit ; **le fascicule 8 du Propre du temps (du dimanche in albis au
   samedi avant le IVe dimanche après Pâques) manque sur archive.org** : à chercher sur liberius.net (Bibliothèque Saint
   Libère). Crampon 1923 écarté pour le psautier liturgique (hébreu, numérotation décalée).
