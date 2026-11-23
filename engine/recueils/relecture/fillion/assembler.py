@@ -60,6 +60,8 @@ NOTES = {
        "de la Vulgate (22-39) donnée ici, comme dans le latin.",
     113: "Fillion numérote la seconde partie (« Non nobis, Domine », Vulgate 113, 9-26 ; psaume 115 de l'hébreu) de 1 "
          "à 18 ; numérotation de la Vulgate (9-26) donnée ici, comme dans le latin.",
+    115: "Fillion numérote ce psaume de 10 à 19, à la suite du Ps 114 (l'hébreu en fait un seul psaume, 116) ; "
+         "numérotation de la Vulgate (1-10) donnée ici, comme dans le latin.",
 }
 
 ROMAINS = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100}

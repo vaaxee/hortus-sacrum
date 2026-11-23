@@ -5330,6 +5330,165 @@
    ]
   },
   {
+   "numero": 114,
+   "titre": "Psaume CXIV",
+   "versets": [
+    {
+     "n": 1,
+     "fr": "J'aime le Seigneur, parce qu'il exaucera la voix de ma prière.",
+     "page": 151,
+     "ligne_la": "1"
+    },
+    {
+     "n": 2,
+     "fr": "Parce qu'il a incliné vers moi son oreille, je l'invoquerai tous les jours de ma vie.",
+     "page": 151,
+     "ligne_la": "2"
+    },
+    {
+     "n": 3,
+     "fr": "Les douleurs de la mort m'ont environnné, et les périls de l'enfer m'ont surpris. J'ai trouvé l'affliction et la douleur,",
+     "page": 151,
+     "ligne_la": "3a",
+     "lecture": [
+      "p. 151 : environnné — coquille de l'imprimé (trois n), gardée telle quelle"
+     ]
+    },
+    {
+     "n": 4,
+     "fr": "et j'ai invoqué le nom du Seigneur : O Seigneur, délivrez mon âme.",
+     "page": 153,
+     "ligne_la": "3b"
+    },
+    {
+     "n": 5,
+     "fr": "Le Seigneur est miséricordieux et juste, et notre Dieu est compatissant.",
+     "page": 153,
+     "ligne_la": "4b"
+    },
+    {
+     "n": 6,
+     "fr": "Le Seigneur garde les petits ; j'ai été humilié, et il m'a délivré.",
+     "page": 153,
+     "ligne_la": "6"
+    },
+    {
+     "n": 7,
+     "fr": "Rentre, ô mon âme, dans ton repos, car le Seigneur t'a comblée de biens.",
+     "page": 153,
+     "ligne_la": "7"
+    },
+    {
+     "n": 8,
+     "fr": "Car il a délivré mon âme de la mort, mes yeux des larmes, mes pieds de la chute.",
+     "page": 153,
+     "ligne_la": "8"
+    },
+    {
+     "n": 9,
+     "fr": "Je plairai au Seigneur dans la terre des vivants.",
+     "page": 153,
+     "ligne_la": "9"
+    }
+   ],
+   "lignes_la": [
+    "1",
+    "2",
+    "3a",
+    "3b",
+    "4b",
+    "6",
+    "7",
+    "8",
+    "9"
+   ],
+   "pages": [
+    151,
+    153
+   ]
+  },
+  {
+   "numero": 115,
+   "titre": "Psaume CXV",
+   "versets": [
+    {
+     "n": 1,
+     "fr": "J'ai cru, c'est pourquoi j'ai parlé ; mais j'ai été dans une profonde humiliation.",
+     "page": 153,
+     "ligne_la": "1"
+    },
+    {
+     "n": 2,
+     "fr": "J'ai dit dans mon abattement extrême : Tout homme est menteur.",
+     "page": 153,
+     "ligne_la": "2"
+    },
+    {
+     "n": 3,
+     "fr": "Que rendrai-je au Seigneur pour tous les biens qu'il m'a faits ?",
+     "page": 153,
+     "ligne_la": "3"
+    },
+    {
+     "n": 4,
+     "fr": "Je prendrai le calice du salut, et j'invoquerai le nom du Seigneur.",
+     "page": 153,
+     "ligne_la": "4"
+    },
+    {
+     "n": 5,
+     "fr": "Je rendrai mes vœux au Seigneur devant tout son peuple.",
+     "page": 153,
+     "ligne_la": "5"
+    },
+    {
+     "n": 6,
+     "fr": "La mort de ses saints est précieuse aux yeux du Seigneur.",
+     "page": 153,
+     "ligne_la": "5"
+    },
+    {
+     "n": 7,
+     "fr": "O Seigneur, je suis votre serviteur ; je suis votre serviteur, et le fils de votre servante. Vous avez rompu mes liens ;",
+     "page": 153,
+     "ligne_la": "7a"
+    },
+    {
+     "n": 8,
+     "fr": "je vous sacrifierai une hostie de louanges, et j'invoquerai le nom du Seigneur.",
+     "page": 155,
+     "ligne_la": "7b"
+    },
+    {
+     "n": 9,
+     "fr": "Je rendrai mes vœux au Seigneur en présence de tout son peuple,",
+     "page": 155,
+     "ligne_la": "9"
+    },
+    {
+     "n": 10,
+     "fr": "dans les parvis de la maison du Seigneur, au milieu de toi, Jérusalem.",
+     "page": 155,
+     "ligne_la": "9"
+    }
+   ],
+   "lignes_la": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "7a",
+    "7b",
+    "9"
+   ],
+   "note": "Fillion numérote ce psaume de 10 à 19, à la suite du Ps 114 (l'hébreu en fait un seul psaume, 116) ; numérotation de la Vulgate (1-10) donnée ici, comme dans le latin.",
+   "pages": [
+    153,
+    155
+   ]
+  },
+  {
    "numero": 116,
    "titre": "Psaume CXVI",
    "versets": [
@@ -6836,6 +6995,208 @@
     73,
     75,
     77
+   ]
+  },
+  {
+   "numero": 119,
+   "titre": "Psaume CXIX",
+   "versets": [
+    {
+     "n": 1,
+     "fr": "Dans ma tribulation j'ai crié vers le Seigneur, et il m'a exaucé.",
+     "page": 155,
+     "ligne_la": "1"
+    },
+    {
+     "n": 2,
+     "fr": "Seigneur, délivrez mon âme des lèvres injustes et de la langue trompeuse.",
+     "page": 155,
+     "ligne_la": "2"
+    },
+    {
+     "n": 3,
+     "fr": "Que te sera-t-il donné, et quel fruit te reviendra-t-il pour ta langue trompeuse ?",
+     "page": 155,
+     "ligne_la": "3"
+    },
+    {
+     "n": 4,
+     "fr": "Les flèches aiguës du puissant, avec des charbons dévorants.",
+     "page": 155,
+     "ligne_la": "4"
+    },
+    {
+     "n": 5,
+     "fr": "Hélas ! mon exil s'est prolongé. J'ai demeuré avec les habitants de Cédar ;",
+     "page": 155,
+     "ligne_la": "5"
+    },
+    {
+     "n": 6,
+     "fr": "mon âme a été longtemps exilée.",
+     "page": 155,
+     "ligne_la": "5"
+    },
+    {
+     "n": 7,
+     "fr": "Avec ceux qui haïssaient la paix, j'étais pacifique ; quand je leur parlais, ils m'attaquaient sans sujet.",
+     "page": 155,
+     "ligne_la": "7"
+    }
+   ],
+   "lignes_la": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "7"
+   ],
+   "pages": [
+    155
+   ]
+  },
+  {
+   "numero": 120,
+   "titre": "Psaume CXX",
+   "versets": [
+    {
+     "n": 1,
+     "fr": "J'ai levé mes yeux vers les montagnes d'où me viendra le secours.",
+     "page": 155,
+     "ligne_la": "1"
+    },
+    {
+     "n": 2,
+     "fr": "Mon secours vient du Seigneur, qui a fait le ciel et la terre.",
+     "page": 155,
+     "ligne_la": "2"
+    },
+    {
+     "n": 3,
+     "fr": "Qu'il ne permette pas que ton pied chancelle, et que celui qui te garde ne s'endorme point.",
+     "page": 157,
+     "ligne_la": "3"
+    },
+    {
+     "n": 4,
+     "fr": "Non, il ne sommeille ni ne dort, celui qui garde Israël.",
+     "page": 157,
+     "ligne_la": "4"
+    },
+    {
+     "n": 5,
+     "fr": "Le Seigneur te garde, le Seigneur te protège, se tenant à ta droite.",
+     "page": 157,
+     "ligne_la": "5"
+    },
+    {
+     "n": 6,
+     "fr": "Pendant le jour le soleil ne te brûlera pas, ni la lune pendant la nuit.",
+     "page": 157,
+     "ligne_la": "6"
+    },
+    {
+     "n": 7,
+     "fr": "Le Soigneur te garde de tout mal ; que le Seigneur garde ton âme.",
+     "page": 157,
+     "ligne_la": "7"
+    },
+    {
+     "n": 8,
+     "fr": "Que le Seigneur garde ton entrée et ta sortie, dès maintenant et à jamais.",
+     "page": 157,
+     "ligne_la": "8"
+    }
+   ],
+   "lignes_la": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8"
+   ],
+   "pages": [
+    155,
+    157
+   ]
+  },
+  {
+   "numero": 121,
+   "titre": "Psaume CXXI",
+   "versets": [
+    {
+     "n": 1,
+     "fr": "Je me suis réjoui de ce qui m'a été dit : Nous irons dans la maison du Seigneur.",
+     "page": 157,
+     "ligne_la": "1"
+    },
+    {
+     "n": 2,
+     "fr": "Nos pieds se sont arrêtés à tes portes, Jérusalem.",
+     "page": 157,
+     "ligne_la": "2"
+    },
+    {
+     "n": 3,
+     "fr": "Jérusalem, qui est bâtie comme une ville dont toutes les parties se tiennent ensemble.",
+     "page": 157,
+     "ligne_la": "3"
+    },
+    {
+     "n": 4,
+     "fr": "Car c'est là que sont montées les tribus, les tribus du Seigneur, selon le précepte donné à Israël, pour célébrer le nom du Seigneur.",
+     "page": 157,
+     "ligne_la": "4"
+    },
+    {
+     "n": 5,
+     "fr": "Là ont été établis les trônes de la justice, les trônes de la maison de David.",
+     "page": 157,
+     "ligne_la": "5"
+    },
+    {
+     "n": 6,
+     "fr": "Demandez des grâces de paix pour Jérusalem, et que ceux qui t'aiment, ô cité sainte, soient dans l'abondance.",
+     "page": 157,
+     "ligne_la": "6"
+    },
+    {
+     "n": 7,
+     "fr": "Que la paix soit dans tes forteresses, et l'abondance dans tes tours.",
+     "page": 159,
+     "ligne_la": "7"
+    },
+    {
+     "n": 8,
+     "fr": "A cause de mes frères et de mes proches, j'ai demandé pour toi la paix.",
+     "page": 159,
+     "ligne_la": "8"
+    },
+    {
+     "n": 9,
+     "fr": "A cause de la maison du Seigneur notre Dieu, j'ai cherché pour toi le bonheur.",
+     "page": 159,
+     "ligne_la": "9"
+    }
+   ],
+   "lignes_la": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9"
+   ],
+   "pages": [
+    157,
+    159
    ]
   },
   {

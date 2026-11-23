@@ -236,11 +236,10 @@ f: "Il criera" A A A "Seigneur," A T T T T "serviteur," A
 h: 15 Cantique de Siméon. Luc. ii, 29-32.
 ok
 
-// Complies du lundi (pp. 159-163) ; le haut de la p. 159 (fin du psaume 121) n'est pas encore relu.
+// Complies du lundi (pp. 159-163) ; le haut de la p. 159 : fin du psaume 121 (Vêpres).
 == p159
 f: T T T T ";" T T "Et" T "" T "" A T T
-x: 1-6
-v: 9
+v: 5 9
 r: de vous dans la => de vous dans la mort ;
 ok
 
@@ -572,4 +571,26 @@ ok
 f: "" A ";" A A "[le" "salut," "" "crai-" "Notre" "Seigneur," "saint" "le" A "" "Les" "m'ont"
 v: 12 26
 ?: environnné — coquille de l'imprimé (trois n), gardée telle quelle
+ok
+
+// Vêpres du lundi (suite) ; pp. 153-155 : filet des notes non détecté, notes supprimées par x:.
+== p153
+f: "O" "ô" A A ";" "" T T T "O" "[gneur." "liens ;" …
+x: 29-60
+r: délivrez mon àme. => délivrez mon âme.
+ok
+
+== p155
+f: "" A "" "" "et" "et" "trompeuse." "" "" "viendra le" "a fait" …
+x: 25-57
+v: 3 7 9 11 13 15 23
+c: 17
+r: v| 1 Dans ma tribulation => v| Dans ma tribulation
+r: v| 3 Que te sera-t-il => v| Que te sera-t-il
+r: J'ai demeuré avec les habitants de Cédar ;\nc| mon âme => J'ai demeuré avec les habitants de Cédar ;\nv| mon âme
+ok
+
+== p157
+h: 14 Psaume CXXI
+f: "" "" "Le Seigneur" A A "âme." A "[Seigneur," "ô cité" "l'a-"
 ok
