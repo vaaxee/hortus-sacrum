@@ -252,6 +252,18 @@
    "fichier": "Ia-08.json",
    "question": 8,
    "article": 4
+  },
+  {
+   "ref": "Iª q. 9 a. 1",
+   "fichier": "Ia-09.json",
+   "question": 9,
+   "article": 1
+  },
+  {
+   "ref": "Iª q. 9 a. 2",
+   "fichier": "Ia-09.json",
+   "question": 9,
+   "article": 2
   }
  ]
 }

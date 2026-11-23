@@ -1,0 +1,134 @@
+{
+ "ref": "Iª q. 9",
+ "partie": "Ia",
+ "question": 9,
+ "titre": {
+  "la": "De Dei immutabilitate",
+  "fr": "De l’immutabilité de Dieu."
+ },
+ "prooemium": {
+  "la": "Consequenter considerandum est de immutabilitate et aeternitate divina, quae immutabilitatem consequitur. Circa immutabilitatem vero quaeruntur duo. Primo, utrum Deus sit omnino immutabilis. Secundo, utrum esse immutabile sit proprium Dei.",
+  "fr": "Après ce qui précède, nous devons parler de l’immutabilité, puis de l’éternité de Dieu; car ce dernier attribut est la conséquence du premier.\n\nDeux questions se présentent sur l’immutabilité : 1° Dieu est-il absolument immuable? 2° Dieu est-il seul immuable?"
+ },
+ "articles": [
+  {
+   "ref": "Iª q. 9 a. 1",
+   "titre": {
+    "la": "Utrum Deus sit omnino immutabilis",
+    "fr": "Dieu est-il absolument immuable?"
+   },
+   "objections": [
+    {
+     "la": "Ad primum sic proceditur. Videtur quod Deus non sit omnino immutabilis. Quidquid enim movet seipsum, est aliquo modo mutabile. Sed, sicut dicit Augustinus, VIII super Genesim ad litteram, *spiritus creator movet se nec per tempus nec per locum*. Ergo Deus est aliquo modo mutabilis.",
+     "fr": "Il paroît que Dieu n’est pas absolument immuable. 1° Tout ce qui se meut est sujet au changement. Or saint Augustin dit, sur la Genèse, VIII, 20 : « L’esprit créateur se meut, bien que ce ne soit ni dans le temps ni dans le lieu. Donc Dieu est muable, au moins sous quelque rapport."
+    },
+    {
+     "la": "Praeterea, Sap. VII dicitur de sapientia quod est *mobilior omnibus mobilibus*. Sed Deus est ipsa sapientia. Ergo Deus est mobilis.",
+     "fr": "2° On lit dans le Livre de la Sagesse, VII, 24 : La sagesse est plus mobile que tout mouvement. Or Dieu est la sagesse même : donc Dieu est mobile et muable par conséquent."
+    },
+    {
+     "la": "Praeterea, appropinquari et elongari motum significant. Huiusmodi autem dicuntur de Deo in Scriptura, Iac. IV, *appropinquate Deo, et appropinquabit vobis*. Ergo Deus est mutabilis.",
+     "fr": "3° S’approcher et s’éloigner marque mouvement. Or saint Jacques dit, Epît., IV, 8 : « Approchez-vous de Dieu, et il s’approchera de vous. » Donc Dieu est sujet au changement."
+    }
+   ],
+   "sed_contra": {
+    "la": "Sed contra est quod dicitur Malach. III, *ego Deus, et non mutor*.",
+    "fr": "Mais on lit dans Malachie, III, 6 : « Je suis le Seigneur, et je ne change point. »"
+   },
+   "respondeo": {
+    "la": "Respondeo dicendum quod ex praemissis ostenditur Deum esse omnino immutabilem. Primo quidem, quia supra ostensum est esse aliquod primum ens, quod Deum dicimus, et quod huiusmodi primum ens oportet esse purum actum absque permixtione alicuius potentiae, eo quod potentia simpliciter est posterior actu. Omne autem quod quocumque modo mutatur, est aliquo modo in potentia. Ex quo patet quod impossibile est Deum aliquo modo mutari. Secundo, quia omne quod movetur, quantum ad aliquid manet, et quantum ad aliquid transit, sicut quod movetur de albedine in nigredinem, manet secundum substantiam. Et sic in omni eo quod movetur, attenditur aliqua compositio. Ostensum est autem supra quod in Deo nulla est compositio, sed est omnino simplex. Unde manifestum est quod Deus moveri non potest. Tertio, quia omne quod movetur, motu suo aliquid acquirit, et pertingit ad illud ad quod prius non pertingebat. Deus autem, cum sit infinitus, comprehendens in se omnem plenitudinem perfectionis totius esse, non potest aliquid acquirere, nec extendere se in aliquid ad quod prius non pertingebat. Unde nullo modo sibi competit motus. Et inde est quod quidam antiquorum, quasi ab ipsa veritate coacti, posuerunt primum principium esse immobile.",
+    "fr": "Il faut dire ceci : L’immutabilité de Dieu dérive, comme une conséquence nécessaire, des vérités que nous avons établies dans les questions précédentes.\n\nPremièrement. Nous avons démontré qu’il y a un premier être appelé Dieu, et que ce premier être est nécessairement un acte pur, sans mélange de potentialité, parce que le potentiel est postérieur à l’acte. Or tout ce qui change est en puissance sous ce rapport. Donc Dieu ne peut changer.\n\nDeuxièmement. Tout ce qui change reste sous un rapport et passe sous un autre : ainsi, quand un corps devient noir de blanc qu’il étoit, il reste quant à la substance et passe relativement à la couleur. De cela quelle est la conséquence? C’est qu’il y a composition dans tous les êtres qui changent. Mais nous avons prouvé que Dieu n’a rien de composé, qu’il est absolument simple; donc il ne peut changer.\n\nTroisièmement. Tout ce qui change acquiert quelque chose par le changement, il devient ce qu’il n’étoit pas. Or, comme Dieu est infini, qu’il renferme en lui-même toute la plénitude de l’être et de la perfection, il ne peut acquérir quoi que ce soit, devenir une chose qu’il n’étoit pas. Aussi, parmi les anciens philosophes, plusieurs, cédant à la force de la vérité, ont enseigué que le premier principe est immuable."
+   },
+   "reponses": [
+    {
+     "la": "Ad primum ergo dicendum quod Augustinus ibi loquitur secundum modum quo Plato dicebat primum movens movere seipsum, omnem operationem nominans motum; secundum quod etiam ipsum intelligere et velle et amare motus quidam dicuntur. Quia ergo Deus intelligit et amat seipsum, secundum hoc dixerunt quod Deus movet seipsum, non autem secundum quod motus et mutatio est existentis in potentia, ut nunc loquimur de mutatione et motu.",
+     "fr": "Je réponds aux arguments : 1° Saint Augustin emprunte, dans l’endroit cité, le langage de Platon. Ce philosophe professoit que le premier moteur se meut lui-même, il est vrai; mais il entendoit par mouvement les opérations intérieures de l’esprit, comme connoître, vouloir, aimer. Quand donc ces deux auteurs disent que Dieu se meut, cela signifie qu’il se connoît et s’aime lui-même, et non pas qu’il change dans le sens où nous le prenons ici, comme les choses qui sont en puissance."
+    },
+    {
+     "la": "Ad secundum dicendum quod sapientia dicitur mobilis esse similitudinarie, secundum quod suam similitudinem diffundit usque ad ultima rerum. Nihil enim esse potest, quod non procedat a divina sapientia per quandam imitationem, sicut a primo principio effectivo et formali; prout etiam artificiata procedunt a sapientia artificis. Sic igitur inquantum similitudo divinae sapientiae gradatim procedit a supremis, quae magis participant de eius similitudine, usque ad infima rerum, quae minus participant dicitur esse quidam processus et motus divinae sapientiae in res, sicut si dicamus solem procedere usque ad terram, inquantum radius luminis eius usque ad terram pertingit. Et hoc modo exponit Dionysius, cap. I Cael. Hier., dicens quod *omnis processus divinae manifestationis venit ad nos a patre luminum moto*.",
+     "fr": "2° La Sagesse est mobile ou changeante dans les images qui la représentent. En effet elle porte sa similitude jusque dans les êtres qui appartiennent aux dernières limites de la création : car tout procède par imitation, comme du premier principe effectif et formel, de la Sagesse divine, de même qu’un ouvrage d’art procède de la sagesse de son auteur. Puis donc que la Sagesse divine descend graduellement, dans sa ressemblance, des êtres supérieurs qui y participent davantage jusqu’aux êtres infimes qui y participent moins, nous disons qu’elle traverse comme par un mouvement progressif les diverses régions de la création, de même que nous disons que le soleil s’étend jusqu’à la terre par les rayons dont il l’éclaire. Denys le Philosophe dit dans le même sens, Hier. cél., I, que « toute illumination divine nous vient, par un acte de progression, du Père des lumières. »"
+    },
+    {
+     "la": "Ad tertium dicendum quod huiusmodi dicuntur de Deo in Scripturis metaphorice. Sicut enim dicitur sol intrare domum vel exire, inquantum radius eius pertingit ad domum; sic dicitur Deus appropinquare ad nos vel recedere a nobis, inquantum percipimus influentiam bonitatis ipsius, vel ab eo deficimus.",
+     "fr": "3° Les expressions rapportées dans l’argument sont figurées. Comme on dit que le soleil entre dans un appartement ou qu’il en sort, suivant que ses rayons commencent ou cessent d’y répandre sa bienfaisante lumière : ainsi l’on dit que Dieu s’approche ou s’éloigne de nous, suivant qu’il nous accorde ou refuse la salutaire influence de sa bonté."
+    }
+   ],
+   "pages": {
+    "fr": [
+     140,
+     143
+    ]
+   }
+  },
+  {
+   "ref": "Iª q. 9 a. 2",
+   "titre": {
+    "la": "Utrum esse immutabile sit Dei proprium",
+    "fr": "Dieu seul est-il immuable?"
+   },
+   "objections": [
+    {
+     "la": "Ad secundum sic proceditur. Videtur quod esse immutabile non sit proprium Dei. Dicit enim philosophus, in II Metaphys., quod materia est in omni eo quod movetur. Sed substantiae quaedam creatae, sicut Angeli et animae, non habent materiam, ut quibusdam videtur. Ergo esse immutabile non est proprium Dei.",
+     "fr": "Il paroît que le propre de Dieu n’est pas d’être immuable. 1° Aristote dit, dans la Métaphysique, que tout ce qui change est matériel. Or certaines substances créées, comme les anges et l’âme humaine, n’ont rien de matériel, ainsi que plusieurs le pensent. Donc ces substances sont immuables. Donc Dieu ne l’est pas seul."
+    },
+    {
+     "la": "Praeterea, omne quod movetur, movetur propter aliquem finem, quod ergo iam pervenit ad ultimum finem, non movetur. Sed quaedam creaturae iam pervenerunt ad ultimum finem, sicut omnes beati. Ergo aliquae creaturae sunt immobiles.",
+     "fr": "2° Rien ne se meut que pour parvenir à une fin; donc ce qui est parvenu à sa fin dernière ne se meut point. Or certaines créatures, comme les bienheureux dans le ciel, sont parvenus à leur dernière fin. Donc il y a des créatures immobiles, et par conséquent immuables."
+    },
+    {
+     "la": "Praeterea, omne quod est mutabile, est variabile. Sed formae sunt invariabiles, dicitur enim in libro sex principiorum, quod *forma est simplici et invariabili essentia consistens*. Ergo non est solius Dei proprium esse immutabile.",
+     "fr": "3° Tout ce qui change varie. Or les formes ne varient point; car il est dit, au VIe livre des Principes, que les formes consistent dans des essences simples et invariables. Donc Dieu n’est pas seul immuable."
+    }
+   ],
+   "sed_contra": {
+    "la": "Sed contra est quod dicit Augustinus, in libro de natura boni, *solus Deus immutabilis est; quae autem fecit, quia ex nihilo sunt, mutabilia sunt*.",
+    "fr": "Mais saint Augustin dit, De la nature du bien, I : « Dieu est immuable; mais les choses qu’il a faites, par cela qu’elles sortent du néant, sont sujettes au changement. »"
+   },
+   "respondeo": {
+    "la": "Respondeo dicendum quod solus Deus est omnino immutabilis, omnis autem creatura aliquo modo est mutabilis. Sciendum est enim quod mutabile potest aliquid dici dupliciter, uno modo, per potentiam quae in ipso est; alio modo, per potentiam quae in altero est. Omnes enim creaturae, antequam essent, non erant possibiles esse per aliquam potentiam creatam, cum nullum creatum sit aeternum, sed per solam potentiam divinam, inquantum Deus poterat eas in esse producere. Sicut autem ex voluntate Dei dependet quod res in esse producit, ita ex voluntate eius dependet quod res in esse conservat, non enim aliter eas in esse conservat, quam semper eis esse dando; unde si suam actionem eis subtraheret, omnia in nihilum redigerentur, ut patet per Augustinum, IV super Gen. ad Litt. Sicut igitur in potentia creatoris fuit ut res essent, antequam essent in seipsis, ita in potentia creatoris est, postquam sunt in seipsis, ut non sint. Sic igitur per potentiam quae est in altero, scilicet in Deo, sunt mutabiles, inquantum ab ipso ex nihilo potuerunt produci in esse, et de esse possunt reduci in non esse. Si autem dicatur aliquid mutabile per potentiam in ipso existentem, sic etiam aliquo modo omnis creatura est mutabilis. Est enim in creatura duplex potentia, scilicet activa et passiva. Dico autem potentiam passivam, secundum quam aliquid assequi potest suam perfectionem, vel in essendo vel in consequendo finem. Si igitur attendatur mutabilitas rei secundum potentiam ad esse, sic non in omnibus creaturis est mutabilitas, sed in illis solum in quibus illud quod est possibile in eis, potest stare cum non esse. Unde in corporibus inferioribus est mutabilitas et secundum esse substantiale, quia materia eorum potest esse cum privatione formae substantialis ipsorum, et quantum ad esse accidentale, si subiectum compatiatur secum privationem accidentis; sicut hoc subiectum, homo, compatitur secum non album, et ideo potest mutari de albo in non album. Si vero sit tale accidens quod consequatur principia essentialia subiecti, privatio illius accidentis non potest stare cum subiecto, unde subiectum non potest mutari secundum illud accidens, sicut nix non potest fieri nigra. In corporibus vero caelestibus, materia non compatitur secum privationem formae, quia forma perficit totam potentialitatem materiae, et ideo non sunt mutabilia secundum esse substantiale; sed secundum esse locale, quia subiectum compatitur secum privationem huius loci vel illius. Substantiae vero incorporeae, quia sunt ipsae formae subsistentes, quae tamen se habent ad esse ipsarum sicut potentia ad actum, non compatiuntur secum privationem huius actus, quia esse consequitur formam, et nihil corrumpitur nisi per hoc quod amittit formam. Unde in ipsa forma non est potentia ad non esse, et ideo huiusmodi substantiae sunt immutabiles et invariabiles secundum esse. Et hoc est quod dicit Dionysius, IV cap. de Div. Nom., quod *substantiae intellectuales creatae mundae sunt a generatione et ab omni variatione, sicut incorporales et immateriales*. Sed tamen remanet in eis duplex mutabilitas. Una secundum quod sunt in potentia ad finem, et sic est in eis mutabilitas secundum electionem de bono in malum, ut Damascenus dicit. Alia secundum locum, inquantum virtute sua finita possunt attingere quaedam loca quae prius non attingebant, quod de Deo dici non potest, qui sua infinitate omnia loca replet, ut supra dictum est. Sic igitur in omni creatura est potentia ad mutationem, vel secundum esse substantiale, sicut corpora corruptibilia; vel secundum esse locale tantum, sicut corpora caelestia, vel secundum ordinem ad finem et applicationem virtutis ad diversa, sicut in Angelis. Et universaliter omnes creaturae communiter sunt mutabiles secundum potentiam creantis, in cuius potestate est esse et non esse earum. Unde, cum Deus nullo istorum modorum sit mutabilis, proprium eius est omnino immutabilem esse.",
+    "fr": "Il faut dire ceci : Dieu est absolument immuable; mais toutes les créatures subissent les lois du changement. Or une chose peut changer de deux manières : ou par la puissance qui est en elle, ou par la puissance qui est dans un autre être.\n\nCommençons par le dernier point. Avant qu’elles fussent, les créatures étoient possibles, non par aucune puissance créée, car rien de créé n’est éternel, mais par la puissance divine, qui seule pouvoit les tirer du néant. Et comme il dépendoit de la volonté de Dieu de les appeler à l’être, de même il dépend de sa volonté de les conserver ou non dans l’être; car il ne les conserve dans l’être qu’en le leur donnant incessamment; de sorte que, s’il leur retiroit son action, elles retomberoient aussitôt dans le néant, comme le dit saint Augustin, Ainsi donc il étoit dans la puissance du Créateur que les choses fussent lorsqu’elles n’étoient pas, et il est dans sa puissance que les choses ne soient pas lorsqu’elles sont. Elles peuvent donc changer par la puissance qui est dans un autre, savoir en Dieu; car de même, qu’il pouvoit les appeler du néant à l’être, de même il peut les ramener de l’être au néant.\n\nEnsuite, les créatures peuvent changer par la puissance qui est en elles. Cette puissance se dédouble pour ainsi dire en deux, l’une active, et l’autre passive : il ne peut être ici question que de la dernière. Or la puissance passive, c’est la possibilité qu’ont les choses de subir, pour atteindre leur perfection, certains changements, soit dans leur être, soit à l’égard de leur fin. Cela posé, je dis que toutes les créatures ne peuvent changer dans leur être, mais seulement celles dont la nonexistence n’entraîne pas la ruine de ce qu’elles ont de potentiel. En conséquence, les corps inférieurs sont muables, d’abord dans leur être substantiel, parce que la matière subsiste sans la forme; puis dans leur être accidentel, lorsque le sujet ne perd pas l’existence en le perdant : ainsi l’homme blanc, restant sain et sauf sans la blancheur de la peau, peut changer de couleur. Mais quand l’accident tient au principe essentiel du sujet, le sujet ne peut exister sans l’accident, et dès lors il n’est point muable sous ce rapport : voilà pourquoi la neige ne peut devenir noire. Il en est de même des corps célestes : comme leur matière ne peut supporter la perte de la forme sans périr, ils ne sont point sujets au changement dans leur être substantiel; mais rien ne les empêche de changer dans leur être local, parce que leur existence n’est attachée d’aucune manière à tel ou tel lieu. Quant aux substances incorporelles, comme elles sont des formes subsistantes, qui renferment l’être de la même manière que l’acte renferme la puissance; comme elles ne peuvent en conséquence perdre l’existence, puisque rien ne périt que par la privation de la forme, elles ne subissent point l’empire du changement dans leur être; et c’est là ce qu’enseigne l’Aréopagite, quand il dit qu’elles ne se succèdent point par la génération et qu’elles ne souffrent aucune variation. Néanmoins les substances immatérielles sont muables sous deux rapports : à l’égard de leur fin, car elles peuvent tomber par la libre élection du bien dans le mal, comme le remarque saint Jean Damascène; puis localement, car elles peuvent s’étendre par leur vertu circonscrite à des lieux qui leur étoient étrangers. Remarquons en passant qu’on ne peut dire la même chose de Dieu, vu qu’il remplit tous les lieux par son immensité.\n\nAinsi, d’une part, les créatures peuvent changer par leur propre puissance de différentes manières : dans leur être substantiel, comme les corps terrestres; dans leur être local, comme les corps célestes : dans leur fin et dans leur application à des choses diverses, comme les anges. D’une autre part, elles peuvent changer par la puissance du Créateur, qui est l’arbitre suprême de la vie et de la mort, de l’être et du néant. Or Dieu n’est muable d’aucune de ces manières; dont l’immutabilité lui appartient en propre."
+   },
+   "reponses": [
+    {
+     "la": "Ad primum ergo dicendum quod obiectio illa procedit de eo quod est mutabile secundum esse substantiale vel accidentale, de tali enim motu philosophi tractaverunt.",
+     "fr": "Je réponds aux arguments : 1° Les paroles d’Aristote doivent s’entendre des choses qui peuvent subir des modifications dans leur être substantiel et dans leur être accidentel : car les philosophes n’ont point parlé d’un autre changement."
+    },
+    {
+     "la": "Ad secundum dicendum quod Angeli boni, supra immutabilitatem essendi, quae competit eis secundum naturam, habent immutabilitatem electionis ex divina virtute, tamen remanet in eis mutabilitas secundum locum.",
+     "fr": "2° Les anges et les bienheureux dans le ciel sont immuables, et dans leur être par leur nature, et dans leur fin dernière par la vertu divine; mais ils n’en sont pas moins soumis au changement sous un autre rapport, à l’égard du lieu."
+    },
+    {
+     "la": "Ad tertium dicendum quod formae dicuntur invariabiles, quia non possunt esse subiectum variationis, subiiciuntur tamen variationi, inquantum subiectum secundum eas variatur. Unde patet quod secundum quod sunt, sic variantur, non enim dicuntur entia quasi sint subiectum essendi, sed quia eis aliquid est.",
+     "fr": "3° Les formes sont invariables en ce qu’elles ne peuvent être le sujet du changement; mais elles sont variables en ce que le sujet peut changer à leur égard. On voit donc qu’elles varient dans ce qu’elles sont; car si on les appelle êtres, ce n’est pas qu’elles soient le sujet de l’existence, mais c’est que les choses existent par elles."
+    }
+   ],
+   "pages": {
+    "fr": [
+     143,
+     148
+    ]
+   }
+  }
+ ],
+ "source": {
+  "fr": {
+   "ouvrage": "Somme théologique de S. Thomas d’Aquin, traduite en français et annotée par F. Lachat",
+   "edition": "Paris, Louis Vivès, 4e édition, 1880, tome premier (même composition que l’édition de 1874)",
+   "url": "https://archive.org/details/sommetheologique01thom",
+   "controle": "https://archive.org/details/sommethologique07lachgoog",
+   "relecture": "vote de quatre lectures (Tesseract et ABBYY sur les scans de 1880 et de 1874, même composition) ; chaque ligne sans accord relue sur l’image (corrections_fr.txt) ; notes de Lachat et « (Conclusion. — …) » des éditeurs non repris"
+  },
+  "la": {
+   "ouvrage": "Sancti Thomae Aquinatis Opera omnia iussu impensaque Leonis XIII P. M. edita, t. IV : Pars prima Summae theologiae a quaestione I ad quaestionem XLIX",
+   "edition": "Romae, ex Typographia Polyglotta S. C. de Propaganda Fide, 1888",
+   "url": "https://archive.org/details/operaomniaiussui04thom",
+   "transcription": "https://www.corpusthomisticum.org/sth1001.html (E. Alarcón, d’après l’édition léonine)",
+   "relecture": "alignement mot à mot sur la lecture ABBYY du scan de 1888 (latin_controle.py), écarts isolés vus sur l’image (corrections_la.txt) ; intitulés relus sur l’image ; ponctuation du Corpus Thomisticum ; pas de relecture intégrale du latin sur l’image"
+  },
+  "pages_fr": [
+   140,
+   148
+  ]
+ },
+ "revision": 1
+}
