@@ -132,7 +132,7 @@ async function rappelsDuProfil(): Promise<void> {
 const LITANIES_PAR_JOUR: string[][] = [
 	['fervent:litanies-sainte-trinite', 'paroissien:litanies-saint-nom', 'paroissien:litanies-des-saints'], // dimanche : sainte Trinité
 	['fsspx:litanies-delivrance-ames-purgatoire', 'salve-regina:litanies-fideles-defunts'], // lundi : âmes du purgatoire
-	['fervent:litanies-ange-gardien', 'jardin:litanies-de-la-sainte-face'], // mardi : saints Anges
+	['fervent:litanies-ange-gardien', 'jardin:litanies-de-la-sainte-face', 'janvier:litanies-sainte-face-ecriture'], // mardi : saints Anges (et la sainte Face, décision du 22 nov.)
 	['beringer:litanies-saint-joseph'], // mercredi : saint Joseph
 	['fervent:litanies-saint-sacrement', 'paroissien:litanies-saint-nom'], // jeudi : Saint-Sacrement
 	['beringer:litanies-sacre-coeur', 'jardin:litanies-de-notre-dame-des-sept-douleurs'], // vendredi : Passion, Sacré-Cœur
@@ -149,9 +149,24 @@ async function rouesDesLitanies(): Promise<void> {
 	for (let k = 0; k < 7; k++) {
 		const ids = LITANIES_PAR_JOUR[k];
 		const id = `roue:litanies-${k}`;
-		if (ids.length < 2 || (await db.pratiques.get(id))) continue;
+		if (ids.length < 2) continue;
 		const textes = await Promise.all(ids.map((t) => db.textes.get(t)));
 		if (!textes.every(Boolean)) continue;
+		const existante = await db.pratiques.get(id);
+		if (existante) {
+			// roue livrée que l'utilisateur n'a pas touchée : elle reçoit la nouvelle liste ; une roue modifiée reste la sienne
+			const memes = existante.textes?.length === ids.length && existante.textes.every((t, i) => t === ids[i]);
+			if (memes || existante.supprimeLe || existante.original !== contenu(existante)) continue;
+			const maj = {
+				...existante,
+				textes: ids,
+				elements: ids.map((t, i) => ({ fr: textes[i]?.titre ?? t, texte: t })),
+				modifieLe: new Date().toISOString()
+			} as Pratique;
+			maj.original = contenu(maj);
+			await db.pratiques.put(maj);
+			continue;
+		}
 		const r = {
 			id,
 			origine: 'officielle',

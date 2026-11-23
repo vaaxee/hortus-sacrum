@@ -7,6 +7,8 @@ export interface JourDuProgramme {
 	temps?: string;
 	office?: string;
 	est_fete_sanctorale?: boolean;
+	/** Code du jour dans le temporal (« Quadp3-2 »). */
+	tempora?: string | null;
 }
 
 export function vaut(q: Quand | undefined, j: JourDuProgramme): boolean {
@@ -17,6 +19,7 @@ export function vaut(q: Quand | undefined, j: JourDuProgramme): boolean {
 	if (q.mois && !q.mois.includes(d.getMonth() + 1)) return false;
 	if (q.tempora && !(j.temps && q.tempora.includes(j.temps))) return false;
 	if (q.dates && !q.dates.some((x) => x === j.date || x === j.date.slice(5))) return false;
+	if (q.code_tempora && !(j.tempora && q.code_tempora.includes(j.tempora))) return false;
 	if (q.office !== undefined && !(j.office && new RegExp(q.office, 'u').test(j.office))) return false;
 	if (q.ou && !q.ou.some((x) => vaut(x, j))) return false;
 	if (q.sauf && vaut(q.sauf, j)) return false;
