@@ -39,6 +39,10 @@ CANTIQUES = {
                                        "alignement ligne à ligne ; la doxologie (« Bénissons le Père… ») est imprimée "
                                        "avec le v. 88."),
     'Cantique de Zacharie': (231, 'Cantique de Zacharie', 'Luc. i, 68-79'),
+    "Cantique d'Isaïe. Is. xii": (221, "Cantique d'Isaïe", 'Is. xii, 1-6', list(range(1, 7)),
+                                   "Divinum Officium chante ce cantique en 7 lignes numérotées 12:1 à 12:7, qui ne "
+                                   "suivent pas les versets de la Vulgate (6 versets, comme chez Fillion) : numéros "
+                                   "de Fillion, sans alignement ligne à ligne."),
     'Cantique de David': (211, 'Cantique de David', 'I Par. xxix, 10-13'),
     'Cantique de Siméon': (233, 'Cantique de Siméon', 'Luc. ii, 29-32'),
 }

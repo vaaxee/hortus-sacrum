@@ -497,3 +497,46 @@ h: 10 Cantique de David. I Par. xxix, 10-13.
 r: jusqu'à l'éternité. [puissance, => jusqu'à l'éternité.
 r: la magnificence et la\n => la magnificence et la puissance,\n
 ok
+
+== p129
+f: T "d'Isaïe." "xii," "j'agirai" T "Car" A A "le" "monde" A
+h: 4 Cantique d'Isaïe. Is. xii, 1-6.
+r: choses magnifi-\nc| annoncez cela sur la terre entière. [ques ; => choses magnifiques ;\nc| annoncez cela sur la terre entière.
+ok
+
+== p131
+f: "ô" "ô"
+?: le Seigueur puissant — coquille de l'imprimé (« Seigueur »), gardée telle quelle
+ok
+
+== p133
+f: "" "" A "" "Il" T "" ";" "[rière." T T T "précieuses ;"
+r: le soleil, nuptiale ;\nc| qui est lui-même semblable à un époux sortant de sa => le soleil,\nc| qui est lui-même semblable à un époux sortant de sa chambre nuptiale ;
+r: pour fournir sa car-\nv| Il sort de l'extrémité du ciel, [rière. => pour fournir sa carrière.\nv| Il sort de l'extrémité du ciel,
+ok
+
+== p135
+f: "en" "autres."
+v: 2
+r: v| les garder, on trouve => c| à les garder, on trouve
+?: à les garder — « à » en début de ligne, manqué par les deux lectures, vu sur l'image
+ok
+
+== p137
+f: "elle" A "enne-" A A "ô" A "[ennemis." T A
+r: tous les jours de\nc| pour contempler les délices du Seigneur [ma vie, => tous les jours de ma vie,\nc| pour contempler les délices du Seigneur
+r: son tabernacle ; [son tabernacle. => son tabernacle ;
+r: dans le secret de\n => dans le secret de son tabernacle.\n
+r: sur la pierre, [mis. => sur la pierre,
+r: de mes enne- => de mes ennemis.
+r: votre servi-\nc| Soyez mon aide ; ne m'abandonnez pas, [teur. => votre serviteur.\nc| Soyez mon aide ; ne m'abandonnez pas,
+r: votre voie, [ennemis. => votre voie,
+r: à cause de mes => à cause de mes ennemis.
+r: dans la terre\nv| Attends le Seigneur, agis avec courage ; [des vivants. => dans la terre des vivants.\nv| Attends le Seigneur, agis avec courage ;
+?: c'est elle — deuxième l brisé (« elie »), lecture sûre
+ok
+
+== p139
+f: A "pécheurs," "Rendez-leur" "et selon" ";" A "le" "peuple,"
+r: qui commettent l'ini-\nc| qui parlent de paix avec leur prochain, [quité, => qui commettent l'iniquité,\nc| qui parlent de paix avec leur prochain,
+ok

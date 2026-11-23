@@ -1885,6 +1885,121 @@
    ]
   },
   {
+   "numero": 18,
+   "titre": "Psaume XVIII",
+   "versets": [
+    {
+     "n": 2,
+     "fr": "Les cieux racontent la gloire de Dieu, et le firmament publie les œuvres de ses mains.",
+     "page": 133,
+     "ligne_la": "2"
+    },
+    {
+     "n": 3,
+     "fr": "Le jour proclame ce message au jour, et la nuit en donne connaissance à la nuit.",
+     "page": 133,
+     "ligne_la": "3"
+    },
+    {
+     "n": 4,
+     "fr": "Ce ne sont point des paroles, ce n'est pas un langage dont la voix ne soit pas entendue.",
+     "page": 133,
+     "ligne_la": "4"
+    },
+    {
+     "n": 5,
+     "fr": "Leur bruit s'est répandu dans toute la terre, et leurs accents jusqu'aux extrémités du monde.",
+     "page": 133,
+     "ligne_la": "5"
+    },
+    {
+     "n": 6,
+     "fr": "Il a établi sa tente dans le soleil, qui est lui-même semblable à un époux sortant de sa chambre nuptiale ; il s'est élancé comme un géant pour fournir sa carrière.",
+     "page": 133,
+     "ligne_la": "6a"
+    },
+    {
+     "n": 7,
+     "fr": "Il sort de l'extrémité du ciel, et sa course va jusqu'à l'autre extrémité, et il n'y a personne qui se dérobe à sa chaleur.",
+     "page": 133,
+     "ligne_la": "6b"
+    },
+    {
+     "n": 8,
+     "fr": "La loi du Seigneur est sans tache, elle restaure les âmes ; le témoignage du Seigneur est fidèle, il donne la sagesse aux petits.",
+     "page": 133,
+     "ligne_la": "8"
+    },
+    {
+     "n": 9,
+     "fr": "Les prescriptions du Seigneur sont droites, elles réjouissent les cœurs ; le précepte du Seigneur est lumineux, il éclaire les yeux.",
+     "page": 133,
+     "ligne_la": "9"
+    },
+    {
+     "n": 10,
+     "fr": "La crainte du Seigneur est sainte, elle subsiste à jamais ; les jugements du Seigneur sont vrais, ils se justifient par eux-mêmes.",
+     "page": 133,
+     "ligne_la": "10"
+    },
+    {
+     "n": 11,
+     "fr": "Ils sont plus désirables que l'or et que beaucoup de pierres précieuses ; ils sont plus doux que le miel et qu'un rayon de miel.",
+     "page": 133,
+     "ligne_la": "11"
+    },
+    {
+     "n": 12,
+     "fr": "Aussi votre serviteur les observe ; à les garder, on trouve une grande récompense.",
+     "page": 135,
+     "ligne_la": "12",
+     "lecture": [
+      "p. 135 : à les garder — « à » en début de ligne, manqué par les deux lectures, vu sur l'image"
+     ]
+    },
+    {
+     "n": 13,
+     "fr": "Qui connaît ses fautes ? Purifiez-moi de celles qui sont cachées en moi,",
+     "page": 135,
+     "ligne_la": "13"
+    },
+    {
+     "n": 14,
+     "fr": "et préservez votre serviteur des péchés des autres. S'ils ne me dominent point, alors je serai sans tache, et purifié d'un très grand péché.",
+     "page": 135,
+     "ligne_la": "13"
+    },
+    {
+     "n": 15,
+     "fr": "Et alors les paroles de ma bouche pourront vous plaire, et la méditation de mon cœur sera toujours en votre présence. Seigneur, vous êtes mon secours et mon rédempteur.",
+     "page": 135,
+     "ligne_la": "15a"
+    }
+   ],
+   "lignes_la": [
+    "2",
+    "3",
+    "4",
+    "5",
+    "6a",
+    "6b",
+    "7b",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14b",
+    "15a",
+    "15b"
+   ],
+   "pages": [
+    133,
+    135
+   ]
+  },
+  {
    "numero": 19,
    "titre": "Psaume XIX",
    "versets": [
@@ -2063,6 +2178,210 @@
    "pages": [
     117,
     119
+   ]
+  },
+  {
+   "numero": 23,
+   "titre": "Psaume XXIII",
+   "versets": [
+    {
+     "n": 1,
+     "fr": "Au Seigneur est la terre et tout ce qu'elle renferme, le monde et tous ceux qui l'habitent.",
+     "page": 129,
+     "ligne_la": "1"
+    },
+    {
+     "n": 2,
+     "fr": "Car c'est lui qui l'a fondée sur les mers, et qui l'a établie sur les fleuves.",
+     "page": 131,
+     "ligne_la": "2"
+    },
+    {
+     "n": 3,
+     "fr": "Qui montera sur la montagne du Seigneur ? ou qui se tiendra dans son lieu saint ?",
+     "page": 131,
+     "ligne_la": "3"
+    },
+    {
+     "n": 4,
+     "fr": "Celui qui a les mains innocentes et le cœur pur, qui n'a pas livré son âme à la vanité, ni fait à son prochain un serment trompeur.",
+     "page": 131,
+     "ligne_la": "4"
+    },
+    {
+     "n": 5,
+     "fr": "Celui-là recevra la bénédiction du Seigneur, et la miséricorde de Dieu, son sauveur.",
+     "page": 131,
+     "ligne_la": "5"
+    },
+    {
+     "n": 6,
+     "fr": "Telle est la race de ceux qui le cherchent, de ceux qui cherchent la face du Dieu de Jacob.",
+     "page": 131,
+     "ligne_la": "6"
+    },
+    {
+     "n": 7,
+     "fr": "Levez vos portes, ô princes, et élevez-vous, portes éternelles, et le roi de gloire entrera.",
+     "page": 131,
+     "ligne_la": "7"
+    },
+    {
+     "n": 8,
+     "fr": "Quel est ce roi de gloire ? C'est le Seigneur fort et puissant, le Seigueur puissant dans les combats.",
+     "page": 131,
+     "ligne_la": "8",
+     "lecture": [
+      "p. 131 : le Seigueur puissant — coquille de l'imprimé (« Seigueur »), gardée telle quelle"
+     ]
+    },
+    {
+     "n": 9,
+     "fr": "Levez vos portes, ô princes, et élevez-vous, portes éternelles, et le roi de gloire entrera.",
+     "page": 131,
+     "ligne_la": "9"
+    },
+    {
+     "n": 10,
+     "fr": "Quel est ce roi de gloire ? Le Seigneur des armées est lui-même ce roi de gloire.",
+     "page": 131,
+     "ligne_la": "10"
+    }
+   ],
+   "lignes_la": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10"
+   ],
+   "pages": [
+    129,
+    131
+   ]
+  },
+  {
+   "numero": 26,
+   "titre": "Psaume XXVI",
+   "versets": [
+    {
+     "n": 1,
+     "fr": "Le Seigneur est ma lumière et mon salut ; qui craindrai-je ? Le Seigneur est le défenseur de ma vie ; devant qui tremblerai-je ?",
+     "page": 135,
+     "ligne_la": "1"
+    },
+    {
+     "n": 2,
+     "fr": "Lorsque les méchants s'approchent de moi pour dévorer ma chair, ces ennemis qui me persécutent ont été eux-mêmes affaiblis et sont tombés.",
+     "page": 135,
+     "ligne_la": "2"
+    },
+    {
+     "n": 3,
+     "fr": "Qu'une armée campe contre moi, mon cœur ne craindra pas. Que le combat s'engage contre moi, c'est alors même que j'espérerai.",
+     "page": 135,
+     "ligne_la": "3"
+    },
+    {
+     "n": 4,
+     "fr": "Je n'ai demandé qu'une chose au Seigneur, et c'est elle que je rechercherai : d'habiter dans la maison du Seigneur tous les jours de ma vie, pour contempler les délices du Seigneur et pour visiter son temple.",
+     "page": 137,
+     "ligne_la": "4",
+     "lecture": [
+      "p. 137 : c'est elle — deuxième l brisé (« elie »), lecture sûre"
+     ]
+    },
+    {
+     "n": 5,
+     "fr": "Car il m'a caché dans son tabernacle ; au jour du malheur il m'a protégé dans le secret de son tabernacle.",
+     "page": 137,
+     "ligne_la": "5"
+    },
+    {
+     "n": 6,
+     "fr": "Il m'a élevé sur la pierre, et maintenant il a élevé ma tête au-dessus de mes ennemis. J'ai entouré l'autel et j'ai immolé dans son tabernacle une victime avec des cris de joie ; je chanterai et je dirai un hymne au Seigneur.",
+     "page": 137,
+     "ligne_la": "6"
+    },
+    {
+     "n": 7,
+     "fr": "Exaucez, Seigneur, ma voix, qui a crié vers vous ; ayez pitié de moi, et exaucez-moi.",
+     "page": 137,
+     "ligne_la": "7"
+    },
+    {
+     "n": 8,
+     "fr": "Mon cœur vous a dit : Mon regard vous a cherché ; votre visage, Seigneur, je le chercherai.",
+     "page": 137,
+     "ligne_la": "8"
+    },
+    {
+     "n": 9,
+     "fr": "Ne détournez pas de moi votre face ; dans votre colère, ne vous retirez pas de votre serviteur. Soyez mon aide ; ne m'abandonnez pas, et ne me méprisez pas, ô Dieu mon Sauveur.",
+     "page": 137,
+     "ligne_la": "9"
+    },
+    {
+     "n": 10,
+     "fr": "Car mon père et ma mère m*ont abandonné ; mais le Seigneur m'a recueilli.",
+     "page": 137,
+     "ligne_la": "10"
+    },
+    {
+     "n": 11,
+     "fr": "Seigneur, enseignez-moi votre voie, et conduisez-moi dans le droit sentier à cause de mes ennemis.",
+     "page": 137,
+     "ligne_la": "11"
+    },
+    {
+     "n": 12,
+     "fr": "Ne me livrez pas à la merci de ceux qui me persécutent ; car des témoins iniques se sont élevés contre moi, et l'iniquité a menti contre elle-même.",
+     "page": 137,
+     "ligne_la": "12"
+    },
+    {
+     "n": 13,
+     "fr": "Je crois que je verrai les biens du Seigneur dans la terre des vivants.",
+     "page": 137,
+     "ligne_la": "13"
+    },
+    {
+     "n": 14,
+     "fr": "Attends le Seigneur, agis avec courage ; que ton cœur soit ferme, et espère au Seigneur.",
+     "page": 137,
+     "ligne_la": "14"
+    }
+   ],
+   "lignes_la": [
+    "1",
+    "1",
+    "2",
+    "2",
+    "3",
+    "3",
+    "4",
+    "4",
+    "5",
+    "6",
+    "6",
+    "7",
+    "8",
+    "9",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14"
+   ],
+   "pages": [
+    135,
+    137
    ]
   },
   {
@@ -4481,6 +4800,32 @@
    ]
   },
   {
+   "numero": 116,
+   "titre": "Psaume CXVI",
+   "versets": [
+    {
+     "n": 1,
+     "fr": "Louez le Seigneur, toutes les nations ; louez-le, tous les peuples.",
+     "page": 127,
+     "ligne_la": "1"
+    },
+    {
+     "n": 2,
+     "fr": "Car sa miséricorde a été affermie sur nous, et la vérité du Seigneur demeure éternellement.",
+     "page": 129,
+     "ligne_la": "2"
+    }
+   ],
+   "lignes_la": [
+    "1",
+    "2"
+   ],
+   "pages": [
+    127,
+    129
+   ]
+  },
+  {
    "numero": 117,
    "titre": "Psaume CXVII",
    "versets": [
@@ -6589,6 +6934,47 @@
    ],
    "pages": [
     127
+   ]
+  },
+  {
+   "do": "Psalm221",
+   "titre": "Cantique d'Isaïe",
+   "reference": "Is. xii, 1-6",
+   "versets": [
+    {
+     "n": 1,
+     "fr": "Je vous rends grâces, Seigneur, car vous avez été irrité contre moi ; votre fureur s'est apaisée, et vous m'avez consolé.",
+     "page": 129
+    },
+    {
+     "n": 2,
+     "fr": "Voici que Dieu est mon sauveur ; j'agirai avec confiance et je ne craindrai point. Car le Seigneur est ma force et ma gloire, et il est devenu mon salut.",
+     "page": 129
+    },
+    {
+     "n": 3,
+     "fr": "Vous puiserez de l'eau avec joie aux fontaines du Sauveur.",
+     "page": 129
+    },
+    {
+     "n": 4,
+     "fr": "Et vous direz en ce jour-là : Louez le Seigneur et invoquez son nom ; faites connaître ses œuvres parmi les peuples ; souvenez-vous que son nom est grand.",
+     "page": 129
+    },
+    {
+     "n": 5,
+     "fr": "Chantez au Seigneur, car il a fait des choses magnifiques ; annoncez cela sur la terre entière.",
+     "page": 129
+    },
+    {
+     "n": 6,
+     "fr": "Tressaille de joie et bénis Dieu, maison de Sion, car il est grand au milieu de toi, le Saint d'Israël.",
+     "page": 129
+    }
+   ],
+   "note": "Divinum Officium chante ce cantique en 7 lignes numérotées 12:1 à 12:7, qui ne suivent pas les versets de la Vulgate (6 versets, comme chez Fillion) : numéros de Fillion, sans alignement ligne à ligne.",
+   "pages": [
+    129
    ]
   }
  ]
