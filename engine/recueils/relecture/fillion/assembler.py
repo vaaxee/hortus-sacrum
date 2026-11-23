@@ -27,7 +27,11 @@ sp = SpellChecker(language='fr')
 # (versets imprimés : quand DO ne numérote pas ses lignes par verset)
 CANTIQUES = {
     'Cantique de la Bienheureuse Vierge Marie': (232, 'Cantique de la Bienheureuse Vierge Marie', 'Luc. i, 46-55'),
-    'Cantique des trois jeunes gens. Dan. iii, 52': (220, 'Cantique des trois jeunes gens', 'Dan. iii, 52-57'),
+    'Cantique des trois jeunes gens. Dan. iii, 52': (220, 'Cantique des trois jeunes gens', 'Dan. iii, 52-57',
+                                                   list(range(52, 58)),
+                                                   "Divinum Officium numérote ses lignes 3:52 à 3:58 (le v. 52 "
+                                                   "en deux lignes) : numéros de Fillion, sans alignement ligne à "
+                                                   "ligne."),
     'Cantique des trois jeunes gens. Dan. iii, 57': (210, 'Cantique des trois jeunes gens', 'Dan. iii, 57-88 et 56',
                                        list(range(57, 89)) + [56],
                                        "Divinum Officium chante ce cantique deux versets par ligne (lignes numérotées "
@@ -35,6 +39,7 @@ CANTIQUES = {
                                        "alignement ligne à ligne ; la doxologie (« Bénissons le Père… ») est imprimée "
                                        "avec le v. 88."),
     'Cantique de Zacharie': (231, 'Cantique de Zacharie', 'Luc. i, 68-79'),
+    'Cantique de Siméon': (233, 'Cantique de Siméon', 'Luc. ii, 29-32'),
 }
 
 # psaumes dont le latin de DO ne suit pas la division de Fillion : numéros imprimés par Fillion (premier, et note)
@@ -48,6 +53,8 @@ SANS_DO = {
 NOTES = {
     9: "Fillion numérote les parties III et IV (Vulgate 9, 22-39 ; psaume 10 de l'hébreu) de 1 à 18 ; numérotation "
        "de la Vulgate (22-39) donnée ici, comme dans le latin.",
+    113: "Fillion numérote la seconde partie (« Non nobis, Domine », Vulgate 113, 9-26 ; psaume 115 de l'hébreu) de 1 "
+         "à 18 ; numérotation de la Vulgate (9-26) donnée ici, comme dans le latin.",
 }
 
 ROMAINS = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100}

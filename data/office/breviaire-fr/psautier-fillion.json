@@ -245,6 +245,82 @@
    ]
   },
   {
+   "numero": 4,
+   "titre": "Psaume IV",
+   "versets": [
+    {
+     "n": 2,
+     "fr": "Lorsque je l'ai invoqué, le Dieu de ma justice m'a exaucé ; dans la détresse vous m'avez mis au large. Ayez pitié de moi, et exaucez ma prière.",
+     "page": 91,
+     "ligne_la": "2a"
+    },
+    {
+     "n": 3,
+     "fr": "Fils des hommes, jusques à quand aurez-vous le cœur appesanti ? Pourquoi aimez-vous la vanité, et cherchez-vous le mensonge ?",
+     "page": 93,
+     "ligne_la": "3"
+    },
+    {
+     "n": 4,
+     "fr": "Sachez donc que le Seigneur a merveilleusement traité son saint ; le Seigneur m'exaucera quand je crierai vers lui.",
+     "page": 93,
+     "ligne_la": "4"
+    },
+    {
+     "n": 5,
+     "fr": "Irritez-vous et ne péchez point ; ce que vous dites dans vos cœurs, répétez-le sur vos lits avec componction.",
+     "page": 93,
+     "ligne_la": "5"
+    },
+    {
+     "n": 6,
+     "fr": "Offrez un sacrifice de justice, et espérez au Seigneur. Beaucoup disent : Qui nous fera voir le bonheur ?",
+     "page": 93,
+     "ligne_la": "6"
+    },
+    {
+     "n": 7,
+     "fr": "La lumière de votre visage est gravée sur nous, Seigneur. Vous avez mis la joie dans mon cœur.",
+     "page": 93,
+     "ligne_la": "7"
+    },
+    {
+     "n": 8,
+     "fr": "Ils se sont multipliés par l'abondance de leur froment, de leur vin et de leur huile.",
+     "page": 93,
+     "ligne_la": "8"
+    },
+    {
+     "n": 9,
+     "fr": "Je dormirai et me reposerai tout à fait en paix,",
+     "page": 93,
+     "ligne_la": "9"
+    },
+    {
+     "n": 10,
+     "fr": "parce que vous-même, Seigneur, d'une manière étonnante, m'avez établi dans l'espérance.",
+     "page": 93,
+     "ligne_la": "10"
+    }
+   ],
+   "lignes_la": [
+    "2a",
+    "2b",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10"
+   ],
+   "pages": [
+    91,
+    93
+   ]
+  },
+  {
    "numero": 8,
    "titre": "Psaume VIII",
    "versets": [
@@ -816,6 +892,67 @@
    ]
   },
   {
+   "numero": 53,
+   "titre": "Psaume LIII",
+   "versets": [
+    {
+     "n": 3,
+     "fr": "O Dieu, sauvez-moi par votre nom, et rendez-moi justice par votre puissance.",
+     "page": 53,
+     "ligne_la": "3"
+    },
+    {
+     "n": 4,
+     "fr": "O Dieu, exaucez ma prière ; prêtez l'oreille aux paroles de ma bouche.",
+     "page": 55,
+     "ligne_la": "4"
+    },
+    {
+     "n": 5,
+     "fr": "Car des étrangers se sont levés contre moi, et des hommes puissants ont cherché à m'ôter la vie, et ils n'ont pas placé Dieu devant leurs yeux.",
+     "page": 55,
+     "ligne_la": "5"
+    },
+    {
+     "n": 6,
+     "fr": "Mais voici que Dieu vient à mon aide, et que le Seigneur est le protecteur de ma vie.",
+     "page": 55,
+     "ligne_la": "6"
+    },
+    {
+     "n": 7,
+     "fr": "Faites retomber les maux sur mes ennemis, et exterminez-les dans votre vérité.",
+     "page": 55,
+     "ligne_la": "7"
+    },
+    {
+     "n": 8,
+     "fr": "Je vous offrirai de bon cœur des sacrifices, et je louerai votre nom, Seigneur, parce qu'il est bon.",
+     "page": 55,
+     "ligne_la": "8"
+    },
+    {
+     "n": 9,
+     "fr": "Car vous m'avez délivré de toute détresse, et mon œil a regardé mes ennemis avec mépris.",
+     "page": 55,
+     "ligne_la": "9"
+    }
+   ],
+   "lignes_la": [
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9"
+   ],
+   "pages": [
+    53,
+    55
+   ]
+  },
+  {
    "numero": 62,
    "titre": "Psaume LXII",
    "versets": [
@@ -901,6 +1038,131 @@
    "pages": [
     35,
     37
+   ]
+  },
+  {
+   "numero": 90,
+   "titre": "Psaume XC",
+   "versets": [
+    {
+     "n": 1,
+     "fr": "Celui qui habite sous l'assistance du Très-Haut demeurera sous la protection du Dieu du ciel.",
+     "page": 93,
+     "ligne_la": "1"
+    },
+    {
+     "n": 2,
+     "fr": "Il dira au Seigneur : Vous êtes mon défenseur et mon refuge ; il est mon Dieu, j'espérerai en lui.",
+     "page": 95,
+     "ligne_la": "2"
+    },
+    {
+     "n": 3,
+     "fr": "Car c'est lui qui m'a délivré du lacet des chasseurs, et de la parole âpre.",
+     "page": 95,
+     "ligne_la": "3"
+    },
+    {
+     "n": 4,
+     "fr": "Il te mettra à l'ombre sous ses épaules, et sous ses ailes tu seras plein d'espoir.",
+     "page": 95,
+     "ligne_la": "4"
+    },
+    {
+     "n": 5,
+     "fr": "Sa vérité t'environnera comme un bouclier ; tu ne craindras pas les frayeurs de la nuit,",
+     "page": 95,
+     "ligne_la": "5"
+    },
+    {
+     "n": 6,
+     "fr": "la flèche qui vole pendant le jour, les maux qui s'avancent clans les ténèbres, les attaques du démon de midi.",
+     "page": 95,
+     "ligne_la": "6"
+    },
+    {
+     "n": 7,
+     "fr": "Mille tomberont à ton côté, et dix mille à ta droite ; mais le mal n'approchera pas de toi.",
+     "page": 95,
+     "ligne_la": "7"
+    },
+    {
+     "n": 8,
+     "fr": "Et même tu contempleras de tes yeux, et tu verras le châtiment des pécheurs.",
+     "page": 95,
+     "ligne_la": "8"
+    },
+    {
+     "n": 9,
+     "fr": "Car vous êtes, Seigneur, mon espérance. Tu as fait du Très-Haut ton refuge.",
+     "page": 95,
+     "ligne_la": "9"
+    },
+    {
+     "n": 10,
+     "fr": "Le mal ne viendra pas jusqu'à toi, et les fléaux ne s'approcheront pas de ta tente.",
+     "page": 95,
+     "ligne_la": "10"
+    },
+    {
+     "n": 11,
+     "fr": "Car il a commandé pour toi à ses anges de te garder dans toutes tes voies.",
+     "page": 95,
+     "ligne_la": "11"
+    },
+    {
+     "n": 12,
+     "fr": "Ils te porteront dans leurs mains, de peur que tu ne heurtes le pied contre une pierre.",
+     "page": 95,
+     "ligne_la": "12"
+    },
+    {
+     "n": 13,
+     "fr": "Tu marcheras sur l'aspic et sur le basilic, et tu fouleras aux pieds le lion et le dragon.",
+     "page": 95,
+     "ligne_la": "13"
+    },
+    {
+     "n": 14,
+     "fr": "Parce qu'il a espéré en moi, je le délivrerai} ; je le protégerai, parce qu'il a connu mon nom.",
+     "page": 95,
+     "ligne_la": "14"
+    },
+    {
+     "n": 15,
+     "fr": "Il criera vers moi, et je l'exaucerai ; je suis avec lui dans la détresse ; je le sauverai et je le glorifierai.",
+     "page": 97,
+     "ligne_la": "15"
+    },
+    {
+     "n": 16,
+     "fr": "Je le comblerai de longs jours, et je lui ferai voir mon salut.",
+     "page": 97,
+     "ligne_la": "16"
+    }
+   ],
+   "lignes_la": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16"
+   ],
+   "pages": [
+    93,
+    95,
+    97
    ]
   },
   {
@@ -1059,6 +1321,502 @@
    ]
   },
   {
+   "numero": 109,
+   "titre": "Psaume CIX",
+   "versets": [
+    {
+     "n": 1,
+     "fr": "Le Seigneur a dit à mon Seigneur : Asseyez-vous à ma droite, jusqu'à ce que je fasse de vos ennemis l'escabeau de vos pieds.",
+     "page": 79,
+     "ligne_la": "1a"
+    },
+    {
+     "n": 2,
+     "fr": "Le Seigneur fera sortir de Sion le sceptre de votre puissance ; dominez au milieu de vos ennemis.",
+     "page": 79,
+     "ligne_la": "2"
+    },
+    {
+     "n": 3,
+     "fr": "Avec vous sera l'empire souverain au jour de votre puissance, parmi les splendeurs des saints. Je vous ai engendré de mon sein avant l'aurore.",
+     "page": 79,
+     "ligne_la": "3"
+    },
+    {
+     "n": 4,
+     "fr": "Le Seigneur a juré, et il ne s'en repentira point : Vous êtes prêtre à jamais selon l'ordre de Melchisédech.",
+     "page": 79,
+     "ligne_la": "4"
+    },
+    {
+     "n": 5,
+     "fr": "Le Seigneur est à votre droite ; il a brisé les rois au jour de sa colère.",
+     "page": 81,
+     "ligne_la": "5"
+    },
+    {
+     "n": 6,
+     "fr": "Il jugera les nations ; il remplira tout de ruines ; il écrasera sur la terre les têtes d'un grand nombre.",
+     "page": 81,
+     "ligne_la": "6"
+    },
+    {
+     "n": 7,
+     "fr": "Il boira au torrent pendant la marche ; c'est pourquoi il relèvera la tête.",
+     "page": 81,
+     "ligne_la": "7"
+    }
+   ],
+   "lignes_la": [
+    "1a",
+    "1b",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7"
+   ],
+   "pages": [
+    79,
+    81
+   ]
+  },
+  {
+   "numero": 110,
+   "titre": "Psaume CX",
+   "versets": [
+    {
+     "n": 1,
+     "fr": "Je vous louerai, Seigneur, de tout mon cœur, dans la réunion et dans l'assemblée des justes.",
+     "page": 81,
+     "ligne_la": "1"
+    },
+    {
+     "n": 2,
+     "fr": "Les œuvres du Seigneur sont grandes, proportionnées à toutes ses volontés.",
+     "page": 81,
+     "ligne_la": "2"
+    },
+    {
+     "n": 3,
+     "fr": "Son œuvre est splendeur et magnificence, et sa justice demeure dans les siècles des siècles.",
+     "page": 81,
+     "ligne_la": "3"
+    },
+    {
+     "n": 4,
+     "fr": "Il a institué un mémorial de ses merveilles ; le Seigneur est miséricordieux et compatissant ;",
+     "page": 81,
+     "ligne_la": "4"
+    },
+    {
+     "n": 5,
+     "fr": "il a donné une nourriture à ceux qui le craignent. Il se souviendra éternellement de son alliance.",
+     "page": 81,
+     "ligne_la": "4"
+    },
+    {
+     "n": 6,
+     "fr": "Il fera connaître à son peuple la puissance de ses œuvres,",
+     "page": 81,
+     "ligne_la": "5b"
+    },
+    {
+     "n": 7,
+     "fr": "en leur donnant l'héritage des nations. Les œuvres de ses mains sont vérité et justice.",
+     "page": 81,
+     "ligne_la": "7"
+    },
+    {
+     "n": 8,
+     "fr": "Tous ses préceptes sont immuables, affermis pour les siècles des siècles, établis selon la vérité et l'équité.",
+     "page": 81,
+     "ligne_la": "8"
+    },
+    {
+     "n": 9,
+     "fr": "Il a envoyé la délivrance à son peuple ; il a établi pour toujours son alliance. Son nom est saint et terrible.",
+     "page": 81,
+     "ligne_la": "9a"
+    },
+    {
+     "n": 10,
+     "fr": "La crainte du Seigneur est le commencement de la sagesse. La vraie intelligence est en tous ceux qu'elle dirige. Sa louange subsiste dans les siècles des siècles.",
+     "page": 81,
+     "ligne_la": "9b"
+    }
+   ],
+   "lignes_la": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5b",
+    "7",
+    "8",
+    "9a",
+    "9b",
+    "10b"
+   ],
+   "pages": [
+    81
+   ]
+  },
+  {
+   "numero": 111,
+   "titre": "Psaume CXI",
+   "versets": [
+    {
+     "n": 1,
+     "fr": "Heureux l'homme qui craint le Seigneur, qui met ses délices dans ses commandements.",
+     "page": 83,
+     "ligne_la": "1"
+    },
+    {
+     "n": 2,
+     "fr": "Sa race sera puissante sur la terre ; la postérité des justes sera bénie.",
+     "page": 83,
+     "ligne_la": "2"
+    },
+    {
+     "n": 3,
+     "fr": "La gloire et les richesses sont dans sa maison, et sa justice demeure dans les siècles des siècles.",
+     "page": 83,
+     "ligne_la": "3"
+    },
+    {
+     "n": 4,
+     "fr": "Une lumière s'est levée dans les ténèbres pour les hommes droits ; il est miséricordieux, et compatissant, et juste.",
+     "page": 83,
+     "ligne_la": "4"
+    },
+    {
+     "n": 5,
+     "fr": "Heureux l'homme qui compatit et qui prête, qui règle ses discours avec jugement,",
+     "page": 83,
+     "ligne_la": "5"
+    },
+    {
+     "n": 6,
+     "fr": "car il ne sera jamais ébranlé.",
+     "page": 83,
+     "ligne_la": "5"
+    },
+    {
+     "n": 7,
+     "fr": "Le souvenir du juste sera éternel ; il ne craindra pas d'entendre rien d'affligeant. Son cœur est disposé à espérer au Seigneur.",
+     "page": 83,
+     "ligne_la": "7a"
+    },
+    {
+     "n": 8,
+     "fr": "Son cœur est affermi ; il ne sera point ébranlé, jusqu'à ce qu'il contemple ses ennemis avec mépris.",
+     "page": 83,
+     "ligne_la": "7b"
+    },
+    {
+     "n": 9,
+     "fr": "Il répand ses largesses, il donne aux pauvres. Sa justice demeure dans les siècles des siècles. Sa puissance sera élevée avec gloire.",
+     "page": 83,
+     "ligne_la": "9"
+    },
+    {
+     "n": 10,
+     "fr": "Le pécheur le verra et s'irritera ; il grincera des dents et séchera de dépit ; le désir des pécheurs périra.",
+     "page": 83,
+     "ligne_la": "10"
+    }
+   ],
+   "lignes_la": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "7a",
+    "7b",
+    "9",
+    "10"
+   ],
+   "pages": [
+    83
+   ]
+  },
+  {
+   "numero": 112,
+   "titre": "Psaume CXII",
+   "versets": [
+    {
+     "n": 1,
+     "fr": "Louez le Seigneur, vous, ses serviteurs ; louez le nom du Seigneur.",
+     "page": 85,
+     "ligne_la": "1"
+    },
+    {
+     "n": 2,
+     "fr": "Que le nom du Seigneur soit béni, dès maintenant et dans tous les siècles.",
+     "page": 85,
+     "ligne_la": "2"
+    },
+    {
+     "n": 3,
+     "fr": "Du lever du soleil à son couchant, le nom du Seigneur est digne de louange.",
+     "page": 85,
+     "ligne_la": "3"
+    },
+    {
+     "n": 4,
+     "fr": "Le Seigneur est élevé au-dessus de toutes les nations, et sa gloire est au-dessus des cieux.",
+     "page": 85,
+     "ligne_la": "4"
+    },
+    {
+     "n": 5,
+     "fr": "Qui est semblable au Seigneur notre Dieu, qui habite dans les hauteurs,",
+     "page": 85,
+     "ligne_la": "5"
+    },
+    {
+     "n": 6,
+     "fr": "et qui regarde ce qui est humble au ciel et sur la terre ?",
+     "page": 85,
+     "ligne_la": "5"
+    },
+    {
+     "n": 7,
+     "fr": "Il tire l'indigent de la poussière, et relève le pauvre du fumier,",
+     "page": 85,
+     "ligne_la": "7"
+    },
+    {
+     "n": 8,
+     "fr": "pour le placer avec les princes, avec les princes de son peuple.",
+     "page": 85,
+     "ligne_la": "8"
+    },
+    {
+     "n": 9,
+     "fr": "Il fait habiter celle qui était stérile dans la maison comme une mère joyeuse au milieu de ses enfants.",
+     "page": 85,
+     "ligne_la": "9",
+     "lecture": [
+      "p. 85 : celle qui était — point parasite entre « qui » et « était », non repris"
+     ]
+    }
+   ],
+   "lignes_la": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "7",
+    "8",
+    "9"
+   ],
+   "pages": [
+    85
+   ]
+  },
+  {
+   "numero": 113,
+   "titre": "Psaume CXIII",
+   "versets": [
+    {
+     "n": 1,
+     "fr": "Lorsque Israël sortit d'Égypte, et la maison de Jacob du milieu d'un peuple barbare,",
+     "page": 85,
+     "ligne_la": "1"
+    },
+    {
+     "n": 2,
+     "fr": "Juda devint son sanctuaire et Israël son domaine.",
+     "page": 87,
+     "ligne_la": "2"
+    },
+    {
+     "n": 3,
+     "fr": "La mer le vit et s'enfuit ; le Jourdain retourna en arrière.",
+     "page": 87,
+     "ligne_la": "3"
+    },
+    {
+     "n": 4,
+     "fr": "Les montagnes bondirent comme des béliers, et les collines comme des agneaux.",
+     "page": 87,
+     "ligne_la": "4"
+    },
+    {
+     "n": 5,
+     "fr": "Qu'as-tu, ô mer, pour t'enfuir ? et toi, Jourdain, pour retourner en arrière ?",
+     "page": 87,
+     "ligne_la": "5"
+    },
+    {
+     "n": 6,
+     "fr": "Pourquoi, montagnes, avez-vous bondi comme des béliers ? et vous, collines, comme des agneaux ?",
+     "page": 87,
+     "ligne_la": "6"
+    },
+    {
+     "n": 7,
+     "fr": "La terre a été ébranlée devant la face du Seigneur, devant la face du Dieu de Jacob,",
+     "page": 87,
+     "ligne_la": "7"
+    },
+    {
+     "n": 8,
+     "fr": "qui a changé la pierre en des torrents d'eaux, et la roche en fontaines abondantes.",
+     "page": 87,
+     "ligne_la": "8"
+    },
+    {
+     "n": 9,
+     "fr": "Non pas à nous, Seigneur, non pas à nous, mais à votre nom donnez la gloire,",
+     "page": 87,
+     "ligne_la": "9"
+    },
+    {
+     "n": 10,
+     "fr": "à cause de votre miséricorde et de votre vérité ; de peur que les nations ne disent : Où est leur Dieu ?",
+     "page": 87,
+     "ligne_la": "10"
+    },
+    {
+     "n": 11,
+     "fr": "Notre Dieu est dans le ciel ; tout ce qu'il a voulu, il l'a fait.",
+     "page": 87,
+     "ligne_la": "11"
+    },
+    {
+     "n": 12,
+     "fr": "Les idoles des nations sont de l'argent et de l'or, l'ouvrage des mains des hommes.",
+     "page": 87,
+     "ligne_la": "12"
+    },
+    {
+     "n": 13,
+     "fr": "Elles ont une bouche, et ne parlent point ; elles ont des yeux, et ne voient point.",
+     "page": 87,
+     "ligne_la": "13"
+    },
+    {
+     "n": 14,
+     "fr": "Elles ont des oreilles, et n'entendent pas ; elles ont des narines, et ne sentent pas.",
+     "page": 87,
+     "ligne_la": "14"
+    },
+    {
+     "n": 15,
+     "fr": "Elles ont des mains, et ne touchent pas ; elles ont des pieds, et ne marchent pas ; elles ne peuvent crier avec leur gorge.",
+     "page": 89,
+     "ligne_la": "15"
+    },
+    {
+     "n": 16,
+     "fr": "Que ceux qui les font leur deviennent semblables, avec tous ceux qui se confient en elles.",
+     "page": 89,
+     "ligne_la": "16"
+    },
+    {
+     "n": 17,
+     "fr": "La maison d'Israël a espéré au Seigneur ; il est leur aide et leur protecteur.",
+     "page": 89,
+     "ligne_la": "17"
+    },
+    {
+     "n": 18,
+     "fr": "La maison d'Aaron a espéré au Seigneur ; il est leur aide et leur protecteur.",
+     "page": 89,
+     "ligne_la": "18"
+    },
+    {
+     "n": 19,
+     "fr": "Ceux qui craignent le Seigneur ont espéré en lui ; il est leur aide et leur protecteur.",
+     "page": 89,
+     "ligne_la": "19"
+    },
+    {
+     "n": 20,
+     "fr": "Le Seigneur s'est souvenu de nous, et il nous a bénis. Il a béni la maison d'Israël ; il a béni la maison d'Aaron.",
+     "page": 89,
+     "ligne_la": "20a"
+    },
+    {
+     "n": 21,
+     "fr": "Il a béni tous ceux qui craignent le Seigneur, les petits avec les grands.",
+     "page": 89,
+     "ligne_la": "21"
+    },
+    {
+     "n": 22,
+     "fr": "Que le Seigneur vous accorde de nouveaux biens, à vous et à vos enfants.",
+     "page": 89,
+     "ligne_la": "22"
+    },
+    {
+     "n": 23,
+     "fr": "Soyez bénis du Seigneur, qui a fait le ciel et la terre.",
+     "page": 89,
+     "ligne_la": "23"
+    },
+    {
+     "n": 24,
+     "fr": "Le ciel des cieux est au Seigneur, mais il a donné la terre aux enfants des hommes.",
+     "page": 89,
+     "ligne_la": "24"
+    },
+    {
+     "n": 25,
+     "fr": "Ce ne sont pas les morts qui vous loueront, Seigneur, ni tous ceux qui descendent dans l'enfer.",
+     "page": 89,
+     "ligne_la": "25"
+    },
+    {
+     "n": 26,
+     "fr": "Mais nous qui vivons, nous bénissons le Seigneur, dès maintenant et dans tous les siècles.",
+     "page": 89,
+     "ligne_la": "26"
+    }
+   ],
+   "lignes_la": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "18",
+    "19",
+    "20a",
+    "20b",
+    "21",
+    "22",
+    "23",
+    "24",
+    "25",
+    "26"
+   ],
+   "note": "Fillion numérote la seconde partie (« Non nobis, Domine », Vulgate 113, 9-26 ; psaume 115 de l'hébreu) de 1 à 18 ; numérotation de la Vulgate (9-26) donnée ici, comme dans le latin.",
+   "pages": [
+    85,
+    87,
+    89
+   ]
+  },
+  {
    "numero": 117,
    "titre": "Psaume CXVII",
    "versets": [
@@ -1136,11 +1894,11 @@
     },
     {
      "n": 13,
-     "fr": "J'ai été poussé, ébranlé, prêt à tomber,. et le Seigneur m'a soutenu.",
+     "fr": "J'ai été poussé, ébranlé, prêt à tomber, et le Seigneur m'a soutenu.",
      "page": 49,
      "ligne_la": "13",
      "lecture": [
-      "p. 49 : tomber,. — « tomber,. » : point après la virgule, tel qu'imprimé (sans doute parasite)"
+      "p. 49 : prêt à tomber — point après la virgule (« tomber,. ») : tache ou point parasite, non repris"
      ]
     },
     {
@@ -1279,6 +2037,1299 @@
     49,
     51,
     53
+   ]
+  },
+  {
+   "numero": 118,
+   "titre": "Psaume CXVIII",
+   "versets": [
+    {
+     "n": 1,
+     "fr": "Heureux ceux qui sont immaculés dans leur voie, qui marchent dans la loi du Seigneur.",
+     "page": 55,
+     "ligne_la": "1"
+    },
+    {
+     "n": 2,
+     "fr": "Heureux ceux qui étudient ses ordonnances, et qui le cherchent de tout leur cœur.",
+     "page": 57,
+     "ligne_la": "2"
+    },
+    {
+     "n": 3,
+     "fr": "Car ceux qui commettent l'iniquité ne marchent pas dans ses voies.",
+     "page": 57,
+     "ligne_la": "3"
+    },
+    {
+     "n": 4,
+     "fr": "Vous avez ordonné que vos commandements soient très exactement gardés.",
+     "page": 57,
+     "ligne_la": "4"
+    },
+    {
+     "n": 5,
+     "fr": "Puissent mes voies être dirigées de telle sorte, que je garde vos ordonnances !",
+     "page": 57,
+     "ligne_la": "5"
+    },
+    {
+     "n": 6,
+     "fr": "Je ne serai point confondu, lorsque j'aurai sous les yeux tous vos préceptes.",
+     "page": 57,
+     "ligne_la": "6"
+    },
+    {
+     "n": 7,
+     "fr": "Je vous louerai dans la droiture de mon cœur, de ce que j'ai appris les préceptes de votre justice.",
+     "page": 57,
+     "ligne_la": "7"
+    },
+    {
+     "n": 8,
+     "fr": "Je garderai vos ordonnances ; ne m'abandonnez pas entièrement.",
+     "page": 57,
+     "ligne_la": "8"
+    },
+    {
+     "n": 9,
+     "fr": "Comment le jeune homme corrigera-t-il sa voie ? En accomplissant vos paroles.",
+     "page": 57,
+     "ligne_la": "9"
+    },
+    {
+     "n": 10,
+     "fr": "Je vous ai cherché de tout mon cœur ; ne me rejetez pas de la voie de vos préceptes,",
+     "page": 57,
+     "ligne_la": "10"
+    },
+    {
+     "n": 11,
+     "fr": "J'ai caché vos paroles dans mon cœur, pour ne pas pécher contre vous.",
+     "page": 57,
+     "ligne_la": "11"
+    },
+    {
+     "n": 12,
+     "fr": "Vous êtes béni, Seigneur ; enseignez-moi vos commandements.",
+     "page": 57,
+     "ligne_la": "12"
+    },
+    {
+     "n": 13,
+     "fr": "J'ai prononcé de mes lèvres tous les préceptes de votre bouche.",
+     "page": 57,
+     "ligne_la": "13"
+    },
+    {
+     "n": 14,
+     "fr": "Je me suis complu dans la voie de vos ordres, autant que dans toutes les richesses.",
+     "page": 57,
+     "ligne_la": "14"
+    },
+    {
+     "n": 15,
+     "fr": "Je m'exercerai dans vos commandements, et je considérerai vos voies.",
+     "page": 57,
+     "ligne_la": "15"
+    },
+    {
+     "n": 16,
+     "fr": "Je méditerai sur vos ordonnances ; je n'oublierai point vos paroles.",
+     "page": 57,
+     "ligne_la": "16"
+    },
+    {
+     "n": 17,
+     "fr": "Bénissez votre serviteur ; faites-moi vivre, et je garderai vos paroles.",
+     "page": 59,
+     "ligne_la": "17"
+    },
+    {
+     "n": 18,
+     "fr": "Dévoilez mes yeux, et je considérerai les merveilles de votre loi.",
+     "page": 59,
+     "ligne_la": "18"
+    },
+    {
+     "n": 19,
+     "fr": "Je suis étranger sur la terre ; ne me cachez pas vos commandements.",
+     "page": 59,
+     "ligne_la": "19"
+    },
+    {
+     "n": 20,
+     "fr": "Mon âme a désiré avec ardeur vos ordonnances en tout temps.",
+     "page": 59,
+     "ligne_la": "20"
+    },
+    {
+     "n": 21,
+     "fr": "Vous avez menacé les superbes ; ceux qui se détournent de vos préceptes sont maudits.",
+     "page": 59,
+     "ligne_la": "21"
+    },
+    {
+     "n": 22,
+     "fr": "Éloignez de moi l'opprobre et le mépris, car j'ai recherché vos commandements.",
+     "page": 59,
+     "ligne_la": "22"
+    },
+    {
+     "n": 23,
+     "fr": "Car les princes se sont assis et ont parlé contre moi ; mais votre serviteur méditait sur vos lois.",
+     "page": 59,
+     "ligne_la": "23"
+    },
+    {
+     "n": 24,
+     "fr": "Car vos préceptes sont le sujet de ma méditation, et vos ordonnances me servent de conseil.",
+     "page": 59,
+     "ligne_la": "24"
+    },
+    {
+     "n": 25,
+     "fr": "Mon âme est prosternée contre terre ; rendez-moi la vie selon votre parole.",
+     "page": 59,
+     "ligne_la": "25"
+    },
+    {
+     "n": 26,
+     "fr": "Je vous ai exposé mes voies, et vous m'avez exaucé ; enseignez-moi vos préceptes.",
+     "page": 59,
+     "ligne_la": "26"
+    },
+    {
+     "n": 27,
+     "fr": "Instruisez-moi de la voie de vos ordonnances, et je m'exercerai dans vos merveilles.",
+     "page": 59,
+     "ligne_la": "27"
+    },
+    {
+     "n": 28,
+     "fr": "Mon âme s'est assoupie d'ennui ; fortifiez-moi par vos paroles.",
+     "page": 59,
+     "ligne_la": "28"
+    },
+    {
+     "n": 29,
+     "fr": "Écartez de moi la voie de l'iniquité, et faites-moi miséricorde selon votre loi.",
+     "page": 59,
+     "ligne_la": "29"
+    },
+    {
+     "n": 30,
+     "fr": "J'ai choisi la voie de la vérité ; je n'ai point oublié vos jugements.",
+     "page": 59,
+     "ligne_la": "30"
+    },
+    {
+     "n": 31,
+     "fr": "Je me suis attaché à vos préceptes, Seigneur ; ne me rendez pas confus.",
+     "page": 59,
+     "ligne_la": "31"
+    },
+    {
+     "n": 32,
+     "fr": "J'ai couru dans la voie de vos commandements, lorsque vous avez dilaté mon cœur.",
+     "page": 59,
+     "ligne_la": "32"
+    },
+    {
+     "n": 33,
+     "fr": "Imposez-moi pour loi, Seigneur, la voie de vos ordonnances, et je la rechercherai sans cesse.",
+     "page": 61,
+     "ligne_la": "33"
+    },
+    {
+     "n": 34,
+     "fr": "Donnez-moi l'intelligence, et j'étudierai votre loi, et je la garderai de tout mon cœur.",
+     "page": 61,
+     "ligne_la": "34"
+    },
+    {
+     "n": 35,
+     "fr": "Conduisez-moi dans le sentier de vos commandements, car j'y ai mis mon affection.",
+     "page": 61,
+     "ligne_la": "35"
+    },
+    {
+     "n": 36,
+     "fr": "Faites pencher mon cœur vers vos préceptes, et non vers l'avarice.",
+     "page": 61,
+     "ligne_la": "36"
+    },
+    {
+     "n": 37,
+     "fr": "Détournez mes yeux, pour qu'ils ne voient pas la vanité ; faites-moi vivre dans votre voie.",
+     "page": 61,
+     "ligne_la": "37"
+    },
+    {
+     "n": 38,
+     "fr": "Établissez votre parole dans votre serviteur par votre crainte.",
+     "page": 61,
+     "ligne_la": "38"
+    },
+    {
+     "n": 39,
+     "fr": "Éloignez de moi l'opprobre que j'appréhende, car vos jugements sont pleins de douceur.",
+     "page": 61,
+     "ligne_la": "39"
+    },
+    {
+     "n": 40,
+     "fr": "Voici, j'ai désire vos commandements ; faites-moi vivre dans votre justice.",
+     "page": 61,
+     "ligne_la": "40",
+     "lecture": [
+      "p. 61 : j'ai désire — « désire » sans accent, tel qu'imprimé (pour « désiré »)"
+     ]
+    },
+    {
+     "n": 41,
+     "fr": "Que votre miséricorde vienne sur moi, Seigneur, et votre salut, selon votre parole.",
+     "page": 61,
+     "ligne_la": "41"
+    },
+    {
+     "n": 42,
+     "fr": "Et je pourrai répondre à ceux qui m'insultent que j'espère en vos paroles.",
+     "page": 61,
+     "ligne_la": "42"
+    },
+    {
+     "n": 43,
+     "fr": "Et n'ôtez pas entièrement de ma bouche la parole de la vérité, car j'espère en vos jugements.",
+     "page": 61,
+     "ligne_la": "43"
+    },
+    {
+     "n": 44,
+     "fr": "Et je garderai toujours votre loi, dans les siècles et dans les siècles des siècles.",
+     "page": 61,
+     "ligne_la": "44"
+    },
+    {
+     "n": 45,
+     "fr": "Je marchais au large, car j'ai cherché vos commandements.",
+     "page": 61,
+     "ligne_la": "45"
+    },
+    {
+     "n": 46,
+     "fr": "Je parlais de vos préceptes devant les rois, et je n'en avais pas de confusion.",
+     "page": 61,
+     "ligne_la": "46"
+    },
+    {
+     "n": 47,
+     "fr": "Et je méditais sur vos commandements, car je les aime.",
+     "page": 61,
+     "ligne_la": "47"
+    },
+    {
+     "n": 48,
+     "fr": "J'ai levé mes mains vers vos commandements que j'aime, et je m'exerçais dans vos ordonnances.",
+     "page": 61,
+     "ligne_la": "48"
+    },
+    {
+     "n": 49,
+     "fr": "Souvenez-vous de votre promesse à votre serviteur ; par elle vous m'avez donné l'espérance.",
+     "page": 63,
+     "ligne_la": "49"
+    },
+    {
+     "n": 50,
+     "fr": "C'est ce qui m'a consolé dans mon humiliation, parce que votre parole m'a donné la vie.",
+     "page": 63,
+     "ligne_la": "50"
+    },
+    {
+     "n": 51,
+     "fr": "Les superbes agissaient constamment avec injustice ; mais je ne me suis pas détourné de votre loi.",
+     "page": 63,
+     "ligne_la": "51"
+    },
+    {
+     "n": 52,
+     "fr": "Je me suis souvenu, Seigneur, de vos jugements antiques, et j'ai été consolé.",
+     "page": 63,
+     "ligne_la": "52"
+    },
+    {
+     "n": 53,
+     "fr": "Je suis tombé en défaillance, à cause des pécheurs qui abandonnent votre loi.",
+     "page": 63,
+     "ligne_la": "53"
+    },
+    {
+     "n": 54,
+     "fr": "Vos préceptes sont le sujet de mes cantiques, dans le lieu de mon exil.",
+     "page": 63,
+     "ligne_la": "54"
+    },
+    {
+     "n": 55,
+     "fr": "La nuit, je me suis souvenu de votre nom, Seigneur, et j'ai gardé votre loi.",
+     "page": 63,
+     "ligne_la": "55"
+    },
+    {
+     "n": 56,
+     "fr": "Cela m'est arrivé, parce que j'ai recherché vos préceptes.",
+     "page": 63,
+     "ligne_la": "56"
+    },
+    {
+     "n": 57,
+     "fr": "Vous êtes mon partage, Seigneur ; j'ai résolu de garder votre loi.",
+     "page": 63,
+     "ligne_la": "57"
+    },
+    {
+     "n": 58,
+     "fr": "J'ai imploré votre face de tout mon cœur ; ayez pitié de moi selon votre parole.",
+     "page": 63,
+     "ligne_la": "58"
+    },
+    {
+     "n": 59,
+     "fr": "J'ai réfléchi à mes voies, et j'ai tourné mes pas vers vos préceptes.",
+     "page": 63,
+     "ligne_la": "59"
+    },
+    {
+     "n": 60,
+     "fr": "Je suis prêt, sans que rien puisse me troubler, à garder vos commandements.",
+     "page": 63,
+     "ligne_la": "60"
+    },
+    {
+     "n": 61,
+     "fr": "Les filets des pécheurs m'ont enveloppé, mais je n'ai pas oublié votre loi.",
+     "page": 63,
+     "ligne_la": "61"
+    },
+    {
+     "n": 62,
+     "fr": "Au milieu de la nuit je me levais pour vous louer, au sujet des jugements de votre justice.",
+     "page": 63,
+     "ligne_la": "62"
+    },
+    {
+     "n": 63,
+     "fr": "Je suis l'associé de tous ceux qui vous craignent, et qui gardent vos commandements.",
+     "page": 63,
+     "ligne_la": "63"
+    },
+    {
+     "n": 64,
+     "fr": "La terre, Seigneur, est pleine de votre miséricorde ; enseignez-moi vos ordonnances.",
+     "page": 63,
+     "ligne_la": "64"
+    },
+    {
+     "n": 65,
+     "fr": "Vous avez usé de bonté envers votre serviteur, ô Seigneur, selon votre parole.",
+     "page": 65,
+     "ligne_la": "65"
+    },
+    {
+     "n": 66,
+     "fr": "Enseignez-moi la bonté, la discipline et la science, parce que j'ai cru à vos commandements.",
+     "page": 65,
+     "ligne_la": "66"
+    },
+    {
+     "n": 67,
+     "fr": "Avant d'être humilié, j'ai péché ; c'est pour cela que j'ai gardé votre parole.",
+     "page": 65,
+     "ligne_la": "67"
+    },
+    {
+     "n": 68,
+     "fr": "Vous êtes bon, et dans votre bonté enseignez-moi vos préceptes.",
+     "page": 65,
+     "ligne_la": "68"
+    },
+    {
+     "n": 69,
+     "fr": "L'iniquité des superbes s'est multipliée contre moi ; et moi, j'étudie de tout mon cœur vos commandements.",
+     "page": 65,
+     "ligne_la": "69"
+    },
+    {
+     "n": 70,
+     "fr": "Leur cœur s'est épaissi comme le lait ; mais moi j'ai médité votre loi.",
+     "page": 65,
+     "ligne_la": "70"
+    },
+    {
+     "n": 71,
+     "fr": "Il m'est bon que vous m'ayez humilié, afin que j'apprenne vos préceptes.",
+     "page": 65,
+     "ligne_la": "71"
+    },
+    {
+     "n": 72,
+     "fr": "Mieux vaut pour moi la loi de votre bouche, que mille objets d'or et d'argent.",
+     "page": 65,
+     "ligne_la": "72"
+    },
+    {
+     "n": 73,
+     "fr": "Vos mains m'ont fait et m'ont formé ; donnez-moi l'intelligence, pour que j'apprenne vos commandements.",
+     "page": 65,
+     "ligne_la": "73"
+    },
+    {
+     "n": 74,
+     "fr": "Ceux qui vous craignent me verront et se réjouiront, parce que j'ai mis mon espérance dans vos paroles.",
+     "page": 65,
+     "ligne_la": "74"
+    },
+    {
+     "n": 75,
+     "fr": "J'ai reconnu, Seigneur, que vos jugements sont équitables, et que vous m'avez humilié selon votre justice.",
+     "page": 65,
+     "ligne_la": "75"
+    },
+    {
+     "n": 76,
+     "fr": "Que votre miséricorde soit ma consolation, selon la parole donnée à votre serviteur.",
+     "page": 65,
+     "ligne_la": "76"
+    },
+    {
+     "n": 77,
+     "fr": "Que vos compassions viennent sur moi, afin que je vive ; car votre loi est ma méditation. ;",
+     "page": 65,
+     "ligne_la": "77"
+    },
+    {
+     "n": 78,
+     "fr": "Qu'ils soient confondus les superbes qui m'ont traité injustement ; mais moi, je m'exercerai dans vos commandements.",
+     "page": 65,
+     "ligne_la": "78"
+    },
+    {
+     "n": 79,
+     "fr": "Que ceux qui vous craignent se tournent vers moi, et ceux qui connaissent vos préceptes.",
+     "page": 65,
+     "ligne_la": "79"
+    },
+    {
+     "n": 80,
+     "fr": "Que mon cœur soit sans tache envers vos lois, afin que je ne sois pas confondu.",
+     "page": 65,
+     "ligne_la": "80"
+    },
+    {
+     "n": 81,
+     "fr": "Mon âme languit après votre salut, et j'espère fermement en votre parole.",
+     "page": 67,
+     "ligne_la": "81"
+    },
+    {
+     "n": 82,
+     "fr": "Mes yeux languissent après votre parole, disant : Quand me consolerez-vous ?",
+     "page": 67,
+     "ligne_la": "82"
+    },
+    {
+     "n": 83,
+     "fr": "Car je suis devenu comme une outre exposée à la gelée ; je n'ai pas oublié vos ordonnances.",
+     "page": 67,
+     "ligne_la": "83"
+    },
+    {
+     "n": 84,
+     "fr": "Quel est le nombre des jours de votre serviteur ? Quand ferez-vous justice de ceux qui me persécutent ?",
+     "page": 67,
+     "ligne_la": "84"
+    },
+    {
+     "n": 85,
+     "fr": "Les méchants m'ont entretenu de choses vaines ; mais ce n'était pas comme votre loi.",
+     "page": 67,
+     "ligne_la": "85"
+    },
+    {
+     "n": 86,
+     "fr": "Tous vos commandements sont la vérité même. Ils m'ont persécuté injustement ; secourez-moi.",
+     "page": 67,
+     "ligne_la": "86"
+    },
+    {
+     "n": 87,
+     "fr": "Peu s'en est fallu qu'ils ne m'anéantissent dans le pays ; mais je n'ai pas abandonné vos commandements.",
+     "page": 67,
+     "ligne_la": "87"
+    },
+    {
+     "n": 88,
+     "fr": "Faites-moi vivre selon votre miséricorde, et je garderai les préceptes de votre bouche.",
+     "page": 67,
+     "ligne_la": "88"
+    },
+    {
+     "n": 89,
+     "fr": "A tout jamais, Seigneur, votre parole subsiste dans le ciel.",
+     "page": 67,
+     "ligne_la": "89"
+    },
+    {
+     "n": 90,
+     "fr": "Votre vérité subsiste de génération en génération ; vous avez fondé la terre, et elle demeure ferme.",
+     "page": 67,
+     "ligne_la": "90"
+    },
+    {
+     "n": 91,
+     "fr": "C'est d'après votre ordre que le jour subsiste, car toutes choses vous obéissent.",
+     "page": 67,
+     "ligne_la": "91"
+    },
+    {
+     "n": 92,
+     "fr": "Si je n'avais fait ma méditation de votre loi, j'aurais peut-être péri dans mon humiliation.",
+     "page": 67,
+     "ligne_la": "92"
+    },
+    {
+     "n": 93,
+     "fr": "Jamais je n'oublierai vos préceptes, car c'est par eux que vous m'avez donné la vie.",
+     "page": 67,
+     "ligne_la": "93"
+    },
+    {
+     "n": 94,
+     "fr": "Je suis à vous ; sauvez-moi, parce que j'ai recherché vos préceptes.",
+     "page": 67,
+     "ligne_la": "94"
+    },
+    {
+     "n": 95,
+     "fr": "Les pécheurs m'ont attendu pour me perdre ; mais j'ai compris vos enseignements.",
+     "page": 67,
+     "ligne_la": "95"
+    },
+    {
+     "n": 96,
+     "fr": "J'ai vu la fin de toute perfection ; votre loi a une étendue infinie.",
+     "page": 67,
+     "ligne_la": "96"
+    },
+    {
+     "n": 97,
+     "fr": "Que j'aime votre loi, Seigneur ! Tout le jour elle est ma méditation.",
+     "page": 69,
+     "ligne_la": "97"
+    },
+    {
+     "n": 98,
+     "fr": "Vous m'avez rendu plus sage que mes ennemis par votre commandement, car il est perpétuellement avec moi.",
+     "page": 69,
+     "ligne_la": "98"
+    },
+    {
+     "n": 99,
+     "fr": "J'ai eu plus d'intelligence que ceux qui m'instruisaient, car vos témoignages sont ma méditation.",
+     "page": 69,
+     "ligne_la": "99"
+    },
+    {
+     "n": 100,
+     "fr": "J'ai été plus intelligent que les vieillards, parce que j'ai recherché vos commandements.",
+     "page": 69,
+     "ligne_la": "100"
+    },
+    {
+     "n": 101,
+     "fr": "J'ai détourné mes pieds de toute voie mauvaise, afin de garder vos paroles.",
+     "page": 69,
+     "ligne_la": "101"
+    },
+    {
+     "n": 102,
+     "fr": "Je ne me suis point écarté de vos jugements, parce que c'est vous qui m'avez prescrit une loi,",
+     "page": 69,
+     "ligne_la": "102"
+    },
+    {
+     "n": 103,
+     "fr": "Que vos paroles sont douces à mon palais ! plus que le miel à ma bouche !",
+     "page": 69,
+     "ligne_la": "103"
+    },
+    {
+     "n": 104,
+     "fr": "Vos préceptes m'ont donné l'intelligence ; c'est pourquoi je hais toute voie d'iniquité.",
+     "page": 69,
+     "ligne_la": "104"
+    },
+    {
+     "n": 105,
+     "fr": "Votre parole est une lampe devant mes pas, et une lumière sur mon sentier.",
+     "page": 69,
+     "ligne_la": "105"
+    },
+    {
+     "n": 106,
+     "fr": "J'ai juré et résolu de garder les jugements de votre justice.",
+     "page": 69,
+     "ligne_la": "106"
+    },
+    {
+     "n": 107,
+     "fr": "J'ai été profondément humilié, Seigneur ; faites-moi vivre selon votre parole.",
+     "page": 69,
+     "ligne_la": "107"
+    },
+    {
+     "n": 108,
+     "fr": "Agréez, Seigneur, l'offrande volontaire de ma bouche, et enseignez-moi vos jugements.",
+     "page": 69,
+     "ligne_la": "108"
+    },
+    {
+     "n": 109,
+     "fr": "Mon âme est toujours entre mes mains, et je n'ai pas oublié votre loi.",
+     "page": 69,
+     "ligne_la": "109"
+    },
+    {
+     "n": 110,
+     "fr": "Les pécheurs m'ont tendu un piège, et je n'ai point erré loin de vos commandements.",
+     "page": 69,
+     "ligne_la": "110"
+    },
+    {
+     "n": 111,
+     "fr": "J'ai acquis vos enseignements comme un héritage éternel, car ils sont l'allégresse de mon cœur.",
+     "page": 69,
+     "ligne_la": "111"
+    },
+    {
+     "n": 112,
+     "fr": "J'ai incliné mon cœur à pratiquer vos lois, constamment, à cause de la récompense.",
+     "page": 69,
+     "ligne_la": "112"
+    },
+    {
+     "n": 113,
+     "fr": "J'ai haï les hommes injustes, et j'ai aimé votre loi.",
+     "page": 69,
+     "ligne_la": "113"
+    },
+    {
+     "n": 114,
+     "fr": "Vous êtes mon défenseur et mon soutien, et j'ai mis toute mon espérance en votre parole.",
+     "page": 71,
+     "ligne_la": "114"
+    },
+    {
+     "n": 115,
+     "fr": "Éloignez-vous de moi, méchants, et j'étudierai les commandements de mon Dieu.",
+     "page": 71,
+     "ligne_la": "115"
+    },
+    {
+     "n": 116,
+     "fr": "Soutenez-moi selon votre parole, et je vivrai ; ne me rendez pas confus dans mon attente.",
+     "page": 71,
+     "ligne_la": "116"
+    },
+    {
+     "n": 117,
+     "fr": "Aidez-moi, et je serai sauvé, et je méditerai sans cesse vos lois.",
+     "page": 71,
+     "ligne_la": "117"
+    },
+    {
+     "n": 118,
+     "fr": "Vous méprisez tous ceux qui s'éloignent de vos jugements, car leur pensée est injuste.",
+     "page": 71,
+     "ligne_la": "118"
+    },
+    {
+     "n": 119,
+     "fr": "J'ai regardé comme des prévaricateurs tous les pécheurs de la terre ; c'est pourquoi j'ai aimé vos témoignages.",
+     "page": 71,
+     "ligne_la": "119"
+    },
+    {
+     "n": 120,
+     "fr": "Transpercez ma chair par votre crainte ; je redoute vos jugements.",
+     "page": 71,
+     "ligne_la": "120"
+    },
+    {
+     "n": 121,
+     "fr": "J'ai accompli le droit et la justice, ne me livrez pas à ceux qui me calomnient.",
+     "page": 71,
+     "ligne_la": "121"
+    },
+    {
+     "n": 122,
+     "fr": "Prenez votre serviteur sous votre garde pour son bien ; que les superbes cessent de me calomnier.",
+     "page": 71,
+     "ligne_la": "122"
+    },
+    {
+     "n": 123,
+     "fr": "Mes yeux languissent après votre salut, et après les promesses de votre justice.",
+     "page": 71,
+     "ligne_la": "123"
+    },
+    {
+     "n": 124,
+     "fr": "Traitez votre serviteur selon votre miséricorde, et enseignez-moi vos préceptes.",
+     "page": 71,
+     "ligne_la": "124"
+    },
+    {
+     "n": 125,
+     "fr": "Je suis votre serviteur ; donnez-moi l'intelligence, afin que je connaisse vos témoignages.",
+     "page": 71,
+     "ligne_la": "125"
+    },
+    {
+     "n": 126,
+     "fr": "Il est temps d'agir, Seigneur ; ils ont renversé votre loi.",
+     "page": 71,
+     "ligne_la": "126"
+    },
+    {
+     "n": 127,
+     "fr": "C'est pourquoi j'ai aimé vos commandements plus que l'or et la topaze.",
+     "page": 71,
+     "ligne_la": "127"
+    },
+    {
+     "n": 128,
+     "fr": "C'est pourquoi je me suis conformé à tous vos commandements ; ; j'ai haï toute voie injuste.",
+     "page": 71,
+     "ligne_la": "128"
+    },
+    {
+     "n": 129,
+     "fr": "Vos témoignages sont admirables ; aussi mon âme les étudie avec soin.",
+     "page": 73,
+     "ligne_la": "129"
+    },
+    {
+     "n": 130,
+     "fr": "La révélation de vos paroles éclaire et donne l'intelligence aux petits.",
+     "page": 73,
+     "ligne_la": "130"
+    },
+    {
+     "n": 131,
+     "fr": "J'ai ouvert la bouche, et j'ai attiré l'air, parce que je désirais vos commandements.",
+     "page": 73,
+     "ligne_la": "131"
+    },
+    {
+     "n": 132,
+     "fr": "Regardez-moi, et ayez pitié de moi ; c'est justice envers ceux qui aiment votre nom.",
+     "page": 73,
+     "ligne_la": "132"
+    },
+    {
+     "n": 133,
+     "fr": "Conduisez mes pas selon votre parole, et que nulle injustice ne domine sur moi.",
+     "page": 73,
+     "ligne_la": "133"
+    },
+    {
+     "n": 134,
+     "fr": "Délivrez-moi des calomnies des hommes, afin que je garde vos commandements.",
+     "page": 73,
+     "ligne_la": "134"
+    },
+    {
+     "n": 135,
+     "fr": "Faites luire votre visage sur votre serviteur, et enseignez-moi vos préceptes.",
+     "page": 73,
+     "ligne_la": "135"
+    },
+    {
+     "n": 136,
+     "fr": "Mes yeux ont répandu des ruisseaux de larmes, parce qu'on n'observe pas votre loi.",
+     "page": 73,
+     "ligne_la": "136"
+    },
+    {
+     "n": 137,
+     "fr": "Vous êtes juste, Seigneur, et votre jugement est droit.",
+     "page": 73,
+     "ligne_la": "137"
+    },
+    {
+     "n": 138,
+     "fr": "Vous avez établi vos témoignages sur la justice, et votre vérité à un degré admirable.",
+     "page": 73,
+     "ligne_la": "138"
+    },
+    {
+     "n": 139,
+     "fr": "Mon zèle m'a fait sécher, parce que mes ennemis ont oublié vos paroles.",
+     "page": 73,
+     "ligne_la": "139"
+    },
+    {
+     "n": 140,
+     "fr": "Votre parole est tout enflammée, et votre serviteur l'aime.",
+     "page": 73,
+     "ligne_la": "140"
+    },
+    {
+     "n": 141,
+     "fr": "Je suis jeune et méprisé ; je n'ai pas oublié vos ordonnances.",
+     "page": 73,
+     "ligne_la": "141"
+    },
+    {
+     "n": 142,
+     "fr": "Votre justice est une justice éternelle, et votre loi est la vérité.",
+     "page": 73,
+     "ligne_la": "142"
+    },
+    {
+     "n": 143,
+     "fr": "La détresse et l'angoisse m'ont saisi ; vos commandements sont ma méditation.",
+     "page": 73,
+     "ligne_la": "143"
+    },
+    {
+     "n": 144,
+     "fr": "Vos préceptes sont éternellement justes ; donnez-moi l'intelligence, et je vivrai.",
+     "page": 73,
+     "ligne_la": "144"
+    },
+    {
+     "n": 145,
+     "fr": "J'ai crié de tout mon cœur ; exaucez-moi, Seigneur ; je rechercherai vos ordres.",
+     "page": 75,
+     "ligne_la": "145"
+    },
+    {
+     "n": 146,
+     "fr": "J'ai crié vers vous ; sauvez-moi, afin que je garde vos commandements.",
+     "page": 75,
+     "ligne_la": "146"
+    },
+    {
+     "n": 147,
+     "fr": "J'ai devancé l'aurore, et j'ai crié, parce que j'ai beaucoup espéré en vos paroles.",
+     "page": 75,
+     "ligne_la": "147"
+    },
+    {
+     "n": 148,
+     "fr": "Mes yeux ont devancé l'aurore, se tournant vers vous, afin de méditer vos paroles.",
+     "page": 75,
+     "ligne_la": "148"
+    },
+    {
+     "n": 149,
+     "fr": "Écoutez ma voix selon votre miséricorde, Seigneur, et faites-moi vivre selon votre justice.",
+     "page": 75,
+     "ligne_la": "149"
+    },
+    {
+     "n": 150,
+     "fr": "Mes persécuteurs se sont approchés de l'iniquité ; ils se sont éloignés de votre loi.",
+     "page": 75,
+     "ligne_la": "150"
+    },
+    {
+     "n": 151,
+     "fr": "Vous êtes proche, Seigneur, et toutes vos voies sont la vérité.",
+     "page": 75,
+     "ligne_la": "151"
+    },
+    {
+     "n": 152,
+     "fr": "J'ai reconnu dès le commencement, au sujet de vos témoignages que vous les avez établis à jamais.",
+     "page": 75,
+     "ligne_la": "152"
+    },
+    {
+     "n": 153,
+     "fr": "Voyez mon humiliation, et délivrez-moi, car je n'ai point oublié votre loi.",
+     "page": 75,
+     "ligne_la": "153"
+    },
+    {
+     "n": 154,
+     "fr": "Jugez ma cause, et rachetez-moi ; rendez-moi la vie selon votre parole.",
+     "page": 75,
+     "ligne_la": "154"
+    },
+    {
+     "n": 155,
+     "fr": "Le salut est loin des pécheurs, parce qu'ils n'ont pas recherché vos lois.",
+     "page": 75,
+     "ligne_la": "155"
+    },
+    {
+     "n": 156,
+     "fr": "Vos miséricordes sont nombreuses, Seigneur ; rendez-moi la vie selon votre jugement.",
+     "page": 75,
+     "ligne_la": "156"
+    },
+    {
+     "n": 157,
+     "fr": "Ceux qui me persécutent et qui m'affligent sont nombreux ; je ne me suis pas détourné de vos témoignages.",
+     "page": 75,
+     "ligne_la": "157"
+    },
+    {
+     "n": 158,
+     "fr": "J'ai vu les prévaricateurs, et je séchais de douleur, parce qu'ils n'ont pas gardé vos paroles.",
+     "page": 75,
+     "ligne_la": "158"
+    },
+    {
+     "n": 159,
+     "fr": "Voyez, Seigneur, combien j'ai aimé vos préceptes ; rendez-moi la vie par votre miséricorde.",
+     "page": 75,
+     "ligne_la": "159"
+    },
+    {
+     "n": 160,
+     "fr": "La vérité est le principe de vos paroles ; tous les jugements de votre justice sont éternels.",
+     "page": 75,
+     "ligne_la": "160"
+    },
+    {
+     "n": 161,
+     "fr": "Les princes m'ont persécuté sans raison, et mon cœur n'a été effrayé que de vos paroles.",
+     "page": 77,
+     "ligne_la": "161"
+    },
+    {
+     "n": 162,
+     "fr": "Je mets ma joie dans vos ordres, comme celui qui a trouvé de riches dépouilles.",
+     "page": 77,
+     "ligne_la": "162"
+    },
+    {
+     "n": 163,
+     "fr": "J'ai haï l'iniquité, et je l'ai eue en horreur ; mais j'ai aimé votre loi.",
+     "page": 77,
+     "ligne_la": "163"
+    },
+    {
+     "n": 164,
+     "fr": "Sept fois le jour j'ai dit votre louange, au sujet des jugements de votre justice.",
+     "page": 77,
+     "ligne_la": "164"
+    },
+    {
+     "n": 165,
+     "fr": "Il y a une grande paix pour ceux qui aiment votre loi, et rien n'est pour eux une occasion de chute.",
+     "page": 77,
+     "ligne_la": "165"
+    },
+    {
+     "n": 166,
+     "fr": "J'attendais votre salut, Seigneur, et j'ai aimé vos commandements.",
+     "page": 77,
+     "ligne_la": "166"
+    },
+    {
+     "n": 167,
+     "fr": "Mon âme a gardé vos témoignages, et les a aimés ardemment.",
+     "page": 77,
+     "ligne_la": "167"
+    },
+    {
+     "n": 168,
+     "fr": "J'ai observé vos commandements et vos témoignages, car toutes mes voies sont devant vous.",
+     "page": 77,
+     "ligne_la": "168"
+    },
+    {
+     "n": 169,
+     "fr": "Que ma prière s'approche jusqu'à vous, Seigneur ; selon votre promesse, donnez-moi l'intelligence.",
+     "page": 77,
+     "ligne_la": "169"
+    },
+    {
+     "n": 170,
+     "fr": "Que ma demande pénètre en votre présence ; délivrez-moi selon votre promesse.",
+     "page": 77,
+     "ligne_la": "170"
+    },
+    {
+     "n": 171,
+     "fr": "Mes lèvres feront retentir un hymne, lorsque vous m'aurez enseigné vos préceptes.",
+     "page": 77,
+     "ligne_la": "171"
+    },
+    {
+     "n": 172,
+     "fr": "Ma langue publiera votre parole, car tous vos commandements sont justes.",
+     "page": 77,
+     "ligne_la": "172"
+    },
+    {
+     "n": 173,
+     "fr": "Que votre main s'étende pour me sauver, car j'ai choisi vos commandements.",
+     "page": 77,
+     "ligne_la": "173"
+    },
+    {
+     "n": 174,
+     "fr": "J'ai désiré votre salut, Seigneur, et votre loi est ma méditation.",
+     "page": 77,
+     "ligne_la": "174",
+     "lecture": [
+      "p. 77 : J'ai désiré votre salut — point après « Seigneur, » : tache ou point parasite, non repris"
+     ]
+    },
+    {
+     "n": 175,
+     "fr": "Mon âme vivra et vous louera, et vos jugements seront mon secours.",
+     "page": 77,
+     "ligne_la": "175"
+    },
+    {
+     "n": 176,
+     "fr": "J'ai erré comme une brebis perdue ; cherchez votre serviteur, car je n'ai point oublié vos commandements.",
+     "page": 77,
+     "ligne_la": "176"
+    }
+   ],
+   "lignes_la": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "18",
+    "19",
+    "20",
+    "21",
+    "22",
+    "23",
+    "24",
+    "25",
+    "26",
+    "27",
+    "28",
+    "29",
+    "30",
+    "31",
+    "32",
+    "33",
+    "34",
+    "35",
+    "36",
+    "37",
+    "38",
+    "39",
+    "40",
+    "41",
+    "42",
+    "43",
+    "44",
+    "45",
+    "46",
+    "47",
+    "48",
+    "49",
+    "50",
+    "51",
+    "52",
+    "53",
+    "54",
+    "55",
+    "56",
+    "57",
+    "58",
+    "59",
+    "60",
+    "61",
+    "62",
+    "63",
+    "64",
+    "65",
+    "66",
+    "67",
+    "68",
+    "69",
+    "70",
+    "71",
+    "72",
+    "73",
+    "74",
+    "75",
+    "76",
+    "77",
+    "78",
+    "79",
+    "80",
+    "81",
+    "82",
+    "83",
+    "84",
+    "85",
+    "86",
+    "87",
+    "88",
+    "89",
+    "90",
+    "91",
+    "92",
+    "93",
+    "94",
+    "95",
+    "96",
+    "97",
+    "98",
+    "99",
+    "100",
+    "101",
+    "102",
+    "103",
+    "104",
+    "105",
+    "106",
+    "107",
+    "108",
+    "109",
+    "110",
+    "111",
+    "112",
+    "113",
+    "114",
+    "115",
+    "116",
+    "117",
+    "118",
+    "119",
+    "120",
+    "121",
+    "122",
+    "123",
+    "124",
+    "125",
+    "126",
+    "127",
+    "128",
+    "129",
+    "130",
+    "131",
+    "132",
+    "133",
+    "134",
+    "135",
+    "136",
+    "137",
+    "138",
+    "139",
+    "140",
+    "141",
+    "142",
+    "143",
+    "144",
+    "145",
+    "146",
+    "147",
+    "148",
+    "149",
+    "150",
+    "151",
+    "152",
+    "153",
+    "154",
+    "155",
+    "156",
+    "157",
+    "158",
+    "159",
+    "160",
+    "161",
+    "162",
+    "163",
+    "164",
+    "165",
+    "166",
+    "167",
+    "168",
+    "169",
+    "170",
+    "171",
+    "172",
+    "173",
+    "174",
+    "175",
+    "176"
+   ],
+   "pages": [
+    55,
+    57,
+    59,
+    61,
+    63,
+    65,
+    67,
+    69,
+    71,
+    73,
+    75,
+    77
+   ]
+  },
+  {
+   "numero": 133,
+   "titre": "Psaume CXXXIII",
+   "versets": [
+    {
+     "n": 1,
+     "fr": "Maintenant bénissez le Seigneur, vous tous, serviteurs du Seigneur, qui vous tenez dans la maison du Seigneur, dans les parvis de la maison de notre Dieu.",
+     "page": 97,
+     "ligne_la": "1a"
+    },
+    {
+     "n": 2,
+     "fr": "Pendant les nuits levez vos mains vers le sanctuaire, et bénissez le Seigneur.",
+     "page": 97,
+     "ligne_la": "2"
+    },
+    {
+     "n": 3,
+     "fr": "Que le Seigneur te bénisse de Sion, lui qui a fait le ciel et la terre !",
+     "page": 97,
+     "ligne_la": "3"
+    }
+   ],
+   "lignes_la": [
+    "1a",
+    "1b",
+    "2",
+    "3"
+   ],
+   "pages": [
+    97
    ]
   },
   {
@@ -1675,14 +3726,12 @@
     {
      "n": 52,
      "fr": "Vous êtes béni, Seigneur, Dieu de nos pères ; vous êtes louable, et glorieux, et exalté dans tous les siècles ; et le saint nom de votre gloire est béni ; il est louable et exalté dans tous les siècles.",
-     "page": 53,
-     "ligne_la": "52"
+     "page": 53
     },
     {
      "n": 53,
      "fr": "Vous êtes béni dans le temple saint de votre gloire, et élevé au-dessus de toute louange et de toute gloire dans tous les siècles.",
      "page": 53,
-     "ligne_la": "53",
      "lecture": [
       "p. 53 : temple saint — v. 53 : « siècles » sous une tache (lu « sièeles » par l'OCR) ; lecture sûre par les versets voisins"
      ]
@@ -1690,45 +3739,149 @@
     {
      "n": 54,
      "fr": "Vous êtes béni sur le trône de votre royauté, et élevé au-dessus de toute louange et de toute gloire dans tous les siècles.",
-     "page": 53,
-     "ligne_la": "54"
+     "page": 53
     },
     {
      "n": 55,
      "fr": "Vous êtes béni, vous qui contemplez les abîmes et qui êtes assis sur les chérubins ; vous êtes louable et élevé au-dessus de toute gloire dans tous les siècles.",
-     "page": 53,
-     "ligne_la": "55"
+     "page": 53
     },
     {
      "n": 56,
      "fr": "Vous êtes béni dans le firmament du ciel ; vous êtes louable et glorieux dans tous les siècles.",
-     "page": 53,
-     "ligne_la": "56"
+     "page": 53
     },
     {
      "n": 57,
      "fr": "Toutes les œuvres du Seigneur, bénissez le Seigneur ; louez-le et exaltez-le dans tous les siècles.",
-     "page": 53,
-     "ligne_la": "57"
+     "page": 53
+    }
+   ],
+   "note": "Divinum Officium numérote ses lignes 3:52 à 3:58 (le v. 52 en deux lignes) : numéros de Fillion, sans alignement ligne à ligne.",
+   "pages": [
+    53
+   ]
+  },
+  {
+   "do": "Psalm232",
+   "titre": "Cantique de la Bienheureuse Vierge Marie",
+   "reference": "Luc. i, 46-55",
+   "versets": [
+    {
+     "n": 46,
+     "fr": "Mon âme glorifie le Seigneur,",
+     "page": 91,
+     "ligne_la": "46"
     },
     {
-     "n": 58,
-     "fr": "O Dieu, sauvez-moi par votre nom, et rendez-moi justice par votre puissance.",
-     "page": 53,
-     "ligne_la": "58"
+     "n": 47,
+     "fr": "et mon esprit a tressailli d'allégresse en Dieu mon sauveur,",
+     "page": 91,
+     "ligne_la": "47"
+    },
+    {
+     "n": 48,
+     "fr": "parce qu'il a jeté les yeux sur la bassesse de sa servante ; car voici que toutes les générations me diront désormais bienheureuse,",
+     "page": 91,
+     "ligne_la": "48"
+    },
+    {
+     "n": 49,
+     "fr": "parce que celui qui est puissant a fait en moi de grandes choses, et son nom est saint ;",
+     "page": 91,
+     "ligne_la": "49"
+    },
+    {
+     "n": 50,
+     "fr": "et sa miséricorde se répand d'âge en âge sur ceux qui le craignent.",
+     "page": 91,
+     "ligne_la": "50"
+    },
+    {
+     "n": 51,
+     "fr": "Il a déployé la force de son bras ; il a dispersé ceux qui s'enorgueillissent dans les pensées de leur cœur.",
+     "page": 91,
+     "ligne_la": "51"
+    },
+    {
+     "n": 52,
+     "fr": "Il a renversé les puissants de leur trône, et il a élevé les humbles.",
+     "page": 91,
+     "ligne_la": "52"
+    },
+    {
+     "n": 53,
+     "fr": "Il a rempli de biens les affamés, et il a renvoyé les riches les mains vides.",
+     "page": 91,
+     "ligne_la": "53"
+    },
+    {
+     "n": 54,
+     "fr": "Il a relevé Israël, son serviteur, se souvenant de sa miséricorde :",
+     "page": 91,
+     "ligne_la": "54"
+    },
+    {
+     "n": 55,
+     "fr": "selon ce qu'il avait dit à nos pères, à Abraham et à sa race pour toujours.",
+     "page": 91,
+     "ligne_la": "55"
     }
    ],
    "lignes_la": [
+    "46",
+    "47",
+    "48",
+    "49",
+    "50",
+    "51",
     "52",
     "53",
     "54",
-    "55",
-    "56",
-    "57",
-    "58"
+    "55"
    ],
    "pages": [
-    53
+    91
+   ]
+  },
+  {
+   "do": "Psalm233",
+   "titre": "Cantique de Siméon",
+   "reference": "Luc. ii, 29-32",
+   "versets": [
+    {
+     "n": 29,
+     "fr": "Maintenant, Seigneur, vous laisserez votre serviteur, selon votre parole, s'en aller en paix,",
+     "page": 97,
+     "ligne_la": "29"
+    },
+    {
+     "n": 30,
+     "fr": "puisque mes yeux ont vu votre salut,",
+     "page": 97,
+     "ligne_la": "30"
+    },
+    {
+     "n": 31,
+     "fr": "que vous avez préparé à la face de tous les peuples :",
+     "page": 97,
+     "ligne_la": "31"
+    },
+    {
+     "n": 32,
+     "fr": "lumière pour éclairer les nations, et gloire d'Israël votre peuple.",
+     "page": 97,
+     "ligne_la": "32"
+    }
+   ],
+   "lignes_la": [
+    "29",
+    "30",
+    "31",
+    "32"
+   ],
+   "pages": [
+    97
    ]
   }
  ]

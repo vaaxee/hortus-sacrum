@@ -102,7 +102,8 @@ ok
 == p49
 f: "retentit"
 ?: retentit — en italique ; la troisième lettre ressemble à un l (« relentit ») : t italique lu « retentit »
-?: tomber,. — « tomber,. » : point après la virgule, tel qu'imprimé (sans doute parasite)
+r: prêt à tomber,. => prêt à tomber,
+?: prêt à tomber — point après la virgule (« tomber,. ») : tache ou point parasite, non repris
 ok
 
 == p51
@@ -114,10 +115,123 @@ ok
 == p53
 f: "" "" T T T T T T A "Vous" A A "O"
 h: 9 Cantique des trois jeunes gens. Dan. iii, 52-57.
+h: 28 Psaume LIII
 r: nos pères ; [siècles ; => nos pères ;
 r: exalté dans tous les\n => exalté dans tous les siècles ;\n
 r: les sièeles. => les siècles.
 r: du ciel ; tous les siècles. => du ciel ;
 r: toute gloire dans\n => toute gloire dans tous les siècles.\n
 ?: temple saint — v. 53 : « siècles » sous une tache (lu « sièeles » par l'OCR) ; lecture sûre par les versets voisins
+ok
+
+== p55
+f: "" "" "O" "et" T T
+ok
+
+== p57
+f: A A T A A
+ok
+
+== p59
+f: T A T ";" "" "Écartez" "l'iniquité,"
+ok
+
+== p61
+f: "" A "cesse." T A T A A A
+?: j'ai désire — « désire » sans accent, tel qu'imprimé (pour « désiré »)
+ok
+
+== p63
+f: T T T "[ques," T "" T
+ok
+
+== p65
+f: "" "serviteur," "Seigneur," "" T ";" ""
+r: serviteur, Ô Seigneur, => serviteur, ô Seigneur,
+r: m'ont formé ; [mandements. => m'ont formé ;
+r: j'apprenne vos com- => j'apprenne vos commandements.
+r: m'ont traité in- => m'ont traité injustement ;
+ok
+
+== p67
+f: "" T T
+ok
+
+== p69
+f: A A "" T T T T A "âme"
+ok
+
+== p71
+f: "" "[ments," T "" "" A "[dements ;"
+ok
+
+== p73
+f: A A T "" "" T
+ok
+
+== p75
+f: "" T T T "" T T T "témoignages. [breux" T T T
+ok
+
+== p77
+f: "" A "" "Il" A "" "" T "" "" "ser-" A "commandements."
+c: 26
+r: Seigneur,. => Seigneur,
+?: J'ai désiré votre salut — point après « Seigneur, » : tache ou point parasite, non repris
+ok
+
+== p79
+f: T T A A
+r: à ma droite, [vos pieds. => à ma droite,
+r: l'escabeau de => l'escabeau de vos pieds.
+ok
+
+== p81
+f: "" A "Il boira" A "Il a" "" A
+r: saint et terrible. [gesse. => saint et terrible.
+r: de la sa- => de la sagesse.
+ok
+
+== p83
+f: "et sa" "juste." A A T "Il" "Sa" A
+ok
+
+== p85
+f: A "" T A T
+h: 19 Psaume CXIII
+r: celle qui. était => celle qui était
+?: celle qui était — point parasite entre « qui » et « était », non repris
+ok
+
+== p87
+f: "" A A A T "et la" "à" A T T T T
+r: comme des bé-\nc| et vous, collines, comme des agneaux ? liers ? => comme des béliers ?\nc| et vous, collines, comme des agneaux ?
+ok
+
+== p89
+f: T A A T A A A A A A A
+ok
+
+== p91
+f: "" A "; [choses," "et" A "Il" ";" "Il a" "Il a"
+x: 2
++: 1 h Cantique de la Bienheureuse Vierge Marie. Luc. i, 46-55.
+r: dans les pen- => dans les pensées de leur cœur.
+r: de son bras ; de leur cœur. => de son bras ;
+ok
+
+== p93
+f: "" T A A A ""
+r: le mensonge ? [son saint ; => le mensonge ?
+r: merveilleusement traité => merveilleusement traité son saint ;
+ok
+
+== p95
+f: A A A "la" A A "" A "" "délivrerai" T
+c: 28
+ok
+
+== p97
+f: "Il criera" A A A "Seigneur," A T T T T "serviteur," A
+h: 15 Cantique de Siméon. Luc. ii, 29-32.
 ok
