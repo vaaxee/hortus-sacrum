@@ -1084,6 +1084,119 @@
    ]
   },
   {
+   "numero": 13,
+   "titre": "Psaume XIII",
+   "versets": [
+    {
+     "n": 1,
+     "fr": "L'insensé a dit dans son cœur : Il n'y a pas de Dieu. Ils se sont corrompus et sont devenus abominables dans leurs tendances ; il n'y en a pas qui fasse le bien, il n'y en a pas un seul.",
+     "page": 99,
+     "ligne_la": "1a"
+    },
+    {
+     "n": 2,
+     "fr": "Le Seigneur a regardé du ciel sur les enfants des hommes, pour voir s'il y a quelqu'un qui soit intelligent ou qui cherche Dieu.",
+     "page": 99,
+     "ligne_la": "2"
+    },
+    {
+     "n": 3,
+     "fr": "Tous se sont détournés, ils sont tous devenus vains ; il n'y en a pas qui fasse le bien, il n'y en a pas un seul. Leur gosier est un sépulcre ouvert ; ils se servent de leurs langues pour tromper ; le venin des aspics est sous leurs lèvres. Leur bouche est remplie de malédiction et d'amertume ; leurs pieds sont agiles pour répandre le sang. L'affliction et le malheur sont dans leurs voies, et ils n'ont pas connu la voie de la paix ; la crainte de Dieu n'est pas devant leurs yeux.",
+     "page": 99,
+     "ligne_la": "3a"
+    },
+    {
+     "n": 4,
+     "fr": "Ne comprendront-ils pas, tous ceux qui commettent l'iniquité, qui dévorent mon peuple comme un morceau de pain ?",
+     "page": 101,
+     "ligne_la": "4"
+    },
+    {
+     "n": 5,
+     "fr": "Ils n'ont pas invoqué le Seigneur ; ils ont tremblé de frayeur là où il n'y avait rien à craindre.",
+     "page": 101,
+     "ligne_la": "5"
+    },
+    {
+     "n": 6,
+     "fr": "Car le Seigneur est avec la race des justes ; vous vous êtes moqués du dessein du pauvre, parce que le Seigneur est son espérance.",
+     "page": 101,
+     "ligne_la": "6"
+    },
+    {
+     "n": 7,
+     "fr": "Qui procurera de Sion le salut d'Israël ? Quand le Seigneur aura mis fin à la captivité de son peuple, Jacob sera dans l'allégresse, et Israël dans la joie.",
+     "page": 101,
+     "ligne_la": "7"
+    }
+   ],
+   "lignes_la": [
+    "1a",
+    "1b",
+    "2",
+    "3a",
+    "3b",
+    "3c",
+    "3d",
+    "4",
+    "5",
+    "6",
+    "7"
+   ],
+   "pages": [
+    99,
+    101
+   ]
+  },
+  {
+   "numero": 14,
+   "titre": "Psaume XIV",
+   "versets": [
+    {
+     "n": 1,
+     "fr": "Seigneur, qui habitera dans votre tabernacle ? ou qui reposera sur votre montagne sainte ?",
+     "page": 101,
+     "ligne_la": "1"
+    },
+    {
+     "n": 2,
+     "fr": "Celui qui s'avance sans tache, et qui pratique la justice ;",
+     "page": 101,
+     "ligne_la": "2"
+    },
+    {
+     "n": 3,
+     "fr": "qui dit la vérité dans son cœur ; qui n'a point usé de tromperie avec sa langue ; qui n'a pas fait de mal à son prochain, et qui n'a pas accueilli l'injure contre ses frères.",
+     "page": 101,
+     "ligne_la": "3a"
+    },
+    {
+     "n": 4,
+     "fr": "Le méchant est compté pour rien à ses yeux ; mais il honore ceux qui craignent le Seigneur. Il fait serment à son prochain, et ne le trompe pas ;",
+     "page": 101,
+     "ligne_la": "4a"
+    },
+    {
+     "n": 5,
+     "fr": "il ne donne point son argent à usure, et ne reçoit pas de présents contre l'innocent. Celui qui se conduit ainsi ne sera jamais ébranlé.",
+     "page": 101,
+     "ligne_la": "4b"
+    }
+   ],
+   "lignes_la": [
+    "1",
+    "2",
+    "3a",
+    "3b",
+    "4a",
+    "4b",
+    "5b"
+   ],
+   "pages": [
+    101
+   ]
+  },
+  {
    "numero": 15,
    "titre": "Psaume XV",
    "versets": [
@@ -1170,6 +1283,581 @@
    "pages": [
     225,
     227
+   ]
+  },
+  {
+   "numero": 16,
+   "titre": "Psaume XVI",
+   "versets": [
+    {
+     "n": 1,
+     "fr": "Exaucez, Seigneur, ma justice ; soyez attentif à ma supplication. Prêtez l'oreille à ma prière, qui ne vient pas de lèvres trompeuses.",
+     "page": 103,
+     "ligne_la": "1a"
+    },
+    {
+     "n": 2,
+     "fr": "Que mon jugement procède de votre visage ; que vos yeux regardent l'équité.",
+     "page": 103,
+     "ligne_la": "2"
+    },
+    {
+     "n": 3,
+     "fr": "Vous avez éprouvé mon cœur, et voua l'avez visité durant la nuit ; vous m'avez éprouvé par le feu, et il ne s'est pas trouvé en moi d'iniquité.",
+     "page": 103,
+     "ligne_la": "3"
+    },
+    {
+     "n": 4,
+     "fr": "Pour que ma bouche ne célèbre point les œuvres des hommes, à cause des paroles de vos lèvres, j'ai marché par des voies rudes.",
+     "page": 103,
+     "ligne_la": "4"
+    },
+    {
+     "n": 5,
+     "fr": "Affermissez mes pas dans vos sentiers, afin que mes pieds ne soient point ébranlés.",
+     "page": 103,
+     "ligne_la": "5"
+    },
+    {
+     "n": 6,
+     "fr": "J'ai crié, parce que vous m'avez exaucé, ô Dieu ; inclinez vers moi votre oreille, et exaucez mes paroles.",
+     "page": 103,
+     "ligne_la": "6"
+    },
+    {
+     "n": 7,
+     "fr": "Faites éclater vos miséricordes, vous qui sauvez ceux qui espèrent en vous.",
+     "page": 103,
+     "ligne_la": "7"
+    },
+    {
+     "n": 8,
+     "fr": "Contre ceux qui résistent à votre droite, défendez-moi comme la prunelle de l'œil. Protégez-moi à l'ombre de vos ailes,",
+     "page": 103,
+     "ligne_la": "8a"
+    },
+    {
+     "n": 9,
+     "fr": "contre les impies qui m'affligent. Mes ennemis ont environné mon àme ;",
+     "page": 103,
+     "ligne_la": "8b"
+    },
+    {
+     "n": 10,
+     "fr": "ils ont fermé leurs entrailles ; leur bouche a parlé avec orgueil.",
+     "page": 103,
+     "ligne_la": "9b"
+    },
+    {
+     "n": 11,
+     "fr": "Après m'avoir repoussé, maintenant ils m'entourent ; ils fixent leurs yeux sur moi pour me renverser à terre.",
+     "page": 105,
+     "ligne_la": "11"
+    },
+    {
+     "n": 12,
+     "fr": "Ils m'ont saisi comme un lion prêt à ravir sa proie, et comme un lionceau qui habite dans les fourrés.",
+     "page": 105,
+     "ligne_la": "12"
+    },
+    {
+     "n": 13,
+     "fr": "Levez-vous, Seigneur ; prévenez-le, et faites-le tomber ; arrachez mon âme à l'impie, arrachez votre glaive",
+     "page": 105,
+     "ligne_la": "13"
+    },
+    {
+     "n": 14,
+     "fr": "aux ennemis de votre main. Seigneur, séparez-les, durant leur vie, du petit nombre des justes qui sont sur la terre ; leur ventre est rempli de vos trésors. Ils sont rassasiés de fils, et ils laissent le reste de leurs biens à leurs petits-enfants.",
+     "page": 105,
+     "ligne_la": "13",
+     "lecture": [
+      "p. 105 : aux ennemis de votre main — Fillion imprime le numéro 14 au milieu de la ligne, devant « aux ennemis » : découpage de l'imprimé gardé"
+     ]
+    },
+    {
+     "n": 15,
+     "fr": "Pour moi, c'est par la justice que je serai admis en votre présence ; je serai rassasié lorsque apparaîtra votre gloire.",
+     "page": 105,
+     "ligne_la": "15"
+    }
+   ],
+   "lignes_la": [
+    "1a",
+    "1b",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8a",
+    "8b",
+    "9b",
+    "11",
+    "12",
+    "13",
+    "14b",
+    "14c",
+    "15"
+   ],
+   "pages": [
+    103,
+    105
+   ]
+  },
+  {
+   "numero": 17,
+   "titre": "Psaume XVII",
+   "versets": [
+    {
+     "n": 2,
+     "fr": "Je vous aimerai, Seigneur, ô ma force.",
+     "page": 105,
+     "ligne_la": "2"
+    },
+    {
+     "n": 3,
+     "fr": "Le Seigneur est mon ferme appui, mon refuge et mon libérateur. Mon Dieu est mon secours, et j'espérerai en lui. Il est mon protecteur, et la corne de mon saint, et mon défenseur.",
+     "page": 105,
+     "ligne_la": "2"
+    },
+    {
+     "n": 4,
+     "fr": "En le louant, j'invoquerai le Seigneur, et je serai délivré de mes ennemis.",
+     "page": 107,
+     "ligne_la": "4"
+    },
+    {
+     "n": 5,
+     "fr": "Les douleurs de la mort m'ont environné, et les torrents de l'iniquité m'ont rempli de trouble.",
+     "page": 107,
+     "ligne_la": "5"
+    },
+    {
+     "n": 6,
+     "fr": "Les douleurs de l'enfer m'ont entouré, les lacets de la mort m'ont saisi à l'improviste.",
+     "page": 107,
+     "ligne_la": "6"
+    },
+    {
+     "n": 7,
+     "fr": "Dans ma détresse j'ai invoqué le Seigneur, et j'ai crié vers mon Dieu. Et de son saint temple il a entendu ma voix. et mon cri a pénétré en sa présence jusqu'a ses oreilles.",
+     "page": 107,
+     "ligne_la": "7a",
+     "lecture": [
+      "p. 107 : jusqu'a ses oreilles — « jusqu'a » sans accent, tel qu'imprimé"
+     ]
+    },
+    {
+     "n": 8,
+     "fr": "La terre a été ébranlée et a tremblé ; les fondements des montagnes ont été secoués et ébranlés, parce qu'il s'est irrité contre elles.",
+     "page": 107,
+     "ligne_la": "8"
+    },
+    {
+     "n": 9,
+     "fr": "La fumée a monté à cause de sa colère, et un feu ardent a jailli de sa face ; des charbons en ont été embrasés.",
+     "page": 107,
+     "ligne_la": "9"
+    },
+    {
+     "n": 10,
+     "fr": "Il a abaissé les cieux, et il est descendu ; un nuage obscur était sous ses pieds.",
+     "page": 107,
+     "ligne_la": "10"
+    },
+    {
+     "n": 11,
+     "fr": "Et il est monté sur les chérubins, et il s'est envolé ; il a volé sur les ailes des vents.",
+     "page": 107,
+     "ligne_la": "11"
+    },
+    {
+     "n": 12,
+     "fr": "Et il a fait des ténèbres le lieu de sa retraite ; sa tente était autour de lui, l'eau ténébreuse dans les nuées de l'air.",
+     "page": 107,
+     "ligne_la": "12"
+    },
+    {
+     "n": 13,
+     "fr": "Devant l'éclat de sa présence, les nuées se sont élancées ; de la grêle et des charbons de feu.",
+     "page": 107,
+     "ligne_la": "13"
+    },
+    {
+     "n": 14,
+     "fr": "Et le Seigneur a tonné du ciel, et le Très-Haut a fait entendre sa voix ; de la grêle et des charbons de feu.",
+     "page": 107,
+     "ligne_la": "14"
+    },
+    {
+     "n": 15,
+     "fr": "Et il a lancé ses flèches, et il les a dispersés ; il a multiplié les éclairs, et il les a mis en déroute.",
+     "page": 107,
+     "ligne_la": "15"
+    },
+    {
+     "n": 16,
+     "fr": "Alors ont paru les sources des eaux, et les fondements du globe de la terre ont été mis à nu, à votre menace, Seigneur, au souffle impétueux do votre colère.",
+     "page": 109,
+     "ligne_la": "16a"
+    },
+    {
+     "n": 17,
+     "fr": "Il a tendu d'en haut sa main et il m'a pris, et il m'a tiré des eaux profondes.",
+     "page": 109,
+     "ligne_la": "17"
+    },
+    {
+     "n": 18,
+     "fr": "Il m'a arraché à mes ennemis très puissants, et à ceux qui me haïssaient, car ils étaient plus forts que moi.",
+     "page": 109,
+     "ligne_la": "18"
+    },
+    {
+     "n": 19,
+     "fr": "Ils m'ont attaqué les premiers au jour de mon affliction et le Seigneur s'est fait mon protecteur.",
+     "page": 109,
+     "ligne_la": "19"
+    },
+    {
+     "n": 20,
+     "fr": "Il m'a retiré et mis au large ; il m'a sauvé, parce qu'il m'aimait.",
+     "page": 109,
+     "ligne_la": "20"
+    },
+    {
+     "n": 21,
+     "fr": "Et le Seigneur me rendra selon ma justice : il me rendra selon la pureté de mes mains.",
+     "page": 109,
+     "ligne_la": "21"
+    },
+    {
+     "n": 22,
+     "fr": "Car j'ai gardé les voies du Seigneur, et je n'ai rien fait d'impie qui m'éloignàt de mon Dieu.",
+     "page": 109,
+     "ligne_la": "22"
+    },
+    {
+     "n": 23,
+     "fr": "Car tous ses jugements sont présents devant moi, et je n'ai pas rejeté ses préceptes loin de moi.",
+     "page": 109,
+     "ligne_la": "23"
+    },
+    {
+     "n": 24,
+     "fr": "Et je serai sans tache envers lui, et je me garderai de mon iniquité.",
+     "page": 109,
+     "ligne_la": "24"
+    },
+    {
+     "n": 25,
+     "fr": "Et le Seigneur me rendra selon ma justice, et selon la pureté de mes mains, présente à ses yeux.",
+     "page": 109,
+     "ligne_la": "25"
+    },
+    {
+     "n": 26,
+     "fr": "Avec celui qui est saint vous serez saint, et avec l'homme innocent vous serez innocent.",
+     "page": 109,
+     "ligne_la": "26"
+    },
+    {
+     "n": 27,
+     "fr": "Avec celui qui est pur vous serez pur, et avec le pervers vous. agirez en pervers.",
+     "page": 109,
+     "ligne_la": "27"
+    },
+    {
+     "n": 28,
+     "fr": "Car vous sauverez le peuple qui est humble, et vous humilierez les yeux des superbes.",
+     "page": 109,
+     "ligne_la": "28"
+    },
+    {
+     "n": 29,
+     "fr": "Car c'est vous, Seigneur, qui allumez ma lampe ; mon Dieu, éclairez mes ténèbres.",
+     "page": 111,
+     "ligne_la": "29",
+     "lecture": [
+      "p. 111 : Car c'est vous, Seigneur, qui allumez ma lampe — note manuscrite au crayon dans la marge du scan (« ténèbres » ?), non reprise"
+     ]
+    },
+    {
+     "n": 30,
+     "fr": "Car par vous je serai arraché à la tentation, et par mon Dieu je franchirai le mur.",
+     "page": 111,
+     "ligne_la": "30"
+    },
+    {
+     "n": 31,
+     "fr": "La voie de mon Dieu est sans tache ; les paroles du Seigneur sont éprouvées au feu ; il est le protecteur de tous ceux qui espèrent en lui.",
+     "page": 111,
+     "ligne_la": "31"
+    },
+    {
+     "n": 32,
+     "fr": "Car qui est Dieu, si ce n'est le Seigneur ? et qui est Dieu, si ce n'est notre Dieu ?",
+     "page": 111,
+     "ligne_la": "32"
+    },
+    {
+     "n": 33,
+     "fr": "Le Dieu qui m'a ceint de force, et qui a rendu ma voie immaculée ;",
+     "page": 111,
+     "ligne_la": "33"
+    },
+    {
+     "n": 34,
+     "fr": "qui a fait mes pieds agiles comme ceux des cerfs, et m'a établi sur les hauts lieux ;",
+     "page": 111,
+     "ligne_la": "34"
+    },
+    {
+     "n": 35,
+     "fr": "qui enseigne à mes mains le combat. Et vous avez fait de mes bras comme un arc d'airain.",
+     "page": 111,
+     "ligne_la": "35"
+    },
+    {
+     "n": 36,
+     "fr": "Et vous m'avez donné votre protection pour me sauver, et votre droite m'a soutenu ; et vos lecons m'ont corrigé jusqu'à la fin, et ces leçons continueront de m'instruire.",
+     "page": 111,
+     "ligne_la": "36a"
+    },
+    {
+     "n": 37,
+     "fr": "Vous avez élargi la voie sous mes pas, et mes pieds ne se sont point affaiblis.",
+     "page": 111,
+     "ligne_la": "37"
+    },
+    {
+     "n": 38,
+     "fr": "Je poursuivrai mes ennemis, et je les atteindrai, et je ne reviendrai pas qu'ils ne soient anéantis.",
+     "page": 111,
+     "ligne_la": "38"
+    },
+    {
+     "n": 39,
+     "fr": "Je Les briserai, et ils ne pourront se tenir debout ; ils tomberont sous mes pieds.",
+     "page": 111,
+     "ligne_la": "39"
+    },
+    {
+     "n": 40,
+     "fr": "Vous m'avez ceint de force pour la guerre, et vous avez abattu sous moi ceux qui s'élevaient contre moi.",
+     "page": 111,
+     "ligne_la": "40"
+    },
+    {
+     "n": 41,
+     "fr": "Vous avez fait tourner le dos à mes ennemis devant moi, et vous avez exterminé ceux qui me haïssaient.",
+     "page": 113,
+     "ligne_la": "41"
+    },
+    {
+     "n": 42,
+     "fr": "Ils ont crié, et il n'y avait personne pour les sauver ; ils ont appelé le Seigneur, et il ne les a pas exaucés.",
+     "page": 113,
+     "ligne_la": "42"
+    },
+    {
+     "n": 43,
+     "fr": "Et je les broierai comme la poussière que le vent emporte ; je les écraserai comme la boue des rues.",
+     "page": 113,
+     "ligne_la": "43"
+    },
+    {
+     "n": 44,
+     "fr": "Vous me délivrerez des dissensions du peuple ; vous m'établirez chef des nations.",
+     "page": 113,
+     "ligne_la": "44"
+    },
+    {
+     "n": 45,
+     "fr": "Un peuple que je ne connaissais pas m'a été assujetti ; au premier ordre il m'a obéi.",
+     "page": 113,
+     "ligne_la": "45"
+    },
+    {
+     "n": 46,
+     "fr": "Les fils de l'étranger m'ont menti ; les fils de l'étranger sont en défaillance, et ils sont sortis en chancelant de leurs sentiers.",
+     "page": 113,
+     "ligne_la": "46"
+    },
+    {
+     "n": 47,
+     "fr": "Vive le Seigneur, et béni soit mon Dieu ! et que le Dieu de mon salut soit exalté !",
+     "page": 113,
+     "ligne_la": "47",
+     "lecture": [
+      "p. 113 : Vive le Seigneur — note manuscrite au crayon dans la marge du scan (« rocher »), non reprise"
+     ]
+    },
+    {
+     "n": 48,
+     "fr": "O Dieu, qui prenez soin de me venger, et qui me soumettez les peuples ; vous qui me délivrez de mes ennemis furieux.",
+     "page": 113,
+     "ligne_la": "48"
+    },
+    {
+     "n": 49,
+     "fr": "Vous m'élèverez au-dessus de ceux qui se dressent contre moi ; vous m'arracherez à l'homme inique.",
+     "page": 113,
+     "ligne_la": "49"
+    },
+    {
+     "n": 50,
+     "fr": "C'est pourquoi je vous louerai, Seigneur, parmi les nations, et je chanterai un cantique à votre nom.",
+     "page": 113,
+     "ligne_la": "50"
+    },
+    {
+     "n": 51,
+     "fr": "Il procure de grandes délivrances à son roi, et il fait miséricorde à David son oint, et à sa postérité jusqu'à la fin des siècles.",
+     "page": 113,
+     "ligne_la": "51"
+    }
+   ],
+   "lignes_la": [
+    "2",
+    "3b",
+    "3c",
+    "4",
+    "5",
+    "6",
+    "7a",
+    "7b",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16a",
+    "16b",
+    "17",
+    "18",
+    "19",
+    "20",
+    "21",
+    "22",
+    "23",
+    "24",
+    "25",
+    "26",
+    "27",
+    "28",
+    "29",
+    "30",
+    "31",
+    "32",
+    "33",
+    "34",
+    "35",
+    "36a",
+    "36b",
+    "37",
+    "38",
+    "39",
+    "40",
+    "41",
+    "42",
+    "43",
+    "44",
+    "45",
+    "46",
+    "47",
+    "48",
+    "49",
+    "50",
+    "51"
+   ],
+   "pages": [
+    105,
+    107,
+    109,
+    111,
+    113
+   ]
+  },
+  {
+   "numero": 19,
+   "titre": "Psaume XIX",
+   "versets": [
+    {
+     "n": 2,
+     "fr": "Que le Seigneur vous exauce au jour de la détresse ; que le nom du Dieu de Jacob vous protège.",
+     "page": 115,
+     "ligne_la": "2"
+    },
+    {
+     "n": 3,
+     "fr": "Qu'il vous envoie du secours de son sanctuaire, et que de Sion il vous défende.",
+     "page": 115,
+     "ligne_la": "3"
+    },
+    {
+     "n": 4,
+     "fr": "Qu'il se souvienne de tous vos sacrifices, et que votre holocauste lui soit agréable.",
+     "page": 115,
+     "ligne_la": "4"
+    },
+    {
+     "n": 5,
+     "fr": "Qu'il vous donne ce que votre eœur désire, et qu'il accomplisse tous vos desseins.",
+     "page": 115,
+     "ligne_la": "5"
+    },
+    {
+     "n": 6,
+     "fr": "Nous nous réjouirons de votre salut, et nous nous glorifierons au nom de notre Dieu.",
+     "page": 115,
+     "ligne_la": "6"
+    },
+    {
+     "n": 7,
+     "fr": "Que le Seigneur exauce toutes vos demandes. J'ai reconnu maintenant que le Seigneur a sauvé son oint. Il l'exaucera du ciel, son sanctuaire ; sa droite toute-puissante produira le salut.",
+     "page": 115,
+     "ligne_la": "7a"
+    },
+    {
+     "n": 8,
+     "fr": "Ceux-là se confient dans leurs chars, et ceux-ci dans leurs chevaux ; mais nous, nous invoquerons le nom du Seigneur notre Dieu.",
+     "page": 115,
+     "ligne_la": "8"
+    },
+    {
+     "n": 9,
+     "fr": "Eux, ils ont été comme liés, et ils sont tombés ; mais nous, nous nous sommes relevés, et nous restons debout.",
+     "page": 115,
+     "ligne_la": "9"
+    },
+    {
+     "n": 10,
+     "fr": "Seigneur, sauvez le roi, et exaucez-nous au jour où nous vous invoquerons.",
+     "page": 115,
+     "ligne_la": "10"
+    }
+   ],
+   "lignes_la": [
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7a",
+    "7b",
+    "8",
+    "9",
+    "10"
+   ],
+   "pages": [
+    115
    ]
   },
   {

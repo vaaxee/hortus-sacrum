@@ -390,3 +390,64 @@ ok
 == p525
 f: A "armées ;" T
 ok
+
+// Office du lundi.
+== p99
+f: A "Ils se" A "il n'y" A "" "Tous se" ";" A "" ";"
+c: 15 18 20
+ok
+
+== p101
+f: A
+r: le salut d'Israël ? [peuple, => le salut d'Israël ?
+r: captivité de son => captivité de son peuple,
+ok
+
+== p103
+f: "" A "ne s'est pas" "en" "[hommes," "à cause" "Affermissez mes" "que" "ô" A A ";" "" "entrailles ;"
+r: d'iniquité. [hommes, => d'iniquité.
+r: les œuvres des\n => les œuvres des hommes,\n
+ok
+
+== p105
+f: "" A "arrachez" "" A
+r: arrachez votre glaive aux ennemis => arrachez votre glaive\nv| aux ennemis
+r: ô ma force. [bérateur. => ô ma force.
+r: mon refuge et mon li- => mon refuge et mon libérateur.
+?: aux ennemis de votre main — Fillion imprime le numéro 14 au milieu de la ligne, devant « aux ennemis » : découpage de l'imprimé gardé
+ok
+
+== p107
+f: "Il" A "[défenseur." "" "Les" A A T A "oreilles." "terre a été" "tremblé ;" "des" "Il" A "retraite ;" A "les" "" A ";" "dispersés ;"
+c: 2
+r: et mon\nc| En le louant, j'invoquerai le Seigneur, [défenseur. => et mon défenseur.\nv| En le louant, j'invoquerai le Seigneur,
+r: jusqu'à ses oreilles. => jusqu'a ses oreilles.
+?: jusqu'a ses oreilles — « jusqu'a » sans accent, tel qu'imprimé
+ok
+
+== p109
+f: "souffle" A "colère." "Il" "Il" "" "Il" "Car" A "et" "et selon" "" "et avec" A "agirez en" "Car vous sauverez" "humble," "des superbes."
+r: mis à nu. => mis à nu,
+ok
+
+== p111
+f: "" "Car" A "" T T A
+r: pour la guerre, [moi. => pour la guerre,
+r: qui s'élevaient contre => qui s'élevaient contre moi.
+?: Car c'est vous, Seigneur, qui allumez ma lampe — note manuscrite au crayon dans la marge du scan (« ténèbres » ?), non reprise
+ok
+
+== p113
+f: "" "Un" "" "Les fils" "l'étranger" "O Dieu, qui" "" "Il"
+x: 22
+r: dressent contre\nc| vous m'arracherez à l'homme inique. => dressent contre moi ;\nc| vous m'arracherez à l'homme inique.
+r: parmi les na-\nc| et je chanterai un cantique à votre nom. [tions, => parmi les nations,\nc| et je chanterai un cantique à votre nom.
+?: Vive le Seigneur — note manuscrite au crayon dans la marge du scan (« rocher »), non reprise
+ok
+
+== p115
+f: "" "protège." A "et qu'il" "oint." A ";" T "chevaux ;" T "Eux," "" "" A
+r: ils sont tombés : => ils sont tombés ;
+r: le nom du Seigneur notre\n => le nom du Seigneur notre Dieu.\n
+r: et nous restons\n => et nous restons debout.\n
+ok

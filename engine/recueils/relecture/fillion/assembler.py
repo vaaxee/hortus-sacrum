@@ -178,9 +178,10 @@ def assembler():
             pc['note'] = note
         else:
             ordre, etiq, debut = latin(fichier)
-        if os.environ.get('PARTIEL') and pc is pieces[-1] and len(pc['versets']) < len(ordre):
-            pieces.pop()
-            break
+        if os.environ.get('PARTIEL') and len(pc['versets']) < len(ordre):
+            print(f"(en cours : {pc['titre']}, {len(pc['versets'])}/{len(ordre)} versets, omis)")
+            pieces.remove(pc)
+            continue
         if len(ordre) != len(pc['versets']):
             erreurs.append(f"{pc['titre']} : {len(pc['versets'])} versets imprimés, {len(ordre)} dans le latin de DO"
                            f" ({ordre[0]}-{ordre[-1]})")
@@ -201,6 +202,8 @@ def assembler():
         pc['pages'] = sorted({v['page'] for v in pc['versets']})
     for p, d in doutes:
         mot = d.split(' — ')[0].strip()
+        if os.environ.get('PARTIEL') and not any(p in pc.get('pages', []) or p - 2 in pc.get('pages', []) for pc in pieces):
+            continue
         cible = [v for pc in pieces for v in pc['versets'] if isinstance(v, dict) and 'fr' in v and v['page'] in (p, p - 2) and mot in v['fr']]
         if not cible:
             erreurs.append(f'p{p} : doute « {mot} » sans verset')
