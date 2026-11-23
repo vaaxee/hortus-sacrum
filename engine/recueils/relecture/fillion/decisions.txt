@@ -235,3 +235,158 @@ ok
 f: "Il criera" A A A "Seigneur," A T T T T "serviteur," A
 h: 15 Cantique de Siméon. Luc. ii, 29-32.
 ok
+
+// Complies du lundi (pp. 159-163) ; le haut de la p. 159 (fin du psaume 121) n'est pas encore relu.
+== p159
+f: T T T T ";" T T "Et" T "" T "" A T T
+x: 1-6
+v: 9
+r: de vous dans la => de vous dans la mort ;
+ok
+
+== p161
+f: "" T T A A T A A T A ""
+c: 22
+r: ma prière. [vive épouvante ; => ma prière.
+r: saisis d'une => saisis d'une vive épouvante ;
+r: en vous ; [moi ; => en vous ;
+r: et délivrez- => et délivrez-moi ;
+r: qui est en moi. [juste, => qui est en moi.
+r: vous conduirez le => vous conduirez le juste,
+ok
+
+== p163
+f: "Si" "" A A "Voici" A A
+ok
+
+// Complies du mardi (pp. 221-225) ; le haut de la p. 221 (fin du psaume 126) n'est pas encore relu.
+== p221
+f: T T "Heureux" A T "maître" ""
+x: 1-9
+r: puissance de notre\nc| nos lèvres ne dépendent que de nous. [langue ; => puissance de notre langue ;\nc| nos lèvres ne dépendent que de nous.
+ok
+
+== p223
+f: T "pauvres." T A "Les" "les" T "Éclairez" A "si" "[suis ébranlé."
+r: -Selon => Selon
+r: du gémissement\nc| je me lèverai maintenant, dit le Seigneur. [des pauvres. => du gémissement des pauvres.\nc| je me lèverai maintenant, dit le Seigneur.
+r: au-dessus de\nv| Regardez, et exaucez-moi, Seigneur mon Dieu. [moi ? => au-dessus de moi ?\nv| Regardez, et exaucez-moi, Seigneur mon Dieu.
+r: si je\nv| Mais j'ai espéré en votre miséricorde. [suis ébranlé. => si je suis ébranlé.\nv| Mais j'ai espéré en votre miséricorde.
+?: Selon la profondeur — trait ou tache devant « Selon » (marge), non repris
+ok
+
+== p225
+f: "Conservez-moi, Seigneur," ""
+v: 4
+ok
+
+== p227
+f: T "car" T T "et vous" "de la" "[ruption." A
+ok
+
+// Complies du mercredi (pp. 291-295) ; le haut de la p. 291 (fin du psaume 131) n'est pas encore relu.
+== p291
+f: T "" T "Mon" "et se" A
+x: 1-8
+v: 23
+ok
+
+== p293
+f: A A A A A
+ok
+
+== p295
+f: "ô" "soyez" "prière." "Des extrémités" "[espérance," "[nom." A "siè-" "m'acquitter"
+r: ma prière. [cœur était dans l'angoisse\nv| Des extrémités de la terre j'ai crié vers vous, quand mon => ma prière.\nv| Des extrémités de la terre j'ai crié vers vous, quand mon cœur était dans l'angoisse
+r: Vous m'avez conduit, 4 parce que vous êtes devenu mon\nc| une tour solide contre l'ennemi. [espérance, => Vous m'avez conduit,\nv| parce que vous êtes devenu mon espérance,\nc| une tour solide contre l'ennemi.
+r: craignent votre\nv| Vous ajouterez des jours aux jours du roi ; [nom. => craignent votre nom.\nv| Vous ajouterez des jours aux jours du roi ;
+?: Vous m'avez conduit — Fillion imprime le numéro 4 après « Vous m'avez conduit, » (le latin de DO commence le v. 4 à « Deduxisti me ») : découpage de l'imprimé gardé
+ok
+
+// Complies du jeudi (pp. 363-367) ; le haut de la p. 363 (fin du psaume 137) n'est pas encore relu.
+// Renvois « [fin » imprimés sur la ligne du dessus (place libre) : remis à leur ligne par « r: ».
+== p363
+f: "" T "" "[ennemis," "O" T A A "qui me" ";"
+x: 1-15
+r: la vie. [ceux qui me veulent du mal. => la vie.
+r: dans la confusion, => dans la confusion, ceux qui me veulent du mal.
+r: Va ! va ! [vous d'allégresse et de joie ; => Va ! va !
+r: tressaillent en => tressaillent en vous d'allégresse et de joie ;
+ok
+
+== p365
+f: "" T A A T "" A ";" A "vieillesse ;"
+v: 11
+ok
+
+== p367
+f: "" "pas." "n'y a" "O" "" ";" "O" "jeunesse," "ô Dieu," "la" ";" "" "atteint, ô" A "est" "Que" A
+r: votre puissance et votre justice, qui atteint, ô Dieu, => votre puissance\nv| et votre justice, qui atteint, ô Dieu, jusqu'aux cieux ;
+r: à venir ; [jusqu'aux cieux ; => à venir ;
+r: semblable à vous ? [fait éprouver ! => semblable à vous ?
+r: cruelles vous m'avez => cruelles vous m'avez fait éprouver !
+?: Ne connaissant pas — Fillion imprime le numéro 16 devant « je contemplerai » ; le latin de DO commence le v. 16 à « Quoniam non cognovi litteraturam » (« Ne connaissant pas la science humaine ») : découpage de l'imprimé gardé
+?: votre puissance — Fillion imprime le numéro 19 après « votre puissance » ; le latin de DO commence le v. 19 à « Potentiam tuam » : découpage de l'imprimé gardé
+?: qui atteint — en italique ; le premier t ressemble à un l (« atleint ») : t italique lu « atteint »
+ok
+
+== p369
+f: A T
+ok
+
+// Complies du vendredi (pp. 443-449).
+== p443
+f: "" "vous" "considérais à" A "m'est ôté," "Soyez" "parce" "Tirez" ";"
+x: 1-24
+h: 26 Psaume LXXVI, i.
+ok
+
+== p445
+f: "Au" A ";" A T "tourmentais" T T
+r: je n'ai pas été\nc| Mon âme a refusé toute consolation ; [déçu. => je n'ai pas été déçu.\nc| Mon âme a refusé toute consolation ;
+r: d'avoir pitié ?- => d'avoir pitié ?
+?: d'avoir pitié — trait après le point d'interrogation (« pitié?- »), parasite, non repris
+ok
+
+== p447
+f: "O" "Vous êtes" T "" "ô" "et les abîmes" T A "La" "les" "sentiers," "connues." ";"
+v: 20
+h: 22 Psaume LXXXV
+r: votre peuple, [sance ; => votre peuple,
+r: votre puis- => votre puissance ;
+ok
+
+== p449
+f: "car j'ai" T "" A "et" "O Dieu, les méchants" A "clé-" "[ment," "donnez" "et sauvez" ""
+r: mon àme de l'enfer => mon âme de l'enfer
+r: en ma faveur, ; => en ma faveur,
+r: soient con- => soient confondus ;
+?: car j'ai crié — point parasite entre « car » et « j'ai », non repris
+ok
+
+// Complies du samedi (pp. 519-525) ; le haut de la p. 519 (fin du psaume 144) n'est pas encore relu.
+== p519
+f: "" "" T ";" "prêtez" T "" T ";" ""
+x: 1-5
+h: 7 Psaume LXXXVII
+v: 27
+ok
+
+== p521
+f: "racontera-t-il" "miséri-" "[corde," A "" "maladies ;"
+?: Mon àme, bénis — v. 2 : accent de « àme » imprimé comme un accent grave (circonflexe brisé ?) ; gardé tel qu'il paraît
+h: 19 Psaume CII, i.
+r: pour les morts ? [louent ? => pour les morts ?
+r: afin qu'ils vous\n => afin qu'ils vous louent ?\n
+ok
+
+== p523
+f: "biens ;" "jeunesse sera" "Le Seigneur" "miséricorde," "Moïse," "Il" A A A "[gnent." A "nous sommes" "n'est plus," "et le" A T T "alliance," "de ses préceptes, pour"
+h: 17 Psaume CII, ii.
+r: s'élend de => s'étend de
+?: s'étend de — en italique, lu « s'élend » par l'OCR : t italique
+ok
+
+== p525
+f: A "armées ;" T
+ok

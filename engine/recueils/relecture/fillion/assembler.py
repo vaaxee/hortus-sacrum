@@ -88,6 +88,13 @@ def latin(fichier):
             if v not in debut:
                 debut[v] = lab
                 ordre.append(v)
+    # verset que DO laisse au milieu d'une ligne sans le marquer (Ps 76, 16 dans « 76:15 … redemisti ») :
+    # rattaché à la ligne qui le contient
+    if fichier < 200:
+        for v in range(min(ordre), max(ordre) + 1):
+            if v not in debut:
+                debut[v] = debut[max(x for x in debut if x < v)]
+        ordre = sorted(debut)
     return ordre, etiquettes, debut
 
 
@@ -123,7 +130,11 @@ def lignes():
 def assembler():
     pieces, cur, doutes = [], None, []
     prec = None          # dernière ligne de texte : [verset, indice de ligne]
+    page_prec = None
     for p, k, t in lignes():
+        if page_prec is not None and p not in (page_prec, page_prec + 2):
+            cur, prec = None, None      # pages non relues entre deux : pas de suite possible
+        page_prec = p
         if k == '?':
             doutes.append((p, t))
             continue
