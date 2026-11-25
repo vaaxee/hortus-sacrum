@@ -762,3 +762,58 @@ f: "fut" A "" "avons" "captifs," "le pays" "Ceux qui sèment" "l'allégresse." "
 h: 18 Psaume CXXVI
 v: 4 12
 ok
+
+// Office du mercredi.
+== p229
+f: A "parole" "" A "ô"
+v: 11
+?: Ceignez-vous de votre glaive — renvoi [puissant. imprimé sur la ligne du dessus
+ok
+
+== p231
+f: "" "ennemis" "ô" "ô" A "d'une" "de" "les" "Écoutez," ";" "" "est" "[broderies." "ornée"
+v: 6 15
+r: au dedans, [broderies.\nc| quand elle est ornée de franges d'or, 15 et couverte de => au dedans,\nc| quand elle est ornée de franges d'or,\nv| et couverte de broderies.
+?: et couverte de broderies — Fillion imprime le numéro 15 au milieu de la ligne ; « [broderies. » imprimé au bout de la ligne du dessus
+ok
+
+== p233
+f: "" "[gresse ;" "Dieu" "C'est" "" "eaux" ";" "[affaissés ;" "Les" A "Le Seigneur"
+x: 1
+v: 26
+ok
+
+== p235
+f: "" "les" "terre," "" "l'arc," "" "exalté" "" "montagne." "" "l'aquilon," "voici" "ligués,"
+v: 2 4 7 13
+ok
+
+== p237
+f: "Dieu." "ô" "" "ô" "s'étend" "l'allégresse,"
+x: 1
+v: 2
+?: ils ont été troublés — l de « troublés » brisé (lu « troubiés »), lecture sûre
+r: ils ont été troubiés => ils ont été troublés
+ok
+
+== p239
+f: "" "Ma bouche proférera" "sagesse," "prudence." "l'apaiser," "âme." "et il vivra encore" "Il" "l'insensé" "et il leur est devenu"
+v: 16 17
+ok
+
+== p241
+f: "chute," "ont été" ";" "qu'ils" "de" "de" "lorsqu'ii" "a" "a"
+x: 1
+h: 2 Psaume XLVIII, ii.
+?: lorsqu'ii sera mort — coquille de l'imprimé (« lorsqu'ii »), gardée telle quelle
+?: Telle est leur voie — titre imprimé « Psaume XLVIIII, ii. » (coquille), rendu « XLVIII »
+ok
+
+== p243
+f: "" "Sion" "une" "peuple." "sacrifices." "Et les cieux" "Écoute," "Israël, et" "sacrifices" ";" "toutes" "moi," "j'ai" "pas ;"
+x: 1
+ok
+
+== p245
+f: "" "lois," "a" "contre" "ta" "tout" "[ble."
+ok

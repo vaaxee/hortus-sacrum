@@ -4837,6 +4837,236 @@
    ]
   },
   {
+   "numero": 44,
+   "titre": "Psaume XLIV",
+   "versets": [
+    {
+     "n": 2,
+     "fr": "De mon cœur a jailli une excellente parole ; c'est que j'adresse mes œuvres à un roi. Ma langue est un roseau de scribe qui écrit rapidement.",
+     "page": 229,
+     "ligne_la": "2a"
+    },
+    {
+     "n": 3,
+     "fr": "Vous surpassez en beauté les enfants des hommes, la grâce est répandue sur vos lèvres ; c'est pourquoi Dieu vous a béni à jamais.",
+     "page": 229,
+     "ligne_la": "3"
+    },
+    {
+     "n": 4,
+     "fr": "Ceignez-vous de votre glaive sur votre hanche, ô très puissant.",
+     "page": 229,
+     "ligne_la": "4",
+     "lecture": [
+      "p. 229 : Ceignez-vous de votre glaive — renvoi [puissant. imprimé sur la ligne du dessus"
+     ]
+    },
+    {
+     "n": 5,
+     "fr": "Avec votre gloire et votre majesté, avancez, marchez victorieusement, et régnez pour la vérité, la douceur et la justice, et votre droite vous conduira merveilleusement.",
+     "page": 229,
+     "ligne_la": "5a"
+    },
+    {
+     "n": 6,
+     "fr": "Vos flèches sont aiguës ; les peuples tomberont sous vous ; elles perceront le cœur des ennemis du roi.",
+     "page": 231,
+     "ligne_la": "6"
+    },
+    {
+     "n": 7,
+     "fr": "Votre trône, ô Dieu, est éternel ; le sceptre-de votre règne est un sceptre d'équité.",
+     "page": 231,
+     "ligne_la": "7"
+    },
+    {
+     "n": 8,
+     "fr": "Vous avez aimé la justice, et haï l'iniquité ; c'est pourquoi, ô Dieu, votre Dieu vous a oint d'une huile d'allégresse plus que tous vos compagnons.",
+     "page": 231,
+     "ligne_la": "8"
+    },
+    {
+     "n": 9,
+     "fr": "La myrrhe, l'aloès et la casse s'exhalent de vos vêtements, des palais d'ivoire d'où vous réjouissent",
+     "page": 231,
+     "ligne_la": "9"
+    },
+    {
+     "n": 10,
+     "fr": "les filles des rois dans votre gloire. La reine se tient à votre droite, en vêtements tissés d'or, couverte de broderies.",
+     "page": 231,
+     "ligne_la": "9"
+    },
+    {
+     "n": 11,
+     "fr": "Écoutez, ma fille, et voyez, et prêtez l'oreille, et oubliez votre peuple et la maison de votre père.",
+     "page": 231,
+     "ligne_la": "11"
+    },
+    {
+     "n": 12,
+     "fr": "Et le roi sera épris de votre beauté ; car il est le Seigneur votre Dieu, et on l'adorera.",
+     "page": 231,
+     "ligne_la": "12"
+    },
+    {
+     "n": 13,
+     "fr": "Et les filles de Tyr, avec des présents, vous offriront d'humbles prières. ainsi que tous les riches d'entre le peuple.",
+     "page": 231,
+     "ligne_la": "13"
+    },
+    {
+     "n": 14,
+     "fr": "Toute la gloire de la fille du roi est au dedans, quand elle est ornée de franges d'or,",
+     "page": 231,
+     "ligne_la": "14"
+    },
+    {
+     "n": 15,
+     "fr": "et couverte de broderies. Des vierges seront amenées au roi après elle ; ses compagnes vous seront présentées.",
+     "page": 231,
+     "ligne_la": "14",
+     "lecture": [
+      "p. 231 : et couverte de broderies — Fillion imprime le numéro 15 au milieu de la ligne ; « [broderies. » imprimé au bout de la ligne du dessus"
+     ]
+    },
+    {
+     "n": 16,
+     "fr": "Elles seront présentées au milieu de la joie et de l'allégresse ; on les conduira au temple du roi.",
+     "page": 233,
+     "ligne_la": "16"
+    },
+    {
+     "n": 17,
+     "fr": "A la place de vos pères, des fils vous sont nés ; vous les établirez princes sur toute la terre.",
+     "page": 233,
+     "ligne_la": "17"
+    },
+    {
+     "n": 18,
+     "fr": "Ils se souviendront de votre nom de génération en génération. C'est pourquoi les peuples vous loueront éternellement, et dans les siècles des siècles.",
+     "page": 233,
+     "ligne_la": "18a"
+    }
+   ],
+   "lignes_la": [
+    "2a",
+    "2b",
+    "3",
+    "4",
+    "5a",
+    "5b",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10b",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15b",
+    "16",
+    "17",
+    "18a",
+    "18b"
+   ],
+   "pages": [
+    229,
+    231,
+    233
+   ]
+  },
+  {
+   "numero": 45,
+   "titre": "Psaume XLV",
+   "versets": [
+    {
+     "n": 2,
+     "fr": "Dieu est notre refuge et notre force, notre secours dans les tribulations qui nous ont trop saisis.",
+     "page": 233,
+     "ligne_la": "2"
+    },
+    {
+     "n": 3,
+     "fr": "C'est pourquoi nous ne craindrons point quand la terre sera ébranlée, et que les montagnes seront transportées au cœur de la mer.",
+     "page": 233,
+     "ligne_la": "3"
+    },
+    {
+     "n": 4,
+     "fr": "Ses eaux ont retenti et ont été agitées ; les montagnes ont été ébranlées par sa puissance.",
+     "page": 233,
+     "ligne_la": "4"
+    },
+    {
+     "n": 5,
+     "fr": "Un fleuve réjouit la cité de Dieu par ses flots abondants ; le Très-Haut a sanctifié son tabernacle.",
+     "page": 233,
+     "ligne_la": "5"
+    },
+    {
+     "n": 6,
+     "fr": "Dieu est au milieu d'elle, elle ne sera pas ébranlée ; Dieu la protégera le matin, dès l'aurore.",
+     "page": 233,
+     "ligne_la": "6"
+    },
+    {
+     "n": 7,
+     "fr": "Les nations ont été troublées, et les royaumes se sont affaissés ; il a fait entendre sa voix, la terre a été ébranlée.",
+     "page": 233,
+     "ligne_la": "7"
+    },
+    {
+     "n": 8,
+     "fr": "Le Seigneur des armées est avec nous ; le Dieu de Jacob est notre défenseur.",
+     "page": 233,
+     "ligne_la": "8"
+    },
+    {
+     "n": 9,
+     "fr": "Venez, et voyez les œuvres du Seigneur, les prodiges qu'il a opérés sur la terre,",
+     "page": 235,
+     "ligne_la": "9"
+    },
+    {
+     "n": 10,
+     "fr": "en faisant cesser la guerre jusqu'à l'extrémité du pays. Il brisera l'arc, et mettra les armes en pièces, et il brûlera les boucliers par le feu.",
+     "page": 235,
+     "ligne_la": "10"
+    },
+    {
+     "n": 11,
+     "fr": "Arrêtez, et considérez que c'est moi qui suis Dieu. Je serai exalté parmi les nations, et je serai exalté sur la terre.",
+     "page": 235,
+     "ligne_la": "11"
+    },
+    {
+     "n": 12,
+     "fr": "Le Seigneur des armées est avec nous ; le Dieu de Jacob est notre défenseur.",
+     "page": 235,
+     "ligne_la": "12"
+    }
+   ],
+   "lignes_la": [
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12"
+   ],
+   "pages": [
+    233,
+    235
+   ]
+  },
+  {
    "numero": 46,
    "titre": "Psaume XLVI",
    "versets": [
@@ -4909,6 +5139,453 @@
    "pages": [
     121,
     123
+   ]
+  },
+  {
+   "numero": 47,
+   "titre": "Psaume XLVII",
+   "versets": [
+    {
+     "n": 2,
+     "fr": "Le Seigneur est grand et digne de toute louange, dans la cité de notre Dieu, sur sa sainte montagne.",
+     "page": 235,
+     "ligne_la": "2"
+    },
+    {
+     "n": 3,
+     "fr": "C'est pour l'allégresse de toute la terre qu'a été fondé le mont Sion, le côté de l'aquilon, la cité du grand roi.",
+     "page": 235,
+     "ligne_la": "3"
+    },
+    {
+     "n": 4,
+     "fr": "Dieu se fera connaître dans ses maisons, lorsqu'il la défendra.",
+     "page": 235,
+     "ligne_la": "4"
+    },
+    {
+     "n": 5,
+     "fr": "Car voici que les rois de la terre se sont ligués, ils se sont avancés ensemble.",
+     "page": 235,
+     "ligne_la": "5"
+    },
+    {
+     "n": 6,
+     "fr": "Eux-mêmes, en la voyant, ont été dans la stupeur, ils ont été troublés, vivement émus.",
+     "page": 237,
+     "ligne_la": "6",
+     "lecture": [
+      "p. 237 : ils ont été troublés — l de « troublés » brisé (lu « troubiés »), lecture sûre"
+     ]
+    },
+    {
+     "n": 7,
+     "fr": "Un tremblement les a saisis ; il y a eu là des douleurs comme celles de la femme qui enfante.",
+     "page": 237,
+     "ligne_la": "7"
+    },
+    {
+     "n": 8,
+     "fr": "Par un vent impétueux vous briserez les vaisseaux de Tharsis.",
+     "page": 237,
+     "ligne_la": "7"
+    },
+    {
+     "n": 9,
+     "fr": "Ce que nous avions entendu dire, nous l'avons vu dans la cité du Seigneur des armées, dans la cité de notre Dieu. Dieu l'a établie à jamais.",
+     "page": 237,
+     "ligne_la": "9"
+    },
+    {
+     "n": 10,
+     "fr": "Nous avons reçu, ô Dieu, votre miséricorde au milieu de votre temple.",
+     "page": 237,
+     "ligne_la": "10"
+    },
+    {
+     "n": 11,
+     "fr": "Comme votre nom, ô Dieu, ainsi votre louange s'étend jusqu'aux extrémités de la terre. Votre droite est pleine de justice.",
+     "page": 237,
+     "ligne_la": "11"
+    },
+    {
+     "n": 12,
+     "fr": "Que le mont Sion se réjouisse, et que les filles de Juda soient dans l'allégresse, à cause de vos jugements, Seigneur.",
+     "page": 237,
+     "ligne_la": "12"
+    },
+    {
+     "n": 13,
+     "fr": "Faites le tour de Sion, et environnez-la ; racontez ces merveilles du haut de ses tours.",
+     "page": 237,
+     "ligne_la": "13"
+    },
+    {
+     "n": 14,
+     "fr": "Appliquez-vous à considérer sa force, et faites le dénombrement de ses maisons, pour en faire le récit à la génération future.",
+     "page": 237,
+     "ligne_la": "14"
+    },
+    {
+     "n": 15,
+     "fr": "Car c'est là notre Dieu, notre Dieu pour l'éternité et les siècles des siècles ; il régnera sur nous à jamais.",
+     "page": 237,
+     "ligne_la": "15"
+    }
+   ],
+   "lignes_la": [
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15"
+   ],
+   "pages": [
+    235,
+    237
+   ]
+  },
+  {
+   "numero": 48,
+   "titre": "Psaume XLVIII",
+   "versets": [
+    {
+     "n": 2,
+     "fr": "Écoutez ceci, tous les peuples, prêtez l'oreille, vous tous qui habitez l'univers ;",
+     "page": 237,
+     "ligne_la": "2"
+    },
+    {
+     "n": 3,
+     "fr": "et vous, enfants de la terre et fils des hommes, le riche aussi bien que le pauvre.",
+     "page": 239,
+     "ligne_la": "3"
+    },
+    {
+     "n": 4,
+     "fr": "Ma bouche proférera la sagesse, et de la méditation de mon cœur sortira la prudence.",
+     "page": 239,
+     "ligne_la": "4"
+    },
+    {
+     "n": 5,
+     "fr": "J'inclinerai mon oreille à la parabole ; je révélerai au son de la harpe ce que j'ai à proposer.",
+     "page": 239,
+     "ligne_la": "5"
+    },
+    {
+     "n": 6,
+     "fr": "Pourquoi craindrais-je au jour mauvais ? L'iniquité de ceux qui me talonnent m'environnera.",
+     "page": 239,
+     "ligne_la": "6"
+    },
+    {
+     "n": 7,
+     "fr": "Ils se confient dans leur force, et ils se glorifient dans l'abondance de leurs richesses.",
+     "page": 239,
+     "ligne_la": "7"
+    },
+    {
+     "n": 8,
+     "fr": "Le frère ne rachète point, un homme rachètera-t-il ? Il ne pourra pas donner à Dieu de quoi l'apaiser,",
+     "page": 239,
+     "ligne_la": "8"
+    },
+    {
+     "n": 9,
+     "fr": "ni un prix capable de racheter son âme. Il sera éternellement dans la peine,",
+     "page": 239,
+     "ligne_la": "9"
+    },
+    {
+     "n": 10,
+     "fr": "et il vivra encore jusqu'à la fin.",
+     "page": 239,
+     "ligne_la": "9"
+    },
+    {
+     "n": 11,
+     "fr": "Il ne verra pas la mort, lorsqu'il verra les sages mourir. Ensemble l'insensé et le fou périront, et ils abandonneront leurs richesses à des étrangers,",
+     "page": 239,
+     "ligne_la": "11"
+    },
+    {
+     "n": 12,
+     "fr": "et leurs sépulcres seront à jamais leur demeure. Leurs tentes subsisteront de génération en génération : ils ont donné leurs noms à leurs domaines.",
+     "page": 239,
+     "ligne_la": "12"
+    },
+    {
+     "n": 13,
+     "fr": "Et l'homme, quoique élevé en honneur, n'a pas compris ; il a été comparé aux bêtes sans raison, et il leur est devenu semblable.",
+     "page": 239,
+     "ligne_la": "13"
+    },
+    {
+     "n": 14,
+     "fr": "Telle est leur voie, qui leur est une occasion de chute, et néanmoins ils se complaisent dans leurs discours.",
+     "page": 241,
+     "ligne_la": "14",
+     "lecture": [
+      "p. 241 : Telle est leur voie — titre imprimé « Psaume XLVIIII, ii. » (coquille), rendu « XLVIII »"
+     ]
+    },
+    {
+     "n": 15,
+     "fr": "Ils ont été mis dans l'enfer comme un troupeau de brebis ; la mort les dévorera. Et, au matin, les justes auront l'empire sur eux, et leur appui sera détruit dans l'enfer, après qu'ils auront été dépouillés de leur gloire.",
+     "page": 241,
+     "ligne_la": "15"
+    },
+    {
+     "n": 16,
+     "fr": "Mais Dieu rachètera mon âme de la puissance de l'enfer, lorsqu'il m'aura pris auprès de lui.",
+     "page": 241,
+     "ligne_la": "16"
+    },
+    {
+     "n": 17,
+     "fr": "Ne crains pas, quand un homme sera devenu riche, et quand la gloire de sa maison se sera agrandie ;",
+     "page": 241,
+     "ligne_la": "17"
+    },
+    {
+     "n": 18,
+     "fr": "car, lorsqu'ii sera mort, il n'emportera pas tout, et sa gloire ne descendra point avec lui.",
+     "page": 241,
+     "ligne_la": "18",
+     "lecture": [
+      "p. 241 : lorsqu'ii sera mort — coquille de l'imprimé (« lorsqu'ii »), gardée telle quelle"
+     ]
+    },
+    {
+     "n": 19,
+     "fr": "Car, pendant sa vie, son âme sera bénie ; il te louera lorsque tu lui auras fait du bien.",
+     "page": 241,
+     "ligne_la": "19"
+    },
+    {
+     "n": 20,
+     "fr": "Il entrera jusqu'auprès des générations de ses pères, et durant toute l'éternité il ne verra pas la lumière.",
+     "page": 241,
+     "ligne_la": "20"
+    },
+    {
+     "n": 21,
+     "fr": "L'homme, quoique élevé en honneur, n'a pas compris ; il a été comparé aux bêtes sans raison, et il leur est devenu semblable.",
+     "page": 241,
+     "ligne_la": "21"
+    }
+   ],
+   "lignes_la": [
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "11",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "15",
+    "16",
+    "17",
+    "18",
+    "19",
+    "20",
+    "21"
+   ],
+   "pages": [
+    237,
+    239,
+    241
+   ]
+  },
+  {
+   "numero": 49,
+   "titre": "Psaume XLIX",
+   "versets": [
+    {
+     "n": 1,
+     "fr": "Le Dieu des dieux, le Seigneur, a parlé, et il a appelé la terre, du lever du soleil au couchant.",
+     "page": 241,
+     "ligne_la": "1"
+    },
+    {
+     "n": 2,
+     "fr": "De Sion apparaît l'éclat de sa beauté.",
+     "page": 243,
+     "ligne_la": "1"
+    },
+    {
+     "n": 3,
+     "fr": "Dieu viendra visiblement ; lui, notre Dieu, et il ne se taira point. Le feu s'enflammera en sa présence, et une tempête violente l'environnera.",
+     "page": 243,
+     "ligne_la": "3"
+    },
+    {
+     "n": 4,
+     "fr": "Il appellera d'en haut le ciel et la terre, pour faire le discernement de son peuple.",
+     "page": 243,
+     "ligne_la": "4"
+    },
+    {
+     "n": 5,
+     "fr": "Rassemblez devant lui ses saints, qui scellent son alliance par des sacrifices.",
+     "page": 243,
+     "ligne_la": "5"
+    },
+    {
+     "n": 6,
+     "fr": "Et les cieux annonceront sa justice, car c'est Dieu qui est juge.",
+     "page": 243,
+     "ligne_la": "6"
+    },
+    {
+     "n": 7,
+     "fr": "Écoute, mon peuple, et je parlerai, Israël, et je te rendrai témoignage. C'est moi qui suis Dieu, ton Dieu.",
+     "page": 243,
+     "ligne_la": "7"
+    },
+    {
+     "n": 8,
+     "fr": "Ce n'est pas pour tes sacrifices que je te reprendrai, car tes holocaustes sont toujours devant moi.",
+     "page": 243,
+     "ligne_la": "8"
+    },
+    {
+     "n": 9,
+     "fr": "Je ne prendrai pas les veaux de ta maison, ni les boucs de tes troupeaux ;",
+     "page": 243,
+     "ligne_la": "9"
+    },
+    {
+     "n": 10,
+     "fr": "car toutes les bêtes des forêts sont à moi, ainsi que les animaux des montagnes, et les bœufs.",
+     "page": 243,
+     "ligne_la": "10"
+    },
+    {
+     "n": 11,
+     "fr": "Je connais tous les oiseaux du ciel, et la beauté des champs est en ma présence.",
+     "page": 243,
+     "ligne_la": "11"
+    },
+    {
+     "n": 12,
+     "fr": "Si j'ai faim, je ne te le dirai pas ; car l'univers est à moi, avec tout ce qu'il renferme.",
+     "page": 243,
+     "ligne_la": "12"
+    },
+    {
+     "n": 13,
+     "fr": "Est-ce que je mangerai la chair des taureaux ? ou boirai-je le sang des boucs ?",
+     "page": 245,
+     "ligne_la": "13"
+    },
+    {
+     "n": 14,
+     "fr": "Immole à Dieu un sacrifice de louange, et rends tes vœux au Très-Haut.",
+     "page": 245,
+     "ligne_la": "14"
+    },
+    {
+     "n": 15,
+     "fr": "Puis invoque-moi au jour de la tribulation ; je te délivrerai, et tu me glorifieras.",
+     "page": 245,
+     "ligne_la": "15"
+    },
+    {
+     "n": 16,
+     "fr": "Mais Dieu a dit au pécheur : Pourquoi énumères-tu mes lois, et as-tu constamment mon alliance à la bouche ?",
+     "page": 245,
+     "ligne_la": "16"
+    },
+    {
+     "n": 17,
+     "fr": "Toi qui hais la discipline, et qui as rejeté derrière toi mes paroles.",
+     "page": 245,
+     "ligne_la": "17"
+    },
+    {
+     "n": 18,
+     "fr": "Si tu voyais un voleur tu courais avec lui, et tu mettais ta part avec les adultères.",
+     "page": 245,
+     "ligne_la": "18"
+    },
+    {
+     "n": 19,
+     "fr": "Ta bouche a été remplie de malice, et ta langue ourdissait la fraude.",
+     "page": 245,
+     "ligne_la": "19"
+    },
+    {
+     "n": 20,
+     "fr": "Tu t'asseyais pour parler contre ton frère, et tu tendais des pièges contre le fils de ta mère.",
+     "page": 245,
+     "ligne_la": "20"
+    },
+    {
+     "n": 21,
+     "fr": "Voilà ce que tu as fait, et je me suis tu. Tu as cru d'une manière impie que je te serais semblable. Je te reprendrai, et je mettrai tout sous tes yeux.",
+     "page": 245,
+     "ligne_la": "21"
+    },
+    {
+     "n": 22,
+     "fr": "Comprenez ces choses, vous qui oubliez Dieu, de peur qu'il ne déchire, sans que personne puisse délivrer.",
+     "page": 245,
+     "ligne_la": "22"
+    },
+    {
+     "n": 23,
+     "fr": "Le sacrifice de louange est celui qui m'honore, et là est la voie par laquelle je montrerai à l'homme le salut de Dieu.",
+     "page": 245,
+     "ligne_la": "23"
+    }
+   ],
+   "lignes_la": [
+    "1",
+    "1",
+    "3",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "18",
+    "19",
+    "20",
+    "21",
+    "22",
+    "23"
+   ],
+   "pages": [
+    241,
+    243,
+    245
    ]
   },
   {
