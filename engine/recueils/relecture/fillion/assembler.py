@@ -50,6 +50,12 @@ CANTIQUES = {
                             "Divinum Officium chante ce cantique en 15 lignes numérotées 38:10 à 38:24, coupées "
                             "autrement que les 11 versets de Fillion : numéros de Fillion, sans alignement ligne à "
                             "ligne."),
+    'Cantique de Judith': (213, 'Cantique de Judith', 'Judith, xvi, 15-21', list(range(15, 22)),
+                           "Divinum Officium chante ce cantique en 8 lignes numérotées 16:15 à 16:22, coupées autrement "
+                           "que les 7 versets de Fillion : numéros de Fillion, sans alignement ligne à ligne."),
+    "Cantique d'Anne": (223, "Cantique d'Anne", 'I Reg. ii, 1-10', list(range(1, 11)),
+                        "Divinum Officium chante ce cantique en 16 lignes numérotées 2:1 à 2:16, coupées autrement "
+                        "que les 10 versets de Fillion : numéros de Fillion, sans alignement ligne à ligne."),
     'Cantique de David': (211, 'Cantique de David', 'I Par. xxix, 10-13'),
     'Cantique de Siméon': (233, 'Cantique de Siméon', 'Luc. ii, 29-32'),
 }

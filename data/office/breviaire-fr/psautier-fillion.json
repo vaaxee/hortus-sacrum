@@ -2437,6 +2437,102 @@
    ]
   },
   {
+   "numero": 25,
+   "titre": "Psaume XXV",
+   "versets": [
+    {
+     "n": 1,
+     "fr": "Jugez-moi, Seigneur, car j'ai marché dans mon innocence, et comme j'espère au Seigneur, je ne serai point affaibli.",
+     "page": 259,
+     "ligne_la": "1"
+    },
+    {
+     "n": 2,
+     "fr": "Éprouvez-moi, Seigneur, et sondez-moi ; passez au feu mes reins et mon cœur.",
+     "page": 259,
+     "ligne_la": "2"
+    },
+    {
+     "n": 3,
+     "fr": "Car votre miséricorde est devant mes yeux, et je me suis complu dans votre vérité.",
+     "page": 259,
+     "ligne_la": "3"
+    },
+    {
+     "n": 4,
+     "fr": "Je ne me suis point assis dans l'assemblée de la vanité, et je n'entrerai pas avec les artisans d'iniquité.",
+     "page": 259,
+     "ligne_la": "4"
+    },
+    {
+     "n": 5,
+     "fr": "Je hais l'assemblée des méchants, et je ne m'assoirai pas avec les impies.",
+     "page": 259,
+     "ligne_la": "5"
+    },
+    {
+     "n": 6,
+     "fr": "Je laverai mes mains parmi les innocents, et je me tiendrai autour de votre autel, Seigneur,",
+     "page": 259,
+     "ligne_la": "6"
+    },
+    {
+     "n": 7,
+     "fr": "pour entendre la voix de vos louanges, et pour raconter toutes vos merveilles.",
+     "page": 259,
+     "ligne_la": "7"
+    },
+    {
+     "n": 8,
+     "fr": "Seigneur, j'ai aimé la beauté de votre maison, et le lieu où habite votre gloire.",
+     "page": 259,
+     "ligne_la": "8"
+    },
+    {
+     "n": 9,
+     "fr": "Ne perdez pas, ô Dieu, mon âme avec les impies, ni ma vie avec les hommes de sang,",
+     "page": 261,
+     "ligne_la": "9"
+    },
+    {
+     "n": 10,
+     "fr": "qui ont l'iniquité dans les mains, et dont la droite est remplie de présents.",
+     "page": 261,
+     "ligne_la": "10"
+    },
+    {
+     "n": 11,
+     "fr": "Pour moi j'ai marché dans mon innocence ; délivrez-moi, et ayez pitié de moi.",
+     "page": 261,
+     "ligne_la": "11"
+    },
+    {
+     "n": 12,
+     "fr": "Mon pied s'est tenu dans le droit chemin ; je vous bénirai, Seigneur, dans les assemblées.",
+     "page": 261,
+     "ligne_la": "12"
+    }
+   ],
+   "lignes_la": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12"
+   ],
+   "pages": [
+    259,
+    261
+   ]
+  },
+  {
    "numero": 26,
    "titre": "Psaume XXVI",
    "versets": [
@@ -5736,6 +5832,142 @@
    ]
   },
   {
+   "numero": 51,
+   "titre": "Psaume LI",
+   "versets": [
+    {
+     "n": 3,
+     "fr": "Pourquoi te glorifies-tu dans le mal, toi qui es vaillant pour commettre l'iniquité ?",
+     "page": 261,
+     "ligne_la": "3"
+    },
+    {
+     "n": 4,
+     "fr": "Tout le jour ta langue a médité l'injustice ; comme un rasoir affilé tu pratiques la tromperie.",
+     "page": 261,
+     "ligne_la": "4"
+    },
+    {
+     "n": 5,
+     "fr": "Tu as plus aimé la malice que la bonté, l'iniquité plus que les paroles de justice.",
+     "page": 261,
+     "ligne_la": "5"
+    },
+    {
+     "n": 6,
+     "fr": "Tu as aimé toutes les paroles de ruine, ô langue trompeuse.",
+     "page": 261,
+     "ligne_la": "6"
+    },
+    {
+     "n": 7,
+     "fr": "C'est pourquoi Dieu te détruira pour toujours ; il t'arrachera et te fera sortir de ta tente, et il enlèvera ta racine de la terre des vivants.",
+     "page": 261,
+     "ligne_la": "7"
+    },
+    {
+     "n": 8,
+     "fr": "Les justes le verront, et craindront, et ils se riront de lui, et diront :",
+     "page": 261,
+     "ligne_la": "8"
+    },
+    {
+     "n": 9,
+     "fr": "Voilà l'homme qui n'a pas pris Dieu pour son protecteur, mais qui s'est confié dans la multitude de ses richesses, et qui s'est prévalu de sa vanité.",
+     "page": 261,
+     "ligne_la": "9"
+    },
+    {
+     "n": 10,
+     "fr": "Mais moi, je suis comme un olivier fertile dans la maison de Dieu ; j'espère en la miséricorde de Dieu éternellement et à jamais.",
+     "page": 263,
+     "ligne_la": "10"
+    },
+    {
+     "n": 11,
+     "fr": "Je vous louerai sans fin, parce que vous avez fait cela, et j'attendrai votre nom, parce qu'il est bon, en présence de vos saints.",
+     "page": 263,
+     "ligne_la": "11"
+    }
+   ],
+   "lignes_la": [
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11"
+   ],
+   "pages": [
+    261,
+    263
+   ]
+  },
+  {
+   "numero": 52,
+   "titre": "Psaume LII",
+   "versets": [
+    {
+     "n": 1,
+     "fr": "L'insensé a dit dans son cœur : Il n'y a point de Dieu.",
+     "page": 263,
+     "ligne_la": "1"
+    },
+    {
+     "n": 2,
+     "fr": "Ils se sont corrompus et sont devenus abominables dans l'iniquité ; il n'y en a point qui fasse le bien.",
+     "page": 263,
+     "ligne_la": "2"
+    },
+    {
+     "n": 3,
+     "fr": "Dieu a regardé du haut du ciel sur les enfants des hommes, pour voir s'il y a quelqu'un qui soit intelligent et qui cherche Dieu.",
+     "page": 263,
+     "ligne_la": "3"
+    },
+    {
+     "n": 4,
+     "fr": "Tous se sont détournés, ils sont tous devenus inutiles ; il n'y en a point qui fasse le bien, il n'y en a pas un seul.",
+     "page": 263,
+     "ligne_la": "4"
+    },
+    {
+     "n": 5,
+     "fr": "Ne comprendront-ils pas, tous ceux qui commettent l'iniquité, qui dévorent mon peuple comme un morceau de pain ?",
+     "page": 263,
+     "ligne_la": "5"
+    },
+    {
+     "n": 6,
+     "fr": "Ils n'ont pas invoqué Dieu ; ils ont tremblé de frayeur là où il n'y a rien à craindre. Car Dieu a brisé les os de ceux qui veulent plaire aux hommes ; ils ont été confondus, parce que Dieu les a méprisés.",
+     "page": 263,
+     "ligne_la": "6"
+    },
+    {
+     "n": 7,
+     "fr": "Qui procurera de Sion le salut d'Israël ? Quand Dieu aura mis fin à la captivité de son peuple, Jacob sera dans l'allégresse et Israël dans la joie.",
+     "page": 263,
+     "ligne_la": "7"
+    }
+   ],
+   "lignes_la": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "6",
+    "7"
+   ],
+   "pages": [
+    263
+   ]
+  },
+  {
    "numero": 53,
    "titre": "Psaume LIII",
    "versets": [
@@ -5794,6 +6026,706 @@
    "pages": [
     53,
     55
+   ]
+  },
+  {
+   "numero": 54,
+   "titre": "Psaume LIV",
+   "versets": [
+    {
+     "n": 2,
+     "fr": "Exaucez, ô Dieu, ma prière, et ne méprisez pas ma supplication ;",
+     "page": 265,
+     "ligne_la": "2"
+    },
+    {
+     "n": 3,
+     "fr": "écoutez-moi, et exaucez-moi. J'ai été rempli de tristesse dans mon épreuve, et le trouble m'a saisi",
+     "page": 265,
+     "ligne_la": "3"
+    },
+    {
+     "n": 4,
+     "fr": "à la voix de l'ennemi, et devant l'oppression du pécheur. Car il m'ont accusé de crimes, et dans leur colère ils m'ont affligé.",
+     "page": 265,
+     "ligne_la": "4"
+    },
+    {
+     "n": 5,
+     "fr": "Mon cœur s'est troublé au dedans de moi, et les terreurs de la mort sont tombées sur moi.",
+     "page": 265,
+     "ligne_la": "5"
+    },
+    {
+     "n": 6,
+     "fr": "La crainte et le tremblement m'ont saisi, et les ténèbres m'ont enveloppé.",
+     "page": 265,
+     "ligne_la": "6"
+    },
+    {
+     "n": 7,
+     "fr": "Et j'ai dit : Qui me donnera des ailes comme à la colombe, pour que je m'envole et que je me repose ?",
+     "page": 265,
+     "ligne_la": "7"
+    },
+    {
+     "n": 8,
+     "fr": "Voici que je me suis éloigné en fuyant, et j'ai demeuré au désert.",
+     "page": 265,
+     "ligne_la": "8"
+    },
+    {
+     "n": 9,
+     "fr": "J'attendais là cèlui qui m'a sauvé de l'abattement de l'esprit et de la tempête.",
+     "page": 265,
+     "ligne_la": "9",
+     "lecture": [
+      "p. 265 : J'attendais là cèlui — « cèlui » (accent parasite), gardé tel qu'imprimé"
+     ]
+    },
+    {
+     "n": 10,
+     "fr": "Perdez-les, Seigneur, divisez leurs langues ; car j'ai vu l'iniquité et la contradiction dans la ville.",
+     "page": 265,
+     "ligne_la": "10"
+    },
+    {
+     "n": 11,
+     "fr": "Jour et nuit l'iniquité fait le tour de ses murs ; et au milieu d'elle sont le travail",
+     "page": 265,
+     "ligne_la": "11"
+    },
+    {
+     "n": 12,
+     "fr": "et l'injustice. L'usure et la tromperie ne quittent point ses places publiques.",
+     "page": 265,
+     "ligne_la": "12",
+     "lecture": [
+      "p. 265 : et l'injustice — Fillion imprime le numéro 12 au milieu de la ligne, devant « et l'injustice » : découpage de l'imprimé gardé"
+     ]
+    },
+    {
+     "n": 13,
+     "fr": "Car, si mon ennemi m'avait maudit, je l'aurais certainement supporté. Et si celui qui me haïssait avait parlé de moi avec insolence, peut-être me serais-je caché de lui.",
+     "page": 267,
+     "ligne_la": "13"
+    },
+    {
+     "n": 14,
+     "fr": "Mais toi, qui ne faisais qu'un avec moi, mon conseiller et mon ami ;",
+     "page": 267,
+     "ligne_la": "14"
+    },
+    {
+     "n": 15,
+     "fr": "toi qui avec moi partageais de doux mets : nous marchions avec tant d'union dans la maison de Dieu !",
+     "page": 267,
+     "ligne_la": "15"
+    },
+    {
+     "n": 16,
+     "fr": "Que la mort fonde sur eux, et qu'ils descendent tout vivants dans l'enfer ; car l'iniquité est dans leurs demeures, en eux-mêmes.",
+     "page": 267,
+     "ligne_la": "16"
+    },
+    {
+     "n": 17,
+     "fr": "Mais moi j'ai crié vers Dieu, et le Seigneur me sauvera.",
+     "page": 267,
+     "ligne_la": "17"
+    },
+    {
+     "n": 18,
+     "fr": "Le soir, le matin et à midi, je raconterai et j'annoncerai ma peine, et il exaucera ma voix.",
+     "page": 267,
+     "ligne_la": "18"
+    },
+    {
+     "n": 19,
+     "fr": "Il délivrera en paix mon âme de ceux qui s'approchent de moi, car ils étaient en grand nombre contre moi.",
+     "page": 267,
+     "ligne_la": "19"
+    },
+    {
+     "n": 20,
+     "fr": "Dieu m'exaucera, et il les humiliera, lui qui est avant tous les siècles. Car il n'y a point de changement en eux, et ils ne craignent pas Dieu.",
+     "page": 267,
+     "ligne_la": "20"
+    },
+    {
+     "n": 21,
+     "fr": "Il a étendu sa main pour leur rendre ce qu'ils méritaient. Ils ont souillé son alliance ;",
+     "page": 267,
+     "ligne_la": "21"
+    },
+    {
+     "n": 22,
+     "fr": "Ils ont été dissipés par la colère de son visage, et son cœur s'est approché. Ses discours sont plus doux que l'huile, et ils sont en même temps comme des flèches.",
+     "page": 267,
+     "ligne_la": "22"
+    },
+    {
+     "n": 23,
+     "fr": "Jette ton souci sur le Soigneur, et lui-même il te nourrira ; il ne laissera pas le juste dans une éternelle agitation.",
+     "page": 269,
+     "ligne_la": "23"
+    },
+    {
+     "n": 24,
+     "fr": "Mais vous, ô Dieu, vous les conduirez dans l'abime de la mort. Les hommes sanguinaires et trompeurs n'arriveront pas à la moitié de leurs jours ; mais moi, j'espérerai en vous, Seigneur.",
+     "page": 269,
+     "ligne_la": "24"
+    }
+   ],
+   "lignes_la": [
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "13",
+    "14",
+    "15",
+    "16",
+    "16",
+    "17",
+    "18",
+    "19",
+    "20",
+    "20",
+    "21",
+    "22",
+    "23",
+    "24",
+    "24"
+   ],
+   "pages": [
+    265,
+    267,
+    269
+   ]
+  },
+  {
+   "numero": 55,
+   "titre": "Psaume LV",
+   "versets": [
+    {
+     "n": 2,
+     "fr": "Ayez pitié de moi, ô Dieu, car l'homme m'a foulé aux pieds ; m'attaquant tout le jour, il m'a tourmenté.",
+     "page": 269,
+     "ligne_la": "2"
+    },
+    {
+     "n": 3,
+     "fr": "Mes ennemis m'ont foulé aux pieds tout le jour ; car il y en a beaucoup qui me font la guerre.",
+     "page": 269,
+     "ligne_la": "3"
+    },
+    {
+     "n": 4,
+     "fr": "La hauteur du jour m'inspirera de la crainte ; mais j'espérerai en vous.",
+     "page": 269,
+     "ligne_la": "4"
+    },
+    {
+     "n": 5,
+     "fr": "Je louerai en Dieu les paroles qu'il m'a fait entendre ; j'espère en Dieu ; je ne craindrai point ce que la chair peut me faire.",
+     "page": 269,
+     "ligne_la": "5"
+    },
+    {
+     "n": 6,
+     "fr": "Tout le jour ils avaient mes paroles en exécration ; toutes leurs pensées tendaient à me faire du mal.",
+     "page": 269,
+     "ligne_la": "6"
+    },
+    {
+     "n": 7,
+     "fr": "Ils s'assembleront, et se cacheront ; ils observeront mes démarches. De même qu'ils en ont voulu à ma vie,",
+     "page": 269,
+     "ligne_la": "7"
+    },
+    {
+     "n": 8,
+     "fr": "vous ne les sauverez à aucun prix ; dans votre colère vous briserez les peuples. O Dieu,",
+     "page": 269,
+     "ligne_la": "8"
+    },
+    {
+     "n": 9,
+     "fr": "je vous ai exposé toute ma vie ; vous avez mis mes larmes devant vous, selon votre promesse.",
+     "page": 269,
+     "ligne_la": "9",
+     "lecture": [
+      "p. 269 : je vous ai exposé — Fillion imprime le numéro 9 après « O Dieu, » et le numéro 8 devant « vous ne les sauverez » (DO commence 55, 8 à « Sicut sustinuerunt » et 55, 9 à « Deus ») : découpage de l'imprimé gardé"
+     ]
+    },
+    {
+     "n": 10,
+     "fr": "Alors mes ennemis devront retourner en arrière. En quelque jour que je vous invoque, je connais que vous êtes mon Dieu.",
+     "page": 271,
+     "ligne_la": "10"
+    },
+    {
+     "n": 11,
+     "fr": "Je louerai en Dieu la parole qu'il m'a donnée ; je louerai dans le Seigneur sa promesse. J'espère en Dieu ; je ne craindrai point ce que l'homme peut me faire.",
+     "page": 271,
+     "ligne_la": "11"
+    },
+    {
+     "n": 12,
+     "fr": "Je connais, ô Dieu, les vœux que je vous ai faits, les louanges dont j'ai à m'acquitter envers vous.",
+     "page": 271,
+     "ligne_la": "12"
+    },
+    {
+     "n": 13,
+     "fr": "Car vous avez délivré mon âme de la mort, et mes pieds de la chute, afin que je me rende agréable devant Dieu à la lumière des vivants.",
+     "page": 271,
+     "ligne_la": "13"
+    }
+   ],
+   "lignes_la": [
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13"
+   ],
+   "pages": [
+    269,
+    271
+   ]
+  },
+  {
+   "numero": 56,
+   "titre": "Psaume LVI",
+   "versets": [
+    {
+     "n": 2,
+     "fr": "Ayez pitié de moi, ô Dieu, ayez pitié de moi, car mon âme a confiance en vous. Et j'espérerai à l'ombre de vos ailes, jusqu'à ce que l'iniquité ait passé.",
+     "page": 271,
+     "ligne_la": "2"
+    },
+    {
+     "n": 3,
+     "fr": "Je crierai vers le Dieu très-haut, le Dieu qui m'a fait du bien.",
+     "page": 271,
+     "ligne_la": "3"
+    },
+    {
+     "n": 4,
+     "fr": "Il a envoyé du ciel son secours, et il m'a délivré ; il a couvert d'opprobre ceux qui me foulaient aux pieds. Dieu a envoyé sa miséricorde et sa vérité,",
+     "page": 271,
+     "ligne_la": "4"
+    },
+    {
+     "n": 5,
+     "fr": "et il a arraché mon âme du milieu des petits des lions ; j'ai dormi plein de trouble. Les enfants des hommes ont pour dents des armes et des flèches, et leur langue est un glaive acéré.",
+     "page": 271,
+     "ligne_la": "5"
+    },
+    {
+     "n": 6,
+     "fr": "Soyez exalté au-dessus des cieux, ô Dieu, et que votre gloire brille par toute la terre.",
+     "page": 273,
+     "ligne_la": "6"
+    },
+    {
+     "n": 7,
+     "fr": "Ils ont préparé un filet pour mes pieds, et ils ont courbé mon âme. Ils ont creusé une fosse devant moi, et ils y sont eux-mêmes tombés.",
+     "page": 273,
+     "ligne_la": "7"
+    },
+    {
+     "n": 8,
+     "fr": "Mon cœur est préparé, ô Dieu, mon cœur est préparé : je chanterai, et je psalmodierai.",
+     "page": 273,
+     "ligne_la": "8"
+    },
+    {
+     "n": 9,
+     "fr": "Lève-toi, ma gloire ; levez-vous, mon luth et ma harpe ; je me lèverai dès l'aurore.",
+     "page": 273,
+     "ligne_la": "9"
+    },
+    {
+     "n": 10,
+     "fr": "Je vous célébrerai, Seigneur, au milieu des peuples, et je vous chanterai parmi les nations ;",
+     "page": 273,
+     "ligne_la": "10"
+    },
+    {
+     "n": 11,
+     "fr": "car votre miséricorde s'est élevée jusqu'aux cieux, et votre vérité jusqu'aux nues.",
+     "page": 273,
+     "ligne_la": "11"
+    },
+    {
+     "n": 12,
+     "fr": "Soyez exalté, ô Dieu, au-dessus des cieux, et que votre gloire brille par toute la terre.",
+     "page": 273,
+     "ligne_la": "12"
+    }
+   ],
+   "lignes_la": [
+    "2",
+    "2",
+    "3",
+    "4",
+    "4",
+    "5",
+    "6",
+    "7",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12"
+   ],
+   "pages": [
+    271,
+    273
+   ]
+  },
+  {
+   "numero": 57,
+   "titre": "Psaume LVII",
+   "versets": [
+    {
+     "n": 2,
+     "fr": "Parlez-vous vraiment selon la justice ? Jugez avec droiture, fils des hommes.",
+     "page": 273,
+     "ligne_la": "2"
+    },
+    {
+     "n": 3,
+     "fr": "Mais dans votre cœur vous formez des desseins d'iniquité ; dans le pays vos mains ourdissent des injustices.",
+     "page": 273,
+     "ligne_la": "3"
+    },
+    {
+     "n": 4,
+     "fr": "Les pécheurs sont pervertis dès le sein maternel, ils se sont égarés dès leur naissance ; ils ont dit des choses fausses.",
+     "page": 273,
+     "ligne_la": "4"
+    },
+    {
+     "n": 5,
+     "fr": "Leur fureur est semblable à celle du serpent ; à celle de l'aspic sourd, qui ferme ses oreilles,",
+     "page": 275,
+     "ligne_la": "5"
+    },
+    {
+     "n": 6,
+     "fr": "qui n'entend pas la voix des enchanteurs, et du magicien qui use d'adresse pour le charmer.",
+     "page": 275,
+     "ligne_la": "6"
+    },
+    {
+     "n": 7,
+     "fr": "Dieu brisera leurs dents dans leur bouche ; ; le Seigneur mettra en pièces les mâchoires des lions.",
+     "page": 275,
+     "ligne_la": "7"
+    },
+    {
+     "n": 8,
+     "fr": "Ils seront réduits à rien, comme une eau qui s'écoule ; il a tendu son arc jusqu'à ce qu'ils devinssent impuissants.",
+     "page": 275,
+     "ligne_la": "8"
+    },
+    {
+     "n": 9,
+     "fr": "Comme la cire qui coule, ils seront enlevés, le feu est tombé d'en haut sur eux, et ils n'ont plus vu le soleil.",
+     "page": 275,
+     "ligne_la": "9"
+    },
+    {
+     "n": 10,
+     "fr": "Avant qu'ils connaissent que leurs épines sont devenues un buisson, il les engloutit comme tout vivants dans sa colère.",
+     "page": 275,
+     "ligne_la": "10"
+    },
+    {
+     "n": 11,
+     "fr": "Le juste se réjouira en voyant la vengeance ; il lavera ses mains dans le sang du pécheur.",
+     "page": 275,
+     "ligne_la": "11"
+    },
+    {
+     "n": 12,
+     "fr": "Et les hommes diront : Oui, il y a une récompense pour le juste ; oui, il y a un Dieu qui les juge sur la terre.",
+     "page": 275,
+     "ligne_la": "12"
+    }
+   ],
+   "lignes_la": [
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12"
+   ],
+   "pages": [
+    273,
+    275
+   ]
+  },
+  {
+   "numero": 58,
+   "titre": "Psaume LVIII",
+   "versets": [
+    {
+     "n": 2,
+     "fr": "Sauvez-moi des mains de mes ennemis, ô mon Dieu, et délivrez-moi de ceux qui se lèvent contre moi.",
+     "page": 275,
+     "ligne_la": "2"
+    },
+    {
+     "n": 3,
+     "fr": "Délivrez-moi de ceux qui commettent l'iniquité, et sauvez-moi des hommes de sang.",
+     "page": 277,
+     "ligne_la": "3"
+    },
+    {
+     "n": 4,
+     "fr": "Car voici qu'ils se sont rendus maîtres de ma vie ; des hommes puissants se sont précipités sur moi.",
+     "page": 277,
+     "ligne_la": "4"
+    },
+    {
+     "n": 5,
+     "fr": "Il n'y a eu ni faute ni péché de ma part, Seigneur ; j'ai couru et j'ai conduit mes pas sans injustice.",
+     "page": 277,
+     "ligne_la": "5"
+    },
+    {
+     "n": 6,
+     "fr": "Levez-vous au-devant de moi, et voyez. Et vous, Seigneur, Dieu des armées, Dieu d'Israël, appliquez-vous à visiter toutes les nations ; n'ayez pas pitié de tous ceux qui commettent l'iniquité.",
+     "page": 277,
+     "ligne_la": "6"
+    },
+    {
+     "n": 7,
+     "fr": "Ils reviendront le soir, et ils seront affamés comme des chiens, et ils feront le tour de la ville.",
+     "page": 277,
+     "ligne_la": "7"
+    },
+    {
+     "n": 8,
+     "fr": "Voici qu'ils parleront de leur bouche, et un glaive sera sur leurs lèvres ; car qui est-ce qui a entendu ?",
+     "page": 277,
+     "ligne_la": "8"
+    },
+    {
+     "n": 9,
+     "fr": "Et vous, Seigneur, vous vous rirez d'eux ; vous réduirez à néant toutes les nations.",
+     "page": 277,
+     "ligne_la": "9"
+    },
+    {
+     "n": 10,
+     "fr": "C'est en vous que je conserverai ma force ; car, ô Dieu, vous êtes mon défenseur.",
+     "page": 277,
+     "ligne_la": "10"
+    },
+    {
+     "n": 11,
+     "fr": "La miséricorde de mon Dieu me préviendra.",
+     "page": 277,
+     "ligne_la": "10"
+    },
+    {
+     "n": 12,
+     "fr": "Dieu me fera regarder par-dessus mes ennemis. Ne les tuez pas, de peur qu'on n'oublie mon peuple. Dispersez-les par votre puissance, et renversez-les, Seigneur, vous qui êtes mon protecteur,",
+     "page": 277,
+     "ligne_la": "12"
+    },
+    {
+     "n": 13,
+     "fr": "à cause du crime de leur bouche, des paroles de leurs lèvres, et qu'ils soient pris dans leur orgueil. Et l'on publiera leurs malédictions et leurs mensonges,",
+     "page": 279,
+     "ligne_la": "13"
+    },
+    {
+     "n": 14,
+     "fr": "au jour de la consommation, dans la colère de la consommation, et ils ne seront plus. Et ils sauront que Dieu régnera sur Jacob, et jusqu'aux extrémités de la terre.",
+     "page": 279,
+     "ligne_la": "14"
+    },
+    {
+     "n": 15,
+     "fr": "Ils reviendront le soir, et ils seront affamés comme des chiens, et ils feront le tour de la ville.",
+     "page": 279,
+     "ligne_la": "15"
+    },
+    {
+     "n": 16,
+     "fr": "Ils se disperseront pour manger ; mais, s'ils ne sont pas rassasiés, ils murmureront.",
+     "page": 279,
+     "ligne_la": "16"
+    },
+    {
+     "n": 17,
+     "fr": "Mais moi, je chanterai votre puissance, et le matin je célébrerai avec joie votre miséricorde. Car vous vous êtes fait mon protecteur, et mon refuge au jour de ma tribulation.",
+     "page": 279,
+     "ligne_la": "17",
+     "lecture": [
+      "p. 279 : Car vous vous êtes fait — « Çar » (cédille parasite) imprimé ; rendu « Car »"
+     ]
+    },
+    {
+     "n": 18,
+     "fr": "O mon défenseur, je vous célébrerai, parce que vous êtes le Dieu qui me protégez, mon Dieu, ma miséricorde.",
+     "page": 279,
+     "ligne_la": "18"
+    }
+   ],
+   "lignes_la": [
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "12",
+    "12",
+    "13",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "17",
+    "18"
+   ],
+   "pages": [
+    275,
+    277,
+    279
+   ]
+  },
+  {
+   "numero": 59,
+   "titre": "Psaume LIX",
+   "versets": [
+    {
+     "n": 3,
+     "fr": "O Dieu, vous nous avez repoussés et vous nous avez détruits ; vous vous êtes irrité, et vous avez eu pitié de nous.",
+     "page": 279,
+     "ligne_la": "3"
+    },
+    {
+     "n": 4,
+     "fr": "Vous avez ébranlé la terre, et vous l'avez troublée ; guérissez ses brisures, car elle est ébranlée.",
+     "page": 281,
+     "ligne_la": "4"
+    },
+    {
+     "n": 5,
+     "fr": "Vous avez fait voir à votre peuple des choses dures ; vous nous avez abreuvés d'un vin de douleur.",
+     "page": 281,
+     "ligne_la": "5"
+    },
+    {
+     "n": 6,
+     "fr": "Vous avez donné à ceux qui vous craignent un signal, afin qu'ils fuient de devant l'arc. Pour que vos bien-aimés soient délivrés,",
+     "page": 281,
+     "ligne_la": "6"
+    },
+    {
+     "n": 7,
+     "fr": "sauvez-nous par votre droite, et exaucez-moi.",
+     "page": 281,
+     "ligne_la": "7"
+    },
+    {
+     "n": 8,
+     "fr": "Dieu a parlé dans son sanctuaire : Je me réjouirai, et je partagerai Sichem, et je mesurerai la vallée des Tentes.",
+     "page": 281,
+     "ligne_la": "8"
+    },
+    {
+     "n": 9,
+     "fr": "Galaad est à moi, et à moi Manassé, et Ephraïm est la force de ma tête. Juda est mon roi ;",
+     "page": 281,
+     "ligne_la": "9"
+    },
+    {
+     "n": 10,
+     "fr": "Moab est comme le vase de mon espérance. J'étendrai ma chaussure sur l'Idumée ; les étrangers me sont assujettis.",
+     "page": 281,
+     "ligne_la": "10"
+    },
+    {
+     "n": 11,
+     "fr": "Qui me conduira à la ville fortifiée ? qui me conduira jusqu'en Idumée ?",
+     "page": 281,
+     "ligne_la": "11"
+    },
+    {
+     "n": 12,
+     "fr": "N'est-ce pas vous, ô Dieu, qui nous avez repoussés ? et ne sortirez-vous pas, ô Dieu, à la tête de nos armées ?",
+     "page": 281,
+     "ligne_la": "12"
+    },
+    {
+     "n": 13,
+     "fr": "Donnez-nous du secours contre la détresse, car la protection de l'homme est vaine.",
+     "page": 281,
+     "ligne_la": "13"
+    },
+    {
+     "n": 14,
+     "fr": "Avec Dieu nous ferons des actes de courage, et lui-même réduira à néant ceux qui nous persécutent.",
+     "page": 281,
+     "ligne_la": "14"
+    }
+   ],
+   "lignes_la": [
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14"
+   ],
+   "pages": [
+    279,
+    281
    ]
   },
   {
@@ -5952,6 +6884,110 @@
    "pages": [
     35,
     37
+   ]
+  },
+  {
+   "numero": 64,
+   "titre": "Psaume LXIV",
+   "versets": [
+    {
+     "n": 2,
+     "fr": "L'hymne de louange vous est due, ô Dieu, dans Sion, et on vous rendra des vœux dans Jérusalem.",
+     "page": 249,
+     "ligne_la": "2"
+    },
+    {
+     "n": 3,
+     "fr": "Exaucez ma prière ; à vous viendra toute chair.",
+     "page": 249,
+     "ligne_la": "3"
+    },
+    {
+     "n": 4,
+     "fr": "Les paroles des méchants ont prévalu sur nous ; mais vous nous pardonnerez nos impiétés.",
+     "page": 249,
+     "ligne_la": "4"
+    },
+    {
+     "n": 5,
+     "fr": "Heureux celui que vous avez choisi et pris avec vous ; il habitera dans vos parvis. Nous serons remplis des biens de votre maison ; votre temple est saint,",
+     "page": 249,
+     "ligne_la": "5"
+    },
+    {
+     "n": 6,
+     "fr": "il est admirable en équité. Exaucez-nous, ô Dieu, notre sauveur, espérance de tous les confins de la terre et des lointains rivages de la mer",
+     "page": 249,
+     "ligne_la": "6"
+    },
+    {
+     "n": 7,
+     "fr": "Vous affermissez les montagnes par votre force, vous qui êtes ceint de puissance,",
+     "page": 249,
+     "ligne_la": "7"
+    },
+    {
+     "n": 8,
+     "fr": "qui troublez les profondeurs de la mer, et qui faites retentir le bruit de ses flots. Les nations seront troublées,",
+     "page": 249,
+     "ligne_la": "8"
+    },
+    {
+     "n": 9,
+     "fr": "et ceux qui habitent les extrémités de la terre seront effrayés par vos prodiges ; vous réjouirez les contrées de l'orient et de l'occident.",
+     "page": 249,
+     "ligne_la": "8"
+    },
+    {
+     "n": 10,
+     "fr": "Vous avez visité la terre, et vous l'avez enivrée ; vous l'avez comblée de richesses. Le fleuve de Dieu a été rempli d'eaux ; vous avez préparé la nourriture de votre peuple ; car c'est ainsi que vous préparez la terre.",
+     "page": 249,
+     "ligne_la": "10"
+    },
+    {
+     "n": 11,
+     "fr": "Enivrez d'eau ses ruisseaux, multipliez ses germes ; sous ses ondées elle se réjouira, donnant ses fruits.",
+     "page": 251,
+     "ligne_la": "11"
+    },
+    {
+     "n": 12,
+     "fr": "Vous bénirez la couronne de l'année de votre bonté, et vos champs seront remplis d'abondantes récoltes.",
+     "page": 251,
+     "ligne_la": "12"
+    },
+    {
+     "n": 13,
+     "fr": "Les gracieux pâturages du désert seront engraissés, et les collines seront ceintes d'allégresse.",
+     "page": 251,
+     "ligne_la": "13"
+    },
+    {
+     "n": 14,
+     "fr": "Les béliers des brebis se revêtiront, et les vallées seront pleines de blé ; tout chantera et fera entendre des hymnes.",
+     "page": 251,
+     "ligne_la": "14"
+    }
+   ],
+   "lignes_la": [
+    "2",
+    "3",
+    "4",
+    "5",
+    "5",
+    "6",
+    "7",
+    "8",
+    "10",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14"
+   ],
+   "pages": [
+    249,
+    251
    ]
   },
   {
@@ -7029,6 +8065,106 @@
    ]
   },
   {
+   "numero": 96,
+   "titre": "Psaume XCVI",
+   "versets": [
+    {
+     "n": 1,
+     "fr": "Le Seigneur est roi : que la terre tressaille de joie, que toutes les îles se réjouissent.",
+     "page": 247,
+     "ligne_la": "1"
+    },
+    {
+     "n": 2,
+     "fr": "La nuée et l'obscurité sont autour de lui ; la justice et l'équité sont le soutien de son trône.",
+     "page": 247,
+     "ligne_la": "2"
+    },
+    {
+     "n": 3,
+     "fr": "Le feu marche devant lui, et embrase autour de lui ses ennemis.",
+     "page": 247,
+     "ligne_la": "3"
+    },
+    {
+     "n": 4,
+     "fr": "Ses éclairs ont brillé sur le monde ; la terre a vu, et a tremblé.",
+     "page": 247,
+     "ligne_la": "4"
+    },
+    {
+     "n": 5,
+     "fr": "Les montagnes se sont fondues comme la cire à la face du Seigneur ; ; à la face du Seigneur, toute la terre.",
+     "page": 247,
+     "ligne_la": "5",
+     "lecture": [
+      "p. 247 : à la face du Seigneur, toute la terre — trait parasite après « Seigneur, », non repris"
+     ]
+    },
+    {
+     "n": 6,
+     "fr": "Les cieux ont proclamé sa justice, et tous les peuples ont vu sa gloire.",
+     "page": 247,
+     "ligne_la": "6"
+    },
+    {
+     "n": 7,
+     "fr": "Qu'ils soient confondus tous ceux qui adorent les images sculptées, et qui se glorifient dans leurs idoles. Adorez-le, vous tous ses anges.",
+     "page": 247,
+     "ligne_la": "7"
+    },
+    {
+     "n": 8,
+     "fr": "Sion a entendu et s'est réjouie, et les filles de Juda ont tressailli de joie, à cause de vos jugements, Seigneur.",
+     "page": 247,
+     "ligne_la": "8"
+    },
+    {
+     "n": 9,
+     "fr": "Car vous êtes le Seigneur Très-Haut sur toute la terre ; vous êtes infiniment élevé au-dessus de tous les dieux.",
+     "page": 247,
+     "ligne_la": "9"
+    },
+    {
+     "n": 10,
+     "fr": "Vous qui aimez le Seigneur, haïssez le mal ; le Seigneur garde les âmes de ses saints ; il les délivrera de la main du pécheur.",
+     "page": 247,
+     "ligne_la": "10"
+    },
+    {
+     "n": 11,
+     "fr": "La lumière s'est levée pour le juste, et la joie pour ceux qui ont le cœur droit.",
+     "page": 249,
+     "ligne_la": "11"
+    },
+    {
+     "n": 12,
+     "fr": "Réjouissez-vous, justes, dans le Seigneur, et célébrez la mémoire de sa sainteté.",
+     "page": 249,
+     "ligne_la": "12"
+    }
+   ],
+   "lignes_la": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12"
+   ],
+   "pages": [
+    247,
+    249
+   ]
+  },
+  {
    "numero": 99,
    "titre": "Psaume XCIX",
    "versets": [
@@ -7066,6 +8202,82 @@
    ],
    "pages": [
     33
+   ]
+  },
+  {
+   "numero": 100,
+   "titre": "Psaume C",
+   "versets": [
+    {
+     "n": 1,
+     "fr": "Votre miséricorde et votre justice, je les chanterai devant vous, Seigneur. Je les chanterai,",
+     "page": 251,
+     "ligne_la": "1"
+    },
+    {
+     "n": 2,
+     "fr": "et j'étudierai la voie sans tache. Quand viendrez-vous à moi ? Je marchais dans l'innocence de mon cœur, au milieu de ma maison.",
+     "page": 251,
+     "ligne_la": "2",
+     "lecture": [
+      "p. 251 : et j'étudierai — Fillion imprime le numéro 2 au milieu de la ligne, devant « et j'étudierai » : découpage de l'imprimé gardé"
+     ]
+    },
+    {
+     "n": 3,
+     "fr": "Je ne plaçais devant mes yeux rien d'injuste. Je haïssais ceux qui commettaient la prévarication. J'éloignais de moi",
+     "page": 251,
+     "ligne_la": "3"
+    },
+    {
+     "n": 4,
+     "fr": "le cœur corrompu ; le méchant s'écartait de moi, je ne le connaissais pas.",
+     "page": 251,
+     "ligne_la": "4",
+     "lecture": [
+      "p. 251 : le cœur corrompu — Fillion imprime le numéro 4 au milieu de la ligne, devant « le cœur corrompu » : découpage de l'imprimé gardé"
+     ]
+    },
+    {
+     "n": 5,
+     "fr": "Celui qui médisait en secret de son prochain, je le poursuivais. Celui dont l'œil est superbe et le cœur insatiable, je ne mangeais pas avec lui.",
+     "page": 253,
+     "ligne_la": "5"
+    },
+    {
+     "n": 6,
+     "fr": "Mes yeux se tournaient vers les hommes fidèles de la terre, pour les faire asseoir près de moi. Celui qui marchait dans une voie innocente était mon serviteur.",
+     "page": 253,
+     "ligne_la": "6"
+    },
+    {
+     "n": 7,
+     "fr": "Il n'habitera pas dans ma maison celui qui agit avec orgueil. Celui qui profère l'iniquité n'a pu se rendre agréable sous le regard de mes yeux.",
+     "page": 253,
+     "ligne_la": "7"
+    },
+    {
+     "n": 8,
+     "fr": "Dès le matin je mettais à mort tous les pécheurs de la terre, afin d'extirper de la ville du Seigneur tous ceux qui commettent l'iniquité.",
+     "page": 253,
+     "ligne_la": "8"
+    }
+   ],
+   "lignes_la": [
+    "1",
+    "2",
+    "2",
+    "3",
+    "4",
+    "5",
+    "5",
+    "6",
+    "7",
+    "8"
+   ],
+   "pages": [
+    251,
+    253
    ]
   },
   {
@@ -9868,6 +11080,369 @@
    ]
   },
   {
+   "numero": 127,
+   "titre": "Psaume CXXVII",
+   "versets": [
+    {
+     "n": 1,
+     "fr": "Heureux tous ceux qui craignent le Seigneur, et qui marchent dans ses voies.",
+     "page": 283,
+     "ligne_la": "1"
+    },
+    {
+     "n": 2,
+     "fr": "Parce que tu te nourriras des travaux de tes mains, tu seras heureux et tu prospéreras.",
+     "page": 283,
+     "ligne_la": "2"
+    },
+    {
+     "n": 3,
+     "fr": "Ta femme sera comme une vigne féconde, dans l'intérieur de ta maison. Tes enfants seront comme de jeunes plants d'olivier alentour de ta table.",
+     "page": 283,
+     "ligne_la": "3a"
+    },
+    {
+     "n": 4,
+     "fr": "C'est ainsi que sera béni l'homme qui craint le Seigneur.",
+     "page": 283,
+     "ligne_la": "4"
+    },
+    {
+     "n": 5,
+     "fr": "Que le Seigneur te bénisse de Sion, et puisses-tu voir la prospérité de Jérusalem tous les jours de ta vie !",
+     "page": 283,
+     "ligne_la": "5"
+    },
+    {
+     "n": 6,
+     "fr": "Et puisses-tu voir les enfants de tes enfants, la paix sur Israël !",
+     "page": 283,
+     "ligne_la": "6"
+    }
+   ],
+   "lignes_la": [
+    "1",
+    "2",
+    "3a",
+    "3b",
+    "4",
+    "5",
+    "6"
+   ],
+   "pages": [
+    283
+   ]
+  },
+  {
+   "numero": 128,
+   "titre": "Psaume CXXVIII",
+   "versets": [
+    {
+     "n": 1,
+     "fr": "Ils m'ont souvent attaqué depuis ma jeunesse, qu'Israël le dise maintenant ;",
+     "page": 283,
+     "ligne_la": "1"
+    },
+    {
+     "n": 2,
+     "fr": "ils m'ont souvent attaqué depuis ma jeunesse ; mais ils n'ont pas prévalu contre moi.",
+     "page": 283,
+     "ligne_la": "2"
+    },
+    {
+     "n": 3,
+     "fr": "Les pécheurs ont travaillé sur mon dos ; ils m'ont fait sentir longtemps leur injustice.",
+     "page": 285,
+     "ligne_la": "3"
+    },
+    {
+     "n": 4,
+     "fr": "Le Seigneur est juste, il a tranché la tête des pécheurs.",
+     "page": 285,
+     "ligne_la": "4"
+    },
+    {
+     "n": 5,
+     "fr": "Qu'ils soient confondus et qu'ils reculent en arrière, tous ceux qui haïssent Sion.",
+     "page": 285,
+     "ligne_la": "4"
+    },
+    {
+     "n": 6,
+     "fr": "Qu'ils deviennent comme l'herbe des toits, qui se dessèche avant qu'on l'arrache.",
+     "page": 285,
+     "ligne_la": "6"
+    },
+    {
+     "n": 7,
+     "fr": "Le moissonneur n'en remplit pas sa main, et celui qui ramasse les gerbes n'en remplit pas son sein.",
+     "page": 285,
+     "ligne_la": "7"
+    },
+    {
+     "n": 8,
+     "fr": "Et les passants n'ont point dit : Que la bénédiction du Seigneur soit sur vous ! Nous vous bénissons au nom du Seigneur.",
+     "page": 285,
+     "ligne_la": "8"
+    }
+   ],
+   "lignes_la": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "6",
+    "7",
+    "8"
+   ],
+   "pages": [
+    283,
+    285
+   ]
+  },
+  {
+   "numero": 129,
+   "titre": "Psaume CXXIX",
+   "versets": [
+    {
+     "n": 1,
+     "fr": "Du fond des abîmes je crie vers vous, Seigneur ;",
+     "page": 285,
+     "ligne_la": "1"
+    },
+    {
+     "n": 2,
+     "fr": "Seigneur, exaucez ma voix. Que vos oreilles soient attentives à la voix de ma supplication.",
+     "page": 285,
+     "ligne_la": "1"
+    },
+    {
+     "n": 3,
+     "fr": "Si vous examinez les iniquités, Seigneur, Seigneur, qui subsistera devant vous ?",
+     "page": 285,
+     "ligne_la": "3"
+    },
+    {
+     "n": 4,
+     "fr": "Mais auprès de vous est la miséricorde, et à cause de votre loi j'ai espéré en vous, Seigneur. Mon âme s'est soutenue par sa parole ;",
+     "page": 285,
+     "ligne_la": "4a"
+    },
+    {
+     "n": 5,
+     "fr": "mon âme a espéré au Seigneur.",
+     "page": 285,
+     "ligne_la": "4b"
+    },
+    {
+     "n": 6,
+     "fr": "Depuis la veille du matin jusqu'à la nuit, qu'Israël espère au Seigneur ;",
+     "page": 285,
+     "ligne_la": "6"
+    },
+    {
+     "n": 7,
+     "fr": "car auprès du Seigneur est la miséricorde, et on trouve en lui une rédemption abondante.",
+     "page": 287,
+     "ligne_la": "7"
+    },
+    {
+     "n": 8,
+     "fr": "Il rachètera lui-même Israël de toutes ses iniquités.",
+     "page": 287,
+     "ligne_la": "8"
+    }
+   ],
+   "lignes_la": [
+    "1",
+    "2b",
+    "3",
+    "4a",
+    "4b",
+    "6",
+    "7",
+    "8"
+   ],
+   "pages": [
+    285,
+    287
+   ]
+  },
+  {
+   "numero": 130,
+   "titre": "Psaume CXXX",
+   "versets": [
+    {
+     "n": 1,
+     "fr": "Seigneur, mon cœur ne s'est pas enorgueilli, et mes yeux ne se sont point élevés. Je n'ai pas recherché de grandes choses, ni des merveilles placées au-dessus de moi.",
+     "page": 287,
+     "ligne_la": "1a"
+    },
+    {
+     "n": 2,
+     "fr": "Si je n'ai pas eu d'humbles sentiments, et si au contraire j'ai élevé mon àme, que mon âme soit traitée comme l'enfant que sa mère a sevré.",
+     "page": 287,
+     "ligne_la": "2a"
+    },
+    {
+     "n": 3,
+     "fr": "Qu'Israël espère au Seigneur, dès maintenant et dans tous les siècles.",
+     "page": 287,
+     "ligne_la": "3"
+    }
+   ],
+   "lignes_la": [
+    "1a",
+    "1b",
+    "2a",
+    "2b",
+    "3"
+   ],
+   "pages": [
+    287
+   ]
+  },
+  {
+   "numero": 131,
+   "titre": "Psaume CXXXI",
+   "versets": [
+    {
+     "n": 1,
+     "fr": "Souvenez-vous, Seigneur, de David, et de toute sa douceur ;",
+     "page": 287,
+     "ligne_la": "1"
+    },
+    {
+     "n": 2,
+     "fr": "du serment qu'il a fait au Seigneur, de son vœu au Dieu de Jacob :",
+     "page": 289,
+     "ligne_la": "2"
+    },
+    {
+     "n": 3,
+     "fr": "Je n'entrerai pas dans ma maison, je ne monterai pas sur ma couche,",
+     "page": 289,
+     "ligne_la": "3"
+    },
+    {
+     "n": 4,
+     "fr": "je n'accorderai pas de sommeil à mes yeux, ni d'assoupissement à mes paupières,",
+     "page": 289,
+     "ligne_la": "4"
+    },
+    {
+     "n": 5,
+     "fr": "ni de repos à mes tempes, jusqu'à ce que je trouve un lieu pour le Seigneur, un tabernacle pour le Dieu de Jacob.",
+     "page": 289,
+     "ligne_la": "5"
+    },
+    {
+     "n": 6,
+     "fr": "Nous avons entendu dire que l'arche était à Éphrata ; nous l'avons trouvée dans les champs de la forêt.",
+     "page": 289,
+     "ligne_la": "6"
+    },
+    {
+     "n": 7,
+     "fr": "Nous entrerons dans son tabernacle ; nous l'adorerons au lieu où il a posé ses pieds.",
+     "page": 289,
+     "ligne_la": "7"
+    },
+    {
+     "n": 8,
+     "fr": "Levez-vous, Seigneur, pour entrer dans votre repos, vous et l'arche de votre sainteté.",
+     "page": 289,
+     "ligne_la": "8"
+    },
+    {
+     "n": 9,
+     "fr": "Que vos prêtres soient revêtus de justice, et que vos saints tressaillent de joie.",
+     "page": 289,
+     "ligne_la": "9"
+    },
+    {
+     "n": 10,
+     "fr": "En considération de David votre serviteur, ne repoussez pas la face de votre oint.",
+     "page": 289,
+     "ligne_la": "10"
+    },
+    {
+     "n": 11,
+     "fr": "Le Seigneur a fait à David un serment véridique, et il ne le trompera point : J'établirai sur ton trône le fruit de ton sein.",
+     "page": 289,
+     "ligne_la": "11"
+    },
+    {
+     "n": 12,
+     "fr": "Si tes fils gardent mon alliance et les préceptes que je leur enseignerai, à tout jamais aussi, leurs enfants seront assis sur ton trône.",
+     "page": 289,
+     "ligne_la": "12a"
+    },
+    {
+     "n": 13,
+     "fr": "Car le Seigneur a choisi Sion ; il l'a choisie pour sa demeure.",
+     "page": 289,
+     "ligne_la": "13"
+    },
+    {
+     "n": 14,
+     "fr": "C'est là pour toujours le lieu de mon repos ; j'y habiterai, car je l'ai choisie.",
+     "page": 289,
+     "ligne_la": "14"
+    },
+    {
+     "n": 15,
+     "fr": "Je donnerai à sa veuve une bénédiction abondante ; je rassasierai de pain ses pauvres.",
+     "page": 291,
+     "ligne_la": "15"
+    },
+    {
+     "n": 16,
+     "fr": "Je revêtirai ses prêtres de salut, et ses saints seront ravis de joie.",
+     "page": 291,
+     "ligne_la": "16"
+    },
+    {
+     "n": 17,
+     "fr": "Là je ferai paraître la puissance de David ; j'ai préparé une lampe pour mon oint.",
+     "page": 291,
+     "ligne_la": "17"
+    },
+    {
+     "n": 18,
+     "fr": "Je couvrirai ses ennemis de confusion ; mais ma sainteté fleurira sur lui.",
+     "page": 291,
+     "ligne_la": "18"
+    }
+   ],
+   "lignes_la": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12a",
+    "12b",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "18"
+   ],
+   "pages": [
+    287,
+    289,
+    291
+   ]
+  },
+  {
    "numero": 133,
    "titre": "Psaume CXXXIII",
    "versets": [
@@ -10061,6 +11636,80 @@
     189,
     191,
     193
+   ]
+  },
+  {
+   "numero": 145,
+   "titre": "Psaume CXLV",
+   "versets": [
+    {
+     "n": 2,
+     "fr": "O mon âme, loue le Seigneur. Je louerai le Seigneur pendant ma vie ; je chanterai mon Dieu tant que je serai. Ne mettez pas votre confiance dans les princes,",
+     "page": 255,
+     "ligne_la": "2a"
+    },
+    {
+     "n": 3,
+     "fr": "ni dans les enfants des hommes, qui ne peuvent sauver.",
+     "page": 255,
+     "ligne_la": "2b"
+    },
+    {
+     "n": 4,
+     "fr": "Leur âme se retirera, et ils retourneront à leur poussière en ce jour toutes leurs pensées périront.",
+     "page": 255,
+     "ligne_la": "4"
+    },
+    {
+     "n": 5,
+     "fr": "Heureux celui dont le Dieu de Jacob est le protecteur, et dont l'espérance est dans le Seigneur son Dieu,",
+     "page": 255,
+     "ligne_la": "5"
+    },
+    {
+     "n": 6,
+     "fr": "qui a fait le ciel et la terre, la mer et tout ce qu'ils contiennent.",
+     "page": 255,
+     "ligne_la": "5"
+    },
+    {
+     "n": 7,
+     "fr": "Il garde à jamais la vérité de ses promesses, il fait justice aux opprimés, il donne la nourriture à ceux qui ont faim. Le Seigneur délivre les captifs ;",
+     "page": 255,
+     "ligne_la": "7a"
+    },
+    {
+     "n": 8,
+     "fr": "le Seigneur éclaire les aveugles. Le Seigneur relève ceux qui sont brisés ; le Seigneur aime les justes.",
+     "page": 255,
+     "ligne_la": "7b"
+    },
+    {
+     "n": 9,
+     "fr": "Le Seigneur protège les étrangers ; il soutient l'orphelin et la veuve, et il détruira les voies des pécheurs.",
+     "page": 255,
+     "ligne_la": "9"
+    },
+    {
+     "n": 10,
+     "fr": "Le Seigneur régnera à jamais ; ton Dieu, Sion, régnera de génération en génération.",
+     "page": 255,
+     "ligne_la": "10"
+    }
+   ],
+   "lignes_la": [
+    "2a",
+    "2b",
+    "4",
+    "5",
+    "7a",
+    "7b",
+    "8b",
+    "9",
+    "10"
+   ],
+   "pages": [
+    255
    ]
   },
   {
@@ -10828,6 +12477,115 @@
    "pages": [
     193,
     195
+   ]
+  },
+  {
+   "do": "Psalm213",
+   "titre": "Cantique de Judith",
+   "reference": "Judith, xvi, 15-21",
+   "versets": [
+    {
+     "n": 15,
+     "fr": "Chantons un hymne au Seigneur, chantons un hymne nouveau à notre Dieu.",
+     "page": 253
+    },
+    {
+     "n": 16,
+     "fr": "Seigneur tout-puissant, vous êtes grand, et magnifique dans votre puissance, et nul ne peut vous surpasser.",
+     "page": 253
+    },
+    {
+     "n": 17,
+     "fr": "Que toutes vos créatures vous servent, car vous avez parlé, et elles ont été faites ; vous avez envoyé votre esprit, et elles ont été créées, et nul ne résiste à votre voix.",
+     "page": 253
+    },
+    {
+     "n": 18,
+     "fr": "Les montagnes seront ébranlées avec les eaux, jusqu'aux fondements ; les pierres, comme la cire, se fondront devant votre face.",
+     "page": 253
+    },
+    {
+     "n": 19,
+     "fr": "Mais ceux qui vous craignent seront grands auprès de vous en toutes choses.",
+     "page": 253
+    },
+    {
+     "n": 20,
+     "fr": "Malheur à la nation qui s'élèvera contre mon peuple ! car le Seigneur tout-puissant se vengera d'elle ; au jour du jugement il la visitera.",
+     "page": 253
+    },
+    {
+     "n": 21,
+     "fr": "Il répandra le feu et les vers dans leurs chairs, afin qu'ils brûlent et qu'ils sentent la souffrance à jamais.",
+     "page": 255
+    }
+   ],
+   "note": "Divinum Officium chante ce cantique en 8 lignes numérotées 16:15 à 16:22, coupées autrement que les 7 versets de Fillion : numéros de Fillion, sans alignement ligne à ligne.",
+   "pages": [
+    253,
+    255
+   ]
+  },
+  {
+   "do": "Psalm223",
+   "titre": "Cantique d'Anne",
+   "reference": "I Reg. ii, 1-10",
+   "versets": [
+    {
+     "n": 1,
+     "fr": "Mon cœur a tressailli d'allégresse dans le Seigneur, et ma force a été exaltée en mon Dieu. Ma bouche s'est ouverte contre mes ennemis, parce que je me suis réjouie dans votre salut.",
+     "page": 257
+    },
+    {
+     "n": 2,
+     "fr": "Nul n'est saint comme le Seigneur, car il n'y en a pas d'autre que vous, et nul n'est fort comme notre Dieu.",
+     "page": 257
+    },
+    {
+     "n": 3,
+     "fr": "Ne multipliez pas les paroles insolentes, en vous glorifiant ; que votre ancien langage ne sorte plus de votre bouche, car le Seigneur est le Dieu des sciences, et il pénètre le fond des pensées.",
+     "page": 257
+    },
+    {
+     "n": 4,
+     "fr": "L'arc des forts a été brisé, et les faibles ont été ceints de force.",
+     "page": 257
+    },
+    {
+     "n": 5,
+     "fr": "Ceux qui étaient auparavant comblés de biens se sont loués pour avoir du pain, et ceux qui avaient faim ont été rassasiés. Celle qui était stérile a enfanté de nombreux enfants, et celle qui avait beaucoup de fils a été affaiblie.",
+     "page": 257
+    },
+    {
+     "n": 6,
+     "fr": "C'est le Seigneur qui ôte et qui donne la vie, qui conduit au séjour des morts et qui en retire.",
+     "page": 257
+    },
+    {
+     "n": 7,
+     "fr": "C'est le Seigneur qui appauvrit et qui enrichit, qui humilie et qui élève.",
+     "page": 257
+    },
+    {
+     "n": 8,
+     "fr": "Il tire l'indigent de la poussière, et il relève le pauvre du fumier, pour le faire asseoir entre les princes, et lui donner un trône de gloire. Car au Seigneur appartiennent les fondements de la terre, et il a posé le monde sur eux.",
+     "page": 257
+    },
+    {
+     "n": 9,
+     "fr": "Il gardera les pieds de ses saints, et les impies seront réduits au silence dans les ténèbres, car l'homme ne sera point affermi par sa propre force.",
+     "page": 257
+    },
+    {
+     "n": 10,
+     "fr": "Les ennemis du Seigneur trembleront devant lui ; il tonnera sur eux dans les cieux. Le Seigneur jugera toute la terre, il donnera l'empire à celui qu'il a fait roi, et il exaltera la puissance de son Christ.",
+     "page": 259
+    }
+   ],
+   "note": "Divinum Officium chante ce cantique en 16 lignes numérotées 2:1 à 2:16, coupées autrement que les 10 versets de Fillion : numéros de Fillion, sans alignement ligne à ligne.",
+   "pages": [
+    257,
+    259
    ]
   }
  ]
