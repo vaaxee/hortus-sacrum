@@ -132,7 +132,7 @@ def decouper_article(ps, ref, sans_numero=None):
                     sans_numero.append(f'de la réponse {len(rep)}')
                 continue
             raise SystemExit(f'{ref} : « § » hors des objections et des réponses')
-        if p.startswith('(Conclusion'):
+        if p.startswith(('(Conclusion', 'Conclusion. —')):  # parenthèse ouvrante omise (q. 11 a. 4)
             # un seul alinéa, fermé d'ordinaire par « .) » (une fois par « » » : Iª q. 3 a. 1, faute d'impression)
             etat = 'apres-concl'
             continue
