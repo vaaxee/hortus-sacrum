@@ -266,10 +266,18 @@ def main():
             reponses = [{'la': la['ad'][j] if j < len(la['ad']) else '', 'fr': rep[j] if j < len(rep) else ''}
                         for j in range(n)]
             notes = []
-            if not sc:
+            if not sc and not la['sc']:
+                notes.append('Cet article n’a pas de « Sed contra », ni dans l’édition léonine ni chez Lachat.')
+            elif not sc:
                 notes.append('Le « Sed contra » n’est pas traduit dans l’édition de Lachat : le latin est donné seul.')
             for s_ in sans_numero:
                 notes.append(f'Lachat n’imprime pas le numéro {s_} ; le paragraphe est rendu tel quel.')
+            for j, o in enumerate(obj[1:], 2):
+                m = re.match(r'(\d+)°', o)
+                if m and int(m.group(1)) != j:
+                    # faute d'impression vue sur l'image (q. 10 a. 2 : « 5° » pour « 3° »), gardée telle quelle
+                    notes.append(f'Lachat imprime « {m.group(1)}° » au lieu de « {j}° » devant l’objection {j} ; '
+                                 'le numéro est rendu tel quel.')
             articles.append({
                 'ref': ref,
                 'titre': {'la': tq['articles'][str(k)], 'fr': titre},

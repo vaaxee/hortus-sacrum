@@ -1,0 +1,384 @@
+{
+ "ref": "Iª q. 10",
+ "partie": "Ia",
+ "question": 10,
+ "titre": {
+  "la": "De Dei aeternitate",
+  "fr": "De l’éternité de Dieu."
+ },
+ "prooemium": {
+  "la": "Deinde quaeritur de aeternitate. Et circa hoc quaeruntur sex. Primo, quid sit aeternitas. Secundo, utrum Deus sit aeternus. Tertio, utrum esse aeternum sit proprium Dei. Quarto, utrum aeternitas differat a tempore. Quinto, de differentia aevi et temporis. Sexto, utrum sit unum aevum tantum, sicut est unum tempus et una aeternitas.",
+  "fr": "Nous devons parler maintenant de l’éternité de Dieu.\n\nSix questions se présentent ici : 1° Qu’est-ce que l’éternité? 2° Dieu est-il éternel? 3° Dieu seul est-il éternel? 4° L’éternité diffère-t-elle de la perpétuité? 5° La perpétuité diffère-t-elle du temps? 6° N’y a-t-il qu’une perpétuité, comme il n’y a qu’un temps et une éternité?"
+ },
+ "articles": [
+  {
+   "ref": "Iª q. 10 a. 1",
+   "titre": {
+    "la": "Utrum convenienter definiatur aeternitas, quod est interminabilis vitae tota simul et perfecta possessio",
+    "fr": "L’éternité peut-elle être définie la possession entière, simultanée et parfaite d’une vie sans terme?"
+   },
+   "objections": [
+    {
+     "la": "Ad primum sic proceditur. Videtur quod non sit conveniens definitio aeternitatis, quam Boetius ponit V de consolatione, dicens quod *aeternitas est interminabilis vitae tota simul et perfecta possessio*. Interminabile enim negative dicitur. Sed negatio non est de ratione nisi eorum quae sunt deficientia, quod aeternitati non competit. Ergo in definitione aeternitatis non debet poni interminabile.",
+     "fr": "Il paroît qu’on ne peut définir l’éternité comme Boëce la définit, Cons., III, 2 : « La possession entière, simultanée et parfaite d’une vie sans terme. » 1° Sans terme est une expression négative. Or la négation implique une idée qui ne convient pas à l’éternité, l’idée de limite. Donc on a eu tort d’employer l’expression sans terme dans la définition de l’éternité."
+    },
+    {
+     "la": "Praeterea, aeternitas durationem quandam significat. Duratio autem magis respicit esse quam vitam. Ergo non debuit poni in definitione aeternitatis vita, sed magis esse.",
+     "fr": "2° L’éternité marque une certaine durée. Or la durée se rapporte à l’être plutôt qu’à la vie. Donc on ne devoit pas faire figurer dans la définition de l’éternité le mot vie, mais plutôt le mot être."
+    },
+    {
+     "la": "Praeterea, totum dicitur quod habet partes. Hoc autem aeternitati non convenit, cum sit simplex. Ergo inconvenienter dicitur tota.",
+     "fr": "3° Entier se dit de ce qui a des parties. Or l’éternité n’a pas de parties, puisqu’elle est simple. Donc on ne pouvoit lui atribuer le qualificatif entier."
+    },
+    {
+     "la": "Praeterea, plures dies non possunt esse simul, nec plura tempora. Sed in aeternitate pluraliter dicuntur dies et tempora, dicitur enim Micheae V, *egressus eius ab initio, a diebus aeternitatis*; et ad Rom., XVI cap., *secundum revelationem mysterii temporibus aeternis taciti*. Ergo aeternitas non est tota simul.",
+     "fr": "4° Plusieurs jours ne peuvent être simultanément, non plus que plusieurs temps. Or il y a plusieurs jours et plusieurs temps dans l’éternité, car il est écrit, Mich., V, 2 : « Sa sortie est du commencement et des jours de l’éternité; » et ailleurs, Rom., XVI, 25 : « D’après la révélation du mystère qui est resté caché dans les temps éternels. » Donc l’éternité n’est pas simultanée; donc cette épithète ne devroit pas figurer dans sa définition."
+    },
+    {
+     "la": "Praeterea, totum et perfectum sunt idem. Posito igitur quod sit tota, superflue additur quod sit perfecta.",
+     "fr": "5° Entier et parfait signifient la même chose. Donc, après avoir dit que la possession de la vie éternelle est entière, on ne devoit pas ajouter qu’elle est parfaite."
+    },
+    {
+     "la": "Praeterea, possessio ad durationem non pertinet. Aeternitas autem quaedam duratio est. Ergo aeternitas non est possessio.",
+     "fr": "6° La possession ne peut se rapporter à la durée; or l’éternité est une certaine durée; donc l’éternité n’est pas une possession."
+    }
+   ],
+   "sed_contra": {
+    "la": "",
+    "fr": ""
+   },
+   "respondeo": {
+    "la": "Respondeo dicendum quod, sicut in cognitionem simplicium oportet nos venire per composita, ita in cognitionem aeternitatis oportet nos venire per tempus; quod nihil aliud est quam numerus motus secundum prius et posterius. Cum enim in quolibet motu sit successio, et una pars post alteram, ex hoc quod numeramus prius et posterius in motu, apprehendimus tempus; quod nihil aliud est quam numerus prioris et posterioris in motu. In eo autem quod caret motu, et semper eodem modo se habet, non est accipere prius et posterius. Sicut igitur ratio temporis consistit in numeratione prioris et posterioris in motu, ita in apprehensione uniformitatis eius quod est omnino extra motum, consistit ratio aeternitatis. Item, ea dicuntur tempore mensurari, quae principium et finem habent in tempore, ut dicitur in IV Physic., et hoc ideo, quia in omni eo quod movetur est accipere aliquod principium et aliquem finem. Quod vero est omnino immutabile, sicut nec successionem, ita nec principium aut finem habere potest. Sic ergo ex duobus notificatur aeternitas. Primo, ex hoc quod id quod est in aeternitate, est interminabile, idest principio et fine carens (ut terminus ad utrumque referatur). Secundo, per hoc quod ipsa aeternitas successione caret, tota simul existens.",
+    "fr": "Il faut dire ceci : Comme nous arrivons à la connoissance des choses simples par les choses composées, de même nous arrivons à la connoissance de l’éternité par le temps. Le temps est le nombre du mouvement d’après l’antériorité et la postériorité. En effet, comme le mouvement est successif, il a dans ses parties un avant et un après; et quand nous comptons les points qui séparent ces deux termes, nous concevons le passé et le futur, c’est-à-dire le temps. Mais ce qui n’est pas sujet au mouvement et reste toujours le même, n’a ni avant ni après. Si donc l’idée du temps consiste dans la numération de l’antériorité et de la postériorité, l’idée de l’éternité consistera dans l’existence uniforme, sans passé ni avenir, de ce qui est hors de tout mouvement. On dit d’autre part, et le Philosophe l’enseigne dans la Physique, que le temps est la mesure des choses qui ont un commencement et une fin, pourquoi? Parce que les choses qui se meuvent commencent et finissent de toute nécessité. Mais l’être qui est immuable, n’ayant point de succession, n’a non plus ni commencement ni fin. Ainsi donc, être sans terme, c’est-à-dire sans commencement ni fin, puisque le terme implique ces deux choses; ensuite n’être point successsif, mais simultané : voilà les deux notes qui constituent l’idée de l’éternité."
+   },
+   "reponses": [
+    {
+     "la": "Ad primum ergo dicendum quod simplicia consueverunt per negationem definiri, sicut punctus est cuius pars non est. Quod non ideo est, quod negatio sit de essentia eorum, sed quia intellectus noster, qui primo apprehendit composita, in cognitionem simplicium pervenire non potest, nisi per remotionem compositionis.",
+     "fr": "Je réponds aux arguments : 1° On a coutume de définir les choses simples négativement; ainsi l’on dit, par exemple, que le point n’a pas de parties. Ce n’est pas, toutefois, que la négation appartienne à ces sortes de choses; mais c’est que notre esprit, saisissant d’abord les êtres composés, ne peut parvenir à la connoissance des êtres simples qu’en en écartant toute composition."
+    },
+    {
+     "la": "Ad secundum dicendum quod illud quod est vere aeternum, non solum est ens, sed vivens, et ipsum vivere se extendit quodammodo ad operationem, non autem esse. Protensio autem durationis videtur attendi secundum operationem, magis quam secundum esse, unde et tempus est numerus motus.",
+     "fr": "2° Ce qui est véritablement éternel a non-seulement l’être, mais la vie. Or, d’une part, c’est la vie, et non pas l’être, qui produit l’action; d’une autre part, la permanence de la durée implique l’action plutôt que l’être. Nouvelle raison de cet axiome, que le temps est la mesure du mouvement."
+    },
+    {
+     "la": "Ad tertium dicendum quod aeternitas dicitur tota, non quia habet partes, sed inquantum nihil ei deest.",
+     "fr": "3° La possession de l’éternité est entière, non pas qu’elle ait des parties, mais parce qu’elle a tout ce qu’elle peut avoir."
+    },
+    {
+     "la": "Ad quartum dicendum quod, sicut Deus, cum sit incorporeus, nominibus rerum corporalium metaphorice in Scripturis nominatur, sic aeternitas, tota simul existens, nominibus temporalibus successivis.",
+     "fr": "4° De même que les Livres saints appliquent figurément à Dieu, malgré la spiritualité de son être, des expressions qui ne conviennent qu’aux choses corporelles; de même ils attribuent des temps successifs à l’éternité, bien qu’elle existe tout entière à la fois."
+    },
+    {
+     "la": "Ad quintum dicendum quod in tempore est duo considerare, scilicet ipsum tempus, quod est successivum; et nunc temporis, quod est imperfectum. Dicit ergo tota simul, ad removendum tempus, et perfecta, ad excludendum nunc temporis.",
+     "fr": "5° Il y a dans le temps deux choses à considérer : le temps lui-même qui est successif; et l’instant, qui est imparfait. Or notre définition dit que l’éternité est simultanée pour en écarter le temps, et qu’elle est parfaite pour en exclure l’instant."
+    },
+    {
+     "la": "Ad sextum dicendum quod illud quod possidetur, firmiter et quiete habetur. Ad designandam ergo immutabilitatem et indeficientiam aeternitatis, usus est nomine possessionis.",
+     "fr": "6° Posséder veut dire avoir d’une manière irrévocable. jouir d’une chose en toute sécurité. Le mot possession exprime donc très-bien l’immutabilité et l’indéfectibilité de ce qui est éternel."
+    }
+   ],
+   "pages": {
+    "fr": [
+     149,
+     154
+    ]
+   },
+   "notes": [
+    "Cet article n’a pas de « Sed contra », ni dans l’édition léonine ni chez Lachat."
+   ]
+  },
+  {
+   "ref": "Iª q. 10 a. 2",
+   "titre": {
+    "la": "Utrum Deus sit aeternus",
+    "fr": "Dieu est-il éternel?"
+   },
+   "objections": [
+    {
+     "la": "Ad secundum sic proceditur. Videtur quod Deus non sit aeternus. Nihil enim factum potest dici de Deo. Sed aeternitas est aliquid factum, dicit enim Boetius quod *nunc fluens facit tempus, nunc stans facit aeternitatem*; et Augustinus dicit, in libro octoginta trium quaest., quod Deus est auctor aeternitatis. Ergo Deus non est aeternus.",
+     "fr": "Il paroît que Dieu n’est pas éternel. 1° Rien de ce qui est fait ne peut être attribué à Dieu. Or l’éternité est faite; car Boëce dit, Cons,, V : « L’instant mobile fait le temps, et l’instant immobile l’éternité; » et saint Augustin ajoute, l. LXXXIII Q. 23 : « Dieu est l’auteur de l’éternité. » Donc on ne peut attribuer l’éternité à Dieu."
+    },
+    {
+     "la": "Praeterea, quod est ante aeternitatem et post aeternitatem, non mensuratur aeternitate. Sed Deus est ante aeternitatem, ut dicitur in libro de causis, et post aeternitatem; dicitur enim Exod. XV, quod *dominus regnabit in aeternum et ultra*. Ergo esse aeternum non convenit Deo.",
+     "fr": "2° Ce qui est avant ou après l’éternité, n’est pas éternel. Or Dieu est avant l’éternité, car le Livre des Causes, II, 2, l’enseigne formellement; il est aussi après l’éternité, car l’Exode dit XXV, 18 : « Le Seigneur régnera dans l’éternité et par delà. » Donc Dieu n’est pas éternel."
+    },
+    {
+     "la": "Praeterea, aeternitas mensura quaedam est. Sed Deo non convenit esse mensuratum. Ergo non competit ei esse aeternum.",
+     "fr": "5° L’éternité est une mesure. Or Dieu ne peut être mesuré; donc il n’est pas éternel."
+    },
+    {
+     "la": "Praeterea, in aeternitate non est praesens, praeteritum vel futurum cum sit tota simul, ut dictum est. Sed de Deo dicuntur in Scripturis verba praesentis temporis, praeteriti vel futuri. Ergo Deus non est aeternus.",
+     "fr": "4° Il n’y a dans l’éternité ni présent, ni passé, ni futur, puisqu’elle existe tout entière en même temps, comme nous l’avons dit. Or l’Ecriture sainte attribue à Dieu le présent, le passé et le futur. Donc Dieu n’est pas éternel."
+    }
+   ],
+   "sed_contra": {
+    "la": "Sed contra est quod dicit Athanasius, *aeternus pater, aeternus filius, aeternus spiritus sanctus*.",
+    "fr": "Mais saint Athanase dit, dans le Symbole qui porte son nom : « Le Père est éternel, le Fils éternel, et le Saint-Esprit éternel. »"
+   },
+   "respondeo": {
+    "la": "Respondeo dicendum quod ratio aeternitatis consequitur immutabilitatem, sicut ratio temporis consequitur motum, ut ex dictis patet. Unde, cum Deus sit maxime immutabilis, sibi maxime competit esse aeternum. Nec solum est aeternus, sed est sua aeternitas, cum tamen nulla alia res sit sua duratio, quia non est suum esse. Deus autem est suum esse uniforme, unde, sicut est sua essentia, ita est sua aeternitas.",
+    "fr": "Il faut dire ceci : L’idée de l’éternité découle de l’immutabilité, de même que l’idée du temps découle du mouvement : nous l’avons vu dans la discussion précédente. Puis donc que Dieu est souverainement immuable il est éternel suréminemment. Et non-seulement il est éternel, mais il est son éternité. Si les êtres créés ne sont pas à eux-mêmes leur propre durée, c’est qu’ils ne sont pas leur être; mais Dieu est son être permanent, invariable, par conséquent son éternité, de même qu’il est son essence."
+   },
+   "reponses": [
+    {
+     "la": "Ad primum ergo dicendum quod nunc stans dicitur facere aeternitatem, secundum nostram apprehensionem. Sicut enim causatur in nobis apprehensio temporis, eo quod apprehendimus fluxum ipsius nunc, ita causatur in nobis apprehensio aeternitatis, inquantum apprehendimus nunc stans. Quod autem dicit Augustinus, quod *Deus est auctor aeternitatis*, intelligitur de aeternitate participata, eo enim modo communicat Deus suam aeternitatem aliquibus, quo et suam immutabilitatem.",
+     "fr": "Je réponds aux arguments : 1° Quand Boëce dit que l’instant immobile fait l’éternité, il parle d’après notre manière de comprendre les choses; car de même que nous saisissons le temps par la mobilité de l’instant, ainsi nous concevons l’éternité par son immobilité. Quant à ce que dit saint Augustin, que Dieu est l’auteur de l’éternité, il faut l’entendre de l’éternité communiquée; car Dieu donne son éternité à certains êtres, dans la même mesure qu’il leur donne son immobilité."
+    },
+    {
+     "la": "Et per hoc patet solutio ad secundum. Nam Deus dicitur esse ante aeternitatem, prout participatur a substantiis immaterialibus. Unde et ibidem dicitur, quod *intelligentia parificatur aeternitati*. Quod autem dicitur in Exodo, *dominus regnabit in aeternum et ultra* sciendum quod aeternum accipitur ibi pro saeculo, sicut habet alia translatio. Sic igitur dicitur quod regnabit ultra aeternum, quia durat ultra quodcumque saeculum, idest ultra quamcumque durationem datam, nihil est enim aliud saeculum quam periodus cuiuslibet rei, ut dicitur in libro I de caelo. Vel dicitur etiam ultra aeternum regnare, quia, si etiam aliquid aliud semper esset (ut motus caeli secundum quosdam philosophos), tamen Deus ultra regnat, inquantum eius regnum est totum simul.",
+     "fr": "2° Cela même fournit la réponse au deuxième argument. Quand le Livre des Causes dit que Dieu est avant l’éternité, il parle de l’éternité communiquée aux substances immatérielles; cela est si vrai que le même ouvrage ajoute, dans un autre endroit, que l’intelligence est enfantée à l’éternité. Pour l’Exode, s’il dit que « Dieu règne dans l’éternité et par delà, » il emploie le mot éternité pour le mot siècle, qui se trouve dans une version. Ainsi, « Dieu règne au delà de l’éternité, « cela signifie que son règne s’étend au delà de tous les siècles, c’est-à-dire au delà de toute durée; car un siècle n’est autre chose qu’une période du temps, comme le remarque Aristote dans le premier livre Du Ciel. On peut encore entendre « régner au delà de l’éternité » dans ce sens que, s’il y avoit quelque chose qui durât toujours (comme certains philosophes l’ont cru du mouvement céleste), Dieu régneroit cependant au delà, c’est-à-dire d’une manière plus parfaite, car son royaume existe tout entier simultanément."
+    },
+    {
+     "la": "Ad tertium dicendum quod aeternitas non est aliud quam ipse Deus. Unde non dicitur Deus aeternus, quasi sit aliquo modo mensuratus, sed accipitur ibi ratio mensurae secundum apprehensionem nostram tantum.",
+     "fr": "3° L’éternité n’est autre chose que Dieu même. Quand donc nous disons que l’éternité est une mesure, nous ne voulons pas dire que Dieu est mesuré par cette entité, mais nous parlons d’après nos foibles conceptions."
+    },
+    {
+     "la": "Ad quartum dicendum quod verba diversorum temporum attribuuntur Deo, inquantum eius aeternitas omnia tempora includit, non quod ipse varietur per praesens, praeteritum et futurum.",
+     "fr": "4° Si les diverses parties du temps sont attribuées à Dieu dans l’Ecriture sainte, ce n’est pas qu’il subisse les variations du présent, du passé et du futur, mais c’est que son éternité renferme tous les temps."
+    }
+   ],
+   "pages": {
+    "fr": [
+     154,
+     156
+    ]
+   },
+   "notes": [
+    "Lachat imprime « 5° » au lieu de « 3° » devant l’objection 3 ; le numéro est rendu tel quel."
+   ]
+  },
+  {
+   "ref": "Iª q. 10 a. 3",
+   "titre": {
+    "la": "Utrum esse aeternum sit proprium Dei",
+    "fr": "Dieu seul est-il éternel?"
+   },
+   "objections": [
+    {
+     "la": "Ad tertium sic proceditur. Videtur quod esse aeternum non sit soli Deo proprium. Dicitur enim Danielis XII, quod *qui ad iustitiam erudiunt plurimos, erunt quasi stellae in perpetuas aeternitates*. Non autem essent plures aeternitates, si solus Deus esset aeternus. Non igitur solus Deus est aeternus.",
+     "fr": "Il paroît que le propre de Dieu n’est pas d’être éternel. 1° Daniel dit, XII, 3 : « Ceux qui enseignent la justice à plusieurs, seront comme des étoiles à travers les éternités perpétuelles. » Or on ne pourroit dire les éternités, au pluriel, si Dieu seul étoit éternel. Donc Dieu n’est pas seul éternel."
+    },
+    {
+     "la": "Praeterea, Matth. XXV dicitur, *ite, maledicti, in ignem aeternum*. Non igitur solus Deus est aeternus.",
+     "fr": "2° On lit dans saint Matthieu, XXV, 41 : « Allez, maudits, au feu éternel. » Donc Dieu seul n’est pas éternel."
+    },
+    {
+     "la": "Praeterea, omne necessarium est aeternum. Sed multa sunt necessaria; sicut omnia principia demonstrationis, et omnes propositiones demonstrativae. Ergo non solus Deus est aeternus.",
+     "fr": "3° Tout ce qui est nécessaire est éternel. Or il y a beaucoup de choses nécessaires, par exemple les premiers principes et les conséquences qui en découlent immédiatement. Donc Dieu seul n’est pas éternel"
+    }
+   ],
+   "sed_contra": {
+    "la": "Sed contra est quod dicit Hieronymus, ad Marcellam, *Deus solus est qui exordium non habet*. Quidquid autem exordium habet, non est aeternum. Solus ergo Deus est aeternus.",
+    "fr": "Mais saint Jérôme écrit à Damase, Lett. LVII : « Dieu seul n’a pas de commencement. » Or tout ce qui a un commencement n’est pas éternel; donc Dieu seul est éternel."
+   },
+   "respondeo": {
+    "la": "Respondeo dicendum quod aeternitas vere et proprie in solo Deo est. Quia aeternitas immutabilitatem consequitur, ut ex dictis patet. Solus autem Deus est omnino immutabilis, ut est superius ostensum. Secundum tamen quod aliqua ab ipso immutabilitatem percipiunt, secundum hoc aliqua eius aeternitatem participant. Quaedam ergo quantum ad hoc immutabilitatem sortiuntur a Deo, quod nunquam esse desinunt, et secundum hoc dicitur Eccle. I de terra, quod in aeternum stat. Quaedam etiam aeterna in Scripturis dicuntur propter diuturnitatem durationis, licet corruptibilia sint, sicut in Psalmo dicuntur montes aeterni; et Deuter. XXXIII etiam dicitur, de pomis collium aeternorum. Quaedam autem amplius participant de ratione aeternitatis, inquantum habent intransmutabilitatem vel secundum esse, vel ulterius secundum operationem, sicut Angeli et beati, qui verbo fruuntur, quia quantum ad illam visionem verbi, non sunt in sanctis volubiles cogitationes, ut dicit Augustinus, XV de Trin. Unde et videntes Deum dicuntur habere vitam aeternam, secundum illud Ioann. XVII, *haec est vita aeterna, ut cognoscant* et cetera.",
+    "fr": "Il faut dire ceci : L’éternité n’appartient véritablement, proprement qu’à Dieu : car nous avons montré, d’une part, que l’éternité dérive de l’immutabilité; d’une autre part, que Dieu seul est absolument immuable. Néanmoins il est des choses qui participent à son éternité selon qu’il leur a donné l’immutabilité. Or quelques-unes ont reçu ce dernier attribut dans une mesure telle, qu’elles ne perdent jamais l’être. Ainsi l’Ecclésiastique, I, 4, écrit de la terre qu’elle demeure éternellement. On peut aussi attribuer aux anges l’éternité dans ce sens : car le Prophète royal dit, Ps. LXV, 4 : « Vous descendez, Seigneur, d’une manière admirable des montagnes éternelles. » D’autres choses sont dites éternelles, bien qu’elles soient corruptibles, à cause de leur longue durée; c’est ainsi que le Psalmiste accordoit tout à l’heure l’éternité aux montagnes, et que le Deutéronome, XXXIII, 15, la prête aux collines. D’autres choses encore, participant à l’éternité d’une manière plus parfaite, sont impérissables dans leur être et même immuables dans leur opération; tels sont les anges et les bienheureux qui jouissent de la contemplation du Verbe; « Car les saints dans le ciel ne peuvent, comme le dit saint Augustin, De la Trin., XV, 16, détourner leurs pensées de l’objet de la vision béatifique. » Et voilà pourquoi l’on dit que ceux qui voient Dieu ont la vie éternelle, selon cette parole de saint Jean, XVII, 3 : « La vie éternelle est de vous connoître, vous le seul Dieu véritable. »"
+   },
+   "reponses": [
+    {
+     "la": "Ad primum ergo dicendum quod dicuntur multae aeternitates, secundum quod sunt multi participantes aeternitatem ex ipsa Dei contemplatione.",
+     "fr": "Je réponds aux arguments : 1° Si le Prophète parle de l’éternité au nombre pluriel, c’est qu’il y a beaucoup d’élus qui participent à l’éternié de Dieu par la contemplation de cet Être infini."
+    },
+    {
+     "la": "Ad secundum dicendum quod ignis Inferni dicitur aeternus propter interminabilitatem tantum. Est tamen in poenis eorum transmutatio, secundum illud Iob XXIV, *ad nimium calorem transibunt ab aquis nivium*. Unde in Inferno non est vera aeternitas, sed magis tempus; secundum illud Psalmi, *erit tempus eorum in saecula*.",
+     "fr": "2° Le feu de l’enfer est dit éternel, parce qu’il n’aura pas de fin. Cependant les réprouvés subissent des changements dans leurs peines; car Job dit, XXIV, 19 : « Ils passeront des eaux de la glace à une chaleur excessive. » Ce n’est donc pas une véritable éternité qui règne en enfer, mais c’est plutôt le temps; et voilà pourquoi nous lisons dans les Psaumes, LXXX, 16 : « Leur temps s’étendra dans les siècles."
+    },
+    {
+     "la": "Ad tertium dicendum quod necessarium significat quendam modum veritatis. Verum autem, secundum philosophum, VI Metaphys., est in intellectu. Secundum hoc igitur vera et necessaria sunt aeterna, quia sunt in intellectu aeterno, qui est intellectus divinus solus. Unde non sequitur quod aliquid extra Deum sit aeternum.",
+     "fr": "3° Les principes nécessaires sont des modes de la vérité. Or la vérité réside, comme le dit le Philosophe, dans l’intelligence. Si donc les premiers principes sont éternels et nécessaires, c’est qu’ils existent dans une intelligence éternelle, c’est-à-dire dans l’intelligence divine. Ainsi, de ce que les principes sont éternels, il ne s’ensuit pas qu’il y ait quelque chose d’éternel hors de Dieu."
+    }
+   ],
+   "pages": {
+    "fr": [
+     157,
+     159
+    ]
+   }
+  },
+  {
+   "ref": "Iª q. 10 a. 4",
+   "titre": {
+    "la": "Utrum aeternitas differat a tempore",
+    "fr": "L’éternité diffère-telle du temps?"
+   },
+   "objections": [
+    {
+     "la": "Ad quartum sic proceditur. Videtur quod aeternitas non sit aliud a tempore. Impossibile est enim duas esse mensuras durationis simul, nisi una sit pars alterius, non enim sunt simul duo dies vel duae horae; sed dies et hora sunt simul, quia hora est pars diei. Sed aeternitas et tempus sunt simul, quorum utrumque mensuram quandam durationis importat. Cum igitur aeternitas non sit pars temporis, quia aeternitas excedit tempus et includit ipsum; videtur quod tempus sit pars aeternitatis, et non aliud ab aeternitate.",
+     "fr": "Il paroît que l’éternité n’est autre chose que le temps. 1° Deux mesures de la durée ne peuvent exister simultanément, à moins que l’une ne soit une partie de l’autre, ainsi deux jours ou deux heures n’existent pas dans le même instant; mais rien n’empêche l’existence simultanée d’un jour et d’une heure, parce que l’heure est une partie du jour. Or l’éternité et le temps, ces deux mesures de la durée, existent simultanément; donc l’un est une partie de l’autre. Mais l’éternité n’est pas une partie du temps puisqu’elle le renferme et le dépasse; donc le temps est une partie de l’éternité, donc il n’en diffère pas."
+    },
+    {
+     "la": "Praeterea, secundum philosophum in IV Physic., nunc temporis manet idem in toto tempore. Sed hoc videtur constituere rationem aeternitatis, quod sit idem indivisibiliter se habens in toto decursu temporis. Ergo aeternitas est nunc temporis. Sed nunc temporis non est aliud secundum substantiam a tempore. Ergo aeternitas non est aliud secundum substantiam a tempore.",
+     "fr": "2° L’instant reste le même, suivant Aristote, dans tous les temps. Or l’éternité reste aussi la même dans tous les temps, puisqu’elle est indivisible; donc l’éternité est l’instant. Mais l’instant ne diffère pas substantiellement du temps; donc l’éternité n’en diffère pas non plus substantiellement."
+    },
+    {
+     "la": "Praeterea, sicut mensura primi motus est mensura omnium motuum, ut dicitur in IV Physic., ita videtur quod mensura primi esse sit mensura omnis esse. Sed aeternitas est mensura primi esse, quod est esse divinum. Ergo aeternitas est mensura omnis esse. Sed esse rerum corruptibilium mensuratur tempore. Ergo tempus vel est aeternitas, vel aliquid aeternitatis.",
+     "fr": "3° Comme la mesure du premier mouvement forme, toujours selon le Philosophe, la mesure de tous les mouvements, de même la mesure du premier être est la mesure de tous les êtres. Or l’éternité est la mesure du premier être, c’est-à-dire de l’être divin; donc elle est la mesure de tous les êtres. Mais les choses corruptibles se mesurent par le temps; donc le temps est l’éternité, ou quelque chose de l’éternité."
+    }
+   ],
+   "sed_contra": {
+    "la": "Sed contra est quod aeternitas est tota simul, in tempore autem est prius et posterius. Ergo tempus et aeternitas non sunt idem.",
+    "fr": "Mais l’éternité existe tout entière simultanément, tandis que le temps se divise en deux parties successives, le passé et le futur; donc le temps et l’éternité ne sont pas la même chose."
+   },
+   "respondeo": {
+    "la": "Respondeo dicendum quod manifestum est tempus et aeternitatem non esse idem. Sed huius diversitatis rationem quidam assignaverunt ex hoc quod aeternitas caret principio et fine, tempus autem habet principium et finem. Sed haec est differentia per accidens, et non per se. Quia dato quod tempus semper fuerit et semper futurum sit, secundum positionem eorum qui motum caeli ponunt sempiternum, adhuc remanebit differentia inter aeternitatem et tempus, ut dicit Boetius in libro de Consolat., ex hoc quod aeternitas est tota simul, quod tempori non convenit, quia aeternitas est mensura esse permanentis, tempus vero est mensura motus. Si tamen praedicta differentia attendatur quantum ad mensurata, et non quantum ad mensuras, sic habet aliquam rationem, quia solum illud mensuratur tempore, quod habet principium et finem in tempore, ut dicitur in IV Physic. Unde si motus caeli semper duraret, tempus non mensuraret ipsum secundum suam totam durationem, cum infinitum non sit mensurabile; sed mensuraret quamlibet circulationem, quae habet principium et finem in tempore. Potest tamen et aliam rationem habere ex parte istarum mensurarum, si accipiatur finis et principium in potentia. Quia etiam dato quod tempus semper duret, tamen possibile est signare in tempore et principium et finem, accipiendo aliquas partes ipsius, sicut dicimus principium et finem diei vel anni, quod non contingit in aeternitate. Sed tamen istae differentiae consequuntur eam quae est per se et primo, differentiam, per hoc quod aeternitas est tota simul, non autem tempus.",
+    "fr": "Il faut dire que le temps et l’éternité ne sont pas la même chose. Quelques-uns fondent la distinction de ces deux entités sur ceci, que l’éternité n’a ni commencement ni fin, tandis que le temps a l’un et l’autre; mais on voit que cette différence est purement accidentelle, elle n’est point par soi. Quand on supposeroit, avec ceux qui professent l’éternité du mouvement céleste, que le temps a toujours été et sera toujours, il n’en différeroit pas moins de l’éternité, comme le remarque Boëce, d’abord parce que l’éternité est simultanée et le temps successif, ensuite parce que la première de ces choses mesure l’être permanent, et la seconde le mouvement. D’un autre côté, lorsqu’on considère les choses mesurées, on voit que le temps mesure, comme le dit Aristote, ce qui commence et finit dans le temps; si donc le mouvement céleste duroit toujours, le temps ne le mesureroit pas dans toute sa durée, car l’infini ne peut l’être; il en mesureroit une révolution quelconque, c’est-à-dire une partie qui auroit un commencement et une fin. Ce n’est pas tout encore : en se plaçant au point de vue de la potentialité, on trouveroit toujours, dans le temps supposé éternel, les deux choses que nous venons d’y assigner, un commencement et une fin : il suffiroit d’en détacher une partie, comme lorsque nous disons le commencement du jour ou de l’année. On voit que rien de tout cela ne peut avoir lieu dans l’éternité.\n\nMais toutes ces différences viennent d’une différence première, essentielle, que nous avons signalée dès le principe : c’est que l’éternité est simultanée, et le temps successif."
+   },
+   "reponses": [
+    {
+     "la": "Ad primum ergo dicendum quod ratio illa procederet, si tempus et aeternitas essent mensurae unius generis, quod patet esse falsum, ex his quorum est tempus et aeternitas mensura.",
+     "fr": "Je réponds aux arguments : 1° Les mesures formées par le temps et l’éternité ne sont pas du même genre; on en sera convaincu, si l’on considère les choses auxquelles elles s’appliquent. Ces deux mesures peuvent donc exister en même temps."
+    },
+    {
+     "la": "Ad secundum dicendum quod nunc temporis est idem subiecto in toto tempore, sed differens ratione, eo quod, sicut tempus respondet motui, ita nunc temporis respondet mobili; mobile autem est idem subiecto in toto decursu temporis, sed differens ratione, inquantum est hic et ibi. Et ista alternatio est motus. Similiter fluxus ipsius nunc, secundum quod alternatur ratione, est tempus. Aeternitas autem manet eadem et subiecto et ratione. Unde aeternitas non est idem quod nunc temporis.",
+     "fr": "2° L’instant reste toujours le même dans son sujet, mais il varie dans ses rapports. En effet, comme le temps se rapporte au mouvement, de même l’instant correspond au mobile. Or le mobile reste subjectivement le même dans tout le cours du temps; mais il varie relativement, parce qu’il est tantôt dans un lieu, tantôt dans un autre, et c’est précisément cette alternation qui forme le mouvement et le temps. Ainsi l’instant varie dans ses rapports; mais l’éternité ne varie d’aucune manière, pas plus dans ses rapports que dans son sujet. Elle n’est donc pas la même chose que l’instant."
+    },
+    {
+     "la": "Ad tertium dicendum quod, sicut aeternitas est propria mensura ipsius esse, ita tempus est propria mensura motus. Unde secundum quod aliquod esse recedit a permanentia essendi et subditur transmutationi, secundum hoc recedit ab aeternitate et subditur tempori. Esse ergo rerum corruptibilium, quia est transmutabile, non mensuratur aeternitate, sed tempore. Tempus enim mensurat non solum quae transmutantur in actu, sed quae sunt transmutabilia. Unde non solum mensurat motum, sed etiam quietem; quae est eius quod natum est moveri, et non movetur.",
+     "fr": "3. Comme l’éternité est la propre mesure de l’être permanent, de même le temps est la mesure propre du mouvement. De là, plus un être s’éloigne de l’immobilité de l’existence et subit la loi de la variation, plus il s’écarte de l’éternité et tombe dans le domaine du temps. En conséquence l’être des choses corruptibles, étant sujet au changement, n’est pas mesuré par l’éternité, mais par le temps; car le temps mesure, nonseulement ce qui change effectivement, mais ce qui peut changer : il mesure non-seulement le mouvement, mais le repos; car le repos appartient à l’être mobile sans mouvement actuel."
+    }
+   ],
+   "pages": {
+    "fr": [
+     159,
+     162
+    ]
+   }
+  },
+  {
+   "ref": "Iª q. 10 a. 5",
+   "titre": {
+    "la": "De differentia aevi et temporis",
+    "fr": "La perpétuité diffère-t-elle du temps?"
+   },
+   "objections": [
+    {
+     "la": "Ad quintum sic proceditur. Videtur quod aevum non sit aliud a tempore. Dicit enim Augustinus, VIII super Gen. ad Litt., quod *Deus movet creaturam spiritualem per tempus*. Sed aevum dicitur esse mensura spiritualium substantiarum. Ergo tempus non differt ab aevo.",
+     "fr": "Il paroît que la perpétuité ne diffère pas du temps. 1° Saint Augustin dit, In Gen., VIII, 20, que » Dieu meut la créature spirituelle dans le temps. » Or la perpétuité est la mesure des substances spirituelles. Donc le temps ne diffère pas de la perpétuité."
+    },
+    {
+     "la": "Praeterea, de ratione temporis est quod habeat prius et posterius, de ratione vero aeternitatis est quod sit tota simul, ut dictum est. Sed aevum non est aeternitas, dicitur enim Eccli. I, quod sapientia aeterna est ante aevum. Ergo non est totum simul, sed habet prius et posterius, et ita est tempus.",
+     "fr": "2° La nature du temps est d’avoir l’antériorité et la postériorité; mais la nature de l’éternité est d’exister tout entière simultanément, comme nous l’avons vu. Or la perpétuité n’est pas l’éternité; car l’Ecclésiastique dit, I, 1, que la sagesse éternelle a précédé cette mesure de la durée. Donc la perpétuité n’existe pas tout entière simultanément, donc elle a l’antériorité, et la postériorité, donc elle est le temps."
+    },
+    {
+     "la": "Praeterea, si in aevo non est prius et posterius, sequitur quod in aeviternis non differat esse vel fuisse vel futurum esse. Cum igitur sit impossibile aeviterna non fuisse, sequitur quod impossibile sit ea non futura esse. Quod falsum est, cum Deus possit ea reducere in nihilum.",
+     "fr": "3° Si la perpétuité n’a ni antériorité, ni postériorité, il s’ensuit qu’il n’y a pas de différence, dans les choses perpétuelles, entre être, avoir été et devoir être. Or les choses perpétuelles ne peuvent pas ne pas avoir été; donc elles ne peuvent pas non plus, dans notre hypothèse, ne pas devoir être. Mais cette dernière conséquence est fausse, puisque Dieu peut les réduire à néant. Donc, etc."
+    },
+    {
+     "la": "Praeterea, cum duratio aeviternorum sit infinita ex parte post, si aevum sit totum simul, sequitur quod aliquod creatum sit infinitum in actu, quod est impossibile. Non igitur aevum differt a tempore.",
+     "fr": "4° Comme la durée des choses perpétuelles est infinie, à parte post, il s’ensuit qu’une chose créée peut être infinie en acte. Or cette conséquence est fausse; donc la perpétuité ne diffère pas du temps."
+    }
+   ],
+   "sed_contra": {
+    "la": "Sed contra est quod dicit Boetius, *qui tempus ab aevo ire iubes*.",
+    "fr": "Mais Boëce dit, Cons., III, 9 : « C’est vous, Seigneur, qui faites sortir le temps de la perpétuité. »"
+   },
+   "respondeo": {
+    "la": "Respondeo dicendum quod aevum differt a tempore et ab aeternitate, sicut medium existens inter illa. Sed horum differentiam aliqui sic assignant, dicentes quod aeternitas principio et fine caret; aevum habet principium, sed non finem; tempus autem habet principium et finem. Sed haec differentia est per accidens, sicut supra dictum est, quia si etiam semper aeviterna fuissent et semper futura essent, ut aliqui ponunt; vel etiam si quandoque deficerent, quod Deo possibile esset, adhuc aevum distingueretur ab aeternitate et tempore. Alii vero assignant differentiam inter haec tria, per hoc quod aeternitas non habet prius et posterius; tempus autem habet prius et posterius cum innovatione et veteratione; aevum habet prius et posterius sine innovatione et veteratione. Sed haec positio implicat contradictoria. Quod quidem manifeste apparet, si innovatio et veteratio referantur ad ipsam mensuram. Cum enim prius et posterius durationis non possint esse simul, si aevum habet prius et posterius, oportet quod, priore parte aevi recedente, posterior de novo adveniat, et sic erit innovatio in ipso aevo, sicut in tempore. Si vero referantur ad mensurata, adhuc sequitur inconveniens. Ex hoc enim res temporalis inveteratur tempore, quod habet esse transmutabile, et ex transmutabilitate mensurati, est prius et posterius in mensura, ut patet ex IV Physic. Si igitur ipsum aeviternum non sit inveterabile nec innovabile, hoc erit quia esse eius est intransmutabile. Mensura ergo eius non habebit prius et posterius. Est ergo dicendum quod, cum aeternitas sit mensura esse permanentis, secundum quod aliquid recedit a permanentia essendi, secundum hoc recedit ab aeternitate. Quaedam autem sic recedunt a permanentia essendi, quod esse eorum est subiectum transmutationis, vel in transmutatione consistit, et huiusmodi mensurantur tempore; sicut omnis motus, et etiam esse omnium corruptibilium. Quaedam vero recedunt minus a permanentia essendi, quia esse eorum nec in transmutatione consistit, nec est subiectum transmutationis, tamen habent transmutationem adiunctam, vel in actu vel in potentia. Sicut patet in corporibus caelestibus, quorum esse substantiale est intransmutabile; tamen esse intransmutabile habent cum transmutabilitate secundum locum. Et similiter patet de Angelis, quod habent esse intransmutabile cum transmutabilitate secundum electionem, quantum ad eorum naturam pertinet; et cum transmutabilitate intelligentiarum et affectionum, et locorum suo modo. Et ideo huiusmodi mensurantur aevo, quod est medium inter aeternitatem et tempus. Esse autem quod mensurat aeternitas, nec est mutabile, nec mutabilitati adiunctum. Sic ergo tempus habet prius et posterius, aevum autem non habet in se prius et posterius, sed ei coniungi possunt, aeternitas autem non habet prius neque posterius, neque ea compatitur.",
+    "fr": "Il faut dire ceci : La perpétuité, placée comme moyen terme entre l’éternité et le temps, diffère de ces deux choses : on va le voir tout à l’heure. Les uns disent : L’éternité n’a ni commencement ni fin; la perpétuité a un commencement et n’a pas de fin; le temps a un commencement et une fin : mais nous devons répéter ici ce que nous avons dit plus haut, cette distinction ne repose que sur une différence accidentelle. En effet, quand nous admettrions que les êtres perpétuels ont toujours été et seront toujours, comme certains ne craignent pas de le dire; ou quand nous supposerions qu’ils doivent un jour perdre l’existence, ce qui est dans la puissance de Dieu, la perpétuité ne se distingueroit pas moins du temps et de l’éternité.\n\nD’autres ont dit : L’éternité n’a ni l’antériorité ni la postériorité; le temps a l’antériorité et la postériorité avec la jeunesse et la vieillesse; la perpétuité a l’antériorité et la postériorité, mais elle n’a ni la jeunesse ni la vieillesse. Cette doctrine se contredit elle-même dans la dernière proposition. Plaçons-nous d’abord au point de vue de la mesure. Comme l’antériorité et la postériorité ne peuvent exister simultanément, si ces deux parties de la durée mobile sont dans la perpétuité, dès que la première aura passé, la seconde arrivera nécessairement, et dès lors il y aura jeunesse et vieillesse dans la perpétuité comme dans le temps. Ensuite, si l’on considère les êtres mesurés, nous demanderons : Pourquoi les choses temporelles vieillissent-elles, sinon parce qu’elles changent? Or le changement engendre la priorité et la postériorité; si donc les êtres perpétuels ne traversent ni la jeunesse ni la vieillesse, c’est qu’ils sont immuables, et la perpétuité dès lors ne peut avoir les deux parties qui se succèdent dans le temps, l’avant et l’après.\n\nIl faut donc dire : Comme l’éternité est la mesure de l’être permanent, plus une chose s’écarte de la permanence de l’être, plus elle s’écarte de l’éternité. Or certaines choses s’éloignent de la permanence, au point que leur être sert de sujet au changement ou consiste dans le changement même : telles sont les substances corruptibles et le mouvement. C’est le temps qui est ici la mesure de la durée. D’autres choses s’éloignent moins de la permanence; leur être ne consiste pas dans le changement et n’en est pas le sujet; mais elles peuvent le subir accidentellement, soit en acte, soit en puissance : tels sont les corps célestes, invariables dans leur être substantiel et variables quant au lieu; tels sont aussi les anges qui ont l’immutabilité de nature avec la mutabilité d’élection, de pensées, d’affections et de lieux. Cette catégorie d’êtres est mesurée par la perpétuité, qui est le moyen terme entre l’éternité et le temps. Enfin l’être qui n’a le changement ni ne peut le subir d’aucune manière, est mesuré par l’éternité. Ainsi donc, le temps a l’antériorité et la postériorité; la perpétuité n’a pas essentiellement l’antériorité et la postériorité, mais elle peut les avoir; enfin l’éternité n’a pas l’antériorité et la postériorité, et elle ne peut les avoir."
+   },
+   "reponses": [
+    {
+     "la": "Ad primum ergo dicendum quod creaturae spirituales, quantum ad affectiones et intelligentias, in quibus est successio, mensurantur tempore. Unde et Augustinus ibidem dicit quod per tempus moveri, est per affectiones moveri. Quantum vero ad eorum esse naturale, mensurantur aevo. Sed quantum ad visionem gloriae, participant aeternitatem.",
+     "fr": "Je réponds aux arguments : 1° Les créatures spirituelles sont mesurées par le temps dans leurs affections et dans leurs pensées, qui se succèdent les unes aux autres. C’est pourquoi saint Augustin dit, à l’endroit cité plus haut, qu’être mû par le temps c’est être mû par les affections. Quant au reste, les anges sont mesurés par la perpétuité dans leur être naturel, et ils participent à l’éternité par la vision béatifique."
+    },
+    {
+     "la": "Ad secundum dicendum quod aevum est totum simul, non tamen est aeternitas, quia compatitur secum prius et posterius.",
+     "fr": "2° Quoique la perpétuité existe tout entière simultanément, elle n’est pas l’éternité, parce qu’elle peut admettre l’antériorité et la postériorité."
+    },
+    {
+     "la": "Ad tertium dicendum quod in ipso esse Angeli in se considerato, non est differentia praeteriti et futuri, sed solum secundum adiunctas mutationes. Sed quod dicimus Angelum esse vel fuisse vel futurum esse, differt secundum acceptionem intellectus nostri, qui accipit esse Angeli per comparationem ad diversas partes temporis. Et cum dicit Angelum esse vel fuisse, supponit aliquid cum quo eius oppositum non subditur divinae potentiae, cum vero dicit futurum esse, nondum supponit aliquid. Unde, cum esse et non esse Angeli subsit divinae potentiae, absolute considerando, potest Deus facere quod esse Angeli non sit futurum, tamen non potest facere quod non sit dum est, vel quod non fuerit postquam fuit.",
+     "fr": "3° L’ange ne connoît pas la distinction du passé et du futur dans son être même, il ne la connoît que dans les changements accidentels qu’il éprouve; et si nous mettons de la différence dans ces trois membres de phrase : « L’ange est, a été, et sera, » c’est que nous concevons son existence en la comparant aux diverses parties du temps. Et cette proposition : « L’ange est ou a été, » énonce un fait que la puissance divine ne pourroit détruire; mais cette autre assertion : « L’ange sera, » n’énonce pas un fait de cette nature. Puisque l’être et le non-être de l’ange sont soumis à la Toute-Puissance, Dieu pourroit, absolument parlant, faire que l’ange ne dût pas être; mais il ne pourroit pas faire que l’ange ne fût pas quand il est, ou qu’il n’ait pas été lorsqu’il a réellement existé."
+    },
+    {
+     "la": "Ad quartum dicendum quod duratio aevi est infinita, quia non finitur tempore. Sic autem esse aliquod creatum infinitum, quod non finiatur quodam alio, non est inconveniens.",
+     "fr": "4° La durée de la perpétuité est infinie, parce qu’elle n’est pas limitée par le temps. Rien n’empêche qu’une chose créée soit infinie en ce sens, qu’elle n’ait pas de limites dans un autre être."
+    }
+   ],
+   "pages": {
+    "fr": [
+     162,
+     166
+    ]
+   }
+  },
+  {
+   "ref": "Iª q. 10 a. 6",
+   "titre": {
+    "la": "Utrum sit unum aevum tantum",
+    "fr": "N’y a-t-il qu’une perpétuité?"
+   },
+   "objections": [
+    {
+     "la": "Ad sextum sic proceditur. Videtur quod non sit tantum unum aevum. Dicitur enim in apocryphis Esdrae, *maiestas et potestas aevorum est apud te, domine*.",
+     "fr": "Il paroît qu’il y a plusieurs perpétuités : 1° On lit dans les Livres d’Esdras; « La majesté et la puissance des perpétuités sont en vous, Seigneur. »"
+    },
+    {
+     "la": "Praeterea, diversorum generum diversae sunt mensurae. Sed quaedam aeviterna sunt in genere corporalium, scilicet corpora caelestia, quaedam vero sunt spirituales substantiae, scilicet Angeli. Non ergo est unum aevum tantum.",
+     "fr": "2° Les choses de différents genres ont des mesures différentes. Or, parmi les choses perpétuelles, les unes appartiennent au genre des êtres matériels, comme les corps célestes; les autres rentrent dans la catégorie des substances spirituelles, comme les anges. Donc il n’y a pas une seule perpétuité."
+    },
+    {
+     "la": "Praeterea, cum aevum sit nomen durationis, quorum est unum aevum, est una duratio. Sed non omnium aeviternorum est una duratio, quia quaedam post alia esse incipiunt, ut maxime patet in animabus humanis. Non est ergo unum aevum tantum.",
+     "fr": "3° Comme la perpétuité est une espèce de la durée, si les choses n’avoient qu’une perpétuité, elles n’auroient non plus qu’une durée. Mais les choses perpétuelles n’ont pas une seule durée; car elles reçoivent l’existence les unes après les autres, comme on le voit dans les âmes humaines. Donc il y a plusieurs perpétuités."
+    },
+    {
+     "la": "Praeterea, ea quae non dependent ab invicem, non videntur habere unam mensuram durationis, propter hoc enim omnium temporalium videtur esse unum tempus, quia omnium motuum quodammodo causa est primus motus, qui prius tempore mensuratur. Sed aeviterna non dependent ab invicem, quia unus Angelus non est causa alterius. Non ergo est unum aevum tantum.",
+     "fr": "4° Les choses qui ne dépendent pas les unes des autres n’ont pas une seule mesure de la durée; car si le temps mesure toutes les choses temporelles, c’est qu’il est produit par le premier mouvement, qui est comme la cause de tous les autres mouvements. Or les choses perpétuelles ne dépendent pas les unes des autres, puisque l’ange n’est pas la cause d’un autre ange. Donc, etc."
+    }
+   ],
+   "sed_contra": {
+    "la": "Sed contra, aevum est simplicius tempore, et propinquius se habens ad aeternitatem. Sed tempus est unum tantum. Ergo multo magis aevum.",
+    "fr": "Mais la perpétuité est plus simple et plus près de l’éternité que le temps. Or le temps est un; donc à plus forte raison la perpétuité."
+   },
+   "respondeo": {
+    "la": "Respondeo dicendum quod circa hoc est duplex opinio, quidam enim dicunt quod est unum aevum tantum; quidam quod multa. Quid autem horum verius sit, oportet considerare ex causa unitatis temporis, in cognitionem enim spiritualium per corporalia devenimus. Dicunt autem quidam esse unum tempus omnium temporalium, propter hoc quod est unus numerus omnium numeratorum, cum tempus sit numerus, secundum philosophum. Sed hoc non sufficit, quia tempus non est numerus ut abstractus extra numeratum, sed ut in numerato existens, alioquin non esset continuus; quia decem ulnae panni continuitatem habent, non ex numero, sed ex numerato. Numerus autem in numerato existens non est idem omnium, sed diversus diversorum. Unde alii assignant causam unitatis temporis ex unitate aeternitatis, quae est principium omnis durationis. Et sic, omnes durationes sunt unum, si consideretur earum principium, sunt vero multae, si consideretur diversitas eorum quae recipiunt durationem ex influxu primi principii. Alii vero assignant causam unitatis temporis ex parte materiae primae, quae est primum subiectum motus, cuius mensura est tempus. Sed neutra assignatio sufficiens videtur, quia ea quae sunt unum principio vel subiecto, et maxime remoto, non sunt unum simpliciter sed secundum quid. Est ergo ratio unitatis temporis, unitas primi motus, secundum quem, cum sit simplicissimus, omnes alii mensurantur, ut dicitur in X Metaphys. Sic ergo tempus ad illum motum comparatur non solum ut mensura ad mensuratum, sed etiam ut accidens ad subiectum; et sic ab eo recipit unitatem. Ad alios autem motus comparatur solum ut mensura ad mensuratum. Unde secundum eorum multitudinem non multiplicatur, quia una mensura separata multa mensurari possunt. Hoc igitur habito, sciendum quod de substantiis spiritualibus duplex fuit opinio. Quidam enim dixerunt quod omnes processerunt a Deo in quadam aequalitate, ut Origenes dixit; vel etiam multae earum, ut quidam posuerunt. Alii vero dixerunt quod omnes substantiae spirituales processerunt a Deo quodam gradu et ordine et hoc videtur sentire Dionysius, qui dicit, cap. X Cael. Hier., quod inter substantias spirituales sunt primae, mediae et ultimae, etiam in uno ordine Angelorum. Secundum igitur primam opinionem, necesse est dicere quod sunt plura aeva, secundum quod sunt plura aeviterna prima aequalia. Secundum autem secundam opinionem, oportet dicere quod sit unum aevum tantum, quia, cum unumquodque mensuretur simplicissimo sui generis, ut dicitur in X Metaphys., oportet quod esse omnium aeviternorum mensuretur esse primi aeviterni, quod tanto est simplicius, quanto prius. Et quia secunda opinio verior est, ut infra ostendetur, concedimus ad praesens unum esse aevum tantum.",
+    "fr": "Il faut dire ceci : Les docteurs sont partagés sur le point dont il s’agit : les uns tiennent qu’il n’y a qu’une seule perpétuité, les autres pensent qu’il y en a plusieurs; lesquels sont dans le vrai? voilà ce qu’il faut examiner. Comme nous parvenons à la connoissance des choses spirituelles par les choses temporelles, nous devons étudier dans le temps la nature de la perpétuité. Or plusieurs disent qu’il n’y a qu’un temps pour toutes les choses temporelles, par la raison qu’il n’y a qu’un nombre pour toutes les choses nombrées : Car le temps, ajoutent-ils, est un nombre, comme on le voit dans le Philosophe Ce raisonnement n’est pas satisfaisant. Le nombre n’existe pas abstractivement en lui-même, mais seulement dans les choses; autrement il n’auroit pas la continuité, puisque dix aunes de drap, par exemple, ne sont pas continues comme nombre, mais comme matière nombrée. Or le nombre réel, considéré d’une manière concrète, dans les objets, n’est pas toujours le même; tant s’en faut, qu’il varie avec la variété des choses.\n\nQuelques-uns disent aussi que l’unité du temps trouve sa cause dans l’unité de l’éternité. Selon ce sentiment, comme l’éternité est le principe de toute durée, toutes les durées sont unes, si on les considère dans leur principe; mais elles sont multiples, si on les envisage dans la variété des choses auxquelles elles appartiennent. D’autres trouvent dans la matière première la raison de l’unité que nous cherchons : Car la matière première, disent-ils, est le premier sujet du mouvement, dont le temps forme la mesure. Ces deux explications n’expliquent rien, pourquoi? Parce que les choses qui ne sont unes que dans leur principe ou dans leur sujet, ne sont pas unes d’une manière absolue, mais relativement.\n\nD’où vient donc l’unité du temps? Elle vient du premier mouvement, le plus simple de tous, qui pour cela même les mesure tous, comme on le voit dans la Métaphysique d’Aristote. Ainsi le temps est à ce premier mouvement, non-seulement ce que la mesure est à la chose mesurée, mais ce que l’accident est au sujet, et sous ce rapport il en reçoit l’unité; puis il est aux autres mouvements seulement ce que la mesure est à la chose mesurée, et sous ce rapport il ne se multiplie point par leur multiplicité, car une seule mesure peut mesurer une multitude de choses.\n\nCela posé, disons qu’il y a deux opinions sur les substances spirituelles. Quelques docteurs enseignent que ces substances (toutes d’après Origène, un grand nombre selon d’autres) sont sorties de la main créatrice dans une certaine égalité de nature et de perfection; d’autres pensent, au contraire, qu elles ont procédé de Dieu selon les degrés d’une progression hiérarchique; ainsi Denys le philosophe en assigne trois catégories dans chaque ordre, les supérieures, les moyennes et les inférieures. Eh bien, si l’on admet le premier sentiment, il faut dire qu’il y a plusieurs perpétuités, parce qu’il y a plusieurs êtres perpétuels qui appartiennent au même ordre et remontent au commencement par leur origine; mais, dans la seconde opinion, il faut dire qu’il n’y a qu’une perpétuité : car si chaque être est mesuré par le plus simple de son genre, les êtres perpétuels le sont par le premier de leur ordre, d’autant plus simple qu’il l’emporte davantage par la priorité. Or le dernier sentiment sur les substances spirituelles est dans le vrai : disons donc qu’il n’y a qu’une perpétuité."
+   },
+   "reponses": [
+    {
+     "la": "Ad primum ergo dicendum quod aevum aliquando accipitur pro saeculo, quod est periodus durationis alicuius rei, et sic dicuntur multa aeva, sicut multa saecula.",
+     "fr": "Je réponds aux arguments : 1° Le mot perpétuité (ævum) se prend quelquefois pour le mot siècle, qui désigne une certaine période de la durée; on dit donc plusieurs perpétuités dans le même sens qu’on dit plusieurs siècles."
+    },
+    {
+     "la": "Ad secundum dicendum quod, licet corpora caelestia et spiritualia differant in genere naturae, tamen conveniunt in hoc, quod habent esse intransmutabile. Et sic mensurantur aevo.",
+     "fr": "2° Si les corps célestes et les êtres spirituels diffèrent de nature, ils n’en ont pas moins ceci de commun, qu’ils sont immuables; et c’est par suite de cette analogie qu’ils ont, les uns et les autres, la perpétuité pour mesure."
+    },
+    {
+     "la": "Ad tertium dicendum quod nec omnia temporalia simul incipiunt, et tamen omnium est unum tempus, propter primum quod mensuratur tempore. Et sic omnia aeviterna habent unum aevum propter primum, etiam si non omnia simul incipiant.",
+     "fr": "3° Bien que tous les êtres temporels ne commencent pas simultanément, ils n’en sont pas moins tous mesurés par le temps, parce que le premier d’entre eux subit cette mesure de la durée. Tous les êtres perdurables peuvent donc avoir, à cause du premier de leur ordre, la même pérennité, bien qu’ils n’aient pas commencé tous à la fois."
+    },
+    {
+     "la": "Ad quartum dicendum quod ad hoc quod aliqua mensurentur per aliquod unum, non requiritur quod illud unum sit causa omnium eorum; sed quod sit simplicius.",
+     "fr": "4° Pour qu’une chose puisse en mesurer plusieurs autres, il n’est pas nécessaire qu’elle en soit la cause, il suffit qu’elle soit plus simple."
+    }
+   ],
+   "pages": {
+    "fr": [
+     166,
+     169
+    ]
+   }
+  }
+ ],
+ "source": {
+  "fr": {
+   "ouvrage": "Somme théologique de S. Thomas d’Aquin, traduite en français et annotée par F. Lachat",
+   "edition": "Paris, Louis Vivès, 4e édition, 1880, tome premier (même composition que l’édition de 1874)",
+   "url": "https://archive.org/details/sommetheologique01thom",
+   "controle": "https://archive.org/details/sommethologique07lachgoog",
+   "relecture": "vote de quatre lectures (Tesseract et ABBYY sur les scans de 1880 et de 1874, même composition) ; chaque ligne sans accord relue sur l’image (corrections_fr.txt) ; notes de Lachat et « (Conclusion. — …) » des éditeurs non repris"
+  },
+  "la": {
+   "ouvrage": "Sancti Thomae Aquinatis Opera omnia iussu impensaque Leonis XIII P. M. edita, t. IV : Pars prima Summae theologiae a quaestione I ad quaestionem XLIX",
+   "edition": "Romae, ex Typographia Polyglotta S. C. de Propaganda Fide, 1888",
+   "url": "https://archive.org/details/operaomniaiussui04thom",
+   "transcription": "https://www.corpusthomisticum.org/sth1001.html (E. Alarcón, d’après l’édition léonine)",
+   "relecture": "alignement mot à mot sur la lecture ABBYY du scan de 1888 (latin_controle.py), écarts isolés vus sur l’image (corrections_la.txt) ; intitulés relus sur l’image ; ponctuation du Corpus Thomisticum ; pas de relecture intégrale du latin sur l’image"
+  },
+  "pages_fr": [
+   149,
+   169
+  ]
+ },
+ "revision": 1
+}

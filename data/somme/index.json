@@ -264,6 +264,42 @@
    "fichier": "Ia-09.json",
    "question": 9,
    "article": 2
+  },
+  {
+   "ref": "Iª q. 10 a. 1",
+   "fichier": "Ia-10.json",
+   "question": 10,
+   "article": 1
+  },
+  {
+   "ref": "Iª q. 10 a. 2",
+   "fichier": "Ia-10.json",
+   "question": 10,
+   "article": 2
+  },
+  {
+   "ref": "Iª q. 10 a. 3",
+   "fichier": "Ia-10.json",
+   "question": 10,
+   "article": 3
+  },
+  {
+   "ref": "Iª q. 10 a. 4",
+   "fichier": "Ia-10.json",
+   "question": 10,
+   "article": 4
+  },
+  {
+   "ref": "Iª q. 10 a. 5",
+   "fichier": "Ia-10.json",
+   "question": 10,
+   "article": 5
+  },
+  {
+   "ref": "Iª q. 10 a. 6",
+   "fichier": "Ia-10.json",
+   "question": 10,
+   "article": 6
   }
  ]
 }
