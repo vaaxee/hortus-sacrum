@@ -192,6 +192,18 @@ l'image (« exerciée », coquille de l'édition, gardée).
 | Consécration de dom Columba Marmion (Noël 1908, renouvelée le 25 mars 1909) (`thibaut:marmion-consecration-trinite`) | Dom R. Thibaut, *Un maître de la vie spirituelle. Dom Columba Marmion, abbé de Maredsous*, 2e éd., Abbaye de Maredsous, 1930 (imprimatur, Namur, 8 sept. 1929), ch. « Grâces d'union » | 190 | archive.org `un0000unse` (n215) |
 | Indulgence de la neuvaine : 7 ans une fois le jour ; plénière la neuvaine achevée | *Enchiridion indulgentiarum*, 1952, n° 48 (S. C. Indulg., 8 août 1847 ; S. Pén. Ap., 18 mars 1932), vu sur l'image | 19 | archive.org `enchiridion_indulgentiarum_1952` (n34) |
 
+## Neuvaines et dévotions à jours comptés (26 novembre 2026, à valider)
+
+Inventaire et décisions : `docs/audits/NEUVAINES_2026-11-26.md`. Une seule pièce nouvelle ; les autres lignes mettent
+à leurs jours des textes déjà transcrits.
+
+| Texte | Source | Pages | Accès |
+|---|---|---|---|
+| Neuvaine de réparation au Sacré-Cœur, du 1er au 9 de chaque mois : offrande du jour (`beringer:neuvaine-reparation-sacre-coeur`), **nouvelle**, relue sur l'image | Beringer 1925, t. I, n° 671 (Pie X, 15 (19) nov. 1907 ; indulgence non comptée) | 353 | archive.org `lesindulgences0001beri` (n368) |
+| Neuvaine au Sacré-Cœur pour chaque premier vendredi (`breviaire-sc:neuvaine`) ; amende honorable et consécration au Sacré-Cœur (fin de `breviaire-sc:exercice-messe`) | *Petit bréviaire du Sacré-Cœur de Jésus, extrait de la vie et des œuvres authentiques de la Bienheureuse Marguerite-Marie*, 13e éd., Nancy, Librairie Notre-Dame (Le Chevallier frères), imprimatur 21 mars 1883 | 151-155 ; 119-140 | PDF fourni par l'utilisateur (hors conteneur), transcription relue `engine/recueils/breviaire_sc_suite/` |
+| Neuvaine en l'honneur de la sainte Face (`janvier:neuvaine-meditations-sainte-face`) ; date : avant la fête principale de l'Archiconfrérie, saint Pierre (art. V) | Janvier, *Manuel de l'Archiconfrérie de la Sainte-Face*, 3e éd., Tours, 1895 | 112-142 ; 65-66 | bibliotheque-catholique.com (PDF Google) |
+| Cinq dimanches de S. Jean Berchmans ; dix dimanches de S. Stanislas Kostka (`jardin:*`) | *Le Jardin de l'âme* (livret) | 63, 66 | livret |
+
 ## Indulgences (compteur), 14 novembre 2026
 
 Règle : la concession la plus récente fait foi : *Enchiridion indulgentiarum*, 1952 (archive.org `enchiridion_indulgentiarum_1952`) ; à défaut *Thésaurisons pour le ciel*, Carmel de Montréal, 1941, imprimatur du 28 avril 1941, d'après les *Preces et Pia Opera* de 1938 (http://www.liberius.net/livre.php?id_livre=1335) ; à défaut Beringer 1925. Données : `data/prieres/indulgences.json` (indulgences partielles seulement ; plénières et indulgences réservées aux confréries non comptées). Vérifiés dans l'Enchiridion : n° 36 (actes de foi, d'espérance, de charité), 43 (Symbole des Apôtres), 114, 221, 293, 319, 331, 332, 333, 462, 478, 585, 671, 687, 691 (Confiteor), 395 (chapelet), litanies du Sacré-Cœur.
