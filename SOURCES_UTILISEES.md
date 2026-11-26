@@ -135,6 +135,30 @@ Londres, 1861 (`ConfraternityManualOfThe`) ; *Purgatorian Consoler*, Baltimore, 
 t. II, n° 230, 234, 255, 262, 272, 306, 308 (sommaires français des archiconfréries) ; *Enchiridion* 1952, n° 594, 636-649
 (contrôle, sur l'OCR).
 
+## Manuels d'archiconfréries, lot B (25-26 novembre 2026, non branchés au programme)
+
+Double lecture (couche texte du scan et Tesseract ; colonnes latin-français lues séparément), chaque désaccord vu sur
+l'image ; détail, tables des matières, pièces laissées et proposition d'intégration :
+`docs/audits/ARCHICONFRERIES_LOT_B_2026-11-25.md`.
+
+| Texte | Source | Pages | Accès |
+|---|---|---|---|
+| Petit office ou Salutation du très saint Nom de Jésus (bienheureux Jourdain de Saxe), latin et français (`saintnom1899:petit-office-saint-nom-de-jesus`) | *Manuel de la Confrérie du Saint Nom de Jésus ou Saint Nom de Dieu*, Saint-Hyacinthe, Dominicains, 1899, *imprimatur* de l'évêque de Saint-Hyacinthe | 20-32, 44 | archive.org `cihm_26544` |
+| Souvenez-vous à saint Joseph, invocation « Bon saint Joseph, notre guide », jaculatoires « Jésus, Marie, Joseph » (`cordonjoseph1871:*`, 3 pièces) | *Vertu miraculeuse du cordon de St. Joseph*, nouvelle éd., Montréal, E. Senécal, 1871, « vu et approuvé » par Mgr Bourget, 30 déc. 1870 | 59-60 | archive.org `cihm_28660` |
+| Consécration à saint Joseph, prière des associés, prière pour la grâce d'une bonne mort (`confreriejoseph:*`, 3 pièces) | *Manuel de la Confrérie de Saint Joseph*, Montréal, hospice Saint-Joseph, s. d. (sans approbation imprimée) | 26, 56 | archive.org `cihm_61528` |
+| Fruits et prières des quinze mystères du Rosaire (`rosairevivant1841:fruits-des-quinze-mysteres`) | *Petit manuel du Rosaire-Vivant*, Montréal, L. Perrault, approuvé par H. Hudon, V. G., 20 sept. 1841 | 19-33 | archive.org `cihm_39974` |
+| Prière quotidienne de la Milice angélique (cordon de saint Thomas) (`troisconfreries:priere-quotidienne-milice-angelique`) | *Les Trois Confréries dominicaines*, Ottawa, A. Bureau, s. d. [vers 1902] | 61-62 | archive.org `cihm_78783` |
+| Prière de saint Augustin, acte d'admiration, triomphe de l'Église, prières de M. Dupont, litanies de l'humilité, prière de Pie IX, aspirations, vingt-quatre adorations, offrande pour la France (`janvier:*`, 9 pièces) | Janvier, *Manuel de l'Archiconfrérie de la Sainte-Face*, 3e éd., Tours, 1895 | 164-177, 194-201 | bibliotheque-catholique.com (PDF Google) |
+| Acte d'oblation des âmes-victimes, amende honorable pour la fête du Sacré-Cœur (`garde1886:*`, 2 pièces) | *Manuel de l'Archiconfrérie de la Garde d'Honneur*, 9e éd., Bourg, 1886 | 134-136, 151-152 | copie saint-eugene.net du scan Google `YxAtAYVrCuwC` |
+| Oraison préparatoire et cinq prières aux intentions du Souverain Pontife, acte d'offrande pour les indulgences (`desgenettes:*`, 2 pièces) | Desgenettes, *Manuel… de l'Archiconfrérie du très-saint et immaculé Cœur de Marie*, 13e éd., Paris, 1852 | 432-435 | archive.org `manueldinstruct00dufrgoog` |
+| Père éternel, je vous offre le Sang très précieux… (`beringer:offrande-du-precieux-sang`) ; équivalent de l'« Ejaculatory Offering » de Caswall 1861 | Beringer 1925, t. I, n° 250 | 132-133 | archive.org `lesindulgences0001beri` (n147-n148) |
+| **Traduction de travail** : colloque avec Jésus crucifié, prières de S. Pie V (`bonamors1896:colloque-saint-pie-v`) | *The Manual of the Bona Mors Confraternity*, New York, 1896 | 22-23 | archive.org `manualofbonamors00unse` (n33-n34) |
+| **Traduction de travail** : invocation de la Trinité pour les âmes du purgatoire (`purgatorian1868:invocation-trinite-ames-purgatoire`) | *Purgatorian Consoler*, Baltimore, J. Murphy, 1868 | 312-313 | archive.org `purgatorianconso00queluoft` (n317-n318) |
+
+Manuels consultés sans pièce ajoutée : Mgr de Ségur, *Le Cordon séraphique*, Québec, 1877 (`cihm_13440`) ; *Livret de
+la Confrérie du T. S. Rosaire*, Montréal, 1903 (`cihm_77301`) ; *Notice sur le Tiers-Ordre de la pénitence*, Québec,
+1867 (`cihm_29653`) ; *Manuel du Tiers-Ordre*, 1885 (`cihm_62202`).
+
 ## Neuvaine à la très sainte Trinité (26 novembre 2026, relue sur l'image, à valider)
 
 Demande de l'utilisateur : neuvaine indulgenciée finissant le dimanche de la Trinité, consécration de dom Marmion le

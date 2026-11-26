@@ -160,6 +160,19 @@ Les points réglés sont gardés pour l'historique. Dernière mise à jour : 26 
   Eastview ou Saint-Laurent-sur-Sèvre, 1899-1947) ; litanies et neuvaine du Secrétariat de Marie Médiatrice (Louvain,
   *de consensu Ordinarii*, Malines, 7 janvier 1942) ; oraison propre de la messe du bienheureux (propre des diocèses de
   Luçon ou de Rennes, après 1888).
+- **Manuels d'archiconfréries, lot B (25-26 nov.)** : 25 pièces ajoutées, non branchées
+  (`docs/audits/ARCHICONFRERIES_LOT_B_2026-11-25.md`). **À relire par l'utilisateur** : 2 traductions de travail
+  (`bonamors1896:colloque-saint-pie-v`, `purgatorian1868:invocation-trinite-ames-purgatoire`). Reste :
+  - *Notre-Dame des Sept Douleurs*, Allibert, Lyon, 1838 : cherché de nouveau le 26 nov. sur archive.org (titres
+    « sept douleurs », « sept-douleurs », auteur Allibert), HathiTrust (catalogue), Gallica et la recherche web : seules
+    les notices Google Livres `YAkym_DUqF0C` (Lyon) et `F47ut9G1E94C` (Louvain), téléchargement bloqué. **PDF à fournir.**
+  - Litanies, prière et neuvaine de saint François (Cordon 1878) : la *Notice sur le Tiers-Ordre*, Québec, 1867
+    (`cihm_29653`), les contient en français, mais le scan de microfiche n'en donne que la marge (p. 51 environ) :
+    autre exemplaire à trouver.
+  - Manuel de la Confrérie de Saint-Joseph, Montréal, s. d. (`cihm_61528`), « Prière pour connaître sa vocation »
+    (p. 28) : fins de ligne cachées par la page voisine ; autre exemplaire à trouver.
+  - Formule de **renouvellement du cordon de saint Joseph** : absente aussi de *Vertu miraculeuse du cordon de
+    St. Joseph* (1871) et du manuel de Montréal ; `hortus:renouvellement-cordon-saint-joseph` reste composée.
 - **Manuels d'archiconfréries en français** (22 nov., audit `docs/audits/ARCHICONFRERIES_FR_2026-11-22.md`) : 26 pièces
   transcrites (Janvier 1895, Desgenettes 1852, Garde d'honneur 1886), non branchées. Reste :
   - *Agonie de N.-S.* (archiconfrérie de Paris, 95 rue de Sèvres) : **aucun manuel trouvé** (archive.org, Canadiana,

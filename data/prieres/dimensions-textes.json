@@ -1192,6 +1192,60 @@
       "personne": ["soi-meme"],
       "forme": ["acte"],
       "devinee": ["fin", "objet", "grace", "personne", "forme"]
+    },
+    "beringer:offrande-du-precieux-sang": {
+      "fin": ["propitiation", "intercession"],
+      "objet": ["precieux-sang"],
+      "personne": ["soi-meme", "eglise-et-pretres"],
+      "forme": ["jaculatoire"],
+      "devinee": ["fin", "objet", "personne", "forme"]
+    },
+    "cordonjoseph1871:jaculatoires-jesus-marie-joseph": {
+      "fin": ["demande", "adoration"],
+      "objet": ["jesus-christ", "sainte-vierge", "saint-joseph"],
+      "grace": ["perseverance-finale"],
+      "forme": ["jaculatoire"],
+      "devinee": ["fin", "objet", "grace", "forme"]
+    },
+    "cordonjoseph1871:souvenez-vous-a-saint-joseph": {
+      "fin": ["demande"],
+      "objet": ["saint-joseph"],
+      "forme": ["oraison"],
+      "devinee": ["fin", "objet", "forme"]
+    },
+    "desgenettes:cinq-prieres-intentions-souverain-pontife": {
+      "fin": ["intercession"],
+      "objet": ["trinite"],
+      "personne": ["eglise-et-pretres", "pecheurs", "dirigeants"],
+      "forme": ["oraison"],
+      "devinee": ["fin", "objet", "personne", "forme"]
+    },
+    "janvier:priere-de-pie-ix-sainte-face": {
+      "fin": ["demande"],
+      "objet": ["sainte-face"],
+      "grace": ["vertus"],
+      "forme": ["oraison"],
+      "devinee": ["fin", "objet", "grace", "forme"]
+    },
+    "purgatorian1868:invocation-trinite-ames-purgatoire": {
+      "fin": ["intercession"],
+      "objet": ["trinite", "ames-du-purgatoire"],
+      "personne": ["defunts"],
+      "forme": ["oraison"],
+      "devinee": ["fin", "objet", "personne", "forme"]
+    },
+    "rosairevivant1841:fruits-des-quinze-mysteres": {
+      "fin": ["demande"],
+      "objet": ["jesus-christ", "sainte-vierge", "saint-esprit"],
+      "grace": ["vertus", "sanctification", "perseverance-finale"],
+      "forme": ["oraison"],
+      "devinee": ["fin", "objet", "grace", "forme"]
+    },
+    "saintnom1899:petit-office-saint-nom-de-jesus": {
+      "fin": ["louange", "adoration", "demande"],
+      "objet": ["jesus-christ"],
+      "forme": ["office"],
+      "devinee": ["fin", "objet", "forme"]
     }
   }
 }
