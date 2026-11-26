@@ -488,6 +488,23 @@ describe('neuvaine à saint François d’Assise (Québec 1867), du 25 septembre
 	});
 });
 
+describe('neuvaine pour la fête de saint Joseph (Confrérie de Montréal), du 10 au 18 mars', () => {
+	const ID = 'prog:neuvaine-saint-joseph-montreal';
+	const ORD = ['Premier', 'Deuxième', 'Troisième', 'Quatrième', 'Cinquième', 'Sixième', 'Septième', 'Huitième', 'Neuvième'];
+	it('la prière préparatoire, puis la vertu du jour', () => {
+		const jours = CALENDRIER.filter((j) => ligne(calculer(j.date), ID)).map((j) => j.date);
+		expect(jours).toEqual(joursAvant('2027-03-19', 9));
+		jours.forEach((date, k) => {
+			const s = ligne(calculer(date), ID)!.sections.filter((x) => x.genre === 'texte');
+			expect(
+				s.map((x) => x.extrait?.section?.split('.')[0]),
+				date
+			).toEqual(['## Prière préparatoire', `## ${ORD[k]} jour`]);
+			for (const x of s) expect(extraire(corps(x.texte!)!, x.extrait), date).toBeTruthy();
+		});
+	});
+});
+
 describe('neuvaine de réparation au Sacré-Cœur, du 1er au 9 de chaque mois (Beringer n° 671)', () => {
 	it('l’offrande à la fin de la prière du matin, les jours 1 à 9 de chaque mois seulement', () => {
 		const jours = CALENDRIER.filter((j) =>

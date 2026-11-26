@@ -1207,6 +1207,14 @@
       "forme": ["neuvaine", "meditation"],
       "devinee": ["fin", "objet", "grace", "personne", "forme"]
     },
+    "confreriejoseph:neuvaine-fetes-saint-joseph": {
+      "fin": ["demande"],
+      "objet": ["saint-joseph"],
+      "grace": ["vertus", "preservation-du-peche", "salut"],
+      "personne": ["soi-meme"],
+      "forme": ["neuvaine", "oraison"],
+      "devinee": ["fin", "objet", "grace", "personne", "forme"]
+    },
     "breviaire-sc:exercice-messe": {
       "fin": ["adoration", "action-de-graces", "reparation", "demande"],
       "objet": ["sacre-coeur", "eucharistie", "trinite"],
