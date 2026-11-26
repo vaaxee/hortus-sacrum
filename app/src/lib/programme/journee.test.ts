@@ -48,6 +48,44 @@ describe('quand', () => {
 		expect(vaut({ dates: ['03-27'] }, j)).toBe(true);
 		expect(vaut({ semaines_du_mois: [4] }, j)).toBe(true);
 	});
+	it('autour : jours comptés avant ou après une ancre (premier vendredi, jour du mois, fête fixe)', () => {
+		const vendredi = { ancre: { rang: 1, jour_semaine: 5 }, de: -9, a: -1 };
+		const jours = (q: Parameters<typeof vaut>[0], de: string, a: string) => {
+			const out: string[] = [];
+			for (let d = new Date(de + 'T12:00:00'); d <= new Date(a + 'T12:00:00'); d.setDate(d.getDate() + 1)) {
+				const date = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+				if (vaut(q, { date })) out.push(date);
+			}
+			return out;
+		};
+		// premier vendredi le 1er janvier 2027 : la neuvaine passe d'une année à l'autre
+		expect(jours({ autour: vendredi }, '2026-12-15', '2027-01-10')).toEqual([
+			'2026-12-23',
+			'2026-12-24',
+			'2026-12-25',
+			'2026-12-26',
+			'2026-12-27',
+			'2026-12-28',
+			'2026-12-29',
+			'2026-12-30',
+			'2026-12-31'
+		]);
+		expect(jours({ autour: { ancre: { jour: 1 }, de: 0, a: 8 } }, '2027-02-25', '2027-03-12')[0]).toBe('2027-03-01');
+		expect(jours({ autour: { ancre: { jour: 1 }, de: 0, a: 8 } }, '2027-02-25', '2027-03-12')).toHaveLength(9);
+		// les cinq dimanches avant le 13 août 2027
+		expect(jours({ jours_semaine: [0], autour: { ancre: '08-13', de: -35, a: -1 } }, '2027-06-01', '2027-09-01')).toEqual([
+			'2027-07-11',
+			'2027-07-18',
+			'2027-07-25',
+			'2027-08-01',
+			'2027-08-08'
+		]);
+		// fête fixe au début de janvier : la fenêtre commence l'année civile d'avant
+		expect(jours({ jours_semaine: [0], autour: { ancre: '01-06', de: -14, a: -1 } }, '2026-12-01', '2027-01-10')).toEqual([
+			'2026-12-27',
+			'2027-01-03'
+		]);
+	});
 });
 
 describe('journee()', () => {
@@ -328,6 +366,51 @@ describe('neuvaine à la très sainte Trinité (demande du 26 nov.)', () => {
 			);
 			expect(textes.includes('thibaut:marmion-consecration-trinite'), date).toBe(k === 8);
 		});
+	});
+});
+
+const ORDINAUX = ['Premier', 'Deuxième', 'Troisième', 'Quatrième', 'Cinquième', 'Sixième', 'Septième', 'Huitième', 'Neuvième'];
+const iso = (d: Date) => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+/** Les n jours qui précèdent une date (AAAA-MM-JJ), dans l'ordre. */
+const joursAvant = (date: string, n: number) =>
+	Array.from({ length: n }, (_, k) => {
+		const d = new Date(date + 'T12:00:00');
+		d.setDate(d.getDate() - n + k);
+		return iso(d);
+	});
+
+describe('neuvaine au Sacré-Cœur avant le premier vendredi (Petit bréviaire, demande du 26 nov.)', () => {
+	const ID = 'prog:neuvaine-premier-vendredi';
+	const premiersVendredis = CALENDRIER.filter((j) => {
+		const d = new Date(j.date + 'T12:00:00');
+		return d.getDay() === 5 && d.getDate() <= 7;
+	}).map((j) => j.date);
+	const jours = CALENDRIER.filter((j) => ligne(calculer(j.date), ID)).map((j) => j.date);
+	it('les neuf jours qui finissent le jeudi, veille de chaque premier vendredi de 2026-2027', () => {
+		expect(premiersVendredis).toHaveLength(12);
+		const fin = CALENDRIER[CALENDRIER.length - 1].date;
+		const attendus = [...premiersVendredis, '2027-12-03']
+			.flatMap((v) => joursAvant(v, 9))
+			.filter((d) => d >= CALENDRIER[0].date && d <= fin);
+		expect(jours).toEqual(attendus);
+		expect(jours.slice(0, 5)).toEqual(['2026-11-29', '2026-11-30', '2026-12-01', '2026-12-02', '2026-12-03']);
+		expect(jours.slice(-4)).toEqual(['2027-11-24', '2027-11-25', '2027-11-26', '2027-11-27']);
+	});
+	it('chaque date porte son jour ; amende honorable et consécration le neuvième jour seulement', () => {
+		for (const v of premiersVendredis.slice(1)) {
+			joursAvant(v, 9).forEach((date, k) => {
+				const sections = ligne(calculer(date), ID)!.sections;
+				const titres = sections.filter((s) => s.genre === 'editorial').map((s) => s.contenu);
+				expect(titres[0], date).toMatch(new RegExp(`^### ${ORDINAUX[k]} jour de la neuvaine`));
+				const textes = sections.filter((s) => s.genre === 'texte');
+				expect(textes[0].texte, date).toBe('breviaire-sc:neuvaine');
+				expect(
+					textes.slice(1).map((s) => s.extrait?.section),
+					date
+				).toEqual(k === 8 ? ['## ∗ Amende honorable au Sacré-Cœur', '## ∗ Consécration au Sacré-Cœur de Jésus'] : []);
+				expect(new Date(date + 'T12:00:00').getDay() === 4 || k < 8, date).toBe(true);
+			});
+		}
 	});
 });
 

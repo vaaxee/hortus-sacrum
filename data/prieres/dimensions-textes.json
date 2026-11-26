@@ -1161,6 +1161,22 @@
       "personne": ["soi-meme"],
       "devinee": ["fin", "objet", "personne"]
     },
+    "breviaire-sc:neuvaine": {
+      "fin": ["reparation", "demande", "adoration", "action-de-graces"],
+      "objet": ["sacre-coeur", "trinite", "sainte-vierge"],
+      "grace": ["perseverance-finale", "charite", "vertus"],
+      "personne": ["soi-meme", "pecheurs", "eglise-et-pretres"],
+      "forme": ["neuvaine"],
+      "devinee": ["fin", "objet", "grace", "personne", "forme"]
+    },
+    "breviaire-sc:exercice-messe": {
+      "fin": ["adoration", "action-de-graces", "reparation", "demande"],
+      "objet": ["sacre-coeur", "eucharistie", "trinite"],
+      "grace": ["charite", "salut"],
+      "personne": ["soi-meme"],
+      "forme": ["messe", "acte"],
+      "devinee": ["fin", "objet", "grace", "personne", "forme"]
+    },
     "beringer:trinite-adoration-action-de-graces": {
       "fin": ["adoration", "action-de-graces", "demande", "intercession"],
       "objet": ["trinite", "eucharistie", "sacre-coeur"],

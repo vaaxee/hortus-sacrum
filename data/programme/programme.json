@@ -1554,6 +1554,34 @@
       }
     },
     {
+      "id": "prog:neuvaine-premier-vendredi",
+      "titre": "Neuvaine au Sacré-Cœur avant le premier vendredi",
+      "motif": {"fins": ["reparation", "demande"], "objets": ["sacre-coeur"], "note": "neuf jours qui finissent le jeudi, veille du premier vendredi du mois (Petit bréviaire du Sacré-Cœur, 1883) ; le dernier jour, amende honorable et consécration au Sacré-Cœur"},
+      "revision": 1,
+      "quand": {"autour": {"ancre": {"rang": 1, "jour_semaine": 5}, "de": -9, "a": -1}},
+      "source": "Demande de l'utilisateur du 26 nov. : neuvaine du Petit bréviaire du Sacré-Cœur (Nancy, 1883, p. 151-155) avant chaque premier vendredi ; « terminer par une Amende honorable et une Consécration au Sacré-Cœur de Jésus » : celles du même livre, à la fin de l'exercice pour la messe (p. 119-140)",
+      "page": {
+        "moment": "journee",
+        "ordre": 76,
+        "sections": [
+          {"notice": "breviaire-sc:neuvaine", "extrait": {"de": "## Intentions générales", "a": "## Prières de la neuvaine"}},
+          {"editorial": "### Premier jour de la neuvaine", "quand": {"autour": {"ancre": {"rang": 1, "jour_semaine": 5}, "de": -9, "a": -9}}},
+          {"editorial": "### Deuxième jour de la neuvaine", "quand": {"autour": {"ancre": {"rang": 1, "jour_semaine": 5}, "de": -8, "a": -8}}},
+          {"editorial": "### Troisième jour de la neuvaine", "quand": {"autour": {"ancre": {"rang": 1, "jour_semaine": 5}, "de": -7, "a": -7}}},
+          {"editorial": "### Quatrième jour de la neuvaine", "quand": {"autour": {"ancre": {"rang": 1, "jour_semaine": 5}, "de": -6, "a": -6}}},
+          {"editorial": "### Cinquième jour de la neuvaine", "quand": {"autour": {"ancre": {"rang": 1, "jour_semaine": 5}, "de": -5, "a": -5}}},
+          {"editorial": "### Sixième jour de la neuvaine", "quand": {"autour": {"ancre": {"rang": 1, "jour_semaine": 5}, "de": -4, "a": -4}}},
+          {"editorial": "### Septième jour de la neuvaine", "quand": {"autour": {"ancre": {"rang": 1, "jour_semaine": 5}, "de": -3, "a": -3}}},
+          {"editorial": "### Huitième jour de la neuvaine", "quand": {"autour": {"ancre": {"rang": 1, "jour_semaine": 5}, "de": -2, "a": -2}}},
+          {"editorial": "### Neuvième jour de la neuvaine, veille du premier vendredi", "quand": {"autour": {"ancre": {"rang": 1, "jour_semaine": 5}, "de": -1, "a": -1}}},
+          {"texte": "breviaire-sc:neuvaine", "extrait": {"section": "## Prières de la neuvaine"}},
+          {"editorial": "### Pour terminer la neuvaine", "quand": {"autour": {"ancre": {"rang": 1, "jour_semaine": 5}, "de": -1, "a": -1}}},
+          {"texte": "breviaire-sc:exercice-messe", "extrait": {"section": "## ∗ Amende honorable au Sacré-Cœur", "niveau": 1}, "quand": {"autour": {"ancre": {"rang": 1, "jour_semaine": 5}, "de": -1, "a": -1}}},
+          {"texte": "breviaire-sc:exercice-messe", "extrait": {"section": "## ∗ Consécration au Sacré-Cœur de Jésus", "niveau": 1}, "quand": {"autour": {"ancre": {"rang": 1, "jour_semaine": 5}, "de": -1, "a": -1}}}
+        ]
+      }
+    },
+    {
       "id": "prog:priere-du-soir",
       "titre": "Prière du soir et examen de conscience",
       "motif": {"fins": ["action-de-graces", "demande", "reparation"], "objets": ["trinite"], "note": "rendre grâces, examiner sa conscience et demander pardon avant la nuit (LISTE_DU_JOUR, Soir)"},
