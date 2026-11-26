@@ -1241,6 +1241,45 @@
       "forme": ["oraison"],
       "devinee": ["fin", "objet", "grace", "forme"]
     },
+    "beringer:trois-ave-immaculee-conception": {
+      "fin": ["demande"],
+      "objet": ["sainte-vierge"],
+      "grace": ["preservation-du-peche", "sanctification"],
+      "personne": ["soi-meme"],
+      "forme": ["jaculatoire"],
+      "devinee": ["fin", "objet", "grace", "personne", "forme"]
+    },
+    "desgenettes:acte-d-offrande-pour-les-indulgences": {
+      "fin": ["reparation", "intercession"],
+      "objet": ["trinite", "ames-du-purgatoire"],
+      "personne": ["soi-meme", "defunts"],
+      "forme": ["acte"],
+      "devinee": ["fin", "objet", "personne", "forme"]
+    },
+    "ench1952:entre-vos-mains-saint-edmond": {
+      "fin": ["demande", "intercession"],
+      "objet": ["trinite", "anges", "sainte-vierge", "saints"],
+      "grace": ["preservation-du-peche"],
+      "personne": ["soi-meme", "famille", "amis", "ennemis", "eglise-et-pretres"],
+      "forme": ["oraison"],
+      "devinee": ["fin", "objet", "grace", "personne", "forme"]
+    },
+    "thesaurisons:oraison-de-prime": {
+      "fin": ["demande"],
+      "objet": ["trinite"],
+      "grace": ["preservation-du-peche"],
+      "personne": ["soi-meme"],
+      "forme": ["oraison"],
+      "devinee": ["fin", "objet", "grace", "personne", "forme"]
+    },
+    "thesaurisons:suscipe": {
+      "fin": ["adoration"],
+      "objet": ["trinite"],
+      "grace": ["charite"],
+      "personne": ["soi-meme"],
+      "forme": ["acte"],
+      "devinee": ["fin", "objet", "grace", "personne", "forme"]
+    },
     "saintnom1899:petit-office-saint-nom-de-jesus": {
       "fin": ["louange", "adoration", "demande"],
       "objet": ["jesus-christ"],

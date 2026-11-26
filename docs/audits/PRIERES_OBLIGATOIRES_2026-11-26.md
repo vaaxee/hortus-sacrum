@@ -11,8 +11,8 @@ Demande de l'utilisateur du 26 nov. (prioritaire) :
    l'*Enchiridion* de 1952, prescription de l'Église ou d'une archiconfrérie, promesse attestée). Sans titre : chercher un
    remplaçant ancien de même fonction et de longueur voisine ; sans remplaçant, la prière reste, sans marque.
 
-Branche `claude/prieres-obligatoires`. **`programme.json` n'est pas modifié** : l'utilisateur tranchera, puis on
-intégrera. Pièces nouvelles dans `data/prieres/sources.json` (7), fiches dans `data/prieres/indulgences.json` (6),
+Branche `claude/prieres-obligatoires`. Audit d'abord rendu sans toucher `programme.json` ; **décisions de l'utilisateur
+intégrées le 26 nov. : voir § 9**. Pièces nouvelles dans `data/prieres/sources.json` (7), fiches dans `data/prieres/indulgences.json` (6),
 chacune relue sur l'image ; voir `SOURCES_UTILISEES.md`, section du 26 novembre.
 
 ## Lignes retenues comme obligatoires
@@ -111,7 +111,7 @@ Longueurs en mots (rubriques non comptées).
 | 11 | *Je confesse à Dieu* | **I** n° 691 | — | 141 |
 | 12 | « Bénissez, ô mon Dieu, le repos… » | — | aucun ; garder | 60 |
 | 13 | Prière pour les vivants et les défunts | — | aucun ; garder | 91 |
-| 14 | Trois salutations à Jésus crucifié (Jahenny, insertion) | **Pr** : promesses rapportées par Marie-Julie Jahenny (révélation privée **non approuvée**) — titre faible, à trancher | — | — |
+| 14 | Trois salutations à Jésus crucifié (Jahenny, insertion) | **Pr** : promesses rapportées par Marie-Julie Jahenny — **révélation non approuvée** ; titre compté (décision du 26 nov.) | — | — |
 | 15 | Prière pour les agonisants | **I** n° 671 | — | 112 |
 | 16 | Prière du jour pour les âmes (Beringer n° 615, sauf le lundi) | indulgence de Beringer 1925 (Léon XIII) **non retrouvée** dans l'Ench. 1952 | aucun ; garder | ~70 |
 | 17 | A la Sainte Famille (février) | **I** n° 643 | — | ~50 |
@@ -181,3 +181,18 @@ Fiches ajoutées à `data/prieres/indulgences.json`, toutes **vues sur l'image**
 n° 358 (`beringer:trois-ave-immaculee-conception`), 297 (`thesaurisons:ma-mere-preservez-moi`), 55
 (`ench1952:entre-vos-mains-saint-edmond`), 52 (`thesaurisons:suscipe`), 60 (`thesaurisons:oraison-de-prime`), 47
 (`thesaurisons:trois-gloria-privileges-de-marie`). Elles ne comptent dans la journée qu'une fois les pièces branchées.
+
+## 9. Décisions de l'utilisateur (26 nov.) et intégration
+
+| Point | Décision | Intégration (`data/programme/programme.json`) |
+|---|---|---|
+| Trois *Ave* du soir | **A**, pratique de saint Alphonse, **le soir seulement** | `prog:priere-du-soir` (revision 3) : le Paroissien coupé avant « ## Le Symbole des Apôtres » ; entre les deux morceaux, `beringer:trois-ave-immaculee-conception` (rubrique « Trois fois, Je vous salue, Marie, en ajoutant chaque fois l'invocation : » et l'invocation). L'*Ave* du Paroissien reste ; aucun texte réécrit. |
+| Ouverture du chapelet | **P1/G1** : le *Pater*, le premier *Ave* et le *Gloria* aux intentions du Souverain Pontife ; pas de trois *Gloria* supplémentaires | `prog:chapelet` (revision 3) : l'ouverture de Montfort coupée avant « *Je crois en Dieu, etc. » ; entre les deux, la notice `thesaurisons:prieres-intentions-souverain-pontife` (repliée) et une consigne de mise en page : « *Le Pater, le premier Ave et le Gloria qui suivent se disent aux intentions du Souverain Pontife.* » |
+| Remplaçants du matin | **remplacer, sans ajouter** | `prog:priere-du-matin` (revision 4) : le paragraphe « Mon Dieu, je vous remercie très humblement… » sort de la page (Paroissien coupé en trois morceaux) et `thesaurisons:oraison-de-prime` prend sa place, après la rubrique « Remercions Dieu… et offrons-nous à lui » ; dans l'offrande, `desgenettes:acte-d-offrande-pour-les-indulgences` (titre « Acte d'offrande pour gagner les indulgences »), `thesaurisons:suscipe` (« Acte d'abandon à la volonté de Dieu ») et `ench1952:entre-vos-mains-saint-edmond` (« Recommandation de la journée ») à la place de l'intention d'indulgences, de l'acte de soumission et de la recommandation des âmes du livret. Les anciens textes restent dans les données (livret), hors de la composition. |
+| Jahenny | promesse **comptée** comme titre, avec la mention « révélation non approuvée » | tableau § 4, n° 14. L'app n'affiche pas de marque de titre : rien à changer à l'interface. |
+| Contrition | chercher un acte d'un catéchisme approuvé (Ench. n° 36) ; **proposer sans intégrer** | trouvé, vu sur l'image : *Le Catéchisme des provinces ecclésiastiques de Québec, Montréal et Ottawa* (Québec, A. Côté, approuvé le 20 avril 1888 ; seule édition permise, card. Taschereau), « Prières chrétiennes », p. 5 (archive.org `lecatchismedes00qu`, scan n6) : « Mon Dieu, j'ai un extrême regret de vous avoir offensé, parce que vous êtes infiniment bon et infiniment aimable, et que le péché vous déplaît ; pardonnez-moi par les mérites de Jésus-Christ mon Sauveur ; je me propose, moyennant votre sainte grâce, de ne plus vous offenser et de faire pénitence. » Ajouté aux données (`quebec1888:acte-de-contrition`, 52 mots), **non branché** ; il pourrait remplacer (ou suivre) « Me voici, Seigneur, tout couvert de confusion… » (116 mots) dans la prière du soir : à décider. |
+
+Les nouveaux textes du programme ont un classement **deviné** dans `data/prieres/dimensions-textes.json` (à relire).
+Tests : pages composées mot pour mot (`references/pages-composees.json`, offrande du matin et chapelet mis à jour),
+coupe du Paroissien vérifiée (matin : entier moins le paragraphe d'offrande ; soir : entier), unicité sur l'année,
+e2e `prieres-matin-soir.spec.ts` (remplaçants, trois *Ave*, consigne du chapelet).

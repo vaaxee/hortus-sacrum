@@ -64,11 +64,28 @@ describe('pages composées à l’affichage = pages livrées par composer.py', (
 			'Prière du soir',
 			'Recommandations du soir'
 		]);
-		// la prière du Paroissien, coupée en deux parties, reste entière et comptée une fois
+		// la prière du Paroissien, coupée en parties, reste entière (sauf le paragraphe d'offrande, remplacé le 26 nov. par
+		// l'oraison de Prime) et comptée une fois
 		const matin = ligneDu(1, 'prog:priere-du-matin');
 		const morceaux = matin.sections.filter((s) => s.texte === 'paroissien:priere-du-matin');
-		expect(morceaux.map((s) => contenuDe(s, corps)).join('\n\n')).toBe(corps('paroissien:priere-du-matin')!.trim());
+		const offrande = corps('paroissien:priere-du-matin')!
+			.split(/\n\s*\n/)
+			.find((p) => p.startsWith('Mon Dieu, je vous remercie très humblement'))!;
+		expect(morceaux.map((s) => contenuDe(s, corps)).join('\n\n')).toBe(
+			corps('paroissien:priere-du-matin')!.trim().replace(`\n\n${offrande}`, '')
+		);
 		expect(morceaux.filter((s) => !s.suite)).toHaveLength(1);
+		const iPrime = matin.sections.findIndex((s) => s.texte === 'thesaurisons:oraison-de-prime');
+		expect(contenuDe(matin.sections[iPrime - 1], corps)).toMatch(/\*Remercions Dieu des grâces qu’il nous a faites, et offrons-nous à lui\.\*$/);
+		// le soir : le Paroissien entier, l'invocation de saint Alphonse après l'Ave (décision du 26 nov.)
+		const soir = ligneDu(1, 'prog:priere-du-soir');
+		const morceauxSoir = soir.sections.filter((s) => s.texte === 'paroissien:priere-du-soir');
+		expect(morceauxSoir.map((s) => contenuDe(s, corps)).join('\n\n')).toBe(corps('paroissien:priere-du-soir')!.trim());
+		expect(morceauxSoir.filter((s) => !s.suite)).toHaveLength(1);
+		const iAve = soir.sections.findIndex((s) => s.texte === 'beringer:trois-ave-immaculee-conception');
+		expect(contenuDe(soir.sections[iAve - 1], corps)).toMatch(/Ainsi soit-il\.$/);
+		expect(contenuDe(soir.sections[iAve - 1], corps)).toContain('## La Salutation angélique');
+		expect(contenuDe(soir.sections[iAve + 1], corps)).toMatch(/^## Le Symbole des Apôtres/);
 		// le Salve Regina reste après « Invoquons la sainte Vierge », à la fin de la première partie
 		const k = matin.sections.findIndex((s) => s.origine === 'prog:salve-regina');
 		expect(matin.sections[k + 1]?.contenu).toBe('Actes de foi, d’espérance et de charité');

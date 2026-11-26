@@ -177,7 +177,7 @@ l'image (« exerciée », coquille de l'édition, gardée).
 | Consécration de dom Columba Marmion (Noël 1908, renouvelée le 25 mars 1909) (`thibaut:marmion-consecration-trinite`) | Dom R. Thibaut, *Un maître de la vie spirituelle. Dom Columba Marmion, abbé de Maredsous*, 2e éd., Abbaye de Maredsous, 1930 (imprimatur, Namur, 8 sept. 1929), ch. « Grâces d'union » | 190 | archive.org `un0000unse` (n215) |
 | Indulgence de la neuvaine : 7 ans une fois le jour ; plénière la neuvaine achevée | *Enchiridion indulgentiarum*, 1952, n° 48 (S. C. Indulg., 8 août 1847 ; S. Pén. Ap., 18 mars 1932), vu sur l'image | 19 | archive.org `enchiridion_indulgentiarum_1952` (n34) |
 
-## Prières obligatoires : titres et remplaçants (26 novembre 2026, relus sur l'image, non branchés)
+## Prières obligatoires : titres et remplaçants (26 novembre 2026, relus sur l'image ; branchés le 26 nov. sauf l'acte de contrition)
 
 Audit : `docs/audits/PRIERES_OBLIGATOIRES_2026-11-26.md`. Chaque texte lu sur l'image de la page (archive.org, page
 `n<N>.jpg`), fiche d'indulgence ajoutée seulement après lecture de l'*Enchiridion* de 1952 sur l'image.
@@ -191,6 +191,7 @@ Audit : `docs/audits/PRIERES_OBLIGATOIRES_2026-11-26.md`. Chaque texte lu sur l'
 | Oraison de Prime « Seigneur, Dieu tout-puissant, qui nous avez fait parvenir » (`thesaurisons:oraison-de-prime`) | *Thésaurisons*, n° 28 ; Ench. 1952, n° 60 (latin, p. 25, n40) | 27 | idem (n27) |
 | Notice : trois *Gloria Patri* matin, midi et soir pour les privilèges de la sainte Vierge (`thesaurisons:trois-gloria-privileges-de-marie`) | *Thésaurisons*, n° 355 ; Ench. 1952, n° 47 (p. 19, n34) | 125 | idem (n125) |
 | Notice : un *Pater*, un *Ave* et un *Gloria* aux intentions du Souverain Pontife (`thesaurisons:prieres-intentions-souverain-pontife`) | *Thésaurisons*, notes explicatives, 4) ; Ench. 1952, p. XV, note 1 a) (S. Pén. Ap., 20 sept. 1933) | 17 | idem (n17) ; Ench. n14 |
+| Acte de contrition (`quebec1888:acte-de-contrition`, non branché) | *Le Catéchisme des provinces ecclésiastiques de Québec, Montréal et Ottawa*, Québec, A. Côté, approuvé le 20 avril 1888 (card. Taschereau) ; Ench. 1952, n° 36 | 5 | archive.org `lecatchismedes00qu` (n6) |
 | *Aide-mémoire : la journée indulgenciée* (plan des prières du lever, du matin, de la journée et du soir) | *Thésaurisons*, p. 187-188 : sert de guide aux remplaçants, non transcrit | 187-188 | idem (n187-n188) |
 
 ## Indulgences (compteur), 14 novembre 2026

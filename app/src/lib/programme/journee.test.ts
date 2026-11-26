@@ -91,13 +91,17 @@ describe('journee()', () => {
 			.map((x) => x.texte);
 		expect(s).toEqual([
 			'paroissien:priere-du-matin',
+			// décision du 26 nov. : l'oraison de Prime à la place du paragraphe d'offrande du Paroissien
+			'thesaurisons:oraison-de-prime',
+			'paroissien:priere-du-matin',
 			'beringer:salve-regina',
 			'paroissien:priere-du-matin',
-			// l'offrande, composée à l'affichage : les actes du livret, chacun sous son titre
-			'jardin:intention-d-indulgences',
-			'jardin:acte-de-soumission-a-la-volonte-de-dieu',
+			// l'offrande, composée à l'affichage, chacun sous son titre ; depuis le 26 nov., des textes indulgenciés ou
+			// prescrits à la place de l'intention d'indulgences, de l'acte de soumission et de la recommandation du livret
+			'desgenettes:acte-d-offrande-pour-les-indulgences',
+			'thesaurisons:suscipe',
 			'jardin:acte-d-intention-de-communion-spirituelle-perpetuelle',
-			'jardin:acte-de-recommandation-des-ames-rencontrees',
+			'ench1952:entre-vos-mains-saint-edmond',
 			'jardin:devoir-envers-l-eglise-et-ses-ministres',
 			'jardin:devoir-envers-la-famille',
 			'jardin:devoir-envers-la-patrie',

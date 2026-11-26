@@ -26,7 +26,7 @@ Les points réglés sont gardés pour l'historique. Dernière mise à jour : 26 
   *Enchiridion* 1952 (recherche dans la couche texte, numéros retenus vus sur l'image), *Thésaurisons pour le ciel*
   (1941, « Aide-mémoire : la journée indulgenciée », p. 187-188), Beringer 1925 t. I. **À recopier** : *Angele Dei*
   (Ench. 1952, n° 452 d'après la table) dans une traduction certifiée (*Thésaurisons*, n° 142 ou 145 ?) ; un acte de
-  contrition d'un catéchisme approuvé (Ench. n° 36). **Premier *Pater* et premier *Gloria* du chapelet** : aucune
+  contrition d'un catéchisme approuvé (Ench. n° 36) : **trouvé** le 26 nov. (`quebec1888:acte-de-contrition`), à brancher sur décision. **Premier *Pater* et premier *Gloria* du chapelet** : aucune
   promesse ni indulgence attachée en propre trouvée (Beringer n° 901, Ench. n° 395, *Thésaurisons*, Montfort, Sambucy,
   Denis 1864, *Livre de la grâce spéciale* 1921, manuels du Rosaire de 1841, 1902, 1903) ; l'audit propose la clause
   « aux intentions du Souverain Pontife » (S. Pén. Ap., 20 sept. 1933). Pistes : *Secret admirable du très saint
