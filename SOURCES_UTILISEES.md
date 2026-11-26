@@ -135,6 +135,24 @@ Londres, 1861 (`ConfraternityManualOfThe`) ; *Purgatorian Consoler*, Baltimore, 
 t. II, n° 230, 234, 255, 262, 272, 306, 308 (sommaires français des archiconfréries) ; *Enchiridion* 1952, n° 594, 636-649
 (contrôle, sur l'OCR).
 
+## Neuvaine à la très sainte Trinité (26 novembre 2026, relue sur l'image, à valider)
+
+Demande de l'utilisateur : neuvaine indulgenciée finissant le dimanche de la Trinité, consécration de dom Marmion le
+dernier jour (`prog:neuvaine-trinite`). L'indulgence de la neuvaine (Ench. 1952, n° 48 ; Beringer n° 639) vaut pour
+**des prières quelconques** en l'honneur de la sainte Trinité dites neuf jours de suite : faute d'une neuvaine imprimée
+jour par jour (voir `A_FOURNIR.md`), la page reprend chaque jour les prières à la sainte Trinité de Beringer ci-dessous.
+Transcription sur l'image de chaque page ; seconde lecture Tesseract (fra) comparée mot à mot, écarts tranchés sur
+l'image (« exerciée », coquille de l'édition, gardée).
+
+| Texte | Source | Pages | Accès |
+|---|---|---|---|
+| Notice : Triduum ou neuvaine en l'honneur de la très sainte Trinité (`beringer:neuvaine-trinite`) | Beringer 1925, t. I, n° 639 | 340 | archive.org `lesindulgences0001beri` (n355) |
+| Adoration et action de grâces (`beringer:trinite-adoration-action-de-graces`) ; porte la fiche d'indulgence de la neuvaine | Beringer 1925, t. I, n° 255 a (Ench. 1952, n° 45, en italien) | 134-135 | idem (n149-n150) |
+| Trois offrandes à la très sainte Trinité (`beringer:trinite-trois-offrandes`) | Beringer 1925, t. I, n° 256 | 135 | idem (n150) |
+| « Toute-puissance du Père… » (`beringer:trinite-toute-puissance`) | Beringer 1925, t. I, n° 252 (Ench. 1952, n° 53, en latin) | 133 | idem (n148) |
+| Consécration de dom Columba Marmion (Noël 1908, renouvelée le 25 mars 1909) (`thibaut:marmion-consecration-trinite`) | Dom R. Thibaut, *Un maître de la vie spirituelle. Dom Columba Marmion, abbé de Maredsous*, 2e éd., Abbaye de Maredsous, 1930 (imprimatur, Namur, 8 sept. 1929), ch. « Grâces d'union » | 190 | archive.org `un0000unse` (n215) |
+| Indulgence de la neuvaine : 7 ans une fois le jour ; plénière la neuvaine achevée | *Enchiridion indulgentiarum*, 1952, n° 48 (S. C. Indulg., 8 août 1847 ; S. Pén. Ap., 18 mars 1932), vu sur l'image | 19 | archive.org `enchiridion_indulgentiarum_1952` (n34) |
+
 ## Indulgences (compteur), 14 novembre 2026
 
 Règle : la concession la plus récente fait foi : *Enchiridion indulgentiarum*, 1952 (archive.org `enchiridion_indulgentiarum_1952`) ; à défaut *Thésaurisons pour le ciel*, Carmel de Montréal, 1941, imprimatur du 28 avril 1941, d'après les *Preces et Pia Opera* de 1938 (http://www.liberius.net/livre.php?id_livre=1335) ; à défaut Beringer 1925. Données : `data/prieres/indulgences.json` (indulgences partielles seulement ; plénières et indulgences réservées aux confréries non comptées). Vérifiés dans l'Enchiridion : n° 36 (actes de foi, d'espérance, de charité), 43 (Symbole des Apôtres), 114, 221, 293, 319, 331, 332, 333, 462, 478, 585, 671, 687, 691 (Confiteor), 395 (chapelet), litanies du Sacré-Cœur.
