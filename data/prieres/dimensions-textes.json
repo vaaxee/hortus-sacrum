@@ -1246,6 +1246,92 @@
       "objet": ["jesus-christ"],
       "forme": ["office"],
       "devinee": ["fin", "objet", "forme"]
+    },
+    "lefebvre1870:autre-testament-spirituel": {
+      "fin": ["demande", "propitiation"],
+      "objet": ["trinite", "sainte-vierge", "saint-joseph", "anges"],
+      "grace": ["perseverance-finale", "salut"],
+      "personne": ["soi-meme", "ennemis"],
+      "forme": ["acte"],
+      "devinee": ["fin", "objet", "grace", "personne", "forme"]
+    },
+    "lefebvre1870:litanies-de-la-passion": {
+      "fin": ["propitiation", "demande"],
+      "objet": ["passion"],
+      "grace": ["salut", "perseverance-finale"],
+      "personne": ["soi-meme", "mourants", "defunts"],
+      "forme": ["litanie"],
+      "devinee": ["fin", "objet", "grace", "personne", "forme"]
+    },
+    "lefebvre1870:litanies-notre-dame-des-sept-douleurs": {
+      "fin": ["demande", "propitiation"],
+      "objet": ["sainte-vierge", "passion"],
+      "grace": ["salut"],
+      "personne": ["soi-meme"],
+      "forme": ["litanie"],
+      "devinee": ["fin", "objet", "grace", "personne", "forme"]
+    },
+    "lefebvre1870:priere-saint-vincent-ferrier-bonne-mort": {
+      "fin": ["demande"],
+      "objet": ["jesus-christ"],
+      "grace": ["perseverance-finale", "salut"],
+      "personne": ["soi-meme"],
+      "forme": ["oraison"],
+      "devinee": ["fin", "objet", "grace", "personne", "forme"]
+    },
+    "lefebvre1870:priere-sainte-gertrude-ave-candidum": {
+      "fin": ["louange", "demande"],
+      "objet": ["sainte-vierge", "trinite"],
+      "grace": ["perseverance-finale"],
+      "personne": ["soi-meme"],
+      "forme": ["oraison"],
+      "devinee": ["fin", "objet", "grace", "personne", "forme"]
+    },
+    "lefebvre1870:protestation-pour-bien-mourir": {
+      "fin": ["demande", "propitiation", "action-de-graces"],
+      "objet": ["jesus-christ", "passion", "sainte-vierge"],
+      "grace": ["perseverance-finale", "salut"],
+      "personne": ["soi-meme", "ennemis"],
+      "forme": ["acte"],
+      "devinee": ["fin", "objet", "grace", "personne", "forme"]
+    },
+    "lefebvre1870:testament-spirituel-saint-charles": {
+      "fin": ["demande", "propitiation"],
+      "objet": ["jesus-christ", "passion", "sainte-vierge", "anges"],
+      "grace": ["perseverance-finale", "salut"],
+      "personne": ["soi-meme", "famille", "ennemis"],
+      "forme": ["acte"],
+      "devinee": ["fin", "objet", "grace", "personne", "forme"]
+    },
+    "perpetuelsecours1878:ames-les-plus-oubliees": {
+      "fin": ["intercession"],
+      "objet": ["sainte-vierge", "ames-du-purgatoire"],
+      "personne": ["defunts"],
+      "forme": ["oraison"],
+      "devinee": ["fin", "objet", "personne", "forme"]
+    },
+    "perpetuelsecours1878:consecration-archiconfrerie": {
+      "fin": ["adoration", "louange", "demande"],
+      "objet": ["sainte-vierge", "saints"],
+      "grace": ["perseverance-finale", "preservation-du-peche"],
+      "personne": ["soi-meme"],
+      "forme": ["acte"],
+      "devinee": ["fin", "objet", "grace", "personne", "forme"]
+    },
+    "precieuxsang1890:consecration-au-precieux-sang": {
+      "fin": ["adoration", "reparation", "demande"],
+      "objet": ["precieux-sang", "eucharistie"],
+      "grace": ["sanctification", "perseverance-finale"],
+      "personne": ["soi-meme", "pecheurs"],
+      "forme": ["acte"],
+      "devinee": ["fin", "objet", "grace", "personne", "forme"]
+    },
+    "precieuxsang1890:priere-delivrance-ames-purgatoire": {
+      "fin": ["intercession"],
+      "objet": ["jesus-christ", "passion", "ames-du-purgatoire"],
+      "personne": ["defunts"],
+      "forme": ["oraison"],
+      "devinee": ["fin", "objet", "personne", "forme"]
     }
   }
 }

@@ -49,8 +49,8 @@ hortus-qa est verte) :
   la pureté), premier Pater et premier Gloria du chapelet ; audit `docs/audits/PRIERES_OBLIGATOIRES_2026-11-26.md`.
   Décisions : seulement les prières obligatoires ; sans remplaçant trouvé, la prière reste, sans marque. **Les
   remplacements se proposent à l'utilisateur avant d'être appliqués.**
-- `claude/archi-lot-a` — manuels : Bonne Mort (fait), Précieux Sang 1890 (fait), Saint-Sacrement 1920, Perpétuel
-  Secours 1878 ; audit `ARCHICONFRERIES_LOT_A_2026-11-25.md` avec proposition d'intégration à soumettre.
+- `claude/archi-lot-a` — fusionné (PR #82) : 77 pièces de cinq manuels. `claude/archi-lot-a-integration` : les quatre
+  propositions validées le 26 nov. branchées (audit `ARCHICONFRERIES_LOT_A_2026-11-25.md` § 7).
 - `claude/psautier-fillion-2` (fusionné jusqu'au mercredi) — jeudi, vendredi, samedi, cantiques de Laudes.
 - `claude/somme-suite` (fusionné jusqu'à Iª q. 11) — q. 12 en cours (`engine/somme/corrections_fr.txt`).
 
