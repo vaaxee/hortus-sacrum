@@ -416,6 +416,54 @@ describe('neuvaine au Sacré-Cœur avant le premier vendredi (Petit bréviaire, 
 	});
 });
 
+describe('neuvaine de la sainte Face (Janvier 1895), avant la fête de saint Pierre', () => {
+	const ID = 'prog:neuvaine-sainte-face';
+	const ROMAINS = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX'];
+	it('du 20 au 28 juin, chaque jour sa méditation, l’ouverture et les prières du premier jour', () => {
+		const jours = CALENDRIER.filter((j) => ligne(calculer(j.date), ID)).map((j) => j.date);
+		expect(jours).toEqual(joursAvant('2027-06-29', 9));
+		jours.forEach((date, k) => {
+			const s = ligne(calculer(date), ID)!.sections.filter((x) => x.genre === 'texte');
+			const jourDuLivre = s.filter((x) => x.extrait?.section?.startsWith('## ')).map((x) => x.extrait!.section);
+			expect(jourDuLivre, date).toEqual([expect.stringMatching(new RegExp(`^## ${ROMAINS[k]}e?r? jour\\. `))]);
+			expect(
+				s.some((x) => x.extrait?.de === 'Seigneur, je veux rechercher votre Face'),
+				date
+			).toBe(k > 0);
+			expect(
+				s.some((x) => x.extrait?.section === '### Prières'),
+				date
+			).toBe(k > 0 && k < 8);
+			for (const x of s) expect(extraire(corps(x.texte!)!, x.extrait), date).not.toContain('Voir le Ier jour');
+		});
+	});
+});
+
+describe('dimanches de saint Jean Berchmans et de saint Stanislas Kostka (Jardin de l’âme)', () => {
+	const dimanches = (id: string) => CALENDRIER.filter((j) => ligne(calculer(j.date), id)).map((j) => j.date);
+	const titre = (date: string, id: string) => ligne(calculer(date), id)!.sections.find((s) => s.genre === 'editorial')?.contenu;
+	it('les cinq dimanches avant le 13 août 2027, chacun son rang', () => {
+		const d = dimanches('prog:cinq-dimanches-berchmans');
+		expect(d).toEqual(['2027-07-11', '2027-07-18', '2027-07-25', '2027-08-01', '2027-08-08']);
+		expect(d.map((x) => titre(x, 'prog:cinq-dimanches-berchmans'))).toEqual([
+			'### Premier dimanche',
+			'### Deuxième dimanche',
+			'### Troisième dimanche',
+			'### Quatrième dimanche',
+			'### Cinquième et dernier dimanche'
+		]);
+	});
+	it('les dix dimanches avant le 13 novembre 2027', () => {
+		const d = dimanches('prog:dix-dimanches-stanislas');
+		expect(d).toHaveLength(10);
+		expect(d[0]).toBe('2027-09-05');
+		expect(d[9]).toBe('2027-11-07');
+		expect(d.every((x) => new Date(x + 'T12:00:00').getDay() === 0)).toBe(true);
+		expect(titre(d[0], 'prog:dix-dimanches-stanislas')).toBe('### Premier dimanche');
+		expect(titre(d[9], 'prog:dix-dimanches-stanislas')).toBe('### Dixième et dernier dimanche');
+	});
+});
+
 describe('neuvaine de réparation au Sacré-Cœur, du 1er au 9 de chaque mois (Beringer n° 671)', () => {
 	it('l’offrande à la fin de la prière du matin, les jours 1 à 9 de chaque mois seulement', () => {
 		const jours = CALENDRIER.filter((j) =>

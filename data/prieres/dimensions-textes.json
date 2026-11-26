@@ -1176,6 +1176,29 @@
       "forme": ["acte", "neuvaine"],
       "devinee": ["fin", "objet", "personne", "forme"]
     },
+    "janvier:neuvaine-meditations-sainte-face": {
+      "fin": ["reparation", "adoration", "demande"],
+      "objet": ["sainte-face", "passion"],
+      "grace": ["vertus", "salut"],
+      "personne": ["soi-meme"],
+      "forme": ["meditation", "neuvaine"],
+      "devinee": ["fin", "objet", "grace", "personne", "forme"]
+    },
+    "jardin:cinq-dimanches-de-saint-jean-berchmans": {
+      "fin": ["demande"],
+      "objet": ["saints"],
+      "personne": ["soi-meme"],
+      "forme": ["jaculatoire"],
+      "devinee": ["fin", "objet", "personne", "forme"]
+    },
+    "jardin:dix-dimanches-de-saint-stanislas-kostka": {
+      "fin": ["demande"],
+      "objet": ["saints", "sainte-vierge"],
+      "grace": ["vertus", "charite", "perseverance-finale"],
+      "personne": ["soi-meme"],
+      "forme": ["oraison"],
+      "devinee": ["fin", "objet", "grace", "personne", "forme"]
+    },
     "breviaire-sc:exercice-messe": {
       "fin": ["adoration", "action-de-graces", "reparation", "demande"],
       "objet": ["sacre-coeur", "eucharistie", "trinite"],
