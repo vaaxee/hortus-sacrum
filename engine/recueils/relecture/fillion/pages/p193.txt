@@ -11,11 +11,11 @@ v| Que le Seigneur soit béni de Sion,
 c| lui qui habite à Jérusalem.
 h| Laudes II.
 h| Cantique d'Ézéchias. Is. xxxviii, 10-20.
-v| J'ai dit : Au milieu de mes jours, j'irai aux portes du
+v| J'ai dit : Au milieu de mes jours, j'irai aux portes du tombeau.
 c| Je cherche en vain le reste de mes jours.
-v| J'ai dit : Je ne verrai plus le Seigneur Dieu dans la terre tombeau.
+v| J'ai dit : Je ne verrai plus le Seigneur Dieu dans la terre
 c| des vivants ;
-c| je ne verrai plus aucun homme, ni &habitant du repos.
+c| je ne verrai plus aucun homme, ni d'habitant du repos.
 v| Le temps de ma vie m'est enlevé,
 c| et il est roulé loin de moi, comme une tente de bergers.
 c| Ma vie a été coupée comme par le tisserand ;
@@ -24,4 +24,5 @@ c| Du matin au soir, vous en finirez avec moi.
 v| J'espérais jusqu'au matin ;
 c| comme un lion il a brisé tous mes os.
 c| Du matin au soir, vous en finirez avec moi.
+?| Je cherche en vain — « vain » en italique, l'a ressemble à un u (« vuin ») ; lu « vain »
 ?| Elles ont des oreilles — impression brisée (lu « orcilies »), lecture sûre

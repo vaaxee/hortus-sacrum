@@ -2595,7 +2595,7 @@
     },
     {
      "n": 10,
-     "fr": "Car mon père et ma mère m*ont abandonné ; mais le Seigneur m'a recueilli.",
+     "fr": "Car mon père et ma mère m'ont abandonné ; mais le Seigneur m'a recueilli.",
      "page": 137,
      "ligne_la": "10"
     },
@@ -6440,7 +6440,7 @@
     },
     {
      "n": 7,
-     "fr": "Dieu brisera leurs dents dans leur bouche ; ; le Seigneur mettra en pièces les mâchoires des lions.",
+     "fr": "Dieu brisera leurs dents dans leur bouche ; le Seigneur mettra en pièces les mâchoires des lions.",
      "page": 275,
      "ligne_la": "7"
     },
@@ -6799,6 +6799,109 @@
    ]
   },
   {
+   "numero": 61,
+   "titre": "Psaume LXI",
+   "versets": [
+    {
+     "n": 2,
+     "fr": "Mon âme ne sera-t-elle pas soumise à Dieu ? car c'est de lui que vient mon salut.",
+     "page": 297,
+     "ligne_la": "2"
+    },
+    {
+     "n": 3,
+     "fr": "Car c'est lui qui est mon Dieu et mon sauveur ; il est mon protecteur, je ne serai plus ébranle.",
+     "page": 297,
+     "ligne_la": "3",
+     "lecture": [
+      "p. 297 : mon sauveur — impression brisée (« sauveur » lu « savveur »), ponctuation finale illisible, rendue par le point-virgule du v. 7, même phrase",
+      "p. 297 : je ne serai plus ébranle — « ébranle » sans accent, tel qu'imprimé"
+     ]
+    },
+    {
+     "n": 4,
+     "fr": "Jusques à quand vous jetterez-vous sur un homme ? Vous le tuez tous ensemble, comme une muraille qui penche, et une masure ébranlée.",
+     "page": 297,
+     "ligne_la": "4"
+    },
+    {
+     "n": 5,
+     "fr": "Cependant ils ont entrepris de me dépouiller de ma dignité ; j'ai couru altéré. De leur bouche ils bénissaient, et dans leur cœur ils maudissaient.",
+     "page": 297,
+     "ligne_la": "5"
+    },
+    {
+     "n": 6,
+     "fr": "Cependant sois soumise à Dieu, mon âme, car c'est de lui que vient ma patience.",
+     "page": 297,
+     "ligne_la": "6"
+    },
+    {
+     "n": 7,
+     "fr": "Car c'est lui qui est mon Dieu et mon sauveur ; il est mon protecteur, je ne fuirai point.",
+     "page": 299,
+     "ligne_la": "7"
+    },
+    {
+     "n": 8,
+     "fr": "En Dieu est mon salut et ma gloire ; il est le Dieu qui me secourt, et mon espérance est en Dieu.",
+     "page": 299,
+     "ligne_la": "8"
+    },
+    {
+     "n": 9,
+     "fr": "Espérez en lui, vous tous qui composez le peuple ; répandez devant lui vos cœurs ; Dieu est notre défenseur à jamais.",
+     "page": 299,
+     "ligne_la": "9"
+    },
+    {
+     "n": 10,
+     "fr": "Mais les fils des hommes sont vains ; les fils des hommes sont des menteurs dans leurs balances, afin de tromper ensemble pour des choses vaines.",
+     "page": 299,
+     "ligne_la": "10"
+    },
+    {
+     "n": 11,
+     "fr": "Ne mettez pas votre espérance dans l'iniquité, et ne désirez point les rapines. Si les richesses affluent, n'y attachez pas votre cœur.",
+     "page": 299,
+     "ligne_la": "11"
+    },
+    {
+     "n": 12,
+     "fr": "Dieu a parlé une fois ; j'ai entendu ces deux choses : La puissance est à Dieu,",
+     "page": 299,
+     "ligne_la": "12"
+    },
+    {
+     "n": 13,
+     "fr": "et à vous, Seigneur, la miséricorde ; car vous rendrez à chacun selon ses œuvres.",
+     "page": 299,
+     "ligne_la": "12",
+     "lecture": [
+      "p. 299 : et à vous, Seigneur, la miséricorde — Fillion imprime le numéro 13 au milieu de la ligne : découpage de l'imprimé gardé"
+     ]
+    }
+   ],
+   "note": "Divinum Officium chante les v. 12 et 13 de la Vulgate sur une seule ligne (« 12 ») ; Fillion les numérote séparément. Le v. 13 commence au milieu de la ligne latine « 12 ».",
+   "lignes_la": [
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12"
+   ],
+   "pages": [
+    297,
+    299
+   ]
+  },
+  {
    "numero": 62,
    "titre": "Psaume LXII",
    "versets": [
@@ -6991,6 +7094,161 @@
    ]
   },
   {
+   "numero": 65,
+   "titre": "Psaume LXV",
+   "versets": [
+    {
+     "n": 1,
+     "fr": "Poussez vers Dieu des cris de joie, ô terre entière ;",
+     "page": 299,
+     "ligne_la": "1"
+    },
+    {
+     "n": 2,
+     "fr": "chantez un hymne à son nom ; rendez glorieuse sa louange.",
+     "page": 299,
+     "ligne_la": "1"
+    },
+    {
+     "n": 3,
+     "fr": "Dites à Dieu : Que vos œuvres sont terribles, Seigneur ! A cause de la grandeur de votre puissance, vos ennemis vous adressent des hommages menteurs.",
+     "page": 299,
+     "ligne_la": "3"
+    },
+    {
+     "n": 4,
+     "fr": "Que toute la terre vous adore et chante en votre honneur ; qu'elle dise un hymne à votre nom.",
+     "page": 299,
+     "ligne_la": "4"
+    },
+    {
+     "n": 5,
+     "fr": "Venez et voyez les œuvres de Dieu ; il est terrible dans ses desseins sur les enfants des hommes.",
+     "page": 299,
+     "ligne_la": "5"
+    },
+    {
+     "n": 6,
+     "fr": "Il a changé la mer en une terre aride ; ils ont passé le fleuve à pied : c'est là que nous nous réjouirons en lui.",
+     "page": 301,
+     "ligne_la": "6"
+    },
+    {
+     "n": 7,
+     "fr": "Il règne à jamais par sa puissance ; ses yeux contemplent les nations ; que ceux qui l'irritent ne s'élèvent point en eux-mêmes.",
+     "page": 301,
+     "ligne_la": "7"
+    },
+    {
+     "n": 8,
+     "fr": "Nations, bénissez notre Dieu, et faites entendre les accents de sa louange.",
+     "page": 301,
+     "ligne_la": "8"
+    },
+    {
+     "n": 9,
+     "fr": "C'est lui qui a conservé la vie à mon âme, et qui n'a point permis que mes pieds soient ébranlés.",
+     "page": 301,
+     "ligne_la": "9"
+    },
+    {
+     "n": 10,
+     "fr": "Car vous nous avez éprouvés, ô Dieu ; vous nous avez fait passer par le feu, comme on y fait passer l'argent.",
+     "page": 301,
+     "ligne_la": "10"
+    },
+    {
+     "n": 11,
+     "fr": "Vous nous avez fait tomber dans le piège ; vous avez chargé nos épaules de tribulations ;",
+     "page": 301,
+     "ligne_la": "11"
+    },
+    {
+     "n": 12,
+     "fr": "vous avez mis des hommes sur nos têtes. Nous avons passé par le feu et par l'eau, et vous nous en avez tirés pour nous mettre en un lieu de rafraîchissement.",
+     "page": 301,
+     "ligne_la": "12"
+    },
+    {
+     "n": 13,
+     "fr": "J'entrerai dans votre maison avec des holocaustes ; je m'acquitterai envers vous de mes vœux",
+     "page": 301,
+     "ligne_la": "13"
+    },
+    {
+     "n": 14,
+     "fr": "que mes lèvres ont proférés, et que ma bouche a prononcés pendant ma tribulation.",
+     "page": 301,
+     "ligne_la": "14",
+     "lecture": [
+      "p. 301 : que mes lèvres ont proférés — Fillion imprime le numéro 14 au milieu de la ligne : découpage de l'imprimé gardé"
+     ]
+    },
+    {
+     "n": 15,
+     "fr": "Je vous offrirai de gras holocaustes, avec la fumée des béliers ; je vous offrirai des bœufs avec des boucs.",
+     "page": 301,
+     "ligne_la": "15"
+    },
+    {
+     "n": 16,
+     "fr": "Venez, entendez, et je raconterai, vous tous qui craignez Dieu, tout ce qu'il a fait à mon âme.",
+     "page": 301,
+     "ligne_la": "16"
+    },
+    {
+     "n": 17,
+     "fr": "Ma bouche a crié vers lui, et ma langue l'a exalté.",
+     "page": 303,
+     "ligne_la": "17"
+    },
+    {
+     "n": 18,
+     "fr": "Si j'avais vu l'iniquité dans mon cœur, le Seigneur ne m'aurait pas exaucé.",
+     "page": 303,
+     "ligne_la": "18"
+    },
+    {
+     "n": 19,
+     "fr": "C'est pourquoi Dieu m'a exaucé, et a été attentif à la voix de ma supplication.",
+     "page": 303,
+     "ligne_la": "19"
+    },
+    {
+     "n": 20,
+     "fr": "Béni soit Dieu, qui n'a pas rejeté ma prière, ni éloigné de moi sa miséricorde.",
+     "page": 303,
+     "ligne_la": "20"
+    }
+   ],
+   "lignes_la": [
+    "1",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "18",
+    "19",
+    "20"
+   ],
+   "pages": [
+    299,
+    301,
+    303
+   ]
+  },
+  {
    "numero": 66,
    "titre": "Psaume LXVI",
    "versets": [
@@ -7047,6 +7305,269 @@
    ],
    "pages": [
     187
+   ]
+  },
+  {
+   "numero": 67,
+   "titre": "Psaume LXVII",
+   "versets": [
+    {
+     "n": 2,
+     "fr": "Que Dieu se lève, et que ses ennemis soient dissipés, et que ceux qui le haïssent fuient devant sa face.",
+     "page": 303,
+     "ligne_la": "2"
+    },
+    {
+     "n": 3,
+     "fr": "Comme la fumée disparait, qu'ils disparaissent ; comme la cire se fond devant le feu, qu'ainsi périssent les pécheurs devant la face de Dieu.",
+     "page": 303,
+     "ligne_la": "3"
+    },
+    {
+     "n": 4,
+     "fr": "Mais que les justes soient comme dans un festin, et qu'ils tressaillent en la présence de Dieu, et qu'ils soient dans des transports de joie.",
+     "page": 303,
+     "ligne_la": "4"
+    },
+    {
+     "n": 5,
+     "fr": "Chantez à Dieu, célébrez son nom par un cantique ; frayez le chemin à celui qui monte vers le couchant. Le Seigneur est son nom ; tressaillez de joie en sa présence. On tremblera devant lui,",
+     "page": 303,
+     "ligne_la": "5a"
+    },
+    {
+     "n": 6,
+     "fr": "le père des orphelins et le juge des veuves. Dieu est dans son lieu saint.",
+     "page": 305,
+     "ligne_la": "5b"
+    },
+    {
+     "n": 7,
+     "fr": "C'est le Dieu qui fait habiter dans une même maison ceux qui ont un même esprit ; qui délivre les captifs par sa puissance, aussi bien que ceux qui l'irritent, qui habitent dans les sépulcres.",
+     "page": 305,
+     "ligne_la": "6b"
+    },
+    {
+     "n": 8,
+     "fr": "O Dieu, quand vous marchiez à la tête de votre peuple, quand vous traversiez le désert,",
+     "page": 305,
+     "ligne_la": "8"
+    },
+    {
+     "n": 9,
+     "fr": "la terre fut ébranlée ; les cieux eux-mêmes se fondirent devant le Dieu du Sinaï, devant le Dieu d'Israël.",
+     "page": 305,
+     "ligne_la": "9"
+    },
+    {
+     "n": 10,
+     "fr": "Vous avez mis en réserve une pluie volontaire, ô Dieu, pour votre héritage, et lorsqu'il a été affaibli, vous l'avez réconforté.",
+     "page": 305,
+     "ligne_la": "10"
+    },
+    {
+     "n": 11,
+     "fr": "Vos animaux y habiteront ; vous avez dans votre bonté, ô Dieu, préparé de la nourriture pour le pauvre.",
+     "page": 305,
+     "ligne_la": "11"
+    },
+    {
+     "n": 12,
+     "fr": "Le Seigneur donne ses ordres à ses messagers avec une grande puissance.",
+     "page": 305,
+     "ligne_la": "12"
+    },
+    {
+     "n": 13,
+     "fr": "Le roi des armées est l'auxiliaire du bien-aimé, et celle qui est l'ornement de la maison partage les dépouilles.",
+     "page": 305,
+     "ligne_la": "13"
+    },
+    {
+     "n": 14,
+     "fr": "Quand vous dormez au milieu de vos héritages, les ailes de la colombe sont argentées, et l'extrémité de son dos a le pâle éclat de l'or.",
+     "page": 305,
+     "ligne_la": "14"
+    },
+    {
+     "n": 15,
+     "fr": "Lorsque le Très-Haut disperse les rois dans le pays, tout est blanchi sur le Selmon.",
+     "page": 305,
+     "ligne_la": "15"
+    },
+    {
+     "n": 16,
+     "fr": "La montagne de Dieu est une grasse montagne : c'est une montagne massive, une grasse montagne.",
+     "page": 307,
+     "ligne_la": "15"
+    },
+    {
+     "n": 17,
+     "fr": "Pourquoi regardez-vous avec admiration les montagnes massives ? Il est une montagne où il a plu à Dieu d'habiter, et le Seigneur y habitera à jamais.",
+     "page": 307,
+     "ligne_la": "16b"
+    },
+    {
+     "n": 18,
+     "fr": "Le char de Dieu est environné de plus de dix mille ; ce sont des milliers d'anges qui se réjouissent ; le Seigneur est au milieu d'eux dans son sanctuaire comme au Sinaï.",
+     "page": 307,
+     "ligne_la": "18"
+    },
+    {
+     "n": 19,
+     "fr": "Vous êtes monté en haut ; vous avez emmené des captifs ; vous avez reçu des présents parmi les hommes, et même de ceux qui ne croient pas que le Seigneur Dieu habite avec nous.",
+     "page": 307,
+     "ligne_la": "19a"
+    },
+    {
+     "n": 20,
+     "fr": "Que le Seigneur soit béni chaque jour ! Le Dieu qui nous a si souvent sauvés rendra notre voie prospère.",
+     "page": 307,
+     "ligne_la": "20"
+    },
+    {
+     "n": 21,
+     "fr": "Notre Dieu est le Dieu qui a la vertu de sauver, et au Seigneur, au Seigneur appartiennent les issues de la mort.",
+     "page": 307,
+     "ligne_la": "21"
+    },
+    {
+     "n": 22,
+     "fr": "Mais Dieu brisera la tête de ses ennemis, le front superbe de ceux qui marchent dans leurs iniquités.",
+     "page": 309,
+     "ligne_la": "22"
+    },
+    {
+     "n": 23,
+     "fr": "Le Seigneur a dit : Je les ramènerai de Basan, je les ramènerai du fond de la mer ;",
+     "page": 309,
+     "ligne_la": "23"
+    },
+    {
+     "n": 24,
+     "fr": "afin que ton pied trempe dans le sang, et que la langue de tes chiens ait aussi sa part des ennemis.",
+     "page": 309,
+     "ligne_la": "24"
+    },
+    {
+     "n": 25,
+     "fr": "Ils ont vu votre entrée, ô Dieu, l'entrée de mon Dieu, de mon roi, qui réside dans le sanctuaire.",
+     "page": 309,
+     "ligne_la": "25"
+    },
+    {
+     "n": 26,
+     "fr": "En avant marchaient les princes, associés aux chanteurs, au milieu des jeunes filles qui jouaient du tambourin.",
+     "page": 309,
+     "ligne_la": "26"
+    },
+    {
+     "n": 27,
+     "fr": "Bénissez Dieu dans les assemblées ; bénissez le Seigneur, vous qui sortez des sources d'Israël.",
+     "page": 309,
+     "ligne_la": "27"
+    },
+    {
+     "n": 28,
+     "fr": "Là est Benjamin, le plus jeune, en de saints transports. Là sont les princes de Juda, leurs chefs ; les princes de Zabulon, les princes de Nephtali.",
+     "page": 309,
+     "ligne_la": "28a"
+    },
+    {
+     "n": 29,
+     "fr": "O Dieu, commandez à votre puissance ; affermissez, ô Dieu, ce que vous avez fait parmi nous.",
+     "page": 309,
+     "ligne_la": "29"
+    },
+    {
+     "n": 30,
+     "fr": "Dans votre temple de Jérusalem, les rois vous offriront des présents.",
+     "page": 309,
+     "ligne_la": "30"
+    },
+    {
+     "n": 31,
+     "fr": "Réprimez les bêtes sauvages des roseaux, la troupe des taureaux et les troupeaux des peuples, pour chasser ceux qui ont été éprouvés comme l'argent. Dissipez les nations qui veulent la guerre.",
+     "page": 309,
+     "ligne_la": "31a"
+    },
+    {
+     "n": 32,
+     "fr": "Des ambassadeurs viendront de l'Égypte ; l'Ethiopie s'empressera de tendre ses mains vers Dieu.",
+     "page": 309,
+     "ligne_la": "31b"
+    },
+    {
+     "n": 33,
+     "fr": "Royaumes de la terre, chantez à Dieu ; célébrez le Seigneur, célébrez Dieu,",
+     "page": 311,
+     "ligne_la": "33a"
+    },
+    {
+     "n": 34,
+     "fr": "qui s'élève au plus haut des cieux, vers l'orient. Voici qu'il va donner à sa voix un puissant éclat.",
+     "page": 311,
+     "ligne_la": "33b"
+    },
+    {
+     "n": 35,
+     "fr": "Rendez gloire à Dieu au sujet d'Israël. Sa magnificence et sa force paraissent dans les nuées.",
+     "page": 311,
+     "ligne_la": "34b"
+    },
+    {
+     "n": 36,
+     "fr": "Dieu est admirable dans ses saints ; le Dieu d'Israël donnera lui-même à son peuple la puissance et la force. Dieu soit béni !",
+     "page": 311,
+     "ligne_la": "36"
+    }
+   ],
+   "lignes_la": [
+    "2",
+    "3",
+    "4",
+    "5a",
+    "5b",
+    "6b",
+    "7b",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16b",
+    "17b",
+    "18",
+    "19a",
+    "19b",
+    "20",
+    "21",
+    "22",
+    "23",
+    "24",
+    "25",
+    "26",
+    "27",
+    "28a",
+    "28b",
+    "29",
+    "30",
+    "31a",
+    "31b",
+    "33a",
+    "33b",
+    "34b",
+    "36"
+   ],
+   "pages": [
+    303,
+    305,
+    307,
+    309,
+    311
    ]
   },
   {
@@ -7802,7 +8323,7 @@
     },
     {
      "n": 14,
-     "fr": "Parce qu'il a espéré en moi, je le délivrerai} ; je le protégerai, parce qu'il a connu mon nom.",
+     "fr": "Parce qu'il a espéré en moi, je le délivrerai ; je le protégerai, parce qu'il a connu mon nom.",
      "page": 95,
      "ligne_la": "14"
     },
@@ -8094,7 +8615,7 @@
     },
     {
      "n": 5,
-     "fr": "Les montagnes se sont fondues comme la cire à la face du Seigneur ; ; à la face du Seigneur, toute la terre.",
+     "fr": "Les montagnes se sont fondues comme la cire à la face du Seigneur ; à la face du Seigneur, toute la terre.",
      "page": 247,
      "ligne_la": "5",
      "lecture": [
@@ -10128,7 +10649,7 @@
     },
     {
      "n": 128,
-     "fr": "C'est pourquoi je me suis conformé à tous vos commandements ; ; j'ai haï toute voie injuste.",
+     "fr": "C'est pourquoi je me suis conformé à tous vos commandements ; j'ai haï toute voie injuste.",
      "page": 71,
      "ligne_la": "128"
     },
@@ -12419,12 +12940,15 @@
    "versets": [
     {
      "n": 10,
-     "fr": "J'ai dit : Au milieu de mes jours, j'irai aux portes du Je cherche en vain le reste de mes jours.",
-     "page": 193
+     "fr": "J'ai dit : Au milieu de mes jours, j'irai aux portes du tombeau. Je cherche en vain le reste de mes jours.",
+     "page": 193,
+     "lecture": [
+      "p. 193 : Je cherche en vain — « vain » en italique, l'a ressemble à un u (« vuin ») ; lu « vain »"
+     ]
     },
     {
      "n": 11,
-     "fr": "J'ai dit : Je ne verrai plus le Seigneur Dieu dans la terre tombeau. des vivants ; je ne verrai plus aucun homme, ni &habitant du repos.",
+     "fr": "J'ai dit : Je ne verrai plus le Seigneur Dieu dans la terre des vivants ; je ne verrai plus aucun homme, ni d'habitant du repos.",
      "page": 193
     },
     {

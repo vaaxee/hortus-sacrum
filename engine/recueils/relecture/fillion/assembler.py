@@ -80,6 +80,9 @@ NOTES = {
 # psaumes dont DO numérote les lignes autrement que les versets de la Vulgate : verset → ligne latine où il commence
 # (les étiquettes `lignes_la` restent celles de DO ; une ligne sans verset qui y commence continue le précédent)
 DECOUPE = {
+    61: ({**{v: str(v) for v in range(2, 13)}, 13: '12'},
+         "Divinum Officium chante les v. 12 et 13 de la Vulgate sur une seule ligne (« 12 ») ; Fillion les numérote "
+         "séparément. Le v. 13 commence au milieu de la ligne latine « 12 »."),
     42: ({1: '1', 2: '2', 3: '3', 4: '4', 5: '5'},
          "Divinum Officium coupe ce psaume en 6 lignes numérotées 1-6 (« Confitebor tibi in cithara » = 5, « Spera in "
          "Deo » = 6) ; Fillion suit les 5 versets de la Vulgate (v. 4 jusqu'à « Deus meus », v. 5 « Quare tristis "

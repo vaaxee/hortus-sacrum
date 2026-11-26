@@ -162,7 +162,7 @@ f: A A "" T T T T A "âme"
 ok
 
 == p71
-f: "" "[ments," T "" "" A "[dements ;"
+f: "" "[ments," T "" "" A "[dements"
 ok
 
 == p73
@@ -229,6 +229,7 @@ ok
 == p95
 f: A A A "la" A A "" A "" "délivrerai" T
 c: 28
+r: délivrerai} => délivrerai
 ok
 
 == p97
@@ -521,7 +522,7 @@ r: v| les garder, on trouve => c| à les garder, on trouve
 ok
 
 == p137
-f: "elle" A "enne-" A A "ô" A "[ennemis." T A
+f: "elle" A "enne-" A A "ô" "m'ont" "[ennemis." T A
 r: tous les jours de\nc| pour contempler les délices du Seigneur [ma vie, => tous les jours de ma vie,\nc| pour contempler les délices du Seigneur
 r: son tabernacle ; [son tabernacle. => son tabernacle ;
 r: dans le secret de\n => dans le secret de son tabernacle.\n
@@ -679,6 +680,9 @@ ok
 == p193
 f: "oreilles," "" "Maison" "" "" "" "" "vain"
 h: 12 Cantique d'Ézéchias. Is. xxxviii, 10-20.
+r: aux portes du\nc| Je cherche en vain le reste de mes jours. [tombeau. => aux portes du tombeau.\nc| Je cherche en vain le reste de mes jours.
+r: ni &habitant du => ni d'habitant du
+?: Je cherche en vain — « vain » en italique, l'a ressemble à un u (« vuin ») ; lu « vain »
 ?: Elles ont des oreilles — impression brisée (lu « orcilies »), lecture sûre
 ok
 
@@ -818,7 +822,7 @@ f: "" "lois," "a" "contre" "ta" "tout" "[ble."
 ok
 
 == p247
-f: "les" "et" "Ses éclairs" "montagnes se sont" "Seigneur," "[du Seigneur ;" "anges." A "le Seigneur"
+f: "les" "et" "Ses éclairs" "montagnes se sont" "Seigneur," "[du Seigneur" "anges." A "le Seigneur"
 v: 5
 ?: à la face du Seigneur, toute la terre — trait parasite après « Seigneur, », non repris
 ok
@@ -909,7 +913,7 @@ f: "cieux, ô" "Ils" "pieds," "" "ô" "chanterai," "je" "miséricorde" "ô" "" "
 ok
 
 == p275
-f: ";" "[sants." "a" "a" "terre." "Sauvez-moi" "ô" "et"
+f: "" "[sants." "a" "a" "terre." "Sauvez-moi" "ô" "et"
 v: 22
 r: le soleil. [un buisson,\nv| Avant qu'ils connaissent que leurs épines sont devenues => le soleil.\nv| Avant qu'ils connaissent que leurs épines sont devenues un buisson,
 ok
@@ -946,4 +950,57 @@ ok
 == p289
 f: "" "" "de" "maison," "couche," "tempes," "Seigneur," "" "l'arche était à Éphrata" "l'avons" "forêt." "Nous" "tabernacle ;" "a posé ses pieds." "Levez-vous," "justice," "et" "de David votre serviteur," "Le" "a" "serment véridique," "et il" "enseignerai," "" "l'a" "C'est" "repos ;" "choisie."
 v: 22
+ok
+
+// Office du jeudi.
+== p297
+f: "" "sauveur ;"
+v: 6
+?: mon sauveur — impression brisée (« sauveur » lu « savveur »), ponctuation finale illisible, rendue par le point-virgule du v. 7, même phrase
+?: je ne serai plus ébranle — « ébranle » sans accent, tel qu'imprimé
+ok
+
+== p299
+f: "" "" "" "" "mon" "" ";" "les" "l'iniquité," "[ricorde" "" "œuvres." "ô" "terribles, Seigneur" "A cause" "votre" "œuvres" "[mes."
+x: 1
+v: 6 7
+c: 7
+r: deux choses : [ricorde ;\nc| La puissance est à Dieu, et à vous, Seigneur, la misé- => deux choses :\nc| La puissance est à Dieu,\nv| et à vous, Seigneur, la miséricorde ;
+?: et à vous, Seigneur, la miséricorde — Fillion imprime le numéro 13 au milieu de la ligne : découpage de l'imprimé gardé
+ok
+
+== p301
+f: "" "et faites" "ébranlés." "ô" "" "mettre" "rafraîchissement." "envers" "" "a" "raconterai," "a" "âme. [Dieu,"
+r: de mes vœux que mes\nc| lèvres ont proférés, => de mes vœux\nv| que mes\nc| lèvres ont proférés,
+r: avec la fumée des\nc| je vous offrirai des bœufs avec des boucs. [béliers ; => avec la fumée des béliers ;\nc| je vous offrirai des bœufs avec des boucs.
+?: que mes lèvres ont proférés — Fillion imprime le numéro 14 au milieu de la ligne : découpage de l'imprimé gardé
+ok
+
+== p303
+f: "" "" "a" "l'a" "l'iniquité" "C'est" "m'a" "et a" "dissipés," "" "lui,"
+r: par un cantique : => par un cantique ;
+h: 13 Psaume LXVII, i.
+ok
+
+== p305
+f: "le" "une" "O" "[Sinaï," "ô" "a" "ô" "riture" "" "l'auxiliaire" "bien-aimé," "l'ornement" "argentées," "pâle" "le"
+ok
+
+== p307
+f: "de Dieu" "regardez-vous" "a" "au" "des captifs" "[prospère." "a"
+ok
+
+== p309
+f: "Mais" "a" "ô" "l'entrée" "Nephtali." "O" "ô" "les" "Des ambassadeurs"
+v: 25
+r: de l'Egypte ; => de l'Égypte ;
+ok
+
+== p311
+f: "l'orient." "Rendez" "nuées." "" "[sance" "ô" "âme." "a"
+ok
+
+== p313
+f: "haïssent" "" "O" "ô" "" "dévoré," "m'en a" "me raillaient" "ô"
+r: à cause\nc| Seigneur, Seigneur des armées. [de moi, => à cause de moi,\nc| Seigneur, Seigneur des armées.
 ok

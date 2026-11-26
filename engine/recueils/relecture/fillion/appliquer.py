@@ -63,6 +63,8 @@ def renvois(texte):
             if not cands:
                 raise SystemExit(f'renvoi « [{frag} » sans ligne à compléter : {l}')
             j = max(cands, key=lambda k: len(L[k]))   # la ligne coupée est la plus longue (pleine justification)
+            if len(cands) == 2 and os.environ.get('AMBIGUS'):
+                print(f'AMBIGU [{frag} -> {"dessus" if j == P else "dessous"} | {L[P][-40:]} || {L[N][-40:]}')
         L[j] = L[j][:-1] + frag if L[j].endswith('-') else L[j] + ' ' + frag
     return '\n'.join(L)
 
