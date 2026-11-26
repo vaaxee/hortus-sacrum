@@ -41,14 +41,23 @@ describe('Somme : données', () => {
 			for (const a of q.articles) {
 				expect(a.titre.la && a.titre.fr, a.ref).toBeTruthy();
 				expect(a.objections.length, a.ref).toBeGreaterThan(0);
-				for (const p of [...a.objections, a.sed_contra, a.respondeo, ...a.reponses]) {
+				// Iª q. 10 a. 1 n'a pas de « Sed contra » dans la léonine : les deux langues sont vides, et la note le dit
+				if (!a.sed_contra.la && !a.sed_contra.fr) expect(a.notes?.join(' '), a.ref).toMatch(/n’a pas de « Sed contra »/);
+				for (const p of [...a.objections, ...(a.sed_contra.la ? [a.sed_contra] : []), a.respondeo, ...a.reponses]) {
 					expect(p.la.trim(), a.ref).not.toBe('');
 					// Lachat omet parfois le « Sed contra » (Iª q. 1 a. 5) : le manque est dit dans les notes de l'article
 					if (p === a.sed_contra && !p.fr) expect(a.notes?.join(' '), a.ref).toMatch(/Sed contra/);
 					else expect(p.fr.trim(), a.ref).not.toBe('');
 				}
-				// objections numérotées comme dans Lachat : « Il paroît … 1° », puis « 2° », « 3° »…
-				a.objections.slice(1).forEach((o, k) => expect(o.fr, a.ref).toMatch(new RegExp(`^${k + 2}(°|\\. )`)));
+				// objections numérotées comme dans Lachat : « Il paroît … 1° », puis « 2° », « 3° »… ; quand Lachat
+				// n'imprime pas le numéro (Iª q. 6 a. 1, obj. 2) ou en imprime un faux (Iª q. 10 a. 2, « 5° » pour « 3° »),
+				// le fait est dit dans les notes de l'article
+				a.objections.slice(1).forEach((o, k) => {
+					const note = a.notes?.find((n) => n.includes(`l’objection ${k + 2} `));
+					if (note?.includes('n’imprime pas')) expect(o.fr, a.ref).not.toMatch(/^\d/);
+					else if (note) expect(o.fr, a.ref).toMatch(/^\d+° /);
+					else expect(o.fr, a.ref).toMatch(new RegExp(`^${k + 2}(°|\\. )`));
+				});
 				expect(a.objections[0].fr, a.ref).toMatch(/^Il paro[iî]t/);
 				if (a.sed_contra.fr) expect(a.sed_contra.fr, a.ref).toMatch(/^Mais /);
 				expect(a.reponses[0].fr, a.ref).toMatch(/^(Je réponds aux |Ces observations)/);
@@ -61,7 +70,7 @@ describe('Somme : données', () => {
 	it('aucune marque de relecture ou de vote restée dans le texte', () => {
 		for (const q of questions) {
 			const t = JSON.stringify([q.titre, q.prooemium, q.articles]);
-			expect(t).not.toMatch(/[⟦⟧⁞¶]/);
+			expect(t).not.toMatch(/[⟦⟧⁞¶§]/);
 			expect(t).not.toMatch(/\(Conclusion/);
 		}
 	});

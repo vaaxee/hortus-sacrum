@@ -94,7 +94,7 @@ def paragraphes(lignes):
     prec = None
     for l in lignes:
         t = l['t']
-        force = t.startswith('¶')
+        force = t.startswith(('¶', '§'))
         t = t.lstrip('¶ ')
         neuf = (force or not paras or INTITULE.match(t) or INTITULE.match(paras[-1])
                 or (prec is not None and FIN.search(prec) and len(prec) < 0.88 * pleine)
@@ -112,12 +112,27 @@ def paragraphes(lignes):
 NUM = re.compile(r'^\d+(°|\. )')  # « 2. » : faute d'impression pour « 2° » (Iª q. 3 a. 4)
 
 
-def decouper_article(ps, ref):
-    """ps : paragraphes d'un article, après « ARTICLE … » et le titre."""
+def decouper_article(ps, ref, sans_numero=None):
+    """ps : paragraphes d'un article, après « ARTICLE … » et le titre.
+    Un paragraphe marqué « § » (corrections_fr.txt) ouvre une objection ou une réponse dont Lachat n'imprime pas le
+    numéro ; la marque est ôtée et le manque relevé dans sans_numero (« objection 2 », « réponse 4 »)."""
     obj, sc, co, rep = [], [], [], []
     etat = 'obj'
     for p in ps:
-        if p.startswith('(Conclusion'):
+        if p.startswith('§'):
+            p = p[1:]
+            if etat == 'obj':
+                obj.append(p)
+                if sans_numero is not None:
+                    sans_numero.append(f'de l’objection {len(obj)}')
+                continue
+            if etat == 'rep':
+                rep.append(p)
+                if sans_numero is not None:
+                    sans_numero.append(f'de la réponse {len(rep)}')
+                continue
+            raise SystemExit(f'{ref} : « § » hors des objections et des réponses')
+        if p.startswith(('(Conclusion', 'Conclusion. —')):  # parenthèse ouvrante omise (q. 11 a. 4)
             # un seul alinéa, fermé d'ordinaire par « .) » (une fois par « » » : Iª q. 3 a. 1, faute d'impression)
             etat = 'apres-concl'
             continue
@@ -241,7 +256,8 @@ def main():
             ref = f'Iª q. {q} a. {k}'
             la = Q['articles'][str(k)]
             titre = bloc[0]
-            obj, sc, co, rep = decouper_article(bloc[1:], ref)
+            sans_numero = []
+            obj, sc, co, rep = decouper_article(bloc[1:], ref, sans_numero)
             if len(obj) != len(la['arg']):
                 raise SystemExit(f'{ref} : {len(obj)} objections en français, {len(la["arg"])} en latin')
             if len(rep) != len(la['ad']) and not (len(rep) == 1 and len(la['ad']) <= 1):
@@ -250,8 +266,18 @@ def main():
             reponses = [{'la': la['ad'][j] if j < len(la['ad']) else '', 'fr': rep[j] if j < len(rep) else ''}
                         for j in range(n)]
             notes = []
-            if not sc:
+            if not sc and not la['sc']:
+                notes.append('Cet article n’a pas de « Sed contra », ni dans l’édition léonine ni chez Lachat.')
+            elif not sc:
                 notes.append('Le « Sed contra » n’est pas traduit dans l’édition de Lachat : le latin est donné seul.')
+            for s_ in sans_numero:
+                notes.append(f'Lachat n’imprime pas le numéro {s_} ; le paragraphe est rendu tel quel.')
+            for j, o in enumerate(obj[1:], 2):
+                m = re.match(r'(\d+)°', o)
+                if m and int(m.group(1)) != j:
+                    # faute d'impression vue sur l'image (q. 10 a. 2 : « 5° » pour « 3° »), gardée telle quelle
+                    notes.append(f'Lachat imprime « {m.group(1)}° » au lieu de « {j}° » devant l’objection {j} ; '
+                                 'le numéro est rendu tel quel.')
             articles.append({
                 'ref': ref,
                 'titre': {'la': tq['articles'][str(k)], 'fr': titre},

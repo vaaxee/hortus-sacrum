@@ -57,12 +57,15 @@ et fascicules) pour le reste ; choix confirmé par l'utilisateur le 22 nov.
 |---|---|---|
 | *Somme théologique*, Iª pars, q. 1 à 5 (30 articles), français | *Somme théologique de S. Thomas d'Aquin*, traduite en français et annotée par F. Lachat, Paris, Louis Vivès, 4e éd., 1880, t. I, p. 3-103 (même composition que l'exemplaire de 1874, Harvard/Google, utilisé en contrôle). Vote de quatre lectures (Tesseract et ABBYY, sur les deux scans) ; chaque ligne sans accord relue sur l'image (`engine/somme/corrections_fr.txt`) ; orthographe de l'édition gardée (« paroît », « connoître », « privilége ») ; notes de Lachat et paragraphes « (Conclusion. — …) » des éditeurs non repris | archive.org `sommetheologique01thom` (contrôle `sommethologique07lachgoog`) → `engine/somme/construire.py` → `data/somme/Ia-NN.json`, `index.json` |
 | Même texte, latin | *Sancti Thomae Aquinatis Opera omnia iussu Leonis XIII*, t. IV, Rome, Typographia Polyglotta, 1888 ; texte de la transcription du Corpus Thomisticum (E. Alarcón), contrôlé par alignement sur la lecture ABBYY du scan léonin (`engine/somme/latin_controle.py`) ; écarts isolés vus sur l'image (`corrections_la.txt` : « etc. » rétabli, q. 5 a. 2) ; intitulés des questions et articles relus sur l'image (`titres_la.json`) ; ponctuation du Corpus Thomisticum | archive.org `operaomniaiussui04thom` ; https://www.corpusthomisticum.org/sth1001.html |
+| *Somme théologique*, Iª pars, q. 6 à 11 (24 articles), français et latin | Même édition et même méthode (Lachat, Vivès 1880, t. I, p. 104-180 ; latin léonin du Corpus Thomisticum contrôlé sur le scan de 1888) ; chaque ligne relue sur l'image de 1880 (lignes douteuses aussi sur celle de 1874) ; écarts latins vus sur l'image : q. 6 a. 4 « per se ens » (le Corpus Thomisticum donne « bonum »), q. 12 a. 3 « etc. » | idem |
 
 Points laissés tels qu'imprimés (Lachat) : « Ici se présente dix questions » (q. 1), « 2. » pour « 2° » (q. 3 a. 4,
 obj. 2), deux réponses numérotées « 3° » (q. 5 a. 3, la quatrième), « il y beaucoup de bien » (q. 5 a. 5, lettre tombée
 à l'impression, même chose sur les deux exemplaires), « impartaite » (q. 4 a. 3), « consiste-elle » (q. 5). Le *Sed
 contra* de la q. 1 a. 5 n'est pas traduit par Lachat : le latin est donné seul (note dans l'article). Le latin n'a pas été
 relu mot à mot sur l'image : seuls les écarts isolés de l'alignement automatique l'ont été.
+
+Iª q. 6-11 (25 nov.) : laissés tels qu'imprimés « Dieu est il-le souverain bien? » et « Dieu seul est-il-bon par essence? » (q. 6), réponse 1 numérotée « 2° » (q. 7 a. 2), « 5° » pour « 3° » (q. 10 a. 2, obj. 3, note dans l'article), « 3. » (q. 10 a. 4, rép. 3), « l'éternié » (q. 10 a. 3), « non-seulemnt » (q. 11 a. 3), « opposé ou multiple » (q. 11 a. 2). Numéros absents chez Lachat (marque « § » dans `corrections_fr.txt`, note dans l'article) : q. 6 a. 1 obj. 2, q. 7 a. 3 rép. 4, q. 11 a. 3 rép. 2. La q. 10 a. 1 n'a pas de *Sed contra* (léonine et Lachat). Mots abîmés sur les deux exemplaires, complétés par le contexte : voir `A_FOURNIR.md`.
 
 ## Étape 9 — Méditations et lectures
 
@@ -146,6 +149,48 @@ d'intégration : `docs/audits/ARCHICONFRERIES_LOT_A_2026-11-25.md`.
 | Horloge de la Passion (24 jaculatoires), chapelet du Précieux-Sang avec considérations et prières, chapelet de la Divine Miséricorde, prière pour la délivrance des âmes du purgatoire (« Ayez pitié, ô tendre Jésus »), offrande du Précieux Sang au Père éternel pour obtenir sa bénédiction, consécration au Précieux Sang, prière de sainte Catherine de Sienne (`precieuxsang1890:*`, 7 pièces) | *Nouveau manuel du Très-Précieux Sang… ou le Livre des élus*, Saint-Hyacinthe, Monastère du Précieux-Sang, 1890 ; approbation de L.-Z. Moreau, 18 déc. 1889 | 193-200, 231-239, 266, 350-355, 556 | archive.org `cihm_92923` |
 | Amende honorable au Très Saint-Sacrement (« Pardon, Seigneur, pardon »), consécration au Sacré-Cœur pour les associés, heure d'adoration dialoguée (actes de religion, de remerciement, de charité, de contrition), prière fondée sur les promesses du Sacré-Cœur, prière pour la communion quotidienne, acclamations, amende honorable à Jésus-Christ présent dans le Sacrement de l'autel, consécration du genre humain (Léon XIII) (`ndchemin1920:*`, 8 pièces) | *Petit manuel des adorateurs et des adoratrices du Très Saint Sacrement*, Québec, Notre-Dame du Chemin, 1920 | 14-52 | archive.org `cihm_78894` |
 <!-- lot A : suite -->
+
+## Manuels d'archiconfréries, lot B (25-26 novembre 2026, non branchés au programme)
+
+Double lecture (couche texte du scan et Tesseract ; colonnes latin-français lues séparément), chaque désaccord vu sur
+l'image ; détail, tables des matières, pièces laissées et proposition d'intégration :
+`docs/audits/ARCHICONFRERIES_LOT_B_2026-11-25.md`.
+
+| Texte | Source | Pages | Accès |
+|---|---|---|---|
+| Petit office ou Salutation du très saint Nom de Jésus (bienheureux Jourdain de Saxe), latin et français (`saintnom1899:petit-office-saint-nom-de-jesus`) | *Manuel de la Confrérie du Saint Nom de Jésus ou Saint Nom de Dieu*, Saint-Hyacinthe, Dominicains, 1899, *imprimatur* de l'évêque de Saint-Hyacinthe | 20-32, 44 | archive.org `cihm_26544` |
+| Souvenez-vous à saint Joseph, invocation « Bon saint Joseph, notre guide », jaculatoires « Jésus, Marie, Joseph » (`cordonjoseph1871:*`, 3 pièces) | *Vertu miraculeuse du cordon de St. Joseph*, nouvelle éd., Montréal, E. Senécal, 1871, « vu et approuvé » par Mgr Bourget, 30 déc. 1870 | 59-60 | archive.org `cihm_28660` |
+| Consécration à saint Joseph, prière des associés, prière pour la grâce d'une bonne mort (`confreriejoseph:*`, 3 pièces) | *Manuel de la Confrérie de Saint Joseph*, Montréal, hospice Saint-Joseph, s. d. (sans approbation imprimée) | 26, 56 | archive.org `cihm_61528` |
+| Fruits et prières des quinze mystères du Rosaire (`rosairevivant1841:fruits-des-quinze-mysteres`) | *Petit manuel du Rosaire-Vivant*, Montréal, L. Perrault, approuvé par H. Hudon, V. G., 20 sept. 1841 | 19-33 | archive.org `cihm_39974` |
+| Prière quotidienne de la Milice angélique (cordon de saint Thomas) (`troisconfreries:priere-quotidienne-milice-angelique`) | *Les Trois Confréries dominicaines*, Ottawa, A. Bureau, s. d. [vers 1902] | 61-62 | archive.org `cihm_78783` |
+| Prière de saint Augustin, acte d'admiration, triomphe de l'Église, prières de M. Dupont, litanies de l'humilité, prière de Pie IX, aspirations, vingt-quatre adorations, offrande pour la France (`janvier:*`, 9 pièces) | Janvier, *Manuel de l'Archiconfrérie de la Sainte-Face*, 3e éd., Tours, 1895 | 164-177, 194-201 | bibliotheque-catholique.com (PDF Google) |
+| Acte d'oblation des âmes-victimes, amende honorable pour la fête du Sacré-Cœur (`garde1886:*`, 2 pièces) | *Manuel de l'Archiconfrérie de la Garde d'Honneur*, 9e éd., Bourg, 1886 | 134-136, 151-152 | copie saint-eugene.net du scan Google `YxAtAYVrCuwC` |
+| Oraison préparatoire et cinq prières aux intentions du Souverain Pontife, acte d'offrande pour les indulgences (`desgenettes:*`, 2 pièces) | Desgenettes, *Manuel… de l'Archiconfrérie du très-saint et immaculé Cœur de Marie*, 13e éd., Paris, 1852 | 432-435 | archive.org `manueldinstruct00dufrgoog` |
+| Père éternel, je vous offre le Sang très précieux… (`beringer:offrande-du-precieux-sang`) ; équivalent de l'« Ejaculatory Offering » de Caswall 1861 | Beringer 1925, t. I, n° 250 | 132-133 | archive.org `lesindulgences0001beri` (n147-n148) |
+| **Traduction de travail** : colloque avec Jésus crucifié, prières de S. Pie V (`bonamors1896:colloque-saint-pie-v`) | *The Manual of the Bona Mors Confraternity*, New York, 1896 | 22-23 | archive.org `manualofbonamors00unse` (n33-n34) |
+| **Traduction de travail** : invocation de la Trinité pour les âmes du purgatoire (`purgatorian1868:invocation-trinite-ames-purgatoire`) | *Purgatorian Consoler*, Baltimore, J. Murphy, 1868 | 312-313 | archive.org `purgatorianconso00queluoft` (n317-n318) |
+
+Manuels consultés sans pièce ajoutée : Mgr de Ségur, *Le Cordon séraphique*, Québec, 1877 (`cihm_13440`) ; *Livret de
+la Confrérie du T. S. Rosaire*, Montréal, 1903 (`cihm_77301`) ; *Notice sur le Tiers-Ordre de la pénitence*, Québec,
+1867 (`cihm_29653`) ; *Manuel du Tiers-Ordre*, 1885 (`cihm_62202`).
+
+## Neuvaine à la très sainte Trinité (26 novembre 2026, relue sur l'image, à valider)
+
+Demande de l'utilisateur : neuvaine indulgenciée finissant le dimanche de la Trinité, consécration de dom Marmion le
+dernier jour (`prog:neuvaine-trinite`). L'indulgence de la neuvaine (Ench. 1952, n° 48 ; Beringer n° 639) vaut pour
+**des prières quelconques** en l'honneur de la sainte Trinité dites neuf jours de suite : faute d'une neuvaine imprimée
+jour par jour (voir `A_FOURNIR.md`), la page reprend chaque jour les prières à la sainte Trinité de Beringer ci-dessous.
+Transcription sur l'image de chaque page ; seconde lecture Tesseract (fra) comparée mot à mot, écarts tranchés sur
+l'image (« exerciée », coquille de l'édition, gardée).
+
+| Texte | Source | Pages | Accès |
+|---|---|---|---|
+| Notice : Triduum ou neuvaine en l'honneur de la très sainte Trinité (`beringer:neuvaine-trinite`) | Beringer 1925, t. I, n° 639 | 340 | archive.org `lesindulgences0001beri` (n355) |
+| Adoration et action de grâces (`beringer:trinite-adoration-action-de-graces`) ; porte la fiche d'indulgence de la neuvaine | Beringer 1925, t. I, n° 255 a (Ench. 1952, n° 45, en italien) | 134-135 | idem (n149-n150) |
+| Trois offrandes à la très sainte Trinité (`beringer:trinite-trois-offrandes`) | Beringer 1925, t. I, n° 256 | 135 | idem (n150) |
+| « Toute-puissance du Père… » (`beringer:trinite-toute-puissance`) | Beringer 1925, t. I, n° 252 (Ench. 1952, n° 53, en latin) | 133 | idem (n148) |
+| Consécration de dom Columba Marmion (Noël 1908, renouvelée le 25 mars 1909) (`thibaut:marmion-consecration-trinite`) | Dom R. Thibaut, *Un maître de la vie spirituelle. Dom Columba Marmion, abbé de Maredsous*, 2e éd., Abbaye de Maredsous, 1930 (imprimatur, Namur, 8 sept. 1929), ch. « Grâces d'union » | 190 | archive.org `un0000unse` (n215) |
+| Indulgence de la neuvaine : 7 ans une fois le jour ; plénière la neuvaine achevée | *Enchiridion indulgentiarum*, 1952, n° 48 (S. C. Indulg., 8 août 1847 ; S. Pén. Ap., 18 mars 1932), vu sur l'image | 19 | archive.org `enchiridion_indulgentiarum_1952` (n34) |
 
 ## Indulgences (compteur), 14 novembre 2026
 
