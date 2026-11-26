@@ -508,3 +508,52 @@ describe('lot B des archiconfréries intégré (décisions du 26 nov.)', () => {
 		expect(ligne(calculer('2027-01-04'), 'prog:saint-nom-de-jesus')).toBeUndefined();
 	});
 });
+
+describe('lot A des archiconfréries intégré (décisions du 26 nov.)', () => {
+	const t = (date: string, id: string) => (ligne(calculer(date), id)?.sections ?? []).map((s) => s.texte);
+	const PREPARATION = [
+		'lefebvre1870:protestation-pour-bien-mourir',
+		'lefebvre1870:testament-spirituel-saint-charles',
+		'lefebvre1870:priere-saint-vincent-ferrier-bonne-mort',
+		'lefebvre1870:autre-testament-spirituel',
+		'lefebvre1870:priere-sainte-gertrude-ave-candidum'
+	];
+	it('vendredi : les litanies de la Passion et des Sept-Douleurs (Lefebvre) entrent dans la roue, une par semaine', () => {
+		const vendredis = ['2026-12-04', '2026-12-11', '2026-12-18', '2026-12-25', '2027-01-01', '2027-01-08', '2027-01-15', '2027-01-22'];
+		const vues = new Set(vendredis.flatMap((d) => t(d, 'prog:devotion-vendredi')).filter((x) => x?.includes('litanies')));
+		expect(vues).toEqual(
+			new Set([
+				'beringer:litanies-sacre-coeur',
+				'jardin:litanies-de-notre-dame-des-sept-douleurs',
+				'lefebvre1870:litanies-de-la-passion',
+				'lefebvre1870:litanies-notre-dame-des-sept-douleurs'
+			])
+		);
+		for (const d of vendredis) expect(t(d, 'prog:devotion-vendredi').filter((x) => x?.includes('litanies'))).toHaveLength(1);
+	});
+	it('premier vendredi : un texte de préparation à la mort, qui change chaque mois', () => {
+		const premiers = ['2026-12-04', '2027-01-01', '2027-02-05', '2027-03-05', '2027-04-02'];
+		const choisis = premiers.map((d) => t(d, 'prog:devotion-vendredi').filter((x) => PREPARATION.includes(x ?? '')));
+		for (const c of choisis) expect(c).toHaveLength(1);
+		expect(new Set(choisis.flat())).toEqual(new Set(PREPARATION));
+		expect(t('2026-12-11', 'prog:devotion-vendredi').some((x) => PREPARATION.includes(x ?? ''))).toBe(false);
+		expect(t('2026-12-04', 'prog:devotion-vendredi')).toEqual(t('2026-12-04', 'prog:devotion-vendredi')); // déterministe
+	});
+	it('novembre : les âmes les plus oubliées et la délivrance des âmes, une semaine sur deux, le soir', () => {
+		const AMES = ['perpetuelsecours1878:ames-les-plus-oubliees', 'precieuxsang1890:priere-delivrance-ames-purgatoire'];
+		const soirs = ['2027-11-02', '2027-11-09', '2027-11-16', '2027-11-23'].map((d) =>
+			t(d, 'prog:priere-du-soir').filter((x) => AMES.includes(x ?? ''))
+		);
+		for (const s of soirs) expect(s).toHaveLength(1);
+		expect(new Set(soirs.flat())).toEqual(new Set(AMES));
+		expect(t('2026-12-01', 'prog:priere-du-soir').some((x) => AMES.includes(x ?? ''))).toBe(false);
+	});
+	it('1er juillet : consécration au Précieux Sang ; fête de N.-D. du Perpétuel-Secours : consécration de l’Archiconfrérie', () => {
+		expect(t('2027-07-01', 'prog:priere-du-matin')).toContain('precieuxsang1890:consecration-au-precieux-sang');
+		expect(t('2027-07-02', 'prog:priere-du-matin')).not.toContain('precieuxsang1890:consecration-au-precieux-sang');
+		// fête « fixée au dimanche qui précède le 24 juin » (manuel de Montréal, 1878, p. 141) : le 20 juin 2027
+		expect(t('2027-06-20', 'prog:priere-du-matin')).toContain('perpetuelsecours1878:consecration-archiconfrerie');
+		expect(t('2027-06-27', 'prog:priere-du-matin')).not.toContain('perpetuelsecours1878:consecration-archiconfrerie');
+		expect(t('2027-06-22', 'prog:priere-du-matin')).not.toContain('perpetuelsecours1878:consecration-archiconfrerie');
+	});
+});
