@@ -132,6 +132,18 @@ Londres, 1861 (`ConfraternityManualOfThe`) ; *Purgatorian Consoler*, Baltimore, 
 t. II, n° 230, 234, 255, 262, 272, 306, 308 (sommaires français des archiconfréries) ; *Enchiridion* 1952, n° 594, 636-649
 (contrôle, sur l'OCR).
 
+## Manuels d'archiconfréries, lot A (25 novembre 2026, relus sur l'image, non branchés)
+
+Double lecture (couche texte ABBYY d'archive.org et Tesseract `fra+lat`, `--psm 6`), désaccords tranchés sur l'image
+de la page, puis contrôle des mots de chaque pièce absents des deux lectures ; orthographe de l'édition gardée.
+Indulgences imprimées reportées sans être comptées. Détail, tables des matières, pièces laissées et proposition
+d'intégration : `docs/audits/ARCHICONFRERIES_LOT_A_2026-11-25.md`.
+
+| Texte | Source | Pages | Accès |
+|---|---|---|---|
+| Messe pour demander la grâce d'une bonne mort, litanies de la Passion, deux litanies de N.-D. des Sept-Douleurs, litanies de saint Joseph, prière pour les agonisants (recommandation de l'âme), protestation pour bien mourir (S. Alphonse), deux testaments spirituels (S. Charles et autre formule), prière de S. Vincent Ferrier (latin-français), prière contre la mort subite, prière de sainte Gertrude *Ave candidum lilium*, deux prières à saint Joseph, *Ave Joseph*, prières à saint Michel et à l'ange gardien, prières pour les associés vivants, agonisants et décédés (`lefebvre1870:*`, 20 pièces) | Al. Lefebvre, S. J., *La science de bien mourir, manuel de l'Association de la Bonne Mort*, 5e éd., Paris, Librairie Saint-Germain-des-Prés, 1870 | 412-466 | archive.org `lasciencedebienm00lefeuoft` (n427-n481) |
+<!-- lot A : suite -->
+
 ## Indulgences (compteur), 14 novembre 2026
 
 Règle : la concession la plus récente fait foi : *Enchiridion indulgentiarum*, 1952 (archive.org `enchiridion_indulgentiarum_1952`) ; à défaut *Thésaurisons pour le ciel*, Carmel de Montréal, 1941, imprimatur du 28 avril 1941, d'après les *Preces et Pia Opera* de 1938 (http://www.liberius.net/livre.php?id_livre=1335) ; à défaut Beringer 1925. Données : `data/prieres/indulgences.json` (indulgences partielles seulement ; plénières et indulgences réservées aux confréries non comptées). Vérifiés dans l'Enchiridion : n° 36 (actes de foi, d'espérance, de charité), 43 (Symbole des Apôtres), 114, 221, 293, 319, 331, 332, 333, 462, 478, 585, 671, 687, 691 (Confiteor), 395 (chapelet), litanies du Sacré-Cœur.
