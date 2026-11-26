@@ -330,3 +330,33 @@ describe('neuvaine à la très sainte Trinité (demande du 26 nov.)', () => {
 		});
 	});
 });
+
+describe('lot B des archiconfréries intégré (décisions du 26 nov.)', () => {
+	const sections = (date: string, id: string) => ligne(calculer(date), id)?.sections ?? [];
+	it('chapelet : le fruit propre de chaque mystère après chaque dizaine', () => {
+		const s = sections('2026-11-30', 'prog:chapelet'); // lundi : mystères joyeux
+		const fruits = s.filter((x) => x.texte === 'rosairevivant1841:fruits-des-quinze-mysteres').map((x) => x.extrait?.section);
+		expect(fruits).toEqual([
+			'## Premier mystère joyeux',
+			'## Second mystère joyeux',
+			'## Troisième mystère joyeux',
+			'## Quatrième mystère joyeux',
+			'## Cinquième mystère joyeux'
+		]);
+		// chaque fruit suit sa dizaine : il vient après la prière de fin de dizaine, et avant la dizaine suivante
+		const k = s.findIndex((x) => x.texte === 'rosairevivant1841:fruits-des-quinze-mysteres');
+		expect(s.slice(0, k).some((x) => x.texte === 'fsspx:o-mon-jesus-fatima')).toBe(true);
+		expect(
+			sections('2026-12-01', 'prog:chapelet').find((x) => x.texte === 'rosairevivant1841:fruits-des-quinze-mysteres')?.extrait?.section
+		).toBe('## Premier mystère douloureux');
+	});
+	it('mercredi, mardi, juillet et fête du saint Nom', () => {
+		const t = (d: string, id: string) => sections(d, id).map((x) => x.texte);
+		expect(t('2026-12-02', 'prog:devotion-mercredi')).toContain('cordonjoseph1871:souvenez-vous-a-saint-joseph');
+		expect(t('2026-12-01', 'prog:devotion-mardi')).toContain('janvier:priere-de-pie-ix-sainte-face');
+		expect(t('2027-07-02', 'prog:devotion-vendredi')).toContain('beringer:offrande-du-precieux-sang');
+		expect(t('2027-06-04', 'prog:devotion-vendredi')).not.toContain('beringer:offrande-du-precieux-sang');
+		expect(t('2027-01-03', 'prog:saint-nom-de-jesus')).toContain('saintnom1899:petit-office-saint-nom-de-jesus');
+		expect(ligne(calculer('2027-01-04'), 'prog:saint-nom-de-jesus')).toBeUndefined();
+	});
+});

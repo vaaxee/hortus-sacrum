@@ -110,6 +110,11 @@ export interface Insertion {
 	heure?: string;
 	quand?: Quand;
 	sections: Section[];
+	/**
+	 * Le point revient plusieurs fois (fin de chaque dizaine) : la k-ième section résolue va au k-ième passage, au lieu
+	 * que toutes aillent à chacun (fruit propre de chaque mystère).
+	 */
+	repartir?: boolean;
 }
 
 export interface EntreeProgramme {

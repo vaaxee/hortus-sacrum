@@ -494,6 +494,256 @@
       ]
     },
     {
+      "id": "prog:fruits-des-mysteres",
+      "titre": "Fruit de chaque mystère du rosaire",
+      "motif": {
+        "fins": [
+          "demande"
+        ],
+        "objets": [
+          "jesus-christ",
+          "sainte-vierge"
+        ],
+        "note": "après chaque dizaine, le fruit et la prière du mystère (Rosaire-Vivant, Montréal 1841)"
+      },
+      "revision": 1,
+      "source": "Décision de l'utilisateur du 26 nov. : après chaque dizaine du chapelet (audit ARCHICONFRERIES_LOT_B)",
+      "insertions": [
+        {
+          "hote": "prog:chapelet",
+          "point": "fin-dizaine",
+          "repartir": true,
+          "sections": [
+            {
+              "texte": "rosairevivant1841:fruits-des-quinze-mysteres",
+              "extrait": {
+                "section": "## Premier mystère joyeux"
+              },
+              "quand": {
+                "jours_semaine": [
+                  1,
+                  4
+                ]
+              }
+            },
+            {
+              "texte": "rosairevivant1841:fruits-des-quinze-mysteres",
+              "extrait": {
+                "section": "## Second mystère joyeux"
+              },
+              "quand": {
+                "jours_semaine": [
+                  1,
+                  4
+                ]
+              },
+              "suite": true
+            },
+            {
+              "texte": "rosairevivant1841:fruits-des-quinze-mysteres",
+              "extrait": {
+                "section": "## Troisième mystère joyeux"
+              },
+              "quand": {
+                "jours_semaine": [
+                  1,
+                  4
+                ]
+              },
+              "suite": true
+            },
+            {
+              "texte": "rosairevivant1841:fruits-des-quinze-mysteres",
+              "extrait": {
+                "section": "## Quatrième mystère joyeux"
+              },
+              "quand": {
+                "jours_semaine": [
+                  1,
+                  4
+                ]
+              },
+              "suite": true
+            },
+            {
+              "texte": "rosairevivant1841:fruits-des-quinze-mysteres",
+              "extrait": {
+                "section": "## Cinquième mystère joyeux"
+              },
+              "quand": {
+                "jours_semaine": [
+                  1,
+                  4
+                ]
+              },
+              "suite": true
+            },
+            {
+              "texte": "rosairevivant1841:fruits-des-quinze-mysteres",
+              "extrait": {
+                "section": "## Premier mystère douloureux"
+              },
+              "quand": {
+                "jours_semaine": [
+                  2,
+                  5
+                ]
+              }
+            },
+            {
+              "texte": "rosairevivant1841:fruits-des-quinze-mysteres",
+              "extrait": {
+                "section": "## Deuxième mystère douloureux"
+              },
+              "quand": {
+                "jours_semaine": [
+                  2,
+                  5
+                ]
+              },
+              "suite": true
+            },
+            {
+              "texte": "rosairevivant1841:fruits-des-quinze-mysteres",
+              "extrait": {
+                "section": "## Troisième mystère douloureux"
+              },
+              "quand": {
+                "jours_semaine": [
+                  2,
+                  5
+                ]
+              },
+              "suite": true
+            },
+            {
+              "texte": "rosairevivant1841:fruits-des-quinze-mysteres",
+              "extrait": {
+                "section": "## Quatrième mystère douloureux"
+              },
+              "quand": {
+                "jours_semaine": [
+                  2,
+                  5
+                ]
+              },
+              "suite": true
+            },
+            {
+              "texte": "rosairevivant1841:fruits-des-quinze-mysteres",
+              "extrait": {
+                "section": "## Cinquième mystère douloureux"
+              },
+              "quand": {
+                "jours_semaine": [
+                  2,
+                  5
+                ]
+              },
+              "suite": true
+            },
+            {
+              "texte": "rosairevivant1841:fruits-des-quinze-mysteres",
+              "extrait": {
+                "section": "## Premier mystère glorieux"
+              },
+              "quand": {
+                "jours_semaine": [
+                  0,
+                  3,
+                  6
+                ]
+              }
+            },
+            {
+              "texte": "rosairevivant1841:fruits-des-quinze-mysteres",
+              "extrait": {
+                "section": "## Deuxième mystère glorieux"
+              },
+              "quand": {
+                "jours_semaine": [
+                  0,
+                  3,
+                  6
+                ]
+              },
+              "suite": true
+            },
+            {
+              "texte": "rosairevivant1841:fruits-des-quinze-mysteres",
+              "extrait": {
+                "section": "## Troisième mystère glorieux"
+              },
+              "quand": {
+                "jours_semaine": [
+                  0,
+                  3,
+                  6
+                ]
+              },
+              "suite": true
+            },
+            {
+              "texte": "rosairevivant1841:fruits-des-quinze-mysteres",
+              "extrait": {
+                "section": "## Quatrième mystère glorieux"
+              },
+              "quand": {
+                "jours_semaine": [
+                  0,
+                  3,
+                  6
+                ]
+              },
+              "suite": true
+            },
+            {
+              "texte": "rosairevivant1841:fruits-des-quinze-mysteres",
+              "extrait": {
+                "section": "## Cinquième mystère glorieux"
+              },
+              "quand": {
+                "jours_semaine": [
+                  0,
+                  3,
+                  6
+                ]
+              },
+              "suite": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prog:saint-nom-de-jesus",
+      "titre": "Petit office du saint Nom de Jésus",
+      "motif": {
+        "fins": [
+          "louange",
+          "adoration"
+        ],
+        "objets": [
+          "jesus-christ"
+        ],
+        "note": "une fois l'an, à la fête du très saint Nom de Jésus (Confrérie du Saint Nom, Saint-Hyacinthe 1899)"
+      },
+      "revision": 1,
+      "quand": {
+        "office": "^Très Saint Nom de Jésus$"
+      },
+      "source": "Décision de l'utilisateur du 26 nov. : le petit office à la fête du saint Nom (audit ARCHICONFRERIES_LOT_B)",
+      "page": {
+        "moment": "journee",
+        "ordre": 75,
+        "sections": [
+          {
+            "texte": "saintnom1899:petit-office-saint-nom-de-jesus"
+          }
+        ]
+      }
+    },
+    {
       "id": "prog:triple-couronne",
       "titre": "Triple Couronne d'or du Sacré-Cœur",
       "motif": {"fins": ["reparation", "adoration", "action-de-graces"], "objets": ["sacre-coeur", "eucharistie"], "note": "honorer chaque jour le Sacré-Cœur, couronne selon le jour (SPEC § 10, corrections 4)"},
@@ -868,7 +1118,7 @@
       "id": "prog:devotion-mardi",
       "titre": "Dévotion du mardi : les saints Anges",
       "motif": {"fins": ["demande"], "objets": ["anges"], "note": "dédicace du mardi : les saints Anges, leur garde et leur protection (cycles.json)"},
-      "revision": 3,
+      "revision": 4,
       "quand": {
         "jours_semaine": [2]
       },
@@ -918,6 +1168,9 @@
                 8
               ]
             }
+          },
+          {
+            "texte": "janvier:priere-de-pie-ix-sainte-face"
           }
         ]
       }
@@ -926,7 +1179,7 @@
       "id": "prog:devotion-mercredi",
       "titre": "Dévotion du mercredi : saint Joseph et le cordon",
       "motif": {"fins": ["demande"], "objets": ["saint-joseph"], "note": "dédicace du mercredi : saint Joseph, avec le renouvellement du cordon (SPEC § 11, décisions)"},
-      "revision": 3,
+      "revision": 4,
       "quand": {
         "jours_semaine": [3]
       },
@@ -985,6 +1238,9 @@
                 8
               ]
             }
+          },
+          {
+            "texte": "cordonjoseph1871:souvenez-vous-a-saint-joseph"
           }
         ]
       }
@@ -1046,7 +1302,7 @@
       "id": "prog:devotion-vendredi",
       "titre": "Dévotion du vendredi : la Passion et le Sacré-Cœur",
       "motif": {"fins": ["reparation", "propitiation"], "objets": ["passion", "sacre-coeur"], "note": "dédicace du vendredi : la Passion et le Sacré-Cœur (cycles.json ; LOT_DIMENSIONS § 3.3)"},
-      "revision": 3,
+      "revision": 4,
       "quand": {
         "jours_semaine": [5]
       },
@@ -1118,6 +1374,14 @@
             "quand": {
               "mois": [
                 8
+              ]
+            }
+          },
+          {
+            "texte": "beringer:offrande-du-precieux-sang",
+            "quand": {
+              "mois": [
+                7
               ]
             }
           }

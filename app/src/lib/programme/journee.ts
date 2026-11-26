@@ -214,12 +214,16 @@ export function journee(programme: Programme, ctx: Contexte): Journee {
 				const places: number[] = [];
 				hote.blocs.forEach((b, k) => estPoint(b) && b.point === ins.point && places.push(k));
 				if (!places.length) hote.blocs.push(...avecHeure);
-				// à un même point, les invités se suivent dans l'ordre du programme
-				for (const k of places.reverse()) {
+				// à un même point, les invités se suivent dans l'ordre du programme ; « repartir » : une section par passage
+				const parPassage = (i: number) => (ins.repartir ? avecHeure.slice(i, i + 1) : avecHeure);
+				for (let i = places.length - 1; i >= 0; i--) {
+					const k = places[i];
+					const ajout = parPassage(i);
+					if (!ajout.length) continue;
 					const marque = hote.blocs[k] as { point: string };
 					const deja = dejaPlaces.get(marque) ?? 0;
-					hote.blocs.splice(k + 1 + deja, 0, ...avecHeure);
-					dejaPlaces.set(marque, deja + avecHeure.length);
+					hote.blocs.splice(k + 1 + deja, 0, ...ajout);
+					dejaPlaces.set(marque, deja + ajout.length);
 				}
 				if (!hote.invites.includes(e.id)) hote.invites.push(e.id);
 				continue;
