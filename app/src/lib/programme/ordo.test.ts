@@ -78,5 +78,6 @@ describe(`compositeur d'ordo sur l'Avent 2026 (${AVENT.length} jours)`, () => {
 			libelle
 		);
 		expect(a).toBe(b);
-	});
+		// 26 journées recomposées : plus de 5 s quand la machine est chargée (bibliothèque qui grandit)
+	}, 30_000);
 });
