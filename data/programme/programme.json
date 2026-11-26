@@ -1554,6 +1554,122 @@
       }
     },
     {
+      "id": "prog:neuvaine-premier-vendredi",
+      "titre": "Neuvaine au Sacré-Cœur avant le premier vendredi",
+      "motif": {"fins": ["reparation", "demande"], "objets": ["sacre-coeur"], "note": "neuf jours qui finissent le jeudi, veille du premier vendredi du mois (Petit bréviaire du Sacré-Cœur, 1883) ; le dernier jour, amende honorable et consécration au Sacré-Cœur"},
+      "revision": 1,
+      "quand": {"autour": {"ancre": {"rang": 1, "jour_semaine": 5}, "de": -9, "a": -1}},
+      "source": "Demande de l'utilisateur du 26 nov. : neuvaine du Petit bréviaire du Sacré-Cœur (Nancy, 1883, p. 151-155) avant chaque premier vendredi ; « terminer par une Amende honorable et une Consécration au Sacré-Cœur de Jésus » : celles du même livre, à la fin de l'exercice pour la messe (p. 119-140)",
+      "page": {
+        "moment": "journee",
+        "ordre": 76,
+        "sections": [
+          {"notice": "breviaire-sc:neuvaine", "extrait": {"de": "## Intentions générales", "a": "## Prières de la neuvaine"}},
+          {"editorial": "### Premier jour de la neuvaine", "quand": {"autour": {"ancre": {"rang": 1, "jour_semaine": 5}, "de": -9, "a": -9}}},
+          {"editorial": "### Deuxième jour de la neuvaine", "quand": {"autour": {"ancre": {"rang": 1, "jour_semaine": 5}, "de": -8, "a": -8}}},
+          {"editorial": "### Troisième jour de la neuvaine", "quand": {"autour": {"ancre": {"rang": 1, "jour_semaine": 5}, "de": -7, "a": -7}}},
+          {"editorial": "### Quatrième jour de la neuvaine", "quand": {"autour": {"ancre": {"rang": 1, "jour_semaine": 5}, "de": -6, "a": -6}}},
+          {"editorial": "### Cinquième jour de la neuvaine", "quand": {"autour": {"ancre": {"rang": 1, "jour_semaine": 5}, "de": -5, "a": -5}}},
+          {"editorial": "### Sixième jour de la neuvaine", "quand": {"autour": {"ancre": {"rang": 1, "jour_semaine": 5}, "de": -4, "a": -4}}},
+          {"editorial": "### Septième jour de la neuvaine", "quand": {"autour": {"ancre": {"rang": 1, "jour_semaine": 5}, "de": -3, "a": -3}}},
+          {"editorial": "### Huitième jour de la neuvaine", "quand": {"autour": {"ancre": {"rang": 1, "jour_semaine": 5}, "de": -2, "a": -2}}},
+          {"editorial": "### Neuvième jour de la neuvaine, veille du premier vendredi", "quand": {"autour": {"ancre": {"rang": 1, "jour_semaine": 5}, "de": -1, "a": -1}}},
+          {"texte": "breviaire-sc:neuvaine", "extrait": {"section": "## Prières de la neuvaine"}},
+          {"editorial": "### Pour terminer la neuvaine", "quand": {"autour": {"ancre": {"rang": 1, "jour_semaine": 5}, "de": -1, "a": -1}}},
+          {"texte": "breviaire-sc:exercice-messe", "extrait": {"section": "## ∗ Amende honorable au Sacré-Cœur", "niveau": 1}, "quand": {"autour": {"ancre": {"rang": 1, "jour_semaine": 5}, "de": -1, "a": -1}}},
+          {"texte": "breviaire-sc:exercice-messe", "extrait": {"section": "## ∗ Consécration au Sacré-Cœur de Jésus", "niveau": 1}, "quand": {"autour": {"ancre": {"rang": 1, "jour_semaine": 5}, "de": -1, "a": -1}}}
+        ]
+      }
+    },
+    {
+      "id": "prog:neuvaine-reparation-sacre-coeur",
+      "titre": "Neuvaine de réparation au Sacré-Cœur (du 1er au 9 du mois)",
+      "motif": {"fins": ["reparation"], "objets": ["sacre-coeur", "eucharistie"], "note": "du 1er au 9 de chaque mois, offrir chaque jour en réparation des outrages faits au Sacrement de l'Eucharistie (Beringer, n° 671)"},
+      "revision": 1,
+      "quand": {"autour": {"ancre": {"jour": 1}, "de": 0, "a": 8}},
+      "source": "Demande de l'utilisateur du 26 nov. (toutes les dévotions à jours comptés des manuels) : Beringer 1925, n° 671, offrande à dire chacun des neuf jours, placée à la fin de la prière du matin",
+      "insertions": [
+        {
+          "hote": "prog:priere-du-matin",
+          "point": "fin",
+          "sections": [
+            {"editorial": "## Neuvaine de réparation au Sacré-Cœur (du 1er au 9 du mois)"},
+            {"texte": "beringer:neuvaine-reparation-sacre-coeur"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prog:neuvaine-sainte-face",
+      "titre": "Neuvaine en l'honneur de la sainte Face",
+      "motif": {"fins": ["reparation", "adoration"], "objets": ["sainte-face"], "note": "neuf méditations de l'abbé Janvier (1895), avant la fête principale de l'Archiconfrérie de la Sainte-Face, saint Pierre (29 juin)"},
+      "revision": 1,
+      "quand": {"dates": ["06-20", "06-21", "06-22", "06-23", "06-24", "06-25", "06-26", "06-27", "06-28"]},
+      "source": "Demande de l'utilisateur du 26 nov. : neuvaine de Janvier, Manuel de l'Archiconfrérie de la Sainte-Face, 1895, p. 112-142, sans date dans le livre ; placée avant la fête principale de l'Archiconfrérie (« la fête de saint Pierre », art. V de l'érection de l'Archiconfrérie, p. 65-66)",
+      "page": {
+        "moment": "journee",
+        "ordre": 76,
+        "sections": [
+          {"texte": "janvier:neuvaine-meditations-sainte-face", "extrait": {"de": "Seigneur, je veux rechercher votre Face", "a": "Entrez dans la grotte de Bethléhem"}, "quand": {"dates": ["06-21", "06-22", "06-23", "06-24", "06-25", "06-26", "06-27", "06-28"]}},
+          {"texte": "janvier:neuvaine-meditations-sainte-face", "extrait": {"section": "## Ier jour. La sainte Face à Bethléhem."}, "quand": {"dates": ["06-20"]}},
+          {"texte": "janvier:neuvaine-meditations-sainte-face", "extrait": {"section": "## IIe jour. La sainte Face au milieu des peuples de Judée.", "retirer": ["Seigneur, je veux, etc. *(Voir le Ier jour.)*", "Prières et oraison *(Voir le Ier jour.)*"]}, "quand": {"dates": ["06-21"]}},
+          {"texte": "janvier:neuvaine-meditations-sainte-face", "extrait": {"section": "## IIIe jour. La sainte Face au Thabor.", "retirer": ["Seigneur, je veux, etc. *(Voir le Ier jour.)*", "Prières et oraison *(Voir le Ier jour.)*"]}, "quand": {"dates": ["06-22"]}},
+          {"texte": "janvier:neuvaine-meditations-sainte-face", "extrait": {"section": "## IVe jour. La sainte Face au jardin des Oliviers.", "retirer": ["Seigneur, je veux, etc. *(Voir le Ier jour.)*", "Prières et oraison *(Voir le Ier jour.)*"]}, "quand": {"dates": ["06-23"]}},
+          {"texte": "janvier:neuvaine-meditations-sainte-face", "extrait": {"section": "## Ve jour. La sainte Face dans la cour de Caïphe.", "retirer": ["Seigneur, je veux, etc. *(Voir le Ier jour.)*", "Prières et oraison *(Voir le Ier jour.)*"]}, "quand": {"dates": ["06-24"]}},
+          {"texte": "janvier:neuvaine-meditations-sainte-face", "extrait": {"section": "## VIe jour. La sainte Face au prétoire de Pilate.", "retirer": ["Seigneur, je veux, etc. *(Voir le Ier jour.)*", "Prières et oraison *(Voir le Ier jour.)*"]}, "quand": {"dates": ["06-25"]}},
+          {"texte": "janvier:neuvaine-meditations-sainte-face", "extrait": {"section": "## VIIe jour. La sainte Face sur la route du Calvaire.", "retirer": ["Seigneur, je veux, etc. *(Voir le Ier jour.)*", "Prières et oraison *(Voir le Ier jour.)*"]}, "quand": {"dates": ["06-26"]}},
+          {"texte": "janvier:neuvaine-meditations-sainte-face", "extrait": {"section": "## VIIIe jour. La sainte Face sur la croix.", "retirer": ["Seigneur, je veux, etc. *(Voir le Ier jour.)*", "Prières et oraison *(Voir le Ier jour.)*"]}, "quand": {"dates": ["06-27"]}},
+          {"texte": "janvier:neuvaine-meditations-sainte-face", "extrait": {"section": "## IXe jour. La sainte Face au jour de la Résurrection.", "retirer": ["Seigneur, je veux, etc. *(Voir le Ier jour.)*"]}, "quand": {"dates": ["06-28"]}},
+          {"texte": "janvier:neuvaine-meditations-sainte-face", "extrait": {"section": "### Prières"}, "quand": {"dates": ["06-21", "06-22", "06-23", "06-24", "06-25", "06-26", "06-27"]}}
+        ]
+      }
+    },
+    {
+      "id": "prog:cinq-dimanches-berchmans",
+      "titre": "Cinq dimanches de saint Jean Berchmans",
+      "motif": {"fins": ["demande"], "objets": ["saints"], "note": "les cinq dimanches avant sa fête (13 août), en mémoire des cinq années que le saint passa en religion (Jardin de l'âme, p. 63)"},
+      "revision": 1,
+      "quand": {"jours_semaine": [0], "autour": {"ancre": "08-13", "de": -35, "a": -1}},
+      "source": "Demande de l'utilisateur du 26 nov. : toutes les dévotions à jours comptés, même celles qui en recouvrent une autre (ici les Dix dimanches de saint Ignace) ; Jardin de l'âme, p. 63 (Beringer 1905, n° 294)",
+      "page": {
+        "moment": "journee",
+        "ordre": 75,
+        "sections": [
+          {"editorial": "### Premier dimanche", "quand": {"autour": {"ancre": "08-13", "de": -35, "a": -29}}},
+          {"editorial": "### Deuxième dimanche", "quand": {"autour": {"ancre": "08-13", "de": -28, "a": -22}}},
+          {"editorial": "### Troisième dimanche", "quand": {"autour": {"ancre": "08-13", "de": -21, "a": -15}}},
+          {"editorial": "### Quatrième dimanche", "quand": {"autour": {"ancre": "08-13", "de": -14, "a": -8}}},
+          {"editorial": "### Cinquième et dernier dimanche", "quand": {"autour": {"ancre": "08-13", "de": -7, "a": -1}}},
+          {"texte": "jardin:cinq-dimanches-de-saint-jean-berchmans"}
+        ]
+      }
+    },
+    {
+      "id": "prog:dix-dimanches-stanislas",
+      "titre": "Dix dimanches de saint Stanislas Kostka",
+      "motif": {"fins": ["demande"], "objets": ["saints"], "note": "les dix dimanches avant sa fête (13 novembre) (Jardin de l'âme, p. 66)"},
+      "revision": 1,
+      "quand": {"jours_semaine": [0], "autour": {"ancre": "11-13", "de": -70, "a": -1}},
+      "source": "Demande de l'utilisateur du 26 nov. : toutes les dévotions à jours comptés, même celles qui en recouvrent d'autres (Stigmates de saint François, Sept dimanches de l'Immaculée Conception) ; Jardin de l'âme, p. 66 (Beringer 1905, n° 179)",
+      "page": {
+        "moment": "journee",
+        "ordre": 75,
+        "sections": [
+          {"editorial": "### Premier dimanche", "quand": {"autour": {"ancre": "11-13", "de": -70, "a": -64}}},
+          {"editorial": "### Deuxième dimanche", "quand": {"autour": {"ancre": "11-13", "de": -63, "a": -57}}},
+          {"editorial": "### Troisième dimanche", "quand": {"autour": {"ancre": "11-13", "de": -56, "a": -50}}},
+          {"editorial": "### Quatrième dimanche", "quand": {"autour": {"ancre": "11-13", "de": -49, "a": -43}}},
+          {"editorial": "### Cinquième dimanche", "quand": {"autour": {"ancre": "11-13", "de": -42, "a": -36}}},
+          {"editorial": "### Sixième dimanche", "quand": {"autour": {"ancre": "11-13", "de": -35, "a": -29}}},
+          {"editorial": "### Septième dimanche", "quand": {"autour": {"ancre": "11-13", "de": -28, "a": -22}}},
+          {"editorial": "### Huitième dimanche", "quand": {"autour": {"ancre": "11-13", "de": -21, "a": -15}}},
+          {"editorial": "### Neuvième dimanche", "quand": {"autour": {"ancre": "11-13", "de": -14, "a": -8}}},
+          {"editorial": "### Dixième et dernier dimanche", "quand": {"autour": {"ancre": "11-13", "de": -7, "a": -1}}},
+          {"texte": "jardin:dix-dimanches-de-saint-stanislas-kostka"}
+        ]
+      }
+    },
+    {
       "id": "prog:priere-du-soir",
       "titre": "Prière du soir et examen de conscience",
       "motif": {"fins": ["action-de-graces", "demande", "reparation"], "objets": ["trinite"], "note": "rendre grâces, examiner sa conscience et demander pardon avant la nuit (LISTE_DU_JOUR, Soir)"},

@@ -22,11 +22,23 @@ export interface Quand {
 	office?: string;
 	/** Code du jour dans le temporal (champ `tempora` du calendrier : « Quadp3-2 » = mardi de la Quinquagésime). */
 	code_tempora?: string[];
+	/**
+	 * Jours comptés à partir d'un jour d'ancrage (dévotions à jours comptés) : la date vaut si elle tombe entre
+	 * `ancre + de` et `ancre + a` jours (compris), pour l'une des occurrences de l'ancre. L'ancre est une fête fixe
+	 * (« MM-JJ », chaque année), un jour de chaque mois (`{ jour: 1 }`) ou le `rang`-ième jour de semaine de chaque mois
+	 * (`{ rang: 1, jour_semaine: 5 }` = le premier vendredi). Exemples : neuvaine qui finit la veille du premier
+	 * vendredi = `{ ancre: { rang: 1, jour_semaine: 5 }, de: -9, a: -1 }` ; « les cinq dimanches avant le 13 août » =
+	 * `{ ancre: '08-13', de: -35, a: -1 }` avec `jours_semaine: [0]`.
+	 */
+	autour?: { ancre: string | AncreMensuelle; de: number; a: number };
 	/** Au moins une des conditions. */
 	ou?: Quand[];
 	/** Exception. */
 	sauf?: Quand;
 }
+
+/** Jour d'ancrage qui revient chaque mois : un jour du mois, ou le n-ième jour de semaine (0 = dimanche). */
+export type AncreMensuelle = { jour: number } | { rang: number; jour_semaine: number };
 
 /** Choix d'un texte qui varie. Le résultat est un seul identifiant, ou rien (null). */
 export type Choix =

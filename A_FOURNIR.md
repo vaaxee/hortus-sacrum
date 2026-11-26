@@ -18,6 +18,17 @@ Les points réglés sont gardés pour l'historique. Dernière mise à jour : 26 
 | 7 | Propre de France | **Abandonné.** On reste sur le calendrier romain universel. L'utilisateur ajoutera lui-même ses fêtes dans l'app. | — |
 
 ## Restent ouverts
+- **Neuvaines et dévotions à jours comptés (26 nov.)** — inventaire complet : `docs/audits/NEUVAINES_2026-11-26.md`.
+  **À transcrire sur l'image** (scans repérés) : neuvaines de S. François d'Assise et de sainte Élisabeth (*Notice sur
+  le Tiers-Ordre…*, Québec, 1867, p. 37-60, archive.org `cihm_29653`, PDF p. 43-71 ; OCR médiocre) ; neuvaines, mois
+  et prières des premiers dimanches et des mercredis du *Manuel de la Confrérie de Saint-Joseph*, Montréal (`cihm_61528`,
+  p. 37-117). **Introuvables au corpus** (Beringer ne donne que la concession, prières au choix) :
+  neuvaine « de la grâce » de S. François Xavier (4-12 mars), neuf mardis et neuvaine à sainte Anne, neuvaines à
+  S. Raphaël et à l'Ange gardien, neuvaine avant la Fête-Dieu, neuvaine pour les âmes du purgatoire (chercher le
+  *Livre d'or des âmes du purgatoire*). Cherché : Beringer 1925, t. I (n° 639-786, texte d'archive.org), corpus
+  `sources.json`, `jardin.json`, recueils, audits des archiconfréries. **À trancher** : indulgence n° 250 de la neuvaine
+  du premier vendredi (double compte avec S. Alphonse du 26 mai au 3 juin 2027) ; date de la neuvaine de la sainte
+  Face ; date des Sept dimanches de S. Camille.
 - **Neuvaine à la très sainte Trinité, prières propres à chaque jour (26 nov.)** : l'indulgence (Ench. 1952, n° 48 ;
   Beringer 1925, n° 639) vaut pour des prières quelconques ; la neuvaine du programme (`prog:neuvaine-trinite`, de la
   vigile de la Pentecôte au dimanche de la Trinité) reprend donc chaque jour les mêmes prières de Beringer (n° 255 a,
