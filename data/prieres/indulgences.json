@@ -1409,6 +1409,19 @@
    "intention": "le matin, à midi et le soir, en action de grâces à la très sainte Trinité pour les dons et privilèges de la sainte Vierge",
    "langue": "latin",
    "traduction": "Gloria Patri de l'usage courant ; notice : Thésaurisons pour le ciel (1941), traduction certifiée fidèle selon le can. 934 § 2 (n° 355)"
+  },
+  "breviaire-sc:neuvaine": {
+   "ref": "Ench. 1952, n° 250",
+   "frequence": "une fois le jour",
+   "partielles": [
+    {
+     "ans": 7,
+     "texte": "7 ans, une fois le jour"
+    }
+   ],
+   "intention": "En l’honneur du Sacré-Cœur, avec le propos de prier ainsi neuf jours de suite.",
+   "note": "Vu sur l'image (Ench. 1952, p. 156-157) : « preces ad divinum Cor Iesu privatim … cum proposito idem per novem dies continuos praestandi », neuvaine faite « tum immediate ante festum … tum alio infra annum tempore ». Plénière aux conditions habituelles, la neuvaine achevée (non comptée). Faite publiquement : 10 ans chaque jour. Le même jour que la neuvaine de S. Alphonse (même concession), comptée une seule fois. Concession pour des prières quelconques : la langue est indifférente.",
+   "langue": "français"
   }
  },
  "sans_compte": {

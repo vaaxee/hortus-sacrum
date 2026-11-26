@@ -51,6 +51,22 @@ describe('indulgences', () => {
 		const une = indulgencesDuJour(jr, () => 0, new Map([[jac, 1]]), IND);
 		expect(enJours(une.gagnees)).toBeGreaterThan(0);
 	});
+	it('n° 250 : la neuvaine du premier vendredi compte, une seule fois le jour où tombe aussi celle de S. Alphonse', () => {
+		const jour = (date: string) => journee(PROGRAMME, { jour: CALENDRIER.find((j) => j.date === date)!, pratiques: PLAN, corps });
+		const sans = { ...IND, fiches: { ...IND.fiches } };
+		delete sans.fiches['breviaire-sc:neuvaine'];
+		const possibles = (date: string, ind: Indulgences) => enJours(indulgencesDuJour(jour(date), () => 0, new Map(), ind).possibles);
+		// 1er février 2027 : la seule neuvaine du premier vendredi → 7 ans de plus
+		expect(jour('2027-02-01').textes.has('breviaire-sc:neuvaine')).toBe(true);
+		expect(possibles('2027-02-01', IND) - possibles('2027-02-01', sans)).toBe(7 * 365);
+		// 28 mai 2027 : les deux neuvaines au Sacré-Cœur, une seule concession
+		const j = jour('2027-05-28');
+		expect(j.textes.has('breviaire-sc:neuvaine') && j.textes.has('liguori:neuvaine-sacre-coeur')).toBe(true);
+		expect(possibles('2027-05-28', IND)).toBe(possibles('2027-05-28', sans));
+		const sansLiguori = { ...IND, fiches: { ...IND.fiches } };
+		delete sansLiguori.fiches['liguori:neuvaine-sacre-coeur'];
+		expect(possibles('2027-05-28', IND)).toBe(possibles('2027-05-28', sansLiguori));
+	});
 	it('tout coché : gagné = possible', () => {
 		const tout = indulgencesDuJour(jr, (l) => l.heures?.length ?? 1, new Map(), IND);
 		expect(tout.gagnees).toEqual(tout.possibles);
