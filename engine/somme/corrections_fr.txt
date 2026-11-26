@@ -608,3 +608,613 @@
 106	9	bord de l'honnête, ensuite de l'agréable, puis enfin de l'utile.
 91	0	¶ 3° Le bon admet le plus et le moins par les actes accidentels, comme
 103	14	5° Quand on dit que la lumière n'a ni le nombre, ni le poids, ni la
+# --- Iª q. 6-13 (suite, 22 nov.) : même méthode ; « § » en tête de ligne : objection ou réponse dont Lachat n'imprime pas le numéro
+107	1	De la bonté de Dieu.
+107	3	Quatre questions se présentent sur ce sujet : 1° Dieu est-il bon? 2° Dieu
+107	4	est-il souverain bien? 3° Dieu seul est-il bon par essence? 4° Toutes les
+107	8	Il paroît que la bonté ne convient pas à Dieu. 1° La nature du bon
+107	12	§Le bien est ce que toutes les créatures appètent. Or toutes les créatures
+107	14	n'appète que ce que l'on connoît. Donc la bonté ne convient pas à Dieu.
+107	15	Mais l'Ecriture sainte dit, Thren., III, 25 : « Le Seigneur est bon pour
+107	17	(Conclusion. — Puisque Dieu est la cause efficiente de tous les êtres et
+108	0	c'est ce qu'on appète (1). Or les êtres appètent, quoi? leurs perfections.
+108	6	Aussi l'Aréopagite lui attribue-t il la bonté comme à la première cause,
+109	0	2° En appétant leur propre perfection, les créatures appètent Dieu
+109	1	même; car toutes les perfections sont une certaine ressemblance de l'être
+109	2	divin, comme on l'a vu précédemment. Or, parmi les créatures qui
+109	3	tendent vers Dieu, les unes le connoissent lui-même, ce sont les créa-
+109	8	ARTICLE II.
+109	10	Il paroît que Dieu n'est pas le souverain bien. 1° Le souverain bien
+109	15	2° Le bon est ce que tous les êtres appètent, suivant Aristote. Or ce
+109	17	de tout; donc il n'y a rien de bon que Dieu seul, comme le dit l'Évan-
+109	18	géliste, Luc, XVIII, 19 : « Dieu seul est bon. » Mais souverainement
+109	19	bon, expression relative, n'indique que plusieurs choses bonnes, comme
+110	0	3° Souverainement emporte comparaison. Or les choses qui ne sont
+110	2	dira, par exemple, que la douceur est plus grande ou plus petite que la
+110	5	Mais saint Augustin dit, De la Trin., I. 2 : « Dieu en trois personnes
+110	7	(Conclusion. — Puisque le bien est en Dieu comme dans la cause non
+110	9	le bien de la manière la plus excellente et qu'il est souverainement bon.)
+110	10	Il faut dire ceci : Dieu est le souverain bien, non-seulement d'une
+110	13	parce que toutes les perfections désirées par les créatures découlent de
+110	15	d'un agent univoque, cela résulte de ce qui précède, mais comme d'un
+110	23	Je réponds aux arguments : 1° Le souverain bien ajoute au bien pur
+111	1	les relations qu'on établit entre le ciel et la terre existent réellement dans
+111	8	2° Lorsqu'on dit que le bon est ce que tous les êtres appètent, on ne veut
+111	9	pas dire que toutes les sortes de bien sont appétées par tous les êtres;
+111	13	3° Les choses qui ne sont pas du même genre parce qu'elles appar-
+111	20	ARTICLE III.
+111	20+	Dieu seul est-il-bon par essence?
+111	21	Il paroît que Dieu n'est pas seul bon par essence. 1° Comme nous
+112	0	avec l'être (1). Or tout être est un par essence; donc tout être est bon
+112	2	2° Le bon est ce qu'on appète, nous l'avons dit souvent; or tout
+112	8	pas leur essence. Mais cette dernière bonté devra être bonne elle-même,
+112	10	bonne, celle ci de même, et jusqu'à l'infini; nous serons donc obligés de
+112	13	Mais Boëce dit, De la Trin., III : « Hors de Dieu, tous les êtres
+113	1	(Conclusion. — Puisque Dieu seul possède la perfection absolue, qu'il
+113	2	trouve son essence dans son être, qu'il a essentiellement tout ce qu'il
+113	5	Il faut dire ceci : Dieu seul est bon par essence. Tout être est bon selon
+113	6	ce qu'il est parfait. Or une chose peut être parfaite de trois manières :
+113	10	perfection du feu, par exemple, consiste dans l'être qui lui donne sa forme
+113	12	et d'autres propriétés semblables; la troisième enfin, dans l'accomplisse-
+113	18	lui-même la fin de toutes choses. Ainsi Dieu seul a dans son essence
+113	20	Je réponds aux arguments : 1° L'unité n'implique pas l'idée de per-
+113	21	
+114	0	fection; elle énonce seulement l'indivision qui appartient à l'essence
+114	2	choses simples le sont par l'acte et par la puissance. Les choses sont donc
+114	4	comme nous le prouvions tout à l'heure.
+114	5	2° Les choses créées sont bonnes par leur être; mais leur être n'est pas
+114	7	3° La bonté des choses créées n'est pas leur essence, mais quelque
+114	15	Toutes les choses sont-elles bonnes de la bonté divine?
+114	17	Il paroît que toutes les choses sont bonnes de la bonté divine. 1° Saint
+114	18	Augustin dit, De la Trin., VIII, 3 : « Ecartez les différents biens pour
+114	20	que Dieu est bon non par tel ou tel bien, mais de tout bien. » Donc
+114	22	2° Tous les êtres, comme le dit Boëce, sont bons parce qu'ils ont
+115	5	(Conclusion. — Toutes les choses sont bonnes de la bonté divine extrin-
+115	8	Il faut dire ceci : Les choses relatives peuvent recevoir leurs dénomi-
+115	10	çoivent du lieu, les choses mesurées de la mesure. Quant aux choses
+116	2	minations de l'être et du un par soi, qui se communiquent à tout ce
+116	3	qui a l'existence et l'unité. Or l'être et le un par soi formoient, pour
+117	6	Ces observations renferment la réponse aux arguments.
+117	7	QUESTION VII.
+117	12	Quatre questions se présentent sur le premier point : 1° Dieu est-il
+117	13	infini? 2° Y a-t-il autre chose que Dieu qui soit infini par essence? 3° Peut-
+117	14	il y avoir un infini en étendue? 4° Peut-il en exister un en multiplicité?
+118	2	Il paroît que Dieu n'est pas infini. 1° Tout infini est imparfait, parce
+118	3	qu'il implique l'idée de matière et de parties, comme le dit Aristote dans
+118	6	2° Le fini et l'infini renferment, d'après le même philosophe, la quan-
+118	7	tité. Or Dieu ne renferme pas la quantité puisqu'il n'est pas un corps,
+118	9	3° Ce qui est ici et n'est pas là est fini quant au lieu; donc ce qui est
+118	10	ceci et n'est pas cela est fini quant à la substance. Or Dieu est ceci et n'est
+118	13	Mais saint Jean Damascène dit, De la foi orth., I, 4 : « Dieu est infini,
+118	15	(Conclusion. — Comme Dieu n'a pas l'être dans un sujet, mais qu'il
+118	17	Il faut dire ceci : Tous les anciens philosophes attribuoient, comme le
+118	18	remarque Aristote, l'infinité au premier principe, car la raison leur
+119	17	que l'être divin n'est pas un être reçu dans un sujet, mais l'être sub-
+119	20	Je réponds aux arguments : 1° Ce qui précède résout la première
+119	22	2° Le terme ou la fin de la quantité est comme sa forme; car la figure
+120	2	ce n'est pas, comme on vient de le voir, cette sorte d'infini qu'on attribue
+120	4	¶3° Par cela seul que l'être divin subsiste dans lui-même et non dans
+120	6	Si la blancheur subsistoit par elle-même, elle seroit toute autre chose que
+120	8	ARTICLE II.
+120	10	Il paroît qu'autre chose que Dieu peut être infini par essence. 1° L'effi-
+120	12	Dieu est infinie, son efficacité l'est aussi; donc il peut produire un effet
+120	15	2° Tout ce qui a une force infinie a une essence infinie. Or l'intelligence
+120	16	créée a une force infinie, puisqu'elle embrasse l'universel, qui peut s'éten-
+120	17	dre à une infinité de choses. Donc l'intelligence créée a une essence infinie.
+120	18	3° La matière première est autre chose que Dieu, comme nous l'avons
+120	21	Mais tout ce qui est infini ne peut venir d'un principe, ainsi que le dit
+121	0	Aristote. Or tout ce qui n'est pas Dieu vient de Dieu comme du premier
+121	1	principe. Donc il n'y a que Dieu qui soit infini.
+121	2	(Conclusion. — Dieu seul est infini par essence et absolument; les
+121	4	Il faut dire ceci : Il peut y avoir hors de Dieu des infinis relatifs; mais
+121	6	fini matériel, il est incontestable que tout être en acte a une forme et
+121	12	l'infini. Quant à l'infini formel, on voit aussi clairement que les êtres
+121	13	mêlés de forme et de matière sont finis absolument et qu'ils ne sont
+121	15	dans la matière, mais en elles-mêmes, comme plusieurs le pensent des
+121	20	absolument infini.
+121	21	Je réponds aux arguments : 2° Un être créé n'est pas son être à soi-
+121	22	même, car être son être à soi-même c'est n'être pas créé. Donc il est im-
+121	24	gré sa toute-puissance, créer une chose qui ne fût pas créée, car cela im-
+122	2	2° Si l'intelligence embrasse en quelque sorte l'infini, c'est qu'elle est
+122	6	3° La matière première n'existe point par elle-même, substantielle-
+122	8	seulement un être en puissance, si bien qu'elle a été concréée plutôt que
+122	9	créée (1). Et quand on la considère comme être potentiel, encore n'est-
+122	11	peut recevoir que des formes matérielles.
+122	14	Il paroît qu'il peut y avoir un infini actuel en étendue. 1° L'erreur
+122	19	un infini en étendue.
+122	20	2° Une chose peut renfermer ce qui n'est pas contraire à l'idée qui la
+123	0	faut que la quantité varie entre le fini et l'infini. Donc l'étendue peut
+123	1	renfermer l'infini.
+123	2	3° L'étendue est divisible à l'infini; car le continu, comme le définit
+123	3	Aristote, n'est autre chose que l'infini divisible. Mais les contraires
+123	5	la division, et l'accroissement à la diminution. Si donc l'étendue peut se
+123	6	diviser à l'infini, elle peut s'augmenter de même; donc il peut exister
+123	7	une grandeur infinie.
+123	10	Or le temps et le mouvement peuvent être infinis, puisque tous les points
+123	14	sions, n'est autre chose que le terme et la limite d'un corps fini. On peut
+123	17	(Conclusion. — Aucun corps, soit physique, soit mathématique, ne
+123	20	de l'être en étendue. Etablissez donc qu'un corps, par exemple l'air ou le
+124	4	ment, sous le rapport de la quantité abstraite; physiquement, dans l'idée
+124	8	comme la forme substantielle entraîne des accessoires de la même nature,
+124	12	le mouvement. Tout corps physique a un mouvement physique; mais un
+124	13	corps infini, quel mouvement pourroit-il avoir? D'abord pas le mouvement
+124	24	Maintenant, pour le corps mathématique, nous ne saurions le concevoir
+125	1	mathématique aura une figure, donc il sera fini, car la figure est renfer-
+125	3	Je réponds aux arguments : 1° Le géomètre ne suppose pas, car il n'en
+125	7	2° L'infini n'est pas contraire à l'idée de l'étendue en général, cela est
+125	11	genre; donc il n'y a pas d'étendue infinie, puisque ses espèces ne le sont pas.
+125	12	3° L'infini que forme la quantité trouve son principe dans la matière.
+126	0	§Le mouvement et le temps ne sont pas en acte tout entiers, mais en
+127	0	ARTICLE IV.
+127	0+	Peut-il y avoir un infini actuel en multiplicité?
+127	1	Il paroît qu'il peut y avoir une multiplicité actuellement infinie. 1° Ce
+127	5	2° Un individu de chaque espèce peut être en acte; or les espèces de
+127	7	3° Les choses qui ne sont point opposées ne s'excluent pas les unes les
+127	14	(Conclusion. — Une multitude infinie ne peut être en acte ni par soi
+127	15	ni par accident, mais elle peut être en puissance.)
+128	17	philosophes, une multitude infinie par accident.
+128	18	Mais la chose n'est pas ainsi. Toute multitude est dans quelque espèce
+129	3	que nous déduisions à l'instant même. Mais si la multiplicité ne peut
+129	4	être infinie en acte, elle peut l'être en puissance. Plus on divise un corps,
+129	8	Je réponds aux arguments : 1° Tout ce qui est en puissance passe à
+129	13	2° Les espèces de figures tiennent leur infinité du nombre, car elles
+129	18	3° Sans doute on peut poser successivement les choses qui ne sont point
+129	19	opposées les unes aux autres, mais l'infinité est contraire à chaque espèce de
+130	0	QUESTION VIII.
+130	0+	De l'existence de Dieu dans les choses.
+130	4	chose? 2° Dieu est-il partout? 3° Dieu est-il en tout lieu par son essence,
+130	10	parole du Psalmiste, CXII, 4 : « Le Seigneur est au-dessus de toutes les
+130	12	2° Ce qui est dans une chose est contenu par elle? Or Dieu n'est pas
+130	17	3° Plus un agent a de force, plus son action s'étend au loin. Or Dieu
+130	19	
+130	20	
+130	21	
+131	0	choses les plus éloignées, donc il n'a pas besoin d'être en toute chose.
+131	2	« Car il n'y a pas de rapport entre la lumière et les ténèbres, » comme
+131	3	le dit saint Paul, II. Cor. VI, 14. Donc Dieu n'est pas dans tout ce qui
+131	4	existe.
+131	6	selon le mot d'Isaïe, XXVI, 12 : « Vous faites en nous toutes nos œuvres,
+131	7	Seigneur (1). »
+131	8	(Conclusion. — Puisque Dieu est l'être même par essence, il est inti-
+131	15	et le moteur doivent exister en même temps. Or, puisque Dieu est l'être
+132	1	tant que la terre reste éclairée. Aussi longtemps donc qu'une chose existe,
+132	9	2° Bien que les choses corporelles soient dans une autre chose comme
+132	12	le corps; et voilà pourquoi l'on dit, par analogie avec les corps, que tout
+132	14	3° Quelle que soit la force d'un agent, son action ne peut s'étendre à
+132	20	fections.
+132	21	4° Il y a deux choses à considérer dans les démons : la nature qui est
+133	2	Il paroît que Dieu n'est pas partout. 1° Etre partout, c'est être dans
+133	16	Mais le Seigneur dit dans Jérémie, XXIII, 24 : « Est-ce que je ne rem-
+133	18	(Conclusion. — Dieu est dans tous les lieux, parce qu'il leur donne la vertu
+134	5	là précisément ce qu'on appelle être partout. De même qu'il est dans
+134	17	2° Il y a deux sortes d'indivisible. Le premier est le terme du continu,
+135	5	3° Le tout résulte des parties. Or il existe deux sortes de parties dans
+135	21	totalité n'existe, soit par elle-même, soit par accident, que sous l'idée
+136	4	1° Etre dans une chose par son essence, c'est y être essentiellement. Or
+136	8	2° Etre dans une chose par sa présence, c'est n'en être pas absent. Or
+137	0	Cantiques, V : « Dieu est d'une manière générale dans toutes les choses
+137	3	(Conclusion. — Dieu est en tout par sa puissance, parce que tout lui
+137	9	tant que la chose connue est dans celui qui la connoît et la chose désirée
+137	10	dans celui qui la désire (1). Or Dieu est de cette dernière manière dans
+137	20	présence, et c'est encore ainsi qu'on s'exprime, dans tout ce qu'elle a
+137	21	sous ses regards et dans sa dépendance, par exemple dans tout ce que
+138	0	tements. Enfin un être est par essence dans un lieu, toujours d'après
+138	11	monde, disant avec l'impie dans Job, XXII, 14 : « Il se promène sur la
+138	17	ceux-ci se seroient chargés d'achever son ouvrage. Il falloit dire contre
+138	23	Je réponds aux arguments : 1° Quand on dit que Dieu est en tout par
+139	0	par sa propre essence; car il est présent à tout substantiellement comme
+139	2	2° On l'a vu tout à l'heure : dès qu'une chose est à la portée de notre
+139	4	éloignée de nous substantiellement. Il falloit donc exprimer les deux
+139	7	3° La science et la volonté sont telles de leur nature, que la chose sue
+139	10	Dieu que Dieu dans les choses. La nature de la puissance, au contraire,
+139	12	que l'agent qui la met en action s'applique à un objet extérieur, et voilà
+139	13	pourquoi l'on peut dire qu'il est dans une chose par sa puissance.
+139	14	4° De toutes les perfections ajoutées à la substance, la grâce seule fait
+139	16	quent la grâce seule fait habiter Dieu spécialement dans les âmes. Au
+139	19	union plus tard, dans la IIIe partie, quest. II.
+139	22	Il paroît que le propre de Dieu n'est pas d'être partout. 1° L'universel
+139	24	matière première, puisqu'elle se trouve dans tous les corps. Or ni l'une
+140	2	2° Le nombre est dans toutes les choses disposées selon le nombre; or
+140	8	4° S'il existoit un corps infini, il n'y auroit pas de lieu hors de ce
+140	10	5° L'âme, comme le dit saint Augustin, est tout entière et dans tout
+140	18	Mais saint Ambroise dit, De l'Esprit-Saint, 1, 7 : « Qui oseroit donner
+140	21	(Conclusion. — Dieu seul peut être en tout lieu primitivement, c'est-
+140	23	Il faut dire ceci : Dieu seul peut être en tout lieu primitivement et
+141	6	de millet est partout, il suffiroit de supposer qu'il n'y a pas d'autres corps,
+141	14	puisse concevoir, il s'y trouve nécessairement, non par ses parties, mais
+141	18	2° Comme le nombre appartient à la catégorie des accidents (2), il est
+142	4	3° L'univers, considéré comme corps, comme ensemble organique,
+142	8	4° Supposez un corps infini, il sera partout, mais selon ses parties.
+142	9	5° S'il n'y avoit qu'un être animé dans le monde, son âme seroit par-
+142	11	6° Quand on dit que l'âme voit quelque part, cela peut signifier deux
+142	14	point où elle se trouve. Dans le premier sens, quand l'âme voit le ciel,
+142	15	il est vrai qu'elle voit dans le ciel et qu'elle y sent par cela même; mais
+112	6	¶3° Toute chose est bonne par sa bonté. Si donc il y a des choses qui ne
+119	0	trompoient sur la nature de ce principe, ils durent se tromper aussi sur son
+133	12	3° Quand un être est tout entier quelque part, rien de lui n'est hors
+143	1	
+143	5	Deux questions se présentent sur l'immutabilité : 1° Dieu est-il abso-
+143	6	lument immuable? 2° Dieu est-il seul immuable?
+143	7	ARTICLE I.
+143	9	Il paroît que Dieu n'est pas absolument immuable. 1° Tout ce qui
+143	14	2° On lit dans le Livre de la Sagesse, VII, 24 : La sagesse est plus
+144	3	dit, Epît., IV, 8 : « Approchez-vous de Dieu, et il s'approchera de vous. »
+144	6	point (2). »
+144	7	(Conclusion. — Dieu étant le premier être, souverainement simple,
+144	9	Il faut dire ceci : L'immutabilité de Dieu dérive, comme une consé-
+145	0	Dieu, et que ce premier être est nécessairement un acte pur, sans mé-
+145	1	lange de potentialité, parce que le potentiel est postérieur à l'acte. Or tout
+145	2	ce qui change est en puissance sous ce rapport. Donc Dieu ne peut changer.
+145	10	changement, il devient ce qu'il n'étoit pas. Or, comme Dieu est infini,
+145	15	Je réponds aux arguments : 1° Saint Augustin emprunte, dans l'en-
+145	17	moteur se meut lui-même, il est vrai; mais il entendoit par mouvement
+145	22	2° La Sagesse est mobile ou changeante dans les images qui la repré-
+146	8	sens, Hier. cél., I, que « toute illumination divine nous vient, par un
+146	10	3° Les expressions rapportées dans l'argument sont figurées. Comme on
+146	15	ARTICLE II.
+146	15+	Dieu seul est-il immuable?
+146	16	Il paroît que le propre de Dieu n'est pas d'être immuable. 1° Aristote
+146	21	
+147	0	2° Rien ne se meut que pour parvenir à une fin; donc ce qui est par-
+147	1	venu à sa fin dernière ne se meut point. Or certaines créatures, comme
+147	2	les bienheureux dans le ciel, sont parvenus à leur dernière fin. Donc il
+147	3	y a des créatures immobiles, et par conséquent immuables.
+147	5	dit, au VIe livre des Principes, que les formes consistent dans des essences
+147	7	Mais saint Augustin dit, De la nature du bien, I : « Dieu est im-
+147	10	(Conclusion. — Dieu est immuable, mais tous les autres êtres sont
+147	14	Il faut dire ceci : Dieu est absolument immuable; mais toutes les créa-
+147	22	même il dépend de sa volonté de les conserver ou non dans l'être; car il ne
+148	5	Dieu; car de même, qu'il pouvoit les appeler du néant à l'être, de même
+148	9	active, et l'autre passive : il ne peut être ici question que de la dernière.
+149	0	porter la perte de la forme sans périr, ils ne sont point sujets au chan-
+149	1	gement dans leur être substantiel (1); mais rien ne les empêche de
+150	1	même manière que l'acte renferme la puissance; comme elles ne peuvent
+150	2	en conséquence perdre l'existence, puisque rien ne périt que par la priva-
+150	6	variation. Néanmoins les substances immatérielles sont muables sous
+151	13	Je réponds aux arguments : 1° Les paroles d'Aristote doivent s'entendre
+151	17	2° Les anges et les bienheureux dans le ciel sont immuables, et dans
+152	3	Six questions se présentent ici : 1° Qu'est-ce que l'éternité? 2° Dieu
+152	4	est-il éternel? 3° Dieu seul est-il éternel? 4° L'éternité diffère-t-elle de la
+152	7	ARTICLE I.
+152	11	Cons., III, 2 : « La possession entière, simultanée et parfaite d'une vie
+152	12	sans terme. » 1° Sans terme est une expression négative. Or la négation
+152	15	l'éternité.
+152	16	2° L'éternité marque une certaine durée. Or la durée se rapporte à
+152	19	3° Entier se dit de ce qui a des parties. Or l'éternité n'a pas de parties,
+144	0	mobile que tout mouvement (1). Or Dieu est la sagesse même : donc Dieu
+145	5	quant à la substance et passe relativement à la couleur. De cela quelle
+145	7	changent. Mais nous avons prouvé que Dieu n'a rien de composé, qu'il
+150	5	ne se succèdent point par la génération et qu'elles ne souffrent aucune
+153	3	plusieurs temps. Or il y a plusieurs jours et plusieurs temps dans l'éter-
+153	4	nité, car il est écrit, Mich., V, 2 : « Sa sortie est du commencement et des
+153	5	jours de l'éternité; » et ailleurs, Rom., XVI, 25 : « D'après la révélation
+153	6	du mystère qui est resté caché dans les temps éternels. » Donc l'éternité
+153	12	6° La possession ne peut se rapporter à la durée; or l'éternité est une
+153	14	(Conclusion. — L'éternité est la possession entière, simultanée et par-
+153	17	simples par les choses composées, de même nous arrivons à la connois-
+154	0	comptons les points qui séparent ces deux termes, nous concevons le
+154	1	passé et le futur, c'est-à-dire le temps. Mais ce qui n'est pas sujet au
+155	0	passé ni avenir, de ce qui est hors de tout mouvement. On dit d'autre
+155	1	part, et le Philosophe l'enseigne dans la Physique, que le temps est la
+156	2	notes qui constituent l'idée de l'éternité.
+156	3	Je réponds aux arguments : 1° On a coutume de définir les choses
+156	6	sortes de choses; mais c'est que notre esprit, saisissant d'abord les êtres
+156	14	3° La possession de l'éternité est entière, non pas qu'elle ait des parties,
+156	16	4° De même que les Livres saints appliquent figurément à Dieu, malgré
+157	3	6° Posséder veut dire avoir d'une manière irrévocable. jouir d'une
+157	4	chose en toute sécurité (2). Le mot possession exprime donc très-bien
+157	5	l'immutabilité et l'indéfectibilité de ce qui est éternel.
+157	6	ARTICLE II.
+157	7	Dieu est-il éternel?
+157	8	Il paroît que Dieu n'est pas éternel. 1° Rien de ce qui est fait ne peut
+157	9	être attribué à Dieu. Or l'éternité est faite; car Boëce dit, Cons,, V :
+157	10	« L'instant mobile fait le temps, et l'instant immobile l'éternité; » et
+157	11	saint Augustin ajoute, l. LXXXIII Q. 23 : « Dieu est l'auteur de l'éter-
+157	12	nité. » Donc on ne peut attribuer l'éternité à Dieu.
+157	13	2° Ce qui est avant ou après l'éternité, n'est pas éternel. Or Dieu est
+157	15	il est aussi après l'éternité, car l'Exode dit XXV, 18 : « Le Seigneur
+157	16	régnera dans l'éternité et par delà. » Donc Dieu n'est pas éternel.
+157	17	5° L'éternité est une mesure. Or Dieu ne peut être mesuré; donc il n'est
+157	19	4° Il n'y a dans l'éternité ni présent, ni passé, ni futur, puisqu'elle
+158	2	pas éternel.
+158	5	(Conclusion. — Dieu étant immuable, est non-seulement éternel, mais
+158	7	Il faut dire ceci : L'idée de l'éternité découle de l'immutabilité, de
+159	3	l'éternité. Pour l'Exode, s'il dit que « Dieu règne dans l'éternité et par
+159	18	4° Si les diverses parties du temps sont attribuées à Dieu dans l'Ecri-
+159	20	et du futur, mais c'est que son éternité renferme tous les temps.
+160	2	Il paroît que le propre de Dieu n'est pas d'être éternel. 1° Daniel
+160	3	dit, XII, 3 : « Ceux qui enseignent la justice à plusieurs, seront comme
+160	7	2° On lit dans saint Matthieu, XXV, 41 : « Allez, maudits, au feu
+160	8	éternel. » Donc Dieu seul n'est pas éternel.
+160	9	3° Tout ce qui est nécessaire est éternel. Or il y a beaucoup de choses
+160	11	en découlent immédiatement. Donc Dieu seul n'est pas éternel
+160	12	¶Mais saint Jérôme écrit à Damase, Lett. LVII : « Dieu seul n'a pas
+160	15	(Conclusion. — Dieu seul étant véritablement et proprement immuable,
+161	0	qu'il leur a donné l'immutabilité. Or quelques-unes ont reçu ce dernier
+161	2	l'Ecclésiastique, I, 4, écrit de la terre qu'elle demeure éternellement.
+161	8	tagnes, et que le Deutéronome, XXXIII, 15, la prête aux collines. D'autres
+161	13	Augustin, De la Trin., XV, 16, détourner leurs pensées de l'objet de la
+161	16	éternelle est de vous connoître, vous le seul Dieu véritable. »
+161	17	Je réponds aux arguments : 1° Si le Prophète parle de l'éternité au
+161	18	nombre pluriel, c'est qu'il y a beaucoup d'élus qui participent à l'éternié
+161	20	2° Le feu de l'enfer est dit éternel, parce qu'il n'aura pas de fin. Ce-
+161	24	mais c'est plutôt le temps (1); et voilà pourquoi nous lisons dans les
+161	25	Psaumes, LXXX, 16 : « Leur temps s'étendra dans les siècles.
+161	26	
+161	27	
+162	0	3° Les principes nécessaires sont des modes de la vérité. Or la vérité
+162	7	L'éternité diffère-telle du temps?
+162	8	Il paroît que l'éternité n'est autre chose que le temps. 1° Deux mesures
+162	17	2° L'instant reste le même, suivant Aristote, dans tous les temps.
+162	20	tiellement du temps; donc l'éternité n'en diffère pas non plus substan-
+162	22	3° Comme la mesure du premier mouvement forme, toujours selon le
+163	8	(Conclusion. — L'éternité diffère du temps en ce qu'elle est simultanée
+164	7	que nous avons signalée dès le principe : c'est que l'éternité est simul-
+164	8	tanée, et le temps successif.
+164	9	Je réponds aux arguments : 1° Les mesures formées par le temps et
+164	13	2° L'instant reste toujours le même dans son sujet, mais il varie dans
+164	18	cette alternation qui forme le mouvement et le temps. Ainsi l'instant
+164	19	varie dans ses rapports; mais l'éternité ne varie d'aucune manière, pas
+165	0	seulement ce qui change effectivement, mais ce qui peut changer : il
+165	1	mesure non-seulement le mouvement, mais le repos; car le repos appar-
+165	3	ARTICLE V.
+165	3+	La perpétuité diffère-t-elle du temps?
+165	4	Il paroît que la perpétuité ne diffère pas du temps. 1° Saint Augustin
+165	5	dit, In Gen., VIII, 20, que» Dieu meut la créature spirituelle dans le
+165	6	temps. » Or la perpétuité est la mesure des substances spirituelles. Donc
+165	10	nous l'avons vu. Or la perpétuité n'est pas l'éternité; car l'Ecclésiastique
+165	11	dit, I, 1, que la sagesse éternelle a précédé cette mesure de la durée.
+165	13	l'antériorité, et la postériorité, donc elle est le temps.
+165	14	3° Si la perpétuité n'a ni antériorité, ni postériorité, il s'ensuit qu'il
+166	2	4° Comme la durée des choses perpétuelles est infinie, à parte post,
+166	3	il s'ensuit qu'une chose créée peut être infinie en acte. Or cette consé-
+166	5	Mais Boëce dit, Cons., III, 9 : « C'est vous, Seigneur, qui faites sortir
+166	7	(Conclusion. — La perpétuité est le milieu entre l'éternité et le temps,
+167	20	Il faut donc dire : Comme l'éternité est la mesure de l'être permanent,
+168	4	leur être substantiel et variables quant au lieu (1); tels sont aussi les
+168	13	Je réponds aux arguments : 1° Les créatures spirituelles sont mesurées
+168	19	2° Quoique la perpétuité existe tout entière simultanément, elle n'est
+168	21	3° L'ange ne connoît pas la distinction du passé et du futur dans son
+168	22	être même, il ne la connoît que dans les changements accidentels qu'il
+169	0	existence en la comparant aux diverses parties du temps. Et cette propo-
+169	7	4° La durée de la perpétuité est infinie, parce qu'elle n'est pas limitée
+169	12	Il paroît qu'il y a plusieurs perpétuités : 1° On lit dans les Livres d'Es-
+169	14	2° Les choses de différents genres ont des mesures différentes. Or,
+169	17	des substances spirituelles, comme les anges. Donc il n'y a pas une seule
+169	19	3° Comme la perpétuité est une espèce de la durée, si les choses n'a-
+169	21	choses perpétuelles n'ont pas une seule durée; car elles reçoivent l'exis-
+170	0	4° Les choses qui ne dépendent pas les unes des autres n'ont pas une
+170	5	autre ange. Donc, etc.
+170	7	temps. Or le temps est un; donc à plus forte raison la perpétuité.
+170	8	(Conclusion. — Il y a plusieurs perpétuités en ce sens qu'il y a plu-
+170	12	Il faut dire ceci : Les docteurs sont partagés sur le point dont il s'agit :
+170	13	les uns tiennent qu'il n'y a qu'une seule perpétuité, les autres pensent
+170	15	miner. Comme nous parvenons à la connoissance des choses spirituelles
+170	20	on le voit dans le Philosophe Ce raisonnement n'est pas satisfaisant. Le
+170	21	nombre n'existe pas abstractivement en lui-même, mais seulement dans
+171	0	concrète, dans les objets, n'est pas toujours le même; tant s'en faut,
+171	11	leur sujet, ne sont pas unes d'une manière absolue, mais relativement.
+171	16	mais ce que l'accident est au sujet, et sous ce rapport il en reçoit l'unité;
+171	20	Cela posé, disons qu'il y a deux opinions sur les substances spirituelles.
+172	2	si l'on admet le premier sentiment, il faut dire qu'il y a plusieurs per-
+172	11	Je réponds aux arguments : 1° Le mot perpétuité (ævum) se prend
+172	19	3° Bien que tous les êtres temporels ne commencent pas simultané-
+172	24	4° Pour qu'une chose puisse en mesurer plusieurs autres, il n'est pas
+164	1	encore : en se plaçant au point de vue de la potentialité, on trouveroit
+173	3	Quatre questions se présentent ici : 1° L'unité ajoute-t-elle quelque chose
+173	4	à l'être? 2° L'unité est-elle opposée à la multiplicité? 3° Dieu est-il un?
+173	5	4° Dieu est-il souverainement un?
+173	6	ARTICLE I.
+173	8	Il paroît que l'unité ajoute quelque chose à l'être. 1° Tout ce qui
+173	13	2° Ce qui divise une entité commune, y ajoute quelque chose. Or
+173	17	chose que le mot un. Or il seroit puéril de dire : « L'être est l'être; »
+173	18	donc on ne pourroit dire non plus, dans l'hypothèse où nous sommes
+173	19	placés : « L'être est un. » Mais cette conséquence est fausse; donc l'unité
+173	21	Mais l'Aréopagite dit, Des Noms div., c. dern. : « Tout ce qui existe
+174	2	(Conclusion. — L'unité n'ajoute à l'être rien de réel, mais seulement
+174	4	Il faut dire ceci : L'unité n'ajoute à l'être aucune réalité; seulement
+174	5	elle en exclut l'idée de division. Un ne signifie pas autre chose qu'être
+174	6	indivisé, de telle sorte qu'être et un s'impliquent réciproquement comme
+174	13	Je réponds aux arguments. 1° Les philosophes, confondant deux choses
+174	20	substance de l'être (car le nombre est une espèce de la quantité), a
+175	1	à l'homme. Cette opinion n'est pas dans le vrai. Les êtres sont uns par
+175	8	2° Rien n'empêche que ce qui est divisé sous un rapport soit indivisé
+175	21	espèce ou dans son principe : cette chose est multiple simplement et
+175	26	c. dern. : « Il n'y a pas de multiplicité qui ne participe à l'unité : les
+176	2	sont unes dans le genre, et les choses multiples dans leurs filiations sont
+176	4	3° Il n'est pas ridicule de dire que l'être est un, parce que l'unité ajoute
+176	6	ARTICLE II.
+176	8	Il paroît que l'unité n'est pas opposée à la multiplicité. 1° Les choses
+176	12	2° L'opposé n'est point formé par son opposé. Or la multiplicité est
+176	14	3° Une chose est opposée à une autre chose, et multiple l'est à peu.
+176	16	4° Si l'unité étoit opposée à la multiplicité, elle y seroit opposée comme
+177	0	(Conclusion. — Un et multiple sont opposés de deux manières : un,
+177	11	Je réponds aux arguments : 1° La privation n'enlève pas tout l'être,
+177	14	sur l'être; mais il n'en est pas ainsi des privations qui affectent les formes
+177	23	dire en puissance, est non-être simplement, c'est-à-dire en acte; ou ce
+178	1	ment, et vice versâ.
+178	3	parties semblables; puis le tout hétérogène, qui est composé de parties
+178	17	3° Multiple se prend de deux manières : dans le sens littéral, pour
+178	21	4° L'unité est opposée à la multiplicité, parce qu'elle exclut la divi-
+179	9	ARTICLE III.
+179	11	Il paroît que Dieu n'est pas un. 1° Saint Paul dit, I Cor., VIII, 5 : « Il
+180	0	renferme aucune espèce de quantité; l'unité principe de l'être ne peut
+180	1	s'en affirmer non plus, car cette unité renferme une privation, et toute
+180	4	Mais il est écrit dans le Deutéronome, VI, 4 : « Ecoute, Israël, le
+180	5	Seigneur notre Dieu est seul Seigneur (1). »
+180	6	(Conclusion. — Puisque Dieu est entièrement simple, infiniment par-
+180	7	fait et l'auteur de l'ordre établi dans l'univers, il est absolument un.)
+180	8	Il faut dire qu'on peut démontrer l'unité de Dieu par trois sortes de
+180	10	Premièrement, par sa simplicité. Ce par quoi une chose particulière
+180	12	quoi Socrate est homme peut être communiqué à plusieurs hommes,
+180	13	ce par quoi il est tel ou tel homme ne peut l'être qu'à un seul. Supposer
+180	19	
+181	2	n'auroit pas l'autre, et celui qui souffriroit cette privation ne seroit pas
+181	4	possible qu'il y ait plusieurs dieux. Aussi les anciens philosophes, cédant
+181	5	à la force de la vérité, ont accordé au premier principe non-seulemnt
+181	17	Je réponds aux arguments : 1° L'Apôtre parle, dans l'endroit cité,
+181	20	monde. Aussi ajoute-t-il immédiatement après : « Mais il n'y a pour nous
+181	22	§L'unité principe du nombre ne peut s'affirmer de Dieu, mais seule-
+182	11	Il paroît que Dieu n'est pas souverainement un. 1° Un nie la division.
+182	14	2° Rien n'est plus indivisible que ce qui l'est en acte et en puissance,
+183	0	Conclusion. — Dieu étant souverainement être et souverainement in-
+183	2	Il faut dire ceci : Puisque le un est l'être indivisé, pour qu'une chose
+183	3	soit souverainement une, il faut qu'elle soit souverainement être et sou-
+183	5	rainement être; car il est l'être même subsistant, l'être infini, sans
+183	11	Je réponds aux arguments : 1° Si la négation ne renferme en elle-
+183	12	même ni le plus ni le moins, elle les emprunte à son contraire. Ainsi,
+183	15	2° Le un et le point, qui sont les principes de la quantité, ne sont pas
+183	20	3° Bien que tout être soit un par substance, cependant la substance ne
+173	9	appartient à un genre déterminé ajoute quelque chose à l'être, puisque
+174	0	participe à l'unité. » Or cela ne seroit pas, si l'unité ajoutoit quelque
+174	3	la négation de la division.)
+175	25	par l'unité. C'est dans ce sens que l'Aréopagite dit, Des Noms div.,
+179	13	2° L'unité principe du nombre ne peut s'affirmer de Dieu, car Dieu ne
+184	5	Treize questions se présentent sur ce sujet : 1° L'intelligence créée peut-
+184	6	elle voir l'essence de Dieu? 2° L'intelligence créée voit-elle l'essence de
+184	7	Dieu par quelque image? 3° L'intelligence créée peut-elle voir l'essence
+184	9	de Dieu par ses propres forces? 5° L'intelligence créée a-t-elle besoin
+184	10	d'une lumière créée pour voir l'essence de Dieu? 6° Ceux qui voient Dieu
+184	12	autres? 7° Ceux qui voient Dieu par essence le comprennent-ils? 8° Ceux
+184	13	qui voient Dieu par essence voient-ils tout en lui? 9° Ceux qui voient
+184	14	Dieu par esence voient-ils les choses en lui à l'aide d'images? 10° Ceux
+184	17	essence? 12° L'homme peut-il connoître Dieu dans cette vie par la lu-
+184	18	mière naturelle? 13° L'homme connoît-il Dieu plus parfaitement par la
+185	2	Il paroît que l'intelligence créée ne peut voir Dieu par essence. 1° Com-
+185	3	mentant ces paroles, I, Jean, IV, 12 : « Nul n'a jamais vu Dieu, » saint
+185	4	Chrysostome dit, Hom. XIV : « Ni les prophètes, ni les anges, ni les
+185	6	l'incréé. » Et Denys l'Aréopagite dit aussi, Noms div., I : « Il n'y a ni
+185	7	sens, ni imagination, ni raison, ni science qui puisse s'élever jusqu'à
+185	9	2° L'infini, comme tel, est inconnu. Or Dieu est infini, nous l'avons
+185	11	3° L'intelligence créée ne connoît que les choses existantes; car la pre-
+185	15	4° Il faut qu'il y ait proportion entre celui qui connoît et la chose con-
+185	17	qui la connoît. Or il n'y a point de proportion entre l'esprit créé et Dieu,
+185	20	Mais nous lisons, I. Jean, III, 2 : « Nous le verrons comme il est (1). »
+185	21	
+186	0	(Conclusion. — Comme la suprême béatitude de l'homme consiste dans
+186	14	
+187	2	vantage. Ensuite l'homme désire naturellement de connoître la cause
+187	3	dont il voit les effets, et c'est de là que l'admiration naît dans son âme.
+187	4	Si donc l'intelligence créée ne pouvoit s'élever à la cause première, le
+187	5	désir de sa nature seroit vain. Il faut donc reconnoître que les bienheu-
+187	7	Je réponds aux arguments : 1° Les deux auteurs cités plus haut parlent
+187	8	de la vision qui feroit comprendre Dieu. En effet, l'Aréopagite commence par
+187	9	dire : « Dieu est incompréhensible pour tous; » puis il continue comme dans
+187	11	Chrysostome est plus formel encore; il ajoute, après l'endroit cité : « Par
+187	12	voir Dieu, j'entends le comprendre, comme le Père comprend le Fils. »
+187	13	2° L'infini matériel, excluant la forme, est inconnu en soi, parce que
+187	15	par la matière, est connu en soi. Or Dieu est infini de la dernière ma-
+187	17	3° Quand l'Aréopagite dit que Dieu n'est pas existant, cela ne veut
+187	22	dire que nous ne le comprenons pas (1).
+187	23	4° Le mot proportion a deux sens : d'abord il exprime les rapports
+188	1	ensuite il marque les rapports d'une chose avec une autre chose. Dans
+188	5	avec Dieu, qu'elle devienne capable de le connoître.
+188	7	L'intelligence créée voit-elle l'essence de Dieu par quelque image?
+188	8	Il paroît que l'intelligence créée voit l'essence de Dieu par quelque
+188	9	image. 1° Il est écrit, I, Jean, III, 2 : « Nous serons semblables à lui et
+188	11	2° Saint Augustin dit, Trin., IX, 11 : « Quand nous connoissons Dieu,
+188	13	3° L'intelligence est la chose intelligible quant à l'acte, comme le sen-
+188	18	Mais nous lisons dans saint Augustin, Trin., XV, 9 : « Quand l'Apôtre
+189	0	énigme, » il entend, par les mots miroir et énigme, toutes les images
+189	1	qui nous aident à connoître Dieu. » Or voir Dieu dans son essence, ce
+189	2	n'est le voir ni à travers un miroir ni en énigme, mais de la manière
+189	3	contraire. Donc, etc.
+189	4	(Conclusion. — L'intelligence créée ne voit pas l'essence divine par une
+190	0	images des choses appartenant à un ordre inférieur ne font pas connoître,
+190	2	la ressemblance des corps ne donne pas la connoissance des substances
+190	8	incommensurable, sans bornes, sans limites; elle renferme sur éminem-
+190	17	forte l'intelligence et dont le Roi Prophète dit, Ps. XXXV, 10 : « Dans
+190	21	Je réponds aux arguments : 1° Si le disciple bien-aimé semble dire que
+191	0	2° Saint Augustin parle, dans l'argument, de la connoisance que nous
+191	2	3° L'essence divine est l'être même, mais il n'en est pas ainsi pour les
+191	3	autres formes intelligibles. Si donc ces formes s'unissent à l'intelligence
+191	6	ARTICLE III.
+191	6+	L'essence de Dieu peut-elle être vue des yeux du corps?
+191	7	Il paroît que l'essence de Dieu peut être vue des yeux du corps. 1° On
+191	8	lit dans Job, XIX, 26 : « Je verrai Dieu dans ma chair. » Et plus loin,
+191	9	XLII, 5 : « Mes oreilles vous ont entendu; maintenant mon œil vous voit. »
+191	10	2° Saint Augustin dit, Cit. de Dieu, XXII. 29 : « Les regards des élus
+191	16	3° L'homme peut voir Dieu par l'imagination; car Isaïe dit, VI, 1 :
+191	17	« J'ai vu Adonaï assis sur un trône élevé. » Or l'imagination prend son
+192	0	niquent au cerveau, comme le Philosophe le dit dans le troisième livre
+192	1	de l'Ame. Donc Dieu peut être vu par un acte dependant des sens.
+192	2	Mais saint Augustin dit, De la Vis. de Dieu, IX : « Personne n'a ja-
+192	4	comme nous voyons les choses sensibles, des yeux du corps (1). »
+192	5	(Conclusion. — Puisque Dieu est absolument incorporel, il ne peut
+192	6	être vu ni par les sens extérieurs, ni par les sens intérieurs.)
+192	7	Il faut dire ceci : Dieu ne peut être vu ni par les yeux, ni par les autres
+192	14	
+192	15	gence.
+192	16	Je réponds aux arguments : 1° Quand Job dit : « Je verrai Dieu dans
+192	21	phèse, I, 17 : « Que le Dieu de Notre-Seigneur Jésus-Christ, le Père
+193	0	de gloire, vous donne l'esprit de sagesse et de révélation pour le connoître,
+193	1	en éclairant les yeux de votre cœur. »
+193	2	2° Saint Augustin parle, dans l'endroit cité, d'une manière dubitative
+193	3	et conditionnellement. Il commence ainsi : « Les élus glorifiés auront une
+193	5	incorporelle; » puis précisant davantage : « Il est à croire, dit-il, que nos
+193	16	ses effets; les sens ne peuvent la connoître d'aucune manière, mais
+193	17	seulement l'intelligence à l'aide des sens. Il en sera de même dans le
+193	18	monde transfiguré : l'esprit reconnoîtra la présence de Dieu dans les objets
+194	2	Il paroît que l'intelligence créée peut voir l'essence de Dieu par ses
+194	3	propres forces. 1° L'Aréopagite dit, Noms div., IV : « L'ange est un mi-
+194	9	2° Ce qui est très-visible en soi l'est moins pour l'homme à cause des
+194	13	l'ange; donc l'ange peut connoître Dieu par ses propres forces, puisqu'il
+194	14	connoît les autres êtres de cette manière.
+194	22	Mais nous lisons dans les Épîtres de saint Paul, Rom., VI, 23 : « La
+195	2	est de vous connoître, vous, le seul Dieu véritable. » Donc l'intelligence
+195	4	relles (1).
+195	5	(Conclusion. — Comme l'essence divine est au-dessus de la nature de
+195	8	Il faut dire ceci : L'intelligence créée ne peut voir l'essence divine par
+195	14	¶Or les choses ont différents modes d'être. Il y en a qui ont une nature
+195	15	telle, qu'elles existent dans une matière individuelle : ce sont les corps.
+196	7	par les organes corporels, connoît naturellement les choses en tant qu'elles
+196	10	point par les organes corporels, connoît naturellement les substances qui
+196	12	dans cette forme, mais elle les sépare de la matière à l'aide de l'abstrac-
+196	15	connoît naturellement les êtres qui n'existent pas dans la matière; ce
+196	17	dans la condition de la vie présente. Enfin l'intelligence divine connoît
+196	21	s'unit par sa grâce, comme objet intelligible, à l'esprit créé.
+196	22	Je réponds aux arguments : 1° L'ange peut connoître Dieu naturelle-
+197	0	qu'il a de cet être infini; mais connoître Dieu par une image créée, ce
+197	1	n'est pas connoître l'essence de Dieu, comme nous l'avons montré plus
+197	2	haut. L'argument ne prouve donc pas que l'ange puisse connoître l'es-
+197	4	2° L'intelligence de l'ange n'a pas de défaut, je distingue : privative-
+197	5	ment, en ce sens qu'elle a tout ce qu'elle doit avoir, c'est vrai; négati-
+197	9	3° Essentiellement matériel, le sens de la vue ne peut, je l'accorde,
+197	13	jusqu'aux choses incorporelles. En voici la preuve. La vue ne peut se
+197	22	que l'intelligence créée possède la faculté naturelle de concevoir abstrac-
+197	24	élevée par la grâce au point de connoître l'essence et l'être simple sub-
+198	1	L'intelligence créée a-t-elle besoin d'une lumière créée pour voir l'essence de Dieu?
+198	3	voir l'essence de Dieu. 1° Ce qui est lumineux par soi peut être vu, dans
+198	7	2° Voir Dieu par un milieu, ce n'est pas le voir par son essence. Or si
+198	11	3° Ce qui est créé peut être naturel à quelque créature. Si donc on
+198	16	Mais David dit, Ps. XXXV, 10 : « Dans votre lumière nous verrons la
+198	18	(Conclusion. — Puisque l'essence divine surpasse la nature de toute
+199	2	esprit reçoive une vertu surnaturelle qui le dispose à cette sublime élé-
+199	4	d'elle-même l'essence adorable; il faut donc que la grâce augmente ses
+199	6	tation de forces spirituelles, nous l'appelons l'illumination de l'entende-
+199	8	gible qui la produit. C'est de cette lumière que l'Apocalypse dit, XXI, 23 :
+199	12	l'Esprit-Saint, I Jean, III, 2 : « Nous savons que, lorsqu'il paroîtra,
+199	13	nous serons semblables à lui. »
+199	14	Je réponds aux arguments : 1° Si la lumière créée est nécessaire à la
+199	19	le lieu diaphane, et permet à la couleur de le traverser par ses rayons.
+199	20	2° La lumière de gloire est nécessaire pour voir Dieu, non pas comme
+199	25	noît. Elle n'empêche donc point la vision immédiate de Dieu.
+199	26	3° Comme la disposition à la forme du feu ne peut être naturelle que
+200	7	Il paroît que ceux qui voient l'essence divine ne la voient pas plus
+200	12	2° Saint Augustin dit, I. LXXXIII Quest. 32 : « Une chose ne peut être
+200	13	plus connue par l'un que par l'autre. » Or tous ceux qui voient Dieu
+200	15	qui la voit et non les sens, comme nous l'avons dit plus haut. Donc les
+201	0	
+201	1	3° Lorsque deux personnes ne voient pas une chose avec la même per-
+201	2	fection, cela peut venir de deux raisons : ou de l'objet visible, qui im-
+201	3	prime différemment son image dans le sujet; ou de la faculté visuelle,
+201	7	Dieu imprime différemment son image dans les intelligences, on verroit
+201	10	la faculté visuelle est plus grande dans l'un que dans l'autre, il s'ensui-
+201	12	contraire aux promesses divines. Donc, etc.
+201	13	Mais la vie éternelle consiste dans la vision de Dieu, selon ce mot déjà
+201	14	cité, Jean, XVII, 3 : « La vie éternelle est de vous connoître. » Si donc
+201	17	Paul dit, I Cor., XV, 40 : « Une étoile diffère en clarté d'une autre
+201	18	étoile (1). » Donc, etc.
+201	19	(Conclusion. — Comme les bienheureux sont différemment éclairés
+201	20	
+201	21	

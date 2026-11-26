@@ -162,7 +162,7 @@ f: A A "" T T T T A "âme"
 ok
 
 == p71
-f: "" "[ments," T "" "" A "[dements ;"
+f: "" "[ments," T "" "" A "[dements"
 ok
 
 == p73
@@ -229,6 +229,7 @@ ok
 == p95
 f: A A A "la" A A "" A "" "délivrerai" T
 c: 28
+r: délivrerai} => délivrerai
 ok
 
 == p97
@@ -236,11 +237,10 @@ f: "Il criera" A A A "Seigneur," A T T T T "serviteur," A
 h: 15 Cantique de Siméon. Luc. ii, 29-32.
 ok
 
-// Complies du lundi (pp. 159-163) ; le haut de la p. 159 (fin du psaume 121) n'est pas encore relu.
+// Complies du lundi (pp. 159-163) ; le haut de la p. 159 : fin du psaume 121 (Vêpres).
 == p159
 f: T T T T ";" T T "Et" T "" T "" A T T
-x: 1-6
-v: 9
+v: 5 9
 r: de vous dans la => de vous dans la mort ;
 ok
 
@@ -259,10 +259,10 @@ ok
 f: "Si" "" A A "Voici" A A
 ok
 
-// Complies du mardi (pp. 221-225) ; le haut de la p. 221 (fin du psaume 126) n'est pas encore relu.
+// Complies du mardi (pp. 221-225) ; haut de la p. 221 : fin du psaume 126 (Vêpres).
 == p221
-f: T T "Heureux" A T "maître" ""
-x: 1-9
+f: T ";" "Heureux" A "à son" "maître" ""
+?: Chacun ne dit à son prochain — point parasite entre « à » et « son » (lu « à-son » au premier passage, corrigé le 23 nov.)
 r: puissance de notre\nc| nos lèvres ne dépendent que de nous. [langue ; => puissance de notre langue ;\nc| nos lèvres ne dépendent que de nous.
 ok
 
@@ -284,10 +284,9 @@ ok
 f: T "car" T T "et vous" "de la" "[ruption." A
 ok
 
-// Complies du mercredi (pp. 291-295) ; le haut de la p. 291 (fin du psaume 131) n'est pas encore relu.
+// Complies du mercredi (pp. 291-295) ; haut de la p. 291 : fin du psaume 131 (Vêpres).
 == p291
 f: T "" T "Mon" "et se" A
-x: 1-8
 v: 23
 ok
 
@@ -523,7 +522,7 @@ r: v| les garder, on trouve => c| à les garder, on trouve
 ok
 
 == p137
-f: "elle" A "enne-" A A "ô" A "[ennemis." T A
+f: "elle" A "enne-" A A "ô" "m'ont" "[ennemis." T A
 r: tous les jours de\nc| pour contempler les délices du Seigneur [ma vie, => tous les jours de ma vie,\nc| pour contempler les délices du Seigneur
 r: son tabernacle ; [son tabernacle. => son tabernacle ;
 r: dans le secret de\n => dans le secret de son tabernacle.\n
@@ -572,4 +571,436 @@ ok
 f: "" A ";" A A "[le" "salut," "" "crai-" "Notre" "Seigneur," "saint" "le" A "" "Les" "m'ont"
 v: 12 26
 ?: environnné — coquille de l'imprimé (trois n), gardée telle quelle
+ok
+
+// Vêpres du lundi (suite) ; pp. 153-155 : filet des notes non détecté, notes supprimées par x:.
+== p153
+f: "O" "ô" A A ";" "" T T T "O" "[gneur." "liens ;" …
+x: 29-60
+r: délivrez mon àme. => délivrez mon âme.
+ok
+
+== p155
+f: "" A "" "" "et" "et" "trompeuse." "" "" "viendra le" "a fait" …
+x: 25-57
+v: 3 7 9 11 13 15 23
+c: 17
+r: v| 1 Dans ma tribulation => v| Dans ma tribulation
+r: v| 3 Que te sera-t-il => v| Que te sera-t-il
+r: J'ai demeuré avec les habitants de Cédar ;\nc| mon âme => J'ai demeuré avec les habitants de Cédar ;\nv| mon âme
+ok
+
+== p157
+h: 14 Psaume CXXI
+f: "" "" "Le Seigneur" A A "âme." A "[Seigneur," "ô cité" "l'a-"
+ok
+
+// Office du mardi.
+== p165
+f: T "" T "" "Car" T T
+ok
+
+== p167
+f: T "" T A "cilice" T "[ou" "tristesse."
+?: ses delices — « delices » sans accent, tel qu'imprimé
+ok
+
+== p169
+f: "" "taquent" "[tromperies." A "" A "" "" "disent sans"
+?: méditaient des tromperies — point parasite après « tromperies. », non repris
+ok
+
+== p171
+f: "" "l'herbe," "ils se" "ses ri-" "[chesses." "trouveras pas."
+ok
+
+== p173
+f: "leur" "les" "tache," "éleves,"
+h: 13 Psaume XXXVI, ii.
+?: honorés et éleves — « éleves » sans accent final, tel qu'imprimé (vu à l'agrandissement)
+ok
+
+== p175
+f: "" "" "" "pas," "J'ai" ";" "mais" "le" "Détourne-toi du" "" "Mais les justes posséderont" "siècles des siècles." "la sagesse," "cœur," "le Seigneur" "l'abandonnera" "ne" "Attends le Seigneur" "garde sa voie," "et il t'élèvera," "possèdes la" "héritage ;" "pécheurs périront, tu verras." "et élevé comme les cèdres"
+x: 2
+ok
+
+== p177
+f: "" ";" "mais" "tous ensemble" "disparaitra." "mes" "Car-mes" "par l'effet" "[ture,"
+?: auront laissé disparaitra — « disparaitra » sans circonflexe, tel qu'imprimé
+?: Car-mes iniquités — trait d'union imprimé entre « Car » et « mes », gardé
+ok
+
+== p179
+f: "Seigneur," "[sements." "n'est" "moi," "et" ";" "tromperie." "[mensonges," "devenu" "Dieu." "[mon" "à" "Car" "toujours" "péché." "Cependant" "et ceux" "multipliés." ""
+?: Je suis devenu comme — accent parasite sur le u (« devenû »), non repris
+ok
+
+== p181
+f: "" "" "Dieu" "Hâtez-vous" A "afin que"
+ok
+
+== p183
+f: "Vous" "" "repris ;" "Oui," "Ne" "et" "relâche," "rafraîchi" "disparaître." ""
+h: 18 Laudes I.
+v: 7
+r: auprès de vous un\nc| et un voyageur, comme tous mes pères. [étranger => auprès de vous un étranger\nc| et un voyageur, comme tous mes pères.
+ok
+
+== p185
+f: A ";" "" "nations," "face. [règne." A "" "[gresse ;" "les" "ô" "l'homme"
+r: devant sa face. [règne. => devant sa face.
+r: a établi son => a établi son règne.
+?: tressaille d'allégresse — renvois [règne., [gresse ; et [nent. remis à leur ligne
+ok
+
+== p187
+f: "" "ô" "âme ?" "bénisse ;" "afin" "la terre," "ô" "et que" "bénisse !" "bénisse," "et que tous les confins"
+x: 2
+v: 4
+r: ma force, Dieu ; pourquoi m'avez-vous re- => ma force, ô Dieu ; pourquoi m'avez-vous repoussé ?
+r: l'allégresse,, => l'allégresse,
+?: ma force, ô Dieu — « ô » manqué par les deux lectures, vu sur l'image ; « [poussé ? » imprimé sous la ligne
+ok
+
+== p189
+f: "" "" "" "" "" "et votre" "Car" "et" A "[lui." A "C'est" A "et c'est" "Considérez" A A "[coupable." "" "âme" "joie, et"
+h: 2 Cantique de Tobie. Tob. xiii, 1-10.
+?: célébrez des jours de joie, et — imprimé « joie,et » sans espace
+ok
+
+== p191
+f: "" "dans" "les" "tous les" A "l'a" "abîmes." "Il fait" "nuées de l'extrémité" "fait" "ses trésors." "" "l'homme" "Et" A "milieu" "Il a" A "" "Séhon," "son" "serviteurs." "des" ""
+v: 2
+r: les premiers-nés de l'Egypte, => les premiers-nés de l'Égypte,
+r: la bête. [ô Egypte, => la bête.
+r: au milieu de toi, => au milieu de toi, ô Égypte,
+ok
+
+== p193
+f: "oreilles," "" "Maison" "" "" "" "" "vain"
+h: 12 Cantique d'Ézéchias. Is. xxxviii, 10-20.
+r: aux portes du\nc| Je cherche en vain le reste de mes jours. [tombeau. => aux portes du tombeau.\nc| Je cherche en vain le reste de mes jours.
+r: ni &habitant du => ni d'habitant du
+?: Je cherche en vain — « vain » en italique, l'a ressemble à un u (« vuin ») ; lu « vain »
+?: Elles ont des oreilles — impression brisée (lu « orcilies »), lecture sûre
+ok
+
+== p195
+f: "Seigneur," A "âme." "me" "Je" "périr ;" "[fidélité." "C'est" "connaître" "sauvez-moi," ";"
+v: 12
+ok
+
+== p197
+f: "" "pas" "Seigneur, montrez-moi" "Conduisez-moi" "car" "êtes" "Seigneur." "est" "et ses" ""
+ok
+
+== p199
+f: "" "Mes" "tournés" "filet." "moi," "multipliées ;" "et de" "je n'aie pas à rougir," "car" "droits" "parce" "en" "O" "a fait" "tiré de l'abime"
+v: 13 15
+?: l'abime de misère — « abime » sans circonflexe, tel qu'imprimé
+ok
+
+== p201
+f: "" A A "[pensées."
+ok
+
+== p203
+f: ";" "nombreuse." ";" "toutes." "manqué." "" "!"
+r: [cordes : => [cordes ;
+?: vos miséricordes — ponctuation après « miséricordes » pâle : point-virgule probable (deux-points selon les deux lectures)
+ok
+
+== p205
+f: "" A "car" "d'eux" "l'iniquité" "Il" ""
+h: 2 Sexte.
+v: 4
+ok
+
+== p207
+f: "" "m'avez affermi" "présence." "soit le Seigneur," "Comme" "ô" ";" "viendrai-je," "Je" "j'ai" "" "troubles-tu" "lui, le salut" "" ""
+x: 1
+v: 9
+r: mon àme ? => mon âme ?
+r: de mon visage, et mon Dieu. => de mon visage,\nv| et mon Dieu.
+?: et mon Dieu — Fillion imprime le numéro 7 au milieu de la ligne, devant « et mon Dieu » (DO commence 41, 7 à « Ad meipsum ») : découpage de l'imprimé gardé
+ok
+
+== p209
+f: "l'Hermon," "[Jourdain," "L'abime" "l'abîme," "passé" A "Je" "dois-je" "mes" "O" "[anciens."
+h: 1 Psaume XLI, ii.
+h: 21 None.
+h: 22 Psaume XLIII, i.
+r: tandis que l'ennemi\nv| Pendant que mes os sont brisés, [m'afflige ? => tandis que l'ennemi m'afflige ?\nv| Pendant que mes os sont brisés,
+?: L'abime appelle l'abîme — premier « abime » sans circonflexe, second avec, tels qu'imprimés
+ok
+
+== p211
+f: "à" "vous" "chassés." "n'est" "les a" "[pays," "c'est" "et la" "vous" "Jacob." "nos" "" "et en" "mépriserons" "Car" "n'est" "confierai," "sauvera." "sauvés" "et" "ô" "Dieu," "armées." "ennemis," "nous" "" "Vous" "prix,"
+c: 2
+ok
+
+== p213
+f: "n'avez" "et" A "[fliction," A A "Levez-vous" "Seigneur" "visage ?" "pourquoi" "Car" "Levez-vous," "secourez-nous," "rachetez-nous à cause"
+ok
+
+== p215
+f: "" "vous," "" "cieux." "maîtres," "maîtresse," "Ayez" "nous," "les" "" "âme a"
+x: 16
+v: 6
+v: 18
+c: 10 21
+r: car notre àme => car notre âme
+r: riches, et de mépris => riches, et de mépris pour les superbes.
+ok
+
+== p217
+f: A A "" "l'héritage" "[cheurs" "emmènera" "[l'iniquité."
+r: celui qui habite dans Jéru- => celui qui habite\nv| dans Jéru-
+?: dans Jérusalem — Fillion imprime le numéro 2 au milieu de la ligne, devant « dans Jérusalem » (DO : « qui habitat in Jerusalem » à la fin de sa ligne 1) : découpage de l'imprimé gardé
+ok
+
+== p219
+f: "fut" A "" "avons" "captifs," "le pays" "Ceux qui sèment" "l'allégresse." "Ils" "c'est" "bâtissent." "C'est" "vous" "après vous être reposés,"
+h: 18 Psaume CXXVI
+v: 4 12
+ok
+
+// Office du mercredi.
+== p229
+f: A "parole" "" A "ô"
+v: 11
+?: Ceignez-vous de votre glaive — renvoi [puissant. imprimé sur la ligne du dessus
+ok
+
+== p231
+f: "" "ennemis" "ô" "ô" A "d'une" "de" "les" "Écoutez," ";" "" "est" "[broderies." "ornée"
+v: 6 15
+r: au dedans, [broderies.\nc| quand elle est ornée de franges d'or, 15 et couverte de => au dedans,\nc| quand elle est ornée de franges d'or,\nv| et couverte de broderies.
+?: et couverte de broderies — Fillion imprime le numéro 15 au milieu de la ligne ; « [broderies. » imprimé au bout de la ligne du dessus
+ok
+
+== p233
+f: "" "[gresse ;" "Dieu" "C'est" "" "eaux" ";" "[affaissés ;" "Les" A "Le Seigneur"
+x: 1
+v: 26
+ok
+
+== p235
+f: "" "les" "terre," "" "l'arc," "" "exalté" "" "montagne." "" "l'aquilon," "voici" "ligués,"
+v: 2 4 7 13
+ok
+
+== p237
+f: "Dieu." "ô" "" "ô" "s'étend" "l'allégresse,"
+x: 1
+v: 2
+?: ils ont été troublés — l de « troublés » brisé (lu « troubiés »), lecture sûre
+r: ils ont été troubiés => ils ont été troublés
+ok
+
+== p239
+f: "" "Ma bouche proférera" "sagesse," "prudence." "l'apaiser," "âme." "et il vivra encore" "Il" "l'insensé" "et il leur est devenu"
+v: 16 17
+ok
+
+== p241
+f: "chute," "ont été" ";" "qu'ils" "de" "de" "lorsqu'ii" "a" "a"
+x: 1
+h: 2 Psaume XLVIII, ii.
+?: lorsqu'ii sera mort — coquille de l'imprimé (« lorsqu'ii »), gardée telle quelle
+?: Telle est leur voie — titre imprimé « Psaume XLVIIII, ii. » (coquille), rendu « XLVIII »
+ok
+
+== p243
+f: "" "Sion" "une" "peuple." "sacrifices." "Et les cieux" "Écoute," "Israël, et" "sacrifices" ";" "toutes" "moi," "j'ai" "pas ;"
+x: 1
+ok
+
+== p245
+f: "" "lois," "a" "contre" "ta" "tout" "[ble."
+ok
+
+== p247
+f: "les" "et" "Ses éclairs" "montagnes se sont" "Seigneur," "[du Seigneur" "anges." A "le Seigneur"
+v: 5
+?: à la face du Seigneur, toute la terre — trait parasite après « Seigneur, », non repris
+ok
+
+== p249
+f: "" "célébrez" "ô" "" ";" "Heureux" "des" "" "ô" "Dieu," "espérance" "et" "faites retentir" "et" "la" ""
+ok
+
+== p251
+f: "d'eaux ;" "de votre" "vous" "multipliez" "sous" "Vous" "l'année" "pâturages" "et les collines" "d'allégresse." "se revêtiront," "chanterai," "" "j'étudierai" "tache." "méchant s'écartait" "pas." …
+x: 27-61
+r: Je les chanterai, et j'étudierai => Je les chanterai,\nv| et j'étudierai
+r: J'éloignais de moi 4 le cœur corrompu ; => J'éloignais de moi\nv| le cœur corrompu ;
+?: et j'étudierai — Fillion imprime le numéro 2 au milieu de la ligne, devant « et j'étudierai » : découpage de l'imprimé gardé
+?: le cœur corrompu — Fillion imprime le numéro 4 au milieu de la ligne, devant « le cœur corrompu » : découpage de l'imprimé gardé
+ok
+
+== p253
+f: "" T T T ";" "Malheur à"
+h: 17 Cantique de Judith. Judith, xvi, 15-21.
+ok
+
+== p255
+f: "brûlent" "" "le" ";" "Le Seigneur" ""
+v: 6
+c: 20
+r: Ô mon âme, loue => O mon âme, loue
+ok
+
+== p257
+f: T T T A "dans" "Seigneur," "des" "Il" "posé le"
+h: 2 Cantique d'Anne. I Reg. ii, 1-10.
+c: 19
+ok
+
+== p259
+f: "et" "" "Jugez-moi, Seigneur," "Éprouvez-moi," "et" "" "autel," "et le"
+v: 10 24
+ok
+
+== p261
+f: "ô" "" "Pour" "" "ô" "t'arrachera" "il" "richesses,"
+v: 16 22
+ok
+
+== p263
+f: "" "de" "" "sans" "Ils" "sont" "a" "" "" "du" "sur" "les" "mes, [cherche" "fasse" "a" "Car" "a" "" "" "a méprisés." "procurera de Sion" "d'Israël ?" "fin à"
+x: 1
+v: 10
+h: 8 Psaume LII
+r: éternellement et à => éternellement et à jamais.
+r: abominables dans => abominables dans l'iniquité ;
+r: fasse le bien. ; => fasse le bien.
+r: mes, [cherche Dieu.\nc| pour voir s'il y a quelqu'un qui soit intelligent et qui => mes,\nc| pour voir s'il y a quelqu'un qui soit intelligent et qui cherche Dieu.
+ok
+
+== p265
+f: "" "" "ô" "[ble" "me donnera" "là celui" "Perdez-les," "ville." "" "l'injustice." "[ques."
+x: 2
+r: le travail et l'injustice. => le travail\nv| et l'injustice.
+?: et l'injustice — Fillion imprime le numéro 12 au milieu de la ligne, devant « et l'injustice » : découpage de l'imprimé gardé
+?: J'attendais là cèlui — « cèlui » (accent parasite), gardé tel qu'imprimé
+r: là celui => là cèlui
+ok
+
+== p267
+f: "" "peut-être" "[Dieu" "demeures," "eux-mêmes." "[ma" "s'approchent" "Ils" "Ses discours" "sont en"
+r: j'annoncerai\nc| et il exaucera ma voix. [ma peine, => j'annoncerai ma peine,\nc| et il exaucera ma voix.
+r: ]l a étendu => Il a étendu
+ok
+
+== p269
+f: A "ô" "moi," "ô" "Mes" A ";" "" "[messe."
+x: 1
+v: 2
+r: mort. [à la moitié de leurs jours ;\nc| Les hommes sanguinaires et trompeurs n'arriveront pas => mort.\nc| Les hommes sanguinaires et trompeurs n'arriveront pas à la moitié de leurs jours ;
+r: O Dieu, je vous ai exposé => O Dieu,\nv| je vous ai exposé
+?: je vous ai exposé — Fillion imprime le numéro 9 après « O Dieu, » et le numéro 8 devant « vous ne les sauverez » (DO commence 55, 8 à « Sicut sustinuerunt » et 55, 9 à « Deus ») : découpage de l'imprimé gardé
+ok
+
+== p271
+f: "arrière." A "les" "chute," "ô" "âme a" "ailes," "" "Il a" "a"
+r: Je connais, Ô Dieu => Je connais, ô Dieu
+ok
+
+== p273
+f: "cieux, ô" "Ils" "pieds," "" "ô" "chanterai," "je" "miséricorde" "ô" "" "Mais" "dans" "sein"
+ok
+
+== p275
+f: "" "[sants." "a" "a" "terre." "Sauvez-moi" "ô" "et"
+v: 22
+r: le soleil. [un buisson,\nv| Avant qu'ils connaissent que leurs épines sont devenues => le soleil.\nv| Avant qu'ils connaissent que leurs épines sont devenues un buisson,
+ok
+
+== p277
+f: "" ";" "Il" "a" "j'ai" "armées," "Dieu" ";" "Ils reviendront le soir, et ils seront affamés comme des" "" "et ils feront le tour de la ville." "Seigneur," "ô" "" "Dispersez-les" "protecteur,"
+v: 22
+ok
+
+== p279
+f: "lè-" "des" "Car" "O mon" "O" ";"
+?: Car vous vous êtes fait — « Çar » (cédille parasite) imprimé ; rendu « Car »
+ok
+
+== p281
+f: "" "troublée ;" "dures ;" "l'arc." "délivrés," "Manassé," "Moab" "J'étendrai" "l'Idumée" "ô" "ô" "armées" "vaine."
+v: 25
+ok
+
+== p283
+f: "qui" "Parce" "Ta femme sera" "l'intérieur" "table." "C'est ainsi" "" "Que le Seigneur" "jeunesse,"
+h: 1 Vêpres.
+v: 5
+ok
+
+== p285
+f: "" "" "" ";" "toits," "sein." "" "Seigneur," "examinez" "âme" "âme" "qu'Israël" ""
+ok
+
+== p287
+f: "abondante." "Qu'Israël" "dès" "siècles." "Souvenez-vous," ";"
+ok
+
+== p289
+f: "" "" "de" "maison," "couche," "tempes," "Seigneur," "" "l'arche était à Éphrata" "l'avons" "forêt." "Nous" "tabernacle ;" "a posé ses pieds." "Levez-vous," "justice," "et" "de David votre serviteur," "Le" "a" "serment véridique," "et il" "enseignerai," "" "l'a" "C'est" "repos ;" "choisie."
+v: 22
+ok
+
+// Office du jeudi.
+== p297
+f: "" "sauveur ;"
+v: 6
+?: mon sauveur — impression brisée (« sauveur » lu « savveur »), ponctuation finale illisible, rendue par le point-virgule du v. 7, même phrase
+?: je ne serai plus ébranle — « ébranle » sans accent, tel qu'imprimé
+ok
+
+== p299
+f: "" "" "" "" "mon" "" ";" "les" "l'iniquité," "[ricorde" "" "œuvres." "ô" "terribles, Seigneur" "A cause" "votre" "œuvres" "[mes."
+x: 1
+v: 6 7
+c: 7
+r: deux choses : [ricorde ;\nc| La puissance est à Dieu, et à vous, Seigneur, la misé- => deux choses :\nc| La puissance est à Dieu,\nv| et à vous, Seigneur, la miséricorde ;
+?: et à vous, Seigneur, la miséricorde — Fillion imprime le numéro 13 au milieu de la ligne : découpage de l'imprimé gardé
+ok
+
+== p301
+f: "" "et faites" "ébranlés." "ô" "" "mettre" "rafraîchissement." "envers" "" "a" "raconterai," "a" "âme. [Dieu,"
+r: de mes vœux que mes\nc| lèvres ont proférés, => de mes vœux\nv| que mes\nc| lèvres ont proférés,
+r: avec la fumée des\nc| je vous offrirai des bœufs avec des boucs. [béliers ; => avec la fumée des béliers ;\nc| je vous offrirai des bœufs avec des boucs.
+?: que mes lèvres ont proférés — Fillion imprime le numéro 14 au milieu de la ligne : découpage de l'imprimé gardé
+ok
+
+== p303
+f: "" "" "a" "l'a" "l'iniquité" "C'est" "m'a" "et a" "dissipés," "" "lui,"
+r: par un cantique : => par un cantique ;
+h: 13 Psaume LXVII, i.
+ok
+
+== p305
+f: "le" "une" "O" "[Sinaï," "ô" "a" "ô" "riture" "" "l'auxiliaire" "bien-aimé," "l'ornement" "argentées," "pâle" "le"
+ok
+
+== p307
+f: "de Dieu" "regardez-vous" "a" "au" "des captifs" "[prospère." "a"
+ok
+
+== p309
+f: "Mais" "a" "ô" "l'entrée" "Nephtali." "O" "ô" "les" "Des ambassadeurs"
+v: 25
+r: de l'Egypte ; => de l'Égypte ;
+ok
+
+== p311
+f: "l'orient." "Rendez" "nuées." "" "[sance" "ô" "âme." "a"
+ok
+
+== p313
+f: "haïssent" "" "O" "ô" "" "dévoré," "m'en a" "me raillaient" "ô"
+r: à cause\nc| Seigneur, Seigneur des armées. [de moi, => à cause de moi,\nc| Seigneur, Seigneur des armées.
 ok

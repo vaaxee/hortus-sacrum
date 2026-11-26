@@ -1,7 +1,7 @@
 # Textes à fournir, à confirmer ou à recopier
 
 Règle : aucun texte de mémoire. Pour chaque point : la décision prise et ce qui reste à faire.
-Les points réglés sont gardés pour l'historique. Dernière mise à jour : 22 novembre 2026.
+Les points réglés sont gardés pour l'historique. Dernière mise à jour : 26 novembre 2026.
 
 **Fait le 13 novembre** : Salve Regina (matin) et Sub tuum (soir) avec leurs versets, Beringer 1925, t. I, n° 429, p. 224-225 (et non 294-295 : l'OCR avait mal lu le numéro de page).
 
@@ -18,6 +18,20 @@ Les points réglés sont gardés pour l'historique. Dernière mise à jour : 22 
 | 7 | Propre de France | **Abandonné.** On reste sur le calendrier romain universel. L'utilisateur ajoutera lui-même ses fêtes dans l'app. | — |
 
 ## Restent ouverts
+- **Neuvaine à la très sainte Trinité, prières propres à chaque jour (26 nov.)** : l'indulgence (Ench. 1952, n° 48 ;
+  Beringer 1925, n° 639) vaut pour des prières quelconques ; la neuvaine du programme (`prog:neuvaine-trinite`, de la
+  vigile de la Pentecôte au dimanche de la Trinité) reprend donc chaque jour les mêmes prières de Beringer (n° 255 a,
+  256, 252), avec la consécration de dom Marmion le 9e jour. **Cherché sans trouver de neuvaine française imprimée jour
+  par jour** : Beringer 1925, 1905, 1893 (seulement la concession) ; *Recueil de prières et d'œuvres pies* (Raccolta
+  française) et *Trésor des âmes pieuses*, Québec, 1869 (`cihm_94226`) : la concession seule ; *Recueil de neuvaines*,
+  Lévis, 1886 (`cihm_29753`) ; *Thésaurisons pour le ciel*, n° 356 : la concession seule ; recherche plein texte
+  d'archive.org (« neuvaine à la très sainte Trinité », « neuvaine en l'honneur de la très sainte Trinité », « de
+  l'adorable Trinité », « neuf jours qui précèdent la fête de la très sainte Trinité ») ; index de
+  bibliotheque-catholique.com (aucun titre) ; Gallica (accès refusé à l'outil). Une seule neuvaine jour par jour
+  repérée, en italien : Riva, *Manuale di Filotea*, « Triduo o novena alla SS. Trinità » (archive.org
+  `giuseppe-riva-manuale-di-filotea`), non traduite (pas de traduction de travail hors manuels d'archiconfréries).
+  Pistes : *Manuel du Tiers-Ordre et de l'Archiconfrérie de la Très Sainte Trinité*, Tours, 1912 (cité par
+  l'*Encyklopedya kościelna*, non numérisé) ; une traduction française ancienne du *Manuel de Philothée* de Riva.
 - **Manuels d'archiconfréries en anglais (22 nov.)** : 21 pièces ajoutées, non branchées
   (`docs/audits/ARCHICONFRERIES_EN_2026-11-22.md`). **À relire par l'utilisateur** : 9 traductions de travail
   (`bonamors1896:reflexion-*`, `cordon1878:courtes-prieres`, `saintefamille1875:acte-de-consecration`), à remplacer
@@ -41,11 +55,11 @@ Les points réglés sont gardés pour l'historique. Dernière mise à jour : 22 
     `cihm_04796`, et Beringer t. I-II) ; courtes prières du cordon (notice de Québec 1876, Beringer t. II n° 272).
 - **Indulgences à vérifier sur le scan de l'*Enchiridion* 1952** : n° 594 (prières pour chaque jour de la semaine
   pour les âmes) et n° 643 (*Fac nos, Domine Iesu*) : numéros et teneur lus sur l'OCR seulement.
-- **Somme théologique (lot 10)** : Iª q. 1-5 livrées (22 nov.). **Suite** : Iª q. 6-13 ont leurs lectures votées
-  (scan de 1880, pages n107-n272) et leur latin (Corpus Thomisticum), mais les lignes sans accord restent à relire sur
-  l'image (`engine/somme/planche74.py`, puis `corrections_fr.txt`) et les intitulés latins à relire (`titres_la.json`) ;
-  au-delà de la q. 13 : tomes suivants de Lachat (archive.org, même édition Vivès) à repérer. Latin : relecture
-  intégrale sur l'image de l'édition léonine non faite (seulement les écarts isolés de l'alignement).
+- **Somme théologique (lot 10)** : Iª q. 1-11 livrées (q. 1-5 le 22 nov., q. 6-11 le 25 nov.). **Suite** : Iª q. 12-13 ont leurs lectures votées (scan de 1880, pages n184-n272) et leur latin (Corpus Thomisticum, contrôlé), mais les lignes restent à relire sur l'image (`engine/somme/planche74.py` ou une planche du scan de 1880, puis `corrections_fr.txt`) et les intitulés latins à relire (`titres_la.json`) ; au-delà de la q. 13 : tomes suivants de Lachat (archive.org, même édition Vivès) à repérer. Mots abîmés à la même
+  place sur les deux exemplaires (1874, 1880 : même planche), complétés par le contexte immédiat et à revoir sur un
+  troisième exemplaire : q. 10 « seulement » (p. 162), « toujours » (p. 168), « si l'on » (p. 169) ; q. 11 « par
+  son » (p. 173). Latin : relecture intégrale sur l'image de l'édition léonine non faite (seulement les écarts
+  isolés de l'alignement et les intitulés).
 - **Bréviaire romain et Officium parvum en français (édition bilingue ancienne)** : recherche du 22 nov.,
   `docs/audits/BREVIAIRE_FRANCAIS_2026-11-22.md`. *Petit office* : retenu **Montréal 1905** (archive.org `cihm_98272`,
   permis d'imprimer de Mgr Racicot) ; **toutes les heures transcrites** (`data/office/parvum-fr.json`, 201 paragraphes

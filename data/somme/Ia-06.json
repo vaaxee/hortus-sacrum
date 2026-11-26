@@ -1,0 +1,215 @@
+{
+ "ref": "Iª q. 6",
+ "partie": "Ia",
+ "question": 6,
+ "titre": {
+  "la": "De bonitate Dei",
+  "fr": "De la bonté de Dieu."
+ },
+ "prooemium": {
+  "la": "Deinde quaeritur de bonitate Dei. Et circa hoc quaeruntur quatuor. Primo, utrum esse bonum conveniat Deo. Secundo, utrum Deus sit summum bonum. Tertio, utrum ipse solus sit bonus per suam essentiam. Quarto, utrum omnia sint bona bonitate divina.",
+  "fr": "Nous devons parler maintenant de la bonté de Dieu.\n\nQuatre questions se présentent sur ce sujet : 1° Dieu est-il bon? 2° Dieu est-il souverain bien? 3° Dieu seul est-il bon par essence? 4° Toutes les choses sont-elles bonnes de la bonté divine?"
+ },
+ "articles": [
+  {
+   "ref": "Iª q. 6 a. 1",
+   "titre": {
+    "la": "Utrum esse bonum Deo conveniat",
+    "fr": "Dieu est-il bon?"
+   },
+   "objections": [
+    {
+     "la": "Ad primum sic proceditur. Videtur quod esse bonum non conveniat Deo. Ratio enim boni consistit in modo, specie et ordine. Haec autem non videntur Deo convenire, cum Deus immensus sit, et ad aliquid non ordinetur. Ergo esse bonum non convenit Deo.",
+     "fr": "Il paroît que la bonté ne convient pas à Dieu. 1° La nature du bon consiste dans le mode, l’espèce et l’ordre; or ces trois choses ne conviennent pas à Dieu, puisqu’il est immense et qu’il n’est point ordonné par rapport aux autres êtres; donc la bonté ne convient pas à Dieu."
+    },
+    {
+     "la": "Praeterea, bonum est quod omnia appetunt. Sed Deum non omnia appetunt, quia non omnia cognoscunt ipsum, nihil autem appetitur nisi notum. Ergo esse bonum non convenit Deo.",
+     "fr": "Le bien est ce que toutes les créatures appètent. Or toutes les créatures n’appètent pas Dieu, puisqu’elles ne le connaissent pas toutes, et que l’on n’appète que ce que l’on connoît. Donc la bonté ne convient pas à Dieu."
+    }
+   ],
+   "sed_contra": {
+    "la": "Sed contra est quod dicitur Thren. III, *bonus est dominus sperantibus in eum, animae quaerenti illum*.",
+    "fr": "Mais l’Ecriture sainte dit, Thren., III, 25 : « Le Seigneur est bon pour ceux qui espèrent en lui et pour l’âme qui le cherche. »"
+   },
+   "respondeo": {
+    "la": "Respondeo dicendum quod bonum esse praecipue Deo convenit. Bonum enim aliquid est, secundum quod est appetibile. Unumquodque autem appetit suam perfectionem. Perfectio autem et forma effectus est quaedam similitudo agentis, cum omne agens agat sibi simile. Unde ipsum agens est appetibile, et habet rationem boni, hoc enim est quod de ipso appetitur, ut eius similitudo participetur. Cum ergo Deus sit prima causa effectiva omnium, manifestum est quod sibi competit ratio boni et appetibilis. Unde Dionysius, in libro de Div. Nom., attribuit bonum Deo sicut primae causae efficienti, dicens quod bonus dicitur Deus, *sicut ex quo omnia subsistunt*.",
+    "fr": "Il faut dire ceci : La bonté convient principalement à Dieu. Le bon, c’est ce qu’on appète. Or les êtres appètent, quoi? leurs perfections.\n\nMais la perfection d’un effet consiste dans sa ressemblance avec la cause, puisque la cause doit produire un effet semblable à elle; donc l’effet, appète la ressemblance avec la cause, donc la cause a l’appétibilité et la bonté par cela même. Eh bien, Dieu est la première cause efficiente de tous les êtres; donc il renferme dans sa nature l’appétible et le bon. Aussi l’Aréopagite lui attribue-t il la bonté comme à la première cause, disant qu’il est bon parce qu’il est le principe de tout."
+   },
+   "reponses": [
+    {
+     "la": "Ad primum ergo dicendum quod habere modum, speciem et ordinem, pertinet ad rationem boni causati. Sed bonum in Deo est sicut in causa, unde ad eum pertinet imponere aliis modum, speciem et ordinem. Unde ista tria sunt in Deo sicut in causa.",
+     "fr": "Je réponds aux arguments : 1° Le mode, l’espèce et l’ordre appartiennent à la nature du bon dans les créatures. Or Dieu donne la bonté aux créatures; donc il leur donne aussi le mode, l’espèce et l’ordre; donc ces trois entités sont en lui comme dans leur cause."
+    },
+    {
+     "la": "Ad secundum dicendum quod omnia, appetendo proprias perfectiones, appetunt ipsum Deum, inquantum perfectiones omnium rerum sunt quaedam similitudines divini esse, ut ex dictis patet. Et sic eorum quae Deum appetunt, quaedam cognoscunt ipsum secundum seipsum, quod est proprium creaturae rationalis. Quaedam vero cognoscunt aliquas participationes suae bonitatis, quod etiam extenditur usque ad cognitionem sensibilem. Quaedam vero appetitum naturalem habent absque cognitione, utpote inclinata ad suos fines ab alio superiori cognoscente.",
+     "fr": "2° En appétant leur propre perfection, les créatures appètent Dieu même; car toutes les perfections sont une certaine ressemblance de l’être divin, comme on l’a vu précédemment. Or, parmi les créatures qui tendent vers Dieu, les unes le connoissent lui-même, ce sont les créatures raisonnables; d’autres connoissent les dons de sa bonté, ce sont les créatures sensitives; enfin d’autres ont l’appétence naturelle sans le connoître, ce sont les créatures qui sont conduites à leur fin par un être supérieur doué de la connoissance."
+    }
+   ],
+   "pages": {
+    "fr": [
+     104,
+     106
+    ]
+   },
+   "notes": [
+    "Lachat n’imprime pas le numéro de l’objection 2 ; le paragraphe est rendu tel quel."
+   ]
+  },
+  {
+   "ref": "Iª q. 6 a. 2",
+   "titre": {
+    "la": "Utrum Deus sit summum bonum",
+    "fr": "Dieu est il-le souverain bien?"
+   },
+   "objections": [
+    {
+     "la": "Ad secundum sic proceditur. Videtur quod Deus non sit summum bonum. Summum enim bonum addit aliquid supra bonum, alioquin omni bono conveniret. Sed omne quod se habet ex additione ad aliquid, est compositum. Ergo summum bonum est compositum. Sed Deus est summe simplex, ut supra ostensum est. Ergo Deus non est summum bonum.",
+     "fr": "Il paroît que Dieu n’est pas le souverain bien. 1° Le souverain bien ajoute quelque chose au bien pur et simple, car autrement il n’en différeroit pas. Or une chose ajoutée à une autre chose forme un être composé; donc le souverain bien est composé. Mais Dieu est éminemment simple, comme nous l’avons prouvé; donc il n’est pas le souverain bien."
+    },
+    {
+     "la": "*Praeterea, bonum est quod omnia appetunt*, ut dicit philosophus. Sed nihil aliud est quod omnia appetunt, nisi solus Deus, qui est finis omnium. Ergo nihil aliud est bonum nisi Deus. Quod etiam videtur per id quod dicitur Matth. XIX, *nemo bonus nisi solus Deus*. Sed summum dicitur in comparatione aliorum; sicut summum calidum in comparatione ad omnia calida. Ergo Deus non potest dici summum bonum.",
+     "fr": "2° Le bon est ce que tous les êtres appètent, suivant Aristote. Or ce que tous les êtres appètent, c’est Dieu seul, parce qu’il est l’unique fin de tout; donc il n’y a rien de bon que Dieu seul, comme le dit l’Évangéliste, Luc, XVIII, 19 : « Dieu seul est bon. » Mais souverainement bon, expression relative, n’indique que plusieurs choses bonnes, comme souverainement chaud plusieurs choses chaudes : donc on ne peut dire que Dieu est souverainement bon."
+    },
+    {
+     "la": "Praeterea, summum comparationem importat. Sed quae non sunt unius generis, non sunt comparabilia; sicut dulcedo inconvenienter dicitur maior vel minor quam linea. Cum igitur Deus non sit in eodem genere cum aliis bonis, ut ex superioribus patet, videtur quod Deus non possit dici summum bonum respectu eorum.",
+     "fr": "3° Souverainement emporte comparaison. Or les choses qui ne sont pas du même genre ne peuvent être comparées entre elles : personne ne dira, par exemple, que la douceur est plus grande ou plus petite que la ligne. Mais Dieu n’est pas du même genre que les autres biens, comme on l’a vu plus haut : donc on ne peut dire qu’il est souverainement bon."
+    }
+   ],
+   "sed_contra": {
+    "la": "Sed contra est quod dicit Augustinus, I de Trin., quod *Trinitas divinarum personarum est summum bonum, quod purgatissimis mentibus cernitur*.",
+    "fr": "Mais saint Augustin dit, De la Trin., I. 2 : « Dieu en trois personnes est le souverain bien, que voient les esprits purifiés. »"
+   },
+   "respondeo": {
+    "la": "Respondeo dicendum quod Deus est summum bonum simpliciter, et non solum in aliquo genere vel ordine rerum. Sic enim bonum Deo attribuitur, ut dictum est, inquantum omnes perfectiones desideratae effluunt ab eo, sicut a prima causa. Non autem effluunt ab eo sicut ab agente univoco, ut ex superioribus patet, sed sicut ab agente quod non convenit cum suis effectibus, neque in ratione speciei, nec in ratione generis. Similitudo autem effectus in causa quidem univoca invenitur uniformiter, in causa autem aequivoca invenitur excellentius, sicut calor excellentiori modo est in sole quam in igne. Sic ergo oportet quod cum bonum sit in Deo sicut in prima causa omnium non univoca, quod sit in eo excellentissimo modo. Et propter hoc dicitur summum bonum.",
+    "fr": "Il faut dire ceci : Dieu est le souverain bien, non-seulement d’une manière relative, dans tel ou tel genre, dans tel ou tel ordre de choses, mais absolument. En effet, nous l’avons dit, le bien est attribué à Dieu, parce que toutes les perfections désirées par les créatures découlent de lui comme de leur première cause; elles découlent de lui non pas comme d’un agent univoque, cela résulte de ce qui précède, mais comme d’un agent équivoque qui diffère de ses effets dans l’espèce et dans le genre. Or la ressemblance de l’effet se trouve avec la même forme dans la cause univoque; mais elle se trouve d’une manière plus excellente dans la cause équivoque : ainsi la chaleur est plus parfaite dans le soleil que dans le feu. Puis donc que le bien est en Dieu comme dans la cause équivoque de tous les êtres, il y est de la manière la plus excellente, et voilà pourquoi l’on dit que Dieu est le souverain bien."
+   },
+   "reponses": [
+    {
+     "la": "Ad primum ergo dicendum quod summum bonum addit super bonum, non rem aliquam absolutam, sed relationem tantum. Relatio autem qua aliquid de Deo dicitur relative ad creaturas, non est realiter in Deo, sed in creatura; in Deo vero secundum rationem; sicut scibile relative dicitur ad scientiam, non quia ad ipsam referatur, sed quia scientia refertur ad ipsum. Et sic non oportet quod in summo bono sit aliqua compositio, sed solum quod alia deficiant ab ipso.",
+     "fr": "Je réponds aux arguments : 1° Le souverain bien ajoute au bien pur et simple, non pas une réalité absolue, mais seulement une relation. Or les relations qu’on établit entre le ciel et la terre existent réellement dans les créatures, il est vrai; mais elles n’existent en Dieu que rationnellement : ainsi, quand on dit que l’objet et la science ont des rapports réciproques, ce n’est pas que l’objet se rapporte à la science, mais c’est que la science se rapporte à l’objet. Le souverain bien peut donc exister sans qu’il soit composé de plusieurs choses : il suffit que les autres biens lui soient inférieurs."
+    },
+    {
+     "la": "Ad secundum dicendum quod, cum dicitur *bonum est quod omnia appetunt*, non sic intelligitur quasi unumquodque bonum ab omnibus appetatur, sed quia quidquid appetitur, rationem boni habet. Quod autem dicitur, *nemo bonus nisi solus Deus*, intelligitur de bono per essentiam, ut post dicetur.",
+     "fr": "2° Lorsqu’on dit que le bon est ce que tous les êtres appètent, on ne veut pas dire que toutes les sortes de bien sont appétées par tous les êtres; mais on veut dire que tout ce qui est appété est bon. Quant aux paroles de l’Écriture : « Dieu seul est bon, » elles doivent s’entendre du bon par essence, comme nous le dirons tout à l’heure."
+    },
+    {
+     "la": "Ad tertium dicendum quod ea quae non sunt in eodem genere, si quidem sint in diversis generibus contenta, nullo modo comparabilia sunt. De Deo autem negatur esse in eodem genere cum aliis bonis, non quod ipse sit in quodam alio genere; sed quia ipse est extra genus, et principium omnis generis. Et sic comparatur ad alia per excessum. Et huiusmodi comparationem importat summum bonum.",
+     "fr": "3° Les choses qui ne sont pas du même genre parce qu’elles appartiennent à des genres différents, ne peuvent être comparées entre elles, cela est vrai; mais si Dieu n’est pas du même genre que les autres biens, ce n’est pas qu’il appartienne à un genre différent, c’est qu’il n’appartient à aucun genre et qu’il est l’auteur de tous. Il peut donc être comparé aux autres biens par suréminence, et voilà la comparaison qu’emporte le souverain bien."
+    }
+   ],
+   "pages": {
+    "fr": [
+     106,
+     108
+    ]
+   }
+  },
+  {
+   "ref": "Iª q. 6 a. 3",
+   "titre": {
+    "la": "Utrum esse bonum per essentiam sit proprium Dei",
+    "fr": "Dieu seul est-il-bon par essence?"
+   },
+   "objections": [
+    {
+     "la": "Ad tertium sic proceditur. Videtur quod esse bonum per essentiam non sit proprium Dei. Sicut enim unum convertitur cum ente, ita et bonum, ut supra habitum est. Sed omne ens est unum per suam essentiam, ut patet per philosophum in IV Metaphys. Ergo omne ens est bonum per suam essentiam.",
+     "fr": "Il paroît que Dieu n’est pas seul bon par essence. 1° Comme nous l’avons vu plus haut, le bon, comme le un, échange ses prérogatives avec l’être. Or tout être est un par essence; donc tout être est bon aussi par essence."
+    },
+    {
+     "la": "Praeterea, si bonum est quod omnia appetunt, cum ipsum esse sit desideratum ab omnibus, ipsum esse cuiuslibet rei est eius bonum. Sed quaelibet res est ens per suam essentiam. Ergo quaelibet res est bona per suam essentiam.",
+     "fr": "2° Le bon est ce qu’on appète, nous l’avons dit souvent; or tout appète l’existence; donc l’existence de chaque chose est sa bonté. Mais chaque chose existe par son essence; donc chaque chose est bonne aussi par son essence,"
+    },
+    {
+     "la": "Praeterea, omnis res per suam bonitatem est bona. Si igitur aliqua res est quae non sit bona per suam essentiam, oportebit quod eius bonitas non sit sua essentia. Illa ergo bonitas, cum sit ens quoddam, oportet quod sit bona, et si quidem alia bonitate, iterum de illa bonitate quaeretur. Aut ergo erit procedere in infinitum, aut venire ad aliquam bonitatem quae non erit bona per aliam bonitatem. Eadem ergo ratione standum est in primo. Res igitur quaelibet est bona per suam essentiam.",
+     "fr": "3° Toute chose est bonne par sa bonté. Si donc il y a des choses qui ne soient essentiellement bonnes, elles le seront par une bonté qui n’est pas leur essence. Mais cette dernière bonté devra être bonne elle-même, puisqu’elle est être; elle exigera donc une nouvelle bonté pour la rendre bonne, celle ci de même, et jusqu’à l’infini; nous serons donc obligés de parcourir une série de bontés sans fin, ce qui est absurde. Donc chaque chose est bonne par essence."
+    }
+   ],
+   "sed_contra": {
+    "la": "Sed contra est quod dicit Boetius, in libro de Hebdomad., quod alia omnia a Deo sunt bona per participationem. Non igitur per essentiam.",
+    "fr": "Mais Boëce dit, De la Trin., III : « Hors de Dieu, tous les êtres sont bons par participation. » Ils ne le sont donc pas par essence."
+   },
+   "respondeo": {
+    "la": "Respondeo dicendum quod solus Deus est bonus per suam essentiam. Unumquodque enim dicitur bonum, secundum quod est perfectum. Perfectio autem alicuius rei triplex est. Prima quidem, secundum quod in suo esse constituitur. Secunda vero, prout ei aliqua accidentia superadduntur, ad suam perfectam operationem necessaria. Tertia vero perfectio alicuius est per hoc, quod aliquid aliud attingit sicut finem. Utpote prima perfectio ignis consistit in esse, quod habet per suam formam substantialem, secunda vero eius perfectio consistit in caliditate, levitate et siccitate, et huiusmodi, tertia vero perfectio eius est secundum quod in loco suo quiescit. Haec autem triplex perfectio nulli creato competit secundum suam essentiam, sed soli Deo, cuius solius essentia est suum esse; et cui non adveniunt aliqua accidentia; sed quae de aliis dicuntur accidentaliter, sibi conveniunt essentialiter, ut esse potentem, sapientem, et huiusmodi, sicut ex dictis patet. Ipse etiam ad nihil aliud ordinatur sicut ad finem, sed ipse est ultimus finis omnium rerum. Unde manifestum est quod solus Deus habet omnimodam perfectionem secundum suam essentiam. Et ideo ipse solus est bonus per suam essentiam.",
+    "fr": "Il faut dire ceci : Dieu seul est bon par essence. Tout être est bon selon ce qu’il est parfait. Or une chose peut être parfaite de trois manières : d’abord par l’intime constitution de sa substance, ensuite par certains accessoires qui lui sont nécessaires pour déployer toute son énergie, puis par l’accomplissement de la fin qui lui est prescrite : ainsi la première perfection du feu, par exemple, consiste dans l’être qui lui donne sa forme substantielle; la deuxième, dans la chaleur, la légèreté, la pénétrabilité et d’autres propriétés semblables; la troisième enfin, dans l’accomplissement de sa destination. Eh bien, Dieu seul, à l’exclusion des choses finies, possède essentiellement ces trois sortes de perfections. D’abord lui seul trouve son essence dans son être; ensuite il a nécessairement ce que les créatures ont par accident, comme la sagesse, la bonté et les autres attributs de ce genre; puis aucune fin ne lui est prescrite, mais il est lui-même la fin de toutes choses. Ainsi Dieu seul a dans son essence toutes les perfections; donc il est seul essentiellement bon."
+   },
+   "reponses": [
+    {
+     "la": "Ad primum ergo dicendum quod unum non importat rationem perfectionis, sed indivisionis tantum, quae unicuique rei competit secundum suam essentiam. Simplicium autem essentiae sunt indivisae et actu et potentia, compositorum vero essentiae sunt indivisae secundum actum tantum. Et ideo oportet quod quaelibet res sit una per suam essentiam, non autem bona, ut ostensum est.",
+     "fr": "Je réponds aux arguments : 1° L’unité n’implique pas l’idée de perfection; elle énonce seulement l’indivision qui appartient à l’essence des choses. En effet. Les choses composées sont indivisées par l’acte, les choses simples le sont par l’acte et par la puissance. Les choses sont donc unes par essence; mais elles ne sont pas bonnes de la même manière, comme nous le prouvions tout à l’heure."
+    },
+    {
+     "la": "Ad secundum dicendum quod, licet unumquodque sit bonum inquantum habet esse, tamen essentia rei creatae non est ipsum esse, et ideo non sequitur quod res creata sit bona per suam essentiam.",
+     "fr": "2° Les choses créées sont bonnes par leur être; mais leur être n’est pas leur essence; donc elles ne sont pas bonnes par leur essence."
+    },
+    {
+     "la": "Ad tertium dicendum quod bonitas rei creatae non est ipsa eius essentia, sed aliquid superadditum; vel ipsum esse eius, vel aliqua perfectio superaddita, vel ordo ad finem. Ipsa tamen bonitas sic superaddita dicitur bona sicut et ens, hac autem ratione dicitur ens, quia ea est aliquid, non quia ipsa aliquo alio sit. Unde hac ratione dicitur bona, quia ea est aliquid bonum, non quia ipsa habeat aliquam aliam bonitatem, qua sit bona.",
+     "fr": "3° La bonté des choses créées n’est pas leur essence, mais quelque chose d’accidentel, comme leur être, leurs qualités ou les rapports qu’elles ont avec leur fin. Cette bonté accidentelle est bonne de la même manière qu’elle est être; or elle est être parce qu’elle est quelque chose elle-même, et non parce qu’une autre chose est en elle; elle est donc bonne parce qu’elle est quelque chose de bon, et non parce qu’elle a en elle une autre bonté qui la rend bonne."
+    }
+   ],
+   "pages": {
+    "fr": [
+     108,
+     111
+    ]
+   }
+  },
+  {
+   "ref": "Iª q. 6 a. 4",
+   "titre": {
+    "la": "Utrum omnia sint bona bonitate divina",
+    "fr": "Toutes les choses sont-elles bonnes de la bonté divine?"
+   },
+   "objections": [
+    {
+     "la": "Ad quartum sic proceditur. Videtur quod omnia sint bona bonitate divina. Dicit enim Augustinus, VII de Trin., *bonum hoc et bonum illud, tolle hoc et tolle illud, et vide ipsum bonum, si potes, ita Deum videbis, non alio bono bonum, sed bonum omnis boni*. Sed unumquodque est bonum suo bono. Ergo unumquodque est bonum ipso bono quod est Deus.",
+     "fr": "Il paroît que toutes les choses sont bonnes de la bonté divine. 1° Saint Augustin dit, De la Trin., VIII, 3 : « Ecartez les différents biens pour ne considérer que le bien même, si vous le pouvez; alors vous verrez que Dieu est bon non par tel ou tel bien, mais de tout bien. » Donc chaque chose est bonne par le bien qui est en Dieu."
+    },
+    {
+     "la": "Praeterea, sicut dicit Boetius, in libro de Hebdomad., omnia dicuntur bona inquantum ordinantur ad Deum, et hoc ratione bonitatis divinae. Ergo omnia sunt bona bonitate divina.",
+     "fr": "2° Tous les êtres, comme le dit Boëce, sont bons parce qu’ils ont leur principe et leur fin dans Dieu : donc ils sont bons de la bonté divine."
+    }
+   ],
+   "sed_contra": {
+    "la": "Sed contra est quod omnia sunt bona inquantum sunt. Sed non dicuntur omnia entia per esse divinum, sed per esse proprium. Ergo non omnia sunt bona bonitate divina, sed bonitate propria.",
+    "fr": "Mais les choses sont bonnes autant qu’elles sont êtres. Or elles ne sont pas êtres par l’être de Dieu, mais par leur être propre; donc elles ne sont pas bonnes non plus de la bonté divine, mais de leur propre bonté."
+   },
+   "respondeo": {
+    "la": "Respondeo dicendum quod nihil prohibet in his quae relationem important, aliquid ab extrinseco denominari; sicut aliquid denominatur locatum a loco, et mensuratum a mensura. Circa vero ea quae absolute dicuntur, diversa fuit opinio. Plato enim posuit omnium rerum species separatas; et quod ab eis individua denominantur, quasi species separatas participando; ut puta quod Socrates dicitur homo secundum ideam hominis separatam. Et sicut ponebat ideam hominis et equi separatam, quam vocabat per se hominem et per se equum, ita ponebat ideam entis et ideam unius separatam, quam dicebat per se ens et per se unum, et eius participatione unumquodque dicitur ens vel unum. Hoc autem quod est per se ens et per se unum, ponebat esse summum Deum, a quo omnia dicuntur bona per modum participationis. Et quamvis haec opinio irrationabilis videatur quantum ad hoc, quod ponebat species rerum naturalium separatas per se subsistentes, ut Aristoteles multipliciter probat; tamen hoc absolute verum est, quod est aliquod unum per essentiam suam bonum, quod dicimus Deum, ut ex superioribus patet. Huic etiam sententiae concordat Aristoteles. A primo igitur per suam essentiam ente et bono, unumquodque potest dici bonum et ens, inquantum participat ipsum per modum cuiusdam assimilationis, licet remote et deficienter, ut ex superioribus patet. Sic ergo unumquodque dicitur bonum bonitate divina, sicut primo principio exemplari, effectivo et finali totius bonitatis. Nihilominus tamen unumquodque dicitur bonum similitudine divinae bonitatis sibi inhaerente, quae est formaliter sua bonitas denominans ipsum. Et sic est bonitas una omnium; et etiam multae bonitates.",
+    "fr": "Il faut dire ceci : Les choses relatives peuvent recevoir leurs dénominations et leurs propriétés du dehors; ainsi les choses localisées les reçoivent du lieu, les choses mesurées de la mesure. Quant aux choses absolues, on est divisé d’opinion. Platon disoit que les espèces ou les formes des choses existoient réellement en elles mêmes, séparées de leur objet, et qu’elles constituoient les individus par leur être substantiel, en les revêtant de leur entité : si bien que Socrate étoit homme en vertu de l’idée de l’homme. Et comme il posoit les idées abstraites de l’homme et du cheval en les appelant l’homme et le cheval par soi, de même il affirmoit l’idée abstraite de l’être et du un, sous les dénominations de l’être et du un par soi, qui se communiquent à tout ce qui a l’existence et l’unité. Or l’être et le un par soi formoient, pour notre philosophe, le bien suprême; et parce que le bon est synonyme de l’être ainsi que le un, le bien même étoit Dieu, de qui toutes les choses tiennent leur bonté par participation. Sans doute cette opinion est fausse en ce qu’elle montre les espèces des choses subsistant par elles-mêmes, hors de leur objet, et le philosophe de Stagyre a fait ressortir cette erreur dans tout son jour; mais nous n’en devons pas moins admettre un premier principe qui est être et bon par essence, principe que nous appelons Dieu, comme nous l’avons vu précédemment. Toutes les choses sont donc êtres et bonnes par le premier être et par le premier bien; car elles participent à sa nature en vertu d’une ressemblance, quoique d’une manière éloignée et défectueuse, comme nous l’avons dit en son lieu. Ainsi tout est bon par la bonté divine, cause exemplaire, efficiente et finale de toute bonté. Cependant les choses ont aussi, pour forme inhérente et caractéristique, un certain bien, qui est leur similitude du bien suprême. Il y a donc une seule bonté pour toutes choses, mais il y a aussi plusieurs bontés."
+   },
+   "reponses": [
+    {
+     "la": "Et per hoc patet responsio ad obiecta.",
+     "fr": "Ces observations renferment la réponse aux arguments."
+    }
+   ],
+   "pages": {
+    "fr": [
+     111,
+     114
+    ]
+   }
+  }
+ ],
+ "source": {
+  "fr": {
+   "ouvrage": "Somme théologique de S. Thomas d’Aquin, traduite en français et annotée par F. Lachat",
+   "edition": "Paris, Louis Vivès, 4e édition, 1880, tome premier (même composition que l’édition de 1874)",
+   "url": "https://archive.org/details/sommetheologique01thom",
+   "controle": "https://archive.org/details/sommethologique07lachgoog",
+   "relecture": "vote de quatre lectures (Tesseract et ABBYY sur les scans de 1880 et de 1874, même composition) ; chaque ligne sans accord relue sur l’image (corrections_fr.txt) ; notes de Lachat et « (Conclusion. — …) » des éditeurs non repris"
+  },
+  "la": {
+   "ouvrage": "Sancti Thomae Aquinatis Opera omnia iussu impensaque Leonis XIII P. M. edita, t. IV : Pars prima Summae theologiae a quaestione I ad quaestionem XLIX",
+   "edition": "Romae, ex Typographia Polyglotta S. C. de Propaganda Fide, 1888",
+   "url": "https://archive.org/details/operaomniaiussui04thom",
+   "transcription": "https://www.corpusthomisticum.org/sth1001.html (E. Alarcón, d’après l’édition léonine)",
+   "relecture": "alignement mot à mot sur la lecture ABBYY du scan de 1888 (latin_controle.py), écarts isolés vus sur l’image (corrections_la.txt) ; intitulés relus sur l’image ; ponctuation du Corpus Thomisticum ; pas de relecture intégrale du latin sur l’image"
+  },
+  "pages_fr": [
+   104,
+   114
+  ]
+ },
+ "revision": 1
+}

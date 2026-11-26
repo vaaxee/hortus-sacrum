@@ -1161,6 +1161,79 @@
       "personne": ["soi-meme"],
       "devinee": ["fin", "objet", "personne"]
     },
+    "beringer:trinite-adoration-action-de-graces": {
+      "fin": ["adoration", "action-de-graces", "demande", "intercession"],
+      "objet": ["trinite", "eucharistie", "sacre-coeur"],
+      "grace": ["salut"],
+      "personne": ["soi-meme", "pecheurs", "eglise-et-pretres"],
+      "forme": ["oraison"],
+      "devinee": ["fin", "objet", "grace", "personne", "forme"]
+    },
+    "beringer:trinite-trois-offrandes": {
+      "fin": ["action-de-graces", "propitiation", "demande"],
+      "objet": ["trinite", "passion", "precieux-sang"],
+      "grace": ["salut", "perseverance-finale"],
+      "personne": ["soi-meme"],
+      "forme": ["oraison"],
+      "devinee": ["fin", "objet", "grace", "personne", "forme"]
+    },
+    "beringer:trinite-toute-puissance": {
+      "fin": ["demande"],
+      "objet": ["trinite"],
+      "grace": ["sanctification"],
+      "personne": ["soi-meme"],
+      "forme": ["oraison"],
+      "devinee": ["fin", "objet", "grace", "personne", "forme"]
+    },
+    "thibaut:marmion-consecration-trinite": {
+      "fin": ["adoration", "demande"],
+      "objet": ["trinite", "jesus-christ", "saint-esprit", "sainte-vierge"],
+      "grace": ["sanctification", "charite"],
+      "personne": ["soi-meme"],
+      "forme": ["acte"],
+      "devinee": ["fin", "objet", "grace", "personne", "forme"]
+    },
+    "beringer:offrande-du-precieux-sang": {
+      "fin": ["propitiation", "intercession"],
+      "objet": ["precieux-sang"],
+      "personne": ["soi-meme", "eglise-et-pretres"],
+      "forme": ["jaculatoire"],
+      "devinee": ["fin", "objet", "personne", "forme"]
+    },
+    "cordonjoseph1871:jaculatoires-jesus-marie-joseph": {
+      "fin": ["demande", "adoration"],
+      "objet": ["jesus-christ", "sainte-vierge", "saint-joseph"],
+      "grace": ["perseverance-finale"],
+      "forme": ["jaculatoire"],
+      "devinee": ["fin", "objet", "grace", "forme"]
+    },
+    "cordonjoseph1871:souvenez-vous-a-saint-joseph": {
+      "fin": ["demande"],
+      "objet": ["saint-joseph"],
+      "forme": ["oraison"],
+      "devinee": ["fin", "objet", "forme"]
+    },
+    "desgenettes:cinq-prieres-intentions-souverain-pontife": {
+      "fin": ["intercession"],
+      "objet": ["trinite"],
+      "personne": ["eglise-et-pretres", "pecheurs", "dirigeants"],
+      "forme": ["oraison"],
+      "devinee": ["fin", "objet", "personne", "forme"]
+    },
+    "janvier:priere-de-pie-ix-sainte-face": {
+      "fin": ["demande"],
+      "objet": ["sainte-face"],
+      "grace": ["vertus"],
+      "forme": ["oraison"],
+      "devinee": ["fin", "objet", "grace", "forme"]
+    },
+    "purgatorian1868:invocation-trinite-ames-purgatoire": {
+      "fin": ["intercession"],
+      "objet": ["trinite", "ames-du-purgatoire"],
+      "personne": ["defunts"],
+      "forme": ["oraison"],
+      "devinee": ["fin", "objet", "personne", "forme"]
+    },
     "rosairevivant1841:fruits-des-quinze-mysteres": {
       "fin": ["demande"],
       "objet": ["jesus-christ", "sainte-vierge", "saint-esprit"],
@@ -1173,47 +1246,6 @@
       "objet": ["jesus-christ"],
       "forme": ["office"],
       "devinee": ["fin", "objet", "forme"]
-    },
-    "janvier:priere-de-pie-ix-sainte-face": {
-      "fin": ["demande"],
-      "objet": ["sainte-face"],
-      "grace": ["vertus"],
-      "forme": ["oraison"],
-      "devinee": ["fin", "objet", "grace", "forme"]
-    },
-    "cordonjoseph1871:souvenez-vous-a-saint-joseph": {
-      "fin": ["demande"],
-      "objet": ["saint-joseph"],
-      "forme": ["oraison"],
-      "devinee": ["fin", "objet", "forme"]
-    },
-    "cordonjoseph1871:jaculatoires-jesus-marie-joseph": {
-      "fin": ["demande", "adoration"],
-      "objet": ["jesus-christ", "sainte-vierge", "saint-joseph"],
-      "grace": ["perseverance-finale"],
-      "forme": ["jaculatoire"],
-      "devinee": ["fin", "objet", "grace", "forme"]
-    },
-    "desgenettes:cinq-prieres-intentions-souverain-pontife": {
-      "fin": ["intercession"],
-      "objet": ["trinite"],
-      "personne": ["eglise-et-pretres", "pecheurs", "dirigeants"],
-      "forme": ["oraison"],
-      "devinee": ["fin", "objet", "personne", "forme"]
-    },
-    "beringer:offrande-du-precieux-sang": {
-      "fin": ["propitiation", "intercession"],
-      "objet": ["precieux-sang"],
-      "personne": ["soi-meme", "eglise-et-pretres"],
-      "forme": ["jaculatoire"],
-      "devinee": ["fin", "objet", "personne", "forme"]
-    },
-    "purgatorian1868:invocation-trinite-ames-purgatoire": {
-      "fin": ["intercession"],
-      "objet": ["trinite", "ames-du-purgatoire"],
-      "personne": ["defunts"],
-      "forme": ["oraison"],
-      "devinee": ["fin", "objet", "personne", "forme"]
     }
   }
 }

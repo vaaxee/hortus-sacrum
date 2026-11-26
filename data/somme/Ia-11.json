@@ -1,0 +1,235 @@
+{
+ "ref": "Iª q. 11",
+ "partie": "Ia",
+ "question": 11,
+ "titre": {
+  "la": "De unitate Dei",
+  "fr": "De l’unité de Dieu."
+ },
+ "prooemium": {
+  "la": "Post praemissa, considerandum est de divina unitate. Et circa hoc quaeruntur quatuor. Primo, utrum unum addat aliquid supra ens. Secundo, utrum opponantur unum et multa. Tertio, utrum Deus sit unus. Quarto, utrum sit maxime unus.",
+  "fr": "Nous devons, après ce qui précède, parler de l’unité de Dieu.\n\nQuatre questions se présentent ici : 1° L’unité ajoute-t-elle quelque chose à l’être? 2° L’unité est-elle opposée à la multiplicité? 3° Dieu est-il un? 4° Dieu est-il souverainement un?"
+ },
+ "articles": [
+  {
+   "ref": "Iª q. 11 a. 1",
+   "titre": {
+    "la": "Utrum unum addat aliquid supra ens",
+    "fr": "L’unité ajoute-t-elle quelque chose à l’être?"
+   },
+   "objections": [
+    {
+     "la": "Ad primum sic proceditur. Videtur quod unum addat aliquid supra ens. Omne enim quod est in aliquo genere determinato, se habet ex additione ad ens, quod circuit omnia genera. Sed unum est in genere determinato, est enim principium numeri, qui est species quantitatis. Ergo unum addit aliquid supra ens.",
+     "fr": "Il paroît que l’unité ajoute quelque chose à l’être. 1° Tout ce qui appartient à un genre déterminé ajoute quelque chose à l’être, puisque l’être embrasse tous les genres. Or l’unité appartient à un genre déterminé, car elle forme le principe du nombre qui est une espèce de la quantité. Donc l’unité ajoute quelque chose à l’être."
+    },
+    {
+     "la": "Praeterea, quod dividit aliquod commune, se habet ex additione ad illud. Sed ens dividitur per unum et multa. Ergo unum addit aliquid supra ens.",
+     "fr": "2° Ce qui divise une entité commune, y ajoute quelque chose. Or l’être est divisé par l’unité et par la multiplicité. Donc l’unité ajoute quelque chose à l’être."
+    },
+    {
+     "la": "Praeterea, si unum non addit supra ens, idem esset dicere unum et ens. Sed nugatorie dicitur ens ens. Ergo nugatio esset dicere ens unum, quod falsum est. Addit igitur unum supra ens.",
+     "fr": "3° Si l’unité n’ajoutoit rien à l’être, le mot être signifieroit la même chose que le mot un. Or il seroit puéril de dire : « L’être est l’être; » donc on ne pourroit dire non plus, dans l’hypothèse où nous sommes placés : « L’être est un. » Mais cette conséquence est fausse; donc l’unité ajoute quelque chose à l’être."
+    }
+   ],
+   "sed_contra": {
+    "la": "Sed contra est quod dicit Dionysius, ult. cap. de Div. Nom., *nihil est existentium non participans uno*, quod non esset, si unum adderet supra ens quod contraheret ipsum. Ergo unum non habet se ex additione ad ens.",
+    "fr": "Mais l’Aréopagite dit, Des Noms div., c. dern. : « Tout ce qui existe participe à l’unité. » Or cela ne seroit pas, si l’unité ajoutoit quelque chose à l’être, car alors elle le restreindroit dans son étendue."
+   },
+   "respondeo": {
+    "la": "Respondeo dicendum quod unum non addit supra ens rem aliquam, sed tantum negationem divisionis, unum enim nihil aliud significat quam ens indivisum. Et ex hoc ipso apparet quod unum convertitur cum ente. Nam omne ens aut est simplex, aut compositum. Quod autem est simplex, est indivisum et actu et potentia. Quod autem est compositum, non habet esse quandiu partes eius sunt divisae, sed postquam constituunt et componunt ipsum compositum. Unde manifestum est quod esse cuiuslibet rei consistit in indivisione. Et inde est quod unumquodque, sicut custodit suum esse, ita custodit suam unitatem.",
+    "fr": "Il faut dire ceci : L’unité n’ajoute à l’être aucune réalité; seulement elle en exclut l’idée de division. Un ne signifie pas autre chose qu’être indivisé, de telle sorte qu’être et un s’impliquent réciproquement comme corrélatifs. En effet, l’être est simple ou il est composé : s’il est simple, il est indivisé sous tous les rapports, soit en acte, soit en puissance; s’il est composé, il n’existe pas tant que ses parties sont divisées, mais seulement quand elles sont unies ensemble et forment un agrégat. On voit par là que l’être de tout consiste dans l’indivision; et voilà pourquoi les choses ne conservent l’existence qu’aussi longtemps qu’elles conservent l’unité."
+   },
+   "reponses": [
+    {
+     "la": "Ad primum igitur dicendum quod quidam, putantes idem esse unum quod convertitur cum ente, et quod est principium numeri, divisi sunt in contrarias positiones. Pythagoras enim et Plato, videntes quod unum quod convertitur cum ente, non addit aliquam rem supra ens, sed significat substantiam entis prout est indivisa, existimaverunt sic se habere de uno quod est principium numeri. Et quia numerus componitur ex unitatibus, crediderunt quod numeri essent substantiae omnium rerum. E contrario autem Avicenna, considerans quod unum quod est principium numeri, addit aliquam rem supra substantiam entis (alias numerus ex unitatibus compositus non esset species quantitatis), credidit quod unum quod convertitur cum ente, addat rem aliquam supra substantiam entis, sicut album supra hominem. Sed hoc manifeste falsum est, quia quaelibet res est una per suam substantiam. Si enim per aliquid aliud esset una quaelibet res, cum illud iterum sit unum, si esset iterum unum per aliquid aliud, esset abire in infinitum. Unde standum est in primo. Sic igitur dicendum est quod unum quod convertitur cum ente, non addit aliquam rem supra ens, sed unum quod est principium numeri, addit aliquid supra ens, ad genus quantitatis pertinens.",
+     "fr": "Je réponds aux arguments. 1° Les philosophes, confondant deux choses distinctes, le un qui correspond à l’être et le un qui forme le nombre, se sont partagés en deux sentiments contraires. Pythagore et Platon, voyant que le premier un n’ajoute rien à l’être, mais qu’il en affirme la substance, ont pensé qu’il n’en étoit pas autrement du second; et comme le nombre se compose d’unités, ils en ont fait l’essence des choses. Par contre, Avicenne, considérant que le un principe du nombre ajoute à la substance de l’être (car le nombre est une espèce de la quantité), a soutenu que le un correspondant à l’être ajoute aussi quelque chose à la substance qu’il affecte, de même que la blancheur ajoute quelque chose à l’homme. Cette opinion n’est pas dans le vrai. Les êtres sont uns par leur substance : car s’ils tenoient leur unité d’autre chose, il faudroit que cet autre chose fût un lui-même par autre chose, puis ce dernier autre chose par autre chose encore, ainsi de suite à l’infini. Disons donc que le un, corrélatif de l’être, n’ajoute rien à l’être, mais que le un principe du nombre y ajoute quelque chose, une entité qui appartient au genre de la quantité."
+    },
+    {
+     "la": "Ad secundum dicendum quod nihil prohibet id quod est uno modo divisum, esse alio modo indivisum; sicut quod est divisum numero, est indivisum secundum speciem, et sic contingit aliquid esse uno modo unum, alio modo multa. Sed tamen si sit indivisum simpliciter; vel quia est indivisum secundum id quod pertinet ad essentiam rei, licet sit divisum quantum ad ea quae sunt extra essentiam rei, sicut quod est unum subiecto et multa secundum accidentia; vel quia est indivisum in actu, et divisum in potentia, sicut quod est unum toto et multa secundum partes, huiusmodi erit unum simpliciter, et multa secundum quid. Si vero aliquid e converso sit indivisum secundum quid, et divisum simpliciter; utpote quia est divisum secundum essentiam, et indivisum secundum rationem, vel secundum principium sive causam, erit multa simpliciter, et unum secundum quid; ut quae sunt multa numero et unum specie, vel unum principio. Sic igitur ens dividitur per unum et multa, quasi per unum simpliciter, et multa secundum quid. Nam et ipsa multitudo non contineretur sub ente, nisi contineretur aliquo modo sub uno. Dicit enim Dionysius, ult. cap. de Div. Nom., quod *non est multitudo non participans uno, sed quae sunt multa partibus, sunt unum toto; et quae sunt multa accidentibus, sunt unum subiecto; et quae sunt multa numero, sunt unum specie; et quae sunt speciebus multa, sunt unum genere; et quae sunt multa processibus, sunt unum principio*.",
+     "fr": "2° Rien n’empêche que ce qui est divisé sous un rapport soit indivisé sous un autre : ce qui a la division dans le nombre, par exemple, ne l’a pas dans l’espèce, et voilà comment il arrive qu’une chose peut être une et multiple sous des aspects différents. Mais quand une chose est indivisible simplement; quand elle exclut la division dans ce qui appartient à son essence tout en l’admettant dans ce qui ne lui est pas essentiel, comme l’être un dans son sujet et multiple dans ses accidents; ou quand elle est indivisible en acte et divisible en puissance, comme l’être qui a l’unité dans le tout et la pluralité dans les parties : cette chose est une simplement et multiple relativement. Au contraire, lorsqu’une chose est indivisible relativement et divisible simplement; quand elle souffre la division dans son essence et la repousse dans son principe et dans sa cause, comme l’être qui a la pluralité dans le nombre et l’unité dans son espèce ou dans son principe : cette chose est multiple simplement et une relativement. Voilà comment l’être est divisé par l’unité et par la multiplicité : il l’est par l’unité simplement, et par la multiplicité relativement; car la multiplicité n’appartient à la catégorie de l’être que par l’unité. C’est dans ce sens que l’Aréopagite dit, Des Noms div., c. dern. : « Il n’y a pas de multiplicité qui ne participe à l’unité : les choses multiples par les parties sont unes dans le tout; les choses multiples par les accidents sont unes dans le sujet; les choses multiples par le nombre sont unes dans l’espèce; les choses multiples par les espèces sont unes dans le genre, et les choses multiples dans leurs filiations sont unes dans leur principe. »"
+    },
+    {
+     "la": "Ad tertium dicendum quod ideo non est nugatio cum dicitur ens unum, quia unum addit aliquid secundum rationem supra ens.",
+     "fr": "3° Il n’est pas ridicule de dire que l’être est un, parce que l’unité ajoute rationnellement à l’être quelque chose, savoir l’idée d’indivision."
+    }
+   ],
+   "pages": {
+    "fr": [
+     170,
+     173
+    ]
+   }
+  },
+  {
+   "ref": "Iª q. 11 a. 2",
+   "titre": {
+    "la": "Utrum unum et multa opponantur",
+    "fr": "L’unité est-elle opposée à la multiplicité?"
+   },
+   "objections": [
+    {
+     "la": "Ad secundum sic proceditur. Videtur quod unum et multa non opponantur. Nullum enim oppositum praedicatur de suo opposito. Sed omnis multitudo est quodammodo unum, ut ex praedictis patet. Ergo unum non opponitur multitudini.",
+     "fr": "Il paroît que l’unité n’est pas opposée à la multiplicité. 1° Les choses opposées ne peuvent être affirmées les unes des autres. Or on dit, comme nous l’avons vu tout à l’heure, que la multiplicité est une sous quelque rapport. Donc l’unité n’est pas opposée à la multiplicité."
+    },
+    {
+     "la": "Praeterea, nullum oppositum constituitur ex suo opposito. Sed unum constituit multitudinem. Ergo non opponitur multitudini.",
+     "fr": "2° L’opposé n’est point formé par son opposé. Or la multiplicité est formée par l’unité. Donc l’unité n’est pas opposée à la multiplicité."
+    },
+    {
+     "la": "Praeterea, unum uni est oppositum. Sed multo opponitur paucum. Ergo non opponitur ei unum.",
+     "fr": "3° Une chose est opposée à une autre chose, et multiple l’est à peu. Donc l’unité n’est pas opposée à la multiplicité."
+    },
+    {
+     "la": "Praeterea, si unum opponitur multitudini, opponitur ei sicut indivisum diviso, et sic opponetur ei ut privatio habitui. Hoc autem videtur inconveniens, quia sequeretur quod unum sit posterius multitudine, et definiatur per eam; cum tamen multitudo definiatur per unum. Unde erit circulus in definitione, quod est inconveniens. Non ergo unum et multa sunt opposita.",
+     "fr": "4° Si l’unité étoit opposée à la multiplicité, elle y seroit opposée comme l’indivis l’est au divisé, par conséquent comme la privation l’est à la possession. Or, s’il en étoit ainsi, l’unité seroit postérieure à la multiplicité et devroit être définie par elle; mais c’est, au contraire, la multiplicité qui est définie par l’unité. Donc l’unité n’est pas opposée à la multiplicité."
+    }
+   ],
+   "sed_contra": {
+    "la": "Sed contra, quorum rationes sunt oppositae, ipsa sunt opposita. Sed ratio unius consistit in indivisibilitate, ratio vero multitudinis divisionem continet. Ergo unum et multa sunt opposita.",
+    "fr": "Mais les choses opposées dans l’idée sont opposées dans la réalité. Or l’idée de l’unité consiste dans l’indivision, et l’idée de la multiplicité dans la division. Donc l’unité est opposée à la multiplicité."
+   },
+   "respondeo": {
+    "la": "Respondeo dicendum quod unum opponitur multis, sed diversimode. Nam unum quod est principium numeri, opponitur multitudini quae est numerus, ut mensura mensurato, unum enim habet rationem primae mensurae, et numerus est multitudo mensurata per unum, ut patet ex X Metaphys. Unum vero quod convertitur cum ente, opponitur multitudini per modum privationis, ut indivisum diviso.",
+    "fr": "Il faut dire ceci : L’unité est opposée à la multiplicité, mais de deux manières différentes. D’abord le un principe du nombre est opposé au multiple comme la mesure l’est à la chose mesurée; car l’unité constitue la première mesure des êtres et le nombre est la multitude mesurée par l’unité, comme on le voit dans le Philosophe. Ensuite le un synonyme de l’être est opposé ou multiple par privation, comme l’indivis l’est au divisé."
+   },
+   "reponses": [
+    {
+     "la": "Ad primum ergo dicendum quod nulla privatio tollit totaliter esse, quia privatio est negatio in subiecto, secundum philosophum. Sed tamen omnis privatio tollit aliquod esse. Et ideo in ente, ratione suae communitatis, accidit quod privatio entis fundatur in ente, quod non accidit in privationibus formarum specialium, ut visus vel albedinis, vel alicuius huiusmodi. Et sicut est de ente, ita est de uno et bono, quae convertuntur cum ente, nam privatio boni fundatur in aliquo bono, et similiter remotio unitatis fundatur in aliquo uno. Et exinde contingit quod multitudo est quoddam unum, et malum est quoddam bonum, et non ens est quoddam ens. Non tamen oppositum praedicatur de opposito, quia alterum horum est simpliciter, et alterum secundum quid. Quod enim secundum quid est ens, ut in potentia, est non ens simpliciter, idest actu, vel quod est ens simpliciter in genere substantiae, est non ens secundum quid, quantum ad aliquod esse accidentale. Similiter ergo quod est bonum secundum quid, est malum simpliciter; vel e converso. Et similiter quod est unum simpliciter, est multa secundum quid; et e converso.",
+     "fr": "Je réponds aux arguments : 1° La privation n’enlève pas tout l’être, parce qu’elle est une négation dans un sujet existant, mais elle en détruit une partie. Comme l’être est général, la privation de l’être repose sur l’être; mais il n’en est pas ainsi des privations qui affectent les formes particulières, telles que la vue, la blancheur et les entités pareilles. Et ce que nous disons de l’être, nous devons le dire du un et du bon, qui sont synonymes de l’être. Effectivement, la privation du bon est fondée sur quelque bien, et la négation du un sur quelque unité; et voilà comment il se fait que le multiple est un certain un, le mal un certain bien et le non-être un certain être. Cependant les choses contraires ne s’affirment pas des choses contraires, parce qu’elles sont les unes simplement et les autres relativement. En effet, ce qui est être relativement, c’est-à-dire en puissance, est non-être simplement, c’est-à-dire en acte; ou ce qui est être simplement, comme substance, est non-être relativement, à l’égard de certains accidents. De même ce qui est bon relativement est mauvais simplement; et ce qui est un simplement est multiple relativement, et vice versâ."
+    },
+    {
+     "la": "Ad secundum dicendum quod duplex est totum, quoddam homogeneum, quod componitur ex similibus partibus; quoddam vero heterogeneum, quod componitur ex dissimilibus partibus. In quolibet autem toto homogeneo, totum constituitur ex partibus habentibus formam totius, sicut quaelibet pars aquae est aqua, et talis est constitutio continui ex suis partibus. In quolibet autem toto heterogeneo, quaelibet pars caret forma totius, nulla enim pars domus est domus, nec aliqua pars hominis est homo. Et tale totum est multitudo. Inquantum ergo pars eius non habet formam multitudinis, componitur multitudo ex unitatibus, sicut domus ex non domibus, non quod unitates constituant multitudinem secundum id quod habent de ratione indivisionis, prout opponuntur multitudini; sed secundum hoc quod habent de entitate, sicut et partes domus constituunt domum per hoc quod sunt quaedam corpora, non per hoc quod sunt non domus.",
+     "fr": "2° Il y a deux sortes de tout : le tout homogène, qui est composé de parties semblables; puis le tout hétérogène, qui est composé de parties dissemblables. Or, dans le tout homogène, les parties ont la même forme dans leur séparation que dans leur réunion : ainsi une goutte d’eau est de l’eau, ainsi une fraction de l’étendue est étendue. Mais il en est différemment dans le tout hétérogène; ici les parties n’ont pas la même forme séparées que dans leur réunion : ainsi la pierre n’est pas la maison, ainsi la tête n’est pas l’homme. Or c’est la dernière sorte de tout, c’est le tout hétérogène qu’on appelle multitude. La multitude se compose donc de parties qui n’ont pas la forme de la multitude, c’est-à-dire elle se compose d’unités. Ce n’est pas, toutefois, que les unités constituent la multitude par ce qu’elles ont de contraire à sa nature, comme parties indivisibles; mais elles la constituent par ce qu’elles ont de commun avec elle : ainsi les parties forment la maison parce qu’elles sont certains corps, et non parce qu’elles ne sont pas une maison."
+    },
+    {
+     "la": "Ad tertium dicendum quod multum accipitur dupliciter. Uno modo, absolute, et sic opponitur uni. Alio modo, secundum quod importat excessum quendam, et sic opponitur pauco. Unde primo modo duo sunt multa; non autem secundo.",
+     "fr": "3° Multiple se prend de deux manières : dans le sens littéral, pour signifier la pluralité, et alors il est opposé à un; dans le sens large, pour désigner un grand nombre, et alors il est opposé à peu. Dans le premier sens, deux est multiple, mais il ne l’est pas dans le second."
+    },
+    {
+     "la": "Ad quartum dicendum quod unum opponitur privative multis, inquantum in ratione multorum est quod sint divisa. Unde oportet quod divisio sit prius unitate, non simpliciter, sed secundum rationem nostrae apprehensionis. Apprehendimus enim simplicia per composita, unde definimus punctum, cuius pars non est, vel principium lineae. Sed multitudo, etiam secundum rationem, consequenter se habet ad unum, quia divisa non intelligimus habere rationem multitudinis, nisi per hoc quod utrique divisorum attribuimus unitatem. Unde unum ponitur in definitione multitudinis, non autem multitudo in definitione unius. Sed divisio cadit in intellectu ex ipsa negatione entis. Ita quod primo cadit in intellectu ens; secundo, quod hoc ens non est illud ens, et sic secundo apprehendimus divisionem; tertio, unum; quarto, multitudinem.",
+     "fr": "4° L’unité est opposée à la multiplicité, parce qu’elle exclut la division, et qu’il est de la nature des choses multiples d’être divisées. La division est donc antérieure à l’unité, non dans la réalité des choses, mais d’après notre manière de les concevoir. Nous percevons le simple par le composé, et voilà pourquoi nous définissons le point ce qui n’a pas de parties ou le principe de la ligne. Mais la multiplicité se présente, toujours, dans notre esprit, après l’unité; car si nous concevons les choses divisées sous l’idée de multitude, c’est que nous leur attribuons l’unité dans leur séparation; d’où il vient que l’unité figure dans la définition de la multitude, tandis que la multitude ne figure pas dans la définition de l’unité. Quant à l’idée de division, c’est la négation de l’être qui la produit dans notre intelligence, de manière que nous concevons premièrement l’être; secondement, la distinction des êtres et partant la division; troisièmement, l’unité; quatrièmement enfin, la multitude."
+    }
+   ],
+   "pages": {
+    "fr": [
+     173,
+     176
+    ]
+   }
+  },
+  {
+   "ref": "Iª q. 11 a. 3",
+   "titre": {
+    "la": "Utrum Deus sit unus",
+    "fr": "Dieu est-il un?"
+   },
+   "objections": [
+    {
+     "la": "Ad tertium sic proceditur. Videtur quod Deus non sit unus. Dicitur enim I ad Cor. VIII, *siquidem sunt dii multi et domini multi*.",
+     "fr": "Il paroît que Dieu n’est pas un. 1° Saint Paul dit, I Cor., VIII, 5 : « Il y a plusieurs dieux et plusieurs seigneurs. » Donc, etc,."
+    },
+    {
+     "la": "Praeterea, unum quod est principium numeri, non potest praedicari de Deo, cum nulla quantitas de Deo praedicetur. Similiter nec unum quod convertitur cum ente, quia importat privationem, et omnis privatio imperfectio est, quae Deo non competit. Non est igitur dicendum quod Deus sit unus.",
+     "fr": "2° L’unité principe du nombre ne peut s’affirmer de Dieu, car Dieu ne renferme aucune espèce de quantité; l’unité principe de l’être ne peut s’en affirmer non plus, car cette unité renferme une privation, et toute privation emporte une imperfection que repousse la nature divine. Donc on ne peut dire que Dieu est un."
+    }
+   ],
+   "sed_contra": {
+    "la": "Sed contra est quod dicitur Deut. VI, *audi, Israel, dominus Deus tuus unus est*.",
+    "fr": "Mais il est écrit dans le Deutéronome, VI, 4 : « Ecoute, Israël, le Seigneur notre Dieu est seul Seigneur. »"
+   },
+   "respondeo": {
+    "la": "Respondeo dicendum quod Deum esse unum, ex tribus demonstratur. Primo quidem ex eius simplicitate. Manifestum est enim quod illud unde aliquod singulare est hoc aliquid, nullo modo est multis communicabile. Illud enim unde Socrates est homo, multis communicari potest, sed id unde est hic homo, non potest communicari nisi uni tantum. Si ergo Socrates per id esset homo, per quod est hic homo, sicut non possunt esse plures Socrates, ita non possent esse plures homines. Hoc autem convenit Deo, nam ipse Deus est sua natura, ut supra ostensum est. Secundum igitur idem est Deus, et hic Deus. Impossibile est igitur esse plures deos. Secundo vero, ex infinitate eius perfectionis. Ostensum est enim supra quod Deus comprehendit in se totam perfectionem essendi. Si ergo essent plures dii, oporteret eos differre. Aliquid ergo conveniret uni, quod non alteri. Et si hoc esset privatio, non esset simpliciter perfectus, si autem hoc esset perfectio, alteri eorum deesset. Impossibile est ergo esse plures deos. Unde et antiqui philosophi, quasi ab ipsa coacti veritate, ponentes principium infinitum, posuerunt unum tantum principium. Tertio, ab unitate mundi. Omnia enim quae sunt, inveniuntur esse ordinata ad invicem, dum quaedam quibusdam deserviunt. Quae autem diversa sunt, in unum ordinem non convenirent, nisi ab aliquo uno ordinarentur. Melius enim multa reducuntur in unum ordinem per unum, quam per multa, quia per se unius unum est causa, et multa non sunt causa unius nisi per accidens, inquantum scilicet sunt aliquo modo unum. Cum igitur illud quod est primum, sit perfectissimum et per se, non per accidens, oportet quod primum reducens omnia in unum ordinem, sit unum tantum. Et hoc est Deus.",
+    "fr": "Il faut dire qu’on peut démontrer l’unité de Dieu par trois sortes de preuves.\n\nPremièrement, par sa simplicité. Ce par quoi une chose particulière est telle ou telle chose n’est pas communicable à plusieurs : si donc ce par quoi Socrate est homme peut être communiqué à plusieurs hommes, ce par quoi il est tel ou tel homme ne peut l’être qu’à un seul. Supposer donc que Socrate est homme par la même chose qu’il est tel ou tel homme, de même qu’il ne peut y avoir plusieurs Socrates, il ne pourra non plus y avoir plusieurs hommes. Voilà précisément ce que nous devons dire de Dieu. Dieu est sa nature ou son essence, comme nous l’avons prouvé plus haut; il est donc par la même chose Dieu et tel Dieu; donc il ne peut y avoir plusieurs dieux.\n\nDeuxièmement, par son infinie perfection. Dieu renferme toute la perfection de l’être, nous l’avons pareillement démontré. Mais s’il y avoit plusieurs dieux, ils différeroient entre eux; l’un auroit des choses que n’auroit pas l’autre, et celui qui souffriroit cette privation ne seroit pas absolument parfait; ou s’il l’étoit, l’autre ne le seroit pas. Il est donc impossible qu’il y ait plusieurs dieux. Aussi les anciens philosophes, cédant à la force de la vérité, ont accordé au premier principe non-seulemnt l’infinie perfection, mais l’unité.\n\nTroisièmement, par l’unité du monde. Toutes les choses qui existent dans l’univers, s’engrenant pour ainsi dire les unes dans les autres, concourent à former un tout merveilleusement ordonné dans toutes ses parties. Or des choses si diverses ne produiroient point cet admirable concert, si elles n’étoient combinées, pondérées par un ordonnateur un. L’ordre est établi plus sûrement par un seul que par plusieurs; car l’unité produit l’unité par soi, tandis que le multiple ne la produit que par accident, comme étant un sous quelque rapport. Ainsi le premier principe, qui fait de tout un seul ordre de choses, est un nécessairement, puisqu’il renferme toute perfection et qu’il existe par soi, et non par accident."
+   },
+   "reponses": [
+    {
+     "la": "Ad primum ergo dicendum quod dicuntur dii multi secundum errorem quorundam qui multos deos colebant, existimantes planetas et alias stellas esse deos, vel etiam singulas partes mundi. Unde subdit, *nobis autem unus Deus,* et cetera.",
+     "fr": "Je réponds aux arguments : 1° L’Apôtre parle, dans l’endroit cité, d’après l’erreur des païens qui adoraient plusieurs dieux, prêtant la nature suprême aux plantes, aux étoiles et même aux différentes parties du monde. Aussi ajoute-t-il immédiatement après : « Mais il n’y a pour nous qu’un seul Dieu. »"
+    },
+    {
+     "la": "Ad secundum dicendum quod unum secundum quod est principium numeri, non praedicatur de Deo; sed solum de his quae habent esse in materia. Unum enim quod est principium numeri, est de genere mathematicorum; quae habent esse in materia, sed sunt secundum rationem a materia abstracta. Unum vero quod convertitur cum ente, est quoddam metaphysicum, quod secundum esse non dependet a materia. Et licet in Deo non sit aliqua privatio, tamen, secundum modum apprehensionis nostrae, non cognoscitur a nobis nisi per modum privationis et remotionis. Et sic nihil prohibet aliqua privative dicta de Deo praedicari; sicut quod est incorporeus, infinitus. Et similiter de Deo dicitur quod sit unus.",
+     "fr": "L’unité principe du nombre ne peut s’affirmer de Dieu, mais seulement des choses matérielles; car cette unité appartient aux mathématiques qui ont leur existence réelle dans la matière, bien qu’elles en soient séparées rationnellement, dans notre intelligence. Mais l’unité mode de l’être est une entité métaphysique, dont l’existence ne dépend pas de la matière. Et quoique Dieu ne renferme aucune privation, cependant nous ne le connaissons, telle est la foiblesse de notre esprit, que d’une manière négative et par exclusion. Rien n’empêche donc que nous affirmions de lui certaines choses négativement, comme lorsque nous disons qu’il est incorporel ou infini. C’est dans ce sens que nous lui attribuons l’unité."
+    }
+   ],
+   "pages": {
+    "fr": [
+     176,
+     179
+    ]
+   },
+   "notes": [
+    "Lachat n’imprime pas le numéro de la réponse 2 ; le paragraphe est rendu tel quel."
+   ]
+  },
+  {
+   "ref": "Iª q. 11 a. 4",
+   "titre": {
+    "la": "Utrum Deus sit maxime unus",
+    "fr": "Dieu est-il souverainement un?"
+   },
+   "objections": [
+    {
+     "la": "Ad quartum sic proceditur. Videtur quod Deus non sit maxime unus. Unum enim dicitur secundum privationem divisionis. Sed privatio non recipit magis et minus. Ergo Deus non dicitur magis unus quam alia quae sunt unum.",
+     "fr": "Il paroît que Dieu n’est pas souverainement un. 1° Un nie la division. Or la négation n’admet pas ni le plus ni le moins. Donc Dieu n’est plus un que les choses qui sont unes."
+    },
+    {
+     "la": "Praeterea, nihil videtur esse magis indivisibile quam id quod est indivisibile actu et potentia, cuiusmodi est punctus et unitas. Sed intantum dicitur aliquid magis unum, inquantum est indivisibile. Ergo Deus non est magis unum quam unitas et punctus.",
+     "fr": "2° Rien n’est plus indivisible que ce qui l’est en acte et en puissance, comme le point et l’unité. Or une chose est une dans la même proportion qu’elle est indivisible. Donc Dieu n’est pas plus un que l’unité et le point."
+    },
+    {
+     "la": "Praeterea, quod est per essentiam bonum, est maxime bonum, ergo quod est per essentiam suam unum, est maxime unum. Sed omne ens est unum per suam essentiam, ut patet per philosophum in IV Metaphys. Ergo omne ens est maxime unum. Deus igitur non est magis unum quam alia entia.",
+     "fr": "3° Ce qui est bon par essence est souverainement bon; donc ce qui est un par essence est aussi souverainement un. Or tous les êtres sont uns par essence, comme on le voit dans la Métaphysique d’Aristote; donc tous les êtres sont souverainement uns; donc Dieu n’est pas plus un que les autres êtres."
+    }
+   ],
+   "sed_contra": {
+    "la": "Sed contra est quod dicit Bernardus, quod *inter omnia quae unum dicuntur, arcem tenet unitas divinae Trinitatis*.",
+    "fr": "Mais saint Bernard dit, Consid., VI, 8 : « L’unité de la divine Trinité tient le premier rang parmi les choses unes. »"
+   },
+   "respondeo": {
+    "la": "Respondeo dicendum quod, cum unum sit ens indivisum, ad hoc quod aliquid sit maxime unum, oportet quod sit et maxime ens et maxime indivisum. Utrumque autem competit Deo. Est enim maxime ens, inquantum est non habens aliquod esse determinatum per aliquam naturam cui adveniat, sed est ipsum esse subsistens, omnibus modis indeterminatum. Est autem maxime indivisum, inquantum neque dividitur actu neque potentia, secundum quemcunque modum divisionis, cum sit omnibus modis simplex, ut supra ostensum est. Unde manifestum est quod Deus est maxime unus.",
+    "fr": "Il faut dire ceci : Puisque le un est l’être indivisé, pour qu’une chose soit souverainement une, il faut qu’elle soit souverainement être et souveraincment indivisée. Or Dieu est l’un et l’autre. D’abord il est souverainement être; car il est l’être même subsistant, l’être infini, sans détermination de nature, sans limites d’accident, sans bornes d’aucune façon. Ensuite il est souverainement indivisible; car il ne peut être divisé d’aucune manière, ni en puissance ni en acte, puisqu’il est simple sous tous les rapports, comme nous l’avons prouvé plus haut. Donc Dieu est souverainement un."
+   },
+   "reponses": [
+    {
+     "la": "Ad primum ergo dicendum quod, licet privatio secundum se non recipiat magis et minus, tamen secundum quod eius oppositum recipit magis et minus, etiam ipsa privativa dicuntur secundum magis et minus. Secundum igitur quod aliquid est magis divisum vel divisibile, vel minus, vel nullo modo, secundum hoc aliquid dicitur magis et minus vel maxime unum.",
+     "fr": "Je réponds aux arguments : 1° Si la négation ne renferme en elle-même ni le plus ni le moins, elle les emprunte à son contraire. Ainsi, selon qu’une chose est divisible plus ou moins, ou pas du tout, l’on dit qu’elle est moins, plus ou souverainement une."
+    },
+    {
+     "la": "Ad secundum dicendum quod punctus et unitas quae est principium numeri, non sunt maxime entia, cum non habeant esse nisi in subiecto aliquo. Unde neutrum eorum est maxime unum. Sicut enim subiectum non est maxime unum, propter diversitatem accidentis et subiecti, ita nec accidens.",
+     "fr": "2° Le un et le point, qui sont les principes de la quantité, ne sont pas souverainement êtres, parce qu’ils n’ont d’existence que dans un sujet. Ces deux choses ne peuvent donc être souverainement unes. Comme le sujet n’a pas l’unité souveraine parce qu’il diffère de ses accidents, de même l’accident ne l’a pas non plus."
+    },
+    {
+     "la": "Ad tertium dicendum quod, licet omne ens sit unum per suam substantiam, non tamen se habet aequaliter substantia cuiuslibet ad causandam unitatem, quia substantia quorundam est ex multis composita, quorundam vero non.",
+     "fr": "3° Bien que tout être soit un par substance, cependant la substance ne produit pas l’unité de tout être; car elle est simple dans les uns, et composée dans les autres."
+    }
+   ],
+   "pages": {
+    "fr": [
+     179,
+     180
+    ]
+   }
+  }
+ ],
+ "source": {
+  "fr": {
+   "ouvrage": "Somme théologique de S. Thomas d’Aquin, traduite en français et annotée par F. Lachat",
+   "edition": "Paris, Louis Vivès, 4e édition, 1880, tome premier (même composition que l’édition de 1874)",
+   "url": "https://archive.org/details/sommetheologique01thom",
+   "controle": "https://archive.org/details/sommethologique07lachgoog",
+   "relecture": "vote de quatre lectures (Tesseract et ABBYY sur les scans de 1880 et de 1874, même composition) ; chaque ligne sans accord relue sur l’image (corrections_fr.txt) ; notes de Lachat et « (Conclusion. — …) » des éditeurs non repris"
+  },
+  "la": {
+   "ouvrage": "Sancti Thomae Aquinatis Opera omnia iussu impensaque Leonis XIII P. M. edita, t. IV : Pars prima Summae theologiae a quaestione I ad quaestionem XLIX",
+   "edition": "Romae, ex Typographia Polyglotta S. C. de Propaganda Fide, 1888",
+   "url": "https://archive.org/details/operaomniaiussui04thom",
+   "transcription": "https://www.corpusthomisticum.org/sth1001.html (E. Alarcón, d’après l’édition léonine)",
+   "relecture": "alignement mot à mot sur la lecture ABBYY du scan de 1888 (latin_controle.py), écarts isolés vus sur l’image (corrections_la.txt) ; intitulés relus sur l’image ; ponctuation du Corpus Thomisticum ; pas de relecture intégrale du latin sur l’image"
+  },
+  "pages_fr": [
+   170,
+   180
+  ]
+ },
+ "revision": 1
+}

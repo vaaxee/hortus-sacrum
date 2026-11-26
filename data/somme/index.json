@@ -180,6 +180,150 @@
    "fichier": "Ia-05.json",
    "question": 5,
    "article": 6
+  },
+  {
+   "ref": "Iª q. 6 a. 1",
+   "fichier": "Ia-06.json",
+   "question": 6,
+   "article": 1
+  },
+  {
+   "ref": "Iª q. 6 a. 2",
+   "fichier": "Ia-06.json",
+   "question": 6,
+   "article": 2
+  },
+  {
+   "ref": "Iª q. 6 a. 3",
+   "fichier": "Ia-06.json",
+   "question": 6,
+   "article": 3
+  },
+  {
+   "ref": "Iª q. 6 a. 4",
+   "fichier": "Ia-06.json",
+   "question": 6,
+   "article": 4
+  },
+  {
+   "ref": "Iª q. 7 a. 1",
+   "fichier": "Ia-07.json",
+   "question": 7,
+   "article": 1
+  },
+  {
+   "ref": "Iª q. 7 a. 2",
+   "fichier": "Ia-07.json",
+   "question": 7,
+   "article": 2
+  },
+  {
+   "ref": "Iª q. 7 a. 3",
+   "fichier": "Ia-07.json",
+   "question": 7,
+   "article": 3
+  },
+  {
+   "ref": "Iª q. 7 a. 4",
+   "fichier": "Ia-07.json",
+   "question": 7,
+   "article": 4
+  },
+  {
+   "ref": "Iª q. 8 a. 1",
+   "fichier": "Ia-08.json",
+   "question": 8,
+   "article": 1
+  },
+  {
+   "ref": "Iª q. 8 a. 2",
+   "fichier": "Ia-08.json",
+   "question": 8,
+   "article": 2
+  },
+  {
+   "ref": "Iª q. 8 a. 3",
+   "fichier": "Ia-08.json",
+   "question": 8,
+   "article": 3
+  },
+  {
+   "ref": "Iª q. 8 a. 4",
+   "fichier": "Ia-08.json",
+   "question": 8,
+   "article": 4
+  },
+  {
+   "ref": "Iª q. 9 a. 1",
+   "fichier": "Ia-09.json",
+   "question": 9,
+   "article": 1
+  },
+  {
+   "ref": "Iª q. 9 a. 2",
+   "fichier": "Ia-09.json",
+   "question": 9,
+   "article": 2
+  },
+  {
+   "ref": "Iª q. 10 a. 1",
+   "fichier": "Ia-10.json",
+   "question": 10,
+   "article": 1
+  },
+  {
+   "ref": "Iª q. 10 a. 2",
+   "fichier": "Ia-10.json",
+   "question": 10,
+   "article": 2
+  },
+  {
+   "ref": "Iª q. 10 a. 3",
+   "fichier": "Ia-10.json",
+   "question": 10,
+   "article": 3
+  },
+  {
+   "ref": "Iª q. 10 a. 4",
+   "fichier": "Ia-10.json",
+   "question": 10,
+   "article": 4
+  },
+  {
+   "ref": "Iª q. 10 a. 5",
+   "fichier": "Ia-10.json",
+   "question": 10,
+   "article": 5
+  },
+  {
+   "ref": "Iª q. 10 a. 6",
+   "fichier": "Ia-10.json",
+   "question": 10,
+   "article": 6
+  },
+  {
+   "ref": "Iª q. 11 a. 1",
+   "fichier": "Ia-11.json",
+   "question": 11,
+   "article": 1
+  },
+  {
+   "ref": "Iª q. 11 a. 2",
+   "fichier": "Ia-11.json",
+   "question": 11,
+   "article": 2
+  },
+  {
+   "ref": "Iª q. 11 a. 3",
+   "fichier": "Ia-11.json",
+   "question": 11,
+   "article": 3
+  },
+  {
+   "ref": "Iª q. 11 a. 4",
+   "fichier": "Ia-11.json",
+   "question": 11,
+   "article": 4
   }
  ]
 }
