@@ -468,6 +468,26 @@ describe('dimanches de saint Jean Berchmans et de saint Stanislas Kostka (Jardin
 	});
 });
 
+describe('neuvaine à saint François d’Assise (Québec 1867), du 25 septembre au 3 octobre', () => {
+	const ID = 'prog:neuvaine-saint-francois';
+	it('chaque jour : l’hymne, la vertu du jour sans les renvois, le répons de la fin', () => {
+		const jours = CALENDRIER.filter((j) => ligne(calculer(j.date), ID)).map((j) => j.date);
+		expect(jours).toEqual(joursAvant('2027-10-04', 9));
+		jours.forEach((date, k) => {
+			const s = ligne(calculer(date), ID)!.sections.filter((x) => x.genre === 'texte');
+			expect(
+				s.map((x) => x.extrait?.section?.split('.')[0]),
+				date
+			).toEqual(['## Au commencement de chaque exercice', `## ${k + 1}${k ? 'e' : 'er'} jour`, '## A la fin de chaque exercice']);
+			for (const x of s) {
+				const t = extraire(corps(x.texte!)!, x.extrait)!;
+				expect(t, date).toBeTruthy();
+				expect(t, date).not.toMatch(/page 3[79]\./);
+			}
+		});
+	});
+});
+
 describe('neuvaine de réparation au Sacré-Cœur, du 1er au 9 de chaque mois (Beringer n° 671)', () => {
 	it('l’offrande à la fin de la prière du matin, les jours 1 à 9 de chaque mois seulement', () => {
 		const jours = CALENDRIER.filter((j) =>

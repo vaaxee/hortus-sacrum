@@ -1,0 +1,19 @@
+[
+ {
+  "id": "tiersordre1867:neuvaine-saint-francois",
+  "titre": "Neuvaine en l'honneur du séraphique Père saint François d'Assise",
+  "partie": "Neuvaines",
+  "categorie": "",
+  "usage": "Neuf jours avant la fête de saint François (4 octobre). Chaque jour : l'hymne « Applaudissez » au commencement, la vertu du jour et sa prière, trois Pater, Ave, Gloria, et à la fin le répons des stigmates, le verset et l'oraison (dans le livre, ce bloc est imprimé une fois, après la prière du premier jour ; les jours suivants y renvoient par « page 37 » et « page 39 »).",
+  "indulgence": "",
+  "source": {
+   "ouvrage": "Notice sur le Tiers-Ordre de la pénitence de Saint-François d'Assise, suivie de neuvaines, litanies, etc.",
+   "edition": "Québec, 1867 (imprimatur du 24 mai 1867)",
+   "page": "37-51 (PDF p. 43-57)",
+   "url": "https://archive.org/details/cihm_29653"
+  },
+  "latin": "",
+  "fichiers": ["neuvaine-francois.md", "fin-francois.md"],
+  "revision": 1
+ }
+]
