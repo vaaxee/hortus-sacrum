@@ -17,7 +17,7 @@ la page entière (titres, rubriques, italiques, mots que les deux lectures ont l
 « Barcelonne », « ingnominieuse », « devoilées ») ; seules quelques coquilles évidentes sont corrigées, et notées dans
 le champ `page` de la pièce. Fichiers téléchargés et scripts dans le scratchpad, non versionnés.
 
-Préfixes : `lefebvre1870:` (Bonne Mort, Paris), `picard1873:` (Bonne Mort, Montréal).
+Préfixes : `lefebvre1870:` (Bonne Mort, Paris), `picard1873:` (Bonne Mort, Montréal), `precieuxsang1890:` (Précieux Sang).
 
 ## 1. Bonne Mort — Lefebvre, *La science de bien mourir*, Paris, 1870
 
@@ -86,3 +86,39 @@ Préfixes : `lefebvre1870:` (Bonne Mort, Paris), `picard1873:` (Bonne Mort, Mont
 | Formule de l'acte héroïque (« O Marie, Mère de miséricorde… »), p. 31 | **nouvelle** (autre formule que `jardin:acte-heroique-de-charite`) | `picard1873:formule-acte-heroique` | Pie IX, 30 sept. 1852 (non compté) |
 | *En ego* (« O bon et très-doux Jésus »), p. 28 ; *Souvenez-vous*, p. 32 | **déjà présents** (`jardin:chaque-vendredi-devant-le-crucifix`, `weber:souvenez-vous`) | — | plénière (Pie VII, 10 avril 1821) ; 100 j. et plénière mensuelle |
 | Règlements, pratiques, liste des défunts | **laissés** (prose ; les pratiques servent à la proposition, § 7) | — | — |
+
+## 3. Précieux Sang — *Nouveau manuel du Très-Précieux Sang… ou le Livre des élus*, Saint-Hyacinthe, 1890
+
+- **Édition** : *Nouveau manuel du Très-Précieux Sang de Notre Seigneur Jésus-Christ, ou le Livre des élus, renfermant
+  les plus belles pratiques et prières en l'honneur du sang adorable…*, Saint-Hyacinthe, Monastère du Précieux-Sang
+  (Sœurs adoratrices du Précieux-Sang), 1890 ; « Approbation » : « Nous approuvons le Nouveau Manuel du Très Précieux
+  Sang… et nous en permettons l'impression… St-Hyacinthe, 18 Déc. 1889. † L. Z. Év. de St-Hyacinthe » (p. [II]).
+  Microfiche CIHM n° 92923 ; 701 images, ~650 p.
+- **URL** : https://archive.org/details/cihm_92923 (image n = page + 11 environ dans la 1re moitié ; décalage différent
+  après les mires de la microfiche, vers n388).
+- **Table** (p. 653-662, très abîmée sur la microfiche) : partie préliminaire (fêtes mobiles, conditions des indulgences,
+  nomenclature des confréries, calendrier et pieux souvenirs de chaque mois, indulgences apostoliques, du jubilé, des
+  Quarante-Heures, neuvaine de la grâce) ; Ire partie : histoire et doctrine de la dévotion, Confrérie du Très-Précieux-
+  Sang (érection, avantages, conditions), Garde d'honneur du Précieux-Sang ; IIe partie, la journée : prières du matin,
+  litanies du saint Nom de Jésus, messe, repas, travail, invocations au Précieux-Sang, oraisons jaculatoires, chapelet
+  (« Prions Marie »), **Horloge de la Passion** (193), litanies de la sainte Vierge (200), prière du soir (213) ; IIIe
+  partie, l'adoration (une « heure » par chapitre) : devoirs des adorateurs, prières générales pour chaque heure (prière
+  préparatoire à N.-D. du Précieux-Sang, **consécration au Précieux Sang** 231, amende honorable 233, communion
+  spirituelle *Sitio* 237, prière pour les âmes du purgatoire et **offrande pour obtenir la bénédiction** 238), messes
+  pour chaque jour de la semaine (248-335), hommages, **chapelet du Précieux-Sang** (350), litanies de Jésus agonisant,
+  l'Heure sainte, conversion des pécheurs, visite au Saint-Sacrement, chemins de croix (494-535), clef du Paradis,
+  Sacré-Cœur, rosaire (575), office du Précieux-Sang, sept joies et sept douleurs ; appendice (décrets d'érection et de
+  translation de la Confrérie, 1850-1878 ; Garde d'honneur, 1888-1889).
+
+| Pièce | Statut | Id | Indulgence imprimée (non comptée) |
+|---|---|---|---|
+| Horloge de la Passion et oraisons jaculatoires (de 7 h du soir à 6 h du soir), p. 193-200 | **nouvelle** | `precieuxsang1890:horloge-de-la-passion` | 40 j. par jaculatoire (év. de Saint-Hyacinthe) |
+| Consécration au Précieux Sang, p. 231-232 | **nouvelle** | `precieuxsang1890:consecration-au-precieux-sang` | 40 j. (Saint-Hyacinthe) ; 100 j. (card. Taschereau) |
+| Prière efficace pour la délivrance des âmes du purgatoire (« Ayez pitié, ô tendre Jésus », P. Ste Gertrude), p. 238 | **nouvelle** | `precieuxsang1890:priere-delivrance-ames-purgatoire` | 40 j. (Saint-Hyacinthe) |
+| Offrande du Précieux Sang au Père éternel pour obtenir sa bénédiction, p. 238-239 | **nouvelle** | `precieuxsang1890:offrande-pere-eternel-benediction` | Léon XII, 25 oct. 1823 (rattachement à vérifier) |
+| Chapelet de la Divine Miséricorde (« Mon Jésus, miséricorde »), p. 266 | **nouvelle** | `precieuxsang1890:chapelet-divine-misericorde` | Pie IX, 26 sept. 1846 |
+| Chapelet du Précieux-Sang, sept mystères avec considérations et prières, prière finale « O Sang très-précieux » et oraison, p. 350-355 | **nouvelle forme** : la forme brève (« Couronne des trente-trois années ») et l'oraison sont déjà dans `boylesve1882:petit-chapelet-precieux-sang` ; la forme longue est propre au manuel | `precieuxsang1890:chapelet-du-precieux-sang` | 7 ans et 7 quarantaines ; 300 j. ; 40 j. |
+| Prière de sainte Catherine de Sienne au Précieux Sang, p. 556 | **nouvelle** | `precieuxsang1890:priere-sainte-catherine-precieux-sang` | — |
+| Sept offrandes du Précieux Sang (p. 187-189 env.) | **déjà présentes** (`jardin:les-sept-offrandes-du-precieux-sang`) | — | — |
+| Litanies de Jésus agonisant (p. 375), neuvaine de la grâce (préliminaire), Heure sainte, amende honorable (233), communion spirituelle *Sitio* (237), prière du matin et du soir propres, messes pour chaque jour de la semaine, chemins de croix, office du Précieux-Sang | **laissés pour ce lot** : la microfiche est très abîmée vers n388 (mires intercalées, décalage des images à refaire) ; les litanies de Jésus agonisant et l'amende honorable sont les premières à reprendre. Les « neuvaines » annoncées ne sont, dans ce manuel, qu'une neuvaine de la grâce à saint François Xavier signalée dans la partie préliminaire, sans texte propre trouvé | — | — |
+| Instructions, histoire, considérations en prose | laissées, comme demandé | — | — |
