@@ -17,7 +17,7 @@ Remplace CONSIGNE §4. Validation de l'utilisateur à la fin de chaque étape.
 
 Somme théologique (lot 10 de `docs/conception/REFONTE_2026-11-18.md` § 6, 22 nov.) : Iª q. 1-5 (30 articles) livrées
 dans `data/somme` (Lachat, Vivès 1880, relu sur l'image ; latin léonin du Corpus Thomisticum) ; page
-`/lecture/doctrine`, marque-page (meta `marque-somme`), lecture comptée dans « Lectures du jour ». Suite : q. 6-13.
+`/lecture/doctrine`, marque-page (meta `marque-somme`), lecture comptée dans « Lectures du jour ». Iª q. 6-11 livrées le 25 nov. Suite : q. 12-13.
 
 Ordre voulu : l'éditeur passe avant le contenu, pour que tout texte ajouté ensuite soit d'emblée modifiable.
 

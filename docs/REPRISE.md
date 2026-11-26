@@ -75,5 +75,4 @@ Chaque push sur `main` reconstruit automatiquement https://hortus-sacrum.vercel.
     data/somme`. Les fichiers intermédiaires (R.json, V.json, LA.json, TL.json, Dsel.json, scans) sont hors dépôt : à
     régénérer avec les scripts s'ils sont perdus. App : `app/src/lib/somme.ts` (article du jour d'après le marque-page
     de l'appareil, meta `marque-somme`), `/lecture/doctrine` (latin en regard comme l'Évangile), `lec:doctrine` comptée
-    dans « Lectures du jour » (programme, révision 2). **Suite** : relire q. 6-13 (pages n107-n272 du scan de 1880), puis
-    les ajouter à `pages.json`. Points douteux : `SOURCES_UTILISEES.md` (Somme).
+    dans « Lectures du jour » (programme, révision 2). **Suite** : q. 6-11 faites (25 nov., branche `claude/somme-suite`, « § » en tête d'une ligne corrigée = numéro qu'omet Lachat) ; reste q. 12-13 (pages n184-n272), puis les ajouter à `pages.json`.  Points douteux : `SOURCES_UTILISEES.md` (Somme).
