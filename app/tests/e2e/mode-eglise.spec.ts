@@ -49,8 +49,9 @@ test('le mode église grossit le texte, masque les onglets, tient l’écran all
 	const bouton = page.getByRole('button', { name: 'Mode église' });
 	await expect(bouton).toHaveAttribute('aria-pressed', 'false');
 	const box = await bouton.boundingBox();
-	expect(box!.width).toBeGreaterThanOrEqual(44);
-	expect(box!.height).toBeGreaterThanOrEqual(44);
+	// 44 px CSS ; arrondi : la mesure peut tomber à 43,999996 selon la position de la page (sous-pixel)
+	expect(Math.round(box!.width)).toBeGreaterThanOrEqual(44);
+	expect(Math.round(box!.height)).toBeGreaterThanOrEqual(44);
 
 	const lecture = page.locator('main .lecture').first();
 	const taille = () => lecture.evaluate((e) => parseFloat(getComputedStyle(e).fontSize));

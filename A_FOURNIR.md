@@ -18,6 +18,20 @@ Les points réglés sont gardés pour l'historique. Dernière mise à jour : 26 
 | 7 | Propre de France | **Abandonné.** On reste sur le calendrier romain universel. L'utilisateur ajoutera lui-même ses fêtes dans l'app. | — |
 
 ## Restent ouverts
+- **Prières obligatoires sans titre (26 nov.)** — audit `docs/audits/PRIERES_OBLIGATOIRES_2026-11-26.md`. Restent sans
+  indulgence, prescription ni promesse, faute de remplaçant ancien trouvé : les parties propres du Paroissien (matin :
+  adoration, remerciement, résolution, demande ; soir : adoration, actions de grâces, lumières, contrition, ferme propos,
+  recommandation, prière pour les vivants et les défunts), l'invocation au saint patron, les cinq « devoirs » du livret
+  (Église, famille, patrie, pauvres, soi-même), la conclusion « Dieu seul » de Montfort au chapelet. **Cherché** :
+  *Enchiridion* 1952 (recherche dans la couche texte, numéros retenus vus sur l'image), *Thésaurisons pour le ciel*
+  (1941, « Aide-mémoire : la journée indulgenciée », p. 187-188), Beringer 1925 t. I. **À recopier** : *Angele Dei*
+  (Ench. 1952, n° 452 d'après la table) dans une traduction certifiée (*Thésaurisons*, n° 142 ou 145 ?) ; un acte de
+  contrition d'un catéchisme approuvé (Ench. n° 36) : **trouvé** le 26 nov. (`quebec1888:acte-de-contrition`), à brancher sur décision. **Premier *Pater* et premier *Gloria* du chapelet** : aucune
+  promesse ni indulgence attachée en propre trouvée (Beringer n° 901, Ench. n° 395, *Thésaurisons*, Montfort, Sambucy,
+  Denis 1864, *Livre de la grâce spéciale* 1921, manuels du Rosaire de 1841, 1902, 1903) ; l'audit propose la clause
+  « aux intentions du Souverain Pontife » (S. Pén. Ap., 20 sept. 1933). Pistes : *Secret admirable du très saint
+  Rosaire* (Montfort), manuels de la Confrérie du Rosaire (Dominicains de Lyon, XIXe s.), *Le très-saint rosaire*
+  (1873, archive.org `letressaintrosai00unse`), non ouverts.
 - **Neuvaines et dévotions à jours comptés (26 nov.)** — inventaire complet : `docs/audits/NEUVAINES_2026-11-26.md`.
   **À transcrire sur l'image** (scans repérés) : neuvaines de S. François d'Assise et de sainte Élisabeth (*Notice sur
   le Tiers-Ordre…*, Québec, 1867, p. 37-60, archive.org `cihm_29653`, PDF p. 43-71 ; OCR médiocre) ; neuvaines, mois

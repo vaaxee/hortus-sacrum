@@ -48,6 +48,11 @@ second système de règles `Quand` ; tirage aléatoire dans la journée.
    reprises avec la page « Ce qui a changé » (`/programme/changements`).
 6. Un texte cité doit exister dans `data/prieres/sources.json` ou `jardin.json` ; sinon `a_fournir` dans `programme.json`
    et `A_FOURNIR.md`.
+7. **Prières obligatoires** (lignes `praecipua` : matin et offrande, Angélus, chapelet, soir ; décision du 26 nov.) :
+   chaque prière dite a un titre (indulgence Ench. 1952, prescription de l'Église ou d'une archiconfrérie, promesse
+   attestée) ; un texte sans titre est **remplacé** par un texte ancien de même fonction (jamais ajouté en plus), en
+   coupant l'hôte par ancres (`a` / `de`, morceaux suivants en `suite: true`) ; sans remplaçant, il reste. Tableau
+   élément par élément : `docs/audits/PRIERES_OBLIGATOIRES_2026-11-26.md`.
 
 ## Tests à faire passer (vitest, sur toute l'année 2026-2027)
 

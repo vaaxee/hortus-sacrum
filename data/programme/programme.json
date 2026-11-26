@@ -6,9 +6,9 @@
       "id": "prog:priere-du-matin",
       "titre": "Prière du matin et offrande",
       "motif": {"fins": ["adoration", "action-de-graces", "demande"], "objets": ["trinite"], "note": "consacrer la journée à Dieu : prière du matin, offrande et intention d'indulgences (LISTE_DU_JOUR, Matin)"},
-      "revision": 3,
+      "revision": 4,
       "rang": "praecipua",
-      "source": "Audit des dévotions, § 2.1 ; arbitrage du 19 nov. : la prière du matin d'abord, l'offrande ensuite",
+      "source": "Audit des dévotions, § 2.1 ; arbitrage du 19 nov. : la prière du matin d'abord, l'offrande ensuite ; décision du 26 nov. (docs/audits/PRIERES_OBLIGATOIRES_2026-11-26.md) : oraison de Prime, acte d'offrande de Desgenettes, Suscipe et prière de saint Edmond à la place de textes sans indulgence ni prescription",
       "page": {
         "moment": "matin",
         "ordre": 10,
@@ -19,8 +19,19 @@
           {
             "texte": "paroissien:priere-du-matin",
             "extrait": {
-              "a": "## Acte de foi"
+              "a": "Mon Dieu, je vous remercie très humblement"
             }
+          },
+          {
+            "texte": "thesaurisons:oraison-de-prime"
+          },
+          {
+            "texte": "paroissien:priere-du-matin",
+            "extrait": {
+              "de": "*Formons la résolution",
+              "a": "## Acte de foi"
+            },
+            "suite": true
           },
           {
             "point": "apres-vierge"
@@ -39,22 +50,16 @@
             "partie": "Offrande de la journée"
           },
           {
-            "editorial": "## Intention d’indulgences"
+            "editorial": "## Acte d’offrande pour gagner les indulgences"
           },
           {
-            "texte": "jardin:intention-d-indulgences",
-            "extrait": {
-              "niveau": 1
-            }
+            "texte": "desgenettes:acte-d-offrande-pour-les-indulgences"
           },
           {
-            "editorial": "## Acte de soumission à la volonté de Dieu"
+            "editorial": "## Acte d’abandon à la volonté de Dieu"
           },
           {
-            "texte": "jardin:acte-de-soumission-a-la-volonte-de-dieu",
-            "extrait": {
-              "niveau": 1
-            }
+            "texte": "thesaurisons:suscipe"
           },
           {
             "editorial": "## Acte d’intention de communion spirituelle perpétuelle"
@@ -66,13 +71,10 @@
             }
           },
           {
-            "editorial": "## Acte de recommandation des âmes rencontrées"
+            "editorial": "## Recommandation de la journée"
           },
           {
-            "texte": "jardin:acte-de-recommandation-des-ames-rencontrees",
-            "extrait": {
-              "niveau": 1
-            }
+            "texte": "ench1952:entre-vos-mains-saint-edmond"
           },
           {
             "partie": "Actes des devoirs de charité",
@@ -337,10 +339,10 @@
       "id": "prog:chapelet",
       "titre": "Chapelet",
       "motif": {"fins": ["demande", "adoration"], "objets": ["sainte-vierge", "jesus-christ"], "note": "méditer les mystères du jour (méthodes de saint Dominique et de Montfort)"},
-      "revision": 2,
+      "revision": 3,
       "rang": "praecipua",
       "duree": 20,
-      "source": "SPEC § 10 : le chapelet du jour (joyeux lun. jeu., douloureux mar. ven., glorieux mer. sam. dim.) ; lot 6 : page composée à l’affichage (Sambucy, Montfort, trois Ave de sainte Mechtilde), identique à l’ancienne page hortus:chapelet-*",
+      "source": "SPEC § 10 : le chapelet du jour (joyeux lun. jeu., douloureux mar. ven., glorieux mer. sam. dim.) ; lot 6 : page composée à l’affichage (Sambucy, Montfort, trois Ave de sainte Mechtilde), identique à l’ancienne page hortus:chapelet-* ; décision du 26 nov. (docs/audits/PRIERES_OBLIGATOIRES_2026-11-26.md) : le Pater, le premier Ave et le Gloria de l’ouverture aux intentions du Souverain Pontife (S. Pén. Ap., 20 sept. 1933 ; Thésaurisons, p. 17)",
       "page": {
         "moment": "journee",
         "ordre": 40,
@@ -360,8 +362,23 @@
           {
             "texte": "montfort:methode-rosaire",
             "extrait": {
-              "a": "## Mystères joyeux"
+              "a": "*Je crois en Dieu, etc."
             }
+          },
+          {
+            "notice": "thesaurisons:prieres-intentions-souverain-pontife",
+            "titre": "Prières aux intentions du Souverain Pontife"
+          },
+          {
+            "editorial": "*Le Pater, le premier Ave et le Gloria qui suivent se disent aux intentions du Souverain Pontife.*"
+          },
+          {
+            "texte": "montfort:methode-rosaire",
+            "extrait": {
+              "de": "*Je crois en Dieu, etc.",
+              "a": "## Mystères joyeux"
+            },
+            "suite": true
           },
           {
             "editorial": "### Les trois Ave de sainte Mechtilde"
@@ -1694,9 +1711,9 @@
       "id": "prog:priere-du-soir",
       "titre": "Prière du soir et examen de conscience",
       "motif": {"fins": ["action-de-graces", "demande", "reparation"], "objets": ["trinite"], "note": "rendre grâces, examiner sa conscience et demander pardon avant la nuit (LISTE_DU_JOUR, Soir)"},
-      "revision": 2,
+      "revision": 3,
       "rang": "praecipua",
-      "source": "Audit des dévotions, § 2.1 ; audit du corpus A14 : l'antienne de la Vierge en dernier",
+      "source": "Audit des dévotions, § 2.1 ; audit du corpus A14 : l'antienne de la Vierge en dernier ; décision du 26 nov. (docs/audits/PRIERES_OBLIGATOIRES_2026-11-26.md) : l'Ave dit trois fois avec l'invocation de saint Alphonse (Beringer 1925, n° 444 ; Ench. 1952, n° 358)",
       "page": {
         "moment": "soir",
         "ordre": 90,
@@ -1711,7 +1728,20 @@
             "partie": "Prière du soir"
           },
           {
-            "texte": "paroissien:priere-du-soir"
+            "texte": "paroissien:priere-du-soir",
+            "extrait": {
+              "a": "## Le Symbole des Apôtres"
+            }
+          },
+          {
+            "texte": "beringer:trois-ave-immaculee-conception"
+          },
+          {
+            "texte": "paroissien:priere-du-soir",
+            "extrait": {
+              "de": "## Le Symbole des Apôtres"
+            },
+            "suite": true
           },
           {
             "partie": "Recommandations du soir"
