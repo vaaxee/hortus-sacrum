@@ -1,6 +1,6 @@
 # Reprise du travail (session cloud / téléphone)
 
-À lire en premier par toute nouvelle session Claude. Lire ensuite `docs/PLAN_ETAPES.md`, `docs/LISTE_DU_JOUR.md`, `SOURCES_UTILISEES.md`, `A_FOURNIR.md`.
+À lire en premier par toute nouvelle session Claude, **avec la fiche de passation `docs/CONSIGNES_SESSION_SUIVANTE.md`**. Lire ensuite `docs/PLAN_ETAPES.md`, `docs/LISTE_DU_JOUR.md`, `SOURCES_UTILISEES.md`, `A_FOURNIR.md`.
 
 ## Règles absolues
 
@@ -38,25 +38,11 @@ Chaque push sur `main` reconstruit automatiquement https://hortus-sacrum.vercel.
 
 ## Chantiers ouverts au 26 novembre (pour la session suivante)
 
-Branches poussées, sans PR, à reprendre (fusionner `origin/main` sans rebase, puis PR et fusion quand la chaîne
-hortus-qa est verte) :
-
-- `claude/neuvaines` — **priorité de l'utilisateur** : toutes les neuvaines, douzaines, trentaines et dévotions à jours
-  comptés des manuels, intégrées à leurs dates (dont la neuvaine avant chaque premier vendredi du Petit bréviaire du
-  Sacré-Cœur) ; audit `docs/audits/NEUVAINES_2026-11-26.md`.
-- `claude/prieres-obligatoires` — titre (indulgence, prescription, promesse) de chaque élément des prières
-  **obligatoires** (matin, soir, chapelet, Angélus) ; trois Ave « spéciaux » du soir (piste : les trois Ave Maria pour
-  la pureté), premier Pater et premier Gloria du chapelet ; audit `docs/audits/PRIERES_OBLIGATOIRES_2026-11-26.md`.
-  Décisions : seulement les prières obligatoires ; sans remplaçant trouvé, la prière reste, sans marque. **Les
-  remplacements se proposent à l'utilisateur avant d'être appliqués.**
-- `claude/archi-lot-a` — fusionné (PR #82) : 77 pièces de cinq manuels. `claude/archi-lot-a-integration` : les quatre
-  propositions validées le 26 nov. branchées (audit `ARCHICONFRERIES_LOT_A_2026-11-25.md` § 7).
-- `claude/psautier-fillion-2` (fusionné jusqu'au mercredi) — jeudi, vendredi, samedi, cantiques de Laudes.
-- `claude/somme-suite` (fusionné jusqu'à Iª q. 11) — q. 12 en cours (`engine/somme/corrections_fr.txt`).
-
-À fournir par l'utilisateur : PDF d'Allibert (Sept Douleurs, Lyon 1838 ; Google Livres bloqué) ; neuvaine française
-ancienne jour par jour à la Trinité (sinon, trois prières de Beringer chaque jour). À relire par l'utilisateur : les
-traductions de travail (audits `ARCHICONFRERIES_EN`, `_LOT_B`) ; PR #63 (`PRODUCT.md`, `DESIGN.md`), en brouillon.
+**Lire d'abord `docs/CONSIGNES_SESSION_SUIVANTE.md`** : la fiche de passation. Elle contient l'état de `main`, les décisions
+déjà prises qu'il ne faut pas redemander, les chantiers par priorité (neuvaines d'abord), et ce que l'utilisateur
+doit fournir ou relire. Les branches `claude/neuvaines`, `claude/prieres-obligatoires`, `claude/archi-lot-a` et
+`claude/archi-lot-a-integration` sont fusionnées (PR #82 à #85), comme le travail en cours du psautier de Fillion et
+de la Somme.
 
 ## Reste à faire
 
