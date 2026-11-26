@@ -306,7 +306,7 @@ ok
 // Renvois « [fin » imprimés sur la ligne du dessus (place libre) : remis à leur ligne par « r: ».
 == p363
 f: "" T "" "[ennemis," "O" T A A "qui me" ";"
-x: 1-15
+x: 1
 r: la vie. [ceux qui me veulent du mal. => la vie.
 r: dans la confusion, => dans la confusion, ceux qui me veulent du mal.
 r: Va ! va ! [vous d'allégresse et de joie ; => Va ! va !
@@ -1003,4 +1003,153 @@ ok
 == p313
 f: "haïssent" "" "O" "ô" "" "dévoré," "m'en a" "me raillaient" "ô"
 r: à cause\nc| Seigneur, Seigneur des armées. [de moi, => à cause de moi,\nc| Seigneur, Seigneur des armées.
+ok
+
+== p315
+f: ";" T A T T ";" "exaucez-moi prompte-" "délivrez-la" A "[nul" A T "trouvé per-" "" A T T
+c: 14
+v: 15
+?: Tous ceux qui me persécutent — Fillion imprime le numéro 21 devant cette ligne (fin du v. 20 de la Vulgate, « In conspectu tuo sunt omnes qui tribulant me ») ; la ligne suivante, « Mon cœur… » (« Improperium exspectavit cor meum »), commence au bord comme un verset : numéro rendu au v. 21
+ok
+
+== p317
+f: "" "" "" A "" T A A "" T T "" ";" T A
+x: 1 2
+h: 7 Psaume LXVIII, iii.
+ok
+
+== p319
+f: A A A "" T T A "" T T
+h: 1 Laudes I.
+h: 2 Psaume XCVII
+r: tressailliront à la pré- => tressailliront\nv| à la pré-
+?: à la présence du Seigneur — Fillion imprime le numéro 9 au milieu de la ligne (« a conspectu Domini ») : découpage de l'imprimé gardé
+ok
+
+== p321
+f: T A T
+h: 1 Psaume LXXXIX
+ok
+
+== p323
+f: "" T A A "nous rejetterez-vous" A T T "" ""
+x: 1
+r: redoutable, 12 qui le comprend ? => redoutable,\nv| qui le comprend ?
+?: se sont evanouis — « evanouis » sans accent, tel qu'imprimé
+?: qui le comprend — Fillion imprime le numéro 12 au milieu de la ligne : découpage de l'imprimé gardé
+ok
+
+== p325
+f: "" A "" A "ô" "!" T ""
+x: 1
+h: 2 Psaume XXXV
+r: ]l a médité => Il a médité
+ok
+
+== p327
+f: "" "" "" "" "" A A A A T "ensemble ;" T
+h: 7 Cantique de Jérémie. Jer. xxxi, 10-14.
+ok
+
+== p329
+f: A
+h: 1 Psaume CXLVI
+ok
+
+== p331
+f: "" "" T ";" T "" A A "[drai" "mourir." "[ment" "les" T
+h: 1 Laudes II.
+h: 2 Cantique de Moïse. Exod. xv, 1-19.
+ok
+
+== p333
+f: A A T A T
+r: racheté, [demeure sainte. => racheté,
+r: jusqu'à votre\n => jusqu'à votre demeure sainte.\n
+r: héritage, [parée vous-même, Seigneur, => héritage,
+r: vous vous êtes pré-\n => vous vous êtes préparée vous-même, Seigneur,\n
+ok
+
+== p335
+f: T A A
+h: 1 Prime.
+h: 2 Psaume XXII
+ok
+
+== p337
+f: T A ""
+ok
+
+== p339
+f: ";" "il" T "tous" ";" T ""
+?: Car il délivrera — « il » à l'impression brisée (lu « ñ », « fi »), sûr par le contexte
+ok
+
+== p341
+f: "Israël," T A T "comme les" T
+h: 1 Tierce.
+h: 2 Psaume LXXII, i.
+v: 5 11
+?: langue à parcouru — « à » accentué, tel qu'imprimé (pour « a »)
+ok
+
+== p343
+f: A "jusqu'à" A "et que" "" T T
+h: 1 Psaume LXXII, ii.
+c: 17
+h: 18 Psaume LXXII, iii.
+x: 19
+r: placés devant\n => placés devant eux ;\n
+ok
+
+== p345
+f: A "" A A T
+h: 21 Sexte.
+h: 22 Psaume LXXIII, i.
+ok
+
+== p347
+f: T A "" T A T T "" "" T T A T A T
+ok
+
+== p349
+f: T A T "" A A T "avez" A "a" A T
+r: avez ?z desséché => avez desséché
+h: 15 Psaume LXXIII, iii.
+?: et votre droite — une trace au-dessus du « o » (tache ou accent ?) : lu « votre », adjectif
+?: qui avez desséché — « avez » à l'impression brisée (« av?z »), sûr par le contexte
+ok
+
+== p351
+f: A "tête ;" A A A "" ""
+h: 1 None.
+ok
+
+== p353
+f: "" "Et" "Il" "" T T "[éternelles" T A "" A "[vaux." A "lorsque" A
+x: 1
+h: 17 Psaume LXXV, ii.
+ok
+
+== p355
+f: "" "" "l'Hermon,"
+x: 1
+h: 6 Vêpres.
+ok
+
+== p357
+f: T "" A A "" A "Il a" A A "Et il a" "passer Israël" "Il" T "Amorrhéens,"
+h: 14 Psaume CXXXV, ii.
+r: ]l a conduit => Il a conduit
+ok
+
+== p359
+f: "" A "Il" T A T A T "Il donne" "" A A
+x: 1
+?: dans notre humiliation — point imprimé après « humiliation », suivi de « car » en minuscule ; gardé tel qu'imprimé
+ok
+
+== p361
+f: A "" A A
+h: 16 Psaume CXXXVII
 ok

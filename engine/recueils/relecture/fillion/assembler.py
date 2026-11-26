@@ -56,6 +56,14 @@ CANTIQUES = {
     "Cantique d'Anne": (223, "Cantique d'Anne", 'I Reg. ii, 1-10', list(range(1, 11)),
                         "Divinum Officium chante ce cantique en 16 lignes numérotées 2:1 à 2:16, coupées autrement "
                         "que les 10 versets de Fillion : numéros de Fillion, sans alignement ligne à ligne."),
+    'Cantique de Jérémie': (214, 'Cantique de Jérémie', 'Jer. xxxi, 10-14', list(range(10, 15)),
+                            "Divinum Officium chante ce cantique en 9 lignes numérotées 31:10 à 31:18, coupées "
+                            "autrement que les 5 versets de Fillion : numéros de Fillion, sans alignement ligne à "
+                            "ligne."),
+    'Cantique de Moïse. Exod': (224, 'Cantique de Moïse', 'Exod. xv, 1-19', list(range(1, 20)),
+                                "Divinum Officium chante ce cantique en 22 lignes numérotées 15:1 à 15:22, coupées "
+                                "autrement que les 19 versets de Fillion : numéros de Fillion, sans alignement ligne à "
+                                "ligne."),
     'Cantique de David': (211, 'Cantique de David', 'I Par. xxix, 10-13'),
     'Cantique de Siméon': (233, 'Cantique de Siméon', 'Luc. ii, 29-32'),
 }
@@ -87,6 +95,10 @@ DECOUPE = {
          "Divinum Officium coupe ce psaume en 6 lignes numérotées 1-6 (« Confitebor tibi in cithara » = 5, « Spera in "
          "Deo » = 6) ; Fillion suit les 5 versets de la Vulgate (v. 4 jusqu'à « Deus meus », v. 5 « Quare tristis "
          "es… »). Le v. 5 commence au milieu de la ligne latine « 5 »."),
+    132: ({1: '1', 2: '2a', 3: '2b', 4: '3b'},
+          "Fillion numérote ce psaume en 4 versets (v. 3 « C'est comme la rosée de l'Hermon », v. 4 « Car c'est là que "
+          "le Seigneur envoie la bénédiction ») ; la Vulgate et Divinum Officium en comptent 3 (3a « sicut ros Hermon », "
+          "3b « Quoniam illic »). Numéros de Fillion ; le v. 3 commence au milieu de la ligne latine « 2b »."),
 }
 
 ROMAINS = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100}
