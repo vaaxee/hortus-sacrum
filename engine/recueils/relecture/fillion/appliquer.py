@@ -4,7 +4,8 @@ Usage : FILLION=<dossier> python3 -I appliquer.py [decisions.txt]
 
 decisions.txt, un bloc par page :
   == p091                 page imprimée
-  f: A T "Il" A …         un choix par désaccord du brouillon, dans l'ordre : T, A, ou "texte" ("" = rien)
+  f: A T "Il" A …         un choix par désaccord du brouillon, dans l'ordre : T, A, ou "texte" ("" = rien) ;
+                          « … » en dernier vide tous les désaccords restants (notes de bas de page, à supprimer par x:)
   v: 3 7                  lignes du brouillon (numérotées à partir de 1) qui commencent un verset
   c: 4                    lignes qui continuent le verset précédent
   x: 1 2 21-67            lignes à supprimer (parasites, notes prises avec le texte)
@@ -42,7 +43,7 @@ def blocs(path):
 def renvois(texte):
     """Renvoi typographique « [fin » imprimé au bout d'une ligne voisine : remis à la ligne qu'il complète.
     La ligne complétée est celle du dessus si elle finit par un trait d'union, sinon celle du dessous si elle en finit
-    par un, sinon la première des deux (dessus, puis dessous) qui ne finit pas par une ponctuation."""
+    par un, sinon la plus longue des deux qui ne finissent pas par une ponctuation (la ligne coupée remplit la justification)."""
     L = texte.split('\n')
     for i, l in enumerate(L):
         m = re.search(r'\s\[(\S.*)$', l)
@@ -57,12 +58,13 @@ def renvois(texte):
             j = P
         elif fin(N) == '-':
             j = N
-        elif fin(P) not in '.,;:?!':
-            j = P
-        elif fin(N) not in '.,;:?!':
-            j = N
         else:
-            raise SystemExit(f'renvoi « [{frag} » sans ligne à compléter : {l}')
+            cands = [k for k in (P, N) if fin(k) not in '.,;:?!']
+            if not cands:
+                raise SystemExit(f'renvoi « [{frag} » sans ligne à compléter : {l}')
+            j = max(cands, key=lambda k: len(L[k]))   # la ligne coupée est la plus longue (pleine justification)
+            if len(cands) == 2 and os.environ.get('AMBIGUS'):
+                print(f'AMBIGU [{frag} -> {"dessus" if j == P else "dessous"} | {L[P][-40:]} || {L[N][-40:]}')
         L[j] = L[j][:-1] + frag if L[j].endswith('-') else L[j] + ' ' + frag
     return '\n'.join(L)
 
@@ -74,6 +76,8 @@ def appliquer(p, ops):
         if o.startswith('f:'):
             choix += shlex.split(o[2:])
     nflags = sum(len(FLAG.findall(l)) for l in br)
+    if choix and choix[-1] == '…':      # « … » : les désaccords restants (notes prises avec le texte) sont vidés
+        choix = choix[:-1] + [''] * (nflags - len(choix) + 1)
     if len(choix) != nflags:
         raise SystemExit(f'p{p} : {len(choix)} choix pour {nflags} désaccords')
     lignes = []

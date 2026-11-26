@@ -1,0 +1,27 @@
+# p247 (image n260)
+h| Laudes I.
+h| Psaume XCVI
+v| Le Seigneur est roi : que la terre tressaille de joie,
+c| que toutes les îles se réjouissent.
+v| La nuée et l'obscurité sont autour de lui ;
+c| la justice et l'équité sont le soutien de son trône.
+v| Le feu marche devant lui,
+c| et embrase autour de lui ses ennemis.
+v| Ses éclairs ont brillé sur le monde ;
+c| la terre a vu, et a tremblé.
+v| Les montagnes se sont fondues comme la cire à la face du Seigneur ;
+c| à la face du Seigneur, toute la terre.
+v| Les cieux ont proclamé sa justice,
+c| et tous les peuples ont vu sa gloire.
+v| Qu'ils soient confondus tous ceux qui adorent les images sculptées,
+c| et qui se glorifient dans leurs idoles.
+c| Adorez-le, vous tous ses anges.
+v| Sion a entendu et s'est réjouie,
+c| et les filles de Juda ont tressailli de joie,
+c| à cause de vos jugements, Seigneur.
+v| Car vous êtes le Seigneur Très-Haut sur toute la terre ;
+c| vous êtes infiniment élevé au-dessus de tous les dieux.
+v| Vous qui aimez le Seigneur, haïssez le mal ;
+c| le Seigneur garde les âmes de ses saints ;
+c| il les délivrera de la main du pécheur.
+?| à la face du Seigneur, toute la terre — trait parasite après « Seigneur, », non repris
