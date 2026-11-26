@@ -4444,6 +4444,118 @@
    "traduction": "Hortus Sacrum, traduction de travail du 26 novembre 2026, à relire",
    "anglais": "AN INVOCATION OF THE MOST HOLY TRINITY FOR THE SOULS IN PURGATORY.\n\nO God of all goodness, Father of mercies, Who, at the prayers and fastings of Thy faithful people, didst vouchsafe to send Thy angels to break assunder the fetters of Thy holy apostle Peter, and to open the doors of his prison ; hear even also on this day the prayers and supplications of Thy Church, and send Thy angel to the souls for whom we pray, that, the doors of their prison being opened wide, they may be happily received into the bosom of Thy mercy.\nPater. Ave. Gloria.\n\nO Son of God, Saviour of souls, Who didst refresh the three children in the burning fiery furnace, pour down upon the souls that cry to Thee from the flames Thy heavenly dew. Thy precious blood alone can quench the flames of purgatory ; oh, let it now flow down upon these suffering souls, and do Thou, O Lord, have mercy upon them.\nPater. Ave. Gloria.\n\nO Spirit of love, have compassion on the cruel torment which these souls endure, that are filled with the purest charity, and aspiring without ceasing towards their God, cry aloud in their distress, “I thirst : I thirst after my God!” and yet cannot attain unto the object of their love, nor receive the least drop of that torrent of pure delights. O Holy Spirit, grant that, having felt the fiercest pangs of love, they may taste its heavenly delights in a blessed eternity. Amen.\nPater. Ave. Gloria.",
    "corps": "O Dieu de toute bonté, Père des miséricordes, qui, aux prières et aux jeûnes de votre peuple fidèle, avez daigné envoyer vos anges briser les chaînes de votre saint apôtre Pierre et ouvrir les portes de sa prison, écoutez encore aujourd’hui les prières et les supplications de votre Église, et envoyez votre ange aux âmes pour lesquelles nous prions, afin que, les portes de leur prison étant grandes ouvertes, elles soient heureusement reçues dans le sein de votre miséricorde.\n\n*Notre Père. Je vous salue, Marie. Gloire au Père.*\n\nO Fils de Dieu, Sauveur des âmes, qui avez rafraîchi les trois enfants dans la fournaise ardente, répandez votre rosée céleste sur les âmes qui crient vers vous du milieu des flammes. Votre précieux sang peut seul éteindre les flammes du purgatoire ; oh ! qu’il coule maintenant sur ces âmes souffrantes, et vous, Seigneur, ayez pitié d’elles.\n\n*Notre Père. Je vous salue, Marie. Gloire au Père.*\n\nO Esprit d’amour, ayez compassion du cruel tourment qu’endurent ces âmes qui, remplies de la plus pure charité et aspirant sans cesse vers leur Dieu, s’écrient dans leur détresse : « J’ai soif ; j’ai soif de mon Dieu ! » et ne peuvent pourtant atteindre l’objet de leur amour, ni recevoir la moindre goutte de ce torrent de pures délices. O Esprit-Saint, accordez qu’après avoir ressenti les plus vives angoisses de l’amour, elles en goûtent les délices célestes dans une bienheureuse éternité. Ainsi soit-il.\n\n*Notre Père. Je vous salue, Marie. Gloire au Père.*"
+  },
+  {
+   "id": "beringer:trois-ave-immaculee-conception",
+   "titre": "Trois Ave Maria à la Vierge immaculée, matin et soir (pratique de saint Alphonse)",
+   "partie": "Prières à la Sainte Vierge",
+   "categorie": "",
+   "usage": "Prière quotidienne à la Vierge immaculée, le matin et le soir. Note de Beringer : « Saint Alphonse de Liguori, zélé défenseur de l'Immaculée Conception, recommandait aux fidèles cette pratique pour chaque matin et chaque soir, comme un excellent moyen de défense contre les tentations impures. »",
+   "indulgence": "« 300 jours, matin et soir. — Pie X, 5 (6) décembre 1904. — Acta S. Sedis, XXXVII, 369. — Ind. 80. » (Beringer.) Enchiridion de 1952, n° 358 (« Ave Maria, etc. Per tuam immaculatam Conceptionem, o Maria, redde purum corpus meum et sanctam animam meam »), 300 jours ; même français dans Thésaurisons pour le ciel, n° 285 (traduction certifiée).",
+   "source": {
+    "ouvrage": "Beringer, Les Indulgences, leur nature et leur usage, t. I, n° 444",
+    "edition": "trad. Ph. Mazoyer, 4e éd. française, Paris, P. Lethielleux, 1925",
+    "page": "234 (scan n249)",
+    "url": "https://archive.org/details/lesindulgences0001beri"
+   },
+   "latin": "",
+   "corps": "[r]Trois fois, Je vous salue, Marie, en ajoutant chaque fois l'invocation :[/r]\n\nPar votre Immaculée Conception, ô Marie, purifiez et sanctifiez mon corps et mon âme."
+  },
+  {
+   "id": "thesaurisons:ma-mere-preservez-moi",
+   "titre": "Ma Mère, préservez-moi du péché mortel (trois Ave Maria)",
+   "partie": "Prières à la Sainte Vierge",
+   "categorie": "",
+   "usage": "Invocation suivie de trois Ave Maria.",
+   "indulgence": "Indulg. 300 jrs. (S. P. A., 7 janv. 1935.) Enchiridion de 1952, n° 297 (« Mater mea, libera me a peccato mortali. Ter Ave Maria. »).",
+   "source": {
+    "ouvrage": "Thésaurisons pour le ciel. Recueil reproduisant la plupart des prières et œuvres indulgenciées des « Preces et Pia Opera » (1938)",
+    "edition": "Carmel de Montréal, 1941 ; imprimatur du 28 avril 1941 ; traductions certifiées fidèles selon le can. 934 § 2",
+    "page": "n° 268 (Preces 1938, n° 273), p. 98 (scan n98)",
+    "url": "https://archive.org/details/thesaurisons-pour-le-ciel-000001335"
+   },
+   "latin": "Mater mea, libera me a peccato mortali. Ter Ave Maria.",
+   "corps": "Ma Mère, préservez-moi du péché mortel. Ave Maria *trois fois.*"
+  },
+  {
+   "id": "ench1952:entre-vos-mains-saint-edmond",
+   "titre": "Entre vos mains, Seigneur (prière de saint Edmond pour la journée)",
+   "partie": "Prières du matin et du soir",
+   "categorie": "",
+   "usage": "Le matin : recommandation de soi-même, des siens, des amis, des ennemis et de tout le peuple catholique. Prière concédée en français (St Edmond).",
+   "indulgence": "Enchiridion de 1952, n° 55 : 3 ans ; plénière aux conditions ordinaires si la prière est dite chaque jour pendant un mois (S. Pén. Ap., 27 mai 1921 et 28 mars 1934). Thésaurisons pour le ciel, n° 23.",
+   "source": {
+    "ouvrage": "Enchiridion indulgentiarum. Preces et pia opera, n° 55",
+    "edition": "S. Paenitentiaria Apostolica, Typis polyglottis Vaticanis, 1952",
+    "page": "22-23 (scan n37-n38)",
+    "url": "https://archive.org/details/enchiridion_indulgentiarum_1952"
+   },
+   "latin": "",
+   "corps": "Entre vos mains, Seigneur, et entre les mains de vos Anges, je remets et confie pendant ce jour mon âme, mes parents, mes bienfaiteurs, mes amis et mes ennemis et tout le peuple catholique; gardez-nous, Seigneur, pendant ce jour par les mérites et l'intercession de la bienheureuse Vierge Marie et de tous les Saints, des vices, concupiscences, péchés et tentations du démon, de la mort subite et imprévue et des peines de l'enfer. Illuminez mon cœur du Saint-Esprit et de votre grâce, faites que j'obéisse toujours à vos commandements, ne permettez pas que je sois jamais séparé de vous qui, étant Dieu, vivez et règnez avec Dieu le Père et le même Saint-Esprit, pendant les siècles des siècles. Ainsi soit-il."
+  },
+  {
+   "id": "thesaurisons:suscipe",
+   "titre": "Recevez, Seigneur, toute ma liberté (saint Ignace de Loyola)",
+   "partie": "Prières du matin et du soir",
+   "categorie": "",
+   "usage": "Acte d'offrande et d'abandon à la volonté de Dieu (St Ignace de Loyola). Thésaurisons le range parmi les « actes de total abandon à la volonté de Dieu » du lever (Aide-mémoire, p. 187).",
+   "indulgence": "Indulg. 3 ans. Plén. mens. aux cond. ord. (S. P. A., 4 déc. 1932.) Enchiridion de 1952, n° 52 (Suscipe, Domine, universam meam libertatem).",
+   "source": {
+    "ouvrage": "Thésaurisons pour le ciel. Recueil reproduisant la plupart des prières et œuvres indulgenciées des « Preces et Pia Opera » (1938)",
+    "edition": "Carmel de Montréal, 1941 ; imprimatur du 28 avril 1941 ; traductions certifiées fidèles selon le can. 934 § 2",
+    "page": "n° 26 (Preces 1938, n° 39), p. 27 (scan n27)",
+    "url": "https://archive.org/details/thesaurisons-pour-le-ciel-000001335"
+   },
+   "latin": "Suscipe, Domine, universam meam libertatem. Accipe memoriam, intellectum atque voluntatem omnem. Quidquid habeo vel possideo mihi largitus es: id tibi totum restituo ac tuae prorsus voluntati trado gubernandum. Amorem tui solum cum gratia tua mihi dones, et dives sum satis, nec aliud quidquam ultra posco.",
+   "corps": "Recevez, Seigneur, toute ma liberté. Acceptez l'offrande de ma mémoire, de mon intelligence et de toute ma volonté. Tout ce que j'ai, tout ce que je possède, c'est vous qui me l'avez donné; je vous le restitue en entier et me livre entièrement à votre volonté pour être gouverné par elle. Vous me donnerez votre seul amour avec votre grâce et je serai assez riche; je ne demande aucune autre chose."
+  },
+  {
+   "id": "thesaurisons:oraison-de-prime",
+   "titre": "Seigneur, Dieu tout-puissant, qui nous avez fait parvenir au commencement de ce jour (oraison de Prime)",
+   "partie": "Prières du matin et du soir",
+   "categorie": "",
+   "usage": "Le matin (du Bréviaire romain, à Prime). Thésaurisons la donne pour l'« offrande de la journée » de la prière du matin (Aide-mémoire, p. 187).",
+   "indulgence": "Aux fidèles qui récitent cette prière le matin : Indulg. 5 ans. Plén. mens. aux cond. ord. (S. P. A., 15 oct. 1935.) Enchiridion de 1952, n° 60.",
+   "source": {
+    "ouvrage": "Thésaurisons pour le ciel. Recueil reproduisant la plupart des prières et œuvres indulgenciées des « Preces et Pia Opera » (1938)",
+    "edition": "Carmel de Montréal, 1941 ; imprimatur du 28 avril 1941 ; traductions certifiées fidèles selon le can. 934 § 2",
+    "page": "n° 28 (Preces 1938, n° 47), p. 27 (scan n27)",
+    "url": "https://archive.org/details/thesaurisons-pour-le-ciel-000001335"
+   },
+   "latin": "Domine Deus omnipotens, qui ad principium huius diei nos pervenire fecisti: tua nos hodie salva virtute; ut in hac die ad nullum declinemus peccatum, sed semper ad tuam iustitiam faciendam nostra procedant eloquia, dirigantur cogitationes et opera. Per Christum Dominum nostrum. Amen.",
+   "corps": "Seigneur, Dieu tout-puissant, qui nous avez fait parvenir au commencement de ce jour, sauvez-nous aujourd'hui par votre puissance, afin qu'en ce jour nous ne nous laissions aller à aucun péché; mais que nos paroles, nos pensées et nos œuvres tendent toujours à l'accomplissement de votre justice. Par N. S. J.-C."
+  },
+  {
+   "id": "thesaurisons:trois-gloria-privileges-de-marie",
+   "titre": "Trois Gloria Patri en action de grâces pour les privilèges de la sainte Vierge (notice)",
+   "partie": "Sainte Trinité",
+   "categorie": "",
+   "usage": "Notice : la pratique et son indulgence. Les Gloria Patri sont ceux de l'usage courant.",
+   "indulgence": "Indulg. 500 jrs, chaque fois qu'on récite ces trois Gloria Patri. Plén. mens. aux cond. ord. (S. P. A., 23 mars 1936.) Enchiridion de 1952, n° 47.",
+   "source": {
+    "ouvrage": "Thésaurisons pour le ciel. Recueil reproduisant la plupart des prières et œuvres indulgenciées des « Preces et Pia Opera » (1938)",
+    "edition": "Carmel de Montréal, 1941 ; imprimatur du 28 avril 1941 ; traductions certifiées fidèles selon le can. 934 § 2",
+    "page": "n° 355 (Preces 1938, n° 34), p. 125 (scan n125)",
+    "url": "https://archive.org/details/thesaurisons-pour-le-ciel-000001335"
+   },
+   "latin": "Fidelibus, qui primo mane, meridie et vespere ter doxologiam Gloria Patri... devote recitaverint animo gratias agendi Ssmae Trinitati pro eximiis donis et privilegiis B. M. Virgini tributis, conceditur: Indulgentia quingentorum dierum pro qualibet recitatione singulis praedictis diei partibus respondente.",
+   "corps": "*Trois Gloria Patri, le matin, le midi et le soir en action de grâces à la Sainte Trinité pour tous les dons et privilèges dont Elle a daigné gratifier la très sainte Vierge Marie.*"
+  },
+  {
+   "id": "thesaurisons:prieres-intentions-souverain-pontife",
+   "titre": "Prières aux intentions du Souverain Pontife : un Pater, un Ave et un Gloria (notice)",
+   "partie": "Indulgences",
+   "categorie": "",
+   "usage": "Notice : forme suffisante de la condition « prières aux intentions du Souverain Pontife » des indulgences plénières (S. Pén. Ap., 20 sept. 1933).",
+   "indulgence": "",
+   "source": {
+    "ouvrage": "Thésaurisons pour le ciel. Recueil reproduisant la plupart des prières et œuvres indulgenciées des « Preces et Pia Opera » (1938)",
+    "edition": "Carmel de Montréal, 1941 ; imprimatur du 28 avril 1941 ; traductions certifiées fidèles selon le can. 934 § 2",
+    "page": "Notes explicatives, 4), p. 17 (scan n17)",
+    "url": "https://archive.org/details/thesaurisons-pour-le-ciel-000001335"
+   },
+   "latin": "Clausula « precandi ad mentem Summi Pontificis » plane adimpletur, adiiciendo ceteris operibus praescriptis recitationem ad eam mentem unius Pater, Ave et Gloria, relicta tamen libertate singulis fidelibus, ad normam can. 934 § 1, quamlibet aliam orationem recitandi iuxta uniuscuiusque pietatem et devotionem erga Romanum Pontificem (S. Paen. Ap., 20 sept. 1933; Acta Ap. Sed., vol. XXV, pag. 446). (Enchiridion de 1952, p. XV, note 1 a ; scan n14.)",
+   "corps": "Pour les prières aux intentions du Souverain Pontife, un Pater, un Ave et un Gloria Patri suffisent; la liberté étant laissée aux fidèles, conformément au c. 934, § 1, de réciter toute autre prière équivalente (et même davantage, selon la piété de chacun), si aucune prière déterminée n'est prescrite. (S. P. A., 20 sept. 1933.)\n\nIl n'est pas requis de connaître les intentions du Saint Père, il suffit de prier avec l'intention de faire ce qui est requis pour le gain de l'indulgence. (Commentaire du *Code de Droit Canonique*, t. II, p. 358, n° 4, par Adrien Cance.)"
   }
  ]
 }

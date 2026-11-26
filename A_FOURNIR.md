@@ -18,6 +18,20 @@ Les points réglés sont gardés pour l'historique. Dernière mise à jour : 26 
 | 7 | Propre de France | **Abandonné.** On reste sur le calendrier romain universel. L'utilisateur ajoutera lui-même ses fêtes dans l'app. | — |
 
 ## Restent ouverts
+- **Prières obligatoires sans titre (26 nov.)** — audit `docs/audits/PRIERES_OBLIGATOIRES_2026-11-26.md`. Restent sans
+  indulgence, prescription ni promesse, faute de remplaçant ancien trouvé : les parties propres du Paroissien (matin :
+  adoration, remerciement, résolution, demande ; soir : adoration, actions de grâces, lumières, contrition, ferme propos,
+  recommandation, prière pour les vivants et les défunts), l'invocation au saint patron, les cinq « devoirs » du livret
+  (Église, famille, patrie, pauvres, soi-même), la conclusion « Dieu seul » de Montfort au chapelet. **Cherché** :
+  *Enchiridion* 1952 (recherche dans la couche texte, numéros retenus vus sur l'image), *Thésaurisons pour le ciel*
+  (1941, « Aide-mémoire : la journée indulgenciée », p. 187-188), Beringer 1925 t. I. **À recopier** : *Angele Dei*
+  (Ench. 1952, n° 452 d'après la table) dans une traduction certifiée (*Thésaurisons*, n° 142 ou 145 ?) ; un acte de
+  contrition d'un catéchisme approuvé (Ench. n° 36). **Premier *Pater* et premier *Gloria* du chapelet** : aucune
+  promesse ni indulgence attachée en propre trouvée (Beringer n° 901, Ench. n° 395, *Thésaurisons*, Montfort, Sambucy,
+  Denis 1864, *Livre de la grâce spéciale* 1921, manuels du Rosaire de 1841, 1902, 1903) ; l'audit propose la clause
+  « aux intentions du Souverain Pontife » (S. Pén. Ap., 20 sept. 1933). Pistes : *Secret admirable du très saint
+  Rosaire* (Montfort), manuels de la Confrérie du Rosaire (Dominicains de Lyon, XIXe s.), *Le très-saint rosaire*
+  (1873, archive.org `letressaintrosai00unse`), non ouverts.
 - **Neuvaine à la très sainte Trinité, prières propres à chaque jour (26 nov.)** : l'indulgence (Ench. 1952, n° 48 ;
   Beringer 1925, n° 639) vaut pour des prières quelconques ; la neuvaine du programme (`prog:neuvaine-trinite`, de la
   vigile de la Pentecôte au dimanche de la Trinité) reprend donc chaque jour les mêmes prières de Beringer (n° 255 a,

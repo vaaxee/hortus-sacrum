@@ -1335,6 +1335,80 @@
    "intention": "En l’honneur de la très sainte Trinité, avec le propos de prier ainsi neuf jours de suite.",
    "note": "Plénière aux conditions habituelles, la neuvaine achevée (non comptée). Concession pour des prières quelconques en l’honneur de la sainte Trinité : la langue est indifférente. L’indulgence est comptée une fois le jour, sur la première prière de la neuvaine.",
    "langue": "français"
+  },
+  "beringer:trois-ave-immaculee-conception": {
+   "ref": "Ench. 1952, n° 358 (Ave Maria, etc. Per tuam immaculatam Conceptionem), vu sur l'image (p. 239, scan n256)",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "jours": 300,
+     "texte": "300 jours chaque fois (Ave Maria et invocation)"
+    }
+   ],
+   "note": "L'Enchiridion de 1952 indulgencie chaque Ave suivi de l'invocation ; la pratique des trois Ave matin et soir est celle de saint Alphonse (Beringer 1925, n° 444).",
+   "langue": "latin",
+   "traduction": "Thésaurisons pour le ciel (1941), traduction certifiée fidèle selon le can. 934 § 2 (n° 285) ; Beringer 1925 donne le même français"
+  },
+  "thesaurisons:ma-mere-preservez-moi": {
+   "ref": "Ench. 1952, n° 297 (Mater mea, libera me a peccato mortali. Ter Ave Maria), vu sur l'image (p. 195, scan n212)",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "jours": 300,
+     "texte": "300 jours"
+    }
+   ],
+   "langue": "latin",
+   "traduction": "Thésaurisons pour le ciel (1941), traduction certifiée fidèle selon le can. 934 § 2 (n° 268)"
+  },
+  "ench1952:entre-vos-mains-saint-edmond": {
+   "ref": "Ench. 1952, n° 55 (concession en français), vu sur l'image (p. 22-23, scan n37-n38)",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "ans": 3,
+     "texte": "3 ans"
+    }
+   ],
+   "langue": "français"
+  },
+  "thesaurisons:suscipe": {
+   "ref": "Ench. 1952, n° 52 (Suscipe, Domine), vu sur l'image (p. 21, scan n36)",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "ans": 3,
+     "texte": "3 ans"
+    }
+   ],
+   "langue": "latin",
+   "traduction": "Thésaurisons pour le ciel (1941), traduction certifiée fidèle selon le can. 934 § 2 (n° 26)"
+  },
+  "thesaurisons:oraison-de-prime": {
+   "ref": "Ench. 1952, n° 60 (Domine Deus omnipotens, qui ad principium huius diei), vu sur l'image (p. 25, scan n40)",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "ans": 5,
+     "texte": "5 ans, le matin"
+    }
+   ],
+   "intention": "le matin",
+   "langue": "latin",
+   "traduction": "Thésaurisons pour le ciel (1941), traduction certifiée fidèle selon le can. 934 § 2 (n° 28)"
+  },
+  "thesaurisons:trois-gloria-privileges-de-marie": {
+   "ref": "Ench. 1952, n° 47 (ter Gloria Patri, mane, meridie et vespere), vu sur l'image (p. 19, scan n34)",
+   "frequence": "chaque fois",
+   "partielles": [
+    {
+     "jours": 500,
+     "texte": "500 jours pour chacune des trois récitations (matin, midi, soir) des trois Gloria Patri"
+    }
+   ],
+   "intention": "le matin, à midi et le soir, en action de grâces à la très sainte Trinité pour les dons et privilèges de la sainte Vierge",
+   "langue": "latin",
+   "traduction": "Gloria Patri de l'usage courant ; notice : Thésaurisons pour le ciel (1941), traduction certifiée fidèle selon le can. 934 § 2 (n° 355)"
   }
  },
  "sans_compte": {
