@@ -1169,6 +1169,13 @@
       "forme": ["neuvaine"],
       "devinee": ["fin", "objet", "grace", "personne", "forme"]
     },
+    "beringer:neuvaine-reparation-sacre-coeur": {
+      "fin": ["reparation"],
+      "objet": ["sacre-coeur", "eucharistie", "sainte-vierge"],
+      "personne": ["pecheurs"],
+      "forme": ["acte", "neuvaine"],
+      "devinee": ["fin", "objet", "personne", "forme"]
+    },
     "breviaire-sc:exercice-messe": {
       "fin": ["adoration", "action-de-graces", "reparation", "demande"],
       "objet": ["sacre-coeur", "eucharistie", "trinite"],

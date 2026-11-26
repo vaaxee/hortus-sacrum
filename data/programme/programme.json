@@ -1582,6 +1582,24 @@
       }
     },
     {
+      "id": "prog:neuvaine-reparation-sacre-coeur",
+      "titre": "Neuvaine de réparation au Sacré-Cœur (du 1er au 9 du mois)",
+      "motif": {"fins": ["reparation"], "objets": ["sacre-coeur", "eucharistie"], "note": "du 1er au 9 de chaque mois, offrir chaque jour en réparation des outrages faits au Sacrement de l'Eucharistie (Beringer, n° 671)"},
+      "revision": 1,
+      "quand": {"autour": {"ancre": {"jour": 1}, "de": 0, "a": 8}},
+      "source": "Demande de l'utilisateur du 26 nov. (toutes les dévotions à jours comptés des manuels) : Beringer 1925, n° 671, offrande à dire chacun des neuf jours, placée à la fin de la prière du matin",
+      "insertions": [
+        {
+          "hote": "prog:priere-du-matin",
+          "point": "fin",
+          "sections": [
+            {"editorial": "## Neuvaine de réparation au Sacré-Cœur (du 1er au 9 du mois)"},
+            {"texte": "beringer:neuvaine-reparation-sacre-coeur"}
+          ]
+        }
+      ]
+    },
+    {
       "id": "prog:priere-du-soir",
       "titre": "Prière du soir et examen de conscience",
       "motif": {"fins": ["action-de-graces", "demande", "reparation"], "objets": ["trinite"], "note": "rendre grâces, examiner sa conscience et demander pardon avant la nuit (LISTE_DU_JOUR, Soir)"},

@@ -143,7 +143,9 @@ describe('journee()', () => {
 			'jardin:devoir-envers-moi-meme',
 			undefined, // champ des intentions
 			'jahenny:scapulaire-benediction-protection',
-			'jardin:priere-pour-les-agonisants'
+			'jardin:priere-pour-les-agonisants',
+			// du 1er au 9 du mois : l'offrande de la neuvaine de réparation (Beringer n° 671)
+			'beringer:neuvaine-reparation-sacre-coeur'
 		]);
 	});
 
@@ -411,6 +413,17 @@ describe('neuvaine au Sacré-Cœur avant le premier vendredi (Petit bréviaire, 
 				expect(new Date(date + 'T12:00:00').getDay() === 4 || k < 8, date).toBe(true);
 			});
 		}
+	});
+});
+
+describe('neuvaine de réparation au Sacré-Cœur, du 1er au 9 de chaque mois (Beringer n° 671)', () => {
+	it('l’offrande à la fin de la prière du matin, les jours 1 à 9 de chaque mois seulement', () => {
+		const jours = CALENDRIER.filter((j) =>
+			ligne(calculer(j.date), 'prog:priere-du-matin')!.sections.some((s) => s.texte === 'beringer:neuvaine-reparation-sacre-coeur')
+		).map((j) => j.date);
+		expect(jours.length).toBe(12 * 9);
+		expect(jours.every((d) => Number(d.slice(8)) <= 9)).toBe(true);
+		expect(jours.slice(0, 9)).toEqual(Array.from({ length: 9 }, (_, k) => `2026-12-0${k + 1}`));
 	});
 });
 
