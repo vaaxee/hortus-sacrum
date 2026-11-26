@@ -1,0 +1,31 @@
+# p117 (image n130)
+h| Psaume XX
+v| Seigneur, le roi se réjouira dans votre force,
+c| et il tressaillira d'une vive allégresse, parce que vous
+c| l'avez sauvé.
+v| Vous lui avez accordé le désir de son cœur,
+c| et vous ne l'avez point frustré de la demande de ses lèvres.
+v| Car vous l'avez prévenu des plus douces bénédictions ;
+c| vous avez mis sur sa tête une couronne de pierres précieuses.
+v| Il vous a demandé la vie, et vous lui avez accordé
+c| des jours qui dureront dans les siècles des siècles.
+v| Sa gloire est grande, grâce à votre salut ;
+c| vous le couvrirez de gloire et d'un honneur immense.
+v| Car vous ferez de lui une source de bénédictions perpé-
+c| tuelles ;
+c| vous le comblerez de joie en lui montrant votre visage.
+v| Car le roi espère au Seigneur,
+c| et la miséricorde du Très-Haut le rendra inébranlable.
+v| Que votre main atteigne tous vos ennemis ;
+c| que votre droite trouve tous ceux qui vous haïssent.
+v| Vous en ferez comme une fournaise ardente, au temps
+c| où vous montrerez votre visage irrité ;
+c| le Seigneur dans sa colère les remplira de trouble,
+c| et le feu les dévorera.
+v| Vous exterminerez leur fruit de dessus la terre,
+c| et leur race d'entre les enfants des hommes.
+v| Car ils ont fait tomber des maux sur vous ;
+c| ils ont formé des desseins qu'ils n'ont pu exécuter.
+v| Car vous leur ferez tourner le dos ;
+c| vous préparerez leur visage à recevoir les traits qui vous restent.
+?| votre visage irrité — en italique, lu « irrilé » par Tesseract : t italique

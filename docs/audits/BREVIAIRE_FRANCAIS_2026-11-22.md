@@ -134,6 +134,107 @@ faisable, mais il faut d'abord découper Fillion par verset (OCR à relire, mise
    variante par heure dans `parvum-fr.json`, soit dédoubler le paragraphe dans `parvum.py`.
 3. Brancher l'affichage (chargeur dans `app/src/lib/office/parvum.ts`, `seed.mjs`, test mot pour mot) quand l'office
    entier sera transcrit, ou heure par heure si l'utilisateur le préfère.
-4. Bréviaire : faire valider Fillion + Hugueny par l'utilisateur, puis commencer par le psautier (Fillion) ; retrouver
-   le fascicule 8 du Propre du temps d'Hugueny (liberius.net).
+4. Bréviaire : Fillion + Hugueny validés par l'utilisateur (22 nov., § 6) ; psautier de Fillion en cours (§ 6) ;
+   retrouver le fascicule 8 du Propre du temps d'Hugueny (liberius.net).
 5. Froment 1893 : chercher un scan libre (Gallica, Google Livres).
+
+## 6. Bréviaire : décision et psautier de Fillion (22-23 novembre)
+
+**Décision de l'utilisateur (22 nov.)** : Fillion pour les psaumes, Hugueny pour tout le reste (REFONTE § 5.5).
+
+### Fait : `data/office/breviaire-fr/psautier-fillion.json` (non branché)
+
+- Source complète en tête du fichier (ouvrage, 7e édition « soigneusement revue », Lecoffre-Gabalda 1917, *Nihil obstat*
+  H. Garriguet, *Imprimatur* Paris 4 juin 1912 P. Thomas, vus sur les images n8-n9 ; URL ; pages), méthode, alignement.
+- Chaîne rejouable `engine/recueils/relecture/fillion/` : `prep.py` (filet des notes, zone du texte, Tesseract fra
+  `--psm 6`), `brouillon.py` (lectures ABBYY et Tesseract alignées ligne à ligne et mot à mot, désaccords numérotés),
+  `decisions.txt` (choix par désaccord, structure des versets, renvois, remarques ; chaque page marquée `ok` a été relue
+  entière sur l'image), `appliquer.py` → `pages/p<NNN>.txt` (pages relues, versionnées), `assembler.py` → JSON.
+- **Fait : l'office du dimanche entier (pp. 13-97), les Complies de toute la semaine, et le lundi de Matines à None
+  (pp. 99-151)**, soit 54 psaumes et 7 cantiques, **959 versets** : Ps 1-20, 23, 26-33, 46, 50, 53, 60, 62, 69, 70,
+  76, 85, 87, 90, 92, 94, 99, 102, 109-113, 116, 117, 118, 133, 148 ; cantiques des trois jeunes gens (Dan. 3, 57-88
+  et 56 ; Dan. 3, 52-57), de Zacharie, de la sainte Vierge, de Siméon, de David (I Par. 29, 10-13), d'Isaïe (Is. 12).
+  Les Vêpres du lundi commencent p. 151 (Ps 114, 3 versets relus sur 9 : en attente, non livré).
+- Numéros des versets : ceux de la Vulgate, pris dans l'ordre du latin de DO (`Psalterium/Psalmorum/PsalmN.txt`), et
+  vérifiés contre l'imprimé (même nombre de versets, sinon l'assemblage s'arrête). Fillion numérote les secondes parties
+  des Ps 9 (« Ut quid, Domine », hébr. 10) et 113 (« Non nobis », hébr. 115) à partir de 1 : numéros de la Vulgate
+  donnés, avec une note. Ps 94 (invitatoire) : DO chante le texte du psautier romain, Fillion traduit la Vulgate
+  (11 versets contre 10) : numérotation de Fillion, sans alignement ligne à ligne. Benedicite : DO chante deux versets
+  par ligne : numéros de Fillion ; la doxologie (« Bénissons le Père… ») est imprimée avec le v. 88.
+- Alignement : `lignes_la` (étiquettes des lignes latines de DO, « 2a », « 2b »…) et `ligne_la` (ligne où le verset
+  commence) ; `engine/office/test_psautier_fr.py` vérifie, pour chacun des 365 paragraphes « Psalmus N(a-b) » du latin
+  livré qui portent un psaume fait, que le nombre de lignes latines égale le nombre d'étiquettes. Un verset que DO laisse
+  au milieu d'une ligne (Ps 76, 16) est rattaché à cette ligne.
+- Graphies et lectures gardées ou notées (champ `lecture` du verset, 28 versets) : « Seigueur » (Ps 23, 8),
+  « environnné » (Ps 114, 3), « jusqu'a » (Ps 17, 7), « rejoui » (Ps 29, 2), « c'est elie » (Ps 26, 4 : l brisé, lu
+  « elle ») ; « à » initial perdu par les deux lectures et vu sur l'image (Ps 18, 12 ; Ps 30, 20) ; notes manuscrites au
+  crayon dans les marges (Ps 3, 4 ; Ps 17, 29 et 47), non reprises ; « Émigre » (Ps 10, 2), « j'ai désire »
+  (Ps 118, 40), « Mon àme » (Ps 102, 2 : accent imprimé grave, circonflexe brisé ?) ; t italiques lus l par l'OCR
+  (« retentit », Ps 117, 15 ; « atteint », Ps 70, 19 ; « s'étend », Ps 102, 17) ; points ou traits parasites non repris
+  (« tomber,. », Ps 117, 13 ; « Seigneur,. », Ps 118, 174 ; « qui. était », Ps 112, 9 ; « pitié ?- », Ps 76, 10 ;
+  « car. j'ai », Ps 85, 3 ; « -Selon », Ps 11, 9) ; note manuscrite au crayon dans la marge (Ps 3, 4), non reprise ;
+  « siècles » sous une tache (Dan. 3, 53). Découpage de l'imprimé gardé quand Fillion place un numéro autrement que DO
+  (Ps 60, 4 ; Ps 70, 16 et 19). Renvois typographiques (« [fin » imprimé à droite d'une ligne voisine, au-dessus ou
+  au-dessous) remis à leur place.
+- Mise en forme : un verset sur une ligne (les vers du parallélisme réunis) ; espace avant « ; : ? ! » uniformisée ;
+  italiques (mots ajoutés pour le sens) et petites capitales non marqués ; notes de Fillion non reprises.
+
+### Reste (psautier)
+
+Les offices du lundi au samedi, sauf les Complies, dans l'ordre du livre (table des matières de Fillion : lundi p. 98,
+mardi p. 164, mercredi p. 228, jeudi p. 296, vendredi p. 370, samedi p. 450 ; pages françaises impaires jusqu'à 531).
+Psaumes du latin livré encore sans français (sortie de `test_psautier_fr.py`, numéros de la Vulgate) : 21, 22, 24, 25, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 47, 48, 49, 51, 52, 54, 55, 56, 57, 58, 59, 61, 63, 64, 65, 66, 67, 68, 71, 72, 73, 74, 75, 77, 78, 79, 80, 81, 82, 83, 84, 86, 88, 89, 91, 93, 95, 96, 97, 98, 100, 101, 103, 104, 105, 106, 107, 108, 114, 115, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 149, 150.
+Cantiques de Laudes de la semaine (Isaïe, Ézéchias, Anne, Moïse, Habacuc,
+Ecclésiastique, Tobie, Judith, Jérémie, David) : à faire avec leur office. La chaîne est prête : `prep.py` et `brouillon.py`
+ont déjà produit les brouillons de toutes les pages françaises (dossier de travail non versionné) ; il reste à trancher les
+désaccords et relire chaque page sur l'image.
+
+Renvois typographiques : `appliquer.py` remet chaque « [fin » à la ligne qu'il complète (règle écrite dans la fonction
+`renvois`), vérifiée sur chaque page relue.
+
+Pages où la fin d'un psaume précède les Complies et n'est pas encore relue (lignes écartées par `x:` dans
+`decisions.txt`) : haut des pp. 159, 221, 291, 363, 443 (psaume 141 entier), 519.
+
+### Hugueny : table des fascicules (archive.org, scans de la Bibliothèque Saint Libère, 2014)
+
+Pages de titre lues sur la couche texte, et sur l'image quand elle était douteuse (Propre du temps IV, XI-XIV ; Propre
+des saints 3). Toutes portent « LABERGERIE, PARIS » et la mention « © Bibliothèque Saint Libère 2014. Toute reproduction
+à but non lucratif est autorisée ».
+
+| Identifiant archive.org | Contenu |
+|---|---|
+| `le-breviaire-romain-000001439` | Corps du Bréviaire : Ordinaire, Psautier, Commun des saints (« Textes latins et français », « Psallite sapienter » ; *Imprimatur* Paris 1934 ; nouvelle éd. 1947) |
+| `le-breviaire-romain-propre-du-temps-fascicule-1-000001180` | Propre du temps I : du Ier dimanche de l'Avent à la vigile de la Nativité |
+| `…-propre-du-temps-fascicule-2-000001181` | II : de Noël (25 décembre) à la vigile de l'Épiphanie |
+| `…-propre-du-temps-fascicule-3-000001182` | III : de l'Épiphanie (6 janvier) au IIe samedi après l'Épiphanie |
+| `…-propre-du-temps-fascicule-4-000001183` | IV : du IIIe dimanche après l'Épiphanie au samedi avant la Quinquagésime (comprend la Septuagésime) |
+| `…-propre-du-temps-fascicule-5-000001184` | V : de la Quinquagésime au samedi avant le IVe dimanche de Carême |
+| `…-propre-du-temps-fascicule-6-000001185` | VI : du samedi avant le IVe dimanche de Carême au mercredi de la Semaine sainte |
+| `…-propre-du-temps-fascicule-7-000001186` | VII : du Jeudi saint au samedi de la semaine de Pâques |
+| — | **VIII : absent d'archive.org** (par déduction : du dimanche *in albis* au samedi avant le IVe dimanche après Pâques) |
+| `…-propre-du-temps-fascicule-9-000001188` | IX : du IVe dimanche après Pâques au samedi, vigile de la Pentecôte |
+| `…-propre-du-temps-fascicule-10-000001189` | X : du dimanche de la Pentecôte au jeudi, octave du Saint-Sacrement |
+| `…-propre-du-temps-fascicule-11-000001190` | XI : de la fête du Sacré-Cœur au samedi de la VIe semaine après la Pentecôte |
+| `…-propre-du-temps-fascicule-12-000001191` | XII : du VIIe dimanche après la Pentecôte au samedi avant le IIIe dimanche d'août |
+| `…-propre-du-temps-fascicule-13-000001192` | XIII : du IIIe dimanche d'août au samedi avant le IIIe dimanche d'octobre |
+| `…-propre-du-temps-fascicule-14-000001193` | XIV : du IIe dimanche d'octobre au samedi de la Ve semaine de novembre (titres tels qu'imprimés, XIII et XIV se chevauchent) |
+| `le-breviaire-romain-propre-des-saints-fascicule-1-000001194` | Propre des saints 1 : de S. Clément Ier (23 novembre) à S. Thomas apôtre (21 décembre) |
+| `…-propre-des-saints-fascicule-2-000001195` | 2 : de S. Hilaire (14 janvier) à S. Jean de Matha (8 février) |
+| `…-propre-des-saints-fascicule-3-000001196` | 3 : de S. Cyrille d'Alexandrie (9 février) à S. Benoît abbé (21 mars) |
+| `…-propre-des-saints-fascicule-4-000001197` | 4 : de S. Gabriel archange (24 mars) à Ste Catherine de Sienne (30 avril) |
+| `…-propre-des-saints-fascicule-5-000001198` | 5 : de S. Philippe et S. Jacques (1er mai) à S. Bède le Vénérable (27 mai) |
+| `…-propre-des-saints-fascicule-6-000001199` | 6 : de S. Augustin de Cantorbéry (28 mai) à SS. Jean et Paul (26 juin) |
+| `…-propre-des-saints-fascicule-7-000001200` | 7 : du IVe jour dans l'octave de S. Jean-Baptiste (27 juin) à S. Alexis (17 juillet) |
+| `…-propre-des-saints-fascicule-8-000001201` (et doublon `…_202302`) | 8 : de S. Camille de Lellis (18 juillet) à la Transfiguration (6 août) |
+| `…-propre-des-saints-fascicule-9-000001202` | 9 : de S. Gaétan (7 août) à S. Joseph Calasanz (27 août) |
+| `…-propre-des-saints-fascicule-10-000001203` | 10 : de S. Augustin (28 août) aux Stigmates de S. François (17 septembre) |
+| `…-propre-des-saints-fascicule-11-000001204` | 11 : de S. Joseph de Cupertino (18 septembre) au Saint Rosaire (7 octobre) |
+| `…-propre-des-saints-fascicule-12-000001205` | 12 : de Ste Brigitte (8 octobre) à la vigile de la Toussaint (31 octobre) |
+| `…-propre-des-saints-fascicule-13-000001206` | 13 : de la Toussaint (1er novembre) à son octave, et l'office des morts |
+| `…-propre-des-saints-fascicule-14-000001207` | 14 : offices des dédicaces et saints du 9 au 22 novembre |
+| `le-breviaire-romain-supplement-1-000001208` | Supplément I : bulles de Pie V et Pie X, divisions de l'année liturgique, rubriques générales du Bréviaire |
+| `le-breviaire-romain-supplement-2-000001209` | Supplément II : sept psaumes de la pénitence, litanies des saints, bénédiction de la table, prières pour le voyage, préparation à la messe et action de grâces, litanies approuvées, bénédictions diverses |
+
+Le Propre des saints du 1er au 13 janvier (S. Hilaire ouvre le fascicule 2) est sans doute dans le fascicule 2 du Propre
+du temps (Noël à l'Épiphanie), à vérifier. Couche texte : Tesseract (`fra+Latin`), colonnes latin et français
+entremêlées : la transcription demandera le même travail que pour Fillion (découpe des colonnes, relecture sur l'image).

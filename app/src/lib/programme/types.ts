@@ -20,6 +20,8 @@ export interface Quand {
 	dates?: string[];
 	/** Expression régulière sur l'office du jour (« ^Samedi saint$ »). */
 	office?: string;
+	/** Code du jour dans le temporal (champ `tempora` du calendrier : « Quadp3-2 » = mardi de la Quinquagésime). */
+	code_tempora?: string[];
 	/** Au moins une des conditions. */
 	ou?: Quand[];
 	/** Exception. */

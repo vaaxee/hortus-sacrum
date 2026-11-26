@@ -266,3 +266,30 @@ describe('prières de sainte Gertrude dans la dévotion du jour (demande du 22 n
 		expect(vues.get('samedi')).toContain('gertrude:salutation-d-or');
 	});
 });
+
+describe('archiconfréries intégrées (décisions du 22 nov.)', () => {
+	const textes = (date: string, id: string) => (ligne(calculer(date), id)?.sections ?? []).map((s) => s.texte);
+	it('âmes du purgatoire : la prière du jour chaque soir, sauf le lundi', () => {
+		expect(textes('2026-12-01', 'prog:priere-du-soir')).toContain('beringer:ames-purgatoire-mardi');
+		expect(textes('2026-11-30', 'prog:priere-du-soir').some((t) => t?.startsWith('beringer:ames-purgatoire'))).toBe(false);
+	});
+	it('premier vendredi : prière réparatrice et rénovation de la Garde d’honneur', () => {
+		expect(textes('2026-12-04', 'prog:devotion-vendredi')).toEqual(
+			expect.arrayContaining(['garde1886:priere-reparatrice', 'garde1886:renovation-enrolement'])
+		);
+		expect(textes('2026-12-11', 'prog:devotion-vendredi')).not.toContain('garde1886:priere-reparatrice');
+	});
+	it('août : la louange du jour (Desgenettes) dans la dévotion du jour', () => {
+		const l = ligne(calculer('2027-08-03'), 'prog:devotion-mardi');
+		expect(l?.sections.find((s) => s.texte === 'desgenettes:louanges-de-la-semaine')?.extrait?.section).toBe('## Le mardi.');
+		expect(textes('2027-07-06', 'prog:devotion-mardi')).not.toContain('desgenettes:louanges-de-la-semaine');
+	});
+	it('février et fête de la Sainte Famille ; consécrations le jour de leur fête', () => {
+		expect(textes('2027-02-03', 'prog:priere-du-soir')).toContain('beringer:a-la-sainte-famille');
+		expect(textes('2027-01-10', 'prog:priere-du-soir')).toContain('beringer:a-la-sainte-famille');
+		expect(textes('2027-06-04', 'prog:priere-du-matin')).toContain('garde1886:consecration-coeur-de-jesus');
+		expect(textes('2027-08-22', 'prog:priere-du-matin')).toContain('desgenettes:oraison-consecration-coeur-de-marie');
+		expect(textes('2027-02-09', 'prog:priere-du-matin')).toContain('janvier:consecration-archiconfrerie');
+		expect(textes('2027-02-10', 'prog:priere-du-matin')).not.toContain('janvier:consecration-archiconfrerie');
+	});
+});

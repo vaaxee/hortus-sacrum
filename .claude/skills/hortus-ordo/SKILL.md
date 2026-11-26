@@ -28,7 +28,7 @@ second système de règles `Quand` ; tirage aléatoire dans la journée.
 ## Vocabulaire (`app/src/lib/programme/types.ts`)
 
 - `Quand` : `jours_semaine`, `semaines_du_mois`, `mois`, `tempora`, `dates` (« MM-JJ » / « AAAA-MM-JJ »), `office`
-  (regex), `ou`, `sauf`. Même vocabulaire que `indulgences.json`.
+  (regex), `code_tempora` (code du temporal, « Quadp3-2 »), `ou`, `sauf`. Même vocabulaire que `indulgences.json`.
 - `Choix` : identifiant, `selon: 'jour_semaine' | 'rotation' | 'quand' | 'saint_du_jour'`. Un choix donne **un** texte ou rien.
 - `Extrait` : `section`, `de`/`a`, `phrase`, `retirer`, `rang_du_jour` — ancres **exactes**, vérifiées par test.
 - `Section` : `texte`, `notice`, `point`, `champ`, `editorial` (titre de mise en page), `partie` (titre repliable qui regroupe
