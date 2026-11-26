@@ -17,7 +17,7 @@ la page entière (titres, rubriques, italiques, mots que les deux lectures ont l
 « Barcelonne », « ingnominieuse », « devoilées ») ; seules quelques coquilles évidentes sont corrigées, et notées dans
 le champ `page` de la pièce. Fichiers téléchargés et scripts dans le scratchpad, non versionnés.
 
-Préfixes : `lefebvre1870:` (Bonne Mort, Paris), `picard1873:` (Bonne Mort, Montréal), `precieuxsang1890:` (Précieux Sang).
+Préfixes : `lefebvre1870:` (Bonne Mort, Paris), `picard1873:` (Bonne Mort, Montréal), `precieuxsang1890:` (Précieux Sang), `ndchemin1920:` (Saint-Sacrement, Québec).
 
 ## 1. Bonne Mort — Lefebvre, *La science de bien mourir*, Paris, 1870
 
@@ -122,3 +122,34 @@ Préfixes : `lefebvre1870:` (Bonne Mort, Paris), `picard1873:` (Bonne Mort, Mont
 | Sept offrandes du Précieux Sang (p. 187-189 env.) | **déjà présentes** (`jardin:les-sept-offrandes-du-precieux-sang`) | — | — |
 | Litanies de Jésus agonisant (p. 375), neuvaine de la grâce (préliminaire), Heure sainte, amende honorable (233), communion spirituelle *Sitio* (237), prière du matin et du soir propres, messes pour chaque jour de la semaine, chemins de croix, office du Précieux-Sang | **laissés pour ce lot** : la microfiche est très abîmée vers n388 (mires intercalées, décalage des images à refaire) ; les litanies de Jésus agonisant et l'amende honorable sont les premières à reprendre. Les « neuvaines » annoncées ne sont, dans ce manuel, qu'une neuvaine de la grâce à saint François Xavier signalée dans la partie préliminaire, sans texte propre trouvé | — | — |
 | Instructions, histoire, considérations en prose | laissées, comme demandé | — | — |
+
+## 4. Saint-Sacrement — *Petit manuel des adorateurs et des adoratrices du Très Saint Sacrement*, Québec, 1920
+
+- **Édition** : *Petit manuel des adorateurs et des adoratrices du Très Saint Sacrement de Notre-Dame du Chemin*,
+  Québec, Notre-Dame du Chemin, 1920 ; dédicace « A nos paroissiens… fruit de nos retraites d'automne », signée Joseph
+  Waddel, S. J. (p. [3]) ; **pas d'approbation ni d'imprimatur imprimés** dans l'exemplaire numérisé (paroisse jésuite de
+  Québec ; manuel d'une association paroissiale d'adoration, non d'une archiconfrérie). 52 p. Microfiche CIHM n° 78894
+  (Bibliothèque nationale du Canada).
+- **URL** : https://archive.org/details/cihm_78894 (la couche texte est décalée de trois images sur les images
+  `page/n<N>.jpg` : texte du feuillet L = image n(L-4)).
+- **Table** (p. 52) : 1re méthode, Heure-sainte du Saint-Rosaire (3-19 : quinze mystères avec offrandes de chaque
+  dizaine, petite consécration au Sacré-Cœur, amende honorable au Très Saint-Sacrement, consécration pour les associés du
+  Sacré-Cœur, *Anima Christi*, *En ego*) ; 2e méthode, programme et prières (20-30 : actes dialogués, prière sur les
+  promesses, communion quotidienne, louanges) ; 3e méthode, les quatre fins du sacrifice d'après le P. Eymard (31-52 :
+  lectures pour l'adoration, l'action de grâces, la réparation, la supplication ; acclamations ; amende honorable ;
+  « Nous vous consolerons » ; litanies du Sacré-Cœur ; consécration du genre humain).
+
+| Pièce | Statut | Id | Indulgence imprimée |
+|---|---|---|---|
+| Amende honorable à N.-S. au Très Saint-Sacrement (« Pardon, Seigneur, pardon ! »), p. 14-16 | **nouvelle** | `ndchemin1920:amende-honorable-tres-saint-sacrement` | — |
+| Consécration au Sacré-Cœur pour les Associés, p. 17 | **nouvelle** | `ndchemin1920:consecration-sacre-coeur-associes` | — |
+| Heure d'adoration dialoguée (P./T.), p. 20-26 | **nouvelle** | `ndchemin1920:heure-d-adoration-dialoguee` | — |
+| Prière fondée sur les promesses à la B. Marguerite-Marie (« Seigneur, vous nous l'avez promis »), p. 27-28 | **nouvelle** | `ndchemin1920:priere-promesses-sacre-coeur` | — |
+| Prière pour la communion quotidienne, p. 28-29 | **nouvelle** (prière de la S. C. des Indulgences, 1905 : à rapprocher de l'Enchiridion) | `ndchemin1920:priere-pour-la-communion-quotidienne` | — |
+| Acclamations (« Seigneur, nous vous adorons ! »), p. 33-34 | **nouvelle** | `ndchemin1920:acclamations-adoration` | — |
+| Amende honorable à Jésus-Christ présent dans le Sacrement de l'autel, p. 38-39 | **nouvelle** | `ndchemin1920:amende-honorable-jesus-present` | 300 j. (non compté) |
+| Acte de consécration du genre humain au Sacré-Cœur (Léon XIII, 1899), p. 51-52 | **nouvelle** dans `sources.json` (forme de 1899, antérieure aux additions de 1925) | `ndchemin1920:consecration-genre-humain-sacre-coeur` | — |
+| Petite consécration au Sacré-Cœur (sainte Marguerite-Marie), p. 10-11 | **déjà présente** (`recueils/mois-sacre-coeur` J:18, `breviaire-sc:exercice-messe`) | — | — |
+| « Nous vous consolerons, Seigneur », p. 42-44 | **déjà présente** (`garde1886:priere-reparatrice`) | — | — |
+| Louanges « Dieu soit béni » (p. 30), litanies du Sacré-Cœur (47-50), *Anima Christi*, *En ego*, offrandes des dizaines du rosaire (`montfort:methode-rosaire`) | **déjà présents** | — | — |
+| Lectures du P. Eymard (31-49) | laissées (prose) | — | — |
