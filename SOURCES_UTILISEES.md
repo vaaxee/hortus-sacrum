@@ -57,12 +57,15 @@ et fascicules) pour le reste ; choix confirmé par l'utilisateur le 22 nov.
 |---|---|---|
 | *Somme théologique*, Iª pars, q. 1 à 5 (30 articles), français | *Somme théologique de S. Thomas d'Aquin*, traduite en français et annotée par F. Lachat, Paris, Louis Vivès, 4e éd., 1880, t. I, p. 3-103 (même composition que l'exemplaire de 1874, Harvard/Google, utilisé en contrôle). Vote de quatre lectures (Tesseract et ABBYY, sur les deux scans) ; chaque ligne sans accord relue sur l'image (`engine/somme/corrections_fr.txt`) ; orthographe de l'édition gardée (« paroît », « connoître », « privilége ») ; notes de Lachat et paragraphes « (Conclusion. — …) » des éditeurs non repris | archive.org `sommetheologique01thom` (contrôle `sommethologique07lachgoog`) → `engine/somme/construire.py` → `data/somme/Ia-NN.json`, `index.json` |
 | Même texte, latin | *Sancti Thomae Aquinatis Opera omnia iussu Leonis XIII*, t. IV, Rome, Typographia Polyglotta, 1888 ; texte de la transcription du Corpus Thomisticum (E. Alarcón), contrôlé par alignement sur la lecture ABBYY du scan léonin (`engine/somme/latin_controle.py`) ; écarts isolés vus sur l'image (`corrections_la.txt` : « etc. » rétabli, q. 5 a. 2) ; intitulés des questions et articles relus sur l'image (`titres_la.json`) ; ponctuation du Corpus Thomisticum | archive.org `operaomniaiussui04thom` ; https://www.corpusthomisticum.org/sth1001.html |
+| *Somme théologique*, Iª pars, q. 6 à 11 (24 articles), français et latin | Même édition et même méthode (Lachat, Vivès 1880, t. I, p. 104-180 ; latin léonin du Corpus Thomisticum contrôlé sur le scan de 1888) ; chaque ligne relue sur l'image de 1880 (lignes douteuses aussi sur celle de 1874) ; écarts latins vus sur l'image : q. 6 a. 4 « per se ens » (le Corpus Thomisticum donne « bonum »), q. 12 a. 3 « etc. » | idem |
 
 Points laissés tels qu'imprimés (Lachat) : « Ici se présente dix questions » (q. 1), « 2. » pour « 2° » (q. 3 a. 4,
 obj. 2), deux réponses numérotées « 3° » (q. 5 a. 3, la quatrième), « il y beaucoup de bien » (q. 5 a. 5, lettre tombée
 à l'impression, même chose sur les deux exemplaires), « impartaite » (q. 4 a. 3), « consiste-elle » (q. 5). Le *Sed
 contra* de la q. 1 a. 5 n'est pas traduit par Lachat : le latin est donné seul (note dans l'article). Le latin n'a pas été
 relu mot à mot sur l'image : seuls les écarts isolés de l'alignement automatique l'ont été.
+
+Iª q. 6-11 (25 nov.) : laissés tels qu'imprimés « Dieu est il-le souverain bien? » et « Dieu seul est-il-bon par essence? » (q. 6), réponse 1 numérotée « 2° » (q. 7 a. 2), « 5° » pour « 3° » (q. 10 a. 2, obj. 3, note dans l'article), « 3. » (q. 10 a. 4, rép. 3), « l'éternié » (q. 10 a. 3), « non-seulemnt » (q. 11 a. 3), « opposé ou multiple » (q. 11 a. 2). Numéros absents chez Lachat (marque « § » dans `corrections_fr.txt`, note dans l'article) : q. 6 a. 1 obj. 2, q. 7 a. 3 rép. 4, q. 11 a. 3 rép. 2. La q. 10 a. 1 n'a pas de *Sed contra* (léonine et Lachat). Mots abîmés sur les deux exemplaires, complétés par le contexte : voir `A_FOURNIR.md`.
 
 ## Étape 9 — Méditations et lectures
 

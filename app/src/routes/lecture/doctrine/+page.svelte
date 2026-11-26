@@ -123,10 +123,12 @@
 					{#if latin}<div class="la" lang="la">{@html rendre(o.la)}</div>{/if}
 				</section>
 			{/each}
-			<section class="bloc">
-				{#if article.sed_contra.fr}<div class="fr">{@html rendre(article.sed_contra.fr)}</div>{/if}
-				{#if latin || !article.sed_contra.fr}<div class="la" lang="la">{@html rendre(article.sed_contra.la)}</div>{/if}
-			</section>
+			{#if article.sed_contra.fr || article.sed_contra.la}
+				<section class="bloc">
+					{#if article.sed_contra.fr}<div class="fr">{@html rendre(article.sed_contra.fr)}</div>{/if}
+					{#if latin || !article.sed_contra.fr}<div class="la" lang="la">{@html rendre(article.sed_contra.la)}</div>{/if}
+				</section>
+			{/if}
 			<section class="bloc corps">
 				<div class="fr">{@html rendre(article.respondeo.fr)}</div>
 				{#if latin}<div class="la" lang="la">{@html rendre(article.respondeo.la)}</div>{/if}

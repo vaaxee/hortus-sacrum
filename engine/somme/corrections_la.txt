@@ -3,3 +3,5 @@
 # question<TAB>article<TAB>partie (pr, arg1…, sc, co, ad1…)<TAB>texte du Corpus Thomisticum<TAB>texte léonin
 # La ponctuation reste celle du Corpus Thomisticum (elle diffère parfois de l'édition : « de Iuda: » imprimé « de Iuda, »).
 5	2	arg3	* et cetera.	* etc.
+6	4	co	per se bonum et per se unum	per se ens et per se unum
+12	3	arg3	* et cetera.	* etc.

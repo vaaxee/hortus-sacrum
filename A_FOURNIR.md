@@ -41,11 +41,11 @@ Les points réglés sont gardés pour l'historique. Dernière mise à jour : 22 
     `cihm_04796`, et Beringer t. I-II) ; courtes prières du cordon (notice de Québec 1876, Beringer t. II n° 272).
 - **Indulgences à vérifier sur le scan de l'*Enchiridion* 1952** : n° 594 (prières pour chaque jour de la semaine
   pour les âmes) et n° 643 (*Fac nos, Domine Iesu*) : numéros et teneur lus sur l'OCR seulement.
-- **Somme théologique (lot 10)** : Iª q. 1-5 livrées (22 nov.). **Suite** : Iª q. 6-13 ont leurs lectures votées
-  (scan de 1880, pages n107-n272) et leur latin (Corpus Thomisticum), mais les lignes sans accord restent à relire sur
-  l'image (`engine/somme/planche74.py`, puis `corrections_fr.txt`) et les intitulés latins à relire (`titres_la.json`) ;
-  au-delà de la q. 13 : tomes suivants de Lachat (archive.org, même édition Vivès) à repérer. Latin : relecture
-  intégrale sur l'image de l'édition léonine non faite (seulement les écarts isolés de l'alignement).
+- **Somme théologique (lot 10)** : Iª q. 1-11 livrées (q. 1-5 le 22 nov., q. 6-11 le 25 nov.). **Suite** : Iª q. 12-13 ont leurs lectures votées (scan de 1880, pages n184-n272) et leur latin (Corpus Thomisticum, contrôlé), mais les lignes restent à relire sur l'image (`engine/somme/planche74.py` ou une planche du scan de 1880, puis `corrections_fr.txt`) et les intitulés latins à relire (`titres_la.json`) ; au-delà de la q. 13 : tomes suivants de Lachat (archive.org, même édition Vivès) à repérer. Mots abîmés à la même
+  place sur les deux exemplaires (1874, 1880 : même planche), complétés par le contexte immédiat et à revoir sur un
+  troisième exemplaire : q. 10 « seulement » (p. 162), « toujours » (p. 168), « si l'on » (p. 169) ; q. 11 « par
+  son » (p. 173). Latin : relecture intégrale sur l'image de l'édition léonine non faite (seulement les écarts
+  isolés de l'alignement et les intitulés).
 - **Bréviaire romain et Officium parvum en français (édition bilingue ancienne)** : recherche du 22 nov.,
   `docs/audits/BREVIAIRE_FRANCAIS_2026-11-22.md`. *Petit office* : retenu **Montréal 1905** (archive.org `cihm_98272`,
   permis d'imprimer de Mgr Racicot) ; **toutes les heures transcrites** (`data/office/parvum-fr.json`, 201 paragraphes
