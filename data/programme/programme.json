@@ -1301,12 +1301,12 @@
     {
       "id": "prog:devotion-vendredi",
       "titre": "Dévotion du vendredi : la Passion et le Sacré-Cœur",
-      "motif": {"fins": ["reparation", "propitiation"], "objets": ["passion", "sacre-coeur"], "note": "dédicace du vendredi : la Passion et le Sacré-Cœur (cycles.json ; LOT_DIMENSIONS § 3.3)"},
-      "revision": 4,
+      "motif": {"fins": ["reparation", "propitiation"], "objets": ["passion", "sacre-coeur"], "note": "dédicace du vendredi : la Passion et le Sacré-Cœur (cycles.json ; LOT_DIMENSIONS § 3.3) ; le premier vendredi, préparation à la mort (Association de la Bonne Mort), un texte par mois"},
+      "revision": 5,
       "quand": {
         "jours_semaine": [5]
       },
-      "source": "Audit des dévotions, § 2.3 ; en juillet, les sept offrandes du Précieux Sang (§ 2.5)",
+      "source": "Audit des dévotions, § 2.3 ; en juillet, les sept offrandes du Précieux Sang (§ 2.5) ; décision de l'utilisateur du 26 nov. (lot A des archiconfréries, ARCHICONFRERIES_LOT_A § 7) : litanies de la Passion et des Sept-Douleurs de Lefebvre dans la roue, préparation à la mort le premier vendredi (Lefebvre, 1870)",
       "page": {
         "moment": "journee",
         "ordre": 65,
@@ -1328,7 +1328,9 @@
               "unite": "semaine",
               "parmi": [
                 "beringer:litanies-sacre-coeur",
-                "jardin:litanies-de-notre-dame-des-sept-douleurs"
+                "jardin:litanies-de-notre-dame-des-sept-douleurs",
+                "lefebvre1870:litanies-de-la-passion",
+                "lefebvre1870:litanies-notre-dame-des-sept-douleurs"
               ]
             }
           },
@@ -1360,6 +1362,25 @@
           },
           {
             "texte": "garde1886:renovation-enrolement",
+            "quand": {
+              "semaines_du_mois": [
+                1
+              ]
+            }
+          },
+          {
+            "texte": {
+              "selon": "rotation",
+              "roue": "roue:preparation-a-la-mort",
+              "unite": "mois",
+              "parmi": [
+                "lefebvre1870:protestation-pour-bien-mourir",
+                "lefebvre1870:testament-spirituel-saint-charles",
+                "lefebvre1870:priere-saint-vincent-ferrier-bonne-mort",
+                "lefebvre1870:autre-testament-spirituel",
+                "lefebvre1870:priere-sainte-gertrude-ave-candidum"
+              ]
+            },
             "quand": {
               "semaines_du_mois": [
                 1
@@ -1715,10 +1736,10 @@
         "objets": [
           "ames-du-purgatoire"
         ],
-        "note": "chaque soir, la prière du jour pour les défunts (Beringer, n° 615) ; le lundi a sa dévotion propre"
+        "note": "chaque soir, la prière du jour pour les défunts (Beringer, n° 615) ; le lundi a sa dévotion propre ; en novembre, une prière de plus, une semaine sur deux chacune"
       },
-      "revision": 1,
-      "source": "Décision de l'utilisateur du 22 nov. : chaque soir sauf le lundi, à la fin de la prière du soir (audit ARCHICONFRERIES_EN)",
+      "revision": 2,
+      "source": "Décision de l'utilisateur du 22 nov. : chaque soir sauf le lundi, à la fin de la prière du soir (audit ARCHICONFRERIES_EN) ; décision du 26 nov. (lot A) : en novembre, les âmes les plus oubliées (Perpétuel-Secours, 1878) et la délivrance des âmes (Précieux-Sang, 1890)",
       "insertions": [
         {
           "hote": "prog:priere-du-soir",
@@ -1735,6 +1756,22 @@
                   "beringer:ames-purgatoire-jeudi",
                   "beringer:ames-purgatoire-vendredi",
                   "beringer:ames-purgatoire-samedi"
+                ]
+              }
+            },
+            {
+              "texte": {
+                "selon": "rotation",
+                "roue": "roue:ames-novembre",
+                "unite": "semaine",
+                "parmi": [
+                  "perpetuelsecours1878:ames-les-plus-oubliees",
+                  "precieuxsang1890:priere-delivrance-ames-purgatoire"
+                ]
+              },
+              "quand": {
+                "mois": [
+                  11
                 ]
               }
             }
@@ -1793,12 +1830,14 @@
         "objets": [
           "sacre-coeur",
           "coeur-immacule",
-          "jesus-christ"
+          "jesus-christ",
+          "precieux-sang",
+          "sainte-vierge"
         ],
         "note": "renouveler une fois l'an la consécration propre à la fête (archiconfréries)"
       },
-      "revision": 1,
-      "source": "Décision de l'utilisateur du 22 nov. : les consécrations des archiconfréries le jour de leur fête (audit ARCHICONFRERIES_FR)",
+      "revision": 2,
+      "source": "Décision de l'utilisateur du 22 nov. : les consécrations des archiconfréries le jour de leur fête (audit ARCHICONFRERIES_FR) ; décision du 26 nov. (lot A) : consécration au Précieux Sang le 1er juillet ; consécration de l'Archiconfrérie de N.-D. du Perpétuel-Secours le jour de sa fête, absente du calendrier de 1954 et « fixée au dimanche qui précède le 24 Juin » (Notre-Dame du Perpétuel-Secours… archiconfrérie et exercices de piété, Montréal, 1878, p. 141), soit le dimanche du 17 au 23 juin",
       "insertions": [
         {
           "hote": "prog:priere-du-matin",
@@ -1827,6 +1866,31 @@
                       ]
                     },
                     "texte": "janvier:consecration-archiconfrerie"
+                  },
+                  {
+                    "quand": {
+                      "dates": [
+                        "07-01"
+                      ]
+                    },
+                    "texte": "precieuxsang1890:consecration-au-precieux-sang"
+                  },
+                  {
+                    "quand": {
+                      "jours_semaine": [
+                        0
+                      ],
+                      "dates": [
+                        "06-17",
+                        "06-18",
+                        "06-19",
+                        "06-20",
+                        "06-21",
+                        "06-22",
+                        "06-23"
+                      ]
+                    },
+                    "texte": "perpetuelsecours1878:consecration-archiconfrerie"
                   }
                 ]
               }

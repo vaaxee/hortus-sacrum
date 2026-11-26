@@ -198,7 +198,28 @@ Aucune neuvaine **en prières** n'a été transcrite dans ce lot. Repérées dan
   pour le dernier associé défunt et pour celui qui doit mourir le premier, « Saint Joseph, priez pour nous » ; huit
   jours de prières pour un associé défunt, puis huit pour celui qui doit mourir le premier.
 
-## 7. Proposition d'intégration (non appliquée)
+## 7. Proposition d'intégration
+
+**Appliquée le 26 nov.** (décision de l'utilisateur : propositions 1, 2, 3 et la consécration du Perpétuel-Secours ;
+branche `claude/archi-lot-a-integration`) :
+
+- **Litanies du vendredi** : `roue:litanies-5` (seed `LITANIES_PAR_JOUR` et `parmi` de `prog:devotion-vendredi`) passe à
+  quatre litanies : Sacré-Cœur, Sept-Douleurs (livret), Passion et Sept-Douleurs de Lefebvre ; une par semaine. La roue
+  déjà installée n'est mise à jour que si l'utilisateur ne l'a pas modifiée.
+- **Premier vendredi** : dans `prog:devotion-vendredi` (`semaines_du_mois: [1]`), un texte de préparation à la mort par
+  mois, rotation déterministe `unite: 'mois'` : protestation de S. Alphonse, testament de S. Charles, prière de
+  S. Vincent Ferrier, autre testament, *Ave candidum*.
+- **Novembre** : à la fin de la prière du soir (`prog:ames-du-soir`, déjà la prière du jour pour les âmes), en alternance
+  hebdomadaire, `perpetuelsecours1878:ames-les-plus-oubliees` et `precieuxsang1890:priere-delivrance-ames-purgatoire`.
+- **Consécrations des fêtes** (`prog:consecrations-fetes`, fin de la prière du matin) : la consécration au Précieux Sang
+  le 1er juillet ; la consécration de l'Archiconfrérie de N.-D. du Perpétuel-Secours le jour de sa fête. Cette fête
+  n'est pas dans le calendrier de 1954 du projet (`data/calendar`) ; date retenue d'après le manuel lui-même, p. 141 :
+  « le jour de la fête de Notre-Dame du Perpétuel-Secours, fixée au dimanche qui précède le 24 Juin » (vu sur l'image),
+  soit le dimanche du 17 au 23 juin.
+- Classement deviné (`devinee`) ajouté dans `dimensions-textes.json` pour les onze textes branchés ; tests dans
+  `journee.test.ts` (« lot A des archiconfréries intégré »), unicité vérifiée sur l'année.
+
+Proposition initiale :
 
 « Le moins pour le plus, le simple mais le saint, la variété mais la sobriété. » Aucune ligne quotidienne nouvelle ;
 on prolonge des séquences existantes. Rien n'est écrit dans `programme.json` ni dans `dimensions-textes.json`.

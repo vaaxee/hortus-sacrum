@@ -135,7 +135,12 @@ const LITANIES_PAR_JOUR: string[][] = [
 	['fervent:litanies-ange-gardien', 'jardin:litanies-de-la-sainte-face', 'janvier:litanies-sainte-face-ecriture'], // mardi : saints Anges (et la sainte Face, décision du 22 nov.)
 	['beringer:litanies-saint-joseph'], // mercredi : saint Joseph
 	['fervent:litanies-saint-sacrement', 'paroissien:litanies-saint-nom'], // jeudi : Saint-Sacrement
-	['beringer:litanies-sacre-coeur', 'jardin:litanies-de-notre-dame-des-sept-douleurs'], // vendredi : Passion, Sacré-Cœur
+	[
+		'beringer:litanies-sacre-coeur',
+		'jardin:litanies-de-notre-dame-des-sept-douleurs',
+		'lefebvre1870:litanies-de-la-passion',
+		'lefebvre1870:litanies-notre-dame-des-sept-douleurs'
+	], // vendredi : Passion, Sacré-Cœur (et les litanies de Lefebvre, décision du 26 nov.)
 	['paroissien:litanies-sainte-vierge', 'jardin:litanies-de-notre-dame-des-sept-douleurs'] // samedi : sainte Vierge
 ];
 
