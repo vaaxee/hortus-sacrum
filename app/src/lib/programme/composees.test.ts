@@ -76,7 +76,9 @@ describe('pages composées à l’affichage = pages livrées par composer.py', (
 		);
 		expect(morceaux.filter((s) => !s.suite)).toHaveLength(1);
 		const iPrime = matin.sections.findIndex((s) => s.texte === 'thesaurisons:oraison-de-prime');
-		expect(contenuDe(matin.sections[iPrime - 1], corps)).toMatch(/\*Remercions Dieu des grâces qu’il nous a faites, et offrons-nous à lui\.\*$/);
+		expect(contenuDe(matin.sections[iPrime - 1], corps)).toMatch(
+			/\*Remercions Dieu des grâces qu’il nous a faites, et offrons-nous à lui\.\*$/
+		);
 		// le soir : le Paroissien entier, l'invocation de saint Alphonse après l'Ave (décision du 26 nov.)
 		const soir = ligneDu(1, 'prog:priere-du-soir');
 		const morceauxSoir = soir.sections.filter((s) => s.texte === 'paroissien:priere-du-soir');
