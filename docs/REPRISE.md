@@ -36,6 +36,28 @@ Chaque push sur `main` reconstruit automatiquement https://hortus-sacrum.vercel.
 - **Sainte Face** (abbé Janvier, *Manuel de l'Archiconfrérie de la Sainte-Face*, 3e éd., Tours 1895, revue d'après les décrets du Saint-Office ; `vendor/sources/face/janvier.pdf`) : Flèche d'or, amende honorable, consécration, promesses, petite couronne (`janvier:*` dans `data/prieres/sources.json`) ; prière de sainte Thérèse à la sainte Face (Thésaurisons n° 235, 500 jours). Neuvaine, petit chemin de croix, rosaire et petit office faits ensuite ; le 22 nov., dix pièces de plus (litanies de l'Écriture, consécration des membres, actes, louanges, couronnes) avec les manuels du Cœur de Marie (Desgenettes 1852) et de la Garde d'honneur (Bourg 1886) : `docs/audits/ARCHICONFRERIES_FR_2026-11-22.md` (proposition d'intégration à trancher, rien de branché).
 - **S. Alphonse, Visites au Saint-Sacrement et à la sainte Vierge** (Lyon, Perisse, 1862, trad. revue par le P. Baudrant) : recueil `data/recueils/liguori-visites.json` (I:0 introduction et prières de chaque visite, J:1…J:31), construit par `engine/recueils/liguori/visites.py` (couche texte Google, traits d'union perdus retrouvés grâce à la seconde lecture Tesseract, mots collés ou coupés d'après le dictionnaire, corrections relues `visites_corrections.json`, décisions `liguori/relecture/`). Lisible dans Méditations → bibliothèque.
 
+## Chantiers ouverts au 26 novembre (pour la session suivante)
+
+Branches poussées, sans PR, à reprendre (fusionner `origin/main` sans rebase, puis PR et fusion quand la chaîne
+hortus-qa est verte) :
+
+- `claude/neuvaines` — **priorité de l'utilisateur** : toutes les neuvaines, douzaines, trentaines et dévotions à jours
+  comptés des manuels, intégrées à leurs dates (dont la neuvaine avant chaque premier vendredi du Petit bréviaire du
+  Sacré-Cœur) ; audit `docs/audits/NEUVAINES_2026-11-26.md`.
+- `claude/prieres-obligatoires` — titre (indulgence, prescription, promesse) de chaque élément des prières
+  **obligatoires** (matin, soir, chapelet, Angélus) ; trois Ave « spéciaux » du soir (piste : les trois Ave Maria pour
+  la pureté), premier Pater et premier Gloria du chapelet ; audit `docs/audits/PRIERES_OBLIGATOIRES_2026-11-26.md`.
+  Décisions : seulement les prières obligatoires ; sans remplaçant trouvé, la prière reste, sans marque. **Les
+  remplacements se proposent à l'utilisateur avant d'être appliqués.**
+- `claude/archi-lot-a` — manuels : Bonne Mort (fait), Précieux Sang 1890 (fait), Saint-Sacrement 1920, Perpétuel
+  Secours 1878 ; audit `ARCHICONFRERIES_LOT_A_2026-11-25.md` avec proposition d'intégration à soumettre.
+- `claude/psautier-fillion-2` (fusionné jusqu'au mercredi) — jeudi, vendredi, samedi, cantiques de Laudes.
+- `claude/somme-suite` (fusionné jusqu'à Iª q. 11) — q. 12 en cours (`engine/somme/corrections_fr.txt`).
+
+À fournir par l'utilisateur : PDF d'Allibert (Sept Douleurs, Lyon 1838 ; Google Livres bloqué) ; neuvaine française
+ancienne jour par jour à la Trinité (sinon, trois prières de Beringer chaque jour). À relire par l'utilisateur : les
+traductions de travail (audits `ARCHICONFRERIES_EN`, `_LOT_B`) ; PR #63 (`PRODUCT.md`, `DESIGN.md`), en brouillon.
+
 ## Reste à faire
 
 1. **Guéranger** : **fait en partie** (13 nov.) : 202 lectures sur 423 reprises du texte propre de domgueranger.net (Avent → temps pascal) et d'abbe-pivert.com (jours et saints choisis jusqu'au temps après la Pentecôte), appariées à l'OCR par recoupement de suites de mots (`engine/recueils/relecture/gueranger/`). Ces transcriptions omettent les pièces latines. Restent en OCR surtout les t. 8, 9, 12-15 (temps après la Pentecôte, sanctoral de juin à novembre) : à corriger sur scans comme Berlioux, ou à reprendre d'une autre transcription.
