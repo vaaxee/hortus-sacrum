@@ -160,6 +160,18 @@ Les points réglés sont gardés pour l'historique. Dernière mise à jour : 26 
   Eastview ou Saint-Laurent-sur-Sèvre, 1899-1947) ; litanies et neuvaine du Secrétariat de Marie Médiatrice (Louvain,
   *de consensu Ordinarii*, Malines, 7 janvier 1942) ; oraison propre de la messe du bienheureux (propre des diocèses de
   Luçon ou de Rennes, après 1888).
+- **Manuels d'archiconfréries, lot A (25-26 nov.)** : 77 pièces ajoutées (Lefebvre 1870, Picard 1873, Précieux-Sang
+  1890, Notre-Dame du Chemin 1920, Perpétuel-Secours 1878), non branchées
+  (`docs/audits/ARCHICONFRERIES_LOT_A_2026-11-25.md`). Aucune traduction de travail. Reste :
+  - *Nouveau manuel du Très-Précieux Sang* (Saint-Hyacinthe, 1890, `cihm_92923`) : non transcrits, la microfiche étant
+    abîmée et décalée vers l'image n388 : litanies de Jésus agonisant, amende honorable des adorateurs (p. 233), messes
+    pour chaque jour de la semaine, chemins de croix, office du Précieux-Sang ; table des matières en partie illisible.
+    Un autre exemplaire (Google Livres, BAnQ) permettrait de les reprendre.
+  - Lefebvre 1870 : *Prières pendant la messe*, *Messe des morts*, *Adoro te* traduit (colonnes latin-français mêlées
+    par l'OCR), cantiques : laissés, à reprendre si l'utilisateur les veut.
+  - Indulgences imprimées (non comptées) à vérifier dans l'Enchiridion de 1952 : amende honorable à Jésus-Christ
+    présent dans le Sacrement de l'autel (300 j.), offrande du Précieux Sang pour obtenir la bénédiction (Léon XII,
+    1823), chapelet de la Divine Miséricorde (Pie IX, 1846), chapelet du Précieux-Sang.
 - **Manuels d'archiconfréries, lot B (25-26 nov.)** : 25 pièces ajoutées, non branchées
   (`docs/audits/ARCHICONFRERIES_LOT_B_2026-11-25.md`). **À relire par l'utilisateur** : 2 traductions de travail
   (`bonamors1896:colloque-saint-pie-v`, `purgatorian1868:invocation-trinite-ames-purgatoire`). Reste :

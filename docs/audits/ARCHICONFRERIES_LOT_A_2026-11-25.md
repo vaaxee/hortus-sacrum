@@ -1,7 +1,7 @@
 # Manuels d'archiconfréries, lot A — 25 novembre 2026
 
 Demande de l'utilisateur du 25 nov. : finir l'OCR des manuels d'archiconfréries et d'associations pieuses trouvés
-(`ARCHICONFRERIES_FR_2026-11-22.md` § 4), puis en extraire et classer le contenu. Lot A : Bonne Mort (Lefebvre 1870,
+(`ARCHICONFRERIES_FR_2026-11-22.md` § 4), puis en extraire et classer le contenu. **Bilan : 77 pièces nouvelles** (Lefebvre 20, Picard 4, Précieux-Sang 7, Notre-Dame du Chemin 8, Perpétuel-Secours 38), aucune traduction de travail, aucune indulgence comptée. Lot A : Bonne Mort (Lefebvre 1870,
 Picard 1873), Précieux Sang (Saint-Hyacinthe 1890), Saint-Sacrement (Québec 1920), N.-D. du Perpétuel Secours
 (Montréal 1878). Branche `claude/archi-lot-a`. **Rien n'est branché dans `programme.json`** ni classé dans
 `dimensions-textes.json` : l'utilisateur tranchera (§ 7).
@@ -17,7 +17,7 @@ la page entière (titres, rubriques, italiques, mots que les deux lectures ont l
 « Barcelonne », « ingnominieuse », « devoilées ») ; seules quelques coquilles évidentes sont corrigées, et notées dans
 le champ `page` de la pièce. Fichiers téléchargés et scripts dans le scratchpad, non versionnés.
 
-Préfixes : `lefebvre1870:` (Bonne Mort, Paris), `picard1873:` (Bonne Mort, Montréal), `precieuxsang1890:` (Précieux Sang), `ndchemin1920:` (Saint-Sacrement, Québec).
+Préfixes : `lefebvre1870:` (Bonne Mort, Paris), `picard1873:` (Bonne Mort, Montréal), `precieuxsang1890:` (Précieux Sang), `ndchemin1920:` (Saint-Sacrement, Québec), `perpetuelsecours1878:` (Perpétuel Secours).
 
 ## 1. Bonne Mort — Lefebvre, *La science de bien mourir*, Paris, 1870
 
@@ -153,3 +153,89 @@ Préfixes : `lefebvre1870:` (Bonne Mort, Paris), `picard1873:` (Bonne Mort, Mont
 | « Nous vous consolerons, Seigneur », p. 42-44 | **déjà présente** (`garde1886:priere-reparatrice`) | — | — |
 | Louanges « Dieu soit béni » (p. 30), litanies du Sacré-Cœur (47-50), *Anima Christi*, *En ego*, offrandes des dizaines du rosaire (`montfort:methode-rosaire`) | **déjà présents** | — | — |
 | Lectures du P. Eymard (31-49) | laissées (prose) | — | — |
+
+## 5. N.-D. du Perpétuel Secours — Montréal, 1878
+
+- **Édition** : [Un Père rédemptoriste], *Notre-Dame du Perpétuel-Secours, vierge miraculeuse vénérée à Rome, dans
+  l'église de S.-Alphonse de Liguori et en beaucoup d'autres lieux : son histoire, archiconfrérie et exercices de piété en
+  son honneur*, Montréal, J.-B. Rolland et fils, 1878 ; approbations et imprimatur de Montréal en tête (audit FR du
+  22 nov.). Microfiche CIHM n° 52280.
+- **URL** : https://archive.org/details/cihm_52280 (la couche texte est décalée de deux feuillets sur les images
+  `page/n<N>.jpg` ; p. 143 = image n146 ; les « p. 182-217 » de l'audit du 22 nov. étaient des numéros d'image).
+- **Plan** : Ire partie, histoire de l'image miraculeuse ; IIe partie, l'Archiconfrérie (érection, indulgences,
+  consécration, p. 143-144) ; IIIe partie, exercices de piété : ch. I, trois prières indulgenciées de S. Alphonse
+  (145-150) ; ch. II, sept prières générales pour demander les grâces nécessaires au salut (151-166) ; ch. III, « prières
+  spéciales appropriées à toutes les demandes » (167-205 : trente prières, presque toutes suivies d'une oraison
+  jaculatoire) ; appendice, cantiques (206 et suiv.).
+
+| Pièce | Statut | Id |
+|---|---|---|
+| Consécration à N.-D. du Perpétuel-Secours (Archiconfrérie, avec S. Alphonse), p. 143-144 | **nouvelle** (40 j. imprimés, non comptés) | `perpetuelsecours1878:consecration-archiconfrerie` |
+| Trois prières indulgenciées de S. Alphonse, p. 145-150 | **déjà présentes** (`weber:trois-prieres-perpetuel-secours`, Beringer) | — |
+| Ch. II, I-VII : douze invocations ; prière à réciter fréquemment ; confiance en Jésus et en Marie ; grâce de toujours prier ; toutes les grâces nécessaires au salut ; persévérance ; bonne mort, p. 151-165 | **nouvelles** | `perpetuelsecours1878:douze-invocations`, `-priere-a-reciter-frequemment`, `-confiance-en-jesus-et-marie`, `-grace-de-toujours-prier`, `-toutes-les-graces-necessaires-au-salut`, `-obtenir-la-perseverance`, `-pour-obtenir-une-bonne-mort` |
+| Ch. III, I-XXX : secours en toutes choses (« Venez à mon secours, ô charitable Mère ! ») ; jaculatoires pour les circonstances de la journée ; tiédeur ; acquérir une vertu ; amour divin ; se donner à Dieu sans réserve ; circonstance embarrassante ; vocation ; tentation ; répugnance à un devoir ; peines intérieures ; persécution ; après une faute ; extirpation d'un vice ; occasion ou lien funeste ; sacrilége ; état de péché sans envie d'en sortir ; hommes sans religion ; délai de la conversion ; maladies ; pauvreté ; chagrins de famille ; mort d'une personne chère ; conservation de la foi et nécessités de l'Église ; l'Église et le Souverain-Pontife ; pasteurs ; conversion de personnes ; âmes du purgatoire ; âmes les plus oubliées ; zèle pour leur délivrance, p. 167-205 | **nouvelles** (30 pièces ; chaque oraison jaculatoire gardée avec sa prière) | `perpetuelsecours1878:secours-en-toutes-choses` … `-zele-pour-les-ames-du-purgatoire` |
+| Cantiques, histoire | laissés | — |
+
+## 6. Neuvaines et séries à jours comptés repérées (pour l'agent chargé de leur intégration)
+
+Aucune neuvaine **en prières** n'a été transcrite dans ce lot. Repérées dans ces manuels :
+
+- **Lefebvre 1870** : deux *Neuvaines à saint Joseph* (p. 293-392) : neuf méditations sur les vertus (foi … pureté),
+  puis neuf sur trois titres, trois mystères et trois vertus de saint Joseph ; ce sont des **instructions en prose**
+  (lectures), sans prières propres, à prendre comme lectures d'une neuvaine de mars si on le veut ; l'association
+  « se prépare par une neuvaine solennelle » à ses fêtes (pas de texte).
+- **Précieux-Sang 1890**, calendrier de la partie préliminaire : **sept vendredis du Carême** (un objet de la Passion
+  par vendredi : sainte Couronne d'épines, sainte Lance et saints Clous, cinq Plaies… ; renvoi au « Vendredi » de la
+  IIIe partie) ; **six vendredis préparatoires à la fête du Sacré-Cœur** (plénière chaque vendredi) ; **neuvaine de la
+  grâce** à saint François-Xavier (du 4 au 12 mars ; renvoi « à la fin de décembre », non trouvé sur la microfiche) ;
+  « Prières pour la neuvaine et le mois du Précieux-Sang » (pratique annoncée, texte non retrouvé dans la partie
+  lisible) ; **prière à réciter pendant trente jours** pour obtenir une grâce particulière (« Sainte Marie, Vierge des
+  vierges, Mère de… », p. 606, « pourrait être récitée chacun des jours du mois de Marie ») : absente du projet,
+  **non transcrite** (fin de microfiche abîmée), à reprendre.
+- **Perpétuel-Secours 1878** : seulement des triduums historiques (récit), pas de texte de neuvaine.
+- **Petit manuel de l'Union de prières 1873** : assemblées le premier samedi du mois (chapelet des morts, litanies de la
+  bonne mort) et le dimanche après chaque annonce des Quatre-Temps ; chaque associé : un *Pater* et un *Ave* par jour
+  pour le dernier associé défunt et pour celui qui doit mourir le premier, « Saint Joseph, priez pour nous » ; huit
+  jours de prières pour un associé défunt, puis huit pour celui qui doit mourir le premier.
+
+## 7. Proposition d'intégration (non appliquée)
+
+« Le moins pour le plus, le simple mais le saint, la variété mais la sobriété. » Aucune ligne quotidienne nouvelle ;
+on prolonge des séquences existantes. Rien n'est écrit dans `programme.json` ni dans `dimensions-textes.json`.
+
+1. **Litanies du jour** (roue des litanies, déjà en place) : ajouter à la rotation `lefebvre1870:litanies-de-la-passion`
+   (vendredi) et une des deux litanies des Sept-Douleurs de Lefebvre (vendredi ou septembre), en alternance avec
+   `jardin:litanies-de-notre-dame-des-sept-douleurs`. Coût nul : la ligne existe.
+2. **Préparation à la mort, une fois le mois** (pratique de l'Association de la Bonne Mort, Lefebvre et Bona Mors) :
+   le jour de la retraite du mois ou le premier vendredi, un seul texte en rotation mensuelle : protestation de
+   S. Alphonse, testament spirituel de S. Charles, prière de S. Vincent Ferrier, *Ave candidum* de sainte Gertrude.
+   La recommandation de l'âme (`lefebvre1870:priere-pour-les-agonisants`) reste au recueil, ouverte quand on veille un
+   mourant ; la messe pour une bonne mort, au recueil (ou le jour de la messe votive, si un jour en est marqué).
+3. **Novembre / défunts** : `perpetuelsecours1878:ames-les-plus-oubliees` et `precieuxsang1890:priere-delivrance-ames-purgatoire`
+   en insertion du mois de novembre (une par semaine), sans nouvelle ligne ; le chapelet de la Divine Miséricorde
+   comme forme possible du chapelet des morts du lundi, au choix.
+4. **Premier vendredi du mois** : `ndchemin1920:priere-promesses-sacre-coeur` (« Seigneur, vous nous l'avez promis »)
+   après l'acte de réparation déjà prévu ; l'une des deux amendes honorables de Notre-Dame du Chemin en alternance avec
+   celle de la Garde d'honneur (proposition du 22 nov.).
+5. **Juillet (mois du Précieux Sang)** : l'Horloge de la Passion n'est pas quotidienne ; proposer la jaculatoire de
+   trois heures (« Que Jésus soit à jamais béni… ») à l'insertion de 15 h du vendredi, et la consécration au Précieux
+   Sang (`precieuxsang1890:consecration-au-precieux-sang`) le 1er juillet ; le chapelet long, au recueil, la forme
+   brève (Boylesve) restant celle du mois.
+6. **Perpétuel Secours** (fête le dimanche avant la Saint-Jean, ou le 27 juin selon les propres) : la consécration de
+   l'Archiconfrérie ce jour-là ; les trente « prières spéciales » forment un **recueil de circonstance** (tentation,
+   maladie, deuil, chagrins de famille, vocation…), consultable depuis la fiche du jour, sans ligne au programme ; on
+   peut proposer l'invocation « Venez à mon secours » en insertion du mercredi (dévotion rédemptoriste) une fois la
+   semaine.
+7. Le reste (testaments, prières à saint Joseph et aux anges, actes dialogués d'adoration, acclamations, consécration
+   du genre humain de 1899) : recueil, sans ligne.
+
+Pas de classement deviné ajouté : à faire, si l'utilisateur retient une de ces propositions, dans
+`data/prieres/dimensions-textes.json` (statut `devinee`).
+
+## 8. Indulgences
+
+Toutes les indulgences imprimées sont reportées dans le champ `indulgence` des pièces, **non comptées** (SPEC § 11 :
+seule l'*Enchiridion* de 1952 fait foi ; concessions épiscopales et de confrérie signalées seulement). À vérifier dans
+l'Enchiridion : amende honorable à Jésus-Christ présent dans le Sacrement de l'autel (300 j.), offrande du Précieux Sang
+pour obtenir la bénédiction (Léon XII, 1823), chapelet de la Divine Miséricorde (Pie IX, 1846), chapelet du
+Précieux-Sang (7 ans et 7 quarantaines), consécration à N.-D. du Perpétuel-Secours (40 j.).
