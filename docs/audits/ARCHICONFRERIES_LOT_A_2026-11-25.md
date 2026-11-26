@@ -17,7 +17,7 @@ la page entière (titres, rubriques, italiques, mots que les deux lectures ont l
 « Barcelonne », « ingnominieuse », « devoilées ») ; seules quelques coquilles évidentes sont corrigées, et notées dans
 le champ `page` de la pièce. Fichiers téléchargés et scripts dans le scratchpad, non versionnés.
 
-Préfixes : `lefebvre1870:` (Bonne Mort, Paris).
+Préfixes : `lefebvre1870:` (Bonne Mort, Paris), `picard1873:` (Bonne Mort, Montréal).
 
 ## 1. Bonne Mort — Lefebvre, *La science de bien mourir*, Paris, 1870
 
@@ -61,3 +61,28 @@ Préfixes : `lefebvre1870:` (Bonne Mort, Paris).
 | *En ego* (p. 458), *Memorare* (460), *O Domina mea* (461), *O felix Maria* et *Salve Regina* (461-462), *Stabat* (431), oraison « dite efficace » à saint Joseph (464) | **déjà présents** (`jardin:chaque-vendredi-devant-le-crucifix`, `weber:souvenez-vous`, `weber:priere-saint-louis-de-gonzague`, `beringer:salve-regina`, `weber:stabat-mater`, `beringer:saint-joseph-purete`) | — | — |
 | *Anima Christi*, *Suscipe* (459-460) | déjà présents dans les recueils ; laissés | — | — |
 | Prières pendant la messe (403-411), messe des morts (416-421), hymne *Adoro te* traduite (422-423), cantiques | **laissés** : méthode générale de la messe, textes du Missel, cantiques ; à reprendre si l'utilisateur les veut | — | — |
+
+## 2. Bonne Mort — [Picard], *Petit manuel des Associés de l'Union de prières et de la Bonne Mort*, Montréal, 1873
+
+- **Édition** : *Petit manuel des Associés de l'Union de prières et de la Bonne Mort*, Montréal, Eusèbe Senécal,
+  imprimeur, 1873 (page de titre) ; attribué à Eustache Picard, p. s. s. (Canadiana) ; préface non signée ; **aucune
+  approbation imprimée** dans l'exemplaire numérisé (statuts d'une confrérie paroissiale de Notre-Dame de Montréal,
+  sous la direction du Séminaire de Saint-Sulpice). Microfiche CIHM n° 04796 (Bibliothèque nationale du Québec).
+- **URL** : https://archive.org/details/cihm_04796 (page imprimée p = image n + 2 environ ; p. 14 = n12).
+- **Contenu** (pas de table) : préface (5) ; avantages des deux associations (7) ; règlements, devoirs et indulgences de
+  l'Union de prières et de bonnes œuvres (9-11 : chaque jour un *Pater* et un *Ave* pour le dernier associé défunt et
+  pour celui qui doit mourir le premier, et l'invocation « Saint Joseph, priez pour nous ») ; règlements de la Confrérie
+  de l'Adoration perpétuelle du Saint-Sacrement et de la Bonne Mort (12-22 : consécration de réception, pratiques —
+  penser chaque jour à la mort, sept *Requiem* par jour, une demi-heure par semaine devant le Saint-Sacrement, confession
+  et communion mensuelles, assemblée le premier samedi avec chapelet des morts et litanies de la bonne mort) ; amende
+  honorable au Sacré Cœur (23) ; acte d'offrande et de consécration au Sacré-Cœur (25) ; *En ego* (28) ; acte héroïque
+  (29-31) ; *Souvenez-vous* (32) ; liste des associés défunts depuis 1851 (33 et suiv.).
+
+| Pièce | Statut | Id | Indulgence imprimée |
+|---|---|---|---|
+| Consécration à Notre-Seigneur au Saint-Sacrement, p. 14-15 | **nouvelle** | `picard1873:consecration-au-saint-sacrement` | plénière le jour de la réception |
+| Amende honorable au Sacré Cœur de Jésus, p. 23-25 | **nouvelle** | `picard1873:amende-honorable-sacre-coeur` | — |
+| Acte d'offrande et de consécration au Sacré-Cœur, avec *O Cor Jesu, amoris victima* (latin-français), p. 25-27 | **nouvelle** | `picard1873:acte-d-offrande-sacre-coeur` | — |
+| Formule de l'acte héroïque (« O Marie, Mère de miséricorde… »), p. 31 | **nouvelle** (autre formule que `jardin:acte-heroique-de-charite`) | `picard1873:formule-acte-heroique` | Pie IX, 30 sept. 1852 (non compté) |
+| *En ego* (« O bon et très-doux Jésus »), p. 28 ; *Souvenez-vous*, p. 32 | **déjà présents** (`jardin:chaque-vendredi-devant-le-crucifix`, `weber:souvenez-vous`) | — | plénière (Pie VII, 10 avril 1821) ; 100 j. et plénière mensuelle |
+| Règlements, pratiques, liste des défunts | **laissés** (prose ; les pratiques servent à la proposition, § 7) | — | — |

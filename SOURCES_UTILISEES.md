@@ -142,6 +142,7 @@ d'intégration : `docs/audits/ARCHICONFRERIES_LOT_A_2026-11-25.md`.
 | Texte | Source | Pages | Accès |
 |---|---|---|---|
 | Messe pour demander la grâce d'une bonne mort, litanies de la Passion, deux litanies de N.-D. des Sept-Douleurs, litanies de saint Joseph, prière pour les agonisants (recommandation de l'âme), protestation pour bien mourir (S. Alphonse), deux testaments spirituels (S. Charles et autre formule), prière de S. Vincent Ferrier (latin-français), prière contre la mort subite, prière de sainte Gertrude *Ave candidum lilium*, deux prières à saint Joseph, *Ave Joseph*, prières à saint Michel et à l'ange gardien, prières pour les associés vivants, agonisants et décédés (`lefebvre1870:*`, 20 pièces) | Al. Lefebvre, S. J., *La science de bien mourir, manuel de l'Association de la Bonne Mort*, 5e éd., Paris, Librairie Saint-Germain-des-Prés, 1870 | 412-466 | archive.org `lasciencedebienm00lefeuoft` (n427-n481) |
+| Consécration à Notre-Seigneur au Saint-Sacrement (réception), amende honorable au Sacré Cœur, acte d'offrande et de consécration au Sacré-Cœur avec *O Cor Jesu, amoris victima*, formule de l'acte héroïque « O Marie, Mère de miséricorde » (`picard1873:*`, 4 pièces) | [E. Picard], *Petit manuel des Associés de l'Union de prières et de la Bonne Mort*, Montréal, E. Senécal, 1873 | 14-31 | archive.org `cihm_04796` (n12-n29) |
 <!-- lot A : suite -->
 
 ## Indulgences (compteur), 14 novembre 2026
