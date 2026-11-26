@@ -135,6 +135,21 @@ Londres, 1861 (`ConfraternityManualOfThe`) ; *Purgatorian Consoler*, Baltimore, 
 t. II, n° 230, 234, 255, 262, 272, 306, 308 (sommaires français des archiconfréries) ; *Enchiridion* 1952, n° 594, 636-649
 (contrôle, sur l'OCR).
 
+## Manuels d'archiconfréries, lot A (25 novembre 2026, relus sur l'image, non branchés)
+
+Double lecture (couche texte ABBYY d'archive.org et Tesseract `fra+lat`, `--psm 6`), désaccords tranchés sur l'image
+de la page, puis contrôle des mots de chaque pièce absents des deux lectures ; orthographe de l'édition gardée.
+Indulgences imprimées reportées sans être comptées. Détail, tables des matières, pièces laissées et proposition
+d'intégration : `docs/audits/ARCHICONFRERIES_LOT_A_2026-11-25.md`.
+
+| Texte | Source | Pages | Accès |
+|---|---|---|---|
+| Messe pour demander la grâce d'une bonne mort, litanies de la Passion, deux litanies de N.-D. des Sept-Douleurs, litanies de saint Joseph, prière pour les agonisants (recommandation de l'âme), protestation pour bien mourir (S. Alphonse), deux testaments spirituels (S. Charles et autre formule), prière de S. Vincent Ferrier (latin-français), prière contre la mort subite, prière de sainte Gertrude *Ave candidum lilium*, deux prières à saint Joseph, *Ave Joseph*, prières à saint Michel et à l'ange gardien, prières pour les associés vivants, agonisants et décédés (`lefebvre1870:*`, 20 pièces) | Al. Lefebvre, S. J., *La science de bien mourir, manuel de l'Association de la Bonne Mort*, 5e éd., Paris, Librairie Saint-Germain-des-Prés, 1870 | 412-466 | archive.org `lasciencedebienm00lefeuoft` (n427-n481) |
+| Consécration à Notre-Seigneur au Saint-Sacrement (réception), amende honorable au Sacré Cœur, acte d'offrande et de consécration au Sacré-Cœur avec *O Cor Jesu, amoris victima*, formule de l'acte héroïque « O Marie, Mère de miséricorde » (`picard1873:*`, 4 pièces) | [E. Picard], *Petit manuel des Associés de l'Union de prières et de la Bonne Mort*, Montréal, E. Senécal, 1873 | 14-31 | archive.org `cihm_04796` (n12-n29) |
+| Horloge de la Passion (24 jaculatoires), chapelet du Précieux-Sang avec considérations et prières, chapelet de la Divine Miséricorde, prière pour la délivrance des âmes du purgatoire (« Ayez pitié, ô tendre Jésus »), offrande du Précieux Sang au Père éternel pour obtenir sa bénédiction, consécration au Précieux Sang, prière de sainte Catherine de Sienne (`precieuxsang1890:*`, 7 pièces) | *Nouveau manuel du Très-Précieux Sang… ou le Livre des élus*, Saint-Hyacinthe, Monastère du Précieux-Sang, 1890 ; approbation de L.-Z. Moreau, 18 déc. 1889 | 193-200, 231-239, 266, 350-355, 556 | archive.org `cihm_92923` |
+| Amende honorable au Très Saint-Sacrement (« Pardon, Seigneur, pardon »), consécration au Sacré-Cœur pour les associés, heure d'adoration dialoguée (actes de religion, de remerciement, de charité, de contrition), prière fondée sur les promesses du Sacré-Cœur, prière pour la communion quotidienne, acclamations, amende honorable à Jésus-Christ présent dans le Sacrement de l'autel, consécration du genre humain (Léon XIII) (`ndchemin1920:*`, 8 pièces) | *Petit manuel des adorateurs et des adoratrices du Très Saint Sacrement*, Québec, Notre-Dame du Chemin, 1920 | 14-52 | archive.org `cihm_78894` |
+| Consécration de l'Archiconfrérie, douze invocations, sept prières générales (prière à réciter fréquemment, confiance, grâce de toujours prier, grâces nécessaires au salut, persévérance, bonne mort) et les trente « prières spéciales appropriées à toutes les demandes » avec leurs oraisons jaculatoires (secours en toutes choses, jaculatoires de la journée, tiédeur, vertu, amour divin… âmes du purgatoire) (`perpetuelsecours1878:*`, 38 pièces) | [Un Père rédemptoriste], *Notre-Dame du Perpétuel-Secours… son histoire, archiconfrérie et exercices de piété*, Montréal, J.-B. Rolland, 1878 | 143-205 | archive.org `cihm_52280` (images n146-n208) |
+
 ## Manuels d'archiconfréries, lot B (25-26 novembre 2026, non branchés au programme)
 
 Double lecture (couche texte du scan et Tesseract ; colonnes latin-français lues séparément), chaque désaccord vu sur
