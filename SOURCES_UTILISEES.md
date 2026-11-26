@@ -208,6 +208,17 @@ Audit : `docs/audits/PRIERES_OBLIGATOIRES_2026-11-26.md`. Chaque texte lu sur l'
 | Notice : un *Pater*, un *Ave* et un *Gloria* aux intentions du Souverain Pontife (`thesaurisons:prieres-intentions-souverain-pontife`) | *Thésaurisons*, notes explicatives, 4) ; Ench. 1952, p. XV, note 1 a) (S. Pén. Ap., 20 sept. 1933) | 17 | idem (n17) ; Ench. n14 |
 | Acte de contrition (`quebec1888:acte-de-contrition`, non branché) | *Le Catéchisme des provinces ecclésiastiques de Québec, Montréal et Ottawa*, Québec, A. Côté, approuvé le 20 avril 1888 (card. Taschereau) ; Ench. 1952, n° 36 | 5 | archive.org `lecatchismedes00qu` (n6) |
 | *Aide-mémoire : la journée indulgenciée* (plan des prières du lever, du matin, de la journée et du soir) | *Thésaurisons*, p. 187-188 : sert de guide aux remplaçants, non transcrit | 187-188 | idem (n187-n188) |
+## Neuvaines et dévotions à jours comptés (26 novembre 2026, à valider)
+
+Inventaire et décisions : `docs/audits/NEUVAINES_2026-11-26.md`. Une seule pièce nouvelle ; les autres lignes mettent
+à leurs jours des textes déjà transcrits.
+
+| Texte | Source | Pages | Accès |
+|---|---|---|---|
+| Neuvaine de réparation au Sacré-Cœur, du 1er au 9 de chaque mois : offrande du jour (`beringer:neuvaine-reparation-sacre-coeur`), **nouvelle**, relue sur l'image | Beringer 1925, t. I, n° 671 (Pie X, 15 (19) nov. 1907 ; indulgence non comptée) | 353 | archive.org `lesindulgences0001beri` (n368) |
+| Neuvaine au Sacré-Cœur pour chaque premier vendredi (`breviaire-sc:neuvaine`) ; amende honorable et consécration au Sacré-Cœur (fin de `breviaire-sc:exercice-messe`) | *Petit bréviaire du Sacré-Cœur de Jésus, extrait de la vie et des œuvres authentiques de la Bienheureuse Marguerite-Marie*, 13e éd., Nancy, Librairie Notre-Dame (Le Chevallier frères), imprimatur 21 mars 1883 | 151-155 ; 119-140 | PDF fourni par l'utilisateur (hors conteneur), transcription relue `engine/recueils/breviaire_sc_suite/` |
+| Neuvaine en l'honneur de la sainte Face (`janvier:neuvaine-meditations-sainte-face`) ; date : avant la fête principale de l'Archiconfrérie, saint Pierre (art. V) | Janvier, *Manuel de l'Archiconfrérie de la Sainte-Face*, 3e éd., Tours, 1895 | 112-142 ; 65-66 | bibliotheque-catholique.com (PDF Google) |
+| Cinq dimanches de S. Jean Berchmans ; dix dimanches de S. Stanislas Kostka (`jardin:*`) | *Le Jardin de l'âme* (livret) | 63, 66 | livret |
 
 ## Indulgences (compteur), 14 novembre 2026
 
