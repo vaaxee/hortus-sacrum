@@ -1322,6 +1322,19 @@
    "langue": "italien",
    "note": "L’indulgence est attachée à l’exercice entier (℣. Deus, in adiutorium, Gloria, les sept douleurs suivies chacune d’un Ave, ℣. Ora pro nobis et l’oraison).",
    "traduction": "Beringer, Les Indulgences (1925), traduction reconnue fidèle par la S. Pénitencerie (décret du 11 juillet 1925)"
+  },
+  "beringer:trinite-adoration-action-de-graces": {
+   "ref": "Ench. 1952, n° 48",
+   "frequence": "une fois le jour",
+   "partielles": [
+    {
+     "ans": 7,
+     "texte": "7 ans, une fois le jour"
+    }
+   ],
+   "intention": "En l’honneur de la très sainte Trinité, avec le propos de prier ainsi neuf jours de suite.",
+   "note": "Plénière aux conditions habituelles, la neuvaine achevée (non comptée). Concession pour des prières quelconques en l’honneur de la sainte Trinité : la langue est indifférente. L’indulgence est comptée une fois le jour, sur la première prière de la neuvaine.",
+   "langue": "français"
   }
  },
  "sans_compte": {

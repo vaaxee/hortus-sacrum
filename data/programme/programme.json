@@ -1249,6 +1249,47 @@
       }
     },
     {
+      "id": "prog:neuvaine-trinite",
+      "titre": "Neuvaine à la très sainte Trinité",
+      "motif": {"fins": ["adoration", "action-de-graces"], "objets": ["trinite"], "note": "neuf jours, du samedi vigile de la Pentecôte au dimanche de la Trinité ; prières quelconques en l'honneur de la sainte Trinité (Ench. 1952, n° 48) ; le 9e jour, consécration de dom Marmion"},
+      "revision": 1,
+      "quand": {
+        "code_tempora": ["Pasc6-6", "Pasc7-0", "Pasc7-1", "Pasc7-2", "Pasc7-3", "Pasc7-4", "Pasc7-5", "Pasc7-6", "Pent01-0"]
+      },
+      "source": "Demande de l'utilisateur du 26 nov. : neuvaine à la très sainte Trinité, indulgenciée, finissant le dimanche de la Trinité ; consécration de dom Marmion le dernier jour",
+      "page": {
+        "moment": "journee",
+        "ordre": 76,
+        "sections": [
+          {
+            "notice": "beringer:neuvaine-trinite"
+          },
+          {"editorial": "### Premier jour de la neuvaine", "quand": {"code_tempora": ["Pasc6-6"]}},
+          {"editorial": "### Deuxième jour de la neuvaine", "quand": {"code_tempora": ["Pasc7-0"]}},
+          {"editorial": "### Troisième jour de la neuvaine", "quand": {"code_tempora": ["Pasc7-1"]}},
+          {"editorial": "### Quatrième jour de la neuvaine", "quand": {"code_tempora": ["Pasc7-2"]}},
+          {"editorial": "### Cinquième jour de la neuvaine", "quand": {"code_tempora": ["Pasc7-3"]}},
+          {"editorial": "### Sixième jour de la neuvaine", "quand": {"code_tempora": ["Pasc7-4"]}},
+          {"editorial": "### Septième jour de la neuvaine", "quand": {"code_tempora": ["Pasc7-5"]}},
+          {"editorial": "### Huitième jour de la neuvaine", "quand": {"code_tempora": ["Pasc7-6"]}},
+          {"editorial": "### Neuvième jour de la neuvaine, fête de la très sainte Trinité", "quand": {"code_tempora": ["Pent01-0"]}},
+          {
+            "texte": "beringer:trinite-adoration-action-de-graces"
+          },
+          {
+            "texte": "beringer:trinite-trois-offrandes"
+          },
+          {
+            "texte": "beringer:trinite-toute-puissance"
+          },
+          {
+            "texte": "thibaut:marmion-consecration-trinite",
+            "quand": {"code_tempora": ["Pent01-0"]}
+          }
+        ]
+      }
+    },
+    {
       "id": "prog:priere-du-soir",
       "titre": "Prière du soir et examen de conscience",
       "motif": {"fins": ["action-de-graces", "demande", "reparation"], "objets": ["trinite"], "note": "rendre grâces, examiner sa conscience et demander pardon avant la nuit (LISTE_DU_JOUR, Soir)"},

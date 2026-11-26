@@ -293,3 +293,40 @@ describe('archiconfréries intégrées (décisions du 22 nov.)', () => {
 		expect(textes('2027-02-10', 'prog:priere-du-matin')).not.toContain('janvier:consecration-archiconfrerie');
 	});
 });
+
+describe('neuvaine à la très sainte Trinité (demande du 26 nov.)', () => {
+	const ID = 'prog:neuvaine-trinite';
+	const ORDINAUX = ['Premier', 'Deuxième', 'Troisième', 'Quatrième', 'Cinquième', 'Sixième', 'Septième', 'Huitième', 'Neuvième'];
+	const jours = CALENDRIER.filter((j) => ligne(calculer(j.date), ID)).map((j) => j.date);
+	it('tombe sur neuf jours, du samedi vigile de la Pentecôte au dimanche de la Trinité', () => {
+		expect(jours).toEqual([
+			'2027-05-15',
+			'2027-05-16',
+			'2027-05-17',
+			'2027-05-18',
+			'2027-05-19',
+			'2027-05-20',
+			'2027-05-21',
+			'2027-05-22',
+			'2027-05-23'
+		]);
+		expect(jourDe('2027-05-15').office).toBe('Vigile de la Pentecôte');
+		expect(jourDe('2027-05-23').office).toBe('Très Sainte Trinité');
+	});
+	it('chaque date porte son jour de la neuvaine ; la consécration de dom Marmion le jour de la Trinité seulement', () => {
+		jours.forEach((date, k) => {
+			const sections = ligne(calculer(date), ID)!.sections;
+			const titres = sections.filter((s) => s.genre === 'editorial').map((s) => s.contenu);
+			expect(titres, date).toEqual([expect.stringMatching(new RegExp(`^### ${ORDINAUX[k]} jour de la neuvaine`))]);
+			const textes = sections.map((s) => s.texte);
+			expect(textes, date).toEqual(
+				expect.arrayContaining([
+					'beringer:trinite-adoration-action-de-graces',
+					'beringer:trinite-trois-offrandes',
+					'beringer:trinite-toute-puissance'
+				])
+			);
+			expect(textes.includes('thibaut:marmion-consecration-trinite'), date).toBe(k === 8);
+		});
+	});
+});
