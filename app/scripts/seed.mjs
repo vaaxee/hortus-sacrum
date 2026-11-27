@@ -23,6 +23,12 @@ compact(join(racine, 'data', 'prieres', 'dimensions-textes.json'), join(cible, '
 // Officium parvum B.M.V. (engine/office/parvum.py, d'après Divinum Officium)
 mkdirSync(join(cible, 'office'), { recursive: true });
 compact(join(racine, 'data', 'office', 'parvum.json'), join(cible, 'office', 'parvum.json'));
+// psautier du Bréviaire romain en français (Fillion 1917, engine/recueils/relecture/fillion), en regard du latin
+mkdirSync(join(cible, 'office', 'breviaire-fr'), { recursive: true });
+compact(
+	join(racine, 'data', 'office', 'breviaire-fr', 'psautier-fillion.json'),
+	join(cible, 'office', 'breviaire-fr', 'psautier-fillion.json')
+);
 // Écriture sainte (engine/ecriture/bible.py) : un fichier par livre, la source à part
 mkdirSync(join(cible, 'ecriture'), { recursive: true });
 for (const f of readdirSync(join(racine, 'data', 'ecriture'))) {
