@@ -647,3 +647,18 @@ describe('lot A des archiconfréries intégré (décisions du 26 nov.)', () => {
 		expect(t('2027-06-22', 'prog:priere-du-matin')).not.toContain('perpetuelsecours1878:consecration-archiconfrerie');
 	});
 });
+
+describe('supplique de la Médaille miraculeuse (texte donné par l’utilisateur, 27 nov. 2026), le 27 de chaque mois', () => {
+	const ID = 'prog:supplique-medaille-miraculeuse';
+	it('le 27 de chaque mois seulement, à 17 h 30, sans la rubrique finale dans le texte compté', () => {
+		const jours = CALENDRIER.filter((j) => ligne(calculer(j.date), ID)).map((j) => j.date);
+		expect(jours.length).toBeGreaterThanOrEqual(11);
+		for (const d of jours) expect(d.slice(8), d).toBe('27');
+		const l = ligne(calculer(jours[0]), ID)!;
+		const s = l.sections.filter((x) => x.genre === 'texte');
+		expect(s.map((x) => x.texte)).toEqual(['utilisateur:supplique-medaille-miraculeuse']);
+		const t = extraire(corps(s[0].texte!)!, s[0].extrait)!;
+		expect(t.trimEnd().endsWith('dans le Ciel. Ainsi soit-il.')).toBe(true);
+		expect(l.sections.some((x) => x.genre === 'editorial' && x.contenu?.includes('Salve Regina'))).toBe(true);
+	});
+});
