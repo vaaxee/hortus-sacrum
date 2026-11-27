@@ -505,6 +505,24 @@ describe('neuvaine pour la fête de saint Joseph (Confrérie de Montréal), du 1
 	});
 });
 
+describe('neuvaine à saint François-Xavier (Québec 1880), du premier samedi du Carême au 2e dimanche', () => {
+	it('neuf jours, 13-21 février 2027, chacun son titre, les prières pour tous les jours', () => {
+		const ID = 'prog:neuvaine-saint-francois-xavier';
+		const jours = CALENDRIER.filter((j) => ligne(calculer(j.date), ID)).map((j) => j.date);
+		expect(jours).toEqual(joursAvant('2027-02-22', 9));
+		expect(jourDe('2027-02-13').office).toBe('Samedi après les Cendres');
+		expect(jourDe('2027-02-21').office).toBe('2e dimanche de Carême');
+		jours.forEach((date, k) => {
+			const s = ligne(calculer(date), ID)!.sections;
+			expect(s.filter((x) => x.genre === 'editorial').map((x) => x.contenu)[0], date).toMatch(new RegExp(`^### ${ORDINAUX[k]}`));
+			expect(
+				s.filter((x) => x.genre === 'texte').map((x) => x.texte),
+				date
+			).toEqual(['xavier1880:prieres-neuvaine']);
+		});
+	});
+});
+
 describe('neuvaine de réparation au Sacré-Cœur, du 1er au 9 de chaque mois (Beringer n° 671)', () => {
 	it('l’offrande à la fin de la prière du matin, les jours 1 à 9 de chaque mois seulement', () => {
 		const jours = CALENDRIER.filter((j) =>

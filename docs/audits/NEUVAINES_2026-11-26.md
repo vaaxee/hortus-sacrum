@@ -179,6 +179,16 @@ Décisions de l'utilisateur : la neuvaine de la sainte Face reste du 20 au 28 ju
    préparatoire et prière du jour (foi, espérance, charité, humilité, obéissance, recueillement, fuite du péché, salut,
    consécration). Recouvre la neuvaine du plan (Douleurs et Allégresses), gardée.
 
+5. **Neuvaine à saint François-Xavier** (`xavier1880:prieres-neuvaine`, nouvelle) : *Neuvaine en l'honneur de saint
+   François-Xavier*, nouvelle édition, Québec, A. F. E. Darveau, 1880, **approbation de l'archevêque de Québec (E. A.
+   [Taschereau]), 15 déc. 1879, vue sur l'image** (PDF p. 5) ; « prières pour tous les jours de la neuvaine »,
+   p. 41-47, recopiées sur l'image (prière à Dieu, oraison à S. François-Xavier, antiennes et oraisons de la Passion et
+   de l'Immaculée Conception). `prog:neuvaine-saint-francois-xavier` : **jours de l'édition** (« commence, à la
+   Basilique de Notre-Dame, le premier samedi du carême et finit le second dimanche ») : `Quadp3-6` … `Quad2-0`,
+   13-21 févr. 2027 ; titre de chaque jour, prières communes. La date de Beringer (4-12 mars, Strasbourg) n'est pas
+   prise : à changer si l'utilisateur la préfère. **Reste à transcrire** : la considération et les réflexions de chaque
+   jour (p. 29-129 environ, avec la veille) et les litanies de S. François-Xavier (latin et français, p. 48 s.).
+
 Outils : `engine/recueils/neuvaines/` (textes relus en `.md`, `pieces.json`, `inserer.py`).
 
 **Recherche des autres neuvaines datées** : Immaculée Conception (Weber), Noël (S. Alphonse), Sacré-Cœur (S.

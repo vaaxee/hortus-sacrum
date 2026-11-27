@@ -179,21 +179,42 @@ faisable, mais il faut d'abord découper Fillion par verset (OCR à relire, mise
 - Mise en forme : un verset sur une ligne (les vers du parallélisme réunis) ; espace avant « ; : ? ! » uniformisée ;
   italiques (mots ajoutés pour le sens) et petites capitales non marqués ; notes de Fillion non reprises.
 
+### Fait le 26-27 novembre : jeudi, vendredi, samedi ; psautier complet
+
+- **Jeudi** (pp. 297-363) : Ps 61, 65, 67, 68, 97, 89, 35, 146, 22, 71-75, 132, 135-137 ; cantiques de Jérémie
+  (Jer. xxxi, 10-14) et de Moïse (Exod. xv, 1-19). **Vendredi** (pp. 371-443) : Ps 77-84, 86, 88, 98, 142, 147, 21,
+  138-141 ; cantiques d'Isaïe (Is. xlv, 15-26) et d'Habacuc (Hab. iii, 2-19). **Samedi** (pp. 451-519) : Ps 104-108,
+  149, 91, 63, 150, 93, 101, 103, 143, 144 ; cantiques de l'Ecclésiastique (Eccli. xxxvi, 1-16) et de Moïse
+  (Deut. xxxii, 1-43). Les hauts des pp. 363, 443 (Ps 141 entier) et 519 sont relus.
+- Bilan : **150 psaumes, 17 cantiques, 2684 versets** ; `test_psautier_fr.py` : 867 paragraphes « Psalmus » du latin
+  livré contrôlés, aucun psaume sans français. Le symbole *Quicumque* (Prime du dimanche, `Psalm234` de DO) n'est pas
+  imprimé par Fillion : à prendre chez Hugueny.
+- Cantiques que DO coupe autrement que Fillion (Jérémie, Moïse ×2, Isaïe xlv, Habacuc) : numéros de Fillion, sans
+  alignement ligne à ligne (note dans chaque pièce) ; l'Ecclésiastique suit les 16 lignes de DO. Habacuc : Fillion titre
+  « iii, 1-19 » mais numérote 2-19.
+- Numérotation : Ps 132, Fillion compte 4 versets (la Vulgate 3) : numéros de Fillion, le v. 3 rattaché à la ligne
+  latine « 2b » ; Ps 147, Fillion numérote 12-20 (hébreu) : numéros de la Vulgate 1-9, avec une note ; Ps 108, 22 :
+  « Délivrez-moi, » (fin du v. 21 chez Fillion) compté au v. 22, comme le latin de DO (« Libera me ») ; Ps 68, 20-21,
+  Ps 72, 2 et 5, Ps 88, 9 : numéros que les deux lectures avaient perdus, rétablis sur l'image ; numéros
+  imprimés au milieu d'une ligne (Ps 97, 9 ; Ps 89, 12 ; Ps 82, 12) : découpage de l'imprimé gardé.
+- Lectures notées (champ `lecture`, 83 versets en tout) : « evanouis » sans accent (Ps 89, 9) ; « langue à parcouru »
+  (Ps 72, 9) ; « il » brisé (Ps 71, 12) ; « avez » brisé (Ps 73, 15) ; trace au-dessus de « votre » (Ps 73, 11) ;
+  « fleuves » sous une tache (Ps 88, 26) ; « voi[-]sins » sans trait d'union (Ps 79, 7) ; ponctuation effacée après
+  « instruit » (Ps 93, 12 : virgule retenue) ; « humiliation. car » (Ps 135, 23) ; « les fabricants ; [d'erreurs. »
+  (Is. xlv, 16 : point-virgule non repris) ; « extrêmement » sans ponctuation en bout de ligne (Ps 106, 38) ; accents
+  et traits parasites non repris (Ps 77, 39 ; Ps 78, 1 ; Ps 107, 11 ; Ps 103, 33 ; Ps 138, 8). Graphies modernisées sur
+  l'image seulement quand l'imprimé porte l'accent (« Égypte », « instruisît », « apprît », « nourrît ») ; « Il » lu
+  « ]l » ou « II » par l'OCR rétabli.
+- `assembler.py` : nouveaux cantiques (`CANTIQUES`), Ps 132 (`DECOUPE`), Ps 147 (`NOTES`).
+
 ### Reste (psautier)
 
-Les offices du lundi au samedi, sauf les Complies, dans l'ordre du livre (table des matières de Fillion : lundi p. 98,
-mardi p. 164, mercredi p. 228, jeudi p. 296, vendredi p. 370, samedi p. 450 ; pages françaises impaires jusqu'à 531).
-Psaumes du latin livré encore sans français (sortie de `test_psautier_fr.py`, numéros de la Vulgate) : 21, 22, 24, 25, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 47, 48, 49, 51, 52, 54, 55, 56, 57, 58, 59, 61, 63, 64, 65, 66, 67, 68, 71, 72, 73, 74, 75, 77, 78, 79, 80, 81, 82, 83, 84, 86, 88, 89, 91, 93, 95, 96, 97, 98, 100, 101, 103, 104, 105, 106, 107, 108, 114, 115, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 149, 150.
-Cantiques de Laudes de la semaine (Isaïe, Ézéchias, Anne, Moïse, Habacuc,
-Ecclésiastique, Tobie, Judith, Jérémie, David) : à faire avec leur office. La chaîne est prête : `prep.py` et `brouillon.py`
-ont déjà produit les brouillons de toutes les pages françaises (dossier de travail non versionné) ; il reste à trancher les
-désaccords et relire chaque page sur l'image.
+- Brancher le psautier (chargeur, affichage en regard du latin, test mot pour mot), avec Hugueny pour le reste.
+- Relire, si l'utilisateur le souhaite, les versets marqués `lecture` (points douteux ci-dessus et au § 6).
 
 Renvois typographiques : `appliquer.py` remet chaque « [fin » à la ligne qu'il complète (règle écrite dans la fonction
-`renvois`), vérifiée sur chaque page relue.
-
-Pages où la fin d'un psaume précède les Complies et n'est pas encore relue (lignes écartées par `x:` dans
-`decisions.txt`) : haut des pp. 159, 221, 291, 363, 443 (psaume 141 entier), 519.
+`renvois`), vérifiée sur chaque page relue ; les cas ambigus (`AMBIGUS=1`) ont été revus (renvoi « [du chaume. » du
+cantique de l'Exode corrigé à la main).
 
 ### Hugueny : table des fascicules (archive.org, scans de la Bibliothèque Saint Libère, 2014)
 

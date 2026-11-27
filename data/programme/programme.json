@@ -1733,6 +1733,30 @@
       }
     },
     {
+      "id": "prog:neuvaine-saint-francois-xavier",
+      "titre": "Neuvaine à saint François-Xavier",
+      "motif": {"fins": ["demande"], "objets": ["saints", "trinite"], "note": "du premier samedi du Carême au deuxième dimanche, comme à Québec (Neuvaine, Québec, 1880) ; la « neuvaine de la grâce »"},
+      "revision": 1,
+      "quand": {"code_tempora": ["Quadp3-6", "Quad1-0", "Quad1-1", "Quad1-2", "Quad1-3", "Quad1-4", "Quad1-5", "Quad1-6", "Quad2-0"]},
+      "source": "Demande de l'utilisateur du 26 nov. (suite) : Neuvaine en l'honneur de saint François-Xavier, Québec, 1880 (approbation de l'archevêque de Québec, 15 déc. 1879, vue sur l'image), p. 41-47 ; jours de l'édition (Basilique de Québec) ; les considérations de chaque jour restent à transcrire",
+      "page": {
+        "moment": "journee",
+        "ordre": 76,
+        "sections": [
+          {"editorial": "### Premier jour de la neuvaine", "quand": {"code_tempora": ["Quadp3-6"]}},
+          {"editorial": "### Deuxième jour de la neuvaine", "quand": {"code_tempora": ["Quad1-0"]}},
+          {"editorial": "### Troisième jour de la neuvaine", "quand": {"code_tempora": ["Quad1-1"]}},
+          {"editorial": "### Quatrième jour de la neuvaine", "quand": {"code_tempora": ["Quad1-2"]}},
+          {"editorial": "### Cinquième jour de la neuvaine", "quand": {"code_tempora": ["Quad1-3"]}},
+          {"editorial": "### Sixième jour de la neuvaine", "quand": {"code_tempora": ["Quad1-4"]}},
+          {"editorial": "### Septième jour de la neuvaine", "quand": {"code_tempora": ["Quad1-5"]}},
+          {"editorial": "### Huitième jour de la neuvaine", "quand": {"code_tempora": ["Quad1-6"]}},
+          {"editorial": "### Neuvième et dernier jour de la neuvaine", "quand": {"code_tempora": ["Quad2-0"]}},
+          {"texte": "xavier1880:prieres-neuvaine"}
+        ]
+      }
+    },
+    {
       "id": "prog:neuvaine-saint-francois",
       "titre": "Neuvaine à saint François d'Assise",
       "motif": {"fins": ["demande", "louange"], "objets": ["saints"], "note": "les neuf jours avant la fête de saint François (4 octobre) : une vertu du saint par jour (Tiers-Ordre, Québec, 1867)"},

@@ -32,5 +32,22 @@
   "latin": "",
   "fichiers": ["neuvaine-joseph-montreal.md"],
   "revision": 1
+ },
+ {
+  "id": "xavier1880:prieres-neuvaine",
+  "titre": "Neuvaine à saint François-Xavier : prières pour tous les jours",
+  "partie": "Neuvaines",
+  "categorie": "",
+  "usage": "« La Neuvaine à Saint François-Xavier commence, à la Basilique de Notre-Dame, le premier samedi du carême et finit le second dimanche. » Chaque jour, la considération du jour (dans le livre, non encore transcrite), puis ces prières : prière à Dieu, oraison à saint François-Xavier, antiennes de la Passion et de l'Immaculée Conception.",
+  "indulgence": "",
+  "source": {
+   "ouvrage": "Neuvaine en l'honneur de saint François-Xavier, contenant des changements dans les prières publiques ; une instruction sur les indulgences… ; une vie abrégée de St. François-Xavier ; aussi, des conseils aux fidèles…",
+   "edition": "Nouvelle édition, Québec, A. F. E. Darveau, libraire-éditeur, 1880 ; approbation de E. A. [Taschereau], archevêque de Québec, 15 décembre 1879 (vue sur l'image, PDF p. 5)",
+   "page": "41-47 (PDF p. 43-49)",
+   "url": "https://archive.org/details/cihm_62891"
+  },
+  "latin": "",
+  "fichiers": ["neuvaine-xavier-prieres.md"],
+  "revision": 1
  }
 ]

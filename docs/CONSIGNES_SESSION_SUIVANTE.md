@@ -88,8 +88,9 @@ Décisions antérieures, rappelées dans `REPRISE.md` :
      - (sainte Élisabeth : non retenue par l'utilisateur, 26 nov.) ;
      - Confrérie de Saint-Joseph, reste : prières des trois jours avant chaque fête (Fiançailles, 19 mars,
        Patronage, p. 69-75), neuvaine pour une grâce particulière (p. 117), mois de saint Joseph (p. 89) ;
-     - neuvaine de saint François Xavier : nombreuses éditions de Québec sur archive.org (`cihm_62891`, 1880, avec
-       instruction sur les indulgences ; `cihm_04687`, 1869 ; `cihm_51451`, 1855) : choisir une édition approuvée ;
+     - neuvaine de saint François-Xavier (Québec 1880, `cihm_62891`, approuvée 15 déc. 1879) : prières de tous les
+       jours faites et intégrées (13-21 févr. 2027) ; restent les considérations de chaque jour (p. 29-129) et les
+       litanies (p. 48 s.) ;
      - neuvaine du Saint-Esprit de S. Alphonse (*Œuvres*, 1876, t. XIV, p. 373-391, `07430208.1657.emory.edu`) ;
      - Précieux Sang 1890 : les sept vendredis du Carême, les six vendredis avant le Sacré-Cœur et la prière
        « pendant trente jours » (p. 606, microfiche abîmée : chercher un autre exemplaire) ;
@@ -106,8 +107,10 @@ Décisions antérieures, rappelées dans `REPRISE.md` :
      Léon XII, les deux chapelets.
 3. **Prières obligatoires, reste.** Les 24 éléments sans titre ni remplaçant sont listés dans l'audit et dans
    `A_FOURNIR.md`. Quand un manuel en fournit un, le proposer à l'utilisateur.
-4. **Psautier de Fillion** (Bréviaire en français) : jeudi, vendredi, samedi et cantiques de Laudes. Le travail
-   déjà fait est dans `main` ; voir `SOURCES_UTILISEES.md` et l'audit `BREVIAIRE_FRANCAIS_2026-11-22.md`.
+4. **Psautier de Fillion** (Bréviaire en français) : **terminé** le 27 nov. (branche `claude/psautier-fillion-3`) :
+   les 150 psaumes et 17 cantiques, du dimanche au samedi. Reste : le brancher (chargeur, affichage en regard du latin,
+   test mot pour mot) avec Hugueny pour les hymnes, antiennes et le *Quicumque* (absent de Fillion) ; relire les points
+   douteux notés dans l'audit `BREVIAIRE_FRANCAIS_2026-11-22.md` (§ 6).
 5. **Somme théologique** : Iª q. 12 en cours (`engine/somme/corrections_fr.txt`), puis la q. 13 (pages n184-n272),
    à ajouter à `pages.json`. La méthode est dans `REPRISE.md` (« Reste à faire » n° 13).
 6. **Relectures OCR** : Guéranger t. 8-15, Chaignon hors parcours (`REPRISE.md`, n° 2 et 9).
