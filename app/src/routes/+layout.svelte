@@ -16,9 +16,17 @@
 
 	onMount(async () => {
 		initialiserApparence();
+		// demander au navigateur de ne pas effacer l'app et ses données quand la place manque : sur un téléphone sans
+		// réseau, le cache est la seule copie des prières
+		navigator.storage?.persist?.().catch(() => false);
+		// tant qu'il y a du réseau, le service worker télécharge d'avance les recueils et les jours du Bréviaire
+		if ('serviceWorker' in navigator && navigator.onLine)
+			navigator.serviceWorker.ready.then((r) => r.active?.postMessage('tout-garder')).catch(() => undefined);
 		try {
 			await amorcer();
-			await initialiserCompte();
+			// le compte et la synchronisation ne retiennent jamais l'ouverture : sans réseau, la session Supabase peut
+			// attendre jusqu'à 30 s le serveur ; la prière, elle, est déjà sur l'appareil
+			initialiserCompte().catch((e) => console.error('compte', e));
 			// rappels : replanifier les 14 prochains jours à chaque ouverture (en arrière-plan)
 			lireReglages()
 				.then((r) => (r.actif ? planifier() : 0))

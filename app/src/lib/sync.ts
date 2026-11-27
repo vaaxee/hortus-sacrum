@@ -149,6 +149,8 @@ function planifier() {
 let enCours: Promise<void> | undefined;
 export function synchroniser(premiere = false): Promise<void> {
 	if (!session) return Promise.resolve();
+	// sans réseau, rien à faire : l'événement « online » relancera la synchronisation
+	if (typeof navigator !== 'undefined' && navigator.onLine === false) return Promise.resolve();
 	enCours ??= executer(premiere).finally(() => (enCours = undefined));
 	return enCours;
 }
