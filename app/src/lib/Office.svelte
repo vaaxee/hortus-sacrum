@@ -16,7 +16,8 @@
 		ligne,
 		date,
 		coches,
-		maintenant = new Date()
+		maintenant = new Date(),
+		rendu = rendre
 	}: {
 		corps: string;
 		heures: Heure[];
@@ -26,6 +27,8 @@
 		/** Coches du jour, par identifiant. */
 		coches: Record<string, number>;
 		maintenant?: Date;
+		/** Rendu HTML d'une heure (par défaut le balisage léger ; le Bréviaire romain y met le français de Fillion en regard). */
+		rendu?: (texte: string) => string;
 	} = $props();
 
 	let choisie = $state<string | undefined>();
@@ -58,7 +61,7 @@
 
 	{#if heure}
 		<div class="texte-heure" role="tabpanel" aria-label={heure.titre}>
-			<div class="lecture">{@html rendre(extraire(corps, heure.extrait) ?? '')}</div>
+			<div class="lecture">{@html rendu(extraire(corps, heure.extrait) ?? '')}</div>
 			<div class="dire">
 				<Case libelle="{heure.nom} : dite" bind:cochee={() => dite(heure), () => basculer(heure)} />
 				<span>{dite(heure) ? `${heure.nom} : dite` : `Marquer ${heure.nom.toLowerCase()} comme dite`}</span>
@@ -104,6 +107,45 @@
 		margin: 0 0 var(--hs-e4);
 		font-size: var(--hs-t0);
 		color: var(--hs-encre-douce);
+	}
+	/* psaumes du Bréviaire romain : latin, et le français de Fillion en regard (même disposition que les prières bilingues) */
+	.lecture :global(.psaume) {
+		margin-bottom: var(--hs-ligne);
+	}
+	.lecture :global(.strophe) {
+		display: grid;
+		gap: var(--hs-e1);
+		margin-bottom: var(--hs-e2);
+	}
+	.lecture :global(.strophe p) {
+		margin: 0;
+		text-align: left;
+		hyphens: manual;
+	}
+	/* le latin est le texte de l'office : même allure que le reste de l'heure (pas l'italique du latin « en regard ») */
+	.lecture :global(.strophe .la) {
+		font-style: normal;
+	}
+	.lecture :global(.strophe .fr),
+	.lecture :global(.fr-bloc) {
+		color: var(--hs-encre-douce);
+		padding-left: var(--hs-e4);
+		border-left: var(--hs-cheveu) solid var(--hs-or-trait);
+	}
+	.lecture :global(.fr-bloc) {
+		margin-bottom: var(--hs-ligne);
+	}
+	.lecture :global(.fr-bloc p) {
+		text-align: left;
+	}
+	@media (min-width: 900px) {
+		.lecture :global(.strophe) {
+			grid-template-columns: 1fr 1fr;
+			gap: var(--hs-e6);
+		}
+		.lecture :global(.strophe .fr) {
+			padding-left: var(--hs-e6);
+		}
 	}
 	.dire {
 		display: flex;

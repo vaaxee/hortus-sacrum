@@ -108,9 +108,11 @@ Décisions antérieures, rappelées dans `REPRISE.md` :
 3. **Prières obligatoires, reste.** Les 24 éléments sans titre ni remplaçant sont listés dans l'audit et dans
    `A_FOURNIR.md`. Quand un manuel en fournit un, le proposer à l'utilisateur.
 4. **Psautier de Fillion** (Bréviaire en français) : **terminé** le 27 nov. (branche `claude/psautier-fillion-3`) :
-   les 150 psaumes et 17 cantiques, du dimanche au samedi. Reste : le brancher (chargeur, affichage en regard du latin,
-   test mot pour mot) avec Hugueny pour les hymnes, antiennes et le *Quicumque* (absent de Fillion) ; relire les points
-   douteux notés dans l'audit `BREVIAIRE_FRANCAIS_2026-11-22.md` (§ 6).
+   les 150 psaumes et 17 cantiques, du dimanche au samedi ; **branché** le 27 nov. (branche
+   `claude/psautier-fillion-branche`) : Lecture › Office › Bréviaire romain affiche le français en regard des psaumes
+   (`app/src/lib/office/psautier-fr.ts`). Reste : Hugueny pour les hymnes, antiennes, capitules, oraisons, l'invitatoire
+   et le *Quicumque* (absent de Fillion) ; relire les points douteux notés dans l'audit
+   `BREVIAIRE_FRANCAIS_2026-11-22.md` (§ 6).
 5. **Somme théologique** : Iª q. 12 en cours (`engine/somme/corrections_fr.txt`), puis la q. 13 (pages n184-n272),
    à ajouter à `pages.json`. La méthode est dans `REPRISE.md` (« Reste à faire » n° 13).
 6. **Relectures OCR** : Guéranger t. 8-15, Chaignon hors parcours (`REPRISE.md`, n° 2 et 9).
