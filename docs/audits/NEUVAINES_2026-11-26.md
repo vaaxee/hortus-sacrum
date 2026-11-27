@@ -198,6 +198,15 @@ Décisions de l'utilisateur : la neuvaine de la sainte Face reste du 20 au 28 ju
    14 avril 2027 ; triduum 11-13 avril). La date des Fiançailles (3 janvier) est celle du livre, fête propre à la
    Confrérie, absente du calendrier universel.
 
+7. **Recherche du 27 nov.** (archive.org, titres français ; Gallica refusé à l'outil, HTTP 403) : sainte Anne
+   (`cihm_11597` 1879, `cihm_49455` 1859, `cihm_46404` 1873, `cihm_38318` 1878), Fête-Dieu (`cihm_77294`, *Neuvaine
+   au Très Saint Sacrement*, 1900), Ange gardien (`cihm_34852`, *Dévotion aux saints-anges gardiens*, 1832) ; rien
+   d'ancien pour saint Raphaël ni pour les âmes du purgatoire. Rien transcrit : approbation à voir d'abord.
+
+**Restent** (27 nov.) : S. François-Xavier, considérations de chaque jour (p. 29-129) et litanies ; neuvaine de S.
+Joseph pour une grâce particulière (p. 117, sans date) ; neuvaine au Saint-Esprit de S. Alphonse ; les candidats
+ci-dessus.
+
 Outils : `engine/recueils/neuvaines/` (textes relus en `.md`, `pieces.json`, `inserer.py`).
 
 **Recherche des autres neuvaines datées** : Immaculée Conception (Weber), Noël (S. Alphonse), Sacré-Cœur (S.

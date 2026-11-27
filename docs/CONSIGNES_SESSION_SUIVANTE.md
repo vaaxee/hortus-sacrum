@@ -97,7 +97,9 @@ Décisions antérieures, rappelées dans `REPRISE.md` :
        « pendant trente jours » (p. 606, microfiche abîmée : chercher un autre exemplaire) ;
      - l'union de prières de Picard 1873 : premier samedi, huit jours pour un associé défunt.
    - À chercher (Beringer ne donne que la concession) :
-     - sainte Anne, saint Raphaël, l'Ange gardien, la Fête-Dieu, les âmes du purgatoire.
+     - sainte Anne, saint Raphaël, l'Ange gardien, la Fête-Dieu, les âmes du purgatoire : recherche du 27 nov.
+       dans `A_FOURNIR.md` (candidats archive.org pour sainte Anne, la Fête-Dieu et l'Ange gardien, approbation à
+       voir sur l'image ; rien pour saint Raphaël ni les âmes ; Gallica refusé à l'outil).
    - Immaculée Conception, Noël, Sacré-Cœur, Assomption, Nativité : déjà au plan avec leur texte ; Pentecôte : Veni
      Creator seulement (S. Alphonse ci-dessus).
    - Sept dimanches de saint Camille : aucune date dans les sources, donc non intégrés.
