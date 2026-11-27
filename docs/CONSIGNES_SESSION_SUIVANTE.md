@@ -77,19 +77,27 @@ Décisions antérieures, rappelées dans `REPRISE.md` :
 ## 3. Chantiers, par priorité
 
 1. **Neuvaines, suite — priorité de l'utilisateur.** Demande : « chaque neuvaine, douzaine ou trentaine ou autre
-   dévotion à jour compté que tu trouves dans les différents manuels ». Branche `claude/neuvaines-2`, si un agent
-   l'a poussée ; sinon, la créer depuis `main`.
-   - Indulgence n° 250 sur la neuvaine du premier vendredi, sans double compte (voir le § 2).
+   dévotion à jour compté que tu trouves dans les différents manuels ». Branche `claude/neuvaines-2` (poussée).
+   - **Fait (26 nov., `claude/neuvaines-2`)** : indulgence n° 250 (Ench. 1952, vue p. 156-157) sur la neuvaine du
+     premier vendredi, en lecture stricte (deux neuvaines par an : S. Alphonse avant la fête, et la neuvaine du
+     premier vendredi de décembre seulement), comptée une fois le jour par numéro (`bilan.ts`) ;
+     neuvaine à saint François d'Assise (Québec 1867, p. 37-51, 25 sept.-3 oct.) et neuvaine pour la fête de saint
+     Joseph (Confrérie de Montréal, p. 65-68, 10-18 mars), relues sur l'image (`engine/recueils/neuvaines/`) et
+     intégrées avec `Quand.autour`. Audit : `docs/audits/NEUVAINES_2026-11-26.md`.
    - À transcrire sur l'image puis à intégrer avec `Quand.autour` :
-     - saint François d'Assise (25 sept.-3 oct.) et sainte Élisabeth (10-18 nov.) : archive.org `cihm_29653`,
-       PDF p. 43-71 ;
-     - Confrérie de Saint-Joseph : archive.org `cihm_61528` ;
+     - (sainte Élisabeth : non retenue par l'utilisateur, 26 nov.) ;
+     - Confrérie de Saint-Joseph, reste : prières des trois jours avant chaque fête (Fiançailles, 19 mars,
+       Patronage, p. 69-75), neuvaine pour une grâce particulière (p. 117), mois de saint Joseph (p. 89) ;
+     - neuvaine de saint François Xavier : nombreuses éditions de Québec sur archive.org (`cihm_62891`, 1880, avec
+       instruction sur les indulgences ; `cihm_04687`, 1869 ; `cihm_51451`, 1855) : choisir une édition approuvée ;
+     - neuvaine du Saint-Esprit de S. Alphonse (*Œuvres*, 1876, t. XIV, p. 373-391, `07430208.1657.emory.edu`) ;
      - Précieux Sang 1890 : les sept vendredis du Carême, les six vendredis avant le Sacré-Cœur et la prière
        « pendant trente jours » (p. 606, microfiche abîmée : chercher un autre exemplaire) ;
      - l'union de prières de Picard 1873 : premier samedi, huit jours pour un associé défunt.
    - À chercher (Beringer ne donne que la concession) :
-     - la neuvaine « de la grâce » de saint François Xavier (4-12 mars) ;
-     - sainte Anne, saint Raphaël, l'Ange gardien, la Fête-Dieu, les âmes du purgatoire, saint Joseph en mars.
+     - sainte Anne, saint Raphaël, l'Ange gardien, la Fête-Dieu, les âmes du purgatoire.
+   - Immaculée Conception, Noël, Sacré-Cœur, Assomption, Nativité : déjà au plan avec leur texte ; Pentecôte : Veni
+     Creator seulement (S. Alphonse ci-dessus).
    - Sept dimanches de saint Camille : aucune date dans les sources, donc non intégrés.
 2. **Lot A, reste.**
    - Précieux Sang 1890, faute d'un meilleur exemplaire : les litanies de Jésus agonisant, l'amende honorable

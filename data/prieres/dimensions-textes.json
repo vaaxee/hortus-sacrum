@@ -1199,6 +1199,22 @@
       "forme": ["oraison"],
       "devinee": ["fin", "objet", "grace", "personne", "forme"]
     },
+    "tiersordre1867:neuvaine-saint-francois": {
+      "fin": ["demande", "louange"],
+      "objet": ["saints", "passion"],
+      "grace": ["vertus", "perseverance-finale"],
+      "personne": ["soi-meme"],
+      "forme": ["neuvaine", "meditation"],
+      "devinee": ["fin", "objet", "grace", "personne", "forme"]
+    },
+    "confreriejoseph:neuvaine-fetes-saint-joseph": {
+      "fin": ["demande"],
+      "objet": ["saint-joseph"],
+      "grace": ["vertus", "preservation-du-peche", "salut"],
+      "personne": ["soi-meme"],
+      "forme": ["neuvaine", "oraison"],
+      "devinee": ["fin", "objet", "grace", "personne", "forme"]
+    },
     "breviaire-sc:exercice-messe": {
       "fin": ["adoration", "action-de-graces", "reparation", "demande"],
       "objet": ["sacre-coeur", "eucharistie", "trinite"],

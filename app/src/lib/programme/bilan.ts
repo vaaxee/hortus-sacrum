@@ -65,11 +65,20 @@ function compter(lignes: Ligne[], faites: (l: Ligne) => number): Map<string, num
 
 function valeur(n: Map<string, number>, ind: Indulgences, date: string, tempora?: string | null): Valeur {
 	const vs: Valeur[] = [];
+	// une concession « une fois le jour » ne se gagne qu'une fois, même portée par deux textes (deux neuvaines au
+	// Sacré-Cœur les mêmes jours, Ench. 1952 n° 250) : comptée une fois par numéro de l'Enchiridion
+	const unique = new Map<string, Valeur>();
 	for (const [id, k] of n) {
 		const f = ind.fiches[id];
-		if (ficheValable(f)) vs.push(fois(valeurDuJour(f, date, tempora), f.frequence === 'chaque fois' ? k : Math.min(k, 1)));
+		if (!ficheValable(f) || k <= 0) continue;
+		if (f.frequence === 'chaque fois') vs.push(fois(valeurDuJour(f, date, tempora), k));
+		else {
+			const v = valeurDuJour(f, date, tempora);
+			const deja = unique.get(f.ref);
+			if (!deja || v.ans * 365 + v.jours > deja.ans * 365 + deja.jours) unique.set(f.ref, v);
+		}
 	}
-	return somme(vs);
+	return somme([...vs, ...unique.values()]);
 }
 
 /** Indulgences partielles gagnées (lignes cochées, jaculatoires dites) et possibles (programme entier du jour). */
