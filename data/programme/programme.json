@@ -1758,6 +1758,23 @@
       }
     },
     {
+      "id": "prog:supplique-medaille-miraculeuse",
+      "titre": "Supplique de la Médaille miraculeuse",
+      "motif": {"fins": ["action-de-graces", "demande"], "objets": ["sainte-vierge", "coeur-immacule"], "note": "le 27 de chaque mois, vers 17 h 30, heure de l'apparition de la Médaille (27 novembre 1830)"},
+      "revision": 1,
+      "quand": {"autour": {"ancre": {"jour": 27}, "de": 0, "a": 0}},
+      "source": "Demande de l'utilisateur du 27 nov. 2026 : texte donné par l'utilisateur, avec sa rubrique (« vers les 17h30 du 27 novembre, du 27 de chaque mois, et en cas d'urgente nécessité ») ; le Salve Regina est déjà dit chaque jour (prog:salve-regina) et l'invocation « O Marie conçue sans péché » à chaque dizaine : la rubrique finale s'affiche comme consigne, pour ne pas compter deux fois les mêmes textes",
+      "page": {
+        "moment": "soir",
+        "ordre": 5,
+        "heures": ["17:30"],
+        "sections": [
+          {"texte": "utilisateur:supplique-medaille-miraculeuse", "extrait": {"a": "*Salve Regina et trois fois :*"}},
+          {"editorial": "*Salve Regina et trois fois :* O Marie conçue sans péché, priez pour nous qui avons recours à Vous."}
+        ]
+      }
+    },
+    {
       "id": "prog:neuvaine-saint-francois-xavier",
       "titre": "Neuvaine à saint François-Xavier",
       "motif": {"fins": ["demande"], "objets": ["saints", "trinite"], "note": "la veille (vendredi après les Cendres), la considération préparatoire ; puis du premier samedi du Carême au deuxième dimanche, comme à Québec (Neuvaine, Québec, 1880) : la considération du jour, les prières pour tous les jours et les litanies du saint ; la « neuvaine de la grâce »"},

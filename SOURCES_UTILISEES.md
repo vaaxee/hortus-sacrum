@@ -263,6 +263,7 @@ Numérotation : chaque texte garde la sienne (Crampon suit l'hébreu et le grec 
 | Litanies pour les fidèles défunts (lundi, en alternance) | salve-regina.com, « auteur inconnu, tradition catholique », postérieur à 1925 : http://salve-regina.com/index.php?title=Litanies_pour_les_fid%C3%A8les_d%C3%A9funts |
 | Litanies de la bonne mort, avec deux prières | Le Petit Sacristain (blog), oct. 2016 : http://le-petit-sacristain.blogspot.com/2016/10/litanies-de-la-bonne-mort.html |
 | Renouvellement de la consécration au cordon de saint Joseph | **Formule composée pour l'app** à la demande de l'utilisateur (aucune formule ancienne trouvée), à partir de Beringer 1925, t. II, n° 266 et 480 |
+| Supplique de la Médaille miraculeuse (`utilisateur:supplique-medaille-miraculeuse`), le 27 de chaque mois vers 17 h 30 | Texte donné par l'utilisateur le 27 nov. 2026, avec sa rubrique ; édition imprimée à identifier |
 
 ## Sites récents consultés (cités par lien seulement)
 - La Porte Latine, « Prières du matin et du soir » : https://laportelatine.org/spiritualite/prieres-et-devotions/prieres-matin-et-soir

@@ -1215,6 +1215,14 @@
       "forme": ["neuvaine", "oraison"],
       "devinee": ["fin", "objet", "grace", "personne", "forme"]
     },
+    "utilisateur:supplique-medaille-miraculeuse": {
+      "fin": ["action-de-graces", "demande"],
+      "objet": ["sainte-vierge", "coeur-immacule"],
+      "grace": ["salut", "protection-et-sante"],
+      "personne": ["soi-meme", "famille", "pecheurs", "pauvres-et-affliges"],
+      "forme": ["oraison"],
+      "devinee": ["fin", "objet", "grace", "personne", "forme"]
+    },
     "xavier1880:prieres-neuvaine": {
       "fin": ["demande", "adoration"],
       "objet": ["saints", "trinite", "passion", "sainte-vierge"],
