@@ -336,8 +336,12 @@ ok
 // Complies du vendredi (pp. 443-449).
 == p443
 f: "" "vous" "considérais à" A "m'est ôté," "Soyez" "parce" "Tirez" ";"
-x: 1-24
+x: 1
+c: 16
+h: 2 Psaume CXLI
+h: 25 Complies.
 h: 26 Psaume LXXVI, i.
+r: Tirez mon àme => Tirez mon âme
 ok
 
 == p445
@@ -366,7 +370,8 @@ ok
 // Complies du samedi (pp. 519-525) ; le haut de la p. 519 (fin du psaume 144) n'est pas encore relu.
 == p519
 f: "" "" T ";" "prêtez" T "" T ";" ""
-x: 1-5
+x: 1 2
+h: 6 Complies.
 h: 7 Psaume LXXXVII
 v: 27
 ok
@@ -1060,6 +1065,8 @@ ok
 f: "" "" T ";" T "" A A "[drai" "mourir." "[ment" "les" T
 h: 1 Laudes II.
 h: 2 Cantique de Moïse. Exod. xv, 1-19.
+r: vos adversaires. [du chaume. => vos adversaires.
+r: qui les a dévorés comme\n => qui les a dévorés comme du chaume.\n
 ok
 
 == p333
@@ -1152,4 +1159,460 @@ ok
 == p361
 f: A "" A A
 h: 16 Psaume CXXXVII
+ok
+
+// Office du vendredi.
+== p371
+f: A A T A A "[sa puissance," "Il" T "et" "une" "C'est" "à leurs" A T "naîtront et"
+h: 1 Office du vendredi
+h: 2 Matines.
+h: 3 Premier nocturne
+h: 4 Psaume LXXVII, i.
+ok
+
+== p373
+f: "" A T A "Il" "" A
+h: 8 Psaume LXXVII, ii.
+r: d'Egypte, dans la plaine => d'Égypte, dans la plaine
+ok
+
+== p375
+f: "" A "[aride." "[désert ?" T A T ";" T T T T "et" "de" "tentes." "rassasiés à l'excès," A "Les viandes étaient"
+x: 1
+h: 2 Psaume LXXVII, iii.
+ok
+
+== p377
+f: "lorsque" "" "souvint" A
+h: 4 Deuxième nocturne
+h: 5 Psaume LXXVII, iv.
+?: Il se souvint — trait léger après « souvint » (virgule à peine marquée ou parasite), non repris
+ok
+
+== p379
+f: "" "" "et ses" "Il" A T A T "" "Il" T "[Cham." T
+h: 1 Psaume LXXVII, v.
+r: terre d'Egypte, => terre d'Égypte,
+ok
+
+== p381
+f: T A "" "" ""
+h: 13 Psaume LXXVII, vi.
+ok
+
+== p383
+f: "" T "et les" T "" A A T T T "paître" T "O" "elles" "elles ont"
+x: 1
+h: 19 Troisième nocturne
+?: O Dieu, les nations — trait oblique au-dessus du « O » (tache, ou accent mal venu) : lu « O », comme ailleurs dans le livre
+ok
+
+== p385
+f: T "" T "" T A A T T A
+x: 1
+r: jours ? [feu ? => jours ?
+r: s'allumera-t-elle comme un\n => s'allumera-t-elle comme un feu ?\n
+ok
+
+== p387
+f: "pâturage," "[ges." "en l'honneur" T ";" "" T ";" A A
+r: sortait de la terre d'Egypte => sortait de la terre d'Égypte
+ok
+
+== p389
+f: A T "O" A
+r: sortir de la terre d'Egypte => sortir de la terre d'Égypte
+ok
+
+== p391
+f: "" "Ils" "Gébal," T "Assur" T T "" "" "et à" A ""
+x: 1
+r: tous leurs princes, qui avaient dit : => tous leurs princes,\nv| qui avaient dit :
+ok
+
+== p393
+f: A T T "et" ";" A A A A T "colonne de" T ""
+c: 2
+h: 7 Laudes I.
+h: 8 Psaume XCVIII
+ok
+
+== p395
+f: A T "" T T A T
+ok
+
+== p397
+f: "fosse." A T "Seigneur," "tri-" "" A "" "" A T "[tion ?" "généra-"
+c: 2
+ok
+
+== p399
+f: "" "O" A "[Dieu" T "" A A "" "" "" A A
+x: 1
+h: 20 Cantique d'Isaïe. Is. xlv, 15-26.
+r: les fabricants ;\n => les fabricants d'erreurs.\n
+r: éternel ; [d'erreurs. => éternel ;
+?: les fabricants d'erreurs — Fillion imprime « les fabricants; » puis le renvoi « [d'erreurs. » : point-virgule non repris
+ok
+
+== p401
+f: A A "" A "je" A T T
+r: de la terre ; [moi ; => de la terre ;
+r: Recherchez-\n => Recherchez-moi ;\n
+ok
+
+== p403
+f: A ";" "Il a établi" "Il" "sa parole" T T "ses jugements" "" "" ""
+h: 20 Laudes II.
+h: 21 Cantique d'Habacuc. Hab. iii, 1-19.
+ok
+
+== p405
+f: ";" A "et" A A "" "Il" "" A "de" "l'Éthiopie," A "l'abîme a" ""
+ok
+
+== p407
+f: "Le" "flèches," T "Dans" "Vous êtes sorti" ";" A T T "chemin à" A "à" "Car" ";" "mentira," "bergeries," T "dans les étables."
+c: 13
+ok
+
+== p409
+f: "O" "[folie." "êtes"
+h: 7 Prime.
+h: 8 Psaume XXI, i.
+r: cerez pas, [folie. => cerez pas,
+r: imputera point à\n => imputera point à folie.\n
+ok
+
+== p411
+f: "" "" ";" "Il a espéré au Seigneur," "délivre ; [la tête." "" T T T T "vous êtes mon" "Au" T A "De" "des" "assiégé." "une" "m'a assiégé."
+x: 1
+h: 14 Psaume XXI, ii.
+ok
+
+== p413
+f: "" "partagé" T A A T T
+x: 1
+h: 14 Psaume XXI, iii.
+r: à lui, [sence : => à lui,
+r: l'adoreront en sa pré- => l'adoreront en sa présence :
+ok
+
+== p415
+f: T "a" "êtes assis" "O"
+h: 10 Tierce.
+h: 11 Psaume LXXIX, i.
+ok
+
+== p417
+f: "nourrirez-vous d'un" A A ";" A "" "et" "" "" A A T
+r: pour nos voi\n => pour nos voi-\n
+r: Il Son ombre => Son ombre
+?: pour nos voisins — trait d'union de coupure non imprimé (« voi » en fin de ligne, « [sins, » en renvoi)
+ok
+
+== p419
+f: "" "" "dans l'assemblée" T T T "Faites" "" A "Levez-vous, ô" …
+x: 1 2 23-63
+h: 5 Psaume LXXXI
+ok
+
+== p421
+f: "" "" "armées" "!" T A T
+x: 1 2
+h: 3 Sexte.
+r: Mon àme soupire => Mon âme soupire
+ok
+
+== p423
+f: "" "ô Dieu," T A T "le Seigneur" "la" T "[l'innocence." "Il ne" "Seigneur" ";" T A "aussi."
+x: 1
+h: 2 Psaume LXXXIII, ii.
+h: 15 Psaume LXXXVI
+c: 6
+ok
+
+== p425
+f: "[sont" "et" "Ils sont" "J'ai" ";" "j'ai"
+h: 7 None.
+r: fondée ? [sont nés en elle, => fondée ?
+r: nombre d'hommes\n => nombre d'hommes sont nés en elle,\n
+ok
+
+== p427
+f: "" "cieux, sera égal au Seigneur ?" "et qui sera semblable" "fils" "dans l'assemblée" "saints, [ronnent." "est" "Seigneur," "armées," "semblable à vous ?" "êtes" "votre vérité vous" "sur la puissance de" "blessé ;" "par la force" "dispersé vos" "A" "cieux," "terre ;" "créé" "la" "[tient ;" "" "Le Thabor et l'Hermon tressaillent" "puissance. [nom" "l'équité" "[face." A "visage," "Car vous êtes la gloire" "et c'est" "saints dans"
+x: 1 15 19
+v: 6
+h: 32 Psaume LXXXVIII, ii.
+ok
+
+== p429
+f: "" "" "[ple." A A "" A "fleuves." A "lè-"
+x: 1
+?: sur les fleuves — fin du mot sous une tache d'encre (« fleuve• ») : « fleuves. » restitué par le contexte
+ok
+
+== p431
+f: "" "mentirai point" "la" T T "jetant" "son" "sacré." T T T T "abrégé les jours de son règne ;" "à" "Jusques" "s'embrasera-t-elle comme"
+x: 1
+h: 8 Psaume LXXXVIII, iii.
+ok
+
+== p433
+f: "" "?" A "Où" "soit-il."
+x: 1
+ok
+
+== p435
+f: "" T "ciel, vous" ";" A "a" A T "Vous déterminez leurs jours avant qu'aucun d'eux"
+x: 1
+h: 17 Psaume CXXXVIII, ii.
+?: Si je monte au ciel, vous y êtes — trait parasite entre « ciel, » et « vous », non repris
+ok
+
+== p437
+f: "" "O" "O" "" A "n'ai-je" "O" T
+x: 1
+r: comme celle du serpent : => comme celle du serpent ;
+ok
+
+== p439
+f: "" ";" T "Seigneur," ";" ";" "l'indigent," "nom," "" "vous," "exaucez-moi"
+v: 9
+ok
+
+== p441
+f: "l'encens" "mes lèvres." "l'iniquité ;" "délices." "[tes." "passe."
+x: 1
+v: 4
+ok
+
+// Office du samedi.
+== p451
+f: T ";" ";" "[jouisse." T "a faites," "enfants" "" "Il est" ";"
+h: 1 Office du samedi
+h: 3 Premier nocturne
+h: 4 Psaume CIV, i.
+ok
+
+== p453
+f: "" A A ";" A T "Il" A "" A T A T A "Il"
+x: 1
+h: 18 Psaume CIV, ii.
+ok
+
+== p455
+f: "" A "Égypte," A "" "" "pays." "brisa tous les arbres de" "contrée."
+x: 1
+h: 14 Psaume CIV, iii.
+r: qu'il instruisit => qu'il instruisît
+r: qu'il apprit => qu'il apprît
+r: ]l envoya Moïse => Il envoya Moïse
+ok
+
+== p457
+f: "" "" A "parce"
+x: 1
+c: 7
+h: 26 Deuxième nocturne
+r: II dit, et parut => Il dit, et parut
+r: L'Egypte se => L'Égypte se
+ok
+
+== p459
+f: "louanges ?" "[pour" "pères, [quité." "n'ont" "misé-" "ricordes." "la" A T "abîmes, comme" "[sert." A "œuvres,"
+r: son nom, la mer Rouge. => son nom,
+r: vers la mer,\n => vers la mer, la mer Rouge.\n
+r: Nos pères, en Egypte, => Nos pères, en Égypte,
+?: vers la mer, la mer Rouge — fin du v. 7 imprimée en renvoi (« [la mer Rouge. ») au bout de la ligne du v. 8
+ok
+
+== p461
+f: "" "" "" "" "" "[ner." "Ils" A ";" ""
+x: 1 2 22
+h: 3 Psaume CV, ii.
+r: un veau en Horcb => un veau en Horeb
+r: grandes choses en Egypte => grandes choses en Égypte
+ok
+
+== p463
+f: A A "fléau cessa." A ";" "car" T "avait" "" "se mêlèrent" T "Et ils servirent" T "et" T "les haïssaient" …
+x: 30-57
+h: 7 Psaume CV, iii.
+ok
+
+== p465
+f: A "" A A "" A "tous" A …
+x: 28-55
+h: 19 Troisième nocturne
+ok
+
+== p467
+f: T "arides," "l'âme épuisée," A "dans les fers," "[rût." "secou-" T "" "car"
+x: 1
+ok
+
+== p469
+f: "Qu'ils" "louange," A A A "" A
+h: 28 Psaume CVI, iii.
+ok
+
+== p471
+f: "" "Il a" "" "" "" A A A "[chemin." "troupeaux." A "saints."
+x: 1
+v: 10
+h: 25 Psaume CXLIX
+?: multipliés extrêmement — aucune ponctuation visible en fin de ligne (bord de la page), gardé tel quel
+ok
+
+== p473
+f: "" "" "Qu'Israël" ";" A A ";" A "et" "ô" T A
+x: 1 2
+ok
+
+== p475
+f: "pas," "[manifestés," "[Haut." "" "" A "ô" A
+h: 24 Psaume LXIII
+r: à jamais. [manifestés, => à jamais.
+r: se seront\n => se seront manifestés,\n
+r: que vos ennemis, [Haut. => que vos ennemis,
+r: le Très-\n => le Très-Haut.\n
+ok
+
+== p477
+f: "" "Ils le perceront soudain, et ils" "" "[petits" "des flèches des" "et leurs" "et" A "" "" "" "" "" "ô" "regardez-"
+x: 1
+h: 23 Cantique de l'Ecclésiastique. Eccli. xxxvi, 1-16.
+ok
+
+== p479
+f: A "[que" A "Excitez" T "[ruine." "grandeurs," "[ment." "commence-" "aîné." "Ayez"
+v: 7 10 15
+ok
+
+== p481
+f: ";" "" "" "" A
+h: 1 Psaume CL
+h: 14 Cantique de Moïse. Deut. xxxii, 1-43.
+ok
+
+== p483
+f: "à" ";" "là," "fou et" "que tu" "N'est-ce pas" "ton" T "père, et" ";" A ";" A "conservé" "œil." "étranger." "Il l'a" "champs," "rochers ;"
+ok
+
+== p485
+f: "" "bût" "" A A A "Ils" "Et" "substituant) une" "[sée." A A
+x: 1
+r: s'y nourrit du beurre => s'y nourrît du beurre
+?: et pour qu'il y bût — « bût » imprimé avec l'accent circonflexe (subjonctif) ; la parenthèse de « (leur substituant) une » est collée au mot suivant, espace rétablie
+ok
+
+== p487
+f: "" "" "" "[les." "fauves," "[la" A A "" "" A "" "mes trésors ?"
+x: 1 2
+ok
+
+== p489
+f: "" "A" "" A A A ";" "ces dieux" A "êtes." ""
+x: 1
+ok
+
+== p491
+f: "" "[l'iniquité," "Ils" "Ils" "" A "pas" "[de"
+h: 3 Prime.
+r: Levez-vous, 6 Dieu => Levez-vous, ô Dieu
+ok
+
+== p493
+f: "Heureux" A A "" "âme n'habitât"
+c: 11
+r: vous-même instruit.\nc| et à qui vous avez enseigné votre loi, [Seigneur, => vous-même instruit, Seigneur,\nc| et à qui vous avez enseigné votre loi,
+?: instruit, Seigneur — la ponctuation après « instruit » est effacée (point ou virgule à la queue brisée) ; virgule retenue, le renvoi « [Seigneur, » complétant la ligne
+ok
+
+== p495
+f: A A A A A T "Manassé," "ville" "N'est-ce" A A T "courage,"
+h: 1 Psaume CVII
+r: plus haut que les cicux, => plus haut que les cieux,
+?: à la ville fortifiée — trait au-dessus du « e » final de « ville » (accent parasite), non repris
+ok
+
+== p497
+f: A A "invoque, exaucez-moi" "" "frappé" A "" A …
+v: 3 5 8 10 13 15 17
+x: 28-60
+h: 1 Tierce.
+h: 2 Psaume CI, i.
+r: | 2 Seigneur, => | Seigneur,
+r: | 3 Ne détournez => | Ne détournez
+r: | 4 Car mes jours => | Car mes jours
+r: | 6 A force => | A force
+r: | 7 Je suis devenu => | Je suis devenu
+r: | 8 J'ai veillé => | J'ai veillé
+ok
+
+== p499
+f: "" T A "Il a" "et sa" A A ""
+x: 1
+h: 4 Psaume CI, ii.
+h: 26 Psaume CI, iii.
+ok
+
+== p501
+f: "" "" T A
+x: 1 2
+h: 14 Sexte.
+h: 15 Psaume CIII, i.
+ok
+
+== p503
+f: "" A ";" "" A "visage," "l'huile" A
+x: 1
+h: 18 Psaume CIII, ii.
+ok
+
+== p505
+f: "" "Les hautes" "les cerfs," "les rochers un refuge" "hérissons." A "marquer les temps ;" "le soleil connaît l'heure" "c'est" A A "" ":" "" "recueillent ;" ";" "défail-" A
+x: 1
+h: 15 Psaume CIII, iii.
+r: II a fait la lune => Il a fait la lune
+r: poussière. (lance, => poussière. [lance,
+ok
+
+== p507
+f: "" "Il" ";" T "O" ""
+h: 12 None.
+?: tant que je serai — accent parasite au-dessus de l'espace avant « que », non repris
+ok
+
+== p509
+f: "condamné," A A "veuve." "et" "[tion." T "effacé." "[gneur," "" "Il" "tombera sur" A "[ment" T "et comme"
+c: 25
+ok
+
+== p511
+f: "" A T ";" A "mais" "force," "assemblée,"
+v: 5
+h: 28 Psaume CXLIII, i.
+?: Délivrez-moi, car je suis pauvre — Fillion imprime « Délivrez-moi, » (fin du v. 21 de la Vulgate, « libera me ») en tête de la IIIe partie et place le numéro 22 après ; Divinum Officium met « Libera me » au début de la ligne 22 : verset 22 compté depuis « Délivrez-moi »
+ok
+
+== p513
+f: "" "" "Il" "" "" ";" A "O" "O" "rois," ""
+h: 22 Psaume CXLIII, ii.
+r: les mains des fils des\nc| dont la bouche a proféré la vanité, [étrangers, => les mains des fils des étrangers,\nc| dont la bouche a proféré la vanité,
+ok
+
+== p515
+f: "" "sont parées," "" "Leurs greniers sont" "" ";" "leurs" "Il" "Ils" A "ô" "siècles des" "[siècles." "dans les siècles des" T T "[siècles." "œuvres" "" "terribles,"
+x: 1
+c: 2
+h: 13 Psaume CXLIV, i.
+ok
+
+== p517
+f: "" T ";" A "siècles," "brisés." A "œuvres." "" "Il"
+x: 1
+h: 2 Psaume CXLIV, ii.
+h: 15 Psaume CXLIV, iii.
 ok

@@ -1,5 +1,28 @@
 # p443 (image n456)
-h| Compiles*
+h| Psaume CXLI
+v| De ma voix j'ai crié vers le Seigneur ;
+c| de ma voix j'ai supplié le Seigneur.
+v| Je répands ma prière en sa présence,
+c| et j'expose devant lui ma tribulation.
+v| Quand mon esprit est défaillant en moi,
+c| vous connaissez mes sentiers, Seigneur.
+c| Dans la voie où je marchais
+c| ils m'ont tendu un piège en secret.
+v| Je considérais à ma droite, et je regardais,
+c| et il n'y avait personne qui me connût.
+c| Tout moyen de m'enfuir m'est ôté,
+c| et nul ne cherche à sauver ma vie.
+v| J'ai crié vers vous, Seigneur ;
+c| j'ai dit : Vous êtes mon espérance,
+c| et mon partage dans la terre des vivants.
+v| Soyez attentif à ma prière,
+c| car je suis extrêmement humilié.
+c| Délivrez-moi de ceux qui me persécutent,
+c| parce qu'ils sont devenus plus forts que moi.
+v| Tirez mon âme de cette prison,
+c| afin que je célèbre votre nom.
+c| Les justes sont dans l'attente, jusqu'à ce que vous me rendiez justice.
+h| Complies.
 h| Psaume LXXVI, i.
 v| De ma voix j'ai crié vers le Seigneur ;
 c| de ma voix j'ai crié vers Dieu, et il m'a entendu.

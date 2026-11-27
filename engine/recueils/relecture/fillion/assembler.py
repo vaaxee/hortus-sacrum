@@ -64,6 +64,19 @@ CANTIQUES = {
                                 "Divinum Officium chante ce cantique en 22 lignes numérotées 15:1 à 15:22, coupées "
                                 "autrement que les 19 versets de Fillion : numéros de Fillion, sans alignement ligne à "
                                 "ligne."),
+    "Cantique d'Isaïe. Is. xlv": (215, "Cantique d'Isaïe", 'Is. xlv, 15-26', list(range(15, 27)),
+                                  "Divinum Officium chante ce cantique en 16 lignes numérotées 45:15 à 45:30, coupées "
+                                  "autrement que les 12 versets de Fillion : numéros de Fillion, sans alignement ligne "
+                                  "à ligne."),
+    "Cantique d'Habacuc": (225, "Cantique d'Habacuc", 'Hab. iii, 2-19', list(range(2, 20)),
+                           "Fillion titre « Hab. iii, 1-19 » et numérote les versets 2 à 19 ; Divinum Officium chante "
+                           "ce cantique en 32 lignes (3:2a à 3:19b), coupées autrement : numéros de Fillion, sans "
+                           "alignement ligne à ligne."),
+    "Cantique de l'Ecclésiastique": (216, "Cantique de l'Ecclésiastique", 'Eccli. xxxvi, 1-16'),
+    'Cantique de Moïse. Deut': (226, 'Cantique de Moïse', 'Deut. xxxii, 1-43', list(range(1, 44)),
+                                "Divinum Officium chante ce cantique en 65 lignes numérotées 32:1 à 32:65, coupées "
+                                "pour le chant (une ligne par demi-verset ou davantage) : numéros des 43 versets de "
+                                "Fillion, sans alignement ligne à ligne."),
     'Cantique de David': (211, 'Cantique de David', 'I Par. xxix, 10-13'),
     'Cantique de Siméon': (233, 'Cantique de Siméon', 'Luc. ii, 29-32'),
 }
@@ -81,6 +94,8 @@ NOTES = {
        "de la Vulgate (22-39) donnée ici, comme dans le latin.",
     113: "Fillion numérote la seconde partie (« Non nobis, Domine », Vulgate 113, 9-26 ; psaume 115 de l'hébreu) de 1 "
          "à 18 ; numérotation de la Vulgate (9-26) donnée ici, comme dans le latin.",
+    147: "Fillion numérote ce psaume de 12 à 20 (l'hébreu en fait la fin du psaume 147, v. 12-20) ; numérotation de "
+         "la Vulgate (1-9) donnée ici, comme dans le latin.",
     115: "Fillion numérote ce psaume de 10 à 19, à la suite du Ps 114 (l'hébreu en fait un seul psaume, 116) ; "
          "numérotation de la Vulgate (1-10) donnée ici, comme dans le latin.",
 }
