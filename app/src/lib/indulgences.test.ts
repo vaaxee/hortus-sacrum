@@ -16,6 +16,18 @@ describe('indulgences : Enchiridion de 1952 seulement', () => {
 			expect(donnees.sans_compte[id], id).toMatch(/abrogée/);
 		}
 	});
+	it('les indulgences imprimées du lot A, absentes de 1952, ne sont pas comptées (27 nov.)', () => {
+		for (const id of [
+			'ndchemin1920:amende-honorable-jesus-present',
+			'precieuxsang1890:offrande-pere-eternel-benediction',
+			'precieuxsang1890:chapelet-divine-misericorde',
+			'precieuxsang1890:chapelet-du-precieux-sang',
+			'boylesve1882:petit-chapelet-precieux-sang'
+		]) {
+			expect(donnees.fiches[id], id).toBeUndefined();
+			expect(donnees.sans_compte[id], id).toMatch(/non comptée/);
+		}
+	});
 	it('les œuvres reprises en 1952 sous un autre numéro restent comptées', () => {
 		expect(donnees.fiches['thesaurisons:jac-244']?.ref).toMatch(/n° 234/);
 		expect(donnees.fiches['thesaurisons:jac-232']?.ref).toMatch(/n° 199/);

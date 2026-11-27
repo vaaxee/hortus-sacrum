@@ -260,3 +260,37 @@ seule l'*Enchiridion* de 1952 fait foi ; concessions épiscopales et de confrér
 l'Enchiridion : amende honorable à Jésus-Christ présent dans le Sacrement de l'autel (300 j.), offrande du Précieux Sang
 pour obtenir la bénédiction (Léon XII, 1823), chapelet de la Divine Miséricorde (Pie IX, 1846), chapelet du
 Précieux-Sang (7 ans et 7 quarantaines), consécration à N.-D. du Perpétuel-Secours (40 j.).
+
+### Vérification dans l'Enchiridion de 1952 (27 nov. 2026)
+
+Chaque page vue sur l'image (archive.org `enchiridion_indulgentiarum_1952`, page imprimée p = image n − 15 dans le
+corps du livre, n − 19 à partir de la p. 300 environ). Seule l'*Enchiridion* fait foi (SPEC § 11) ; aucune concession
+ci-dessous n'y est reprise : **aucune indulgence comptée**, le verdict est dans `indulgences.json` › `sans_compte`
+(affiché à la place d'une indulgence, comme pour le chapelet de saint Michel) et la mention du manuel ne s'affiche plus
+en marge (`revision` des pièces incrémentée).
+
+| Pièce | Imprimé par le manuel | Enchiridion 1952 |
+|---|---|---|
+| Amende honorable à Jésus-Christ présent dans le Sacrement de l'autel (`ndchemin1920:amende-honorable-jesus-present`) | 300 j. | **absente** : actes de réparation au Saint-Sacrement n° 173-174 (p. 101), 177-179 (p. 102-108 : *Io vi adoro, Eterno Padre* ; *Vi adoro profondamente* ; *Con quella profonda umiltà*), autres textes ; index « Reparatio », « Reparationis actus » (p. 633-634) ; aucune concession en français de ce texte |
+| Offrande du Précieux Sang au Père éternel pour obtenir sa bénédiction (`precieuxsang1890:offrande-pere-eternel-benediction`) | Léon XII, rescrit du 25 oct. 1823 ; 100 j. et plénière mensuelle, offrande « en l'honneur de la Très-Sainte Trinité » (p. 239, vu) | **absente** : Précieux Sang n° 215-222 (p. 138-145 : *Te ergo*, *Salvete Christi vulnera*, mois de juillet, *O Sangue prezioso*, *Eterno Padre, io vi offro il Sangue* n° 219, sept offrandes n° 220, n° 221, n° 222) ; index « Sanguis D. N. I. C. » (p. 636), « Trinitas » ; seules concessions de Léon XII reprises (couche texte) : n° 50 (9 juil. 1828) et n° 336 (21 oct. 1823, consécration à Marie), autres textes |
+| Chapelet de la Divine Miséricorde (`precieuxsang1890:chapelet-divine-misericorde`) | Pie IX, 26 sept. 1846 | **chapelet absent** (index « Corona », p. 621 : seulement n° 255, 286, 330, 395) ; la jaculatoire « Gesù mio, misericordia » est le n° 70 (p. 32 : 300 j. ; S. C. Indulg., 24 sept. 1846), déjà comptée seule (`thesaurisons:jac-33`, *Thésaurisons* n° 33, p. 29, même français « Mon Jésus, miséricorde ») |
+| Chapelet du Précieux-Sang, forme longue (`precieuxsang1890:chapelet-du-precieux-sang`) et petit chapelet de Boylesve (`boylesve1882:petit-chapelet-precieux-sang`) | 7 ans et 7 quarantaines ; 300 j. (prière finale) | **chapelet absent** (index « Corona » ; n° 215-222). Ses parties y sont : *Te ergo* (n° 215, 300 j., en latin), la prière finale (n° 218, 500 j.), l'oraison (n° 222, 5 ans) ; mais le français du manuel de 1890 n'est pas la traduction approuvée (*Thésaurisons* n° 236, 237 = Beringer n° 394, et n° 81, p. 40-41 et 92-93, autres formules) et l'oraison latine de Boylesve n'a pas le « solemni cultu » de 1952 |
+| Consécration à N.-D. du Perpétuel-Secours (40 j.) | indulgence épiscopale | non cherchée : concession d'Ordinaire, jamais comptée (SPEC § 11) |
+
+Proposition pour l'utilisateur (rien n'est fait) : compter, dans les deux chapelets, les invocations indulgenciées
+répétées (SPEC § 10, correction 2) ? Le chapelet de la Divine Miséricorde redit « Mon Jésus, miséricorde » sur chaque
+petit grain (n° 70, 300 j. chacun), mais le manuel ne dit pas le nombre de grains (« chapelet ordinaire ») ; le
+*Te ergo* latin du chapelet du Précieux-Sang est dit sept fois (n° 215, 300 j.). **Recommandation : non**, ces pièces
+restent au recueil et ne sont pas au programme ; à reprendre si l'utilisateur en branche une.
+
+### Précieux Sang 1890 : litanies et amende honorable (27 nov. 2026)
+
+Les deux pièces « laissées » au § 3 sont lisibles sur la microfiche (`cihm_92923`), et transcrites sur l'image :
+`precieuxsang1890:litanies-de-jesus-agonisant` (p. 371-372, images n385 et n390 ; le manuel les tire du « Manuel du
+Cœur agonisant de Jésus ») et `precieuxsang1890:amende-honorable-adorateurs` (p. 233-237, images n243-n247 ; « Prières
+générales pour chaque heure de l'adoration »). Coquilles rétablies et notées dans le champ `page` : « l[e] profanent »,
+« coulez[,] ô », « che[rs] » (lettres non encrées), « Jesus » sans accent. Un autre exemplaire a été cherché :
+Canadiana `oocihm.92923` (IIIF) n'est que la même microfiche ; archive.org n'a que `cihm_92923` ; Google Livres (API
+hors quota) et BAnQ sans résultat. Non branchées : à proposer (litanies pour les agonisants, par ex. le premier vendredi
+avec la préparation à la mort ; amende honorable en juillet ou à l'heure sainte). Restent au manuel : messes de la
+semaine, chemins de croix, office (les dévotions à jours comptés sont à l'agent des neuvaines).

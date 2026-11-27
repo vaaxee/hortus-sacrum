@@ -24,9 +24,13 @@ Les points réglés sont gardés pour l'historique. Dernière mise à jour : 26 
   recommandation, prière pour les vivants et les défunts), l'invocation au saint patron, les cinq « devoirs » du livret
   (Église, famille, patrie, pauvres, soi-même), la conclusion « Dieu seul » de Montfort au chapelet. **Cherché** :
   *Enchiridion* 1952 (recherche dans la couche texte, numéros retenus vus sur l'image), *Thésaurisons pour le ciel*
-  (1941, « Aide-mémoire : la journée indulgenciée », p. 187-188), Beringer 1925 t. I. **À recopier** : *Angele Dei*
-  (Ench. 1952, n° 452 d'après la table) dans une traduction certifiée (*Thésaurisons*, n° 142 ou 145 ?) ; un acte de
-  contrition d'un catéchisme approuvé (Ench. n° 36) : **trouvé** le 26 nov. (`quebec1888:acte-de-contrition`), à brancher sur décision. **Premier *Pater* et premier *Gloria* du chapelet** : aucune
+  (1941, « Aide-mémoire : la journée indulgenciée », p. 187-188), Beringer 1925 t. I. **Recherche du 27 nov.** (audit, § 10) : remplaçants
+  indulgenciés trouvés pour 12 des 24 éléments (*Angele Dei* dans *Thésaurisons* n° 145, saint patron Beringer n° 533,
+  Trinité n° 202 et 208, Esprit-Saint Ench. n° 290 et n° 288, actions de grâces n° 200, vivants et défunts Ench. n° 13,
+  bénédiction de la nuit n° 262, saint Vincent de Paul n° 164, fidélité n° 211, Toute-puissance du Père n° 212) et un
+  titre pour la prière du jour pour les âmes (Ench. n° 594, *Thésaurisons* n° 444) : **à proposer**, rien de branché.
+  Restent sans titre ni remplaçant : matin n° 4, 6, 7, 10, 20, 21 ; chapelet n° 2 et 12 ; soir n° 6 (décidé), 7, 8.
+  **Premier *Pater* et premier *Gloria* du chapelet** : aucune
   promesse ni indulgence attachée en propre trouvée (Beringer n° 901, Ench. n° 395, *Thésaurisons*, Montfort, Sambucy,
   Denis 1864, *Livre de la grâce spéciale* 1921, manuels du Rosaire de 1841, 1902, 1903) ; l'audit propose la clause
   « aux intentions du Souverain Pontife » (S. Pén. Ap., 20 sept. 1933). Pistes : *Secret admirable du très saint
@@ -210,15 +214,19 @@ Les points réglés sont gardés pour l'historique. Dernière mise à jour : 26 
 - **Manuels d'archiconfréries, lot A (25-26 nov.)** : 77 pièces ajoutées (Lefebvre 1870, Picard 1873, Précieux-Sang
   1890, Notre-Dame du Chemin 1920, Perpétuel-Secours 1878), non branchées
   (`docs/audits/ARCHICONFRERIES_LOT_A_2026-11-25.md`). Aucune traduction de travail. Reste :
-  - *Nouveau manuel du Très-Précieux Sang* (Saint-Hyacinthe, 1890, `cihm_92923`) : non transcrits, la microfiche étant
-    abîmée et décalée vers l'image n388 : litanies de Jésus agonisant, amende honorable des adorateurs (p. 233), messes
-    pour chaque jour de la semaine, chemins de croix, office du Précieux-Sang ; table des matières en partie illisible.
-    Un autre exemplaire (Google Livres, BAnQ) permettrait de les reprendre.
+  - *Nouveau manuel du Très-Précieux Sang* (Saint-Hyacinthe, 1890, `cihm_92923`) : **faits le 27 nov.** les litanies de
+    Jésus agonisant (p. 371-372, de part et d'autre des mires) et l'amende honorable des adorateurs (p. 233-237) : la
+    microfiche, là, est lisible. Autre exemplaire cherché le 27 nov. : archive.org (titres « précieux sang », « livre des
+    élus », « Jésus agonisant » : seul `cihm_92923`) ; Canadiana `oocihm.92923` (IIIF, 706 images) : **même microfiche**,
+    mêmes défauts (« che[rs] », p. 236) ; Google Livres : API refusée (quota) ; BAnQ numérique : rien trouvé sans
+    recherche par l'outil. Restent : messes pour chaque jour de la semaine, chemins de croix, office du Précieux-Sang
+    (les dévotions à jours comptés relèvent de l'agent des neuvaines).
   - Lefebvre 1870 : *Prières pendant la messe*, *Messe des morts*, *Adoro te* traduit (colonnes latin-français mêlées
     par l'OCR), cantiques : laissés, à reprendre si l'utilisateur les veut.
-  - Indulgences imprimées (non comptées) à vérifier dans l'Enchiridion de 1952 : amende honorable à Jésus-Christ
-    présent dans le Sacrement de l'autel (300 j.), offrande du Précieux Sang pour obtenir la bénédiction (Léon XII,
-    1823), chapelet de la Divine Miséricorde (Pie IX, 1846), chapelet du Précieux-Sang.
+  - ~~Indulgences imprimées à vérifier dans l'Enchiridion de 1952~~ : **faites le 27 nov.** (vues sur l'image) : amende
+    honorable de Notre-Dame du Chemin, offrande de Léon XII, chapelet de la Divine Miséricorde, chapelet du Précieux-Sang
+    (et le petit chapelet de Boylesve) : **absents de 1952**, non comptés (`indulgences.json` › `sans_compte`) ; voir
+    l'audit du lot A, § 8.
 - **Manuels d'archiconfréries, lot B (25-26 nov.)** : 25 pièces ajoutées, non branchées
   (`docs/audits/ARCHICONFRERIES_LOT_B_2026-11-25.md`). **À relire par l'utilisateur** : 2 traductions de travail
   (`bonamors1896:colloque-saint-pie-v`, `purgatorian1868:invocation-trinite-ames-purgatoire`). Reste :
