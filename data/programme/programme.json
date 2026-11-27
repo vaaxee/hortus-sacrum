@@ -1551,6 +1551,30 @@
       }
     },
     {
+      "id": "prog:neuvaine-saint-esprit",
+      "titre": "Neuvaine au Saint-Esprit (saint Alphonse)",
+      "motif": {"fins": ["demande", "adoration"], "objets": ["saint-esprit"], "note": "de l'Ascension à la vigile de la Pentecôte : une méditation de saint Alphonse sur l'amour divin par jour, avec ses affections et prières (Tournois, 1897)"},
+      "revision": 1,
+      "quand": {"code_tempora": ["Pasc5-4", "Pasc5-5", "Pasc5-6", "Pasc6-0", "Pasc6-1", "Pasc6-2", "Pasc6-3", "Pasc6-4", "Pasc6-5", "Pasc6-6"]},
+      "source": "Demande de l'utilisateur du 27 nov. : neuvaine au Saint-Esprit de saint Alphonse dans la version de Tournois, Le divin Sauveur, t. II, Paris, 1897 (imprimatur de Paris, 6 juillet 1897), p. 293-317, relue sur l'image ; dix méditations, de l'Ascension au samedi vigile (« en commençant au jour de l'Ascension », Œuvres, éd. Vivès, t. XIV, p. 373) ; à côté du Veni Creator du plan (9 jours)",
+      "page": {
+        "moment": "journee",
+        "ordre": 76,
+        "sections": [
+          {"texte": "liguori:neuvaine-saint-esprit", "extrait": {"section": "## 1re méditation. L'amour divin est un feu qui enflamme."}, "quand": {"code_tempora": ["Pasc5-4"]}},
+          {"texte": "liguori:neuvaine-saint-esprit", "extrait": {"section": "## 2e méditation. L'amour est une lumière qui éclaire."}, "quand": {"code_tempora": ["Pasc5-5"]}},
+          {"texte": "liguori:neuvaine-saint-esprit", "extrait": {"section": "## 3e méditation. L'amour est une eau qui désaltère."}, "quand": {"code_tempora": ["Pasc5-6"]}},
+          {"texte": "liguori:neuvaine-saint-esprit", "extrait": {"section": "## 4e méditation. L'amour est une rosée qui féconde."}, "quand": {"code_tempora": ["Pasc6-0"]}},
+          {"texte": "liguori:neuvaine-saint-esprit", "extrait": {"section": "## 5e méditation. L'amour est un repos qui récrée."}, "quand": {"code_tempora": ["Pasc6-1"]}},
+          {"texte": "liguori:neuvaine-saint-esprit", "extrait": {"section": "## 6e méditation. L'amour divin est une force qui triomphe de tout."}, "quand": {"code_tempora": ["Pasc6-2"]}},
+          {"texte": "liguori:neuvaine-saint-esprit", "extrait": {"section": "## 7e méditation. Le saint amour fait de notre âme le temple de Dieu."}, "quand": {"code_tempora": ["Pasc6-3"]}},
+          {"texte": "liguori:neuvaine-saint-esprit", "extrait": {"section": "## 8e méditation. L'amour divin est un lien."}, "quand": {"code_tempora": ["Pasc6-4"]}},
+          {"texte": "liguori:neuvaine-saint-esprit", "extrait": {"section": "## 9e méditation. L'amour divin est un trésor qui renferme tous les biens."}, "quand": {"code_tempora": ["Pasc6-5"]}},
+          {"texte": "liguori:neuvaine-saint-esprit", "extrait": {"section": "## 10e méditation. Moyens à employer pour aimer Dieu et se sanctifier."}, "quand": {"code_tempora": ["Pasc6-6"]}}
+        ]
+      }
+    },
+    {
       "id": "prog:neuvaine-trinite",
       "titre": "Neuvaine à la très sainte Trinité",
       "motif": {"fins": ["adoration", "action-de-graces"], "objets": ["trinite"], "note": "neuf jours, du samedi vigile de la Pentecôte au dimanche de la Trinité ; prières quelconques en l'honneur de la sainte Trinité (Ench. 1952, n° 48) ; le 9e jour, consécration de dom Marmion"},
