@@ -43,8 +43,8 @@ Les points réglés sont gardés pour l'historique. Dernière mise à jour : 26 
   ouvrir : approbation à voir sur l'image avant toute transcription.
   Triduums des trois fêtes de S. Joseph : **faits** (27 nov.,
   `claude/neuvaines-3`). **Restent à transcrire** : neuvaine pour une grâce particulière (`cihm_61528`, p. 117,
-  recueil de circonstance, sans date) ; neuvaine de S. François-Xavier (Québec 1880, `cihm_62891`, approbation vue) : **prières de tous
-  les jours faites** (p. 41-47) ; restent les considérations et réflexions de chaque jour et les litanies ;
+  recueil de circonstance, sans date) ; neuvaine de S. François-Xavier (Québec 1880, `cihm_62891`, approbation vue) : **complète** (27 nov.,
+  `claude/neuvaines-4` : prières p. 41-47, considérations de la veille et des neuf jours p. 30-98, litanies p. 48-59) ;
   neuvaine du Saint-Esprit de S. Alphonse (`07430208.1657.emory.edu`). **Introuvables** pour l'instant : sainte Anne,
   S. Raphaël, l'Ange gardien, la Fête-Dieu, les âmes du purgatoire (cherché : corpus, Beringer 1925 ; archive.org et
   Gallica pas encore interrogés pour ceux-là).

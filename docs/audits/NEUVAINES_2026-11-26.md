@@ -203,7 +203,25 @@ Décisions de l'utilisateur : la neuvaine de la sainte Face reste du 20 au 28 ju
    au Très Saint Sacrement*, 1900), Ange gardien (`cihm_34852`, *Dévotion aux saints-anges gardiens*, 1832) ; rien
    d'ancien pour saint Raphaël ni pour les âmes du purgatoire. Rien transcrit : approbation à voir d'abord.
 
-**Restent** (27 nov.) : S. François-Xavier, considérations de chaque jour (p. 29-129) et litanies ; neuvaine de S.
+8. **Neuvaine à saint François-Xavier, fin** (27 nov., branche `claude/neuvaines-4`) : `xavier1880:considerations-neuvaine`
+   (nouvelle, p. 30-98 : la considération « pour la veille », motifs de confiance, puis une considération par jour sur la
+   vie et les vertus du saint, chacune avec trois réflexions et une prière) et `xavier1880:litanies-saint-francois-xavier`
+   (nouvelle, p. 48-59 : français et latin en regard, oraison, puis l'oraison que le saint « composa lui-même » pour la
+   conversion des infidèles). Le livre s'arrête aux considérations p. 98 ; la suite (p. 99 s.) est un exercice pour la
+   messe, hors de la neuvaine (les « p. 29-129 » notés le 26 nov. étaient une estimation). Recopié page à page sur
+   l'image, avec la lecture Tesseract à côté ; lettres cassées relues à 300 dpi (« 800 miracles », « 2 de Décembre
+   1552 », « prêcha ») ; fautes de l'impression gardées (« aptôtre », « tons », « lenr », « daas », « uous », « ue »,
+   « jonrs », « snnctissima », « ie », « France-Xavier », « résurrec- des morts », « pchés », « écoutez-nons », « Afiin »,
+   « triomphátor »). PDF p. 94-96 : flèche et mire du microfilm, sans texte manquant (p. 91 puis p. 92).
+   `prog:neuvaine-saint-francois-xavier` (revision 2) : **la veille** (`Quadp3-5`, vendredi après les Cendres, 12 févr.
+   2027 : « Lisez dès ce jour, et méditez la considération préparatoire », p. 25) la seule considération de la veille ;
+   puis chaque jour sa considération (section du jour), les prières pour tous les jours et les litanies. Le renvoi « Les
+   prières pour tous les jours de la Neuvaine, page 41 » (2e jour) est retiré à l'affichage.
+   **Une seule litanie par jour** (arbitrage du 19 nov.) : pendant les neuf jours, les litanies du saint **tiennent lieu**
+   de la litanie de la dévotion du jour (`prog:devotion-*`, section en `sauf: code_tempora`, revision + 1). Décision à
+   faire valider par l'utilisateur ; pour revenir en arrière, retirer ces `sauf` et la section des litanies.
+
+**Restent** (27 nov.) : neuvaine de S.
 Joseph pour une grâce particulière (p. 117, sans date) ; neuvaine au Saint-Esprit de S. Alphonse ; les candidats
 ci-dessus.
 

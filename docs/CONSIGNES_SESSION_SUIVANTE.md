@@ -89,9 +89,9 @@ Décisions antérieures, rappelées dans `REPRISE.md` :
      - Confrérie de Saint-Joseph : triduums des trois fêtes **faits** (27 nov., `claude/neuvaines-3`,
        `prog:triduums-saint-joseph`) ; restent la neuvaine pour une grâce particulière (p. 117, sans date) et le mois
        de saint Joseph (p. 89) ;
-     - neuvaine de saint François-Xavier (Québec 1880, `cihm_62891`, approuvée 15 déc. 1879) : prières de tous les
-       jours faites et intégrées (13-21 févr. 2027) ; restent les considérations de chaque jour (p. 29-129) et les
-       litanies (p. 48 s.) ;
+     - neuvaine de saint François-Xavier (Québec 1880, `cihm_62891`, approuvée 15 déc. 1879) : **complète** (27 nov.,
+       `claude/neuvaines-4`) : veille (12 févr. 2027) et neuf jours (13-21 févr.), considération du jour, prières,
+       litanies (qui tiennent lieu de la litanie du jour : à faire valider) ;
      - neuvaine du Saint-Esprit de S. Alphonse (*Œuvres*, 1876, t. XIV, p. 373-391, `07430208.1657.emory.edu`) ;
      - Précieux Sang 1890 : les sept vendredis du Carême, les six vendredis avant le Sacré-Cœur et la prière
        « pendant trente jours » (p. 606, microfiche abîmée : chercher un autre exemplaire) ;

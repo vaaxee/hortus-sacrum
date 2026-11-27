@@ -1223,6 +1223,22 @@
       "forme": ["neuvaine", "oraison"],
       "devinee": ["fin", "objet", "grace", "personne", "forme"]
     },
+    "xavier1880:considerations-neuvaine": {
+      "fin": ["demande"],
+      "objet": ["saints"],
+      "grace": ["vertus", "sanctification", "perseverance-finale"],
+      "personne": ["soi-meme"],
+      "forme": ["neuvaine", "meditation"],
+      "devinee": ["fin", "objet", "grace", "personne", "forme"]
+    },
+    "xavier1880:litanies-saint-francois-xavier": {
+      "fin": ["demande", "intercession"],
+      "objet": ["saints"],
+      "grace": ["vertus", "salut"],
+      "personne": ["soi-meme", "pecheurs"],
+      "forme": ["litanie", "oraison"],
+      "devinee": ["fin", "objet", "grace", "personne", "forme"]
+    },
     "confreriejoseph:prieres-fetes-saint-joseph": {
       "fin": ["demande", "intercession"],
       "objet": ["saint-joseph"],

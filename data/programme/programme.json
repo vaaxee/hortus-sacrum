@@ -1017,7 +1017,7 @@
       "id": "prog:devotion-dimanche",
       "titre": "Dévotion du dimanche : la très sainte Trinité",
       "motif": {"fins": ["louange", "action-de-graces"], "objets": ["trinite"], "note": "dédicace du dimanche : la très sainte Trinité (cycles.json)"},
-      "revision": 3,
+      "revision": 4,
       "quand": {
         "jours_semaine": [0]
       },
@@ -1027,6 +1027,7 @@
         "ordre": 80,
         "sections": [
           {
+            "quand": {"sauf": {"code_tempora": ["Quadp3-6", "Quad1-0", "Quad1-1", "Quad1-2", "Quad1-3", "Quad1-4", "Quad1-5", "Quad1-6", "Quad2-0"]}},
             "texte": {
               "selon": "quand",
               "cas": [
@@ -1079,7 +1080,7 @@
       "id": "prog:devotion-lundi",
       "titre": "Dévotion du lundi : les âmes du purgatoire",
       "motif": {"fins": ["intercession", "propitiation"], "objets": ["ames-du-purgatoire"], "note": "dédicace du lundi : les âmes du purgatoire (cycles.json)"},
-      "revision": 3,
+      "revision": 4,
       "quand": {
         "jours_semaine": [1]
       },
@@ -1096,6 +1097,7 @@
             "titre": "Sur les gros grains"
           },
           {
+            "quand": {"sauf": {"code_tempora": ["Quadp3-6", "Quad1-0", "Quad1-1", "Quad1-2", "Quad1-3", "Quad1-4", "Quad1-5", "Quad1-6", "Quad2-0"]}},
             "texte": {
               "selon": "rotation",
               "roue": "roue:litanies-1",
@@ -1135,7 +1137,7 @@
       "id": "prog:devotion-mardi",
       "titre": "Dévotion du mardi : les saints Anges",
       "motif": {"fins": ["demande"], "objets": ["anges"], "note": "dédicace du mardi : les saints Anges, leur garde et leur protection (cycles.json)"},
-      "revision": 4,
+      "revision": 5,
       "quand": {
         "jours_semaine": [2]
       },
@@ -1151,6 +1153,7 @@
             "texte": "jardin:a-saint-gabriel-archange"
           },
           {
+            "quand": {"sauf": {"code_tempora": ["Quadp3-6", "Quad1-0", "Quad1-1", "Quad1-2", "Quad1-3", "Quad1-4", "Quad1-5", "Quad1-6", "Quad2-0"]}},
             "texte": {
               "selon": "rotation",
               "roue": "roue:litanies-2",
@@ -1196,7 +1199,7 @@
       "id": "prog:devotion-mercredi",
       "titre": "Dévotion du mercredi : saint Joseph et le cordon",
       "motif": {"fins": ["demande"], "objets": ["saint-joseph"], "note": "dédicace du mercredi : saint Joseph, avec le renouvellement du cordon (SPEC § 11, décisions)"},
-      "revision": 4,
+      "revision": 5,
       "quand": {
         "jours_semaine": [3]
       },
@@ -1212,6 +1215,7 @@
             "texte": "beringer:saint-joseph-purete"
           },
           {
+            "quand": {"sauf": {"code_tempora": ["Quadp3-6", "Quad1-0", "Quad1-1", "Quad1-2", "Quad1-3", "Quad1-4", "Quad1-5", "Quad1-6", "Quad2-0"]}},
             "texte": "beringer:litanies-saint-joseph"
           },
           {
@@ -1266,7 +1270,7 @@
       "id": "prog:devotion-jeudi",
       "titre": "Dévotion du jeudi : le Saint-Sacrement",
       "motif": {"fins": ["adoration", "demande"], "objets": ["eucharistie"], "note": "dédicace du jeudi : le Saint-Sacrement (cycles.json)"},
-      "revision": 3,
+      "revision": 4,
       "quand": {
         "jours_semaine": [4]
       },
@@ -1277,6 +1281,7 @@
         "ordre": 80,
         "sections": [
           {
+            "quand": {"sauf": {"code_tempora": ["Quadp3-6", "Quad1-0", "Quad1-1", "Quad1-2", "Quad1-3", "Quad1-4", "Quad1-5", "Quad1-6", "Quad2-0"]}},
             "texte": {
               "selon": "quand",
               "cas": [
@@ -1319,7 +1324,7 @@
       "id": "prog:devotion-vendredi",
       "titre": "Dévotion du vendredi : la Passion et le Sacré-Cœur",
       "motif": {"fins": ["reparation", "propitiation"], "objets": ["passion", "sacre-coeur"], "note": "dédicace du vendredi : la Passion et le Sacré-Cœur (cycles.json ; LOT_DIMENSIONS § 3.3) ; le premier vendredi, préparation à la mort (Association de la Bonne Mort), un texte par mois"},
-      "revision": 5,
+      "revision": 6,
       "quand": {
         "jours_semaine": [5]
       },
@@ -1339,6 +1344,7 @@
             }
           },
           {
+            "quand": {"sauf": {"code_tempora": ["Quadp3-6", "Quad1-0", "Quad1-1", "Quad1-2", "Quad1-3", "Quad1-4", "Quad1-5", "Quad1-6", "Quad2-0"]}},
             "texte": {
               "selon": "rotation",
               "roue": "roue:litanies-5",
@@ -1430,7 +1436,7 @@
       "id": "prog:devotion-samedi",
       "titre": "Dévotion du samedi : la sainte Vierge",
       "motif": {"fins": ["louange", "demande"], "objets": ["sainte-vierge"], "note": "dédicace du samedi : la sainte Vierge (cycles.json)"},
-      "revision": 3,
+      "revision": 4,
       "quand": {
         "jours_semaine": [6]
       },
@@ -1454,6 +1460,7 @@
             }
           },
           {
+            "quand": {"sauf": {"code_tempora": ["Quadp3-6", "Quad1-0", "Quad1-1", "Quad1-2", "Quad1-3", "Quad1-4", "Quad1-5", "Quad1-6", "Quad2-0"]}},
             "texte": {
               "selon": "rotation",
               "roue": "roue:litanies-6",
@@ -1760,24 +1767,26 @@
     {
       "id": "prog:neuvaine-saint-francois-xavier",
       "titre": "Neuvaine à saint François-Xavier",
-      "motif": {"fins": ["demande"], "objets": ["saints", "trinite"], "note": "du premier samedi du Carême au deuxième dimanche, comme à Québec (Neuvaine, Québec, 1880) ; la « neuvaine de la grâce »"},
-      "revision": 1,
-      "quand": {"code_tempora": ["Quadp3-6", "Quad1-0", "Quad1-1", "Quad1-2", "Quad1-3", "Quad1-4", "Quad1-5", "Quad1-6", "Quad2-0"]},
-      "source": "Demande de l'utilisateur du 26 nov. (suite) : Neuvaine en l'honneur de saint François-Xavier, Québec, 1880 (approbation de l'archevêque de Québec, 15 déc. 1879, vue sur l'image), p. 41-47 ; jours de l'édition (Basilique de Québec) ; les considérations de chaque jour restent à transcrire",
+      "motif": {"fins": ["demande"], "objets": ["saints", "trinite"], "note": "la veille (vendredi après les Cendres), la considération préparatoire ; puis du premier samedi du Carême au deuxième dimanche, comme à Québec (Neuvaine, Québec, 1880) : la considération du jour, les prières pour tous les jours et les litanies du saint ; la « neuvaine de la grâce »"},
+      "revision": 2,
+      "quand": {"code_tempora": ["Quadp3-5", "Quadp3-6", "Quad1-0", "Quad1-1", "Quad1-2", "Quad1-3", "Quad1-4", "Quad1-5", "Quad1-6", "Quad2-0"]},
+      "source": "Demande de l'utilisateur du 26 nov. (suite) : Neuvaine en l'honneur de saint François-Xavier, Québec, 1880 (approbation de l'archevêque de Québec, 15 déc. 1879, vue sur l'image) : considérations p. 30-98, prières p. 41-47, litanies p. 48-59, relues sur l'image ; jours de l'édition (Basilique de Québec), veille comprise (« Lisez dès ce jour, et méditez la considération préparatoire », p. 25)",
       "page": {
         "moment": "journee",
         "ordre": 76,
         "sections": [
-          {"editorial": "### Premier jour de la neuvaine", "quand": {"code_tempora": ["Quadp3-6"]}},
-          {"editorial": "### Deuxième jour de la neuvaine", "quand": {"code_tempora": ["Quad1-0"]}},
-          {"editorial": "### Troisième jour de la neuvaine", "quand": {"code_tempora": ["Quad1-1"]}},
-          {"editorial": "### Quatrième jour de la neuvaine", "quand": {"code_tempora": ["Quad1-2"]}},
-          {"editorial": "### Cinquième jour de la neuvaine", "quand": {"code_tempora": ["Quad1-3"]}},
-          {"editorial": "### Sixième jour de la neuvaine", "quand": {"code_tempora": ["Quad1-4"]}},
-          {"editorial": "### Septième jour de la neuvaine", "quand": {"code_tempora": ["Quad1-5"]}},
-          {"editorial": "### Huitième jour de la neuvaine", "quand": {"code_tempora": ["Quad1-6"]}},
-          {"editorial": "### Neuvième et dernier jour de la neuvaine", "quand": {"code_tempora": ["Quad2-0"]}},
-          {"texte": "xavier1880:prieres-neuvaine"}
+          {"texte": "xavier1880:considerations-neuvaine", "extrait": {"section": "## Considération pour la veille de la neuvaine. Motifs de confiance en saint François-Xavier."}, "quand": {"code_tempora": ["Quadp3-5"]}},
+          {"texte": "xavier1880:considerations-neuvaine", "extrait": {"section": "## Premier jour. Sa conversion et son parfait détachement."}, "quand": {"code_tempora": ["Quadp3-6"]}},
+          {"texte": "xavier1880:considerations-neuvaine", "extrait": {"section": "## Second jour. Sa mortification et son amour pour les souffrances.", "retirer": ["*Les prières pour tous les jours de la Neuvaine, page 41.*"]}, "quand": {"code_tempora": ["Quad1-0"]}},
+          {"texte": "xavier1880:considerations-neuvaine", "extrait": {"section": "## Troisième jour. Son amour pour Dieu et son zèle pour sa gloire."}, "quand": {"code_tempora": ["Quad1-1"]}},
+          {"texte": "xavier1880:considerations-neuvaine", "extrait": {"section": "## Quatrième jour. Sa charité envers le prochain, son zèle pour les âmes."}, "quand": {"code_tempora": ["Quad1-2"]}},
+          {"texte": "xavier1880:considerations-neuvaine", "extrait": {"section": "## Cinquième jour. Sa confiance en Dieu."}, "quand": {"code_tempora": ["Quad1-3"]}},
+          {"texte": "xavier1880:considerations-neuvaine", "extrait": {"section": "## Sixième jour. Sa douceur."}, "quand": {"code_tempora": ["Quad1-4"]}},
+          {"texte": "xavier1880:considerations-neuvaine", "extrait": {"section": "## Septième jour. Son humilité."}, "quand": {"code_tempora": ["Quad1-5"]}},
+          {"texte": "xavier1880:considerations-neuvaine", "extrait": {"section": "## Huitième jour. Sa piété."}, "quand": {"code_tempora": ["Quad1-6"]}},
+          {"texte": "xavier1880:considerations-neuvaine", "extrait": {"section": "## Dernier jour. Son abandon à la Providence. Sa sainte mort."}, "quand": {"code_tempora": ["Quad2-0"]}},
+          {"texte": "xavier1880:prieres-neuvaine", "quand": {"code_tempora": ["Quadp3-6", "Quad1-0", "Quad1-1", "Quad1-2", "Quad1-3", "Quad1-4", "Quad1-5", "Quad1-6", "Quad2-0"]}},
+          {"texte": "xavier1880:litanies-saint-francois-xavier", "quand": {"code_tempora": ["Quadp3-6", "Quad1-0", "Quad1-1", "Quad1-2", "Quad1-3", "Quad1-4", "Quad1-5", "Quad1-6", "Quad2-0"]}}
         ]
       }
     },
