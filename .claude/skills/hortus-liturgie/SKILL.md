@@ -14,7 +14,9 @@ Références : `docs/conception/REFONTE_2026-11-18.md` § 5 (format DO, import h
 - **Résolution hors ligne en Python** (`engine/office/lire.py`, `parvum.py`, futur `heures.py`), sortie JSON livrée
   (`data/office/…`) : pièces partagées + plan léger par jour, chargé à la demande. Pas de moteur d'office dans l'app.
 - **Latin d'abord.** Le français seulement quand sa source ancienne est identifiée ; les fichiers `Francais` de DO ne
-  disent pas leur édition → Bréviaire romain en latin seul tant qu'une édition bilingue ancienne n'est pas trouvée.
+  disent pas leur édition. Bréviaire romain : français de **Fillion** (1917) en regard des psaumes et cantiques
+  (`data/office/breviaire-fr/psautier-fillion.json`, chargeur `app/src/lib/office/psautier-fr.ts`, bouton « Latin seul ») ;
+  **Hugueny** pour le reste, pas encore transcrit (décision du 22 nov., REFONTE § 5.5).
 - Composants communs réutilisés (psaumes, hymnes, prières `$Pater noster`…), jamais recopiés 365 fois.
 - Office compté dans « Lectures du jour » : le Petit bréviaire du Sacré-Cœur ; Bréviaire romain et Officium parvum
   proposés sans être comptés. Aucun rappel aux heures canoniales par défaut.
@@ -29,14 +31,18 @@ Références : `docs/conception/REFONTE_2026-11-18.md` § 5 (format DO, import h
 `engine/office/breviaire.py <année>` exécute le moteur Perl de DO (`vendor/do/web/cgi-bin/horas/officium.pl`) : ne pas
 réécrire de rubriques. Prérequis : `perl`, `apt-get install -y libcgi-pm-perl`, `git sparse-checkout add web/cgi-bin`
 dans `vendor/do`. Sortie `data/office/breviaire/<AAAA-AAAA>/` ; chargeur `app/src/lib/office/breviaire.ts`
-(`ANNEES_CALCULEES` à compléter pour une nouvelle année).
+(`ANNEES_CALCULEES` à compléter pour une nouvelle année). Français en regard : `psautier-fr.ts` rend chaque heure
+(`Office` prop `rendu`) ; un verset de Fillion face aux lignes latines de `ligne_la` à la ligne du verset suivant, même règle
+de partie « Psalmus N(a-b) » que `engine/office/test_psautier_fr.py` ; sans étiquettes (cantiques coupés autrement, Ps 94),
+le latin entier puis le français en un bloc ; nombre de lignes différent → jamais de français en face du mauvais latin.
 
 ## Contrôles
 
 ```bash
 python3 engine/office/test_parvum.py        # « 93 textes vérifiés, témoins des temps conformes »
 python3 engine/office/test_breviaire.py     # 0 faute, 0 écart d'oraison (calendrier ↔ moteur DO)
-cd app && npx vitest run src/lib/programme/heures.test.ts
+python3 engine/office/test_psautier_fr.py   # psautier de Fillion : 150 psaumes, 17 cantiques, alignement
+cd app && npx vitest run src/lib/programme/heures.test.ts src/lib/office/
 ```
 
 Le témoin du Bréviaire est croisé : l'oraison de l'office de notre calendrier doit se retrouver dans les Laudes de DO,

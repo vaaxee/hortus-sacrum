@@ -209,7 +209,11 @@ faisable, mais il faut d'abord découper Fillion par verset (OCR à relire, mise
 
 ### Reste (psautier)
 
-- Brancher le psautier (chargeur, affichage en regard du latin, test mot pour mot), avec Hugueny pour le reste.
+- ~~Brancher le psautier~~ : **fait** le 27 nov. (`app/src/lib/office/psautier-fr.ts`, REFONTE § 5.5) ; sur toute
+  l'année calculée, tous les psaumes sont alignés ligne à ligne sauf la seconde partie du Ps 144 (13b-21, dont la première
+  ligne latine continue le v. 13, imprimé dans la partie précédente : latin seul en face) ; 12 cantiques et le Ps 94 de
+  l'Épiphanie en bloc ; l'invitatoire de chaque jour (texte du psautier romain, sans titre « Psalmus 94 ») et le
+  *Quicumque* restent en latin seul. Hugueny pour le reste.
 - Relire, si l'utilisateur le souhaite, les versets marqués `lecture` (points douteux ci-dessus et au § 6).
 
 Renvois typographiques : `appliquer.py` remet chaque « [fin » à la ligne qu'il complète (règle écrite dans la fonction

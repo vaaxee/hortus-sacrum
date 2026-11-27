@@ -8,6 +8,7 @@
 	import Office from '#lib/Office.svelte';
 	import { breviaireDuJour, chargerCommuns, prechargerSemaine, type JourBreviaire } from '#lib/office/breviaire.ts';
 	import { chargerParvum, parvumDuJour, type DonneesParvum } from '#lib/office/parvum.ts';
+	import { chargerPsautierFr, rendreAvecFillion, type PsautierFr } from '#lib/office/psautier-fr.ts';
 	import { heuresDe } from '#lib/programme/heures.ts';
 	import { heuresDeLaLecture } from '#lib/programme/lectures.ts';
 	import { journeeVivante } from '#lib/programme/vivant.svelte.ts';
@@ -18,7 +19,8 @@
 	 * Lecture › Office (REFONTE § 4.4) : le bréviaire du jour, une heure à la fois. Le Petit bréviaire du Sacré-Cœur est
 	 * l'office compté dans « Lectures du jour ». L'Officium parvum (latin, d'après Divinum Officium) s'affiche dans le
 	 * même composant, ses heures cochées à part (« lec:parvum:<heure> ») ; le Bréviaire romain aussi (« lec:romain:<heure> »,
-	 * heures complètes d'après le moteur de Divinum Officium, lot 9).
+	 * heures complètes d'après le moteur de Divinum Officium, lot 9), le français de Fillion (1917) en regard des psaumes
+	 * et des cantiques, sur demande ; le latin reste le texte de l'office (CLAUDE.md § 15).
 	 */
 	const date = $derived(page.url.searchParams.get('date') ?? iso(new Date()));
 	const q = $derived(page.url.searchParams.get('date') ? `?date=${date}` : '');
@@ -65,6 +67,28 @@
 		chargerCommuns(2026).then((c) => (sourceRomain = c?.source.depot ?? ''));
 	});
 	const heuresRomain = $derived(romain ? heuresDe(romain.corps) : []);
+	// psautier de Fillion en regard (préférence gardée sur l'appareil ; affiché par défaut)
+	let fillion = $state<PsautierFr | null | undefined>();
+	let francais = $state(true);
+	$effect(() => {
+		try {
+			francais = localStorage.getItem('breviaire-francais') !== '0';
+		} catch {
+			/* stockage indisponible : réglage par défaut */
+		}
+	});
+	$effect(() => {
+		if (breviaire === 'romain' && francais && fillion === undefined) chargerPsautierFr().then((d) => (fillion = d));
+	});
+	function basculerFrancais() {
+		francais = !francais;
+		try {
+			localStorage.setItem('breviaire-francais', francais ? '1' : '0');
+		} catch {
+			/* stockage indisponible */
+		}
+	}
+	const renduRomain = $derived(francais && fillion ? (t: string) => rendreAvecFillion(t, fillion!) : undefined);
 	const jourParvum = $derived(parvum ? parvumDuJour(parvum, date) : undefined);
 	const heuresParvum = $derived(jourParvum ? heuresDe(jourParvum.corps) : []);
 	const jourFr = $derived(new Date(date + 'T12:00:00').toLocaleDateString('fr-FR', { weekday: 'long', day: 'numeric', month: 'long' }));
@@ -101,10 +125,16 @@
 		{/if}
 	{:else if breviaire === 'romain'}
 		{#if romain && heuresRomain.length}
-			<p class="petit"><em lang="la">{romain.office}</em> · latin</p>
-			<Office corps={romain.corps} heures={heuresRomain} ligne="lec:romain" {date} {coches} />
+			<div class="bascule-fr">
+				<p class="petit"><em lang="la">{romain.office}</em> · latin{francais ? ', psaumes en regard' : ''}</p>
+				<button class="bouton" aria-pressed={francais} onclick={basculerFrancais}>{francais ? 'Latin seul' : 'Psaumes en français'}</button>
+			</div>
+			<Office corps={romain.corps} heures={heuresRomain} ligne="lec:romain" {date} {coches} rendu={renduRomain} />
 			<p class="source">
-				Texte de <a href={sourceRomain}>Divinum Officium</a>, rubriques de 1954 (<em>Divino afflatu</em>). La traduction des leçons est sur
+				Texte de <a href={sourceRomain}>Divinum Officium</a>, rubriques de 1954 (<em>Divino afflatu</em>).{#if francais && fillion}
+					Psaumes et cantiques en français : L.-Cl. Fillion, <a href={fillion.source.url}
+						><em>Le nouveau psautier du Bréviaire romain</em></a
+					>, 7<sup>e</sup> éd., Paris, Lecoffre-Gabalda, 1917 (<em>imprimatur</em> Paris, 1912).{/if} La traduction des leçons est sur
 				<a href="/saint{q}">la page du saint</a>.
 			</p>
 		{:else if romain === null}
@@ -159,6 +189,16 @@
 	.breviaires button[aria-pressed='true'] {
 		color: var(--hs-encre);
 		border-bottom-color: currentColor;
+	}
+	.bascule-fr {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
+		gap: 4px 14px;
+	}
+	.bascule-fr .petit {
+		margin: 0;
 	}
 	.source {
 		text-align: right;
