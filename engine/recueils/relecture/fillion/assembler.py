@@ -72,6 +72,11 @@ CANTIQUES = {
                            "Fillion titre « Hab. iii, 1-19 » et numérote les versets 2 à 19 ; Divinum Officium chante "
                            "ce cantique en 32 lignes (3:2a à 3:19b), coupées autrement : numéros de Fillion, sans "
                            "alignement ligne à ligne."),
+    "Cantique de l'Ecclésiastique": (216, "Cantique de l'Ecclésiastique", 'Eccli. xxxvi, 1-16'),
+    'Cantique de Moïse. Deut': (226, 'Cantique de Moïse', 'Deut. xxxii, 1-43', list(range(1, 44)),
+                                "Divinum Officium chante ce cantique en 65 lignes numérotées 32:1 à 32:65, coupées "
+                                "pour le chant (une ligne par demi-verset ou davantage) : numéros des 43 versets de "
+                                "Fillion, sans alignement ligne à ligne."),
     'Cantique de David': (211, 'Cantique de David', 'I Par. xxix, 10-13'),
     'Cantique de Siméon': (233, 'Cantique de Siméon', 'Luc. ii, 29-32'),
 }
