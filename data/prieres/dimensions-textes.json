@@ -1239,6 +1239,14 @@
       "forme": ["litanie", "oraison"],
       "devinee": ["fin", "objet", "grace", "personne", "forme"]
     },
+    "confreriejoseph:neuvaine-grace-particuliere": {
+      "fin": ["demande"],
+      "objet": ["saint-joseph"],
+      "grace": ["graces-temporelles", "vertus", "perseverance-finale"],
+      "personne": ["soi-meme"],
+      "forme": ["neuvaine", "oraison"],
+      "devinee": ["fin", "objet", "grace", "personne", "forme"]
+    },
     "confreriejoseph:prieres-fetes-saint-joseph": {
       "fin": ["demande", "intercession"],
       "objet": ["saint-joseph"],

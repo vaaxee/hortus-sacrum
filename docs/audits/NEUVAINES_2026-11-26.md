@@ -221,8 +221,15 @@ Décisions de l'utilisateur : la neuvaine de la sainte Face reste du 20 au 28 ju
    litanie de la dévotion du jour, qui reste. Exception déclarée à la règle « une seule litanie » dans `unicite.test.ts`
    (`AJOUTEES`), avec un test qui vérifie, chacun des neuf jours, la litanie du jour et celle du saint.
 
-**Restent** (27 nov.) : neuvaine de S.
-Joseph pour une grâce particulière (p. 117, sans date) ; neuvaine au Saint-Esprit de S. Alphonse ; les candidats
+9. **Neuvaine à saint Joseph pour une grâce particulière** (27 nov., `claude/neuvaines-4` ;
+   `confreriejoseph:neuvaine-grace-particuliere`, nouvelle) : *Manuel de la Confrérie de Saint Joseph*, Montréal,
+   p. 117-126 (PDF p. 121-130), recopiée sur l'image : avis, prière préparatoire, neuf prières (saint Joseph père
+   nourricier, époux de Marie, modèle de foi, d'espérance, de charité, de chasteté, de toutes les vertus, de la vie
+   intérieure, d'une bonne mort). Sans date dans le livre : **recueil de circonstance**, dans la bibliothèque des textes
+   seulement, hors de `programme.json` (un test vérifie qu'elle n'entre dans aucune journée). La note de vente
+   (« se vend $5 le 100 ») est omise ; fautes gardées (« particuliers » au titre, « favorablenent », « misericorde »).
+
+**Restent** (27 nov.) : neuvaine au Saint-Esprit de S. Alphonse ; les candidats
 ci-dessus.
 
 Outils : `engine/recueils/neuvaines/` (textes relus en `.md`, `pieces.json`, `inserer.py`).

@@ -116,5 +116,24 @@
    "litanies-xavier-latin.md"
   ],
   "revision": 1
+ },
+ {
+  "id": "confreriejoseph:neuvaine-grace-particuliere",
+  "titre": "Neuvaine à saint Joseph pour demander quelque grâce particulière",
+  "partie": "Neuvaines",
+  "categorie": "Mercredi",
+  "usage": "Neuvaine de circonstance, sans date dans le livre : à commencer quand on a une grâce à demander, « soit temporelle, soit spirituelle ». Chaque jour, la prière préparatoire, puis la prière du jour (saint Joseph père nourricier, époux de Marie, modèle de foi, d'espérance, de charité, de chasteté, de toutes les vertus, de la vie intérieure, d'une bonne mort). Le livre recommande de se mettre en grâce avec Dieu et de faire chaque jour quelque bonne œuvre. Note du livre omise : « Cette Neuvaine se trouve à l'Hospice St. Joseph… et se vend $5 le 100 ». Fautes de l'impression gardées (« particuliers » dans le titre, « favorablenent », « misericorde »).",
+  "indulgence": "",
+  "source": {
+   "ouvrage": "Manuel de la Confrérie de Saint Joseph, « Neuvaine pour demander quelque grace particuliers »",
+   "edition": "Montréal, se trouve à l’hospice St. Joseph, s. d. [vers 1880-1890] ; aucune approbation imprimée dans le scan",
+   "page": "117-126 (PDF p. 121-130)",
+   "url": "https://archive.org/details/cihm_61528"
+  },
+  "latin": "",
+  "fichiers": [
+   "neuvaine-joseph-grace.md"
+  ],
+  "revision": 1
  }
 ]

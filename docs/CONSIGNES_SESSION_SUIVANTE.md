@@ -87,8 +87,8 @@ Décisions antérieures, rappelées dans `REPRISE.md` :
    - À transcrire sur l'image puis à intégrer avec `Quand.autour` :
      - (sainte Élisabeth : non retenue par l'utilisateur, 26 nov.) ;
      - Confrérie de Saint-Joseph : triduums des trois fêtes **faits** (27 nov., `claude/neuvaines-3`,
-       `prog:triduums-saint-joseph`) ; restent la neuvaine pour une grâce particulière (p. 117, sans date) et le mois
-       de saint Joseph (p. 89) ;
+       `prog:triduums-saint-joseph`) ; neuvaine pour une grâce particulière **faite** (27 nov.,
+       `claude/neuvaines-4`, p. 117-126, hors programme : recueil de circonstance) ; reste le mois de saint Joseph (p. 89) ;
      - neuvaine de saint François-Xavier (Québec 1880, `cihm_62891`, approuvée 15 déc. 1879) : **complète** (27 nov.,
        `claude/neuvaines-4`) : veille (12 févr. 2027) et neuf jours (13-21 févr.), considération du jour, prières,
        litanies (en plus de la litanie du jour, décision du 27 nov.) ;

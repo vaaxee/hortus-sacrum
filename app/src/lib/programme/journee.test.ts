@@ -525,6 +525,21 @@ describe('neuvaine à saint François-Xavier (Québec 1880), du premier samedi d
 	});
 });
 
+describe('neuvaine à saint Joseph pour une grâce particulière (Confrérie de Montréal), sans date', () => {
+	it('recueil de circonstance : la pièce a ses neuf jours, mais n’entre dans aucune journée', () => {
+		const ID = 'confreriejoseph:neuvaine-grace-particuliere';
+		const t = corps(ID)!;
+		expect(t.match(/^## .*$/gm)).toEqual([
+			'## Prière préparatoire',
+			...['Ier', 'IIe', 'IIIe', 'IVe', 'Ve', 'VIe', 'VIIe', 'VIIIe', 'IXe'].map((n) => expect.stringMatching(new RegExp(`^## ${n} jour\\. Saint Joseph`)))
+		]);
+		for (const j of CALENDRIER) {
+			const jr = calculer(j.date);
+			expect([...jr.lignes, ...jr.lectures].some((l) => l.sections.some((x) => x.texte === ID)), j.date).toBe(false);
+		}
+	});
+});
+
 describe('triduums des trois fêtes de saint Joseph (Confrérie de Montréal)', () => {
 	const ID = 'prog:triduums-saint-joseph';
 	const parties = (date: string) =>
