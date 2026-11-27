@@ -47,7 +47,7 @@ Les points réglés sont gardés pour l'historique. Dernière mise à jour : 26 
   `claude/neuvaines-4` : prières p. 41-47, considérations de la veille et des neuf jours p. 30-98, litanies p. 48-59) ;
   neuvaine du Saint-Esprit de S. Alphonse : **faite** (27 nov., version Tournois 1897, `ledivinsauveurm02ligu` ; le
   t. XIV des *Œuvres* Vivès, `07430208.1657.emory.edu`, daté 1879 sur la page de titre, n'imprime aucune approbation).
-  **Candidats vérifiés sur l'image (27 nov.)** : sainte Anne, `cihm_38318` (*Le mois de juillet consacré à sainte Anne,
+  **Candidats vérifiés sur l'image (27 nov.)** : sainte Anne (**faite**, 27 nov., 17-25 juillet), `cihm_38318` (*Le mois de juillet consacré à sainte Anne,
   suivi d'une neuvaine*, Montréal, Rolland, 1878, **imprimatur de Montréal, 25 juin 1878**, neuvaine p. 183 s.) ;
   Fête-Dieu, `cihm_77294` (*Neuvaine au Très Saint Sacrement*, Montréal, Bureau des œuvres eucharistiques, s. d.
   [vers 1900], **imprimatur de Paul [Bruchési], archevêque de Montréal**, p. 16 ; neuf jours de prières, sans date fixe :

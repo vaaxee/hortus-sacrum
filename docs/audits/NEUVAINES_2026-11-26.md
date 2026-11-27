@@ -254,7 +254,18 @@ Décisions de l'utilisateur : la neuvaine de la sainte Face reste du 20 au 28 ju
    saint Joseph de Montréal (10-18 mars). Tests : `journee.test.ts` (3-12 mars 2027), `unicite.test.ts` (litanies du
    saint, 4-12 mars, en plus de la litanie du jour).
 
-**Restent** (27 nov.) : sainte Anne (`cihm_38318`) et Fête-Dieu (`cihm_77294`), approuvés, à transcrire ; S. Raphaël,
+13. **Neuvaine à sainte Anne** (27 nov., `claude/neuvaines-5` ; `juillet1878:neuvaine-sainte-anne`, nouvelle) : *Le mois
+   de juillet consacré à sainte Anne*, Montréal, 1878 (imprimatur de Montréal, 25 juin 1878), p. 183-223, recopiée sur
+   l'image : neuf considérations (sainte Anne épouse, mère, éducatrice, maîtresse de maison…), chacune avec réflexions et
+   prière, puis les prières de tous les jours (« Nous vous saluons », « Autre prière », Ave à la sainte Vierge). La
+   « Prière d'une mère chrétienne », séparée par un filet, n'en fait pas partie. Le livre la fait commencer le 17 juillet
+   (pratique du XVIIe jour du mois, p. 85-86) : `prog:neuvaine-sainte-anne`, **17-25 juillet** (`autour` du 26 juillet) ;
+   les renvois « Prières pour la Neuvaine, voir à la fin » sont retirés à l'affichage. Écrite pour les épouses et mères.
+   Fautes gardées : « seule-seulement », « à été », « dons nous avons besoin », « colomnie », « d'ailleur ».
+   Recouvrements gardés : Quinze samedis du Rosaire (17 et 24 juill. 2027), dix dimanches de S. Ignace (18 et 25 juill.),
+   quinze mardis de S. Dominique (20 juill.).
+
+**Restent** (27 nov.) : Fête-Dieu (`cihm_77294`), approuvée, à transcrire ; S. Raphaël,
 âmes du purgatoire, Ange gardien : rien d'approuvé trouvé.
 
 Outils : `engine/recueils/neuvaines/` (textes relus en `.md`, `pieces.json`, `inserer.py`).

@@ -95,7 +95,7 @@ Décisions antérieures, rappelées dans `REPRISE.md` :
        litanies (en plus de la litanie du jour, décision du 27 nov.) ;
      - neuvaine du Saint-Esprit de S. Alphonse : **faite** (27 nov., `claude/neuvaines-4`, version Tournois 1897,
        choix de l'utilisateur ; 6-15 mai 2027, de l'Ascension à la vigile) ;
-     - sainte Anne (`cihm_38318`, imprimatur 1878, neuvaine p. 183 s.) et Fête-Dieu (`cihm_77294`, imprimatur de
+     - sainte Anne : **faite** (27 nov., `claude/neuvaines-5`, 17-25 juillet) ; Fête-Dieu (`cihm_77294`, imprimatur de
        Montréal) : approbations vues, **à transcrire** ; Ange gardien (`cihm_34852`) écarté (ni approbation ni neuvaine) ;
      - Précieux Sang 1890 : les sept vendredis du Carême, les six vendredis avant le Sacré-Cœur et la prière
        « pendant trente jours » (p. 606, microfiche abîmée : chercher un autre exemplaire) ;

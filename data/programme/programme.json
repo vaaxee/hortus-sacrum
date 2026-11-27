@@ -1825,6 +1825,30 @@
       }
     },
     {
+      "id": "prog:neuvaine-sainte-anne",
+      "titre": "Neuvaine à sainte Anne",
+      "motif": {"fins": ["demande"], "objets": ["saints", "sainte-vierge"], "note": "les neuf jours avant la fête de sainte Anne (26 juillet), du 17 au 25 : une vertu de sainte Anne par jour, et les prières de la fin (Mois de juillet consacré à sainte Anne, Montréal, 1878)"},
+      "revision": 1,
+      "quand": {"autour": {"ancre": "07-26", "de": -9, "a": -1}},
+      "source": "Demande de l'utilisateur du 27 nov. : neuvaine de sainte Anne du Mois de juillet consacré à sainte Anne, Montréal, 1878 (imprimatur de Montréal, 25 juin 1878, vu sur l'image), p. 183-223, relue sur l'image ; jours du livre (commencée le 17 juillet, p. 85-86)",
+      "page": {
+        "moment": "journee",
+        "ordre": 76,
+        "sections": [
+          {"texte": "juillet1878:neuvaine-sainte-anne", "extrait": {"section": "## Premier jour. Sainte Anne, épouse de saint Joachim.", "retirer": ["*N. B. Voir à la fin des exercices pour les prières qui doivent se dire tous les jours pendant la neuvaine.*"]}, "quand": {"autour": {"ancre": "07-26", "de": -9, "a": -9}}},
+          {"texte": "juillet1878:neuvaine-sainte-anne", "extrait": {"section": "## Second jour. Dieu accorde la très-sainte Vierge à sainte Anne.", "retirer": ["*Prières pour la Neuvaine, voir à la fin des exercices.*"]}, "quand": {"autour": {"ancre": "07-26", "de": -8, "a": -8}}},
+          {"texte": "juillet1878:neuvaine-sainte-anne", "extrait": {"section": "## Troisième jour. Nom donné à la sainte Vierge et Purification de sainte Anne.", "retirer": ["*Prières pour la Neuvaine. Voir à la fin des exercices.*"]}, "quand": {"autour": {"ancre": "07-26", "de": -7, "a": -7}}},
+          {"texte": "juillet1878:neuvaine-sainte-anne", "extrait": {"section": "## Quatrième jour. Sainte Anne dans l'éducation de Marie.", "retirer": ["*Prières pour la Neuvaine. Voir à la fin des exercices.*"]}, "quand": {"autour": {"ancre": "07-26", "de": -6, "a": -6}}},
+          {"texte": "juillet1878:neuvaine-sainte-anne", "extrait": {"section": "## Cinquième jour. Sainte Anne présente Marie au Temple.", "retirer": ["*Prières pour la Neuvaine. Voir à la fin, des exercices.*"]}, "quand": {"autour": {"ancre": "07-26", "de": -5, "a": -5}}},
+          {"texte": "juillet1878:neuvaine-sainte-anne", "extrait": {"section": "## Sixième jour. Conduite de sainte Anne dans l'intérieur de sa maison.", "retirer": ["*Prières pour la Neuvaine. Voir à la fin des exercices.*"]}, "quand": {"autour": {"ancre": "07-26", "de": -4, "a": -4}}},
+          {"texte": "juillet1878:neuvaine-sainte-anne", "extrait": {"section": "## Septième jour. Soins qu'avait sainte Anne de ses domestiques.", "retirer": ["*Prières pour la Neuvaine. Voir à la fin des exercices.*"]}, "quand": {"autour": {"ancre": "07-26", "de": -3, "a": -3}}},
+          {"texte": "juillet1878:neuvaine-sainte-anne", "extrait": {"section": "## Huitième jour. Rapports de sainte Anne avec le prochain.", "retirer": ["*Prières de la Neuvaine. Voir à la fin des exercices.*"]}, "quand": {"autour": {"ancre": "07-26", "de": -2, "a": -2}}},
+          {"texte": "juillet1878:neuvaine-sainte-anne", "extrait": {"section": "## Neuvième jour. Mort de sainte Anne."}, "quand": {"autour": {"ancre": "07-26", "de": -1, "a": -1}}},
+          {"texte": "juillet1878:neuvaine-sainte-anne", "extrait": {"section": "## Prières que l'on doit faire chaque jour à la fin des Exercices de la Neuvaine"}}
+        ]
+      }
+    },
+    {
       "id": "prog:neuvaine-saint-francois",
       "titre": "Neuvaine à saint François d'Assise",
       "motif": {"fins": ["demande", "louange"], "objets": ["saints"], "note": "les neuf jours avant la fête de saint François (4 octobre) : une vertu du saint par jour (Tiers-Ordre, Québec, 1867)"},
