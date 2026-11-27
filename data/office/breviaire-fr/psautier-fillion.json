@@ -2184,6 +2184,62 @@
    ]
   },
   {
+   "numero": 22,
+   "titre": "Psaume XXII",
+   "versets": [
+    {
+     "n": 1,
+     "fr": "C'est le Seigneur qui me conduit, et rien ne pourra me manquer ;",
+     "page": 335,
+     "ligne_la": "1"
+    },
+    {
+     "n": 2,
+     "fr": "il m'a établi dans un lieu de pâturages. Il m'a amené près d'une eau fortifiante,",
+     "page": 335,
+     "ligne_la": "2"
+    },
+    {
+     "n": 3,
+     "fr": "il a fait revenir mon âme. Il m'a conduit par les sentiers de la justice, à cause de son nom.",
+     "page": 335,
+     "ligne_la": "3"
+    },
+    {
+     "n": 4,
+     "fr": "Aussi, quand même je marcherais au milieu de l'ombre de la mort, je ne craindrais aucun mal, car vous êtes avec moi. Votre houlette et votre bâton m'ont consolé.",
+     "page": 335,
+     "ligne_la": "4"
+    },
+    {
+     "n": 5,
+     "fr": "Vous avez préparé devant moi une table en face de ceux qui me persécutent. Vous avez oint ma tête d'huile, et que mon calice enivrant est admirable !",
+     "page": 335,
+     "ligne_la": "5"
+    },
+    {
+     "n": 6,
+     "fr": "Et votre miséricorde me suivra tous les jours de ma vie, pour que j'habite dans la maison du Seigneur durant de longs jours.",
+     "page": 335,
+     "ligne_la": "6"
+    }
+   ],
+   "lignes_la": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "4",
+    "5",
+    "5",
+    "6",
+    "6"
+   ],
+   "pages": [
+    335
+   ]
+  },
+  {
    "numero": 23,
    "titre": "Psaume XXIII",
    "versets": [
@@ -3754,6 +3810,103 @@
     165,
     167,
     169
+   ]
+  },
+  {
+   "numero": 35,
+   "titre": "Psaume XXXV",
+   "versets": [
+    {
+     "n": 2,
+     "fr": "L'injuste a dit en lui-même qu'il voulait pécher ; la crainte de Dieu n'est point devant ses yeux.",
+     "page": 325,
+     "ligne_la": "2"
+    },
+    {
+     "n": 3,
+     "fr": "Car il a agi avec tromperie en sa présence, afin que son iniquité fût trouvée digne de haine.",
+     "page": 325,
+     "ligne_la": "3"
+    },
+    {
+     "n": 4,
+     "fr": "Les paroles de sa bouche sont iniquité et tromperie ; il n'a point voulu devenir intelligent pour faire le bien.",
+     "page": 325,
+     "ligne_la": "4"
+    },
+    {
+     "n": 5,
+     "fr": "Il a médité l'iniquité sur sa couche ; il s'est arrêté sur toute voie mauvaise, et il n'a pas eu de haine pour la malice.",
+     "page": 325,
+     "ligne_la": "5"
+    },
+    {
+     "n": 6,
+     "fr": "Seigneur, votre miséricorde est dans le ciel, et votre vérité s'élève jusqu'aux nues.",
+     "page": 325,
+     "ligne_la": "6"
+    },
+    {
+     "n": 7,
+     "fr": "Votre justice est comme les montagnes de Dieu, vos jugements sont un profond abime. Vous sauverez, Seigneur, les hommes et les bêtes.",
+     "page": 325,
+     "ligne_la": "7"
+    },
+    {
+     "n": 8,
+     "fr": "Comme vous avez multiplié votre miséricorde, ô Dieu ! Mais les enfants des hommes espéreront, à couvert sous vos ailes.",
+     "page": 325,
+     "ligne_la": "8"
+    },
+    {
+     "n": 9,
+     "fr": "Ils seront enivrés de l'abondance de votre maison, et vous les ferez boire au torrent de vos délices.",
+     "page": 325,
+     "ligne_la": "9"
+    },
+    {
+     "n": 10,
+     "fr": "Car en vous est la source de la vie, et dans votre lumière nous verrons la lumière.",
+     "page": 325,
+     "ligne_la": "10"
+    },
+    {
+     "n": 11,
+     "fr": "Étendez votre miséricorde sur ceux qui vous connaissent, et votre justice sur ceux qui ont le cœur droit.",
+     "page": 327,
+     "ligne_la": "11"
+    },
+    {
+     "n": 12,
+     "fr": "Que le pied du superbe ne vienne point jusqu'à moi, et que la main du pécheur ne m'ébranle pas.",
+     "page": 327,
+     "ligne_la": "12"
+    },
+    {
+     "n": 13,
+     "fr": "C'est là que sont tombés ceux qui commettent l'iniquité : ils ont été chassés, et ils n'ont pu se tenir debout.",
+     "page": 327,
+     "ligne_la": "13"
+    }
+   ],
+   "lignes_la": [
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13"
+   ],
+   "pages": [
+    325,
+    327
    ]
   },
   {
@@ -7571,6 +7724,281 @@
    ]
   },
   {
+   "numero": 68,
+   "titre": "Psaume LXVIII",
+   "versets": [
+    {
+     "n": 2,
+     "fr": "Sauvez-moi, ô Dieu, car les eaux sont entrées jusqu'à mon âme.",
+     "page": 311,
+     "ligne_la": "2"
+    },
+    {
+     "n": 3,
+     "fr": "Je suis enfoncé dans une boue profonde, où il n'y a pas de consistance. Je suis descendu au fond de la mer, et la tempête m'a submergé.",
+     "page": 311,
+     "ligne_la": "3"
+    },
+    {
+     "n": 4,
+     "fr": "Je me suis fatigué à crier, ma gorge en a été enrouée ; mes yeux se sont épuisés, tandis que j'attends mon Dieu.",
+     "page": 311,
+     "ligne_la": "4"
+    },
+    {
+     "n": 5,
+     "fr": "Ils sont devenus plus nombreux que les cheveux de ma tête, ceux qui me haïssent sans cause. Ils sont devenus forts, ceux qui me persécutent, mes ennemis pleins d'injustice ; j'ai dû payer ce que je n'avais pas pris.",
+     "page": 311,
+     "ligne_la": "5"
+    },
+    {
+     "n": 6,
+     "fr": "O Dieu, vous connaissez ma folie, et mes péchés ne vous sont point cachés.",
+     "page": 313,
+     "ligne_la": "6"
+    },
+    {
+     "n": 7,
+     "fr": "Que ceux qui espèrent en vous ne rougissent pas à cause de moi, Seigneur, Seigneur des armées. Qu'ils ne soient pas confondus à mon sujet, ceux qui vous cherchent, ô Dieu d'Israël.",
+     "page": 313,
+     "ligne_la": "7"
+    },
+    {
+     "n": 8,
+     "fr": "Car c'est à cause de vous que j'ai souffert l'opprobre, que la confusion a couvert mon visage.",
+     "page": 313,
+     "ligne_la": "8"
+    },
+    {
+     "n": 9,
+     "fr": "Je suis devenu un étranger pour mes frères, et un inconnu pour les fils de ma mère.",
+     "page": 313,
+     "ligne_la": "9"
+    },
+    {
+     "n": 10,
+     "fr": "Car le zèle de votre maison m'a dévoré, et les outrages de ceux qui vous insultaient sont tombés sur moi.",
+     "page": 313,
+     "ligne_la": "10"
+    },
+    {
+     "n": 11,
+     "fr": "J'ai affligé mon âme par le jeûne, et l'on m'en a fait un sujet d'opprobre.",
+     "page": 313,
+     "ligne_la": "11"
+    },
+    {
+     "n": 12,
+     "fr": "J'ai pris pour vêtement un cilice, et je suis devenu leur fable.",
+     "page": 313,
+     "ligne_la": "12"
+    },
+    {
+     "n": 13,
+     "fr": "Ceux qui étaient assis à la porte parlaient contre moi, et ceux qui buvaient du vin me raillaient par leurs chansons.",
+     "page": 313,
+     "ligne_la": "13"
+    },
+    {
+     "n": 14,
+     "fr": "Mais moi je vous adresse, Seigneur, ma prière. Voici le temps favorable, ô Dieu. Selon la grandeur de votre miséricorde, exaucez-moi selon la vérité de vos promesses de salut.",
+     "page": 313,
+     "ligne_la": "14"
+    },
+    {
+     "n": 15,
+     "fr": "Retirez-moi de la boue, afin que je n'y enfonce pas ; délivrez-moi de ceux qui me haïssent et des eaux profondes.",
+     "page": 315,
+     "ligne_la": "15"
+    },
+    {
+     "n": 16,
+     "fr": "Que les flots en fureur ne me submergent point ; que l'abîme ne m'engloutisse pas, et que le puits ne ferme pas sa bouche sur moi.",
+     "page": 315,
+     "ligne_la": "16"
+    },
+    {
+     "n": 17,
+     "fr": "Exaucez-moi, Seigneur, car votre miséricorde est toute suave ; regardez-moi selon l'abondance de vos bontés.",
+     "page": 315,
+     "ligne_la": "17"
+    },
+    {
+     "n": 18,
+     "fr": "Et ne détournez pas votre visage de votre serviteur ; parce que je suis dans l'angoisse, exaucez-moi promptement.",
+     "page": 315,
+     "ligne_la": "18"
+    },
+    {
+     "n": 19,
+     "fr": "Soyez attentif sur mon âme, et délivrez-la ; sauvez-moi à cause de mes ennemis.",
+     "page": 315,
+     "ligne_la": "19"
+    },
+    {
+     "n": 20,
+     "fr": "Vous connaissez mon opprobre, et ma confusion, et ma honte. Tous ceux qui me persécutent sont devant vous.",
+     "page": 315,
+     "ligne_la": "20",
+     "lecture": [
+      "p. 315 : Tous ceux qui me persécutent — Fillion imprime le numéro 21 devant cette ligne (fin du v. 20 de la Vulgate, « In conspectu tuo sunt omnes qui tribulant me ») ; la ligne suivante, « Mon cœur… » (« Improperium exspectavit cor meum »), commence au bord comme un verset : numéro rendu au v. 21"
+     ]
+    },
+    {
+     "n": 21,
+     "fr": "Mon cœur s'attend à l'insulte et à la misère ; et j'ai attendu que quelqu'un s'attristât avec moi, mais nul ne l'a fait ; et que quelqu'un me consolât, mais je n'ai trouvé personne.",
+     "page": 315,
+     "ligne_la": "21"
+    },
+    {
+     "n": 22,
+     "fr": "Et ils m'ont donné du fiel pour nourriture, et dans ma soif ils m'ont abreuvé de vinaigre.",
+     "page": 315,
+     "ligne_la": "22"
+    },
+    {
+     "n": 23,
+     "fr": "Que leur table soit devant eux comme un filet, un juste châtiment et une pierre de scandale.",
+     "page": 315,
+     "ligne_la": "23"
+    },
+    {
+     "n": 24,
+     "fr": "Que leurs yeux soient obscurcis, pour qu'ils cessent de voir, et courbez à jamais leur dos.",
+     "page": 315,
+     "ligne_la": "24"
+    },
+    {
+     "n": 25,
+     "fr": "Déversez sur eux votre colère, et que la fureur de votre courroux les saisisse.",
+     "page": 315,
+     "ligne_la": "25"
+    },
+    {
+     "n": 26,
+     "fr": "Que leur demeure devienne déserte, et qu'il n'y ait personne qui habite dans leurs tentes ;",
+     "page": 315,
+     "ligne_la": "26"
+    },
+    {
+     "n": 27,
+     "fr": "parce qu'ils ont persécuté celui que vous avez frappé, et qu'ils ont ajouté à la douleur de mes blessures.",
+     "page": 315,
+     "ligne_la": "27"
+    },
+    {
+     "n": 28,
+     "fr": "Ajoutez l'iniquité à leur iniquité, et qu'ils n'entrent pas dans votre justice.",
+     "page": 317,
+     "ligne_la": "28"
+    },
+    {
+     "n": 29,
+     "fr": "Qu'ils soient effacés du livre des vivants, et qu'ils ne soient point inscrits avec les justes.",
+     "page": 317,
+     "ligne_la": "29"
+    },
+    {
+     "n": 30,
+     "fr": "Pour moi, je suis pauvre et dans la douleur ; votre salut, ô Dieu, m'a relevé.",
+     "page": 317,
+     "ligne_la": "30"
+    },
+    {
+     "n": 31,
+     "fr": "Je louerai le nom de Dieu par des cantiques, et je le glorifierai par des louanges ;",
+     "page": 317,
+     "ligne_la": "31"
+    },
+    {
+     "n": 32,
+     "fr": "et ce sera plus agréable à Dieu que le jeune veau, à qui poussent les cornes et les ongles.",
+     "page": 317,
+     "ligne_la": "32"
+    },
+    {
+     "n": 33,
+     "fr": "Que les pauvres le voient et se réjouissent ! Cherchez Dieu, et votre âme vivra ;",
+     "page": 317,
+     "ligne_la": "33"
+    },
+    {
+     "n": 34,
+     "fr": "car le Seigneur a exaucé les pauvres, et il n'a pas méprisé ses captifs.",
+     "page": 317,
+     "ligne_la": "34"
+    },
+    {
+     "n": 35,
+     "fr": "Que les cieux et la terre le louent ; la mer, et tout ce qui s'y meut.",
+     "page": 317,
+     "ligne_la": "35"
+    },
+    {
+     "n": 36,
+     "fr": "Car Dieu sauvera Sion, et les villes de Juda seront bâties. Ils y habiteront, et ils l'acquerront en héritage.",
+     "page": 317,
+     "ligne_la": "36"
+    },
+    {
+     "n": 37,
+     "fr": "Et la race de ses serviteurs la possédera, et ceux qui aiment son nom y habiteront.",
+     "page": 317,
+     "ligne_la": "37"
+    }
+   ],
+   "lignes_la": [
+    "2",
+    "3",
+    "3",
+    "4",
+    "5",
+    "5",
+    "6",
+    "7",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "18",
+    "19",
+    "20",
+    "21",
+    "21",
+    "22",
+    "23",
+    "24",
+    "25",
+    "26",
+    "27",
+    "28",
+    "29",
+    "30",
+    "31",
+    "32",
+    "33",
+    "34",
+    "35",
+    "36",
+    "36",
+    "37"
+   ],
+   "pages": [
+    311,
+    313,
+    315,
+    317
+   ]
+  },
+  {
    "numero": 69,
    "titre": "Psaume LXIX",
    "versets": [
@@ -7809,6 +8237,720 @@
     365,
     367,
     369
+   ]
+  },
+  {
+   "numero": 71,
+   "titre": "Psaume LXXI",
+   "versets": [
+    {
+     "n": 2,
+     "fr": "O Dieu, donnez au roi votre jugement, et votre justice au fils du roi ; pour qu'il juge votre peuple avec justice, et vos pauvres selon l'équité.",
+     "page": 337,
+     "ligne_la": "2"
+    },
+    {
+     "n": 3,
+     "fr": "Que les montagnes reçoivent la paix pour le peuple, et les collines la justice.",
+     "page": 337,
+     "ligne_la": "3"
+    },
+    {
+     "n": 4,
+     "fr": "Il jugera les pauvres du peuple, et sauvera les enfants des pauvres, et humiliera le calomniateur.",
+     "page": 337,
+     "ligne_la": "4"
+    },
+    {
+     "n": 5,
+     "fr": "Et il durera autant que le soleil et que la lune, de génération en génération.",
+     "page": 337,
+     "ligne_la": "5"
+    },
+    {
+     "n": 6,
+     "fr": "Il descendra comme la pluie sur une toison, et comme les eaux qui tombent goutte à goutte sur la terre.",
+     "page": 337,
+     "ligne_la": "6"
+    },
+    {
+     "n": 7,
+     "fr": "En ses jours apparaîtra la justice et l'abondance de la paix, jusqu'à ce que la lune soit détruite.",
+     "page": 337,
+     "ligne_la": "7"
+    },
+    {
+     "n": 8,
+     "fr": "Et il dominera de la mer à la mer, et depuis le fleuve jusqu'aux extrémités de la terre.",
+     "page": 337,
+     "ligne_la": "8"
+    },
+    {
+     "n": 9,
+     "fr": "Devant lui se prosterneront les Éthiopiens, et ses ennemis lécheront la terre.",
+     "page": 337,
+     "ligne_la": "9"
+    },
+    {
+     "n": 10,
+     "fr": "Les rois de Tharsis et les îles lui offriront des présents ; les rois d'Arabie et de Saba apporteront des dons,",
+     "page": 339,
+     "ligne_la": "10"
+    },
+    {
+     "n": 11,
+     "fr": "et tous les rois de la terre l'adoreront ; toutes les nations lui seront assujetties.",
+     "page": 339,
+     "ligne_la": "11"
+    },
+    {
+     "n": 12,
+     "fr": "Car il délivrera le pauvre des mains du puissant, et l'indigent qui n'avait personne pour l'assister.",
+     "page": 339,
+     "ligne_la": "12",
+     "lecture": [
+      "p. 339 : Car il délivrera — « il » à l'impression brisée (lu « ñ », « fi »), sûr par le contexte"
+     ]
+    },
+    {
+     "n": 13,
+     "fr": "Il aura compassion du pauvre et de l'indigent, et il sauvera les âmes des pauvres.",
+     "page": 339,
+     "ligne_la": "13"
+    },
+    {
+     "n": 14,
+     "fr": "Il affranchira leurs âmes de l'usure et de l'iniquité, et leur nom sera en honneur devant lui.",
+     "page": 339,
+     "ligne_la": "14"
+    },
+    {
+     "n": 15,
+     "fr": "Et il vivra, et on lui donnera de l'or d'Arabie ; et on l'adorera sans cesse, tout le jour on le bénira.",
+     "page": 339,
+     "ligne_la": "15"
+    },
+    {
+     "n": 16,
+     "fr": "Et le blé sera sur la terre au sommet des montagnes ; son fruit s'élèvera plus haut que le Liban, et on fleurira dans la cité comme l'herbe des champs.",
+     "page": 339,
+     "ligne_la": "16"
+    },
+    {
+     "n": 17,
+     "fr": "Que son nom soit béni dans tous les siècles ; son nom durera autant que le soleil. Et toutes les nations de la terre seront bénies en lui ; toutes les nations le glorifieront.",
+     "page": 339,
+     "ligne_la": "17"
+    },
+    {
+     "n": 18,
+     "fr": "Béni soit le Seigneur, Dieu d'Israël, qui opère seul des merveilles.",
+     "page": 339,
+     "ligne_la": "18"
+    },
+    {
+     "n": 19,
+     "fr": "Et béni soit éternellement le nom de sa majesté, et que toute la terre soit remplie de sa majesté. Ainsi soit-il, ainsi soit-il.",
+     "page": 339,
+     "ligne_la": "19"
+    }
+   ],
+   "lignes_la": [
+    "2",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "17",
+    "18",
+    "19"
+   ],
+   "pages": [
+    337,
+    339
+   ]
+  },
+  {
+   "numero": 72,
+   "titre": "Psaume LXXII",
+   "versets": [
+    {
+     "n": 1,
+     "fr": "Que Dieu est bon pour Israël, pour ceux qui ont le cœur droit !",
+     "page": 341,
+     "ligne_la": "1"
+    },
+    {
+     "n": 2,
+     "fr": "Mais mes pieds ont été presque ébranlés, mes pas ont failli glisser,",
+     "page": 341,
+     "ligne_la": "2"
+    },
+    {
+     "n": 3,
+     "fr": "parce que j'ai porté envie aux méchants, en voyant la paix des pécheurs.",
+     "page": 341,
+     "ligne_la": "3"
+    },
+    {
+     "n": 4,
+     "fr": "Car la mort paraît les oublier, et leurs blessures ne durent pas.",
+     "page": 341,
+     "ligne_la": "4"
+    },
+    {
+     "n": 5,
+     "fr": "Ils n'ont point de part au labeur des mortels, et ils ne sont pas frappés comme les autres hommes.",
+     "page": 341,
+     "ligne_la": "5"
+    },
+    {
+     "n": 6,
+     "fr": "Aussi l'orgueil les a-t-il saisis ; ils sont couverts de leur iniquité et de leur impiété.",
+     "page": 341,
+     "ligne_la": "6"
+    },
+    {
+     "n": 7,
+     "fr": "L'iniquité sort comme de leur graisse ; ils se sont abandonnés aux passions de leur cœur.",
+     "page": 341,
+     "ligne_la": "7"
+    },
+    {
+     "n": 8,
+     "fr": "Leurs pensées et leurs paroles n'ont été que malice ; ils ont proféré hautement l'iniquité.",
+     "page": 341,
+     "ligne_la": "8"
+    },
+    {
+     "n": 9,
+     "fr": "Ils ont ouvert leur bouche contre le ciel, et leur langue à parcouru la terre.",
+     "page": 341,
+     "ligne_la": "9",
+     "lecture": [
+      "p. 341 : langue à parcouru — « à » accentué, tel qu'imprimé (pour « a »)"
+     ]
+    },
+    {
+     "n": 10,
+     "fr": "C'est pourquoi mon peuple se tourne de ce côté, et on trouve en eux des jours pleins.",
+     "page": 343,
+     "ligne_la": "10"
+    },
+    {
+     "n": 11,
+     "fr": "Et ils ont dit : Comment Dieu le sait-il ? et le Très-Haut en a-t-il connaissance ?",
+     "page": 343,
+     "ligne_la": "11"
+    },
+    {
+     "n": 12,
+     "fr": "Voyez ces pécheurs qui abondent de tout en ce monde, ils ont acquis de nouvelles richesses.",
+     "page": 343,
+     "ligne_la": "12"
+    },
+    {
+     "n": 13,
+     "fr": "Et j'ai dit : C'est donc en vain que j'ai purifié mon cœur, et que j'ai lavé mes mains parmi les innocents,",
+     "page": 343,
+     "ligne_la": "13"
+    },
+    {
+     "n": 14,
+     "fr": "puisque j'ai été affligé tout le jour, et châtié dès le matin.",
+     "page": 343,
+     "ligne_la": "14"
+    },
+    {
+     "n": 15,
+     "fr": "Si j'avais dit : Je parlerai en ce sens, j'aurais condamné la race de vos enfants.",
+     "page": 343,
+     "ligne_la": "15"
+    },
+    {
+     "n": 16,
+     "fr": "Je songeais à pénétrer ce secret ; la difficulté fut grande devant moi,",
+     "page": 343,
+     "ligne_la": "16"
+    },
+    {
+     "n": 17,
+     "fr": "jusqu'à ce que je fusse entré dans le sanctuaire de Dieu, et que j'eusse compris ce que sera leur fin.",
+     "page": 343,
+     "ligne_la": "17"
+    },
+    {
+     "n": 18,
+     "fr": "En vérité, ce sont des pièges que vous avez placés devant eux ; vous les avez renversés au moment même où ils s'élevaient.",
+     "page": 343,
+     "ligne_la": "18"
+    },
+    {
+     "n": 19,
+     "fr": "Comment sont-ils tombés dans la désolation ? Ils ont disparu soudain ; ils ont péri à cause de leur iniquité.",
+     "page": 343,
+     "ligne_la": "19"
+    },
+    {
+     "n": 20,
+     "fr": "Comme le songe de ceux qui s'éveillent, Seigneur, vous réduirez à néant dans votre cité leur image.",
+     "page": 343,
+     "ligne_la": "20"
+    },
+    {
+     "n": 21,
+     "fr": "Parce que mon cœur s'est enflammé, et que mes reins ont été altérés ;",
+     "page": 345,
+     "ligne_la": "21"
+    },
+    {
+     "n": 22,
+     "fr": "j'ai été réduit au néant, et plongé dans l'ignorance.",
+     "page": 345,
+     "ligne_la": "21"
+    },
+    {
+     "n": 23,
+     "fr": "Je suis devenu devant vous comme une bête de somme, et cependant je suis toujours avec vous.",
+     "page": 345,
+     "ligne_la": "23"
+    },
+    {
+     "n": 24,
+     "fr": "Vous avez tenu ma main droite, et vous m'avez conduit selon votre volonté, et vous m'avez reçu avec gloire.",
+     "page": 345,
+     "ligne_la": "24"
+    },
+    {
+     "n": 25,
+     "fr": "Car qu'y a-t-il pour moi dans le ciel ? et qu'ai-je désiré de vous sur la terre ?",
+     "page": 345,
+     "ligne_la": "25"
+    },
+    {
+     "n": 26,
+     "fr": "Ma chair et mon cœur ont défailli : Dieu est le Dieu de mon cœur, et mon partage pour l'éternité.",
+     "page": 345,
+     "ligne_la": "26"
+    },
+    {
+     "n": 27,
+     "fr": "Car voici que ceux qui s'éloignent de vous périront ; vous perdrez tous ceux qui se prostituent en s'éloignant de vous.",
+     "page": 345,
+     "ligne_la": "27"
+    },
+    {
+     "n": 28,
+     "fr": "Pour moi, c'est mon bonheur de m'attacher à Dieu, de mettre mon espérance dans le Seigneur Dieu, afin de publier toutes vos louanges aux portes de la fille de Sion.",
+     "page": 345,
+     "ligne_la": "28"
+    }
+   ],
+   "lignes_la": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "18",
+    "19",
+    "20",
+    "21",
+    "23",
+    "24",
+    "25",
+    "26",
+    "27",
+    "28",
+    "28"
+   ],
+   "pages": [
+    341,
+    343,
+    345
+   ]
+  },
+  {
+   "numero": 73,
+   "titre": "Psaume LXXIII",
+   "versets": [
+    {
+     "n": 1,
+     "fr": "Pourquoi, ô Dieu, nous avez-vous rejetés pour toujours ? pourquoi votre fureur s'est-elle allumée contre les brebis de votre pâturage ?",
+     "page": 345,
+     "ligne_la": "1"
+    },
+    {
+     "n": 2,
+     "fr": "Souvenez-vous de votre famille, que vous avez possédée dès le commencement. Vous avez racheté le sceptre de votre héritage : c'est le mont Sion, où vous avez habité.",
+     "page": 347,
+     "ligne_la": "2"
+    },
+    {
+     "n": 3,
+     "fr": "Levez vos mains contre leur insolence sans bornes. Que de forfaits l'ennemi a commis dans le sanctuaire !",
+     "page": 347,
+     "ligne_la": "3"
+    },
+    {
+     "n": 4,
+     "fr": "Ceux qui vous haïssent ont mis leur gloire à vous insulter au milieu de votre solennité. Ils ont placé leurs étendards comme étendards,",
+     "page": 347,
+     "ligne_la": "4"
+    },
+    {
+     "n": 5,
+     "fr": "et ils n'ont pas plus respecté le sommet que les issues. Comme dans une forêt d'arbres, à coups de hache,",
+     "page": 347,
+     "ligne_la": "5"
+    },
+    {
+     "n": 6,
+     "fr": "ils ont brisé les portes à l'envi ; avec la hache et la cognée ils ont tout renversé.",
+     "page": 347,
+     "ligne_la": "6"
+    },
+    {
+     "n": 7,
+     "fr": "Ils ont mis le feu à votre sanctuaire : ils ont renversé et profané le tabernacle de votre nom.",
+     "page": 347,
+     "ligne_la": "7"
+    },
+    {
+     "n": 8,
+     "fr": "Ils ont dit dans leur cœur, eux et toute leur bande : Faisons cesser dans le pays tous les jours de fête consacrés à Dieu.",
+     "page": 347,
+     "ligne_la": "8"
+    },
+    {
+     "n": 9,
+     "fr": "Nous ne voyons plus nos étendards ; il n'y a plus de prophète, et on ne nous connaîtra plus.",
+     "page": 347,
+     "ligne_la": "9"
+    },
+    {
+     "n": 10,
+     "fr": "Jusques à quand, ô Dieu, l'ennemi insultera-t-il ? l'adversaire outragera-t-il sans fin votre nom ?",
+     "page": 347,
+     "ligne_la": "10"
+    },
+    {
+     "n": 11,
+     "fr": "Pourquoi retirez-vous sans cesse votre main et votre droite du milieu de votre sein ?",
+     "page": 349,
+     "ligne_la": "11",
+     "lecture": [
+      "p. 349 : et votre droite — une trace au-dessus du « o » (tache ou accent ?) : lu « votre », adjectif"
+     ]
+    },
+    {
+     "n": 12,
+     "fr": "Cependant Dieu est notre roi depuis des siècles ; il a opéré notre salut au milieu de la terre.",
+     "page": 349,
+     "ligne_la": "12"
+    },
+    {
+     "n": 13,
+     "fr": "C'est vous qui avez affermi la mer par votre puissance, qui avez brisé les têtes des dragons dans les eaux.",
+     "page": 349,
+     "ligne_la": "13"
+    },
+    {
+     "n": 14,
+     "fr": "C'est vous qui avez écrasé les têtes du dragon, qui l'avez donné en nourriture aux peuples d'Éthiopie.",
+     "page": 349,
+     "ligne_la": "14"
+    },
+    {
+     "n": 15,
+     "fr": "C'est vous qui avez fait jaillir des fontaines et des torrents, qui avez desséché les fleuves intarissables.",
+     "page": 349,
+     "ligne_la": "15",
+     "lecture": [
+      "p. 349 : qui avez desséché — « avez » à l'impression brisée (« av?z »), sûr par le contexte"
+     ]
+    },
+    {
+     "n": 16,
+     "fr": "A vous est le jour, et à vous est la nuit ; c'est vous qui avez créé l'aurore et le soleil.",
+     "page": 349,
+     "ligne_la": "16"
+    },
+    {
+     "n": 17,
+     "fr": "C'est vous qui avez établi toutes les limites de la terre, vous qui avez formé l'été et le printemps.",
+     "page": 349,
+     "ligne_la": "17"
+    },
+    {
+     "n": 18,
+     "fr": "Souvenez-vous-en : l'ennemi a outragé le Seigneur, et un peuple insensé a irrité votre nom.",
+     "page": 349,
+     "ligne_la": "18"
+    },
+    {
+     "n": 19,
+     "fr": "Ne livrez pas aux bêtes les âmes qui vous louent, et n'oubliez pas pour toujours les âmes de vos pauvres.",
+     "page": 349,
+     "ligne_la": "19"
+    },
+    {
+     "n": 20,
+     "fr": "Ayez égard à votre alliance, car les lieux sombres du pays sont remplis de repaires d'iniquité.",
+     "page": 349,
+     "ligne_la": "20"
+    },
+    {
+     "n": 21,
+     "fr": "Que l'humble ne s'en retourne pas couvert de confusion ; le pauvre et l'indigent loueront votre nom.",
+     "page": 349,
+     "ligne_la": "21"
+    },
+    {
+     "n": 22,
+     "fr": "Levez-vous, ô Dieu, jugez votre cause ; souvenez-vous de ces outrages qui vous viennent tout le jour de l'insensé.",
+     "page": 349,
+     "ligne_la": "22"
+    },
+    {
+     "n": 23,
+     "fr": "N'oubliez pas les clameurs de vos ennemis. L'orgueil de ceux qui vous haïssent monte toujours.",
+     "page": 349,
+     "ligne_la": "23"
+    }
+   ],
+   "lignes_la": [
+    "1",
+    "2",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "18",
+    "19",
+    "20",
+    "21",
+    "22",
+    "23"
+   ],
+   "pages": [
+    345,
+    347,
+    349
+   ]
+  },
+  {
+   "numero": 74,
+   "titre": "Psaume LXXIV",
+   "versets": [
+    {
+     "n": 2,
+     "fr": "Nous vous louerons, ô Dieu, nous vous louerons, et nous invoquerons votre nom ; nous raconterons vos merveilles.",
+     "page": 351,
+     "ligne_la": "2"
+    },
+    {
+     "n": 3,
+     "fr": "Au temps que j'aurai fixé, je ferai parfaite justice.",
+     "page": 351,
+     "ligne_la": "3"
+    },
+    {
+     "n": 4,
+     "fr": "La terre s'est dissoute, avec tous ceux qui l'habitent ; moi j'ai affermi ses colonnes.",
+     "page": 351,
+     "ligne_la": "4"
+    },
+    {
+     "n": 5,
+     "fr": "J'ai dit aux méchants : Ne commettez plus l'iniquité : et aux pécheurs : N'élevez plus un front superbe.",
+     "page": 351,
+     "ligne_la": "5"
+    },
+    {
+     "n": 6,
+     "fr": "Ne levez plus si haut la tête ; cessez de proférer des blasphèmes contre Dieu.",
+     "page": 351,
+     "ligne_la": "6"
+    },
+    {
+     "n": 7,
+     "fr": "Car ce n'est ni de l'orient, ni de l'occident, ni des montagnes désertes, que vous viendra le secours.",
+     "page": 351,
+     "ligne_la": "7"
+    },
+    {
+     "n": 8,
+     "fr": "Parce que c'est Dieu qui est juge, il humilie celui-ci, et il élève celui-là ;",
+     "page": 351,
+     "ligne_la": "8"
+    },
+    {
+     "n": 9,
+     "fr": "car il y a dans la main du Seigneur une coupe de vin pur, pleine d'aromates. Il en verse de côté et d'autre, et pourtant la lie n'en est pas épuisée ; tous les pécheurs de la terre en boiront.",
+     "page": 351,
+     "ligne_la": "9"
+    },
+    {
+     "n": 10,
+     "fr": "Pour moi, j'annoncerai ces choses à jamais ; je chanterai à la gloire du Dieu de Jacob.",
+     "page": 351,
+     "ligne_la": "10"
+    },
+    {
+     "n": 11,
+     "fr": "Et je briserai toutes les cornes des pécheurs, et les cornes du juste se redresseront.",
+     "page": 353,
+     "ligne_la": "11"
+    }
+   ],
+   "lignes_la": [
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11"
+   ],
+   "pages": [
+    351,
+    353
+   ]
+  },
+  {
+   "numero": 75,
+   "titre": "Psaume LXXV",
+   "versets": [
+    {
+     "n": 2,
+     "fr": "Dieu s'est fait connaître en Judée ; son nom est grand dans Israël.",
+     "page": 353,
+     "ligne_la": "2"
+    },
+    {
+     "n": 3,
+     "fr": "Il a fixé son séjour dans la ville de paix, et sa demeure dans Sion.",
+     "page": 353,
+     "ligne_la": "3"
+    },
+    {
+     "n": 4,
+     "fr": "C'est là qu'il a brisé toute la force des arcs, le bouclier, le glaive et la guerre.",
+     "page": 353,
+     "ligne_la": "4"
+    },
+    {
+     "n": 5,
+     "fr": "Vous projetez un merveilleux éclat du haut des montagnes éternelles ;",
+     "page": 353,
+     "ligne_la": "5"
+    },
+    {
+     "n": 6,
+     "fr": "tous les insensés de cœur ont été consternés. Ils ont dormi leur sommeil, cl tous ces hommes de richesses n'ont rien trouvé dans leurs mains.",
+     "page": 353,
+     "ligne_la": "6"
+    },
+    {
+     "n": 7,
+     "fr": "A votre menace, ô Dieu de Jacob, se sont endormis ceux qui étaient montés sur des chevaux.",
+     "page": 353,
+     "ligne_la": "7"
+    },
+    {
+     "n": 8,
+     "fr": "Vous êtes terrible, et qui pourra vous résister au moment de votre colère ?",
+     "page": 353,
+     "ligne_la": "8"
+    },
+    {
+     "n": 9,
+     "fr": "Du ciel vous avez fait entendre la sentence ; la terre a tremblé et s'est tue,",
+     "page": 353,
+     "ligne_la": "9"
+    },
+    {
+     "n": 10,
+     "fr": "lorsque Dieu s'est levé pour rendre justice, afin de sauver tous ceux qui sont doux sur la terre.",
+     "page": 353,
+     "ligne_la": "10"
+    },
+    {
+     "n": 11,
+     "fr": "Aussi la pensée de l'homme vous louera, et le souvenir qui lui restera vous fera fête.",
+     "page": 353,
+     "ligne_la": "11"
+    },
+    {
+     "n": 12,
+     "fr": "Faites des vœux, et acquittez-les au Seigneur votre Dieu, vous tous qui des alentours apportez des présents",
+     "page": 355,
+     "ligne_la": "12"
+    },
+    {
+     "n": 13,
+     "fr": "à ce Dieu terrible, qui ôte la vie aux princes, qui est terrible aux rois de la terre.",
+     "page": 355,
+     "ligne_la": "13"
+    }
+   ],
+   "lignes_la": [
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13"
+   ],
+   "pages": [
+    353,
+    355
    ]
   },
   {
@@ -8237,6 +9379,145 @@
    "pages": [
     519,
     521
+   ]
+  },
+  {
+   "numero": 89,
+   "titre": "Psaume LXXXIX",
+   "versets": [
+    {
+     "n": 1,
+     "fr": "Seigneur, vous avez été pour nous un refuge de génération en génération.",
+     "page": 321,
+     "ligne_la": "1"
+    },
+    {
+     "n": 2,
+     "fr": "Avant que les montagnes eussent été faites, ou que la terre et le monde eussent été formés, vous êtes Dieu d'éternité en éternité.",
+     "page": 321,
+     "ligne_la": "2"
+    },
+    {
+     "n": 3,
+     "fr": "Ne réduisez pas l'homme à l'abaissement, vous qui avez dit : Revenez, enfants des hommes.",
+     "page": 321,
+     "ligne_la": "3"
+    },
+    {
+     "n": 4,
+     "fr": "Car mille ans sont à vos yeux comme le jour d'hier qui n'est plus, et comme une veille de la nuit ;",
+     "page": 321,
+     "ligne_la": "4"
+    },
+    {
+     "n": 5,
+     "fr": "on les compte pour rien : tel est le cas que l'on fait de leurs années.",
+     "page": 321,
+     "ligne_la": "5"
+    },
+    {
+     "n": 6,
+     "fr": "Comme l'herbe, il passe en un matin : le matin elle fleurit, et elle passe ; le soir elle tombe, se durcit et se dessèche.",
+     "page": 321,
+     "ligne_la": "6"
+    },
+    {
+     "n": 7,
+     "fr": "Car nous sommes consumés par votre colère, et nous avons été troublés par votre fureur.",
+     "page": 321,
+     "ligne_la": "7"
+    },
+    {
+     "n": 8,
+     "fr": "Vous avez mis nos iniquités en votre présence, et notre vie à la lumière de votre visage.",
+     "page": 321,
+     "ligne_la": "8"
+    },
+    {
+     "n": 9,
+     "fr": "C'est pourquoi tous nos jours se sont evanouis, et nous avons été consumés par votre colère. Nos années se passent en de vains soucis, comme pour l'araignée.",
+     "page": 323,
+     "ligne_la": "9",
+     "lecture": [
+      "p. 323 : se sont evanouis — « evanouis » sans accent, tel qu'imprimé"
+     ]
+    },
+    {
+     "n": 10,
+     "fr": "Les jours de nos années sont en tout de soixante-dix ans ; pour les plus forts, de quatre-vingts ans. Le surplus n'est que peine et que douleur ; car alors survient la faiblesse, et nous sommes affligés.",
+     "page": 323,
+     "ligne_la": "10"
+    },
+    {
+     "n": 11,
+     "fr": "Qui connaît la puissance de votre colère ? combien votre colère est redoutable,",
+     "page": 323,
+     "ligne_la": "11"
+    },
+    {
+     "n": 12,
+     "fr": "qui le comprend ? Apprenez-nous à reconnaître votre droite, et instruisez notre cœur dans la sagesse.",
+     "page": 323,
+     "ligne_la": "12",
+     "lecture": [
+      "p. 323 : qui le comprend — Fillion imprime le numéro 12 au milieu de la ligne : découpage de l'imprimé gardé"
+     ]
+    },
+    {
+     "n": 13,
+     "fr": "Revenez, Seigneur ; jusques à quand nous rejetterez-vous ? Laissez-vous fléchir en faveur de vos serviteurs.",
+     "page": 323,
+     "ligne_la": "13"
+    },
+    {
+     "n": 14,
+     "fr": "Nous avons été comblés, dès le matin, de votre miséricorde ; nous avons tressailli d'allégresse et de bonheur tous les jours de notre vie.",
+     "page": 323,
+     "ligne_la": "14"
+    },
+    {
+     "n": 15,
+     "fr": "Nous nous sommes réjouis à proportion des jours où vous nous avez humiliés, et des années où nous avons vu le malheur.",
+     "page": 323,
+     "ligne_la": "15"
+    },
+    {
+     "n": 16,
+     "fr": "Jetez un regard sur vos serviteurs et sur vos œuvres, et guidez leurs enfants.",
+     "page": 323,
+     "ligne_la": "16"
+    },
+    {
+     "n": 17,
+     "fr": "Que la lumière du Seigneur notre Dieu brille sur nous, et dirigez d'en haut les œuvres de nos mains ; oui, dirigez l'œuvre de nos mains.",
+     "page": 323,
+     "ligne_la": "17"
+    }
+   ],
+   "lignes_la": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "9",
+    "10",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17"
+   ],
+   "pages": [
+    321,
+    323
    ]
   },
   {
@@ -8683,6 +9964,84 @@
    "pages": [
     247,
     249
+   ]
+  },
+  {
+   "numero": 97,
+   "titre": "Psaume XCVII",
+   "versets": [
+    {
+     "n": 1,
+     "fr": "Chantez au Seigneur un cantique nouveau, car il a opéré des merveilles. Sa droite l'a fait triompher, ainsi que son saint bras.",
+     "page": 319,
+     "ligne_la": "1"
+    },
+    {
+     "n": 2,
+     "fr": "Le Seigneur a fait connaître son salut ; il a révélé sa justice aux yeux des nations.",
+     "page": 319,
+     "ligne_la": "2"
+    },
+    {
+     "n": 3,
+     "fr": "Il s'est souvenu de sa miséricorde, et de sa fidélité envers la maison d'Israël. Tous les confins de la terre ont vu le salut de notre Dieu.",
+     "page": 319,
+     "ligne_la": "3"
+    },
+    {
+     "n": 4,
+     "fr": "Acclamez Dieu, terre entière ; chantez, et tressaillez de joie, et jouez des instruments.",
+     "page": 319,
+     "ligne_la": "4"
+    },
+    {
+     "n": 5,
+     "fr": "Jouez sur la harpe au Seigneur ; sur la harpe, et en chantant des hymnes ;",
+     "page": 319,
+     "ligne_la": "5"
+    },
+    {
+     "n": 6,
+     "fr": "avec la trompette de métal, et avec la trompette de corne. Poussez des cris de joie en présence du Seigneur votre roi.",
+     "page": 319,
+     "ligne_la": "6"
+    },
+    {
+     "n": 7,
+     "fr": "Que la mer se soulève avec ce qu'elle renferme ; le globe de la terre, et ceux qui l'habitent.",
+     "page": 319,
+     "ligne_la": "6"
+    },
+    {
+     "n": 8,
+     "fr": "Les fleuves battront des mains ; en même temps les montagnes tressailliront",
+     "page": 319,
+     "ligne_la": "8"
+    },
+    {
+     "n": 9,
+     "fr": "à la présence du Seigneur, parce qu'il vient juger la terre. Il jugera toute la terre avec justice, et les peuples avec équité.",
+     "page": 319,
+     "ligne_la": "9",
+     "lecture": [
+      "p. 319 : à la présence du Seigneur — Fillion imprime le numéro 9 au milieu de la ligne (« a conspectu Domini ») : découpage de l'imprimé gardé"
+     ]
+    }
+   ],
+   "lignes_la": [
+    "1",
+    "1",
+    "2",
+    "3",
+    "3",
+    "4",
+    "5",
+    "6",
+    "8",
+    "9"
+   ],
+   "pages": [
+    319
    ]
   },
   {
@@ -11964,6 +13323,46 @@
    ]
   },
   {
+   "numero": 132,
+   "titre": "Psaume CXXXII",
+   "versets": [
+    {
+     "n": 1,
+     "fr": "Ah ! qu'il est bon et agréable pour des frères d'habiter ensemble !",
+     "page": 355,
+     "ligne_la": "1"
+    },
+    {
+     "n": 2,
+     "fr": "C'est comme le parfum répandu sur la tête, qui descend sur la barbe, la barbe d'Aaron ; qui descend sur le bord de son vêtement.",
+     "page": 355,
+     "ligne_la": "2a"
+    },
+    {
+     "n": 3,
+     "fr": "C'est comme la rosée de l'Hermon, qui descend sur la montagne de Sion ;",
+     "page": 355,
+     "ligne_la": "2b"
+    },
+    {
+     "n": 4,
+     "fr": "Car c'est là que le Seigneur envoie la bénédiction, et la vie à tout jamais.",
+     "page": 355,
+     "ligne_la": "3b"
+    }
+   ],
+   "note": "Fillion numérote ce psaume en 4 versets (v. 3 « C'est comme la rosée de l'Hermon », v. 4 « Car c'est là que le Seigneur envoie la bénédiction ») ; la Vulgate et Divinum Officium en comptent 3 (3a « sicut ros Hermon », 3b « Quoniam illic »). Numéros de Fillion ; le v. 3 commence au milieu de la ligne latine « 2b ».",
+   "lignes_la": [
+    "1",
+    "2a",
+    "2b",
+    "3b"
+   ],
+   "pages": [
+    355
+   ]
+  },
+  {
    "numero": 133,
    "titre": "Psaume CXXXIII",
    "versets": [
@@ -12160,6 +13559,352 @@
    ]
   },
   {
+   "numero": 135,
+   "titre": "Psaume CXXXV",
+   "versets": [
+    {
+     "n": 1,
+     "fr": "Célébrez le Seigneur, car il est bon, car sa miséricorde est éternelle.",
+     "page": 355,
+     "ligne_la": "1"
+    },
+    {
+     "n": 2,
+     "fr": "Célébrez le Dieu des dieux, car sa miséricorde est éternelle.",
+     "page": 355,
+     "ligne_la": "2"
+    },
+    {
+     "n": 3,
+     "fr": "Célébrez le Seigneur des seigneurs, car sa miséricorde est éternelle.",
+     "page": 355,
+     "ligne_la": "3"
+    },
+    {
+     "n": 4,
+     "fr": "C'est lui qui fait seul de grands prodiges, car sa miséricorde est éternelle.",
+     "page": 357,
+     "ligne_la": "4"
+    },
+    {
+     "n": 5,
+     "fr": "Il a fait les cieux avec intelligence, car sa miséricorde est éternelle.",
+     "page": 357,
+     "ligne_la": "5"
+    },
+    {
+     "n": 6,
+     "fr": "Il a affermi la terre sur les eaux, car sa miséricorde est éternelle.",
+     "page": 357,
+     "ligne_la": "6"
+    },
+    {
+     "n": 7,
+     "fr": "Il a fait les grands luminaires, car sa miséricorde est éternelle :",
+     "page": 357,
+     "ligne_la": "7"
+    },
+    {
+     "n": 8,
+     "fr": "le soleil pour présider au jour, car sa miséricorde est éternelle ;",
+     "page": 357,
+     "ligne_la": "8"
+    },
+    {
+     "n": 9,
+     "fr": "la lune et les étoiles, pour présider à la nuit, car sa miséricorde est éternelle.",
+     "page": 357,
+     "ligne_la": "9"
+    },
+    {
+     "n": 10,
+     "fr": "Il a frappé l'Égypte avec ses premiers-nés, car sa miséricorde est éternelle.",
+     "page": 357,
+     "ligne_la": "10"
+    },
+    {
+     "n": 11,
+     "fr": "Il a fait sortir Israël du milieu d'eux, car sa miséricorde est éternelle ;",
+     "page": 357,
+     "ligne_la": "11"
+    },
+    {
+     "n": 12,
+     "fr": "avec une main puissante et un bras élevé, car sa miséricorde est éternelle.",
+     "page": 357,
+     "ligne_la": "12"
+    },
+    {
+     "n": 13,
+     "fr": "Il a divisé en deux la mer Rouge, car sa miséricorde est éternelle.",
+     "page": 357,
+     "ligne_la": "13"
+    },
+    {
+     "n": 14,
+     "fr": "Et il a fait passer Israël par le milieu, car sa miséricorde est éternelle.",
+     "page": 357,
+     "ligne_la": "14"
+    },
+    {
+     "n": 15,
+     "fr": "Il a renversé le Pharaon et son armée dans la mer Rouge, car sa miséricorde est éternelle.",
+     "page": 357,
+     "ligne_la": "15"
+    },
+    {
+     "n": 16,
+     "fr": "Il a conduit son peuple à travers le désert, car sa miséricorde est éternelle.",
+     "page": 357,
+     "ligne_la": "16"
+    },
+    {
+     "n": 17,
+     "fr": "Il a frappé les grands rois, car sa miséricorde est éternelle.",
+     "page": 357,
+     "ligne_la": "17"
+    },
+    {
+     "n": 18,
+     "fr": "Il a fait mourir les rois puissants, car sa miséricorde est éternelle :",
+     "page": 357,
+     "ligne_la": "18"
+    },
+    {
+     "n": 19,
+     "fr": "Séhon, roi des Amorrhéens, car sa miséricorde est éternelle ;",
+     "page": 357,
+     "ligne_la": "19"
+    },
+    {
+     "n": 20,
+     "fr": "et Og, roi de Basan, car sa miséricorde est éternelle.",
+     "page": 359,
+     "ligne_la": "20"
+    },
+    {
+     "n": 21,
+     "fr": "Et il a donné leur terre en héritage, car sa miséricorde est éternelle,",
+     "page": 359,
+     "ligne_la": "21"
+    },
+    {
+     "n": 22,
+     "fr": "en héritage à Israël son serviteur, car sa miséricorde est éternelle.",
+     "page": 359,
+     "ligne_la": "22"
+    },
+    {
+     "n": 23,
+     "fr": "Il s'est souvenu de nous dans notre humiliation. car sa miséricorde est éternelle ;",
+     "page": 359,
+     "ligne_la": "23",
+     "lecture": [
+      "p. 359 : dans notre humiliation — point imprimé après « humiliation », suivi de « car » en minuscule ; gardé tel qu'imprimé"
+     ]
+    },
+    {
+     "n": 24,
+     "fr": "et il nous a délivrés de nos ennemis, car sa miséricorde est éternelle.",
+     "page": 359,
+     "ligne_la": "24"
+    },
+    {
+     "n": 25,
+     "fr": "Il donne la nourriture à toute chair, car sa miséricorde est éternelle.",
+     "page": 359,
+     "ligne_la": "25"
+    },
+    {
+     "n": 26,
+     "fr": "Célébrez le Dieu du ciel, car sa miséricorde est éternelle. Célébrez le Seigneur des seigneurs, car sa miséricorde est éternelle.",
+     "page": 359,
+     "ligne_la": "26a"
+    }
+   ],
+   "lignes_la": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "18",
+    "19",
+    "20",
+    "21",
+    "22",
+    "23",
+    "24",
+    "25",
+    "26a",
+    "26b"
+   ],
+   "pages": [
+    355,
+    357,
+    359
+   ]
+  },
+  {
+   "numero": 136,
+   "titre": "Psaume CXXXVI",
+   "versets": [
+    {
+     "n": 1,
+     "fr": "Au bord des fleuves de Babylone nous nous sommes assis, et nous avons pleuré, en nous souvenant de Sion.",
+     "page": 359,
+     "ligne_la": "1"
+    },
+    {
+     "n": 2,
+     "fr": "Aux saules qui étaient au milieu d'elle nous avons suspendu nos instruments de musique.",
+     "page": 359,
+     "ligne_la": "2"
+    },
+    {
+     "n": 3,
+     "fr": "Car ceux qui nous avaient emmenés captifs nous demandaient là de chanter des cantiques ; et ceux qui nous avaient enlevés disaient : Chantez-nous quelqu'un des hymnes de Sion.",
+     "page": 359,
+     "ligne_la": "3a"
+    },
+    {
+     "n": 4,
+     "fr": "Comment chanterons-nous le cantique du Seigneur dans une terre étrangère ?",
+     "page": 359,
+     "ligne_la": "4"
+    },
+    {
+     "n": 5,
+     "fr": "Si je t'oublie, ô Jérusalem, que ma main droite soit mise en oubli.",
+     "page": 361,
+     "ligne_la": "5"
+    },
+    {
+     "n": 6,
+     "fr": "Que ma langue s'attache à mon palais, si je ne me souviens point de toi, si je ne place pas Jérusalem au premier rang de mes joies.",
+     "page": 361,
+     "ligne_la": "6a"
+    },
+    {
+     "n": 7,
+     "fr": "Souvenez-vous, Seigneur, des enfants d'Édom, qui, au jour de la ruine de Jérusalem, disaient : Exterminez, exterminez jusqu'à ses fondements.",
+     "page": 361,
+     "ligne_la": "7a"
+    },
+    {
+     "n": 8,
+     "fr": "Malheur à toi, fille de Babylone ! Heureux celui qui te rendra le mal que tu nous as fait.",
+     "page": 361,
+     "ligne_la": "8"
+    },
+    {
+     "n": 9,
+     "fr": "Heureux celui qui saisira et qui brisera tes petits enfants contre la pierre.",
+     "page": 361,
+     "ligne_la": "9"
+    }
+   ],
+   "lignes_la": [
+    "1",
+    "2",
+    "3a",
+    "3b",
+    "4",
+    "5",
+    "6a",
+    "6b",
+    "7a",
+    "7b",
+    "8",
+    "9"
+   ],
+   "pages": [
+    359,
+    361
+   ]
+  },
+  {
+   "numero": 137,
+   "titre": "Psaume CXXXVII",
+   "versets": [
+    {
+     "n": 1,
+     "fr": "Je vous célébrerai, Seigneur, de tout mon cœur, parce que vous avez écouté les paroles de ma bouche. Je vous chanterai des hymnes en présence des anges ;",
+     "page": 361,
+     "ligne_la": "1a"
+    },
+    {
+     "n": 2,
+     "fr": "j'adorerai dans votre saint temple, et je célébrerai votre nom, à cause de votre miséricorde et de votre vérité, car vous avez glorifié votre saint nom au-dessus de tout.",
+     "page": 361,
+     "ligne_la": "1b"
+    },
+    {
+     "n": 3,
+     "fr": "En quelque jour que je vous invoque, exaucez-moi ; vous augmenterez la force de mon âme.",
+     "page": 363,
+     "ligne_la": "3"
+    },
+    {
+     "n": 4,
+     "fr": "Que tous les rois de la terre vous célèbrent, Seigneur, parce qu'ils ont entendu toutes les paroles de votre bouche.",
+     "page": 363,
+     "ligne_la": "4"
+    },
+    {
+     "n": 5,
+     "fr": "Et qu'ils chantent les voies du Seigneur, car la gloire du Seigneur est grande.",
+     "page": 363,
+     "ligne_la": "5"
+    },
+    {
+     "n": 6,
+     "fr": "Car le Seigneur est très élevé, et il regarde les choses basses, et de loin il connaît les choses hautes.",
+     "page": 363,
+     "ligne_la": "6"
+    },
+    {
+     "n": 7,
+     "fr": "Si je marche au milieu de la tribulation, vous me rendrez la vie ; vous avez étendu votre main contre la fureur de mes ennemis, et votre droite m'a sauvé.",
+     "page": 363,
+     "ligne_la": "7"
+    },
+    {
+     "n": 8,
+     "fr": "Le Seigneur me vengera. Seigneur, votre miséricorde est éternelle ; ne méprisez pas les œuvres de vos mains.",
+     "page": 363,
+     "ligne_la": "8"
+    }
+   ],
+   "lignes_la": [
+    "1a",
+    "1b",
+    "2b",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8"
+   ],
+   "pages": [
+    361,
+    363
+   ]
+  },
+  {
    "numero": 145,
    "titre": "Psaume CXLV",
    "versets": [
@@ -12231,6 +13976,95 @@
    ],
    "pages": [
     255
+   ]
+  },
+  {
+   "numero": 146,
+   "titre": "Psaume CXLVI",
+   "versets": [
+    {
+     "n": 1,
+     "fr": "Louez le Seigneur, car il est bon de le chanter ; que la louange soit agréable à notre Dieu et digne de lui.",
+     "page": 329,
+     "ligne_la": "1"
+    },
+    {
+     "n": 2,
+     "fr": "C'est le Seigneur qui bâtit Jérusalem, et qui doit rassembler les dispersés d'Israël.",
+     "page": 329,
+     "ligne_la": "2"
+    },
+    {
+     "n": 3,
+     "fr": "Il guérit ceux dont le cœur est brisé, et il bande leurs plaies.",
+     "page": 329,
+     "ligne_la": "3"
+    },
+    {
+     "n": 4,
+     "fr": "Il compte la multitude des étoiles, et il leur donne des noms à toutes.",
+     "page": 329,
+     "ligne_la": "4"
+    },
+    {
+     "n": 5,
+     "fr": "Notre Seigneur est grand, et sa puissance est grande, et sa sagesse n'a point de bornes.",
+     "page": 329,
+     "ligne_la": "5"
+    },
+    {
+     "n": 6,
+     "fr": "Le Seigneur protège ceux qui sont doux ; mais il abaisse les pécheurs jusqu'à terre.",
+     "page": 329,
+     "ligne_la": "6"
+    },
+    {
+     "n": 7,
+     "fr": "Chantez au Seigneur avec action de grâces ; célébrez notre Dieu sur la harpe.",
+     "page": 329,
+     "ligne_la": "7"
+    },
+    {
+     "n": 8,
+     "fr": "C'est lui qui couvre le ciel de nuages, et qui prépare la pluie pour la terre ; qui fait croître l'herbe sur les montagnes, et les plantes pour l'usage des hommes ;",
+     "page": 329,
+     "ligne_la": "8a"
+    },
+    {
+     "n": 9,
+     "fr": "qui donne leur nourriture aux bêtes, et aux petits des corbeaux qui crient vers lui.",
+     "page": 329,
+     "ligne_la": "9"
+    },
+    {
+     "n": 10,
+     "fr": "Ce n'est pas dans la force du cheval qu'il se complaît, et il ne met pas son plaisir dans les jambes de l'homme.",
+     "page": 329,
+     "ligne_la": "10"
+    },
+    {
+     "n": 11,
+     "fr": "Le Seigneur met son plaisir en ceux qui le craignent, et en ceux qui espèrent en sa miséricorde.",
+     "page": 329,
+     "ligne_la": "11"
+    }
+   ],
+   "lignes_la": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8a",
+    "8b",
+    "9",
+    "10",
+    "11"
+   ],
+   "pages": [
+    329
    ]
   },
   {
@@ -13110,6 +14944,149 @@
    "pages": [
     257,
     259
+   ]
+  },
+  {
+   "do": "Psalm214",
+   "titre": "Cantique de Jérémie",
+   "reference": "Jer. xxxi, 10-14",
+   "versets": [
+    {
+     "n": 10,
+     "fr": "Nations, écoutez la parole du Seigneur, et annoncez-la aux îles lointaines. Et dites : Celui qui a dispersé Israël le rassemblera, et il le gardera comme un pasteur garde son troupeau.",
+     "page": 327
+    },
+    {
+     "n": 11,
+     "fr": "Car le Seigneur a racheté Jacob, et il Ta délivré de la main d'un plus fort que lui.",
+     "page": 327
+    },
+    {
+     "n": 12,
+     "fr": "Ils viendront, et ils loueront sur la montagne de Sion ; et ils accourront vers les biens du Seigneur : vers le blé, le vin, l'huile, et le fruit des brebis et des bœufs ; leur âme sera comme un jardin arrosé, et ils ne souffriront plus de la faim.",
+     "page": 327
+    },
+    {
+     "n": 13,
+     "fr": "Alors la vierge se réjouira dans les chœurs de danse, les jeunes gens et les vieillards se réjouiront ensemble ; et je changerai leur deuil en joie ; je les consolerai, et après leur douleur je les comblerai de joie.",
+     "page": 327
+    },
+    {
+     "n": 14,
+     "fr": "J'enivrerai et engraisserai l'âme des prêtres, et mon peuple sera rempli de mes biens.",
+     "page": 327
+    }
+   ],
+   "note": "Divinum Officium chante ce cantique en 9 lignes numérotées 31:10 à 31:18, coupées autrement que les 5 versets de Fillion : numéros de Fillion, sans alignement ligne à ligne.",
+   "pages": [
+    327
+   ]
+  },
+  {
+   "do": "Psalm224",
+   "titre": "Cantique de Moïse",
+   "reference": "Exod. xv, 1-19",
+   "versets": [
+    {
+     "n": 1,
+     "fr": "Chantons au Seigneur, car il a fait éclater sa gloire ; il a précipité dans la mer le cheval et le cavalier.",
+     "page": 331
+    },
+    {
+     "n": 2,
+     "fr": "Le Seigneur est ma force et le sujet de mes louanges, c'est lui qui m'a sauvé : il est mon Dieu, et je publierai sa gloire ; il est le Dieu de mon père et je l'exalterai.",
+     "page": 331
+    },
+    {
+     "n": 3,
+     "fr": "Le Seigneur a paru comme un guerrier ; le Tout-Puissant, voilà son nom.",
+     "page": 331
+    },
+    {
+     "n": 4,
+     "fr": "Il a fait tomber dans la mer les chars du Pharaon et son armée. Les plus grands d'entre les princes ont été submergés dans la mer Rouge.",
+     "page": 331
+    },
+    {
+     "n": 5,
+     "fr": "Ils ont été ensevelis dans les abîmes, ils sont tombés comme une pierre au fond des eaux.",
+     "page": 331
+    },
+    {
+     "n": 6,
+     "fr": "Votre droite, Seigneur, a signalé sa force ; votre droite, Seigneur, a frappé l'ennemi.",
+     "page": 331
+    },
+    {
+     "n": 7,
+     "fr": "Et par la grandeur de votre gloire vous avez renversé du chaume. vos adversaires. Vous avez lancé votre colère, qui les a dévorés comme",
+     "page": 331
+    },
+    {
+     "n": 8,
+     "fr": "Et au souffle de votre fureur les eaux se sont amoncelées, l'onde mobile s'est dressée, les flots se sont accumulés au milieu de la mer.",
+     "page": 331
+    },
+    {
+     "n": 9,
+     "fr": "L'ennemi avait dit : Je les poursuivrai et je les atteindrai ; je partagerai leurs dépouilles, et je me satisferai pleinement ; je tirerai mon épée, et ma main les fera mourir.",
+     "page": 331
+    },
+    {
+     "n": 10,
+     "fr": "Votre haleine a soufflé, et la mer les a enveloppés ; ils ont été submergés sous la violence des eaux comme du plomb.",
+     "page": 331
+    },
+    {
+     "n": 11,
+     "fr": "Qui d'entre les forts est semblable à vous, Seigneur ? qui vous est semblable, à vous qui êtes magnifique en sainteté, terrible et digne de louange, et opérant des prodiges ?",
+     "page": 331
+    },
+    {
+     "n": 12,
+     "fr": "Vous avez étendu votre main, et la terre les a dévorés.",
+     "page": 333
+    },
+    {
+     "n": 13,
+     "fr": "Vous vous êtes fait, par votre miséricorde, le guide du peuple que vous avez racheté, et vous l'avez porté par votre puissance jusqu'à votre demeure sainte.",
+     "page": 333
+    },
+    {
+     "n": 14,
+     "fr": "Les peuples se sont élevés et ils se sont irrités ; ceux qui habitaient la Palestine ont été saisis de vives douleurs.",
+     "page": 333
+    },
+    {
+     "n": 15,
+     "fr": "Alors les princes d'Édom ont été troublés, l'épouvante a surpris les forts de Moab, et tous les habitants de Chanaan ont séché de crainte.",
+     "page": 333
+    },
+    {
+     "n": 16,
+     "fr": "Que l'épouvante et l'effroi tombe sur eux, à cause de la puissance de votre bras ; qu'ils deviennent immobiles comme une pierre, jusqu'à ce que votre peuple ait passé, Seigneur, jusqu'à ce qu'ait passé ce peuple que vous vous êtes acquis.",
+     "page": 333
+    },
+    {
+     "n": 17,
+     "fr": "Vous les introduirez et vous les établirez sur la montagne de votre héritage, sur cette demeure très ferme que vous vous êtes préparée vous-même, Seigneur, dans votre sanctuaire affermi par vos mains.",
+     "page": 333
+    },
+    {
+     "n": 18,
+     "fr": "Le Seigneur régnera dans l'éternité et au delà des siècles.",
+     "page": 333
+    },
+    {
+     "n": 19,
+     "fr": "Car le Pharaon est entré à cheval dans la mer avec ses chars et ses cavaliers ; et le Seigneur a ramené sur eux les eaux de la mer ; mais les enfants d'Israël ont passé à sec au milieu d'elle.",
+     "page": 333
+    }
+   ],
+   "note": "Divinum Officium chante ce cantique en 22 lignes numérotées 15:1 à 15:22, coupées autrement que les 19 versets de Fillion : numéros de Fillion, sans alignement ligne à ligne.",
+   "pages": [
+    331,
+    333
    ]
   }
  ]
