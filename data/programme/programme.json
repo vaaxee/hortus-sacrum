@@ -1801,26 +1801,26 @@
     {
       "id": "prog:neuvaine-saint-francois-xavier",
       "titre": "Neuvaine à saint François-Xavier",
-      "motif": {"fins": ["demande"], "objets": ["saints", "trinite"], "note": "la veille (vendredi après les Cendres), la considération préparatoire ; puis du premier samedi du Carême au deuxième dimanche, comme à Québec (Neuvaine, Québec, 1880) : la considération du jour, les prières pour tous les jours et les litanies du saint ; la « neuvaine de la grâce »"},
-      "revision": 2,
-      "quand": {"code_tempora": ["Quadp3-5", "Quadp3-6", "Quad1-0", "Quad1-1", "Quad1-2", "Quad1-3", "Quad1-4", "Quad1-5", "Quad1-6", "Quad2-0"]},
-      "source": "Demande de l'utilisateur du 26 nov. (suite) : Neuvaine en l'honneur de saint François-Xavier, Québec, 1880 (approbation de l'archevêque de Québec, 15 déc. 1879, vue sur l'image) : considérations p. 30-98, prières p. 41-47, litanies p. 48-59, relues sur l'image ; jours de l'édition (Basilique de Québec), veille comprise (« Lisez dès ce jour, et méditez la considération préparatoire », p. 25)",
+      "motif": {"fins": ["demande"], "objets": ["saints", "trinite"], "note": "la veille (3 mars), la considération préparatoire ; puis du 4 au 12 mars, dates de Beringer (« neuvaine de la grâce ») : la considération du jour, les prières pour tous les jours et les litanies du saint (Neuvaine, Québec, 1880)"},
+      "revision": 3,
+      "quand": {"dates": ["03-03", "03-04", "03-05", "03-06", "03-07", "03-08", "03-09", "03-10", "03-11", "03-12"]},
+      "source": "Demande de l'utilisateur du 26 nov. (suite) : Neuvaine en l'honneur de saint François-Xavier, Québec, 1880 (approbation de l'archevêque de Québec, 15 déc. 1879, vue sur l'image) : considérations p. 30-98, prières p. 41-47, litanies p. 48-59, relues sur l'image ; décision de l'utilisateur du 27 nov. : dates de Beringer, du 4 au 12 mars, la veille le 3 mars (« Lisez dès ce jour, et méditez la considération préparatoire », p. 25), au lieu des jours de la Basilique de Québec (premier samedi du Carême au 2e dimanche)",
       "page": {
         "moment": "journee",
         "ordre": 76,
         "sections": [
-          {"texte": "xavier1880:considerations-neuvaine", "extrait": {"section": "## Considération pour la veille de la neuvaine. Motifs de confiance en saint François-Xavier."}, "quand": {"code_tempora": ["Quadp3-5"]}},
-          {"texte": "xavier1880:considerations-neuvaine", "extrait": {"section": "## Premier jour. Sa conversion et son parfait détachement."}, "quand": {"code_tempora": ["Quadp3-6"]}},
-          {"texte": "xavier1880:considerations-neuvaine", "extrait": {"section": "## Second jour. Sa mortification et son amour pour les souffrances.", "retirer": ["*Les prières pour tous les jours de la Neuvaine, page 41.*"]}, "quand": {"code_tempora": ["Quad1-0"]}},
-          {"texte": "xavier1880:considerations-neuvaine", "extrait": {"section": "## Troisième jour. Son amour pour Dieu et son zèle pour sa gloire."}, "quand": {"code_tempora": ["Quad1-1"]}},
-          {"texte": "xavier1880:considerations-neuvaine", "extrait": {"section": "## Quatrième jour. Sa charité envers le prochain, son zèle pour les âmes."}, "quand": {"code_tempora": ["Quad1-2"]}},
-          {"texte": "xavier1880:considerations-neuvaine", "extrait": {"section": "## Cinquième jour. Sa confiance en Dieu."}, "quand": {"code_tempora": ["Quad1-3"]}},
-          {"texte": "xavier1880:considerations-neuvaine", "extrait": {"section": "## Sixième jour. Sa douceur."}, "quand": {"code_tempora": ["Quad1-4"]}},
-          {"texte": "xavier1880:considerations-neuvaine", "extrait": {"section": "## Septième jour. Son humilité."}, "quand": {"code_tempora": ["Quad1-5"]}},
-          {"texte": "xavier1880:considerations-neuvaine", "extrait": {"section": "## Huitième jour. Sa piété."}, "quand": {"code_tempora": ["Quad1-6"]}},
-          {"texte": "xavier1880:considerations-neuvaine", "extrait": {"section": "## Dernier jour. Son abandon à la Providence. Sa sainte mort."}, "quand": {"code_tempora": ["Quad2-0"]}},
-          {"texte": "xavier1880:prieres-neuvaine", "quand": {"code_tempora": ["Quadp3-6", "Quad1-0", "Quad1-1", "Quad1-2", "Quad1-3", "Quad1-4", "Quad1-5", "Quad1-6", "Quad2-0"]}},
-          {"texte": "xavier1880:litanies-saint-francois-xavier", "quand": {"code_tempora": ["Quadp3-6", "Quad1-0", "Quad1-1", "Quad1-2", "Quad1-3", "Quad1-4", "Quad1-5", "Quad1-6", "Quad2-0"]}}
+          {"texte": "xavier1880:considerations-neuvaine", "extrait": {"section": "## Considération pour la veille de la neuvaine. Motifs de confiance en saint François-Xavier."}, "quand": {"dates": ["03-03"]}},
+          {"texte": "xavier1880:considerations-neuvaine", "extrait": {"section": "## Premier jour. Sa conversion et son parfait détachement."}, "quand": {"dates": ["03-04"]}},
+          {"texte": "xavier1880:considerations-neuvaine", "extrait": {"section": "## Second jour. Sa mortification et son amour pour les souffrances.", "retirer": ["*Les prières pour tous les jours de la Neuvaine, page 41.*"]}, "quand": {"dates": ["03-05"]}},
+          {"texte": "xavier1880:considerations-neuvaine", "extrait": {"section": "## Troisième jour. Son amour pour Dieu et son zèle pour sa gloire."}, "quand": {"dates": ["03-06"]}},
+          {"texte": "xavier1880:considerations-neuvaine", "extrait": {"section": "## Quatrième jour. Sa charité envers le prochain, son zèle pour les âmes."}, "quand": {"dates": ["03-07"]}},
+          {"texte": "xavier1880:considerations-neuvaine", "extrait": {"section": "## Cinquième jour. Sa confiance en Dieu."}, "quand": {"dates": ["03-08"]}},
+          {"texte": "xavier1880:considerations-neuvaine", "extrait": {"section": "## Sixième jour. Sa douceur."}, "quand": {"dates": ["03-09"]}},
+          {"texte": "xavier1880:considerations-neuvaine", "extrait": {"section": "## Septième jour. Son humilité."}, "quand": {"dates": ["03-10"]}},
+          {"texte": "xavier1880:considerations-neuvaine", "extrait": {"section": "## Huitième jour. Sa piété."}, "quand": {"dates": ["03-11"]}},
+          {"texte": "xavier1880:considerations-neuvaine", "extrait": {"section": "## Dernier jour. Son abandon à la Providence. Sa sainte mort."}, "quand": {"dates": ["03-12"]}},
+          {"texte": "xavier1880:prieres-neuvaine", "quand": {"dates": ["03-04", "03-05", "03-06", "03-07", "03-08", "03-09", "03-10", "03-11", "03-12"]}},
+          {"texte": "xavier1880:litanies-saint-francois-xavier", "quand": {"dates": ["03-04", "03-05", "03-06", "03-07", "03-08", "03-09", "03-10", "03-11", "03-12"]}}
         ]
       }
     },

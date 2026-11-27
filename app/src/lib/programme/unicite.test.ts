@@ -142,7 +142,7 @@ describe(`unicité sur ${CALENDRIER.length} jours (${CALENDRIER[0].date} → ${C
 		const LITANIES = /litanies/;
 		const jours = JOURS.filter((j) => j.textes.has('xavier1880:litanies-saint-francois-xavier'));
 		expect(jours.map((j) => j.date)).toEqual([
-			'2027-02-13', '2027-02-14', '2027-02-15', '2027-02-16', '2027-02-17', '2027-02-18', '2027-02-19', '2027-02-20', '2027-02-21'
+			'2027-03-04', '2027-03-05', '2027-03-06', '2027-03-07', '2027-03-08', '2027-03-09', '2027-03-10', '2027-03-11', '2027-03-12'
 		]);
 		for (const j of jours) {
 			const autres = [...j.textes].filter(([t, o]) => LITANIES.test(t) && t !== 'xavier1880:litanies-saint-francois-xavier' && o.some((x) => x.startsWith('prog:devotion-')));

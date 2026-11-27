@@ -246,6 +246,14 @@ Décisions de l'utilisateur : la neuvaine de la sainte Face reste du 20 au 28 ju
    Montréal** (p. 16), neuf jours de prières sans date fixe ; Ange gardien `cihm_34852` (1832) : ni approbation ni
    neuvaine, écarté. Les deux premiers restent à transcrire.
 
+12. **Neuvaine à saint François-Xavier : dates de Beringer** (décision de l'utilisateur, 27 nov., branche
+   `claude/neuvaines-5`) : `prog:neuvaine-saint-francois-xavier` (revision 3) passe des jours de la Basilique de Québec
+   (premier samedi du Carême au 2e dimanche, `code_tempora`) aux **dates fixes de Beringer, du 4 au 12 mars, la veille le
+   3 mars** (`dates`, dans la ligne et dans chaque section du jour). Ce qui est dit des jours aux points 5 et 8 ne vaut
+   plus. **Recouvrement gardé** : les 10, 11 et 12 mars, elle est dite avec les trois premiers jours de la neuvaine de
+   saint Joseph de Montréal (10-18 mars). Tests : `journee.test.ts` (3-12 mars 2027), `unicite.test.ts` (litanies du
+   saint, 4-12 mars, en plus de la litanie du jour).
+
 **Restent** (27 nov.) : sainte Anne (`cihm_38318`) et Fête-Dieu (`cihm_77294`), approuvés, à transcrire ; S. Raphaël,
 âmes du purgatoire, Ange gardien : rien d'approuvé trouvé.
 

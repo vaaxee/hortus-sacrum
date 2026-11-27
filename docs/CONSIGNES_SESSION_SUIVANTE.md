@@ -90,7 +90,8 @@ Décisions antérieures, rappelées dans `REPRISE.md` :
        `prog:triduums-saint-joseph`) ; neuvaine pour une grâce particulière **faite** (27 nov.,
        `claude/neuvaines-4`, p. 117-126, hors programme : recueil de circonstance) ; reste le mois de saint Joseph (p. 89) ;
      - neuvaine de saint François-Xavier (Québec 1880, `cihm_62891`, approuvée 15 déc. 1879) : **complète** (27 nov.,
-       `claude/neuvaines-4`) : veille (12 févr. 2027) et neuf jours (13-21 févr.), considération du jour, prières,
+       `claude/neuvaines-4`) : veille le 3 mars et neuf jours, 4-12 mars, dates de Beringer
+       (décision du 27 nov. ; recouvre les 10-12 mars la neuvaine de saint Joseph), considération du jour, prières,
        litanies (en plus de la litanie du jour, décision du 27 nov.) ;
      - neuvaine du Saint-Esprit de S. Alphonse : **faite** (27 nov., `claude/neuvaines-4`, version Tournois 1897,
        choix de l'utilisateur ; 6-15 mai 2027, de l'Ascension à la vigile) ;
