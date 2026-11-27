@@ -569,6 +569,33 @@ describe('neuvaine à sainte Anne (Montréal 1878), du 17 au 25 juillet', () => 
 	});
 });
 
+describe('neuvaine au Très Saint Sacrement (Montréal), les neuf jours qui finissent la veille de la Fête-Dieu', () => {
+	it('18-26 mai 2027 ; le 1er jour en entier, ensuite le début et la fin du 1er jour autour de la prière du jour', () => {
+		const ID = 'prog:neuvaine-fete-dieu';
+		const ORD = ['Ier', 'IIème', 'IIIème', 'IVème', 'Vième', 'VIème', 'VIIème', 'VIIIème', 'IXème'];
+		const jours = CALENDRIER.filter((j) => ligne(calculer(j.date), ID)).map((j) => j.date);
+		expect(jours).toEqual(joursAvant('2027-05-27', 9));
+		expect(jourDe('2027-05-27').tempora).toBe('Pent01-4');
+		jours.forEach((date, k) => {
+			const s = ligne(calculer(date), ID)!.sections.filter((x) => x.genre === 'texte');
+			const titres = s.map((x) => x.extrait!.section);
+			if (k === 0) expect(titres, date).toEqual(['## Ier jour']);
+			else
+				expect(titres, date).toEqual([
+					'## Ier jour',
+					`## ${ORD[k]} jour`,
+					'## Ier jour',
+					...(k === 8 ? ['## Prière pour la Cloture de la Neuvaine'] : [])
+				]);
+			for (const x of s) {
+				const t = extraire(corps(x.texte!)!, x.extrait)!;
+				expect(t, date).toBeTruthy();
+				if (k > 0) expect(t, date).not.toMatch(/etc\.\*/);
+			}
+		});
+	});
+});
+
 describe('triduums des trois fêtes de saint Joseph (Confrérie de Montréal)', () => {
 	const ID = 'prog:triduums-saint-joseph';
 	const parties = (date: string) =>

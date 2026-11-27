@@ -173,5 +173,24 @@
    "neuvaine-sainte-anne.md"
   ],
   "revision": 1
+ },
+ {
+  "id": "bureaueuch:neuvaine-saint-sacrement",
+  "titre": "Neuvaine au Très Saint Sacrement pour obtenir toutes sortes de grâces",
+  "partie": "Neuvaines",
+  "categorie": "Jeudi",
+  "usage": "Neuf jours de prières devant le Très Saint Sacrement (le livret ne donne pas de date). Le premier jour en entier : « Laudes ac gratiæ », l'hymne *Adoro te* en français, verset et répons, la prière spéciale, Pater, Ave, Gloria, verset, répons et oraison ; les jours suivants, le livret ne donne que la prière spéciale du jour et renvoie au premier jour pour le reste. Le dernier jour, la prière pour la clôture. Fautes de l'impression gardées (« je soit », « Laude ac gratiæ » au 3e jour, « Vième », « pour vous, aimer vous servir », « maitenant »).",
+  "indulgence": "",
+  "source": {
+   "ouvrage": "Neuvaine au Très Saint Sacrement pour obtenir toutes sortes de grâces",
+   "edition": "Montréal, Bureau des Œuvres eucharistiques, s. d. [vers 1900] ; imprimatur de Paul [Bruchési], archevêque de Montréal (p. 16), vu sur l'image",
+   "page": "5-16 (PDF p. 6-17)",
+   "url": "https://archive.org/details/cihm_77294"
+  },
+  "latin": "",
+  "fichiers": [
+   "neuvaine-saint-sacrement.md"
+  ],
+  "revision": 1
  }
 ]

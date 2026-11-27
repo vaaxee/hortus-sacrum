@@ -265,7 +265,19 @@ Décisions de l'utilisateur : la neuvaine de la sainte Face reste du 20 au 28 ju
    Recouvrements gardés : Quinze samedis du Rosaire (17 et 24 juill. 2027), dix dimanches de S. Ignace (18 et 25 juill.),
    quinze mardis de S. Dominique (20 juill.).
 
-**Restent** (27 nov.) : Fête-Dieu (`cihm_77294`), approuvée, à transcrire ; S. Raphaël,
+14. **Neuvaine au Très Saint Sacrement avant la Fête-Dieu** (27 nov., `claude/neuvaines-5` ;
+   `bureaueuch:neuvaine-saint-sacrement`, nouvelle) : *Neuvaine au Très Saint Sacrement pour obtenir toutes sortes de
+   grâces*, Montréal, Bureau des Œuvres eucharistiques, s. d. (imprimatur de Paul [Bruchési], archevêque de Montréal),
+   p. 5-16, recopiée sur l'image. Le livret ne donne pas de date ; **décision de l'utilisateur** : les neuf jours qui
+   finissent la veille de la Fête-Dieu (jeudi après la Trinité en 1954, `Pent01-4`) : `prog:neuvaine-fete-dieu`, du mardi
+   de la Pentecôte au mercredi après la Trinité (`Pasc7-2` … `Pent01-3`, 18-26 mai 2027). Le premier jour en entier ;
+   les jours suivants, le livret ne donne que la prière spéciale du jour et renvoie au premier jour : l'affichage reprend
+   le début du premier jour (Laudes ac gratiæ, *Adoro te*, verset) et sa fin (Pater, Ave, Gloria, verset, oraison) autour
+   de la prière du jour, les renvois retirés ; le dernier jour, la prière de clôture. Les conseils pratiques en notice
+   (le 6e donne l'adresse de la Communauté du Saint-Sacrement à Montréal, gardé tel quel). Recouvrement gardé : la
+   neuvaine à la Trinité (15-23 mai 2027) ; l'*Adoro te* français est dit en plus de toute autre forme de l'hymne.
+
+**Restent** (27 nov.) : S. Raphaël,
 âmes du purgatoire, Ange gardien : rien d'approuvé trouvé.
 
 Outils : `engine/recueils/neuvaines/` (textes relus en `.md`, `pieces.json`, `inserer.py`).

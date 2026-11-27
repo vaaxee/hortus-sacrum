@@ -49,7 +49,7 @@ Les points réglés sont gardés pour l'historique. Dernière mise à jour : 26 
   t. XIV des *Œuvres* Vivès, `07430208.1657.emory.edu`, daté 1879 sur la page de titre, n'imprime aucune approbation).
   **Candidats vérifiés sur l'image (27 nov.)** : sainte Anne (**faite**, 27 nov., 17-25 juillet), `cihm_38318` (*Le mois de juillet consacré à sainte Anne,
   suivi d'une neuvaine*, Montréal, Rolland, 1878, **imprimatur de Montréal, 25 juin 1878**, neuvaine p. 183 s.) ;
-  Fête-Dieu, `cihm_77294` (*Neuvaine au Très Saint Sacrement*, Montréal, Bureau des œuvres eucharistiques, s. d.
+  Fête-Dieu (**faite**, 27 nov., neuf jours avant la Fête-Dieu), `cihm_77294` (*Neuvaine au Très Saint Sacrement*, Montréal, Bureau des œuvres eucharistiques, s. d.
   [vers 1900], **imprimatur de Paul [Bruchési], archevêque de Montréal**, p. 16 ; neuf jours de prières, sans date fixe :
   à placer avant la Fête-Dieu sur décision) ; Ange gardien, `cihm_34852` (*Dévotion aux Saints-Anges gardiens*,
   Montréal, Fabre, 1832) : **aucune approbation** vue (titre, avis, ch. I) et **pas de neuvaine** (association pour la
