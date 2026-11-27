@@ -1215,6 +1215,14 @@
       "forme": ["neuvaine", "oraison"],
       "devinee": ["fin", "objet", "grace", "personne", "forme"]
     },
+    "xavier1880:prieres-neuvaine": {
+      "fin": ["demande", "adoration"],
+      "objet": ["saints", "trinite", "passion", "sainte-vierge"],
+      "grace": ["graces-temporelles", "salut"],
+      "personne": ["soi-meme", "eglise-et-pretres"],
+      "forme": ["neuvaine", "oraison"],
+      "devinee": ["fin", "objet", "grace", "personne", "forme"]
+    },
     "breviaire-sc:exercice-messe": {
       "fin": ["adoration", "action-de-graces", "reparation", "demande"],
       "objet": ["sacre-coeur", "eucharistie", "trinite"],

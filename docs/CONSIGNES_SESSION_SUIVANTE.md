@@ -88,8 +88,9 @@ Décisions antérieures, rappelées dans `REPRISE.md` :
      - (sainte Élisabeth : non retenue par l'utilisateur, 26 nov.) ;
      - Confrérie de Saint-Joseph, reste : prières des trois jours avant chaque fête (Fiançailles, 19 mars,
        Patronage, p. 69-75), neuvaine pour une grâce particulière (p. 117), mois de saint Joseph (p. 89) ;
-     - neuvaine de saint François Xavier : nombreuses éditions de Québec sur archive.org (`cihm_62891`, 1880, avec
-       instruction sur les indulgences ; `cihm_04687`, 1869 ; `cihm_51451`, 1855) : choisir une édition approuvée ;
+     - neuvaine de saint François-Xavier (Québec 1880, `cihm_62891`, approuvée 15 déc. 1879) : prières de tous les
+       jours faites et intégrées (13-21 févr. 2027) ; restent les considérations de chaque jour (p. 29-129) et les
+       litanies (p. 48 s.) ;
      - neuvaine du Saint-Esprit de S. Alphonse (*Œuvres*, 1876, t. XIV, p. 373-391, `07430208.1657.emory.edu`) ;
      - Précieux Sang 1890 : les sept vendredis du Carême, les six vendredis avant le Sacré-Cœur et la prière
        « pendant trente jours » (p. 606, microfiche abîmée : chercher un autre exemplaire) ;
