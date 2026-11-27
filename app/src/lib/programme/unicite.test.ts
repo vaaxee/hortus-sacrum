@@ -124,12 +124,30 @@ describe(`unicité sur ${CALENDRIER.length} jours (${CALENDRIER[0].date} → ${C
 
 	it('chaque jour a sa prière du matin, son chapelet, sa prière du soir et une seule litanie', () => {
 		const LITANIES = /litanies/;
+		// décision de l'utilisateur du 27 nov. : les litanies de S. François-Xavier s'ajoutent, dans sa neuvaine, à celle du jour
+		const AJOUTEES = new Set(['xavier1880:litanies-saint-francois-xavier']);
 		for (const j of JOURS) {
 			const ids = j.lignes.map((l) => l.id);
 			expect(ids, j.date).toEqual(expect.arrayContaining(['prog:priere-du-matin', 'prog:chapelet', 'prog:priere-du-soir', 'prog:angelus']));
-			// les litanies d'une neuvaine du plan s'ajoutent à celle du jour : on ne compte que le programme
-			const litanies = [...j.textes].filter(([t, o]) => LITANIES.test(t) && o.some((x) => x.startsWith('prog:'))).map(([t]) => t);
+			// les litanies d'une neuvaine du plan s'ajoutent à celle du jour : on ne compte que le programme ;
+			// celles d'une neuvaine du programme aussi, quand l'utilisateur l'a décidé (AJOUTEES)
+			const litanies = [...j.textes]
+				.filter(([t, o]) => LITANIES.test(t) && !AJOUTEES.has(t) && o.some((x) => x.startsWith('prog:')))
+				.map(([t]) => t);
 			expect(litanies.length, `${j.date} : ${litanies.join(', ')}`).toBeLessThanOrEqual(1);
+		}
+	});
+
+	it('neuvaine de S. François-Xavier : ses litanies s’ajoutent à celle du jour, qui reste (décision du 27 nov.)', () => {
+		const LITANIES = /litanies/;
+		const jours = JOURS.filter((j) => j.textes.has('xavier1880:litanies-saint-francois-xavier'));
+		expect(jours.map((j) => j.date)).toEqual([
+			'2027-02-13', '2027-02-14', '2027-02-15', '2027-02-16', '2027-02-17', '2027-02-18', '2027-02-19', '2027-02-20', '2027-02-21'
+		]);
+		for (const j of jours) {
+			const autres = [...j.textes].filter(([t, o]) => LITANIES.test(t) && t !== 'xavier1880:litanies-saint-francois-xavier' && o.some((x) => x.startsWith('prog:devotion-')));
+			expect(autres.length, j.date).toBe(1);
+			expect(j.textes.get('xavier1880:litanies-saint-francois-xavier'), j.date).toEqual(['prog:neuvaine-saint-francois-xavier']);
 		}
 	});
 });

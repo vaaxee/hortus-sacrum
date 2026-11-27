@@ -13,7 +13,10 @@
    "url": "https://archive.org/details/cihm_29653"
   },
   "latin": "",
-  "fichiers": ["neuvaine-francois.md", "fin-francois.md"],
+  "fichiers": [
+   "neuvaine-francois.md",
+   "fin-francois.md"
+  ],
   "revision": 1
  },
  {
@@ -30,7 +33,9 @@
    "url": "https://archive.org/details/cihm_61528"
   },
   "latin": "",
-  "fichiers": ["neuvaine-joseph-montreal.md"],
+  "fichiers": [
+   "neuvaine-joseph-montreal.md"
+  ],
   "revision": 1
  },
  {
@@ -38,7 +43,7 @@
   "titre": "Neuvaine à saint François-Xavier : prières pour tous les jours",
   "partie": "Neuvaines",
   "categorie": "",
-  "usage": "« La Neuvaine à Saint François-Xavier commence, à la Basilique de Notre-Dame, le premier samedi du carême et finit le second dimanche. » Chaque jour, la considération du jour (dans le livre, non encore transcrite), puis ces prières : prière à Dieu, oraison à saint François-Xavier, antiennes de la Passion et de l'Immaculée Conception.",
+  "usage": "« La Neuvaine à Saint François-Xavier commence, à la Basilique de Notre-Dame, le premier samedi du carême et finit le second dimanche. » Chaque jour, la considération du jour (pièce « considérations de chaque jour »), puis ces prières : prière à Dieu, oraison à saint François-Xavier, antiennes de la Passion et de l'Immaculée Conception ; puis les litanies du saint.",
   "indulgence": "",
   "source": {
    "ouvrage": "Neuvaine en l'honneur de saint François-Xavier, contenant des changements dans les prières publiques ; une instruction sur les indulgences… ; une vie abrégée de St. François-Xavier ; aussi, des conseils aux fidèles…",
@@ -47,8 +52,10 @@
    "url": "https://archive.org/details/cihm_62891"
   },
   "latin": "",
-  "fichiers": ["neuvaine-xavier-prieres.md"],
-  "revision": 1
+  "fichiers": [
+   "neuvaine-xavier-prieres.md"
+  ],
+  "revision": 2
  },
  {
   "id": "confreriejoseph:prieres-fetes-saint-joseph",
@@ -64,7 +71,69 @@
    "url": "https://archive.org/details/cihm_61528"
   },
   "latin": "",
-  "fichiers": ["fetes-joseph-montreal.md"],
+  "fichiers": [
+   "fetes-joseph-montreal.md"
+  ],
+  "revision": 1
+ },
+ {
+  "id": "xavier1880:considerations-neuvaine",
+  "titre": "Neuvaine à saint François-Xavier : considérations de chaque jour",
+  "partie": "Neuvaines",
+  "categorie": "",
+  "usage": "« Lisez dès ce jour [la veille], et méditez la considération préparatoire pour la Neuvaine » ; puis, chacun des neuf jours, « la Considération propre du jour » (vie et vertus du saint), ses trois réflexions et sa prière, avant les prières pour tous les jours et les litanies. Fautes de l'impression gardées (« aptôtre », « tons », « lenr », « daas », « uous », « ue », « jonrs », « snnctissima », « ie »).",
+  "indulgence": "",
+  "source": {
+   "ouvrage": "Neuvaine en l'honneur de saint François-Xavier, contenant des changements dans les prières publiques ; une instruction sur les indulgences… ; une vie abrégée de St. François-Xavier ; aussi, des conseils aux fidèles…",
+   "edition": "Nouvelle édition, Québec, A. F. E. Darveau, libraire-éditeur, 1880 ; approbation de E. A. [Taschereau], archevêque de Québec, 15 décembre 1879 (vue sur l'image, PDF p. 5)",
+   "page": "30-98 (PDF p. 32-103 ; PDF p. 94-96 : mire du microfilm, sans texte)",
+   "url": "https://archive.org/details/cihm_62891"
+  },
+  "latin": "",
+  "fichiers": [
+   "neuvaine-xavier-jours.md"
+  ],
+  "revision": 1
+ },
+ {
+  "id": "xavier1880:litanies-saint-francois-xavier",
+  "titre": "Litanies de saint François-Xavier",
+  "partie": "Neuvaines",
+  "categorie": "",
+  "usage": "Pendant la neuvaine, après les prières pour tous les jours (« Vous réciterez des prières et les Litanies du saint »). Le livre imprime en regard le français (pages paires) et le latin (pages impaires) ; suit l'oraison que le saint « composa lui-même, et qu'il disait tous les jours pour demander à Dieu la conversion des infidèles ». Fautes de l'impression gardées (« France-Xavier », « résurrec- des morts », « pchés », « écoutez-nons », « Afiin », « triomphátor »).",
+  "indulgence": "",
+  "source": {
+   "ouvrage": "Neuvaine en l'honneur de saint François-Xavier, contenant des changements dans les prières publiques ; une instruction sur les indulgences… ; une vie abrégée de St. François-Xavier ; aussi, des conseils aux fidèles…",
+   "edition": "Nouvelle édition, Québec, A. F. E. Darveau, libraire-éditeur, 1880 ; approbation de E. A. [Taschereau], archevêque de Québec, 15 décembre 1879 (vue sur l'image, PDF p. 5)",
+   "page": "48-59 (PDF p. 50-61)",
+   "url": "https://archive.org/details/cihm_62891"
+  },
+  "latin": "",
+  "fichiers": [
+   "litanies-xavier.md"
+  ],
+  "fichiers_latin": [
+   "litanies-xavier-latin.md"
+  ],
+  "revision": 1
+ },
+ {
+  "id": "confreriejoseph:neuvaine-grace-particuliere",
+  "titre": "Neuvaine à saint Joseph pour demander quelque grâce particulière",
+  "partie": "Neuvaines",
+  "categorie": "Mercredi",
+  "usage": "Neuvaine de circonstance, sans date dans le livre : à commencer quand on a une grâce à demander, « soit temporelle, soit spirituelle ». Chaque jour, la prière préparatoire, puis la prière du jour (saint Joseph père nourricier, époux de Marie, modèle de foi, d'espérance, de charité, de chasteté, de toutes les vertus, de la vie intérieure, d'une bonne mort). Le livre recommande de se mettre en grâce avec Dieu et de faire chaque jour quelque bonne œuvre. Note du livre omise : « Cette Neuvaine se trouve à l'Hospice St. Joseph… et se vend $5 le 100 ». Fautes de l'impression gardées (« particuliers » dans le titre, « favorablenent », « misericorde »).",
+  "indulgence": "",
+  "source": {
+   "ouvrage": "Manuel de la Confrérie de Saint Joseph, « Neuvaine pour demander quelque grace particuliers »",
+   "edition": "Montréal, se trouve à l’hospice St. Joseph, s. d. [vers 1880-1890] ; aucune approbation imprimée dans le scan",
+   "page": "117-126 (PDF p. 121-130)",
+   "url": "https://archive.org/details/cihm_61528"
+  },
+  "latin": "",
+  "fichiers": [
+   "neuvaine-joseph-grace.md"
+  ],
   "revision": 1
  }
 ]

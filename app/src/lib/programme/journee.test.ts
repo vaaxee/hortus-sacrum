@@ -506,20 +506,37 @@ describe('neuvaine pour la fête de saint Joseph (Confrérie de Montréal), du 1
 });
 
 describe('neuvaine à saint François-Xavier (Québec 1880), du premier samedi du Carême au 2e dimanche', () => {
-	it('neuf jours, 13-21 février 2027, chacun son titre, les prières pour tous les jours', () => {
+	it('la veille, la considération préparatoire ; puis neuf jours (13-21 février 2027) : considération du jour, prières, litanies', () => {
 		const ID = 'prog:neuvaine-saint-francois-xavier';
+		const JOURS = ['Premier', 'Second', 'Troisième', 'Quatrième', 'Cinquième', 'Sixième', 'Septième', 'Huitième', 'Dernier'];
 		const jours = CALENDRIER.filter((j) => ligne(calculer(j.date), ID)).map((j) => j.date);
-		expect(jours).toEqual(joursAvant('2027-02-22', 9));
+		expect(jours).toEqual(joursAvant('2027-02-22', 10));
 		expect(jourDe('2027-02-13').office).toBe('Samedi après les Cendres');
 		expect(jourDe('2027-02-21').office).toBe('2e dimanche de Carême');
 		jours.forEach((date, k) => {
-			const s = ligne(calculer(date), ID)!.sections;
-			expect(s.filter((x) => x.genre === 'editorial').map((x) => x.contenu)[0], date).toMatch(new RegExp(`^### ${ORDINAUX[k]}`));
-			expect(
-				s.filter((x) => x.genre === 'texte').map((x) => x.texte),
-				date
-			).toEqual(['xavier1880:prieres-neuvaine']);
+			const s = ligne(calculer(date), ID)!.sections.filter((x) => x.genre === 'texte');
+			const attendu = k === 0 ? ['## Considération pour la veille de la neuvaine'] : [`## ${JOURS[k - 1]} jour`, undefined, undefined];
+			expect(s.map((x) => x.extrait?.section?.split('.')[0]), date).toEqual(attendu);
+			if (k > 0) expect(s.slice(1).map((x) => x.texte), date).toEqual(['xavier1880:prieres-neuvaine', 'xavier1880:litanies-saint-francois-xavier']);
+			const t = extraire(corps(s[0].texte!)!, s[0].extrait)!;
+			expect(t, date).toBeTruthy();
+			expect(t, date).not.toMatch(/page 41/);
 		});
+	});
+});
+
+describe('neuvaine à saint Joseph pour une grâce particulière (Confrérie de Montréal), sans date', () => {
+	it('recueil de circonstance : la pièce a ses neuf jours, mais n’entre dans aucune journée', () => {
+		const ID = 'confreriejoseph:neuvaine-grace-particuliere';
+		const t = corps(ID)!;
+		expect(t.match(/^## .*$/gm)).toEqual([
+			'## Prière préparatoire',
+			...['Ier', 'IIe', 'IIIe', 'IVe', 'Ve', 'VIe', 'VIIe', 'VIIIe', 'IXe'].map((n) => expect.stringMatching(new RegExp(`^## ${n} jour\\. Saint Joseph`)))
+		]);
+		for (const j of CALENDRIER) {
+			const jr = calculer(j.date);
+			expect([...jr.lignes, ...jr.lectures].some((l) => l.sections.some((x) => x.texte === ID)), j.date).toBe(false);
+		}
 	});
 });
 
