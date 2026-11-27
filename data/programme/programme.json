@@ -1017,7 +1017,7 @@
       "id": "prog:devotion-dimanche",
       "titre": "Dévotion du dimanche : la très sainte Trinité",
       "motif": {"fins": ["louange", "action-de-graces"], "objets": ["trinite"], "note": "dédicace du dimanche : la très sainte Trinité (cycles.json)"},
-      "revision": 4,
+      "revision": 3,
       "quand": {
         "jours_semaine": [0]
       },
@@ -1027,7 +1027,6 @@
         "ordre": 80,
         "sections": [
           {
-            "quand": {"sauf": {"code_tempora": ["Quadp3-6", "Quad1-0", "Quad1-1", "Quad1-2", "Quad1-3", "Quad1-4", "Quad1-5", "Quad1-6", "Quad2-0"]}},
             "texte": {
               "selon": "quand",
               "cas": [
@@ -1080,7 +1079,7 @@
       "id": "prog:devotion-lundi",
       "titre": "Dévotion du lundi : les âmes du purgatoire",
       "motif": {"fins": ["intercession", "propitiation"], "objets": ["ames-du-purgatoire"], "note": "dédicace du lundi : les âmes du purgatoire (cycles.json)"},
-      "revision": 4,
+      "revision": 3,
       "quand": {
         "jours_semaine": [1]
       },
@@ -1097,7 +1096,6 @@
             "titre": "Sur les gros grains"
           },
           {
-            "quand": {"sauf": {"code_tempora": ["Quadp3-6", "Quad1-0", "Quad1-1", "Quad1-2", "Quad1-3", "Quad1-4", "Quad1-5", "Quad1-6", "Quad2-0"]}},
             "texte": {
               "selon": "rotation",
               "roue": "roue:litanies-1",
@@ -1137,7 +1135,7 @@
       "id": "prog:devotion-mardi",
       "titre": "Dévotion du mardi : les saints Anges",
       "motif": {"fins": ["demande"], "objets": ["anges"], "note": "dédicace du mardi : les saints Anges, leur garde et leur protection (cycles.json)"},
-      "revision": 5,
+      "revision": 4,
       "quand": {
         "jours_semaine": [2]
       },
@@ -1153,7 +1151,6 @@
             "texte": "jardin:a-saint-gabriel-archange"
           },
           {
-            "quand": {"sauf": {"code_tempora": ["Quadp3-6", "Quad1-0", "Quad1-1", "Quad1-2", "Quad1-3", "Quad1-4", "Quad1-5", "Quad1-6", "Quad2-0"]}},
             "texte": {
               "selon": "rotation",
               "roue": "roue:litanies-2",
@@ -1199,7 +1196,7 @@
       "id": "prog:devotion-mercredi",
       "titre": "Dévotion du mercredi : saint Joseph et le cordon",
       "motif": {"fins": ["demande"], "objets": ["saint-joseph"], "note": "dédicace du mercredi : saint Joseph, avec le renouvellement du cordon (SPEC § 11, décisions)"},
-      "revision": 5,
+      "revision": 4,
       "quand": {
         "jours_semaine": [3]
       },
@@ -1215,7 +1212,6 @@
             "texte": "beringer:saint-joseph-purete"
           },
           {
-            "quand": {"sauf": {"code_tempora": ["Quadp3-6", "Quad1-0", "Quad1-1", "Quad1-2", "Quad1-3", "Quad1-4", "Quad1-5", "Quad1-6", "Quad2-0"]}},
             "texte": "beringer:litanies-saint-joseph"
           },
           {
@@ -1270,7 +1266,7 @@
       "id": "prog:devotion-jeudi",
       "titre": "Dévotion du jeudi : le Saint-Sacrement",
       "motif": {"fins": ["adoration", "demande"], "objets": ["eucharistie"], "note": "dédicace du jeudi : le Saint-Sacrement (cycles.json)"},
-      "revision": 4,
+      "revision": 3,
       "quand": {
         "jours_semaine": [4]
       },
@@ -1281,7 +1277,6 @@
         "ordre": 80,
         "sections": [
           {
-            "quand": {"sauf": {"code_tempora": ["Quadp3-6", "Quad1-0", "Quad1-1", "Quad1-2", "Quad1-3", "Quad1-4", "Quad1-5", "Quad1-6", "Quad2-0"]}},
             "texte": {
               "selon": "quand",
               "cas": [
@@ -1324,7 +1319,7 @@
       "id": "prog:devotion-vendredi",
       "titre": "Dévotion du vendredi : la Passion et le Sacré-Cœur",
       "motif": {"fins": ["reparation", "propitiation"], "objets": ["passion", "sacre-coeur"], "note": "dédicace du vendredi : la Passion et le Sacré-Cœur (cycles.json ; LOT_DIMENSIONS § 3.3) ; le premier vendredi, préparation à la mort (Association de la Bonne Mort), un texte par mois"},
-      "revision": 6,
+      "revision": 5,
       "quand": {
         "jours_semaine": [5]
       },
@@ -1344,7 +1339,6 @@
             }
           },
           {
-            "quand": {"sauf": {"code_tempora": ["Quadp3-6", "Quad1-0", "Quad1-1", "Quad1-2", "Quad1-3", "Quad1-4", "Quad1-5", "Quad1-6", "Quad2-0"]}},
             "texte": {
               "selon": "rotation",
               "roue": "roue:litanies-5",
@@ -1436,7 +1430,7 @@
       "id": "prog:devotion-samedi",
       "titre": "Dévotion du samedi : la sainte Vierge",
       "motif": {"fins": ["louange", "demande"], "objets": ["sainte-vierge"], "note": "dédicace du samedi : la sainte Vierge (cycles.json)"},
-      "revision": 4,
+      "revision": 3,
       "quand": {
         "jours_semaine": [6]
       },
@@ -1460,7 +1454,6 @@
             }
           },
           {
-            "quand": {"sauf": {"code_tempora": ["Quadp3-6", "Quad1-0", "Quad1-1", "Quad1-2", "Quad1-3", "Quad1-4", "Quad1-5", "Quad1-6", "Quad2-0"]}},
             "texte": {
               "selon": "rotation",
               "roue": "roue:litanies-6",

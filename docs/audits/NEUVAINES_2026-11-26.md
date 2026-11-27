@@ -217,9 +217,9 @@ Décisions de l'utilisateur : la neuvaine de la sainte Face reste du 20 au 28 ju
    2027 : « Lisez dès ce jour, et méditez la considération préparatoire », p. 25) la seule considération de la veille ;
    puis chaque jour sa considération (section du jour), les prières pour tous les jours et les litanies. Le renvoi « Les
    prières pour tous les jours de la Neuvaine, page 41 » (2e jour) est retiré à l'affichage.
-   **Une seule litanie par jour** (arbitrage du 19 nov.) : pendant les neuf jours, les litanies du saint **tiennent lieu**
-   de la litanie de la dévotion du jour (`prog:devotion-*`, section en `sauf: code_tempora`, revision + 1). Décision à
-   faire valider par l'utilisateur ; pour revenir en arrière, retirer ces `sauf` et la section des litanies.
+   **Litanies** : décision de l'utilisateur (27 nov.) : les litanies du saint **s'ajoutent**, dans la neuvaine, à la
+   litanie de la dévotion du jour, qui reste. Exception déclarée à la règle « une seule litanie » dans `unicite.test.ts`
+   (`AJOUTEES`), avec un test qui vérifie, chacun des neuf jours, la litanie du jour et celle du saint.
 
 **Restent** (27 nov.) : neuvaine de S.
 Joseph pour une grâce particulière (p. 117, sans date) ; neuvaine au Saint-Esprit de S. Alphonse ; les candidats
