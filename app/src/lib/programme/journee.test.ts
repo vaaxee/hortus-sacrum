@@ -505,14 +505,12 @@ describe('neuvaine pour la fête de saint Joseph (Confrérie de Montréal), du 1
 	});
 });
 
-describe('neuvaine à saint François-Xavier (Québec 1880), du premier samedi du Carême au 2e dimanche', () => {
-	it('la veille, la considération préparatoire ; puis neuf jours (13-21 février 2027) : considération du jour, prières, litanies', () => {
+describe('neuvaine à saint François-Xavier (Québec 1880), aux dates de Beringer : 4-12 mars, veille le 3', () => {
+	it('la veille, la considération préparatoire ; puis neuf jours (4-12 mars 2027) : considération du jour, prières, litanies', () => {
 		const ID = 'prog:neuvaine-saint-francois-xavier';
 		const JOURS = ['Premier', 'Second', 'Troisième', 'Quatrième', 'Cinquième', 'Sixième', 'Septième', 'Huitième', 'Dernier'];
 		const jours = CALENDRIER.filter((j) => ligne(calculer(j.date), ID)).map((j) => j.date);
-		expect(jours).toEqual(joursAvant('2027-02-22', 10));
-		expect(jourDe('2027-02-13').office).toBe('Samedi après les Cendres');
-		expect(jourDe('2027-02-21').office).toBe('2e dimanche de Carême');
+		expect(jours).toEqual(joursAvant('2027-03-13', 10));
 		jours.forEach((date, k) => {
 			const s = ligne(calculer(date), ID)!.sections.filter((x) => x.genre === 'texte');
 			const attendu = k === 0 ? ['## Considération pour la veille de la neuvaine'] : [`## ${JOURS[k - 1]} jour`, undefined, undefined];
