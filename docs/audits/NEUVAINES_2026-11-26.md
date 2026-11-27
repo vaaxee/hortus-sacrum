@@ -189,6 +189,15 @@ Décisions de l'utilisateur : la neuvaine de la sainte Face reste du 20 au 28 ju
    prise : à changer si l'utilisateur la préfère. **Reste à transcrire** : la considération et les réflexions de chaque
    jour (p. 29-129 environ, avec la veille) et les litanies de S. François-Xavier (latin et français, p. 48 s.).
 
+6. **Triduums des trois fêtes de saint Joseph** (27 nov., branche `claude/neuvaines-3` ;
+   `confreriejoseph:prieres-fetes-saint-joseph`, nouvelle) : *Manuel de la Confrérie de Saint Joseph*, Montréal,
+   p. 69-76, recopié sur l'image (faute « mriage » gardée). Pour chaque fête, des prières à dire « les trois jours qui
+   précèdent » et une prière « pour le jour de la fête ». `prog:triduums-saint-joseph` : Fiançailles (3 janvier :
+   31 déc.-3 janv.), saint Joseph (19 mars : 16-19 mars, recouvre la fin de la neuvaine de Montréal) et Patronage. Le
+   livre met le Patronage au 3e dimanche après Pâques ; la ligne suit le calendrier de 1954 (mercredi `Pasc2-3`,
+   14 avril 2027 ; triduum 11-13 avril). La date des Fiançailles (3 janvier) est celle du livre, fête propre à la
+   Confrérie, absente du calendrier universel.
+
 Outils : `engine/recueils/neuvaines/` (textes relus en `.md`, `pieces.json`, `inserer.py`).
 
 **Recherche des autres neuvaines datées** : Immaculée Conception (Weber), Noël (S. Alphonse), Sacré-Cœur (S.

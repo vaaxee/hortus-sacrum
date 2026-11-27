@@ -1223,6 +1223,14 @@
       "forme": ["neuvaine", "oraison"],
       "devinee": ["fin", "objet", "grace", "personne", "forme"]
     },
+    "confreriejoseph:prieres-fetes-saint-joseph": {
+      "fin": ["demande", "intercession"],
+      "objet": ["saint-joseph"],
+      "grace": ["perseverance-finale", "vertus", "salut"],
+      "personne": ["soi-meme", "famille", "eglise-et-pretres", "mourants"],
+      "forme": ["oraison"],
+      "devinee": ["fin", "objet", "grace", "personne", "forme"]
+    },
     "breviaire-sc:exercice-messe": {
       "fin": ["adoration", "action-de-graces", "reparation", "demande"],
       "objet": ["sacre-coeur", "eucharistie", "trinite"],

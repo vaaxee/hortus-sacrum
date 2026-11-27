@@ -523,6 +523,41 @@ describe('neuvaine à saint François-Xavier (Québec 1880), du premier samedi d
 	});
 });
 
+describe('triduums des trois fêtes de saint Joseph (Confrérie de Montréal)', () => {
+	const ID = 'prog:triduums-saint-joseph';
+	const parties = (date: string) =>
+		ligne(calculer(date), ID)!
+			.sections.filter((s) => s.genre === 'texte')
+			.map((s) => `${s.extrait?.section?.split('.')[0]} ${s.extrait?.de ? 'jour' : 'triduum'}`);
+	it('Fiançailles, 19 mars, Patronage : trois jours, puis la prière du jour de la fête', () => {
+		const jours = CALENDRIER.filter((j) => ligne(calculer(j.date), ID)).map((j) => j.date);
+		expect(jours).toEqual([
+			'2026-12-31',
+			'2027-01-01',
+			'2027-01-02',
+			'2027-01-03',
+			'2027-03-16',
+			'2027-03-17',
+			'2027-03-18',
+			'2027-03-19',
+			'2027-04-11',
+			'2027-04-12',
+			'2027-04-13',
+			'2027-04-14'
+		]);
+		expect(parties('2027-01-01')).toEqual(['## I triduum']);
+		expect(parties('2027-01-03')).toEqual(['## I jour']);
+		expect(parties('2027-03-17')).toEqual(['## II triduum']);
+		expect(parties('2027-03-19')).toEqual(['## II jour']);
+		expect(parties('2027-04-12')).toEqual(['## III triduum']);
+		expect(jourDe('2027-04-14').office).toMatch(/^Patronage de S\. Joseph/);
+		expect(parties('2027-04-14')).toEqual(['## III jour']);
+		for (const d of jours)
+			for (const s of ligne(calculer(d), ID)!.sections.filter((x) => x.genre === 'texte'))
+				expect(extraire(corps(s.texte!)!, s.extrait), d).toBeTruthy();
+	});
+});
+
 describe('neuvaine de réparation au Sacré-Cœur, du 1er au 9 de chaque mois (Beringer n° 671)', () => {
 	it('l’offrande à la fin de la prière du matin, les jours 1 à 9 de chaque mois seulement', () => {
 		const jours = CALENDRIER.filter((j) =>

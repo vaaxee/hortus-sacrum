@@ -49,5 +49,22 @@
   "latin": "",
   "fichiers": ["neuvaine-xavier-prieres.md"],
   "revision": 1
+ },
+ {
+  "id": "confreriejoseph:prieres-fetes-saint-joseph",
+  "titre": "Prières pour les fêtes de saint Joseph (Fiançailles, 19 mars, Patronage)",
+  "partie": "Neuvaines",
+  "categorie": "Mercredi",
+  "usage": "Les trois jours qui précèdent chacune des trois fêtes de la Confrérie, et la prière du jour de la fête. Faute de l'impression gardée : « mriage ».",
+  "indulgence": "",
+  "source": {
+   "ouvrage": "Manuel de la Confrérie de Saint Joseph, « Prières pour les fêtes de St. Joseph »",
+   "edition": "Montréal, se trouve à l’hospice St. Joseph, s. d. [vers 1880-1890] ; aucune approbation imprimée dans le scan",
+   "page": "69-76 (PDF p. 70-77)",
+   "url": "https://archive.org/details/cihm_61528"
+  },
+  "latin": "",
+  "fichiers": ["fetes-joseph-montreal.md"],
+  "revision": 1
  }
 ]

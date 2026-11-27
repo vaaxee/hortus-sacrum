@@ -86,8 +86,9 @@ Décisions antérieures, rappelées dans `REPRISE.md` :
      intégrées avec `Quand.autour`. Audit : `docs/audits/NEUVAINES_2026-11-26.md`.
    - À transcrire sur l'image puis à intégrer avec `Quand.autour` :
      - (sainte Élisabeth : non retenue par l'utilisateur, 26 nov.) ;
-     - Confrérie de Saint-Joseph, reste : prières des trois jours avant chaque fête (Fiançailles, 19 mars,
-       Patronage, p. 69-75), neuvaine pour une grâce particulière (p. 117), mois de saint Joseph (p. 89) ;
+     - Confrérie de Saint-Joseph : triduums des trois fêtes **faits** (27 nov., `claude/neuvaines-3`,
+       `prog:triduums-saint-joseph`) ; restent la neuvaine pour une grâce particulière (p. 117, sans date) et le mois
+       de saint Joseph (p. 89) ;
      - neuvaine de saint François-Xavier (Québec 1880, `cihm_62891`, approuvée 15 déc. 1879) : prières de tous les
        jours faites et intégrées (13-21 févr. 2027) ; restent les considérations de chaque jour (p. 29-129) et les
        litanies (p. 48 s.) ;
