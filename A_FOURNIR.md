@@ -35,8 +35,8 @@ Les points réglés sont gardés pour l'historique. Dernière mise à jour : 26 
 - **Neuvaines, suite (26 nov., `claude/neuvaines-2`)** : faites, S. François d'Assise (Québec 1867) et S. Joseph
   (Confrérie de Montréal). Sainte Élisabeth (`cihm_29653`, PDF p. 58-71, écrite pour les Sœurs du
   Tiers-Ordre) : **non retenue** par l'utilisateur (26 nov.), pas ajoutée. **Restent à transcrire** : triduums des fêtes de S. Joseph et neuvaine pour une grâce particulière (`cihm_61528`,
-  p. 69-75, 117) ; neuvaine de S. François Xavier, « de la grâce » (archive.org, éditions de Québec : `cihm_62891`
-  1880, `cihm_04687` 1869, `cihm_51451` 1855, `neuvainelhonneur00unse` 1778 ; approbation à vérifier sur l'image) ;
+  p. 69-75, 117) ; neuvaine de S. François-Xavier (Québec 1880, `cihm_62891`, approbation vue) : **prières de tous
+  les jours faites** (p. 41-47) ; restent les considérations et réflexions de chaque jour et les litanies ;
   neuvaine du Saint-Esprit de S. Alphonse (`07430208.1657.emory.edu`). **Introuvables** pour l'instant : sainte Anne,
   S. Raphaël, l'Ange gardien, la Fête-Dieu, les âmes du purgatoire (cherché : corpus, Beringer 1925 ; archive.org et
   Gallica pas encore interrogés pour ceux-là).
