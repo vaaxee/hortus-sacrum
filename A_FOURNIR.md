@@ -34,8 +34,16 @@ Les points réglés sont gardés pour l'historique. Dernière mise à jour : 26 
   (1873, archive.org `letressaintrosai00unse`), non ouverts.
 - **Neuvaines, suite (26 nov., `claude/neuvaines-2`)** : faites, S. François d'Assise (Québec 1867) et S. Joseph
   (Confrérie de Montréal). Sainte Élisabeth (`cihm_29653`, PDF p. 58-71, écrite pour les Sœurs du
-  Tiers-Ordre) : **non retenue** par l'utilisateur (26 nov.), pas ajoutée. **Restent à transcrire** : triduums des fêtes de S. Joseph et neuvaine pour une grâce particulière (`cihm_61528`,
-  p. 69-75, 117) ; neuvaine de S. François-Xavier (Québec 1880, `cihm_62891`, approbation vue) : **prières de tous
+  Tiers-Ordre) : **non retenue** par l'utilisateur (26 nov.), pas ajoutée. **Recherche du 27 nov.** (archive.org, titres français ; Gallica : SRU refusé à l'outil,
+  HTTP 403) : *sainte Anne* — `cihm_11597` (*Prières et exercices pour une neuvaine à sainte Anne*, 1879),
+  `cihm_49455` / `neuvaineenlhonne00mont` (1859), `cihm_46404` (1873), `cihm_38318` (*Le mois de juillet consacré à
+  sainte Anne*, suivi d'une neuvaine, 1878) ; *Fête-Dieu* — `cihm_77294` (*Neuvaine au Très Saint Sacrement*, 1900) ;
+  *Ange gardien* — `dvotionauxsaints00unse` / `cihm_34852` (*Dévotion aux saints-anges gardiens*, 1832 : neuvaine à
+  vérifier) ; *saint Raphaël* et *âmes du purgatoire* : rien d'ancien (seulement une édition de 2011, écartée). À
+  ouvrir : approbation à voir sur l'image avant toute transcription.
+  Triduums des trois fêtes de S. Joseph : **faits** (27 nov.,
+  `claude/neuvaines-3`). **Restent à transcrire** : neuvaine pour une grâce particulière (`cihm_61528`, p. 117,
+  recueil de circonstance, sans date) ; neuvaine de S. François-Xavier (Québec 1880, `cihm_62891`, approbation vue) : **prières de tous
   les jours faites** (p. 41-47) ; restent les considérations et réflexions de chaque jour et les litanies ;
   neuvaine du Saint-Esprit de S. Alphonse (`07430208.1657.emory.edu`). **Introuvables** pour l'instant : sainte Anne,
   S. Raphaël, l'Ange gardien, la Fête-Dieu, les âmes du purgatoire (cherché : corpus, Beringer 1925 ; archive.org et

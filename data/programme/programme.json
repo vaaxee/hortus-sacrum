@@ -1733,6 +1733,31 @@
       }
     },
     {
+      "id": "prog:triduums-saint-joseph",
+      "titre": "Triduum avant une fête de saint Joseph",
+      "motif": {"fins": ["demande"], "objets": ["saint-joseph"], "note": "les trois jours avant les trois fêtes de la Confrérie (Fiançailles, 3 janvier ; 19 mars ; Patronage) et la prière du jour de la fête (Confrérie de Saint-Joseph, Montréal)"},
+      "revision": 1,
+      "quand": {"ou": [
+        {"autour": {"ancre": "01-03", "de": -3, "a": 0}},
+        {"autour": {"ancre": "03-19", "de": -3, "a": 0}},
+        {"code_tempora": ["Pasc2-0", "Pasc2-1", "Pasc2-2", "Pasc2-3"]}
+      ]},
+      "source": "Demande de l'utilisateur du 26 nov. (suite) : Manuel de la Confrérie de Saint Joseph, Montréal, p. 69-76, relu sur l'image ; le Patronage, que le livre met au 3e dimanche après Pâques, suit le calendrier de 1954 (mercredi de la 2e semaine après l'octave de Pâques, Pasc2-3)",
+      "page": {
+        "moment": "journee",
+        "ordre": 76,
+        "sections": [
+          {"notice": "confreriejoseph:prieres-fetes-saint-joseph", "extrait": {"a": "## I. Fête des Fiançailles"}},
+          {"texte": "confreriejoseph:prieres-fetes-saint-joseph", "extrait": {"section": "## I. Fête des Fiançailles", "a": "### Prière pour le jour de la fête"}, "quand": {"autour": {"ancre": "01-03", "de": -3, "a": -1}}},
+          {"texte": "confreriejoseph:prieres-fetes-saint-joseph", "extrait": {"section": "## I. Fête des Fiançailles", "de": "### Prière pour le jour de la fête"}, "quand": {"dates": ["01-03"]}},
+          {"texte": "confreriejoseph:prieres-fetes-saint-joseph", "extrait": {"section": "## II. Fête de saint Joseph", "a": "### Prière pour le jour de la fête"}, "quand": {"autour": {"ancre": "03-19", "de": -3, "a": -1}}},
+          {"texte": "confreriejoseph:prieres-fetes-saint-joseph", "extrait": {"section": "## II. Fête de saint Joseph", "de": "### Prière pour le jour de la fête"}, "quand": {"dates": ["03-19"]}},
+          {"texte": "confreriejoseph:prieres-fetes-saint-joseph", "extrait": {"section": "## III. Fête du Patronage de saint Joseph", "a": "### Prière pour le jour de la fête"}, "quand": {"code_tempora": ["Pasc2-0", "Pasc2-1", "Pasc2-2"]}},
+          {"texte": "confreriejoseph:prieres-fetes-saint-joseph", "extrait": {"section": "## III. Fête du Patronage de saint Joseph", "de": "### Prière pour le jour de la fête"}, "quand": {"code_tempora": ["Pasc2-3"]}}
+        ]
+      }
+    },
+    {
       "id": "prog:neuvaine-saint-francois-xavier",
       "titre": "Neuvaine à saint François-Xavier",
       "motif": {"fins": ["demande"], "objets": ["saints", "trinite"], "note": "du premier samedi du Carême au deuxième dimanche, comme à Québec (Neuvaine, Québec, 1880) ; la « neuvaine de la grâce »"},
