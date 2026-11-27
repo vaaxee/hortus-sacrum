@@ -1416,11 +1416,30 @@
    "partielles": [
     {
      "ans": 7,
-     "texte": "7 ans, une fois le jour"
+     "texte": "7 ans, une fois le jour (neuvaine du premier vendredi de décembre)",
+     "quand": {
+      "dates": [
+       "11-22",
+       "11-23",
+       "11-24",
+       "11-25",
+       "11-26",
+       "11-27",
+       "11-28",
+       "11-29",
+       "11-30",
+       "12-01",
+       "12-02",
+       "12-03",
+       "12-04",
+       "12-05",
+       "12-06"
+      ]
+     }
     }
    ],
    "intention": "En l’honneur du Sacré-Cœur, avec le propos de prier ainsi neuf jours de suite.",
-   "note": "Vu sur l'image (Ench. 1952, p. 156-157) : « preces ad divinum Cor Iesu privatim … cum proposito idem per novem dies continuos praestandi », neuvaine faite « tum immediate ante festum … tum alio infra annum tempore ». Plénière aux conditions habituelles, la neuvaine achevée (non comptée). Faite publiquement : 10 ans chaque jour. Le même jour que la neuvaine de S. Alphonse (même concession), comptée une seule fois. Concession pour des prières quelconques : la langue est indifférente.",
+   "note": "Vu sur l'image (Ench. 1952, p. 156-157) : « preces ad divinum Cor Iesu privatim … cum proposito idem per novem dies continuos praestandi », neuvaine faite « tum immediate ante festum … tum alio infra annum tempore ». Lecture stricte (décision de l'utilisateur, 26 nov.) : deux neuvaines par an. Celle qui précède immédiatement la fête du Sacré-Cœur est comptée sur la neuvaine de S. Alphonse (liguori:neuvaine-sacre-coeur) ; l'autre est la première neuvaine du premier vendredi de l'année liturgique, celle du premier vendredi de décembre (du 22 novembre au 6 décembre selon les années) : seule comptée ici. Les autres neuvaines du mois restent au programme, sans indulgence comptée. Plénière aux conditions habituelles, la neuvaine achevée (non comptée). Concession pour des prières quelconques : la langue est indifférente.",
    "langue": "français"
   }
  },

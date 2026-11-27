@@ -79,13 +79,13 @@ Décisions antérieures, rappelées dans `REPRISE.md` :
 1. **Neuvaines, suite — priorité de l'utilisateur.** Demande : « chaque neuvaine, douzaine ou trentaine ou autre
    dévotion à jour compté que tu trouves dans les différents manuels ». Branche `claude/neuvaines-2` (poussée).
    - **Fait (26 nov., `claude/neuvaines-2`)** : indulgence n° 250 (Ench. 1952, vue p. 156-157) sur la neuvaine du
-     premier vendredi, comptée une fois le jour quand celle de S. Alphonse tombe les mêmes jours (`bilan.ts`) ;
+     premier vendredi, en lecture stricte (deux neuvaines par an : S. Alphonse avant la fête, et la neuvaine du
+     premier vendredi de décembre seulement), comptée une fois le jour par numéro (`bilan.ts`) ;
      neuvaine à saint François d'Assise (Québec 1867, p. 37-51, 25 sept.-3 oct.) et neuvaine pour la fête de saint
      Joseph (Confrérie de Montréal, p. 65-68, 10-18 mars), relues sur l'image (`engine/recueils/neuvaines/`) et
      intégrées avec `Quand.autour`. Audit : `docs/audits/NEUVAINES_2026-11-26.md`.
    - À transcrire sur l'image puis à intégrer avec `Quand.autour` :
-     - sainte Élisabeth (10-18 nov.) : archive.org `cihm_29653`, PDF p. 58-71 (écrite pour les Sœurs du Tiers-Ordre :
-       demander à l'utilisateur s'il la veut) ;
+     - (sainte Élisabeth : non retenue par l'utilisateur, 26 nov.) ;
      - Confrérie de Saint-Joseph, reste : prières des trois jours avant chaque fête (Fiançailles, 19 mars,
        Patronage, p. 69-75), neuvaine pour une grâce particulière (p. 117), mois de saint Joseph (p. 89) ;
      - neuvaine de saint François Xavier : nombreuses éditions de Québec sur archive.org (`cihm_62891`, 1880, avec

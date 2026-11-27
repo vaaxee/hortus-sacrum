@@ -157,9 +157,16 @@ Décisions de l'utilisateur : la neuvaine de la sainte Face reste du 20 au 28 ju
 1. **Ench. 1952, n° 250**, vu sur l'image (p. 156-157, archive.org `enchiridion_indulgentiarum_1952` n171-n172) :
    fiche ajoutée sur `breviaire-sc:neuvaine` (7 ans une fois le jour, prières quelconques). `bilan.ts` compte désormais
    une concession « une fois le jour » **une seule fois par numéro** de l'Enchiridion, même portée par deux textes :
-   le 28 mai 2027, les deux neuvaines au Sacré-Cœur ne donnent que 7 ans (test `bilan.test.ts`). Réserve : le texte
-   vise la neuvaine « immédiatement avant la fête » et une autre « en un autre temps de l'année » ; la fiche compte
-   chaque neuvaine du mois — à restreindre si l'utilisateur lit la concession comme deux neuvaines par an.
+   le 28 mai 2027, les deux neuvaines au Sacré-Cœur ne donnent que 7 ans (test `bilan.test.ts`).
+   **Lecture stricte (décision de l'utilisateur, 26 nov.)** : la concession vaut pour deux neuvaines par an, « tum
+   immediate ante festum … tum alio infra annum tempore ». Celle qui précède la fête est comptée sur la neuvaine de
+   S. Alphonse (`liguori:neuvaine-sacre-coeur`, déjà porteuse du n° 250) ; **l'autre est la première neuvaine du
+   premier vendredi de l'année liturgique, celle du premier vendredi de décembre** (choix de l'utilisateur ; elle
+   commence quelques jours avant le 1er dimanche de l'Avent et finit entre le 22 novembre et le 6 décembre). La fiche
+   de `breviaire-sc:neuvaine` ne vaut donc que du 22 novembre au 6 décembre (`partielles[].quand.dates`) ; les onze
+   autres neuvaines du mois restent au programme sans indulgence comptée. En 2026-2027 : 29 nov.-3 déc. 2026 (le début,
+   25-28 nov., est dans l'année précédente) et 24-27 nov. 2027 (neuvaine du 3 déc. 2027).
+4. **Sainte Élisabeth** : non retenue par l'utilisateur (26 nov.) ; la neuvaine de Québec 1867 n'est pas ajoutée.
 2. **Neuvaine à saint François d'Assise** (`tiersordre1867:neuvaine-saint-francois`, nouvelle) : *Notice sur le
    Tiers-Ordre de la pénitence…*, Québec, 1867, p. 37-51, recopiée page à page sur l'image (taches d'encre relues à
    300 dpi ; orthographe et fautes de l'édition gardées : « bienheureureux », « autérités », « consolatien »…).
@@ -175,8 +182,7 @@ Décisions de l'utilisateur : la neuvaine de la sainte Face reste du 20 au 28 ju
 Outils : `engine/recueils/neuvaines/` (textes relus en `.md`, `pieces.json`, `inserer.py`).
 
 **Recherche des autres neuvaines datées** : Immaculée Conception (Weber), Noël (S. Alphonse), Sacré-Cœur (S.
-Alphonse), Assomption et Nativité (Lévis 1886) sont déjà au plan avec leur texte. Restent à transcrire : sainte
-Élisabeth (`cihm_29653`, PDF p. 58-71 ; écrite pour les Sœurs du Tiers-Ordre, à proposer à l'utilisateur) ; les
-triduums des trois fêtes de saint Joseph et la neuvaine pour une grâce particulière (`cihm_61528`) ; la neuvaine de
+Alphonse), Assomption et Nativité (Lévis 1886) sont déjà au plan avec leur texte. Sainte Élisabeth : non retenue (ci-dessus).
+Restent à transcrire : les triduums des trois fêtes de saint Joseph et la neuvaine pour une grâce particulière (`cihm_61528`) ; la neuvaine de
 saint François Xavier (archive.org : une vingtaine d'éditions de Québec, 1772-1887, dont `cihm_62891`, 1880, avec
 instruction sur les indulgences, et `cihm_04687`, 1869) ; la neuvaine du Saint-Esprit de S. Alphonse (dix méditations).
