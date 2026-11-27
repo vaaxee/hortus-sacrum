@@ -229,8 +229,25 @@ Décisions de l'utilisateur : la neuvaine de la sainte Face reste du 20 au 28 ju
    seulement, hors de `programme.json` (un test vérifie qu'elle n'entre dans aucune journée). La note de vente
    (« se vend $5 le 100 ») est omise ; fautes gardées (« particuliers » au titre, « favorablenent », « misericorde »).
 
-**Restent** (27 nov.) : neuvaine au Saint-Esprit de S. Alphonse ; les candidats
-ci-dessus.
+10. **Neuvaine au Saint-Esprit de saint Alphonse** (27 nov., `claude/neuvaines-4` ; `liguori:neuvaine-saint-esprit`,
+   nouvelle). Le t. XIV des *Œuvres* (Vivès, page de titre datée 1879, non 1876) n'imprime aucune approbation (faux-titre,
+   titre, texte et table vus sur l'image). **Décision de l'utilisateur** : la version du P. Tournois, *Le divin Sauveur*,
+   t. II, appendice, p. 293-317 (Paris, 1897 ; imprimatur de Paris, 6 juill. 1897, t. I), traduction **abrégée ou
+   adaptée** (noté dans la pièce). Dix méditations sur l'amour divin, chacune avec ses affections et prières ; notes de bas
+   de page gardées en fin de partie. Fautes gardées : « parce qu'i tempère », « bienfaisante osée », « prendrle a
+   résolution ». Chiffre douteux tranché : « Is., 52, 2 » (le 5 est mal venu, la citation est Is 52, 2).
+   `prog:neuvaine-saint-esprit` : **de l'Ascension (`Pasc5-4`) au samedi vigile (`Pasc6-6`)**, dix jours, une méditation
+   par jour (6-15 mai 2027), d'après le titre des *Œuvres* (« en commençant au jour de l'Ascension »). Recouvrements
+   gardés : le Veni Creator du plan (neuvaine du plan, 7-15 mai) et, le 15 mai, le premier jour de la neuvaine à la
+   Trinité. Indulgence de la neuvaine de la Pentecôte (Ench. 1952) : non vérifiée ici, à voir.
+
+11. **Candidats vérifiés sur l'image** (27 nov.) : sainte Anne `cihm_38318`, **imprimatur de Montréal (Édouard-Charles
+   [Fabre], 25 juin 1878)**, neuvaine p. 183 s. ; Fête-Dieu `cihm_77294`, **imprimatur de Paul [Bruchési], archevêque de
+   Montréal** (p. 16), neuf jours de prières sans date fixe ; Ange gardien `cihm_34852` (1832) : ni approbation ni
+   neuvaine, écarté. Les deux premiers restent à transcrire.
+
+**Restent** (27 nov.) : sainte Anne (`cihm_38318`) et Fête-Dieu (`cihm_77294`), approuvés, à transcrire ; S. Raphaël,
+âmes du purgatoire, Ange gardien : rien d'approuvé trouvé.
 
 Outils : `engine/recueils/neuvaines/` (textes relus en `.md`, `pieces.json`, `inserer.py`).
 

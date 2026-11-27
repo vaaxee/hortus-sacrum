@@ -1255,6 +1255,14 @@
       "forme": ["neuvaine", "oraison"],
       "devinee": ["fin", "objet", "grace", "personne", "forme"]
     },
+    "liguori:neuvaine-saint-esprit": {
+      "fin": ["demande", "adoration"],
+      "objet": ["saint-esprit", "sainte-vierge"],
+      "grace": ["charite", "sanctification", "perseverance-finale"],
+      "personne": ["soi-meme"],
+      "forme": ["neuvaine", "meditation", "oraison"],
+      "devinee": ["fin", "objet", "grace", "personne", "forme"]
+    },
     "confreriejoseph:prieres-fetes-saint-joseph": {
       "fin": ["demande", "intercession"],
       "objet": ["saint-joseph"],

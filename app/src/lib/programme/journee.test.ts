@@ -540,6 +540,19 @@ describe('neuvaine à saint Joseph pour une grâce particulière (Confrérie de 
 	});
 });
 
+describe('neuvaine au Saint-Esprit de saint Alphonse (Tournois 1897), de l’Ascension à la vigile de la Pentecôte', () => {
+	it('dix jours, 6-15 mai 2027 : une méditation par jour, dans l’ordre', () => {
+		const ID = 'prog:neuvaine-saint-esprit';
+		const jours = CALENDRIER.filter((j) => ligne(calculer(j.date), ID)).map((j) => j.date);
+		expect(jours).toEqual(joursAvant('2027-05-16', 10));
+		jours.forEach((date, k) => {
+			const s = ligne(calculer(date), ID)!.sections.filter((x) => x.genre === 'texte');
+			expect(s.map((x) => x.extrait?.section?.split('.')[0]), date).toEqual([`## ${k + 1}${k ? 'e' : 're'} méditation`]);
+			expect(extraire(corps(s[0].texte!)!, s[0].extrait), date).toMatch(/### Affections et prières/);
+		});
+	});
+});
+
 describe('triduums des trois fêtes de saint Joseph (Confrérie de Montréal)', () => {
 	const ID = 'prog:triduums-saint-joseph';
 	const parties = (date: string) =>

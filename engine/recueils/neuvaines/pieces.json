@@ -135,5 +135,24 @@
    "neuvaine-joseph-grace.md"
   ],
   "revision": 1
+ },
+ {
+  "id": "liguori:neuvaine-saint-esprit",
+  "titre": "Neuvaine au Saint-Esprit (saint Alphonse de Liguori)",
+  "partie": "Neuvaines",
+  "categorie": "",
+  "usage": "Avant la Pentecôte : dix méditations sur l'amour divin, chacune suivie de ses affections et prières, à commencer le jour de l'Ascension (« en commençant au jour de l'Ascension », titre de la neuvaine dans les Œuvres, éd. Vivès, t. XIV, p. 373). Traduction abrégée ou adaptée par le P. Tournois : elle ne suit pas mot pour mot celle des Œuvres (Vivès), qui a un avant-propos et des méditations plus longues. Notes de bas de page du livre gardées en fin de partie, avec leur page. Fautes de l'impression gardées (« parce qu'i tempère », « bienfaisante osée », « prendrle a résolution »).",
+  "indulgence": "",
+  "source": {
+   "ouvrage": "Le divin Sauveur, méditations et neuvaines tirées de saint Alphonse de Liguori, par le P. A. Tournois, C.SS.R., t. II, appendice, « Neuvaine au Saint-Esprit »",
+   "edition": "Paris, Douniol (P. Téqui), 1897 ; imprimatur, Paris, 6 juillet 1897 (t. I ; le scan du t. II n'en imprime pas)",
+   "page": "293-317 (PDF p. 315-339)",
+   "url": "https://archive.org/details/ledivinsauveurm02ligu"
+  },
+  "latin": "",
+  "fichiers": [
+   "neuvaine-saint-esprit.md"
+  ],
+  "revision": 1
  }
 ]

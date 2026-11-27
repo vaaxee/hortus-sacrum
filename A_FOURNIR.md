@@ -45,9 +45,15 @@ Les points réglés sont gardés pour l'historique. Dernière mise à jour : 26 
   `claude/neuvaines-3`). Neuvaine pour une grâce particulière (`cihm_61528`, p. 117-126) : **faite** (27 nov., hors
   programme). **Restent à transcrire** : neuvaine de S. François-Xavier (Québec 1880, `cihm_62891`, approbation vue) : **complète** (27 nov.,
   `claude/neuvaines-4` : prières p. 41-47, considérations de la veille et des neuf jours p. 30-98, litanies p. 48-59) ;
-  neuvaine du Saint-Esprit de S. Alphonse (`07430208.1657.emory.edu`). **Introuvables** pour l'instant : sainte Anne,
-  S. Raphaël, l'Ange gardien, la Fête-Dieu, les âmes du purgatoire (cherché : corpus, Beringer 1925 ; archive.org et
-  Gallica pas encore interrogés pour ceux-là).
+  neuvaine du Saint-Esprit de S. Alphonse : **faite** (27 nov., version Tournois 1897, `ledivinsauveurm02ligu` ; le
+  t. XIV des *Œuvres* Vivès, `07430208.1657.emory.edu`, daté 1879 sur la page de titre, n'imprime aucune approbation).
+  **Candidats vérifiés sur l'image (27 nov.)** : sainte Anne, `cihm_38318` (*Le mois de juillet consacré à sainte Anne,
+  suivi d'une neuvaine*, Montréal, Rolland, 1878, **imprimatur de Montréal, 25 juin 1878**, neuvaine p. 183 s.) ;
+  Fête-Dieu, `cihm_77294` (*Neuvaine au Très Saint Sacrement*, Montréal, Bureau des œuvres eucharistiques, s. d.
+  [vers 1900], **imprimatur de Paul [Bruchési], archevêque de Montréal**, p. 16 ; neuf jours de prières, sans date fixe :
+  à placer avant la Fête-Dieu sur décision) ; Ange gardien, `cihm_34852` (*Dévotion aux Saints-Anges gardiens*,
+  Montréal, Fabre, 1832) : **aucune approbation** vue (titre, avis, ch. I) et **pas de neuvaine** (association pour la
+  bonne mort) : écarté. Restent introuvables : S. Raphaël, les âmes du purgatoire.
 - **Neuvaines et dévotions à jours comptés (26 nov.)** — inventaire complet : `docs/audits/NEUVAINES_2026-11-26.md`.
   **À transcrire sur l'image** (scans repérés) : neuvaines de S. François d'Assise et de sainte Élisabeth (*Notice sur
   le Tiers-Ordre…*, Québec, 1867, p. 37-60, archive.org `cihm_29653`, PDF p. 43-71 ; OCR médiocre) ; neuvaines, mois
