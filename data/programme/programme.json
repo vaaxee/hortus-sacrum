@@ -1708,6 +1708,56 @@
       }
     },
     {
+      "id": "prog:neuvaine-saint-joseph-montreal",
+      "titre": "Neuvaine pour se préparer à la fête de saint Joseph",
+      "motif": {"fins": ["demande"], "objets": ["saint-joseph"], "note": "les neuf jours avant le 19 mars : une vertu demandée chaque jour (Confrérie de Saint-Joseph, Montréal)"},
+      "revision": 1,
+      "quand": {"autour": {"ancre": "03-19", "de": -9, "a": -1}},
+      "source": "Demande de l'utilisateur du 26 nov. (suite) : Manuel de la Confrérie de Saint Joseph, Montréal, p. 65-68, relu sur l'image ; à côté de la neuvaine du plan (Douleurs et Allégresses), gardée",
+      "page": {
+        "moment": "journee",
+        "ordre": 76,
+        "sections": [
+          {"notice": "confreriejoseph:neuvaine-fetes-saint-joseph", "extrait": {"a": "## Prière préparatoire"}},
+          {"texte": "confreriejoseph:neuvaine-fetes-saint-joseph", "extrait": {"section": "## Prière préparatoire"}},
+          {"texte": "confreriejoseph:neuvaine-fetes-saint-joseph", "extrait": {"section": "## Premier jour. Prière pour demander la foi."}, "quand": {"autour": {"ancre": "03-19", "de": -9, "a": -9}}},
+          {"texte": "confreriejoseph:neuvaine-fetes-saint-joseph", "extrait": {"section": "## Deuxième jour. Prière pour demander l'espérance."}, "quand": {"autour": {"ancre": "03-19", "de": -8, "a": -8}}},
+          {"texte": "confreriejoseph:neuvaine-fetes-saint-joseph", "extrait": {"section": "## Troisième jour. Prière pour demander la charité."}, "quand": {"autour": {"ancre": "03-19", "de": -7, "a": -7}}},
+          {"texte": "confreriejoseph:neuvaine-fetes-saint-joseph", "extrait": {"section": "## Quatrième jour. Prière pour demander l'humilité."}, "quand": {"autour": {"ancre": "03-19", "de": -6, "a": -6}}},
+          {"texte": "confreriejoseph:neuvaine-fetes-saint-joseph", "extrait": {"section": "## Cinquième jour. Prière pour demander l'obéissance."}, "quand": {"autour": {"ancre": "03-19", "de": -5, "a": -5}}},
+          {"texte": "confreriejoseph:neuvaine-fetes-saint-joseph", "extrait": {"section": "## Sixième jour. Prière pour demander le recueillement."}, "quand": {"autour": {"ancre": "03-19", "de": -4, "a": -4}}},
+          {"texte": "confreriejoseph:neuvaine-fetes-saint-joseph", "extrait": {"section": "## Septième jour. Prière pour demander la fuite du péché."}, "quand": {"autour": {"ancre": "03-19", "de": -3, "a": -3}}},
+          {"texte": "confreriejoseph:neuvaine-fetes-saint-joseph", "extrait": {"section": "## Huitième jour. Prière pour demander la grace du salut."}, "quand": {"autour": {"ancre": "03-19", "de": -2, "a": -2}}},
+          {"texte": "confreriejoseph:neuvaine-fetes-saint-joseph", "extrait": {"section": "## Neuvième jour. Prière pour se consacrer a St. Joseph."}, "quand": {"autour": {"ancre": "03-19", "de": -1, "a": -1}}}
+        ]
+      }
+    },
+    {
+      "id": "prog:neuvaine-saint-francois",
+      "titre": "Neuvaine à saint François d'Assise",
+      "motif": {"fins": ["demande", "louange"], "objets": ["saints"], "note": "les neuf jours avant la fête de saint François (4 octobre) : une vertu du saint par jour (Tiers-Ordre, Québec, 1867)"},
+      "revision": 1,
+      "quand": {"autour": {"ancre": "10-04", "de": -9, "a": -1}},
+      "source": "Demande de l'utilisateur du 26 nov. (suite) : neuvaine de la Notice sur le Tiers-Ordre, Québec, 1867, p. 37-51, relue sur l'image ; hymne et répons, auxquels le livre renvoie chaque jour, repris à l'affichage",
+      "page": {
+        "moment": "journee",
+        "ordre": 76,
+        "sections": [
+          {"texte": "tiersordre1867:neuvaine-saint-francois", "extrait": {"section": "## Au commencement de chaque exercice"}},
+          {"texte": "tiersordre1867:neuvaine-saint-francois", "extrait": {"section": "## 1er jour. Humilité de saint François."}, "quand": {"autour": {"ancre": "10-04", "de": -9, "a": -9}}},
+          {"texte": "tiersordre1867:neuvaine-saint-francois", "extrait": {"section": "## 2e jour. Pauvreté de St. François.", "retirer": ["*Hymne :* Applaudissez, page 37.", "*Répons :* O St. François, etc. page 39."]}, "quand": {"autour": {"ancre": "10-04", "de": -8, "a": -8}}},
+          {"texte": "tiersordre1867:neuvaine-saint-francois", "extrait": {"section": "## 3e jour. Pénitence de St. François.", "retirer": ["*Hymne :* Applaudissez, page 37.", "*Répons :* O St. François, etc. page 39."]}, "quand": {"autour": {"ancre": "10-04", "de": -7, "a": -7}}},
+          {"texte": "tiersordre1867:neuvaine-saint-francois", "extrait": {"section": "## 4e jour. Patience de St. François.", "retirer": ["*Hymne :* Applaudissez, page 37.", "*Répons :* O St. François, etc. page 39."]}, "quand": {"autour": {"ancre": "10-04", "de": -6, "a": -6}}},
+          {"texte": "tiersordre1867:neuvaine-saint-francois", "extrait": {"section": "## 5e jour. Charité de St. François, son amour pour Dieu.", "retirer": ["*Hymne :* Applaudissez, page 37.", "*Répons :* O St. François, etc. page 39."]}, "quand": {"autour": {"ancre": "10-04", "de": -5, "a": -5}}},
+          {"texte": "tiersordre1867:neuvaine-saint-francois", "extrait": {"section": "## 6e jour. Amour de St. François pour le prochain.", "retirer": ["*Hymne :* Applaudissez, page 37.", "*Répons :* O St. François etc. page 39."]}, "quand": {"autour": {"ancre": "10-04", "de": -4, "a": -4}}},
+          {"texte": "tiersordre1867:neuvaine-saint-francois", "extrait": {"section": "## 7e jour. Dévotion de S. François pour les mystères de Jésus.", "retirer": ["*Hymne :* Applaudissez, page 37.", "*Répons :* St. François etc. page 39."]}, "quand": {"autour": {"ancre": "10-04", "de": -3, "a": -3}}},
+          {"texte": "tiersordre1867:neuvaine-saint-francois", "extrait": {"section": "## 8e jour. Les saints stigmates de S. François.", "retirer": ["*Hymne :* Applaudissez, page 37.", "*Répons :* O St. François etc. page 39."]}, "quand": {"autour": {"ancre": "10-04", "de": -2, "a": -2}}},
+          {"texte": "tiersordre1867:neuvaine-saint-francois", "extrait": {"section": "## 9e jour. Heureuse mort de S. François.", "retirer": ["*Hymne :* Applaudissez, page 37.", "*Répons :* O St. François etc. page 39."]}, "quand": {"autour": {"ancre": "10-04", "de": -1, "a": -1}}},
+          {"texte": "tiersordre1867:neuvaine-saint-francois", "extrait": {"section": "## A la fin de chaque exercice"}}
+        ]
+      }
+    },
+    {
       "id": "prog:priere-du-soir",
       "titre": "Prière du soir et examen de conscience",
       "motif": {"fins": ["action-de-graces", "demande", "reparation"], "objets": ["trinite"], "note": "rendre grâces, examiner sa conscience et demander pardon avant la nuit (LISTE_DU_JOUR, Soir)"},

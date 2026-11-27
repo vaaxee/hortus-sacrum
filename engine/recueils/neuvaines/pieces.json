@@ -1,0 +1,36 @@
+[
+ {
+  "id": "tiersordre1867:neuvaine-saint-francois",
+  "titre": "Neuvaine en l'honneur du séraphique Père saint François d'Assise",
+  "partie": "Neuvaines",
+  "categorie": "",
+  "usage": "Neuf jours avant la fête de saint François (4 octobre). Chaque jour : l'hymne « Applaudissez » au commencement, la vertu du jour et sa prière, trois Pater, Ave, Gloria, et à la fin le répons des stigmates, le verset et l'oraison (dans le livre, ce bloc est imprimé une fois, après la prière du premier jour ; les jours suivants y renvoient par « page 37 » et « page 39 »).",
+  "indulgence": "",
+  "source": {
+   "ouvrage": "Notice sur le Tiers-Ordre de la pénitence de Saint-François d'Assise, suivie de neuvaines, litanies, etc.",
+   "edition": "Québec, 1867 (imprimatur du 24 mai 1867)",
+   "page": "37-51 (PDF p. 43-57)",
+   "url": "https://archive.org/details/cihm_29653"
+  },
+  "latin": "",
+  "fichiers": ["neuvaine-francois.md", "fin-francois.md"],
+  "revision": 1
+ },
+ {
+  "id": "confreriejoseph:neuvaine-fetes-saint-joseph",
+  "titre": "Neuvaine pour se préparer aux fêtes de saint Joseph",
+  "partie": "Neuvaines",
+  "categorie": "Mercredi",
+  "usage": "Neuf jours avant une fête de saint Joseph (le 19 mars surtout) : la prière préparatoire, puis la prière du jour, qui demande une vertu. Fautes de l'impression gardées : « qni », « Jèsus » (8e jour).",
+  "indulgence": "",
+  "source": {
+   "ouvrage": "Manuel de la Confrérie de Saint Joseph, « Neuvaine pour se préparer aux fêtes de St. Joseph »",
+   "edition": "Montréal, se trouve à l’hospice St. Joseph, s. d. [vers 1880-1890] ; aucune approbation imprimée dans le scan",
+   "page": "65-68 (PDF p. 66-69)",
+   "url": "https://archive.org/details/cihm_61528"
+  },
+  "latin": "",
+  "fichiers": ["neuvaine-joseph-montreal.md"],
+  "revision": 1
+ }
+]

@@ -51,6 +51,36 @@ describe('indulgences', () => {
 		const une = indulgencesDuJour(jr, () => 0, new Map([[jac, 1]]), IND);
 		expect(enJours(une.gagnees)).toBeGreaterThan(0);
 	});
+	it('n° 250 : la neuvaine du premier vendredi compte, une seule fois le jour où tombe aussi celle de S. Alphonse', () => {
+		const jour = (date: string) => journee(PROGRAMME, { jour: CALENDRIER.find((j) => j.date === date)!, pratiques: PLAN, corps });
+		const sans = { ...IND, fiches: { ...IND.fiches } };
+		delete sans.fiches['breviaire-sc:neuvaine'];
+		const possibles = (date: string, ind: Indulgences) => enJours(indulgencesDuJour(jour(date), () => 0, new Map(), ind).possibles);
+		// lecture stricte (décision du 26 nov.) : seule la neuvaine du premier vendredi de décembre compte
+		const comptes = CALENDRIER.map((j) => j.date).filter((d) => possibles(d, IND) !== possibles(d, sans));
+		expect(comptes).toEqual([
+			'2026-11-29',
+			'2026-11-30',
+			'2026-12-01',
+			'2026-12-02',
+			'2026-12-03',
+			'2027-11-24',
+			'2027-11-25',
+			'2027-11-26',
+			'2027-11-27'
+		]);
+		// les autres neuvaines du mois restent au programme, sans indulgence
+		expect(jour('2027-02-01').textes.has('breviaire-sc:neuvaine')).toBe(true);
+		// 28 mai 2027 : la neuvaine avant la fête est comptée sur celle de S. Alphonse, une seule fois
+		const j = jour('2027-05-28');
+		expect(j.textes.has('breviaire-sc:neuvaine') && j.textes.has('liguori:neuvaine-sacre-coeur')).toBe(true);
+		const sansLiguori = { ...IND, fiches: { ...IND.fiches } };
+		delete sansLiguori.fiches['liguori:neuvaine-sacre-coeur'];
+		expect(possibles('2027-05-28', IND) - possibles('2027-05-28', sansLiguori)).toBe(7 * 365);
+		// le même jour en décembre, deux textes à n° 250 ne comptent qu'une fois
+		const deux = { ...IND, fiches: { ...IND.fiches, 'liguori:neuvaine-sacre-coeur': IND.fiches['breviaire-sc:neuvaine'] } };
+		expect(possibles('2026-12-01', deux)).toBe(possibles('2026-12-01', IND));
+	});
 	it('tout coché : gagné = possible', () => {
 		const tout = indulgencesDuJour(jr, (l) => l.heures?.length ?? 1, new Map(), IND);
 		expect(tout.gagnees).toEqual(tout.possibles);
