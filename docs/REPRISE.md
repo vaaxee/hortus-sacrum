@@ -44,6 +44,23 @@ doit fournir ou relire. Les branches `claude/neuvaines`, `claude/prieres-obligat
 `claude/archi-lot-a-integration` sont fusionnées (PR #82 à #85), comme le travail en cours du psautier de Fillion et
 de la Somme.
 
+## Hors ligne (27 nov.)
+
+Demande de l'utilisateur : l'app doit marcher sur un téléphone **sans carte SIM**, donc souvent sans réseau.
+
+- **Service worker** (`app/src/service-worker.ts`) :
+  - la page unique (`/`) est préchargée et sert toutes les navigations depuis le cache ;
+  - les chemins sont absolus (`paths.relative = false` dans `vite.config.ts`), sinon la page gardée cherchait ses
+    fichiers dans `/lecture/_app/` ;
+  - un cache à part (`hortus-donnees`), gardé d'une version à l'autre, contient les recueils, les jours du Bréviaire
+    et les polices. La page demande (`tout-garder`) de les télécharger d'avance, ~26 Mo, tant qu'il y a du réseau ;
+  - pour le reste, le réseau est borné à 8 s.
+- **Ouverture** : elle n'attend plus la session Supabase, qui pouvait attendre jusqu'à 30 s sans réseau. La
+  synchronisation ne part pas hors ligne. Le stockage persistant est demandé au navigateur.
+- **Test** : `tests/e2e/hors-ligne.spec.ts`.
+- **Attention** : `vite preview` ne sert pas `/index.html` (404). Ne jamais ajouter ce chemin au préchargement : un
+  seul fichier en échec fait échouer toute l'installation du service worker.
+
 ## Reste à faire
 
 1. **Guéranger** : **fait en partie** (13 nov.) : 202 lectures sur 423 reprises du texte propre de domgueranger.net (Avent → temps pascal) et d'abbe-pivert.com (jours et saints choisis jusqu'au temps après la Pentecôte), appariées à l'OCR par recoupement de suites de mots (`engine/recueils/relecture/gueranger/`). Ces transcriptions omettent les pièces latines. Restent en OCR surtout les t. 8, 9, 12-15 (temps après la Pentecôte, sanctoral de juin à novembre) : à corriger sur scans comme Berlioux, ou à reprendre d'une autre transcription.
