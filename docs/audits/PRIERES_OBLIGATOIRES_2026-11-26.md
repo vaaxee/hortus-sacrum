@@ -196,3 +196,52 @@ Les nouveaux textes du programme ont un classement **deviné** dans `data/priere
 Tests : pages composées mot pour mot (`references/pages-composees.json`, offrande du matin et chapelet mis à jour),
 coupe du Paroissien vérifiée (matin : entier moins le paragraphe d'offrande ; soir : entier), unicité sur l'année,
 e2e `prieres-matin-soir.spec.ts` (remplaçants, trois *Ave*, consigne du chapelet).
+
+## 10. Les 24 éléments sans titre : recherche du 27 novembre et propositions
+
+Demande : pour chaque élément resté sans titre ni remplaçant (§ 7), chercher dans les manuels du dépôt et les sources
+admises un titre ou un remplaçant ancien de même rôle, et le **proposer** (règle de l'utilisateur : rien n'est branché
+sans son accord). Les candidats sont ajoutés à `data/prieres/sources.json` (13 pièces, `usage` « Candidat des prières
+obligatoires ») ; **ni `programme.json` ni `indulgences.json` ne sont touchés pour eux** (aucune fiche : rien n'est
+compté tant que rien n'est branché).
+
+Sources : *Enchiridion* 1952 (numéro, valeur et texte vus sur l'image : archive.org `enchiridion_indulgentiarum_1952`) ;
+*Thésaurisons pour le ciel* 1941 (traduction certifiée, can. 934 § 2 ; pages vues sur le PDF de liberius.net) ;
+Beringer 1925 (vu sur l'image, `lesindulgences0001beri`). Le guide reste l'*Aide-mémoire* de *Thésaurisons* (§ « Sources
+du titre »). Longueurs en mots.
+
+| # | Élément | Candidat (id) | Titre | Longueur | Recommandation |
+|---|---|---|---|---|---|
+| M2 | « Très sainte et très auguste Trinité… je vous adore » | **Ô Très Sainte Trinité, je vous adore habitant par votre grâce en mon âme**, quatre invocations a-d (`thesaurisons:sainte-trinite-habitant-en-mon-ame`, *Thésaurisons* n° 202, p. 85) | **I** Ench. n° 12 (p. 6) : 300 j. pour chacune | 46 → 45 | **Remplacer** par a-d (même adoration de la Trinité présente). Variante : a) seule (14 mots). Autre candidat écarté : Ench. n° 46 (« Je vous adore, ô Dieu… », français, 500 j. une fois le jour), plus long (130) et doublant l'oraison de Prime |
+| M4 | « Adorable Jésus, divin modèle… » (résolution) | « Daignez, Seigneur, en ce jour, me préserver de tout péché » (`thesaurisons:jac-14`, Ench. n° 21, 500 j. le matin ou le soir) | I | 64 → 10 | **Garder** : la jaculatoire est déjà dans la roue des jaculatoires du jour (doublon certains jours) et l'oraison de Prime porte déjà la résolution |
+| M5 | « Mon Dieu, vous connaissez ma faiblesse… » (demande de grâce) | **Toute-puissance du Père, venez en aide à ma fragilité…** (`beringer:trinite-toute-puissance`, déjà au dépôt ; même texte, mot pour mot, que *Thésaurisons* n° 212, p. 86) | **I** Ench. n° 53 (p. 21-22) : 500 j. ; traduction approuvée (Thésaurisons) — la note « traduction non déclarée fidèle » de la pièce est donc à corriger | 64 → 55 | **Remplacer**. Réserve : la pièce est déjà la prière de chaque jour de la neuvaine à la Trinité (9 jours par an) : ces jours-là, doublon à régler (garder le Paroissien ces jours-là, ou déclarer le doublon) |
+| M6 | *Pater noster* | — (le *Pater* seul n'est pas indulgencié en 1952) | — | — | **Garder** |
+| M7 | *Ave Maria* | trois *Ave* de saint Alphonse : **décidé le 26 nov. : le soir seulement** | — | — | **Garder** (décision prise) |
+| M10 | « Sainte Vierge, Mère de Dieu, ma mère et ma patronne… » | « Ô Marie conçue sans péché… Refuge des pécheurs, Mère des agonisants… » (*Thésaurisons* n° 492, p. 167 ; Ench. n° 642, 500 j.), non ajouté | I | 65 → 75 | **Garder** : le *Salve Regina* qui suit porte déjà le titre ; n° 492 est une prière pour la bonne mort, d'un autre rôle |
+| M11 | « Ange du ciel, mon fidèle et charitable guide… » | **Ange de Dieu, qui êtes mon gardien…** (`thesaurisons:ange-de-dieu`, *Thésaurisons* n° 145, p. 54) | **I** Ench. n° 452 (p. 328-329) : 300 j. ; plénière le 2 oct. si dite matin et soir | 37 → 31 | **Remplacer** (formule « aujourd'hui ») ; c'est l'*Angele Dei* que `A_FOURNIR.md` demandait |
+| M12 | « Grand saint, dont j'ai l'honneur de porter le nom… » | **O Patron céleste, dont j'ai l'honneur de porter le nom…** (`beringer:priere-au-saint-patron`, Beringer n° 533, p. 280-281) | **I** Ench. n° 581 (p. 450) : 300 j. — Beringer ne rend pas « merear » | 37 → 47 | **Remplacer**, latin en regard ; à trancher : tenir Beringer pour la traduction approuvée (règle du 20 nov. : « mot pour mot ») ou dire le latin pour l'indulgence. Recommandé : l'admettre (le reste est littéral) |
+| M19 | Devoir envers l'Église et ses ministres (livret) | **Créateur, Esprit-Saint, daignez venir en aide à l'Église catholique…** (`thesaurisons:createur-esprit-saint-eglise`, *Thésaurisons* n° 264, p. 97-98) | **I** Ench. n° 288 (p. 190) : 500 j. | 156 → 62 | **Remplacer** (l'Église et « vos serviteurs qui ont reçu votre onction ») ; les invocations finales du livret (S. Pierre, S. Jean, S. Pie X) peuvent rester comme oraisons jaculatoires si l'utilisateur y tient |
+| M20 | Devoir envers la famille (livret) | « Jésus, Marie, et vous, ô bon Joseph, bénissez-nous… » (n° 262) — proposé au soir (S12) | — | — | **Garder** (saint Edmond, M18, nomme déjà « mes parents ») |
+| M21 | Devoir envers la patrie (livret) | aucun texte de l'Ench. 1952 pour la France ; `desgenettes:priere-salut-de-la-france` sans indulgence | — | — | **Garder** |
+| M22 | Devoir envers les pauvres, les persécutés, les affligés (livret) | **À saint Vincent de Paul** (`thesaurisons:saint-vincent-de-paul`, *Thésaurisons* n° 164, p. 63-64) : « secourir les pauvres, soulager les malades, consoler les affligés, protéger ceux qui sont délaissés… » | **I** Ench. n° 513 (p. 383) : 300 j. | 92 → 150 | **Remplacer** (le livret invoque déjà saint Vincent de Paul) ; plus long |
+| M23 | Devoir envers moi-même (livret) | **Seigneur tout-puissant, qui permettez le mal pour en tirer le bien…** (`thesaurisons:fideles-jusqu-a-la-mort`, *Thésaurisons* n° 211, p. 86) | **I** Ench. n° 51 (p. 21) : 500 j. | 99 → 36 | **Remplacer** (fidélité jusqu'à la mort, conformité à la volonté de Dieu) |
+| C2 | Ouverture de Montfort | — | — | — | **Garder** (méthode retenue) |
+| C12 | Conclusion « Dieu seul » de Montfort | — | — | — | **Garder** (méthode retenue) |
+| S3 | « Je vous adore, ô mon Dieu… Je crois… J'espère… Je vous aime… » | **Ô Bienheureuse Trinité, Dieu unique, je crois en vous, j'espère en vous, je vous aime, je vous adore…** (`thesaurisons:bienheureuse-trinite-je-crois-en-vous`, *Thésaurisons* n° 208, p. 85) | **I** Ench. n° 40 (p. 13) : 300 j. | 61 → 30 | **Remplacer** (mêmes actes, même ordre de rôle). L'acte d'Ench. n° 37 (*Deus meus, credo in te…*, avec contrition) n'a pas de traduction approuvée trouvée |
+| S4 | « Quelles actions de grâces vous rendrai-je… » | **Mon Dieu, je vous rends grâces de tout ce que vous m'avez donné, de tout ce que vous m'avez retiré. Que votre volonté soit faite.** (`thesaurisons:je-vous-rends-graces-de-tout`, *Thésaurisons* n° 200, p. 84) | **I** Ench. n° 9 (p. 5) : 300 j. | 95 → 24 | **Remplacer**. Variante : `thesaurisons:action-de-graces` (n° 500, « Nous vous rendons grâces… pour tous vos bienfaits »), déjà au dépôt |
+| S5 | « Source éternelle de lumière, Esprit-Saint… » (avant l'examen) | **Venez, Esprit-Saint, Sanctificateur tout puissant… Illuminez notre esprit… purifiez notre conscience, rectifiez notre jugement…** (`ench1952:venez-esprit-saint-sanctificateur`, Ench. n° 290, p. 191, **concession en français**) | **I** 500 j. | 56 → 65 | **Remplacer** (le français est le texte même de la concession) |
+| S6 | « Me voici, Seigneur… » (contrition) | — | — | — | **Garder** : décidé le 26 nov. |
+| S7 | « Que je souhaiterais… » (ferme propos) | « Daignez, Seigneur, en cette nuit, me préserver de tout péché » (`thesaurisons:jac-14`) | I | 100 → 10 | **Garder** (même raison qu'en M4) |
+| S8 | *Notre Père* | — | — | — | **Garder** |
+| S12 | « Bénissez, ô mon Dieu, le repos… ; Vierge sainte, mon bon Ange, mon saint Patron, intercédez pour moi… » | **Jésus, Marie, et vous, ô bon Joseph, bénissez-nous maintenant et à l'heure de notre agonie.** (`thesaurisons:jesus-marie-bon-joseph-benissez-nous`, *Thésaurisons* n° 262, p. 97) | **I** Ench. n° 273 (p. 178) : 300 j. | 60 → 17 | **Remplacer**. Variantes : les trois invocations « Jésus, Marie, Joseph, je vous donne mon cœur… » (`thesaurisons:jesus-marie-joseph-bonne-mort`, n° 490, Ench. n° 636, 7 ans chacune : déjà comptées dans le petit chapelet de l'Immaculée Conception de Weber, doublon les jours où il est dit) ; « En vos mains, Seigneur » (n° 12, Ench. n° 19), mais il est dans la roue des jaculatoires |
+| S13 | Prière pour les vivants et les défunts | **Mon Dieu, répandez vos bénédictions et vos miséricordes sur toutes les personnes et sur les âmes du purgatoire pour lesquelles… je dois et je veux prier.** (`ench1952:repandez-vos-benedictions`, Ench. n° 13, p. 6, **concession en français** ; même texte dans *Thésaurisons* n° 203) | **I** 300 j. | 91 → 35 | **Remplacer** |
+| S16 | Prière du jour pour les âmes (Beringer n° 615) | **titre trouvé, sans remplacer** : ce sont les *Orationes per singulos hebdomadae dies* de l'Ench. 1952, **n° 594** (p. 457-460 : 500 j. pour chaque oraison ; S. C. Indulg., 18 nov. 1826 ; S. Pén. Ap., 26 janv. 1932), dont *Thésaurisons* n° 444 (p. 150-151) donne la traduction approuvée, **identique à Beringer** (sauf « Sang », « Chair » et « donnés ») ; l'audit du 26 nov. l'avait dite « non retrouvée » | **I** 500 j. | — | **Compter** : ajouter la fiche (Ench. n° 594, 500 j., traduction *Thésaurisons* n° 444) aux six pièces `beringer:ames-purgatoire-*`, et, pour suivre la forme de 1952, remplacer en fin de chaque prière « *Notre Père ; Je vous salue, Marie ;* psaume *De profundis* » par « Pater, Ave, verset Requiem » (rubrique de *Thésaurisons*) — par `revision` des pièces |
+
+Bilan : sur les 24, **12 remplaçants indulgenciés proposés** (M2, M5, M11, M12, M19, M22, M23 ; S3, S4, S5, S12, S13)
+et **un titre trouvé** pour un texte déjà en place (S16) ; **11 restent sans titre** (M4, M6, M7, M10, M20, M21 ; C2, C12 ;
+S6, S7, S8), dont trois par décision déjà prise (M7, S6, et la méthode de Montfort C2/C12). Si tout est retenu, la
+prière du matin perd environ 290 mots et la prière du soir environ 230 (le Paroissien serait coupé aux paragraphes
+remplacés, comme au § 9).
+
+Pièces déjà au dépôt réutilisées : `beringer:trinite-toute-puissance` (M5), `thesaurisons:jac-14` (M4, S7),
+`thesaurisons:action-de-graces` (S4, variante), `beringer:ames-purgatoire-*` (S16).

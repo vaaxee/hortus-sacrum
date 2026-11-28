@@ -208,6 +208,30 @@ Audit : `docs/audits/PRIERES_OBLIGATOIRES_2026-11-26.md`. Chaque texte lu sur l'
 | Notice : un *Pater*, un *Ave* et un *Gloria* aux intentions du Souverain Pontife (`thesaurisons:prieres-intentions-souverain-pontife`) | *Thésaurisons*, notes explicatives, 4) ; Ench. 1952, p. XV, note 1 a) (S. Pén. Ap., 20 sept. 1933) | 17 | idem (n17) ; Ench. n14 |
 | Acte de contrition (`quebec1888:acte-de-contrition`, non branché) | *Le Catéchisme des provinces ecclésiastiques de Québec, Montréal et Ottawa*, Québec, A. Côté, approuvé le 20 avril 1888 (card. Taschereau) ; Ench. 1952, n° 36 | 5 | archive.org `lecatchismedes00qu` (n6) |
 | *Aide-mémoire : la journée indulgenciée* (plan des prières du lever, du matin, de la journée et du soir) | *Thésaurisons*, p. 187-188 : sert de guide aux remplaçants, non transcrit | 187-188 | idem (n187-n188) |
+## Lot A et prières obligatoires, suite (27 novembre 2026, relus sur l'image, non branchés)
+
+Audits : `docs/audits/ARCHICONFRERIES_LOT_A_2026-11-25.md` (« Vérification dans l'Enchiridion de 1952 », « Précieux Sang
+1890 : litanies et amende honorable ») et `docs/audits/PRIERES_OBLIGATOIRES_2026-11-26.md` (§ 10). Rien n'est branché au
+programme ; aucune fiche d'indulgence ajoutée (cinq verdicts « non comptée » dans `indulgences.json` › `sans_compte`).
+
+| Texte | Source | Pages | Accès |
+|---|---|---|---|
+| Amende honorable au Précieux Sang de Jésus glorifié (`precieuxsang1890:amende-honorable-adorateurs`) | *Nouveau manuel du Très-Précieux Sang*, Saint-Hyacinthe, 1890 (approbation du 18 déc. 1889) | 233-237 | archive.org `cihm_92923` (n243-n247) |
+| Litanies de Jésus agonisant (`precieuxsang1890:litanies-de-jesus-agonisant`) | idem (d'après le « Manuel du Cœur agonisant de Jésus ») | 371-372 | idem (n385, n390) |
+| Ô Très Sainte Trinité, je vous adore habitant… (`thesaurisons:sainte-trinite-habitant-en-mon-ame`) | *Thésaurisons*, n° 202 ; Ench. 1952, n° 12 | 85 | liberius.net (PDF p. 86) ; Ench. n21 |
+| Ange de Dieu, qui êtes mon gardien (`thesaurisons:ange-de-dieu`) | *Thésaurisons*, n° 145 ; Ench. 1952, n° 452 | 54 | PDF p. 55 ; Ench. n347 |
+| Prière au saint Patron (`beringer:priere-au-saint-patron`) | Beringer 1925, t. I, n° 533 ; Ench. 1952, n° 581 | 280-281 | `lesindulgences0001beri` (leaf 296-297) ; Ench. n469 |
+| Créateur, Esprit-Saint, … l'Église catholique (`thesaurisons:createur-esprit-saint-eglise`) | *Thésaurisons*, n° 264 ; Ench. 1952, n° 288 | 97-98 | PDF p. 98-99 ; Ench. n207 |
+| À saint Vincent de Paul (`thesaurisons:saint-vincent-de-paul`) | *Thésaurisons*, n° 164 ; Ench. 1952, n° 513 | 63-64 | PDF p. 64-65 ; Ench. n402 |
+| Seigneur tout-puissant, qui permettez le mal… (`thesaurisons:fideles-jusqu-a-la-mort`) | *Thésaurisons*, n° 211 ; Ench. 1952, n° 51 | 86 | PDF p. 87 ; Ench. n36 |
+| Ô Bienheureuse Trinité, Dieu unique, je crois en vous (`thesaurisons:bienheureuse-trinite-je-crois-en-vous`) | *Thésaurisons*, n° 208 ; Ench. 1952, n° 40 | 85 | PDF p. 86 ; Ench. n28 |
+| Mon Dieu, je vous rends grâces de tout… (`thesaurisons:je-vous-rends-graces-de-tout`) | *Thésaurisons*, n° 200 ; Ench. 1952, n° 9 | 84 | PDF p. 85 ; Ench. n20 |
+| Venez, Esprit-Saint, Sanctificateur tout puissant (`ench1952:venez-esprit-saint-sanctificateur`) | *Enchiridion indulgentiarum*, 1952, n° 290 (concession en français) | 191 | Ench. n208 |
+| Jésus, Marie, et vous, ô bon Joseph, bénissez-nous (`thesaurisons:jesus-marie-bon-joseph-benissez-nous`) | *Thésaurisons*, n° 262 ; Ench. 1952, n° 273 | 97 | PDF p. 98 ; Ench. n195 |
+| Jésus, Marie, Joseph, je vous donne mon cœur (`thesaurisons:jesus-marie-joseph-bonne-mort`) | *Thésaurisons*, n° 490 ; Ench. 1952, n° 636 (couche texte) | 166-167 | PDF p. 167-168 |
+| Mon Dieu, répandez vos bénédictions… (`ench1952:repandez-vos-benedictions`) | *Enchiridion indulgentiarum*, 1952, n° 13 (concession en français) ; *Thésaurisons*, n° 203 | 6 | Ench. n21 |
+| Titre de la prière du jour pour les âmes (`beringer:ames-purgatoire-*`), proposé | Ench. 1952, n° 594 ; *Thésaurisons*, n° 444 (même traduction que Beringer) | 457-460 ; 150-151 | Ench. n476-n479 ; PDF p. 151-152 |
+
 ## Neuvaines et dévotions à jours comptés (26 novembre 2026, à valider)
 
 Inventaire et décisions : `docs/audits/NEUVAINES_2026-11-26.md`. Une seule pièce nouvelle ; les autres lignes mettent
