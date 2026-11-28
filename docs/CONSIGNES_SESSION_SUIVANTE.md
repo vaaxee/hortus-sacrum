@@ -76,6 +76,13 @@ Décisions antérieures, rappelées dans `REPRISE.md` :
 
 ## 3. Chantiers, par priorité
 
+0. **Méditations de l'Avent de S. Alphonse — urgent (demande du 28 nov.).** Branche `claude/meditations-avent`,
+   audit `docs/audits/MEDITATIONS_AVENT_2026-11-28.md`. Tournois, *Le divin Sauveur*, t. I (1897), « Temps de
+   l'Avent », p. 1-55 : une méditation par jour du temporal (Adv1-0 → Adv3-3), ligne `prog:meditations-avent`
+   (journée, ordre 76), arrêtée le 16 déc. où la neuvaine de Noël prend la suite. Fait : 1re semaine (p. 1-23).
+   Reste : 2e dimanche → 3e mercredi ; proposer à l'utilisateur les considérations de la neuvaine de Noël (la pièce
+   `liguori:neuvaine-de-noel` n'a que les affections) ; confirmer le placement (journée plutôt que Lecture › Spirituel).
+
 1. **Neuvaines, suite — priorité de l'utilisateur.** Demande : « chaque neuvaine, douzaine ou trentaine ou autre
    dévotion à jour compté que tu trouves dans les différents manuels ». Branche `claude/neuvaines-2` (poussée).
    - **Fait (26 nov., `claude/neuvaines-2`)** : indulgence n° 250 (Ench. 1952, vue p. 156-157) sur la neuvaine du
