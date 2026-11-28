@@ -55,16 +55,20 @@ d'archive.org, puis seconde lecture Tesseract (fra+lat) et alignement mot à mot
 sont des fautes d'OCR. Orthographe et ponctuation du livre gardées (« A » sans accent, « Eglise », « Eclairez ») ;
 espaces de la ponctuation double à la française, comme pour la neuvaine au Saint-Esprit ; notes de bas de page en fin de
 partie, avec leur page. Fautes d'impression gardées : « commis par nul homme » (1er samedi), « est dissolvat » (note,
-1er vendredi). Lettre abîmée lue comme son mot : « auss: » → « aussi » (1er jeudi, p. 17) ; point parasite
+1er vendredi), « Il nous aimés » et « faiblesse, Mais » (2e lundi), « (4). puisque » (2e lundi), « ex viderant »
+(note, 3e dimanche). Petites capitales du livre (« plénitude des temps », « miséricorde », « paix »…) rendues en
+minuscules ; guillemet ouvrant imprimé à l'envers (« » Vous trouverez », 3e dimanche) rendu par « ; lettre abîmée
+« eutre » → « autre » (2e mardi). Cas douteux tranchés sur un agrandissement : « qui a rempli » (2e jeudi, p. 37,
+sans accent ; l'OCR lisait « à »). Lettre abîmée lue comme son mot : « auss: » → « aussi » (1er jeudi, p. 17) ; point parasite
 « Convertimini·ad » → « Convertimini ad » (p. 3).
 
 | Unité | Méditations | Pages | État |
 |---|---|---|---|
 | 1 | 1er dimanche → 1er samedi | 1-23 | relue sur l'image (28 nov.) |
+| 2 | 2e dimanche → 3e mercredi | 23-55 | relue sur l'image (28 nov.) |
 
 ## 5. Reste
 
-- 2e dimanche → 3e mercredi (p. 23-55).
 - Considérations des neuf méditations de la neuvaine de Noël (p. 56-83) : absentes de `liguori:neuvaine-de-noel`, qui
   n'a que les affections. À proposer à l'utilisateur (compléter la pièce avec `revision` + 1, ou une pièce à part).
 

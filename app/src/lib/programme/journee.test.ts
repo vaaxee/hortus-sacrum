@@ -557,8 +557,8 @@ describe('méditations de l’Avent de saint Alphonse (Tournois 1897), demande d
 	const rang = (t: string) => `${t[3]}${t[3] === '1' ? 'er' : 'e'}`;
 	it('une méditation par jour du temporal, dans l’ordre du livre, jusqu’à la neuvaine de Noël', () => {
 		const jours = CALENDRIER.filter((j) => ligne(calculer(j.date), ID));
-		expect(jours[0].date).toBe('2026-11-29');
-		expect(jours.every((j) => j.date < '2026-12-16')).toBe(true);
+		// 2026 : du 1er dimanche (29 nov.) au 3e mardi (15 déc.) ; le 3e mercredi tombe le 16, 1er jour de la neuvaine
+		expect(jours.map((j) => j.date)).toEqual(joursAvant('2026-12-16', 17));
 		for (const j of jours) {
 			const s = ligne(calculer(j.date), ID)!.sections.filter((x) => x.genre === 'texte');
 			const attendu = `## ${rang(j.tempora!)} ${JOURS[Number(j.tempora!.slice(-1))]}`;

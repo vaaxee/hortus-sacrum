@@ -1579,7 +1579,7 @@
       "titre": "Méditation de l'Avent (saint Alphonse)",
       "motif": {"fins": ["action-de-graces", "propitiation"], "objets": ["jesus-christ"], "note": "temps de l'Avent : une méditation de saint Alphonse sur l'Incarnation par jour, avec ses affections et prières (Tournois, 1897), du 1er dimanche jusqu'à la neuvaine de Noël, qui prend la suite le 16 décembre"},
       "revision": 1,
-      "quand": {"code_tempora": ["Adv1-0", "Adv1-1", "Adv1-2", "Adv1-3", "Adv1-4", "Adv1-5", "Adv1-6"], "sauf": {"dates": ["12-16", "12-17", "12-18", "12-19", "12-20", "12-21", "12-22", "12-23", "12-24"]}},
+      "quand": {"code_tempora": ["Adv1-0", "Adv1-1", "Adv1-2", "Adv1-3", "Adv1-4", "Adv1-5", "Adv1-6", "Adv2-0", "Adv2-1", "Adv2-2", "Adv2-3", "Adv2-4", "Adv2-5", "Adv2-6", "Adv3-0", "Adv3-1", "Adv3-2", "Adv3-3"], "sauf": {"dates": ["12-16", "12-17", "12-18", "12-19", "12-20", "12-21", "12-22", "12-23", "12-24"]}},
       "source": "Demande de l'utilisateur du 28 nov. : une méditation de saint Alphonse par jour, du 1er dimanche de l'Avent à Noël ; Tournois, Le divin Sauveur, t. I, Paris, 1897 (imprimatur de Paris, 6 juillet 1897), « Temps de l'Avent », p. 1-55, relu sur l'image : une méditation par jour du temporal (1er dimanche-3e mercredi), puis la neuvaine de Noël du livre, datée du 16 au 24 décembre (déjà au plan) ; les jours du temporal qui tombent dans la neuvaine sont laissés",
       "page": {
         "moment": "journee",
@@ -1591,7 +1591,18 @@
           {"texte": "liguori:meditations-avent", "extrait": {"section": "## 1er Mercredi. Le Verbe s'est fait homme dans la plénitude des temps."}, "quand": {"code_tempora": ["Adv1-3"]}},
           {"texte": "liguori:meditations-avent", "extrait": {"section": "## 1er Jeudi. L'abaissement de Jésus."}, "quand": {"code_tempora": ["Adv1-4"]}},
           {"texte": "liguori:meditations-avent", "extrait": {"section": "## 1er Vendredi. Jésus, vraie lumière, éclaire le monde et glorifie Dieu."}, "quand": {"code_tempora": ["Adv1-5"]}},
-          {"texte": "liguori:meditations-avent", "extrait": {"section": "## 1er Samedi. Le Fils de Dieu s'est chargé de toutes nos iniquités."}, "quand": {"code_tempora": ["Adv1-6"]}}
+          {"texte": "liguori:meditations-avent", "extrait": {"section": "## 1er Samedi. Le Fils de Dieu s'est chargé de toutes nos iniquités."}, "quand": {"code_tempora": ["Adv1-6"]}},
+          {"texte": "liguori:meditations-avent", "extrait": {"section": "## 2e Dimanche. Dieu envoie son Fils à la mort pour nous rendre la vie."}, "quand": {"code_tempora": ["Adv2-0"]}},
+          {"texte": "liguori:meditations-avent", "extrait": {"section": "## 2e Lundi. Amour que le Fils de Dieu nous a témoigné dans la Rédemption."}, "quand": {"code_tempora": ["Adv2-1"]}},
+          {"texte": "liguori:meditations-avent", "extrait": {"section": "## 2e Mardi. Jésus Homme de douleurs dès le sein de sa Mère."}, "quand": {"code_tempora": ["Adv2-2"]}},
+          {"texte": "liguori:meditations-avent", "extrait": {"section": "## 2e Mercredi. Jésus chargé de tous les péchés du monde."}, "quand": {"code_tempora": ["Adv2-3"]}},
+          {"texte": "liguori:meditations-avent", "extrait": {"section": "## 2e Jeudi. Jésus souffrit durant toute sa vie."}, "quand": {"code_tempora": ["Adv2-4"]}},
+          {"texte": "liguori:meditations-avent", "extrait": {"section": "## 2e Vendredi. Jésus a voulu tout souffrir pour gagner nos cœurs."}, "quand": {"code_tempora": ["Adv2-5"]}},
+          {"texte": "liguori:meditations-avent", "extrait": {"section": "## 2e Samedi. La plus grande peine de Jésus."}, "quand": {"code_tempora": ["Adv2-6"]}},
+          {"texte": "liguori:meditations-avent", "extrait": {"section": "## 3e Dimanche. Pauvreté de Jésus naissant."}, "quand": {"code_tempora": ["Adv3-0"]}},
+          {"texte": "liguori:meditations-avent", "extrait": {"section": "## 3e Lundi. Jésus est la source des grâces."}, "quand": {"code_tempora": ["Adv3-1"]}},
+          {"texte": "liguori:meditations-avent", "extrait": {"section": "## 3e Mardi. Jésus charitable médecin de nos âmes."}, "quand": {"code_tempora": ["Adv3-2"]}},
+          {"texte": "liguori:meditations-avent", "extrait": {"section": "## 3e Mercredi. Nous devons tout espérer par les mérites de Jésus-Christ."}, "quand": {"code_tempora": ["Adv3-3"]}}
         ]
       }
     },
