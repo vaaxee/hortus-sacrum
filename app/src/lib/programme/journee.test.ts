@@ -551,6 +551,71 @@ describe('neuvaine au Saint-Esprit de saint Alphonse (Tournois 1897), de l’Asc
 	});
 });
 
+describe('méditations de l’Avent de saint Alphonse (Tournois 1897), demande du 28 nov.', () => {
+	const ID = 'prog:meditations-avent';
+	const JOURS = ['Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi'];
+	const rang = (t: string) => `${t[3]}${t[3] === '1' ? 'er' : 'e'}`;
+	it('une méditation par jour du temporal, dans l’ordre du livre, jusqu’à la neuvaine de Noël', () => {
+		const jours = CALENDRIER.filter((j) => ligne(calculer(j.date), ID));
+		expect(jours[0].date).toBe('2026-11-29');
+		expect(jours.every((j) => j.date < '2026-12-16')).toBe(true);
+		for (const j of jours) {
+			const s = ligne(calculer(j.date), ID)!.sections.filter((x) => x.genre === 'texte');
+			const attendu = `## ${rang(j.tempora!)} ${JOURS[Number(j.tempora!.slice(-1))]}`;
+			expect(s.map((x) => x.extrait?.section?.split('.')[0]), j.date).toEqual([attendu]);
+			expect(extraire(corps(s[0].texte!)!, s[0].extrait), j.date).toMatch(/### Affections et prières/);
+		}
+	});
+	it('ne recouvre pas la neuvaine de Noël (16-24 décembre)', () => {
+		for (const date of ['2026-12-16', '2026-12-20', '2026-12-24']) expect(ligne(calculer(date), ID), date).toBeUndefined();
+	});
+});
+
+describe('neuvaine à sainte Anne (Montréal 1878), du 17 au 25 juillet', () => {
+	it('chaque jour sa considération, sans les renvois, puis les prières de la fin', () => {
+		const ID = 'prog:neuvaine-sainte-anne';
+		const ORD = ['Premier', 'Second', 'Troisième', 'Quatrième', 'Cinquième', 'Sixième', 'Septième', 'Huitième', 'Neuvième'];
+		const jours = CALENDRIER.filter((j) => ligne(calculer(j.date), ID)).map((j) => j.date);
+		expect(jours).toEqual(joursAvant('2027-07-26', 9));
+		jours.forEach((date, k) => {
+			const s = ligne(calculer(date), ID)!.sections.filter((x) => x.genre === 'texte');
+			expect(s.map((x) => x.extrait?.section?.split('.')[0]), date).toEqual([`## ${ORD[k]} jour`, '## Prières que l’on doit faire chaque jour à la fin des Exercices de la Neuvaine'.replace('’', "'")]);
+			for (const x of s) {
+				const t = extraire(corps(x.texte!)!, x.extrait)!;
+				expect(t, date).toBeTruthy();
+				expect(t, date).not.toMatch(/Voir à la fin/i);
+			}
+		});
+	});
+});
+
+describe('neuvaine au Très Saint Sacrement (Montréal), les neuf jours qui finissent la veille de la Fête-Dieu', () => {
+	it('18-26 mai 2027 ; le 1er jour en entier, ensuite le début et la fin du 1er jour autour de la prière du jour', () => {
+		const ID = 'prog:neuvaine-fete-dieu';
+		const ORD = ['Ier', 'IIème', 'IIIème', 'IVème', 'Vième', 'VIème', 'VIIème', 'VIIIème', 'IXème'];
+		const jours = CALENDRIER.filter((j) => ligne(calculer(j.date), ID)).map((j) => j.date);
+		expect(jours).toEqual(joursAvant('2027-05-27', 9));
+		expect(jourDe('2027-05-27').tempora).toBe('Pent01-4');
+		jours.forEach((date, k) => {
+			const s = ligne(calculer(date), ID)!.sections.filter((x) => x.genre === 'texte');
+			const titres = s.map((x) => x.extrait!.section);
+			if (k === 0) expect(titres, date).toEqual(['## Ier jour']);
+			else
+				expect(titres, date).toEqual([
+					'## Ier jour',
+					`## ${ORD[k]} jour`,
+					'## Ier jour',
+					...(k === 8 ? ['## Prière pour la Cloture de la Neuvaine'] : [])
+				]);
+			for (const x of s) {
+				const t = extraire(corps(x.texte!)!, x.extrait)!;
+				expect(t, date).toBeTruthy();
+				if (k > 0) expect(t, date).not.toMatch(/etc\.\*/);
+			}
+		});
+	});
+});
+
 describe('triduums des trois fêtes de saint Joseph (Confrérie de Montréal)', () => {
 	const ID = 'prog:triduums-saint-joseph';
 	const parties = (date: string) =>

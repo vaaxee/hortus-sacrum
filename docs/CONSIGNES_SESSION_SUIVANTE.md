@@ -76,6 +76,13 @@ Décisions antérieures, rappelées dans `REPRISE.md` :
 
 ## 3. Chantiers, par priorité
 
+0. **Méditations de l'Avent de S. Alphonse — urgent (demande du 28 nov.).** Branche `claude/meditations-avent`,
+   audit `docs/audits/MEDITATIONS_AVENT_2026-11-28.md`. Tournois, *Le divin Sauveur*, t. I (1897), « Temps de
+   l'Avent », p. 1-55 : une méditation par jour du temporal (Adv1-0 → Adv3-3), ligne `prog:meditations-avent`
+   (journée, ordre 76), arrêtée le 16 déc. où la neuvaine de Noël prend la suite. Fait : 1re semaine (p. 1-23).
+   Reste : 2e dimanche → 3e mercredi ; proposer à l'utilisateur les considérations de la neuvaine de Noël (la pièce
+   `liguori:neuvaine-de-noel` n'a que les affections) ; confirmer le placement (journée plutôt que Lecture › Spirituel).
+
 1. **Neuvaines, suite — priorité de l'utilisateur.** Demande : « chaque neuvaine, douzaine ou trentaine ou autre
    dévotion à jour compté que tu trouves dans les différents manuels ». Branche `claude/neuvaines-2` (poussée).
    - **Fait (26 nov., `claude/neuvaines-2`)** : indulgence n° 250 (Ench. 1952, vue p. 156-157) sur la neuvaine du
@@ -95,8 +102,9 @@ Décisions antérieures, rappelées dans `REPRISE.md` :
        litanies (en plus de la litanie du jour, décision du 27 nov.) ;
      - neuvaine du Saint-Esprit de S. Alphonse : **faite** (27 nov., `claude/neuvaines-4`, version Tournois 1897,
        choix de l'utilisateur ; 6-15 mai 2027, de l'Ascension à la vigile) ;
-     - sainte Anne (`cihm_38318`, imprimatur 1878, neuvaine p. 183 s.) et Fête-Dieu (`cihm_77294`, imprimatur de
-       Montréal) : approbations vues, **à transcrire** ; Ange gardien (`cihm_34852`) écarté (ni approbation ni neuvaine) ;
+     - sainte Anne (`cihm_38318`) : **faite** (27 nov., `claude/neuvaines-5`, 17-25 juillet) ; Fête-Dieu
+       (`cihm_77294`) : **faite** (27 nov., neuf jours finissant la veille, 18-26 mai 2027) ; Ange gardien
+       (`cihm_34852`) écarté (ni approbation ni neuvaine) ;
      - Précieux Sang 1890 : les sept vendredis du Carême, les six vendredis avant le Sacré-Cœur et la prière
        « pendant trente jours » (p. 606, microfiche abîmée : chercher un autre exemplaire) ;
      - l'union de prières de Picard 1873 : premier samedi, huit jours pour un associé défunt.
@@ -107,6 +115,56 @@ Décisions antérieures, rappelées dans `REPRISE.md` :
    - Immaculée Conception, Noël, Sacré-Cœur, Assomption, Nativité : déjà au plan avec leur texte ; Pentecôte : Veni
      Creator seulement (S. Alphonse ci-dessus).
    - Sept dimanches de saint Camille : aucune date dans les sources, donc non intégrés.
+1 bis. **Hammer 1909 : neuvaines nouvelles, en français seulement (demande de l'utilisateur du 28 nov.).**
+   L'utilisateur a fourni le PDF. Il signale que ce livre contient « pleins pleins de neuvaines ». Il ne veut que les
+   prières des neuvaines et les pratiques, **uniquement en français** ; seulement les neuvaines **nouvelles** (pas
+   celles que l'app a déjà) et **approuvées**.
+   - **Livre.** Bonaventure Hammer, O.F.M., *Mary, Help of Christians, and the Fourteen Saints Invoked as Holy
+     Helpers*, New York, Benziger, 1909. Imprimi potest du 30 mars 1908 ; nihil obstat de Remy Lafort ; imprimatur
+     de John M. Farley, archevêque de New York, 4 mars 1909, vu sur l'image (p. 4 du PDF). C'est un exemplaire de
+     Harvard numérisé par Google.
+   - **Où le prendre.** PDF : https://www.catholickingdom.com/s_Library/Books/M/Mary_Help_of_Christians_HAMMER_OCR_CK.pdf
+     (20,5 Mo, 522 pages, lu le 28 nov.). Le télécharger dans `vendor/sources/hammer1909/`, qui n'est pas versionné. Un
+     autre exemplaire existe sans doute sur archive.org ou HathiTrust (Harvard, cote KE 6082). Page du livre = page du
+     PDF moins 12 (p. 212 = PDF 224).
+   - **Neuvaines du livre et état dans l'app.**
+
+     | Neuvaine | Pages du livre | Dans l'app ? |
+     |---|---|---|
+     | Immaculée Conception (9 méditations et pratiques) | 51-73 | déjà là (Weber 1899) : ignorer |
+     | Nativité de la sainte Vierge | 74-94 | déjà là (Recueil de neuvaines, Lévis 1886) : ignorer |
+     | **Annonciation** | 95-114 | **nouvelle** |
+     | **Sept Douleurs de Marie** | 115-132 | **nouvelle** (Allibert 1838 attendu, voir A_FOURNIR) |
+     | Assomption | 133-152 | déjà là (Recueil de neuvaines, Lévis 1886) : ignorer |
+     | **Chacun des quatorze saints auxiliaires** : Georges, Blaise, Érasme, Pantaléon, Guy, Christophe, Denis, Cyriaque, Acace, Eustache, Gilles, Marguerite, Catherine, Barbe | 220-237 | **nouvelles** |
+     | **Les quatorze saints auxiliaires ensemble** (9 jours : la dévotion, la destinée de l'homme, la foi, l'espérance, l'amour de Dieu, la charité, le respect humain, la prière, la persévérance) | 238-257 | **nouvelle** |
+     | Prières de demande (trois invocations, maladie, malades, parents, enfants, époux) | 258-263 | pratiques à examiner, pas des neuvaines |
+
+     Les légendes et « leçons » des saints (p. 153-219), les pensées des saints pour chaque jour (p. 339-405), les
+     prières générales et les litanies (p. 267-330) : hors périmètre, sauf pièce nouvelle et demandée.
+   - **Règle du français, dans l'ordre (REPRISE, règle des manuels) :**
+     1. Chercher d'abord une **édition française ancienne approuvée** des mêmes neuvaines ou des mêmes prières (par
+        exemple une « Neuvaine en l'honneur des quatorze saints auxiliaires », une neuvaine de l'Annonciation ou des
+        Sept Douleurs), sur archive.org en priorité (Gallica refuse l'outil). La prendre si on la trouve, recopiée sur
+        l'image.
+     2. Sinon, une **traduction de travail** française de Hammer : marquée comme telle dans la pièce (champ source et
+        titre), l'anglais original conservé dans la pièce (champ `latin` ou une section repliée), et **aucune indulgence
+        comptée**. Liste dans l'audit des traductions à relire par l'utilisateur.
+     3. Jamais de texte écrit de mémoire ; l'anglais est recopié sur l'image avant d'être traduit.
+   - **Pour chaque neuvaine nouvelle :**
+     - une pièce dans `sources.json` (préfixe `hammer1909:`) : les prières, les méditations du jour et la pratique de
+       chaque jour (« Practice ») ;
+     - une ligne `prog:neuvaine-…` avec `Quand.autour`, sur les neuf jours qui finissent la veille de la fête au
+       calendrier de 1954 (`data/calendar/`) : Annonciation le 25 mars, Sept Douleurs le 15 septembre (et vendredi de la
+       Passion ?) ; pour chaque saint, sa fête au Martyrologe. Une fête absente du calendrier ou une date douteuse, comme
+       la neuvaine des quatorze ensemble : **proposer la date à l'utilisateur** avant d'intégrer ;
+     - un test dans `journee.test.ts`, l'unicité sur l'année, un classement « deviné » dans `dimensions-textes.json`,
+       les recouvrements gardés et notés dans l'audit `NEUVAINES_2026-11-26.md`.
+   - **Ordre conseillé :** les quatorze ensemble, puis les quatorze un par un, puis l'Annonciation, puis les Sept
+     Douleurs. Avancer une unité complète à la fois, avec la chaîne hortus-qa verte, un push, puis une PR fusionnée.
+   - **Les « Rules for the Proper Observance of Novenas » de saint Alphonse** (p. 45) et la manière de méditer (p. 46)
+     peuvent servir de notice commune à toutes les neuvaines, si l'on en trouve le français ancien chez Tournois ou dans
+     les *Œuvres*.
 2. **Lot A, reste.**
    - Précieux Sang 1890, faute d'un meilleur exemplaire : les litanies de Jésus agonisant, l'amende honorable
      des adorateurs, les messes et l'office.
