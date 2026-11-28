@@ -154,5 +154,24 @@
    "neuvaine-saint-esprit.md"
   ],
   "revision": 1
+ },
+ {
+  "id": "liguori:meditations-avent",
+  "titre": "Méditations pour le temps de l'Avent (saint Alphonse de Liguori)",
+  "partie": "Méditations",
+  "categorie": "",
+  "usage": "Une méditation par jour, du premier dimanche de l'Avent au troisième mercredi, chacune suivie de ses affections et prières ; la neuvaine de Noël prend la suite le 16 décembre (même livre, p. 56-83). Simple et fidèle traduction des Méditations de saint Alphonse pour le temps de l'Avent, de Noël et de l'Épiphanie (introduction du P. Tournois, p. XII). Notes de bas de page du livre gardées en fin de partie, avec leur page. Orthographe et fautes de l'impression gardées (« commis par nul homme », 1er samedi ; « est dissolvat », note du 1er vendredi).",
+  "indulgence": "",
+  "source": {
+   "ouvrage": "Le divin Sauveur, méditations et neuvaines tirées de saint Alphonse de Liguori, par le P. A. Tournois, C.SS.R., t. I, première partie, « Temps de l'Avent »",
+   "edition": "Paris, Douniol (P. Téqui), 1897 ; imprimatur, Paris, 6 juillet 1897",
+   "page": "1-23 (PDF p. 32-54) : du 1er dimanche au 1er samedi",
+   "url": "https://archive.org/details/ledivinsauveurm01ligu"
+  },
+  "latin": "",
+  "fichiers": [
+   "meditations-avent.md"
+  ],
+  "revision": 1
  }
 ]

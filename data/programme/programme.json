@@ -1575,6 +1575,27 @@
       }
     },
     {
+      "id": "prog:meditations-avent",
+      "titre": "Méditation de l'Avent (saint Alphonse)",
+      "motif": {"fins": ["action-de-graces", "propitiation"], "objets": ["jesus-christ"], "note": "temps de l'Avent : une méditation de saint Alphonse sur l'Incarnation par jour, avec ses affections et prières (Tournois, 1897), du 1er dimanche jusqu'à la neuvaine de Noël, qui prend la suite le 16 décembre"},
+      "revision": 1,
+      "quand": {"code_tempora": ["Adv1-0", "Adv1-1", "Adv1-2", "Adv1-3", "Adv1-4", "Adv1-5", "Adv1-6"], "sauf": {"dates": ["12-16", "12-17", "12-18", "12-19", "12-20", "12-21", "12-22", "12-23", "12-24"]}},
+      "source": "Demande de l'utilisateur du 28 nov. : une méditation de saint Alphonse par jour, du 1er dimanche de l'Avent à Noël ; Tournois, Le divin Sauveur, t. I, Paris, 1897 (imprimatur de Paris, 6 juillet 1897), « Temps de l'Avent », p. 1-55, relu sur l'image : une méditation par jour du temporal (1er dimanche-3e mercredi), puis la neuvaine de Noël du livre, datée du 16 au 24 décembre (déjà au plan) ; les jours du temporal qui tombent dans la neuvaine sont laissés",
+      "page": {
+        "moment": "journee",
+        "ordre": 76,
+        "sections": [
+          {"texte": "liguori:meditations-avent", "extrait": {"section": "## 1er Dimanche. Bonté de Dieu dans l'œuvre de la Rédemption."}, "quand": {"code_tempora": ["Adv1-0"]}},
+          {"texte": "liguori:meditations-avent", "extrait": {"section": "## 1er Lundi. Grandeur du mystère de l'Incarnation."}, "quand": {"code_tempora": ["Adv1-1"]}},
+          {"texte": "liguori:meditations-avent", "extrait": {"section": "## 1er Mardi. Amour de Dieu pour les hommes."}, "quand": {"code_tempora": ["Adv1-2"]}},
+          {"texte": "liguori:meditations-avent", "extrait": {"section": "## 1er Mercredi. Le Verbe s'est fait homme dans la plénitude des temps."}, "quand": {"code_tempora": ["Adv1-3"]}},
+          {"texte": "liguori:meditations-avent", "extrait": {"section": "## 1er Jeudi. L'abaissement de Jésus."}, "quand": {"code_tempora": ["Adv1-4"]}},
+          {"texte": "liguori:meditations-avent", "extrait": {"section": "## 1er Vendredi. Jésus, vraie lumière, éclaire le monde et glorifie Dieu."}, "quand": {"code_tempora": ["Adv1-5"]}},
+          {"texte": "liguori:meditations-avent", "extrait": {"section": "## 1er Samedi. Le Fils de Dieu s'est chargé de toutes nos iniquités."}, "quand": {"code_tempora": ["Adv1-6"]}}
+        ]
+      }
+    },
+    {
       "id": "prog:neuvaine-trinite",
       "titre": "Neuvaine à la très sainte Trinité",
       "motif": {"fins": ["adoration", "action-de-graces"], "objets": ["trinite"], "note": "neuf jours, du samedi vigile de la Pentecôte au dimanche de la Trinité ; prières quelconques en l'honneur de la sainte Trinité (Ench. 1952, n° 48) ; le 9e jour, consécration de dom Marmion"},

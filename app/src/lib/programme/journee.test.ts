@@ -551,6 +551,26 @@ describe('neuvaine au Saint-Esprit de saint Alphonse (Tournois 1897), de l’Asc
 	});
 });
 
+describe('méditations de l’Avent de saint Alphonse (Tournois 1897), demande du 28 nov.', () => {
+	const ID = 'prog:meditations-avent';
+	const JOURS = ['Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi'];
+	const rang = (t: string) => `${t[3]}${t[3] === '1' ? 'er' : 'e'}`;
+	it('une méditation par jour du temporal, dans l’ordre du livre, jusqu’à la neuvaine de Noël', () => {
+		const jours = CALENDRIER.filter((j) => ligne(calculer(j.date), ID));
+		expect(jours[0].date).toBe('2026-11-29');
+		expect(jours.every((j) => j.date < '2026-12-16')).toBe(true);
+		for (const j of jours) {
+			const s = ligne(calculer(j.date), ID)!.sections.filter((x) => x.genre === 'texte');
+			const attendu = `## ${rang(j.tempora!)} ${JOURS[Number(j.tempora!.slice(-1))]}`;
+			expect(s.map((x) => x.extrait?.section?.split('.')[0]), j.date).toEqual([attendu]);
+			expect(extraire(corps(s[0].texte!)!, s[0].extrait), j.date).toMatch(/### Affections et prières/);
+		}
+	});
+	it('ne recouvre pas la neuvaine de Noël (16-24 décembre)', () => {
+		for (const date of ['2026-12-16', '2026-12-20', '2026-12-24']) expect(ligne(calculer(date), ID), date).toBeUndefined();
+	});
+});
+
 describe('triduums des trois fêtes de saint Joseph (Confrérie de Montréal)', () => {
 	const ID = 'prog:triduums-saint-joseph';
 	const parties = (date: string) =>
