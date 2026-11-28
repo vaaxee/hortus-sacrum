@@ -250,6 +250,12 @@ Les points réglés sont gardés pour l'historique. Dernière mise à jour : 26 
   - Janvier : les invocations à Jésus outragé (p. 151-156) sont le texte de `jardin:litanies-de-la-sainte-face`, dont le
     livret ne donne pas d'édition : à relire mot à mot sur Janvier pour lui en donner une.
 
+- **Neuvaines de Hammer 1909 en français (28 nov.)** : *Mary, Help of Christians, and the Fourteen Holy Helpers*
+  (New York, Benziger, 1909, imprimatur Farley) donne des neuvaines absentes de l'app : Annonciation, Sept Douleurs,
+  chacun des quatorze saints auxiliaires et les quatorze ensemble. L'utilisateur les veut **en français seulement** :
+  chercher une édition française ancienne approuvée des mêmes neuvaines, sinon une traduction de travail marquée
+  (voir `docs/CONSIGNES_SESSION_SUIVANTE.md`, § 3, point 1 bis).
+
 ## Traductions approuvées à trouver (20 novembre 2026)
 
 Règle : une prière concédée en latin ou en italien ne garde son indulgence en français que si la traduction est déclarée
