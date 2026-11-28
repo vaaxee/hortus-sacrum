@@ -47,9 +47,9 @@ Les points réglés sont gardés pour l'historique. Dernière mise à jour : 26 
   `claude/neuvaines-4` : prières p. 41-47, considérations de la veille et des neuf jours p. 30-98, litanies p. 48-59) ;
   neuvaine du Saint-Esprit de S. Alphonse : **faite** (27 nov., version Tournois 1897, `ledivinsauveurm02ligu` ; le
   t. XIV des *Œuvres* Vivès, `07430208.1657.emory.edu`, daté 1879 sur la page de titre, n'imprime aucune approbation).
-  **Candidats vérifiés sur l'image (27 nov.)** : sainte Anne, `cihm_38318` (*Le mois de juillet consacré à sainte Anne,
+  **Candidats vérifiés sur l'image (27 nov.)** : sainte Anne (**faite**, 27 nov., 17-25 juillet), `cihm_38318` (*Le mois de juillet consacré à sainte Anne,
   suivi d'une neuvaine*, Montréal, Rolland, 1878, **imprimatur de Montréal, 25 juin 1878**, neuvaine p. 183 s.) ;
-  Fête-Dieu, `cihm_77294` (*Neuvaine au Très Saint Sacrement*, Montréal, Bureau des œuvres eucharistiques, s. d.
+  Fête-Dieu (**faite**, 27 nov., neuf jours avant la Fête-Dieu), `cihm_77294` (*Neuvaine au Très Saint Sacrement*, Montréal, Bureau des œuvres eucharistiques, s. d.
   [vers 1900], **imprimatur de Paul [Bruchési], archevêque de Montréal**, p. 16 ; neuf jours de prières, sans date fixe :
   à placer avant la Fête-Dieu sur décision) ; Ange gardien, `cihm_34852` (*Dévotion aux Saints-Anges gardiens*,
   Montréal, Fabre, 1832) : **aucune approbation** vue (titre, avis, ch. I) et **pas de neuvaine** (association pour la
@@ -249,6 +249,12 @@ Les points réglés sont gardés pour l'historique. Dernière mise à jour : 26 
     Jésus (1899, `cihm_26544`), Saint-Sacrement (Québec 1920, `cihm_78894`).
   - Janvier : les invocations à Jésus outragé (p. 151-156) sont le texte de `jardin:litanies-de-la-sainte-face`, dont le
     livret ne donne pas d'édition : à relire mot à mot sur Janvier pour lui en donner une.
+
+- **Neuvaines de Hammer 1909 en français (28 nov.)** : *Mary, Help of Christians, and the Fourteen Holy Helpers*
+  (New York, Benziger, 1909, imprimatur Farley) donne des neuvaines absentes de l'app : Annonciation, Sept Douleurs,
+  chacun des quatorze saints auxiliaires et les quatorze ensemble. L'utilisateur les veut **en français seulement** :
+  chercher une édition française ancienne approuvée des mêmes neuvaines, sinon une traduction de travail marquée
+  (voir `docs/CONSIGNES_SESSION_SUIVANTE.md`, § 3, point 1 bis).
 
 ## Traductions approuvées à trouver (20 novembre 2026)
 

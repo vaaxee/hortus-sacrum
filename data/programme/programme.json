@@ -1846,6 +1846,57 @@
       }
     },
     {
+      "id": "prog:neuvaine-sainte-anne",
+      "titre": "Neuvaine à sainte Anne",
+      "motif": {"fins": ["demande"], "objets": ["saints", "sainte-vierge"], "note": "les neuf jours avant la fête de sainte Anne (26 juillet), du 17 au 25 : une vertu de sainte Anne par jour, et les prières de la fin (Mois de juillet consacré à sainte Anne, Montréal, 1878)"},
+      "revision": 1,
+      "quand": {"autour": {"ancre": "07-26", "de": -9, "a": -1}},
+      "source": "Demande de l'utilisateur du 27 nov. : neuvaine de sainte Anne du Mois de juillet consacré à sainte Anne, Montréal, 1878 (imprimatur de Montréal, 25 juin 1878, vu sur l'image), p. 183-223, relue sur l'image ; jours du livre (commencée le 17 juillet, p. 85-86)",
+      "page": {
+        "moment": "journee",
+        "ordre": 76,
+        "sections": [
+          {"texte": "juillet1878:neuvaine-sainte-anne", "extrait": {"section": "## Premier jour. Sainte Anne, épouse de saint Joachim.", "retirer": ["*N. B. Voir à la fin des exercices pour les prières qui doivent se dire tous les jours pendant la neuvaine.*"]}, "quand": {"autour": {"ancre": "07-26", "de": -9, "a": -9}}},
+          {"texte": "juillet1878:neuvaine-sainte-anne", "extrait": {"section": "## Second jour. Dieu accorde la très-sainte Vierge à sainte Anne.", "retirer": ["*Prières pour la Neuvaine, voir à la fin des exercices.*"]}, "quand": {"autour": {"ancre": "07-26", "de": -8, "a": -8}}},
+          {"texte": "juillet1878:neuvaine-sainte-anne", "extrait": {"section": "## Troisième jour. Nom donné à la sainte Vierge et Purification de sainte Anne.", "retirer": ["*Prières pour la Neuvaine. Voir à la fin des exercices.*"]}, "quand": {"autour": {"ancre": "07-26", "de": -7, "a": -7}}},
+          {"texte": "juillet1878:neuvaine-sainte-anne", "extrait": {"section": "## Quatrième jour. Sainte Anne dans l'éducation de Marie.", "retirer": ["*Prières pour la Neuvaine. Voir à la fin des exercices.*"]}, "quand": {"autour": {"ancre": "07-26", "de": -6, "a": -6}}},
+          {"texte": "juillet1878:neuvaine-sainte-anne", "extrait": {"section": "## Cinquième jour. Sainte Anne présente Marie au Temple.", "retirer": ["*Prières pour la Neuvaine. Voir à la fin, des exercices.*"]}, "quand": {"autour": {"ancre": "07-26", "de": -5, "a": -5}}},
+          {"texte": "juillet1878:neuvaine-sainte-anne", "extrait": {"section": "## Sixième jour. Conduite de sainte Anne dans l'intérieur de sa maison.", "retirer": ["*Prières pour la Neuvaine. Voir à la fin des exercices.*"]}, "quand": {"autour": {"ancre": "07-26", "de": -4, "a": -4}}},
+          {"texte": "juillet1878:neuvaine-sainte-anne", "extrait": {"section": "## Septième jour. Soins qu'avait sainte Anne de ses domestiques.", "retirer": ["*Prières pour la Neuvaine. Voir à la fin des exercices.*"]}, "quand": {"autour": {"ancre": "07-26", "de": -3, "a": -3}}},
+          {"texte": "juillet1878:neuvaine-sainte-anne", "extrait": {"section": "## Huitième jour. Rapports de sainte Anne avec le prochain.", "retirer": ["*Prières de la Neuvaine. Voir à la fin des exercices.*"]}, "quand": {"autour": {"ancre": "07-26", "de": -2, "a": -2}}},
+          {"texte": "juillet1878:neuvaine-sainte-anne", "extrait": {"section": "## Neuvième jour. Mort de sainte Anne."}, "quand": {"autour": {"ancre": "07-26", "de": -1, "a": -1}}},
+          {"texte": "juillet1878:neuvaine-sainte-anne", "extrait": {"section": "## Prières que l'on doit faire chaque jour à la fin des Exercices de la Neuvaine"}}
+        ]
+      }
+    },
+    {
+      "id": "prog:neuvaine-fete-dieu",
+      "titre": "Neuvaine au Très Saint Sacrement avant la Fête-Dieu",
+      "motif": {"fins": ["adoration", "demande"], "objets": ["eucharistie"], "note": "les neuf jours qui finissent la veille de la Fête-Dieu (du mardi de la Pentecôte au mercredi après la Trinité) : la prière spéciale du jour, encadrée des prières du premier jour (Neuvaine au Très Saint Sacrement, Montréal, vers 1900)"},
+      "revision": 1,
+      "quand": {"code_tempora": ["Pasc7-2", "Pasc7-3", "Pasc7-4", "Pasc7-5", "Pasc7-6", "Pent01-0", "Pent01-1", "Pent01-2", "Pent01-3"]},
+      "source": "Demande de l'utilisateur du 27 nov. : Neuvaine au Très Saint Sacrement, Montréal, Bureau des Œuvres eucharistiques, s. d. (imprimatur de Mgr Paul Bruchési, vu sur l'image), p. 5-16, relue sur l'image ; décision de l'utilisateur : les neuf jours qui finissent la veille de la Fête-Dieu (calendrier de 1954, jeudi après la Trinité, Pent01-4)",
+      "page": {
+        "moment": "journee",
+        "ordre": 76,
+        "sections": [
+          {"notice": "bureaueuch:neuvaine-saint-sacrement", "extrait": {"section": "## Conseils pratiques pour assurer le succès de la Neuvaine"}},
+          {"texte": "bureaueuch:neuvaine-saint-sacrement", "extrait": {"section": "## Ier jour"}, "quand": {"code_tempora": ["Pasc7-2"]}},
+          {"texte": "bureaueuch:neuvaine-saint-sacrement", "extrait": {"section": "## Ier jour", "a": "### Prière spéciale de la Neuvaine"}, "quand": {"code_tempora": ["Pasc7-3", "Pasc7-4", "Pasc7-5", "Pasc7-6", "Pent01-0", "Pent01-1", "Pent01-2", "Pent01-3"]}},
+          {"texte": "bureaueuch:neuvaine-saint-sacrement", "extrait": {"section": "## IIème jour", "retirer": ["*Laudes ac gratiæ, Adoro te, etc. Verset et Répons comme le premier jour.*", "*Pater, Ave, Gloria, Verset, Répons et Oraison comme le premier jour.*"]}, "quand": {"code_tempora": ["Pasc7-3"]}},
+          {"texte": "bureaueuch:neuvaine-saint-sacrement", "extrait": {"section": "## IIIème jour", "retirer": ["*Laude ac gratiæ, Adoro te, etc.*", "*Pater, Ave, Gloria, etc.*"]}, "quand": {"code_tempora": ["Pasc7-4"]}},
+          {"texte": "bureaueuch:neuvaine-saint-sacrement", "extrait": {"section": "## IVème jour", "retirer": ["*Laudes ac gratiæ, Adoro te, etc.*", "*Pater, Ave, Gloria, etc.*"]}, "quand": {"code_tempora": ["Pasc7-5"]}},
+          {"texte": "bureaueuch:neuvaine-saint-sacrement", "extrait": {"section": "## Vième jour", "retirer": ["*Laudes ac gratiæ, Adoro te, etc.*", "*Pater, Ave, Gloria, etc.*"]}, "quand": {"code_tempora": ["Pasc7-6"]}},
+          {"texte": "bureaueuch:neuvaine-saint-sacrement", "extrait": {"section": "## VIème jour", "retirer": ["*Laudes ac gratiæ, Adoro te, etc.*", "*Pater, Ave, Gloria, etc.*"]}, "quand": {"code_tempora": ["Pent01-0"]}},
+          {"texte": "bureaueuch:neuvaine-saint-sacrement", "extrait": {"section": "## VIIème jour", "retirer": ["*Laudes ac gratiæ, Adoro te, etc.*", "*Pater, Ave, Gloria, etc.*"]}, "quand": {"code_tempora": ["Pent01-1"]}},
+          {"texte": "bureaueuch:neuvaine-saint-sacrement", "extrait": {"section": "## VIIIème jour", "retirer": ["*Laudes ac gratiæ, Adoro te, etc.*", "*Pater, Ave, Gloria, etc.*"]}, "quand": {"code_tempora": ["Pent01-2"]}},
+          {"texte": "bureaueuch:neuvaine-saint-sacrement", "extrait": {"section": "## IXème jour", "retirer": ["*Laudes ac gratiæ, Adoro te, etc.*", "*Pater, Ave, Gloria, etc.*"]}, "quand": {"code_tempora": ["Pent01-3"]}},
+          {"texte": "bureaueuch:neuvaine-saint-sacrement", "extrait": {"section": "## Ier jour", "de": "*Pater, Ave, Gloria Patri.*"}, "quand": {"code_tempora": ["Pasc7-3", "Pasc7-4", "Pasc7-5", "Pasc7-6", "Pent01-0", "Pent01-1", "Pent01-2", "Pent01-3"]}},
+          {"texte": "bureaueuch:neuvaine-saint-sacrement", "extrait": {"section": "## Prière pour la Cloture de la Neuvaine"}, "quand": {"code_tempora": ["Pent01-3"]}}
+        ]
+      }
+    },
+    {
       "id": "prog:neuvaine-saint-francois",
       "titre": "Neuvaine à saint François d'Assise",
       "motif": {"fins": ["demande", "louange"], "objets": ["saints"], "note": "les neuf jours avant la fête de saint François (4 octobre) : une vertu du saint par jour (Tiers-Ordre, Québec, 1867)"},

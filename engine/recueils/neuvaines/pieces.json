@@ -156,6 +156,44 @@
   "revision": 1
  },
  {
+  "id": "juillet1878:neuvaine-sainte-anne",
+  "titre": "Exercices de la neuvaine en l'honneur de sainte Anne, mère de la très-sainte Vierge",
+  "partie": "Neuvaines",
+  "categorie": "",
+  "usage": "Du 17 au 25 juillet, avant la fête de sainte Anne (26 juillet) : le livre fait commencer la neuvaine le dix-septième jour du mois de juillet (« la neuvaine qui doit commencer aujourd'hui », p. 85-86). Chaque jour, la considération (une vertu de sainte Anne, épouse, mère, maîtresse de maison), les réflexions et la prière ; à la fin, les prières de tous les jours. Écrite pour les femmes, épouses et mères. Fautes de l'impression gardées (« seule-seulement », « à été », « dons nous avons besoin », « colomnie », « d'ailleur », « main droite à donné »).",
+  "indulgence": "",
+  "source": {
+   "ouvrage": "Le mois de juillet consacré à sainte Anne, suivi d'une neuvaine à sainte Anne, des prières de la messe, etc., par M. le chan. H.",
+   "edition": "Nouvelle édition, Montréal, J.-B. Rolland et fils, 1878 ; imprimatur de Montréal, 25 juin 1878 (Édouard-Charles [Fabre], évêque de Montréal), vu sur l'image",
+   "page": "183-223 (PDF p. 196-236)",
+   "url": "https://archive.org/details/cihm_38318"
+  },
+  "latin": "",
+  "fichiers": [
+   "neuvaine-sainte-anne.md"
+  ],
+  "revision": 1
+ },
+ {
+  "id": "bureaueuch:neuvaine-saint-sacrement",
+  "titre": "Neuvaine au Très Saint Sacrement pour obtenir toutes sortes de grâces",
+  "partie": "Neuvaines",
+  "categorie": "Jeudi",
+  "usage": "Neuf jours de prières devant le Très Saint Sacrement (le livret ne donne pas de date). Le premier jour en entier : « Laudes ac gratiæ », l'hymne *Adoro te* en français, verset et répons, la prière spéciale, Pater, Ave, Gloria, verset, répons et oraison ; les jours suivants, le livret ne donne que la prière spéciale du jour et renvoie au premier jour pour le reste. Le dernier jour, la prière pour la clôture. Fautes de l'impression gardées (« je soit », « Laude ac gratiæ » au 3e jour, « Vième », « pour vous, aimer vous servir », « maitenant »).",
+  "indulgence": "",
+  "source": {
+   "ouvrage": "Neuvaine au Très Saint Sacrement pour obtenir toutes sortes de grâces",
+   "edition": "Montréal, Bureau des Œuvres eucharistiques, s. d. [vers 1900] ; imprimatur de Paul [Bruchési], archevêque de Montréal (p. 16), vu sur l'image",
+   "page": "5-16 (PDF p. 6-17)",
+   "url": "https://archive.org/details/cihm_77294"
+  },
+  "latin": "",
+  "fichiers": [
+   "neuvaine-saint-sacrement.md"
+  ],
+  "revision": 1
+ },
+ {
   "id": "liguori:meditations-avent",
   "titre": "Méditations pour le temps de l'Avent (saint Alphonse de Liguori)",
   "partie": "Méditations",
